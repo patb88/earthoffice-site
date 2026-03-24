@@ -1,0 +1,503 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_2012-11_normalize_2026-01-16T044950633Z",
+    "generated_utc": "2026-01-16T04:49:50.633Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "2012-11",
+    "window": {
+      "start_utc": "2012-11-01T00:00:00.000Z",
+      "end_utc": "2012-11-30T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "20121130_paulsboro_nj_vinyl_chloride_derailment",
+      "title": "Paulsboro, New Jersey train derailment releases vinyl chloride near Mantua Creek",
+      "description": "A freight train derailed on a moveable bridge in Paulsboro, New Jersey, involving tank cars carrying vinyl chloride. The incident prompted emergency response actions including evacuations and shelter-in-place measures due to the hazardous release.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2012-11-30T12:02:00.000Z",
+        "event_end": "2012-11-30T23:59:59.000Z",
+        "reported_at": "2012-11-30T12:02:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2012-11-30T12:02:00.000Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Paulsboro, New Jersey, USA (Mantua Creek)",
+        "jurisdiction_level": "city",
+        "admin1": "New Jersey",
+        "country": "US",
+        "capital_used": null,
+        "lat": 39.8301,
+        "lon": -75.2405,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://response.restoration.noaa.gov/about/media/train-derails-paulsboro-nj-releasing-23000-gallons-toxic-vinyl-chloride-gas.html",
+          "source_name": "NOAA Office of Response and Restoration",
+          "published_at": "2012-11-30T00:00:00.000Z",
+          "headline": "Train Derails in Paulsboro, NJ Releasing 23,000 Gallons of Toxic Vinyl Chloride Gas",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.ntsb.gov/investigations/Pages/DCA13MR002.aspx",
+          "source_name": "National Transportation Safety Board (NTSB)",
+          "published_at": "2013-01-01T00:00:00.000Z",
+          "headline": "DCA13MR002",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Conrail",
+          "NOAA",
+          "NTSB"
+        ],
+        "substances": [
+          "vinyl chloride"
+        ],
+        "ecosystems": [
+          "Mantua Creek"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Train Derails in Paulsboro, NJ Releasing 23,000 Gallons of Toxic Vinyl Chloride Gas",
+            "source_url": "https://response.restoration.noaa.gov/about/media/train-derails-paulsboro-nj-releasing-23000-gallons-toxic-vinyl-chloride-gas.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.8,
+        "location": 0.6,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Paulsboro NJ vinyl chloride derailment 2012-11-30",
+        "fingerprint": "paulsboro_nj_vinyl_chloride_derailment_2012-11-30"
+      }
+    },
+    {
+      "event_id": "2012-11-27_us_drought_monitor_reported_widespread",
+      "title": "U.S. Drought Monitor reported 62.7% of contiguous U.S. in drought (Nov 27, 2012)",
+      "description": "A NOAA Climate.gov post summarizing the Nov. 27, 2012 U.S. Drought Monitor reported that 62.7% of the contiguous United States was in moderate-to-exceptional drought. The update noted improvements in parts of the Northern Rockies alongside worsening conditions in parts of the Southwest and Mid-Atlantic.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2012-11-27T00:00:00.000Z",
+        "event_end": "2012-11-27T23:59:59.000Z",
+        "reported_at": "2012-11-27T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2012-11-27T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Contiguous United States",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "proxy",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.climate.gov/news-features/featured-images/november-2012-us-climate-update-word-month-dry",
+          "source_name": "NOAA Climate.gov",
+          "published_at": "2012-11-27T00:00:00.000Z",
+          "headline": "November 2012 U.S. climate update: word of the month: dry",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA",
+          "U.S. Drought Monitor"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "62.7% of the contiguous United States was in moderate-to-exceptional drought",
+            "source_url": "https://www.climate.gov/news-features/featured-images/november-2012-us-climate-update-word-month-dry"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.75,
+        "location": 0.55,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "US Drought Monitor Nov 27 2012 62.7% contiguous US",
+        "fingerprint": "us_drought_monitor_2012-11-27_contiguous_us"
+      }
+    },
+    {
+      "event_id": "evt_20121107_guatemala_eq_usgs",
+      "title": "Mw 7.4 earthquake off Guatemala’s Pacific coast near Champerico",
+      "description": "A magnitude 7.4 earthquake occurred off Guatemala’s Pacific coast near Champerico on 7 Nov 2012. Reports described damage and casualties in affected areas and shaking felt across parts of the region.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2012-11-07T16:35:45.000Z",
+        "event_end": "2012-11-07T23:59:59.000Z",
+        "reported_at": "2012-11-07T16:35:45.000Z",
+        "time_confidence": 0.75,
+        "event_date_utc": "2012-11-07T16:35:45.000Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Off the Pacific coast of Guatemala (near Champerico)",
+        "jurisdiction_level": "site",
+        "admin1": null,
+        "country": "GT",
+        "capital_used": null,
+        "lat": 13.988,
+        "lon": -91.895,
+        "precision": "exact",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.75
+      },
+      "sources": [
+        {
+          "url": "https://earthquake.usgs.gov/earthquakes/eventpage/usp000jv5f",
+          "source_name": "USGS Earthquake Hazards Program",
+          "published_at": "2012-11-07T16:35:45.000Z",
+          "headline": "M 7.4 - Off the coast of Guatemala",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.bbc.com/news/world-latin-america-20206372",
+          "source_name": "BBC News",
+          "published_at": "2012-11-07T00:00:00.000Z",
+          "headline": "Guatemala hit by powerful earthquake",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "USGS",
+          "BBC"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "M 7.4 - Off the coast of Guatemala",
+            "source_url": "https://earthquake.usgs.gov/earthquakes/eventpage/usp000jv5f"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.72,
+        "category": 0.9,
+        "location": 0.72,
+        "summary_grounding": 0.65
+      },
+      "quality_flags": [
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "2012-11-07 Guatemala offshore earthquake (USGS usp000jv5f)",
+        "fingerprint": "fp_20121107_guatemala_offshore_eq_usp000jv5f"
+      }
+    },
+    {
+      "event_id": "evt_20121121_tongariro_te_maari_eruption_abc",
+      "title": "Mount Tongariro (Te Maari Craters) eruption produces ash plume",
+      "description": "Mount Tongariro erupted from the Te Maari Craters on 21 Nov 2012, producing an ash plume reported to rise into the atmosphere. Reporting noted concerns about the potential for additional eruptive activity.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2012-11-21T00:00:00.000Z",
+        "event_end": "2012-11-21T23:59:59.000Z",
+        "reported_at": "2012-11-21T00:00:00.000Z",
+        "time_confidence": 0.4,
+        "event_date_utc": "2012-11-21T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Mount Tongariro (Te Maari Craters), North Island, New Zealand",
+        "jurisdiction_level": "site",
+        "admin1": null,
+        "country": "NZ",
+        "capital_used": null,
+        "lat": -39.132,
+        "lon": 175.641,
+        "precision": "exact",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.abc.net.au/news/2012-11-21/nz-volcano-erupts/4384028",
+          "source_name": "ABC News (Australia)",
+          "published_at": "2012-11-21T00:00:00.000Z",
+          "headline": "NZ volcano erupts",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "ABC News (Australia)"
+        ],
+        "substances": [
+          "volcanic ash"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "NZ volcano erupts",
+            "source_url": "https://www.abc.net.au/news/2012-11-21/nz-volcano-erupts/4384028"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.52,
+        "category": 0.85,
+        "location": 0.55,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "needs_dedupe_check",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "2012-11-21 Tongariro Te Maari eruption (ABC)",
+        "fingerprint": "fp_20121121_tongariro_te_maari_eruption_abc"
+      }
+    },
+    {
+      "event_id": "20121128_noaa_mhi_false_killer_whale_endangered",
+      "title": "NOAA lists Main Hawaiian Islands insular false killer whale DPS as endangered under the U.S. Endangered Species Act",
+      "description": "NOAA Fisheries issued a final rule, published in the Federal Register on November 28, 2012, listing the Main Hawaiian Islands insular false killer whale distinct population segment as endangered under the Endangered Species Act. The listing reflects conservation concerns for this population in Hawaiian waters.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2012-11-28T00:00:00.000Z",
+        "time_confidence": 0.8,
+        "event_date_utc": "2012-11-28T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Main Hawaiian Islands (Hawaiian waters), United States",
+        "jurisdiction_level": "state",
+        "admin1": "HI",
+        "country": "US",
+        "capital_used": "Honolulu",
+        "lat": 21.3069,
+        "lon": -157.8583,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://www.federalregister.gov/d/2012-28030",
+          "source_name": "Federal Register",
+          "published_at": "2012-11-28T00:00:00.000Z",
+          "headline": "2012-28030",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.fisheries.noaa.gov/resource/document/final-esa-section-4b2-report-final-designation-critical-habitat-endangered-main",
+          "source_name": "NOAA Fisheries",
+          "published_at": "2012-11-28T00:00:00.000Z",
+          "headline": "Final ESA Section 4(b)(2) Report (critical habitat designation) for endangered Main Hawaiian Islands insular false killer whale DPS",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA Fisheries",
+          "National Oceanic and Atmospheric Administration"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "Hawaiian marine waters"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "final rule published in the Federal Register on November 28, 2012",
+            "source_url": "https://www.federalregister.gov/d/2012-28030"
+          },
+          {
+            "quote": "listed the Main Hawaiian Islands insular false killer whale distinct population segment as endangered",
+            "source_url": "https://www.federalregister.gov/d/2012-28030"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.74,
+        "category": 0.8,
+        "location": 0.7,
+        "summary_grounding": 0.7
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "NOAA ESA listing - Main Hawaiian Islands insular false killer whale DPS",
+        "fingerprint": "fp_20121128_noaa_mhi_false_killer_whale_endangered_hi_us_2012-11"
+      }
+    },
+    {
+      "event_id": "2012-11-26_doha_cop18_opens_doha_qatar",
+      "title": "UNFCCC Doha Climate Change Conference (COP18/CMP8) opens in Doha",
+      "description": "The UNFCCC Doha Climate Change Conference opened on November 26, 2012 in Doha, Qatar, convening parties for COP18/CMP8 negotiations. The conference is associated with outcomes later referred to as the “Doha Climate Gateway,” including decisions connected to a second commitment period of the Kyoto Protocol (Doha Amendment).",
+      "category_primary": "policy_regulation",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "2012-11-26T00:00:00.000Z",
+        "event_end": "2012-11-30T23:59:59.000Z",
+        "reported_at": "2012-11-26T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2012-11-26T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Doha, Qatar",
+        "jurisdiction_level": "city",
+        "admin1": null,
+        "country": "QA",
+        "capital_used": null,
+        "lat": 25.2854,
+        "lon": 51.531,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.85
+      },
+      "sources": [
+        {
+          "url": "https://unfccc.int/conference/doha-climate-change-conference-november-2012",
+          "source_name": "UNFCCC",
+          "published_at": "2012-11-26T00:00:00.000Z",
+          "headline": "Doha Climate Change Conference - November 2012",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://enb.iisd.org/climate/cop18/enb/",
+          "source_name": "IISD Earth Negotiations Bulletin",
+          "published_at": "2012-11-26T00:00:00.000Z",
+          "headline": "UNFCCC COP 18 and CMP 8 (Doha, Qatar) - Earth Negotiations Bulletin",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "UNFCCC"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Doha Climate Change Conference - November 2012",
+            "source_url": "https://unfccc.int/conference/doha-climate-change-conference-november-2012"
+          },
+          {
+            "quote": "UNFCCC COP 18 and CMP 8 (Doha, Qatar)",
+            "source_url": "https://enb.iisd.org/climate/cop18/enb/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.7,
+        "category": 0.8,
+        "location": 0.85,
+        "summary_grounding": 0.65
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "UNFCCC_COP18_Doha_2012",
+        "fingerprint": "fp_2012-11-26_unfccc_doha_cop18_doha_qa"
+      }
+    }
+  ]
+}

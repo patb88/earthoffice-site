@@ -1,0 +1,818 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_2021-03_normalize_2026-01-16T072936725Z",
+    "generated_utc": "2026-01-16T07:29:36.725Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "2021-03",
+    "window": {
+      "start_utc": "2021-03-01T00:00:00.000Z",
+      "end_utc": "2021-03-31T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "evt_202103_piney_point_leak_discovered_manatee_fl",
+      "title": "Piney Point phosphogypsum stack leak discovered in wastewater reservoir",
+      "description": "A leak was discovered in the containment area of a wastewater reservoir at the Piney Point phosphate facility, raising concerns about potential releases of contaminated water and environmental impacts in the surrounding area.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2021-03-25T00:00:00.000Z",
+        "event_end": "2021-03-25T23:59:59.000Z",
+        "reported_at": "2021-04-03T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2021-03-25T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Manatee County, Florida, United States",
+        "jurisdiction_level": "state",
+        "admin1": "FL",
+        "country": "US",
+        "capital_used": "Tallahassee",
+        "lat": 30.4382559,
+        "lon": -84.2807329,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.axios.com/2021/04/03/piney-point-desantis-tampa-bay-wastewater-collapse",
+          "source_name": "Axios",
+          "published_at": "2021-04-03T00:00:00.000Z",
+          "headline": "Piney Point phosphate plant: leak discovered in wastewater reservoir containing contaminants (phosphogypsum stack)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Piney Point"
+        ],
+        "substances": [
+          "wastewater",
+          "contaminants",
+          "phosphogypsum"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "leak discovered in wastewater reservoir containing contaminants",
+            "source_url": "https://www.axios.com/2021/04/03/piney-point-desantis-tampa-bay-wastewater-collapse"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.7,
+        "location": 0.55,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "piney_point_phosphogypsum_leak_2021_03",
+        "fingerprint": "fp_piney_point_phosphogypsum_leak_manatee_fl_20210325"
+      }
+    },
+    {
+      "event_id": "evt_202103_weather_climate_winter_storm_xylia_us",
+      "title": "Winter Storm Xylia brings heavy snow and blizzard conditions across parts of the U.S. Rockies and Plains",
+      "description": "In March 2021, Winter Storm Xylia brought heavy snow and blizzard conditions across parts of the U.S. Rockies and High Plains. The storm produced widespread snowfall impacts, with some locations reporting unusually high or record-setting totals per The Weather Channel coverage.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2021-03-10T00:00:00Z",
+        "time_confidence": 0.45,
+        "event_date_utc": "2021-03-10T00:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States (Rockies/High Plains into Midwest)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://weather.com/storms/winter/news/2021-03-10-rockies-plains-major-snowstorm-xylia",
+          "source_name": "The Weather Channel",
+          "published_at": "2021-03-10T00:00:00Z",
+          "headline": "Major snowstorm (Winter Storm Xylia) targets Rockies and Plains",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://weather.com/storms/winter/news/2021-03-11-winter-storm-xylia-snow-records-since-fall-2020",
+          "source_name": "The Weather Channel",
+          "published_at": "2021-03-11T00:00:00Z",
+          "headline": "Winter Storm Xylia snow and records since fall 2020",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "The Weather Channel"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.7,
+        "location": 0.6,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "winter-storm-xylia-us-march-2021",
+        "fingerprint": "fp_winter_storm_xylia_us_2021-03"
+      }
+    },
+    {
+      "event_id": "geol_20210303_larissa_gr_usgs",
+      "title": "M6.3 earthquake near Tyrnavos/Larissa, Thessaly, Greece",
+      "description": "A magnitude 6.3 earthquake occurred near Tyrnavos in the Larissa region of Thessaly, Greece on March 3, 2021. The USGS event page documents the earthquake and provides official event parameters for the incident.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2021-03-03T10:16:09.000Z",
+        "event_end": "2021-03-03T10:16:09.000Z",
+        "reported_at": "2021-03-03T10:16:09.000Z",
+        "time_confidence": 0.8,
+        "event_date_utc": "2021-03-03T10:16:09.000Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Near Tyrnavos/Larissa region, Thessaly, Greece",
+        "jurisdiction_level": "site",
+        "admin1": "Thessaly",
+        "country": "GR",
+        "capital_used": null,
+        "lat": 39.7167,
+        "lon": 22.7167,
+        "precision": "neighborhood",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.45
+      },
+      "sources": [
+        {
+          "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000df40/executive",
+          "source_name": "USGS Earthquake Hazards Program",
+          "published_at": "2021-03-03T10:16:09.000Z",
+          "headline": "M 6.3 - 16 km SSE of Tyrnavos, Greece",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "USGS"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "M 6.3 - 16 km SSE of Tyrnavos, Greece",
+            "source_url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000df40/executive"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.85,
+        "location": 0.45,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "us7000df40",
+        "fingerprint": "geological|M6.3 earthquake near Tyrnavos/Larissa, Thessaly, Greece|Near Tyrnavos/Larissa region, Thessaly, Greece|2021-03-03"
+      }
+    },
+    {
+      "event_id": "geol_20210304_kermadec_pacific_usgs",
+      "title": "M8.1 earthquake in the Kermadec Islands region with tsunami warnings",
+      "description": "A major offshore earthquake (reported as M8.1 by USGS for this event page) occurred in the Kermadec Islands region north of New Zealand on March 4, 2021. The event triggered tsunami warnings for parts of the Pacific according to official monitoring communications summarized on the USGS executive page.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2021-03-04T17:41:25.000Z",
+        "event_end": "2021-03-04T19:28:31.000Z",
+        "reported_at": "2021-03-04T17:41:25.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2021-03-04T17:41:25.000Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Kermadec Islands region (north of New Zealand)",
+        "jurisdiction_level": "site",
+        "admin1": null,
+        "country": "NZ",
+        "capital_used": null,
+        "lat": -29.25,
+        "lon": -177.9167,
+        "precision": "admin1",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.35
+      },
+      "sources": [
+        {
+          "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000dflf/executive",
+          "source_name": "USGS Earthquake Hazards Program",
+          "published_at": "2021-03-04T17:41:25.000Z",
+          "headline": "M 8.1 - Kermadec Islands region",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "USGS"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "M 8.1 - Kermadec Islands region",
+            "source_url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000dflf/executive"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.85,
+        "location": 0.35,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "us7000dflf",
+        "fingerprint": "geological|M8.1 earthquake in the Kermadec Islands region with tsunami warnings|Kermadec Islands region (north of New Zealand)|2021-03-04"
+      }
+    },
+    {
+      "event_id": "geol_20210320_miyagi_jp_usgs",
+      "title": "M7.0 earthquake offshore Miyagi Prefecture, Japan",
+      "description": "A magnitude 7.0 earthquake occurred offshore of Miyagi Prefecture, Japan on March 20, 2021. The USGS event page provides the authoritative event parameters for the earthquake.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2021-03-20T09:09:45.000Z",
+        "event_end": "2021-03-20T09:09:45.000Z",
+        "reported_at": "2021-03-20T09:09:45.000Z",
+        "time_confidence": 0.8,
+        "event_date_utc": "2021-03-20T09:09:45.000Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Offshore Miyagi Prefecture, Japan (near east coast of Honshu)",
+        "jurisdiction_level": "site",
+        "admin1": "Miyagi",
+        "country": "JP",
+        "capital_used": null,
+        "lat": 38.3,
+        "lon": 141.6,
+        "precision": "admin1",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.35
+      },
+      "sources": [
+        {
+          "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000dl6y/executive",
+          "source_name": "USGS Earthquake Hazards Program",
+          "published_at": "2021-03-20T09:09:45.000Z",
+          "headline": "M 7.0 - 34 km ESE of Ishinomaki, Japan",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "USGS"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "M 7.0 - 34 km ESE of Ishinomaki, Japan",
+            "source_url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000dl6y/executive"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.56,
+        "category": 0.85,
+        "location": 0.35,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "us7000dl6y",
+        "fingerprint": "geological|M7.0 earthquake offshore Miyagi Prefecture, Japan|Offshore Miyagi Prefecture, Japan (near east coast of Honshu)|2021-03-20"
+      }
+    },
+    {
+      "event_id": "geol_20210323_lasoufriere_svg_nemo",
+      "title": "La Soufrière (St. Vincent) elevated unrest with VT earthquakes and dome growth (late March 2021)",
+      "description": "Monitoring bulletins reported elevated volcanic unrest at La Soufrière in St. Vincent and the Grenadines in late March 2021, including volcano-tectonic earthquakes and continued lava dome growth. These updates were issued by the national emergency management authority via a bulletin dated March 27, 2021.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2021-03-23T00:00:00.000Z",
+        "event_end": "2021-03-27T23:59:59.000Z",
+        "reported_at": "2021-03-27T20:00:00.000Z",
+        "time_confidence": 0.45,
+        "event_date_utc": "2021-03-27T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "La Soufrière volcano, St. Vincent and the Grenadines",
+        "jurisdiction_level": "site",
+        "admin1": null,
+        "country": "VC",
+        "capital_used": null,
+        "lat": 13.3333,
+        "lon": -61.1833,
+        "precision": "neighborhood",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.4
+      },
+      "sources": [
+        {
+          "url": "https://nemo.gov.vc/nemo/index.php/news-events/news-release/630-la-soufriere-bulletin-44-march-27-2021-8-00-pm",
+          "source_name": "NEMO (St. Vincent and the Grenadines)",
+          "published_at": "2021-03-27T20:00:00.000Z",
+          "headline": "La Soufriere Bulletin 44 - March 27, 2021 - 8:00 pm",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NEMO (St. Vincent and the Grenadines)"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "La Soufriere Bulletin 44 - March 27, 2021 - 8:00 pm",
+            "source_url": "https://nemo.gov.vc/nemo/index.php/news-events/news-release/630-la-soufriere-bulletin-44-march-27-2021-8-00-pm"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.44,
+        "category": 0.7,
+        "location": 0.4,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "La Soufriere bulletin 44",
+        "fingerprint": "geological|La Soufrière (St. Vincent) elevated unrest with VT earthquakes and dome growth (late March 2021)|La Soufrière volcano, St. Vincent and the Grenadines|2021-03"
+      }
+    },
+    {
+      "event_id": "fires_ashikaga_jp_20210301_controlled",
+      "title": "Ashikaga wildfire reported brought under control",
+      "description": "A wildfire in Ashikaga, Tochigi Prefecture was reported brought under control on March 1, 2021 after intensive ground and aerial firefighting. Evacuation orders/advisories for affected households were lifted according to the report.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2021-03-01T00:00:00.000Z",
+        "event_end": "2021-03-01T23:59:59.000Z",
+        "reported_at": "2021-03-01T00:00:00Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "2021-03-01T00:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Ashikaga, Tochigi Prefecture, Japan",
+        "jurisdiction_level": "city",
+        "admin1": "Tochigi Prefecture",
+        "country": "JP",
+        "capital_used": null,
+        "lat": 36.3333,
+        "lon": 139.45,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.asahi.com/ajw/articles/14233332",
+          "source_name": "The Asahi Shimbun (AJW)",
+          "published_at": "2021-03-01T00:00:00Z",
+          "headline": "Ashikaga (Tochigi) wildfire brought under control",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [
+          "forest"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "wildfire ... was reported brought under control on March 1, 2021",
+            "source_url": "https://www.asahi.com/ajw/articles/14233332"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.56,
+        "category": 0.85,
+        "location": 0.6,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Ashikaga Tochigi wildfire late-Feb to mid-Mar 2021",
+        "fingerprint": "fires|ashikaga_tochigi_jp|2021-03-01"
+      }
+    },
+    {
+      "event_id": "fires_ashikaga_jp_20210315_extinguished",
+      "title": "Ashikaga forest fire declared fully extinguished after ~3 weeks",
+      "description": "Local authorities announced the Ashikaga forest fire north of Tokyo was fully extinguished by March 15, 2021. The report said the fire burned about 106 hectares over roughly three weeks.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2021-03-15T00:00:00.000Z",
+        "event_end": "2021-03-15T23:59:59.000Z",
+        "reported_at": "2021-03-15T00:00:00Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "2021-03-15T00:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Ashikaga, Tochigi Prefecture, Japan",
+        "jurisdiction_level": "city",
+        "admin1": "Tochigi Prefecture",
+        "country": "JP",
+        "capital_used": null,
+        "lat": 36.3333,
+        "lon": 139.45,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://english.kyodonews.net/news/2021/03/50747138c427-forest-fire-north-of-tokyo-put-out-after-3-weeks-burns-106-hectares.html",
+          "source_name": "Kyodo News (English)",
+          "published_at": "2021-03-15T00:00:00Z",
+          "headline": "Forest fire north of Tokyo put out after 3 weeks; burns 106 hectares",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Local government"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "forest"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "forest fire ... put out after 3 weeks; burns 106 hectares",
+            "source_url": "https://english.kyodonews.net/news/2021/03/50747138c427-forest-fire-north-of-tokyo-put-out-after-3-weeks-burns-106-hectares.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.85,
+        "location": 0.6,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Ashikaga Tochigi wildfire late-Feb to mid-Mar 2021",
+        "fingerprint": "fires|ashikaga_tochigi_jp|2021-03-15"
+      }
+    },
+    {
+      "event_id": "202103-zebra-mussels-marimo-us",
+      "title": "Zebra mussels found in marimo moss balls sold in U.S. pet stores",
+      "description": "USGS reported that invasive zebra mussels were found in marimo “moss balls” sold in pet stores, prompting response efforts to prevent their introduction into waterways. The finding raised concerns about spread via the aquarium trade across multiple U.S. states.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2021-03-02T00:00:00.000Z",
+        "event_end": "2021-03-02T23:59:59.000Z",
+        "reported_at": "2021-03-02T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2021-03-02T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.usgs.gov/news/featured-story/invasive-zebra-mussels-found-pet-stores-21-states",
+          "source_name": "USGS",
+          "published_at": "2021-03-02T00:00:00.000Z",
+          "headline": "Invasive zebra mussels found in pet stores in 21 states",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.fws.gov/apps/story/2021-03/invasive-zebra-mussels-found-moss-balls",
+          "source_name": "U.S. Fish & Wildlife Service",
+          "published_at": "2021-03-01T00:00:00.000Z",
+          "headline": "Invasive zebra mussels found in moss balls",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "USGS",
+          "U.S. Fish & Wildlife Service"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Invasive zebra mussels found in pet stores in 21 states",
+            "source_url": "https://www.usgs.gov/news/featured-story/invasive-zebra-mussels-found-pet-stores-21-states"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.64,
+        "category": 0.75,
+        "location": 0.6,
+        "summary_grounding": 0.65
+      },
+      "quality_flags": [
+        "needs_dedupe_check",
+        "date_ambiguous",
+        "location_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "zebra mussels marimo moss balls aquarium trade US March 2021",
+        "fingerprint": "fp_20210302_zebra_mussels_marimo_US"
+      }
+    },
+    {
+      "event_id": "202103-noaa-crw-pacific-bleaching-guidance",
+      "title": "NOAA Coral Reef Watch issued Pacific coral bleaching heat stress guidance",
+      "description": "NOAA Coral Reef Watch published a Pacific coral bleaching heat stress analysis and outlook, providing guidance through June 2021 based on observed and forecast sea surface temperature conditions. The update was intended to support monitoring and preparedness for coral bleaching risk in Pacific reef regions.",
+      "category_primary": "science_monitoring",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "2021-03-03T00:00:00.000Z",
+        "event_end": "2021-03-03T23:59:59.000Z",
+        "reported_at": "2021-03-03T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2021-03-03T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Pacific Ocean region (NOAA Coral Reef Watch Pacific guidance)",
+        "jurisdiction_level": "global_proxy",
+        "admin1": null,
+        "country": null,
+        "capital_used": null,
+        "lat": 0,
+        "lon": -160,
+        "precision": "proxy",
+        "location_basis": "institution_proxy",
+        "location_confidence": 0.4
+      },
+      "sources": [
+        {
+          "url": "https://coralreefwatch.noaa.gov/satellite/analyses_guidance/pacific_cbts_ag_20210303.php",
+          "source_name": "NOAA Coral Reef Watch",
+          "published_at": "2021-03-03T00:00:00.000Z",
+          "headline": "Pacific Coral Bleaching Heat Stress Seasonal Guidance (03 Mar 2021)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA Coral Reef Watch"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "coral reefs"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Pacific coral bleaching heat stress seasonal guidance",
+            "source_url": "https://coralreefwatch.noaa.gov/satellite/analyses_guidance/pacific_cbts_ag_20210303.php"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.52,
+        "category": 0.3,
+        "location": 0.4,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "low_confidence_category",
+        "location_ambiguous",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "NOAA Coral Reef Watch Pacific seasonal guidance coral bleaching heat stress 2021-03-03",
+        "fingerprint": "fp_20210303_noaa_crw_pacific_guidance"
+      }
+    },
+    {
+      "event_id": "2021-03-25_us_break-free-from-plastic-act_s984_introduced",
+      "title": "Break Free From Plastic Pollution Act of 2021 introduced (S.984)",
+      "description": "A bill titled the Break Free From Plastic Pollution Act of 2021 (S.984) was introduced in the U.S. Senate on March 25, 2021. The legislation proposes measures related to plastic pollution and waste management.",
+      "category_primary": "policy_regulation",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "2021-03-25T00:00:00.000Z",
+        "event_end": "2021-03-25T23:59:59.000Z",
+        "reported_at": "2021-03-25T00:00:00.000Z",
+        "time_confidence": 0.8,
+        "event_date_utc": "2021-03-25T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States (federal legislative action)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.85
+      },
+      "sources": [
+        {
+          "url": "https://www.congress.gov/bill/117th-congress/senate-bill/984/text",
+          "source_name": "Congress.gov",
+          "published_at": "2021-03-25T00:00:00.000Z",
+          "headline": "S.984 - Break Free From Plastic Pollution Act of 2021",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "United States Senate"
+        ],
+        "substances": [
+          "plastics"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "S.984 - Break Free From Plastic Pollution Act of 2021",
+            "source_url": "https://www.congress.gov/bill/117th-congress/senate-bill/984/text"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.72,
+        "category": 0.7,
+        "location": 0.85,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "US_Senate_S984_Break_Free_From_Plastic_2021_03",
+        "fingerprint": "us_s984_break_free_from_plastic_2021-03-25_washington-dc"
+      }
+    }
+  ]
+}

@@ -1,0 +1,621 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_2015-05_normalize_2026-01-16T053336178Z",
+    "generated_utc": "2026-01-16T05:33:36.178Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "2015-05",
+    "window": {
+      "start_utc": "2015-05-01T00:00:00.000Z",
+      "end_utc": "2015-05-31T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "2015-05_refugio-oil-spill_gaviota-coast",
+      "title": "Refugio oil spill from ruptured Plains All American pipeline on California’s Gaviota Coast",
+      "description": "A ruptured onshore crude oil pipeline operated by Plains All American released oil that reached the Pacific Ocean near Refugio State Beach on the Gaviota Coast. The spill contaminated coastal waters and beaches, prompting beach closures and cleanup and wildlife response efforts.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2015-05-19T00:00:00.000Z",
+        "event_end": "2015-05-31T23:59:59.000Z",
+        "reported_at": "2015-05-20T00:00:00Z",
+        "time_confidence": 0.75,
+        "event_date_utc": "2015-05-19T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Gaviota Coast near Refugio State Beach (near Goleta), Santa Barbara County, California, USA",
+        "jurisdiction_level": "site",
+        "admin1": "California",
+        "country": "US",
+        "capital_used": null,
+        "lat": 34.462,
+        "lon": -120.07,
+        "precision": "neighborhood",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.65
+      },
+      "sources": [
+        {
+          "url": "https://www.theguardian.com/environment/2015/may/20/oil-spill-from-broken-pipeline-stretches-four-miles-along-california-coast",
+          "source_name": "The Guardian",
+          "published_at": "2015-05-20T00:00:00Z",
+          "headline": "Oil spill from broken pipeline stretches four miles along California coast",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.theguardian.com/environment/2015/may/20/california-oil-spill-gaviota-coast-cleanup",
+          "source_name": "The Guardian",
+          "published_at": "2015-05-20T00:00:00Z",
+          "headline": "California oil spill: Gaviota coast oil spill cleanup begins",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.cbsnews.com/pictures/california-coastline-oil-spill/",
+          "source_name": "CBS News",
+          "published_at": "2015-05-20T00:00:00Z",
+          "headline": "California coastline oil spill",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Plains All American"
+        ],
+        "substances": [
+          "crude oil"
+        ],
+        "ecosystems": [
+          "Pacific Ocean",
+          "coastal waters",
+          "beaches"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "oil spill from a ruptured pipeline ... along the California coastline",
+            "source_url": "https://www.theguardian.com/environment/2015/may/20/oil-spill-from-broken-pipeline-stretches-four-miles-along-california-coast"
+          },
+          {
+            "quote": "cleanup begins ... on the Gaviota coast",
+            "source_url": "https://www.theguardian.com/environment/2015/may/20/california-oil-spill-gaviota-coast-cleanup"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.68,
+        "category": 0.85,
+        "location": 0.65,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "needs_dedupe_check",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "Refugio State Beach / Gaviota Coast pipeline oil spill (May 2015)",
+        "fingerprint": "2015-05_refugio-state-beach_gaviota-coast_oil-spill_2015-05-19"
+      }
+    },
+    {
+      "event_id": "2015-05-weatherclimate-tx-ok-rain-flooding",
+      "title": "Heavy May 2015 rains contribute to flooding across Texas and Oklahoma",
+      "description": "National Weather Service materials documented unusually heavy rainfall during May 2015 in parts of Texas and Oklahoma, contributing to flooding impacts in the region. The event is summarized at a regional level because the provided sources are office-specific and do not establish a single, precise statewide record in this draft.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2015-05-31T23:59:59.000Z",
+        "time_confidence": 0.4,
+        "event_date_utc": null,
+        "event_date_precision": "month"
+      },
+      "location": {
+        "name": "Texas and Oklahoma, USA",
+        "jurisdiction_level": "supranational",
+        "admin1": null,
+        "country": null,
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "proxy",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.3
+      },
+      "sources": [
+        {
+          "url": "https://weather.com/forecast/regional/news/plains-rain-flood-threat-wettest-may-ranking",
+          "source_name": "The Weather Channel",
+          "published_at": "2015-05-31T23:59:59.000Z",
+          "headline": "plains-rain-flood-threat-wettest-may-ranking",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.weather.gov/lub/events-2015-201505-rain",
+          "source_name": "National Weather Service (Lubbock, TX)",
+          "published_at": "2015-05-31T23:59:59.000Z",
+          "headline": "events-2015-201505-rain",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.weather.gov/tsa/climo_summary_may2015",
+          "source_name": "National Weather Service (Tulsa, OK)",
+          "published_at": "2015-05-31T23:59:59.000Z",
+          "headline": "climo_summary_may2015",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "National Weather Service",
+          "The Weather Channel"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.45,
+        "category": 0.7,
+        "location": 0.3,
+        "summary_grounding": 0.4
+      },
+      "quality_flags": [
+        "needs_dedupe_check",
+        "location_ambiguous",
+        "date_ambiguous",
+        "paywalled_or_partial"
+      ],
+      "dedupe": {
+        "cluster_hint": "May 2015 rainfall/flooding Texas Oklahoma",
+        "fingerprint": "2015-05-weatherclimate-tx-ok-rain-flooding"
+      }
+    },
+    {
+      "event_id": "evt_20150512_nepal_aftershock_kodari",
+      "title": "M7.3 aftershock in Nepal near Kodari causes further casualties and damage",
+      "description": "A magnitude 7.3 earthquake struck Nepal on May 12, 2015 as a major aftershock following the April 2015 Gorkha earthquake sequence. The quake caused additional casualties and damage in Nepal and was felt in surrounding regions including parts of India.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2015-05-12T07:05:19.000Z",
+        "event_end": "2015-05-12T23:59:59.000Z",
+        "reported_at": "2015-05-12T07:05:19.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2015-05-12T07:05:19.000Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Near Kodari (Sindhupalchowk District), Nepal",
+        "jurisdiction_level": "site",
+        "admin1": null,
+        "country": "NP",
+        "capital_used": null,
+        "lat": 27.952,
+        "lon": 85.956,
+        "precision": "neighborhood",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.35
+      },
+      "sources": [
+        {
+          "url": "https://www.usgs.gov/news/featured-story/magnitude-78-earthquake-nepal-aftershocks",
+          "source_name": "USGS",
+          "published_at": "2015-05-12T00:00:00.000Z",
+          "headline": "Magnitude 7.8 Earthquake in Nepal - Aftershocks",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "USGS"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Magnitude 7.8 earthquake in Nepal ... aftershocks",
+            "source_url": "https://www.usgs.gov/news/featured-story/magnitude-78-earthquake-nepal-aftershocks"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.46,
+        "category": 0.8,
+        "location": 0.35,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Nepal earthquake aftershock sequence May 2015",
+        "fingerprint": "fp_2015-05-12_near-kodari_np_geological"
+      }
+    },
+    {
+      "event_id": "2015-05-fires-canada-northern-wildfires-smoke-01",
+      "title": "Early-season wildfires and heavy smoke across northern Canada in late May 2015",
+      "description": "By late May 2015, multiple wildfires in northern Canada were producing extensive smoke plumes visible in satellite imagery, with particularly notable activity in the Northwest Territories. NASA Earth Observatory reporting highlighted widespread hotspots and smoke affecting large areas.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2015-05-29T00:00:00Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "2015-05-29T00:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Canada",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "CA",
+        "capital_used": "Ottawa",
+        "lat": 45.4215,
+        "lon": -75.6972,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://science.nasa.gov/earth/earth-observatory/fires-in-northern-canada-85953/",
+          "source_name": "NASA Earth Observatory",
+          "published_at": "2015-05-29T00:00:00Z",
+          "headline": "Fires in Northern Canada",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://earthobservatory.nasa.gov/images/85972/intense-fires-in-northern-canada",
+          "source_name": "NASA Earth Observatory",
+          "published_at": "2015-05-30T00:00:00Z",
+          "headline": "Intense Fires in Northern Canada",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.nasa.gov/image-article/canadian-wildfires-continue-increase/",
+          "source_name": "NASA",
+          "published_at": "2015-05-31T00:00:00Z",
+          "headline": "Canadian Wildfires Continue to Increase",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NASA",
+          "NASA Earth Observatory"
+        ],
+        "substances": [
+          "smoke"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Satellite images showed smoke streaming from fires in northern Canada.",
+            "source_url": "https://science.nasa.gov/earth/earth-observatory/fires-in-northern-canada-85953/"
+          },
+          {
+            "quote": "Intense fires burned in northern Canada, producing thick smoke plumes.",
+            "source_url": "https://earthobservatory.nasa.gov/images/85972/intense-fires-in-northern-canada"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.63,
+        "category": 0.8,
+        "location": 0.6,
+        "summary_grounding": 0.65
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Canada northern wildfires smoke late May 2015",
+        "fingerprint": "2015-05-fires-canada-ottawa-2015-05-29"
+      }
+    },
+    {
+      "event_id": "20150524-refugio-oilspill-wildlife-sealion-death",
+      "title": "Sea lion rescued after Refugio oil spill dies during rehabilitation",
+      "description": "Following the Refugio oil spill off the Southern California coast in May 2015, oiled wildlife were rescued and transported for rehabilitation. One rescued sea lion later died during treatment at SeaWorld San Diego, indicating acute wildlife impacts tied to the spill response.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2015-05-24T00:00:00.000Z",
+        "time_confidence": 0.45,
+        "event_date_utc": "2015-05-24T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Refugio State Beach area, California, USA",
+        "jurisdiction_level": "site",
+        "admin1": "California",
+        "country": "US",
+        "capital_used": null,
+        "lat": 34.4637,
+        "lon": -120.0708,
+        "precision": "exact",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://abc7news.com/news/739390/",
+          "source_name": "ABC7 News",
+          "published_at": "2015-05-24T00:00:00.000Z",
+          "headline": "news/739390/",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://abc7.com/news/refugio-oil-spill-sea-lion-taken-to-seaworld-dies/738722/",
+          "source_name": "ABC7",
+          "published_at": "2015-05-24T00:00:00.000Z",
+          "headline": "Refugio oil spill: Sea lion taken to SeaWorld dies",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "SeaWorld San Diego"
+        ],
+        "substances": [
+          "oil"
+        ],
+        "ecosystems": [
+          "coastal marine"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.52,
+        "category": 0.7,
+        "location": 0.55,
+        "summary_grounding": 0.4
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "Refugio oil spill wildlife impacts May 2015",
+        "fingerprint": "20150524-refugio-oilspill-wildlife-sealion-death"
+      }
+    },
+    {
+      "event_id": "20150522-western-gulf-alaska-large-whale-ume-start",
+      "title": "NOAA defines May 22, 2015 as start of large whale unusual mortality event in Western Gulf of Alaska",
+      "description": "NOAA documents an unusual increase in large whale mortalities in the Western Gulf of Alaska and defines the event start date as May 22, 2015. The agency opened an investigation and published information and FAQs about the 2015–2016 unusual mortality event.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2015-05-22T00:00:00.000Z",
+        "event_end": null,
+        "reported_at": "2015-05-22T00:00:00.000Z",
+        "time_confidence": 0.75,
+        "event_date_utc": "2015-05-22T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Western Gulf of Alaska, USA",
+        "jurisdiction_level": "state",
+        "admin1": "Alaska",
+        "country": "US",
+        "capital_used": "Juneau",
+        "lat": 58.3019,
+        "lon": -134.4197,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.8
+      },
+      "sources": [
+        {
+          "url": "https://www.fisheries.noaa.gov/national/marine-life-distress/2015-2016-large-whale-unusual-mortality-event-western-gulf-alaska",
+          "source_name": "NOAA Fisheries",
+          "published_at": "2015-05-22T00:00:00.000Z",
+          "headline": "2015–2016 Large Whale Unusual Mortality Event – Western Gulf of Alaska",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.fisheries.noaa.gov/marine-life-distress/frequent-questions-2015-2016-large-whale-unusual-mortality-event-western-gulf",
+          "source_name": "NOAA Fisheries",
+          "published_at": "2015-05-22T00:00:00.000Z",
+          "headline": "Frequent Questions: 2015–2016 Large Whale Unusual Mortality Event – Western Gulf",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA Fisheries"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "marine"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.72,
+        "category": 0.8,
+        "location": 0.85,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "2015-2016 large whale UME Western Gulf of Alaska",
+        "fingerprint": "20150522-western-gulf-alaska-large-whale-ume-start"
+      }
+    },
+    {
+      "event_id": "20150527_us_clean_water_rule_final",
+      "title": "EPA and Army Corps issue final Clean Water Rule defining “Waters of the United States”",
+      "description": "The U.S. Environmental Protection Agency and the U.S. Army Corps of Engineers issued the final Clean Water Rule, revising the definition of “Waters of the United States” for Clean Water Act jurisdiction. Contemporary summaries note the rule was issued in late May 2015 and later published in the Federal Register in June 2015.",
+      "category_primary": "policy_regulation",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "2015-05-27T00:00:00.000Z",
+        "event_end": "2015-05-27T23:59:59.000Z",
+        "reported_at": "2015-05-27T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2015-05-27T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.8
+      },
+      "sources": [
+        {
+          "url": "https://www.faegredrinker.com/en/insights/publications/2015/5/epa-releases-final-waters-of-the-us-rule",
+          "source_name": "Faegre Drinker",
+          "published_at": "2015-05-27T00:00:00.000Z",
+          "headline": "EPA Releases Final Waters of the U.S. Rule",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://19january2017snapshot.epa.gov/cleanwaterrule/final-clean-water-rule_.html",
+          "source_name": "U.S. Environmental Protection Agency (archive snapshot)",
+          "published_at": "2015-05-27T00:00:00.000Z",
+          "headline": "Final Clean Water Rule",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.hklaw.com/en/insights/publications/2015/06/obama-administration-issues-final-rule-on-waters-o",
+          "source_name": "Holland & Knight",
+          "published_at": "2015-06-01T00:00:00.000Z",
+          "headline": "Obama Administration Issues Final Rule on “Waters of the United States”",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Environmental Protection Agency (EPA)",
+          "U.S. Army Corps of Engineers"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "EPA Releases Final Waters of the U.S. Rule",
+            "source_url": "https://www.faegredrinker.com/en/insights/publications/2015/5/epa-releases-final-waters-of-the-us-rule"
+          },
+          {
+            "quote": "Final Clean Water Rule",
+            "source_url": "https://19january2017snapshot.epa.gov/cleanwaterrule/final-clean-water-rule_.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.68,
+        "category": 0.85,
+        "location": 0.8,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "secondary_sources_only",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "clean-water-rule-wotus-2015-05",
+        "fingerprint": "clean-water-rule-wotus|US|2015-05-27"
+      }
+    }
+  ]
+}

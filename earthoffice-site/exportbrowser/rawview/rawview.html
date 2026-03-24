@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ChatGPT Export Browser</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header class="header">
+    <div>
+      <h1>ChatGPT Export Browser</h1>
+      <p class="sub">
+        Load an exported JSON file and browse each message as one line (truncated).
+      </p>
+    </div>
+
+    <div class="controls">
+      <div class="row">
+        <label class="btn">
+          Load JSON…
+          <input id="fileInput" type="file" accept=".json,application/json" hidden />
+		  <input id="augFileInput" type="file" accept=".json,.txt" hidden />	        
+		</label>
+
+        <button id="loadDefaultBtn" class="btn secondary" title="Fetch ./conversations.json (requires local server)">
+          Load ./conversations.json
+        </button>
+
+        <button id="clearBtn" class="btn danger" title="Clear loaded data">
+          Clear
+        </button>
+		<button id="exportAugBtn" class="btn">Export augmentations</button>
+		<button id="clearAugBtn" class="btn btn-secondary">Clear local augmentations</button>
+      </div>
+
+      <div class="row">
+        <label class="field">
+          Search
+          <input id="searchInput" type="text" placeholder="title, text, id…" />
+        </label>
+
+        <label class="field">
+          Role
+          <select id="roleSelect">
+            <option value="all">All</option>
+            <option value="user">user</option>
+            <option value="assistant">assistant</option>
+            <option value="system">system</option>
+            <option value="tool">tool</option>
+          </select>
+        </label>
+
+        <label class="field">
+          Truncate
+          <input id="truncateInput" type="number" min="20" max="1000" step="10" value="140" />
+        </label>
+
+        <label class="checkbox">
+          <input id="showTimes" type="checkbox" checked />
+          Show times
+        </label>
+      </div>
+
+      <div class="row stats">
+        <span id="stats">No data loaded.</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="tableWrap">
+      <table class="table" id="table">
+        <thead>
+          <tr>
+            <th class="col-small">#</th>
+            <th>Conversation</th>
+            <th class="col-small">Role</th>
+            <th class="col-med">Time</th>
+            <th class="col-med">Msg ID</th>
+            <th>Preview</th>
+            <th class="col-med">Tags</th>
+			<th class="col-small">Raw</th>
+          </tr>
+        </thead>
+        <tbody id="tbody">
+          <!-- rows injected -->
+        </tbody>
+      </table>
+    </div>
+
+    <section class="rawPane" id="rawPane" aria-hidden="true">
+      <div class="rawHeader">
+        <strong>Raw message JSON</strong>
+        <button id="closeRawBtn" class="btn secondary">Close</button>
+      </div>
+      <pre id="rawPre"></pre>
+    </section>
+  </main>
+
+  <script src="./rawviewapp.js"></script>
+</body>
+</html>

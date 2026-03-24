@@ -1,0 +1,656 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_1971-09_normalize_2026-01-19T043017713Z",
+    "generated_utc": "2026-01-19T04:30:17.713Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "1971-09",
+    "window": {
+      "start_utc": "1971-09-01T00:00:00.000Z",
+      "end_utc": "1971-09-30T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "19710926_us_fws_mercury_residues_ducks_mobile_bay",
+      "title": "U.S. Fish & Wildlife Service reports mercury residues in sampled ducks, including higher readings from Mobile Bay area",
+      "description": "The U.S. Fish & Wildlife Service released results from testing ducks taken during the 1970–71 hunting season, reporting measurable mercury residues in sampled birds. The release noted that some samples exceeded the FDA’s 0.5 ppm mercury guideline for domestic meats and highlighted higher-residue findings from the Mobile Bay/Mobile County, Alabama area among nationwide sampling locations.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1971-09-26T12:00:00Z",
+        "event_end": "1971-09-26T12:00:00Z",
+        "reported_at": "1971-09-26T12:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1971-09-26T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States (sampling included Mobile Bay / Mobile County, Alabama)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.fws.gov/sites/default/files/documents/historic-news-releases/1971/19710926B.PDF",
+          "source_name": "U.S. Fish & Wildlife Service",
+          "published_at": "1971-09-26T12:00:00Z",
+          "headline": "Historic News Release (1971-09-26)",
+          "byline": null,
+          "accessed_utc": "2026-01-19T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Fish & Wildlife Service",
+          "FDA"
+        ],
+        "substances": [
+          "mercury"
+        ],
+        "ecosystems": [
+          "Mobile Bay"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "results from testing ducks shot during the 1970–71 hunting season",
+            "source_url": "https://www.fws.gov/sites/default/files/documents/historic-news-releases/1971/19710926B.PDF"
+          },
+          {
+            "quote": "exceeded the FDA’s 0.5 ppm mercury limit",
+            "source_url": "https://www.fws.gov/sites/default/files/documents/historic-news-releases/1971/19710926B.PDF"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.75,
+        "location": 0.55,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "paywalled_or_partial"
+      ],
+      "dedupe": {
+        "cluster_hint": "us_fws_mercury_ducks_1971_09",
+        "fingerprint": "us_fws_mercury_ducks_us_1971-09-26"
+      }
+    },
+    {
+      "event_id": "19710910-hurricane-fern-texas",
+      "title": "Hurricane Fern landfall and flooding rains in Texas (Sep 10–13, 1971)",
+      "description": "Hurricane Fern made landfall on the Texas coast around September 10, 1971 and then tracked into South Texas through September 12–13. The storm produced heavy rainfall and major river flooding impacts in parts of South Texas.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1971-09-10T12:00:00Z",
+        "event_end": "1971-09-13T12:00:00Z",
+        "reported_at": "1971-09-10T12:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1971-09-10T12:00:00Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Texas, USA",
+        "jurisdiction_level": "state",
+        "admin1": "Texas",
+        "country": "US",
+        "capital_used": "Austin",
+        "lat": 30.2672,
+        "lon": -97.7431,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.65
+      },
+      "sources": [
+        {
+          "url": "https://www.weather.gov/lch/1971Fern",
+          "source_name": "NOAA National Weather Service",
+          "published_at": "1971-09-10T12:00:00Z",
+          "headline": "1971 Hurricane Fern",
+          "byline": null,
+          "accessed_utc": "2026-01-19T04:27:40.269Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.wpc.ncep.noaa.gov/tropical/rain/fern1971.html",
+          "source_name": "NOAA Weather Prediction Center",
+          "published_at": "1971-09-10T12:00:00Z",
+          "headline": "Tropical Cyclone Rainfall: Fern (1971)",
+          "byline": null,
+          "accessed_utc": "2026-01-19T04:27:40.269Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA National Weather Service",
+          "NOAA Weather Prediction Center"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Hurricane Fern made landfall on the Texas coast ... producing heavy rainfall and flooding.",
+            "source_url": "https://www.weather.gov/lch/1971Fern"
+          },
+          {
+            "quote": "Tropical Cyclone Rainfall ... Fern (1971).",
+            "source_url": "https://www.wpc.ncep.noaa.gov/tropical/rain/fern1971.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.85,
+        "location": 0.65,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "hurricane_fern_1971_texas",
+        "fingerprint": "hurricane-fern-1971-texas-1971-09"
+      }
+    },
+    {
+      "event_id": "19710916-hurricane-edith-louisiana",
+      "title": "Hurricane Edith landfall in southwest Louisiana (Sep 16, 1971)",
+      "description": "Hurricane Edith made U.S. landfall in southwest Louisiana on September 16, 1971. The storm brought hurricane-force winds and coastal impacts to the area.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1971-09-16T12:00:00Z",
+        "event_end": "1971-09-16T12:00:00Z",
+        "reported_at": "1971-09-16T12:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1971-09-16T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Cameron Parish, Louisiana, USA",
+        "jurisdiction_level": "site",
+        "admin1": "Louisiana",
+        "country": "US",
+        "capital_used": null,
+        "lat": 29.7985,
+        "lon": -93.3335,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.weather.gov/lch/1971Edith",
+          "source_name": "NOAA National Weather Service",
+          "published_at": "1971-09-16T12:00:00Z",
+          "headline": "1971 Hurricane Edith",
+          "byline": null,
+          "accessed_utc": "2026-01-19T04:27:40.269Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA National Weather Service"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Hurricane Edith made U.S. landfall in southwest Louisiana on Sept 16, 1971.",
+            "source_url": "https://www.weather.gov/lch/1971Edith"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.85,
+        "location": 0.55,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "hurricane_edith_1971_louisiana",
+        "fingerprint": "hurricane-edith-1971-louisiana-1971-09-16"
+      }
+    },
+    {
+      "event_id": "19710911-floods-southeastern-pennsylvania",
+      "title": "Record floods in southeastern Pennsylvania (Sep 11–13, 1971)",
+      "description": "Heavy intermittent thunderstorms from September 11–13, 1971 produced extreme rainfall and record-breaking flooding in parts of southeastern Pennsylvania. Peak flooding conditions were reported around September 13.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1971-09-11T12:00:00Z",
+        "event_end": "1971-09-13T12:00:00Z",
+        "reported_at": "1971-09-11T12:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1971-09-11T12:00:00Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Pennsylvania, USA",
+        "jurisdiction_level": "state",
+        "admin1": "Pennsylvania",
+        "country": "US",
+        "capital_used": "Harrisburg",
+        "lat": 40.2732,
+        "lon": -76.8867,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.usgs.gov/publications/flood-september-1971-southeastern-pennsylvania",
+          "source_name": "USGS",
+          "published_at": "1971-09-11T12:00:00Z",
+          "headline": "Flood of September 1971 in Southeastern Pennsylvania",
+          "byline": null,
+          "accessed_utc": "2026-01-19T04:27:40.269Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "USGS"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Flood of September 1971 in Southeastern Pennsylvania.",
+            "source_url": "https://www.usgs.gov/publications/flood-september-1971-southeastern-pennsylvania"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.63,
+        "category": 0.8,
+        "location": 0.6,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "flood_sept_1971_se_pennsylvania",
+        "fingerprint": "flood-sept-1971-southeastern-pennsylvania-1971-09"
+      }
+    },
+    {
+      "event_id": "19710930-hurricane-ginger-north-carolina",
+      "title": "Hurricane Ginger landfall in North Carolina (Sep 30, 1971)",
+      "description": "Hurricane Ginger made landfall along the North Carolina coast on September 30, 1971. The storm produced coastal flooding and heavy rainfall impacts in the coastal area.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1971-09-30T12:00:00Z",
+        "event_end": "1971-09-30T12:00:00Z",
+        "reported_at": "1971-09-30T12:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1971-09-30T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "North Carolina, USA",
+        "jurisdiction_level": "state",
+        "admin1": "North Carolina",
+        "country": "US",
+        "capital_used": "Raleigh",
+        "lat": 35.7796,
+        "lon": -78.6382,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.weather.gov/mhx/093071EventReview",
+          "source_name": "NOAA National Weather Service",
+          "published_at": "1971-09-30T12:00:00Z",
+          "headline": "09/30/71 Event Review",
+          "byline": null,
+          "accessed_utc": "2026-01-19T04:27:40.269Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.wpc.ncep.noaa.gov/tropical/rain/ginger1971.html",
+          "source_name": "NOAA Weather Prediction Center",
+          "published_at": "1971-09-30T12:00:00Z",
+          "headline": "Tropical Cyclone Rainfall: Ginger (1971)",
+          "byline": null,
+          "accessed_utc": "2026-01-19T04:27:40.269Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA National Weather Service",
+          "NOAA Weather Prediction Center"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "09/30/71 Event Review.",
+            "source_url": "https://www.weather.gov/mhx/093071EventReview"
+          },
+          {
+            "quote": "Tropical Cyclone Rainfall ... Ginger (1971).",
+            "source_url": "https://www.wpc.ncep.noaa.gov/tropical/rain/ginger1971.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.85,
+        "location": 0.6,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "hurricane_ginger_1971_north_carolina",
+        "fingerprint": "hurricane-ginger-1971-north-carolina-1971-09-30"
+      }
+    },
+    {
+      "event_id": "evt_197109_kilauea_swrz_eruption",
+      "title": "Kīlauea summit-to-Southwest Rift Zone eruption (Sept 1971)",
+      "description": "Kīlauea erupted from its summit area and activity migrated down the Southwest Rift Zone over several days in late September 1971. The event produced fissures, lava fountains, and lava flows and affected some nearby infrastructure.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1971-09-24T12:00:00Z",
+        "event_end": "1971-09-29T12:00:00Z",
+        "reported_at": "2026-01-19T04:28:07.069Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "1971-09-24T12:00:00Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Kīlauea Volcano, Island of Hawaiʻi, USA",
+        "jurisdiction_level": "site",
+        "admin1": "Hawaii",
+        "country": "US",
+        "capital_used": null,
+        "lat": 19.421,
+        "lon": -155.287,
+        "precision": "exact",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.usgs.gov/observatories/hvo/news/volcano-watch-kilaueas-1971-southwest-rift-zone-eruption-a-first-52-years",
+          "source_name": "USGS",
+          "published_at": "2026-01-19T04:28:07.069Z",
+          "headline": "Volcano Watch: Kīlauea’s 1971 Southwest Rift Zone eruption—A first in 52 years",
+          "byline": null,
+          "accessed_utc": "2026-01-19T04:28:07.069Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://pubs.usgs.gov/publication/70011736",
+          "source_name": "USGS Publications",
+          "published_at": "2026-01-19T04:28:07.069Z",
+          "headline": "USGS publication (ID: 70011736)",
+          "byline": null,
+          "accessed_utc": "2026-01-19T04:28:07.069Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "USGS",
+          "Hawaiian Volcano Observatory (HVO)"
+        ],
+        "substances": [
+          "lava"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Kīlauea’s 1971 Southwest Rift Zone eruption",
+            "source_url": "https://www.usgs.gov/observatories/hvo/news/volcano-watch-kilaueas-1971-southwest-rift-zone-eruption-a-first-52-years"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.9,
+        "location": 0.6,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Kilauea 1971 SWRZ eruption",
+        "fingerprint": "kilauea_swrz_1971-09-24_hawaii_us"
+      }
+    },
+    {
+      "event_id": "1971-09-30_usfws_wilderness_hearings_desert_nwr_chassahowitzka_nwr",
+      "title": "U.S. Fish & Wildlife Service schedules public hearing on wilderness proposals for Desert NWR (Nevada) and Chassahowitzka NWR (Florida)",
+      "description": "A U.S. Fish & Wildlife Service/Interior Department news release dated September 30, 1971 announced upcoming public hearings to discuss results of wilderness studies for Desert National Wildlife Range (Nevada) and Chassahowitzka National Wildlife Refuge (Florida). The release describes ecological values of the areas, including desert bighorn sheep at Desert NWR and waterfowl/threatened-species habitat at Chassahowitzka NWR.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "1971-09-30T12:00:00Z",
+        "event_end": "1971-09-30T12:00:00Z",
+        "reported_at": "1971-09-30T00:00:00Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "1971-09-30T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.5
+      },
+      "sources": [
+        {
+          "url": "https://www.fws.gov/press-release/1971-09/public-hearing-scheduled-wilderness-proposals-nevada-florida-september-30",
+          "source_name": "U.S. Fish & Wildlife Service",
+          "published_at": "1971-09-30T00:00:00Z",
+          "headline": "Public Hearing Scheduled on Wilderness Proposals for Nevada, Florida September 30",
+          "byline": null,
+          "accessed_utc": "2026-01-19T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.fws.gov/sites/default/files/documents/historic-news-releases/1971/19710930.PDF",
+          "source_name": "U.S. Fish & Wildlife Service",
+          "published_at": "1971-09-30T00:00:00Z",
+          "headline": "Historic News Release (1971-09-30)",
+          "byline": null,
+          "accessed_utc": "2026-01-19T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Fish & Wildlife Service",
+          "U.S. Department of the Interior"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "Desert ecosystem",
+          "Wetlands"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "news release dated September 30, 1971 announced upcoming public hearings to discuss results of wilderness studies",
+            "source_url": "https://www.fws.gov/press-release/1971-09/public-hearing-scheduled-wilderness-proposals-nevada-florida-september-30"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.75,
+        "location": 0.55,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "usfws_wilderness_proposals_public_hearing_1971-09-30",
+        "fingerprint": "1971-09-30_usfws_wilderness_hearings_united_states"
+      }
+    },
+    {
+      "event_id": "nz-marine-reserves-act-royal-assent-1971-09-20",
+      "title": "New Zealand Marine Reserves Act 1971 receives Royal assent and commences",
+      "description": "New Zealand’s Marine Reserves Act 1971 (Public Act 1971 No 15) received Royal assent and came into force on 20 September 1971. The Act provides a legal framework for establishing and managing marine reserves for the preservation of marine life for scientific study.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "1971-09-20T12:00:00Z",
+        "event_end": "1971-09-20T12:00:00Z",
+        "reported_at": "1971-09-20T12:00:00Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "1971-09-20T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "New Zealand",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "NZ",
+        "capital_used": "Wellington",
+        "lat": -41.28664,
+        "lon": 174.77557,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.85
+      },
+      "sources": [
+        {
+          "url": "https://www.legislation.govt.nz/act/public/1971/0015/latest/dlm397838.html",
+          "source_name": "New Zealand Legislation",
+          "published_at": "1971-09-20T00:00:00Z",
+          "headline": "Marine Reserves Act 1971 (Public Act 1971 No 15)",
+          "byline": null,
+          "accessed_utc": "2026-01-19T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.legislation.govt.nz/act/public/1971/0015/latest/whole.html",
+          "source_name": "New Zealand Legislation",
+          "published_at": "1971-09-20T00:00:00Z",
+          "headline": "Marine Reserves Act 1971 (Public Act 1971 No 15) (full text)",
+          "byline": null,
+          "accessed_utc": "2026-01-19T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [
+          "marine"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "This Act may be cited as the Marine Reserves Act 1971.",
+            "source_url": "https://www.legislation.govt.nz/act/public/1971/0015/latest/whole.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.78,
+        "category": 0.9,
+        "location": 0.85,
+        "summary_grounding": 0.7
+      },
+      "quality_flags": [
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "New Zealand Marine Reserves Act 1971 royal assent / commencement",
+        "fingerprint": "fp:nz_marine_reserves_act_1971-09-20_new_zealand"
+      }
+    }
+  ]
+}

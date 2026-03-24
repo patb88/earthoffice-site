@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Tagging Workbench</title>
+
+  <!-- Reuse your site’s standard look -->
+  <link rel="stylesheet" href="./styles.css" />
+  <link rel="stylesheet" href="./tagging-workbench.css" />
+</head>
+<body>
+  <div class="topbar">
+    <div class="topbarRow">
+      <div class="brand">
+        <h1>Tagging Workbench</h1>
+        <p class="hint">Local-only. Load export.json and (optionally) tags.json. Runs Ollama on localhost.</p>
+      </div>
+      <div class="actions">
+        <button class="btn" id="loadExportBtn">Load export.json</button>
+        <input class="hidden" type="file" id="exportFileInput" accept=".json,application/json" />
+
+        <button class="btn" id="loadTagsBtn">Load tags.json (optional)</button>
+        <input class="hidden" type="file" id="tagsFileInput" accept=".json,application/json" />
+
+        <button class="btn primary" id="runBtn">Run tagging</button>
+        <button class="btn" id="exportBtn">Export tags.json</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="layout workbenchLayout">
+    <!-- Left: config -->
+    <section class="pane" aria-label="Config">
+      <div class="paneHeader">
+        <div>
+          <h2>Config</h2>
+          <p class="sub" id="statusLine">No export loaded.</p>
+        </div>
+      </div>
+      <div class="paneBody">
+        <div class="group">
+          <label for="modelInput">Ollama model name</label>
+          <input id="modelInput" type="text" placeholder="e.g., llama3.2, qwen2.5, gemma3" />
+          <div class="small">Model must exist in Ollama (check via /api/tags).</div>
+        </div>
+
+        <div class="group">
+          <label for="baseUrlInput">Ollama base URL</label>
+          <input id="baseUrlInput" type="text" value="http://localhost:11434" />
+        </div>
+
+        <div class="group">
+          <label>Mode</label>
+          <div class="row">
+            <label class="toggle"><input type="checkbox" id="allowProposalsChk" /> Allow proposals</label>
+            <label class="toggle"><input type="checkbox" id="onlyUntaggedChk" checked /> Only tag untagged turns</label>
+          </div>
+          <div class="small">Closed-vocab always enforced. Proposals are returned separately for review.</div>
+        </div>
+
+        <div class="group">
+          <label for="maxTurnsInput">Max turns to process</label>
+          <input id="maxTurnsInput" type="number" min="1" placeholder="(blank = all)" />
+          <div class="small">Use this to test cheaply on a subset.</div>
+        </div>
+
+        <div class="group">
+          <label>Progress</label>
+          <div class="progressRow">
+            <div class="progressBar"><div class="progressFill" id="progressFill"></div></div>
+            <div class="progressText" id="progressText">Idle</div>
+          </div>
+          <button class="btn" id="cancelBtn" disabled>Cancel</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Middle: conversations -->
+    <section class="pane" aria-label="Conversations">
+      <div class="paneHeader">
+        <div>
+          <h2>Conversations</h2>
+          <p class="sub" id="convMeta">—</p>
+        </div>
+        <input id="convSearch" type="text" placeholder="Filter conversations…" />
+      </div>
+      <div class="paneBody">
+        <div class="list" id="convList"></div>
+      </div>
+    </section>
+
+    <!-- Right: review -->
+    <section class="pane" aria-label="Review">
+      <div class="paneHeader">
+        <div>
+          <h2>Review</h2>
+          <p class="sub" id="reviewMeta">—</p>
+        </div>
+      </div>
+      <div class="paneBody">
+        <div class="small">
+          Each row is a turn. You can edit proposed tag IDs (comma-separated) before exporting.
+        </div>
+        <div id="reviewList" class="reviewList"></div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Simple error modal -->
+  <div class="modalOverlay" id="modalOverlay" aria-hidden="true">
+    <div class="modal">
+      <div class="modalHeader">
+        <strong id="modalTitle">Error</strong>
+        <button class="btn" id="modalCloseBtn">Close</button>
+      </div>
+      <div class="modalBody">
+        <pre id="modalPre"></pre>
+      </div>
+    </div>
+  </div>
+
+  <script src="./tagging-workbench.js"></script>
+</body>
+</html>

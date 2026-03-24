@@ -1,0 +1,751 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_1990-07_normalize_2026-01-17T165423686Z",
+    "generated_utc": "2026-01-17T16:54:23.686Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "1990-07",
+    "window": {
+      "start_utc": "1990-07-01T00:00:00.000Z",
+      "end_utc": "1990-07-31T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "1990-07_us-tx_galveston-bay_apex-shinoussa-oil-spill",
+      "title": "Apex barges oil spill in Houston Ship Channel/Galveston Bay after collision with Shinoussa",
+      "description": "A collision involving the Greek tank vessel Shinoussa and Apex tank barges led to a release of No. 5 fuel oil into the Houston Ship Channel and Galveston Bay area. Reports describe the barge Apex 3417 sinking and leaking much of its cargo, with additional discharge from Apex 3503.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1990-07-28T12:00:00Z",
+        "event_end": "1990-07-30T12:00:00Z",
+        "reported_at": "1990-07-29T00:00:00Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "1990-07-28T12:00:00Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Houston Ship Channel / Galveston Bay (near buoy 58), Texas, USA",
+        "jurisdiction_level": "site",
+        "admin1": "Texas",
+        "country": "US",
+        "capital_used": null,
+        "lat": 29.3013,
+        "lon": -94.7977,
+        "precision": "neighborhood",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.35
+      },
+      "sources": [
+        {
+          "url": "https://incidentnews.noaa.gov/incident/5028",
+          "source_name": "NOAA IncidentNews",
+          "published_at": "1990-07-01T00:00:00Z",
+          "headline": "Incident 5028",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CZIC-td427-p4-o4-1992/html/CZIC-td427-p4-o4-1992.htm",
+          "source_name": "GovInfo",
+          "published_at": "1992-01-01T00:00:00Z",
+          "headline": "CZIC-td427-p4-o4-1992 (HTML)",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.washingtonpost.com/archive/politics/1990/07/29/oil-tanker-2-barges-collide-spilling-fuel-in-texas-channel/5afe86cc-0e56-44e3-9c7a-804c344b8b21/",
+          "source_name": "The Washington Post",
+          "published_at": "1990-07-29T00:00:00Z",
+          "headline": "Oil Tanker, 2 Barges Collide, Spilling Fuel In Texas Channel",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA",
+          "Apex",
+          "Shinoussa"
+        ],
+        "substances": [
+          "No. 5 fuel oil"
+        ],
+        "ecosystems": [
+          "Galveston Bay"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "collision ... spilling fuel in Texas channel",
+            "source_url": "https://www.washingtonpost.com/archive/politics/1990/07/29/oil-tanker-2-barges-collide-spilling-fuel-in-texas-channel/5afe86cc-0e56-44e3-9c7a-804c344b8b21/"
+          },
+          {
+            "quote": "Apex 3417 ... sank",
+            "source_url": "https://incidentnews.noaa.gov/incident/5028"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.52,
+        "category": 0.8,
+        "location": 0.35,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "paywalled_or_partial",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Galveston Bay oil spill July 1990 Apex barges Shinoussa",
+        "fingerprint": "fp_1990-07_apex_shinoussa_galveston_bay"
+      }
+    },
+    {
+      "event_id": "evt_19900703_japan_floods_southwestern_upi",
+      "title": "Seasonal downpours cause flooding and landslides in southwestern Japan",
+      "description": "A period of seasonal heavy rain led to flooding and landslides in parts of southwestern Japan, including Kyushu, with deaths and missing persons reported. The event also caused widespread inundation affecting many homes, according to a July 3, 1990 report.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1990-07-03T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1990-07-03T00:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Japan",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "JP",
+        "capital_used": "Tokyo",
+        "lat": 35.6895,
+        "lon": 139.6917,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.8
+      },
+      "sources": [
+        {
+          "url": "https://www.upi.com/Archives/1990/07/03/Japan-floods/6075646977600/",
+          "source_name": "UPI",
+          "published_at": "1990-07-03T00:00:00Z",
+          "headline": "Japan floods",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "UPI"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "seasonal heavy rains ... led to major flooding and landslides across southwestern Japan",
+            "source_url": "https://www.upi.com/Archives/1990/07/03/Japan-floods/6075646977600/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.7,
+        "location": 0.8,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "japan_floods_1990_07_upi",
+        "fingerprint": "fp_japan_weather_climate_1990-07-03_upi_6075646977600"
+      }
+    },
+    {
+      "event_id": "geological_19900709_southern_sudan_quake_upi",
+      "title": "Magnitude 6.6 earthquake reported near Juba in southern Sudan (now South Sudan)",
+      "description": "A strong earthquake (reported as magnitude 6.6) struck in southern Sudan near Juba. Contemporary reporting said there were no immediate reports of casualties or damage at the time.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1990-07-09T15:11:20Z",
+        "event_end": "1990-07-09T15:11:20Z",
+        "reported_at": "1990-07-09T00:00:00Z",
+        "time_confidence": 0.8,
+        "event_date_utc": "1990-07-09T15:11:20Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Juba area, southern Sudan (now South Sudan)",
+        "jurisdiction_level": "city",
+        "admin1": null,
+        "country": null,
+        "capital_used": null,
+        "lat": 4.8594,
+        "lon": 31.5713,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.upi.com/Archives/1990/07/09/Strong-quake-hits-southern-Sudan/6697647496000/",
+          "source_name": "UPI",
+          "published_at": "1990-07-09T00:00:00Z",
+          "headline": "Strong quake hits southern Sudan",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://database.earth/earthquakes/event/usp0004bkr",
+          "source_name": "database.earth",
+          "published_at": "1990-07-09T00:00:00Z",
+          "headline": "Earthquake event usp0004bkr",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "UPI"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Strong quake hits southern Sudan",
+            "source_url": "https://www.upi.com/Archives/1990/07/09/Strong-quake-hits-southern-Sudan/6697647496000/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.52,
+        "category": 0.85,
+        "location": 0.55,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "1990-07-09_southern_sudan_juba_m6.6",
+        "fingerprint": "geological|m6.6_quake_near_juba|juba_area|1990-07-09"
+      }
+    },
+    {
+      "event_id": "geological_19900716_luzon_philippines_eq_usgs",
+      "title": "1990 Luzon earthquake caused surface rupture and widespread damage in the Philippines",
+      "description": "A major earthquake struck Luzon, Philippines on 16 July 1990, producing a long surface rupture associated with the Philippine Fault/Digdig Fault system. Reports describe extensive damage and secondary ground effects including landslides and liquefaction across affected areas.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1990-07-16T07:26:36Z",
+        "event_end": "1990-07-16T07:26:36Z",
+        "reported_at": "1997-01-01T00:00:00Z",
+        "time_confidence": 0.85,
+        "event_date_utc": "1990-07-16T07:26:36Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Luzon, Philippines (impacts reported in Baguio and surrounding areas)",
+        "jurisdiction_level": "state",
+        "admin1": "Luzon",
+        "country": "PH",
+        "capital_used": "Manila",
+        "lat": 14.5995,
+        "lon": 120.9842,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://pubs.usgs.gov/fs/1997/fs113-97/",
+          "source_name": "USGS",
+          "published_at": "1997-01-01T00:00:00Z",
+          "headline": "The Magnitude 7.7 Luzon, Philippines Earthquake of July 16, 1990",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://earthquake.phivolcs.dost.gov.ph/1990LuzonEQ_Monograph/pp001/pp001_003.html",
+          "source_name": "PHIVOLCS",
+          "published_at": "1990-07-16T00:00:00Z",
+          "headline": "1990 Luzon Earthquake Monograph (excerpt)",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://bulletin.nzsee.org.nz/index.php/bnzsee/article/view/738",
+          "source_name": "Bulletin of the New Zealand Society for Earthquake Engineering",
+          "published_at": "1990-01-01T00:00:00Z",
+          "headline": "Article record (BNZSEE)",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "USGS",
+          "PHIVOLCS"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "The Magnitude 7.7 Luzon, Philippines Earthquake of July 16, 1990",
+            "source_url": "https://pubs.usgs.gov/fs/1997/fs113-97/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.72,
+        "category": 0.9,
+        "location": 0.6,
+        "summary_grounding": 0.7
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "1990-07-16_luzon_philippines_eq",
+        "fingerprint": "geological|luzon_earthquake|manila_proxy|1990-07-16"
+      }
+    },
+    {
+      "event_id": "1990-07_fires_tok-alaska_upi_19900705",
+      "title": "Wildfire smoke threatens Tok, Alaska; evacuations and Alaska Highway closures reported",
+      "description": "A wildfire burning near Tok, Alaska reportedly filled the town with smoke. The report said evacuations occurred, including at a Coast Guard communications site, and that sections of the Alaska Highway were closed due to smoke and fire conditions.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1990-07-05T00:00:00Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "1990-07-05T00:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Tok, Alaska, United States",
+        "jurisdiction_level": "city",
+        "admin1": "Alaska",
+        "country": "US",
+        "capital_used": null,
+        "lat": 63.3362,
+        "lon": -142.9857,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.75
+      },
+      "sources": [
+        {
+          "url": "https://www.upi.com/Archives/1990/07/05/Wildfire-threatens-town/6624647150400/",
+          "source_name": "UPI",
+          "published_at": "1990-07-05T00:00:00Z",
+          "headline": "Wildfire threatens town",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Coast Guard"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "boreal forest"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "A wildfire burning near Tok filled the town with smoke",
+            "source_url": "https://www.upi.com/Archives/1990/07/05/Wildfire-threatens-town/6624647150400/"
+          },
+          {
+            "quote": "prompting evacuations... and highway closures",
+            "source_url": "https://www.upi.com/Archives/1990/07/05/Wildfire-threatens-town/6624647150400/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.85,
+        "location": 0.75,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "1990 Alaska wildfire impacts (Tok)",
+        "fingerprint": "e1a29b9b4c05f82f0c0c9e0a9a6cc8b9"
+      }
+    },
+    {
+      "event_id": "1990-07_fires_southern-france-var_upi_19900707",
+      "title": "Wind-driven forest and brush fires prompt tourist evacuations in southern France (Var)",
+      "description": "Wind-driven forest and brush fires in southern France reportedly burned large areas and damaged property. The report said hundreds of vacationers were evacuated from homes and campsites in parts of the Var region near the Mediterranean coast.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1990-07-07T00:00:00Z",
+        "time_confidence": 0.65,
+        "event_date_utc": "1990-07-07T00:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Toulon area (Var), France",
+        "jurisdiction_level": "city",
+        "admin1": null,
+        "country": "FR",
+        "capital_used": null,
+        "lat": 43.1242,
+        "lon": 5.928,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.upi.com/amp/Archives/1990/07/07/Hundreds-of-tourists-evacuated-in-southern-France-forest-fires/3562647323200/",
+          "source_name": "UPI",
+          "published_at": "1990-07-07T00:00:00Z",
+          "headline": "Hundreds of tourists evacuated in southern France forest fires",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [
+          "Mediterranean forest",
+          "scrubland"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Hundreds of tourists evacuated in southern France forest fires",
+            "source_url": "https://www.upi.com/amp/Archives/1990/07/07/Hundreds-of-tourists-evacuated-in-southern-France-forest-fires/3562647323200/"
+          },
+          {
+            "quote": "wind-whipped forest and brush fires",
+            "source_url": "https://www.upi.com/amp/Archives/1990/07/07/Hundreds-of-tourists-evacuated-in-southern-France-forest-fires/3562647323200/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.56,
+        "category": 0.85,
+        "location": 0.55,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "1990 Var (southern France) tourist wildfire evacuations",
+        "fingerprint": "b0b7df39f6a5e0c5d6ad5f7db2db1d13"
+      }
+    },
+    {
+      "event_id": "1990-07_fires_interior-alaska_tetlin_upi_19900723",
+      "title": "Interior Alaska wildfires reported to exceed a million acres; smoke warnings and evacuations including Tetlin",
+      "description": "Widespread wildfires in Interior Alaska were reported to have burned over a million acres, producing heavy smoke across multiple areas. The report said health warnings and travel advisories were issued, roads were intermittently affected, and evacuations included the village of Tetlin.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1990-07-23T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1990-07-23T00:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Tetlin, Alaska, United States (Interior Alaska)",
+        "jurisdiction_level": "city",
+        "admin1": "Alaska",
+        "country": "US",
+        "capital_used": null,
+        "lat": 63.1375,
+        "lon": -142.5194,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.45
+      },
+      "sources": [
+        {
+          "url": "https://www.upi.com/Archives/1990/07/23/Wildfires-scorch-million-acres/8754648705600/",
+          "source_name": "UPI",
+          "published_at": "1990-07-23T00:00:00Z",
+          "headline": "Wildfires scorch million acres",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [
+          "wildfire smoke"
+        ],
+        "ecosystems": [
+          "boreal forest"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Wildfires scorch million acres",
+            "source_url": "https://www.upi.com/Archives/1990/07/23/Wildfires-scorch-million-acres/8754648705600/"
+          },
+          {
+            "quote": "smoke... health warnings... evacuations... the village of Tetlin",
+            "source_url": "https://www.upi.com/Archives/1990/07/23/Wildfires-scorch-million-acres/8754648705600/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.5,
+        "category": 0.85,
+        "location": 0.45,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "1990 Interior Alaska wildfire season impacts",
+        "fingerprint": "0c6d6f3c7f4e0d2a8f2f8f4b2f1f3b4d"
+      }
+    },
+    {
+      "event_id": "19900719_nature_coral_bleaching_caribbean",
+      "title": "Nature correspondence highlights coral reef bleaching in the Caribbean",
+      "description": "A correspondence item published in Nature discussed coral reef bleaching affecting Caribbean reef regions, highlighting impacts to reef ecosystems and biodiversity.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1990-07-19T12:00:00Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "1990-07-19T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Caribbean",
+        "jurisdiction_level": "supranational",
+        "admin1": null,
+        "country": null,
+        "capital_used": null,
+        "lat": 18.2208,
+        "lon": -66.5901,
+        "precision": "proxy",
+        "location_basis": "institution_proxy",
+        "location_confidence": 0.25
+      },
+      "sources": [
+        {
+          "url": "https://www.nature.com/articles/346225a0",
+          "source_name": "Nature",
+          "published_at": "1990-07-19T00:00:00Z",
+          "headline": "346, 225 (1990)",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": "https://www.nature.com/articles/346225a0"
+        },
+        {
+          "url": "https://doi.org/10.1038/346225a0",
+          "source_name": "DOI",
+          "published_at": "1990-07-19T00:00:00Z",
+          "headline": "10.1038/346225a0",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": "https://doi.org/10.1038/346225a0"
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Nature"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "coral reefs"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "coral reef bleaching",
+            "source_url": "https://www.nature.com/articles/346225a0"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.42,
+        "category": 0.7,
+        "location": 0.25,
+        "summary_grounding": 0.35
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "paywalled_or_partial",
+        "secondary_sources_only",
+        "low_confidence_location"
+      ],
+      "dedupe": {
+        "cluster_hint": "nature-346225a0-coral-bleaching-caribbean",
+        "fingerprint": "fp_19900719_nature_346225a0_caribbean_coral_bleaching"
+      }
+    },
+    {
+      "event_id": "19900720_us_mo_times_beach_epa_syntex_consent_decree",
+      "title": "EPA announces settlement with Syntex for Times Beach dioxin Superfund cleanup",
+      "description": "EPA announced a settlement (consent decree) among the United States, the State of Missouri, and Syntex entities to implement EPA’s cleanup plan for Times Beach and other dioxin-contaminated sites in eastern Missouri. The settlement described implementation of EPA’s prior decision and included incineration of contaminated soils at Times Beach.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "1990-07-20T12:00:00Z",
+        "event_end": "1990-07-20T12:00:00Z",
+        "reported_at": "1990-07-20T12:00:00Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "1990-07-20T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Jefferson City, Missouri, USA (proxy for eastern Missouri dioxin sites incl. Times Beach)",
+        "jurisdiction_level": "state",
+        "admin1": "Missouri",
+        "country": "US",
+        "capital_used": "Jefferson City",
+        "lat": 38.576701,
+        "lon": -92.173516,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.epa.gov/archive/epa/aboutepa/times-beach-settlement-reached.html",
+          "source_name": "U.S. Environmental Protection Agency (archive)",
+          "published_at": "1990-07-20T12:00:00Z",
+          "headline": "Times Beach settlement reached",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Environmental Protection Agency (EPA)",
+          "State of Missouri",
+          "Syntex"
+        ],
+        "substances": [
+          "dioxin"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "EPA announced that a settlement (consent decree) was reached among the United States, the State of Missouri, and Syntex entities",
+            "source_url": "https://www.epa.gov/archive/epa/aboutepa/times-beach-settlement-reached.html"
+          },
+          {
+            "quote": "calling for incineration of contaminated soils at Times Beach",
+            "source_url": "https://www.epa.gov/archive/epa/aboutepa/times-beach-settlement-reached.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.8,
+        "location": 0.55,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "times_beach_dioxin_settlement_syntex",
+        "fingerprint": "b2b3f4d7e06fce1c4c6b5e36ce3c7a2d"
+      }
+    }
+  ]
+}

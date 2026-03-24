@@ -1,0 +1,652 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_2018-01_normalize_2026-01-16T062111524Z",
+    "generated_utc": "2026-01-16T06:21:11.524Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "2018-01",
+    "window": {
+      "start_utc": "2018-01-01T00:00:00.000Z",
+      "end_utc": "2018-01-31T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "evt_201801_sanchi_east_china_sea",
+      "title": "MV Sanchi collision, fire, and sinking causes condensate and bunker fuel release in East China Sea",
+      "description": "The Iranian tanker MV Sanchi collided with another vessel on January 6, 2018 in the East China Sea, burned for days, and later sank. Reports said the ship was carrying large quantities of condensate, raising concerns about marine pollution and impacts on fisheries and seafood safety in the region.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2018-01-06T12:00:00.000Z",
+        "event_end": "2018-01-16T23:59:59.000Z",
+        "reported_at": "2018-01-14T00:00:00Z",
+        "time_confidence": 0.65,
+        "event_date_utc": "2018-01-06T12:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "East China Sea (off Shanghai, China)",
+        "jurisdiction_level": "site",
+        "admin1": null,
+        "country": "CN",
+        "capital_used": null,
+        "lat": 31.2304,
+        "lon": 121.4737,
+        "precision": "proxy",
+        "location_basis": "institution_proxy",
+        "location_confidence": 0.35
+      },
+      "sources": [
+        {
+          "url": "https://incidentnews.noaa.gov/incident/9646",
+          "source_name": "NOAA IncidentNews",
+          "published_at": "2018-01-01T00:00:00Z",
+          "headline": "IncidentNews record: Sanchi tanker incident",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.theguardian.com/world/2018/jan/18/oil-from-sunken-iranian-tanker-spreads-over-100-sq-km-of-east-china-sea",
+          "source_name": "The Guardian",
+          "published_at": "2018-01-18T00:00:00Z",
+          "headline": "Oil from sunken Iranian tanker spreads over 100 sq km of East China Sea",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.aljazeera.com/news/2018/1/14/burning-iranian-oil-tanker-sinks-29-crew-feared-dead",
+          "source_name": "Al Jazeera",
+          "published_at": "2018-01-14T00:00:00Z",
+          "headline": "Burning Iranian oil tanker sinks, 29 crew feared dead",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA"
+        ],
+        "substances": [
+          "condensate",
+          "bunker fuel"
+        ],
+        "ecosystems": [
+          "East China Sea"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Burning Iranian oil tanker sinks... in the East China Sea",
+            "source_url": "https://www.aljazeera.com/news/2018/1/14/burning-iranian-oil-tanker-sinks-29-crew-feared-dead"
+          },
+          {
+            "quote": "Oil from sunken Iranian tanker spreads... East China Sea",
+            "source_url": "https://www.theguardian.com/world/2018/jan/18/oil-from-sunken-iranian-tanker-spreads-over-100-sq-km-of-east-china-sea"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.8,
+        "location": 0.35,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "MV Sanchi East China Sea oil/condensate spill Jan 2018",
+        "fingerprint": "fp_sanchi_east_china_sea_201801"
+      }
+    },
+    {
+      "event_id": "evt_201801_gate_city_big_sandy_river",
+      "title": "Towboat Gate City sinks in Big Sandy River, prompting Kenova water intake shutdown",
+      "description": "In January 2018, the towboat Gate City sank in the Big Sandy River along the West Virginia–Kentucky border. Associated Press reports said oil and other pollutants were released and that Kenova, West Virginia temporarily shut down its drinking water intake.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2018-01-01T00:00:00Z",
+        "time_confidence": 0.3,
+        "event_date_utc": null,
+        "event_date_precision": "month"
+      },
+      "location": {
+        "name": "Big Sandy River near Kenova, West Virginia, USA",
+        "jurisdiction_level": "city",
+        "admin1": "West Virginia",
+        "country": "US",
+        "capital_used": null,
+        "lat": 38.3987,
+        "lon": -82.5785,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.5
+      },
+      "sources": [
+        {
+          "url": "https://apnews.com/article/11281c4711ffccbf3734dcecfcf84f24",
+          "source_name": "AP News",
+          "published_at": "2018-01-01T00:00:00Z",
+          "headline": "Towboat sinks; Kenova water intake shut down after oil/pollutants release (AP report)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://apnews.com/article/683a1d827e9656074ef0d621cb7f6057",
+          "source_name": "AP News",
+          "published_at": "2018-01-01T00:00:00Z",
+          "headline": "Follow-up AP report on Gate City sinking and cleanup/water impacts",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "AP News",
+          "City of Kenova"
+        ],
+        "substances": [
+          "oil"
+        ],
+        "ecosystems": [
+          "Big Sandy River"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.42,
+        "category": 0.75,
+        "location": 0.5,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Towboat Gate City sinks Big Sandy River Kenova Jan 2018",
+        "fingerprint": "fp_gate_city_big_sandy_201801"
+      }
+    },
+    {
+      "event_id": "2018-01_weather_climate_boston_blizzard_coastal_flooding_01",
+      "title": "Jan 2018 New England blizzard causes coastal flooding and record Boston storm surge",
+      "description": "On January 4, 2018, a powerful blizzard affected New England and produced significant coastal flooding along the Massachusetts coast, especially around Boston. USGS reported a peak storm surge of about 3.0 feet at Boston coinciding with high tide, described as the highest since records began at the Boston tide station in 1921.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2018-01-04T00:00:00.000Z",
+        "event_end": "2018-01-04T23:59:59.000Z",
+        "reported_at": "2018-01-01T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2018-01-04T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Boston, Massachusetts, USA",
+        "jurisdiction_level": "city",
+        "admin1": "Massachusetts",
+        "country": "US",
+        "capital_used": null,
+        "lat": 42.3601,
+        "lon": -71.0589,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.usgs.gov/news/blizzard-january-2018-new-england",
+          "source_name": "USGS",
+          "published_at": "2018-01-01T00:00:00.000Z",
+          "headline": "Blizzard of January 2018 in New England",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "USGS"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "...peak storm surge of ~3.0 feet coinciding with high tide at Boston...",
+            "source_url": "https://www.usgs.gov/news/blizzard-january-2018-new-england"
+          },
+          {
+            "quote": "...highest since records began at the Boston tide station in 1921.",
+            "source_url": "https://www.usgs.gov/news/blizzard-january-2018-new-england"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.8,
+        "location": 0.6,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "2018-01-04_new_england_blizzard_boston_surge",
+        "fingerprint": "2018-01-04|boston-ma-us|new-england-blizzard-coastal-flooding"
+      }
+    },
+    {
+      "event_id": "20180123_gulf-of-alaska_eq_m79_tsunami-alerts",
+      "title": "M7.9 Gulf of Alaska earthquake prompts tsunami alerts; minor tsunami observed",
+      "description": "A magnitude 7.9 earthquake occurred in the Gulf of Alaska on January 23, 2018, prompting tsunami warning/watch alerts. USGS reporting noted a small tsunami surge observed in Kodiak and smaller water-level changes elsewhere.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2018-01-23T09:32:00.000Z",
+        "event_end": "2018-01-23T23:59:59.000Z",
+        "reported_at": "2018-01-23T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2018-01-23T09:32:00.000Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Gulf of Alaska, USA",
+        "jurisdiction_level": "site",
+        "admin1": "Alaska",
+        "country": "US",
+        "capital_used": null,
+        "lat": 58.3019,
+        "lon": -134.4197,
+        "precision": "proxy",
+        "location_basis": "manual_override",
+        "location_confidence": 0.3
+      },
+      "sources": [
+        {
+          "url": "https://www.usgs.gov/news/featured-story/magnitude-79-earthquake-gulf-alaska",
+          "source_name": "USGS",
+          "published_at": "2018-01-23T00:00:00.000Z",
+          "headline": "Magnitude 7.9 Earthquake in Gulf of Alaska",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.usgs.gov/news/featured-story/january-23-2018-m79-gulf-alaska-earthquake-and-tsunami",
+          "source_name": "USGS",
+          "published_at": "2018-01-23T00:00:00.000Z",
+          "headline": "January 23, 2018 M7.9 Gulf of Alaska Earthquake and Tsunami",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "USGS"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "A magnitude 7.9 earthquake struck the Gulf of Alaska on January 23, 2018.",
+            "source_url": "https://www.usgs.gov/news/featured-story/magnitude-79-earthquake-gulf-alaska"
+          },
+          {
+            "quote": "A small tsunami surge was observed in Kodiak.",
+            "source_url": "https://www.usgs.gov/news/featured-story/january-23-2018-m79-gulf-alaska-earthquake-and-tsunami"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.8,
+        "location": 0.3,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "2018-01-23 Gulf of Alaska M7.9 earthquake tsunami",
+        "fingerprint": "fp_20180123_gulf-of-alaska_eq_m79_tsunami-alerts"
+      }
+    },
+    {
+      "event_id": "2018-01_ecosystem_biodiversity_gbr_heat_stress_noaa_crw",
+      "title": "NOAA Coral Reef Watch flags renewed heat stress over parts of the Great Barrier Reef",
+      "description": "NOAA Coral Reef Watch materials indicated elevated thermal stress conditions affecting parts of the Great Barrier Reef during January 2018, implying increased coral bleaching risk. The draft does not provide a separate January-2018-specific bulletin, so exact timing and extent are treated as uncertain.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2018-01-31T23:59:59.000Z",
+        "time_confidence": 0.3,
+        "event_date_utc": null,
+        "event_date_precision": "month"
+      },
+      "location": {
+        "name": "Great Barrier Reef (Queensland, Australia)",
+        "jurisdiction_level": "state",
+        "admin1": "Queensland",
+        "country": "AU",
+        "capital_used": "Brisbane",
+        "lat": -27.4698,
+        "lon": 153.0251,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://coralreefwatch.noaa.gov/satellite/analyses_guidance/global_coral_bleaching_2014-17_status.php",
+          "source_name": "NOAA Coral Reef Watch",
+          "published_at": "2018-01-31T23:59:59.000Z",
+          "headline": "Global Coral Bleaching 2014-17 Status",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA Coral Reef Watch"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "coral reefs",
+          "Great Barrier Reef"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.42,
+        "category": 0.7,
+        "location": 0.6,
+        "summary_grounding": 0.35
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "low_confidence_location",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "NOAA Coral Reef Watch heat stress / Great Barrier Reef / Jan 2018",
+        "fingerprint": "ecobio|noaa-crw-heat-stress|queensland-au|2018-01"
+      }
+    },
+    {
+      "event_id": "2018-01_ecosystem_biodiversity_sanchi_spill_seafood_ecosystem_risk",
+      "title": "Concerns raised about marine ecosystem and seafood impacts after Sanchi tanker spill",
+      "description": "After the Sanchi tanker sank in the East China Sea, reporting described the spread of oil/condensate and raised concerns about potential harm to marine life and possible contamination implications for seafood. The draft frames this as risk/concern rather than confirmed ecosystem or food-chain contamination impacts.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "2018-01-14T00:00:00.000Z",
+        "event_end": "2018-01-18T23:59:59.000Z",
+        "reported_at": "2018-01-18T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2018-01-18T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "East China Sea (regional waters)",
+        "jurisdiction_level": "supranational",
+        "admin1": null,
+        "country": null,
+        "capital_used": "Beijing",
+        "lat": 39.9042,
+        "lon": 116.4074,
+        "precision": "proxy",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.3
+      },
+      "sources": [
+        {
+          "url": "https://www.theguardian.com/world/2018/jan/18/oil-from-sunken-iranian-tanker-spreads-over-100-sq-km-of-east-china-sea",
+          "source_name": "The Guardian",
+          "published_at": "2018-01-18T00:00:00.000Z",
+          "headline": "Oil from sunken Iranian tanker spreads over 100 sq km of East China Sea",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://incidentnews.noaa.gov/incident/9646",
+          "source_name": "NOAA IncidentNews",
+          "published_at": "2018-01-18T00:00:00.000Z",
+          "headline": "Incident 9646",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA"
+        ],
+        "substances": [
+          "oil",
+          "condensate"
+        ],
+        "ecosystems": [
+          "marine ecosystem",
+          "East China Sea"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.6,
+        "location": 0.3,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "Sanchi tanker spill / East China Sea / Jan 2018",
+        "fingerprint": "ecobio|sanchi-spill|east-china-sea|2018-01-18"
+      }
+    },
+    {
+      "event_id": "policy_regulation__uk_microbeads_manufacture_ban_effective__2018-01-09",
+      "title": "UK microbeads manufacture ban takes effect for rinse-off cosmetics",
+      "description": "The UK government brought into force a ban on the manufacture of rinse-off cosmetic and personal care products containing microbeads. The measure was presented as a step to reduce microplastic pollution entering the marine environment.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "2018-01-09T00:00:00.000Z",
+        "event_end": "2018-01-09T23:59:59.000Z",
+        "reported_at": "2018-01-09T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2018-01-09T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United Kingdom",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "GB",
+        "capital_used": "London",
+        "lat": 51.5074,
+        "lon": -0.1278,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.85
+      },
+      "sources": [
+        {
+          "url": "https://www.gov.uk/government/news/world-leading-microbeads-ban-takes-effect",
+          "source_name": "GOV.UK",
+          "published_at": "2018-01-09T00:00:00.000Z",
+          "headline": "World-leading microbeads ban takes effect",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "UK government"
+        ],
+        "substances": [
+          "microbeads",
+          "microplastics"
+        ],
+        "ecosystems": [
+          "marine environments"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "The manufacture of rinse-off personal care products containing microbeads has been banned.",
+            "source_url": "https://www.gov.uk/government/news/world-leading-microbeads-ban-takes-effect"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.78,
+        "category": 0.85,
+        "location": 0.85,
+        "summary_grounding": 0.75
+      },
+      "quality_flags": [
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "UK microbeads manufacture ban effective Jan 2018",
+        "fingerprint": "policy_regulation|uk_microbeads_manufacture_ban|GB|2018-01-09"
+      }
+    },
+    {
+      "event_id": "policy_regulation__us_offshore_drilling_draft_program_announcement__2018-01-05",
+      "title": "US Interior announces draft plan to expand offshore oil and gas leasing (2019–2024)",
+      "description": "The U.S. Interior Department announced a draft proposal for the 2019–2024 offshore oil and gas leasing program that would expand the areas available for potential leasing. The proposal was subject to public comment and further regulatory steps.",
+      "category_primary": "policy_regulation",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2018-01-05T00:00:00.000Z",
+        "event_end": "2018-01-05T23:59:59.000Z",
+        "reported_at": "2018-01-05T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2018-01-05T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.axios.com/2018/01/05/trump-launches-push-for-more-offshore-drilling-1515111049",
+          "source_name": "Axios",
+          "published_at": "2018-01-05T00:00:00.000Z",
+          "headline": "Trump launches push for more offshore drilling",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Department of the Interior"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "Atlantic Ocean",
+          "Pacific Ocean",
+          "Arctic waters"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "The Trump administration rolled out a draft plan to open nearly all U.S. waters to drilling.",
+            "source_url": "https://www.axios.com/2018/01/05/trump-launches-push-for-more-offshore-drilling-1515111049"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.7,
+        "location": 0.6,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "needs_dedupe_check",
+        "secondary_sources_only",
+        "paywalled_or_partial"
+      ],
+      "dedupe": {
+        "cluster_hint": "US draft offshore drilling program 2019-2024 announced Jan 2018",
+        "fingerprint": "policy_regulation|us_offshore_drilling_draft_program|US|2018-01-05"
+      }
+    }
+  ]
+}

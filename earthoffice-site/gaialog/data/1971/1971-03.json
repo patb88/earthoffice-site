@@ -1,0 +1,303 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_1971-03_normalize_2026-01-19T040813324Z",
+    "generated_utc": "2026-01-19T04:08:13.324Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "1971-03",
+    "window": {
+      "start_utc": "1971-03-01T00:00:00.000Z",
+      "end_utc": "1971-03-31T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "evt_19710312_wafra_sunk_cape_agulhas",
+      "title": "Tanker Wafra deliberately sunk offshore after oil leak near Cape Agulhas, South Africa",
+      "description": "After the tanker Wafra grounded and leaked crude oil near Cape Agulhas in early 1971, it was refloated and towed offshore. It was deliberately sunk on March 12, 1971 as a response action intended to limit further coastal oil contamination.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1971-03-12T12:00:00Z",
+        "event_end": "1971-03-12T12:00:00Z",
+        "reported_at": "2026-01-19T04:05:15.311Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1971-03-12T12:00:00Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Off Cape Agulhas, South Africa",
+        "jurisdiction_level": "site",
+        "admin1": null,
+        "country": "ZA",
+        "capital_used": null,
+        "lat": -34.8333,
+        "lon": 20,
+        "precision": "proxy",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.5
+      },
+      "sources": [
+        {
+          "url": "https://incidentnews.noaa.gov/incident/6213",
+          "source_name": "NOAA IncidentNews",
+          "published_at": "2026-01-19T04:05:15.311Z",
+          "headline": "Incident 6213",
+          "byline": null,
+          "accessed_utc": "2026-01-19T04:05:15.311Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA"
+        ],
+        "substances": [
+          "crude oil"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "incident/6213",
+            "source_url": "https://incidentnews.noaa.gov/incident/6213"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.7,
+        "location": 0.5,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "wafra_oil_spill_south_africa_1971",
+        "fingerprint": "fp_wafra_off_cape_agulhas_1971-03-12"
+      }
+    },
+    {
+      "event_id": "evt_197103_canada_quebec_blizzard_01",
+      "title": "Early March 1971 blizzard impacts Québec and eastern Canada",
+      "description": "A rapidly intensifying coastal low produced extreme snowfall and blizzard conditions across parts of Québec and eastern Canada, including Montreal. Reports describe widespread disruption, power outages, and fatalities in Québec during early March 1971.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1971-03-01T00:00:00.000Z",
+        "time_confidence": 0.35,
+        "event_date_utc": "1971-03-04T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Québec, Canada",
+        "jurisdiction_level": "state",
+        "admin1": "Québec",
+        "country": "CA",
+        "capital_used": "Quebec City",
+        "lat": 46.8139,
+        "lon": -71.208,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://bilan.usherbrooke.ca/bilan/pages/evenements/2294.html",
+          "source_name": "Bilan du siècle (Université de Sherbrooke)",
+          "published_at": "1971-03-01T00:00:00.000Z",
+          "headline": "Eastern Canadian blizzard (“Storm of the Century” in Québec)",
+          "byline": null,
+          "accessed_utc": "2026-01-19T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Université de Sherbrooke"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.8,
+        "location": 0.7,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "1971-03 Quebec blizzard",
+        "fingerprint": "fp_197103_quebec_blizzard"
+      }
+    },
+    {
+      "event_id": "evt_197103_qld_flooding_01",
+      "title": "March 1971 river flooding across Queensland, Australia",
+      "description": "Multiple Queensland river basins experienced flooding during March 1971, including major flooding across several Gulf of Carpentaria-draining river systems and extensive flooding in inland Channel Country rivers. The Bureau of Meteorology summary notes the Cloncurry River reached its highest recorded flood during these events.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1971-03-01T00:00:00.000Z",
+        "time_confidence": 0.4,
+        "event_date_utc": null,
+        "event_date_precision": "month"
+      },
+      "location": {
+        "name": "Queensland, Australia",
+        "jurisdiction_level": "state",
+        "admin1": "Queensland",
+        "country": "AU",
+        "capital_used": "Brisbane",
+        "lat": -27.4698,
+        "lon": 153.0251,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.75
+      },
+      "sources": [
+        {
+          "url": "https://www.bom.gov.au/qld/flood/fld_history/floodsum_1970.shtml",
+          "source_name": "Australian Bureau of Meteorology",
+          "published_at": "1971-03-01T00:00:00.000Z",
+          "headline": "Queensland flood history summary (1970–1979)",
+          "byline": null,
+          "accessed_utc": "2026-01-19T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Australian Bureau of Meteorology"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.85,
+        "location": 0.75,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "1971-03 Queensland flooding",
+        "fingerprint": "fp_197103_qld_flooding"
+      }
+    },
+    {
+      "event_id": "evt_197103_us_epa_tde_cancellation_notices",
+      "title": "EPA issued cancellation notices for pesticide products containing TDE",
+      "description": "An EPA regulatory-history page states that in March 1971 the agency issued cancellation notices covering all registrations of pesticide products containing TDE. The action is described as part of early federal pesticide regulatory efforts following EPA’s creation.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1975-01-01T00:00:00Z",
+        "time_confidence": 0.55,
+        "event_date_utc": null,
+        "event_date_precision": "month"
+      },
+      "location": {
+        "name": "United States",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.8
+      },
+      "sources": [
+        {
+          "url": "https://www.epa.gov/archive/epa/aboutepa/ddt-regulatory-history-brief-survey-1975.html",
+          "source_name": "U.S. Environmental Protection Agency (archive)",
+          "published_at": "1975-01-01T00:00:00Z",
+          "headline": "DDT Regulatory History: A Brief Survey (1975)",
+          "byline": null,
+          "accessed_utc": "2026-01-19T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Environmental Protection Agency (EPA)"
+        ],
+        "substances": [
+          "TDE"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "In March 1971, EPA issued cancellation notices covering all registrations of products containing TDE.",
+            "source_url": "https://www.epa.gov/archive/epa/aboutepa/ddt-regulatory-history-brief-survey-1975.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.8,
+        "location": 0.85,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "epa_tde_cancellation_march_1971_us",
+        "fingerprint": "fp_1971-03_epa_tde_cancellation_us"
+      }
+    }
+  ]
+}

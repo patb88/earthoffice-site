@@ -1,0 +1,588 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_2016-11_normalize_2026-01-16T060334852Z",
+    "generated_utc": "2026-01-16T06:03:34.852Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "2016-11",
+    "window": {
+      "start_utc": "2016-11-01T00:00:00.000Z",
+      "end_utc": "2016-11-30T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "2016-11-in-delhi-air-pollution-emergency-smog",
+      "title": "Delhi declares air-pollution emergency amid severe smog",
+      "description": "Delhi announced emergency measures in response to hazardous smog and particulate air pollution, including closing schools and restricting some activities such as construction.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2016-11-06T00:00:00.000Z",
+        "event_end": "2016-11-06T23:59:59.000Z",
+        "reported_at": "2016-11-06T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2016-11-06T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Delhi, India",
+        "jurisdiction_level": "city",
+        "admin1": "Delhi",
+        "country": "IN",
+        "capital_used": null,
+        "lat": 28.6139,
+        "lon": 77.209,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.85
+      },
+      "sources": [
+        {
+          "url": "https://www.theguardian.com/world/2016/nov/06/delhi-air-pollution-closes-schools-for-three-days",
+          "source_name": "The Guardian",
+          "published_at": "2016-11-06T00:00:00.000Z",
+          "headline": "Delhi air pollution closes schools for three days",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://weather.com/science/environment/news/india-delhi-smog-air-pollution",
+          "source_name": "The Weather Channel",
+          "published_at": "2016-11-01T00:00:00.000Z",
+          "headline": "india-delhi-smog-air-pollution",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [
+          "particulate matter"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Delhi air pollution closes schools for three days",
+            "source_url": "https://www.theguardian.com/world/2016/nov/06/delhi-air-pollution-closes-schools-for-three-days"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.75,
+        "location": 0.85,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "secondary_sources_only",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Delhi smog emergency measures November 2016",
+        "fingerprint": "delhi-declares-air-pollution-emergency-amid-severe-smog|delhi-india|2016-11-06"
+      }
+    },
+    {
+      "event_id": "20161113_nz_kaikoura_quake_landslides",
+      "title": "Kaikōura earthquake (M7.8) triggers widespread landslides",
+      "description": "A magnitude 7.8 earthquake struck New Zealand’s South Island near Kaikōura, triggering widespread landslides and damaging infrastructure.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2016-11-13T11:02:56.000Z",
+        "event_end": "2016-11-13T11:30:00.000Z",
+        "reported_at": "2016-11-13T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2016-11-13T11:02:56.000Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "South Island near Kaikōura (New Zealand)",
+        "jurisdiction_level": "site",
+        "admin1": null,
+        "country": "NZ",
+        "capital_used": null,
+        "lat": -42.4,
+        "lon": 173.68,
+        "precision": "neighborhood",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.nzgs.org/libraries/nzgs20_dellow2/",
+          "source_name": "New Zealand Geotechnical Society (NZGS)",
+          "published_at": "2016-11-01T00:00:00.000Z",
+          "headline": "https://www.nzgs.org/libraries/nzgs20_dellow2/",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://time.com/4569301/second-earthquake-new-zealand-kaikoura-wellington/",
+          "source_name": "TIME",
+          "published_at": "2016-11-14T00:00:00.000Z",
+          "headline": "Second Earthquake Shakes New Zealand After Kaikoura Quake",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "magnitude 7.8 earthquake struck New Zealand’s South Island",
+            "source_url": "https://time.com/4569301/second-earthquake-new-zealand-kaikoura-wellington/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.85,
+        "location": 0.55,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "2016-11-13 Kaikoura earthquake landslides",
+        "fingerprint": "20161113_kaikoura_nz_geological"
+      }
+    },
+    {
+      "event_id": "20161121_jp_fukushima_offshore_quake_tsunami_advisory",
+      "title": "Offshore Fukushima earthquake prompts tsunami warnings/advisories",
+      "description": "A strong offshore earthquake near Fukushima prompted tsunami warnings/advisories and coastal evacuations in parts of Japan before alerts were lifted.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2016-11-21T20:59:49.000Z",
+        "event_end": "2016-11-21T23:59:59.000Z",
+        "reported_at": "2016-11-21T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2016-11-21T20:59:49.000Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Off the coast of Fukushima Prefecture (Japan)",
+        "jurisdiction_level": "state",
+        "admin1": "Fukushima Prefecture",
+        "country": "JP",
+        "capital_used": "Fukushima",
+        "lat": 37.7608,
+        "lon": 140.4747,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.8
+      },
+      "sources": [
+        {
+          "url": "https://www.upi.com/Top_News/World-News/2016/11/21/69-magnitude-earthquake-hits-Japan-near-site-of-deadly-11-tsunami/6281479767698/",
+          "source_name": "UPI",
+          "published_at": "2016-11-21T00:00:00.000Z",
+          "headline": "6.9 magnitude earthquake hits Japan near site of deadly '11 tsunami",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.cntraveler.com/story/tsunami-warning-lifted-after-japan-earthquake-strikes-near-fukushima",
+          "source_name": "Condé Nast Traveler",
+          "published_at": "2016-11-22T00:00:00.000Z",
+          "headline": "Tsunami Warning Lifted After Japan Earthquake Strikes Near Fukushima",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "earthquake ... near Fukushima led ... to issue tsunami warnings/advisories",
+            "source_url": "https://www.upi.com/Top_News/World-News/2016/11/21/69-magnitude-earthquake-hits-Japan-near-site-of-deadly-11-tsunami/6281479767698/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.65,
+        "category": 0.85,
+        "location": 0.8,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "2016-11-21 Fukushima offshore quake tsunami advisory",
+        "fingerprint": "20161121_fukushima_jp_geological"
+      }
+    },
+    {
+      "event_id": "2016-11-us-fl-lee-red-tide-sanibel-1703b8a",
+      "title": "Florida red tide conditions reported offshore of Sanibel Island (Lee County)",
+      "description": "An early-November update from Florida fish and wildlife authorities reported red tide conditions in parts of southwest Florida, including offshore of Sanibel Island in Lee County. The update referenced fish kill impacts associated with the bloom.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2016-11-07T00:00:00.000Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "2016-11-07T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Sanibel Island (offshore), Lee County, Florida, US",
+        "jurisdiction_level": "site",
+        "admin1": "Florida",
+        "country": "US",
+        "capital_used": null,
+        "lat": 26.4489,
+        "lon": -82.0223,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://content.govdelivery.com/accounts/FLFFWCC/bulletins/1703b8a",
+          "source_name": "Florida Fish and Wildlife Conservation Commission (GovDelivery)",
+          "published_at": "2016-11-07T00:00:00.000Z",
+          "headline": "1703b8a",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://news.caloosahatchee.org/docs/FWC_161107.htm",
+          "source_name": "Caloosahatchee News",
+          "published_at": "2016-11-07T00:00:00.000Z",
+          "headline": "FWC_161107",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Florida Fish and Wildlife Conservation Commission"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "red tide conditions... offshore of Sanibel Island",
+            "source_url": "https://content.govdelivery.com/accounts/FLFFWCC/bulletins/1703b8a"
+          },
+          {
+            "quote": "fish kills",
+            "source_url": "https://content.govdelivery.com/accounts/FLFFWCC/bulletins/1703b8a"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.56,
+        "category": 0.7,
+        "location": 0.6,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "FL red tide offshore Sanibel Island early Nov 2016",
+        "fingerprint": "fl_red_tide_sanibel_lee_2016-11-07"
+      }
+    },
+    {
+      "event_id": "evt_20161104_paris_agreement_enters_into_force_global",
+      "title": "Paris Agreement enters into force",
+      "description": "The Paris Agreement became legally effective on 4 November 2016, triggering formal international implementation under the UN climate framework.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "2016-11-04T00:00:00.000Z",
+        "event_end": "2016-11-04T23:59:59.000Z",
+        "reported_at": "2016-10-05T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2016-11-04T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Global",
+        "jurisdiction_level": "global_proxy",
+        "admin1": null,
+        "country": null,
+        "capital_used": null,
+        "lat": 0,
+        "lon": 0,
+        "precision": "proxy",
+        "location_basis": "manual_override",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.un.org/en/climatechange/paris-agreement",
+          "source_name": "United Nations",
+          "published_at": "2016-11-04T00:00:00.000Z",
+          "headline": "Paris Agreement",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.un.org/sustainabledevelopment/blog/2016/10/paris-climate-agreement-to-enter-into-force-on-4-november/",
+          "source_name": "UN Sustainable Development Blog",
+          "published_at": "2016-10-05T00:00:00.000Z",
+          "headline": "Paris climate agreement to enter into force on 4 November",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "United Nations"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "The Paris Agreement entered into force on 4 November 2016.",
+            "source_url": "https://www.un.org/en/climatechange/paris-agreement"
+          },
+          {
+            "quote": "Paris climate agreement to enter into force on 4 November.",
+            "source_url": "https://www.un.org/sustainabledevelopment/blog/2016/10/paris-climate-agreement-to-enter-into-force-on-4-november/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.72,
+        "category": 0.9,
+        "location": 0.6,
+        "summary_grounding": 0.7
+      },
+      "quality_flags": [
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "Paris Agreement enters into force (global)",
+        "fingerprint": "fp_paris_agreement_2016-11-04_global"
+      }
+    },
+    {
+      "event_id": "evt_20161118_cop22_marrakech_action_proclamation_marrakech_ma",
+      "title": "COP22 concludes with the Marrakech Action Proclamation",
+      "description": "At COP22 in Marrakech, governments issued the Marrakech Action Proclamation, reaffirming commitment to implementing the Paris Agreement and continuing work on implementation details.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "2016-11-18T00:00:00.000Z",
+        "event_end": "2016-11-18T23:59:59.000Z",
+        "reported_at": "2016-11-18T00:00:00.000Z",
+        "time_confidence": 0.75,
+        "event_date_utc": "2016-11-18T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Marrakech, Morocco",
+        "jurisdiction_level": "city",
+        "admin1": null,
+        "country": "MA",
+        "capital_used": null,
+        "lat": 31.6295,
+        "lon": -7.9811,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://press.un.org/en/2016/sgsm18279.doc.htm",
+          "source_name": "UN Press",
+          "published_at": "2016-11-18T00:00:00.000Z",
+          "headline": "Secretary-General’s statement on conclusion of COP22",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.un.org/sustainabledevelopment/blog/2016/11/countries-at-cop22-pledge-to-press-ahead-with-implementation-of-paris-agreement/",
+          "source_name": "UN Sustainable Development Blog",
+          "published_at": "2016-11-18T00:00:00.000Z",
+          "headline": "Countries at COP22 pledge to press ahead with implementation of Paris Agreement",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "United Nations"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "COP22 concluded with the adoption of the Marrakech Action Proclamation.",
+            "source_url": "https://press.un.org/en/2016/sgsm18279.doc.htm"
+          },
+          {
+            "quote": "Countries at COP22 pledge to press ahead with implementation of Paris Agreement.",
+            "source_url": "https://www.un.org/sustainabledevelopment/blog/2016/11/countries-at-cop22-pledge-to-press-ahead-with-implementation-of-paris-agreement/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.7,
+        "category": 0.85,
+        "location": 0.7,
+        "summary_grounding": 0.7
+      },
+      "quality_flags": [
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "COP22 Marrakech Action Proclamation",
+        "fingerprint": "fp_cop22_marrakech_2016-11-18_marrakech"
+      }
+    },
+    {
+      "event_id": "evt_20161128_epa_hazardous_waste_export_import_final_rule_us",
+      "title": "US EPA hazardous waste export/import revisions published (Federal Register)",
+      "description": "The US Environmental Protection Agency published a final rule revising hazardous waste export and import requirements in the Federal Register, updating procedures intended to improve transparency, data sharing, and compliance monitoring.",
+      "category_primary": "policy_regulation",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "2016-11-28T00:00:00.000Z",
+        "event_end": "2016-11-28T23:59:59.000Z",
+        "reported_at": "2016-11-28T00:00:00.000Z",
+        "time_confidence": 0.85,
+        "event_date_utc": "2016-11-28T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States (Federal)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.85
+      },
+      "sources": [
+        {
+          "url": "https://www.epa.gov/hwgenerators/final-rule-hazardous-waste-export-import-revisions",
+          "source_name": "US EPA",
+          "published_at": "2016-11-28T00:00:00.000Z",
+          "headline": "Final Rule: Hazardous Waste Export-Import Revisions",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.govinfo.gov/content/pkg/FR-2016-11-28/html/2016-27428.htm",
+          "source_name": "GovInfo (Federal Register)",
+          "published_at": "2016-11-28T00:00:00.000Z",
+          "headline": "Hazardous Waste Export-Import Revisions",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "US Environmental Protection Agency",
+          "Federal Register"
+        ],
+        "substances": [
+          "hazardous waste"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Final Rule: Hazardous Waste Export-Import Revisions.",
+            "source_url": "https://www.epa.gov/hwgenerators/final-rule-hazardous-waste-export-import-revisions"
+          },
+          {
+            "quote": "Hazardous Waste Export-Import Revisions.",
+            "source_url": "https://www.govinfo.gov/content/pkg/FR-2016-11-28/html/2016-27428.htm"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.78,
+        "category": 0.9,
+        "location": 0.9,
+        "summary_grounding": 0.75
+      },
+      "quality_flags": [],
+      "dedupe": {
+        "cluster_hint": "EPA hazardous waste export-import revisions final rule",
+        "fingerprint": "fp_epa_hw_export_import_2016-11-28_us"
+      }
+    }
+  ]
+}

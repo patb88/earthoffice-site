@@ -1,0 +1,770 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_2006-12_normalize_2026-01-16T033125698Z",
+    "generated_utc": "2026-01-16T03:31:25.698Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "2006-12",
+    "window": {
+      "start_utc": "2006-12-01T00:00:00.000Z",
+      "end_utc": "2006-12-31T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "2006-12_pollution_contamination_kahului_wastewater_spill",
+      "title": "Treated wastewater spill from Kahului Wastewater Plant (Maui)",
+      "description": "A treated wastewater spill of about 1.4 million gallons occurred at the Kahului Wastewater Reclamation Facility after a berm around a storage pond failed. Shoreline advisories were issued and the incident drew enforcement attention.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2007-01-03T00:00:00Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "2006-12-24T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Kahului, Maui, Hawai‘i, USA",
+        "jurisdiction_level": "city",
+        "admin1": "Hawaii",
+        "country": "US",
+        "capital_used": null,
+        "lat": 20.8893,
+        "lon": -156.4729,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.75
+      },
+      "sources": [
+        {
+          "url": "https://www.epa.gov/archive/epapages/newsroom_archive/newsreleases/d5e8981f951d604f8525727c006106f5.html",
+          "source_name": "U.S. Environmental Protection Agency (archive)",
+          "published_at": "2007-01-03T00:00:00Z",
+          "headline": "News release (archived): treated wastewater spill in Hawaii (Kahului)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.wwdmag.com/home/news/10911570/hawaii-reports-14-million-gallon-spill",
+          "source_name": "Water & Wastes Digest",
+          "published_at": "2006-12-29T00:00:00Z",
+          "headline": "Hawaii Reports 1.4 Million Gallon Spill",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Environmental Protection Agency (EPA)"
+        ],
+        "substances": [
+          "treated wastewater"
+        ],
+        "ecosystems": [
+          "shoreline",
+          "coastal waters"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "approximately 1.4 million gallons of treated wastewater",
+            "source_url": "https://www.wwdmag.com/home/news/10911570/hawaii-reports-14-million-gallon-spill"
+          },
+          {
+            "quote": "berm surrounding a storage pond failed",
+            "source_url": "https://www.epa.gov/archive/epapages/newsroom_archive/newsreleases/d5e8981f951d604f8525727c006106f5.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.8,
+        "location": 0.75,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "paywalled_or_partial",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Kahului Wastewater Reclamation Facility treated wastewater spill (1.4M gallons)",
+        "fingerprint": "fp_200612_kahului_wastewater_spill_2006-12-24_US_HI"
+      }
+    },
+    {
+      "event_id": "2006-12-weather-ct-bondo-seychelles-madagascar",
+      "title": "Intense Tropical Cyclone Bondo impacts Seychelles and northern Madagascar",
+      "description": "Tropical Cyclone Bondo affected the Seychelles around Christmas 2006 and then tracked near northwestern Madagascar. It made landfall in northern Madagascar on December 25, bringing damaging winds and heavy rain.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2006-12-24T00:00:00.000Z",
+        "event_end": "2006-12-25T23:59:59.000Z",
+        "reported_at": "2006-12-24T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2006-12-25T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Seychelles and northern Madagascar",
+        "jurisdiction_level": "supranational",
+        "admin1": null,
+        "country": null,
+        "capital_used": "Antananarivo",
+        "lat": -18.8792,
+        "lon": 47.5079,
+        "precision": "proxy",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.4
+      },
+      "sources": [
+        {
+          "url": "https://science.nasa.gov/earth/earth-observatory/tropical-cyclone-bondo-17795/",
+          "source_name": "NASA Earth Observatory",
+          "published_at": "2006-12-24T00:00:00.000Z",
+          "headline": "Tropical Cyclone Bondo",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": "https://earthobservatory.nasa.gov/images/17795/tropical-cyclone-bondo"
+        },
+        {
+          "url": "https://earthobservatory.nasa.gov/images/17795/tropical-cyclone-bondo",
+          "source_name": "NASA Earth Observatory",
+          "published_at": "2006-12-24T00:00:00.000Z",
+          "headline": "Tropical Cyclone Bondo",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": "https://earthobservatory.nasa.gov/images/17795/tropical-cyclone-bondo"
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NASA Earth Observatory"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Tropical Cyclone Bondo ... affected the Seychelles ... then tracked along Madagascar.",
+            "source_url": "https://science.nasa.gov/earth/earth-observatory/tropical-cyclone-bondo-17795/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.8,
+        "location": 0.4,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "tropical-cyclone-bondo-2006-12",
+        "fingerprint": "tropical-cyclone-bondo|seychelles-and-northern-madagascar|2006-12-24_2006-12-25"
+      }
+    },
+    {
+      "event_id": "2006-12-weather-ty-utor-philippines",
+      "title": "Typhoon Utor (Seniang) crosses the Philippines",
+      "description": "Typhoon Utor formed on December 7, 2006 and later crossed the central Philippines. The system produced severe weather and contributed to flooding impacts in affected areas before moving onward into surrounding waters.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2006-12-07T00:00:00.000Z",
+        "event_end": "2006-12-15T23:59:59.000Z",
+        "reported_at": "2007-01-01T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2006-12-10T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Philippines (central Philippines)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "PH",
+        "capital_used": "Manila",
+        "lat": 14.5995,
+        "lon": 120.9842,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://www.nhc.noaa.gov/data/tcr/WP242006_Utor.pdf",
+          "source_name": "NOAA/NHC",
+          "published_at": "2007-01-01T00:00:00.000Z",
+          "headline": "Tropical Cyclone Report: Typhoon Utor (WP242006)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA",
+          "National Hurricane Center"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "formed on December 7, 2006",
+            "source_url": "https://www.nhc.noaa.gov/data/tcr/WP242006_Utor.pdf"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.65,
+        "category": 0.85,
+        "location": 0.7,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "typhoon-utor-2006",
+        "fingerprint": "typhoon-utor|philippines|2006-12-07_2006-12-15"
+      }
+    },
+    {
+      "event_id": "2006-12-climate-temp-anomaly-nh",
+      "title": "Widespread above-average temperatures across the Northern Hemisphere in December 2006",
+      "description": "Satellite-based analyses indicated broadly above-average land surface temperatures across much of the Northern Hemisphere during December 2006. Positive anomalies were highlighted across multiple regions including parts of North America and Europe.",
+      "category_primary": "weather_climate",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "2006-12-01T00:00:00.000Z",
+        "event_end": "2006-12-31T23:59:59.000Z",
+        "reported_at": "2007-01-01T00:00:00.000Z",
+        "time_confidence": 0.5,
+        "event_date_utc": null,
+        "event_date_precision": "month"
+      },
+      "location": {
+        "name": "Northern Hemisphere",
+        "jurisdiction_level": "global_proxy",
+        "admin1": null,
+        "country": null,
+        "capital_used": null,
+        "lat": 0,
+        "lon": 0,
+        "precision": "proxy",
+        "location_basis": "institution_proxy",
+        "location_confidence": 0.3
+      },
+      "sources": [
+        {
+          "url": "https://science.nasa.gov/earth/earth-observatory/northern-hemisphere-temperatures-mild-in-december-2006-7295/",
+          "source_name": "NASA Earth Observatory",
+          "published_at": "2007-01-01T00:00:00.000Z",
+          "headline": "Northern Hemisphere Temperatures Mild in December 2006",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NASA Earth Observatory"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Temperatures Mild in December 2006",
+            "source_url": "https://science.nasa.gov/earth/earth-observatory/northern-hemisphere-temperatures-mild-in-december-2006-7295/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.45,
+        "category": 0.75,
+        "location": 0.3,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "low_confidence_location"
+      ],
+      "dedupe": {
+        "cluster_hint": "nh-temperatures-dec-2006",
+        "fingerprint": "nh-temperature-anomaly|northern-hemisphere|2006-12"
+      }
+    },
+    {
+      "event_id": "2006-12-weather-ty-durian-philippines-continued-impacts",
+      "title": "Super Typhoon Durian impacts persist into early December in the Philippines",
+      "description": "Although Super Typhoon Durian made landfall in the Philippines on November 30, 2006, impacts from associated heavy rainfall continued into early December. Reports described flooding and mudslide-related impacts, especially affecting areas of Luzon.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2006-12-01T00:00:00.000Z",
+        "event_end": "2006-12-04T23:59:59.000Z",
+        "reported_at": "2006-12-04T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2006-12-02T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Philippines (Luzon)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "PH",
+        "capital_used": "Manila",
+        "lat": 14.5995,
+        "lon": 120.9842,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://science.nasa.gov/earth/earth-observatory/super-typhoon-durian-17703/",
+          "source_name": "NASA Earth Observatory",
+          "published_at": "2006-12-04T00:00:00.000Z",
+          "headline": "Super Typhoon Durian",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": "https://www.earthobservatory.nasa.gov/images/17703/super-typhoon-durian"
+        },
+        {
+          "url": "https://www.earthobservatory.nasa.gov/images/17703/super-typhoon-durian",
+          "source_name": "NASA Earth Observatory",
+          "published_at": "2006-12-04T00:00:00.000Z",
+          "headline": "Super Typhoon Durian",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": "https://www.earthobservatory.nasa.gov/images/17703/super-typhoon-durian"
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NASA Earth Observatory"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Super Typhoon Durian",
+            "source_url": "https://science.nasa.gov/earth/earth-observatory/super-typhoon-durian-17703/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.85,
+        "location": 0.6,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "needs_dedupe_check",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "super-typhoon-durian-2006",
+        "fingerprint": "super-typhoon-durian|philippines|2006-12-01_2006-12-04"
+      }
+    },
+    {
+      "event_id": "2006-12-geological-hengchun-earthquake-doublet-taiwan",
+      "title": "Hengchun earthquake doublet offshore southwest Taiwan disrupts regional communications",
+      "description": "A pair of strong earthquakes occurred offshore southwest Taiwan on December 26, 2006. The events generated a tsunami and caused widespread disruption, including damage to submarine communication cables affecting parts of Asia.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2006-12-26T12:26:21.000Z",
+        "event_end": "2006-12-26T12:34:15.000Z",
+        "reported_at": "2007-01-01T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2006-12-26T12:26:21.000Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Offshore southwest Taiwan (Luzon Strait)",
+        "jurisdiction_level": "site",
+        "admin1": null,
+        "country": "TW",
+        "capital_used": null,
+        "lat": 21.9,
+        "lon": 120.8,
+        "precision": "proxy",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.4
+      },
+      "sources": [
+        {
+          "url": "https://www.jishin.go.jp/main/chousa/07jan/p25h-e.htm",
+          "source_name": "Japan Meteorological Agency (JMA) - jishin.go.jp",
+          "published_at": "2007-01-01T00:00:00Z",
+          "headline": "2006 Hengchun earthquake doublet offshore southwest Taiwan",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Japan Meteorological Agency"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "A pair of large earthquakes struck offshore southwest Taiwan on December 26, 2006",
+            "source_url": "https://www.jishin.go.jp/main/chousa/07jan/p25h-e.htm"
+          },
+          {
+            "quote": "causing widespread disruption including damage to submarine communication cables across parts of Asia",
+            "source_url": "https://www.jishin.go.jp/main/chousa/07jan/p25h-e.htm"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.52,
+        "category": 0.8,
+        "location": 0.4,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "hengchun_2006_12_26_offshore_taiwan",
+        "fingerprint": "hengchun-earthquake-doublet|offshore-southwest-taiwan-luzon-strait|2006-12-26"
+      }
+    },
+    {
+      "event_id": "evt-20061206-au-vic-great-divide-bushfires-abc",
+      "title": "Great Divide bushfires expand and threaten communities in Victoria",
+      "description": "Multiple lightning-ignited bushfires continued burning in Victoria in early December 2006. Authorities warned a massive fire front could threaten several communities.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2006-12-05T00:00:00.000Z",
+        "event_end": "2006-12-05T23:59:59.000Z",
+        "reported_at": "2006-12-06T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2006-12-05T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Victoria, Australia",
+        "jurisdiction_level": "state",
+        "admin1": "Victoria",
+        "country": "AU",
+        "capital_used": "Melbourne",
+        "lat": -37.8136,
+        "lon": 144.9631,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://www.abc.net.au/news/2006-12-06/vic-residents-warned-of-massive-bushfire-front/2146832",
+          "source_name": "ABC News (Australia)",
+          "published_at": "2006-12-06T00:00:00.000Z",
+          "headline": "Vic residents warned of massive bushfire front",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Vic residents warned of massive bushfire front",
+            "source_url": "https://www.abc.net.au/news/2006-12-06/vic-residents-warned-of-massive-bushfire-front/2146832"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.8,
+        "location": 0.7,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "2006-12-victoria-bushfires",
+        "fingerprint": "fp-20061206-victoria-au-bushfires"
+      }
+    },
+    {
+      "event_id": "evt-20061208-au-vic-ne-bushfires-threat-abc",
+      "title": "Bushfires threaten multiple towns in north-east Victoria",
+      "description": "Officials warned on 8 December 2006 that bushfires in north-east Victoria posed an immediate threat to multiple communities. Residents were advised to decide whether to stay and defend or evacuate as fire impacts expanded.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2006-12-08T00:00:00.000Z",
+        "event_end": "2006-12-08T23:59:59.000Z",
+        "reported_at": "2006-12-08T00:00:00.000Z",
+        "time_confidence": 0.65,
+        "event_date_utc": "2006-12-08T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Victoria, Australia",
+        "jurisdiction_level": "state",
+        "admin1": "Victoria",
+        "country": "AU",
+        "capital_used": "Melbourne",
+        "lat": -37.8136,
+        "lon": 144.9631,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.65
+      },
+      "sources": [
+        {
+          "url": "https://www.abc.net.au/news/2006-12-08/bushfires-threaten-vic-towns/2149288",
+          "source_name": "ABC News (Australia)",
+          "published_at": "2006-12-08T00:00:00.000Z",
+          "headline": "Bushfires threaten Vic towns",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Bushfires threaten Vic towns",
+            "source_url": "https://www.abc.net.au/news/2006-12-08/bushfires-threaten-vic-towns/2149288"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.8,
+        "location": 0.65,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "location_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "2006-12-victoria-bushfires",
+        "fingerprint": "fp-20061208-victoria-au-bushfires"
+      }
+    },
+    {
+      "event_id": "evt-20061216-au-vic-mansfield-firefighters-injured-abc",
+      "title": "Firefighters injured battling bushfire near Mansfield, Victoria",
+      "description": "During ongoing bushfires in Victoria, six firefighters were reported injured while battling a blaze near Mansfield on 16 December 2006. The report described continued fire activity in the region.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2006-12-16T00:00:00.000Z",
+        "event_end": "2006-12-16T23:59:59.000Z",
+        "reported_at": "2006-12-16T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2006-12-16T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Victoria, Australia",
+        "jurisdiction_level": "state",
+        "admin1": "Victoria",
+        "country": "AU",
+        "capital_used": "Melbourne",
+        "lat": -37.8136,
+        "lon": 144.9631,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.abc.net.au/news/2006-12-16/six-firefighters-injured-battling-vic-bushfire/2155474",
+          "source_name": "ABC News (Australia)",
+          "published_at": "2006-12-16T00:00:00.000Z",
+          "headline": "Six firefighters injured battling Vic bushfire",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Six firefighters injured battling Vic bushfire",
+            "source_url": "https://www.abc.net.au/news/2006-12-16/six-firefighters-injured-battling-vic-bushfire/2155474"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.63,
+        "category": 0.8,
+        "location": 0.6,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "location_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "2006-12-victoria-bushfires",
+        "fingerprint": "fp-20061216-victoria-au-bushfires"
+      }
+    },
+    {
+      "event_id": "evt_20061226_epa_spcc_amendments_us_federal",
+      "title": "EPA finalizes amendments to SPCC spill prevention rule",
+      "description": "The U.S. Environmental Protection Agency finalized amendments to the Spill Prevention, Control, and Countermeasure (SPCC) rule in December 2006. EPA described the changes as streamlining requirements for certain smaller facilities and specific equipment categories.",
+      "category_primary": "policy_regulation",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "2006-12-26T00:00:00.000Z",
+        "event_end": "2006-12-26T23:59:59.000Z",
+        "reported_at": "2006-12-26T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2006-12-26T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States (federal regulation)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.8
+      },
+      "sources": [
+        {
+          "url": "https://www.epa.gov/oil-spills-prevention-and-preparedness-regulations/what-changes-did-epa-finalize-spcc-rule-december",
+          "source_name": "U.S. Environmental Protection Agency (EPA)",
+          "published_at": "2006-12-26T00:00:00.000Z",
+          "headline": "What changes did EPA finalize to the SPCC rule in December 2006?",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.epa.gov/oil-spills-prevention-and-preparedness-regulations/spcc-rule-amendments-streamlined-requirements",
+          "source_name": "U.S. Environmental Protection Agency (EPA)",
+          "published_at": "2006-12-26T00:00:00.000Z",
+          "headline": "SPCC rule amendments: streamlined requirements",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Environmental Protection Agency (EPA)"
+        ],
+        "substances": [
+          "oil"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "What changes did EPA finalize to the SPCC rule in December 2006?",
+            "source_url": "https://www.epa.gov/oil-spills-prevention-and-preparedness-regulations/what-changes-did-epa-finalize-spcc-rule-december"
+          },
+          {
+            "quote": "SPCC rule amendments: streamlined requirements",
+            "source_url": "https://www.epa.gov/oil-spills-prevention-and-preparedness-regulations/spcc-rule-amendments-streamlined-requirements"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.8,
+        "location": 0.8,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only",
+        "paywalled_or_partial"
+      ],
+      "dedupe": {
+        "cluster_hint": "EPA SPCC rule amendments December 2006",
+        "fingerprint": "fp_20061226_epa_spcc_amendments_us_federal"
+      }
+    }
+  ]
+}

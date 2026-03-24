@@ -1,0 +1,423 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_2017-01_normalize_2026-01-16T060553406Z",
+    "generated_utc": "2026-01-16T06:05:53.406Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "2017-01",
+    "window": {
+      "start_utc": "2017-01-01T00:00:00.000Z",
+      "end_utc": "2017-01-31T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "evt_201701_nchina_smog_alerts_001",
+      "title": "Severe smog triggers top-level pollution alerts across northern China during early January 2017",
+      "description": "A hazardous smog episode affected parts of northern China around the start of 2017, with multiple cities issuing high-level air pollution alerts and implementing emergency measures to curb emissions. Reporting described very high particulate pollution and disruptions such as travel or transport impacts during the period.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2017-01-01T00:00:00.000Z",
+        "event_end": "2017-01-05T23:59:59.000Z",
+        "reported_at": "2017-01-02T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": null,
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "China (Beijing referenced)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "CN",
+        "capital_used": "Beijing",
+        "lat": 39.9042,
+        "lon": 116.4074,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.theguardian.com/world/2017/jan/02/china-smog-millions-start-new-year-shrouded-by-health-alerts-and-travel-chaos",
+          "source_name": "The Guardian",
+          "published_at": "2017-01-02T00:00:00Z",
+          "headline": "China smog: millions start new year shrouded by health alerts and travel chaos",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.cnbc.com/2017/01/02/heavy-smog-continues-to-choke-chinas-heartland.html",
+          "source_name": "CNBC",
+          "published_at": "2017-01-02T00:00:00Z",
+          "headline": "Heavy smog continues to choke China’s heartland",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://weather.com/science/environment/news/china-red-alert-smog-0",
+          "source_name": "The Weather Channel",
+          "published_at": "2017-01-01T00:00:00Z",
+          "headline": "China Issues Red Alerts as Smog Lingers",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [
+          "particulate matter"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "millions start new year shrouded by health alerts and travel chaos",
+            "source_url": "https://www.theguardian.com/world/2017/jan/02/china-smog-millions-start-new-year-shrouded-by-health-alerts-and-travel-chaos"
+          },
+          {
+            "quote": "heavy smog continues to choke China’s heartland",
+            "source_url": "https://www.cnbc.com/2017/01/02/heavy-smog-continues-to-choke-chinas-heartland"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.8,
+        "location": 0.55,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "2017-01 northern China smog alerts",
+        "fingerprint": "fp_201701_nchina_smog_alerts_china_20170101_20170105"
+      }
+    },
+    {
+      "event_id": "2017-01_fires_chile_central_wildfires_20170119",
+      "title": "Central Chile wildfires intensify amid heat and winds",
+      "description": "NASA Earth Observatory reported dozens of wildfires burning across central Chile in January 2017, producing extensive smoke plumes visible from space. The report described conditions that helped fires spread, including heat and wind, and noted impacts in central Chile.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2017-01-19T00:00:00.000Z",
+        "event_end": "2017-01-23T23:59:59.000Z",
+        "reported_at": "2017-01-20T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2017-01-20T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Chile",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "CL",
+        "capital_used": "Santiago",
+        "lat": -33.4489,
+        "lon": -70.6693,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://science.nasa.gov/earth/earth-observatory/fires-blaze-in-chile-89496/",
+          "source_name": "NASA Earth Observatory",
+          "published_at": "2017-01-20T00:00:00.000Z",
+          "headline": "Fires Blaze in Chile",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NASA Earth Observatory"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "forests"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Dozens of fires burned across central Chile in mid-January 2017.",
+            "source_url": "https://science.nasa.gov/earth/earth-observatory/fires-blaze-in-chile-89496/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.85,
+        "location": 0.55,
+        "summary_grounding": 0.65
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "2017-01 Chile central wildfires (NASA EO)",
+        "fingerprint": "2017-01_fires_chile_central_wildfires_nasaeo"
+      }
+    },
+    {
+      "event_id": "2017-01_fires_chile_santa_olga_impacts_20170126",
+      "title": "Chile wildfires cause severe impacts including destruction in Santa Olga area",
+      "description": "Reports late in January 2017 described the Chile wildfire crisis worsening, with large fires affecting central regions. Bloomberg reported mounting impacts including homes destroyed and loss of life, and referenced the destruction of Santa Olga as part of the disaster.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2017-01-26T00:00:00.000Z",
+        "event_end": "2017-01-28T23:59:59.000Z",
+        "reported_at": "2017-01-26T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2017-01-26T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Chile",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "CL",
+        "capital_used": "Santiago",
+        "lat": -33.4489,
+        "lon": -70.6693,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.bloomberg.com/news/articles/2017-01-26/chile-wildfires-taking-ever-increasing-toll-of-lives-and-homes",
+          "source_name": "Bloomberg",
+          "published_at": "2017-01-26T00:00:00.000Z",
+          "headline": "Chile Wildfires Taking Ever-Increasing Toll of Lives and Homes",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://science.nasa.gov/earth/earth-observatory/fires-blaze-in-chile-89496/",
+          "source_name": "NASA Earth Observatory",
+          "published_at": "2017-01-20T00:00:00.000Z",
+          "headline": "Fires Blaze in Chile",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [
+          "forests"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "...taking ever-increasing toll of lives and homes.",
+            "source_url": "https://www.bloomberg.com/news/articles/2017-01-26/chile-wildfires-taking-ever-increasing-toll-of-lives-and-homes"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.85,
+        "location": 0.55,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "paywalled_or_partial",
+        "location_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "2017-01 Chile wildfire crisis impacts (Bloomberg)",
+        "fingerprint": "2017-01_fires_chile_wildfire_crisis_bloomberg_20170126"
+      }
+    },
+    {
+      "event_id": "201701_md_gunpowder_bird_rivers_fish_kill_monitoring",
+      "title": "Maryland officials monitored fish kill in Gunpowder and Bird rivers; toxic algae implicated",
+      "description": "Maryland environmental officials reported on ongoing observations related to a fish kill in the upper Gunpowder and Bird rivers near Joppatowne. The agency update indicated findings pointing to toxin-producing algae (Karlodinium veneficum) contributing to fish deaths, potentially interacting with salinity stress.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2017-01-11T00:00:00Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "2017-01-11T00:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Upper Gunpowder and Bird Rivers near Joppatowne, Maryland, USA",
+        "jurisdiction_level": "site",
+        "admin1": "Maryland",
+        "country": "US",
+        "capital_used": null,
+        "lat": 39.4015,
+        "lon": -76.3572,
+        "precision": "neighborhood",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://mde.maryland.gov/programs/water/fishandshellfish/pages/fish_kill_jan_112017.aspx",
+          "source_name": "Maryland Department of the Environment",
+          "published_at": "2017-01-11T00:00:00Z",
+          "headline": "Fish Kill (Jan. 11, 2017)",
+          "byline": null,
+          "accessed_utc": "2017-01-31T23:59:59.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Maryland Department of the Environment"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "Gunpowder River",
+          "Bird River"
+        ],
+        "people": [
+          "Karlodinium veneficum"
+        ]
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "findings pointing to a toxin-producing algae (Karlodinium veneficum)",
+            "source_url": "https://mde.maryland.gov/programs/water/fishandshellfish/pages/fish_kill_jan_112017.aspx"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.56,
+        "category": 0.65,
+        "location": 0.55,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Gunpowder/Bird Rivers fish kill (Maryland)",
+        "fingerprint": "20170111_gunpowder_bird_rivers_fish_kill_md_us"
+      }
+    },
+    {
+      "event_id": "20170124_us_keystone_xl_memorandum",
+      "title": "U.S. presidential memorandum directs agencies to expedite Keystone XL permitting review",
+      "description": "A U.S. presidential memorandum dated January 24, 2017 directed federal agencies to take steps intended to facilitate and expedite consideration of the Keystone XL pipeline’s cross-border permit decision and related approvals.",
+      "category_primary": "policy_regulation",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "2017-01-24T00:00:00.000Z",
+        "event_end": "2017-01-24T23:59:59.000Z",
+        "reported_at": "2017-01-24T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2017-01-24T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.65
+      },
+      "sources": [
+        {
+          "url": "https://trumpwhitehouse.archives.gov/presidential-actions/presidential-memorandum-regarding-construction-keystone-xl-pipeline/",
+          "source_name": "Trump White House Archives",
+          "published_at": "2017-01-24T00:00:00.000Z",
+          "headline": "Presidential Memorandum Regarding Construction of the Keystone XL Pipeline",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.axios.com/2017/12/15/trump-signs-executive-orders-for-keystone-dakota-pipelines-1513300078",
+          "source_name": "Axios",
+          "published_at": "2017-12-15T00:00:00.000Z",
+          "headline": "Trump signs executive orders for Keystone, Dakota pipelines",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. federal agencies"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "directing federal agencies to take steps intended to facilitate and expedite consideration",
+            "source_url": "https://trumpwhitehouse.archives.gov/presidential-actions/presidential-memorandum-regarding-construction-keystone-xl-pipeline/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.72,
+        "category": 0.85,
+        "location": 0.65,
+        "summary_grounding": 0.75
+      },
+      "quality_flags": [
+        "needs_dedupe_check",
+        "location_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "keystone_xl_permit_memorandum_2017_01",
+        "fingerprint": "keystone_xl_permit_memorandum|US|2017-01-24"
+      }
+    }
+  ]
+}

@@ -1,0 +1,780 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_2007-07_normalize_2026-01-16T033954711Z",
+    "generated_utc": "2026-01-16T03:39:54.711Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "2007-07",
+    "window": {
+      "start_utc": "2007-07-01T00:00:00.000Z",
+      "end_utc": "2007-07-31T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "2007-07-pollution_contamination-coffeyville-refinery-oil-spill",
+      "title": "Coffeyville refinery oil spill following flood and EPA response actions",
+      "description": "Flooding in Coffeyville, Kansas led to oil discharges from the Coffeyville Resources refinery beginning around July 1, 2007. EPA announced an agreement with the company to contain and secure discharges and recover as much oil as practicable as part of the response.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2007-07-01T00:00:00.000Z",
+        "event_end": "2007-07-01T23:59:59.000Z",
+        "reported_at": "2007-07-10T00:00:00Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2007-07-01T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Coffeyville, Kansas, USA",
+        "jurisdiction_level": "city",
+        "admin1": "Kansas",
+        "country": "US",
+        "capital_used": null,
+        "lat": 37.0373,
+        "lon": -95.6169,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.75
+      },
+      "sources": [
+        {
+          "url": "https://www.epa.gov/archive/epapages/newsroom_archive/newsreleases/ceb6327503a7ba72852573140073ddc8.html",
+          "source_name": "U.S. Environmental Protection Agency (archive)",
+          "published_at": "2007-07-10T00:00:00Z",
+          "headline": "EPA Reaches Agreement With Coffeyville Resources Regarding Oil Spill Cleanup",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.newson6.com/story/5e367ca62f69d76f6208f9db/water-supplies-show-no-contamination-from-oil-spill",
+          "source_name": "News On 6",
+          "published_at": "2007-07-12T00:00:00Z",
+          "headline": "Water Supplies Show No Contamination From Oil Spill",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Coffeyville Resources Refining & Marketing",
+          "U.S. Environmental Protection Agency (EPA)"
+        ],
+        "substances": [
+          "oil"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "EPA announced it has reached an agreement with Coffeyville Resources regarding cleanup activities related to the oil spill.",
+            "source_url": "https://www.epa.gov/archive/epapages/newsroom_archive/newsreleases/ceb6327503a7ba72852573140073ddc8.html"
+          },
+          {
+            "quote": "The agreement requires Coffeyville Resources to take steps to contain and secure the oil discharges and recover as much oil as practicable.",
+            "source_url": "https://www.epa.gov/archive/epapages/newsroom_archive/newsreleases/ceb6327503a7ba72852573140073ddc8.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.72,
+        "category": 0.85,
+        "location": 0.75,
+        "summary_grounding": 0.7
+      },
+      "quality_flags": [
+        "needs_dedupe_check",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "Coffeyville Kansas refinery oil spill July 2007 flood",
+        "fingerprint": "fp-2007-07-coffeyville-kansas-oil-spill"
+      }
+    },
+    {
+      "event_id": "20070709_flood_eastern_india_wb_orissa",
+      "title": "Monsoon flooding inundates parts of West Bengal and northern Odisha (Orissa), India",
+      "description": "Early July monsoon rains caused widespread flooding in eastern India. Satellite observations on July 9, 2007 showed extensive inundation in West Bengal and northern Orissa, with rivers swollen by torrential rain and reservoir releases.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2007-07-09T00:00:00.000Z",
+        "event_end": "2007-07-10T23:59:59.000Z",
+        "reported_at": "2007-07-09T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2007-07-09T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "India (West Bengal and northern Orissa)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "IN",
+        "capital_used": "New Delhi",
+        "lat": 28.6139,
+        "lon": 77.209,
+        "precision": "proxy",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://science.nasa.gov/earth/earth-observatory/flooding-in-eastern-india-18648/",
+          "source_name": "NASA Earth Observatory",
+          "published_at": "2007-07-09T00:00:00.000Z",
+          "headline": "Flooding in Eastern India",
+          "byline": null,
+          "accessed_utc": "2007-07-01T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NASA Earth Observatory"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Satellite observations on July 9, 2007 documented extensive inundation in West Bengal and northern Orissa.",
+            "source_url": "https://science.nasa.gov/earth/earth-observatory/flooding-in-eastern-india-18648/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.64,
+        "category": 0.8,
+        "location": 0.55,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "2007-07 India monsoon flooding West Bengal Orissa",
+        "fingerprint": "fp_20070709_flood_eastern_india_wb_orissa"
+      }
+    },
+    {
+      "event_id": "20070711_flood_central_myanmar",
+      "title": "Monsoon flooding in central Myanmar following unusually heavy early-season rainfall",
+      "description": "Unusually heavy rainfall in June and early July 2007 led to flooding in central Myanmar. Satellite imagery captured the flood extent on July 11, 2007.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2007-07-09T00:00:00.000Z",
+        "event_end": "2007-07-11T23:59:59.000Z",
+        "reported_at": "2007-07-11T00:00:00.000Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "2007-07-11T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Myanmar (central regions)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "MM",
+        "capital_used": "Naypyidaw",
+        "lat": 19.7633,
+        "lon": 96.0785,
+        "precision": "proxy",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.5
+      },
+      "sources": [
+        {
+          "url": "https://science.nasa.gov/earth/earth-observatory/monsoon-floods-in-myanmar-18709/",
+          "source_name": "NASA Earth Observatory",
+          "published_at": "2007-07-11T00:00:00.000Z",
+          "headline": "Monsoon Floods in Myanmar",
+          "byline": null,
+          "accessed_utc": "2007-07-01T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NASA Earth Observatory"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Satellite imagery captured the flood extent on July 11, 2007.",
+            "source_url": "https://science.nasa.gov/earth/earth-observatory/monsoon-floods-in-myanmar-18709/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.8,
+        "location": 0.5,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "2007-07 Myanmar monsoon floods central Myanmar",
+        "fingerprint": "fp_20070711_flood_central_myanmar"
+      }
+    },
+    {
+      "event_id": "20070710_ozone_forecast_southern_new_england",
+      "title": "Unhealthy ozone air-quality forecast during heatwave in Southern New England, USA",
+      "description": "During a heatwave, the U.S. EPA forecast unhealthy ozone levels for July 10, 2007 in Connecticut and parts of Massachusetts and Rhode Island. The notice also warned particulate matter could be elevated and that poor air quality might continue into July 11.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2007-07-10T00:00:00.000Z",
+        "event_end": "2007-07-10T23:59:59.000Z",
+        "reported_at": "2007-07-10T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2007-07-10T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States (Southern New England)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "proxy",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.5
+      },
+      "sources": [
+        {
+          "url": "https://www.epa.gov/archive/epapages/newsroom_archive/newsreleases/c182f74e35f9e50785257313006a2c38.html",
+          "source_name": "U.S. Environmental Protection Agency (EPA)",
+          "published_at": "2007-07-10T00:00:00.000Z",
+          "headline": "Heatwave-associated unhealthy ozone forecast for Southern New England",
+          "byline": null,
+          "accessed_utc": "2007-07-01T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Environmental Protection Agency (EPA)"
+        ],
+        "substances": [
+          "ozone",
+          "particulate matter"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "EPA forecast unhealthy ozone air quality for July 10, 2007 across Connecticut and parts of Massachusetts and Rhode Island.",
+            "source_url": "https://www.epa.gov/archive/epapages/newsroom_archive/newsreleases/c182f74e35f9e50785257313006a2c38.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.67,
+        "category": 0.75,
+        "location": 0.5,
+        "summary_grounding": 0.65
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "2007-07 Southern New England unhealthy ozone forecast EPA",
+        "fingerprint": "fp_20070710_ozone_forecast_southern_new_england"
+      }
+    },
+    {
+      "event_id": "2007-07-geological-niigata-chuetsu-oki-earthquake",
+      "title": "Niigataken Chuetsu-oki earthquake off Niigata Prefecture",
+      "description": "A strong offshore earthquake occurred near Niigata Prefecture, Japan on July 16, 2007. Official reporting noted very strong shaking and mentioned tsunami observations along parts of the Niigata coast.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2007-07-16T01:13:22.000Z",
+        "event_end": "2007-07-16T01:13:22.000Z",
+        "reported_at": "2007-07-16T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2007-07-16T01:13:22.000Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Offshore Niigata Prefecture, Japan",
+        "jurisdiction_level": "state",
+        "admin1": "Niigata Prefecture",
+        "country": "JP",
+        "capital_used": "Niigata",
+        "lat": 37.916192,
+        "lon": 139.036413,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.75
+      },
+      "sources": [
+        {
+          "url": "https://www.jishin.go.jp/main/chousa/07jul_chuetsu_oki/index-e.htm",
+          "source_name": "Headquarters for Earthquake Research Promotion (Japan)",
+          "published_at": "2007-07-16T00:00:00.000Z",
+          "headline": "Niigataken Chuetsu-oki Earthquake (July 16, 2007)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Headquarters for Earthquake Research Promotion"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Niigataken Chuetsu-oki Earthquake (July 16, 2007)",
+            "source_url": "https://www.jishin.go.jp/main/chousa/07jul_chuetsu_oki/index-e.htm"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.74,
+        "category": 0.9,
+        "location": 0.75,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Niigataken Chuetsu-oki earthquake (2007-07-16)",
+        "fingerprint": "fp_2007-07-16_niigata-prefecture_jp_niigataken-chuetsu-oki"
+      }
+    },
+    {
+      "event_id": "2007-07_fires_zaca-fire_los-padres",
+      "title": "Zaca Fire ignites in Los Padres National Forest (California)",
+      "description": "The Zaca Fire started on July 4, 2007 in the Los Padres National Forest area of Santa Barbara County, California. It became a major wildfire with ongoing impacts through July 2007.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2007-07-04T17:53:00.000Z",
+        "event_end": "2007-07-31T23:59:59.000Z",
+        "reported_at": "2007-07-04T17:53:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2007-07-04T17:53:00.000Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Santa Barbara County, California, USA",
+        "jurisdiction_level": "state",
+        "admin1": "California",
+        "country": "US",
+        "capital_used": "Sacramento",
+        "lat": 38.5767,
+        "lon": -121.4944,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.fire.ca.gov/incidents/2007/7/4/zaca-fire/",
+          "source_name": "CAL FIRE",
+          "published_at": "2007-07-04T17:53:00.000Z",
+          "headline": "Zaca Fire",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.jpl.nasa.gov/images/pia02158-zaca-fire/",
+          "source_name": "NASA Jet Propulsion Laboratory (JPL)",
+          "published_at": "2007-07-01T00:00:00.000Z",
+          "headline": "Zaca Fire (image)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "CAL FIRE",
+          "NASA Jet Propulsion Laboratory (JPL)"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Zaca Fire",
+            "source_url": "https://www.fire.ca.gov/incidents/2007/7/4/zaca-fire/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.75,
+        "location": 0.6,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "needs_dedupe_check",
+        "date_ambiguous",
+        "paywalled_or_partial"
+      ],
+      "dedupe": {
+        "cluster_hint": "Zaca Fire July 2007 California",
+        "fingerprint": "zaca-fire|california|2007-07-04"
+      }
+    },
+    {
+      "event_id": "2007-07_fires_greece-heatwave-fires_corinth",
+      "title": "Wildfires reported in Greece during July 2007 heatwave; evacuations near Corinth",
+      "description": "During a July 2007 heatwave, authorities in Greece reported numerous wildfires in a 24-hour period. Evacuations were reported near Corinth and other areas, with property damage reported as fires reached inhabited areas.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2007-07-19T00:00:00.000Z",
+        "event_end": "2007-07-19T23:59:59.000Z",
+        "reported_at": "2007-07-20T00:00:00.000Z",
+        "time_confidence": 0.5,
+        "event_date_utc": "2007-07-19T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Greece",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "GR",
+        "capital_used": "Athens",
+        "lat": 37.9838,
+        "lon": 23.7275,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.insurancejournal.com/news/international/2007/07/20/81951.htm",
+          "source_name": "Insurance Journal",
+          "published_at": "2007-07-20T00:00:00.000Z",
+          "headline": "Greece experiences numerous wildfires amid heatwave; evacuations and property damage reported",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Greek authorities reported a very high number of fires in a 24-hour period",
+            "source_url": "https://www.insurancejournal.com/news/international/2007/07/20/81951.htm"
+          },
+          {
+            "quote": "evacuations occurred near Corinth",
+            "source_url": "https://www.insurancejournal.com/news/international/2007/07/20/81951.htm"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.7,
+        "location": 0.55,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "Greece heatwave fires July 2007 Corinth",
+        "fingerprint": "greece-fires|greece|2007-07-19"
+      }
+    },
+    {
+      "event_id": "2007-07-02_clean-air-act_settlement_east-kentucky-power-cooperative",
+      "title": "Clean Air Act settlement requires East Kentucky Power Cooperative to install pollution controls",
+      "description": "The U.S. Department of Justice announced a Clean Air Act settlement with East Kentucky Power Cooperative requiring installation of pollution controls at multiple Kentucky power plants and payment of a civil penalty. The settlement is intended to reduce emissions including NOx and SO2 when fully implemented.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "2007-07-02T00:00:00.000Z",
+        "event_end": "2007-07-02T23:59:59.000Z",
+        "reported_at": "2007-07-02T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2007-07-02T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Kentucky, USA (Spurlock, Dale, and Cooper plants)",
+        "jurisdiction_level": "state",
+        "admin1": "Kentucky",
+        "country": "US",
+        "capital_used": "Frankfort",
+        "lat": 38.200905,
+        "lon": -84.873284,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.justice.gov/archive/opa/pr/2007/July/07_enrd_480.html",
+          "source_name": "U.S. Department of Justice",
+          "published_at": "2007-07-02T00:00:00.000Z",
+          "headline": "Clean Air Act settlement: East Kentucky Power Cooperative to spend ~$650M on pollution controls",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Department of Justice",
+          "U.S. Environmental Protection Agency",
+          "East Kentucky Power Cooperative"
+        ],
+        "substances": [
+          "NOx",
+          "SO2"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "settlement requires East Kentucky Power Cooperative to install state-of-the-art air pollution controls",
+            "source_url": "https://www.justice.gov/archive/opa/pr/2007/July/07_enrd_480.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.68,
+        "category": 0.8,
+        "location": 0.6,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "clean-air-act-settlement-east-kentucky-power-cooperative-ky-2007-07-02",
+        "fingerprint": "clean-air-act-settlement-requires-east-kentucky-power-cooperative-to-install-pollution-controls|kentucky-us|2007-07-02"
+      }
+    },
+    {
+      "event_id": "2007-07-10_clean-air-act_settlement_caspers-electronics_defeat-devices",
+      "title": "Federal Clean Air Act settlement targets Casper’s Electronics defeat devices",
+      "description": "The U.S. Department of Justice announced a Clean Air Act settlement involving Casper’s Electronics related to manufacture and sale of oxygen-simulator devices used to bypass vehicle emission controls. The settlement included measures such as customer notification and a repurchase program.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "2007-07-10T00:00:00.000Z",
+        "event_end": "2007-07-10T23:59:59.000Z",
+        "reported_at": "2007-07-10T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2007-07-10T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Illinois, USA (company based in Illinois; enforcement is federal)",
+        "jurisdiction_level": "state",
+        "admin1": "Illinois",
+        "country": "US",
+        "capital_used": "Springfield",
+        "lat": 39.798363,
+        "lon": -89.654961,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.5
+      },
+      "sources": [
+        {
+          "url": "https://www.justice.gov/archive/opa/pr/2007/July/07_enrd_490.html",
+          "source_name": "U.S. Department of Justice",
+          "published_at": "2007-07-10T00:00:00.000Z",
+          "headline": "Federal settlement targets illegal auto-emissions 'defeat devices' sold by Casper’s Electronics",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.epa.gov/enforcement/caspers-electronics-inc-clean-air-act",
+          "source_name": "U.S. Environmental Protection Agency",
+          "published_at": "2007-07-10T00:00:00.000Z",
+          "headline": "Caspers Electronics Inc. Clean Air Act",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Department of Justice",
+          "U.S. Environmental Protection Agency",
+          "Casper’s Electronics"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "manufacture and sale of oxygen-simulator devices used to bypass vehicle emission controls",
+            "source_url": "https://www.justice.gov/archive/opa/pr/2007/July/07_enrd_490.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.78,
+        "location": 0.5,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "needs_dedupe_check",
+        "location_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "caspers-electronics-defeat-devices-il-2007-07-10",
+        "fingerprint": "federal-clean-air-act-settlement-targets-casper-s-electronics-defeat-devices|illinois-us|2007-07-10"
+      }
+    },
+    {
+      "event_id": "2007-07-18_consent-decree_equistar-chemicals_multimedia-violations",
+      "title": "Consent decree requires Equistar Chemicals to invest in pollution controls and cleanup",
+      "description": "EPA and the U.S. Department of Justice announced a consent decree requiring Equistar Chemicals LP to implement pollution controls and cleanup measures across multiple petrochemical facilities. The action addressed alleged violations involving air, water, and hazardous-waste requirements across several U.S. states.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "2007-07-18T00:00:00.000Z",
+        "event_end": "2007-07-19T23:59:59.000Z",
+        "reported_at": "2007-07-18T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2007-07-18T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States (multi-state facilities; federal consent decree)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.907192,
+        "lon": -77.036871,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.45
+      },
+      "sources": [
+        {
+          "url": "https://www.epa.gov/archive/epapages/newsroom_archive/newsreleases/e388240f37e675468525731c006f5b52.html",
+          "source_name": "U.S. Environmental Protection Agency",
+          "published_at": "2007-07-18T00:00:00.000Z",
+          "headline": "Equistar Chemicals enforcement settlement announced: $125M in controls/cleanup for multi-media violations",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.justice.gov/archive/opa/pr/2007/July/07_enrd_510.html",
+          "source_name": "U.S. Department of Justice",
+          "published_at": "2007-07-18T00:00:00.000Z",
+          "headline": "Equistar Chemicals enforcement settlement announced: $125M in controls/cleanup for multi-media violations",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Environmental Protection Agency",
+          "U.S. Department of Justice",
+          "Equistar Chemicals LP"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "consent decree requires Equistar Chemicals LP to spend over $125 million on pollution controls and cleanup",
+            "source_url": "https://www.justice.gov/archive/opa/pr/2007/July/07_enrd_510.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.58,
+        "category": 0.75,
+        "location": 0.45,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "needs_dedupe_check",
+        "location_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "equistar-chemicals-consent-decree-us-2007-07-18",
+        "fingerprint": "consent-decree-requires-equistar-chemicals-to-invest-in-pollution-controls-and-cleanup|united-states-multi-state-facilities-federal-consent-decree-us|2007-07-18"
+      }
+    }
+  ]
+}

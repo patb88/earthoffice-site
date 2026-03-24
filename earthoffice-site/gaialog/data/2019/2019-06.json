@@ -1,0 +1,716 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_2019-06_normalize_2026-01-16T064935902Z",
+    "generated_utc": "2026-01-16T06:49:35.902Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "2019-06",
+    "window": {
+      "start_utc": "2019-06-01T00:00:00.000Z",
+      "end_utc": "2019-06-30T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "pollution_contamination_pes_refinery_fire_philadelphia_2019-06-21",
+      "title": "Philadelphia Energy Solutions refinery fire and explosions",
+      "description": "A vapor release in the Philadelphia Energy Solutions refinery alkylation unit ignited, leading to a fire and multiple explosions. The incident involved hydrofluoric acid in the process and was investigated by the U.S. Chemical Safety Board.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2019-06-21T08:00:00.000Z",
+        "event_end": "2019-06-21T23:59:59.000Z",
+        "reported_at": "2019-06-21T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2019-06-21T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Philadelphia, Pennsylvania, United States",
+        "jurisdiction_level": "city",
+        "admin1": "Pennsylvania",
+        "country": "US",
+        "capital_used": null,
+        "lat": 39.952583,
+        "lon": -75.165222,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.8
+      },
+      "sources": [
+        {
+          "url": "https://www.csb.gov/philadelphia-energy-solutions-pes-refinery-fire-and-explosions-/",
+          "source_name": "U.S. Chemical Safety Board",
+          "published_at": "2019-06-21T00:00:00.000Z",
+          "headline": "Philadelphia Energy Solutions (PES) refinery fire and explosions",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.csb.gov/chemical-safety-board-releases-factual-update-and-new-animation-detailing-the-events-of-the-massive-explosion-and-fire-at-the-pes-refinery-in-philadelphia-pa/",
+          "source_name": "U.S. Chemical Safety Board",
+          "published_at": "2019-06-21T00:00:00.000Z",
+          "headline": "Chemical Safety Board releases factual update and new animation detailing the events of the massive explosion and fire at the PES refinery in Philadelphia, PA",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Philadelphia Energy Solutions (PES)",
+          "U.S. Chemical Safety Board (CSB)"
+        ],
+        "substances": [
+          "hydrofluoric acid"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "A vapor release occurred in the alkylation unit and ignited, causing a fire and multiple explosions.",
+            "source_url": "https://www.csb.gov/philadelphia-energy-solutions-pes-refinery-fire-and-explosions-/"
+          },
+          {
+            "quote": "The alkylation unit used hydrofluoric acid in the process.",
+            "source_url": "https://www.csb.gov/philadelphia-energy-solutions-pes-refinery-fire-and-explosions-/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.68,
+        "category": 0.75,
+        "location": 0.8,
+        "summary_grounding": 0.65
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "PES refinery fire and explosions (Philadelphia) June 2019",
+        "fingerprint": "pollution_contamination|philadelphia_pa_us|2019-06-21|philadelphia_energy_solutions_refinery_fire_and_explosions"
+      }
+    },
+    {
+      "event_id": "201906_eu_heatwave_late_june",
+      "title": "Late-June 2019 extreme European heatwave breaks June temperature records",
+      "description": "An exceptionally intense heatwave affected large parts of Western and Central Europe in late June 2019. Reports described multiple June temperature records being broken across several countries, including very high temperatures exceeding 40°C in parts of Western Europe.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2019-06-25T00:00:00.000Z",
+        "event_end": "2019-06-30T23:59:59.000Z",
+        "reported_at": "2019-06-26T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": null,
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Western & Central Europe",
+        "jurisdiction_level": "supranational",
+        "admin1": null,
+        "country": null,
+        "capital_used": "Brussels",
+        "lat": 50.8503,
+        "lon": 4.3517,
+        "precision": "supranational",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.rmets.org/metmatters/extreme-european-heatwave-june-2019",
+          "source_name": "Royal Meteorological Society (RMetS)",
+          "published_at": "2019-06-26T00:00:00.000Z",
+          "headline": "Extreme European heatwave in June 2019",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://weather.com/safety/heat/news/2019-06-26-record-breaking-heat-wave-europe-june-2019",
+          "source_name": "The Weather Channel",
+          "published_at": "2019-06-26T00:00:00.000Z",
+          "headline": "Record-breaking heat wave in Europe (June 2019)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.75,
+        "location": 0.55,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Europe heatwave late June 2019",
+        "fingerprint": "fp_201906_eu_heatwave_late_june_western-central-europe_2019-06-25_2019-06-30"
+      }
+    },
+    {
+      "event_id": "201906_noaa_warmest_june_global",
+      "title": "NOAA: June 2019 was the warmest June on record globally (NOAA dataset)",
+      "description": "NOAA’s National Centers for Environmental Information reported that June 2019 was the warmest June on record globally in NOAA’s dataset. The assessment summarized unusually warm conditions across multiple regions during the month.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2019-06-01T00:00:00.000Z",
+        "event_end": "2019-06-30T23:59:59.000Z",
+        "reported_at": "2019-07-18T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": null,
+        "event_date_precision": "month"
+      },
+      "location": {
+        "name": "Global",
+        "jurisdiction_level": "global_proxy",
+        "admin1": null,
+        "country": null,
+        "capital_used": null,
+        "lat": 0,
+        "lon": 0,
+        "precision": "proxy",
+        "location_basis": "manual_override",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.ncei.noaa.gov/news/global-climate-201906",
+          "source_name": "NOAA NCEI",
+          "published_at": "2019-07-18T00:00:00.000Z",
+          "headline": "Global Climate Report - June 2019",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://wmo.int/media/news/earth-experienced-warmest-june-record",
+          "source_name": "World Meteorological Organization (WMO)",
+          "published_at": "2019-07-18T00:00:00.000Z",
+          "headline": "Earth experienced warmest June on record",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA National Centers for Environmental Information",
+          "World Meteorological Organization"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.7,
+        "category": 0.8,
+        "location": 0.8,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "NOAA global climate June 2019 warmest June",
+        "fingerprint": "fp_201906_noaa_global_warmest_june_2019-06"
+      }
+    },
+    {
+      "event_id": "evt_201906_raikoke_eruption_ash_plume",
+      "title": "Raikoke volcano eruption sends ash plume over North Pacific toward the Bering Sea",
+      "description": "An eruption at Raikoke volcano began on June 21, 2019, producing an ash plume reported at roughly 13 km altitude. The ash drifted over the North Pacific toward the Bering Sea, triggering aviation ash advisories.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2019-06-21T00:00:00.000Z",
+        "event_end": "2019-06-22T23:59:59.000Z",
+        "reported_at": "2019-06-22T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2019-06-21T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Raikoke volcano, Kuril Islands, Russia",
+        "jurisdiction_level": "site",
+        "admin1": null,
+        "country": "RU",
+        "capital_used": null,
+        "lat": 48.292,
+        "lon": 153.25,
+        "precision": "exact",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://phys.org/news/2019-06-volcano-raikoke-ash-bering-sea.html",
+          "source_name": "Phys.org",
+          "published_at": "2019-06-22T00:00:00.000Z",
+          "headline": "Volcano Raikoke sends ash towards Bering Sea",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [
+          "volcanic ash"
+        ],
+        "ecosystems": [
+          "North Pacific Ocean",
+          "Bering Sea"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "The eruption began on June 21, 2019, sending an ash plume high into the atmosphere.",
+            "source_url": "https://phys.org/news/2019-06-volcano-raikoke-ash-bering-sea.html"
+          },
+          {
+            "quote": "Ash was drifting over the North Pacific toward the Bering Sea, prompting aviation warnings.",
+            "source_url": "https://phys.org/news/2019-06-volcano-raikoke-ash-bering-sea.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.8,
+        "location": 0.55,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Raikoke volcano eruption June 2019 ash plume",
+        "fingerprint": "fp_raikoke_2019-06-21_raikoke_volcano_kuril_islands_ru"
+      }
+    },
+    {
+      "event_id": "evt_201906_sand_fire_yolo_ca",
+      "title": "Sand Fire in Yolo County, California, prompted evacuations and regional smoke impacts",
+      "description": "A wildfire known as the Sand Fire started near Guinda in Yolo County, California in June 2019. The incident burned thousands of acres and led to evacuations and smoke impacts in the surrounding region before containment.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2019-06-08T21:50:00.000Z",
+        "event_end": "2019-06-17T17:40:00.000Z",
+        "reported_at": "2019-06-08T21:50:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2019-06-08T21:50:00.000Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Guinda area, Yolo County, California, United States",
+        "jurisdiction_level": "site",
+        "admin1": "California",
+        "country": "US",
+        "capital_used": null,
+        "lat": 0,
+        "lon": 0,
+        "precision": "exact",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.2
+      },
+      "sources": [
+        {
+          "url": "https://www.fire.ca.gov/incidents/2019/6/8/sand-fire/",
+          "source_name": "CAL FIRE",
+          "published_at": "2019-06-08T21:50:00.000Z",
+          "headline": "Sand Fire",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "CAL FIRE"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Sand Fire",
+            "source_url": "https://www.fire.ca.gov/incidents/2019/6/8/sand-fire/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.45,
+        "category": 0.75,
+        "location": 0.2,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "low_confidence_location",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "sand-fire-yolo-ca-2019-06",
+        "fingerprint": "sand_fire_yolo_ca_2019-06-08"
+      }
+    },
+    {
+      "event_id": "evt_201906_osceola_nf_smoke_fl",
+      "title": "Wildfires in and near Osceola National Forest caused recurring smoke and visibility impacts",
+      "description": "Multiple wildfires burning in and near Osceola National Forest in Florida produced recurring smoke impacts. Public smoke outlook updates documented visibility concerns during early to mid June 2019.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2019-06-06T00:00:00.000Z",
+        "event_end": "2019-06-12T23:59:59.000Z",
+        "reported_at": "2019-06-06T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2019-06-06T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Osceola National Forest area, Florida, United States",
+        "jurisdiction_level": "site",
+        "admin1": "Florida",
+        "country": "US",
+        "capital_used": null,
+        "lat": 0,
+        "lon": 0,
+        "precision": "exact",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.2
+      },
+      "sources": [
+        {
+          "url": "https://inciweb.wildfire.gov/node/292009",
+          "source_name": "InciWeb",
+          "published_at": "2019-06-06T00:00:00.000Z",
+          "headline": "InciWeb incident page (node/292009)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://inciweb.wildfire.gov/node/292013",
+          "source_name": "InciWeb",
+          "published_at": "2019-06-06T00:00:00.000Z",
+          "headline": "InciWeb incident page (node/292013)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "InciWeb"
+        ],
+        "substances": [
+          "smoke"
+        ],
+        "ecosystems": [
+          "forest"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "daily public smoke outlook updates",
+            "source_url": "https://inciweb.wildfire.gov/node/292009"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.4,
+        "category": 0.7,
+        "location": 0.2,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "low_confidence_location",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "osceola-nf-smoke-fl-2019-06",
+        "fingerprint": "osceola_nf_smoke_fl_2019-06-06"
+      }
+    },
+    {
+      "event_id": "20190610_gulf_dead_zone_forecast_usgs",
+      "title": "NOAA/USGS forecast a very large Gulf of Mexico hypoxic “dead zone” for summer 2019",
+      "description": "USGS reported that NOAA scientists forecast the 2019 Gulf of Mexico hypoxic zone at about 7,829 square miles using USGS nutrient and river data. The low-oxygen zone is linked to excess nutrient pollution from the Mississippi River watershed and can harm fish and other marine life.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2019-06-10T00:00:00.000Z",
+        "event_end": "2019-06-10T23:59:59.000Z",
+        "reported_at": "2019-06-10T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2019-06-10T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Gulf of Mexico, United States",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.usgs.gov/news/national-news-release/very-large-dead-zone-forecast-gulf-mexico",
+          "source_name": "USGS",
+          "published_at": "2019-06-10T00:00:00.000Z",
+          "headline": "Very large “dead zone” forecast for Gulf of Mexico",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "USGS",
+          "NOAA"
+        ],
+        "substances": [
+          "nutrients"
+        ],
+        "ecosystems": [
+          "Gulf of Mexico"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "NOAA scientists are forecasting this summer’s Gulf of Mexico hypoxic zone to be about 7,829 square miles.",
+            "source_url": "https://www.usgs.gov/news/national-news-release/very-large-dead-zone-forecast-gulf-mexico"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.72,
+        "category": 0.8,
+        "location": 0.6,
+        "summary_grounding": 0.75
+      },
+      "quality_flags": [
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "gulf_of_mexico_hypoxic_zone_2019_forecast",
+        "fingerprint": "20190610|gulf_of_mexico_dead_zone_forecast|US|2019-06-10"
+      }
+    },
+    {
+      "event_id": "20190621_gulf_coast_dolphin_strandings_time",
+      "title": "Reports highlight spike in Gulf Coast bottlenose dolphin strandings and deaths",
+      "description": "A June 2019 report described an unusually high number of bottlenose dolphin deaths and strandings along parts of the U.S. Gulf Coast. The reporting linked the spike to unusually wet conditions and related stressors and referenced NOAA’s Unusual Mortality Event response context.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2019-06-21T00:00:00.000Z",
+        "event_end": "2019-06-21T23:59:59.000Z",
+        "reported_at": "2019-06-21T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2019-06-21T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "U.S. Gulf Coast (Mississippi, Louisiana, Alabama, Florida)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.4
+      },
+      "sources": [
+        {
+          "url": "https://time.com/5610389/dead-dolphins-gulf-coast/",
+          "source_name": "Time",
+          "published_at": "2019-06-21T00:00:00.000Z",
+          "headline": "Dead Dolphins Are Washing Up on U.S. Gulf Coast Beaches. Here’s What’s Behind the Spike",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "U.S. Gulf Coast"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Dead bottlenose dolphins are washing up on beaches along the Gulf Coast at unusually high rates this year.",
+            "source_url": "https://time.com/5610389/dead-dolphins-gulf-coast/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.7,
+        "location": 0.45,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "needs_dedupe_check",
+        "location_ambiguous",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "gulf_coast_dolphin_strandings_2019",
+        "fingerprint": "20190621|gulf_coast_dolphin_strandings|US|2019-06-21"
+      }
+    },
+    {
+      "event_id": "ace_rule_finalized_us_epa_2019-06-19",
+      "title": "U.S. EPA finalizes Affordable Clean Energy (ACE) rule replacing the Clean Power Plan",
+      "description": "On June 19, 2019, the U.S. Environmental Protection Agency announced it had finalized the Affordable Clean Energy (ACE) rule. The rule replaced the Clean Power Plan and set emissions guidelines for states for certain existing coal-fired power plants under Clean Air Act section 111(d).",
+      "category_primary": "policy_regulation",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "2019-06-19T00:00:00.000Z",
+        "event_end": "2019-06-19T23:59:59.000Z",
+        "reported_at": "2019-06-19T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2019-06-19T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States (federal policy)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.8
+      },
+      "sources": [
+        {
+          "url": "https://www.epa.gov/newsreleases/epa-finalizes-affordable-clean-energy-rule-ensuring-reliable-diversified-energy",
+          "source_name": "U.S. Environmental Protection Agency",
+          "published_at": "2019-06-19T00:00:00.000Z",
+          "headline": "EPA Finalizes Affordable Clean Energy Rule Ensuring Reliable, Diversified Energy",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.epa.gov/stationary-sources-air-pollution/affordable-clean-energy-rule",
+          "source_name": "U.S. Environmental Protection Agency",
+          "published_at": "2019-06-19T00:00:00.000Z",
+          "headline": "Affordable Clean Energy Rule",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Environmental Protection Agency (EPA)"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "EPA today finalized the Affordable Clean Energy (ACE) rule.",
+            "source_url": "https://www.epa.gov/newsreleases/epa-finalizes-affordable-clean-energy-rule-ensuring-reliable-diversified-energy"
+          },
+          {
+            "quote": "The ACE rule replaces the Clean Power Plan.",
+            "source_url": "https://www.epa.gov/newsreleases/epa-finalizes-affordable-clean-energy-rule-ensuring-reliable-diversified-energy"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.74,
+        "category": 0.85,
+        "location": 0.8,
+        "summary_grounding": 0.7
+      },
+      "quality_flags": [
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "US_EPA_ACE_rule_finalized_2019-06-19",
+        "fingerprint": "us_epa_ace_rule_finalized|US|2019-06-19"
+      }
+    }
+  ]
+}

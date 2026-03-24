@@ -1,0 +1,634 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_1980-08_normalize_2026-01-18T091110020Z",
+    "generated_utc": "2026-01-18T09:11:10.020Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "1980-08",
+    "window": {
+      "start_utc": "1980-08-01T00:00:00.000Z",
+      "end_utc": "1980-08-31T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "ev_19800810_mrgo_testbank_reopen",
+      "title": "Mississippi River–Gulf Outlet reopened after pentachlorophenol contamination from Testbank collision",
+      "description": "Following the July 22, 1980 M/V Testbank–M/V Seadaniel collision and release of hazardous cargo including pentachlorophenol, authorities kept a navigation closure in place due to contamination and toxicity concerns. The Mississippi River–Gulf Outlet was reported as reopened on August 10, 1980.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1980-08-10T12:00:00Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "1980-08-10T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Mississippi River–Gulf Outlet (MRGO), near Shell Beach, Louisiana, USA",
+        "jurisdiction_level": "site",
+        "admin1": "Louisiana",
+        "country": "US",
+        "capital_used": null,
+        "lat": 29.868,
+        "lon": -89.679,
+        "precision": "exact",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://law.justia.com/cases/federal/district-courts/FSupp/524/1170/1430604/",
+          "source_name": "Justia (Federal District Court case)",
+          "published_at": "1982-01-01T00:00:00Z",
+          "headline": "In re Complaint of Settoon Towing, Inc. (524 F. Supp. 1170)",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://midsis.rempec.org/en/incidents/1980-testbank",
+          "source_name": "REMPEC / MIDSIS incident record",
+          "published_at": "1980-01-01T00:00:00Z",
+          "headline": "1980 Testbank (incident record)",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Coast Guard",
+          "M/V Testbank",
+          "M/V Seadaniel"
+        ],
+        "substances": [
+          "pentachlorophenol"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "...pentachlorophenol... navigation closure ... reopened ... August 10, 1980.",
+            "source_url": "https://midsis.rempec.org/en/incidents/1980-testbank"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.58,
+        "category": 0.75,
+        "location": 0.6,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "secondary_sources_only",
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "1980-testbank-mrgo-reopen",
+        "fingerprint": "fp_1980_08_10_testbank_mrgo_shellbeach"
+      }
+    },
+    {
+      "event_id": "1980-08-weather-hurricane-allen-landfall-brownsville",
+      "title": "Hurricane Allen makes landfall near Brownsville, Texas",
+      "description": "Hurricane Allen made landfall near the Brownsville/Padre Island area of South Texas on August 10, 1980 and weakened as it moved inland. NOAA documentation describes impacts including storm surge/coastal effects and heavy rainfall over South Texas before the system continued into Mexico.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1980-08-01T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1980-08-10T05:30:00Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Brownsville, Texas, United States",
+        "jurisdiction_level": "city",
+        "admin1": "Texas",
+        "country": "US",
+        "capital_used": null,
+        "lat": 25.901747,
+        "lon": -97.497484,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://www.weather.gov/lch/1980Allen",
+          "source_name": "NOAA/NWS",
+          "published_at": "1980-08-01T00:00:00.000Z",
+          "headline": "Hurricane Allen (1980)",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.ncei.noaa.gov/access/billions/state-summary/GCS",
+          "source_name": "NOAA NCEI",
+          "published_at": "1980-08-01T00:00:00.000Z",
+          "headline": "Billion-Dollar Weather and Climate Disasters (State Summary)",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA",
+          "National Weather Service (NWS)",
+          "NOAA NCEI"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Hurricane Allen ... made landfall ... near Brownsville, Texas",
+            "source_url": "https://www.weather.gov/lch/1980Allen"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.8,
+        "location": 0.7,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "paywalled_or_partial",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Hurricane Allen (1980) impacts in South Texas",
+        "fingerprint": "hurricane-allen|brownsville-tx|1980-08-10"
+      }
+    },
+    {
+      "event_id": "1980-08-weather-hurricane-allen-cat5-caribbean",
+      "title": "Hurricane Allen reaches Category 5 intensity in the Caribbean",
+      "description": "NOAA materials describe Hurricane Allen rapidly intensifying to Category 5 strength in the Caribbean in early August 1980. The storm’s intensity and track through the region are summarized in NOAA/NWS and NOAA/WPC tropical rainfall documentation.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1980-08-01T00:00:00.000Z",
+        "time_confidence": 0.5,
+        "event_date_utc": null,
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Eastern Caribbean Sea (near Hispaniola)",
+        "jurisdiction_level": "supranational",
+        "admin1": null,
+        "country": null,
+        "capital_used": "Bridgetown",
+        "lat": 13.0975,
+        "lon": -59.6167,
+        "precision": "proxy",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.35
+      },
+      "sources": [
+        {
+          "url": "https://www.weather.gov/lch/1980Allen",
+          "source_name": "NOAA/NWS",
+          "published_at": "1980-08-01T00:00:00.000Z",
+          "headline": "Hurricane Allen (1980)",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.wpc.ncep.noaa.gov/tropical/rain/allen1980.html",
+          "source_name": "NOAA/WPC",
+          "published_at": "1980-08-01T00:00:00.000Z",
+          "headline": "Hurricane Allen (1980) Rainfall Summary",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA",
+          "National Weather Service (NWS)",
+          "NOAA Weather Prediction Center (WPC)"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Hurricane Allen (1980) ... rainfall summary",
+            "source_url": "https://www.wpc.ncep.noaa.gov/tropical/rain/allen1980.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.45,
+        "category": 0.75,
+        "location": 0.35,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "needs_dedupe_check",
+        "low_confidence_location"
+      ],
+      "dedupe": {
+        "cluster_hint": "Hurricane Allen (1980) Caribbean peak intensity",
+        "fingerprint": "hurricane-allen|eastern-caribbean|1980-08"
+      }
+    },
+    {
+      "event_id": "1980-08-weather-hurricane-allen-rainfall-south-texas",
+      "title": "Hurricane Allen produces storm-total rainfall across South Texas",
+      "description": "NOAA/WPC provides a dedicated Hurricane Allen (1980) rainfall summary describing storm-total precipitation during the period when the system affected South Texas and nearby areas. The documentation includes rainfall patterns and maxima associated with the storm’s track.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1980-08-01T00:00:00.000Z",
+        "time_confidence": 0.55,
+        "event_date_utc": null,
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Austin, Texas, United States (proxy for South Texas rainfall region)",
+        "jurisdiction_level": "state",
+        "admin1": "Texas",
+        "country": "US",
+        "capital_used": "Austin",
+        "lat": 30.267153,
+        "lon": -97.743061,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.5
+      },
+      "sources": [
+        {
+          "url": "https://www.wpc.ncep.noaa.gov/tropical/rain/allen1980.html",
+          "source_name": "NOAA/WPC",
+          "published_at": "1980-08-01T00:00:00.000Z",
+          "headline": "Hurricane Allen (1980) Rainfall Summary",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA Weather Prediction Center (WPC)"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Hurricane Allen (1980) Rainfall Summary",
+            "source_url": "https://www.wpc.ncep.noaa.gov/tropical/rain/allen1980.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.52,
+        "category": 0.7,
+        "location": 0.5,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Hurricane Allen (1980) rainfall impacts Texas",
+        "fingerprint": "hurricane-allen|texas|1980-08"
+      }
+    },
+    {
+      "event_id": "1980-08-weather-us-drought-heatwave-continues",
+      "title": "U.S. drought and heat conditions persist through August 1980",
+      "description": "NOAA NCEI’s Billion-Dollar Weather and Climate Disasters dataset includes the Summer–Fall 1980 drought/heat wave affecting large areas of the central and eastern United States. The dataset indicates the event persisted through August 1980 as part of the broader 1980 drought/heat episode.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1980-08-01T00:00:00.000Z",
+        "time_confidence": 0.45,
+        "event_date_utc": null,
+        "event_date_precision": "month"
+      },
+      "location": {
+        "name": "United States",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, D.C.",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.ncei.noaa.gov/access/billions/state-summary/GCS",
+          "source_name": "NOAA NCEI",
+          "published_at": "1980-08-01T00:00:00.000Z",
+          "headline": "Billion-Dollar Weather and Climate Disasters (State Summary)",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA NCEI"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Billion-Dollar Weather and Climate Disasters",
+            "source_url": "https://www.ncei.noaa.gov/access/billions/state-summary/GCS"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.5,
+        "category": 0.75,
+        "location": 0.6,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "1980 U.S. drought/heat wave (summer-fall)",
+        "fingerprint": "us-drought-heat|us|1980-08"
+      }
+    },
+    {
+      "event_id": "evt-198008-okinawa-sesoko-coral-bleaching",
+      "title": "Coral bleaching observed around Sesoko Island, Okinawa (summer 1980)",
+      "description": "A localized coral bleaching event was reported around Sesoko Island in Okinawa during summer 1980. The report describes abnormally high daytime reef-flat temperatures during low tide, widespread bleaching affecting a substantial share of colonies, and partial recovery by the following January.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1999-01-01T00:00:00Z",
+        "time_confidence": 0.4,
+        "event_date_utc": "1980-08-15T00:00:00Z",
+        "event_date_precision": "month"
+      },
+      "location": {
+        "name": "Sesoko Island, Okinawa Prefecture, Japan",
+        "jurisdiction_level": "site",
+        "admin1": "Okinawa Prefecture",
+        "country": "JP",
+        "capital_used": null,
+        "lat": 26.6403,
+        "lon": 127.8622,
+        "precision": "exact",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.jstage.jst.go.jp/article/jcrs1999/1999/1/1999_1_83/_article/-char/en",
+          "source_name": "J-STAGE",
+          "published_at": "1999-01-01T00:00:00Z",
+          "headline": "1999_1_83 (J-STAGE article page)",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [
+          "coral reef"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "\"during summer 1980\"",
+            "source_url": "https://www.jstage.jst.go.jp/article/jcrs1999/1999/1/1999_1_83/_article/-char/en"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.5,
+        "category": 0.75,
+        "location": 0.55,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "coral bleaching sesoko okinawa 1980",
+        "fingerprint": "fp-198008-sesoko-bleaching-198008"
+      }
+    },
+    {
+      "event_id": "evt-198008-fl-dusky-seaside-sparrow-capture",
+      "title": "Only five male dusky seaside sparrows reported; remaining birds captured for safekeeping (Florida)",
+      "description": "A U.S. Fish & Wildlife Service news release reported that only five dusky seaside sparrows were known to exist and that all were male. The release stated the remaining known males were captured and held in captivity, with the species described as at risk of extinction due to the apparent absence of females and lack of nesting for several years.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1980-08-15T12:00:00Z",
+        "event_end": "1980-08-15T12:00:00Z",
+        "reported_at": "1980-08-15T00:00:00Z",
+        "time_confidence": 0.8,
+        "event_date_utc": "1980-08-15T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Brevard County, Florida, USA",
+        "jurisdiction_level": "state",
+        "admin1": "Florida",
+        "country": "US",
+        "capital_used": "Tallahassee",
+        "lat": 30.4383,
+        "lon": -84.2807,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.8
+      },
+      "sources": [
+        {
+          "url": "https://www.fws.gov/sites/default/files/documents/historic-news-releases/1980/19800815A.PDF",
+          "source_name": "U.S. Fish & Wildlife Service",
+          "published_at": "1980-08-15T00:00:00Z",
+          "headline": "Historic News Release (1980-08-15)",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Fish & Wildlife Service"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "\"only five dusky seaside sparrows are known to exist\"",
+            "source_url": "https://www.fws.gov/sites/default/files/documents/historic-news-releases/1980/19800815A.PDF"
+          },
+          {
+            "quote": "\"all are male\"",
+            "source_url": "https://www.fws.gov/sites/default/files/documents/historic-news-releases/1980/19800815A.PDF"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.75,
+        "category": 0.8,
+        "location": 0.8,
+        "summary_grounding": 0.7
+      },
+      "quality_flags": [
+        "location_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "dusky seaside sparrow five males captured 1980-08-15",
+        "fingerprint": "fp-198008-dusky-seaside-sparrow-19800815"
+      }
+    },
+    {
+      "event_id": "19800818_USA_HR6665_house_passage",
+      "title": "U.S. House passes H.R. 6665 to implement MARPOL ship-pollution rules",
+      "description": "The U.S. House of Representatives passed H.R. 6665, legislation aimed at preventing pollution from ships and implementing the 1978 Protocol related to the International Convention for the Prevention of Pollution from Ships (MARPOL). The bill’s actions on Congress.gov record the House passage during August 1980.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1980-08-18T12:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1980-08-18T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States (U.S. House of Representatives)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.8
+      },
+      "sources": [
+        {
+          "url": "https://www.congress.gov/bill/96th-congress/house-bill/6665/all-actions",
+          "source_name": "Congress.gov",
+          "published_at": "1980-08-18T12:00:00Z",
+          "headline": "All Actions: H.R.6665 — 96th Congress (1979-1980)",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00Z",
+          "canonical_url": "https://www.congress.gov/bill/96th-congress/house-bill/6665/all-actions"
+        },
+        {
+          "url": "https://www.congress.gov/bill/96th-congress/house-bill/6665",
+          "source_name": "Congress.gov",
+          "published_at": "1980-08-18T12:00:00Z",
+          "headline": "H.R.6665 — 96th Congress (1979-1980)",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00Z",
+          "canonical_url": "https://www.congress.gov/bill/96th-congress/house-bill/6665"
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. House of Representatives"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "All Actions (0) — H.R.6665 — 96th Congress (1979-1980)",
+            "source_url": "https://www.congress.gov/bill/96th-congress/house-bill/6665/all-actions"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.75,
+        "location": 0.8,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "HR6665_MARPOL_US_House_1980-08",
+        "fingerprint": "hr6665|us|1980-08-18"
+      }
+    }
+  ]
+}

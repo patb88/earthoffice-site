@@ -1,0 +1,841 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_2022-12_normalize_2026-01-16T132957774Z",
+    "generated_utc": "2026-01-16T13:29:57.774Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "2022-12",
+    "window": {
+      "start_utc": "2022-12-01T00:00:00.000Z",
+      "end_utc": "2022-12-31T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "evt_202212_keystone_spill_kansas_mill_creek",
+      "title": "Keystone Pipeline rupture spills crude oil into Mill Creek in Washington County, Kansas",
+      "description": "A rupture on the Keystone Pipeline in Washington County, Kansas released an estimated ~14,000 barrels of crude oil into Mill Creek. The spill prompted containment and cleanup efforts and downstream monitoring for contamination.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2022-12-07T00:00:00.000Z",
+        "event_end": "2022-12-07T23:59:59.000Z",
+        "reported_at": "2022-12-10T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2022-12-07T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Washington County, Kansas, United States (Mill Creek)",
+        "jurisdiction_level": "state",
+        "admin1": "Kansas",
+        "country": "US",
+        "capital_used": "Topeka",
+        "lat": 39.048333,
+        "lon": -95.678055,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.cnbc.com/2022/12/10/kansas-oil-spill-the-biggest-in-keystone-pipeline-history-federal-data-shows.html",
+          "source_name": "CNBC",
+          "published_at": "2022-12-10T00:00:00.000Z",
+          "headline": "Kansas oil spill the biggest in Keystone pipeline history, federal data shows",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.kcur.org/news/2022-12-22/pipeline-company-says-kansas-oil-spill-contained-but-chemicals-found-downstream",
+          "source_name": "KCUR",
+          "published_at": "2022-12-22T00:00:00.000Z",
+          "headline": "Pipeline company says Kansas oil spill contained, but chemicals found downstream",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.theguardian.com/us-news/2022/dec/09/keystone-kansas-pipeline-biggest-spill-yet-14000-barrels",
+          "source_name": "The Guardian",
+          "published_at": "2022-12-09T00:00:00.000Z",
+          "headline": "Keystone pipeline spills 14,000 barrels of oil in Kansas, its biggest leak in years",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Keystone Pipeline"
+        ],
+        "substances": [
+          "crude oil"
+        ],
+        "ecosystems": [
+          "Mill Creek"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "a rupture on the Keystone Pipeline released roughly 14,000 barrels ... into Mill Creek",
+            "source_url": "https://www.cnbc.com/2022/12/10/kansas-oil-spill-the-biggest-in-keystone-pipeline-history-federal-data-shows.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.68,
+        "category": 0.85,
+        "location": 0.55,
+        "summary_grounding": 0.65
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "keystone pipeline kansas spill 2022-12-07",
+        "fingerprint": "fp_keystone_spill_kansas_2022-12-07_topeka"
+      }
+    },
+    {
+      "event_id": "evt_202212_usca_winter_storm_christmas_week",
+      "title": "Severe winter storm and blizzard impacts parts of the U.S. and Canada (Dec 21–26, 2022)",
+      "description": "A major winter storm brought blizzard conditions, extreme cold, high winds and heavy snow across parts of the United States and Canada during Dec. 21–26, 2022. Reports described widespread power outages and hazardous travel impacts during the Christmas period.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2022-12-21T00:00:00.000Z",
+        "event_end": "2022-12-26T23:59:59.000Z",
+        "reported_at": "2022-12-28T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": null,
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "United States and Canada (multi-region)",
+        "jurisdiction_level": "supranational",
+        "admin1": null,
+        "country": null,
+        "capital_used": null,
+        "lat": 43.6532,
+        "lon": -79.3832,
+        "precision": "proxy",
+        "location_basis": "manual_override",
+        "location_confidence": 0.35
+      },
+      "sources": [
+        {
+          "url": "https://www.bbc.com/news/world-us-canada-64078396",
+          "source_name": "BBC News",
+          "published_at": "2022-12-24T00:00:00.000Z",
+          "headline": "Severe winter storm and blizzard impacts parts of the U.S. and Canada (Christmas week 2022)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.reuters.com/world/us/deadly-winter-storm-batters-united-states-2022-12-28/",
+          "source_name": "Reuters",
+          "published_at": "2022-12-28T00:00:00.000Z",
+          "headline": "Deadly winter storm batters United States",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.weather.gov/news/122322-winterstorm",
+          "source_name": "US National Weather Service",
+          "published_at": "2022-12-23T00:00:00.000Z",
+          "headline": "Winter Storm (Dec 2022)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "US National Weather Service",
+          "Reuters",
+          "BBC"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "A major winter storm brought blizzard conditions, extreme cold, high winds and heavy snow.",
+            "source_url": "https://www.bbc.com/news/world-us-canada-64078396"
+          },
+          {
+            "quote": "Deadly winter storm batters United States.",
+            "source_url": "https://www.reuters.com/world/us/deadly-winter-storm-batters-united-states-2022-12-28/"
+          },
+          {
+            "quote": "Winter storm impacts... heavy snow, strong winds, and dangerously cold temperatures.",
+            "source_url": "https://www.weather.gov/news/122322-winterstorm"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.8,
+        "location": 0.35,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "needs_dedupe_check",
+        "location_ambiguous",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "2022-12 North America winter storm (Christmas week)",
+        "fingerprint": "fp_202212_usca_winter_storm_christmas_week"
+      }
+    },
+    {
+      "event_id": "evt_202212_ph_shearline_floods_landslides_christmas",
+      "title": "Shear line rains trigger flooding and landslides in the Philippines (Dec 25–30, 2022)",
+      "description": "Heavy rains associated with a shear line during the Christmas period caused flooding and landslides across multiple regions of the Philippines. Reporting cited fatalities and missing persons and described large numbers of affected families.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2022-12-25T00:00:00.000Z",
+        "event_end": "2022-12-30T23:59:59.000Z",
+        "reported_at": "2022-12-30T00:00:00.000Z",
+        "time_confidence": 0.75,
+        "event_date_utc": null,
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Philippines (multiple regions)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "PH",
+        "capital_used": "Manila",
+        "lat": 14.5995,
+        "lon": 120.9842,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.65
+      },
+      "sources": [
+        {
+          "url": "https://www.philstar.com/nation/2022/12/30/2234271/ndrrmc-44-dead-28-missing-christmas-floods",
+          "source_name": "Philstar",
+          "published_at": "2022-12-30T00:00:00.000Z",
+          "headline": "NDRRMC: 44 dead, 28 missing in Christmas floods",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.pna.gov.ph/articles/1191636",
+          "source_name": "Philippine News Agency",
+          "published_at": "2022-12-27T00:00:00.000Z",
+          "headline": "Shear line rains cause flooding/landslides; impacts reported across regions",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://sentinel-asia.org/EO/2022/article20221227PH.html",
+          "source_name": "SENTINEL Asia",
+          "published_at": "2022-12-27T00:00:00.000Z",
+          "headline": "Philippines: Floods and landslides (Dec 2022)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NDRRMC",
+          "Philippine News Agency",
+          "Philstar",
+          "SENTINEL Asia"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "NDRRMC: 44 dead, 28 missing in Christmas floods.",
+            "source_url": "https://www.philstar.com/nation/2022/12/30/2234271/ndrrmc-44-dead-28-missing-christmas-floods"
+          },
+          {
+            "quote": "Heavy rains due to the shear line triggered flooding and landslides in several areas.",
+            "source_url": "https://www.pna.gov.ph/articles/1191636"
+          },
+          {
+            "quote": "Floods and landslides reported in the Philippines (Dec 2022).",
+            "source_url": "https://sentinel-asia.org/EO/2022/article20221227PH.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.8,
+        "location": 0.65,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "needs_dedupe_check",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "2022-12 Philippines shear line flooding/landslides (Christmas period)",
+        "fingerprint": "fp_202212_ph_shearline_floods_landslides"
+      }
+    },
+    {
+      "event_id": "evt_202212_semeru_lumajang_eruption",
+      "title": "Mount Semeru eruption triggers evacuations in Lumajang Regency, East Java",
+      "description": "Mount Semeru erupted in early December 2022 in Indonesia’s East Java province, producing an ash plume and hazardous volcanic activity that affected nearby communities. Reports said residents evacuated and authorities expanded hazard zones, with damage reported to homes and infrastructure.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2022-12-05T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2022-12-04T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Lumajang Regency, East Java, Indonesia",
+        "jurisdiction_level": "site",
+        "admin1": "East Java",
+        "country": "ID",
+        "capital_used": null,
+        "lat": -8.1333,
+        "lon": 113.2167,
+        "precision": "admin1",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.5
+      },
+      "sources": [
+        {
+          "url": "https://www.cnbc.com/2022/12/05/indonesias-mt-semeru-volcano-eruption-buries-homes-damages-bridge.html",
+          "source_name": "CNBC",
+          "published_at": "2022-12-05T00:00:00Z",
+          "headline": "Indonesia's Mt Semeru volcano eruption buries homes, damages bridge",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.wuwf.org/2022-12-04/residents-are-evacuating-as-mount-semeru-indonesias-highest-volcano-has-erupted",
+          "source_name": "WUWF",
+          "published_at": "2022-12-04T00:00:00Z",
+          "headline": "Residents are evacuating as Mount Semeru, Indonesia’s highest volcano, has erupted",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.euronews.com/2022/12/04/eruption-of-javas-volcano-forces-thousands-to-evacuate-in-indonesia",
+          "source_name": "Euronews",
+          "published_at": "2022-12-04T00:00:00Z",
+          "headline": "Eruption of Java's volcano forces thousands to evacuate in Indonesia",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [
+          "volcanic ash"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.8,
+        "location": 0.4,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Mount Semeru eruption early Dec 2022",
+        "fingerprint": "fp_evt_202212_semeru_lumajang_eruption"
+      }
+    },
+    {
+      "event_id": "evt_202212_chile_vina-del-mar_wildfires_001",
+      "title": "Wildfires near Viña del Mar prompt emergency declaration and damage homes",
+      "description": "Fast-moving wildfires in and around the coastal city of Viña del Mar in Chile’s Valparaíso Region damaged or destroyed homes and led to evacuations. Reporting said fatalities and injuries occurred, and authorities declared a state of emergency in the area.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2022-12-22T00:00:00.000Z",
+        "event_end": "2022-12-24T23:59:59.000Z",
+        "reported_at": "2022-12-23T00:00:00Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2022-12-23T00:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Viña del Mar, Valparaíso Region, Chile",
+        "jurisdiction_level": "city",
+        "admin1": "Valparaíso Region",
+        "country": "CL",
+        "capital_used": null,
+        "lat": -33.0245,
+        "lon": -71.5518,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.75
+      },
+      "sources": [
+        {
+          "url": "https://www.aljazeera.com/news/2022/12/23/chile-declares-state-of-emergency-after-wildfire-kills-two",
+          "source_name": "Al Jazeera",
+          "published_at": "2022-12-23T00:00:00Z",
+          "headline": "Chile declares state of emergency after wildfire kills two",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://abc7.com/chile-fires-via-del-mar-wildfires-president-gabriel-boric/12608209/",
+          "source_name": "ABC7 (KABC-TV)",
+          "published_at": "2022-12-23T00:00:00Z",
+          "headline": "Chile wildfires burn homes in Viña del Mar; emergency declared",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.paho.org/en/natural-hazards-monitoring/natural-hazards-monitoring-13-december-2022",
+          "source_name": "PAHO (Pan American Health Organization)",
+          "published_at": "2022-12-13T00:00:00Z",
+          "headline": "Natural Hazards Monitoring - 13 December 2022",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Government of Chile"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": [
+          "Gabriel Boric"
+        ]
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "declared a state of emergency ... after a wildfire killed two people",
+            "source_url": "https://www.aljazeera.com/news/2022/12/23/chile-declares-state-of-emergency-after-wildfire-kills-two"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.68,
+        "category": 0.85,
+        "location": 0.75,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "needs_dedupe_check",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "2022-12 Viña del Mar/Valparaíso wildfires emergency declaration",
+        "fingerprint": "fires|vina_del_mar_valparaiso_cl|2022-12-23"
+      }
+    },
+    {
+      "event_id": "2022-12-caspian-seal-mass-dieoff-kazakhstan-dagestan",
+      "title": "Mass die-off of endangered Caspian seals reported along Caspian Sea shores",
+      "description": "In early December 2022, large numbers of endangered Caspian seals were reported dead along parts of the Caspian Sea shoreline, including areas in Kazakhstan and Russia’s Dagestan region. Authorities and experts reported investigations into possible causes.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2022-12-06T00:00:00Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "2022-12-04T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Caspian Sea coast (Kazakhstan and Russia’s Dagestan region)",
+        "jurisdiction_level": "supranational",
+        "admin1": null,
+        "country": null,
+        "capital_used": null,
+        "lat": 47.1625,
+        "lon": 51.9256,
+        "precision": "proxy",
+        "location_basis": "manual_override",
+        "location_confidence": 0.35
+      },
+      "sources": [
+        {
+          "url": "https://www.rferl.org/a/caspian-seals-dead-dagestan-kazakhstan/32165720.html",
+          "source_name": "RFE/RL",
+          "published_at": "2022-12-06T00:00:00Z",
+          "headline": "Caspian Seals Found Dead On Shores In Dagestan, Kazakhstan; Cause Unknown",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://apnews.com/article/russia-ukraine-science-health-environment-caspian-sea-7d9a0bd33e4fdcddf4b4b5b6f616a9f5",
+          "source_name": "Associated Press",
+          "published_at": "2022-12-05T00:00:00Z",
+          "headline": "Hundreds of dead Caspian seals found in Russia’s Dagestan",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.theguardian.com/environment/2022/dec/06/caspian-seals-mass-death-russia-kazakhstan",
+          "source_name": "The Guardian",
+          "published_at": "2022-12-06T00:00:00Z",
+          "headline": "Hundreds of Caspian seals found dead on shores in Russia and Kazakhstan",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [
+          "Caspian Sea"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "hundreds of dead Caspian seals have been found along the shore",
+            "source_url": "https://apnews.com/article/russia-ukraine-science-health-environment-caspian-sea-7d9a0bd33e4fdcddf4b4b5b6f616a9f5"
+          },
+          {
+            "quote": "seals were found dead on the shores of the Caspian Sea in Dagestan and Kazakhstan",
+            "source_url": "https://www.rferl.org/a/caspian-seals-dead-dagestan-kazakhstan/32165720.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.7,
+        "location": 0.35,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "caspian_seal_dieoff_dec_2022",
+        "fingerprint": "caspian_seal_dieoff_dec_2022_caspian_sea_2022-12-04"
+      }
+    },
+    {
+      "event_id": "2022-12-h5n1-wild-bird-mortality-uk-reporting",
+      "title": "H5N1 avian influenza drives large-scale wild bird mortality reported in late December 2022",
+      "description": "Late-December 2022 reporting described substantial wild bird mortality associated with highly pathogenic avian influenza (H5N1), with particular concern for seabirds. Coverage emphasized conservation impacts and ongoing spread affecting multiple regions.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2022-12-23T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2022-12-23T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United Kingdom (reporting focus)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "GB",
+        "capital_used": "London",
+        "lat": 51.5074,
+        "lon": -0.1278,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://www.theguardian.com/environment/2022/dec/23/deaths-thousands-wild-birds-avian-flu-new-silent-spring-aoe",
+          "source_name": "The Guardian",
+          "published_at": "2022-12-23T00:00:00Z",
+          "headline": "Deaths of thousands of wild birds from avian flu prompt warning of ‘new silent spring’",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.woah.org/en/disease/avian-influenza/",
+          "source_name": "WOAH",
+          "published_at": "2022-12-23T00:00:00Z",
+          "headline": "Avian influenza",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.paho.org/en/topics/avian-influenza",
+          "source_name": "PAHO",
+          "published_at": "2022-12-23T00:00:00Z",
+          "headline": "Avian influenza",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "WOAH",
+          "PAHO"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Deaths of thousands of wild birds from avian flu",
+            "source_url": "https://www.theguardian.com/environment/2022/dec/23/deaths-thousands-wild-birds-avian-flu-new-silent-spring-aoe"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.5,
+        "category": 0.6,
+        "location": 0.7,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "secondary_sources_only",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "h5n1_wild_birds_dec_2022_reporting",
+        "fingerprint": "h5n1_wild_birds_reporting_gb_2022-12-23"
+      }
+    },
+    {
+      "event_id": "evt_20221219_kunming_montreal_gbf_cop15",
+      "title": "Kunming–Montreal Global Biodiversity Framework adopted at CBD COP15",
+      "description": "Parties to the Convention on Biological Diversity adopted the Kunming–Montreal Global Biodiversity Framework at COP15 in Montreal. The framework includes goals and targets such as conserving and effectively managing 30% of land and sea areas by 2030.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "2022-12-19T00:00:00.000Z",
+        "event_end": "2022-12-19T23:59:59.000Z",
+        "reported_at": "2022-12-19T00:00:00.000Z",
+        "time_confidence": 0.8,
+        "event_date_utc": "2022-12-19T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Montreal, Quebec, Canada",
+        "jurisdiction_level": "city",
+        "admin1": "Quebec",
+        "country": "CA",
+        "capital_used": null,
+        "lat": 45.5017,
+        "lon": -73.5673,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://www.un.org/en/desa/un-conference-concludes-historic-deal",
+          "source_name": "United Nations",
+          "published_at": "2022-12-19T00:00:00.000Z",
+          "headline": "UN conference concludes historic deal to protect nature and curb biodiversity loss",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.cbd.int/article/cop15-cbd-press-release-final-19dec2022",
+          "source_name": "Convention on Biological Diversity",
+          "published_at": "2022-12-19T00:00:00.000Z",
+          "headline": "COP15 concludes with landmark biodiversity agreement",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://enb.iisd.org/un-biodiversity-conference-oewg5-cbd-cop15-summary",
+          "source_name": "IISD Earth Negotiations Bulletin",
+          "published_at": "2022-12-19T00:00:00.000Z",
+          "headline": "Summary of the UN Biodiversity Conference: 7–19 December 2022",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Convention on Biological Diversity",
+          "United Nations"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "delegates adopted the Kunming-Montreal Global Biodiversity Framework",
+            "source_url": "https://www.un.org/en/desa/un-conference-concludes-historic-deal"
+          },
+          {
+            "quote": "COP15 ... adopted the Kunming-Montreal Global Biodiversity Framework",
+            "source_url": "https://www.cbd.int/article/cop15-cbd-press-release-final-19dec2022"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.72,
+        "category": 0.8,
+        "location": 0.7,
+        "summary_grounding": 0.65
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "CBD COP15 Kunming–Montreal Global Biodiversity Framework adopted",
+        "fingerprint": "fp_kunming_montreal_gbf_montreal_2022-12-19"
+      }
+    },
+    {
+      "event_id": "evt_20221213_eu_cbam_provisional_agreement",
+      "title": "EU reaches provisional agreement on Carbon Border Adjustment Mechanism (CBAM)",
+      "description": "EU institutions reached a provisional agreement on the Carbon Border Adjustment Mechanism (CBAM). The mechanism is intended to address carbon leakage by applying carbon-related requirements to certain imported goods based on embedded emissions.",
+      "category_primary": "policy_regulation",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "2022-12-13T00:00:00.000Z",
+        "event_end": "2022-12-13T23:59:59.000Z",
+        "reported_at": "2022-12-13T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2022-12-13T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Brussels, Belgium (EU institutions)",
+        "jurisdiction_level": "city",
+        "admin1": null,
+        "country": "BE",
+        "capital_used": null,
+        "lat": 50.8503,
+        "lon": 4.3517,
+        "precision": "city",
+        "location_basis": "institution_proxy",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.consilium.europa.eu/en/press/press-releases/2022/12/13/eu-climate-action-provisional-agreement-reached-on-carbon-border-adjustment-mechanism-cbam/",
+          "source_name": "Council of the European Union",
+          "published_at": "2022-12-13T00:00:00.000Z",
+          "headline": "EU climate action: provisional agreement reached on Carbon Border Adjustment Mechanism (CBAM)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.theguardian.com/business/2022/dec/13/eu-becomes-first-leading-economy-to-legislate-for-green-tariff-on-imports",
+          "source_name": "The Guardian",
+          "published_at": "2022-12-13T00:00:00.000Z",
+          "headline": "EU becomes first leading economy to legislate for green tariff on imports",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Council of the European Union",
+          "European Parliament"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "provisional agreement reached on Carbon Border Adjustment Mechanism (CBAM)",
+            "source_url": "https://www.consilium.europa.eu/en/press/press-releases/2022/12/13/eu-climate-action-provisional-agreement-reached-on-carbon-border-adjustment-mechanism-cbam/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.75,
+        "location": 0.55,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "EU provisional agreement on CBAM",
+        "fingerprint": "fp_eu_cbam_brussels_2022-12-13"
+      }
+    }
+  ]
+}

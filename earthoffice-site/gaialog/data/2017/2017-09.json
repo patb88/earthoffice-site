@@ -1,0 +1,790 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_2017-09_normalize_2026-01-16T061608324Z",
+    "generated_utc": "2026-01-16T06:16:08.324Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "2017-09",
+    "window": {
+      "start_utc": "2017-09-01T00:00:00.000Z",
+      "end_utc": "2017-09-30T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "evt_20170901_arkema_crosby_tx",
+      "title": "Arkema chemical plant explosions and fire after Hurricane Harvey flooding",
+      "description": "After Hurricane Harvey-related flooding, explosions and a fire occurred at the Arkema chemical plant in Crosby, Texas. Officials monitored air conditions and the U.S. Chemical Safety Board opened an investigation.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2017-09-01T00:00:00.000Z",
+        "event_end": "2017-09-01T23:59:59.000Z",
+        "reported_at": "2017-09-01T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2017-09-01T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Crosby, Texas, USA",
+        "jurisdiction_level": "city",
+        "admin1": "Texas",
+        "country": "US",
+        "capital_used": null,
+        "lat": 29.9119,
+        "lon": -95.0627,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.65
+      },
+      "sources": [
+        {
+          "url": "https://www.ksat.com/weather/2017/09/01/officials-monitoring-chemical-plant-after-explosion-fire/",
+          "source_name": "KSAT",
+          "published_at": "2017-09-01T00:00:00.000Z",
+          "headline": "Officials monitoring chemical plant after explosion, fire",
+          "byline": null,
+          "accessed_utc": "2017-09-01T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Arkema",
+          "U.S. Chemical Safety Board"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "officials monitoring chemical plant after explosion, fire",
+            "source_url": "https://www.ksat.com/weather/2017/09/01/officials-monitoring-chemical-plant-after-explosion-fire/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.75,
+        "location": 0.65,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Arkema Crosby TX explosions fire Harvey",
+        "fingerprint": "fp_arkema_crosby_tx_2017-09-01"
+      }
+    },
+    {
+      "event_id": "evt_20170914_jacksonville_fl_sewage_spill",
+      "title": "Jacksonville reports sewage spills totaling about 1.5 million gallons after Hurricane Irma rainfall",
+      "description": "Local reporting described multiple sewage overflows in Jacksonville, Florida within the JEA service area following Hurricane Irma-related rainfall. The report cited a total of about 1.5 million gallons spilled.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2017-09-14T00:00:00.000Z",
+        "event_end": "2017-09-14T23:59:59.000Z",
+        "reported_at": "2017-09-14T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2017-09-14T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Jacksonville, Florida, USA",
+        "jurisdiction_level": "city",
+        "admin1": "Florida",
+        "country": "US",
+        "capital_used": null,
+        "lat": 30.3322,
+        "lon": -81.6557,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://www.news4jax.com/news/2017/09/14/15m-gallons-of-sewage-spills-as-irma-rains-200b-gallons-on-jacksonville/",
+          "source_name": "News4JAX",
+          "published_at": "2017-09-14T00:00:00.000Z",
+          "headline": "1.5M gallons of sewage spills as Irma rains 200B gallons on Jacksonville",
+          "byline": null,
+          "accessed_utc": "2017-09-14T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "JEA"
+        ],
+        "substances": [
+          "sewage"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "1.5M gallons of sewage spills",
+            "source_url": "https://www.news4jax.com/news/2017/09/14/15m-gallons-of-sewage-spills-as-irma-rains-200b-gallons-on-jacksonville/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.8,
+        "location": 0.7,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Jacksonville FL sewage spills Irma",
+        "fingerprint": "fp_jacksonville_fl_sewage_2017-09-14"
+      }
+    },
+    {
+      "event_id": "evt_20170930_vancouver_wa_columbia_sewage_discharge",
+      "title": "Westside Wastewater Treatment Plant discharge to the Columbia River after power outage",
+      "description": "A power outage and backup generator failures led to a discharge from Vancouver’s Westside Wastewater Treatment Plant into the Columbia River. The incident involved raw sewage and partially treated effluent, later described in reporting on an enforcement action.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2017-09-30T00:00:00.000Z",
+        "event_end": "2017-09-30T23:59:59.000Z",
+        "reported_at": "2017-09-30T00:00:00.000Z",
+        "time_confidence": 0.5,
+        "event_date_utc": "2017-09-30T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Vancouver, Washington, USA",
+        "jurisdiction_level": "city",
+        "admin1": "Washington",
+        "country": "US",
+        "capital_used": null,
+        "lat": 45.6387,
+        "lon": -122.6615,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.65
+      },
+      "sources": [
+        {
+          "url": "https://www.opb.org/news/article/sewage-spill-columbia-river-fine-vancouver/",
+          "source_name": "Oregon Public Broadcasting (OPB)",
+          "published_at": "2017-09-30T00:00:00.000Z",
+          "headline": "Sewage spill into Columbia River leads to fine for Vancouver, Wash.",
+          "byline": null,
+          "accessed_utc": "2017-09-30T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Westside Wastewater Treatment Plant"
+        ],
+        "substances": [
+          "raw sewage",
+          "effluent"
+        ],
+        "ecosystems": [
+          "Columbia River"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Sewage spill into Columbia River leads to fine for Vancouver, Wash.",
+            "source_url": "https://www.opb.org/news/article/sewage-spill-columbia-river-fine-vancouver/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.8,
+        "location": 0.65,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Vancouver WA Westside WWTP Columbia River discharge",
+        "fingerprint": "fp_vancouver_wa_columbia_2017-09-30"
+      }
+    },
+    {
+      "event_id": "evt_201709_irma_stormtide_usvi_pr_fl_01",
+      "title": "Hurricane Irma storm-tide and coastal flooding monitoring across USVI, Puerto Rico, and Florida",
+      "description": "Hurricane Irma caused storm tide and coastal flooding impacts across the U.S. Virgin Islands, Puerto Rico, and Florida, prompting storm-tide and flooding monitoring activities. USGS documented sensor deployments and data collection related to storm tide and flooding associated with the storm.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2017-09-01T00:00:00.000Z",
+        "time_confidence": 0.45,
+        "event_date_utc": null,
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Florida, USA (proxy for multi-location impacts incl. USVI and Puerto Rico)",
+        "jurisdiction_level": "state",
+        "admin1": "Florida",
+        "country": "US",
+        "capital_used": "Tallahassee",
+        "lat": 30.4383,
+        "lon": -84.2807,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.usgs.gov/publications/monitoring-storm-tide-and-flooding-hurricane-irma-along-us-virgin-islands-puerto-rico",
+          "source_name": "U.S. Geological Survey (USGS)",
+          "published_at": "2017-09-01T00:00:00.000Z",
+          "headline": "Monitoring storm tide and flooding from Hurricane Irma along the U.S. Virgin Islands and Puerto Rico",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "USGS"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Monitoring storm tide and flooding from Hurricane Irma along the U.S. Virgin Islands and Puerto Rico",
+            "source_url": "https://www.usgs.gov/publications/monitoring-storm-tide-and-flooding-hurricane-irma-along-us-virgin-islands-puerto-rico"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.58,
+        "category": 0.75,
+        "location": 0.55,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Hurricane Irma storm tide/coastal flooding monitoring (USVI/PR/Florida)",
+        "fingerprint": "irma_stormtide_monitoring_fl_2017-09"
+      }
+    },
+    {
+      "event_id": "evt_201709_maria_flooding_puerto_rico_01",
+      "title": "Hurricane Maria brings extreme rainfall and flooding in Puerto Rico",
+      "description": "Hurricane Maria struck Puerto Rico on September 20, 2017, producing torrential rainfall and widespread flooding impacts. USGS reported record peak streamflows during September 20–22, and NASA described the torrential rainfall and associated flood and mudslide concerns.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2017-09-20T00:00:00.000Z",
+        "event_end": "2017-09-22T23:59:59.000Z",
+        "reported_at": "2017-09-20T00:00:00.000Z",
+        "time_confidence": 0.8,
+        "event_date_utc": "2017-09-20T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Puerto Rico, USA",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "PR",
+        "capital_used": "San Juan",
+        "lat": 18.4655,
+        "lon": -66.1057,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.8
+      },
+      "sources": [
+        {
+          "url": "https://pubs.usgs.gov/publication/sir20225040/full",
+          "source_name": "U.S. Geological Survey (USGS)",
+          "published_at": "2017-09-20T00:00:00.000Z",
+          "headline": "USGS report on Hurricane Maria impacts and peak streamflows in Puerto Rico (SIR 2022–5040)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://earthobservatory.nasa.gov/images/91012/torrential-rainfall-in-puerto-rico",
+          "source_name": "NASA Earth Observatory",
+          "published_at": "2017-09-20T00:00:00.000Z",
+          "headline": "Torrential Rainfall in Puerto Rico",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "USGS",
+          "NASA"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Torrential Rainfall in Puerto Rico",
+            "source_url": "https://earthobservatory.nasa.gov/images/91012/torrential-rainfall-in-puerto-rico"
+          },
+          {
+            "quote": "record peak streamflows",
+            "source_url": "https://pubs.usgs.gov/publication/sir20225040/full"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.74,
+        "category": 0.85,
+        "location": 0.85,
+        "summary_grounding": 0.7
+      },
+      "quality_flags": [
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Hurricane Maria extreme rainfall/flooding Puerto Rico Sept 2017",
+        "fingerprint": "maria_flooding_sanjuan_2017-09-20"
+      }
+    },
+    {
+      "event_id": "evt_20170908_chiapas_m82_tsunami",
+      "title": "M8.2 earthquake offshore Chiapas, Mexico generated a tsunami in the Gulf of Tehuantepec",
+      "description": "A magnitude 8.2 earthquake occurred offshore Chiapas, Mexico on 2017-09-08 at about 04:49 UTC. NOAA documented tsunami observations on tide gauges following the quake, and USGS provided event details and tsunami modeling information.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2017-09-08T04:49:19.000Z",
+        "event_end": "2017-09-08T23:59:59.000Z",
+        "reported_at": "2017-09-08T00:00:00Z",
+        "time_confidence": 0.8,
+        "event_date_utc": "2017-09-08T04:49:19.000Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Chiapas, Mexico (offshore Gulf of Tehuantepec)",
+        "jurisdiction_level": "state",
+        "admin1": "Chiapas",
+        "country": "MX",
+        "capital_used": "Tuxtla Gutiérrez",
+        "lat": 16.752,
+        "lon": -93.116,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.usgs.gov/news/featured-story/magnitude-82-earthquake-mexico",
+          "source_name": "USGS",
+          "published_at": "2017-09-08T00:00:00Z",
+          "headline": "Magnitude 8.2 Earthquake in Mexico",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://nctr.pmel.noaa.gov/mexico20170908/",
+          "source_name": "NOAA/PMEL National Centers for Tsunami Research",
+          "published_at": "2017-09-08T00:00:00Z",
+          "headline": "Mexico 2017-09-08 Tsunami Event Page",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.usgs.gov/centers/pcmsc/science/preliminary-simulation-2017-mexico-tsunami",
+          "source_name": "USGS",
+          "published_at": "2017-09-08T00:00:00Z",
+          "headline": "Preliminary simulation of the 2017 Mexico tsunami",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "USGS",
+          "NOAA/PMEL"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "A magnitude 8.2 earthquake occurred offshore Chiapas, Mexico.",
+            "source_url": "https://www.usgs.gov/news/featured-story/magnitude-82-earthquake-mexico"
+          },
+          {
+            "quote": "Tsunami observations were recorded on tide gauges following the earthquake.",
+            "source_url": "https://nctr.pmel.noaa.gov/mexico20170908/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.7,
+        "category": 0.9,
+        "location": 0.55,
+        "summary_grounding": 0.7
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "2017-09-08 Mexico (Chiapas) M8.2 earthquake/tsunami",
+        "fingerprint": "fp_20170908_chiapas_m82_geological"
+      }
+    },
+    {
+      "event_id": "evt-2017-09-noaa-crw-middle-east-bleaching-stress",
+      "title": "NOAA Coral Reef Watch reported severe bleaching heat stress in Middle East reef regions (Sep 2017)",
+      "description": "NOAA Coral Reef Watch reported that severe (Alert Level 2) bleaching heat stress was present during September 2017 in multiple Middle East coral reef areas. This indicated elevated risk of coral bleaching impacts in affected reef locations.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2017-09-01T00:00:00.000Z",
+        "event_end": "2017-09-30T23:59:59.000Z",
+        "reported_at": "2017-09-30T23:59:59.000Z",
+        "time_confidence": 0.4,
+        "event_date_utc": null,
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Middle East coral reef areas (e.g., Western Persian Gulf and Bahrain)",
+        "jurisdiction_level": "supranational",
+        "admin1": null,
+        "country": null,
+        "capital_used": "Riyadh",
+        "lat": 24.7136,
+        "lon": 46.6753,
+        "precision": "proxy",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.3
+      },
+      "sources": [
+        {
+          "url": "https://coralreefwatch.noaa.gov/satellite/analyses_guidance/global_coral_bleaching_2014-17_status.php",
+          "source_name": "NOAA Coral Reef Watch",
+          "published_at": "2017-09-30T23:59:59.000Z",
+          "headline": "Global Coral Bleaching 2014–2017 Status",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA Coral Reef Watch",
+          "NOAA"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "coral reefs"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Severe (Alert Level 2) bleaching heat stress",
+            "source_url": "https://coralreefwatch.noaa.gov/satellite/analyses_guidance/global_coral_bleaching_2014-17_status.php"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.45,
+        "category": 0.7,
+        "location": 0.3,
+        "summary_grounding": 0.4
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "noaa-coral-reef-watch-bleaching-heat-stress-sep-2017",
+        "fingerprint": "fp-noaa-crw-middle-east-2017-09"
+      }
+    },
+    {
+      "event_id": "evt-2017-09-noaa-crw-pacific-heat-stress",
+      "title": "NOAA Coral Reef Watch reported reef heat stress persisting into September 2017 in the western/central Pacific",
+      "description": "NOAA Coral Reef Watch analysis noted HotSpots peaking in August and persisting into September 2017 across parts of the western/central Pacific. Some areas reportedly reached Bleaching Alert Level 2, indicating significant reef heat stress conditions.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2017-09-01T00:00:00.000Z",
+        "event_end": "2017-09-30T23:59:59.000Z",
+        "reported_at": "2017-11-09T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": null,
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Western Pacific (Guam, CNMI, Federated States of Micronesia, Marshall Islands)",
+        "jurisdiction_level": "supranational",
+        "admin1": null,
+        "country": null,
+        "capital_used": "Manila",
+        "lat": 14.5995,
+        "lon": 120.9842,
+        "precision": "proxy",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.25
+      },
+      "sources": [
+        {
+          "url": "https://coralreefwatch.noaa.gov/satellite/analyses_guidance/pacific_cbts_ag_20171109.php",
+          "source_name": "NOAA Coral Reef Watch",
+          "published_at": "2017-11-09T00:00:00.000Z",
+          "headline": "Pacific Coral Bleaching Thermal Stress (CBTS) Analysis Guidance",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA Coral Reef Watch",
+          "NOAA"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "coral reefs"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "HotSpots peaking in August, persisting in September",
+            "source_url": "https://coralreefwatch.noaa.gov/satellite/analyses_guidance/pacific_cbts_ag_20171109.php"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.5,
+        "category": 0.75,
+        "location": 0.25,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "noaa-coral-reef-watch-pacific-thermal-stress-2017",
+        "fingerprint": "fp-noaa-crw-pacific-2017-09"
+      }
+    },
+    {
+      "event_id": "evt-2017-09-noaa-nccos-hurricane-coral-reef-assessment",
+      "title": "NOAA NCCOS began project to assess hurricane impacts to coral reefs in Florida and Puerto Rico (Sep 2017)",
+      "description": "A NOAA NCCOS project page describes an effort starting in September 2017 to assess hurricane impacts to coral reefs in Florida and Puerto Rico. The work aimed to quantify damage and help guide emergency stabilization actions.",
+      "category_primary": "science_monitoring",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "2017-09-01T00:00:00.000Z",
+        "event_end": null,
+        "reported_at": "2017-09-01T00:00:00.000Z",
+        "time_confidence": 0.35,
+        "event_date_utc": "2017-09-01T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States (project covering Florida and Puerto Rico)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, D.C.",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://coastalscience.noaa.gov/project/assessment-of-hurricane-impacts-to-coral-reefs-in-florida-and-puerto-rico/",
+          "source_name": "NOAA NCCOS (Coastal Science)",
+          "published_at": "2017-09-01T00:00:00.000Z",
+          "headline": "Assessment of Hurricane Impacts to Coral Reefs in Florida and Puerto Rico",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA",
+          "NOAA NCCOS"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "coral reefs"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "effort began in September 2017 to quantify",
+            "source_url": "https://coastalscience.noaa.gov/project/assessment-of-hurricane-impacts-to-coral-reefs-in-florida-and-puerto-rico/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.4,
+        "category": 0.35,
+        "location": 0.65,
+        "summary_grounding": 0.4
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "low_confidence_category",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "noaa-nccos-hurricane-impacts-coral-reef-assessment-2017",
+        "fingerprint": "fp-noaa-nccos-hurricane-coral-2017-09"
+      }
+    },
+    {
+      "event_id": "evt_20170927_wotus_comment_period_close",
+      "title": "Public comment period closes for EPA/Army Corps proposed WOTUS recodification rule",
+      "description": "The U.S. Environmental Protection Agency and U.S. Army Corps of Engineers set and extended a public comment period for a proposed rule to recodify pre-existing regulations defining “waters of the United States” (WOTUS). The comment period closed on September 27, 2017, as described on EPA’s WOTUS rulemaking page.",
+      "category_primary": "policy_regulation",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "2017-09-27T00:00:00.000Z",
+        "event_end": "2017-09-27T23:59:59.000Z",
+        "reported_at": "2017-09-27T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2017-09-27T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States (federal rulemaking)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.85
+      },
+      "sources": [
+        {
+          "url": "https://www.epa.gov/wotus/extension-comment-period-definition-waters-united-states-recodification-pre-existing-rules",
+          "source_name": "U.S. Environmental Protection Agency (EPA)",
+          "published_at": "2017-09-27T00:00:00.000Z",
+          "headline": "Extension of comment period on definition of “waters of the United States” \u0014 recodification of pre-existing rules",
+          "byline": null,
+          "accessed_utc": "2017-09-30T23:59:59.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://19january2021snapshot.epa.gov/nwpr/extension-comment-period-definition-waters-united-states-recodification-pre-existing-rules_.html",
+          "source_name": "U.S. Environmental Protection Agency (EPA) - 19 January 2021 Snapshot",
+          "published_at": "2017-09-27T00:00:00.000Z",
+          "headline": "Extension of comment period on definition of “waters of the United States” \u0014 recodification of pre-existing rules",
+          "byline": null,
+          "accessed_utc": "2017-09-30T23:59:59.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Environmental Protection Agency (EPA)",
+          "U.S. Army Corps of Engineers"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Extension of comment period on definition of “waters of the United States” — recodification of pre-existing rules",
+            "source_url": "https://www.epa.gov/wotus/extension-comment-period-definition-waters-united-states-recodification-pre-existing-rules"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.7,
+        "category": 0.85,
+        "location": 0.85,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "wotus_recodification_comment_period_close_2017_09",
+        "fingerprint": "fp_wotus_recodification_comment_close_us_2017_09_27"
+      }
+    }
+  ]
+}

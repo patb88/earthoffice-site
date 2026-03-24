@@ -1,0 +1,752 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_1985-12_normalize_2026-01-18T103453244Z",
+    "generated_utc": "2026-01-18T10:34:53.244Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "1985-12",
+    "window": {
+      "start_utc": "1985-12-01T00:00:00.000Z",
+      "end_utc": "1985-12-31T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "ev-19851205-manchester-wa-heating-oil-stormdrain",
+      "title": "Home heating oil leak into storm drain near Manchester, Washington (Puget Sound)",
+      "description": "A home heating oil tank leak was reported near Manchester, Washington, with oil entering a storm drain that discharges to Puget Sound. Responders deployed boom and monitored an oil sheen as it dissipated.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1985-12-05T12:00:00Z",
+        "event_end": "1985-12-05T12:00:00Z",
+        "reported_at": "1985-12-05T12:00:00Z",
+        "time_confidence": 0.4,
+        "event_date_utc": "1985-12-05T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Manchester, Washington, USA",
+        "jurisdiction_level": "city",
+        "admin1": "Washington",
+        "country": "US",
+        "capital_used": null,
+        "lat": 47.5537,
+        "lon": -122.5668,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://incidentnews.noaa.gov/incident/9092",
+          "source_name": "NOAA IncidentNews",
+          "published_at": "1985-12-05T12:00:00Z",
+          "headline": "Home heating oil leak into storm drain (Puget Sound) near Manchester, Washington",
+          "byline": null,
+          "accessed_utc": "2026-01-18T05:10:53.511Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA"
+        ],
+        "substances": [
+          "home heating oil"
+        ],
+        "ecosystems": [
+          "Puget Sound"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "reported leaking into a storm drain that empties into Puget Sound",
+            "source_url": "https://incidentnews.noaa.gov/incident/9092"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.52,
+        "category": 0.9,
+        "location": 0.55,
+        "summary_grounding": 0.75
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "noaa-incident-9092",
+        "fingerprint": "fp-19851205-manchester-wa-noaa-incident-9092"
+      }
+    },
+    {
+      "event_id": "ev-19851211-inuvik-nt-highway3-chemical-leak",
+      "title": "Chemical/transformer oil leak from truck tank south of Inuvik, Northwest Territories",
+      "description": "A truck tank leak released approximately 200 liters of chemicals, including transformer oils, on land about 3 km south of Inuvik in the Beaufort Delta region. The spill was documented in the Northwest Territories spill registry.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1985-12-11T12:00:00Z",
+        "event_end": "1985-12-11T12:00:00Z",
+        "reported_at": "1985-12-11T12:00:00Z",
+        "time_confidence": 0.4,
+        "event_date_utc": "1985-12-11T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Inuvik area, Northwest Territories, Canada (Highway 3, ~3 km south)",
+        "jurisdiction_level": "site",
+        "admin1": "Northwest Territories",
+        "country": "CA",
+        "capital_used": null,
+        "lat": 68.3607,
+        "lon": -133.723,
+        "precision": "admin1",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.45
+      },
+      "sources": [
+        {
+          "url": "https://www.gov.nt.ca/ecc/en/spill/spill-1985121",
+          "source_name": "Government of Northwest Territories (ECC) Spill Registry",
+          "published_at": "1985-12-11T12:00:00Z",
+          "headline": "Transformer oil/chemical truck tank leak south of Inuvik, Northwest Territories",
+          "byline": null,
+          "accessed_utc": "2026-01-18T05:10:53.511Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Government of Northwest Territories"
+        ],
+        "substances": [
+          "chemicals",
+          "transformer oil"
+        ],
+        "ecosystems": [
+          "Beaufort Delta"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "releasing approximately 200 liters of chemicals (including transformer oils)",
+            "source_url": "https://www.gov.nt.ca/ecc/en/spill/spill-1985121"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.5,
+        "category": 0.85,
+        "location": 0.45,
+        "summary_grounding": 0.7
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "low_confidence_location",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "govnt-spill-1985121",
+        "fingerprint": "fp-19851211-inuvik-nt-govnt-1985121"
+      }
+    },
+    {
+      "event_id": "ev-19851220-pointwells-wa-jetaf-pipeline-rupture",
+      "title": "Jet A fuel release to culvert draining to Puget Sound after pipeline rupture at Point Wells, Washington",
+      "description": "A pipeline connected to the Chevron Bulk Storage Terminal was ruptured at Point Wells, Washington, releasing an estimated 1,440 barrels of Jet A fuel. The fuel entered a culvert with drainage to Puget Sound.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1985-12-20T12:00:00Z",
+        "event_end": "1985-12-20T12:00:00Z",
+        "reported_at": "1985-12-20T12:00:00Z",
+        "time_confidence": 0.4,
+        "event_date_utc": "1985-12-20T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Point Wells, Washington, USA",
+        "jurisdiction_level": "site",
+        "admin1": "Washington",
+        "country": "US",
+        "capital_used": null,
+        "lat": 47.7623,
+        "lon": -122.366,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://incidentnews.noaa.gov/incident/6317",
+          "source_name": "NOAA IncidentNews",
+          "published_at": "1985-12-20T12:00:00Z",
+          "headline": "Jet A fuel release to culvert draining to Puget Sound after pipeline rupture at Point Wells, Washington",
+          "byline": null,
+          "accessed_utc": "2026-01-18T05:10:53.511Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Chevron"
+        ],
+        "substances": [
+          "Jet A fuel"
+        ],
+        "ecosystems": [
+          "Puget Sound"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "releasing about 1,440 barrels of Jet A fuel into a culvert",
+            "source_url": "https://incidentnews.noaa.gov/incident/6317"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.58,
+        "category": 0.9,
+        "location": 0.55,
+        "summary_grounding": 0.8
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "noaa-incident-6317",
+        "fingerprint": "fp-19851220-pointwells-wa-noaa-6317"
+      }
+    },
+    {
+      "event_id": "ev-19851221-portangeles-wa-arco-anchorage-grounding",
+      "title": "T/V ARCO Anchorage grounding and crude oil spill in Port Angeles Harbor, Washington",
+      "description": "The tank vessel ARCO Anchorage ran aground while anchoring in Port Angeles Harbor and was holed in two cargo tanks. Approximately 5,690 barrels of Alaska North Slope crude oil were released before internal cargo transfers stopped the discharge.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1985-12-21T12:00:00Z",
+        "event_end": "1985-12-22T12:00:00Z",
+        "reported_at": "1985-12-21T12:00:00Z",
+        "time_confidence": 0.45,
+        "event_date_utc": "1985-12-21T12:00:00Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Port Angeles Harbor, Washington, USA",
+        "jurisdiction_level": "city",
+        "admin1": "Washington",
+        "country": "US",
+        "capital_used": null,
+        "lat": 48.1181,
+        "lon": -123.4307,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.65
+      },
+      "sources": [
+        {
+          "url": "https://incidentnews.noaa.gov/incident/6319",
+          "source_name": "NOAA IncidentNews",
+          "published_at": "1985-12-21T12:00:00Z",
+          "headline": "T/V ARCO Anchorage grounding and crude oil spill in Port Angeles Harbor, Washington",
+          "byline": null,
+          "accessed_utc": "2026-01-18T05:10:53.511Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "ARCO",
+          "NOAA"
+        ],
+        "substances": [
+          "crude oil",
+          "Alaska North Slope crude oil"
+        ],
+        "ecosystems": [
+          "Port Angeles Harbor"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "released about 5,690 barrels of Alaska North Slope crude oil",
+            "source_url": "https://incidentnews.noaa.gov/incident/6319"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.9,
+        "location": 0.65,
+        "summary_grounding": 0.85
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "noaa-incident-6319",
+        "fingerprint": "fp-19851221-port-angeles-noaa-6319"
+      }
+    },
+    {
+      "event_id": "ev-19851219-sarnia-on-polysar-chemical-release",
+      "title": "Industrial chemical discharge to the St. Clair River following pump failure in Sarnia, Ontario",
+      "description": "A pump failure at the Polysar Corporation plant in Sarnia, Ontario led to discharge of roughly 17,500 gallons of a chemical mixture to the St. Clair River. Reported substances included tert-butyl alcohol, isobutylene dimer, and small concentrations of ammonia and phenol.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1985-12-19T12:00:00Z",
+        "event_end": "1985-12-19T12:00:00Z",
+        "reported_at": "1985-12-19T12:00:00Z",
+        "time_confidence": 0.4,
+        "event_date_utc": "1985-12-19T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Sarnia, Ontario, Canada (St. Clair River)",
+        "jurisdiction_level": "city",
+        "admin1": "Ontario",
+        "country": "CA",
+        "capital_used": null,
+        "lat": 42.9746,
+        "lon": -82.4066,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.65
+      },
+      "sources": [
+        {
+          "url": "https://incidentnews.noaa.gov/incident/6316",
+          "source_name": "NOAA IncidentNews",
+          "published_at": "1985-12-19T12:00:00Z",
+          "headline": "Polysar Corporation pump failure releases industrial chemicals to the St. Clair River (Sarnia, Ontario)",
+          "byline": null,
+          "accessed_utc": "2026-01-18T05:10:53.511Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Polysar Corporation",
+          "NOAA"
+        ],
+        "substances": [
+          "tert-butyl alcohol",
+          "isobutylene dimer",
+          "ammonia",
+          "phenol"
+        ],
+        "ecosystems": [
+          "St. Clair River"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "releases totaling roughly 17,500 gallons of a chemical mixture",
+            "source_url": "https://incidentnews.noaa.gov/incident/6316"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.9,
+        "location": 0.65,
+        "summary_grounding": 0.8
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "noaa-incident-6316",
+        "fingerprint": "fp-19851219-sarnia-noaa-6316"
+      }
+    },
+    {
+      "event_id": "19851223_nahanni_eq_nwt_ca",
+      "title": "Nahanni earthquake sequence mainshock (~M6.9) in Northwest Territories, Canada",
+      "description": "An earthquake widely reported around magnitude 6.9 struck the Nahanni region in Canada’s Northwest Territories on December 23, 1985. Sources describe it as part of the Nahanni earthquake sequence affecting the Mackenzie Mountains area, with strong ground motion and reports of landslides/rockfalls near the epicentral region.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1985-12-23T05:16:03Z",
+        "event_end": "1985-12-23T05:16:03Z",
+        "reported_at": "1985-12-23T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "1985-12-23T05:16:03Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Nahanni region (west of Fort Simpson), Northwest Territories, Canada",
+        "jurisdiction_level": "site",
+        "admin1": "Northwest Territories",
+        "country": "CA",
+        "capital_used": null,
+        "lat": 61.76,
+        "lon": -121.23,
+        "precision": "admin1",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.4
+      },
+      "sources": [
+        {
+          "url": "https://www.earthquakescanada.nrcan.gc.ca/historic-historique/events/19851223-en.php",
+          "source_name": "Earthquakes Canada (Natural Resources Canada)",
+          "published_at": "1985-12-23T00:00:00.000Z",
+          "headline": "Historic earthquake event: 1985-12-23 (Nahanni region, NWT)",
+          "byline": null,
+          "accessed_utc": "2026-01-18T05:11:44.594Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://earthquaketrack.com/quakes/1985-12-23-05-16-03-utc-6-9-6",
+          "source_name": "Earthquake Track",
+          "published_at": "1985-12-23T00:00:00.000Z",
+          "headline": "M 6.9 - 1985-12-23 05:16:03 UTC",
+          "byline": null,
+          "accessed_utc": "2026-01-18T05:11:44.594Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.usgs.gov/publications/teleseismic-and-near-field-analysis-nahanni-earthquakes-northwest-territories-canada",
+          "source_name": "U.S. Geological Survey (USGS)",
+          "published_at": "1985-12-01T00:00:00.000Z",
+          "headline": "Teleseismic and near-field analysis of the Nahanni earthquakes, Northwest Territories, Canada",
+          "byline": null,
+          "accessed_utc": "2026-01-18T05:11:44.594Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Earthquakes Canada (Natural Resources Canada)",
+          "U.S. Geological Survey (USGS)"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Historic earthquake event: 1985-12-23",
+            "source_url": "https://www.earthquakescanada.nrcan.gc.ca/historic-historique/events/19851223-en.php"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.85,
+        "location": 0.4,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "nahanni_earthquake_sequence_1985-12-23",
+        "fingerprint": "nahanni_earthquake_sequence_mainshock|CA|1985-12-23"
+      }
+    },
+    {
+      "event_id": "1985-12-us-wa-port-angeles-arco-anchorage-oil-spill-wildlife-impacts",
+      "title": "ARCO Anchorage oil spill causes seabird deaths and wildlife rescue in Strait of Juan de Fuca area",
+      "description": "Reports in late December 1985 described extensive seabird mortality and wildlife rescue/rehabilitation after an oil spill involving the tanker T/V ARCO Anchorage in and near Port Angeles Harbor. Oil was reported to have affected shoreline habitats in the Strait of Juan de Fuca area, including around Dungeness Spit.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1985-12-21T12:00:00Z",
+        "event_end": "1985-12-21T12:00:00Z",
+        "reported_at": "1985-12-27T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1985-12-21T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Port Angeles, Washington, USA",
+        "jurisdiction_level": "city",
+        "admin1": "Washington",
+        "country": "US",
+        "capital_used": null,
+        "lat": 48.1181,
+        "lon": -123.4307,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.65
+      },
+      "sources": [
+        {
+          "url": "https://incidentnews.noaa.gov/incident/6319",
+          "source_name": "NOAA IncidentNews",
+          "published_at": "1985-12-21T00:00:00Z",
+          "headline": "Incident: ARCO Anchorage (NOAA IncidentNews entry)",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.upi.com/Archives/1985/12/27/Oil-spill-bigger-than-originally-believed/5585507600/",
+          "source_name": "UPI Archives",
+          "published_at": "1985-12-27T00:00:00Z",
+          "headline": "Oil spill bigger than originally believed",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.upi.com/Archives/1985/12/30/Search-for-oil-covered-birds-ended/1749504766800/",
+          "source_name": "UPI Archives",
+          "published_at": "1985-12-30T00:00:00Z",
+          "headline": "Search for oil-covered birds ended",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "ARCO"
+        ],
+        "substances": [
+          "Alaska North Slope crude oil"
+        ],
+        "ecosystems": [
+          "Port Angeles Harbor",
+          "Strait of Juan de Fuca",
+          "Dungeness Spit"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Oil spill bigger than originally believed",
+            "source_url": "https://www.upi.com/Archives/1985/12/27/Oil-spill-bigger-than-originally-believed/5585507600/"
+          },
+          {
+            "quote": "Search for oil-covered birds ended",
+            "source_url": "https://www.upi.com/Archives/1985/12/30/Search-for-oil-covered-birds-ended/1749504766800/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.8,
+        "location": 0.65,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only",
+        "low_confidence_location"
+      ],
+      "dedupe": {
+        "cluster_hint": "ARCO Anchorage oil spill Port Angeles Dec 1985",
+        "fingerprint": "arco-anchorage-oil-spill|port-angeles-wa-us|1985-12-21"
+      }
+    },
+    {
+      "event_id": "1985-12-04_us_riverside_bayview_clean_water_act_wetlands_scotus",
+      "title": "U.S. Supreme Court upholds Clean Water Act jurisdiction over adjacent wetlands (Riverside Bayview Homes)",
+      "description": "The U.S. Supreme Court decided United States v. Riverside Bayview Homes, Inc., interpreting the Clean Water Act to allow the U.S. Army Corps of Engineers to require permits for discharges of dredged or fill material into wetlands adjacent to navigable waters. The decision supported federal authority to regulate certain wetlands under the Act.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "1985-12-04T12:00:00Z",
+        "event_end": "1985-12-04T12:00:00Z",
+        "reported_at": "1985-12-04T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1985-12-04T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Washington, DC, United States (U.S. Supreme Court)",
+        "jurisdiction_level": "city",
+        "admin1": "DC",
+        "country": "US",
+        "capital_used": null,
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "city",
+        "location_basis": "institution_proxy",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://www.law.cornell.edu/supremecourt/text/474/121",
+          "source_name": "Cornell Law School – Legal Information Institute",
+          "published_at": "1985-12-04T00:00:00Z",
+          "headline": "United States v. Riverside Bayview Homes, Inc., 474 U.S. 121 (1985)",
+          "byline": null,
+          "accessed_utc": "2026-01-18T05:12:57.691Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://supreme.justia.com/cases/federal/us/474/121/",
+          "source_name": "Justia – U.S. Supreme Court Center",
+          "published_at": "1985-12-04T00:00:00Z",
+          "headline": "United States v. Riverside Bayview Homes, Inc.",
+          "byline": null,
+          "accessed_utc": "2026-01-18T05:12:57.691Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Supreme Court",
+          "U.S. Army Corps of Engineers"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "wetlands"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "adjacent wetlands may be defined as waters of the United States",
+            "source_url": "https://www.law.cornell.edu/supremecourt/text/474/121"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.73,
+        "category": 0.85,
+        "location": 0.7,
+        "summary_grounding": 0.75
+      },
+      "quality_flags": [
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "riverside_bayview_1985_scotus_wetlands",
+        "fingerprint": "riverside_bayview_1985-12-04_washington_dc"
+      }
+    },
+    {
+      "event_id": "1985-12-23_us_food_security_act_1985_conservation_reserve_sodbuster_swampbuster",
+      "title": "Food Security Act of 1985 signed, establishing major U.S. conservation compliance and Conservation Reserve Program",
+      "description": "The Food Security Act of 1985 (Public Law 99-198) was signed into law, establishing major agricultural conservation measures including the Conservation Reserve Program and conservation compliance provisions often referred to as “sodbuster” and “swampbuster.” These provisions influenced U.S. soil conservation and wetland protection on agricultural lands.",
+      "category_primary": "policy_regulation",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "1985-12-23T12:00:00Z",
+        "event_end": "1985-12-23T12:00:00Z",
+        "reported_at": "1985-12-23T00:00:00Z",
+        "time_confidence": 0.5,
+        "event_date_utc": "1985-12-23T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Washington, DC, United States",
+        "jurisdiction_level": "city",
+        "admin1": "DC",
+        "country": "US",
+        "capital_used": null,
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "city",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.congress.gov/bill/99th-congress/house-bill/2100",
+          "source_name": "Congress.gov",
+          "published_at": "1985-12-23T00:00:00Z",
+          "headline": "H.R.2100 — Food Security Act of 1985",
+          "byline": null,
+          "accessed_utc": "2026-01-18T05:12:57.691Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.govinfo.gov/app/details/COMPS-10250",
+          "source_name": "GovInfo",
+          "published_at": "1985-12-23T00:00:00Z",
+          "headline": "Compilation: Public Law 99-198 (Food Security Act of 1985)",
+          "byline": null,
+          "accessed_utc": "2026-01-18T05:12:57.691Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Congress"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "wetlands"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Food Security Act of 1985",
+            "source_url": "https://www.congress.gov/bill/99th-congress/house-bill/2100"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.8,
+        "location": 0.55,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "secondary_sources_only",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "food_security_act_1985_pl99_198",
+        "fingerprint": "food_security_act_1985-12-23_washington_dc"
+      }
+    }
+  ]
+}

@@ -1,0 +1,602 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_2008-09_normalize_2026-01-16T035311583Z",
+    "generated_utc": "2026-01-16T03:53:11.583Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "2008-09",
+    "window": {
+      "start_utc": "2008-09-01T00:00:00.000Z",
+      "end_utc": "2008-09-30T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "evt_20080915_ike_epa_spill_reporting_gulf_coast",
+      "title": "EPA reminds facilities to report spills after Hurricane Ike as Gulf Coast restarts",
+      "description": "Following Hurricane Ike, the U.S. Environmental Protection Agency issued a reminder that spills or releases of oil, chemicals, radiological, or biological materials must be reported to the National Response Center. The notice emphasized spill reporting as facilities restarted operations in the storm-affected Gulf Coast region.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2008-09-15T00:00:00.000Z",
+        "event_end": "2008-09-15T23:59:59.000Z",
+        "reported_at": "2008-09-15T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2008-09-15T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Texas and Louisiana, United States (Hurricane Ike aftermath)",
+        "jurisdiction_level": "state",
+        "admin1": "Texas/Louisiana",
+        "country": "US",
+        "capital_used": "Austin, TX (capital used due to state-level location ambiguity)",
+        "lat": 30.2672,
+        "lon": -97.7431,
+        "precision": "proxy",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.35
+      },
+      "sources": [
+        {
+          "url": "https://www.epa.gov/archive/epapages/newsroom_archive/newsreleases/94f1e0f4d17df910852574c5006eea86.html",
+          "source_name": "U.S. Environmental Protection Agency (archive)",
+          "published_at": "2008-09-15T00:00:00.000Z",
+          "headline": "Spill Notification Reminder for Hurricane Ike Aftermath",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Environmental Protection Agency (EPA)",
+          "National Response Center"
+        ],
+        "substances": [
+          "oil",
+          "chemicals",
+          "radiological materials",
+          "biological materials"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "spills or releases of oil, chemicals, radiological or biological materials must be reported to the National Response Center",
+            "source_url": "https://www.epa.gov/archive/epapages/newsroom_archive/newsreleases/94f1e0f4d17df910852574c5006eea86.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.75,
+        "location": 0.35,
+        "summary_grounding": 0.65
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "low_confidence_location"
+      ],
+      "dedupe": {
+        "cluster_hint": "Hurricane Ike spill reporting reminder EPA NRC Gulf Coast 2008-09-15",
+        "fingerprint": "fp_2008-09-15_epa_spill_reporting_hurricane_ike_us_gulf_coast"
+      }
+    },
+    {
+      "event_id": "evt_200809_ike_landfall_txla",
+      "title": "Hurricane Ike storm surge and coastal flooding in Texas and Louisiana",
+      "description": "Hurricane Ike impacted the upper Texas coast and southwestern Louisiana in mid-September 2008, producing inland storm surge and flooding. The USGS publication documents monitoring of the storm surge and flooding associated with the event.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2008-09-12T00:00:00.000Z",
+        "event_end": "2008-09-13T23:59:59.000Z",
+        "reported_at": "2008-09-01T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": null,
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "United States (Texas and Louisiana)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, D.C.",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.usgs.gov/publications/monitoring-inland-storm-surge-and-flooding-hurricane-ike-texas-and-louisiana-september",
+          "source_name": "USGS",
+          "published_at": "2008-09-01T00:00:00.000Z",
+          "headline": "Monitoring Inland Storm Surge and Flooding From Hurricane Ike in Texas and Louisiana, September 2008",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "USGS"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Monitoring Inland Storm Surge and Flooding From Hurricane Ike in Texas and Louisiana, September 2008",
+            "source_url": "https://www.usgs.gov/publications/monitoring-inland-storm-surge-and-flooding-hurricane-ike-texas-and-louisiana-september"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.75,
+        "location": 0.6,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Hurricane Ike impacts (Texas/Louisiana)",
+        "fingerprint": "fp_ike_txla_2008-09"
+      }
+    },
+    {
+      "event_id": "evt_200809_ike_remnants_flood_il_in",
+      "title": "Flooding in northern Illinois and northwest Indiana from remnants of Hurricane Ike",
+      "description": "The remnants of Hurricane Ike produced heavy rainfall and flooding across northern Illinois and northwest Indiana in mid-September 2008. The NWS Chicago summary reports widespread flooding and notable rainfall totals during the event.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2008-09-12T00:00:00.000Z",
+        "event_end": "2008-09-15T23:59:59.000Z",
+        "reported_at": "2008-09-01T00:00:00.000Z",
+        "time_confidence": 0.65,
+        "event_date_utc": null,
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "United States (Illinois and Indiana)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, D.C.",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.weather.gov/lot/Sept2008_Hurricane_Ike_Rainfall",
+          "source_name": "NWS (weather.gov)",
+          "published_at": "2008-09-01T00:00:00.000Z",
+          "headline": "September 2008 - Heavy Rainfall from Remnants of Hurricane Ike",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "National Weather Service"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "September 2008 - Heavy Rainfall from Remnants of Hurricane Ike",
+            "source_url": "https://www.weather.gov/lot/Sept2008_Hurricane_Ike_Rainfall"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.75,
+        "location": 0.55,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Hurricane Ike remnants flooding (IL/IN)",
+        "fingerprint": "fp_ike_ilin_2008-09"
+      }
+    },
+    {
+      "event_id": "evt_200809_bangladesh_flooding_reported",
+      "title": "Bangladesh reports widespread flooding with large areas inundated",
+      "description": "A September 2008 news report stated that seasonal flooding affected multiple districts in Bangladesh, with officials saying a large share of the country was underwater. The report also described monitored rivers running above danger levels.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2008-09-05T00:00:00.000Z",
+        "event_end": "2008-09-05T23:59:59.000Z",
+        "reported_at": "2008-09-05T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2008-09-05T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Bangladesh",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "BD",
+        "capital_used": "Dhaka",
+        "lat": 23.8103,
+        "lon": 90.4125,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.75
+      },
+      "sources": [
+        {
+          "url": "https://www.abc.net.au/news/2008-09-05/25pc-of-bangladesh-landmass-flooded-official/501016",
+          "source_name": "ABC News (Australia)",
+          "published_at": "2008-09-05T00:00:00.000Z",
+          "headline": "25pc of Bangladesh landmass flooded: official",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "ABC News (Australia)"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "25pc of Bangladesh landmass flooded: official",
+            "source_url": "https://www.abc.net.au/news/2008-09-05/25pc-of-bangladesh-landmass-flooded-official/501016"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.66,
+        "category": 0.7,
+        "location": 0.8,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Bangladesh flooding Sep 2008",
+        "fingerprint": "fp_bd_flood_2008-09-05"
+      }
+    },
+    {
+      "event_id": "evt_200809_typhoon_jangmi_taiwan",
+      "title": "Typhoon Jangmi impacts Taiwan with heavy rain and landslides",
+      "description": "Typhoon Jangmi struck Taiwan in late September 2008, bringing strong winds and heavy rainfall. A news report described landslide impacts along with evacuations and cancellations.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2008-09-29T00:00:00.000Z",
+        "event_end": "2008-09-29T23:59:59.000Z",
+        "reported_at": "2008-09-29T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2008-09-29T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Taiwan",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "TW",
+        "capital_used": "Taipei",
+        "lat": 25.033,
+        "lon": 121.5654,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.8
+      },
+      "sources": [
+        {
+          "url": "https://www.abc.net.au/news/2008-09-29/typhoon-jangmi-batters-taiwan-coast/524548",
+          "source_name": "ABC News (Australia)",
+          "published_at": "2008-09-29T00:00:00.000Z",
+          "headline": "Typhoon Jangmi batters Taiwan coast",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "ABC News (Australia)"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Typhoon Jangmi batters Taiwan coast",
+            "source_url": "https://www.abc.net.au/news/2008-09-29/typhoon-jangmi-batters-taiwan-coast/524548"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.67,
+        "category": 0.7,
+        "location": 0.85,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Typhoon Jangmi Taiwan Sep 2008",
+        "fingerprint": "fp_jangmi_tw_2008-09-29"
+      }
+    },
+    {
+      "event_id": "evt_20080902_kilauea_halemaumau_explosive_eruption",
+      "title": "Explosive eruption at Kīlauea summit (Halemaʻumaʻu Overlook vent)",
+      "description": "USGS reported an explosive eruption at Kīlauea’s summit at the Halemaʻumaʻu Overlook vent on September 2, 2008. USGS described the event as dominated by juvenile scoria and noted it as the largest such summit event to date by mass erupted at the Overlook vent.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2008-09-02T00:00:00.000Z",
+        "event_end": "2008-09-02T23:59:59.000Z",
+        "reported_at": "2008-09-02T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2008-09-02T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Kīlauea Volcano (Halemaʻumaʻu), Hawaiʻi, United States",
+        "jurisdiction_level": "site",
+        "admin1": "Hawaiʻi",
+        "country": "US",
+        "capital_used": null,
+        "lat": 19.421,
+        "lon": -155.287,
+        "precision": "exact",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://www.usgs.gov/media/videos/halemaumau-explosive-eruption-september-2-2008",
+          "source_name": "USGS",
+          "published_at": "2008-09-02T00:00:00.000Z",
+          "headline": "Halema‘uma‘u explosive eruption, September 2, 2008",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "USGS"
+        ],
+        "substances": [
+          "juvenile scoria"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Halema‘uma‘u explosive eruption, September 2, 2008",
+            "source_url": "https://www.usgs.gov/media/videos/halemaumau-explosive-eruption-september-2-2008"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.85,
+        "location": 0.7,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "kilauea_halemaumau_overlook_vent_explosive_2008-09-02",
+        "fingerprint": "kilauea_halemaumau_overlook_vent_explosive_2008-09-02_us_hi"
+      }
+    },
+    {
+      "event_id": "2008-09_fires_flinders-island-bushfire_abc-1504024",
+      "title": "Strong winds hamper containment of Flinders Island bushfire sparked by lightning",
+      "description": "A bushfire on Flinders Island was reported to have started from a lightning strike. Reporting on 15 September 2008 said strong winds were fanning the fire and complicating containment efforts.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2008-09-15T00:00:00.000Z",
+        "event_end": "2008-09-15T23:59:59.000Z",
+        "reported_at": "2008-09-15T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2008-09-15T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Flinders Island, Bass Strait, Australia",
+        "jurisdiction_level": "site",
+        "admin1": "Tasmania",
+        "country": "AU",
+        "capital_used": null,
+        "lat": -40.0914,
+        "lon": 147.993,
+        "precision": "admin1",
+        "location_basis": "manual_override",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.abc.net.au/news/2008-09-15/strong-winds-fan-flinders-fire/1504024",
+          "source_name": "ABC News (Australia)",
+          "published_at": "2008-09-15T00:00:00.000Z",
+          "headline": "Strong winds fan Flinders fire",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Strong winds are fanning a fire on Flinders Island...",
+            "source_url": "https://www.abc.net.au/news/2008-09-15/strong-winds-fan-flinders-fire/1504024"
+          },
+          {
+            "quote": "The blaze was sparked by lightning.",
+            "source_url": "https://www.abc.net.au/news/2008-09-15/strong-winds-fan-flinders-fire/1504024"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.8,
+        "location": 0.55,
+        "summary_grounding": 0.65
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Flinders Island bushfire (Sep 2008)",
+        "fingerprint": "fires|flinders island bass strait australia|2008-09-15"
+      }
+    },
+    {
+      "event_id": "evt_20080904_epa_nonroad_spark_ignition_final_rule_us",
+      "title": "EPA finalizes tighter emission standards for nonroad small and marine spark-ignition engines",
+      "description": "The U.S. Environmental Protection Agency announced a final rule setting tighter exhaust and evaporative emission standards for certain nonroad spark-ignition engines and equipment, including small spark-ignition and marine/recreational applications. The rule is intended to reduce smog-forming pollutants and related emissions.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "2008-09-04T00:00:00.000Z",
+        "event_end": "2008-09-04T23:59:59.000Z",
+        "reported_at": "2008-09-04T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2008-09-04T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States (federal rulemaking)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.8
+      },
+      "sources": [
+        {
+          "url": "https://www.epa.gov/archive/epapages/newsroom_archive/newsreleases/5ea39929f1ac1c42852574ba005c95ec.html",
+          "source_name": "U.S. Environmental Protection Agency",
+          "published_at": "2008-09-04T00:00:00.000Z",
+          "headline": "EPA finalizes tighter emission standards for nonroad small spark-ignition engines and marine spark-ignition engines/equipment",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.epa.gov/regulations-emissions-vehicles-and-engines/final-rule-control-emissions-nonroad-spark-ignition",
+          "source_name": "U.S. Environmental Protection Agency",
+          "published_at": "2008-09-04T00:00:00.000Z",
+          "headline": "Final Rule: Control of Emissions From Nonroad Spark-Ignition Engines and Equipment",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Environmental Protection Agency (EPA)"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "EPA announced tighter engine standards covering small spark-ignition engines and recreational/marine applications.",
+            "source_url": "https://www.epa.gov/archive/epapages/newsroom_archive/newsreleases/5ea39929f1ac1c42852574ba005c95ec.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.74,
+        "category": 0.8,
+        "location": 0.8,
+        "summary_grounding": 0.65
+      },
+      "quality_flags": [
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "EPA final rule nonroad spark-ignition emissions standards (Sept 2008)",
+        "fingerprint": "fp_evt_20080904_epa_nonroad_spark_ignition_final_rule_us"
+      }
+    }
+  ]
+}

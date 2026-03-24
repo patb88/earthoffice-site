@@ -1,0 +1,906 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_1979-06_normalize_2026-01-19T102242610Z",
+    "generated_utc": "2026-01-19T10:22:42.610Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "1979-06",
+    "window": {
+      "start_utc": "1979-06-01T00:00:00.000Z",
+      "end_utc": "1979-06-30T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "evt_19790603_ixtoc1_bay_of_campeche_blowout",
+      "title": "IXTOC I exploratory well blowout begins major oil spill in Bay of Campeche",
+      "description": "An exploratory offshore well (IXTOC I) suffered a blowout and ignition, initiating a major crude oil spill in the Bay of Campeche in the Gulf of Mexico. The release led to widespread marine and coastal oil contamination over subsequent months.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1979-06-03T12:00:00Z",
+        "event_end": null,
+        "reported_at": "1979-06-03T12:00:00Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "1979-06-03T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Bay of Campeche (Bahía de Campeche), Gulf of Mexico, offshore Mexico",
+        "jurisdiction_level": "site",
+        "admin1": null,
+        "country": "MX",
+        "capital_used": null,
+        "lat": 19,
+        "lon": -92,
+        "precision": "proxy",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.35
+      },
+      "sources": [
+        {
+          "url": "https://incidentnews.noaa.gov/incident/6250",
+          "source_name": "NOAA IncidentNews",
+          "published_at": "1979-06-03T00:00:00Z",
+          "headline": "Incident 6250",
+          "byline": null,
+          "accessed_utc": "2026-01-19T10:19:25.899Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.whoi.edu/know-your-ocean/ocean-topics/ocean-human-lives/pollution/oil-spills/previous-oils-spills/ixtoc-i-oil-well/",
+          "source_name": "Woods Hole Oceanographic Institution",
+          "published_at": "1979-06-03T00:00:00Z",
+          "headline": "Ixtoc I Oil Well",
+          "byline": null,
+          "accessed_utc": "2026-01-19T10:19:25.899Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.osti.gov/biblio/6457018",
+          "source_name": "OSTI.GOV",
+          "published_at": "1979-06-01T00:00:00Z",
+          "headline": "Bibliographic record 6457018",
+          "byline": null,
+          "accessed_utc": "2026-01-19T10:19:25.899Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA",
+          "Woods Hole Oceanographic Institution"
+        ],
+        "substances": [
+          "crude oil"
+        ],
+        "ecosystems": [
+          "Gulf of Mexico"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.85,
+        "location": 0.35,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "ixtoc1_1979_gulf_of_mexico",
+        "fingerprint": "fp_ixtoc1_blowout_bay_of_campeche_1979-06-03"
+      }
+    },
+    {
+      "event_id": "1979-06-td01aof1979-jamaica-flooding",
+      "title": "Tropical Depression One (Atlantic) brings extreme rainfall and flooding in Jamaica",
+      "description": "An Atlantic tropical depression affected Jamaica in mid-June 1979, producing very heavy rainfall and flooding impacts. NOAA/WPC rainfall analysis indicates exceptionally high totals over mountainous parts of Jamaica associated with the system.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1979-06-11T12:00:00Z",
+        "event_end": "1979-06-16T12:00:00Z",
+        "reported_at": "1979-06-01T00:00:00Z",
+        "time_confidence": 0.55,
+        "event_date_utc": null,
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Jamaica",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "JM",
+        "capital_used": "Kingston",
+        "lat": 17.9712,
+        "lon": -76.7936,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.8
+      },
+      "sources": [
+        {
+          "url": "https://www.wpc.ncep.noaa.gov/tropical/rain/td01aof1979.html",
+          "source_name": "NOAA Weather Prediction Center",
+          "published_at": "1979-06-01T00:00:00Z",
+          "headline": "Tropical Depression One (Atlantic) - 1979 Rainfall Summary",
+          "byline": null,
+          "accessed_utc": "2026-01-19T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA",
+          "NOAA Weather Prediction Center"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Tropical Depression One (Atlantic) - 1979",
+            "source_url": "https://www.wpc.ncep.noaa.gov/tropical/rain/td01aof1979.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.85,
+        "location": 0.8,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "paywalled_or_partial"
+      ],
+      "dedupe": {
+        "cluster_hint": "tropical_depression_1979_jamaica_flooding",
+        "fingerprint": "fp_1979-06_td01aof1979_jamaica_range"
+      }
+    },
+    {
+      "event_id": "1979-06-usgs-indiana-floods-june-august-1979",
+      "title": "June 1979 storm contributes to major flooding in central and southern Indiana",
+      "description": "USGS documentation of the 1979 Indiana flood season describes major flooding in central and southern Indiana driven by multiple storms, including a storm in June 1979. The sources compile hydrologic observations for the June event and later storms in the same season.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1979-06-15T12:00:00Z",
+        "event_end": "1979-06-15T12:00:00Z",
+        "reported_at": "1979-06-01T00:00:00Z",
+        "time_confidence": 0.35,
+        "event_date_utc": null,
+        "event_date_precision": "month"
+      },
+      "location": {
+        "name": "Indiana, United States",
+        "jurisdiction_level": "state",
+        "admin1": "Indiana",
+        "country": "US",
+        "capital_used": "Indianapolis",
+        "lat": 39.7684,
+        "lon": -86.1581,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.75
+      },
+      "sources": [
+        {
+          "url": "https://www.usgs.gov/publications/floods-indiana-june-august-1979",
+          "source_name": "USGS",
+          "published_at": "1979-06-01T00:00:00Z",
+          "headline": "Floods in Indiana, June–August 1979",
+          "byline": null,
+          "accessed_utc": "2026-01-19T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://pubs.usgs.gov/publication/ofr801204",
+          "source_name": "USGS Publications Warehouse",
+          "published_at": "1979-06-01T00:00:00Z",
+          "headline": "Floods in Indiana, June–August 1979 (OFR 80-1204)",
+          "byline": null,
+          "accessed_utc": "2026-01-19T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "USGS"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Floods in Indiana, June–August 1979",
+            "source_url": "https://www.usgs.gov/publications/floods-indiana-june-august-1979"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.58,
+        "category": 0.85,
+        "location": 0.75,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "paywalled_or_partial"
+      ],
+      "dedupe": {
+        "cluster_hint": "indiana_floods_1979_june_storm",
+        "fingerprint": "fp_1979-06_usgs_indiana_floods_month"
+      }
+    },
+    {
+      "event_id": "evt_19790602_cadoux_eq",
+      "title": "Cadoux earthquake near Cadoux, Western Australia",
+      "description": "A damaging earthquake occurred near Cadoux in Western Australia’s Wheatbelt region on 2 June 1979. The referenced University of Western Australia seismicity page describes the event and associated impacts/damage in the region.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1979-06-02T12:00:00Z",
+        "event_end": "1979-06-02T12:00:00Z",
+        "reported_at": "1979-06-02T12:00:00Z",
+        "time_confidence": 0.5,
+        "event_date_utc": "1979-06-02T12:00:00Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Near Cadoux, Wheatbelt region, Western Australia, Australia",
+        "jurisdiction_level": "site",
+        "admin1": "Western Australia",
+        "country": "AU",
+        "capital_used": null,
+        "lat": -30.7833,
+        "lon": 116.6667,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://webarchive.nla.gov.au/awa/20040717140000/http://pandora.nla.gov.au/pan/25962/20040718-0000/www.seismicity.segs.uwa.edu.au/seismicity_of_western_australia/wa_historical/cadoux.html",
+          "source_name": "National Library of Australia Web Archive (PANDORA) / UWA Seismicity",
+          "published_at": "1979-06-02T00:00:00Z",
+          "headline": "Cadoux earthquake (historical WA seismicity page)",
+          "byline": null,
+          "accessed_utc": "2026-01-19T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "University of Western Australia"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Cadoux earthquake",
+            "source_url": "https://webarchive.nla.gov.au/awa/20040717140000/http://pandora.nla.gov.au/pan/25962/20040718-0000/www.seismicity.segs.uwa.edu.au/seismicity_of_western_australia/wa_historical/cadoux.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.45,
+        "category": 0.8,
+        "location": 0.55,
+        "summary_grounding": 0.4
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only",
+        "low_confidence_location"
+      ],
+      "dedupe": {
+        "cluster_hint": "Cadoux earthquake 1979-06-02",
+        "fingerprint": "fp_cadoux_19790602_wa"
+      }
+    },
+    {
+      "event_id": "evt_19790622_oaxaca_eq_usgs",
+      "title": "Earthquake in Oaxaca, Mexico (USGS event page)",
+      "description": "USGS lists an earthquake event for 22 June 1979 in or near Oaxaca, Mexico. The draft describes it as a magnitude 6.3 deep-focus event based on the USGS event listing.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1979-06-22T12:00:00Z",
+        "event_end": "1979-06-22T12:00:00Z",
+        "reported_at": "1979-06-22T12:00:00Z",
+        "time_confidence": 0.4,
+        "event_date_utc": "1979-06-22T12:00:00Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Oaxaca, Mexico",
+        "jurisdiction_level": "state",
+        "admin1": "Oaxaca",
+        "country": "MX",
+        "capital_used": "Oaxaca de Juárez",
+        "lat": 17.0732,
+        "lon": -96.7266,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://earthquake.usgs.gov/earthquakes/eventpage/usp0000t6g",
+          "source_name": "USGS Earthquake Hazards Program",
+          "published_at": "1979-06-22T00:00:00Z",
+          "headline": "USGS event page usp0000t6g",
+          "byline": null,
+          "accessed_utc": "2026-01-19T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "USGS"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "USGS event page usp0000t6g",
+            "source_url": "https://earthquake.usgs.gov/earthquakes/eventpage/usp0000t6g"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.5,
+        "category": 0.85,
+        "location": 0.6,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "Oaxaca earthquake 1979-06-22 (USGS usp0000t6g)",
+        "fingerprint": "fp_oaxaca_19790622_mx"
+      }
+    },
+    {
+      "event_id": "evt_19790623_semey_nuclear_usgs",
+      "title": "Seismic event near Semey, East Kazakhstan (identified as nuclear explosion in listing)",
+      "description": "USGS lists a seismic event on 23 June 1979 near Semey in East Kazakhstan. The draft notes the listing identifies it as a nuclear explosion rather than a natural earthquake.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1979-06-23T02:56:57Z",
+        "event_end": "1979-06-23T02:56:57Z",
+        "reported_at": "1979-06-23T02:56:57Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "1979-06-23T02:56:57Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "East Kazakhstan Region (near Semey), Kazakhstan",
+        "jurisdiction_level": "site",
+        "admin1": null,
+        "country": "KZ",
+        "capital_used": null,
+        "lat": 50.4111,
+        "lon": 80.2275,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://earthquake.usgs.gov/earthquakes/eventpage/usp0000t7q",
+          "source_name": "USGS Earthquake Hazards Program",
+          "published_at": "1979-06-23T00:00:00Z",
+          "headline": "USGS event page usp0000t7q",
+          "byline": null,
+          "accessed_utc": "2026-01-19T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "USGS"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "USGS event page usp0000t7q",
+            "source_url": "https://earthquake.usgs.gov/earthquakes/eventpage/usp0000t7q"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.5,
+        "category": 0.75,
+        "location": 0.55,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "secondary_sources_only",
+        "low_confidence_location"
+      ],
+      "dedupe": {
+        "cluster_hint": "Semey/East Kazakhstan seismic event 1979-06-23 (USGS usp0000t7q)",
+        "fingerprint": "fp_semey_19790623_kz"
+      }
+    },
+    {
+      "event_id": "evt_19790625_png_northcoast_usgs",
+      "title": "Earthquake near the north coast of New Guinea, Papua New Guinea (USGS event page)",
+      "description": "USGS lists an earthquake on 25 June 1979 near the north coast of New Guinea in Papua New Guinea. The draft summary indicates damage was reported, based on the event listing/context.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1979-06-25T12:00:00Z",
+        "event_end": "1979-06-25T12:00:00Z",
+        "reported_at": "1979-06-25T12:00:00Z",
+        "time_confidence": 0.4,
+        "event_date_utc": "1979-06-25T12:00:00Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Near the north coast of New Guinea, Papua New Guinea (Madang Province region)",
+        "jurisdiction_level": "state",
+        "admin1": "Madang",
+        "country": "PG",
+        "capital_used": "Madang",
+        "lat": -5.2215,
+        "lon": 145.7869,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.5
+      },
+      "sources": [
+        {
+          "url": "https://earthquake.usgs.gov/earthquakes/eventpage/usp0000t9k",
+          "source_name": "USGS Earthquake Hazards Program",
+          "published_at": "1979-06-25T00:00:00Z",
+          "headline": "USGS event page usp0000t9k",
+          "byline": null,
+          "accessed_utc": "2026-01-19T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "USGS"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "USGS event page usp0000t9k",
+            "source_url": "https://earthquake.usgs.gov/earthquakes/eventpage/usp0000t9k"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.45,
+        "category": 0.85,
+        "location": 0.5,
+        "summary_grounding": 0.4
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only",
+        "low_confidence_location"
+      ],
+      "dedupe": {
+        "cluster_hint": "North coast New Guinea earthquake 1979-06-25 (USGS usp0000t9k)",
+        "fingerprint": "fp_png_northcoast_19790625_pg"
+      }
+    },
+    {
+      "event_id": "evt_19790630_bigbear_usgs_circ",
+      "title": "Big Bear Lake area earthquake sequence (USGS Circular report)",
+      "description": "A USGS Circular report documents an earthquake sequence near Big Bear Lake, Southern California, including a main event on 30 June 1979. The draft summary notes it as the largest in the local sequence with minor damage reported on the lake’s south shore.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1979-06-30T00:34:11Z",
+        "event_end": "1979-06-30T00:34:11Z",
+        "reported_at": "1980-01-01T00:00:00Z",
+        "time_confidence": 0.75,
+        "event_date_utc": "1979-06-30T00:34:11Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Big Bear Lake area, Southern California, USA",
+        "jurisdiction_level": "site",
+        "admin1": "California",
+        "country": "US",
+        "capital_used": null,
+        "lat": 34.2439,
+        "lon": -116.9114,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://pubs.usgs.gov/circ/1980/0836b/report.pdf",
+          "source_name": "USGS Publications (Circular)",
+          "published_at": "1980-01-01T00:00:00Z",
+          "headline": "USGS Circular 836-B report (Big Bear Lake area earthquake sequence)",
+          "byline": null,
+          "accessed_utc": "2026-01-19T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "USGS"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "report.pdf",
+            "source_url": "https://pubs.usgs.gov/circ/1980/0836b/report.pdf"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.8,
+        "location": 0.6,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "Big Bear Lake earthquake 1979-06-30",
+        "fingerprint": "fp_bigbear_19790630_ca"
+      }
+    },
+    {
+      "event_id": "1979-06-ixtoc-i-well-blowout-bay-of-campeche",
+      "title": "Ixtoc I well blowout begins in Bay of Campeche, releasing oil into the Gulf of Mexico",
+      "description": "On June 3, 1979, the Ixtoc I exploratory well blew out in the Bay of Campeche, beginning a major oil spill in the Gulf of Mexico. The spill posed risks to marine ecosystems and wildlife in the Gulf.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1979-06-03T12:00:00Z",
+        "event_end": "1979-06-03T12:00:00Z",
+        "reported_at": "1979-06-03T12:00:00Z",
+        "time_confidence": 0.5,
+        "event_date_utc": "1979-06-03T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Bay of Campeche, Gulf of Mexico (offshore Mexico)",
+        "jurisdiction_level": "site",
+        "admin1": null,
+        "country": "MX",
+        "capital_used": null,
+        "lat": 19,
+        "lon": -92,
+        "precision": "admin1",
+        "location_basis": "manual_override",
+        "location_confidence": 0.4
+      },
+      "sources": [
+        {
+          "url": "https://www.osti.gov/biblio/6457018",
+          "source_name": "OSTI",
+          "published_at": "1979-06-03T12:00:00Z",
+          "headline": "Ixtoc I well blowout begins, releasing oil into the Gulf of Mexico (major threat to marine ecosystems and wildlife)",
+          "byline": null,
+          "accessed_utc": "2026-01-19T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.whoi.edu/know-your-ocean/ocean-topics/ocean-human-lives/pollution/oil-spills/previous-oils-spills/ixtoc-i-oil-well/",
+          "source_name": "Woods Hole Oceanographic Institution",
+          "published_at": "1979-06-03T12:00:00Z",
+          "headline": "Ixtoc I well blowout begins, releasing oil into the Gulf of Mexico (major threat to marine ecosystems and wildlife)",
+          "byline": null,
+          "accessed_utc": "2026-01-19T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "PEMEX"
+        ],
+        "substances": [
+          "crude oil"
+        ],
+        "ecosystems": [
+          "Gulf of Mexico"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Ixtoc I exploratory well blew out... initiating one of the largest oil spills",
+            "source_url": "https://www.whoi.edu/know-your-ocean/ocean-topics/ocean-human-lives/pollution/oil-spills/previous-oils-spills/ixtoc-i-oil-well/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.45,
+        "category": 0.6,
+        "location": 0.4,
+        "summary_grounding": 0.4
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "ixtoc-i-1979-gulf-of-mexico",
+        "fingerprint": "ixtoc-i-well-blowout-bay-of-campeche|bay-of-campeche|1979-06-03"
+      }
+    },
+    {
+      "event_id": "1979-06-usfws-foreign-species-endangered-rule",
+      "title": "U.S. Fish & Wildlife Service publishes rule listing 25 foreign species as endangered",
+      "description": "A U.S. Fish & Wildlife Service rule published on June 25, 1979 listed 25 foreign species as endangered. The rule cited threats such as habitat destruction and killing and extended Endangered Species Act-related protections affecting U.S. actions and commerce involving those species.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "1979-06-25T12:00:00Z",
+        "event_end": "1979-06-25T12:00:00Z",
+        "reported_at": "1979-06-25T12:00:00Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "1979-06-25T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.95
+      },
+      "sources": [
+        {
+          "url": "https://www.fws.gov/sites/default/files/documents/historic-news-releases/1979/19790625B.PDF",
+          "source_name": "U.S. Fish & Wildlife Service",
+          "published_at": "1979-06-25T00:00:00.000Z",
+          "headline": "Historic news release: U.S. Fish & Wildlife Service lists 25 foreign species as endangered",
+          "byline": null,
+          "accessed_utc": "2026-01-19T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Fish & Wildlife Service"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "lists 25 foreign species as endangered",
+            "source_url": "https://www.fws.gov/sites/default/files/documents/historic-news-releases/1979/19790625B.PDF"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.65,
+        "category": 0.75,
+        "location": 0.95,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "usfws-esa-foreign-species-1979-06-25",
+        "fingerprint": "usfws-foreign-species-endangered-rule|united-states|1979-06-25"
+      }
+    },
+    {
+      "event_id": "evt_19790614_epa_consolidated_permit_proposed_rule_us",
+      "title": "EPA proposes consolidated permit program requirements across major environmental statutes",
+      "description": "The U.S. Environmental Protection Agency posted a Federal Register-related notice describing a proposed rule to establish consolidated permit program requirements spanning multiple environmental statutes and permit programs. The proposal aimed to standardize permitting procedures and state program requirements across these programs.",
+      "category_primary": "policy_regulation",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "1979-06-14T12:00:00Z",
+        "event_end": "1979-06-14T12:00:00Z",
+        "reported_at": "1979-06-14T12:00:00Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "1979-06-14T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States (Federal Register / EPA)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://19january2021snapshot.epa.gov/hwpermitting/federal-register-notice-proposed-rule-establish-consolidated-permit-program_.html",
+          "source_name": "U.S. EPA (archived snapshot)",
+          "published_at": "1979-06-14T12:00:00Z",
+          "headline": "Federal Register notice proposed rule: establish consolidated permit program requirements",
+          "byline": null,
+          "accessed_utc": "2026-01-19T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Environmental Protection Agency (EPA)"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "proposed rule ... establish consolidated permit program requirements",
+            "source_url": "https://19january2021snapshot.epa.gov/hwpermitting/federal-register-notice-proposed-rule-establish-consolidated-permit-program_.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.75,
+        "location": 0.7,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "paywalled_or_partial"
+      ],
+      "dedupe": {
+        "cluster_hint": "epa_consolidated_permit_program_1979",
+        "fingerprint": "fp_epa_consolidated_permit_program_us_1979-06-14"
+      }
+    },
+    {
+      "event_id": "evt_19790628_nj_pinelands_protection_act_passed",
+      "title": "New Jersey passes the Pinelands Protection Act to regulate development in the Pinelands",
+      "description": "A Pinelands-focused organization states that New Jersey enacted the Pinelands Protection Act in June 1979, creating a framework for regulating development and establishing governance for protection of the Pinelands/Pine Barrens. The measure is described as setting up mechanisms for a comprehensive management plan to limit overdevelopment impacts.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "1979-06-28T12:00:00Z",
+        "event_end": "1979-06-28T12:00:00Z",
+        "reported_at": "1979-06-28T12:00:00Z",
+        "time_confidence": 0.35,
+        "event_date_utc": "1979-06-28T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "New Jersey, United States",
+        "jurisdiction_level": "state",
+        "admin1": "New Jersey",
+        "country": "US",
+        "capital_used": "Trenton",
+        "lat": 40.2204,
+        "lon": -74.7643,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://pinelandsalliance.org/pinelands-protection-act-of-1979/",
+          "source_name": "Pinelands Preservation Alliance",
+          "published_at": "1979-06-28T12:00:00Z",
+          "headline": "Pinelands Protection Act of 1979",
+          "byline": null,
+          "accessed_utc": "2026-01-19T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "New Jersey Legislature",
+          "Pinelands Preservation Alliance"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "Pinelands / Pine Barrens"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Pinelands Protection Act of 1979",
+            "source_url": "https://pinelandsalliance.org/pinelands-protection-act-of-1979/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.5,
+        "category": 0.75,
+        "location": 0.7,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "secondary_sources_only",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "nj_pinelands_protection_act_1979",
+        "fingerprint": "fp_nj_pinelands_protection_act_trenton_1979-06-28"
+      }
+    }
+  ]
+}

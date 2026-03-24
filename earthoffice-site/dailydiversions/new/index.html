@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Daily Diversions — a curated discovery every day across Church Steeples, Historic Bridges, Vintage Advertisements, and Nature.">
+  <title>Daily Diversions</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<div id="app">
+
+  <!-- ======================================================
+       SITE HEADER
+       ====================================================== -->
+  <header class="site-header">
+    <h1>Daily Diversions</h1>
+    <p class="tagline">A curated discovery, every day</p>
+    <p class="todays-date" id="today-date"></p>
+  </header>
+
+  <!-- ======================================================
+       MAIN CONTENT
+       ====================================================== -->
+  <main>
+
+    <!-- Category selector -->
+    <nav class="category-nav" id="category-nav" aria-label="Content categories">
+      <!-- Buttons injected by app.js -->
+    </nav>
+
+    <!-- Daily content card -->
+    <article class="content-card" id="content-card" aria-live="polite">
+      <!-- Content injected by app.js -->
+    </article>
+
+    <!-- Share button -->
+    <div class="share-row" id="share-row" style="visibility:hidden">
+      <button class="btn-share" id="btn-share" type="button">
+        <!-- Mail icon (inline SVG, no external dependency) -->
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none"
+             stroke="currentColor" stroke-width="2.2"
+             stroke-linecap="round" stroke-linejoin="round"
+             aria-hidden="true">
+          <rect x="2" y="4" width="20" height="16" rx="2"/>
+          <polyline points="2,4 12,13 22,4"/>
+        </svg>
+        Share Today's Find
+      </button>
+    </div>
+
+  </main>
+
+  <!-- ======================================================
+       GOOGLE ADSENSE SLOT
+       ======================================================
+       HOW TO ACTIVATE:
+       1. Sign in to your Google AdSense account and create
+          a new ad unit.
+       2. Desktop leaderboard (728×90):
+          Copy the <ins class="adsbygoogle"> tag into
+          .ad-slot--desktop, replacing the placeholder text.
+       3. Mobile banner (320×50):
+          Copy the <ins class="adsbygoogle"> tag into
+          .ad-slot--mobile, replacing the placeholder text.
+       4. Paste the AdSense <script> tag (the one with
+          adsbygoogle.js) just before </body> — or in <head>.
+       5. Remove the placeholder text ("AdSense 728×90")
+          from both divs once real tags are in place.
+
+       ALTERNATIVELY — one responsive unit for both:
+          Replace both .ad-slot--desktop/.ad-slot--mobile divs
+          with a single .ad-slot--responsive div containing
+          your <ins data-ad-format="auto"> tag, and remove
+          the two separate divs.
+       ====================================================== -->
+  <aside class="ad-container" aria-label="Advertisement">
+    <p class="ad-label">Advertisement</p>
+
+    <!-- Desktop leaderboard 728×90 — visible on screens ≥768px -->
+    <div class="ad-slot--desktop">
+      AdSense 728×90 — paste your &lt;ins&gt; tag here
+    </div>
+
+    <!-- Mobile banner 320×50 — visible on screens &lt;768px -->
+    <div class="ad-slot--mobile">
+      AdSense 320×50 — paste your &lt;ins&gt; tag here
+    </div>
+  </aside>
+
+  <!-- ======================================================
+       SITE FOOTER
+       ====================================================== -->
+  <footer class="site-footer">
+    &copy; <span id="footer-year"></span> Daily Diversions
+  </footer>
+
+</div><!-- /#app -->
+
+<!-- ======================================================
+     SHARE MODAL
+     ====================================================== -->
+<div class="modal-overlay" id="modal-overlay" role="dialog"
+     aria-modal="true" aria-labelledby="modal-title">
+  <div class="modal">
+
+    <div class="modal-header">
+      <h2 id="modal-title">Share Today's Find</h2>
+      <button class="modal-close" id="modal-close"
+              type="button" aria-label="Close share dialog">&#x2715;</button>
+    </div>
+
+    <!-- Preview of what will be shared -->
+    <div class="form-sharing-preview">
+      Sharing: <strong id="preview-title"></strong>
+      &mdash; <span id="preview-category"></span>
+    </div>
+
+    <form id="share-form" novalidate>
+
+      <div class="form-group">
+        <label for="recipient-email">Send to</label>
+        <input type="email"
+               id="recipient-email"
+               name="recipientEmail"
+               placeholder="friend@example.com"
+               autocomplete="email"
+               required>
+      </div>
+
+      <div class="form-group">
+        <label for="personal-message">
+          Your message
+          <span class="optional-tag">(optional)</span>
+        </label>
+        <textarea id="personal-message"
+                  name="personalMessage"
+                  placeholder="Thought you might enjoy this…"
+                  maxlength="500"></textarea>
+      </div>
+
+      <button class="btn-send" id="btn-send" type="submit">Send</button>
+
+      <p class="form-status" id="form-status" aria-live="polite"></p>
+
+    </form>
+  </div>
+</div><!-- /.modal-overlay -->
+
+<!-- ======================================================
+     Paste your AdSense <script src="...adsbygoogle.js"> here
+     when you are ready to activate ads.
+     ====================================================== -->
+
+<script>
+  // Set footer year dynamically
+  document.getElementById('footer-year').textContent = new Date().getFullYear();
+</script>
+<script src="js/app.js"></script>
+
+</body>
+</html>

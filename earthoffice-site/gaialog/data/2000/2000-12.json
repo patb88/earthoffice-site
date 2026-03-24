@@ -1,0 +1,315 @@
+{
+  "batch_meta": {
+    "batch_id": "2000-12_gaialog_001",
+    "generated_utc": "2026-01-11T00:00:00Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "2000-12",
+    "window": {
+      "start_utc": "2000-12-01T00:00:00.000Z",
+      "end_utc": "2000-12-31T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog_event_extractor",
+      "version": "1.0",
+      "model": "api-assistant",
+      "retrieval_method": "curated"
+    }
+  },
+  "events": [
+    {
+      "event_id": "evt_20001214_ia_algona_ammonia_spill",
+      "title": "Anhydrous ammonia pipeline spill near Algona, Iowa causes fish kill",
+      "description": "A pipeline released anhydrous ammonia near Algona, Iowa, with contamination reported in Lotts Creek and the Des Moines River system. The incident was reported to have caused a major fish kill and prompted evacuations due to the airborne plume.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2000-12-14T00:00:00.000Z",
+        "event_end": "2000-12-14T23:59:59.000Z",
+        "reported_at": "2001-12-19T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2000-12-14T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Near Algona, Iowa, USA",
+        "jurisdiction_level": "city",
+        "admin1": "Iowa",
+        "country": "US",
+        "capital_used": null,
+        "lat": 43.06997,
+        "lon": -94.23302,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.radioiowa.com/2001/12/19/fertilizer-spill-turns-into-worst-fish-kill-in-iowa-history/",
+          "source_name": "Radio Iowa",
+          "published_at": "2001-12-19T00:00:00.000Z",
+          "headline": "Fertilizer spill turns into worst fish kill in Iowa history",
+          "byline": null,
+          "accessed_utc": "2026-01-11T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [
+          "anhydrous ammonia"
+        ],
+        "ecosystems": [
+          "Lotts Creek",
+          "Des Moines River"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Fertilizer spill turns into worst fish kill in Iowa history",
+            "source_url": "https://www.radioiowa.com/2001/12/19/fertilizer-spill-turns-into-worst-fish-kill-in-iowa-history/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.8,
+        "location": 0.6,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Algona IA anhydrous ammonia spill fish kill",
+        "fingerprint": "fp_algona_ia_ammonia_2000-12-14"
+      }
+    },
+    {
+      "event_id": "evt_20001218_mx_popocatepetl_eruption",
+      "title": "Popocatépetl eruption produces ash plume",
+      "description": "Popocatépetl in Mexico erupted, producing an ash plume documented in satellite imagery. The reported plume raised concern for nearby populated areas including the greater Mexico City region.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2000-12-18T00:00:00.000Z",
+        "event_end": "2000-12-18T23:59:59.000Z",
+        "reported_at": "2000-12-18T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2000-12-18T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Popocatépetl, Mexico",
+        "jurisdiction_level": "site",
+        "admin1": null,
+        "country": "MX",
+        "capital_used": null,
+        "lat": 19.02333,
+        "lon": -98.6225,
+        "precision": "exact",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.85
+      },
+      "sources": [
+        {
+          "url": "https://earthobservatory.nasa.gov/images/1023/popocatepetl-erupts",
+          "source_name": "NASA Earth Observatory",
+          "published_at": "2000-12-18T00:00:00.000Z",
+          "headline": "Popocatépetl Erupts",
+          "byline": null,
+          "accessed_utc": "2026-01-11T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NASA"
+        ],
+        "substances": [
+          "volcanic ash"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Popocatépetl Erupts",
+            "source_url": "https://earthobservatory.nasa.gov/images/1023/popocatepetl-erupts"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.75,
+        "category": 0.85,
+        "location": 0.85,
+        "summary_grounding": 0.7
+      },
+      "quality_flags": [
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Popocatepetl eruption ash plume Dec 2000",
+        "fingerprint": "fp_popocatepetl_2000-12-18"
+      }
+    },
+    {
+      "event_id": "evt_20001214_us_epa_mercury_powerplants_finding",
+      "title": "U.S. EPA announces determination to reduce mercury emissions from coal-fired power plants",
+      "description": "The U.S. EPA announced a determination regarding mercury emissions from coal-fired power plants, stating that reductions would be required due to hazards posed by the emissions. The announcement also referenced a forthcoming regulatory timeline for proposing and finalizing rules.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "2000-12-14T00:00:00.000Z",
+        "event_end": "2000-12-14T23:59:59.000Z",
+        "reported_at": "2000-12-14T00:00:00.000Z",
+        "time_confidence": 0.85,
+        "event_date_utc": "2000-12-14T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States (federal)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.95
+      },
+      "sources": [
+        {
+          "url": "https://www.epa.gov/archive/epapages/newsroom_archive/newsreleases/cd30963685856f30852569b5005ee740.html",
+          "source_name": "U.S. Environmental Protection Agency (archive)",
+          "published_at": "2000-12-14T00:00:00.000Z",
+          "headline": "News release (EPA archive): Mercury emissions from coal-fired power plants",
+          "byline": null,
+          "accessed_utc": "2026-01-11T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Environmental Protection Agency (EPA)"
+        ],
+        "substances": [
+          "mercury"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "newsroom_archive newsreleases",
+            "source_url": "https://www.epa.gov/archive/epapages/newsroom_archive/newsreleases/cd30963685856f30852569b5005ee740.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.7,
+        "category": 0.8,
+        "location": 0.95,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "paywalled_or_partial",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "EPA mercury coal-fired power plants determination Dec 2000",
+        "fingerprint": "fp_epa_mercury_powerplants_2000-12-14"
+      }
+    },
+    {
+      "event_id": "evt_20001229_us_epa_mercury_research_strategy",
+      "title": "U.S. EPA releases five-year Mercury Research Strategy",
+      "description": "EPA’s Office of Research and Development released a five-year mercury research strategy describing research priorities related to mercury’s health and ecological risks. The release outlined scientific questions intended to guide research activities over the strategy period.",
+      "category_primary": "science_monitoring",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "2000-12-29T00:00:00.000Z",
+        "event_end": "2000-12-29T23:59:59.000Z",
+        "reported_at": "2000-12-29T00:00:00.000Z",
+        "time_confidence": 0.85,
+        "event_date_utc": "2000-12-29T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States (federal)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.95
+      },
+      "sources": [
+        {
+          "url": "https://www.epa.gov/archive/epapages/newsroom_archive/newsreleases/5f7beebf83b92df3852569c400723d99.html",
+          "source_name": "U.S. Environmental Protection Agency (archive)",
+          "published_at": "2000-12-29T00:00:00.000Z",
+          "headline": "News release (EPA archive): Mercury Research Strategy",
+          "byline": null,
+          "accessed_utc": "2026-01-11T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Environmental Protection Agency (EPA)",
+          "EPA Office of Research and Development"
+        ],
+        "substances": [
+          "mercury"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "newsroom_archive newsreleases",
+            "source_url": "https://www.epa.gov/archive/epapages/newsroom_archive/newsreleases/5f7beebf83b92df3852569c400723d99.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.7,
+        "category": 0.8,
+        "location": 0.95,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "paywalled_or_partial",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "EPA mercury research strategy Dec 2000",
+        "fingerprint": "fp_epa_mercury_strategy_2000-12-29"
+      }
+    }
+  ]
+}

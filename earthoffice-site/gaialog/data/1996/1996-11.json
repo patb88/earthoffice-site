@@ -1,0 +1,917 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_1996-11_normalize_2026-01-17T185845595Z",
+    "generated_utc": "2026-01-17T18:58:45.595Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "1996-11",
+    "window": {
+      "start_utc": "1996-11-01T00:00:00.000Z",
+      "end_utc": "1996-11-30T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "1996-11_weather_climate_lake-champlain-basin-flooding",
+      "title": "Lake Champlain Basin flooding in northern New York after heavy rain",
+      "description": "A multi-day rainfall event caused flooding in northern New York within the Lake Champlain Basin, including the Ausable and Saranac River watersheds. Sources describe basin-wide rainfall totals of roughly 4–5 inches with localized higher totals, and note severe impacts including disaster declarations in affected counties.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1996-11-08T12:00:00Z",
+        "event_end": "1996-11-10T12:00:00Z",
+        "reported_at": "1996-11-30T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1996-11-09T00:00:00Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Northern New York (Lake Champlain Basin)",
+        "jurisdiction_level": "state",
+        "admin1": "New York",
+        "country": "US",
+        "capital_used": "Albany",
+        "lat": 42.6526,
+        "lon": -73.7562,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.75
+      },
+      "sources": [
+        {
+          "url": "https://www.weather.gov/nerfc/hf_nov_1996",
+          "source_name": "NOAA / NWS Northeast River Forecast Center",
+          "published_at": "1996-11-30T00:00:00Z",
+          "headline": "(NWS page) November 1996 flood summary",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://water.usgs.gov/nwc/back_issues/nov96_cov.html",
+          "source_name": "USGS National Water Conditions",
+          "published_at": "1996-11-30T00:00:00Z",
+          "headline": "USGS National Water Conditions (back issues): November 1996",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA National Weather Service",
+          "USGS"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "river"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "record flooding in northern New York watersheds (including the Ausable and Saranac)",
+            "source_url": "https://www.weather.gov/nerfc/hf_nov_1996"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.7,
+        "location": 0.75,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "1996-11 Lake Champlain Basin flooding (NY)",
+        "fingerprint": "fp_1996-11_lake_champlain_basin_flooding_ny_1996-11-08_1996-11-10"
+      }
+    },
+    {
+      "event_id": "1996-11_weather_climate_southern-midcontinent-flash-flooding",
+      "title": "Flash flooding across parts of TX/OK/AR/MO from heavy rainfall",
+      "description": "Heavy rainfall led to flash flooding across parts of Texas, Oklahoma, Arkansas, and Missouri. USGS reporting notes flooding along Polecat Creek in Oklahoma and lowland agricultural flooding in LeFlore County along the Poteau River.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1996-11-07T12:00:00Z",
+        "event_end": "1996-11-08T12:00:00Z",
+        "reported_at": "1996-11-30T00:00:00Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "1996-11-07T12:00:00Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Oklahoma (reported impacts incl. LeFlore County; Polecat Creek)",
+        "jurisdiction_level": "state",
+        "admin1": "Oklahoma",
+        "country": "US",
+        "capital_used": "Oklahoma City",
+        "lat": 35.4676,
+        "lon": -97.5164,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://water.usgs.gov/nwc/back_issues/nov96_cov.html",
+          "source_name": "USGS National Water Conditions",
+          "published_at": "1996-11-30T00:00:00Z",
+          "headline": "USGS National Water Conditions (back issues): November 1996",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "USGS"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "river",
+          "creek"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "flash flooding across parts of TX/OK/AR/MO; flooding was noted along Polecat Creek in Oklahoma",
+            "source_url": "https://water.usgs.gov/nwc/back_issues/nov96_cov.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.52,
+        "category": 0.7,
+        "location": 0.55,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "1996-11 southern mid-continent flash flooding",
+        "fingerprint": "fp_1996-11_southern_midcontinent_flash_flooding_ok_1996-11-07_1996-11-08"
+      }
+    },
+    {
+      "event_id": "1996-11_weather_climate_pacific-northwest-flash-flooding-mudslides",
+      "title": "Pacific Northwest flash flooding and mudslides from rain and snowmelt",
+      "description": "Heavy rain combined with warmer temperatures and snowmelt produced flash flooding and mudslides in parts of the Pacific Northwest. USGS reporting notes widespread road closures from mudslides and streams exceeding bankfull conditions, including impacts in western Oregon.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1996-11-18T12:00:00Z",
+        "event_end": "1996-11-18T12:00:00Z",
+        "reported_at": "1996-11-30T00:00:00Z",
+        "time_confidence": 0.5,
+        "event_date_utc": "1996-11-18T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Oregon (western Oregon / Pacific Northwest impacts)",
+        "jurisdiction_level": "state",
+        "admin1": "Oregon",
+        "country": "US",
+        "capital_used": "Salem",
+        "lat": 44.9429,
+        "lon": -123.0351,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.5
+      },
+      "sources": [
+        {
+          "url": "https://water.usgs.gov/nwc/back_issues/nov96_cov.html",
+          "source_name": "USGS National Water Conditions",
+          "published_at": "1996-11-30T00:00:00Z",
+          "headline": "USGS National Water Conditions (back issues): November 1996",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "USGS"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "mountain streams",
+          "river"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Heavy rains ... combined with warmer temperatures and melting snow to produce widespread flash flooding; many roads were closed by mudslides",
+            "source_url": "https://water.usgs.gov/nwc/back_issues/nov96_cov.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.5,
+        "category": 0.7,
+        "location": 0.5,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "1996-11 PNW flash flooding and mudslides",
+        "fingerprint": "fp_1996-11_pnw_flash_flooding_mudslides_or_1996-11-18"
+      }
+    },
+    {
+      "event_id": "1996-11_weather_climate_northern-puerto-rico-flash-flooding",
+      "title": "Flash flooding in northern Puerto Rico after intense short-duration rainfall",
+      "description": "An intense short-duration rainfall event caused flash flooding in northern Puerto Rico. USGS reporting notes more than five inches of rain fell in about three hours.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1996-11-22T12:00:00Z",
+        "event_end": "1996-11-22T12:00:00Z",
+        "reported_at": "1996-11-30T00:00:00Z",
+        "time_confidence": 0.5,
+        "event_date_utc": "1996-11-22T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Puerto Rico",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "PR",
+        "capital_used": "San Juan",
+        "lat": 18.4655,
+        "lon": -66.1057,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://water.usgs.gov/nwc/back_issues/nov96_cov.html",
+          "source_name": "USGS National Water Conditions",
+          "published_at": "1996-11-30T00:00:00Z",
+          "headline": "USGS National Water Conditions (back issues): November 1996",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "USGS"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "flash flooding in northern Puerto Rico, with more than 5 inches reported in 3 hours",
+            "source_url": "https://water.usgs.gov/nwc/back_issues/nov96_cov.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.56,
+        "category": 0.7,
+        "location": 0.6,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "1996-11 northern Puerto Rico flash flooding",
+        "fingerprint": "fp_1996-11_northern_puerto_rico_flash_flooding_pr_1996-11-22"
+      }
+    },
+    {
+      "event_id": "1996-11_weather_climate_pacific-northwest-minor-flooding-late-month",
+      "title": "Minor flooding in western Washington and Oregon after late-month heavy rains",
+      "description": "Late-month heavy rains caused minor flooding in western Washington and Oregon, with some rivers reported above flood stage. USGS reporting cites high rainfall totals at locations including Quillayute, Washington and Astoria, Oregon.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1996-11-27T12:00:00Z",
+        "event_end": "1996-11-28T12:00:00Z",
+        "reported_at": "1996-11-30T00:00:00Z",
+        "time_confidence": 0.5,
+        "event_date_utc": "1996-11-27T12:00:00Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Washington (western WA and OR impacts)",
+        "jurisdiction_level": "state",
+        "admin1": "Washington",
+        "country": "US",
+        "capital_used": "Olympia",
+        "lat": 47.0379,
+        "lon": -122.9007,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.45
+      },
+      "sources": [
+        {
+          "url": "https://water.usgs.gov/nwc/back_issues/nov96_cov.html",
+          "source_name": "USGS National Water Conditions",
+          "published_at": "1996-11-30T00:00:00Z",
+          "headline": "USGS National Water Conditions (back issues): November 1996",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "USGS"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "river"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "minor flooding in western Washington and Oregon ... several Washington rivers reported over flood stage",
+            "source_url": "https://water.usgs.gov/nwc/back_issues/nov96_cov.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.46,
+        "category": 0.7,
+        "location": 0.45,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "1996-11 late-month PNW minor flooding",
+        "fingerprint": "fp_1996-11_pnw_minor_flooding_wa_1996-11-27_1996-11-28"
+      }
+    },
+    {
+      "event_id": "1996-11-geological-coso-earthquake",
+      "title": "Coso area earthquake (1996-11-27), southern Owens Valley, California, USA",
+      "description": "A moderate, shallow strike-slip earthquake occurred in the Coso area of southern Owens Valley, California on November 27, 1996. Sources describe a large aftershock sequence following the mainshock, with limited damage reported due to the remote location.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1996-11-27T20:17:24Z",
+        "event_end": "1996-11-27T20:17:24Z",
+        "reported_at": "1996-11-27T20:17:24Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "1996-11-27T20:17:24Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Coso area / southern Owens Valley, California, USA",
+        "jurisdiction_level": "site",
+        "admin1": "California",
+        "country": "US",
+        "capital_used": null,
+        "lat": 35.996,
+        "lon": -117.808,
+        "precision": "proxy",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.35
+      },
+      "sources": [
+        {
+          "url": "https://scedc.caltech.edu/earthquake/coso1996.html",
+          "source_name": "Southern California Earthquake Data Center (Caltech)",
+          "published_at": "1996-11-27T20:17:24Z",
+          "headline": "Coso 1996 Earthquake",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.physics.hmc.edu/research/geo/coso_96_11_27.html",
+          "source_name": "Harvey Mudd College Physics (research page)",
+          "published_at": "1996-11-27T00:00:00Z",
+          "headline": "Coso (11/27/96) Earthquake",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Southern California Earthquake Data Center (SCEDC)",
+          "Caltech"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Coso 1996 Earthquake",
+            "source_url": "https://scedc.caltech.edu/earthquake/coso1996.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.8,
+        "location": 0.35,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "coso-1996-11-27-earthquake",
+        "fingerprint": "coso-area-earthquake|US-CA|1996-11-27"
+      }
+    },
+    {
+      "event_id": "1996-11-geological-douglas-county-debris-flows",
+      "title": "Rainfall-triggered debris flows during Nov 17–19, 1996 storm, Douglas County, Oregon, USA",
+      "description": "A storm between November 17 and 19, 1996 triggered numerous debris flows in mapped areas of Douglas County, Oregon, as documented in a USGS report. The report associates the storm rainfall with debris-flow initiation across multiple inventoried sites.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1996-11-17T12:00:00Z",
+        "event_end": "1996-11-19T12:00:00Z",
+        "reported_at": "2011-01-01T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": null,
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Douglas County, Oregon, USA",
+        "jurisdiction_level": "state",
+        "admin1": "Oregon",
+        "country": "US",
+        "capital_used": "Salem",
+        "lat": 44.9429,
+        "lon": -123.0351,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://pubs.usgs.gov/of/2011/1150/",
+          "source_name": "U.S. Geological Survey (USGS Publications)",
+          "published_at": "2011-01-01T00:00:00Z",
+          "headline": "USGS Open-File Report 2011–1150",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Geological Survey (USGS)"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Open-File Report 2011–1150",
+            "source_url": "https://pubs.usgs.gov/of/2011/1150/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.5,
+        "category": 0.75,
+        "location": 0.7,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "1996-11-17-19-douglas-county-or-debris-flows",
+        "fingerprint": "douglas-county-or-debris-flows|US-OR|1996-11-17_1996-11-19"
+      }
+    },
+    {
+      "event_id": "1996-11-geological-peru-nazca-ica-earthquake",
+      "title": "Offshore Nazca/Ica earthquake (reported as 1996-11-12), Peru",
+      "description": "USGS publication pages discuss research related to the 1996–1997 Peru earthquake sequence, including a major event dated November 12, 1996 offshore of the Nazca/Ica region. The provided sources are research summaries rather than contemporaneous reporting of the event’s impacts.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1996-11-12T12:00:00Z",
+        "event_end": "1996-11-12T12:00:00Z",
+        "reported_at": "2000-01-01T00:00:00Z",
+        "time_confidence": 0.35,
+        "event_date_utc": null,
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Peru",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "PE",
+        "capital_used": "Lima",
+        "lat": -12.0464,
+        "lon": -77.0428,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.usgs.gov/publications/seismic-subduction-nazca-ridge-shown-1996-97-peru-earthquakes",
+          "source_name": "U.S. Geological Survey (USGS Publications)",
+          "published_at": "2000-01-01T00:00:00Z",
+          "headline": "Seismic subduction of the Nazca Ridge shown by the 1996–97 Peru earthquakes",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://pubs.usgs.gov/publication/70022054",
+          "source_name": "U.S. Geological Survey (USGS Publications)",
+          "published_at": "2000-01-01T00:00:00Z",
+          "headline": "USGS Publication 70022054",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Geological Survey (USGS)"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "1996–97 Peru earthquakes",
+            "source_url": "https://www.usgs.gov/publications/seismic-subduction-nazca-ridge-shown-1996-97-peru-earthquakes"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.4,
+        "category": 0.7,
+        "location": 0.6,
+        "summary_grounding": 0.35
+      },
+      "quality_flags": [
+        "secondary_sources_only",
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "1996-11-12-peru-nazca-ica-earthquake",
+        "fingerprint": "peru-offshore-nazca-ica-earthquake|PE|1996-11-12"
+      }
+    },
+    {
+      "event_id": "1996-11-07_londonprotocol_adopted_london_gb",
+      "title": "1996 Protocol (London Protocol) adopted to modernize rules on marine dumping",
+      "description": "Parties adopted the 1996 Protocol to the London Convention, strengthening and modernizing global rules governing dumping of wastes and other matter at sea. The Protocol shifts toward a “reverse list” approach that generally prohibits dumping except for specified materials under permit.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "1996-11-07T12:00:00Z",
+        "event_end": "1996-11-07T12:00:00Z",
+        "reported_at": "1996-11-07T12:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1996-11-07T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "London, United Kingdom",
+        "jurisdiction_level": "city",
+        "admin1": null,
+        "country": "GB",
+        "capital_used": null,
+        "lat": 51.5074,
+        "lon": -0.1278,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.8
+      },
+      "sources": [
+        {
+          "url": "https://www.imo.org/en/about/conventions/pages/convention-on-the-prevention-of-marine-pollution-by-dumping-of-wastes-and-other-matter.aspx",
+          "source_name": "International Maritime Organization (IMO)",
+          "published_at": "1996-11-07T12:00:00Z",
+          "headline": "Convention on the Prevention of Marine Pollution by Dumping of Wastes and Other Matter",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CRPT-110erpt21/html/CRPT-110erpt21.htm",
+          "source_name": "GovInfo",
+          "published_at": "2007-01-01T00:00:00Z",
+          "headline": "CRPT-110erpt21 (U.S. Senate report text)",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "International Maritime Organization (IMO)"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "marine environment"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "The 1996 Protocol ... will eventually replace the 1972 Convention.",
+            "source_url": "https://www.imo.org/en/about/conventions/pages/convention-on-the-prevention-of-marine-pollution-by-dumping-of-wastes-and-other-matter.aspx"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.64,
+        "category": 0.85,
+        "location": 0.8,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "London Protocol 1996 adoption",
+        "fingerprint": "1996-11-07_londonprotocol_adopted_london_gb"
+      }
+    },
+    {
+      "event_id": "1996-11-12_env_conservation_extension_act_assent_pretoria_za",
+      "title": "South Africa assents to Environment Conservation Act Extension Act (No. 100 of 1996)",
+      "description": "South Africa assented to legislation extending the application of the Environment Conservation Act, 1989 to areas of the Republic that had constituted certain former states and self-governing territories. The act extended associated regulations and notices to those areas.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "1996-11-12T12:00:00Z",
+        "event_end": "1996-11-12T12:00:00Z",
+        "reported_at": "1996-11-12T12:00:00Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "1996-11-12T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "South Africa",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "ZA",
+        "capital_used": "Pretoria",
+        "lat": -25.7479,
+        "lon": 28.2293,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.75
+      },
+      "sources": [
+        {
+          "url": "https://www.gov.za/documents/environment-conservation-act-extension-act",
+          "source_name": "Government of South Africa",
+          "published_at": "1996-11-12T00:00:00Z",
+          "headline": "Environment Conservation Act Extension Act",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Government of South Africa"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Environment Conservation Act Extension Act",
+            "source_url": "https://www.gov.za/documents/environment-conservation-act-extension-act"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.58,
+        "category": 0.8,
+        "location": 0.75,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "paywalled_or_partial",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "SA Environment Conservation Act Extension Act 1996 assent",
+        "fingerprint": "1996-11-12_env_conservation_extension_act_assent_pretoria_za"
+      }
+    },
+    {
+      "event_id": "1996-11-25_epa_final_rule_rcra_subpart_cc_washington_us",
+      "title": "EPA final rule amends/clarifies RCRA Subpart CC organic air emission standards for hazardous waste units",
+      "description": "EPA published a final rule under the Resource Conservation and Recovery Act (RCRA) amending and clarifying Subpart CC standards to reduce organic air emissions from certain hazardous waste tanks, containers, and surface impoundments. The rule included changes intended to clarify requirements and provide compliance flexibility while maintaining controls.",
+      "category_primary": "policy_regulation",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "1996-11-25T12:00:00Z",
+        "event_end": "1996-11-25T12:00:00Z",
+        "reported_at": "1996-11-25T12:00:00Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "1996-11-25T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States (Federal)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.85
+      },
+      "sources": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/FR-1996-11-25/html/96-29456.htm",
+          "source_name": "Federal Register (GovInfo)",
+          "published_at": "1996-11-25T00:00:00Z",
+          "headline": "96-29456",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Environmental Protection Agency (EPA)"
+        ],
+        "substances": [
+          "organic air emissions"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Final rule ... amending and clarifying ... organic air emission standards",
+            "source_url": "https://www.govinfo.gov/content/pkg/FR-1996-11-25/html/96-29456.htm"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.7,
+        "category": 0.8,
+        "location": 0.85,
+        "summary_grounding": 0.65
+      },
+      "quality_flags": [
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "EPA RCRA Subpart CC final rule 1996-11-25",
+        "fingerprint": "1996-11-25_epa_final_rule_rcra_subpart_cc_washington_us"
+      }
+    },
+    {
+      "event_id": "1996-11-26_epa_titlev_full_approval_nm_program_santa_fe_us",
+      "title": "EPA grants full approval to New Mexico and Albuquerque/Bernalillo County Title V operating permits programs",
+      "description": "EPA issued a direct final rule granting full approval to the State of New Mexico and Albuquerque/Bernalillo County Clean Air Act Title V operating permits programs for major stationary sources, with an exception noted for Indian Lands. This action advanced implementation of the federal operating permits program through state and local permitting authorities.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "1996-11-26T12:00:00Z",
+        "event_end": "1996-11-26T12:00:00Z",
+        "reported_at": "1996-11-26T12:00:00Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "1996-11-26T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "New Mexico, USA (and Albuquerque/Bernalillo County)",
+        "jurisdiction_level": "state",
+        "admin1": "New Mexico",
+        "country": "US",
+        "capital_used": "Santa Fe",
+        "lat": 35.687,
+        "lon": -105.9378,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.75
+      },
+      "sources": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/FR-1996-11-26/html/96-30159.htm",
+          "source_name": "Federal Register (GovInfo)",
+          "published_at": "1996-11-26T00:00:00Z",
+          "headline": "96-30159",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Environmental Protection Agency (EPA)"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "direct final rule ... full approval ... Title V operating permits programs",
+            "source_url": "https://www.govinfo.gov/content/pkg/FR-1996-11-26/html/96-30159.htm"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.68,
+        "category": 0.8,
+        "location": 0.75,
+        "summary_grounding": 0.65
+      },
+      "quality_flags": [
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "EPA Title V full approval New Mexico Albuquerque/Bernalillo 1996-11-26",
+        "fingerprint": "1996-11-26_epa_titlev_full_approval_nm_program_santa_fe_us"
+      }
+    }
+  ]
+}

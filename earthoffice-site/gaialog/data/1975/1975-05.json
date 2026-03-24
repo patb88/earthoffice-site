@@ -1,0 +1,329 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_1975-05_normalize_2026-01-19T071836266Z",
+    "generated_utc": "2026-01-19T07:18:36.266Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "1975-05",
+    "window": {
+      "start_utc": "1975-05-01T00:00:00.000Z",
+      "end_utc": "1975-05-31T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "evt-197505-upper-mississippi-flooding-lake-city-winona",
+      "title": "Upper Mississippi River spring flooding in southeast Minnesota crests in early May 1975",
+      "description": "Minor to moderate spring flooding continued into May 1975 on the Upper Mississippi River following a wet winter and wet March–April. The referenced NWS history notes example crests including Lake City (May 1, 1975) and Winona (May 2, 1975), with waters falling below flood stage later in May.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1975-05-01T12:00:00Z",
+        "event_end": "1975-05-11T12:00:00Z",
+        "reported_at": "1975-05-01T00:00:00.000Z",
+        "time_confidence": 0.4,
+        "event_date_utc": null,
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Winona, Minnesota, USA",
+        "jurisdiction_level": "city",
+        "admin1": "Minnesota",
+        "country": "US",
+        "capital_used": null,
+        "lat": 44.0554,
+        "lon": -91.6664,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.weather.gov/arx/flood1965_other",
+          "source_name": "NOAA / National Weather Service",
+          "published_at": "1975-05-01T00:00:00.000Z",
+          "headline": "Flood history page (Upper Mississippi River Valley; includes May 1975 crests)",
+          "byline": null,
+          "accessed_utc": "2026-01-19T07:16:08.860Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA National Weather Service"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "Upper Mississippi River"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Example crests include Lake City ... May 1, 1975, and Winona ... May 2, 1975.",
+            "source_url": "https://www.weather.gov/arx/flood1965_other"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.48,
+        "category": 0.75,
+        "location": 0.55,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "upper-mississippi-flooding-may-1975",
+        "fingerprint": "fp-197505-upper-mississippi-flooding-winona-range"
+      }
+    },
+    {
+      "event_id": "evt-197505-montana-continental-divide-flooding-usgs",
+      "title": "Flooding in Montana driven by snowmelt and heavy rainfall May 5–9, 1975",
+      "description": "A USGS report describes May 1975 flooding in Montana when runoff from above-average snowpack at low to medium elevations combined with rainfall. The report identifies generally heavy rainfall during May 5–9 as a key driver of high peak flows on lower-altitude streams.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1975-05-05T12:00:00Z",
+        "event_end": "1975-05-09T12:00:00Z",
+        "reported_at": "1976-01-01T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": null,
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Helena, Montana, USA",
+        "jurisdiction_level": "state",
+        "admin1": "Montana",
+        "country": "US",
+        "capital_used": "Helena",
+        "lat": 46.5891,
+        "lon": -112.0391,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://pubs.usgs.gov/of/1976/0424/report.pdf",
+          "source_name": "U.S. Geological Survey",
+          "published_at": "1976-01-01T00:00:00.000Z",
+          "headline": "USGS open-file report on Montana flooding (references May 1975 rainfall May 5–9 and snowmelt contributions)",
+          "byline": null,
+          "accessed_utc": "2026-01-19T07:16:08.860Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Geological Survey"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Runoff from above-average snowpack ... combined with rainfall; generally heavy rainfall during May 5–9.",
+            "source_url": "https://pubs.usgs.gov/of/1976/0424/report.pdf"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.66,
+        "category": 0.8,
+        "location": 0.7,
+        "summary_grounding": 0.65
+      },
+      "quality_flags": [
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "montana-floods-may-1975",
+        "fingerprint": "fp-197505-montana-floods-helena-range"
+      }
+    },
+    {
+      "event_id": "evt_19750502_fws_first_plant_review_endangered_list",
+      "title": "U.S. Fish and Wildlife Service initiates first review of four wildflower species for possible Endangered Species List inclusion",
+      "description": "A U.S. Fish and Wildlife Service news release dated May 2, 1975 announced the start of an initial review of four wildflower species for possible inclusion on the Endangered Species List. The release described the plants as occurring in very small numbers in isolated areas and noted specific habitat/geographic occurrences across multiple U.S. states, and Canada for bird's-eye primrose.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "1975-05-02T12:00:00Z",
+        "event_end": "1975-05-02T12:00:00Z",
+        "reported_at": "1975-05-02T00:00:00Z",
+        "time_confidence": 0.75,
+        "event_date_utc": "1975-05-02T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.fws.gov/press-release/1975-05/first-plants-reviewed-endangered-species-list-may-2-1975",
+          "source_name": "U.S. Fish and Wildlife Service",
+          "published_at": "1975-05-02T00:00:00Z",
+          "headline": "First plants reviewed for Endangered Species List (May 2, 1975)",
+          "byline": null,
+          "accessed_utc": "2026-01-19T07:17:12.029Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.fws.gov/sites/default/files/documents/historic-news-releases/1975/19750502.PDF",
+          "source_name": "U.S. Fish and Wildlife Service",
+          "published_at": "1975-05-02T00:00:00Z",
+          "headline": "Historic news release (PDF) - 1975-05-02",
+          "byline": null,
+          "accessed_utc": "2026-01-19T07:17:12.029Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Fish and Wildlife Service"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "announced initiation of the first plant review for possible Endangered Species List inclusion",
+            "source_url": "https://www.fws.gov/press-release/1975-05/first-plants-reviewed-endangered-species-list-may-2-1975"
+          },
+          {
+            "quote": "covering four wildflower species (monkshood, sullivantia, bird's-eye primrose, and Forbes' saxifrage)",
+            "source_url": "https://www.fws.gov/sites/default/files/documents/historic-news-releases/1975/19750502.PDF"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.72,
+        "category": 0.75,
+        "location": 0.55,
+        "summary_grounding": 0.7
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "fws_1975_plant_review_endangered_species",
+        "fingerprint": "fp_19750502_fws_first_plant_review_endangered_list_us"
+      }
+    },
+    {
+      "event_id": "1975-05-20_epa_effluent_petroleum_refining_40cfr419",
+      "title": "EPA issues final amendments to petroleum refining effluent limits (40 CFR Part 419)",
+      "description": "The U.S. Environmental Protection Agency published a final rule amending effluent limitations guidelines and pretreatment standards for the Petroleum Refining Point Source Category (40 CFR Part 419). The amendments revise Best Practicable Technology (BPT) limits, including parameters such as total suspended solids and hexavalent chromium.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "1975-05-20T12:00:00Z",
+        "event_end": "1975-05-20T12:00:00Z",
+        "reported_at": "1975-05-20T00:00:00Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "1975-05-20T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.8
+      },
+      "sources": [
+        {
+          "url": "https://www.epa.gov/eg/petroleum-refining-effluent-guidelines-documents-1974-1975-and-1977-rules",
+          "source_name": "U.S. Environmental Protection Agency (EPA)",
+          "published_at": "1975-05-20T00:00:00Z",
+          "headline": "Petroleum Refining Effluent Guidelines - Documents (1974, 1975, and 1977 rules)",
+          "byline": null,
+          "accessed_utc": "2026-01-19T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.epa.gov/sites/default/files/2015-10/documents/petro-refining_rev-bpt_final_40-fr-21939_05-20-1975.pdf",
+          "source_name": "U.S. Environmental Protection Agency (EPA)",
+          "published_at": "1975-05-20T00:00:00Z",
+          "headline": "Petroleum Refining Point Source Category: Revised BPT Final Rule (40 FR 21939, May 20, 1975)",
+          "byline": null,
+          "accessed_utc": "2026-01-19T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Environmental Protection Agency (EPA)"
+        ],
+        "substances": [
+          "total suspended solids (TSS)",
+          "hexavalent chromium (chromium VI)"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Revised BPT Final Rule (40 FR 21939, 05-20-1975).",
+            "source_url": "https://www.epa.gov/sites/default/files/2015-10/documents/petro-refining_rev-bpt_final_40-fr-21939_05-20-1975.pdf"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.74,
+        "category": 0.8,
+        "location": 0.8,
+        "summary_grounding": 0.65
+      },
+      "quality_flags": [
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "EPA petroleum refining effluent guidelines May 1975 final rule 40 CFR 419",
+        "fingerprint": "9fef76c9b1a9a6c4a9b9c71b1f97a4f4"
+      }
+    }
+  ]
+}

@@ -1,0 +1,654 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_2015-01_normalize_2026-01-16T052743709Z",
+    "generated_utc": "2026-01-16T05:27:43.709Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "2015-01",
+    "window": {
+      "start_utc": "2015-01-01T00:00:00.000Z",
+      "end_utc": "2015-01-31T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "2015-01-pollution-yellowstone-bridger-glendive",
+      "title": "Bridger Pipeline crude oil spill into Yellowstone River near Glendive, Montana",
+      "description": "A Bridger Pipeline rupture released crude oil into the Yellowstone River near Glendive, Montana in mid-January 2015, complicating response due to icy conditions. The spill affected local water use and prompted emergency response and cleanup actions.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2015-01-17T00:00:00.000Z",
+        "event_end": "2015-01-31T23:59:59.000Z",
+        "reported_at": "2015-01-24T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2015-01-17T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Yellowstone River near Glendive, Montana, USA",
+        "jurisdiction_level": "site",
+        "admin1": "Montana",
+        "country": "US",
+        "capital_used": null,
+        "lat": 47.1053,
+        "lon": -104.7125,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://19january2021snapshot.epa.gov/emergency-response/emergency-response-and-management-activities-2015_.html",
+          "source_name": "U.S. EPA (archive snapshot)",
+          "published_at": "2015-01-01T00:00:00.000Z",
+          "headline": "Emergency Response and Management Activities 2015",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.theguardian.com/environment/2015/jan/24/yellowstone-river-oil-spill-pipeline",
+          "source_name": "The Guardian",
+          "published_at": "2015-01-24T00:00:00.000Z",
+          "headline": "Yellowstone River oil spill: pipeline leaked into river under ice, officials say",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://dojmt.gov/NRDP-sites/bridger-yellowstone-river-2015-spill/",
+          "source_name": "Montana Department of Justice",
+          "published_at": "2015-01-01T00:00:00.000Z",
+          "headline": "Bridger Yellowstone River 2015 Spill",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Bridger Pipeline LLC",
+          "U.S. Environmental Protection Agency",
+          "Montana Department of Justice"
+        ],
+        "substances": [
+          "crude oil"
+        ],
+        "ecosystems": [
+          "Yellowstone River"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "pipeline leaked crude oil into the Yellowstone River under ice",
+            "source_url": "https://www.theguardian.com/environment/2015/jan/24/yellowstone-river-oil-spill-pipeline"
+          },
+          {
+            "quote": "Emergency Response and Management Activities 2015",
+            "source_url": "https://19january2021snapshot.epa.gov/emergency-response/emergency-response-and-management-activities-2015_.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.8,
+        "location": 0.55,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "needs_dedupe_check",
+        "date_ambiguous",
+        "location_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "Yellowstone River Bridger Pipeline spill Jan 2015",
+        "fingerprint": "fp_2015-01_yellowstone_river_glendive_bridger"
+      }
+    },
+    {
+      "event_id": "2015-01-pollution-pohatcong-superfund-settlement",
+      "title": "$92 million settlement announced for Pohatcong Valley Groundwater Contamination Superfund cleanup, New Jersey",
+      "description": "EPA and the U.S. Department of Justice announced a settlement valued at $92 million for cleanup work at the Pohatcong Valley Groundwater Contamination Superfund site in New Jersey. The case concerns contaminated soil and groundwater, with chlorinated solvents cited in the draft summary.",
+      "category_primary": "pollution_contamination",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "2015-01-13T00:00:00.000Z",
+        "event_end": "2015-01-13T23:59:59.000Z",
+        "reported_at": "2015-01-13T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2015-01-13T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Warren County, New Jersey, USA",
+        "jurisdiction_level": "state",
+        "admin1": "New Jersey",
+        "country": "US",
+        "capital_used": "Trenton",
+        "lat": 40.2204,
+        "lon": -74.7643,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://19january2021snapshot.epa.gov/enforcement/case-summary-92-million-settlement-reached-cleanup-pohatcong-superfund-site-new-jersey_.html",
+          "source_name": "U.S. EPA (archive snapshot)",
+          "published_at": "2015-01-13T00:00:00.000Z",
+          "headline": "Case Summary: $92 million settlement reached for cleanup at Pohatcong Superfund site in New Jersey",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Environmental Protection Agency",
+          "U.S. Department of Justice"
+        ],
+        "substances": [
+          "trichloroethylene (TCE)",
+          "tetrachloroethylene (PCE)"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "$92 million settlement reached for cleanup at Pohatcong Superfund site in New Jersey",
+            "source_url": "https://19january2021snapshot.epa.gov/enforcement/case-summary-92-million-settlement-reached-cleanup-pohatcong-superfund-site-new-jersey_.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.7,
+        "category": 0.85,
+        "location": 0.7,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Pohatcong Valley Groundwater Contamination Superfund settlement Jan 2015",
+        "fingerprint": "fp_2015-01_pohatcong_superfund_nj_settlement"
+      }
+    },
+    {
+      "event_id": "2015-01_weather_climate_winter-storm-juno_northeastern-us",
+      "title": "Winter Storm Juno brings heavy snow, strong winds, and coastal flooding in the U.S. Northeast",
+      "description": "A major winter storm (Juno) affected the northeastern United States in late January 2015, bringing heavy snowfall, strong winds, and coastal flooding across parts of the region.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2015-01-01T00:00:00.000Z",
+        "time_confidence": 0.4,
+        "event_date_utc": "2015-01-27T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Northeastern United States (e.g., eastern Long Island to New England)",
+        "jurisdiction_level": "supranational",
+        "admin1": null,
+        "country": null,
+        "capital_used": null,
+        "lat": 40.7128,
+        "lon": -74.006,
+        "precision": "proxy",
+        "location_basis": "manual_override",
+        "location_confidence": 0.3
+      },
+      "sources": [
+        {
+          "url": "https://weather.com/storms/winter/news/winter-storm-juno-snow-totals-wind-gusts",
+          "source_name": "The Weather Channel",
+          "published_at": "2015-01-01T00:00:00.000Z",
+          "headline": "Winter Storm Juno Snow Totals, Wind Gusts",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://bluehill.org/january-2015-summary-cold-and-eighth-snowiest-on-record/",
+          "source_name": "Blue Hill Observatory",
+          "published_at": "2015-01-01T00:00:00.000Z",
+          "headline": "January 2015 Summary: Cold and Eighth Snowiest on Record",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "The Weather Channel",
+          "Blue Hill Observatory"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.45,
+        "category": 0.7,
+        "location": 0.3,
+        "summary_grounding": 0.4
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Winter Storm Juno Jan 2015 US Northeast",
+        "fingerprint": "juno_us-northeast_2015-01"
+      }
+    },
+    {
+      "event_id": "2015-01_weather_climate_malawi_flooding_disaster",
+      "title": "Severe flooding in Malawi triggers disaster declarations and large-scale displacement",
+      "description": "Torrential rains and flooding in mid-January 2015 caused fatalities and widespread displacement in Malawi. Authorities declared multiple districts disaster areas and appealed for humanitarian assistance, with impacts also reported in neighboring Mozambique.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2015-01-14T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2015-01-17T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Malawi",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "MW",
+        "capital_used": "Lilongwe",
+        "lat": -13.9626,
+        "lon": 33.7741,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.8
+      },
+      "sources": [
+        {
+          "url": "https://www.theguardian.com/global-development/2015/jan/14/malawi-flooding-torrential-rain-mozambique",
+          "source_name": "The Guardian",
+          "published_at": "2015-01-14T00:00:00.000Z",
+          "headline": "Malawi flooding: torrential rain leaves thousands homeless as rivers burst their banks",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.undrr.org/news/floods-and-poverty-collide-malawi",
+          "source_name": "UNDRR",
+          "published_at": "2015-01-01T00:00:00.000Z",
+          "headline": "Floods and poverty collide in Malawi",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.theguardian.com/world/2015/jan/17/malawi-floods-kill-176-people",
+          "source_name": "The Guardian",
+          "published_at": "2015-01-17T00:00:00.000Z",
+          "headline": "Malawi floods kill at least 176 people",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Government of Malawi",
+          "UNDRR",
+          "The Guardian"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.8,
+        "location": 0.8,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "paywalled_or_partial",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Malawi floods Jan 2015",
+        "fingerprint": "malawi_floods_2015-01"
+      }
+    },
+    {
+      "event_id": "evt_201501_iceland_bardarbunga_holuhraun_gas_pollution",
+      "title": "Bárðarbunga–Holuhraun eruption and sulfur dioxide pollution concerns in Iceland",
+      "description": "Reporting linked the ongoing Bárðarbunga–Holuhraun eruption to episodes of sulfur dioxide pollution and related public health concerns in Iceland. The coverage emphasized toxic gas fears associated with the eruption’s emissions.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2015-02-03T00:00:00Z",
+        "time_confidence": 0.4,
+        "event_date_utc": "2015-01-15T00:00:00Z",
+        "event_date_precision": "month"
+      },
+      "location": {
+        "name": "Iceland",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "IS",
+        "capital_used": "Reykjavík",
+        "lat": 64.1466,
+        "lon": -21.9426,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.85
+      },
+      "sources": [
+        {
+          "url": "https://www.aljazeera.com/amp/features/2015/2/3/icelands-volcanic-eruption-stokes-toxic-gas-fears",
+          "source_name": "Al Jazeera",
+          "published_at": "2015-02-03T00:00:00Z",
+          "headline": "Iceland’s volcanic eruption stokes toxic gas fears",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [
+          "sulfur dioxide"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Iceland’s volcanic eruption stokes toxic gas fears",
+            "source_url": "https://www.aljazeera.com/amp/features/2015/2/3/icelands-volcanic-eruption-stokes-toxic-gas-fears"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.8,
+        "location": 0.85,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "bardarbunga-holuhraun-iceland-so2-2015-01",
+        "fingerprint": "fp_2015-01_bardarbunga_holuhraun_iceland"
+      }
+    },
+    {
+      "event_id": "2015-01_fires_adelaide-hills-bushfires",
+      "title": "Sampson Flat / Adelaide Hills bushfires destroy homes near Adelaide, South Australia",
+      "description": "Bushfires in South Australia’s Adelaide Hills and nearby areas burned large areas in early January 2015 and destroyed homes. Reporting cited extreme heat and strong winds contributing to dangerous fire conditions and widespread smoke impacts.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2015-01-02T00:00:00.000Z",
+        "event_end": "2015-01-09T23:59:59.000Z",
+        "reported_at": "2015-01-05T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2015-01-05T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Adelaide Hills / northern Adelaide metropolitan fringe, South Australia, Australia",
+        "jurisdiction_level": "state",
+        "admin1": "South Australia",
+        "country": "AU",
+        "capital_used": "Adelaide",
+        "lat": -34.9285,
+        "lon": 138.6007,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://www.abc.net.au/news/2015-01-05/26-houses-destroyed-in-sa-fires/6000932",
+          "source_name": "ABC News (Australia)",
+          "published_at": "2015-01-05T00:00:00.000Z",
+          "headline": "26 houses destroyed in SA fires",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://science.nasa.gov/earth/earth-observatory/adelaide-hills-bushfire-85020/",
+          "source_name": "NASA Earth Observatory",
+          "published_at": "2015-01-06T00:00:00.000Z",
+          "headline": "Adelaide Hills Bushfire",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Country Fire Service (CFS)",
+          "ABC News",
+          "NASA Earth Observatory"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "26 houses have been destroyed by bushfires burning in the Adelaide Hills and Mid North.",
+            "source_url": "https://www.abc.net.au/news/2015-01-05/26-houses-destroyed-in-sa-fires/6000932"
+          },
+          {
+            "quote": "A bushfire burned in the Adelaide Hills east of Adelaide, South Australia.",
+            "source_url": "https://science.nasa.gov/earth/earth-observatory/adelaide-hills-bushfire-85020/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.68,
+        "category": 0.85,
+        "location": 0.7,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "needs_dedupe_check",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "adelaide_hills_bushfire_jan2015",
+        "fingerprint": "fp_2015-01_adelaide-hills-bushfire_sa_2015-01"
+      }
+    },
+    {
+      "event_id": "2015-01_ecosystem_biodiversity_noaa-coral-bleaching-risk",
+      "title": "NOAA highlights elevated coral bleaching risk amid warm ocean conditions",
+      "description": "NOAA’s Coral Reef Conservation Program highlighted that warm ocean temperatures were raising the risk of coral bleaching, with potential impacts across multiple reef regions. The notice discussed conditions that could contribute to bleaching in 2015.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2015-02-01T00:00:00.000Z",
+        "time_confidence": 0.4,
+        "event_date_utc": null,
+        "event_date_precision": "month"
+      },
+      "location": {
+        "name": "Global (multiple reef regions)",
+        "jurisdiction_level": "global_proxy",
+        "admin1": null,
+        "country": null,
+        "capital_used": null,
+        "lat": 0,
+        "lon": 0,
+        "precision": "proxy",
+        "location_basis": "institution_proxy",
+        "location_confidence": 0.4
+      },
+      "sources": [
+        {
+          "url": "https://coralreef.noaa.gov/aboutcrcp/news/featuredstories/feb15/coralbleaching.html",
+          "source_name": "NOAA Coral Reef Conservation Program",
+          "published_at": "2015-02-01T00:00:00.000Z",
+          "headline": "Coral bleaching risk (NOAA CRCP featured story)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "Coral reefs"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Warm ocean temperatures can set the stage for coral bleaching.",
+            "source_url": "https://coralreef.noaa.gov/aboutcrcp/news/featuredstories/feb15/coralbleaching.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.45,
+        "category": 0.7,
+        "location": 0.4,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "noaa_coral_bleaching_risk_2015",
+        "fingerprint": "noaa_coral_bleaching_risk_2015_global_month_2015-01"
+      }
+    },
+    {
+      "event_id": "20150113_epa_dsw_final_rule_federal_register_us",
+      "title": "EPA publishes Definition of Solid Waste (DSW) final rule in Federal Register",
+      "description": "The U.S. Environmental Protection Agency’s Definition of Solid Waste (DSW) final rule was published on January 13, 2015. The rule revises safeguards for hazardous secondary materials recycling to reduce risks of mismanagement.",
+      "category_primary": "policy_regulation",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "2015-01-13T00:00:00.000Z",
+        "event_end": "2015-01-13T23:59:59.000Z",
+        "reported_at": "2015-01-13T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2015-01-13T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States (federal regulation)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.8
+      },
+      "sources": [
+        {
+          "url": "https://19january2017snapshot.epa.gov/hwgenerators/final-rule-2015-definition-solid-waste-dsw",
+          "source_name": "U.S. Environmental Protection Agency (EPA)",
+          "published_at": "2015-01-13T00:00:00.000Z",
+          "headline": "Final Rule (2015) Definition of Solid Waste (DSW)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Environmental Protection Agency (EPA)"
+        ],
+        "substances": [
+          "hazardous secondary materials"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Final rule (2015) Definition of Solid Waste (DSW)",
+            "source_url": "https://19january2017snapshot.epa.gov/hwgenerators/final-rule-2015-definition-solid-waste-dsw"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.64,
+        "category": 0.75,
+        "location": 0.8,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "EPA DSW final rule published Jan 13 2015",
+        "fingerprint": "epa_dsw_final_rule_us_2015-01-13"
+      }
+    }
+  ]
+}

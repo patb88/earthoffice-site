@@ -1,0 +1,723 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_2008-05_normalize_2026-01-16T034915795Z",
+    "generated_utc": "2026-01-16T03:49:15.795Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "2008-05",
+    "window": {
+      "start_utc": "2008-05-01T00:00:00.000Z",
+      "end_utc": "2008-05-31T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "evt_20080517_lafayette_la_hcl_spill_train_derailment",
+      "title": "Train derailment releases hydrochloric acid near Lafayette, Louisiana, prompting evacuations",
+      "description": "A freight train derailment near Lafayette, Louisiana reportedly spilled about 10,000 gallons of hydrochloric acid, producing a toxic cloud. The incident prompted evacuations of thousands of residents and led to medical treatment for some people reporting exposure symptoms.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2008-06-16T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2008-05-17T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Lafayette, Louisiana, United States",
+        "jurisdiction_level": "city",
+        "admin1": "Louisiana",
+        "country": "US",
+        "capital_used": null,
+        "lat": 30.2241,
+        "lon": -92.0198,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://www.insurancejournal.com/magazines/mag-features/2008/06/16/156513.htm",
+          "source_name": "Insurance Journal",
+          "published_at": "2008-06-16T00:00:00Z",
+          "headline": "Train derailment spills ~10,000 gallons of hydrochloric acid near Lafayette, Louisiana; residents evacuated",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [
+          "hydrochloric acid"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.75,
+        "location": 0.7,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "lafayette-la-train-derailment-hydrochloric-acid-2008-05",
+        "fingerprint": "fp_lafayette_la_hcl_derailment_2008-05-17"
+      }
+    },
+    {
+      "event_id": "evt_20080502_cyclone_nargis_myanmar_delta",
+      "title": "Cyclone Nargis storm surge inundates Myanmar’s rice-growing delta",
+      "description": "Cyclone Nargis made landfall in Myanmar, bringing destructive winds and storm surge that inundated low-lying delta areas. The event caused extensive flooding impacts including damage to farmland in major rice-producing divisions.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2008-05-02T00:00:00.000Z",
+        "event_end": "2008-05-02T23:59:59.000Z",
+        "reported_at": "2008-05-01T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2008-05-02T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Ayeyarwady Delta and coastal Myanmar (Burma)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "MM",
+        "capital_used": "Naypyidaw",
+        "lat": 19.7633,
+        "lon": 96.0785,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://ipad.fas.usda.gov/highlights/2008/05/Burma_Cyclone_Nargis_Rice_Impact.htm",
+          "source_name": "USDA FAS (IPAD)",
+          "published_at": "2008-05-01T00:00:00.000Z",
+          "headline": "Burma Cyclone Nargis Rice Impact",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "USDA Foreign Agricultural Service"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "delta",
+          "coastal"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Cyclone Nargis ... made landfall ... with destructive winds and storm surge",
+            "source_url": "https://ipad.fas.usda.gov/highlights/2008/05/Burma_Cyclone_Nargis_Rice_Impact.htm"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.75,
+        "location": 0.55,
+        "summary_grounding": 0.65
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "Cyclone Nargis impacts in Myanmar delta (May 2008)",
+        "fingerprint": "fp_20080502_cyclone_nargis_myanmar_country"
+      }
+    },
+    {
+      "event_id": "evt_20080528_southern_china_floods_landslides",
+      "title": "Torrential rains trigger flash floods and landslides in southern China (Guizhou and neighboring provinces)",
+      "description": "Torrential rains in southern China triggered flash floods and landslides affecting multiple provinces. Reporting described homes being washed away and significant casualties as heavy downpours hit areas already under strain after the May 12 Sichuan earthquake.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2008-05-28T00:00:00.000Z",
+        "event_end": "2008-05-28T23:59:59.000Z",
+        "reported_at": "2008-05-28T00:00:00.000Z",
+        "time_confidence": 0.85,
+        "event_date_utc": "2008-05-28T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "China (Guizhou and neighboring provinces)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "CN",
+        "capital_used": "Beijing",
+        "lat": 39.9042,
+        "lon": 116.4074,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.5
+      },
+      "sources": [
+        {
+          "url": "https://www.theguardian.com/world/2008/may/28/china.chinaearthquake",
+          "source_name": "The Guardian",
+          "published_at": "2008-05-28T00:00:00.000Z",
+          "headline": "Torrential rains trigger flash floods and landslides in southern China (Guizhou and neighboring provinces)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "The Guardian"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Torrential rain ... caused flash floods and landslides ... homes washed away",
+            "source_url": "https://www.theguardian.com/world/2008/may/28/china.chinaearthquake"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.8,
+        "location": 0.5,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "paywalled_or_partial"
+      ],
+      "dedupe": {
+        "cluster_hint": "Southern China floods/landslides May 2008 (Guizhou region)",
+        "fingerprint": "fp_20080528_southern_china_floods_country"
+      }
+    },
+    {
+      "event_id": "evt_20080512_wenchuan_sichuan_cn",
+      "title": "Wenchuan (Sichuan) earthquake strikes China",
+      "description": "A major earthquake struck China’s Sichuan region, causing extensive building collapse. The event also triggered secondary hazards such as landslides and quake-dammed lakes.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2008-05-12T06:28:00.000Z",
+        "event_end": "2008-05-12T23:59:59.000Z",
+        "reported_at": "2008-05-12T06:28:00.000Z",
+        "time_confidence": 0.75,
+        "event_date_utc": "2008-05-12T06:28:00.000Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Sichuan Province, China",
+        "jurisdiction_level": "state",
+        "admin1": "Sichuan",
+        "country": "CN",
+        "capital_used": "Chengdu",
+        "lat": 30.5728,
+        "lon": 104.0668,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.8
+      },
+      "sources": [
+        {
+          "url": "https://www.britannica.com/event/Sichuan-earthquake-of-2008",
+          "source_name": "Encyclopaedia Britannica",
+          "published_at": "2008-05-12T00:00:00.000Z",
+          "headline": "Sichuan earthquake of 2008",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.usgs.gov/publications/12-may-2008-m-79-wenchuan-china-earthquake-calculated-increase-failure-stress-and",
+          "source_name": "USGS",
+          "published_at": "2008-05-12T00:00:00.000Z",
+          "headline": "12 May 2008 M 7.9 Wenchuan, China Earthquake: Calculated Increase in Failure Stress and…",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "USGS"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "A powerful earthquake struck Sichuan province… triggering landslides and creating “quake lakes.”",
+            "source_url": "https://www.britannica.com/event/Sichuan-earthquake-of-2008"
+          },
+          {
+            "quote": "12 May 2008 M 7.9 Wenchuan, China Earthquake…",
+            "source_url": "https://www.usgs.gov/publications/12-may-2008-m-79-wenchuan-china-earthquake-calculated-increase-failure-stress-and"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.72,
+        "category": 0.9,
+        "location": 0.8,
+        "summary_grounding": 0.65
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "2008-05-12_wenchuan_sichuan_earthquake",
+        "fingerprint": "fp_20080512_wenchuan_sichuan_cn"
+      }
+    },
+    {
+      "event_id": "evt_20080502_chaiten_volcano_cl",
+      "title": "Chaitén Volcano erupts in southern Chile",
+      "description": "Chaitén Volcano began erupting in southern Chile, generating an ash-and-steam plume. Reports describe evacuations in nearby areas and ash impacts to surrounding communities and aviation.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2008-05-02T00:00:00.000Z",
+        "event_end": "2008-05-03T23:59:59.000Z",
+        "reported_at": "2008-05-02T00:00:00.000Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "2008-05-02T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Chaitén Volcano, southern Chile",
+        "jurisdiction_level": "site",
+        "admin1": null,
+        "country": "CL",
+        "capital_used": null,
+        "lat": -42.8333,
+        "lon": -72.646,
+        "precision": "exact",
+        "location_basis": "manual_override",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.earthobservatory.nasa.gov/images/19908/chaiten-volcano-erupts-19887/",
+          "source_name": "NASA Earth Observatory",
+          "published_at": "2008-05-03T00:00:00.000Z",
+          "headline": "Chaitén Volcano Erupts",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.earthobservatory.nasa.gov/images/19908/chaiten-volcano-erupts",
+          "source_name": "NASA Earth Observatory",
+          "published_at": "2008-05-03T00:00:00.000Z",
+          "headline": "Chaitén Volcano Erupts",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NASA Earth Observatory"
+        ],
+        "substances": [
+          "volcanic ash"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Chaitén Volcano erupted… sending an ash-and-steam plume high into the atmosphere.",
+            "source_url": "https://www.earthobservatory.nasa.gov/images/19908/chaiten-volcano-erupts"
+          },
+          {
+            "quote": "…prompted evacuations in nearby areas…",
+            "source_url": "https://www.earthobservatory.nasa.gov/images/19908/chaiten-volcano-erupts"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.63,
+        "category": 0.9,
+        "location": 0.55,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "2008-05_chaiten_volcano_eruption",
+        "fingerprint": "fp_20080502_chaiten_volcano_cl"
+      }
+    },
+    {
+      "event_id": "fires_us_ca_summit-fire_2008-05",
+      "title": "Summit Fire burns in the Santa Cruz Mountains, California, with evacuations and heavy smoke",
+      "description": "The Summit Fire burned in the Santa Cruz Mountains of California in late May 2008. Reporting described rapid fire growth with evacuations, road closures, and widespread smoke impacts.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2008-05-22T00:00:00.000Z",
+        "event_end": "2008-05-27T23:59:59.000Z",
+        "reported_at": "2008-05-22T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2008-05-22T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Santa Cruz Mountains (Santa Clara & Santa Cruz Counties), California, United States",
+        "jurisdiction_level": "site",
+        "admin1": "California",
+        "country": "US",
+        "capital_used": null,
+        "lat": 37.12,
+        "lon": -122.17,
+        "precision": "admin1",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.5
+      },
+      "sources": [
+        {
+          "url": "https://www.santacruzcountyca.gov/cao/052208_PressRelease1.html",
+          "source_name": "Santa Cruz County (CA)",
+          "published_at": "2008-05-22T00:00:00.000Z",
+          "headline": "052208 Press Release 1",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://science.nasa.gov/earth/earth-observatory/summit-fire-california-19996/",
+          "source_name": "NASA Earth Observatory",
+          "published_at": "2008-05-23T00:00:00.000Z",
+          "headline": "Summit Fire, California",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Santa Cruz County (CA)",
+          "NASA Earth Observatory"
+        ],
+        "substances": [
+          "smoke"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Summit Fire, California",
+            "source_url": "https://science.nasa.gov/earth/earth-observatory/summit-fire-california-19996/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.52,
+        "category": 0.8,
+        "location": 0.5,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Summit Fire (Santa Cruz Mountains) May 2008",
+        "fingerprint": "fires|summit fire|santa cruz mountains|2008-05-22"
+      }
+    },
+    {
+      "event_id": "fires_us_fl_florida-wildfires_2008-05",
+      "title": "Florida wildfires in mid-May 2008 cause heavy smoke and property damage",
+      "description": "Multiple wildfires in Florida during mid-May 2008 produced smoky conditions and prompted advisories. Coverage reported significant burned acreage and described damage or destruction of some homes in affected areas.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2008-05-10T00:00:00.000Z",
+        "event_end": "2008-05-20T23:59:59.000Z",
+        "reported_at": "2008-05-20T00:00:00.000Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "2008-05-20T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Florida, United States (including Palm Bay and the Everglades region)",
+        "jurisdiction_level": "state",
+        "admin1": "Florida",
+        "country": "US",
+        "capital_used": "Tallahassee",
+        "lat": 30.4383,
+        "lon": -84.2807,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://earthobservatory.nasa.gov/images/19970/fires-in-florida",
+          "source_name": "NASA Earth Observatory",
+          "published_at": "2008-05-14T00:00:00.000Z",
+          "headline": "Fires in Florida",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.insurancejournal.com/news/southeast/2008/05/20/90186.htm",
+          "source_name": "Insurance Journal",
+          "published_at": "2008-05-20T00:00:00.000Z",
+          "headline": "Florida Wildfires Continue; Some Homes Damaged or Destroyed",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NASA Earth Observatory",
+          "Insurance Journal"
+        ],
+        "substances": [
+          "smoke"
+        ],
+        "ecosystems": [
+          "Everglades"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Fires in Florida",
+            "source_url": "https://earthobservatory.nasa.gov/images/19970/fires-in-florida"
+          },
+          {
+            "quote": "Some Homes Damaged or Destroyed",
+            "source_url": "https://www.insurancejournal.com/news/southeast/2008/05/20/90186.htm"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.85,
+        "location": 0.75,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Florida wildfires May 2008",
+        "fingerprint": "fires|florida wildfires|tallahassee|2008-05-20"
+      }
+    },
+    {
+      "event_id": "evt_200805_conata_basin_sylvatic_plague_prairie_dogs",
+      "title": "Sylvatic plague response actions underway in Conata Basin prairie dog colonies",
+      "description": "The U.S. Fish and Wildlife Service reported response actions underway to address a sylvatic plague outbreak in the Conata Basin area of South Dakota affecting prairie dog colonies. The outbreak posed risks to black-footed ferret recovery efforts, and planned actions included insecticide dusting to reduce flea vectors.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2008-05-01T00:00:00Z",
+        "time_confidence": 0.55,
+        "event_date_utc": null,
+        "event_date_precision": "month"
+      },
+      "location": {
+        "name": "Conata Basin Area, Buffalo Gap National Grasslands, South Dakota, United States",
+        "jurisdiction_level": "site",
+        "admin1": "South Dakota",
+        "country": "US",
+        "capital_used": null,
+        "lat": 43.7061,
+        "lon": -102.4793,
+        "precision": "neighborhood",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.fws.gov/story/2008-05/actions-underway-response-plague-outbreak-conata-basin-south-dakota",
+          "source_name": "U.S. Fish and Wildlife Service",
+          "published_at": "2008-05-01T00:00:00Z",
+          "headline": "Actions underway in response to plague outbreak in Conata Basin, South Dakota",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Fish and Wildlife Service"
+        ],
+        "substances": [
+          "insecticide"
+        ],
+        "ecosystems": [
+          "prairie dog colonies",
+          "grasslands"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Actions underway in response to plague outbreak in Conata Basin, South Dakota",
+            "source_url": "https://www.fws.gov/story/2008-05/actions-underway-response-plague-outbreak-conata-basin-south-dakota"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.75,
+        "location": 0.6,
+        "summary_grounding": 0.65
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "sylvatic plague conata basin prairie dogs black-footed ferrets 2008-05",
+        "fingerprint": "fp_2008-05_conata-basin_sylvatic-plague_prairie-dogs"
+      }
+    },
+    {
+      "event_id": "2008-05-21_eu_ambient_air_quality_directive_2008_50_ec",
+      "title": "EU adopts Ambient Air Quality Directive 2008/50/EC",
+      "description": "The European Union adopted Directive 2008/50/EC on ambient air quality and cleaner air for Europe. The directive consolidated and updated EU air-quality management rules and standards across member states.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "2008-05-21T00:00:00.000Z",
+        "event_end": "2008-05-21T23:59:59.000Z",
+        "reported_at": "2008-06-11T00:00:00.000Z",
+        "time_confidence": 0.65,
+        "event_date_utc": "2008-05-21T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "European Union",
+        "jurisdiction_level": "supranational",
+        "admin1": null,
+        "country": null,
+        "capital_used": "Brussels",
+        "lat": 50.8503,
+        "lon": 4.3517,
+        "precision": "supranational",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.8
+      },
+      "sources": [
+        {
+          "url": "https://eur-lex.europa.eu/eli/dir/2008/50/oj/eng",
+          "source_name": "EUR-Lex",
+          "published_at": "2008-06-11T00:00:00.000Z",
+          "headline": "Directive 2008/50/EC of the European Parliament and of the Council of 21 May 2008 on ambient air quality and cleaner air for Europe",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": "https://eur-lex.europa.eu/eli/dir/2008/50/oj/eng"
+        },
+        {
+          "url": "https://www.eea.europa.eu/policy-documents/directive-2008-50-ec-of",
+          "source_name": "European Environment Agency (EEA)",
+          "published_at": "2008-05-21T00:00:00.000Z",
+          "headline": "Directive 2008/50/EC on ambient air quality and cleaner air for Europe",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "European Union",
+          "European Parliament",
+          "Council of the European Union"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Directive 2008/50/EC ... of 21 May 2008 on ambient air quality and cleaner air for Europe",
+            "source_url": "https://eur-lex.europa.eu/eli/dir/2008/50/oj/eng"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.78,
+        "category": 0.85,
+        "location": 0.8,
+        "summary_grounding": 0.8
+      },
+      "quality_flags": [
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "EU ambient air quality directive 2008/50/EC adoption",
+        "fingerprint": "2008-05-21|eu_ambient_air_quality_directive_2008_50_ec|brussels"
+      }
+    }
+  ]
+}

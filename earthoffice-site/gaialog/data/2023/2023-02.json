@@ -1,0 +1,938 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_2023-02_normalize_2026-01-16T133300244Z",
+    "generated_utc": "2026-01-16T13:33:00.244Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "2023-02",
+    "window": {
+      "start_utc": "2023-02-01T00:00:00.000Z",
+      "end_utc": "2023-02-28T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "evt_20230203_east_palestine_derailment",
+      "title": "East Palestine, Ohio train derailment releases hazardous chemicals and contaminates nearby waterways",
+      "description": "A Norfolk Southern freight train derailed in East Palestine, Ohio, involving railcars carrying hazardous materials including vinyl chloride. Reports and EPA statements indicated releases and spills affecting local waterways, prompting environmental response and cleanup actions.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2023-02-03T00:00:00.000Z",
+        "event_end": "2023-02-03T23:59:59.000Z",
+        "reported_at": "2023-02-15T00:00:00Z",
+        "time_confidence": 0.8,
+        "event_date_utc": "2023-02-03T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "East Palestine, Ohio, United States",
+        "jurisdiction_level": "city",
+        "admin1": "Ohio",
+        "country": "US",
+        "capital_used": null,
+        "lat": 40.8334,
+        "lon": -80.5404,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.75
+      },
+      "sources": [
+        {
+          "url": "https://www.epa.gov/enforcement/epa-orders-norfolk-southern-conduct-all-necessary-cleanup-work-east-palestine-ohio",
+          "source_name": "U.S. Environmental Protection Agency",
+          "published_at": "2023-02-21T00:00:00Z",
+          "headline": "EPA Orders Norfolk Southern to Conduct All Necessary Cleanup Work at East Palestine, Ohio",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://apnews.com/article/61ff5fec89c452f4ff7f56b5b8b4e44e",
+          "source_name": "Associated Press",
+          "published_at": "2023-02-15T00:00:00Z",
+          "headline": "Ohio derailment prompts concerns about chemical exposure and water impacts",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.washingtonpost.com/climate-environment/2023/02/15/ohio-train-derailment-toxic-chemicals/",
+          "source_name": "The Washington Post",
+          "published_at": "2023-02-15T00:00:00Z",
+          "headline": "Toxic chemicals from Ohio train derailment raise environmental concerns",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Norfolk Southern",
+          "U.S. Environmental Protection Agency"
+        ],
+        "substances": [
+          "vinyl chloride",
+          "butyl acrylate",
+          "2-ethylhexyl acrylate"
+        ],
+        "ecosystems": [
+          "freshwater waterways"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "EPA orders Norfolk Southern to conduct all necessary cleanup work at East Palestine, Ohio.",
+            "source_url": "https://www.epa.gov/enforcement/epa-orders-norfolk-southern-conduct-all-necessary-cleanup-work-east-palestine-ohio"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.72,
+        "category": 0.85,
+        "location": 0.75,
+        "summary_grounding": 0.65
+      },
+      "quality_flags": [
+        "paywalled_or_partial",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "east_palestine_train_derailment_feb2023",
+        "fingerprint": "fp_east_palestine_oh_2023-02-03_pollution"
+      }
+    },
+    {
+      "event_id": "evt_20230228_princess_empress_oil_spill",
+      "title": "MT Princess Empress sinks off Oriental Mindoro, triggering fuel oil spill",
+      "description": "The oil tanker MT Princess Empress sank near Oriental Mindoro in the Philippines, leading to an oil spill that spread into surrounding waters and impacted nearby coastlines. News reports described the vessel as carrying industrial fuel oil and noted containment and response efforts.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2023-02-28T00:00:00.000Z",
+        "event_end": "2023-02-28T23:59:59.000Z",
+        "reported_at": "2023-03-01T00:00:00Z",
+        "time_confidence": 0.75,
+        "event_date_utc": "2023-02-28T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Off Naujan, Oriental Mindoro, Philippines (Tablas Strait)",
+        "jurisdiction_level": "site",
+        "admin1": "Oriental Mindoro",
+        "country": "PH",
+        "capital_used": null,
+        "lat": 13.3233,
+        "lon": 121.3028,
+        "precision": "admin1",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://apnews.com/article/8f8b1a3d6f4e199cb1b5f5b3b1b7da37",
+          "source_name": "Associated Press",
+          "published_at": "2023-03-01T00:00:00Z",
+          "headline": "Philippines races to contain oil spill after tanker sinks",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.reuters.com/world/asia-pacific/philippines-races-contain-oil-spill-after-tanker-sinks-2023-03-01/",
+          "source_name": "Reuters",
+          "published_at": "2023-03-01T00:00:00Z",
+          "headline": "Philippines races to contain oil spill after tanker sinks",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [
+          "industrial fuel oil"
+        ],
+        "ecosystems": [
+          "marine waters",
+          "coastal zones"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "The oil tanker sank off Oriental Mindoro, triggering an oil spill and response efforts.",
+            "source_url": "https://www.reuters.com/world/asia-pacific/philippines-races-contain-oil-spill-after-tanker-sinks-2023-03-01/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.8,
+        "location": 0.6,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "princess_empress_oil_spill_2023",
+        "fingerprint": "fp_oriental_mindoro_ph_2023-02-28_oilspill"
+      }
+    },
+    {
+      "event_id": "evt_20230214_nz_cyclone_gabrielle",
+      "title": "Cyclone Gabrielle triggers flooding and landslides; New Zealand declares national state of emergency",
+      "description": "Severe Tropical Cyclone Gabrielle affected New Zealand in mid-February 2023, bringing destructive winds and extreme rainfall that caused severe flooding and landslides. New Zealand declared a national state of emergency during the event, with major disruption to communities and infrastructure.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2023-02-12T00:00:00.000Z",
+        "event_end": "2023-02-16T23:59:59.000Z",
+        "reported_at": "2023-02-13T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2023-02-14T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "New Zealand (Wellington)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "NZ",
+        "capital_used": "Wellington",
+        "lat": -41.28664,
+        "lon": 174.77557,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.65
+      },
+      "sources": [
+        {
+          "url": "https://www.rmets.org/metmatters/cyclone-gabrielle-causes-national-state-emergency-new-zealand",
+          "source_name": "Royal Meteorological Society (RMetS)",
+          "published_at": "2023-02-13T00:00:00.000Z",
+          "headline": "Cyclone Gabrielle causes national state of emergency in New Zealand",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.taxtechnical.ird.govt.nz/determinations/emergency-events/2023/ee-23-01",
+          "source_name": "Inland Revenue (New Zealand) - Tax Technical",
+          "published_at": "2023-02-22T00:00:00.000Z",
+          "headline": "EE 23/01: Cyclone Gabrielle emergency event",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.theguardian.com/world/2023/feb/13/cyclone-gabrielle-new-zealand-declares-national-state-of-emergency",
+          "source_name": "The Guardian",
+          "published_at": "2023-02-13T00:00:00.000Z",
+          "headline": "Cyclone Gabrielle: New Zealand declares national state of emergency",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "New Zealand Government"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Cyclone Gabrielle ... causes national state of emergency in New Zealand",
+            "source_url": "https://www.rmets.org/metmatters/cyclone-gabrielle-causes-national-state-emergency-new-zealand"
+          },
+          {
+            "quote": "Cyclone Gabrielle emergency event",
+            "source_url": "https://www.taxtechnical.ird.govt.nz/determinations/emergency-events/2023/ee-23-01"
+          },
+          {
+            "quote": "New Zealand declares national state of emergency",
+            "source_url": "https://www.theguardian.com/world/2023/feb/13/cyclone-gabrielle-new-zealand-declares-national-state-of-emergency"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.68,
+        "category": 0.85,
+        "location": 0.7,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "Cyclone Gabrielle New Zealand Feb 2023",
+        "fingerprint": "fp_cyclone_gabrielle_nz_2023_02"
+      }
+    },
+    {
+      "event_id": "evt_20230221_us_can_winter_storm_complex",
+      "title": "Late-February 2023 storm complex brings widespread winter weather and severe storms across North America",
+      "description": "A large storm system in late February 2023 brought widespread winter weather impacts including heavy snow and dangerous conditions in parts of the United States and Canada. The system also produced severe thunderstorms and damaging winds in parts of the central and southern U.S., contributing to power outages and other disruptions.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2023-02-21T00:00:00.000Z",
+        "event_end": "2023-02-28T23:59:59.000Z",
+        "reported_at": "2023-03-01T00:00:00.000Z",
+        "time_confidence": 0.55,
+        "event_date_utc": null,
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "United States (Washington, D.C.)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, D.C.",
+        "lat": 38.90719,
+        "lon": -77.03687,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.noaa.gov/news/noaa-winter-storm-and-severe-weather-february-2023",
+          "source_name": "NOAA",
+          "published_at": "2023-02-28T00:00:00.000Z",
+          "headline": "NOAA winter storm and severe weather (February 2023)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.ncei.noaa.gov/access/monitoring/monthly-report/extremes/202302",
+          "source_name": "NOAA NCEI",
+          "published_at": "2023-03-01T00:00:00.000Z",
+          "headline": "U.S. Climate Extremes Index (CEI): February 2023",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA",
+          "NOAA National Centers for Environmental Information (NCEI)"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "winter storm and severe weather ... February 2023",
+            "source_url": "https://www.noaa.gov/news/noaa-winter-storm-and-severe-weather-february-2023"
+          },
+          {
+            "quote": "Climate Extremes Index ... February 2023",
+            "source_url": "https://www.ncei.noaa.gov/access/monitoring/monthly-report/extremes/202302"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.8,
+        "location": 0.55,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "Late Feb 2023 North America storm complex",
+        "fingerprint": "fp_north_america_storm_complex_2023_02_21_28"
+      }
+    },
+    {
+      "event_id": "evt_20230206_turkiye_syria_eq_unesco",
+      "title": "Mw 7.8 Türkiye–Syria earthquake triggers widespread destruction and tsunami-related monitoring",
+      "description": "A magnitude 7.8 earthquake struck near the Türkiye–Syria border on February 6, 2023, causing severe destruction across southern Türkiye and northwestern Syria. Tsunami-related monitoring and sea-level anomaly observations were reported in the Eastern Mediterranean in connection with the event.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2023-02-06T01:17:00.000Z",
+        "event_end": "2023-02-06T23:59:59.000Z",
+        "reported_at": "2023-02-06T00:00:00Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2023-02-06T01:17:00.000Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Ankara, Türkiye (proxy for country-level event affecting southern Türkiye and northwestern Syria)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "TR",
+        "capital_used": "Ankara",
+        "lat": 39.9334,
+        "lon": 32.8597,
+        "precision": "proxy",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.unesco.org/en/articles/deadly-and-damaging-earthquake-turkiye-and-syrian-border-tsunami-related-sea-level-anomalies",
+          "source_name": "UNESCO",
+          "published_at": "2023-02-06T00:00:00Z",
+          "headline": "Deadly and damaging earthquake on Türkiye and Syrian border: Tsunami related sea level anomalies",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://eos.org/articles/an-atmospheric-river-exacerbated-turkiyes-2023-earthquake-crisis",
+          "source_name": "Eos",
+          "published_at": "2023-02-22T00:00:00Z",
+          "headline": "An Atmospheric River Exacerbated Türkiye’s 2023 Earthquake Crisis",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "UNESCO",
+          "Eos"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "tsunami related sea level anomalies",
+            "source_url": "https://www.unesco.org/en/articles/deadly-and-damaging-earthquake-turkiye-and-syrian-border-tsunami-related-sea-level-anomalies"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.63,
+        "category": 0.85,
+        "location": 0.6,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "2023-02-06 Türkiye–Syria earthquake sequence",
+        "fingerprint": "fp_2023-02-06_turkiye_country_geological_eq"
+      }
+    },
+    {
+      "event_id": "evt_20230220_hatay_aftershock_ap",
+      "title": "M 6.3 earthquake strikes Hatay Province, Türkiye, adding damage after February 6 sequence",
+      "description": "A strong earthquake around magnitude 6.3 struck Hatay Province in southern Türkiye on February 20, 2023, in an area already heavily impacted by the February 6 earthquakes. Reports indicated additional collapses and further damage, with shaking felt in surrounding areas including parts of Syria.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2023-02-20T00:00:00.000Z",
+        "event_end": "2023-02-20T23:59:59.000Z",
+        "reported_at": "2023-02-20T00:00:00Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "2023-02-20T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Ankara, Türkiye (proxy for event in Hatay Province)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "TR",
+        "capital_used": "Ankara",
+        "lat": 39.9334,
+        "lon": 32.8597,
+        "precision": "proxy",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://apnews.com/article/6bc8e1b7ab6e7bb6ba0cf9257cb86069",
+          "source_name": "AP News",
+          "published_at": "2023-02-20T00:00:00Z",
+          "headline": "Strong earthquake hits Turkey’s Hatay province, killing at least 3",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.usgs.gov/programs/earthquake-hazards/earthquakes",
+          "source_name": "USGS",
+          "published_at": "2023-02-20T00:00:00Z",
+          "headline": "Earthquakes (USGS Earthquake Hazards Program)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "AP News",
+          "USGS"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "earthquake hits Turkey’s Hatay province",
+            "source_url": "https://apnews.com/article/6bc8e1b7ab6e7bb6ba0cf9257cb86069"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.85,
+        "location": 0.6,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "2023-02-20 Hatay earthquake/aftershock",
+        "fingerprint": "fp_2023-02-20_turkiye_country_geological_hatay"
+      }
+    },
+    {
+      "event_id": "chile-wildfires-2023-02",
+      "title": "Central and southern Chile wildfires burn vast areas and worsen air quality, including smoke impacts in Santiago",
+      "description": "Wildfires across central and southern Chile in February 2023 burned large areas and damaged homes and infrastructure. The fires also degraded air quality, with smoke affecting major population centers including Santiago.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2023-02-10T00:00:00Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "2023-02-10T00:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Chile (Santiago affected by smoke)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "CL",
+        "capital_used": "Santiago",
+        "lat": -33.4489,
+        "lon": -70.6693,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.reuters.com/world/americas/wildfires-chile-raise-great-concern-says-minister-2023-02-10/",
+          "source_name": "Reuters",
+          "published_at": "2023-02-10T00:00:00Z",
+          "headline": "Wildfires in Chile raise 'great concern,' says minister",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.bbc.com/news/world-latin-america-64540676",
+          "source_name": "BBC News",
+          "published_at": "2023-02-06T00:00:00Z",
+          "headline": "Chile wildfires: Thousands evacuated as blaze burns out of control",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [
+          "smoke"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Wildfires in Chile have raised \"great concern,\" the country's interior minister said.",
+            "source_url": "https://www.reuters.com/world/americas/wildfires-chile-raise-great-concern-says-minister-2023-02-10/"
+          },
+          {
+            "quote": "Thousands of people have been evacuated in Chile as wildfires burn out of control.",
+            "source_url": "https://www.bbc.com/news/world-latin-america-64540676"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.67,
+        "category": 0.85,
+        "location": 0.6,
+        "summary_grounding": 0.65
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Chile wildfires Feb 2023 (central/southern regions; smoke impacts Santiago)",
+        "fingerprint": "chile-wildfires-2023-02|CL|2023-02"
+      }
+    },
+    {
+      "event_id": "2023-02-ecosystem_biodiversity-menindee-fish-kill-guardian-20230223",
+      "title": "Menindee Main Weir mass fish kill linked to low dissolved oxygen",
+      "description": "A large fish kill was reported at Menindee Main Weir in far western New South Wales, with thousands of fish (including carp and bony herring) found dead. Reporting cited authorities and experts linking the deaths to low dissolved oxygen and water-quality dynamics following flooding.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2023-02-23T00:00:00.000Z",
+        "event_end": "2023-02-23T23:59:59.000Z",
+        "reported_at": "2023-02-23T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2023-02-23T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Menindee Main Weir, far western New South Wales, Australia",
+        "jurisdiction_level": "site",
+        "admin1": "New South Wales",
+        "country": "AU",
+        "capital_used": null,
+        "lat": -32.395,
+        "lon": 142.418,
+        "precision": "exact",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.5
+      },
+      "sources": [
+        {
+          "url": "https://www.theguardian.com/australia-news/2023/feb/23/menindee-mass-fish-kill-thousands-of-carp-dead-amid-water-quality-fears",
+          "source_name": "The Guardian",
+          "published_at": "2023-02-23T00:00:00.000Z",
+          "headline": "Menindee mass fish kill: thousands of carp dead amid water quality fears",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NSW authorities"
+        ],
+        "substances": [
+          "dissolved oxygen"
+        ],
+        "ecosystems": [
+          "freshwater river/weir system"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "thousands of carp dead amid water quality fears",
+            "source_url": "https://www.theguardian.com/australia-news/2023/feb/23/menindee-mass-fish-kill-thousands-of-carp-dead-amid-water-quality-fears"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.7,
+        "location": 0.5,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Menindee fish kill Feb 2023",
+        "fingerprint": "menindee-main-weir-mass-fish-kill|menindee-main-weir-far-western-new-south-wales-australia|2023-02-23"
+      }
+    },
+    {
+      "event_id": "2023-02-ecosystem_biodiversity-noaa-coral-bleaching-south-pacific-202302",
+      "title": "NOAA Coral Reef Watch indicates Bleaching Alert Level 2 conditions in parts of the South Pacific, with bleaching reports in Fiji",
+      "description": "NOAA Coral Reef Watch reported elevated heat stress conditions reaching Bleaching Alert Level 2 at multiple South Pacific virtual stations during February 2023. The bulletin also noted receiving reports of coral bleaching at multiple sites in Fiji amid unusually warm water temperatures.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2023-02-01T00:00:00.000Z",
+        "event_end": "2023-02-28T23:59:59.000Z",
+        "reported_at": "2023-03-08T00:00:00.000Z",
+        "time_confidence": 0.5,
+        "event_date_utc": null,
+        "event_date_precision": "month"
+      },
+      "location": {
+        "name": "Fiji (reported bleaching sites)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "FJ",
+        "capital_used": "Suva",
+        "lat": -18.1416,
+        "lon": 178.4419,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://coralreefwatch.noaa.gov/satellite/analyses_guidance/pacific_cbts_ag_20230308.php",
+          "source_name": "NOAA Coral Reef Watch",
+          "published_at": "2023-03-08T00:00:00.000Z",
+          "headline": "Pacific Coral Bleaching Thermal Stress (CBTS) Analysis Guidance (dated 2023-03-08)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA Coral Reef Watch"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "coral reefs"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Bleaching Alert Level 2",
+            "source_url": "https://coralreefwatch.noaa.gov/satellite/analyses_guidance/pacific_cbts_ag_20230308.php"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.75,
+        "location": 0.55,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "South Pacific coral bleaching heat stress Feb 2023 (NOAA CRW)",
+        "fingerprint": "noaa-coral-reef-watch-alert-level-2-south-pacific-fiji|fiji-reported-bleaching-sites|2023-02"
+      }
+    },
+    {
+      "event_id": "2023-02-21_epa_superfund_order_norfolk_southern_east_palestine",
+      "title": "EPA issues Superfund order requiring Norfolk Southern to conduct and pay for cleanup after East Palestine derailment",
+      "description": "On February 21, 2023, the U.S. Environmental Protection Agency issued a unilateral administrative order under CERCLA directing Norfolk Southern to conduct necessary response actions related to the East Palestine, Ohio train derailment and to cover EPA cleanup costs.",
+      "category_primary": "policy_regulation",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "2023-02-21T00:00:00.000Z",
+        "event_end": "2023-02-21T23:59:59.000Z",
+        "reported_at": "2023-02-21T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2023-02-21T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "East Palestine, Ohio, United States",
+        "jurisdiction_level": "city",
+        "admin1": "Ohio",
+        "country": "US",
+        "capital_used": null,
+        "lat": 40.8334,
+        "lon": -80.5401,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://www.epa.gov/enforcement/epa-orders-norfolk-southern-conduct-all-necessary-cleanup-work-east-palestine-ohio",
+          "source_name": "U.S. Environmental Protection Agency",
+          "published_at": "2023-02-21T00:00:00.000Z",
+          "headline": "EPA Orders Norfolk Southern to Conduct All Necessary Cleanup Work at East Palestine, Ohio",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://apnews.com/article/61ff5fec89c452f4ff7f56b5b8b4e44e",
+          "source_name": "Associated Press",
+          "published_at": "2023-02-21T00:00:00.000Z",
+          "headline": "Norfolk Southern ordered to pay for East Palestine cleanup",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.epa.gov/east-palestine-oh-train-derailment/operational-updates",
+          "source_name": "U.S. Environmental Protection Agency",
+          "published_at": "2023-02-21T00:00:00.000Z",
+          "headline": "East Palestine, OH Train Derailment: Operational Updates",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Environmental Protection Agency (EPA)",
+          "Norfolk Southern"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "EPA issued a unilateral administrative order to Norfolk Southern under CERCLA.",
+            "source_url": "https://www.epa.gov/enforcement/epa-orders-norfolk-southern-conduct-all-necessary-cleanup-work-east-palestine-ohio"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.7,
+        "category": 0.8,
+        "location": 0.7,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "east-palestine-derailment-epa-order",
+        "fingerprint": "fp_2023-02-21_east_palestine_epa_order"
+      }
+    },
+    {
+      "event_id": "2023-02_epa_2b_emerging_contaminants_drinking_water_funding",
+      "title": "EPA highlights $2B funding availability to address PFAS and other emerging contaminants in drinking water",
+      "description": "During February 2023, EPA materials described funding made available under the Bipartisan Infrastructure Law for addressing emerging contaminants, including PFAS, in drinking water through grant programs aimed at small or disadvantaged communities.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2023-02-01T00:00:00.000Z",
+        "time_confidence": 0.3,
+        "event_date_utc": null,
+        "event_date_precision": "month"
+      },
+      "location": {
+        "name": "United States",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.epa.gov/pfas/key-epa-actions-address-pfas",
+          "source_name": "U.S. Environmental Protection Agency",
+          "published_at": "2023-02-01T00:00:00.000Z",
+          "headline": "Key EPA Actions to Address PFAS",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.epa.gov/newsreleases/biden-harris-administration-announces-26676000-bipartisan-infrastructure-law-funding",
+          "source_name": "U.S. Environmental Protection Agency",
+          "published_at": "2023-02-01T00:00:00.000Z",
+          "headline": "Biden-Harris Administration Announces Bipartisan Infrastructure Law Funding",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Environmental Protection Agency (EPA)"
+        ],
+        "substances": [
+          "PFAS"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "EPA outlined actions to address PFAS, including funding for emerging contaminants in drinking water.",
+            "source_url": "https://www.epa.gov/pfas/key-epa-actions-address-pfas"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.5,
+        "category": 0.7,
+        "location": 0.7,
+        "summary_grounding": 0.4
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "epa-bil-emerging-contaminants-funding",
+        "fingerprint": "fp_2023-02_us_epa_emerging_contaminants_funding"
+      }
+    }
+  ]
+}

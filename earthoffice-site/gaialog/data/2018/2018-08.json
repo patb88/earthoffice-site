@@ -1,0 +1,967 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_2018-08_normalize_2026-01-16T063154562Z",
+    "generated_utc": "2026-01-16T06:31:54.562Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "2018-08",
+    "window": {
+      "start_utc": "2018-08-01T00:00:00.000Z",
+      "end_utc": "2018-08-31T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "evt_20180817_vermilion_oh_fuel_line_leak",
+      "title": "Underground fuel-line leak causes gasoline sheen into Vermilion River near Vermilion, Ohio",
+      "description": "An underground fuel line leak at a marina was discovered on Aug. 17, with hundreds of gallons of gasoline unaccounted for and believed to be saturating soil and slowly leaching out. The leak created a sheen and affected asphalt entering the Vermilion River, and NOAA was notified on Aug. 23 for incident response support.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2018-08-17T00:00:00.000Z",
+        "event_end": "2018-08-23T23:59:59.000Z",
+        "reported_at": "2018-08-01T00:00:00.000Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "2018-08-17T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Vermilion, Ohio, USA",
+        "jurisdiction_level": "city",
+        "admin1": "Ohio",
+        "country": "US",
+        "capital_used": null,
+        "lat": 41.4214,
+        "lon": -82.3646,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.75
+      },
+      "sources": [
+        {
+          "url": "https://blog.response.restoration.noaa.gov/incident-responses-august-2018",
+          "source_name": "NOAA Response & Restoration Blog",
+          "published_at": "2018-08-01T00:00:00.000Z",
+          "headline": "Incident Responses: August 2018",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA"
+        ],
+        "substances": [
+          "gasoline"
+        ],
+        "ecosystems": [
+          "Vermilion River"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "leak on an underground fuel line ... discovered Aug. 17",
+            "source_url": "https://blog.response.restoration.noaa.gov/incident-responses-august-2018"
+          },
+          {
+            "quote": "hundreds of gallons of gasoline unaccounted for",
+            "source_url": "https://blog.response.restoration.noaa.gov/incident-responses-august-2018"
+          },
+          {
+            "quote": "creating a sheen ... entering the Vermilion River",
+            "source_url": "https://blog.response.restoration.noaa.gov/incident-responses-august-2018"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.8,
+        "location": 0.75,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "noaa_incident_responses_aug2018_fuel_line_leak_vermilion",
+        "fingerprint": "fp_noaa_aug2018_vermilion_fuel_line_leak_2018-08-17"
+      }
+    },
+    {
+      "event_id": "evt_20180829_corpus_christi_tx_vacuum_gas_oil_release",
+      "title": "Vessel collision releases vacuum gas oil into Corpus Christi Inner Harbor, Texas",
+      "description": "On Aug. 29, the U.S. Coast Guard contacted NOAA after a vessel collision led to an estimated release of about 1,176 gallons of vacuum gas oil into Corpus Christi Inner Harbor. Response actions included deploying pollution boom and conducting skimming and vacuum operations to remove oil from the water.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2018-08-29T00:00:00.000Z",
+        "event_end": "2018-08-29T23:59:59.000Z",
+        "reported_at": "2018-08-01T00:00:00.000Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "2018-08-29T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Corpus Christi Inner Harbor, Texas, USA",
+        "jurisdiction_level": "city",
+        "admin1": "Texas",
+        "country": "US",
+        "capital_used": null,
+        "lat": 27.8006,
+        "lon": -97.3964,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.65
+      },
+      "sources": [
+        {
+          "url": "https://blog.response.restoration.noaa.gov/incident-responses-august-2018",
+          "source_name": "NOAA Response & Restoration Blog",
+          "published_at": "2018-08-01T00:00:00.000Z",
+          "headline": "Incident Responses: August 2018",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Coast Guard",
+          "NOAA"
+        ],
+        "substances": [
+          "vacuum gas oil"
+        ],
+        "ecosystems": [
+          "Corpus Christi Inner Harbor"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "U.S. Coast Guard contacted NOAA on Aug. 29",
+            "source_url": "https://blog.response.restoration.noaa.gov/incident-responses-august-2018"
+          },
+          {
+            "quote": "estimated release of about 1,176 gallons of vacuum gas oil",
+            "source_url": "https://blog.response.restoration.noaa.gov/incident-responses-august-2018"
+          },
+          {
+            "quote": "pollution boom and skimming/vacuum operations",
+            "source_url": "https://blog.response.restoration.noaa.gov/incident-responses-august-2018"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.58,
+        "category": 0.8,
+        "location": 0.65,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "noaa_incident_responses_aug2018_vessel_collision_corpus_christi",
+        "fingerprint": "fp_noaa_aug2018_corpus_christi_vacuum_gas_oil_2018-08-29"
+      }
+    },
+    {
+      "event_id": "2018-08-weatherclimate-kerala-floods-20180816",
+      "title": "Kerala monsoon flooding and landslides intensify across the state",
+      "description": "Exceptionally heavy monsoon rains drove severe flooding across Kerala, with reports describing widespread inundation and landslides. The reporting also noted large-scale displacement and emergency response measures including dam releases and major transport disruption.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2018-08-16T00:00:00.000Z",
+        "event_end": "2018-08-16T23:59:59.000Z",
+        "reported_at": "2018-08-16T00:00:00Z",
+        "time_confidence": 0.65,
+        "event_date_utc": "2018-08-16T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Kerala, India",
+        "jurisdiction_level": "state",
+        "admin1": "Kerala",
+        "country": "IN",
+        "capital_used": "Thiruvananthapuram",
+        "lat": 8.524139,
+        "lon": 76.936638,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.85
+      },
+      "sources": [
+        {
+          "url": "https://time.com/5368797/kerala-india-flood-monsoon-rain-deaths/",
+          "source_name": "TIME",
+          "published_at": "2018-08-16T00:00:00Z",
+          "headline": "Kerala monsoon floods escalate to severe statewide flooding (Kerala, India)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "exceptionally heavy monsoon rains drove severe flooding across Kerala",
+            "source_url": "https://time.com/5368797/kerala-india-flood-monsoon-rain-deaths/"
+          },
+          {
+            "quote": "widespread inundation, landslides, large-scale displacement",
+            "source_url": "https://time.com/5368797/kerala-india-flood-monsoon-rain-deaths/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.66,
+        "category": 0.75,
+        "location": 0.85,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "Kerala floods Aug 2018",
+        "fingerprint": "2018-08-weather_climate|kerala-india|2018-08-16"
+      }
+    },
+    {
+      "event_id": "2018-08-weatherclimate-hurricane-lane-hawaii-20180822-26",
+      "title": "Hurricane Lane brings extreme rainfall and flooding to Hawaii",
+      "description": "Hurricane Lane produced exceptional rainfall in Hawaii in late August, with reporting describing flooding and landslides/mudslides. The coverage highlighted very high rain totals on Hawaiʻi Island (Big Island) and impacts across the islands.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2018-08-22T00:00:00.000Z",
+        "event_end": "2018-08-26T23:59:59.000Z",
+        "reported_at": "2018-08-27T00:00:00Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2018-08-22T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Hawaii, USA",
+        "jurisdiction_level": "state",
+        "admin1": "Hawaii",
+        "country": "US",
+        "capital_used": "Honolulu",
+        "lat": 21.306944,
+        "lon": -157.858333,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://weather.com/safety/hurricane/news/2018-08-23-hurricane-lane-forecast-hawaii",
+          "source_name": "The Weather Channel",
+          "published_at": "2018-08-23T00:00:00Z",
+          "headline": "Hurricane Lane triggers extreme rainfall and flooding in Hawaii (USA)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://time.com/5373239/hurricane-lane-track-hawaii/",
+          "source_name": "TIME",
+          "published_at": "2018-08-27T00:00:00Z",
+          "headline": "Hurricane Lane triggers extreme rainfall and flooding in Hawaii (USA)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Hurricane Lane produced exceptional late-August rainfall and flooding in Hawaii",
+            "source_url": "https://time.com/5373239/hurricane-lane-track-hawaii/"
+          },
+          {
+            "quote": "flooding and landslides/mudslides",
+            "source_url": "https://weather.com/safety/hurricane/news/2018-08-23-hurricane-lane-forecast-hawaii"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.64,
+        "category": 0.75,
+        "location": 0.7,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "Hurricane Lane Hawaii rainfall Aug 2018",
+        "fingerprint": "2018-08-weather_climate|hawaii-usa|2018-08-22_2018-08-26"
+      }
+    },
+    {
+      "event_id": "2018-08-weatherclimate-europe-warmest-august-record-201808",
+      "title": "Copernicus-reported record-warm August across Europe",
+      "description": "Copernicus Climate Change Service reporting described August 2018 as Europe’s warmest August on record relative to the 1981–2010 baseline. The reporting noted widespread above-normal temperatures across multiple European regions.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2018-08-01T00:00:00.000Z",
+        "event_end": "2018-08-31T23:59:59.000Z",
+        "reported_at": "2018-09-05T00:00:00Z",
+        "time_confidence": 0.8,
+        "event_date_utc": null,
+        "event_date_precision": "month"
+      },
+      "location": {
+        "name": "Europe (continental)",
+        "jurisdiction_level": "supranational",
+        "admin1": null,
+        "country": null,
+        "capital_used": "Brussels",
+        "lat": 50.846667,
+        "lon": 4.3525,
+        "precision": "supranational",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.euronews.com/2018/09/05/august-in-europe-was-the-warmest-on-record",
+          "source_name": "Euronews",
+          "published_at": "2018-09-05T00:00:00Z",
+          "headline": "Europe records its warmest August on record (continental-scale climate anomaly)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Copernicus Climate Change Service"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "August 2018 as Europe’s warmest August on record",
+            "source_url": "https://www.euronews.com/2018/09/05/august-in-europe-was-the-warmest-on-record"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.58,
+        "category": 0.7,
+        "location": 0.55,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "secondary_sources_only",
+        "location_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "Europe warmest August 2018 (Copernicus)",
+        "fingerprint": "2018-08-weather_climate|europe|2018-08"
+      }
+    },
+    {
+      "event_id": "geol-2018-08-lombok-eq-20180805",
+      "title": "M6.9–7.0 Lombok earthquake causes widespread damage and casualties",
+      "description": "A strong, shallow earthquake struck Lombok on Aug. 5, 2018, causing extensive structural damage and significant casualties across impacted areas. Reporting linked the quake to a broader sequence affecting the region.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2018-08-05T11:46:38.000Z",
+        "event_end": "2018-08-05T23:59:59.000Z",
+        "reported_at": "2018-08-05T00:00:00Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2018-08-05T11:46:38.000Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Lombok, West Nusa Tenggara, Indonesia",
+        "jurisdiction_level": "site",
+        "admin1": "West Nusa Tenggara",
+        "country": "ID",
+        "capital_used": null,
+        "lat": -8.65,
+        "lon": 116.3249,
+        "precision": "admin1",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.45
+      },
+      "sources": [
+        {
+          "url": "https://www.axios.com/2018/08/05/indonesian-earthquake-bali-37-killed",
+          "source_name": "Axios",
+          "published_at": "2018-08-05T00:00:00Z",
+          "headline": "Indonesian earthquake near Bali kills dozens",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Indonesian earthquake near Bali kills ...",
+            "source_url": "https://www.axios.com/2018/08/05/indonesian-earthquake-bali-37-killed"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.8,
+        "location": 0.45,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "2018-08-05 Lombok earthquake",
+        "fingerprint": "geological|m6.9-7.0-lombok-earthquake-causes-widespread-damage-and-casualties|lombok-west-nusa-tenggara-indonesia|2018-08-05"
+      }
+    },
+    {
+      "event_id": "geol-2018-08-kaktovik-eq-20180812",
+      "title": "M6.4 earthquake near Kaktovik triggers strong aftershocks in Alaska’s North Slope",
+      "description": "On Aug. 12, 2018, a magnitude 6.4 earthquake occurred near Kaktovik in Alaska’s North Slope region. Alaska Earthquake Center reporting noted a vigorous aftershock sequence, including an M6.0 event later the same day.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2018-08-12T00:00:00.000Z",
+        "event_end": "2018-08-12T23:59:59.000Z",
+        "reported_at": "2018-08-12T00:00:00Z",
+        "time_confidence": 0.5,
+        "event_date_utc": "2018-08-12T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Sadlerochit Mountains near Kaktovik, Alaska, USA",
+        "jurisdiction_level": "site",
+        "admin1": "Alaska",
+        "country": "US",
+        "capital_used": null,
+        "lat": 69.405,
+        "lon": -143.0069,
+        "precision": "neighborhood",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://earthquake.alaska.edu/event/018aap2cqu/detail",
+          "source_name": "Alaska Earthquake Center",
+          "published_at": "2018-08-12T00:00:00Z",
+          "headline": "Event detail: 018aap2cqu",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://earthquake.alaska.edu/2018-year-review",
+          "source_name": "Alaska Earthquake Center",
+          "published_at": "2018-12-31T00:00:00Z",
+          "headline": "2018 year review",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Alaska Earthquake Center"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "...event/018aap2cqu/detail",
+            "source_url": "https://earthquake.alaska.edu/event/018aap2cqu/detail"
+          },
+          {
+            "quote": "2018 year review",
+            "source_url": "https://earthquake.alaska.edu/2018-year-review"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.72,
+        "category": 0.9,
+        "location": 0.6,
+        "summary_grounding": 0.7
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "2018-08-12 Kaktovik M6.4 earthquake",
+        "fingerprint": "geological|m6.4-earthquake-near-kaktovik-triggers-strong-aftershocks-in-alaskas-north-slope|sadlerochit-mountains-near-kaktovik-alaska-usa|2018-08-12"
+      }
+    },
+    {
+      "event_id": "2018-08_fires_mendocino-complex-record-ca",
+      "title": "Mendocino Complex Fire becomes California’s largest wildfire on record",
+      "description": "Reporting in early August 2018 described the Mendocino Complex Fire in Northern California as surpassing previous records to become the largest wildfire in California at the time. Coverage noted evacuations and heavy smoke impacts across affected counties.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2018-08-06T00:00:00.000Z",
+        "event_end": "2018-08-07T23:59:59.000Z",
+        "reported_at": "2018-08-06T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2018-08-06T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Northern California (Lake, Mendocino, Colusa counties), USA",
+        "jurisdiction_level": "state",
+        "admin1": "California",
+        "country": "US",
+        "capital_used": "Sacramento",
+        "lat": 38.5767,
+        "lon": -121.4944,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.75
+      },
+      "sources": [
+        {
+          "url": "https://www.theguardian.com/environment/2018/aug/06/california-wildfire-mendocino-complex",
+          "source_name": "The Guardian",
+          "published_at": "2018-08-06T00:00:00.000Z",
+          "headline": "California wildfire: Mendocino Complex becomes largest in state history",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.axios.com/2018/08/07/california-wildfire-mendocino-complex-record-fire",
+          "source_name": "Axios",
+          "published_at": "2018-08-07T00:00:00.000Z",
+          "headline": "California wildfire is now the state's largest ever",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Mendocino Complex fire has become the largest wildfire in California’s history.",
+            "source_url": "https://www.theguardian.com/environment/2018/aug/06/california-wildfire-mendocino-complex"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.73,
+        "category": 0.9,
+        "location": 0.75,
+        "summary_grounding": 0.7
+      },
+      "quality_flags": [
+        "needs_dedupe_check",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "Mendocino Complex Fire record-size coverage Aug 2018",
+        "fingerprint": "mendocino_complex_fire|california|2018-08-06"
+      }
+    },
+    {
+      "event_id": "2018-08_fires_bc-state-of-emergency",
+      "title": "British Columbia declares provincial state of emergency amid widespread wildfires",
+      "description": "On Aug. 15, 2018, the government of British Columbia declared a provincewide state of emergency amid widespread wildfires. Reports described hundreds of active fires along with evacuations and significant smoke impacts.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2018-08-15T00:00:00.000Z",
+        "event_end": "2018-08-15T23:59:59.000Z",
+        "reported_at": "2018-08-15T00:00:00.000Z",
+        "time_confidence": 0.75,
+        "event_date_utc": "2018-08-15T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "British Columbia, Canada",
+        "jurisdiction_level": "state",
+        "admin1": "British Columbia",
+        "country": "CA",
+        "capital_used": "Victoria",
+        "lat": 48.4284,
+        "lon": -123.3656,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.85
+      },
+      "sources": [
+        {
+          "url": "https://www.newswire.ca/news-releases/bc-wildfires---provincial-state-of-emergency-declared-690967211.html",
+          "source_name": "CNW Group / Newswire",
+          "published_at": "2018-08-15T00:00:00.000Z",
+          "headline": "BC Wildfires - Provincial State of Emergency Declared",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.theguardian.com/world/2018/aug/16/british-columbia-wildfires-state-of-emergency-declared",
+          "source_name": "The Guardian",
+          "published_at": "2018-08-16T00:00:00.000Z",
+          "headline": "British Columbia wildfires: state of emergency declared",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Government of British Columbia"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "British Columbia declared a provincial state of emergency on Wednesday due to wildfires.",
+            "source_url": "https://www.theguardian.com/world/2018/aug/16/british-columbia-wildfires-state-of-emergency-declared"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.8,
+        "category": 0.9,
+        "location": 0.85,
+        "summary_grounding": 0.7
+      },
+      "quality_flags": [
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "BC provincial state of emergency (wildfires) Aug 2018",
+        "fingerprint": "bc_state_of_emergency_wildfires|british_columbia|2018-08-15"
+      }
+    },
+    {
+      "event_id": "evt_201808_europe_drought_heat_ecosystem_biodiversity_001",
+      "title": "2018 northern Europe drought and heat stress ecosystems and agriculture",
+      "description": "Reports in August 2018 described widespread drought and heat across parts of northern and western Europe, stressing vegetation and agriculture. Coverage also noted ecosystem impacts such as unusually warm, low-water rivers affecting aquatic conditions in some areas.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2018-08-01T00:00:00.000Z",
+        "event_end": "2018-08-31T23:59:59.000Z",
+        "reported_at": "2018-08-10T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2018-08-10T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Europe (multi-country)",
+        "jurisdiction_level": "supranational",
+        "admin1": null,
+        "country": null,
+        "capital_used": "Brussels",
+        "lat": 50.8503,
+        "lon": 4.3517,
+        "precision": "supranational",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.climate.gov/news-features/event-tracker/hot-dry-summer-has-led-drought-europe-2018",
+          "source_name": "NOAA Climate.gov",
+          "published_at": "2018-08-16T00:00:00.000Z",
+          "headline": "Hot, dry summer has led to drought in Europe in 2018",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.euronews.com/2018/08/10/explained-europe-s-devastating-drought-and-the-countries-worst-hit",
+          "source_name": "Euronews",
+          "published_at": "2018-08-10T00:00:00.000Z",
+          "headline": "Explained: Europe’s devastating drought and the countries worst hit",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA Climate.gov",
+          "Euronews"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "rivers",
+          "aquatic ecosystems",
+          "agricultural landscapes"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "hot, dry summer has led to drought in Europe in 2018",
+            "source_url": "https://www.climate.gov/news-features/event-tracker/hot-dry-summer-has-led-drought-europe-2018"
+          },
+          {
+            "quote": "Europe’s devastating drought and the countries worst hit",
+            "source_url": "https://www.euronews.com/2018/08/10/explained-europe-s-devastating-drought-and-the-countries-worst-hit"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.7,
+        "location": 0.6,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "needs_dedupe_check",
+        "location_ambiguous",
+        "date_ambiguous",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "2018 Europe drought heatwave impacts",
+        "fingerprint": "fp_20180810_europe_supranational_drought_heat_ecosystem_biodiversity"
+      }
+    },
+    {
+      "event_id": "2018-08-09_us_ninth_circuit_orders_epa_chlorpyrifos",
+      "title": "U.S. Ninth Circuit orders EPA to revoke chlorpyrifos food tolerances within 60 days",
+      "description": "On Aug. 9, 2018, the U.S. Court of Appeals for the Ninth Circuit ordered the U.S. EPA to revoke food residue tolerances for the pesticide chlorpyrifos within 60 days. The ruling cited evidence of potential neurodevelopmental harm and required EPA action on residues on food.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "2018-08-09T00:00:00.000Z",
+        "event_end": "2018-08-09T23:59:59.000Z",
+        "reported_at": "2018-08-09T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2018-08-09T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States (federal court ruling)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.atg.wa.gov/news/news-releases/court-agrees-ferguson-epa-cannot-allow-use-dangerous-neurotoxic-pesticide",
+          "source_name": "Washington State Attorney General",
+          "published_at": "2018-08-09T00:00:00.000Z",
+          "headline": "Court agrees with Ferguson: EPA cannot allow use of dangerous neurotoxic pesticide",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://time.com/5363553/epa-chlorpyrifos-ban-pesticide/",
+          "source_name": "Time",
+          "published_at": "2018-08-09T00:00:00.000Z",
+          "headline": "EPA Must Ban Use of Chlorpyrifos on Food Crops, Court Orders",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Environmental Protection Agency (EPA)",
+          "U.S. Court of Appeals for the Ninth Circuit"
+        ],
+        "substances": [
+          "chlorpyrifos"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Court of Appeals for the Ninth Circuit ordered the EPA to revoke all tolerances for chlorpyrifos within 60 days.",
+            "source_url": "https://www.atg.wa.gov/news/news-releases/court-agrees-ferguson-epa-cannot-allow-use-dangerous-neurotoxic-pesticide"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.66,
+        "category": 0.8,
+        "location": 0.6,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "secondary_sources_only",
+        "location_ambiguous",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "chlorpyrifos Ninth Circuit revoke tolerances",
+        "fingerprint": "2018-08-09_us_ninth_circuit_orders_epa_chlorpyrifos|US|2018-08-09"
+      }
+    },
+    {
+      "event_id": "2018-08-21_epa_proposes_ace_rule_clean_power_plan",
+      "title": "EPA proposes the Affordable Clean Energy (ACE) rule to replace the Clean Power Plan",
+      "description": "On Aug. 21, 2018, the U.S. EPA proposed the Affordable Clean Energy (ACE) rule for regulating CO2 emissions from existing coal-fired power plants. The proposal was positioned as a replacement for the 2015 Clean Power Plan and would rely on state-developed plans under EPA guidance.",
+      "category_primary": "policy_regulation",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "2018-08-21T00:00:00.000Z",
+        "event_end": "2018-08-21T23:59:59.000Z",
+        "reported_at": "2018-08-21T00:00:00.000Z",
+        "time_confidence": 0.8,
+        "event_date_utc": "2018-08-21T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States (federal regulatory proposal)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://www.epa.gov/stationary-sources-air-pollution/proposal-affordable-clean-energy-ace-rule",
+          "source_name": "U.S. Environmental Protection Agency",
+          "published_at": "2018-08-21T00:00:00.000Z",
+          "headline": "Proposal: Affordable Clean Energy (ACE) rule",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.epa.gov/archive/epa/newsreleases/epa-proposes-affordable-clean-energy-ace-rule.html",
+          "source_name": "U.S. Environmental Protection Agency (Archive)",
+          "published_at": "2018-08-21T00:00:00.000Z",
+          "headline": "EPA Proposes Affordable Clean Energy Rule",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Environmental Protection Agency (EPA)"
+        ],
+        "substances": [
+          "CO2"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "EPA is proposing the Affordable Clean Energy (ACE) rule... to reduce carbon dioxide emissions from existing coal-fired power plants.",
+            "source_url": "https://www.epa.gov/archive/epa/newsreleases/epa-proposes-affordable-clean-energy-ace-rule.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.7,
+        "category": 0.85,
+        "location": 0.7,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "needs_dedupe_check",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "EPA ACE rule proposal Aug 2018",
+        "fingerprint": "2018-08-21_epa_proposes_ace_rule_clean_power_plan|US|2018-08-21"
+      }
+    }
+  ]
+}

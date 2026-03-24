@@ -1,0 +1,402 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_1970-01_normalize_2026-01-19T031622612Z",
+    "generated_utc": "2026-01-19T03:16:22.612Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "1970-01",
+    "window": {
+      "start_utc": "1970-01-01T00:00:00.000Z",
+      "end_utc": "1970-01-31T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "evt_197001_au_qld_cyclone_ada_whitsunday_19700117",
+      "title": "Severe Tropical Cyclone Ada impacts the Whitsunday region of Queensland",
+      "description": "Severe Tropical Cyclone Ada affected Queensland’s Whitsunday region in mid-January 1970. The Bureau of Meteorology notes the cyclone crossed the Whitsunday Islands and the coast near Shute Harbour/Proserpine, bringing damaging winds and flooding impacts along the coast between Bowen and Mackay.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1970-01-15T12:00:00Z",
+        "event_end": "1970-01-19T12:00:00Z",
+        "reported_at": "2026-01-19T03:13:53.259Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "1970-01-17T12:00:00Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Whitsunday Islands and Whitsunday Coast, Queensland, Australia",
+        "jurisdiction_level": "site",
+        "admin1": "Queensland",
+        "country": "AU",
+        "capital_used": null,
+        "lat": -20.2643,
+        "lon": 148.7163,
+        "precision": "admin1",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.35
+      },
+      "sources": [
+        {
+          "url": "https://www.bom.gov.au/cyclone/history/ada.shtml",
+          "source_name": "Australian Bureau of Meteorology",
+          "published_at": "2026-01-19T03:13:53.259Z",
+          "headline": "Cyclone history: Ada",
+          "byline": null,
+          "accessed_utc": "2026-01-19T03:13:53.259Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Australian Bureau of Meteorology"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Ada crossed the Whitsunday Islands and the coast near Shute Harbour/Proserpine",
+            "source_url": "https://www.bom.gov.au/cyclone/history/ada.shtml"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.8,
+        "location": 0.35,
+        "summary_grounding": 0.65
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Cyclone Ada (Queensland) Jan 1970",
+        "fingerprint": "fp_197001_cyclone_ada_whitsunday_qld_19700115_19700119"
+      }
+    },
+    {
+      "event_id": "evt_197001_au_qld_floods_ada_mackay_bowen_19700119",
+      "title": "Cyclone Ada-related river flooding at Mackay and Bowen in Queensland",
+      "description": "Queensland flood history records major flooding attributed to Cyclone Ada, including flooding of the Pioneer River at Mackay on 19 January 1970 and the Don River at Bowen on 19–20 January 1970. The flood history summary also notes severe flooding in coastal streams between Sarina and Bowen with damage to property and crops.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1970-01-19T12:00:00Z",
+        "event_end": "1970-01-20T12:00:00Z",
+        "reported_at": "2026-01-19T03:13:53.259Z",
+        "time_confidence": 0.75,
+        "event_date_utc": "1970-01-19T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Mackay and Bowen area rivers, Queensland, Australia",
+        "jurisdiction_level": "state",
+        "admin1": "Queensland",
+        "country": "AU",
+        "capital_used": "Brisbane",
+        "lat": -27.4698,
+        "lon": 153.0251,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.bom.gov.au/qld/flood/fld_history/floodsum_1970.shtml",
+          "source_name": "Australian Bureau of Meteorology",
+          "published_at": "2026-01-19T03:13:53.259Z",
+          "headline": "Queensland flood history: 1970 flood summary",
+          "byline": null,
+          "accessed_utc": "2026-01-19T03:13:53.259Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Australian Bureau of Meteorology"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "major flooding ... attributed to Cyclone Ada ... Pioneer River ... Mackay on 19 Jan",
+            "source_url": "https://www.bom.gov.au/qld/flood/fld_history/floodsum_1970.shtml"
+          },
+          {
+            "quote": "Don River flooding at Bowen on 19–20 Jan",
+            "source_url": "https://www.bom.gov.au/qld/flood/fld_history/floodsum_1970.shtml"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.72,
+        "category": 0.8,
+        "location": 0.6,
+        "summary_grounding": 0.7
+      },
+      "quality_flags": [
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Cyclone Ada flooding (Queensland) Jan 1970",
+        "fingerprint": "fp_197001_qld_floods_ada_mackay_bowen_19700119_19700120"
+      }
+    },
+    {
+      "event_id": "evt_197001_us_wv_great_cacapon_flood_19700130",
+      "title": "Minor-range flood crest listed at Great Cacapon on the Cacapon River",
+      "description": "A National Weather Service (MARFC) flood-events document lists a flood crest at the Great Cacapon forecast point on the Cacapon River dated 30 January 1970. The document indicates the crest was in the minor flood range for that location.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1970-01-30T12:00:00Z",
+        "event_end": "1970-01-30T12:00:00Z",
+        "reported_at": "2026-01-19T03:13:53.259Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "1970-01-30T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Great Cacapon, West Virginia, United States",
+        "jurisdiction_level": "city",
+        "admin1": "West Virginia",
+        "country": "US",
+        "capital_used": null,
+        "lat": 39.6187,
+        "lon": -78.4011,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.weather.gov/media/marfc/Flood_Events_2016/1970/Jan30%2C1970.pdf",
+          "source_name": "NOAA National Weather Service (MARFC)",
+          "published_at": "2026-01-19T03:13:53.259Z",
+          "headline": "Flood Event: Jan 30, 1970 (MARFC)",
+          "byline": null,
+          "accessed_utc": "2026-01-19T03:13:53.259Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA National Weather Service",
+          "Middle Atlantic River Forecast Center (MARFC)"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "flood cresting in the minor range ... Great Cacapon ... Jan 30, 1970",
+            "source_url": "https://www.weather.gov/media/marfc/Flood_Events_2016/1970/Jan30%2C1970.pdf"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.58,
+        "category": 0.7,
+        "location": 0.55,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Great Cacapon flood Jan 1970",
+        "fingerprint": "fp_197001_great_cacapon_wv_flood_19700130"
+      }
+    },
+    {
+      "event_id": "evt_197001_us_cold_wave_storm_data_19700106",
+      "title": "Widespread U.S. cold-wave and winter weather impacts documented in Storm Data (January 1970)",
+      "description": "The January 1970 issue of \"Storm Data and Unusual Weather Phenomena\" documents a period of widespread cold and associated winter weather impacts across multiple U.S. states in early January 1970. The publication is a compiled government record of significant weather events and their impacts for that month.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1970-01-06T12:00:00Z",
+        "event_end": "1970-01-12T12:00:00Z",
+        "reported_at": "2026-01-19T03:13:53.259Z",
+        "time_confidence": 0.45,
+        "event_date_utc": "1970-01-09T12:00:00Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "United States",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, D.C.",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://digital.library.unt.edu/ark%3A/67531/metadc2542035/",
+          "source_name": "University of North Texas Digital Library",
+          "published_at": "2026-01-19T03:13:53.259Z",
+          "headline": "Storm Data and Unusual Weather Phenomena, January 1970",
+          "byline": null,
+          "accessed_utc": "2026-01-19T03:13:53.259Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Environmental Data Service"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Storm Data and Unusual Weather Phenomena, January 1970",
+            "source_url": "https://digital.library.unt.edu/ark%3A/67531/metadc2542035/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.45,
+        "category": 0.7,
+        "location": 0.7,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "US cold wave early Jan 1970 (Storm Data)",
+        "fingerprint": "fp_197001_us_cold_wave_storm_data_19700106_19700112"
+      }
+    },
+    {
+      "event_id": "evt_19700101_nepa_signed_us",
+      "title": "NEPA signed into law in the United States (Public Law 91-190)",
+      "description": "President Richard Nixon signed the National Environmental Policy Act (NEPA) into law on January 1, 1970. The law established a national environmental policy and requires federal agencies to assess environmental effects of proposed actions before making decisions.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1970-01-01T12:00:00Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "1970-01-01T12:00:00Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "United States (federal)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.9
+      },
+      "sources": [
+        {
+          "url": "https://www.epa.gov/nepa/what-national-environmental-policy-act",
+          "source_name": "U.S. Environmental Protection Agency (EPA)",
+          "published_at": "1970-01-01T12:00:00Z",
+          "headline": "What is the National Environmental Policy Act?",
+          "byline": null,
+          "accessed_utc": "2026-01-19T03:15:35.899Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.congress.gov/bill/91st-congress/senate-bill/1075/all-actions",
+          "source_name": "Congress.gov",
+          "published_at": "1970-01-01T12:00:00Z",
+          "headline": "S.1075 — National Environmental Policy Act of 1969 (All Actions)",
+          "byline": null,
+          "accessed_utc": "2026-01-19T03:15:35.899Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://digital.library.unt.edu/ark%3A/67531/metadc11975/",
+          "source_name": "University of North Texas Digital Library",
+          "published_at": "1970-01-01T12:00:00Z",
+          "headline": "Public Law 91-190 (National Environmental Policy Act of 1969)",
+          "byline": null,
+          "accessed_utc": "2026-01-19T03:15:35.899Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. federal government",
+          "U.S. Environmental Protection Agency (EPA)"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": [
+          "Richard Nixon"
+        ]
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "President Richard Nixon signed the National Environmental Policy Act into law on January 1, 1970.",
+            "source_url": "https://www.epa.gov/nepa/what-national-environmental-policy-act"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.78,
+        "category": 0.85,
+        "location": 0.9,
+        "summary_grounding": 0.75
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "NEPA signed into law (Public Law 91-190)",
+        "fingerprint": "nepa_signed_into_law|US|1970-01-01"
+      }
+    }
+  ]
+}

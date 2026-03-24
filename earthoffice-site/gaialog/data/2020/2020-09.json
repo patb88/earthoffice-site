@@ -1,0 +1,897 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_2020-09_normalize_2026-01-16T072030426Z",
+    "generated_utc": "2026-01-16T07:20:30.426Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "2020-09",
+    "window": {
+      "start_utc": "2020-09-01T00:00:00.000Z",
+      "end_utc": "2020-09-30T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "2020-09-25_colonial-pipeline_huntersville-nc_deq-nov",
+      "title": "North Carolina DEQ issues Notice of Violation to Colonial Pipeline over Huntersville gasoline spill groundwater impacts",
+      "description": "North Carolina regulators (NCDEQ) issued a Notice of Violation to Colonial Pipeline related to groundwater-quality impacts associated with a gasoline spill near Huntersville, North Carolina. The agency cited petroleum-related constituents exceeding groundwater standards and required corrective actions and reporting.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2020-09-25T00:00:00.000Z",
+        "event_end": "2020-09-25T23:59:59.000Z",
+        "reported_at": "2020-09-25T00:00:00.000Z",
+        "time_confidence": 0.85,
+        "event_date_utc": "2020-09-25T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Oehler Nature Preserve near Huntersville, North Carolina, USA",
+        "jurisdiction_level": "site",
+        "admin1": "North Carolina",
+        "country": "US",
+        "capital_used": null,
+        "lat": 35.4107,
+        "lon": -80.8428,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.45
+      },
+      "sources": [
+        {
+          "url": "https://www.deq.nc.gov/news/press-releases/2020/09/25/deq-issues-notice-violation-colonial-pipeline-massive-gasoline-spill-huntersville",
+          "source_name": "North Carolina Department of Environmental Quality (NCDEQ)",
+          "published_at": "2020-09-25T00:00:00.000Z",
+          "headline": "DEQ issues notice of violation to Colonial Pipeline over massive gasoline spill near Huntersville",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.deq.nc.gov/about/divisions/waste-management/underground-storage-tanks-section/colonial-pipeline-spill-information-huntersville-nc",
+          "source_name": "North Carolina Department of Environmental Quality (NCDEQ)",
+          "published_at": "2020-09-25T00:00:00.000Z",
+          "headline": "Colonial Pipeline spill information: Huntersville, NC",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "North Carolina Department of Environmental Quality (NCDEQ)",
+          "Colonial Pipeline"
+        ],
+        "substances": [
+          "gasoline",
+          "petroleum constituents"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "DEQ issues notice of violation to Colonial Pipeline over massive gasoline spill near Huntersville",
+            "source_url": "https://www.deq.nc.gov/news/press-releases/2020/09/25/deq-issues-notice-violation-colonial-pipeline-massive-gasoline-spill-huntersville"
+          },
+          {
+            "quote": "Colonial Pipeline spill information: Huntersville, NC",
+            "source_url": "https://www.deq.nc.gov/about/divisions/waste-management/underground-storage-tanks-section/colonial-pipeline-spill-information-huntersville-nc"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.8,
+        "location": 0.45,
+        "summary_grounding": 0.7
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "NCDEQ Notice of Violation Colonial Pipeline Huntersville gasoline spill groundwater",
+        "fingerprint": "pollution_contamination|north-carolina-huntersville|2020-09-25|ncdeq-notice-of-violation-colonial-pipeline"
+      }
+    },
+    {
+      "event_id": "evt_202009_noaa_global_warmest_september",
+      "title": "NOAA: September 2020 was the warmest September globally in its record",
+      "description": "NOAA’s monthly climate assessment reported that the globally averaged land-and-ocean temperature for September 2020 was the highest for any September in its 141-year record. The assessment highlighted notable regional warmth across multiple continents and oceans.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2020-09-01T00:00:00.000Z",
+        "event_end": "2020-09-30T23:59:59.000Z",
+        "reported_at": "2020-10-14T00:00:00Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2020-09-30T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Global",
+        "jurisdiction_level": "global_proxy",
+        "admin1": null,
+        "country": null,
+        "capital_used": null,
+        "lat": 0,
+        "lon": 0,
+        "precision": "proxy",
+        "location_basis": "manual_override",
+        "location_confidence": 0.5
+      },
+      "sources": [
+        {
+          "url": "https://www.ncei.noaa.gov/news/global-climate-202009",
+          "source_name": "NOAA NCEI",
+          "published_at": "2020-10-14T00:00:00Z",
+          "headline": "Global Climate Report - September 2020",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.climate.gov/news-features/features/september-2020-another-record-setting-month-global-heat",
+          "source_name": "NOAA Climate.gov",
+          "published_at": "2020-10-15T00:00:00Z",
+          "headline": "September 2020: Another Record-setting Month for Global Heat",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA",
+          "NOAA National Centers for Environmental Information (NCEI)"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "globally averaged land and ocean surface temperature for September 2020 was the highest for any September",
+            "source_url": "https://www.ncei.noaa.gov/news/global-climate-202009"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.66,
+        "category": 0.85,
+        "location": 0.45,
+        "summary_grounding": 0.65
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "NOAA global climate September 2020 warmest September",
+        "fingerprint": "fp_noaa_global_warmest_september_2020-09_global"
+      }
+    },
+    {
+      "event_id": "evt_202009_hurricane_sally_landfall_gulf_coast",
+      "title": "Hurricane Sally landfall brings extreme rainfall and flooding on the U.S. Gulf Coast",
+      "description": "Hurricane Sally made landfall along the U.S. Gulf Coast and produced very heavy rainfall and flooding. Reporting emphasized the storm’s slow movement and warnings about potentially life-threatening flash flooding in affected areas including Alabama and the Florida Panhandle.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2020-09-16T00:00:00.000Z",
+        "event_end": "2020-09-16T23:59:59.000Z",
+        "reported_at": "2020-09-16T00:00:00Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "2020-09-16T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States (Gulf Coast)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.reuters.com/world/hurricane-sally-takes-aim-us-alabama-florida-border-area-2020-09-16/",
+          "source_name": "Reuters",
+          "published_at": "2020-09-16T00:00:00Z",
+          "headline": "Hurricane Sally takes aim at U.S. Alabama-Florida border area",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.theguardian.com/world/2020/sep/15/hurricane-sally-possible-historic-flooding-us-gulf-coast",
+          "source_name": "The Guardian",
+          "published_at": "2020-09-15T00:00:00Z",
+          "headline": "Hurricane Sally could bring historic flooding to US Gulf coast",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "National Hurricane Center"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "generated very heavy rainfall and flooding",
+            "source_url": "https://www.reuters.com/world/hurricane-sally-takes-aim-us-alabama-florida-border-area-2020-09-16/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.58,
+        "category": 0.75,
+        "location": 0.5,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Hurricane Sally landfall flooding Gulf Coast Sep 2020",
+        "fingerprint": "fp_hurricane_sally_2020-09-16_us_gulf"
+      }
+    },
+    {
+      "event_id": "evt_202009_pakistan_monsoon_flooding_sindh",
+      "title": "NASA Earth Observatory highlights monsoon flooding in Sindh, Pakistan",
+      "description": "NASA Earth Observatory documented flooding during Pakistan’s 2020 monsoon season, including inundation shown in Sindh province. The report described major impacts from unusually intense rains, including damage and fatalities.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2020-09-21T00:00:00.000Z",
+        "event_end": "2020-09-21T23:59:59.000Z",
+        "reported_at": "2020-09-21T00:00:00Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "2020-09-21T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Sindh, Pakistan",
+        "jurisdiction_level": "state",
+        "admin1": "Sindh",
+        "country": "PK",
+        "capital_used": "Karachi",
+        "lat": 24.8607,
+        "lon": 67.0011,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.62
+      },
+      "sources": [
+        {
+          "url": "https://earthobservatory.nasa.gov/images/147330/extreme-monsoon-rains-in-pakistan",
+          "source_name": "NASA Earth Observatory",
+          "published_at": "2020-09-21T00:00:00Z",
+          "headline": "Extreme Monsoon Rains in Pakistan",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://science.nasa.gov/earth/earth-observatory/extreme-monsoon-rains-in-pakistan-147330/",
+          "source_name": "NASA Earth Science",
+          "published_at": "2020-09-21T00:00:00Z",
+          "headline": "Extreme Monsoon Rains in Pakistan",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NASA Earth Observatory",
+          "NASA"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "documented widespread flooding and impacts from Pakistan’s heavy 2020 monsoon season",
+            "source_url": "https://earthobservatory.nasa.gov/images/147330/extreme-monsoon-rains-in-pakistan"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.75,
+        "location": 0.62,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "NASA Earth Observatory Sindh monsoon flooding Sep 2020",
+        "fingerprint": "fp_pakistan_sindh_monsoon_2020-09-21"
+      }
+    },
+    {
+      "event_id": "evt_20200907_mohmand_marble_mine_landslide",
+      "title": "Landslide at a marble mine in Mohmand District, Pakistan",
+      "description": "Reports said a landslide hit a marble mine in Safi Tehsil, Mohmand District (Khyber Pakhtunkhwa), causing fatalities and injuries. The incident was described as a mass-movement event at a mine site with immediate human safety impacts.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2020-09-07T00:00:00.000Z",
+        "event_end": "2020-09-07T23:59:59.000Z",
+        "reported_at": "2020-09-07T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2020-09-07T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Safi Tehsil, Mohmand District, Khyber Pakhtunkhwa, Pakistan",
+        "jurisdiction_level": "site",
+        "admin1": "Khyber Pakhtunkhwa",
+        "country": "PK",
+        "capital_used": null,
+        "lat": 34.002,
+        "lon": 71.367,
+        "precision": "admin1",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.35
+      },
+      "sources": [
+        {
+          "url": "https://www.dawn.com/news/1577908",
+          "source_name": "Dawn",
+          "published_at": "2020-09-07T00:00:00.000Z",
+          "headline": "Dawn report on Mohmand marble mine landslide",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.bbc.com/urdu/pakistan-54057547",
+          "source_name": "BBC Urdu",
+          "published_at": "2020-09-07T00:00:00.000Z",
+          "headline": "BBC Urdu report on Mohmand marble mine landslide",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.45,
+        "category": 0.75,
+        "location": 0.35,
+        "summary_grounding": 0.4
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "secondary_sources_only",
+        "low_confidence_location"
+      ],
+      "dedupe": {
+        "cluster_hint": "Mohmand District marble mine landslide 2020-09-07",
+        "fingerprint": "fp_mohmand_marble_mine_landslide_2020-09-07_pk"
+      }
+    },
+    {
+      "event_id": "evt_20200930_westmorland_swarm_usgs_forecast",
+      "title": "USGS forecast issued for Westmorland earthquake swarm, Southern California",
+      "description": "The USGS reported that an earthquake swarm near Westmorland in Southern California began on September 30, 2020, including a magnitude 4.9 event. The agency issued a public forecast describing short-term probabilities of additional earthquakes in the area.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2020-09-30T00:00:00.000Z",
+        "event_end": "2020-09-30T23:59:59.000Z",
+        "reported_at": "2020-09-30T00:00:00.000Z",
+        "time_confidence": 0.8,
+        "event_date_utc": "2020-09-30T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Near Westmorland, Imperial Valley, California, USA",
+        "jurisdiction_level": "city",
+        "admin1": "California",
+        "country": "US",
+        "capital_used": null,
+        "lat": 33.037,
+        "lon": -115.621,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.usgs.gov/news/earthquake-forecast-westmorland-swarm-beginning-sept-30-2020",
+          "source_name": "USGS",
+          "published_at": "2020-09-30T00:00:00.000Z",
+          "headline": "Earthquake forecast: Westmorland swarm beginning Sept. 30, 2020",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "USGS"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.65,
+        "category": 0.9,
+        "location": 0.6,
+        "summary_grounding": 0.7
+      },
+      "quality_flags": [
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "Westmorland earthquake swarm forecast 2020-09-30",
+        "fingerprint": "fp_westmorland_swarm_2020-09-30_us"
+      }
+    },
+    {
+      "event_id": "evt_202009_creek_fire_central_ca",
+      "title": "Creek Fire ignites in Central California and rapidly expands, producing extreme smoke plume and major evacuations",
+      "description": "The Creek Fire started on September 4, 2020 in the Sierra National Forest area and rapidly expanded, prompting evacuations. Smoke from the fire contributed to severe air-quality impacts in the region.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2020-09-04T00:00:00.000Z",
+        "event_end": "2020-09-04T23:59:59.000Z",
+        "reported_at": "2020-09-15T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2020-09-04T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Fresno and Madera counties, California, USA",
+        "jurisdiction_level": "state",
+        "admin1": "California",
+        "country": "US",
+        "capital_used": "Sacramento",
+        "lat": 38.5816,
+        "lon": -121.4944,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.65
+      },
+      "sources": [
+        {
+          "url": "https://www.fs.usda.gov/r05/sierra/newsroom/releases/sierra-national-forest-declares-creek-fire-100-contained",
+          "source_name": "USDA Forest Service (Sierra National Forest)",
+          "published_at": "2020-09-04T00:00:00.000Z",
+          "headline": "Sierra National Forest declares Creek Fire 100% contained",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://weather.com/news/news/2020-09-15-western-fires-smoke-pollution-air-quality-california-oregon-washington",
+          "source_name": "The Weather Channel",
+          "published_at": "2020-09-15T00:00:00.000Z",
+          "headline": "western fires smoke pollution air quality california oregon washington",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "USDA Forest Service",
+          "Sierra National Forest"
+        ],
+        "substances": [
+          "wildfire smoke"
+        ],
+        "ecosystems": [
+          "Sierra National Forest"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "declares Creek Fire 100% contained",
+            "source_url": "https://www.fs.usda.gov/r05/sierra/newsroom/releases/sierra-national-forest-declares-creek-fire-100-contained"
+          },
+          {
+            "quote": "smoke pollution air quality california oregon washington",
+            "source_url": "https://weather.com/news/news/2020-09-15-western-fires-smoke-pollution-air-quality-california-oregon-washington"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.85,
+        "location": 0.65,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "2020-09 US West Coast wildfires smoke",
+        "fingerprint": "fp_creek_fire_ca_2020-09-04"
+      }
+    },
+    {
+      "event_id": "evt_202009_holiday_farm_fire_oregon",
+      "title": "Holiday Farm Fire starts in Oregon during major wind-driven fire outbreak",
+      "description": "The Holiday Farm Fire began on September 7, 2020 in Oregon during a period of wind-driven wildfire activity. It became one of the state’s largest fires, burning forest and community areas and contributing to regional smoke impacts.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2020-09-07T00:00:00.000Z",
+        "event_end": "2020-09-07T23:59:59.000Z",
+        "reported_at": "2020-09-09T00:00:00.000Z",
+        "time_confidence": 0.65,
+        "event_date_utc": "2020-09-07T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Lane and Linn counties (McKenzie River valley), Oregon, USA",
+        "jurisdiction_level": "state",
+        "admin1": "Oregon",
+        "country": "US",
+        "capital_used": "Salem",
+        "lat": 44.9429,
+        "lon": -123.0351,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.theguardian.com/world/2020/sep/09/california-fires-wind-heat-oregon-washington",
+          "source_name": "The Guardian",
+          "published_at": "2020-09-09T00:00:00.000Z",
+          "headline": "california fires wind heat oregon washington",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://weather.com/news/news/2020-09-15-western-fires-smoke-pollution-air-quality-california-oregon-washington",
+          "source_name": "The Weather Channel",
+          "published_at": "2020-09-15T00:00:00.000Z",
+          "headline": "western fires smoke pollution air quality california oregon washington",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [
+          "wildfire smoke"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "fires wind heat oregon washington",
+            "source_url": "https://www.theguardian.com/world/2020/sep/09/california-fires-wind-heat-oregon-washington"
+          },
+          {
+            "quote": "smoke pollution air quality california oregon washington",
+            "source_url": "https://weather.com/news/news/2020-09-15-western-fires-smoke-pollution-air-quality-california-oregon-washington"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.85,
+        "location": 0.6,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "2020-09 Oregon wind-driven fires",
+        "fingerprint": "fp_holiday_farm_or_2020-09-07"
+      }
+    },
+    {
+      "event_id": "evt_202009_west_coast_smoke_hazardous_air",
+      "title": "West Coast wildfire smoke creates hazardous air quality across California, Oregon, and Washington",
+      "description": "By mid-September 2020, smoke from multiple large wildfires led to hazardous air quality across parts of California, Oregon, and Washington. Cities issued health advisories as smoke reduced visibility and increased particulate pollution over a broad region.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2020-09-15T00:00:00.000Z",
+        "event_end": "2020-09-15T23:59:59.000Z",
+        "reported_at": "2020-09-15T00:00:00.000Z",
+        "time_confidence": 0.75,
+        "event_date_utc": "2020-09-15T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "U.S. West Coast (CA, OR, WA), USA",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://weather.com/news/news/2020-09-15-western-fires-smoke-pollution-air-quality-california-oregon-washington",
+          "source_name": "The Weather Channel",
+          "published_at": "2020-09-15T00:00:00.000Z",
+          "headline": "western fires smoke pollution air quality california oregon washington",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.theguardian.com/world/2020/sep/14/west-coast-air-quality-wildfires-oregon-california-washington",
+          "source_name": "The Guardian",
+          "published_at": "2020-09-14T00:00:00.000Z",
+          "headline": "west coast air quality wildfires oregon california washington",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [
+          "wildfire smoke",
+          "particulate pollution"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "western fires smoke pollution air quality california oregon washington",
+            "source_url": "https://weather.com/news/news/2020-09-15-western-fires-smoke-pollution-air-quality-california-oregon-washington"
+          },
+          {
+            "quote": "west coast air quality wildfires oregon california washington",
+            "source_url": "https://www.theguardian.com/world/2020/sep/14/west-coast-air-quality-wildfires-oregon-california-washington"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.66,
+        "category": 0.85,
+        "location": 0.55,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "2020-09 US West Coast smoke crisis",
+        "fingerprint": "fp_west_coast_smoke_us_2020-09-15"
+      }
+    },
+    {
+      "event_id": "evt-20200923-california-zev-2035-execorder",
+      "title": "California executive order directs move to 100% zero-emission new passenger vehicle sales by 2035",
+      "description": "California announced an executive order directing the state to require all new passenger cars and trucks sold in-state to be zero-emission by 2035. The announcement also described additional measures aimed at reducing transportation emissions and fossil fuel demand.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "2020-09-23T00:00:00.000Z",
+        "event_end": "2020-09-23T23:59:59.000Z",
+        "reported_at": "2020-09-23T00:00:00.000Z",
+        "time_confidence": 0.85,
+        "event_date_utc": "2020-09-23T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "California, USA",
+        "jurisdiction_level": "state",
+        "admin1": "California",
+        "country": "US",
+        "capital_used": "Sacramento",
+        "lat": 38.581571,
+        "lon": -121.4944,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.8
+      },
+      "sources": [
+        {
+          "url": "https://www.gov.ca.gov/2020/09/23/governor-newsom-announces-california-will-phase-out-gasoline-powered-cars-drastically-reduce-demand-for-fossil-fuel-in-californias-fight-against-climate-change/",
+          "source_name": "Office of Governor Gavin Newsom",
+          "published_at": "2020-09-23T00:00:00.000Z",
+          "headline": "Governor Newsom announces California will phase out gasoline-powered cars, drastically reduce demand for fossil fuel in California’s fight against climate change",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://ww2.arb.ca.gov/news/governor-newsom-announces-california-will-phase-out-gasoline-powered-cars-drastically-reduce/printable/print",
+          "source_name": "California Air Resources Board",
+          "published_at": "2020-09-23T00:00:00.000Z",
+          "headline": "Governor Newsom announces California will phase out gasoline-powered cars, drastically reduce demand for fossil fuel in California’s fight against climate change",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "State of California",
+          "Office of Governor Gavin Newsom",
+          "California Air Resources Board"
+        ],
+        "substances": [
+          "fossil fuel"
+        ],
+        "ecosystems": [],
+        "people": [
+          "Gavin Newsom"
+        ]
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "California will phase out gasoline-powered cars",
+            "source_url": "https://www.gov.ca.gov/2020/09/23/governor-newsom-announces-california-will-phase-out-gasoline-powered-cars-drastically-reduce-demand-for-fossil-fuel-in-californias-fight-against-climate-change/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.78,
+        "category": 0.9,
+        "location": 0.8,
+        "summary_grounding": 0.75
+      },
+      "quality_flags": [
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "CA ZEV 2035 executive order (2020-09-23)",
+        "fingerprint": "fp-20200923-california-zev-2035-execorder"
+      }
+    },
+    {
+      "event_id": "evt-20200917-eu-just-transition-fund-texts",
+      "title": "European Parliament adopts first-reading texts advancing the Just Transition Fund",
+      "description": "The European Parliament adopted legislative texts at first reading related to the Just Transition Fund under the European Green Deal framework. The fund is intended to support regions and people affected by the transition toward a climate-neutral economy.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "2020-09-17T00:00:00.000Z",
+        "event_end": "2020-09-17T23:59:59.000Z",
+        "reported_at": "2020-09-17T00:00:00.000Z",
+        "time_confidence": 0.8,
+        "event_date_utc": "2020-09-17T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "European Union",
+        "jurisdiction_level": "supranational",
+        "admin1": null,
+        "country": null,
+        "capital_used": "Brussels",
+        "lat": 50.850346,
+        "lon": 4.351721,
+        "precision": "supranational",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.75
+      },
+      "sources": [
+        {
+          "url": "https://www.europarl.europa.eu/doceo/document/TA-9-2020-09-17_EN.html",
+          "source_name": "European Parliament",
+          "published_at": "2020-09-17T00:00:00.000Z",
+          "headline": "Texts adopted - Thursday, 17 September 2020",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "European Parliament",
+          "European Union"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Texts adopted - Thursday, 17 September 2020",
+            "source_url": "https://www.europarl.europa.eu/doceo/document/TA-9-2020-09-17_EN.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.72,
+        "category": 0.85,
+        "location": 0.75,
+        "summary_grounding": 0.65
+      },
+      "quality_flags": [
+        "needs_dedupe_check",
+        "paywalled_or_partial"
+      ],
+      "dedupe": {
+        "cluster_hint": "EU Parliament adoption of Just Transition Fund-related texts (2020-09-17)",
+        "fingerprint": "fp-20200917-eu-just-transition-fund-texts"
+      }
+    }
+  ]
+}

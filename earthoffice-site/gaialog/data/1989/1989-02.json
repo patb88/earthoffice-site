@@ -1,0 +1,702 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_1989-02_normalize_2026-01-18T115402726Z",
+    "generated_utc": "2026-01-18T11:54:02.726Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "1989-02",
+    "window": {
+      "start_utc": "1989-02-01T00:00:00.000Z",
+      "end_utc": "1989-02-28T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "evt_19890220_chevron_port_arthur_crude_leak",
+      "title": "Crude oil leak at Chevron Port Arthur refinery prompts evacuation over hydrogen sulfide fumes",
+      "description": "Reports say thousands of gallons of crude oil leaked from a storage tank at Chevron’s Port Arthur refinery, producing strong odors and hydrogen sulfide fumes. The incident led to evacuations and medical treatment for some people reporting respiratory symptoms.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1989-02-21T00:00:00Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "1989-02-20T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Port Arthur, Texas, United States",
+        "jurisdiction_level": "city",
+        "admin1": "Texas",
+        "country": "US",
+        "capital_used": null,
+        "lat": 29.8849,
+        "lon": -93.9399,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.8
+      },
+      "sources": [
+        {
+          "url": "https://www.upi.com/Archives/1989/02/21/Thousands-of-gallons-of-crude-oil-leaked-from-a/1683604040400/",
+          "source_name": "UPI",
+          "published_at": "1989-02-21T00:00:00Z",
+          "headline": "Thousands of gallons of crude oil leaked from a ...",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.upi.com/Archives/1989/02/21/Chevron-cleans-up-after-crude-spill/3490604040400/",
+          "source_name": "UPI",
+          "published_at": "1989-02-21T00:00:00Z",
+          "headline": "Chevron cleans up after crude spill",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Chevron"
+        ],
+        "substances": [
+          "crude oil",
+          "hydrogen sulfide"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.72,
+        "category": 0.85,
+        "location": 0.8,
+        "summary_grounding": 0.65
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Chevron Port Arthur crude oil leak evacuation (Feb 1989)",
+        "fingerprint": "fp_evt_19890220_chevron_port_arthur_crude_leak"
+      }
+    },
+    {
+      "event_id": "evt_19890227_union_carbide_norco_acrolein_release",
+      "title": "Acrolein release reported at/near Union Carbide facility by the Mississippi River in Norco, Louisiana",
+      "description": "A NOAA IncidentNews entry reports a chemical release involving acrolein and isopropyl ether at or near a Union Carbide facility along the Mississippi River near Norco, Louisiana. The record notes a water-quality alarm and indicates losses via a cooling water exchange system.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1989-02-27T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1989-02-27T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Norco, Louisiana, United States (Mississippi River)",
+        "jurisdiction_level": "city",
+        "admin1": "Louisiana",
+        "country": "US",
+        "capital_used": null,
+        "lat": 30.0102,
+        "lon": -90.4123,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://incidentnews.noaa.gov/incident/6671",
+          "source_name": "NOAA IncidentNews",
+          "published_at": "1989-02-27T00:00:00Z",
+          "headline": "Incident 6671",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Union Carbide",
+          "NOAA"
+        ],
+        "substances": [
+          "acrolein",
+          "isopropyl ether"
+        ],
+        "ecosystems": [
+          "Mississippi River"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.8,
+        "location": 0.6,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "NOAA Incident 6671 acrolein release Norco LA (Feb 1989)",
+        "fingerprint": "fp_evt_19890227_union_carbide_norco_acrolein_release"
+      }
+    },
+    {
+      "event_id": "evt_198902_pnw_arctic_outbreak",
+      "title": "Arctic-air outbreak brings record cold to the Pacific Northwest (Feb 1989)",
+      "description": "An Arctic air outbreak in early February 1989 brought anomalously low temperatures to the U.S. Pacific Northwest. The University of Washington climate events account describes record low temperatures at Seattle-Tacoma Airport and extreme cold conditions in the region during the period.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1989-02-02T12:00:00Z",
+        "event_end": "1989-02-08T12:00:00Z",
+        "reported_at": "2026-01-18T06:58:42.913Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1989-02-02T12:00:00Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Washington State, USA",
+        "jurisdiction_level": "state",
+        "admin1": "Washington",
+        "country": "US",
+        "capital_used": "Olympia",
+        "lat": 47.0379,
+        "lon": -122.9007,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://climate.uw.edu/climate-events/what-a-blast-the-arctic-air-outbreak-of-february-1989/",
+          "source_name": "University of Washington Climate Impacts Group",
+          "published_at": "2026-01-18T06:58:42.913Z",
+          "headline": "What a blast! The Arctic air outbreak of February 1989",
+          "byline": null,
+          "accessed_utc": "2026-01-18T06:58:42.913Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "University of Washington Climate Impacts Group"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Arctic air outbreak of February 1989",
+            "source_url": "https://climate.uw.edu/climate-events/what-a-blast-the-arctic-air-outbreak-of-february-1989/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.85,
+        "location": 0.7,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "1989-02_pacific_northwest_cold_wave",
+        "fingerprint": "1989-02_pacific_northwest_cold_wave_washington_1989-02-02"
+      }
+    },
+    {
+      "event_id": "evt_198902_tn_flash_flooding_usgs",
+      "title": "Heavy rain triggers flash flooding in Middle and West Tennessee (Feb 1989)",
+      "description": "USGS documentation reports heavy rainfall and resulting flooding across parts of Middle and West Tennessee during 13–20 February 1989. The report includes rainfall totals, flood peaks, and hydrologic measurements for impacted areas including Lebanon and Obion.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1989-02-13T12:00:00Z",
+        "event_end": "1989-02-20T12:00:00Z",
+        "reported_at": "2026-01-18T06:58:42.913Z",
+        "time_confidence": 0.75,
+        "event_date_utc": "1989-02-13T12:00:00Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Tennessee, USA",
+        "jurisdiction_level": "state",
+        "admin1": "Tennessee",
+        "country": "US",
+        "capital_used": "Nashville",
+        "lat": 36.1627,
+        "lon": -86.7816,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.8
+      },
+      "sources": [
+        {
+          "url": "https://pubs.usgs.gov/publication/wri894207",
+          "source_name": "U.S. Geological Survey",
+          "published_at": "2026-01-18T06:58:42.913Z",
+          "headline": "Water-Resources Investigations Report 89-4207",
+          "byline": null,
+          "accessed_utc": "2026-01-18T06:58:42.913Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://pubs.usgs.gov/wri/wrir89-4207/",
+          "source_name": "U.S. Geological Survey",
+          "published_at": "2026-01-18T06:58:42.913Z",
+          "headline": "WRIR 89-4207",
+          "byline": null,
+          "accessed_utc": "2026-01-18T06:58:42.913Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Geological Survey"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "13–20 February 1989",
+            "source_url": "https://pubs.usgs.gov/publication/wri894207"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.72,
+        "category": 0.9,
+        "location": 0.8,
+        "summary_grounding": 0.65
+      },
+      "quality_flags": [
+        "paywalled_or_partial"
+      ],
+      "dedupe": {
+        "cluster_hint": "1989-02_tennessee_flooding",
+        "fingerprint": "1989-02_tennessee_flooding_nashville_1989-02-13"
+      }
+    },
+    {
+      "event_id": "evt_198902_ky_flood_two_storms_usgs",
+      "title": "Two storms cause widespread flooding in Kentucky (Feb 1989)",
+      "description": "USGS materials describe widespread flooding in Kentucky from two storms during 13–22 February 1989. The documentation notes very heavy rainfall totals in parts of the state and reports that some gaging stations exceeded the 100-year flood frequency.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1989-02-13T12:00:00Z",
+        "event_end": "1989-02-22T12:00:00Z",
+        "reported_at": "2026-01-18T06:58:42.913Z",
+        "time_confidence": 0.8,
+        "event_date_utc": "1989-02-13T12:00:00Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Kentucky, USA",
+        "jurisdiction_level": "state",
+        "admin1": "Kentucky",
+        "country": "US",
+        "capital_used": "Frankfort",
+        "lat": 38.2009,
+        "lon": -84.8733,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.85
+      },
+      "sources": [
+        {
+          "url": "https://www.usgs.gov/publications/flood-february-1989-kentucky",
+          "source_name": "U.S. Geological Survey",
+          "published_at": "2026-01-18T06:58:42.913Z",
+          "headline": "Flood of February 1989 in Kentucky",
+          "byline": null,
+          "accessed_utc": "2026-01-18T06:58:42.913Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://pubs.usgs.gov/publication/ofr90158",
+          "source_name": "U.S. Geological Survey",
+          "published_at": "2026-01-18T06:58:42.913Z",
+          "headline": "OFR 90-158",
+          "byline": null,
+          "accessed_utc": "2026-01-18T06:58:42.913Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Geological Survey"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Flood of February 1989 in Kentucky",
+            "source_url": "https://www.usgs.gov/publications/flood-february-1989-kentucky"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.78,
+        "category": 0.9,
+        "location": 0.85,
+        "summary_grounding": 0.7
+      },
+      "quality_flags": [
+        "paywalled_or_partial"
+      ],
+      "dedupe": {
+        "cluster_hint": "1989-02_kentucky_flooding_two_storms",
+        "fingerprint": "1989-02_kentucky_flooding_frankfort_1989-02-13"
+      }
+    },
+    {
+      "event_id": "evt_198902_east_coast_blizzard_upi",
+      "title": "Winter storm brings blizzard conditions to the U.S. East Coast (Feb 1989)",
+      "description": "A UPI report from 24 February 1989 describes a major winter storm affecting the U.S. East Coast, producing heavy snow, strong winds, and blizzard conditions in some areas, along with coastal impacts including tidal flooding. The same reporting also mentions unusually cold conditions reaching South Florida.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1989-02-24T12:00:00Z",
+        "event_end": "1989-02-25T12:00:00Z",
+        "reported_at": "1989-02-24T00:00:00Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "1989-02-24T12:00:00Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "United States (East Coast impacts reported)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, D.C.",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.45
+      },
+      "sources": [
+        {
+          "url": "https://www.upi.com/Archives/1989/02/24/A-massive-snowstorm-pounded-the-East-Coast-Friday-causing/3512604299600/",
+          "source_name": "UPI Archives",
+          "published_at": "1989-02-24T00:00:00Z",
+          "headline": "A massive snowstorm pounded the East Coast Friday causing ...",
+          "byline": null,
+          "accessed_utc": "2026-01-18T06:58:42.913Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "UPI"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "A massive snowstorm pounded the East Coast",
+            "source_url": "https://www.upi.com/Archives/1989/02/24/A-massive-snowstorm-pounded-the-East-Coast-Friday-causing/3512604299600/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.75,
+        "location": 0.45,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "1989-02_us_east_coast_winter_storm",
+        "fingerprint": "1989-02_us_east_coast_winter_storm_washingtondc_1989-02-24"
+      }
+    },
+    {
+      "event_id": "evt_198902_tc_leon_hanitra_bom",
+      "title": "Tropical Cyclone Leon (Hanitra) reaches cyclone intensity over open waters (Feb 1989)",
+      "description": "The Australian Bureau of Meteorology cyclone history entry reports that Tropical Cyclone Leon (later renamed Hanitra) reached cyclone intensity around 18–19 February 1989 while over the open ocean. The entry indicates the system remained over water and did not affect island or coastal communities.",
+      "category_primary": "weather_climate",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "1989-02-19T12:00:00Z",
+        "event_end": "1989-02-19T12:00:00Z",
+        "reported_at": "2026-01-18T06:58:42.913Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1989-02-19T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Southwest Indian Ocean (open waters)",
+        "jurisdiction_level": "supranational",
+        "admin1": null,
+        "country": null,
+        "capital_used": "Antananarivo",
+        "lat": -18.8792,
+        "lon": 47.5079,
+        "precision": "supranational",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.35
+      },
+      "sources": [
+        {
+          "url": "https://www.bom.gov.au/cyclone/history/leon89.shtml",
+          "source_name": "Australian Bureau of Meteorology",
+          "published_at": "2026-01-18T06:58:42.913Z",
+          "headline": "Leon (1989)",
+          "byline": null,
+          "accessed_utc": "2026-01-18T06:58:42.913Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Australian Bureau of Meteorology"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "did not affect island or coastal communities",
+            "source_url": "https://www.bom.gov.au/cyclone/history/leon89.shtml"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.46,
+        "category": 0.8,
+        "location": 0.35,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "low_confidence_location",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "1989-02_tc_leon_hanitra_open_ocean",
+        "fingerprint": "1989-02_tc_leon_hanitra_antananarivo_1989-02-19"
+      }
+    },
+    {
+      "event_id": "1989-02_fires_helena-mt_train-derailment_hazmat-fire",
+      "title": "Hazardous-materials fire and explosions after freight-train derailment in Helena, Montana",
+      "description": "A freight-train incident in Helena, Montana involved runaway/derailed rail cars and resulted in fires and multiple explosions involving hazardous materials. Authorities reported heavy smoke and ordered evacuations amid concerns about toxic releases.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1989-02-03T00:00:00Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "1989-02-02T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Helena, Montana, USA",
+        "jurisdiction_level": "city",
+        "admin1": "Montana",
+        "country": "US",
+        "capital_used": null,
+        "lat": 46.588371,
+        "lon": -112.024505,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.9
+      },
+      "sources": [
+        {
+          "url": "https://www.latimes.com/archives/la-xpm-1989-02-03-mn-1908-story.html",
+          "source_name": "Los Angeles Times",
+          "published_at": "1989-02-03T00:00:00Z",
+          "headline": "Runaway freight cars derail in Helena, Montana, causing multiple explosions and hazardous-materials fire; mass evacuation",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.govinfo.gov/content/pkg/FR-1997-01-02/html/96-33364.htm",
+          "source_name": "Federal Register (govinfo.gov)",
+          "published_at": "1997-01-02T00:00:00Z",
+          "headline": "Federal Register document referencing hazardous materials rail incident (context/source detail varies)",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://trid.trb.org/View/324426",
+          "source_name": "TRID (Transportation Research Board)",
+          "published_at": "1989-01-01T00:00:00Z",
+          "headline": "TRID record related to rail incident (bibliographic entry)",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [
+          "hazardous materials"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.7,
+        "location": 0.9,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "paywalled_or_partial",
+        "secondary_sources_only",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Helena MT hazmat train derailment fire explosions Feb 1989",
+        "fingerprint": "a1b8b6e7a9d4f0bb5d75d286a86c0db2"
+      }
+    },
+    {
+      "event_id": "evt_19890214_epa_404c_lake_alma_hurricane_creek",
+      "title": "EPA final determination notice under CWA Section 404(c) for proposed Lake Alma project on Hurricane Creek (Bacon County, Georgia)",
+      "description": "The U.S. Environmental Protection Agency issued a Federal Register notice for its final determination under Clean Water Act Section 404(c) regarding the proposed Lake Alma Recreational Lake Project on Hurricane Creek in Bacon County, Georgia. The notice was signed on February 14, 1989.",
+      "category_primary": "policy_regulation",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "1989-02-14T12:00:00Z",
+        "event_end": "1989-02-14T12:00:00Z",
+        "reported_at": "1989-02-14T12:00:00Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "1989-02-14T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Hurricane Creek near Alma, Bacon County, Georgia, United States",
+        "jurisdiction_level": "site",
+        "admin1": "Georgia",
+        "country": "US",
+        "capital_used": null,
+        "lat": 31.5393,
+        "lon": -82.4621,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.35
+      },
+      "sources": [
+        {
+          "url": "https://19january2021snapshot.epa.gov/cwa-404/federal-register-notice-final-determination-february-14-1989_.html",
+          "source_name": "U.S. Environmental Protection Agency (EPA)",
+          "published_at": "1989-02-14T12:00:00Z",
+          "headline": "Federal Register notice: Final Determination (February 14, 1989)",
+          "byline": null,
+          "accessed_utc": "2026-01-18T07:01:44.654Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.epa.gov/cwa-404/federal-register-notice-final-determination-february-14-1989",
+          "source_name": "U.S. Environmental Protection Agency (EPA)",
+          "published_at": "1989-02-14T12:00:00Z",
+          "headline": "Federal Register notice: Final Determination (February 14, 1989)",
+          "byline": null,
+          "accessed_utc": "2026-01-18T07:01:44.654Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Environmental Protection Agency (EPA)"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "Hurricane Creek"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Final Determination (Clean Water Act Section 404(c)) ... proposed Lake Alma Recreational Lake Project ... Hurricane Creek, Bacon County, Georgia",
+            "source_url": "https://www.epa.gov/cwa-404/federal-register-notice-final-determination-february-14-1989"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.58,
+        "category": 0.8,
+        "location": 0.35,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "EPA_404c_Lake_Alma_Hurricane_Creek_Bacon_GA_1989-02-14",
+        "fingerprint": "fp_epa_404c_lake_alma_hurricane_creek_bacon_ga_1989-02-14"
+      }
+    }
+  ]
+}

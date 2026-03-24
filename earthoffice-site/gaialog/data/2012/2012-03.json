@@ -1,0 +1,643 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_2012-03_normalize_2026-01-16T043543928Z",
+    "generated_utc": "2026-01-16T04:35:43.928Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "2012-03",
+    "window": {
+      "start_utc": "2012-03-01T00:00:00.000Z",
+      "end_utc": "2012-03-31T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "2012-03_weather_climate_us_tornado_outbreak_20120302",
+      "title": "Tornado outbreak across parts of the United States (March 2–3, 2012)",
+      "description": "A severe-weather outbreak on March 2, 2012 produced numerous tornadoes and widespread hail and wind damage across multiple U.S. regions, including parts of the Lower Mississippi River Valley and the Ohio and Tennessee Valleys. Reports described fatalities during the broader outbreak period.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2012-03-02T00:00:00.000Z",
+        "event_end": "2012-03-03T23:59:59.000Z",
+        "reported_at": "2012-03-02T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2012-03-02T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "United States",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.weather.gov/jan/2012_03_02_severe",
+          "source_name": "National Weather Service",
+          "published_at": "2012-03-02T00:00:00.000Z",
+          "headline": "2012 March 2 Severe Weather Event",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.scientificamerican.com/article/deadly-march-tornadoes-were-firest-billion-dollar-disaster-of-2012/",
+          "source_name": "Scientific American",
+          "published_at": "2012-03-07T00:00:00.000Z",
+          "headline": "Deadly March Tornadoes Were First Billion-Dollar Disaster of 2012",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "National Weather Service"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "March 2, 2012 Severe Weather Event",
+            "source_url": "https://www.weather.gov/jan/2012_03_02_severe"
+          },
+          {
+            "quote": "Deadly March tornadoes were first billion-dollar disaster of 2012",
+            "source_url": "https://www.scientificamerican.com/article/deadly-march-tornadoes-were-firest-billion-dollar-disaster-of-2012/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.75,
+        "location": 0.7,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "2012-03-02 US tornado outbreak",
+        "fingerprint": "fp_2012-03-02_us_tornado_outbreak_country"
+      }
+    },
+    {
+      "event_id": "2012-03_weather_climate_oahu_hi_storms_20120309",
+      "title": "Severe storms on Oahu, Hawaii with flooding, large hail, and an EF-0 tornado (March 9–10, 2012)",
+      "description": "Thunderstorms on Oahu brought torrential rain and flooding along with unusually large hail. A waterspout reportedly moved onshore and was rated as an EF-0 tornado impacting the Lanikai/Enchanted Lakes area.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2012-03-09T00:00:00.000Z",
+        "event_end": "2012-03-10T23:59:59.000Z",
+        "reported_at": "2012-03-09T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2012-03-09T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Lanikai / Enchanted Lakes, Oahu, Hawaii, United States",
+        "jurisdiction_level": "site",
+        "admin1": "HI",
+        "country": "US",
+        "capital_used": null,
+        "lat": 21.3932,
+        "lon": -157.7177,
+        "precision": "neighborhood",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.65
+      },
+      "sources": [
+        {
+          "url": "https://www.weather.gov/hfo/SVA20120309",
+          "source_name": "National Weather Service",
+          "published_at": "2012-03-09T00:00:00.000Z",
+          "headline": "Significant Weather Event: March 9, 2012",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "National Weather Service"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Significant Weather Event: March 9, 2012",
+            "source_url": "https://www.weather.gov/hfo/SVA20120309"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.66,
+        "category": 0.8,
+        "location": 0.6,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "2012-03-09 Oahu severe storms hail flooding EF0",
+        "fingerprint": "fp_2012-03-09_oahu_severe_storms_lanikai"
+      }
+    },
+    {
+      "event_id": "geological_2012-03-20_mexico_oaxaca-guerrero_eq74",
+      "title": "Magnitude 7.4 earthquake in southern Mexico (Oaxaca–Guerrero region)",
+      "description": "A magnitude 7.4 earthquake struck southern Mexico on March 20, 2012, affecting the Oaxaca–Guerrero region. The event was associated with subduction-zone plate convergence and produced strong shaking across the region.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2012-03-20T18:02:47.000Z",
+        "event_end": "2012-03-20T18:15:00.000Z",
+        "reported_at": "2012-03-20T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2012-03-20T18:02:47.000Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Oaxaca–Guerrero region, Mexico (near San Juan Tepeltlapa)",
+        "jurisdiction_level": "state",
+        "admin1": "Oaxaca",
+        "country": "MX",
+        "capital_used": "Oaxaca de Juárez",
+        "lat": 17.073184,
+        "lon": -96.726588,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://earthobservatory.nasa.gov/images/77485/magnitude-74-earthquake-strikes-oaxaca-mexico",
+          "source_name": "NASA Earth Observatory",
+          "published_at": "2012-03-20T00:00:00Z",
+          "headline": "Magnitude 7.4 Earthquake Strikes Oaxaca, Mexico",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://science.nasa.gov/earth/earth-observatory/magnitude-74-earthquake-strikes-oaxaca-mexico-77485/",
+          "source_name": "NASA Science (Earth Observatory)",
+          "published_at": "2012-03-20T00:00:00Z",
+          "headline": "Magnitude 7.4 Earthquake Strikes Oaxaca, Mexico",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NASA Earth Observatory"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "A magnitude 7.4 earthquake struck southern Mexico on March 20, 2012.",
+            "source_url": "https://earthobservatory.nasa.gov/images/77485/magnitude-74-earthquake-strikes-oaxaca-mexico"
+          },
+          {
+            "quote": "associated with subduction-zone plate convergence",
+            "source_url": "https://earthobservatory.nasa.gov/images/77485/magnitude-74-earthquake-strikes-oaxaca-mexico"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.8,
+        "location": 0.55,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "2012-03-20 Mexico Oaxaca/Guerrero M7.4 earthquake",
+        "fingerprint": "geological|mexico-oaxaca|2012-03-20|magnitude-7.4-earthquake"
+      }
+    },
+    {
+      "event_id": "fires_lower-north-fork-fire_2012-03-26_us-co",
+      "title": "Lower North Fork Fire starts after prescribed burn escapes near Foxton, Colorado",
+      "description": "The Lower North Fork Fire began on March 26, 2012 near the Foxton area in Colorado after a prescribed burn escaped in windy, dry conditions. The wildfire spread rapidly, prompting evacuations and damaging or destroying homes, with full containment reported after the end of March.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2012-03-26T00:00:00.000Z",
+        "event_end": "2012-03-31T23:59:59.000Z",
+        "reported_at": "2012-03-01T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2012-03-26T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Foxton area, Colorado, United States",
+        "jurisdiction_level": "site",
+        "admin1": "Colorado",
+        "country": "US",
+        "capital_used": null,
+        "lat": 39.3958,
+        "lon": -105.2853,
+        "precision": "neighborhood",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://science.nasa.gov/earth/earth-observatory/lower-north-fork-fire-burn-scar-77632/",
+          "source_name": "NASA Earth Observatory",
+          "published_at": "2012-04-04T00:00:00.000Z",
+          "headline": "Lower North Fork Fire Burn Scar",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://lessons.fs2c.usda.gov/incident/lower-north-fork-escaped-rx-2012",
+          "source_name": "USDA Forest Service Lessons Learned Center",
+          "published_at": "2012-01-01T00:00:00.000Z",
+          "headline": "Lower North Fork Escaped Rx (2012)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://abcnews.go.com/blogs/headlines/2012/03/colorado-wildfire-kills-1-more-than-900-homes-evacuated",
+          "source_name": "ABC News",
+          "published_at": "2012-03-27T00:00:00.000Z",
+          "headline": "Colorado Wildfire Kills 1, More Than 900 Homes Evacuated",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NASA Earth Observatory",
+          "USDA Forest Service"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "The Lower North Fork Fire began on March 26, 2012",
+            "source_url": "https://science.nasa.gov/earth/earth-observatory/lower-north-fork-fire-burn-scar-77632/"
+          },
+          {
+            "quote": "escaped prescribed fire",
+            "source_url": "https://lessons.fs2c.usda.gov/incident/lower-north-fork-escaped-rx-2012"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.56,
+        "category": 0.8,
+        "location": 0.55,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Lower North Fork Fire (Colorado) March 2012",
+        "fingerprint": "fires|lower north fork fire|foxton colorado|2012-03-26"
+      }
+    },
+    {
+      "event_id": "evt_20120320_chiricahua_leopard_frog_final_rule",
+      "title": "USFWS final rule lists Chiricahua leopard frog and designates critical habitat",
+      "description": "A U.S. Fish and Wildlife Service final rule published on March 20, 2012 addressed the Endangered Species Act listing status of the Chiricahua leopard frog and designated critical habitat areas for the species. The rule formalized habitat-related protections intended to support conservation of the frog.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2012-03-20T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2012-03-20T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, D.C.",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.fws.gov/policy/library/2012/2012-5953.html",
+          "source_name": "U.S. Fish and Wildlife Service",
+          "published_at": "2012-03-20T00:00:00.000Z",
+          "headline": "2012-5953",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Fish and Wildlife Service"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Final rule: listing and critical habitat designation for the Chiricahua leopard frog",
+            "source_url": "https://www.fws.gov/policy/library/2012/2012-5953.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.7,
+        "location": 0.6,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "paywalled_or_partial",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "USFWS ESA final rule Chiricahua leopard frog critical habitat (2012-03-20)",
+        "fingerprint": "fp_20120320_us_chiricahua_leopard_frog_final_rule"
+      }
+    },
+    {
+      "event_id": "20120321-US-sackett-v-epa-scotus",
+      "title": "U.S. Supreme Court rules Clean Water Act compliance orders are judicially reviewable (Sackett v. EPA)",
+      "description": "On March 21, 2012, the U.S. Supreme Court held that EPA Clean Water Act compliance orders constitute final agency action. The Court said recipients may seek pre-enforcement judicial review under the Administrative Procedure Act.",
+      "category_primary": "policy_regulation",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "2012-03-21T00:00:00.000Z",
+        "event_end": "2012-03-21T23:59:59.000Z",
+        "reported_at": "2012-03-21T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2012-03-21T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States Supreme Court (Washington, DC)",
+        "jurisdiction_level": "site",
+        "admin1": "DC",
+        "country": "US",
+        "capital_used": null,
+        "lat": 38.8977,
+        "lon": -77.0365,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://supreme.justia.com/cases/federal/us/566/120/",
+          "source_name": "Justia U.S. Supreme Court Center",
+          "published_at": "2012-03-21T00:00:00.000Z",
+          "headline": "Sackett v. EPA",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Supreme Court",
+          "U.S. Environmental Protection Agency (EPA)"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": [
+          "Sackett"
+        ]
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "the compliance order constitutes “final agency action” for which there is no other adequate remedy",
+            "source_url": "https://supreme.justia.com/cases/federal/us/566/120/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.85,
+        "location": 0.55,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Sackett v. EPA judicial review of CWA compliance orders",
+        "fingerprint": "20120321-us-sackett-v-epa-scotus"
+      }
+    },
+    {
+      "event_id": "20120314-US-epa-transportation-conformity-restructuring",
+      "title": "EPA publishes final Transportation Conformity Rule Restructuring Amendments",
+      "description": "In March 2012, EPA published final amendments restructuring parts of the transportation conformity rule. The changes were intended to apply across new or revised National Ambient Air Quality Standards (NAAQS).",
+      "category_primary": "policy_regulation",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "2012-03-14T00:00:00.000Z",
+        "event_end": "2012-03-14T23:59:59.000Z",
+        "reported_at": "2012-03-14T00:00:00.000Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "2012-03-14T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States (EPA rulemaking; Washington, DC)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.epa.gov/state-and-local-transportation/transportation-conformity-chronological-list-rulemakings",
+          "source_name": "U.S. Environmental Protection Agency (EPA)",
+          "published_at": "2012-03-14T00:00:00.000Z",
+          "headline": "Transportation conformity: chronological list of rulemakings",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Environmental Protection Agency (EPA)"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Transportation Conformity: Chronological list of rulemakings",
+            "source_url": "https://www.epa.gov/state-and-local-transportation/transportation-conformity-chronological-list-rulemakings"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.75,
+        "location": 0.7,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "paywalled_or_partial",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "EPA Transportation Conformity Rule Restructuring Amendments (March 2012)",
+        "fingerprint": "20120314-us-epa-transportation-conformity-restructuring"
+      }
+    },
+    {
+      "event_id": "20120313-US-epa-adds-9-sites-npl-proposes-10",
+      "title": "EPA adds nine sites to Superfund NPL and proposes 10 additional sites",
+      "description": "On March 13, 2012, EPA announced it added nine hazardous waste sites to the Superfund National Priorities List. EPA also proposed adding 10 more sites, expanding the set of locations prioritized for federal cleanup attention.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "2012-03-13T00:00:00.000Z",
+        "event_end": "2012-03-13T23:59:59.000Z",
+        "reported_at": "2012-03-13T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2012-03-13T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States (EPA Superfund program announcement; Washington, DC)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://www.epa.gov/archive/epapages/newsroom_archive/newsreleases/9909c546242c0c4b852579c0005d58d7.html",
+          "source_name": "U.S. Environmental Protection Agency (EPA)",
+          "published_at": "2012-03-13T00:00:00.000Z",
+          "headline": "EPA Adds Nine Hazardous Waste Sites to Superfund National Priorities List and Proposes 10 Additional Sites for Cleanup",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Environmental Protection Agency (EPA)"
+        ],
+        "substances": [
+          "hazardous waste"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "EPA added nine hazardous waste sites to the Superfund National Priorities List",
+            "source_url": "https://www.epa.gov/archive/epapages/newsroom_archive/newsreleases/9909c546242c0c4b852579c0005d58d7.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.72,
+        "category": 0.85,
+        "location": 0.75,
+        "summary_grounding": 0.7
+      },
+      "quality_flags": [
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "EPA adds nine sites to NPL; proposes 10 (Mar 13 2012)",
+        "fingerprint": "20120313-us-epa-adds-9-sites-npl-proposes-10"
+      }
+    }
+  ]
+}

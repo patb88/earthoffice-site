@@ -1,0 +1,1151 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_2025-12_normalize_2026-01-16T143643277Z",
+    "generated_utc": "2026-01-16T14:36:43.277Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "2025-12",
+    "window": {
+      "start_utc": "2025-12-01T00:00:00.000Z",
+      "end_utc": "2025-12-31T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "pollution_contamination_gramzow_de_pipeline_leak_20251211",
+      "title": "Crude oil pipeline leak spills about 200 cubic meters near Gramzow, Brandenburg, Germany",
+      "description": "A crude oil pipeline leak at a valve station near Gramzow reportedly spilled about 200 cubic meters of oil over roughly two hectares. Authorities investigated environmental impacts while the PCK refinery said operations were not affected and it could use reserves.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2025-12-11T00:00:00.000Z",
+        "event_end": "2025-12-11T23:59:59.000Z",
+        "reported_at": "2025-12-11T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2025-12-11T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Near Gramzow, Brandenburg, Germany",
+        "jurisdiction_level": "site",
+        "admin1": "Brandenburg",
+        "country": "DE",
+        "capital_used": null,
+        "lat": 53.212,
+        "lon": 13.808,
+        "precision": "neighborhood",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.reuters.com/business/energy/germanys-pck-refinery-says-no-impact-pipeline-leak-2025-12-11/",
+          "source_name": "Reuters",
+          "published_at": "2025-12-11T00:00:00.000Z",
+          "headline": "Germany's PCK refinery says no impact from pipeline leak",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "PCK refinery"
+        ],
+        "substances": [
+          "crude oil"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "spilled about 200 cubic metres of crude oil",
+            "source_url": "https://www.reuters.com/business/energy/germanys-pck-refinery-says-no-impact-pipeline-leak-2025-12-11/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.8,
+        "location": 0.55,
+        "summary_grounding": 0.65
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "PCK refinery pipeline leak Gramzow 2025-12-11",
+        "fingerprint": "pollution_contamination|crude oil pipeline leak|near gramzow brandenburg germany|2025-12-11"
+      }
+    },
+    {
+      "event_id": "pollution_contamination_eu_microplastic_pellets_rules_in_force_20251216",
+      "title": "EU rules aimed at reducing plastic pellet losses enter into force",
+      "description": "The European Commission reported that a new EU law to reduce microplastic pollution entered into force. The rules target prevention, containment, and cleanup of plastic pellet losses during handling and transport, including risk management measures for operators.",
+      "category_primary": "pollution_contamination",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "2025-12-16T00:00:00.000Z",
+        "event_end": "2025-12-16T23:59:59.000Z",
+        "reported_at": "2025-12-16T00:00:00.000Z",
+        "time_confidence": 0.8,
+        "event_date_utc": "2025-12-16T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "European Union",
+        "jurisdiction_level": "supranational",
+        "admin1": null,
+        "country": null,
+        "capital_used": "Brussels",
+        "lat": 50.8503,
+        "lon": 4.3517,
+        "precision": "supranational",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.9
+      },
+      "sources": [
+        {
+          "url": "https://environment.ec.europa.eu/news/new-law-reducing-microplastic-pollution-enters-force-2025-12-16_en",
+          "source_name": "European Commission (DG Environment)",
+          "published_at": "2025-12-16T00:00:00.000Z",
+          "headline": "New law reducing microplastic pollution enters force",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "European Commission"
+        ],
+        "substances": [
+          "plastic pellets",
+          "microplastics"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "new law reducing microplastic pollution enters force",
+            "source_url": "https://environment.ec.europa.eu/news/new-law-reducing-microplastic-pollution-enters-force-2025-12-16_en"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.74,
+        "category": 0.75,
+        "location": 0.9,
+        "summary_grounding": 0.7
+      },
+      "quality_flags": [
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "EU plastic pellet loss rules in force 2025-12-16",
+        "fingerprint": "pollution_contamination|eu rules plastic pellet losses enter into force|european union|2025-12-16"
+      }
+    },
+    {
+      "event_id": "pollution_contamination_epa_notice_aua_tutuila_cwa_npdes_settlement_20251219",
+      "title": "EPA notice of proposed Clean Water Act administrative penalty settlement for alleged NPDES violations in Aua, Tutuila",
+      "description": "The U.S. EPA posted a public notice for a proposed Clean Water Act administrative penalty settlement. The notice alleges unauthorized pollutant discharges in violation of NPDES permit terms at a facility in the village of Aua on Tutuila, American Samoa.",
+      "category_primary": "pollution_contamination",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "2025-12-19T00:00:00.000Z",
+        "event_end": "2025-12-19T23:59:59.000Z",
+        "reported_at": "2025-12-19T00:00:00.000Z",
+        "time_confidence": 0.8,
+        "event_date_utc": "2025-12-19T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Village of Aua, Tutuila, American Samoa",
+        "jurisdiction_level": "city",
+        "admin1": null,
+        "country": "AS",
+        "capital_used": null,
+        "lat": -14.2775,
+        "lon": -170.6633,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.epa.gov/publicnotices/CWA-09-2025-0119",
+          "source_name": "U.S. Environmental Protection Agency",
+          "published_at": "2025-12-19T00:00:00.000Z",
+          "headline": "Public notice: proposed Clean Water Act administrative penalty settlement (CWA-09-2025-0119)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Environmental Protection Agency (EPA)"
+        ],
+        "substances": [
+          "pollutants"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "proposed administrative penalty settlement",
+            "source_url": "https://www.epa.gov/publicnotices/CWA-09-2025-0119"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.7,
+        "location": 0.6,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "needs_dedupe_check",
+        "paywalled_or_partial"
+      ],
+      "dedupe": {
+        "cluster_hint": "EPA public notice CWA-09-2025-0119 Aua Tutuila",
+        "fingerprint": "pollution_contamination|epa proposed cwa administrative penalty settlement alleged npdes violations|aua tutuila american samoa|2025-12-19"
+      }
+    },
+    {
+      "event_id": "evt_2025-12_wa_atmospheric_river_flooding_001",
+      "title": "Atmospheric river brings heavy rain and flooding impacts in western Washington",
+      "description": "A strong atmospheric river brought days of heavy rain to parts of western Washington in early December 2025, prompting flooding hazards and emergency actions in affected areas. The report describes significant river rises and flood impacts during the event window.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2025-12-07T00:00:00Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "2025-12-08T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Washington, United States",
+        "jurisdiction_level": "state",
+        "admin1": "Washington",
+        "country": "US",
+        "capital_used": "Olympia",
+        "lat": 47.0379,
+        "lon": -122.9007,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://weather.com/forecast/regional/news/2025-12-07-atmospheric-river-pacific-northwest-rain-snow/",
+          "source_name": "The Weather Channel",
+          "published_at": "2025-12-07T00:00:00Z",
+          "headline": "Strong atmospheric river triggers major flooding and record river crests in parts of Washington State",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "The Weather Channel"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Days of heavy rain associated with a strong atmospheric river ... led to major flooding",
+            "source_url": "https://weather.com/forecast/regional/news/2025-12-07-atmospheric-river-pacific-northwest-rain-snow/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.63,
+        "category": 0.75,
+        "location": 0.7,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "Washington atmospheric river flooding early Dec 2025",
+        "fingerprint": "fp_2025-12_wa_atmospheric_river_flooding"
+      }
+    },
+    {
+      "event_id": "geo-2025-12-peru-ucayali-landslide-boats-001",
+      "title": "Landslide on Peru’s Ucayali River sinks boats, killing at least 12",
+      "description": "A landslide along Peru’s Ucayali River caused two boats to sink. Reuters reported at least 12 deaths and multiple injuries, disrupting a key river transport route for remote communities.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2025-12-01T00:00:00.000Z",
+        "event_end": "2025-12-01T23:59:59.000Z",
+        "reported_at": "2025-12-01T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2025-12-01T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Ucayali River, Peru (Amazon region)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "PE",
+        "capital_used": "Lima",
+        "lat": -12.0464,
+        "lon": -77.0428,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.reuters.com/world/americas/peru-landslide-sinks-boats-amazon-region-river-killing-12-2025-12-01/",
+          "source_name": "Reuters",
+          "published_at": "2025-12-01T00:00:00.000Z",
+          "headline": "Peru landslide sinks boats in Amazon region river, killing 12",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [
+          "Amazon"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "a landslide ... caused two boats to sink ... killing 12",
+            "source_url": "https://www.reuters.com/world/americas/peru-landslide-sinks-boats-amazon-region-river-killing-12-2025-12-01/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.58,
+        "category": 0.8,
+        "location": 0.55,
+        "summary_grounding": 0.65
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Reuters Peru Ucayali landslide boats Dec 2025",
+        "fingerprint": "geo|peru|ucayali-river|2025-12-01|landslide-sinks-boats"
+      }
+    },
+    {
+      "event_id": "geo-2025-12-alaska-yukon-hubbard-glacier-m70-landslides-001",
+      "title": "M7.0 earthquake near Hubbard Glacier triggers widespread landslides and avalanches",
+      "description": "A magnitude 7.0 earthquake near the Alaska–Yukon border was reported by USGS to have triggered extensive ground failure. USGS summarized remote-sensing and partner observations documenting hundreds of coseismic landslides and snow avalanches in the affected mountain and glacier region.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2025-12-06T20:40:00.000Z",
+        "event_end": "2025-12-10T23:59:59.000Z",
+        "reported_at": "2025-12-06T20:40:00.000Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "2025-12-06T20:40:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Yakutat area, Alaska, USA (Alaska–Yukon border region)",
+        "jurisdiction_level": "state",
+        "admin1": "Alaska",
+        "country": "US",
+        "capital_used": "Juneau",
+        "lat": 58.3019,
+        "lon": -134.4197,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.5
+      },
+      "sources": [
+        {
+          "url": "https://www.usgs.gov/programs/landslide-hazards/science/2025-m70-hubbard-glacier-earthquake-triggered-landslides-and",
+          "source_name": "USGS",
+          "published_at": "2025-12-06T20:40:00.000Z",
+          "headline": "2025 M7.0 Hubbard Glacier earthquake triggered landslides and ...",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "USGS"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "glacier",
+          "mountain"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "triggered landslides",
+            "source_url": "https://www.usgs.gov/programs/landslide-hazards/science/2025-m70-hubbard-glacier-earthquake-triggered-landslides-and"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.52,
+        "category": 0.75,
+        "location": 0.5,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "USGS Hubbard Glacier M7.0 landslides Dec 2025",
+        "fingerprint": "geo|us-alaska|hubbard-glacier|2025-12-06|m70-earthquake-landslides"
+      }
+    },
+    {
+      "event_id": "geo-2025-12-japan-aomori-quake-tsunami-advisory-001",
+      "title": "Offshore earthquake near Aomori prompts tsunami advisory; small waves observed",
+      "description": "An offshore earthquake near Japan’s Aomori Prefecture led authorities to issue a tsunami advisory. Reuters reported small tsunami waves were observed and the advisory was later lifted, with no major damage reported in the coverage.",
+      "category_primary": "geological",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "2025-12-12T02:44:00.000Z",
+        "event_end": "2025-12-12T23:59:59.000Z",
+        "reported_at": "2025-12-12T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2025-12-12T02:44:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Japan (tsunami advisory for northeastern region; offshore near Aomori Prefecture)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "JP",
+        "capital_used": "Tokyo",
+        "lat": 35.6762,
+        "lon": 139.6503,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.5
+      },
+      "sources": [
+        {
+          "url": "https://www.reuters.com/business/environment/magnitude-67-earthquake-hits-japans-northeast-region-tsunami-advisory-issued-2025-12-12/",
+          "source_name": "Reuters",
+          "published_at": "2025-12-12T00:00:00.000Z",
+          "headline": "Magnitude 6.7 earthquake hits Japan's northeast region, tsunami advisory issued",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "tsunami advisory issued",
+            "source_url": "https://www.reuters.com/business/environment/magnitude-67-earthquake-hits-japans-northeast-region-tsunami-advisory-issued-2025-12-12/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.56,
+        "category": 0.8,
+        "location": 0.5,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Reuters Japan Aomori offshore quake tsunami advisory Dec 2025",
+        "fingerprint": "geo|japan|aomori-offshore|2025-12-12|earthquake-tsunami-advisory"
+      }
+    },
+    {
+      "event_id": "fires_au_tas_dolphin-sands_2025-12-07_01",
+      "title": "Dolphin Sands bushfire reported burning hundreds of hectares and damaging homes",
+      "description": "A bushfire at Dolphin Sands in Tasmania was reported as burning hundreds of hectares and damaging multiple homes. Fire authorities conducted suppression efforts amid conditions described as contributing to rapid spread.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2025-12-07T00:00:00.000Z",
+        "event_end": "2025-12-07T23:59:59.000Z",
+        "reported_at": "2025-12-07T00:00:00.000Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "2025-12-07T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Dolphin Sands, Tasmania, Australia",
+        "jurisdiction_level": "site",
+        "admin1": "Tasmania",
+        "country": "AU",
+        "capital_used": null,
+        "lat": -42,
+        "lon": 147,
+        "precision": "proxy",
+        "location_basis": "manual_override",
+        "location_confidence": 0.2
+      },
+      "sources": [
+        {
+          "url": "https://www.heraldsun.com.au/news/tasmania/tasmania-fire-service-urges-glenlusk-residents-to-prepare-for-evacuation/news-story/55e2016b12e5c094f25ac2f9f864a9a3",
+          "source_name": "Herald Sun",
+          "published_at": "2025-12-07T00:00:00.000Z",
+          "headline": "Tasmania Fire Service urges Glenlusk residents to prepare for evacuation",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Tasmania Fire Service"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.32,
+        "category": 0.7,
+        "location": 0.2,
+        "summary_grounding": 0.25
+      },
+      "quality_flags": [
+        "paywalled_or_partial",
+        "date_ambiguous",
+        "low_confidence_location",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "AU Tasmania Dolphin Sands bushfire 2025-12-07",
+        "fingerprint": "fires|dolphin sands tasmania au|2025-12-07"
+      }
+    },
+    {
+      "event_id": "fires_au_qld_kunwarara_2025-12-24_01",
+      "title": "Kunwarara area vegetation fire prompts 'Avoid Smoke' advisory",
+      "description": "An 'Avoid Smoke' public health advisory was issued for the Kunwarara area in Queensland due to a nearby vegetation fire. The warning notes smoke impacts to surrounding communities as the fire burned in the area.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2025-12-24T05:12:00.000Z",
+        "event_end": "2025-12-24T23:59:59.000Z",
+        "reported_at": "2025-12-24T05:12:00.000Z",
+        "time_confidence": 0.75,
+        "event_date_utc": "2025-12-24T05:12:00.000Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Kunwarara area, Queensland, Australia",
+        "jurisdiction_level": "site",
+        "admin1": "Queensland",
+        "country": "AU",
+        "capital_used": null,
+        "lat": -24,
+        "lon": 150,
+        "precision": "proxy",
+        "location_basis": "manual_override",
+        "location_confidence": 0.2
+      },
+      "sources": [
+        {
+          "url": "https://www.abc.net.au/emergency/warning/AUREMER-2401818d4622cfeb6227e356c1ec2177",
+          "source_name": "ABC Emergency",
+          "published_at": "2025-12-24T05:12:00.000Z",
+          "headline": "Emergency warning page (AUREMER-2401818d4622cfeb6227e356c1ec2177)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Queensland Fire Department",
+          "ABC Emergency"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.45,
+        "category": 0.8,
+        "location": 0.2,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "low_confidence_location",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "AU Queensland Kunwarara avoid smoke advisory 2025-12-24",
+        "fingerprint": "fires|kunwarara queensland au|2025-12-24"
+      }
+    },
+    {
+      "event_id": "fires_au_qld_gurulmundi-state-forest_2025-12-30_01",
+      "title": "Gurulmundi State Forest vegetation fire prompts 'Avoid Smoke' advisory",
+      "description": "An 'Avoid Smoke' advisory was issued for Gurulmundi/Kowguran near Miles in Queensland due to a vegetation fire in Gurulmundi State Forest. The warning cited smoke affecting surrounding communities.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2025-12-30T06:41:00.000Z",
+        "event_end": "2025-12-30T23:59:59.000Z",
+        "reported_at": "2025-12-30T06:41:00.000Z",
+        "time_confidence": 0.75,
+        "event_date_utc": "2025-12-30T06:41:00.000Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Gurulmundi / Kowguran (near Miles), Queensland, Australia",
+        "jurisdiction_level": "site",
+        "admin1": "Queensland",
+        "country": "AU",
+        "capital_used": null,
+        "lat": -26,
+        "lon": 150,
+        "precision": "proxy",
+        "location_basis": "manual_override",
+        "location_confidence": 0.2
+      },
+      "sources": [
+        {
+          "url": "https://www.abc.net.au/emergency/warning/AUREMER-ee83309b9346ec375e91892d853332f8",
+          "source_name": "ABC Emergency",
+          "published_at": "2025-12-30T06:41:00.000Z",
+          "headline": "Emergency warning page (AUREMER-ee83309b9346ec375e91892d853332f8)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Queensland Fire Department",
+          "ABC Emergency"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.45,
+        "category": 0.8,
+        "location": 0.2,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "low_confidence_location",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "AU Queensland Gurulmundi State Forest avoid smoke advisory 2025-12-30",
+        "fingerprint": "fires|gurulmundi kowguran queensland au|2025-12-30"
+      }
+    },
+    {
+      "event_id": "evt-20251211-noaa-crw-sba-global-001",
+      "title": "NOAA Coral Reef Watch posts Satellite Bleaching Alert update (Dec 11, 2025 page)",
+      "description": "NOAA Coral Reef Watch published a Satellite Bleaching Alert update page in December 2025 reporting heat-stress metrics and bleaching alert levels across multiple reef regions/virtual stations.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2025-12-10T00:00:00.000Z",
+        "event_end": "2025-12-10T23:59:59.000Z",
+        "reported_at": "2025-12-11T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2025-12-10T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Global (NOAA Coral Reef Watch Satellite Bleaching Alerts)",
+        "jurisdiction_level": "global_proxy",
+        "admin1": null,
+        "country": null,
+        "capital_used": null,
+        "lat": 0,
+        "lon": 0,
+        "precision": "proxy",
+        "location_basis": "institution_proxy",
+        "location_confidence": 0.4
+      },
+      "sources": [
+        {
+          "url": "https://www.ospo.noaa.gov/data/ocean/crw/alerts/2025/SBA_alerts_20251211.html",
+          "source_name": "NOAA OSPO / Coral Reef Watch",
+          "published_at": "2025-12-11T00:00:00Z",
+          "headline": "SBA_alerts_20251211.html",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA Coral Reef Watch",
+          "NOAA OSPO"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "coral reefs"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Satellite Bleaching Alert",
+            "source_url": "https://www.ospo.noaa.gov/data/ocean/crw/alerts/2025/SBA_alerts_20251211.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.65,
+        "location": 0.35,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "noaa_crw_sba_dec2025",
+        "fingerprint": "noaa_crw_sba|global_proxy|2025-12-10"
+      }
+    },
+    {
+      "event_id": "evt-20251222-noaa-crw-sba-global-002",
+      "title": "NOAA Coral Reef Watch posts Satellite Bleaching Alert update (Dec 22, 2025 page)",
+      "description": "NOAA Coral Reef Watch published a Satellite Bleaching Alert update page in December 2025 reporting heat-stress metrics and bleaching alert levels across multiple reef regions/virtual stations.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2025-12-21T00:00:00.000Z",
+        "event_end": "2025-12-21T23:59:59.000Z",
+        "reported_at": "2025-12-22T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2025-12-21T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Global (NOAA Coral Reef Watch Satellite Bleaching Alerts)",
+        "jurisdiction_level": "global_proxy",
+        "admin1": null,
+        "country": null,
+        "capital_used": null,
+        "lat": 0,
+        "lon": 0,
+        "precision": "proxy",
+        "location_basis": "institution_proxy",
+        "location_confidence": 0.4
+      },
+      "sources": [
+        {
+          "url": "https://www.ospo.noaa.gov/data/ocean/crw/alerts/2025/SBA_alerts_20251222.html",
+          "source_name": "NOAA OSPO / Coral Reef Watch",
+          "published_at": "2025-12-22T00:00:00Z",
+          "headline": "SBA_alerts_20251222.html",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA Coral Reef Watch",
+          "NOAA OSPO"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "coral reefs"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Satellite Bleaching Alert",
+            "source_url": "https://www.ospo.noaa.gov/data/ocean/crw/alerts/2025/SBA_alerts_20251222.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.65,
+        "location": 0.35,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "noaa_crw_sba_dec2025",
+        "fingerprint": "noaa_crw_sba|global_proxy|2025-12-21"
+      }
+    },
+    {
+      "event_id": "evt-20251209-efsa-microplastics-eu-001",
+      "title": "EFSA starts work toward scientific advice on microplastics health risks (requested by European Parliament)",
+      "description": "EFSA announced that the European Parliament requested scientific advice on potential health risks posed by microplastics in food, water and air, and described planned work to develop a scientific opinion.",
+      "category_primary": "pollution_contamination",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "2025-12-09T00:00:00.000Z",
+        "event_end": "2025-12-09T23:59:59.000Z",
+        "reported_at": "2025-12-09T00:00:00Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2025-12-09T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "European Union",
+        "jurisdiction_level": "supranational",
+        "admin1": null,
+        "country": null,
+        "capital_used": "Brussels",
+        "lat": 50.8503,
+        "lon": 4.3517,
+        "precision": "supranational",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.75
+      },
+      "sources": [
+        {
+          "url": "https://www.efsa.europa.eu/en/news/microplastics-european-parliament-requests-scientific-advice-efsa",
+          "source_name": "EFSA",
+          "published_at": "2025-12-09T00:00:00Z",
+          "headline": "Microplastics: European Parliament requests scientific advice from EFSA",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "EFSA",
+          "European Parliament"
+        ],
+        "substances": [
+          "microplastics"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "European Parliament requests scientific advice from EFSA",
+            "source_url": "https://www.efsa.europa.eu/en/news/microplastics-european-parliament-requests-scientific-advice-efsa"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.7,
+        "category": 0.35,
+        "location": 0.8,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "low_confidence_category",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "efsa_microplastics_scientific_opinion_request",
+        "fingerprint": "efsa_microplastics|eu|2025-12-09"
+      }
+    },
+    {
+      "event_id": "policy_regulation_eu_microplastic_pellet_loss_reg_enters_force_2025-12-16",
+      "title": "EU rules to reduce microplastic pollution from plastic pellet losses enter into force",
+      "description": "According to the European Commission, new EU rules entered into force requiring plastic pellet handlers and carriers to adopt measures to prevent, contain, and clean up pellet losses. The rules target upstream prevention of microplastic pollution from plastic pellets.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "2025-12-16T00:00:00.000Z",
+        "event_end": "2025-12-16T23:59:59.000Z",
+        "reported_at": "2025-12-16T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2025-12-16T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "European Union",
+        "jurisdiction_level": "supranational",
+        "admin1": null,
+        "country": null,
+        "capital_used": "Brussels",
+        "lat": 50.8503,
+        "lon": 4.3517,
+        "precision": "supranational",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://environment.ec.europa.eu/news/new-law-reducing-microplastic-pollution-enters-force-2025-12-16_en",
+          "source_name": "European Commission (DG Environment)",
+          "published_at": "2025-12-16T00:00:00.000Z",
+          "headline": "New law reducing microplastic pollution enters force",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "European Commission"
+        ],
+        "substances": [
+          "microplastics",
+          "plastic pellets"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "new law reducing microplastic pollution enters force",
+            "source_url": "https://environment.ec.europa.eu/news/new-law-reducing-microplastic-pollution-enters-force-2025-12-16_en"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.72,
+        "category": 0.75,
+        "location": 0.7,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": null,
+        "fingerprint": "fp_eu_microplastic_pellets_2025-12-16_brussels"
+      }
+    },
+    {
+      "event_id": "policy_regulation_eu_deforestation_reg_postpone_simplify_deal_vote_window_2025-12",
+      "title": "EU institutions agree on changes to postpone and simplify deforestation law, with plenary vote scheduled",
+      "description": "The European Parliament reported a deal with the Council on changes to the EU deforestation law, including postponement and simplification measures. The agreed text was indicated as scheduled for a mid-December 2025 plenary vote and would require publication to enter into force.",
+      "category_primary": "policy_regulation",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "2025-12-01T00:00:00.000Z",
+        "event_end": "2025-12-18T23:59:59.000Z",
+        "reported_at": "2025-12-01T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2025-12-01T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "European Union",
+        "jurisdiction_level": "supranational",
+        "admin1": null,
+        "country": null,
+        "capital_used": "Brussels",
+        "lat": 50.8503,
+        "lon": 4.3517,
+        "precision": "supranational",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://www.europarl.europa.eu/news/en/press-room/20251201IPR31711/deforestation-law-deal-with-council-to-postpone-and-simplify-measures",
+          "source_name": "European Parliament",
+          "published_at": "2025-12-01T00:00:00.000Z",
+          "headline": "Deforestation law: deal with Council to postpone and simplify measures",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "European Parliament",
+          "Council of the European Union"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "forests"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "deal with Council to postpone and simplify measures",
+            "source_url": "https://www.europarl.europa.eu/news/en/press-room/20251201IPR31711/deforestation-law-deal-with-council-to-postpone-and-simplify-measures"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.68,
+        "category": 0.75,
+        "location": 0.7,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": null,
+        "fingerprint": "fp_eu_deforestation_postpone_simplify_2025-12_brussels"
+      }
+    },
+    {
+      "event_id": "policy_regulation_epa_public_notice_proposed_cwa_npdes_penalty_settlement_aua_2025-12-19",
+      "title": "EPA issues public notice for proposed Clean Water Act/NPDES penalty settlement in Aua, American Samoa",
+      "description": "EPA published a public notice for a proposed administrative penalty settlement alleging Clean Water Act and NPDES permit violations related to pollutant discharges from a point source. The notice concerns the Village of Aua on Tutuila in American Samoa.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "2025-12-19T00:00:00.000Z",
+        "event_end": "2025-12-19T23:59:59.000Z",
+        "reported_at": "2025-12-19T00:00:00.000Z",
+        "time_confidence": 0.65,
+        "event_date_utc": "2025-12-19T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Village of Aua, Tutuila, American Samoa (U.S.)",
+        "jurisdiction_level": "site",
+        "admin1": null,
+        "country": "AS",
+        "capital_used": null,
+        "lat": -14.2767,
+        "lon": -170.6883,
+        "precision": "neighborhood",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.epa.gov/publicnotices/CWA-09-2025-0119",
+          "source_name": "US Environmental Protection Agency",
+          "published_at": "2025-12-19T00:00:00.000Z",
+          "headline": "Public notice: proposed Clean Water Act administrative penalty settlement (CWA-09-2025-0119)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "US Environmental Protection Agency (EPA)"
+        ],
+        "substances": [
+          "pollutants"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "proposed administrative penalty settlement",
+            "source_url": "https://www.epa.gov/publicnotices/CWA-09-2025-0119"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.7,
+        "location": 0.45,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": null,
+        "fingerprint": "fp_epa_cwa_npdes_settlement_aua_2025-12-19"
+      }
+    }
+  ]
+}

@@ -1,0 +1,607 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_2023-06_normalize_2026-01-16T133828474Z",
+    "generated_utc": "2026-01-16T13:38:28.474Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "2023-06",
+    "window": {
+      "start_utc": "2023-06-01T00:00:00.000Z",
+      "end_utc": "2023-06-30T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "evt_2023-06_mississippi-ashland-asphalt-oil",
+      "title": "Asphalt-like oil discharged into the Mississippi River near Ashland, Louisiana",
+      "description": "A discharge of asphalt-like oil from a barge/towing operation entered the Mississippi River near Ashland, Louisiana. Responders deployed boom and began recovery and sampling, while NOAA OR&R provided trajectory and fate/effects support.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2023-06-10T20:00:00.000Z",
+        "event_end": "2023-06-11T23:59:59.000Z",
+        "reported_at": "2023-06-01T00:00:00.000Z",
+        "time_confidence": 0.4,
+        "event_date_utc": "2023-06-10T20:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Lower Mississippi River near Ashland, Louisiana, USA",
+        "jurisdiction_level": "site",
+        "admin1": "Louisiana",
+        "country": "US",
+        "capital_used": null,
+        "lat": 31.5974,
+        "lon": -91.4143,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.45
+      },
+      "sources": [
+        {
+          "url": "https://blog.response.restoration.noaa.gov/incident-responses-june-2023",
+          "source_name": "NOAA Response & Restoration Blog",
+          "published_at": "2023-06-01T00:00:00.000Z",
+          "headline": "Incident Responses — June 2023",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA OR&R"
+        ],
+        "substances": [
+          "oil"
+        ],
+        "ecosystems": [
+          "Mississippi River"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Responders deployed boom and began recovery and sampling",
+            "source_url": "https://blog.response.restoration.noaa.gov/incident-responses-june-2023"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.48,
+        "category": 0.8,
+        "location": 0.45,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "NOAA OR&R Incident Responses — June 2023 (Mississippi River oil discharge)",
+        "fingerprint": "fp_2023-06_mississippi-ashland-asphalt-oil"
+      }
+    },
+    {
+      "event_id": "evt_2023-06_yellowstone-reedpoint-bridge-derailment",
+      "title": "Railroad bridge collapse/derailment released hazardous materials into the Yellowstone River",
+      "description": "A freight train derailment caused by a railroad bridge collapse sent multiple hazardous-material railcars into the Yellowstone River near Reed Point, Montana. Emergency response was initiated and some downstream water intakes were shut while risks were evaluated, with NOAA OR&R providing inland spill support.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2023-06-24T12:00:00.000Z",
+        "event_end": "2023-06-24T23:59:59.000Z",
+        "reported_at": "2023-06-01T00:00:00.000Z",
+        "time_confidence": 0.4,
+        "event_date_utc": "2023-06-24T12:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Yellowstone River near Reed Point / Stillwater County, Montana, USA",
+        "jurisdiction_level": "site",
+        "admin1": "Montana",
+        "country": "US",
+        "capital_used": null,
+        "lat": 45.7067,
+        "lon": -109.5406,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.5
+      },
+      "sources": [
+        {
+          "url": "https://blog.response.restoration.noaa.gov/incident-responses-june-2023",
+          "source_name": "NOAA Response & Restoration Blog",
+          "published_at": "2023-06-01T00:00:00.000Z",
+          "headline": "Incident Responses — June 2023",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA OR&R"
+        ],
+        "substances": [
+          "hazardous materials"
+        ],
+        "ecosystems": [
+          "Yellowstone River"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "bridge collapse sent multiple hazmat railcars into the Yellowstone River",
+            "source_url": "https://blog.response.restoration.noaa.gov/incident-responses-june-2023"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.52,
+        "category": 0.8,
+        "location": 0.5,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "NOAA OR&R Incident Responses — June 2023 (Yellowstone River derailment)",
+        "fingerprint": "fp_2023-06_yellowstone-reedpoint-bridge-derailment"
+      }
+    },
+    {
+      "event_id": "evt_202306_tx_sanantonio_heat_axios_20230621",
+      "title": "Record-breaking heat in San Antonio during June 2023 Texas heat wave",
+      "description": "San Antonio saw consecutive days reaching at least 105°F as an extreme heat wave affected Texas and nearby areas. The conditions prompted warnings/advisories and raised heat-health concerns.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2023-06-19T00:00:00.000Z",
+        "event_end": "2023-06-21T23:59:59.000Z",
+        "reported_at": "2023-06-21T00:00:00Z",
+        "time_confidence": 0.65,
+        "event_date_utc": "2023-06-21T00:00:00Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "San Antonio, Texas, USA",
+        "jurisdiction_level": "city",
+        "admin1": "Texas",
+        "country": "US",
+        "capital_used": null,
+        "lat": 29.4241,
+        "lon": -98.4936,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://www.axios.com/local/san-antonio/2023/06/21/san-antonio-texas-extreme-heat-wave-breaks-weather-records",
+          "source_name": "Axios (San Antonio)",
+          "published_at": "2023-06-21T00:00:00Z",
+          "headline": "San Antonio Texas extreme heat wave breaks weather records",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "San Antonio recorded consecutive days at or above 105°F",
+            "source_url": "https://www.axios.com/local/san-antonio/2023/06/21/san-antonio-texas-extreme-heat-wave-breaks-weather-records"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.75,
+        "location": 0.7,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "texas-heatwave-june-2023-san-antonio",
+        "fingerprint": "fp_tx_sanantonio_heat_2023-06-19_2023-06-21"
+      }
+    },
+    {
+      "event_id": "evt_20230606_popocatepetl_alert_lowered",
+      "title": "Mexico lowers Popocatépetl volcano alert level after decreased activity",
+      "description": "Mexican authorities lowered the alert level for Popocatépetl after a period of elevated ash and gas emissions, citing an observed decrease in activity. The change followed weeks of eruptive activity that affected nearby areas downwind.",
+      "category_primary": "geological",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2023-06-06T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2023-06-06T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Popocatépetl, Mexico",
+        "jurisdiction_level": "site",
+        "admin1": null,
+        "country": "MX",
+        "capital_used": null,
+        "lat": 19.0222,
+        "lon": -98.6278,
+        "precision": "exact",
+        "location_basis": "manual_override",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://localnews8.com/news/national-world/ap-national/2023/06/06/mexico-lowers-alert-level-for-popocatepetl-volcano/",
+          "source_name": "Local News 8 (AP National)",
+          "published_at": "2023-06-06T00:00:00.000Z",
+          "headline": "Mexico lowers alert level for Popocatépetl volcano",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [
+          "ash",
+          "gas"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Mexico lowered the alert level for the Popocatépetl volcano on Tuesday.",
+            "source_url": "https://localnews8.com/news/national-world/ap-national/2023/06/06/mexico-lowers-alert-level-for-popocatepetl-volcano/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.8,
+        "location": 0.55,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "popocatepetl alert level lowered june 2023",
+        "fingerprint": "fp_popocatepetl_mx_2023-06-06_alert_lowered"
+      }
+    },
+    {
+      "event_id": "evt_202306_canada_wildfire_smoke_nyc_guardian",
+      "title": "Canadian wildfires drive hazardous smoke and air-quality warnings in the U.S. Northeast",
+      "description": "Smoke from Canadian wildfires spread into the northeastern United States, prompting air-quality warnings and public health advisories. The Guardian reported on deteriorating air quality and conditions as smoke began clearing in some areas.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2023-06-05T00:00:00.000Z",
+        "event_end": "2023-06-09T23:59:59.000Z",
+        "reported_at": "2023-06-09T00:00:00.000Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "2023-06-07T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "New York City region, United States (impacts from Canadian wildfire smoke)",
+        "jurisdiction_level": "city",
+        "admin1": "New York",
+        "country": "US",
+        "capital_used": null,
+        "lat": 40.7128,
+        "lon": -74.006,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.theguardian.com/world/2023/jun/09/air-quality-warnings-wildfire-smoke-clearing-latest",
+          "source_name": "The Guardian",
+          "published_at": "2023-06-09T00:00:00.000Z",
+          "headline": "Air quality warnings as wildfire smoke clearing – latest",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [
+          "wildfire smoke",
+          "particulate matter"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Air quality warnings ... as wildfire smoke clearing – latest",
+            "source_url": "https://www.theguardian.com/world/2023/jun/09/air-quality-warnings-wildfire-smoke-clearing-latest"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.52,
+        "category": 0.75,
+        "location": 0.55,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "paywalled_or_partial",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "2023-06 Canadian wildfire smoke impacts US Northeast",
+        "fingerprint": "fp_2023-06_canadian_wildfire_smoke_us_northeast_nyc_2023-06-05_2023-06-09"
+      }
+    },
+    {
+      "event_id": "evt-202306-001",
+      "title": "Harmful algal bloom linked to marine mammal strandings along Southern California coast",
+      "description": "Reporting described a harmful algal bloom along Southern California beaches that produced toxins associated with sickened and dying sea lions and dolphins. Marine mammal rehabilitation centers reported being overwhelmed by the number of affected animals.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2023-06-28T00:00:00Z",
+        "time_confidence": 0.55,
+        "event_date_utc": null,
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Southern California coastline, USA",
+        "jurisdiction_level": "state",
+        "admin1": "California",
+        "country": "US",
+        "capital_used": "Sacramento",
+        "lat": 38.5816,
+        "lon": -121.4944,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.axios.com/2023/06/28/sick-sea-lions-california-beaches-toxic-algae-bloom",
+          "source_name": "Axios",
+          "published_at": "2023-06-28T00:00:00Z",
+          "headline": "Sick sea lions are washing up on California beaches amid toxic algae bloom",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [
+          "Southern California coastline (marine)"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "...toxic algae bloom... sick sea lions... on California beaches",
+            "source_url": "https://www.axios.com/2023/06/28/sick-sea-lions-california-beaches-toxic-algae-bloom"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.75,
+        "location": 0.6,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "california-harmful-algal-bloom-marine-mammal-strandings-2023-06",
+        "fingerprint": "fp-california-hab-marine-mammals-2023-06"
+      }
+    },
+    {
+      "event_id": "2023-06-20_eu_nature-restoration-law_council_general-approach",
+      "title": "EU Council agrees negotiating position on proposed Nature Restoration Law",
+      "description": "EU environment ministers reached a Council negotiating position (“general approach”) on the proposed Nature Restoration Law. The Council position included restoration objectives such as measures covering at least 20% of EU land and sea by 2030 and a longer-term aim to restore ecosystems in need of restoration by 2050.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "2023-06-20T00:00:00.000Z",
+        "event_end": "2023-06-20T23:59:59.000Z",
+        "reported_at": "2023-06-20T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2023-06-20T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "European Union",
+        "jurisdiction_level": "supranational",
+        "admin1": null,
+        "country": null,
+        "capital_used": "Brussels",
+        "lat": 50.8503,
+        "lon": 4.3517,
+        "precision": "supranational",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://www.consilium.europa.eu/en/press/press-releases/2023/06/20/council-reaches-agreement-on-the-nature-restoration-law/",
+          "source_name": "Council of the European Union",
+          "published_at": "2023-06-20T00:00:00.000Z",
+          "headline": "Council reaches agreement on the nature restoration law",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.euronews.com/my-europe/2023/06/20/eu-countries-vote-to-move-forward-with-nature-restoration-law-piling-further-pressure-on-m",
+          "source_name": "Euronews",
+          "published_at": "2023-06-20T00:00:00.000Z",
+          "headline": "EU countries vote to move forward with Nature Restoration Law, piling further pressure on MEPs",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Council of the European Union"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Council reaches agreement on the nature restoration law",
+            "source_url": "https://www.consilium.europa.eu/en/press/press-releases/2023/06/20/council-reaches-agreement-on-the-nature-restoration-law/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.66,
+        "category": 0.75,
+        "location": 0.7,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "EU Nature Restoration Law Council general approach June 2023",
+        "fingerprint": "2023-06-20|eu|nature_restoration_law|council_general_approach"
+      }
+    },
+    {
+      "event_id": "2023-06-26_us_wotus_sackett_epa_statement",
+      "title": "EPA statement on implementing Sackett v. EPA and updating the WOTUS rule",
+      "description": "The U.S. Environmental Protection Agency issued a statement that it and the U.S. Army would interpret “waters of the United States” consistent with the Supreme Court’s Sackett decision and would develop an amendment to the January 2023 WOTUS definition rule.",
+      "category_primary": "policy_regulation",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "2023-06-26T00:00:00.000Z",
+        "event_end": "2023-06-26T23:59:59.000Z",
+        "reported_at": "2023-06-26T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2023-06-26T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.75
+      },
+      "sources": [
+        {
+          "url": "https://www.epa.gov/newsreleases/epa-statement-sackett-v-epa",
+          "source_name": "U.S. Environmental Protection Agency",
+          "published_at": "2023-06-26T00:00:00.000Z",
+          "headline": "EPA statement on Sackett v. EPA",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Environmental Protection Agency",
+          "U.S. Army"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "EPA statement on Sackett v. EPA",
+            "source_url": "https://www.epa.gov/newsreleases/epa-statement-sackett-v-epa"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.64,
+        "category": 0.75,
+        "location": 0.75,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "EPA WOTUS Sackett implementation statement June 2023",
+        "fingerprint": "2023-06-26|us|wotus|sackett_epa_statement"
+      }
+    }
+  ]
+}

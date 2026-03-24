@@ -1,0 +1,424 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_2009-11_normalize_2026-01-16T040817247Z",
+    "generated_utc": "2026-01-16T04:08:17.247Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "2009-11",
+    "window": {
+      "start_utc": "2009-11-01T00:00:00.000Z",
+      "end_utc": "2009-11-30T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "2009-11-us-ak-prudhoe-bay-bp-lisburne-pipeline-rupture",
+      "title": "Prudhoe Bay Lisburne Production Center pipeline rupture spills oily material",
+      "description": "An 18-inch three-phase common line near the Lisburne Production Center at Prudhoe Bay ruptured, releasing an estimated 45,828 gallons of oily material (preliminary estimate). The line carried crude oil, produced water, and natural gas, and the incident triggered a spill response.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2009-11-29T03:05:00.000Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "2009-11-29T03:05:00.000Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Prudhoe Bay, Alaska, USA",
+        "jurisdiction_level": "site",
+        "admin1": "Alaska",
+        "country": "US",
+        "capital_used": null,
+        "lat": 70.255,
+        "lon": -148.337,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://dec.alaska.gov/spar/ppr/spill-information/response/2009/25-lpc/",
+          "source_name": "Alaska Department of Environmental Conservation",
+          "published_at": "2009-11-29T03:05:00.000Z",
+          "headline": "Spill Information (2009) - 25 LPC",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.pew.org/en/research-and-analysis/fact-sheets/2010/05/10/alaska-spills-highlight-everpresent-risks-from-oil-industry",
+          "source_name": "Pew Research and Analysis",
+          "published_at": "2010-05-10T00:00:00Z",
+          "headline": "Alaska spills highlight ever-present risks from oil industry",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "BP",
+          "Alaska Department of Environmental Conservation"
+        ],
+        "substances": [
+          "crude oil",
+          "produced water",
+          "natural gas",
+          "oily material"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "released an estimated ~45,828 gallons of oily material (preliminary estimate).",
+            "source_url": "https://dec.alaska.gov/spar/ppr/spill-information/response/2009/25-lpc/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.8,
+        "location": 0.6,
+        "summary_grounding": 0.65
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "BP Lisburne Production Center pipeline rupture Prudhoe Bay 2009-11-29",
+        "fingerprint": "bp-lisburne-production-center-pipeline-rupture|prudhoe-bay-alaska-us|2009-11-29"
+      }
+    },
+    {
+      "event_id": "evt_20091112_norida_midatlantic",
+      "title": "Mid-Atlantic nor'easter (Nor'Ida) brings heavy rain, strong winds, and coastal flooding",
+      "description": "A strong nor'easter developed from the remnants of Hurricane Ida and produced heavy rainfall, strong winds, and coastal flooding along portions of the U.S. Mid-Atlantic coast during 12–13 November 2009.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2009-11-12T00:00:00.000Z",
+        "event_end": "2009-11-13T23:59:59.000Z",
+        "reported_at": "2009-11-13T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2009-11-12T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "United States (Washington, D.C.)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, D.C.",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.weather.gov/mhx/nov132009eventreview",
+          "source_name": "National Weather Service (NWS)",
+          "published_at": "2009-11-13T00:00:00.000Z",
+          "headline": "Event review: November 13, 2009 storm",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "National Weather Service"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "A powerful nor'easter formed from the remnants of Hurricane Ida",
+            "source_url": "https://www.weather.gov/mhx/nov132009eventreview"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.58,
+        "category": 0.75,
+        "location": 0.55,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "needs_dedupe_check",
+        "date_ambiguous",
+        "location_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "norida_2009_midatlantic",
+        "fingerprint": "fp_norida_us_2009-11-12"
+      }
+    },
+    {
+      "event_id": "evt_200911_piton_fournaise_eruption_20091105",
+      "title": "Piton de la Fournaise eruption begins on Réunion",
+      "description": "An eruption began at Piton de la Fournaise on Réunion Island on 5 November 2009, producing multiple lava flows. Reports indicated some flows reached the ocean and activity weakened by the following morning.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2009-11-05T16:50:00.000Z",
+        "event_end": "2009-11-06T23:59:59.000Z",
+        "reported_at": "2009-11-06T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2009-11-05T16:50:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Piton de la Fournaise, Réunion (France)",
+        "jurisdiction_level": "site",
+        "admin1": null,
+        "country": "FR",
+        "capital_used": null,
+        "lat": -21.244,
+        "lon": 55.708,
+        "precision": "exact",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.wired.com/2009/11/new-eruption-overnight-at-piton-de-la-fournaise/",
+          "source_name": "Wired",
+          "published_at": "2009-11-06T00:00:00.000Z",
+          "headline": "New Eruption Overnight at Piton de la Fournaise",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [
+          "lava"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "new eruption ... at Piton de la Fournaise",
+            "source_url": "https://www.wired.com/2009/11/new-eruption-overnight-at-piton-de-la-fournaise/"
+          },
+          {
+            "quote": "multiple lava flows ... reaching the ocean",
+            "source_url": "https://www.wired.com/2009/11/new-eruption-overnight-at-piton-de-la-fournaise/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.8,
+        "location": 0.55,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Piton de la Fournaise eruption Nov 2009",
+        "fingerprint": "fp_piton_fournaise_reunion_2009-11-05"
+      }
+    },
+    {
+      "event_id": "2009-11-us-fws-candidate-notice-review",
+      "title": "U.S. Fish and Wildlife Service releases annual Candidate Notice of Review for ESA listing",
+      "description": "The U.S. Fish and Wildlife Service released its annual Candidate Notice of Review identifying species considered candidates for protection under the Endangered Species Act. The update reflects agency prioritization and status changes for species facing threats.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2009-11-06T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2009-11-06T00:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States (federal announcement)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://www.fws.gov/press-release/2009-11/us-fish-and-wildlife-service-releases-annual-list-candidates-endangered",
+          "source_name": "U.S. Fish and Wildlife Service",
+          "published_at": "2009-11-06T00:00:00Z",
+          "headline": "U.S. Fish and Wildlife Service releases annual list of candidates for endangered",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.govinfo.gov/content/pkg/FR-2009-11-09/html/E9-26841.htm",
+          "source_name": "Federal Register (govinfo.gov)",
+          "published_at": "2009-11-09T00:00:00Z",
+          "headline": "Endangered and Threatened Wildlife and Plants; Review of Native Species That Are Candidates for Listing as Endangered or Threatened; Annual Notice of Findings on Resubmitted Petitions; Annual Description of Progress on Listing Actions",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Fish and Wildlife Service"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "releases annual list of candidates for endangered",
+            "source_url": "https://www.fws.gov/press-release/2009-11/us-fish-and-wildlife-service-releases-annual-list-candidates-endangered"
+          },
+          {
+            "quote": "Review of Native Species That Are Candidates for Listing as Endangered or Threatened",
+            "source_url": "https://www.govinfo.gov/content/pkg/FR-2009-11-09/html/E9-26841.htm"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.7,
+        "location": 0.7,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "USFWS Candidate Notice of Review 2009-11",
+        "fingerprint": "usfws-cnor-2009-11-washington-dc"
+      }
+    },
+    {
+      "event_id": "2009-11-eu-birds-directive-2009-147-ec",
+      "title": "EU adopts codified Birds Directive (Directive 2009/147/EC) on wild bird conservation",
+      "description": "The European Parliament and the Council adopted Directive 2009/147/EC, a codified version of EU rules on the conservation of wild birds. The directive sets EU-wide requirements related to bird conservation and associated habitat protections.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "2009-11-30T00:00:00.000Z",
+        "event_end": "2009-11-30T23:59:59.000Z",
+        "reported_at": "2009-11-30T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2009-11-30T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "European Union",
+        "jurisdiction_level": "supranational",
+        "admin1": null,
+        "country": null,
+        "capital_used": "Brussels",
+        "lat": 50.8503,
+        "lon": 4.3517,
+        "precision": "supranational",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.eea.europa.eu/policy-documents/directive-2009-147-ec-of",
+          "source_name": "European Environment Agency (EEA)",
+          "published_at": "2009-11-30T00:00:00.000Z",
+          "headline": "Directive 2009/147/EC of the European Parliament and of the Council of 30 November 2009 on the conservation of wild birds",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.legislation.gov.uk/en/eudr/2009/147/contents/england",
+          "source_name": "legislation.gov.uk",
+          "published_at": "2009-11-30T00:00:00.000Z",
+          "headline": "Directive 2009/147/EC of the European Parliament and of the Council of 30 November 2009 on the conservation of wild birds",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "European Parliament",
+          "Council of the European Union"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Directive 2009/147/EC ... on the conservation of wild birds",
+            "source_url": "https://www.eea.europa.eu/policy-documents/directive-2009-147-ec-of"
+          },
+          {
+            "quote": "Directive 2009/147/EC ... of 30 November 2009",
+            "source_url": "https://www.legislation.gov.uk/en/eudr/2009/147/contents/england"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.66,
+        "category": 0.8,
+        "location": 0.6,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "EU Birds Directive codification 2009/147/EC",
+        "fingerprint": "fp_2009-11_eu-birds-directive-2009-147-ec_eu_2009-11-30"
+      }
+    }
+  ]
+}

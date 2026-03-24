@@ -1,0 +1,706 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_2022-02_normalize_2026-01-16T131324243Z",
+    "generated_utc": "2026-01-16T13:13:24.243Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "2022-02",
+    "window": {
+      "start_utc": "2022-02-01T00:00:00.000Z",
+      "end_utc": "2022-02-28T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "pollution_contamination_mud-lake-la_us_2022-02-04_noaa",
+      "title": "Crude oil discharge from tank near Mud Lake, Louisiana affected nearby waters and marsh",
+      "description": "A crude oil discharge from a tank near Mud Lake, Louisiana was reported as beginning on Feb 4, 2022, with winds and rain moving oil into surrounding waters and marsh areas. NOAA was asked to provide trajectory and resources-at-risk support; the discharge was estimated at 5–10 barrels affecting an area roughly 400 ft by 100 ft.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2022-02-04T00:00:00.000Z",
+        "event_end": "2022-02-08T23:59:59.000Z",
+        "reported_at": "2022-02-01T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2022-02-04T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Mud Lake, Louisiana, United States",
+        "jurisdiction_level": "site",
+        "admin1": "Louisiana",
+        "country": "US",
+        "capital_used": null,
+        "lat": 29.9427,
+        "lon": -90.0754,
+        "precision": "admin1",
+        "location_basis": "manual_override",
+        "location_confidence": 0.35
+      },
+      "sources": [
+        {
+          "url": "https://blog.response.restoration.noaa.gov/incident-responses-february-2022",
+          "source_name": "NOAA Response & Restoration Blog",
+          "published_at": "2022-02-01T00:00:00.000Z",
+          "headline": "Incident Responses | February 2022",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA",
+          "U.S. Coast Guard"
+        ],
+        "substances": [
+          "crude oil"
+        ],
+        "ecosystems": [
+          "marsh"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "crude oil discharge ... near Mud Lake",
+            "source_url": "https://blog.response.restoration.noaa.gov/incident-responses-february-2022"
+          },
+          {
+            "quote": "estimated discharge 5–10 barrels",
+            "source_url": "https://blog.response.restoration.noaa.gov/incident-responses-february-2022"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.52,
+        "category": 0.85,
+        "location": 0.35,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "needs_dedupe_check",
+        "low_confidence_location"
+      ],
+      "dedupe": {
+        "cluster_hint": "noaa_incident_responses_feb_2022_mud_lake_crude_oil",
+        "fingerprint": "noaa_incident_responses_feb_2022_mud_lake_la_crude_oil_2022-02-04"
+      }
+    },
+    {
+      "event_id": "pollution_contamination_westlake-la_us_2022-02-10_noaa-10416",
+      "title": "Air discharge of chlorinated ethanes reported at Westlake Chemicals after power outage",
+      "description": "An air discharge at Westlake Chemicals in Westlake, Louisiana was reported to NOAA on Feb 10, 2022 and attributed to a power outage. The report identified tri-, tetra-, and pentachloroethanes as chemicals of concern, with the facility evacuating non-essential personnel and seeking hazard information.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2022-02-10T00:00:00.000Z",
+        "event_end": "2022-02-10T23:59:59.000Z",
+        "reported_at": "2022-02-10T00:00:00.000Z",
+        "time_confidence": 0.8,
+        "event_date_utc": "2022-02-10T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Westlake, Louisiana, United States",
+        "jurisdiction_level": "city",
+        "admin1": "Louisiana",
+        "country": "US",
+        "capital_used": null,
+        "lat": 30.2421,
+        "lon": -93.2507,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.75
+      },
+      "sources": [
+        {
+          "url": "https://incidentnews.noaa.gov/incident/10416",
+          "source_name": "NOAA IncidentNews",
+          "published_at": "2022-02-10T00:00:00.000Z",
+          "headline": "Incident 10416",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA",
+          "Westlake Chemicals"
+        ],
+        "substances": [
+          "trichloroethanes",
+          "tetrachloroethanes",
+          "pentachloroethanes"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "reported to NOAA on Feb 10, 2022",
+            "source_url": "https://incidentnews.noaa.gov/incident/10416"
+          },
+          {
+            "quote": "Chemicals of concern included tri-, tetra-, and pentachloroethanes",
+            "source_url": "https://incidentnews.noaa.gov/incident/10416"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.74,
+        "category": 0.85,
+        "location": 0.8,
+        "summary_grounding": 0.75
+      },
+      "quality_flags": [
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "noaa_incident_10416_westlake_air_discharge_chlorinated_ethanes",
+        "fingerprint": "noaa_incident_10416_westlake_la_air_discharge_2022-02-10"
+      }
+    },
+    {
+      "event_id": "pollution_contamination_gulf-of-mexico_offshore-la_us_2022-02-11_noaa",
+      "title": "Satellite-detected oil anomaly linked to inactive platform in Ship Shoal 291 area offshore Louisiana",
+      "description": "A marine pollution surveillance report received by NOAA on Feb 11, 2022 described an oil anomaly in the Ship Shoal 291 area offshore Louisiana. The slick was linked to an unmanned, inactive well platform associated with Mon Forte Exploration, with the discharge described as primarily well completion fluids and the volume unknown at the time of reporting.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2022-02-11T00:00:00.000Z",
+        "event_end": "2022-02-11T23:59:59.000Z",
+        "reported_at": "2022-02-01T00:00:00.000Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "2022-02-11T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Gulf of Mexico (~55 miles offshore Louisiana, United States)",
+        "jurisdiction_level": "site",
+        "admin1": "Louisiana",
+        "country": "US",
+        "capital_used": null,
+        "lat": 29.9427,
+        "lon": -90.0754,
+        "precision": "proxy",
+        "location_basis": "manual_override",
+        "location_confidence": 0.3
+      },
+      "sources": [
+        {
+          "url": "https://blog.response.restoration.noaa.gov/incident-responses-february-2022",
+          "source_name": "NOAA Response & Restoration Blog",
+          "published_at": "2022-02-01T00:00:00.000Z",
+          "headline": "Incident Responses | February 2022",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA",
+          "Mon Forte Exploration"
+        ],
+        "substances": [
+          "oil",
+          "well completion fluids"
+        ],
+        "ecosystems": [
+          "marine"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "marine pollution surveillance report ... Feb 11, 2022",
+            "source_url": "https://blog.response.restoration.noaa.gov/incident-responses-february-2022"
+          },
+          {
+            "quote": "oil anomaly ... Ship Shoal 291",
+            "source_url": "https://blog.response.restoration.noaa.gov/incident-responses-february-2022"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.48,
+        "category": 0.8,
+        "location": 0.3,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "needs_dedupe_check",
+        "low_confidence_location"
+      ],
+      "dedupe": {
+        "cluster_hint": "noaa_incident_responses_feb_2022_ship_shoal_291_oil_anomaly",
+        "fingerprint": "noaa_incident_responses_feb_2022_ship_shoal_291_gom_oil_2022-02-11"
+      }
+    },
+    {
+      "event_id": "pollution_contamination_marshfield-ma_us_2022-02-01_noaa",
+      "title": "Fishing vessel sank off Marshfield, Massachusetts with diesel onboard; sheen observed",
+      "description": "A fishing vessel sank about 1 nautical mile off Marshfield, Massachusetts on Feb 1, 2022 with an estimated 2,000 gallons of diesel onboard. The U.S. Coast Guard observed a sheen during an overflight on Feb 2 near the New Inlet and North River area, and NOAA provided spill-response scientific support.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2022-02-01T00:00:00.000Z",
+        "event_end": "2022-02-02T23:59:59.000Z",
+        "reported_at": "2022-02-01T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2022-02-01T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Off Marshfield, Massachusetts, United States",
+        "jurisdiction_level": "site",
+        "admin1": "Massachusetts",
+        "country": "US",
+        "capital_used": null,
+        "lat": 42.3601,
+        "lon": -71.0589,
+        "precision": "admin1",
+        "location_basis": "manual_override",
+        "location_confidence": 0.35
+      },
+      "sources": [
+        {
+          "url": "https://blog.response.restoration.noaa.gov/incident-responses-february-2022",
+          "source_name": "NOAA Response & Restoration Blog",
+          "published_at": "2022-02-01T00:00:00.000Z",
+          "headline": "Incident Responses | February 2022",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA",
+          "U.S. Coast Guard"
+        ],
+        "substances": [
+          "diesel"
+        ],
+        "ecosystems": [
+          "coastal waters"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "vessel ... sank Feb 1, 2022",
+            "source_url": "https://blog.response.restoration.noaa.gov/incident-responses-february-2022"
+          },
+          {
+            "quote": "estimated 2,000 gallons of diesel onboard",
+            "source_url": "https://blog.response.restoration.noaa.gov/incident-responses-february-2022"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.5,
+        "category": 0.85,
+        "location": 0.35,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "needs_dedupe_check",
+        "low_confidence_location"
+      ],
+      "dedupe": {
+        "cluster_hint": "noaa_incident_responses_feb_2022_marshfield_vessel_sank_diesel",
+        "fingerprint": "noaa_incident_responses_feb_2022_marshfield_ma_diesel_2022-02-01"
+      }
+    },
+    {
+      "event_id": "evt_20220228_ipcc_wg2_report_global",
+      "title": "IPCC releases AR6 Working Group II report on impacts, adaptation and vulnerability",
+      "description": "The IPCC published the Working Group II contribution to the Sixth Assessment Report, focusing on observed and projected climate impacts, adaptation, and vulnerability. The release highlighted escalating risks and the need for climate-resilient development and adaptation actions.",
+      "category_primary": "weather_climate",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "2022-02-28T00:00:00.000Z",
+        "event_end": "2022-02-28T23:59:59.000Z",
+        "reported_at": "2022-02-28T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2022-02-28T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Global (IPCC release)",
+        "jurisdiction_level": "global_proxy",
+        "admin1": null,
+        "country": null,
+        "capital_used": null,
+        "lat": 0,
+        "lon": 0,
+        "precision": "proxy",
+        "location_basis": "institution_proxy",
+        "location_confidence": 0.4
+      },
+      "sources": [
+        {
+          "url": "https://www.ipcc.ch/2022/02/",
+          "source_name": "IPCC",
+          "published_at": "2022-02-01T00:00:00.000Z",
+          "headline": "IPCC February 2022 releases (Working Group II report page)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.un.org/en/climatechange/ipcc-wgii-report",
+          "source_name": "United Nations",
+          "published_at": "2022-02-28T00:00:00.000Z",
+          "headline": "UN page on the IPCC Working Group II report",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "IPCC",
+          "United Nations"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Working Group II contribution to the Sixth Assessment Report",
+            "source_url": "https://www.ipcc.ch/2022/02/"
+          },
+          {
+            "quote": "impacts, adaptation and vulnerability",
+            "source_url": "https://www.un.org/en/climatechange/ipcc-wgii-report"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.8,
+        "location": 0.4,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "ipcc_ar6_wg2_release_2022_02_28",
+        "fingerprint": "fp_ipcc_ar6_wg2_global_2022-02-28"
+      }
+    },
+    {
+      "event_id": "evt_20220218_storm_eunice_ireland_impacts",
+      "title": "Storm Eunice causes severe weather impacts across Ireland (government statement)",
+      "description": "Ireland’s National Emergency Coordination Group reported widespread impacts as Storm Eunice affected the country, including fallen trees, damage to structures, coastal flooding in some areas, and large-scale power outages. The statement also noted hazardous conditions and emergency response activity during the storm.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2022-02-18T00:00:00.000Z",
+        "event_end": "2022-02-18T23:59:59.000Z",
+        "reported_at": "2022-02-18T00:00:00.000Z",
+        "time_confidence": 0.8,
+        "event_date_utc": "2022-02-18T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Ireland",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "IE",
+        "capital_used": "Dublin",
+        "lat": 53.3498,
+        "lon": -6.2603,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.85
+      },
+      "sources": [
+        {
+          "url": "https://www.gov.ie/en/department-of-housing-local-government-and-heritage/press-releases/statement-from-the-national-emergency-coordination-group-on-severe-weather-18-february-2022/",
+          "source_name": "Government of Ireland (gov.ie)",
+          "published_at": "2022-02-18T00:00:00.000Z",
+          "headline": "Statement from the National Emergency Coordination Group on severe weather (18 February 2022)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "National Emergency Coordination Group"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Statement from the National Emergency Coordination Group on severe weather",
+            "source_url": "https://www.gov.ie/en/department-of-housing-local-government-and-heritage/press-releases/statement-from-the-national-emergency-coordination-group-on-severe-weather-18-february-2022/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.74,
+        "category": 0.85,
+        "location": 0.9,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "paywalled_or_partial"
+      ],
+      "dedupe": {
+        "cluster_hint": "storm_eunice_ireland_2022-02-18",
+        "fingerprint": "fp_storm_eunice_ireland_dublin_capital_2022-02-18"
+      }
+    },
+    {
+      "event_id": "ev_20220210_us_gray_wolf_delisting_vacated",
+      "title": "Federal court vacates 2020 gray wolf delisting rule, restoring ESA protections in much of the U.S.",
+      "description": "A U.S. district court vacated and remanded a U.S. Fish and Wildlife Service rule that had delisted certain gray wolf entities. The court found the rule violated the Endangered Species Act and the Administrative Procedure Act, restoring ESA protections in much of the United States.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "2022-02-10T00:00:00.000Z",
+        "event_end": "2022-02-10T23:59:59.000Z",
+        "reported_at": "2022-02-10T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2022-02-10T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States (N.D. California)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.5
+      },
+      "sources": [
+        {
+          "url": "https://www.congress.gov/crs-product/LSB10697",
+          "source_name": "Congress.gov (CRS Legal Sidebar)",
+          "published_at": "2022-02-10T00:00:00.000Z",
+          "headline": "LSB10697",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Fish and Wildlife Service"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "a federal district court vacated and remanded the U.S. Fish and Wildlife Service rule",
+            "source_url": "https://www.congress.gov/crs-product/LSB10697"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.7,
+        "location": 0.5,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "gray-wolf-delisting-vacated-2022-02-10-us",
+        "fingerprint": "gray_wolf_delisting_vacated|US|2022-02-10"
+      }
+    },
+    {
+      "event_id": "ev_20220207_usfws_90day_petitions_bladerpod_bumblebee",
+      "title": "USFWS completes 90-day ESA petition findings and initiates status reviews for two species",
+      "description": "The U.S. Fish and Wildlife Service announced 90-day findings on petitions to list three species under the Endangered Species Act. The agency found substantial information that listing may be warranted for thick-leaf bladderpod and variable cuckoo bumble bee and initiated status reviews.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "2022-02-07T00:00:00.000Z",
+        "event_end": "2022-02-07T23:59:59.000Z",
+        "reported_at": "2022-02-07T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2022-02-07T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States (USFWS agency action)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "proxy",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.fws.gov/press-release/2022-02/service-completes-initial-reviews-endangered-species-act-petitions-three",
+          "source_name": "U.S. Fish and Wildlife Service",
+          "published_at": "2022-02-07T00:00:00.000Z",
+          "headline": "Service completes initial reviews of Endangered Species Act petitions for three species",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Fish and Wildlife Service"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Service completes initial reviews of Endangered Species Act petitions for three species",
+            "source_url": "https://www.fws.gov/press-release/2022-02/service-completes-initial-reviews-endangered-species-act-petitions-three"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.7,
+        "category": 0.75,
+        "location": 0.6,
+        "summary_grounding": 0.65
+      },
+      "quality_flags": [
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "usfws-90-day-petition-findings-2022-02-07-us",
+        "fingerprint": "usfws_90day_petitions|US|2022-02-07"
+      }
+    },
+    {
+      "event_id": "evt_20220228_us_scotus_wv_v_epa_hearing_dc",
+      "title": "U.S. Supreme Court hears arguments in West Virginia v. EPA over EPA climate authority",
+      "description": "On Feb. 28, 2022, the U.S. Supreme Court heard arguments in West Virginia v. EPA, a case challenging the scope of the Environmental Protection Agency’s authority to regulate greenhouse gas emissions from power plants under the Clean Air Act. The hearing was reported as having significant implications for U.S. climate policy and administrative law.",
+      "category_primary": "policy_regulation",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2022-02-28T00:00:00Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2022-02-28T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Washington, D.C., United States",
+        "jurisdiction_level": "city",
+        "admin1": "District of Columbia",
+        "country": "US",
+        "capital_used": null,
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.8
+      },
+      "sources": [
+        {
+          "url": "https://www.theguardian.com/environment/2022/feb/28/supreme-court-epa-biden-climate-crisis",
+          "source_name": "The Guardian",
+          "published_at": "2022-02-28T00:00:00Z",
+          "headline": "Supreme court hears case that could undermine US efforts to tackle climate crisis",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Supreme Court",
+          "U.S. Environmental Protection Agency (EPA)"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "the supreme court heard arguments in a case that could undermine US efforts to tackle the climate crisis",
+            "source_url": "https://www.theguardian.com/environment/2022/feb/28/supreme-court-epa-biden-climate-crisis"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.72,
+        "category": 0.8,
+        "location": 0.8,
+        "summary_grounding": 0.65
+      },
+      "quality_flags": [
+        "secondary_sources_only",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "West Virginia v. EPA Supreme Court oral arguments Feb 28 2022",
+        "fingerprint": "fp_wv_epa_scotus_2022-02-28_washingtondc"
+      }
+    }
+  ]
+}

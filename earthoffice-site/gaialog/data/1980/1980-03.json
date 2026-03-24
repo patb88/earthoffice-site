@@ -1,0 +1,1081 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_1980-03_normalize_2026-01-18T090419797Z",
+    "generated_utc": "2026-01-18T09:04:19.797Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "1980-03",
+    "window": {
+      "start_utc": "1980-03-01T00:00:00.000Z",
+      "end_utc": "1980-03-31T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "evt_198003_tanio_brittany_oilspill",
+      "title": "TANIO tanker breaks up, spilling heavy fuel oil off Brittany, France",
+      "description": "On March 7, 1980, the oil tanker TANIO broke in two in heavy weather off the coast of Brittany, France, releasing heavy fuel oil. Oil subsequently moved toward shore and contaminated sections of the Brittany coastline, with impacts to coastal resources and wildlife reported in incident documentation.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1980-03-07T12:00:00Z",
+        "event_end": "1980-03-07T12:00:00Z",
+        "reported_at": "1980-03-17T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1980-03-07T12:00:00Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Off the coast of Brittany, France (English Channel / Breton coast)",
+        "jurisdiction_level": "state",
+        "admin1": "Brittany",
+        "country": "FR",
+        "capital_used": "Rennes",
+        "lat": 48.1173,
+        "lon": -1.6778,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.75
+      },
+      "sources": [
+        {
+          "url": "https://www.itopf.org/in-action/case-studies/tanio-france-1980/",
+          "source_name": "ITOPF",
+          "published_at": "1980-03-01T00:00:00Z",
+          "headline": "Tanio, France, 1980",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://incidentnews.noaa.gov/incident/6257",
+          "source_name": "NOAA IncidentNews",
+          "published_at": "1980-03-01T00:00:00Z",
+          "headline": "Incident 6257",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.csmonitor.com/1980/0317/031730.html",
+          "source_name": "The Christian Science Monitor",
+          "published_at": "1980-03-17T00:00:00Z",
+          "headline": "031730",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "ITOPF",
+          "NOAA"
+        ],
+        "substances": [
+          "heavy fuel oil",
+          "No. 6 fuel oil"
+        ],
+        "ecosystems": [
+          "coastal waters",
+          "shoreline"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Tanio, France, 1980",
+            "source_url": "https://www.itopf.org/in-action/case-studies/tanio-france-1980/"
+          },
+          {
+            "quote": "Incident 6257",
+            "source_url": "https://incidentnews.noaa.gov/incident/6257"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.9,
+        "location": 0.75,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "tanio_1980_brittany_oil_spill",
+        "fingerprint": "fp_tanio_brittany_fr_1980-03-07"
+      }
+    },
+    {
+      "event_id": "19800301_north-carolina_snowstorm-of-the-century",
+      "title": "North Carolina “Snowstorm of the Century” winter storm (Mar 1–3, 1980)",
+      "description": "A major winter storm affected North Carolina from March 1–3, 1980, bringing heavy snow and strong winds. Conditions were described as near-blizzard in eastern parts of the state, with significant travel disruption and impacts reported.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1980-03-01T12:00:00Z",
+        "event_end": "1980-03-03T12:00:00Z",
+        "reported_at": "1980-03-01T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1980-03-02T00:00:00Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "North Carolina, USA",
+        "jurisdiction_level": "state",
+        "admin1": "North Carolina",
+        "country": "US",
+        "capital_used": "Raleigh",
+        "lat": 35.7796,
+        "lon": -78.6382,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.85
+      },
+      "sources": [
+        {
+          "url": "https://www.weather.gov/mhx/mar011980eventreview",
+          "source_name": "NWS Newport/Morehead City (weather.gov)",
+          "published_at": "1980-03-01T00:00:00Z",
+          "headline": "mar011980eventreview",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://products.climate.ncsu.edu/weather/winter/notable-winter-storms/",
+          "source_name": "NC State Climate Office (products.climate.ncsu.edu)",
+          "published_at": "1980-03-01T00:00:00Z",
+          "headline": "Notable winter storms",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "National Weather Service",
+          "NC State Climate Office"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "A major winter storm impacted North Carolina March 1–3, peaking March 2 with heavy snow statewide",
+            "source_url": "https://www.weather.gov/mhx/mar011980eventreview"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.8,
+        "location": 0.85,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "1980-03-nc-winter-storm",
+        "fingerprint": "fp_19800301_north-carolina_snowstorm-of-the-century"
+      }
+    },
+    {
+      "event_id": "19800315_catskills_ny_great-catskill-toilet-flush_flood",
+      "title": "“Great Catskill Toilet Flush” flash flooding in the Catskills (Mar 15, 1980)",
+      "description": "A rapid flood episode affected parts of the Catskills in eastern New York State, impacting the Schoharie, Catskill, and Esopus Creek basins. The event is described by NWS Albany as the “Great Catskill Toilet Flush,” associated with very heavy rainfall and resulting in severe flooding and at least one reported fatality.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1980-03-15T12:00:00Z",
+        "event_end": "1980-03-15T12:00:00Z",
+        "reported_at": "1980-03-15T00:00:00Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "1980-03-15T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Catskills, New York, USA",
+        "jurisdiction_level": "state",
+        "admin1": "New York",
+        "country": "US",
+        "capital_used": "Albany",
+        "lat": 42.6526,
+        "lon": -73.7562,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.weather.gov/aly/MajorFloods",
+          "source_name": "NWS Albany (weather.gov)",
+          "published_at": "1980-03-15T00:00:00Z",
+          "headline": "Major Floods",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.weather.gov/aly/pastevents",
+          "source_name": "NWS Albany (weather.gov)",
+          "published_at": "1980-03-15T00:00:00Z",
+          "headline": "Past Events",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "National Weather Service"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "described by NWS Albany as the “Great Catskill Toilet Flush”",
+            "source_url": "https://www.weather.gov/aly/MajorFloods"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.58,
+        "category": 0.8,
+        "location": 0.6,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "1980-03-catskills-flood",
+        "fingerprint": "fp_19800315_catskills_ny_great-catskill-toilet-flush_flood"
+      }
+    },
+    {
+      "event_id": "19800321_mid-atlantic_river-flooding_marfc",
+      "title": "Mid-Atlantic river flooding from strong low-pressure system (Mar 21–25, 1980)",
+      "description": "A strong low-pressure system and associated fronts produced widespread rainfall across parts of the Mid-Atlantic, leading to minor-to-moderate river flooding at multiple forecast points. Impacts spanned several basins referenced by the Middle Atlantic River Forecast Center documentation.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1980-03-21T12:00:00Z",
+        "event_end": "1980-03-25T12:00:00Z",
+        "reported_at": "1980-03-21T00:00:00Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "1980-03-23T00:00:00Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Mid-Atlantic, USA (MARFC area)",
+        "jurisdiction_level": "supranational",
+        "admin1": null,
+        "country": null,
+        "capital_used": null,
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "proxy",
+        "location_basis": "manual_override",
+        "location_confidence": 0.35
+      },
+      "sources": [
+        {
+          "url": "https://www.weather.gov/media/marfc/Flood_Events_2016/1980/Mar21-25%2C1980.pdf",
+          "source_name": "NWS Middle Atlantic River Forecast Center (weather.gov)",
+          "published_at": "1980-03-21T00:00:00Z",
+          "headline": "Mar 21-25, 1980 Flood Event (MARFC)",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NWS Middle Atlantic River Forecast Center"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "producing widespread minor-to-moderate flooding at numerous forecast points across multiple basins",
+            "source_url": "https://www.weather.gov/media/marfc/Flood_Events_2016/1980/Mar21-25%2C1980.pdf"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.5,
+        "category": 0.75,
+        "location": 0.35,
+        "summary_grounding": 0.65
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "low_confidence_location"
+      ],
+      "dedupe": {
+        "cluster_hint": "1980-03-marfc-flooding",
+        "fingerprint": "fp_19800321_mid-atlantic_river-flooding_marfc"
+      }
+    },
+    {
+      "event_id": "evt_19800320_mount_st_helens_m42_unrest",
+      "title": "Mount St. Helens M4.2 earthquake begins major unrest sequence",
+      "description": "A magnitude 4.2 earthquake on March 20, 1980 was reported as an early major sign of renewed unrest at Mount St. Helens, preceding an intensifying earthquake sequence beneath the volcano.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1980-03-20T23:47:00Z",
+        "event_end": "1980-03-20T23:47:00Z",
+        "reported_at": "1980-03-20T23:47:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1980-03-20T23:47:00Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Mount St. Helens, Washington, USA",
+        "jurisdiction_level": "site",
+        "admin1": "Washington",
+        "country": "US",
+        "capital_used": null,
+        "lat": 46.1912,
+        "lon": -122.1944,
+        "precision": "exact",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://pubs.usgs.gov/gip/msh/reawakening.html",
+          "source_name": "USGS",
+          "published_at": "1980-03-20T23:47:00Z",
+          "headline": "Reawakening (Mount St. Helens)",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "USGS"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "a magnitude 4.2 earthquake ... was the first significant sign of renewed activity",
+            "source_url": "https://pubs.usgs.gov/gip/msh/reawakening.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.85,
+        "location": 0.7,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "mount_st_helens_1980_unrest",
+        "fingerprint": "fp_mount_st_helens_1980-03-20_m42"
+      }
+    },
+    {
+      "event_id": "evt_19800327_mount_st_helens_first_phreatic",
+      "title": "Mount St. Helens produces first phreatic steam-blast eruption in over a century",
+      "description": "On March 27, 1980, Mount St. Helens generated a phreatic (steam-driven) explosion as part of its escalating unrest. USGS describes these early explosions as opening a new crater area through the summit ice and ejecting ash.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1980-03-27T20:36:00Z",
+        "event_end": "1980-03-27T20:36:00Z",
+        "reported_at": "1980-03-27T20:36:00Z",
+        "time_confidence": 0.5,
+        "event_date_utc": "1980-03-27T20:36:00Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Mount St. Helens, Washington, USA",
+        "jurisdiction_level": "site",
+        "admin1": "Washington",
+        "country": "US",
+        "capital_used": null,
+        "lat": 46.1912,
+        "lon": -122.1944,
+        "precision": "exact",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://www.usgs.gov/volcanoes/mount-st.-helens/science/1980-cataclysmic-eruption",
+          "source_name": "USGS",
+          "published_at": "1980-03-27T20:36:00Z",
+          "headline": "1980 Cataclysmic Eruption (Mount St. Helens)",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.usgs.gov/media/images/view-ne-a-small-phreatic-eruption-mount-st-helens-befor",
+          "source_name": "USGS",
+          "published_at": "1980-03-27T20:36:00Z",
+          "headline": "Small phreatic eruption image (Mount St. Helens)",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "USGS"
+        ],
+        "substances": [
+          "volcanic ash",
+          "steam"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Mount St. Helens began erupting on March 27, 1980, with steam-driven explosions",
+            "source_url": "https://www.usgs.gov/volcanoes/mount-st.-helens/science/1980-cataclysmic-eruption"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.64,
+        "category": 0.85,
+        "location": 0.7,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "mount_st_helens_1980_unrest",
+        "fingerprint": "fp_mount_st_helens_1980-03-27_phreatic"
+      }
+    },
+    {
+      "event_id": "evt_19800308_loyalty_islands_eq",
+      "title": "Strong earthquake southeast of the Loyalty Islands (New Caledonia region)",
+      "description": "USGS reporting for March–April 1980 lists a major earthquake occurring southeast of the Loyalty Islands in the South Pacific on March 8, 1980.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1980-03-08T12:00:00Z",
+        "event_end": "1980-03-08T12:00:00Z",
+        "reported_at": "1980-03-08T12:00:00Z",
+        "time_confidence": 0.3,
+        "event_date_utc": "1980-03-08T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Southeast of the Loyalty Islands, New Caledonia (South Pacific)",
+        "jurisdiction_level": "site",
+        "admin1": null,
+        "country": "NC",
+        "capital_used": null,
+        "lat": -21.5,
+        "lon": 171,
+        "precision": "proxy",
+        "location_basis": "manual_override",
+        "location_confidence": 0.3
+      },
+      "sources": [
+        {
+          "url": "https://www.usgs.gov/publications/earthquakes-march-april-1980",
+          "source_name": "USGS",
+          "published_at": "1980-04-01T00:00:00Z",
+          "headline": "Earthquakes, March-April 1980",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://pubs.usgs.gov/publication/70169176",
+          "source_name": "USGS Publications Warehouse",
+          "published_at": "1980-04-01T00:00:00Z",
+          "headline": "Earthquakes, March-April 1980 (publication record)",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "USGS"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.38,
+        "category": 0.8,
+        "location": 0.3,
+        "summary_grounding": 0.3
+      },
+      "quality_flags": [
+        "low_confidence_location",
+        "date_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "usgs_earthquakes_mar_apr_1980",
+        "fingerprint": "fp_loyalty_islands_1980-03-08"
+      }
+    },
+    {
+      "event_id": "evt_19800323_fox_islands_aleutians_eq",
+      "title": "Major earthquake in the Fox Islands, Aleutian Islands (Alaska)",
+      "description": "USGS reporting for March–April 1980 describes a major earthquake affecting the Fox Islands area of the Aleutian Islands on March 23, 1980.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1980-03-23T12:00:00Z",
+        "event_end": "1980-03-23T12:00:00Z",
+        "reported_at": "1980-03-23T12:00:00Z",
+        "time_confidence": 0.3,
+        "event_date_utc": "1980-03-23T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Fox Islands, Aleutian Islands, Alaska, USA",
+        "jurisdiction_level": "site",
+        "admin1": "Alaska",
+        "country": "US",
+        "capital_used": null,
+        "lat": 53.9,
+        "lon": -166.5,
+        "precision": "proxy",
+        "location_basis": "manual_override",
+        "location_confidence": 0.3
+      },
+      "sources": [
+        {
+          "url": "https://www.usgs.gov/publications/earthquakes-march-april-1980",
+          "source_name": "USGS",
+          "published_at": "1980-04-01T00:00:00Z",
+          "headline": "Earthquakes, March-April 1980",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://pubs.usgs.gov/publication/70169176",
+          "source_name": "USGS Publications Warehouse",
+          "published_at": "1980-04-01T00:00:00Z",
+          "headline": "Earthquakes, March-April 1980 (publication record)",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "USGS"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.38,
+        "category": 0.8,
+        "location": 0.3,
+        "summary_grounding": 0.3
+      },
+      "quality_flags": [
+        "low_confidence_location",
+        "date_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "usgs_earthquakes_mar_apr_1980",
+        "fingerprint": "fp_fox_islands_1980-03-23"
+      }
+    },
+    {
+      "event_id": "evt_19800331_luzon_eq",
+      "title": "Significant earthquake in Luzon, Philippines",
+      "description": "USGS global earthquake reporting for 1980 includes an earthquake entry for Luzon, Philippines dated March 31, 1980.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1980-03-31T12:00:00Z",
+        "event_end": "1980-03-31T12:00:00Z",
+        "reported_at": "1980-03-31T12:00:00Z",
+        "time_confidence": 0.2,
+        "event_date_utc": "1980-03-31T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Luzon, Philippines",
+        "jurisdiction_level": "site",
+        "admin1": null,
+        "country": "PH",
+        "capital_used": null,
+        "lat": 16,
+        "lon": 121,
+        "precision": "proxy",
+        "location_basis": "manual_override",
+        "location_confidence": 0.2
+      },
+      "sources": [
+        {
+          "url": "https://pubs.usgs.gov/publication/70169176",
+          "source_name": "USGS Publications Warehouse",
+          "published_at": "1980-04-01T00:00:00Z",
+          "headline": "Earthquakes, March-April 1980 (publication record)",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "USGS"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.28,
+        "category": 0.8,
+        "location": 0.2,
+        "summary_grounding": 0.25
+      },
+      "quality_flags": [
+        "low_confidence_location",
+        "date_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "usgs_earthquakes_mar_apr_1980",
+        "fingerprint": "fp_luzon_1980-03-31"
+      }
+    },
+    {
+      "event_id": "1980-03-05_emergency_studies_striped_bass_decline_atlantic_coast_us",
+      "title": "Emergency studies launched into Atlantic Coast striped bass decline",
+      "description": "The U.S. Fish and Wildlife Service reported that federal and state fishery scientists began an emergency program to investigate a severe decline in Atlantic Coast striped bass. Suspected factors cited included pollution in spawning areas affecting eggs and larvae, heavy fishing pressure, dams blocking migration, and industrial development.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1980-03-05T12:00:00Z",
+        "event_end": "1980-03-05T12:00:00Z",
+        "reported_at": "1980-03-05T12:00:00Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "1980-03-05T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Atlantic Coast of the United States (Maine to North Carolina)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, D.C.",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "proxy",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.fws.gov/press-release/1980-03/emergency-studies-planned-decline-atlantic-coast-striped-bass-march-5-1980",
+          "source_name": "U.S. Fish and Wildlife Service",
+          "published_at": "1980-03-05T00:00:00Z",
+          "headline": "Emergency studies planned for decline of Atlantic Coast striped bass (March 5, 1980)",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.fws.gov/sites/default/files/documents/historic-news-releases/1980/19800305.PDF",
+          "source_name": "U.S. Fish and Wildlife Service",
+          "published_at": "1980-03-05T00:00:00Z",
+          "headline": "Emergency studies planned for decline of Atlantic Coast striped bass (March 5, 1980) [PDF]",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Fish and Wildlife Service"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "Atlantic coastal spawning areas"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "began a major emergency program to investigate a severe decline in Atlantic Coast striped bass",
+            "source_url": "https://www.fws.gov/press-release/1980-03/emergency-studies-planned-decline-atlantic-coast-striped-bass-march-5-1980"
+          },
+          {
+            "quote": "polluted spawning areas... may be affecting striped bass eggs and larvae",
+            "source_url": "https://www.fws.gov/sites/default/files/documents/historic-news-releases/1980/19800305.PDF"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.72,
+        "category": 0.8,
+        "location": 0.55,
+        "summary_grounding": 0.75
+      },
+      "quality_flags": [
+        "location_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "Atlantic Coast striped bass decline emergency studies (USFWS, 1980-03-05)",
+        "fingerprint": "1980-03-05|emergency studies launched into atlantic coast striped bass decline|us|1980-03"
+      }
+    },
+    {
+      "event_id": "evt_19800305_epa_tsca_preliminary_assessment_info_us",
+      "title": "EPA issued TSCA final rule establishing Preliminary Assessment Information reporting",
+      "description": "EPA published a final rule under the Toxic Substances Control Act (TSCA) establishing reporting requirements for preliminary assessment information. The rule strengthened federal information-gathering mechanisms used to evaluate potential chemical risks.",
+      "category_primary": "policy_regulation",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1980-03-05T12:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1980-03-05T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States (federal)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.9
+      },
+      "sources": [
+        {
+          "url": "https://nepis.epa.gov/Exe/ZyPURL.cgi?Dockey=91014OCT.TXT",
+          "source_name": "EPA NEPIS",
+          "published_at": "1980-03-05T12:00:00Z",
+          "headline": "EPA issued final rule on TSCA reporting requirement: Preliminary Assessment Information (45 FR 13646–13676)",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Environmental Protection Agency (EPA)"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.75,
+        "location": 0.9,
+        "summary_grounding": 0.4
+      },
+      "quality_flags": [
+        "paywalled_or_partial",
+        "date_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "EPA TSCA Federal Register actions (March 1980)",
+        "fingerprint": "fp_19800305_epa_tsca_preliminary_assessment_info_us"
+      }
+    },
+    {
+      "event_id": "evt_19800305_epa_pcb_transformers_info_request_us",
+      "title": "EPA requested information on PCB transformers via Federal Register notice",
+      "description": "EPA published a Federal Register notice requesting information related to PCB transformers. The notice supported TSCA oversight and potential rulemaking or enforcement regarding PCB-containing electrical equipment.",
+      "category_primary": "policy_regulation",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1980-03-05T12:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1980-03-05T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States (federal)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.9
+      },
+      "sources": [
+        {
+          "url": "https://nepis.epa.gov/Exe/ZyPURL.cgi?Dockey=91014OCT.TXT",
+          "source_name": "EPA NEPIS",
+          "published_at": "1980-03-05T12:00:00Z",
+          "headline": "EPA issued TSCA Federal Register notice requesting information on PCB transformers (45 FR 14247)",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://nepis.epa.gov/Exe/ZyPURL.cgi?Dockey=20012LLW.TXT",
+          "source_name": "EPA NEPIS",
+          "published_at": "1980-03-05T12:00:00Z",
+          "headline": "EPA issued TSCA Federal Register notice requesting information on PCB transformers (45 FR 14247)",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Environmental Protection Agency (EPA)"
+        ],
+        "substances": [
+          "PCBs (polychlorinated biphenyls)"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.75,
+        "location": 0.9,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "paywalled_or_partial",
+        "date_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "EPA TSCA Federal Register actions (March 1980)",
+        "fingerprint": "fp_19800305_epa_pcb_transformers_info_request_us"
+      }
+    },
+    {
+      "event_id": "evt_19800311_epa_tsca_dioxin_disposal_rule_us",
+      "title": "EPA issued TSCA final rule addressing disposal of tetrachlorodibenzo-p-dioxin",
+      "description": "EPA published a final rule under TSCA establishing disposal-related controls for tetrachlorodibenzo-p-dioxin. The rule aimed to prevent harmful disposal practices through regulatory requirements.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1980-03-11T12:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1980-03-11T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States (federal)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.9
+      },
+      "sources": [
+        {
+          "url": "https://nepis.epa.gov/Exe/ZyPURL.cgi?Dockey=91014OCT.TXT",
+          "source_name": "EPA NEPIS",
+          "published_at": "1980-03-11T12:00:00Z",
+          "headline": "EPA issued TSCA final rule prohibiting disposal of tetrachlorodibenzo-p-dioxin (45 FR 15547)",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Environmental Protection Agency (EPA)"
+        ],
+        "substances": [
+          "tetrachlorodibenzo-p-dioxin"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.75,
+        "location": 0.9,
+        "summary_grounding": 0.4
+      },
+      "quality_flags": [
+        "paywalled_or_partial",
+        "date_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "EPA TSCA Federal Register actions (March 1980)",
+        "fingerprint": "fp_19800311_epa_tsca_dioxin_disposal_rule_us"
+      }
+    },
+    {
+      "event_id": "evt_19800321_epa_tsca_inventory_reporting_amendment_us",
+      "title": "EPA amended TSCA Chemical Inventory reporting requirements via final rule",
+      "description": "EPA issued a TSCA final rule amending requirements for reporting chemicals to the TSCA Inventory. The change affected regulatory reporting obligations for chemical manufacturers and processors.",
+      "category_primary": "policy_regulation",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1980-03-21T12:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1980-03-21T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States (federal)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.9
+      },
+      "sources": [
+        {
+          "url": "https://nepis.epa.gov/Exe/ZyPURL.cgi?Dockey=91014OCT.TXT",
+          "source_name": "EPA NEPIS",
+          "published_at": "1980-03-21T12:00:00Z",
+          "headline": "EPA issued TSCA final rule amending the chemical inventory reporting requirements (45 FR 18374)",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Environmental Protection Agency (EPA)"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.75,
+        "location": 0.9,
+        "summary_grounding": 0.4
+      },
+      "quality_flags": [
+        "paywalled_or_partial",
+        "date_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "EPA TSCA Federal Register actions (March 1980)",
+        "fingerprint": "fp_19800321_epa_tsca_inventory_reporting_amendment_us"
+      }
+    }
+  ]
+}

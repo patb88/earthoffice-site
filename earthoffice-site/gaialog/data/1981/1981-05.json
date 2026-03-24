@@ -1,0 +1,755 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_1981-05_normalize_2026-01-18T092341242Z",
+    "generated_utc": "2026-01-18T09:23:41.242Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "1981-05",
+    "window": {
+      "start_utc": "1981-05-01T00:00:00.000Z",
+      "end_utc": "1981-05-31T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "pollution_contamination-1981-05-binghamton-ny-pcb-mmw-rpt",
+      "title": "CDC MMWR published on PCB contamination after Binghamton State Office Building fire",
+      "description": "A CDC/NIOSH MMWR report published May 1, 1981 described contamination following a transformer fire involving PCB-containing askarel fluid at the Binghamton State Office Building. The report discussed spread of oily soot and pyrolysis byproducts through the building and related response/health concerns.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1981-05-01T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1981-05-01T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Binghamton, New York, United States",
+        "jurisdiction_level": "city",
+        "admin1": "New York",
+        "country": "US",
+        "capital_used": null,
+        "lat": 42.098686,
+        "lon": -75.917974,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://stacks.cdc.gov/view/cdc/183247",
+          "source_name": "CDC Stacks",
+          "published_at": "1981-05-01T00:00:00.000Z",
+          "headline": "MMWR report on contamination after transformer fire (Binghamton State Office Building)",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://stacks.cdc.gov/view/cdc/183247/cdc_183247_DS1.pdf",
+          "source_name": "CDC Stacks",
+          "published_at": "1981-05-01T00:00:00.000Z",
+          "headline": "MMWR report PDF on contamination after transformer fire (Binghamton State Office Building)",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "CDC",
+          "NIOSH"
+        ],
+        "substances": [
+          "PCBs",
+          "askarel"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "contamination resulting from a transformer fire",
+            "source_url": "https://stacks.cdc.gov/view/cdc/183247"
+          },
+          {
+            "quote": "PCB-containing askarel fluid",
+            "source_url": "https://stacks.cdc.gov/view/cdc/183247/cdc_183247_DS1.pdf"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.65,
+        "category": 0.8,
+        "location": 0.7,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "binghamton-state-office-building-pcb-transformer-fire",
+        "fingerprint": "pollution_contamination|binghamton-state-office-building-pcb-transformer-fire|1981-05"
+      }
+    },
+    {
+      "event_id": "pollution_contamination-1981-05-trujillo-alto-pr-chlorine-leak",
+      "title": "Chlorine gas leak at filtration plant in Trujillo Alto, Puerto Rico",
+      "description": "A chlorine leak from a tank at a filtration plant in Trujillo Alto prompted evacuations and medical treatment for exposed people. The incident was reported by UPI on May 19, 1981.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1981-05-19T12:00:00.000Z",
+        "event_end": "1981-05-19T12:00:00.000Z",
+        "reported_at": "1981-05-19T00:00:00.000Z",
+        "time_confidence": 0.75,
+        "event_date_utc": "1981-05-19T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Trujillo Alto, Puerto Rico (U.S.)",
+        "jurisdiction_level": "city",
+        "admin1": "Puerto Rico",
+        "country": "US",
+        "capital_used": null,
+        "lat": 18.356617,
+        "lon": -66.007387,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.upi.com/Archives/1981/05/19/Fifteen-people-were-overcome-today-by-fumes-from-chlorine/2043359092800/",
+          "source_name": "UPI",
+          "published_at": "1981-05-19T00:00:00.000Z",
+          "headline": "Fifteen people were overcome today by fumes from chlorine",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Water and Sewer Authority"
+        ],
+        "substances": [
+          "chlorine"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "overcome today by fumes from chlorine",
+            "source_url": "https://www.upi.com/Archives/1981/05/19/Fifteen-people-were-overcome-today-by-fumes-from-chlorine/2043359092800/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.75,
+        "location": 0.6,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "paywalled_or_partial",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "trujillo-alto-chlorine-leak-1981-05-19",
+        "fingerprint": "pollution_contamination|trujillo-alto-chlorine-leak|1981-05-19"
+      }
+    },
+    {
+      "event_id": "pollution_contamination-1981-05-cartwright-la-ammonia-pipeline-rupture",
+      "title": "Anhydrous ammonia pipeline rupture near Cartwright, Louisiana",
+      "description": "A federal court record describes an incident in which a bulldozer punctured an anhydrous ammonia pipeline near Cartwright, Louisiana, releasing ammonia into the air. The case record links the release to impacts on nearby residents and property.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1981-05-27T12:00:00.000Z",
+        "event_end": "1981-05-27T12:00:00.000Z",
+        "reported_at": "1981-05-27T00:00:00.000Z",
+        "time_confidence": 0.35,
+        "event_date_utc": "1981-05-27T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Near Cartwright, Jackson Parish, Louisiana, United States",
+        "jurisdiction_level": "state",
+        "admin1": "Louisiana",
+        "country": "US",
+        "capital_used": "Baton Rouge",
+        "lat": 30.451468,
+        "lon": -91.187149,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.35
+      },
+      "sources": [
+        {
+          "url": "https://law.justia.com/cases/federal/district-courts/FSupp/684/1373/1896445/",
+          "source_name": "Justia (Federal district court opinion repository)",
+          "published_at": "1988-01-01T00:00:00.000Z",
+          "headline": "Federal district court findings (case record including 1981 ammonia release)",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [
+          "anhydrous ammonia"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "bulldozer punctured ... anhydrous ammonia pipeline",
+            "source_url": "https://law.justia.com/cases/federal/district-courts/FSupp/684/1373/1896445/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.35,
+        "category": 0.65,
+        "location": 0.35,
+        "summary_grounding": 0.4
+      },
+      "quality_flags": [
+        "secondary_sources_only",
+        "date_ambiguous",
+        "low_confidence_location",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "cartwright-louisiana-anhydrous-ammonia-pipeline-rupture-1981",
+        "fingerprint": "pollution_contamination|louisiana-ammonia-pipeline-rupture|1981-05"
+      }
+    },
+    {
+      "event_id": "evt_19810505_mobile_al_flood",
+      "title": "Flooding from heavy rainfall in Mobile, Alabama (May 5–6, 1981)",
+      "description": "Heavy rainfall in Mobile, Alabama on May 5–6, 1981 caused widespread flooding along streams and low-lying areas. USGS reports document the event and associated damages.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1981-05-05T12:00:00Z",
+        "event_end": "1981-05-06T12:00:00Z",
+        "reported_at": "1981-05-01T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1981-05-05T12:00:00Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Mobile, Alabama, United States",
+        "jurisdiction_level": "city",
+        "admin1": "Alabama",
+        "country": "US",
+        "capital_used": null,
+        "lat": 30.6954,
+        "lon": -88.0399,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.8
+      },
+      "sources": [
+        {
+          "url": "https://www.usgs.gov/publications/flood-may-5-and-6-1981-mobile-alabama",
+          "source_name": "USGS",
+          "published_at": "1981-05-01T00:00:00.000Z",
+          "headline": "Flood of May 5 and 6, 1981 in Mobile, Alabama",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://pubs.usgs.gov/publication/ofr811054",
+          "source_name": "USGS Publications Warehouse",
+          "published_at": "1981-05-01T00:00:00.000Z",
+          "headline": "OFR 81-1054 (Flood of May 5 and 6, 1981 in Mobile, Alabama)",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "USGS"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.85,
+        "location": 0.8,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "USGS flood report Mobile AL May 1981",
+        "fingerprint": "fp_mobile_al_flood_1981_05_05"
+      }
+    },
+    {
+      "event_id": "evt_19810522_wcentral_mt_flood",
+      "title": "Rainstorm-driven flooding in west-central Montana (May 22–23, 1981)",
+      "description": "A series of rainstorms in west-central Montana on May 22–23, 1981 produced extensive flooding. USGS materials report peak discharges exceeding 100-year flood estimates at numerous sites and damages reported in excess of $30 million.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1981-05-22T12:00:00Z",
+        "event_end": "1981-05-23T12:00:00Z",
+        "reported_at": "1981-05-01T00:00:00.000Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "1981-05-22T12:00:00Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "West-central Montana, United States",
+        "jurisdiction_level": "state",
+        "admin1": "Montana",
+        "country": "US",
+        "capital_used": "Helena",
+        "lat": 46.5884,
+        "lon": -112.0245,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.usgs.gov/publications/floods-may-1981-west-central-montana",
+          "source_name": "USGS",
+          "published_at": "1981-05-01T00:00:00.000Z",
+          "headline": "Floods of May 1981 in West-Central Montana",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://pubs.usgs.gov/publication/wri8233",
+          "source_name": "USGS Publications Warehouse",
+          "published_at": "1981-05-01T00:00:00.000Z",
+          "headline": "WRI 82-33 (Floods of May 1981 in West-Central Montana)",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "USGS"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.58,
+        "category": 0.85,
+        "location": 0.6,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "USGS floods West-Central Montana May 1981",
+        "fingerprint": "fp_mt_flood_1981_05_22"
+      }
+    },
+    {
+      "event_id": "evt_19810524_austin_tx_flood",
+      "title": "Creek flooding in the Austin, Texas metro area (May 24–25, 1981)",
+      "description": "Flooding affected Shoal Creek, Walnut Creek, and Little Walnut Creek in the Austin, Texas metropolitan area on May 24–25, 1981. USGS produced hydrologic data and flood-boundary mapping associated with the event.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1981-05-24T12:00:00Z",
+        "event_end": "1981-05-25T12:00:00Z",
+        "reported_at": "1981-05-01T00:00:00.000Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "1981-05-24T12:00:00Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Austin, Texas, United States",
+        "jurisdiction_level": "city",
+        "admin1": "Texas",
+        "country": "US",
+        "capital_used": null,
+        "lat": 30.2672,
+        "lon": -97.7431,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.75
+      },
+      "sources": [
+        {
+          "url": "https://www.usgs.gov/publications/flood-may-24-25-1981-austin-texas-metropolitan-area",
+          "source_name": "USGS",
+          "published_at": "1981-05-01T00:00:00.000Z",
+          "headline": "Flood of May 24–25, 1981 in the Austin, Texas Metropolitan Area",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://pubs.usgs.gov/publication/ha656",
+          "source_name": "USGS Publications Warehouse",
+          "published_at": "1981-05-01T00:00:00.000Z",
+          "headline": "HA 656 (Flood of May 24–25, 1981 in the Austin, Texas Metropolitan Area)",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "USGS"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.58,
+        "category": 0.85,
+        "location": 0.75,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "USGS flood Austin TX May 1981",
+        "fingerprint": "fp_austin_tx_flood_1981_05_24"
+      }
+    },
+    {
+      "event_id": "evt_19810506_calgary_ab_snowfall",
+      "title": "Record single-day snowfall in Calgary, Alberta (May 6, 1981)",
+      "description": "A spring storm produced an unusually large snowfall in Calgary, Alberta on May 6, 1981. A Weather Network article reports 48.4 cm recorded at Calgary International Airport and describes the event as the city’s largest single-day snowfall on record.",
+      "category_primary": "weather_climate",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "1981-05-06T12:00:00Z",
+        "event_end": "1981-05-06T12:00:00Z",
+        "reported_at": "2026-01-17T23:29:51.004Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1981-05-06T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Calgary, Alberta, Canada",
+        "jurisdiction_level": "city",
+        "admin1": "Alberta",
+        "country": "CA",
+        "capital_used": null,
+        "lat": 51.0447,
+        "lon": -114.0719,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.75
+      },
+      "sources": [
+        {
+          "url": "https://www.theweathernetwork.com/en/news/weather/severe/calgary-alberta-biggest-ever-snowstorm-hit-the-city-in-may-1981",
+          "source_name": "The Weather Network",
+          "published_at": "2026-01-17T23:29:51.004Z",
+          "headline": "Calgary Alberta biggest ever snowstorm hit the city in May 1981",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "The Weather Network"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.5,
+        "category": 0.8,
+        "location": 0.75,
+        "summary_grounding": 0.4
+      },
+      "quality_flags": [
+        "secondary_sources_only",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "Calgary record snowfall May 1981",
+        "fingerprint": "fp_calgary_snow_1981_05_06"
+      }
+    },
+    {
+      "event_id": "evt_19810525_tc_paddy_aus_western_region",
+      "title": "Tropical Cyclone Paddy in the Australian Western Region basin (May 25–30, 1981)",
+      "description": "Tropical Cyclone Paddy developed in late May 1981 in the Australian Western Region cyclone basin. The Australian Bureau of Meteorology cyclone history page reports the system persisted during May 25–30, 1981 and no damage or loss of life was reported.",
+      "category_primary": "weather_climate",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "1981-05-25T12:00:00Z",
+        "event_end": "1981-05-30T12:00:00Z",
+        "reported_at": "2026-01-17T23:29:51.004Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "1981-05-25T12:00:00Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Australian Western Region cyclone basin (near Cocos (Keeling) Islands)",
+        "jurisdiction_level": "supranational",
+        "admin1": null,
+        "country": null,
+        "capital_used": null,
+        "lat": 0,
+        "lon": 0,
+        "precision": "proxy",
+        "location_basis": "institution_proxy",
+        "location_confidence": 0.25
+      },
+      "sources": [
+        {
+          "url": "https://www.bom.gov.au/cyclone/history/paddy1981.shtml",
+          "source_name": "Australian Bureau of Meteorology",
+          "published_at": "2026-01-17T23:29:51.004Z",
+          "headline": "Cyclone history: Paddy (1981)",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Australian Bureau of Meteorology"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "Indian Ocean"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.32,
+        "category": 0.8,
+        "location": 0.25,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "low_confidence_location",
+        "location_ambiguous",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "BoM Cyclone Paddy 1981",
+        "fingerprint": "fp_tc_paddy_1981_05"
+      }
+    },
+    {
+      "event_id": "evt_19810520_big_cypress_forest_fires_wapo",
+      "title": "South Florida forest fires spread through Big Cypress Preserve during drought, exceeding 100,000 acres reported",
+      "description": "A news report described forest fires spreading through South Florida’s drought-parched Big Cypress Preserve, with the burned area reported as more than 100,000 acres. The report also noted additional fires elsewhere in Florida and officials seeking federal assistance amid water shortages.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1981-05-20T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1981-05-20T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Big Cypress Preserve, Florida, USA",
+        "jurisdiction_level": "site",
+        "admin1": "Florida",
+        "country": "US",
+        "capital_used": null,
+        "lat": 25.9708,
+        "lon": -81.0851,
+        "precision": "exact",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.washingtonpost.com/archive/local/1981/05/20/south-florida-forest-fires/80cda831-d983-49bf-9e99-309d621fa921/",
+          "source_name": "The Washington Post",
+          "published_at": "1981-05-20T00:00:00Z",
+          "headline": "South Florida Forest Fires",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [
+          "Big Cypress Preserve"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "forest fires spreading through South Florida’s drought-parched Big Cypress Preserve",
+            "source_url": "https://www.washingtonpost.com/archive/local/1981/05/20/south-florida-forest-fires/80cda831-d983-49bf-9e99-309d621fa921/"
+          },
+          {
+            "quote": "blackened area reported as more than 100,000 acres",
+            "source_url": "https://www.washingtonpost.com/archive/local/1981/05/20/south-florida-forest-fires/80cda831-d983-49bf-9e99-309d621fa921/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.8,
+        "location": 0.6,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "paywalled_or_partial",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "1981 Big Cypress Preserve Florida wildfire",
+        "fingerprint": "fp_198105_big_cypress_florida_wildfire"
+      }
+    },
+    {
+      "event_id": "evt_19810526_big_cypress_upi_150k",
+      "title": "Big Cypress Preserve wildfire reported over 150,000 acres and not under control amid widespread Florida fires",
+      "description": "A UPI report said a wildfire in Florida’s Big Cypress Preserve had burned more than 150,000 acres over a little more than two weeks and was still not under control. The same report noted many new fires over the Memorial Day weekend across Florida, with some suspected to be arson, as drought conditions persisted.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1981-05-26T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1981-05-26T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Big Cypress Preserve and Everglades region, Florida, USA",
+        "jurisdiction_level": "site",
+        "admin1": "Florida",
+        "country": "US",
+        "capital_used": null,
+        "lat": 25.9708,
+        "lon": -81.0851,
+        "precision": "exact",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.5
+      },
+      "sources": [
+        {
+          "url": "https://www.upi.com/Archives/1981/05/26/Rash-of-arson-fires-reported-in-Florida/3723359697600/",
+          "source_name": "UPI",
+          "published_at": "1981-05-26T00:00:00Z",
+          "headline": "Rash of arson fires reported in Florida",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "UPI"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "Big Cypress Preserve",
+          "Everglades"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "had burned more than 150,000 acres in a little more than two weeks",
+            "source_url": "https://www.upi.com/Archives/1981/05/26/Rash-of-arson-fires-reported-in-Florida/3723359697600/"
+          },
+          {
+            "quote": "still not under control",
+            "source_url": "https://www.upi.com/Archives/1981/05/26/Rash-of-arson-fires-reported-in-Florida/3723359697600/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.85,
+        "location": 0.5,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "1981 Big Cypress Preserve Florida wildfire",
+        "fingerprint": "fp_198105_big_cypress_florida_wildfire"
+      }
+    }
+  ]
+}

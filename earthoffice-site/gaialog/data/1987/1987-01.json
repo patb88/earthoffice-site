@@ -1,0 +1,527 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_1987-01_normalize_2026-01-18T110036491Z",
+    "generated_utc": "2026-01-18T11:00:36.491Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "1987-01",
+    "window": {
+      "start_utc": "1987-01-01T00:00:00.000Z",
+      "end_utc": "1987-01-31T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "1987-01-weather_climate-france-cold-wave-jan-1987",
+      "title": "Severe cold wave in France (January 1987)",
+      "description": "A severe cold wave affected France during January 1987, with prolonged periods below freezing in many areas and extremely low minimum temperatures reported in some locations.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1987-01-08T12:00:00Z",
+        "event_end": "1987-01-24T12:00:00Z",
+        "reported_at": "2026-01-18T05:47:21.326Z",
+        "time_confidence": 0.7,
+        "event_date_utc": null,
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "France",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "FR",
+        "capital_used": "Paris",
+        "lat": 48.8566,
+        "lon": 2.3522,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.9
+      },
+      "sources": [
+        {
+          "url": "https://meteofrance.com/actualites-et-dossiers/magazine/retour-sur-la-vague-de-froid-de-janvier-1987",
+          "source_name": "Météo-France",
+          "published_at": "2026-01-18T05:47:21.326Z",
+          "headline": "Retour sur la vague de froid de janvier 1987",
+          "byline": null,
+          "accessed_utc": "2026-01-18T05:47:21.326Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Météo-France"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "vague de froid de janvier 1987",
+            "source_url": "https://meteofrance.com/actualites-et-dossiers/magazine/retour-sur-la-vague-de-froid-de-janvier-1987"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.85,
+        "location": 0.9,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "europe_cold_wave_jan_1987",
+        "fingerprint": "europe_cold_wave_jan_1987|FR|1987-01-08/1987-01-24"
+      }
+    },
+    {
+      "event_id": "1987-01-weather_climate-uk-ireland-big-freeze-upi-19870114",
+      "title": "Cold wave and heavy snow disrupt United Kingdom and Ireland (January 1987)",
+      "description": "A prolonged cold spell affected the United Kingdom and Ireland in mid-January 1987, with snow and very low temperatures causing significant disruption according to contemporary news reporting.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1987-01-07T12:00:00Z",
+        "event_end": "1987-01-20T12:00:00Z",
+        "reported_at": "1987-01-14T00:00:00Z",
+        "time_confidence": 0.55,
+        "event_date_utc": null,
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "United Kingdom and Ireland",
+        "jurisdiction_level": "supranational",
+        "admin1": null,
+        "country": null,
+        "capital_used": "London",
+        "lat": 51.5074,
+        "lon": -0.1278,
+        "precision": "supranational",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.upi.com/Archives/1987/01/14/Europe-slid-deeper-into-one-of-the-centurys-coldest/1063537598800/",
+          "source_name": "UPI",
+          "published_at": "1987-01-14T00:00:00Z",
+          "headline": "Europe slid deeper into one of the century's coldest",
+          "byline": null,
+          "accessed_utc": "2026-01-18T05:47:21.326Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "UPI"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Europe slid deeper into one of the century's coldest",
+            "source_url": "https://www.upi.com/Archives/1987/01/14/Europe-slid-deeper-into-one-of-the-centurys-coldest/1063537598800/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.45,
+        "category": 0.8,
+        "location": 0.55,
+        "summary_grounding": 0.4
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "europe_cold_wave_jan_1987",
+        "fingerprint": "europe_cold_wave_jan_1987|UK-IE|1987-01-07/1987-01-20"
+      }
+    },
+    {
+      "event_id": "1987-01-weather_climate-europe-cold-wave-upi-19870114",
+      "title": "Blizzards and extreme cold reported across Europe (mid-January 1987)",
+      "description": "Contemporary reporting described blizzards and record low temperatures affecting multiple European countries in early to mid-January 1987, causing widespread disruption and weather-related fatalities.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1987-01-01T12:00:00Z",
+        "event_end": "1987-01-14T12:00:00Z",
+        "reported_at": "1987-01-14T00:00:00Z",
+        "time_confidence": 0.5,
+        "event_date_utc": null,
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Europe (multi-country)",
+        "jurisdiction_level": "supranational",
+        "admin1": null,
+        "country": null,
+        "capital_used": "Brussels",
+        "lat": 50.8503,
+        "lon": 4.3517,
+        "precision": "supranational",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.4
+      },
+      "sources": [
+        {
+          "url": "https://www.upi.com/Archives/1987/01/14/Europe-slid-deeper-into-one-of-the-centurys-coldest/1063537598800/",
+          "source_name": "UPI",
+          "published_at": "1987-01-14T00:00:00Z",
+          "headline": "Europe slid deeper into one of the century's coldest",
+          "byline": null,
+          "accessed_utc": "2026-01-18T05:47:21.326Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "UPI"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Europe slid deeper into one of the century's coldest",
+            "source_url": "https://www.upi.com/Archives/1987/01/14/Europe-slid-deeper-into-one-of-the-centurys-coldest/1063537598800/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.4,
+        "category": 0.8,
+        "location": 0.4,
+        "summary_grounding": 0.4
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "europe_cold_wave_jan_1987",
+        "fingerprint": "europe_cold_wave_jan_1987|EUROPE|1987-01-01/1987-01-14"
+      }
+    },
+    {
+      "event_id": "1987-01-weather_climate-cyclone-connie-wa-port-hedland",
+      "title": "Severe Tropical Cyclone Connie makes landfall near Port Hedland, Western Australia (Jan 1987)",
+      "description": "Severe Tropical Cyclone Connie affected Western Australia's Pilbara coast in January 1987 and made landfall west of Port Hedland, bringing damaging winds and coastal impacts including erosion and flooding as described by Australia’s Bureau of Meteorology.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1987-01-15T12:00:00Z",
+        "event_end": "1987-01-20T12:00:00Z",
+        "reported_at": "2026-01-18T05:47:21.326Z",
+        "time_confidence": 0.65,
+        "event_date_utc": null,
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Pilbara coast near Port Hedland, Western Australia, Australia",
+        "jurisdiction_level": "city",
+        "admin1": "Western Australia",
+        "country": "AU",
+        "capital_used": null,
+        "lat": -20.3104,
+        "lon": 118.606,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.75
+      },
+      "sources": [
+        {
+          "url": "https://www.bom.gov.au/cyclone/history/connie.shtml",
+          "source_name": "Australian Bureau of Meteorology",
+          "published_at": "2026-01-18T05:47:21.326Z",
+          "headline": "Cyclone history: Connie",
+          "byline": null,
+          "accessed_utc": "2026-01-18T05:47:21.326Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Australian Bureau of Meteorology"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "coastal"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Cyclone history: Connie",
+            "source_url": "https://www.bom.gov.au/cyclone/history/connie.shtml"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.85,
+        "location": 0.75,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "cyclone_connie_1987",
+        "fingerprint": "cyclone_connie_1987|Port_Hedland|1987-01-15/1987-01-20"
+      }
+    },
+    {
+      "event_id": "evt_19870130_south_sandwich_eq_usgs",
+      "title": "Major earthquake in the South Sandwich Islands region (Jan 30, 1987)",
+      "description": "USGS reporting for January\u0013February 1987 describes a major earthquake in the South Sandwich Islands region on January 30, 1987. The report characterizes the event as occurring in an unpopulated area.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1987-01-30T12:00:00Z",
+        "event_end": "1987-01-30T12:00:00Z",
+        "reported_at": "1987-02-01T00:00:00Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "1987-01-30T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "South Sandwich Islands region (South Atlantic Ocean)",
+        "jurisdiction_level": "site",
+        "admin1": null,
+        "country": null,
+        "capital_used": null,
+        "lat": -57.75,
+        "lon": -26.5,
+        "precision": "proxy",
+        "location_basis": "manual_override",
+        "location_confidence": 0.35
+      },
+      "sources": [
+        {
+          "url": "https://www.usgs.gov/publications/earthquakes-january-february-1987",
+          "source_name": "USGS",
+          "published_at": "1987-02-01T00:00:00Z",
+          "headline": "Earthquakes, January\u0013February 1987",
+          "byline": null,
+          "accessed_utc": "2026-01-18T05:47:38.958Z",
+          "canonical_url": "https://www.usgs.gov/publications/earthquakes-january-february-1987"
+        },
+        {
+          "url": "https://pubs.usgs.gov/publication/70168705",
+          "source_name": "USGS Publications Warehouse",
+          "published_at": "1987-02-01T00:00:00Z",
+          "headline": "Earthquakes, January\u0013February 1987",
+          "byline": null,
+          "accessed_utc": "2026-01-18T05:47:38.958Z",
+          "canonical_url": "https://pubs.usgs.gov/publication/70168705"
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "USGS"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.5,
+        "category": 0.85,
+        "location": 0.35,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "low_confidence_location"
+      ],
+      "dedupe": {
+        "cluster_hint": "South Sandwich Islands region earthquake 1987-01-30",
+        "fingerprint": "fp_19870130_south_sandwich_islands_region_earthquake"
+      }
+    },
+    {
+      "event_id": "fires_au_nsw_cootamundra_deniliquin_1987-01-16",
+      "title": "Cootamundra–Deniliquin region bushfires in south-west New South Wales",
+      "description": "Bushfires affected multiple towns and localities in south-west New South Wales, including the Cootamundra and Deniliquin areas. The incident is reported to have burned about 19,000 hectares around 16 January 1987, with fatalities and injuries reported across the wider affected area.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1987-01-16T12:00:00Z",
+        "event_end": "1987-01-16T12:00:00Z",
+        "reported_at": "2026-01-18T05:47:57.514Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "1987-01-16T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "South-west New South Wales (Cootamundra / Deniliquin / Gundagai area), Australia",
+        "jurisdiction_level": "state",
+        "admin1": "New South Wales",
+        "country": "AU",
+        "capital_used": "Sydney",
+        "lat": -33.8688,
+        "lon": 151.2093,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://knowledge.aidr.org.au/resources/bushfire-cootamundra-and-deniliquin-nsw-1987/",
+          "source_name": "AIDR Knowledge Hub",
+          "published_at": "2026-01-18T05:47:57.514Z",
+          "headline": "Bushfire - Cootamundra and Deniliquin, NSW 1987",
+          "byline": null,
+          "accessed_utc": "2026-01-18T05:47:57.514Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.58,
+        "category": 0.8,
+        "location": 0.55,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "AIDR bushfire cootamundra deniliquin nsw 1987",
+        "fingerprint": "fires|au|nsw|1987-01-16|cootamundra_deniliquin_region"
+      }
+    },
+    {
+      "event_id": "evt_19870123_us_eo12580_superfund_implementation",
+      "title": "U.S. Executive Order 12580 delegates Superfund implementation functions",
+      "description": "President Ronald Reagan signed Executive Order 12580 on Superfund implementation. The order delegates certain presidential functions under CERCLA, as amended by SARA, to federal agencies for aspects of response and natural resource trusteeship.",
+      "category_primary": "policy_regulation",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "1987-01-23T12:00:00Z",
+        "event_end": "1987-01-23T12:00:00Z",
+        "reported_at": "1987-01-23T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1987-01-23T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States (federal executive action)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.8
+      },
+      "sources": [
+        {
+          "url": "https://www.archives.gov/federal-register/codification/executive-order/12580.html",
+          "source_name": "National Archives (Federal Register codification)",
+          "published_at": "1987-01-23T00:00:00Z",
+          "headline": "Executive Order 12580—Superfund Implementation",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.reaganlibrary.gov/archives/speech/executive-order-12580-superfund-implementation",
+          "source_name": "Ronald Reagan Presidential Library",
+          "published_at": "1987-01-23T00:00:00Z",
+          "headline": "Executive Order 12580: Superfund Implementation",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Environmental Protection Agency (EPA)",
+          "United States federal government"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": [
+          "Ronald Reagan"
+        ]
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Executive Order 12580—Superfund Implementation",
+            "source_url": "https://www.archives.gov/federal-register/codification/executive-order/12580.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.74,
+        "category": 0.85,
+        "location": 0.85,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "EO 12580 Superfund implementation delegation (CERCLA/SARA)",
+        "fingerprint": "fp_19870123_us_washingtondc_eo12580_superfund"
+      }
+    }
+  ]
+}

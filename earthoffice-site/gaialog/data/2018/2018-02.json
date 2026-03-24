@@ -1,0 +1,466 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_2018-02_normalize_2026-01-16T062210930Z",
+    "generated_utc": "2026-01-16T06:22:10.930Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "2018-02",
+    "window": {
+      "start_utc": "2018-02-01T00:00:00.000Z",
+      "end_utc": "2018-02-28T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "evt_201802_barcarena_alunorte_rainfall_alleged_contamination",
+      "title": "Heavy rainfall and contamination allegations near Hydro Alunorte refinery in Barcarena, Brazil",
+      "description": "Following heavy rainfall and flooding in mid-February 2018, residents and communities near Norsk Hydro’s Alunorte alumina refinery raised concerns about possible leaks or overflows from water management and effluent systems. Hydro’s own documentation describes the situation and the allegations/concerns about potential contamination in surrounding waters.",
+      "category_primary": "pollution_contamination",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "2018-02-16T00:00:00.000Z",
+        "event_end": "2018-02-18T23:59:59.000Z",
+        "reported_at": "2018-02-01T00:00:00.000Z",
+        "time_confidence": 0.35,
+        "event_date_utc": null,
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Barcarena, Pará, Brazil",
+        "jurisdiction_level": "city",
+        "admin1": "Pará",
+        "country": "BR",
+        "capital_used": null,
+        "lat": -1.5058,
+        "lon": -48.625,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.hydro.com/en/global/media/on-the-agenda/the-alunorte-situation/",
+          "source_name": "Norsk Hydro",
+          "published_at": "2018-02-01T00:00:00.000Z",
+          "headline": "The Alunorte situation",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Norsk Hydro",
+          "Hydro Alunorte"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "The Alunorte situation",
+            "source_url": "https://www.hydro.com/en/global/media/on-the-agenda/the-alunorte-situation/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.42,
+        "category": 0.6,
+        "location": 0.6,
+        "summary_grounding": 0.35
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only",
+        "possible_opinion_or_advocacy"
+      ],
+      "dedupe": {
+        "cluster_hint": "alunorte_barcarena_2018_02_rainfall_contamination_allegations",
+        "fingerprint": "fp_alunorte_barcarena_2018-02_2018-02-16_2018-02-18"
+      }
+    },
+    {
+      "event_id": "evt_201802_midwest_flooding_001",
+      "title": "Flooding from rain on melting snowpack in Michigan, Indiana, and Ohio",
+      "description": "A melting snowpack combined with several inches of rainfall contributed to extensive flooding and high river crests in parts of Indiana and Michigan, with impacts lasting for days. The National Weather Service documented the February 2018 flooding event and related river impacts.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2018-02-19T00:00:00.000Z",
+        "event_end": "2018-02-21T23:59:59.000Z",
+        "reported_at": "2018-02-19T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2018-02-19T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "U.S. Midwest (Michigan, Indiana, Ohio)",
+        "jurisdiction_level": "supranational",
+        "admin1": null,
+        "country": null,
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "proxy",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.weather.gov/iwx/Flooding_February2018",
+          "source_name": "National Weather Service",
+          "published_at": "2018-02-19T00:00:00.000Z",
+          "headline": "Flooding February 2018",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "National Weather Service"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "A melting snowpack combined with several inches of rainfall... produced extensive flooding",
+            "source_url": "https://www.weather.gov/iwx/Flooding_February2018"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.8,
+        "location": 0.55,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Feb2018_midwest_flooding_IWX",
+        "fingerprint": "fp_midwest_flooding_20180219_us_proxy"
+      }
+    },
+    {
+      "event_id": "evt_201802_sa_drought_disaster_001",
+      "title": "South Africa declared a national disaster amid severe drought",
+      "description": "South Africa’s government declared a national disaster due to drought conditions affecting multiple provinces, including areas around Cape Town. The declaration reflected severe water-supply stress and escalating drought impacts.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2018-02-13T00:00:00.000Z",
+        "event_end": "2018-02-13T23:59:59.000Z",
+        "reported_at": "2018-02-13T17:11:54.000Z",
+        "time_confidence": 0.85,
+        "event_date_utc": "2018-02-13T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "South Africa (including Western Cape/Cape Town; Northern Cape; Eastern Cape)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "ZA",
+        "capital_used": "Pretoria",
+        "lat": -25.7479,
+        "lon": 28.2293,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.8
+      },
+      "sources": [
+        {
+          "url": "https://news.trust.org/item/20180213171154-qfzxi",
+          "source_name": "Thomson Reuters Foundation News",
+          "published_at": "2018-02-13T17:11:54.000Z",
+          "headline": "South Africa declared a national disaster due to severe drought affecting Cape Town and multiple provinces",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "South African government",
+          "Thomson Reuters Foundation News"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "declared a national disaster over drought conditions",
+            "source_url": "https://news.trust.org/item/20180213171154-qfzxi"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.78,
+        "category": 0.9,
+        "location": 0.85,
+        "summary_grounding": 0.75
+      },
+      "quality_flags": [
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "2018-02_SouthAfrica_drought_national_disaster",
+        "fingerprint": "fp_za_drought_disaster_20180213_pretoria"
+      }
+    },
+    {
+      "event_id": "20180225-png-earthquake-usgs",
+      "title": "M7.5 earthquake in Papua New Guinea with landslides and damage reports",
+      "description": "A magnitude 7.5 earthquake struck Papua New Guinea on 2018-02-25 (UTC). Reports described widespread impacts including damage and landslides/sinkholes in affected areas.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2018-02-25T17:44:44.000Z",
+        "event_end": "2018-02-25T17:44:44.000Z",
+        "reported_at": "2018-02-25T17:44:44.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2018-02-25T17:44:44.000Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Hela Province area (near Komo), Papua New Guinea",
+        "jurisdiction_level": "state",
+        "admin1": "Hela Province",
+        "country": "PG",
+        "capital_used": "Port Moresby",
+        "lat": -9.4438,
+        "lon": 147.1803,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.usgs.gov/news/featured-story/magnitude-75-earthquake-papua-new-guinea",
+          "source_name": "USGS",
+          "published_at": "2018-02-25T00:00:00.000Z",
+          "headline": "Magnitude 7.5 Earthquake Papua New Guinea",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us2000d7q6/executive",
+          "source_name": "USGS Earthquake Hazards Program",
+          "published_at": "2018-02-25T00:00:00.000Z",
+          "headline": "M 7.5 - Papua New Guinea (Event page executive summary)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "USGS"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "A magnitude 7.5 earthquake struck Papua New Guinea",
+            "source_url": "https://www.usgs.gov/news/featured-story/magnitude-75-earthquake-papua-new-guinea"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.65,
+        "category": 0.8,
+        "location": 0.6,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "needs_dedupe_check",
+        "location_ambiguous",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "PNG M7.5 earthquake 2018-02-25",
+        "fingerprint": "png_m75_20180225_hela"
+      }
+    },
+    {
+      "event_id": "evt_20180221_idn_fires_physorg",
+      "title": "Forest and land fires prompt elevated alert status in multiple Indonesian provinces",
+      "description": "Indonesian authorities raised alert or emergency status in several provinces as seasonal land and forest fires flared in February 2018. Officials prepared suppression measures such as water bombing and cloud seeding amid concerns about smoke and haze.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2018-02-21T00:00:00.000Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "2018-02-21T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Indonesia",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "ID",
+        "capital_used": "Jakarta",
+        "lat": -6.2088,
+        "lon": 106.8456,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://phys.org/news/2018-02-rash-forest-indonesia.html",
+          "source_name": "Phys.org",
+          "published_at": "2018-02-21T00:00:00.000Z",
+          "headline": "Rash of forest fires prompts elevated alert/emergency status in multiple Indonesian provinces",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [
+          "forests"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Rash of forest fires prompts elevated alert/emergency status in multiple Indonesian provinces",
+            "source_url": "https://phys.org/news/2018-02-rash-forest-indonesia.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.8,
+        "location": 0.6,
+        "summary_grounding": 0.65
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Indonesia seasonal land/forest fires alert status Feb 2018",
+        "fingerprint": "idn_fires_2018-02-21_physorg"
+      }
+    },
+    {
+      "event_id": "evt_20180216_us_epa_tsca_title_vi_formaldehyde_compliance_delay_court_order",
+      "title": "Court order says EPA lacked authority to delay TSCA Title VI formaldehyde standards compliance dates",
+      "description": "A U.S. District Court order addressed EPA’s delay of compliance dates for formaldehyde emission standards for composite wood products under TSCA Title VI. The action affected regulatory timelines for compliance with the formaldehyde standards.",
+      "category_primary": "policy_regulation",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2018-02-16T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2018-02-16T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States (federal court / EPA regulation)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://thefederalregister.org/83-FR/14375",
+          "source_name": "The Federal Register",
+          "published_at": "2018-02-16T00:00:00.000Z",
+          "headline": "83 FR 14375",
+          "byline": null,
+          "accessed_utc": "2018-02-28T23:59:59.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.epa.gov/formaldehyde/formaldehyde-emission-standards-composite-wood-products",
+          "source_name": "U.S. Environmental Protection Agency",
+          "published_at": "2018-02-16T00:00:00.000Z",
+          "headline": "Formaldehyde Emission Standards for Composite Wood Products",
+          "byline": null,
+          "accessed_utc": "2018-02-28T23:59:59.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Environmental Protection Agency (EPA)",
+          "U.S. District Court"
+        ],
+        "substances": [
+          "formaldehyde"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.75,
+        "location": 0.7,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only",
+        "low_confidence_location",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "EPA formaldehyde TSCA Title VI compliance date delay litigation",
+        "fingerprint": "us_epa_formaldehyde_tsca_title_vi_2018-02-16_washington_dc"
+      }
+    }
+  ]
+}

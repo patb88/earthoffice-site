@@ -1,0 +1,958 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_1987-06_normalize_2026-01-18T111044322Z",
+    "generated_utc": "2026-01-18T11:10:44.322Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "1987-06",
+    "window": {
+      "start_utc": "1987-06-01T00:00:00.000Z",
+      "end_utc": "1987-06-30T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "evt_19870608_lebec_ca_oil_spill_latimes",
+      "title": "Crude oil pipeline leak spills about 8,400 gallons near Lebec, California",
+      "description": "A leak in an underground crude oil transmission line spilled about 8,400 gallons (about 200 barrels) near Lebec, California. The oil reportedly flowed into storm drains and toward Fort Tejon Campground as hazardous materials officials and other agencies assessed impacts and cleanup needs.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1987-06-08T12:00:00Z",
+        "event_end": "1987-06-08T12:00:00Z",
+        "reported_at": "1987-06-09T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1987-06-08T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Lebec, California, USA",
+        "jurisdiction_level": "city",
+        "admin1": "California",
+        "country": "US",
+        "capital_used": null,
+        "lat": 34.8416,
+        "lon": -118.8637,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.latimes.com/archives/la-xpm-1987-06-09-mn-6056-story.html",
+          "source_name": "Los Angeles Times",
+          "published_at": "1987-06-09T00:00:00Z",
+          "headline": "Crude oil pipeline leak spills about 8,400 gallons near Lebec, California (storm drains toward Fort Tejon Campground)",
+          "byline": null,
+          "accessed_utc": "2026-01-18T06:01:27.738Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [
+          "crude oil"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "spilled about 8,400 gallons (about 200 barrels) of crude oil near Lebec",
+            "source_url": "https://www.latimes.com/archives/la-xpm-1987-06-09-mn-6056-story.html"
+          },
+          {
+            "quote": "oil flowing into storm drains and toward Fort Tejon Campground",
+            "source_url": "https://www.latimes.com/archives/la-xpm-1987-06-09-mn-6056-story.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.58,
+        "category": 0.75,
+        "location": 0.6,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "paywalled_or_partial",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Lebec California crude oil pipeline leak ~8400 gallons June 1987",
+        "fingerprint": "fp_1987-06-08_lebec_ca_crude_oil_spill"
+      }
+    },
+    {
+      "event_id": "ev_19870622_buffalo_ny_rain_flooding",
+      "title": "Record 24-hour rainfall and flooding in Buffalo, New York",
+      "description": "Buffalo, New York saw record rainfall over a 24-hour period, including a reported 5.01 inches measured at Buffalo Airport. The rain led to widespread flooding and major road closures across the Buffalo metropolitan area.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1987-06-22T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1987-06-22T00:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Buffalo, New York, USA",
+        "jurisdiction_level": "city",
+        "admin1": "New York",
+        "country": "US",
+        "capital_used": null,
+        "lat": 42.8864,
+        "lon": -78.8784,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.75
+      },
+      "sources": [
+        {
+          "url": "https://repository.library.noaa.gov/view/noaa/70354",
+          "source_name": "NOAA Institutional Repository",
+          "published_at": "1987-06-22T00:00:00Z",
+          "headline": "Record rainfall and flooding (Buffalo, NY)",
+          "byline": null,
+          "accessed_utc": "2026-01-18T06:01:55.275Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.weather.gov/buf/HistoryJUN22.html",
+          "source_name": "NWS Buffalo",
+          "published_at": "1987-06-22T00:00:00Z",
+          "headline": "June 22 Weather History (Buffalo)",
+          "byline": null,
+          "accessed_utc": "2026-01-18T06:01:55.275Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.upi.com/Archives/1987/06/22/Rain-fell-in-record-amounts-Monday-in-Buffalo-NY/8573551332800/",
+          "source_name": "UPI",
+          "published_at": "1987-06-22T00:00:00Z",
+          "headline": "Rain fell in record amounts Monday in Buffalo, NY",
+          "byline": null,
+          "accessed_utc": "2026-01-18T06:01:55.275Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA",
+          "National Weather Service",
+          "UPI"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Rain fell in record amounts Monday in Buffalo, N.Y.",
+            "source_url": "https://www.upi.com/Archives/1987/06/22/Rain-fell-in-record-amounts-Monday-in-Buffalo-NY/8573551332800/"
+          },
+          {
+            "quote": "including 5.01 inches at Buffalo Airport",
+            "source_url": "https://www.weather.gov/buf/HistoryJUN22.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.72,
+        "category": 0.85,
+        "location": 0.75,
+        "summary_grounding": 0.65
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "Buffalo NY June 1987 flooding record rainfall",
+        "fingerprint": "buffalo-ny-us_record-24-hour-rainfall-and-flooding-in-buffalo-new-york_1987-06-22"
+      }
+    },
+    {
+      "event_id": "ev_19870608_lena_gulch_flooding_co",
+      "title": "Heavy rainfall and flooding in the Lena Gulch basin (Jefferson County, Colorado)",
+      "description": "A heavy thunderstorm produced significant runoff and flooding in the Lena Gulch basin affecting Lakewood, Golden, and nearby unincorporated areas of Jefferson County, Colorado. Impacts included residential property damage, street washouts or closures, and evacuations at trailer courts.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1987-06-08T00:00:00Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "1987-06-08T00:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Lakewood / Golden area, Jefferson County, Colorado, USA (Lena Gulch basin)",
+        "jurisdiction_level": "state",
+        "admin1": "Colorado",
+        "country": "US",
+        "capital_used": "Denver",
+        "lat": 39.7392,
+        "lon": -104.9903,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.5
+      },
+      "sources": [
+        {
+          "url": "https://www.udfcd.org/FWP/ebb/fhn86-88/fhn87.html",
+          "source_name": "Urban Drainage and Flood Control District (UDFCD)",
+          "published_at": "1987-01-01T00:00:00Z",
+          "headline": "Flood Hazard News (1987)",
+          "byline": null,
+          "accessed_utc": "2026-01-18T06:01:55.275Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Urban Drainage and Flood Control District"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "heavy evening thunderstorm produced significant runoff and flooding in the Lena Gulch basin",
+            "source_url": "https://www.udfcd.org/FWP/ebb/fhn86-88/fhn87.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.56,
+        "category": 0.75,
+        "location": 0.5,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "Lena Gulch basin flooding Jefferson County CO June 1987",
+        "fingerprint": "colorado-us_heavy-rainfall-and-flooding-in-the-lena-gulch-basin-jefferson-county-colorado_1987-06-08"
+      }
+    },
+    {
+      "event_id": "ev_19870613_severe_tstorms_philly_area",
+      "title": "Severe thunderstorms with microburst damage in the NWS Philadelphia forecast area",
+      "description": "Severe thunderstorms impacted parts of southeastern Pennsylvania and New Jersey, producing damaging winds and hail. A notable microburst in southern Mercer County was reported to have produced very strong winds and caused substantial property damage.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1987-06-13T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1987-06-13T00:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Philadelphia forecast area (SE Pennsylvania and parts of New Jersey), USA",
+        "jurisdiction_level": "state",
+        "admin1": "Pennsylvania",
+        "country": "US",
+        "capital_used": "Harrisburg",
+        "lat": 40.2732,
+        "lon": -76.8867,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.45
+      },
+      "sources": [
+        {
+          "url": "https://repository.library.noaa.gov/view/noaa/70355",
+          "source_name": "NOAA Institutional Repository",
+          "published_at": "1987-06-13T00:00:00Z",
+          "headline": "Severe thunderstorm event (Philadelphia WSFO area)",
+          "byline": null,
+          "accessed_utc": "2026-01-18T06:01:55.275Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://repository.library.noaa.gov/view/noaa/70355/noaa_70355_DS1.pdf",
+          "source_name": "NOAA Institutional Repository",
+          "published_at": "1987-06-13T00:00:00Z",
+          "headline": "Technical attachment / report (PDF)",
+          "byline": null,
+          "accessed_utc": "2026-01-18T06:01:55.275Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA",
+          "National Weather Service"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "severe thunderstorms impacted multiple counties with damaging winds, hail",
+            "source_url": "https://repository.library.noaa.gov/view/noaa/70355/noaa_70355_DS1.pdf"
+          },
+          {
+            "quote": "notable microburst in southern Mercer County",
+            "source_url": "https://repository.library.noaa.gov/view/noaa/70355/noaa_70355_DS1.pdf"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.8,
+        "location": 0.45,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "location_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "June 13 1987 severe thunderstorms microburst Mercer County / Philly WSFO",
+        "fingerprint": "pennsylvania-us_severe-thunderstorms-with-microburst-damage-in-the-nws-philadelphia-forecast-area_1987-06-13"
+      }
+    },
+    {
+      "event_id": "ev_19870615_us_heat_wave_records",
+      "title": "Mid-June 1987 U.S. heat wave with widespread temperature records",
+      "description": "A heat wave affected large parts of the United States in mid-June 1987, with many temperature records reported across multiple cities over several days. Reports included triple-digit temperatures in parts of the Midwest.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1987-06-15T00:00:00Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "1987-06-15T00:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States (Midwest and Atlantic Coast regions)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, D.C.",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.4
+      },
+      "sources": [
+        {
+          "url": "https://www.upi.com/Archives/1987/06/15/A-heat-wave-that-has-shattered-nearly-60-records/2099550728000/",
+          "source_name": "UPI",
+          "published_at": "1987-06-15T00:00:00Z",
+          "headline": "A heat wave that has shattered nearly 60 records",
+          "byline": null,
+          "accessed_utc": "2026-01-18T06:01:55.275Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "UPI"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "heat wave that has shattered nearly 60 records",
+            "source_url": "https://www.upi.com/Archives/1987/06/15/A-heat-wave-that-has-shattered-nearly-60-records/2099550728000/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.5,
+        "category": 0.75,
+        "location": 0.4,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "secondary_sources_only",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "US heat wave mid June 1987 records",
+        "fingerprint": "washington-dc-us_mid-june-1987-u-s-heat-wave-with-widespread-temperature-records_1987-06-15"
+      }
+    },
+    {
+      "event_id": "ev_19870618_rustic_co_high_elev_tornado",
+      "title": "High-elevation tornado near Rustic, Colorado (Larimer County)",
+      "description": "A tornado touched down in the mountains of northern Colorado near Rustic, with reports of hundreds of trees toppled and damage to structures. The event was documented in National Weather Service materials.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1987-06-18T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1987-06-18T00:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Larimer County, Colorado, USA (near Rustic)",
+        "jurisdiction_level": "state",
+        "admin1": "Colorado",
+        "country": "US",
+        "capital_used": "Denver",
+        "lat": 39.7392,
+        "lon": -104.9903,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.5
+      },
+      "sources": [
+        {
+          "url": "https://repository.library.noaa.gov/view/noaa/26787",
+          "source_name": "NOAA Institutional Repository",
+          "published_at": "1987-06-18T00:00:00Z",
+          "headline": "High-elevation tornado near Rustic, Colorado",
+          "byline": null,
+          "accessed_utc": "2026-01-18T06:01:55.275Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://repository.library.noaa.gov/view/noaa/26787/noaa_26787_DS1.pdf",
+          "source_name": "NOAA Institutional Repository",
+          "published_at": "1987-06-18T00:00:00Z",
+          "headline": "Technical attachment / report (PDF)",
+          "byline": null,
+          "accessed_utc": "2026-01-18T06:01:55.275Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA",
+          "National Weather Service"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "A tornado touched down ... near Rustic",
+            "source_url": "https://repository.library.noaa.gov/view/noaa/26787/noaa_26787_DS1.pdf"
+          },
+          {
+            "quote": "toppling hundreds of trees and damaging structures",
+            "source_url": "https://repository.library.noaa.gov/view/noaa/26787/noaa_26787_DS1.pdf"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.8,
+        "location": 0.5,
+        "summary_grounding": 0.62
+      },
+      "quality_flags": [
+        "location_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "Rustic Colorado high elevation tornado June 1987",
+        "fingerprint": "colorado-us_high-elevation-tornado-near-rustic-colorado-larimer-county_1987-06-18"
+      }
+    },
+    {
+      "event_id": "evt_19870610_southeastern_illinois_earthquake",
+      "title": "Southeastern Illinois earthquake near Olney (June 10, 1987)",
+      "description": "A moderate earthquake struck southeastern Illinois near Olney on June 10, 1987 and was felt across a wide area. Reports described minor damage such as cracked chimneys/windows and fallen bricks; USGS materials document the event and associated aftershocks.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1987-06-10T23:48:54Z",
+        "event_end": "1987-06-10T23:48:54Z",
+        "reported_at": "2026-01-18T00:00:00Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "1987-06-10T23:48:54Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Olney area, southeastern Illinois, United States",
+        "jurisdiction_level": "state",
+        "admin1": "Illinois",
+        "country": "US",
+        "capital_used": "Springfield",
+        "lat": 39.8017,
+        "lon": -89.6436,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.75
+      },
+      "sources": [
+        {
+          "url": "https://pubs.usgs.gov/of/1987/0623/report.pdf",
+          "source_name": "USGS Publications",
+          "published_at": "1987-01-01T00:00:00Z",
+          "headline": "Open-File Report 87-623 (Southeastern Illinois earthquake)",
+          "byline": null,
+          "accessed_utc": "2026-01-18T06:02:13.985Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.usgs.gov/publications/southeastern-illinois-earthquake-10-june-1987-later-aftershocks",
+          "source_name": "USGS",
+          "published_at": "1987-01-01T00:00:00Z",
+          "headline": "Southeastern Illinois earthquake (10 June 1987) and later aftershocks",
+          "byline": null,
+          "accessed_utc": "2026-01-18T06:02:13.985Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "USGS"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.68,
+        "category": 0.9,
+        "location": 0.75,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "1987-06-10 southeastern illinois earthquake",
+        "fingerprint": "fp_evt_19870610_southeastern_illinois_earthquake"
+      }
+    },
+    {
+      "event_id": "evt_198706_pebble_beach_fire",
+      "title": "Pebble Beach/Del Monte Forest fire destroys homes and triggers evacuations on Monterey Peninsula",
+      "description": "A wind-driven brush/forest fire in the Del Monte Forest/Pebble Beach area on California’s Monterey Peninsula burned on the order of ~100–150 acres, destroyed dozens of homes, and forced evacuations. Reports said the blaze was sparked by an illegal campfire and was reported contained by June 2, 1987.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1987-06-01T00:00:00Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "1987-06-01T00:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Del Monte Forest / Pebble Beach area, Monterey Peninsula, California, USA",
+        "jurisdiction_level": "site",
+        "admin1": "California",
+        "country": "US",
+        "capital_used": null,
+        "lat": 36.5672,
+        "lon": -121.9483,
+        "precision": "neighborhood",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.upi.com/Archives/1987/06/01/Fire-burns-36-homes-at-Pebble-Beach/8620549518400/",
+          "source_name": "UPI",
+          "published_at": "1987-06-01T00:00:00Z",
+          "headline": "Fire burns 36 homes at Pebble Beach",
+          "byline": null,
+          "accessed_utc": "2026-01-18T06:02:39.194Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.upi.com/Archives/1987/06/02/Illegal-campfire-sparked-Pebble-Beach-blaze/7974549604800/",
+          "source_name": "UPI",
+          "published_at": "1987-06-02T00:00:00Z",
+          "headline": "Illegal campfire sparked Pebble Beach blaze",
+          "byline": null,
+          "accessed_utc": "2026-01-18T06:02:39.194Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.latimes.com/archives/la-xpm-1987-06-01-mn-5314-story.html",
+          "source_name": "Los Angeles Times",
+          "published_at": "1987-06-01T00:00:00Z",
+          "headline": "(archive) Pebble Beach area fire",
+          "byline": null,
+          "accessed_utc": "2026-01-18T06:02:39.194Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [
+          "brushland",
+          "forest"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Fire burns 36 homes at Pebble Beach",
+            "source_url": "https://www.upi.com/Archives/1987/06/01/Fire-burns-36-homes-at-Pebble-Beach/8620549518400/"
+          },
+          {
+            "quote": "Illegal campfire sparked Pebble Beach blaze",
+            "source_url": "https://www.upi.com/Archives/1987/06/02/Illegal-campfire-sparked-Pebble-Beach-blaze/7974549604800/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.63,
+        "category": 0.85,
+        "location": 0.6,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "paywalled_or_partial",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "1987-06-01 Pebble Beach/Del Monte Forest fire Monterey Peninsula CA",
+        "fingerprint": "fires|pebble_beach_del_monte_forest|1987-06-01"
+      }
+    },
+    {
+      "event_id": "evt_198706_glacier_bay_humpback_whales_33",
+      "title": "Glacier Bay survey season begins; 33 humpback whales identified June–September 1987",
+      "description": "A 1987 report describing monitoring in Glacier Bay and surrounding waters states that humpback whale use had increased, and that 33 individual humpback whales were identified during the June–September 1987 season. The report characterizes this as the largest recorded number since systematic surveys began in the early 1970s.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1987-01-01T00:00:00Z",
+        "time_confidence": 0.4,
+        "event_date_utc": "1987-06-01T00:00:00Z",
+        "event_date_precision": "month"
+      },
+      "location": {
+        "name": "Glacier Bay, Alaska, USA",
+        "jurisdiction_level": "site",
+        "admin1": "Alaska",
+        "country": "US",
+        "capital_used": null,
+        "lat": 58.6658,
+        "lon": -136.9002,
+        "precision": "exact",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CZIC-ql713-2-u5-1987/html/CZIC-ql713-2-u5-1987.htm",
+          "source_name": "GovInfo",
+          "published_at": "1987-01-01T00:00:00Z",
+          "headline": "CZIC-ql713-2-u5-1987",
+          "byline": null,
+          "accessed_utc": "2026-01-18T06:03:06.177Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Congress"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "Glacier Bay and surrounding waters"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "33 individual humpback whales were identified during the June\u00199September 1987 season.",
+            "source_url": "https://www.govinfo.gov/content/pkg/CZIC-ql713-2-u5-1987/html/CZIC-ql713-2-u5-1987.htm"
+          },
+          {
+            "quote": "humpback whale use of Glacier Bay had increased",
+            "source_url": "https://www.govinfo.gov/content/pkg/CZIC-ql713-2-u5-1987/html/CZIC-ql713-2-u5-1987.htm"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.52,
+        "category": 0.75,
+        "location": 0.6,
+        "summary_grounding": 0.65
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "low_confidence_location"
+      ],
+      "dedupe": {
+        "cluster_hint": "glacier_bay_humpback_whales_1987",
+        "fingerprint": "fp_glacier_bay_humpback_whales_1987_06"
+      }
+    },
+    {
+      "event_id": "evt_19870608_nz_nuclear_free_zone_act",
+      "title": "New Zealand Nuclear Free Zone, Disarmament, and Arms Control Act 1987 receives assent and commences",
+      "description": "New Zealand enacted the New Zealand Nuclear Free Zone, Disarmament, and Arms Control Act 1987, establishing a nuclear-free zone covering New Zealand territory, internal waters, territorial sea, and airspace. The act also implements relevant treaty-related provisions in domestic law.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "1987-06-08T12:00:00Z",
+        "event_end": "1987-06-08T12:00:00Z",
+        "reported_at": "1987-06-08T12:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1987-06-08T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "New Zealand",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "NZ",
+        "capital_used": "Wellington",
+        "lat": -41.28664,
+        "lon": 174.77557,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.85
+      },
+      "sources": [
+        {
+          "url": "https://www.legislation.govt.nz/act/public/1987/0086/4.0/whole.html",
+          "source_name": "New Zealand Legislation",
+          "published_at": "1987-06-08T12:00:00Z",
+          "headline": "New Zealand Nuclear Free Zone, Disarmament, and Arms Control Act 1987 (Public Act 1987 No 86)",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "New Zealand Parliament"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "An Act to establish in New Zealand a nuclear free zone; to promote and encourage an active and effective contribution by New Zealand to the essential process of international disarmament and arms control.",
+            "source_url": "https://www.legislation.govt.nz/act/public/1987/0086/4.0/whole.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.72,
+        "category": 0.8,
+        "location": 0.85,
+        "summary_grounding": 0.7
+      },
+      "quality_flags": [
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "NZ nuclear free zone act 1987",
+        "fingerprint": "fp_19870608_nz_nuclear_free_zone_act_nz_1987-06-08"
+      }
+    },
+    {
+      "event_id": "evt_19870609_nj_wetlands_moratorium",
+      "title": "New Jersey governor declares 18-month moratorium on freshwater wetlands development",
+      "description": "New Jersey Governor Thomas Kean announced an 18-month moratorium halting development in the state's freshwater wetlands. The directive instructed the state environmental agency to deny permits for wetlands development while broader wetlands protection legislation was pursued.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "1987-06-09T12:00:00Z",
+        "event_end": "1987-06-09T12:00:00Z",
+        "reported_at": "1987-06-09T12:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1987-06-09T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "New Jersey, United States",
+        "jurisdiction_level": "state",
+        "admin1": "New Jersey",
+        "country": "US",
+        "capital_used": "Trenton",
+        "lat": 40.22039,
+        "lon": -74.76432,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.8
+      },
+      "sources": [
+        {
+          "url": "https://www.nytimes.com/1987/06/09/nyregion/kean-halts-all-freshwater-wetlands-development.html",
+          "source_name": "The New York Times",
+          "published_at": "1987-06-09T00:00:00Z",
+          "headline": "Kean Halts All Freshwater Wetlands Development",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "State of New Jersey"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "freshwater wetlands"
+        ],
+        "people": [
+          "Thomas Kean"
+        ]
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Governor Thomas H. Kean today ordered an 18-month moratorium on development in New Jersey's remaining freshwater wetlands.",
+            "source_url": "https://www.nytimes.com/1987/06/09/nyregion/kean-halts-all-freshwater-wetlands-development.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.75,
+        "location": 0.8,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "paywalled_or_partial",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "NJ wetlands moratorium Kean 1987",
+        "fingerprint": "fp_19870609_nj_wetlands_moratorium_us-nj_1987-06-09"
+      }
+    },
+    {
+      "event_id": "evt_19870605_epa_rcra_technical_corrections",
+      "title": "U.S. EPA publishes RCRA technical corrections related to Definition of Solid Waste (52 FR 21306)",
+      "description": "The U.S. Environmental Protection Agency published a Federal Register notice issuing technical corrections under the Resource Conservation and Recovery Act (RCRA) related to hazardous waste management and the Definition of Solid Waste. The entry is identified as 52 FR 21306 and dated June 5, 1987.",
+      "category_primary": "policy_regulation",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "1987-06-05T12:00:00Z",
+        "event_end": "1987-06-05T12:00:00Z",
+        "reported_at": "1987-06-05T00:00:00Z",
+        "time_confidence": 0.65,
+        "event_date_utc": "1987-06-05T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.85
+      },
+      "sources": [
+        {
+          "url": "https://www.epa.gov/hwpermitting/list-federal-register-notices-pertaining-hazardous-waste",
+          "source_name": "U.S. Environmental Protection Agency",
+          "published_at": "1987-06-05T00:00:00Z",
+          "headline": "List of Federal Register notices pertaining to hazardous waste",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://nepis.epa.gov/Exe/ZyPURL.cgi?Dockey=2000T2J7.TXT",
+          "source_name": "U.S. EPA NEPIS",
+          "published_at": "1987-06-05T00:00:00Z",
+          "headline": "Federal Register notice text (52 FR 21306)",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Environmental Protection Agency"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Technical corrections ... Definition of Solid Waste ... (52 FR 21306).",
+            "source_url": "https://www.epa.gov/hwpermitting/list-federal-register-notices-pertaining-hazardous-waste"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.68,
+        "category": 0.8,
+        "location": 0.85,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [],
+      "dedupe": {
+        "cluster_hint": "EPA RCRA technical corrections 52 FR 21306",
+        "fingerprint": "fp_19870605_epa_rcra_technical_corrections_us_1987-06-05"
+      }
+    }
+  ]
+}

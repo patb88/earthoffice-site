@@ -1,0 +1,537 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_2007-08_normalize_2026-01-16T034053300Z",
+    "generated_utc": "2026-01-16T03:40:53.300Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "2007-08",
+    "window": {
+      "start_utc": "2007-08-01T00:00:00.000Z",
+      "end_utc": "2007-08-31T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "2007-08-weather_climate-south-asia-monsoon-flooding-guardian-20070803",
+      "title": "Monsoon flooding reported across parts of India and Bangladesh",
+      "description": "Reporting described severe monsoon flooding across parts of South Asia, with major inundation and displacement affecting large areas of Bangladesh and many villages in India.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2007-08-03T00:00:00.000Z",
+        "event_end": "2007-08-03T23:59:59.000Z",
+        "reported_at": "2007-08-03T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2007-08-03T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "South Asia (reported impacts in India and Bangladesh)",
+        "jurisdiction_level": "supranational",
+        "admin1": null,
+        "country": null,
+        "capital_used": "New Delhi",
+        "lat": 28.6139,
+        "lon": 77.209,
+        "precision": "proxy",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.35
+      },
+      "sources": [
+        {
+          "url": "https://www.theguardian.com/world/2007/aug/03/india.randeepramesh",
+          "source_name": "The Guardian",
+          "published_at": "2007-08-03T00:00:00.000Z",
+          "headline": "Monsoon flooding across South Asia displaces millions",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Severe monsoon flooding was reported across parts of South Asia... affecting large portions of Bangladesh and many villages in India.",
+            "source_url": "https://www.theguardian.com/world/2007/aug/03/india.randeepramesh"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.5,
+        "category": 0.7,
+        "location": 0.35,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "paywalled_or_partial",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "2007-08 South Asia monsoon flooding (India/Bangladesh)",
+        "fingerprint": "fp_2007-08-03_south-asia_monsoon-flooding"
+      }
+    },
+    {
+      "event_id": "2007-08-weather_climate-eastern-us-heat-wave-noaa-mirror",
+      "title": "Heat wave conditions affected the eastern United States in August 2007",
+      "description": "A NOAA Weather Service page describes prolonged heat wave conditions during August 2007 across parts of the eastern United States, including dangerous heat indices and record high temperatures in areas such as the Carolinas.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2007-08-03T00:00:00.000Z",
+        "event_end": "2007-08-25T23:59:59.000Z",
+        "reported_at": "2007-08-01T00:00:00.000Z",
+        "time_confidence": 0.4,
+        "event_date_utc": null,
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Eastern United States (notably the Carolinas)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.4
+      },
+      "sources": [
+        {
+          "url": "https://noaa-mirror.org/www.weather.gov/ilm/heatwaves",
+          "source_name": "NOAA / NWS (mirror)",
+          "published_at": "2007-08-01T00:00:00.000Z",
+          "headline": "North American heat wave peaks during early-to-mid August 2007",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA",
+          "National Weather Service"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "A prolonged and intense heat wave spanned much of August 2007 across the eastern U.S.",
+            "source_url": "https://noaa-mirror.org/www.weather.gov/ilm/heatwaves"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.4,
+        "category": 0.65,
+        "location": 0.4,
+        "summary_grounding": 0.4
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "2007-08 Eastern US heat wave",
+        "fingerprint": "fp_2007-08_eastern-us_heatwave"
+      }
+    },
+    {
+      "event_id": "2007-08-geological-peru-pisco-earthquake",
+      "title": "Magnitude 8.0 earthquake off central Peru (Pisco earthquake)",
+      "description": "A magnitude 8.0 earthquake struck offshore of central Peru on 2007-08-15 (UTC), affecting areas including Pisco/Ica/Chincha Alta and the Lima region. NASA Earth Observatory reported the event and referenced USGS reporting for location and magnitude.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2007-08-15T23:40:57.000Z",
+        "event_end": "2007-08-16T23:59:59.000Z",
+        "reported_at": "2007-08-16T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2007-08-15T23:40:57.000Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Near the coast of central Peru",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "PE",
+        "capital_used": "Lima",
+        "lat": -12.0464,
+        "lon": -77.0428,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://science.nasa.gov/earth/earth-observatory/magnitude-80-earthquake-off-the-coast-of-peru-7965/",
+          "source_name": "NASA Earth Observatory",
+          "published_at": "2007-08-16T00:00:00.000Z",
+          "headline": "Magnitude 8.0 Earthquake Off the Coast of Peru",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": "https://science.nasa.gov/earth/earth-observatory/magnitude-80-earthquake-off-the-coast-of-peru-7965/"
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NASA Earth Observatory",
+          "USGS"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Magnitude 8.0 Earthquake Off the Coast of Peru",
+            "source_url": "https://science.nasa.gov/earth/earth-observatory/magnitude-80-earthquake-off-the-coast-of-peru-7965/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.66,
+        "category": 0.85,
+        "location": 0.7,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "needs_dedupe_check",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "Pisco earthquake 2007-08-15 Peru",
+        "fingerprint": "pisco_earthquake_peru_2007-08-15_pe"
+      }
+    },
+    {
+      "event_id": "2007-08-geological-pavlof-volcano-ash-plume",
+      "title": "Pavlof Volcano eruption produced an ash plume (August 2007)",
+      "description": "USGS published an image documenting the August 2007 Pavlof Volcano eruption and associated ash plume. The draft states the plume height was reported around 5.2–5.5 km, but the provided source link is an image page and may not contain full contextual details.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2007-08-01T00:00:00.000Z",
+        "event_end": "2007-08-31T23:59:59.000Z",
+        "reported_at": "2007-08-01T00:00:00.000Z",
+        "time_confidence": 0.4,
+        "event_date_utc": null,
+        "event_date_precision": "month"
+      },
+      "location": {
+        "name": "Pavlof Volcano, Alaska, United States",
+        "jurisdiction_level": "site",
+        "admin1": "Alaska",
+        "country": "US",
+        "capital_used": null,
+        "lat": 55.417,
+        "lon": -161.894,
+        "precision": "exact",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.usgs.gov/index.php/media/images/august-2007-pavlof-eruption",
+          "source_name": "USGS",
+          "published_at": "2007-08-01T00:00:00.000Z",
+          "headline": "August 2007 Pavlof eruption",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": "https://www.usgs.gov/index.php/media/images/august-2007-pavlof-eruption"
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "USGS",
+          "Alaska Volcano Observatory"
+        ],
+        "substances": [
+          "volcanic ash"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "August 2007 Pavlof eruption",
+            "source_url": "https://www.usgs.gov/index.php/media/images/august-2007-pavlof-eruption"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.5,
+        "category": 0.8,
+        "location": 0.55,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "paywalled_or_partial",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "Pavlof Volcano August 2007 eruption",
+        "fingerprint": "pavlof_volcano_2007-08_us"
+      }
+    },
+    {
+      "event_id": "2007-08_fires_zaca-fire_los-padres",
+      "title": "Zaca Fire continues burning in Los Padres National Forest (California)",
+      "description": "NASA Earth Observatory imagery and reporting documented the ongoing Zaca Fire in Southern California during August 2007, including continued fire activity, smoke impacts, and containment efforts.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2007-08-05T00:00:00.000Z",
+        "event_end": "2007-08-22T23:59:59.000Z",
+        "reported_at": "2007-08-01T00:00:00Z",
+        "time_confidence": 0.55,
+        "event_date_utc": null,
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Los Padres National Forest / Santa Barbara County, California, USA",
+        "jurisdiction_level": "state",
+        "admin1": "California",
+        "country": "US",
+        "capital_used": "Sacramento",
+        "lat": 38.5816,
+        "lon": -121.4944,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://www.earthobservatory.nasa.gov/images/7938/zaca-fire-southern-california",
+          "source_name": "NASA Earth Observatory",
+          "published_at": "2007-08-01T00:00:00Z",
+          "headline": "Zaca Fire, Southern California",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://science.nasa.gov/photojournal/zaca-fire/",
+          "source_name": "NASA Science (Photojournal)",
+          "published_at": "2007-08-01T00:00:00Z",
+          "headline": "Zaca Fire",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NASA"
+        ],
+        "substances": [
+          "smoke"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Zaca Fire, Southern California",
+            "source_url": "https://www.earthobservatory.nasa.gov/images/7938/zaca-fire-southern-california"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.8,
+        "location": 0.7,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Zaca Fire (2007) - California",
+        "fingerprint": "zaca-fire-2007-08-california-us"
+      }
+    },
+    {
+      "event_id": "2007-08_fires_greece-wildfires_peloponnese",
+      "title": "Late-August 2007 wildfires in Greece produce large smoke plumes",
+      "description": "NASA Earth Observatory imagery documented extensive smoke from wildfires in Greece in late August 2007, with reports of widespread impacts and evacuations in affected regions including the Peloponnese.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2007-08-26T00:00:00.000Z",
+        "event_end": "2007-08-27T23:59:59.000Z",
+        "reported_at": "2007-08-01T00:00:00Z",
+        "time_confidence": 0.55,
+        "event_date_utc": null,
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Greece (Peloponnese and surrounding regions)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "GR",
+        "capital_used": "Athens",
+        "lat": 37.9838,
+        "lon": 23.7275,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.65
+      },
+      "sources": [
+        {
+          "url": "https://earthobservatory.nasa.gov/images/7996/deadly-fires-in-greece",
+          "source_name": "NASA Earth Observatory",
+          "published_at": "2007-08-01T00:00:00Z",
+          "headline": "Deadly Fires in Greece",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NASA"
+        ],
+        "substances": [
+          "smoke"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Deadly Fires in Greece",
+            "source_url": "https://earthobservatory.nasa.gov/images/7996/deadly-fires-in-greece"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.8,
+        "location": 0.65,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Greece wildfires (Aug 2007)",
+        "fingerprint": "greece-wildfires-2007-08-gr"
+      }
+    },
+    {
+      "event_id": "evt_20070817_epa_mercury_test_methods_rule_us",
+      "title": "EPA direct final rule adds optional mercury emissions test methods for coal-fired power plants",
+      "description": "The U.S. Environmental Protection Agency issued a direct final rule dated August 17, 2007, adding two optional mercury emissions test methods and making related amendments to mercury monitoring for coal-fired power plants under the Clean Air Mercury Rule framework.",
+      "category_primary": "policy_regulation",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2007-08-17T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2007-08-17T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States (federal regulation)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.85
+      },
+      "sources": [
+        {
+          "url": "https://archive.epa.gov/mercuryrule/web/html/fs20070817.html",
+          "source_name": "U.S. Environmental Protection Agency (archive.epa.gov)",
+          "published_at": "2007-08-17T00:00:00.000Z",
+          "headline": "fs20070817.html",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Environmental Protection Agency (EPA)"
+        ],
+        "substances": [
+          "mercury"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "issued a direct final rule to add two optional mercury emissions test methods",
+            "source_url": "https://archive.epa.gov/mercuryrule/web/html/fs20070817.html"
+          },
+          {
+            "quote": "make related mercury monitoring amendments for coal-fired power plants",
+            "source_url": "https://archive.epa.gov/mercuryrule/web/html/fs20070817.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.74,
+        "category": 0.8,
+        "location": 0.85,
+        "summary_grounding": 0.7
+      },
+      "quality_flags": [
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "EPA Clean Air Mercury Rule amendments optional test methods Aug 2007",
+        "fingerprint": "fp_evt_20070817_epa_mercury_test_methods_rule_us"
+      }
+    }
+  ]
+}

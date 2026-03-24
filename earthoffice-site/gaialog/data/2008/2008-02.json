@@ -1,0 +1,743 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_2008-02_normalize_2026-01-16T034647680Z",
+    "generated_utc": "2026-01-16T03:46:47.680Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "2008-02",
+    "window": {
+      "start_utc": "2008-02-01T00:00:00.000Z",
+      "end_utc": "2008-02-29T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "2008-02-pollution_contamination-des-plaines-waste-oil-spill",
+      "title": "Waste-oil release reached the Des Plaines River near Joliet, Illinois",
+      "description": "Overflow from waste-oil collection pits at a Caterpillar facility led to oil reaching the Des Plaines River, with sheening observed downstream. Response actions included deploying booms and absorbents, with oversight by U.S. EPA and Illinois EPA.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2008-02-08T00:00:00.000Z",
+        "event_end": "2008-02-11T23:59:59.000Z",
+        "reported_at": "2008-02-11T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2008-02-08T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Des Plaines River near Joliet, Illinois, USA",
+        "jurisdiction_level": "site",
+        "admin1": "Illinois",
+        "country": "US",
+        "capital_used": null,
+        "lat": 41.525031,
+        "lon": -88.081726,
+        "precision": "neighborhood",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.epa.gov/archive/epapages/newsroom_archive/newsreleases/216487bb94c47f7c85257561006ab821.html",
+          "source_name": "U.S. Environmental Protection Agency (archive)",
+          "published_at": "2008-02-11T00:00:00Z",
+          "headline": "News release (archived)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Environmental Protection Agency",
+          "Illinois Environmental Protection Agency",
+          "Caterpillar"
+        ],
+        "substances": [
+          "waste oil",
+          "oil"
+        ],
+        "ecosystems": [
+          "Des Plaines River"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Overflow from waste-oil collection pits led to oil reaching the Des Plaines River.",
+            "source_url": "https://www.epa.gov/archive/epapages/newsroom_archive/newsreleases/216487bb94c47f7c85257561006ab821.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.75,
+        "location": 0.55,
+        "summary_grounding": 0.65
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Des Plaines River waste-oil spill Joliet IL Feb 2008",
+        "fingerprint": "fp_2008-02_desplaines_wasteoil_joliet_il"
+      }
+    },
+    {
+      "event_id": "2008-02-pollution_contamination-imperial-sugar-explosion-port-wentworth",
+      "title": "Imperial Sugar refinery dust explosion and fire in Port Wentworth, Georgia",
+      "description": "A sugar-dust explosion triggered a major industrial fire at the Imperial Sugar refinery in Port Wentworth, Georgia. The incident produced extensive fire and smoke and required multi-day firefighting and containment operations.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2008-02-07T00:00:00.000Z",
+        "event_end": "2008-02-14T23:59:59.000Z",
+        "reported_at": "2008-02-08T00:00:00Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "2008-02-07T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Port Wentworth, Georgia, USA",
+        "jurisdiction_level": "city",
+        "admin1": "Georgia",
+        "country": "US",
+        "capital_used": null,
+        "lat": 32.149093,
+        "lon": -81.163168,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.75
+      },
+      "sources": [
+        {
+          "url": "https://www.nbcnews.com/id/wbna23028236",
+          "source_name": "NBC News",
+          "published_at": "2008-02-08T00:00:00Z",
+          "headline": "Article about the Imperial Sugar plant explosion/fire",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.cnn.com/2008/US/02/08/georgia.explosion/",
+          "source_name": "CNN",
+          "published_at": "2008-02-08T00:00:00Z",
+          "headline": "Article about the Imperial Sugar refinery explosion/fire",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Imperial Sugar"
+        ],
+        "substances": [
+          "sugar dust",
+          "smoke"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.6,
+        "location": 0.75,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "secondary_sources_only",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Imperial Sugar dust explosion Port Wentworth GA Feb 2008",
+        "fingerprint": "fp_2008-02_imperial_sugar_port_wentworth_ga"
+      }
+    },
+    {
+      "event_id": "2008-02_weather_climate_cyclone_ivan_madagascar",
+      "title": "Cyclone Ivan causes wind damage and flooding in Madagascar",
+      "description": "Intense Tropical Cyclone Ivan struck Madagascar in mid-February 2008, bringing destructive winds and heavy rainfall. Reports and satellite-based coverage described severe flooding and damage affecting communities and infrastructure, particularly in northeastern and eastern parts of the country.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2008-02-07T00:00:00.000Z",
+        "event_end": "2008-02-22T23:59:59.000Z",
+        "reported_at": "2008-02-18T00:00:00.000Z",
+        "time_confidence": 0.75,
+        "event_date_utc": null,
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Madagascar",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "MG",
+        "capital_used": "Antananarivo",
+        "lat": -18.8792,
+        "lon": 47.5079,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://science.nasa.gov/earth/earth-observatory/cyclone-ivan-8508/",
+          "source_name": "NASA Earth Observatory",
+          "published_at": "2008-02-14T00:00:00.000Z",
+          "headline": "Cyclone Ivan",
+          "byline": null,
+          "accessed_utc": "2008-02-29T23:59:59.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://earthobservatory.nasa.gov/images/8508/cyclone-ivan",
+          "source_name": "NASA Earth Observatory",
+          "published_at": "2008-02-14T00:00:00.000Z",
+          "headline": "Cyclone Ivan",
+          "byline": null,
+          "accessed_utc": "2008-02-29T23:59:59.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.thenewhumanitarian.org/news/2008/02/18/cyclone-ivan-sweeps-across-madagascar-heads-mozambique",
+          "source_name": "The New Humanitarian",
+          "published_at": "2008-02-18T00:00:00.000Z",
+          "headline": "Cyclone Ivan sweeps across Madagascar, heads for Mozambique",
+          "byline": null,
+          "accessed_utc": "2008-02-29T23:59:59.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NASA Earth Observatory",
+          "The New Humanitarian"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Cyclone Ivan sweeps across Madagascar, heads for Mozambique",
+            "source_url": "https://www.thenewhumanitarian.org/news/2008/02/18/cyclone-ivan-sweeps-across-madagascar-heads-mozambique"
+          },
+          {
+            "quote": "Cyclone Ivan",
+            "source_url": "https://earthobservatory.nasa.gov/images/8508/cyclone-ivan"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.66,
+        "category": 0.8,
+        "location": 0.7,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Cyclone Ivan Madagascar Feb 2008",
+        "fingerprint": "cyclone_ivan_madagascar_2008-02"
+      }
+    },
+    {
+      "event_id": "2008-02_weather_climate_zambezi_floods_mozambique",
+      "title": "Seasonal flooding along the Zambezi River in Mozambique",
+      "description": "Early February 2008 satellite imagery documented extensive inundation along the lower Zambezi River floodplain in Mozambique. The coverage described the river running over its banks, consistent with major seasonal flood conditions affecting the lower basin and surrounding areas.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2008-02-04T00:00:00.000Z",
+        "event_end": "2008-02-04T23:59:59.000Z",
+        "reported_at": "2008-02-04T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2008-02-04T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Mozambique",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "MZ",
+        "capital_used": "Maputo",
+        "lat": -25.9692,
+        "lon": 32.5732,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://earthobservatory.nasa.gov/images/19503/intense-seasonal-floods-in-southern-africa",
+          "source_name": "NASA Earth Observatory",
+          "published_at": "2008-02-04T00:00:00.000Z",
+          "headline": "Intense Seasonal Floods in Southern Africa",
+          "byline": null,
+          "accessed_utc": "2008-02-29T23:59:59.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NASA Earth Observatory"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "river floodplain"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Intense Seasonal Floods in Southern Africa",
+            "source_url": "https://earthobservatory.nasa.gov/images/19503/intense-seasonal-floods-in-southern-africa"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.75,
+        "location": 0.55,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "Zambezi seasonal floods Mozambique Feb 2008",
+        "fingerprint": "zambezi_floods_mozambique_2008-02-04"
+      }
+    },
+    {
+      "event_id": "evt_20080220_simeulue_eq_mw74",
+      "title": "Magnitude 7.4 earthquake near Simeulue Island (Aceh, Indonesia)",
+      "description": "A magnitude 7.4 earthquake occurred offshore near Simeulue Island, Aceh, Indonesia on 20 February 2008. Official reporting describes it as a significant seismic event in the region, with geospatial agencies analyzing associated ground deformation.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2008-02-20T08:08:30.000Z",
+        "event_end": "2008-02-20T08:08:30.000Z",
+        "reported_at": "2008-02-20T08:08:30.000Z",
+        "time_confidence": 0.8,
+        "event_date_utc": "2008-02-20T08:08:30.000Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Offshore Simeulue Island, Aceh, Indonesia",
+        "jurisdiction_level": "site",
+        "admin1": "Aceh",
+        "country": "ID",
+        "capital_used": null,
+        "lat": 2,
+        "lon": 96,
+        "precision": "admin1",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.45
+      },
+      "sources": [
+        {
+          "url": "https://www.gsi.go.jp/cais/topics-topic080224-index-e.html",
+          "source_name": "Geospatial Information Authority of Japan (GSI)",
+          "published_at": "2008-02-24T00:00:00.000Z",
+          "headline": "Crustal deformation associated with the February 20, 2008 earthquake off the coast of Simeulue Island, Indonesia",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://earthquake.usgs.gov/earthquakes/eventpage/usp000fzau/executive",
+          "source_name": "USGS Earthquake Hazards Program",
+          "published_at": "2008-02-20T00:00:00.000Z",
+          "headline": "M 7.4 - OFF THE WEST COAST OF NORTHERN SUMATRA",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "USGS Earthquake Hazards Program",
+          "Geospatial Information Authority of Japan (GSI)"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Crustal deformation associated with the February 20, 2008 earthquake off the coast of Simeulue Island, Indonesia",
+            "source_url": "https://www.gsi.go.jp/cais/topics-topic080224-index-e.html"
+          },
+          {
+            "quote": "M 7.4 - OFF THE WEST COAST OF NORTHERN SUMATRA",
+            "source_url": "https://earthquake.usgs.gov/earthquakes/eventpage/usp000fzau/executive"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.9,
+        "location": 0.45,
+        "summary_grounding": 0.75
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "low_confidence_location"
+      ],
+      "dedupe": {
+        "cluster_hint": "2008-02-20 Simeulue offshore earthquake Mw7.4",
+        "fingerprint": "fp_20080220_simeulue_offshore_eq_m74"
+      }
+    },
+    {
+      "event_id": "2008-02-fires-nc-brushfires-abc11-5949118",
+      "title": "High winds fan multiple brush fires across several counties in North Carolina",
+      "description": "Strong winds contributed to multiple brush fires across several counties in North Carolina. The fires disrupted transportation and caused utility outages while firefighters continued operations.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2008-02-10T00:00:00.000Z",
+        "event_end": "2008-02-11T23:59:59.000Z",
+        "reported_at": "2008-02-01T00:00:00.000Z",
+        "time_confidence": 0.45,
+        "event_date_utc": "2008-02-10T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "North Carolina, USA (multiple counties)",
+        "jurisdiction_level": "state",
+        "admin1": "North Carolina",
+        "country": "US",
+        "capital_used": "Raleigh",
+        "lat": 35.7796,
+        "lon": -78.6382,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.65
+      },
+      "sources": [
+        {
+          "url": "https://abc11.com/archive/5949118/",
+          "source_name": "ABC11",
+          "published_at": "2008-02-01T00:00:00.000Z",
+          "headline": "Brush fires fanned by high winds across multiple counties (North Carolina, USA)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Strong winds contributed to multiple brush fires across several North Carolina counties.",
+            "source_url": "https://abc11.com/archive/5949118/"
+          },
+          {
+            "quote": "Impacts included transportation disruption and utility outages.",
+            "source_url": "https://abc11.com/archive/5949118/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.56,
+        "category": 0.75,
+        "location": 0.65,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "paywalled_or_partial",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "North Carolina brush fires high winds Feb 2008",
+        "fingerprint": "fires|north_carolina_us|2008-02-10|abc11-5949118"
+      }
+    },
+    {
+      "event_id": "evt_20080211_oregon_coast_coho_threatened_critical_habitat",
+      "title": "NOAA lists Oregon Coast coho salmon ESU as threatened and designates critical habitat",
+      "description": "NOAA Fisheries issued a final determination listing the Oregon Coast coho salmon evolutionarily significant unit (ESU) as threatened under the U.S. Endangered Species Act and designated critical habitat.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "2008-02-11T00:00:00.000Z",
+        "event_end": "2008-02-11T23:59:59.000Z",
+        "reported_at": "2008-02-11T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2008-02-11T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Oregon Coast, USA",
+        "jurisdiction_level": "state",
+        "admin1": "Oregon",
+        "country": "US",
+        "capital_used": "Salem",
+        "lat": 44.9429,
+        "lon": -123.0351,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://www.fisheries.noaa.gov/index.php/action/final-threatened-listing-determination-protective-regulations-and-designation-critical",
+          "source_name": "NOAA Fisheries",
+          "published_at": "2008-02-11T00:00:00.000Z",
+          "headline": "Final threatened listing determination, protective regulations and designation critical habitat",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.fisheries.noaa.gov/inport/item/65307",
+          "source_name": "NOAA Fisheries (InPort)",
+          "published_at": "2008-02-11T00:00:00.000Z",
+          "headline": "InPort item 65307",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA Fisheries"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "Oregon Coast"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "final determination listing the Oregon Coast coho salmon ESU as threatened",
+            "source_url": "https://www.fisheries.noaa.gov/index.php/action/final-threatened-listing-determination-protective-regulations-and-designation-critical"
+          },
+          {
+            "quote": "designation of critical habitat",
+            "source_url": "https://www.fisheries.noaa.gov/index.php/action/final-threatened-listing-determination-protective-regulations-and-designation-critical"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.66,
+        "category": 0.8,
+        "location": 0.7,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "paywalled_or_partial"
+      ],
+      "dedupe": {
+        "cluster_hint": "noaa_oregon_coast_coho_esa_threatened_critical_habitat_2008-02-11",
+        "fingerprint": "fp_20080211_oregon_coast_coho_esa_threatened_or_admin1_oregon"
+      }
+    },
+    {
+      "event_id": "evt_20080208_dc_circuit_vacates_epa_mercury_rules",
+      "title": "D.C. Circuit vacates EPA mercury rules for power plants (New Jersey v. EPA)",
+      "description": "The U.S. Court of Appeals for the D.C. Circuit vacated two EPA rules related to regulating mercury emissions from coal- and oil-fired power plants, rejecting the Clean Air Mercury Rule approach. The action is described in a New Jersey Attorney General press release about the court decision.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "2008-02-08T00:00:00.000Z",
+        "event_end": "2008-02-08T23:59:59.000Z",
+        "reported_at": "2008-02-08T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2008-02-08T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Washington, DC, United States (D.C. Circuit Court of Appeals)",
+        "jurisdiction_level": "city",
+        "admin1": "DC",
+        "country": "US",
+        "capital_used": null,
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.nj.gov/oag/newsreleases08/pr20080208b.html",
+          "source_name": "New Jersey Office of the Attorney General",
+          "published_at": "2008-02-08T00:00:00.000Z",
+          "headline": "Press release on D.C. Circuit decision vacating EPA mercury rules (New Jersey v. EPA)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.everycrsreport.com/reports/RS22817.html",
+          "source_name": "EveryCRSReport",
+          "published_at": "2008-01-01T00:00:00.000Z",
+          "headline": "RS22817: The D.C. Circuit’s Decision in New Jersey v. EPA Vacating the Clean Air Mercury Rule",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.wlf.org/case/new-jersey-v-epa/",
+          "source_name": "Washington Legal Foundation",
+          "published_at": "2008-01-01T00:00:00.000Z",
+          "headline": "Case page: New Jersey v. EPA",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Environmental Protection Agency (EPA)",
+          "U.S. Court of Appeals for the D.C. Circuit",
+          "New Jersey Office of the Attorney General"
+        ],
+        "substances": [
+          "mercury"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "U.S. Court of Appeals for the District of Columbia Circuit today vacated two EPA rules...",
+            "source_url": "https://www.nj.gov/oag/newsreleases08/pr20080208b.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.75,
+        "location": 0.55,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "needs_dedupe_check",
+        "secondary_sources_only",
+        "date_ambiguous",
+        "location_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "New Jersey v. EPA Clean Air Mercury Rule vacated (D.C. Circuit)",
+        "fingerprint": "fp_20080208_dc_circuit_vacates_epa_mercury_rules_washington_dc"
+      }
+    },
+    {
+      "event_id": "evt_20080215_fws_lists_six_foreign_bird_species_endangered",
+      "title": "U.S. Fish & Wildlife Service final rule lists six foreign bird species as endangered (ESA)",
+      "description": "A U.S. Fish & Wildlife Service final rule listed six foreign bird species as endangered under the U.S. Endangered Species Act. The draft indicates the species occur outside the United States, while the rulemaking action is by the U.S. government.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "2008-02-15T00:00:00.000Z",
+        "event_end": "2008-02-15T23:59:59.000Z",
+        "reported_at": "2008-02-15T00:00:00.000Z",
+        "time_confidence": 0.45,
+        "event_date_utc": "2008-02-15T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Washington, DC, United States (U.S. Fish & Wildlife Service rulemaking)",
+        "jurisdiction_level": "city",
+        "admin1": "DC",
+        "country": "US",
+        "capital_used": null,
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "city",
+        "location_basis": "institution_proxy",
+        "location_confidence": 0.45
+      },
+      "sources": [
+        {
+          "url": "https://www.fws.gov/policy/library/2008/E8-492.html",
+          "source_name": "U.S. Fish & Wildlife Service",
+          "published_at": "2008-02-15T00:00:00.000Z",
+          "headline": "Final rule listing six foreign bird species as endangered under the Endangered Species Act",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Fish & Wildlife Service"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.5,
+        "category": 0.7,
+        "location": 0.45,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "needs_dedupe_check",
+        "date_ambiguous",
+        "low_confidence_location"
+      ],
+      "dedupe": {
+        "cluster_hint": "FWS final rule listing six foreign bird species as endangered (ESA)",
+        "fingerprint": "fp_20080215_fws_lists_six_foreign_bird_species_endangered_washington_dc"
+      }
+    }
+  ]
+}

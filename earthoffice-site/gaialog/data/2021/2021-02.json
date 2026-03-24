@@ -1,0 +1,963 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_2021-02_normalize_2026-01-16T072814104Z",
+    "generated_utc": "2026-01-16T07:28:14.104Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "2021-02",
+    "window": {
+      "start_utc": "2021-02-01T00:00:00.000Z",
+      "end_utc": "2021-02-28T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "2021-02-pollution_contamination-israel-med-tar-01",
+      "title": "Tar pollution along Israel’s Mediterranean shoreline linked to offshore oil spill",
+      "description": "Large quantities of tar washed ashore along much of Israel’s Mediterranean coastline in mid-to-late February 2021, with reports spanning from Rosh Hanikra to Ashkelon. Reporting and response coordination described the incident as linked to an offshore oil spill, with efforts including satellite/AIS analysis and regional coordination support.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2021-02-16T00:00:00.000Z",
+        "event_end": "2021-02-28T23:59:59.000Z",
+        "reported_at": "2021-02-21T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2021-02-16T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Israel (Mediterranean coast)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "IL",
+        "capital_used": "Jerusalem",
+        "lat": 31.7683,
+        "lon": 35.2137,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://www.unep.org/unepmap/ar/news/alakhbar/rempec-responds-oil-spill-incident-eastern-mediterranean",
+          "source_name": "UNEP/MAP",
+          "published_at": "2021-02-21T00:00:00.000Z",
+          "headline": "REMPEC responds to oil spill incident in Eastern Mediterranean",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.theguardian.com/world/2021/feb/21/oil-spill-from-passing-ship-blackens-israel-mediterranean-shoreline",
+          "source_name": "The Guardian",
+          "published_at": "2021-02-21T00:00:00.000Z",
+          "headline": "Oil spill from passing ship blackens Israel Mediterranean shoreline",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.timesofisrael.com/several-people-hospitalized-following-tar-cleanup-operation-off-israeli-coast/",
+          "source_name": "The Times of Israel",
+          "published_at": "2021-02-21T00:00:00.000Z",
+          "headline": "Several people hospitalized following tar cleanup operation off Israeli coast",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "UNEP/MAP",
+          "REMPEC"
+        ],
+        "substances": [
+          "tar",
+          "oil"
+        ],
+        "ecosystems": [
+          "Mediterranean Sea"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "oil spill incident in Eastern Mediterranean",
+            "source_url": "https://www.unep.org/unepmap/ar/news/alakhbar/rempec-responds-oil-spill-incident-eastern-mediterranean"
+          },
+          {
+            "quote": "Oil spill ... blackens Israel Mediterranean shoreline",
+            "source_url": "https://www.theguardian.com/world/2021/feb/21/oil-spill-from-passing-ship-blackens-israel-mediterranean-shoreline"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.63,
+        "category": 0.75,
+        "location": 0.7,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "needs_dedupe_check",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "Israel Mediterranean tar shoreline Feb 2021",
+        "fingerprint": "israel-mediterranean-tar-2021-02-16-2021-02"
+      }
+    },
+    {
+      "event_id": "2021-02-pollution_contamination-sturgeon-bay-vessel-fire-01",
+      "title": "Vessel fire response included planning for potential diesel release in Sturgeon Bay, Wisconsin",
+      "description": "A vessel fire at a marina in Sturgeon Bay, Wisconsin prompted response actions that included planning for a potential diesel release into an ice-covered bay. The incident response described recovery of diesel/oily-water mixtures and deployment of absorbents and boom.",
+      "category_primary": "pollution_contamination",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "2021-02-01T00:00:00.000Z",
+        "event_end": "2021-02-01T23:59:59.000Z",
+        "reported_at": "2021-02-01T00:00:00.000Z",
+        "time_confidence": 0.4,
+        "event_date_utc": "2021-02-01T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Sturgeon Bay, Wisconsin, USA",
+        "jurisdiction_level": "city",
+        "admin1": "Wisconsin",
+        "country": "US",
+        "capital_used": null,
+        "lat": 44.8342,
+        "lon": -87.3776,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://blog.response.restoration.noaa.gov/incident-responses-february-2021",
+          "source_name": "NOAA OR&R Response & Restoration Blog",
+          "published_at": "2021-02-01T00:00:00.000Z",
+          "headline": "Incident Responses February 2021",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA"
+        ],
+        "substances": [
+          "diesel",
+          "oily water"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Incident Responses February 2021",
+            "source_url": "https://blog.response.restoration.noaa.gov/incident-responses-february-2021"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.4,
+        "category": 0.55,
+        "location": 0.6,
+        "summary_grounding": 0.35
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "low_confidence_location",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "Sturgeon Bay Haida Lady vessel fire diesel release risk Feb 2021",
+        "fingerprint": "sturgeon-bay-wi-vessel-fire-2021-02-01"
+      }
+    },
+    {
+      "event_id": "2021-02-pollution_contamination-columbia-sc-sewer-overflow-01",
+      "title": "Reported sanitary sewer overflow impacting Reeder Point Branch (Richland County/Columbia area, South Carolina)",
+      "description": "A report lists a sanitary sewer overflow impacting Reeder Point Branch (a tributary to Mill Creek) on Feb. 19, 2021, with a reported volume of 249,600 gallons. The report attributes the cause to extended wet weather.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2021-02-19T00:00:00.000Z",
+        "event_end": "2021-02-19T23:59:59.000Z",
+        "reported_at": "2021-02-19T00:00:00.000Z",
+        "time_confidence": 0.5,
+        "event_date_utc": "2021-02-19T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Columbia, South Carolina, USA",
+        "jurisdiction_level": "city",
+        "admin1": "South Carolina",
+        "country": "US",
+        "capital_used": null,
+        "lat": 34.0007,
+        "lon": -81.0348,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.45
+      },
+      "sources": [
+        {
+          "url": "https://www.congareeriverkeeper.org/2021-sewer-spill-report",
+          "source_name": "Congaree Riverkeeper",
+          "published_at": "2021-02-19T00:00:00.000Z",
+          "headline": "2021 Sewer Spill Report",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Congaree Riverkeeper"
+        ],
+        "substances": [
+          "sewage"
+        ],
+        "ecosystems": [
+          "Mill Creek"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "2021 Sewer Spill Report",
+            "source_url": "https://www.congareeriverkeeper.org/2021-sewer-spill-report"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.45,
+        "category": 0.65,
+        "location": 0.45,
+        "summary_grounding": 0.35
+      },
+      "quality_flags": [
+        "secondary_sources_only",
+        "location_ambiguous",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "Reeder Point Branch sanitary sewer overflow Feb 2021",
+        "fingerprint": "columbia-sc-reeder-point-branch-sewer-2021-02-19"
+      }
+    },
+    {
+      "event_id": "2021-02-great-texas-freeze-texas-us",
+      "title": "Great Texas Freeze impacts across Texas",
+      "description": "An arctic outbreak brought prolonged record cold and winter precipitation to Texas in mid-February 2021. The event was associated with widespread infrastructure disruptions including major power outages and water system impacts, with NOAA describing the core window as Feb. 11–20, 2021.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2021-02-11T00:00:00.000Z",
+        "event_end": "2021-02-20T09:00:00.000Z",
+        "reported_at": "2021-02-18T00:00:00Z",
+        "time_confidence": 0.8,
+        "event_date_utc": "2021-02-11T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Texas, USA",
+        "jurisdiction_level": "state",
+        "admin1": "Texas",
+        "country": "US",
+        "capital_used": "Austin",
+        "lat": 30.2672,
+        "lon": -97.7431,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.9
+      },
+      "sources": [
+        {
+          "url": "https://www.ncei.noaa.gov/news/great-texas-freeze-february-2021",
+          "source_name": "NOAA NCEI",
+          "published_at": "2021-02-01T00:00:00Z",
+          "headline": "The Great Texas Freeze, February 2021",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.weather.gov/fwd/Feb-2021-WinterEvent",
+          "source_name": "US National Weather Service (Fort Worth)",
+          "published_at": "2021-02-01T00:00:00Z",
+          "headline": "February 2021 Winter Weather Event",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.reuters.com/world/us/ice-everywhere-texans-brave-cold-27-million-homes-lack-power-2021-02-18/",
+          "source_name": "Reuters",
+          "published_at": "2021-02-18T00:00:00Z",
+          "headline": "Ice everywhere: Texans brave cold as 2.7 million homes lack power",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA",
+          "National Weather Service",
+          "Reuters"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "NOAA describes the event window as Feb. 11–20, 2021.",
+            "source_url": "https://www.ncei.noaa.gov/news/great-texas-freeze-february-2021"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.72,
+        "category": 0.85,
+        "location": 0.9,
+        "summary_grounding": 0.65
+      },
+      "quality_flags": [
+        "needs_dedupe_check",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "2021-02-midfeb-us-winter-storm-texas",
+        "fingerprint": "fp_great_texas_freeze_texas_us_2021-02-11_2021-02-20"
+      }
+    },
+    {
+      "event_id": "2021-02-midfeb-winter-storm-southern-central-us",
+      "title": "Mid-February 2021 winter storms and record cold in the southern/central United States",
+      "description": "A mid-February 2021 period of severe winter weather brought rare snow and ice and dangerous cold to parts of the southern and central United States. Reports described major impacts in Texas and surrounding states, including hazardous travel conditions and widespread power outages.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2021-02-14T00:00:00.000Z",
+        "event_end": "2021-02-18T23:59:59.000Z",
+        "reported_at": "2021-02-15T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2021-02-14T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "United States (southern/central)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.5
+      },
+      "sources": [
+        {
+          "url": "https://www.theguardian.com/us-news/2021/feb/15/winter-storm-snow-ice-hits-southern-us",
+          "source_name": "The Guardian",
+          "published_at": "2021-02-15T00:00:00Z",
+          "headline": "Winter storm brings snow and ice to southern US",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.axios.com/2021/02/15/plains-extreme-weather-temperatures-cold-texas",
+          "source_name": "Axios",
+          "published_at": "2021-02-15T00:00:00Z",
+          "headline": "Extreme cold grips Plains and Texas",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.washingtonpost.com/weather/2021/02/24/texas-winter-storm-temperature-records/",
+          "source_name": "The Washington Post",
+          "published_at": "2021-02-24T00:00:00Z",
+          "headline": "Texas winter storm temperature records",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "The Guardian",
+          "Axios",
+          "The Washington Post"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.75,
+        "location": 0.5,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "needs_dedupe_check",
+        "location_ambiguous",
+        "date_ambiguous",
+        "paywalled_or_partial",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "2021-02-midfeb-us-winter-storm-texas",
+        "fingerprint": "fp_midfeb_winter_storm_us_2021-02-14_2021-02-18"
+      }
+    },
+    {
+      "event_id": "evt-202102-etna-paroxysm-001",
+      "title": "Mount Etna paroxysmal eruption with lava fountains and ash fallout (Feb 2021)",
+      "description": "Mount Etna produced renewed paroxysmal eruptive activity beginning around Feb. 16, 2021, including lava fountains and ash/lapilli emissions from the South-East Crater area. Satellite imagery and institute updates documented ash plumes and eruptive deposits affecting areas around the volcano and creating aviation hazards.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2021-02-16T00:00:00.000Z",
+        "event_end": "2021-02-26T23:59:59.000Z",
+        "reported_at": "2021-02-16T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2021-02-16T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Mount Etna, Sicily, Italy",
+        "jurisdiction_level": "site",
+        "admin1": "Sicily",
+        "country": "IT",
+        "capital_used": null,
+        "lat": 37.751,
+        "lon": 14.9934,
+        "precision": "exact",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.75
+      },
+      "sources": [
+        {
+          "url": "https://www.ingv.it/en/urp-press/Press-office/Press-releases/etna-16-February-2021-new-paroxysm-from-the-south-east-crater",
+          "source_name": "Istituto Nazionale di Geofisica e Vulcanologia (INGV)",
+          "published_at": "2021-02-16T00:00:00.000Z",
+          "headline": "Etna, 16 February 2021: new paroxysm from the South-East Crater",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://science.nasa.gov/photojournal/mt-etna-february-2021/",
+          "source_name": "NASA Science Photojournal",
+          "published_at": "2021-02-26T00:00:00.000Z",
+          "headline": "Mt. Etna (February 2021)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.jpl.nasa.gov/images/pia24418-mt-etna-february-26-2021/",
+          "source_name": "NASA Jet Propulsion Laboratory (JPL)",
+          "published_at": "2021-02-26T00:00:00.000Z",
+          "headline": "PIA24418: Mt. Etna, February 26, 2021",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Istituto Nazionale di Geofisica e Vulcanologia (INGV)",
+          "NASA",
+          "NASA Jet Propulsion Laboratory (JPL)"
+        ],
+        "substances": [
+          "ash",
+          "lapilli",
+          "lava"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Etna, 16 February 2021: new paroxysm from the South-East Crater",
+            "source_url": "https://www.ingv.it/en/urp-press/Press-office/Press-releases/etna-16-February-2021-new-paroxysm-from-the-south-east-crater"
+          },
+          {
+            "quote": "Mt. Etna (February 2021)",
+            "source_url": "https://science.nasa.gov/photojournal/mt-etna-february-2021/"
+          },
+          {
+            "quote": "Mt. Etna, February 26, 2021",
+            "source_url": "https://www.jpl.nasa.gov/images/pia24418-mt-etna-february-26-2021/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.85,
+        "location": 0.75,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Mount Etna Feb 2021 paroxysms",
+        "fingerprint": "etna_it_sicily_2021-02-16_paroxysm"
+      }
+    },
+    {
+      "event_id": "2021-02-fires-wooroloo-bushfire-perth-hills",
+      "title": "Wooroloo bushfire impacts Perth region (Western Australia)",
+      "description": "A fast-moving bushfire ignited near Wooroloo in early February 2021, threatening communities in the Perth Hills and producing heavy smoke that affected the wider Perth area during the response.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2021-02-01T00:00:00.000Z",
+        "event_end": "2021-02-07T23:59:59.000Z",
+        "reported_at": "2021-02-03T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2021-02-01T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Perth Hills (near Wooroloo), Western Australia, Australia",
+        "jurisdiction_level": "state",
+        "admin1": "Western Australia",
+        "country": "AU",
+        "capital_used": "Perth",
+        "lat": -31.9523,
+        "lon": 115.8613,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://www.cnbc.com/2021/02/03/bushfire-smoke-blankets-perth-australia-under-covid-19-lockdown.html",
+          "source_name": "CNBC",
+          "published_at": "2021-02-03T00:00:00.000Z",
+          "headline": "Bushfire smoke blankets Perth, Australia under Covid-19 lockdown",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.axios.com/2021/02/02/perth-bushfire-western-australia-lockdown",
+          "source_name": "Axios",
+          "published_at": "2021-02-02T00:00:00.000Z",
+          "headline": "Perth bushfire prompts lockdown in Western Australia",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [
+          "smoke"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Bushfire smoke blankets Perth, Australia under Covid-19 lockdown",
+            "source_url": "https://www.cnbc.com/2021/02/03/bushfire-smoke-blankets-perth-australia-under-covid-19-lockdown.html"
+          },
+          {
+            "quote": "Perth bushfire prompts lockdown in Western Australia",
+            "source_url": "https://www.axios.com/2021/02/02/perth-bushfire-western-australia-lockdown"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.75,
+        "location": 0.7,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "wooroloo_perth_hills_2021_02",
+        "fingerprint": "wooroloo-bushfire-perth-hills|perth-wa-au|2021-02"
+      }
+    },
+    {
+      "event_id": "2021-02-fires-riau-peat-fire-emergency-declaration",
+      "title": "Riau Province declares eight-month peat-fire emergency (Indonesia)",
+      "description": "Riau Province’s governor declared an eight-month emergency in mid-February 2021, citing multiple peat and land fires already occurring in the province and aiming to prevent severe haze impacts associated with peat-fire seasons.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2021-02-15T00:00:00.000Z",
+        "event_end": "2021-02-15T23:59:59.000Z",
+        "reported_at": "2021-02-15T00:00:00.000Z",
+        "time_confidence": 0.75,
+        "event_date_utc": "2021-02-15T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Riau Province, Indonesia",
+        "jurisdiction_level": "state",
+        "admin1": "Riau",
+        "country": "ID",
+        "capital_used": "Pekanbaru",
+        "lat": 0.5071,
+        "lon": 101.4478,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.65
+      },
+      "sources": [
+        {
+          "url": "https://www.ucanews.com/news/indonesian-province-declares-8-month-peat-fire-emergency/91448",
+          "source_name": "UCA News",
+          "published_at": "2021-02-15T00:00:00.000Z",
+          "headline": "Indonesian province declares 8-month peat-fire emergency",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [
+          "peatlands"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Indonesian province declares 8-month peat-fire emergency",
+            "source_url": "https://www.ucanews.com/news/indonesian-province-declares-8-month-peat-fire-emergency/91448"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.75,
+        "location": 0.65,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "riau_peat_fire_emergency_2021_02_15",
+        "fingerprint": "riau-peat-fire-emergency|pekanbaru-riau-id|2021-02-15"
+      }
+    },
+    {
+      "event_id": "evt_202102_tx_coast_fish_kill_freeze",
+      "title": "Texas coastal fish kill linked to February 2021 deep freeze (minimum estimate: 3.8 million fish)",
+      "description": "After a mid-February 2021 deep freeze in Texas, state wildlife officials assessed widespread fish mortality across coastal bay systems. Subsequent reporting cited an estimate of at least 3.8 million fish across dozens of species killed during the event.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2021-02-14T00:00:00.000Z",
+        "event_end": "2021-02-28T23:59:59.000Z",
+        "reported_at": "2021-03-11T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2021-02-14T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Texas, USA (statewide proxy for coastal bay systems)",
+        "jurisdiction_level": "state",
+        "admin1": "Texas",
+        "country": "US",
+        "capital_used": "Austin",
+        "lat": 30.2672,
+        "lon": -97.7431,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.weather.com/news/news/2021-03-11-texas-winter-storm-freeze-killed-millions-of-fish",
+          "source_name": "The Weather Channel",
+          "published_at": "2021-03-11T00:00:00.000Z",
+          "headline": "Texas Winter Storm Freeze Killed Millions of Fish (report)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.ksat.com/news/local/2021/03/11/at-least-38-million-fish-on-texas-coast-killed-by-winter-storm-tpwd-says/",
+          "source_name": "KSAT",
+          "published_at": "2021-03-11T00:00:00.000Z",
+          "headline": "At least 3.8 million fish on Texas coast killed by winter storm, TPWD says",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.ncei.noaa.gov/news/great-texas-freeze-february-2021",
+          "source_name": "NOAA NCEI",
+          "published_at": "2021-02-01T00:00:00.000Z",
+          "headline": "The Great Texas Freeze of February 2021",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Texas Parks and Wildlife Department (TPWD)",
+          "NOAA NCEI"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "coastal bay systems",
+          "Laguna Madre"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "minimum estimate of 3.8 million fish (61 species) killed",
+            "source_url": "https://www.ksat.com/news/local/2021/03/11/at-least-38-million-fish-on-texas-coast-killed-by-winter-storm-tpwd-says/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.7,
+        "location": 0.55,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Texas freeze Feb 2021 fish kill",
+        "fingerprint": "fp_evt_202102_tx_coast_fish_kill_freeze_tx_20210214"
+      }
+    },
+    {
+      "event_id": "evt_202102_israel_tar_wildlife_impacts",
+      "title": "Wildlife impacts along Israel’s coast during the February 2021 tar pollution event",
+      "description": "In February 2021, tar contamination along Israel’s Mediterranean coastline was reported to affect marine wildlife and contaminate extensive stretches of shoreline. Coverage described impacts to sea creatures and ongoing cleanup efforts along affected beaches.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2021-02-16T00:00:00.000Z",
+        "event_end": "2021-02-28T23:59:59.000Z",
+        "reported_at": "2021-02-28T00:00:00.000Z",
+        "time_confidence": 0.65,
+        "event_date_utc": "2021-02-16T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Israel (Mediterranean coast)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "IL",
+        "capital_used": "Jerusalem",
+        "lat": 31.7683,
+        "lon": 35.2137,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.timesofisrael.com/several-people-hospitalized-following-tar-cleanup-operation-off-israeli-coast/",
+          "source_name": "The Times of Israel",
+          "published_at": "2021-02-28T00:00:00.000Z",
+          "headline": "Several people hospitalized following tar cleanup operation off Israeli coast",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.washingtonpost.com/world/middle_east/israel-beach-coast-oil-tar/2021/02/28/69d280f8-79b6-11eb-8c5e-32e47b42b51b_story.html",
+          "source_name": "The Washington Post",
+          "published_at": "2021-02-28T00:00:00.000Z",
+          "headline": "Tar washes up along Israel’s coast in one of country’s worst ecological disasters",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [
+          "tar"
+        ],
+        "ecosystems": [
+          "Mediterranean Sea",
+          "coastal beaches"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "tar pollution event along Israel’s Mediterranean coastline",
+            "source_url": "https://www.washingtonpost.com/world/middle_east/israel-beach-coast-oil-tar/2021/02/28/69d280f8-79b6-11eb-8c5e-32e47b42b51b_story.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.66,
+        "category": 0.65,
+        "location": 0.6,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Israel Feb 2021 tar pollution wildlife impacts",
+        "fingerprint": "fp_evt_202102_israel_tar_wildlife_impacts_il_20210216"
+      }
+    },
+    {
+      "event_id": "evt_20210219_us_paris_reentry",
+      "title": "United States officially re-enters the Paris Climate Agreement",
+      "description": "The United States’ re-entry to the Paris Agreement became official on Feb. 19, 2021, reversing the prior withdrawal. The action re-aligned U.S. federal climate policy with the international accord.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "2021-02-19T00:00:00.000Z",
+        "event_end": "2021-02-19T23:59:59.000Z",
+        "reported_at": "2021-02-19T00:00:00.000Z",
+        "time_confidence": 0.75,
+        "event_date_utc": "2021-02-19T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.85
+      },
+      "sources": [
+        {
+          "url": "https://www.theguardian.com/environment/2021/feb/19/us-official-return-paris-climate-pact",
+          "source_name": "The Guardian",
+          "published_at": "2021-02-19T00:00:00.000Z",
+          "headline": "US officially returns to Paris climate pact",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://amp.cnn.com/cnn/2021/02/19/politics/us-rejoins-paris-agreement-biden-administration",
+          "source_name": "CNN",
+          "published_at": "2021-02-19T00:00:00.000Z",
+          "headline": "US rejoins Paris Agreement under Biden administration",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.bpr.org/2021-02-19/u-s-officially-rejoins-paris-agreement-on-climate-change",
+          "source_name": "Blue Ridge Public Radio",
+          "published_at": "2021-02-19T00:00:00.000Z",
+          "headline": "U.S. officially rejoins Paris Agreement on climate change",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "United States government"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "The US has officially returned to the Paris climate agreement.",
+            "source_url": "https://www.theguardian.com/environment/2021/feb/19/us-official-return-paris-climate-pact"
+          },
+          {
+            "quote": "The U.S. officially rejoined the Paris climate agreement on Friday.",
+            "source_url": "https://amp.cnn.com/cnn/2021/02/19/politics/us-rejoins-paris-agreement-biden-administration"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.8,
+        "category": 0.85,
+        "location": 0.85,
+        "summary_grounding": 0.7
+      },
+      "quality_flags": [
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "US Paris Agreement re-entry Feb 2021",
+        "fingerprint": "fp_us_paris_reentry_2021-02-19_us"
+      }
+    }
+  ]
+}

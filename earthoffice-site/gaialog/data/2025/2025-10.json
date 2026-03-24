@@ -1,0 +1,813 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_2025-10_normalize_2026-01-16T143155664Z",
+    "generated_utc": "2026-01-16T14:31:55.664Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "2025-10",
+    "window": {
+      "start_utc": "2025-10-01T00:00:00.000Z",
+      "end_utc": "2025-10-31T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "evt_202510_epa_bnsf_kootenai_katka",
+      "title": "EPA proposed settlement over diesel discharge to the Kootenai River after BNSF derailment near Katka, Idaho",
+      "description": "The U.S. EPA published a notice of a proposed administrative penalty settlement with BNSF Railway Company regarding alleged Clean Water Act violations tied to a freight train derailment. The notice states the incident involved a discharge of diesel fuel into the Kootenai River near Katka in Boundary County, Idaho.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2025-10-20T00:00:00.000Z",
+        "time_confidence": 0.4,
+        "event_date_utc": "2025-10-20T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Kootenai River near Katka, Boundary County, Idaho, USA",
+        "jurisdiction_level": "site",
+        "admin1": "Idaho",
+        "country": "US",
+        "capital_used": null,
+        "lat": 48.9,
+        "lon": -116.3,
+        "precision": "neighborhood",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.35
+      },
+      "sources": [
+        {
+          "url": "https://www.epa.gov/publicnotices/proposed-settlement-bnsf-railway-company-clean-water-act-violations-idaho",
+          "source_name": "U.S. Environmental Protection Agency (EPA) Public Notices",
+          "published_at": "2025-10-20T00:00:00.000Z",
+          "headline": "Proposed Settlement: BNSF Railway Company (Clean Water Act violations, Idaho)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.epa.gov/publicnotices/proposed-settlement-bnsf-railway-company",
+          "source_name": "U.S. Environmental Protection Agency (EPA) Public Notices",
+          "published_at": "2025-10-20T00:00:00.000Z",
+          "headline": "Proposed Settlement: BNSF Railway Company",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Environmental Protection Agency (EPA)",
+          "BNSF Railway Company"
+        ],
+        "substances": [
+          "diesel fuel"
+        ],
+        "ecosystems": [
+          "Kootenai River"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "proposed administrative penalty settlement with BNSF Railway Company",
+            "source_url": "https://www.epa.gov/publicnotices/proposed-settlement-bnsf-railway-company-clean-water-act-violations-idaho"
+          },
+          {
+            "quote": "freight train derailment that discharged diesel fuel into the Kootenai River",
+            "source_url": "https://www.epa.gov/publicnotices/proposed-settlement-bnsf-railway-company-clean-water-act-violations-idaho"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.45,
+        "category": 0.8,
+        "location": 0.35,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "EPA proposed settlement BNSF diesel discharge Kootenai River Katka Idaho",
+        "fingerprint": "fp_evt_202510_epa_bnsf_kootenai_katka"
+      }
+    },
+    {
+      "event_id": "evt_20251006_darjeeling_nepal_floods_landslides_reuters",
+      "title": "Heavy rains cause flooding and landslides in India’s Darjeeling region and Nepal",
+      "description": "Heavy rains triggered flooding and landslides in India’s Darjeeling region (West Bengal) and neighboring areas of Nepal, with reported fatalities and damage to infrastructure. The report attributed impacts to intense rainfall affecting the region.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2025-10-06T00:00:00.000Z",
+        "event_end": "2025-10-06T23:59:59.000Z",
+        "reported_at": "2025-10-06T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2025-10-06T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Darjeeling region, West Bengal, India",
+        "jurisdiction_level": "state",
+        "admin1": "West Bengal",
+        "country": "IN",
+        "capital_used": "Kolkata",
+        "lat": 22.5726,
+        "lon": 88.3639,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.reuters.com/business/environment/heavy-rains-trigger-floods-landslides-killing-18-indias-darjeeling-2025-10-06/",
+          "source_name": "Reuters",
+          "published_at": "2025-10-06T00:00:00Z",
+          "headline": "Heavy rains trigger floods, landslides killing 18 in India’s Darjeeling",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Reuters"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Heavy rains triggered flooding and landslides... in India’s Darjeeling region and neighboring Nepal",
+            "source_url": "https://www.reuters.com/business/environment/heavy-rains-trigger-floods-landslides-killing-18-indias-darjeeling-2025-10-06/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.7,
+        "location": 0.6,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "2025-10-06 darjeeling floods landslides",
+        "fingerprint": "fp_20251006_darjeeling_wb_in_floods_landslides"
+      }
+    },
+    {
+      "event_id": "geological_20251010_ph_offshore_davao_oriental_eq_tsunami_warning",
+      "title": "Offshore Davao Oriental earthquake triggers tsunami warning that was later lifted",
+      "description": "A magnitude Mw 7.4 earthquake occurred offshore of Davao Oriental near Manay, prompting PHIVOLCS to issue tsunami warnings for multiple eastern Philippine coasts. PHIVOLCS later reported the warning was lifted after subsequent monitoring, with reports of small tsunami activity in some areas.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2025-10-10T01:43:55.000Z",
+        "event_end": "2025-10-10T05:43:55.000Z",
+        "reported_at": "2025-10-10T01:43:55.000Z",
+        "time_confidence": 0.8,
+        "event_date_utc": "2025-10-10T01:43:55.000Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Offshore Davao Oriental (near Manay), Mindanao, Philippines",
+        "jurisdiction_level": "site",
+        "admin1": "Davao Oriental",
+        "country": "PH",
+        "capital_used": null,
+        "lat": 7.215,
+        "lon": 126.55,
+        "precision": "neighborhood",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.phivolcs.dost.gov.ph/primer-on-the-10-october-2025-magnitude-mw-7-4-offshore-davao-oriental-earthquake/",
+          "source_name": "PHIVOLCS",
+          "published_at": "2025-10-10T00:00:00Z",
+          "headline": "Primer on the 10 October 2025 Magnitude (Mw) 7.4 Offshore Davao Oriental Earthquake",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://earthquake.phivolcs.dost.gov.ph/2025_Earthquake_Information/October/2025_1010_0143_B4F.html",
+          "source_name": "PHIVOLCS Earthquake Information",
+          "published_at": "2025-10-10T01:43:55.000Z",
+          "headline": "Earthquake Information (10 October 2025)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.reuters.com/business/environment/magnitude-72-earthquake-strikes-philippines-mindanao-emsc-says-2025-10-10/",
+          "source_name": "Reuters",
+          "published_at": "2025-10-10T00:00:00Z",
+          "headline": "Magnitude 7.2 earthquake strikes Philippines' Mindanao, EMSC says",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "PHIVOLCS",
+          "DOST",
+          "Reuters",
+          "EMSC"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Primer on the 10 October 2025 Magnitude (Mw) 7.4 Offshore Davao Oriental Earthquake",
+            "source_url": "https://www.phivolcs.dost.gov.ph/primer-on-the-10-october-2025-magnitude-mw-7-4-offshore-davao-oriental-earthquake/"
+          },
+          {
+            "quote": "Earthquake Information",
+            "source_url": "https://earthquake.phivolcs.dost.gov.ph/2025_Earthquake_Information/October/2025_1010_0143_B4F.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.85,
+        "location": 0.55,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "PHIVOLCS offshore Davao Oriental Mw7.4 tsunami warning 2025-10-10",
+        "fingerprint": "geological|ph|offshore davao oriental manay|2025-10-10"
+      }
+    },
+    {
+      "event_id": "2025-10_fires_chevron-el-segundo-refinery-fire_01",
+      "title": "Fire and reported explosion at Chevron’s El Segundo refinery jet fuel unit",
+      "description": "Reuters reported a large fire following an explosion at Chevron’s El Segundo refinery jet fuel unit in El Segundo, California. The incident raised air-quality concerns and disrupted refinery operations.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2025-10-03T00:00:00.000Z",
+        "event_end": "2025-10-03T23:59:59.000Z",
+        "reported_at": "2025-10-03T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2025-10-03T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "El Segundo, California, USA",
+        "jurisdiction_level": "city",
+        "admin1": "California",
+        "country": "US",
+        "capital_used": null,
+        "lat": 33.919179,
+        "lon": -118.416465,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.85
+      },
+      "sources": [
+        {
+          "url": "https://www.reuters.com/business/environment/chevrons-los-angeles-refinery-down-after-large-fire-erupts-jet-fuel-unit-2025-10-03/",
+          "source_name": "Reuters",
+          "published_at": "2025-10-03T00:00:00.000Z",
+          "headline": "Chevrons Los Angeles refinery down after large fire erupts at jet fuel unit",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Chevron"
+        ],
+        "substances": [
+          "jet fuel"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "large fire ... after an explosion at ... El Segundo refinery jet fuel unit",
+            "source_url": "https://www.reuters.com/business/environment/chevrons-los-angeles-refinery-down-after-large-fire-erupts-jet-fuel-unit-2025-10-03/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.72,
+        "category": 0.9,
+        "location": 0.85,
+        "summary_grounding": 0.75
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Chevron El Segundo refinery fire explosion jet fuel unit",
+        "fingerprint": "fp_2025-10-03_el-segundo_chevron-refinery-fire"
+      }
+    },
+    {
+      "event_id": "2025-10_fires_dhaka-garment-factory-chemical-warehouse_01",
+      "title": "Dhaka factory fire spreads to nearby chemical warehouse, with reported toxic fumes and deaths",
+      "description": "Reuters reported a major fire in a garment factory in Dhaka that spread to an adjacent chemical warehouse. Officials cited toxic gas and a locked exit as contributing factors to deaths, and the incident raised concerns about lingering smoke and health risks.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2025-10-14T00:00:00.000Z",
+        "event_end": "2025-10-15T23:59:59.000Z",
+        "reported_at": "2025-10-15T00:00:00.000Z",
+        "time_confidence": 0.65,
+        "event_date_utc": "2025-10-15T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Mirpur, Dhaka, Bangladesh",
+        "jurisdiction_level": "city",
+        "admin1": null,
+        "country": "BD",
+        "capital_used": null,
+        "lat": 23.804093,
+        "lon": 90.366667,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://www.reuters.com/world/asia-pacific/bangladesh-official-blames-locked-door-toxic-gas-deaths-factory-fire-2025-10-15/",
+          "source_name": "Reuters",
+          "published_at": "2025-10-15T00:00:00.000Z",
+          "headline": "Bangladesh official blames locked door, toxic gas for deaths in factory fire",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [
+          "toxic gas"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "official blames locked door, toxic gas for deaths in factory fire",
+            "source_url": "https://www.reuters.com/world/asia-pacific/bangladesh-official-blames-locked-door-toxic-gas-deaths-factory-fire-2025-10-15/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.68,
+        "category": 0.85,
+        "location": 0.7,
+        "summary_grounding": 0.7
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Dhaka garment factory fire chemical warehouse toxic fumes Mirpur",
+        "fingerprint": "fp_2025-10-15_dhaka_mirpur_factory-fire"
+      }
+    },
+    {
+      "event_id": "2025-10_fires_wa-wildfire-season-air-quality-review_01",
+      "title": "Washington State review cites 2025 wildfire smoke impacts; early October rains slow Bear Gulch Fire",
+      "description": "Washington State’s Department of Ecology summarized air-quality impacts from the 2025 wildfire season. The post noted that early October rains significantly slowed growth and smoke production from the Bear Gulch Fire.",
+      "category_primary": "fires",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "2025-10-01T00:00:00.000Z",
+        "event_end": "2025-10-31T23:59:59.000Z",
+        "reported_at": "2025-10-01T00:00:00.000Z",
+        "time_confidence": 0.4,
+        "event_date_utc": null,
+        "event_date_precision": "month"
+      },
+      "location": {
+        "name": "Washington, USA",
+        "jurisdiction_level": "state",
+        "admin1": "Washington",
+        "country": "US",
+        "capital_used": "Olympia",
+        "lat": 47.0379,
+        "lon": -122.9007,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.85
+      },
+      "sources": [
+        {
+          "url": "https://ecology.wa.gov/blog/october-2025/2025-wildfire-season-air-quality-in-review",
+          "source_name": "Washington State Department of Ecology",
+          "published_at": "2025-10-01T00:00:00.000Z",
+          "headline": "2025 wildfire season air quality in review",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Washington State Department of Ecology"
+        ],
+        "substances": [
+          "wildfire smoke"
+        ],
+        "ecosystems": [
+          "Olympic National Park"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "early October rains ... slowed the Bear Gulch Fire’s growth and smoke production",
+            "source_url": "https://ecology.wa.gov/blog/october-2025/2025-wildfire-season-air-quality-in-review"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.75,
+        "location": 0.85,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "WA Dept of Ecology 2025 wildfire season air quality review Bear Gulch Fire",
+        "fingerprint": "fp_2025-10_wa_olympia_wildfire-season-air-quality-review"
+      }
+    },
+    {
+      "event_id": "evt_20251006_noaa_crw_bleaching_alerts_multi",
+      "title": "NOAA Coral Reef Watch posts bleaching alert level changes for multiple reef regions",
+      "description": "NOAA Coral Reef Watch published a Satellite Bleaching Alert (SBA) update showing bleaching alert levels for multiple reef regions. The update indicates elevated heat stress and bleaching risk in areas including Eastern Federated States of Micronesia and the Atlantic coast of Costa Rica.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2025-10-06T00:00:00.000Z",
+        "event_end": "2025-10-06T23:59:59.000Z",
+        "reported_at": "2025-10-06T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2025-10-06T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Multiple reef regions (NOAA Coral Reef Watch SBA update)",
+        "jurisdiction_level": "global_proxy",
+        "admin1": null,
+        "country": null,
+        "capital_used": null,
+        "lat": 0,
+        "lon": 0,
+        "precision": "proxy",
+        "location_basis": "institution_proxy",
+        "location_confidence": 0.3
+      },
+      "sources": [
+        {
+          "url": "https://www.ospo.noaa.gov/data/ocean/crw/alerts/2025/SBA_alerts_20251006.html",
+          "source_name": "NOAA OSPO / Coral Reef Watch",
+          "published_at": "2025-10-06T00:00:00.000Z",
+          "headline": "SBA alerts 20251006",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA Coral Reef Watch",
+          "NOAA OSPO"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "coral reefs"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Satellite Bleaching Alert (SBA) update",
+            "source_url": "https://www.ospo.noaa.gov/data/ocean/crw/alerts/2025/SBA_alerts_20251006.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.52,
+        "category": 0.7,
+        "location": 0.3,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "noaa_crw_sba_alerts_2025_10_06",
+        "fingerprint": "noaa_crw_sba_alerts_multi|global_proxy|2025-10-06"
+      }
+    },
+    {
+      "event_id": "evt_20251002_screwworm_sabinas_hidalgo_nuevo_leon",
+      "title": "Report highlights New World screwworm detection in Sabinas Hidalgo, Nuevo León, Mexico",
+      "description": "A Swine Health Information Center post summarized a USDA announcement that Mexico confirmed a case of New World screwworm in Nuevo León. The reports describe the detection as near the U.S. border, raising concern about spread toward the United States.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2025-10-02T00:00:00.000Z",
+        "event_end": "2025-10-02T23:59:59.000Z",
+        "reported_at": "2025-10-02T00:00:00.000Z",
+        "time_confidence": 0.35,
+        "event_date_utc": "2025-10-02T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Sabinas Hidalgo, Nuevo León, Mexico",
+        "jurisdiction_level": "city",
+        "admin1": "Nuevo León",
+        "country": "MX",
+        "capital_used": null,
+        "lat": 26.5072,
+        "lon": -100.1797,
+        "precision": "city",
+        "location_basis": "manual_override",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.swinehealth.org/new-world-screwworm-confirmed-within-70-miles-of-texas-border-shic-provides-surveillance-information/",
+          "source_name": "Swine Health Information Center",
+          "published_at": "2025-10-02T00:00:00.000Z",
+          "headline": "New World Screwworm confirmed within 70 miles of Texas border; SHIC provides surveillance information",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.usda.gov/about-usda/news/press-releases/2025/09/21/mexico-confirms-case-new-world-screwworm-nuevo-leon",
+          "source_name": "USDA",
+          "published_at": "2025-09-21T00:00:00.000Z",
+          "headline": "Mexico confirms case of New World screwworm in Nuevo León",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Swine Health Information Center",
+          "USDA"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Mexico confirms case of New World screwworm in Nuevo León",
+            "source_url": "https://www.usda.gov/about-usda/news/press-releases/2025/09/21/mexico-confirms-case-new-world-screwworm-nuevo-leon"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.55,
+        "location": 0.6,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check",
+        "low_confidence_category"
+      ],
+      "dedupe": {
+        "cluster_hint": "new_world_screwworm_nuevo_leon_2025_09",
+        "fingerprint": "new_world_screwworm|sabinas_hidalgo_nuevo_leon_mx|2025-10-02"
+      }
+    },
+    {
+      "event_id": "2025-10-policyreg-epa-bnsf-kootenai-id-20251020",
+      "title": "EPA notice of proposed settlement with BNSF over Clean Water Act violations (diesel discharge to Kootenai River, Idaho)",
+      "description": "The U.S. EPA published a public notice in October 2025 regarding a proposed administrative penalty settlement with BNSF Railway Company. The notice concerns alleged Clean Water Act violations related to a derailment and diesel fuel discharge into the Kootenai River in Boundary County, Idaho.",
+      "category_primary": "policy_regulation",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2025-10-20T00:00:00.000Z",
+        "event_end": "2025-10-20T23:59:59.000Z",
+        "reported_at": "2025-10-20T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2025-10-20T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Boundary County, Idaho, United States",
+        "jurisdiction_level": "state",
+        "admin1": "Idaho",
+        "country": "US",
+        "capital_used": "Boise",
+        "lat": 43.615,
+        "lon": -116.2023,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.5
+      },
+      "sources": [
+        {
+          "url": "https://www.epa.gov/publicnotices/proposed-settlement-bnsf-railway-company-clean-water-act-violations-idaho",
+          "source_name": "U.S. Environmental Protection Agency (EPA) Public Notices",
+          "published_at": "2025-10-20T00:00:00.000Z",
+          "headline": "proposed-settlement-bnsf-railway-company-clean-water-act-violations-idaho",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.epa.gov/publicnotices/proposed-settlement-bnsf-railway-company",
+          "source_name": "U.S. Environmental Protection Agency (EPA) Public Notices",
+          "published_at": "2025-10-20T00:00:00.000Z",
+          "headline": "proposed-settlement-bnsf-railway-company",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Environmental Protection Agency (EPA)",
+          "BNSF Railway Company"
+        ],
+        "substances": [
+          "diesel fuel"
+        ],
+        "ecosystems": [
+          "Kootenai River"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "proposed administrative penalty settlement with BNSF Railway Company for Clean Water Act violations",
+            "source_url": "https://www.epa.gov/publicnotices/proposed-settlement-bnsf-railway-company-clean-water-act-violations-idaho"
+          },
+          {
+            "quote": "derailment and diesel fuel discharge into the Kootenai River",
+            "source_url": "https://www.epa.gov/publicnotices/proposed-settlement-bnsf-railway-company-clean-water-act-violations-idaho"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.7,
+        "location": 0.5,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "EPA public notice proposed settlement BNSF Railway Clean Water Act Idaho Kootenai River",
+        "fingerprint": "epa_notice_bnsf_cwa_idaho_kootenai_2025-10-20"
+      }
+    },
+    {
+      "event_id": "2025-10-policyreg-epa-simplot-caldwell-id-20251006",
+      "title": "EPA notice of proposed settlement with Simplot Transportation over alleged Clean Water Act violations (Caldwell, Idaho)",
+      "description": "The U.S. EPA published a public notice in October 2025 about a proposed administrative penalty settlement with Simplot Transportation. The notice addresses alleged Clean Water Act violations at a facility in Caldwell, Idaho.",
+      "category_primary": "policy_regulation",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2025-10-06T00:00:00.000Z",
+        "event_end": "2025-10-06T23:59:59.000Z",
+        "reported_at": "2025-10-06T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2025-10-06T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Caldwell, Idaho, United States",
+        "jurisdiction_level": "city",
+        "admin1": "Idaho",
+        "country": "US",
+        "capital_used": null,
+        "lat": 43.6629,
+        "lon": -116.6874,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.epa.gov/publicnotices/proposed-settlement-simplot-transportation-clean-water-act-violations-idaho",
+          "source_name": "U.S. Environmental Protection Agency (EPA) Public Notices",
+          "published_at": "2025-10-06T00:00:00.000Z",
+          "headline": "proposed-settlement-simplot-transportation-clean-water-act-violations-idaho",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Environmental Protection Agency (EPA)",
+          "Simplot Transportation"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "proposed administrative penalty settlement with Simplot Transportation for alleged Clean Water Act violations",
+            "source_url": "https://www.epa.gov/publicnotices/proposed-settlement-simplot-transportation-clean-water-act-violations-idaho"
+          },
+          {
+            "quote": "at its Caldwell, Idaho facility",
+            "source_url": "https://www.epa.gov/publicnotices/proposed-settlement-simplot-transportation-clean-water-act-violations-idaho"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.7,
+        "location": 0.65,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "EPA public notice proposed settlement Simplot Transportation Clean Water Act Caldwell Idaho",
+        "fingerprint": "epa_notice_simplot_cwa_caldwell_id_2025-10-06"
+      }
+    }
+  ]
+}

@@ -1,0 +1,687 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_2006-02_normalize_2026-01-16T031714998Z",
+    "generated_utc": "2026-01-16T03:17:14.998Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "2006-02",
+    "window": {
+      "start_utc": "2006-02-01T00:00:00.000Z",
+      "end_utc": "2006-02-28T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "evt_200602_jacksonville_md_exxon_gasoline_leak",
+      "title": "Jacksonville, Maryland: underground gasoline release reported at Exxon station",
+      "description": "Maryland Department of the Environment reported that ExxonMobil notified the state on Feb. 17, 2006 of an approximately 25,000-gallon leak from a regular unleaded gasoline line at the Jacksonville Exxon station. MDE said it was overseeing response and recovery efforts and issued a public press release on Feb. 21, 2006.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2006-02-17T00:00:00.000Z",
+        "event_end": "2006-02-21T23:59:59.000Z",
+        "reported_at": "2006-02-21T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2006-02-17T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Jacksonville (Baltimore County), Maryland, USA",
+        "jurisdiction_level": "site",
+        "admin1": "Maryland",
+        "country": "US",
+        "capital_used": null,
+        "lat": 39.5073,
+        "lon": -76.4572,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://mde.maryland.gov/programs/pressroom/pages/834.aspx",
+          "source_name": "Maryland Department of the Environment",
+          "published_at": "2006-02-21T00:00:00.000Z",
+          "headline": "Press release (MDE) on Jacksonville Exxon gasoline leak",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://law.justia.com/cases/maryland/court-of-appeals/2013/15-12.html",
+          "source_name": "Justia (Maryland Court of Appeals case repository)",
+          "published_at": "2013-01-01T00:00:00.000Z",
+          "headline": "Maryland Court of Appeals case referencing Jacksonville Exxon leak",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Maryland Department of the Environment",
+          "ExxonMobil"
+        ],
+        "substances": [
+          "gasoline",
+          "regular unleaded gasoline"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "ExxonMobil notified MDE on February 17, 2006 of an approximately 25,000-gallon release",
+            "source_url": "https://mde.maryland.gov/programs/pressroom/pages/834.aspx"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.8,
+        "location": 0.6,
+        "summary_grounding": 0.7
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Jacksonville MD Exxon gasoline leak Feb 2006",
+        "fingerprint": "fp_2006-02_jacksonville_md_exxon_gasoline_leak"
+      }
+    },
+    {
+      "event_id": "evt_200602_noreaster_us_east_coast_nyc",
+      "title": "February 2006 nor’easter brings record snowfall to New York City and heavy snow along U.S. East Coast",
+      "description": "A powerful nor’easter affected the U.S. East Coast in mid-February 2006, producing widespread heavy snowfall from Virginia to Massachusetts. The storm set a record snowfall in New York City (Central Park), according to a NASA Earth Observatory report.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2006-02-11T00:00:00.000Z",
+        "event_end": "2006-02-13T23:59:59.000Z",
+        "reported_at": "2006-02-16T00:00:00.000Z",
+        "time_confidence": 0.75,
+        "event_date_utc": "2006-02-12T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Eastern United States (Virginia to Massachusetts; notable impacts in New York City)",
+        "jurisdiction_level": "supranational",
+        "admin1": null,
+        "country": null,
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "proxy",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://science.nasa.gov/earth/earth-observatory/record-snow-over-us-east-6285/",
+          "source_name": "NASA Earth Observatory",
+          "published_at": "2006-02-16T00:00:00.000Z",
+          "headline": "Record Snow Over US East",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NASA Earth Observatory"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "A powerful nor’easter dumped record snow over the U.S. East Coast.",
+            "source_url": "https://science.nasa.gov/earth/earth-observatory/record-snow-over-us-east-6285/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.66,
+        "category": 0.85,
+        "location": 0.55,
+        "summary_grounding": 0.7
+      },
+      "quality_flags": [
+        "needs_dedupe_check",
+        "location_ambiguous",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "2006-02 US East Coast nor'easter record NYC snowfall",
+        "fingerprint": "fp_200602_us_east_noreaster_20060211_20060213"
+      }
+    },
+    {
+      "event_id": "2006-02-geological-guinsaugon-rockslide",
+      "title": "Guinsaugon rockslide-debris avalanche buries village in Southern Leyte, Philippines",
+      "description": "A massive rockslide-debris avalanche on Feb. 17, 2006 buried the village of Guinsaugon in Saint Bernard, Southern Leyte. The event followed heavy rainfall and caused extensive loss of life and major landscape disturbance in the affected valley.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2006-02-17T02:30:00.000Z",
+        "event_end": "2006-02-17T23:59:59.000Z",
+        "reported_at": "2007-02-02T00:00:00Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2006-02-17T02:30:00.000Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Guinsaugon, Saint Bernard, Southern Leyte, Philippines",
+        "jurisdiction_level": "site",
+        "admin1": "Southern Leyte",
+        "country": "PH",
+        "capital_used": null,
+        "lat": 10.33,
+        "lon": 125.18,
+        "precision": "neighborhood",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.45
+      },
+      "sources": [
+        {
+          "url": "https://nhess.copernicus.org/articles/7/89/2007/",
+          "source_name": "Natural Hazards and Earth System Sciences (Copernicus)",
+          "published_at": "2007-02-02T00:00:00Z",
+          "headline": "Natural Hazards and Earth System Sciences article (vol. 7, pp. 89–101, 2007)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "...rockslide-debris avalanche... buried the village of Guinsaugon... on 17 February 2006.",
+            "source_url": "https://nhess.copernicus.org/articles/7/89/2007/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.85,
+        "location": 0.45,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Guinsaugon 2006-02-17 landslide",
+        "fingerprint": "fp_guinsaugon_ph_20060217"
+      }
+    },
+    {
+      "event_id": "2006-02-geological-soufriere-hills-ash-plume",
+      "title": "Soufrière Hills Volcano produces ash plume and ongoing ash/steam emissions, Montserrat",
+      "description": "Soufrière Hills Volcano produced an ash plume around Feb. 9, 2006 and continued ash and steam emissions for several days afterward. Ash drift affected areas downwind and local access restrictions were imposed.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2006-02-09T00:00:00.000Z",
+        "event_end": "2006-02-16T23:59:59.000Z",
+        "reported_at": "2006-02-23T00:00:00Z",
+        "time_confidence": 0.45,
+        "event_date_utc": null,
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Montserrat (Lesser Antilles, Caribbean)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "MS",
+        "capital_used": "Brades",
+        "lat": 16.79183,
+        "lon": -62.21058,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://science.nasa.gov/earth/earth-observatory/eruption-of-soufriere-hills-volcano-16077/",
+          "source_name": "NASA Earth Observatory",
+          "published_at": "2006-02-23T00:00:00Z",
+          "headline": "Eruption of Soufriere Hills Volcano",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NASA Earth Observatory"
+        ],
+        "substances": [
+          "volcanic ash"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Soufriere Hills Volcano on Montserrat erupted on February 9, 2006, sending an ash plume...",
+            "source_url": "https://science.nasa.gov/earth/earth-observatory/eruption-of-soufriere-hills-volcano-16077/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.85,
+        "location": 0.75,
+        "summary_grounding": 0.65
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Soufriere Hills Feb 2006 ash plume",
+        "fingerprint": "fp_montserrat_ms_20060209_0216"
+      }
+    },
+    {
+      "event_id": "evt-200602-az-tonto-payson-feb-fire",
+      "title": "Early-season wildfire north of Payson burns about 4,243 acres in Tonto National Forest (Mogollon Rim)",
+      "description": "A wildfire ignited on Feb. 6, 2006 north of Payson in Arizona's Tonto National Forest in rugged Mogollon Rim terrain. The fire burned roughly 4,243 acres and was reported as contained by mid-February.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2006-02-06T00:00:00.000Z",
+        "event_end": "2006-02-17T23:59:59.000Z",
+        "reported_at": "2006-02-16T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2006-02-06T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Mogollon Rim area, Tonto National Forest (north of Payson), Arizona, USA",
+        "jurisdiction_level": "site",
+        "admin1": "Arizona",
+        "country": "US",
+        "capital_used": null,
+        "lat": 34.2309,
+        "lon": -111.3251,
+        "precision": "neighborhood",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://science.nasa.gov/earth/earth-observatory/february-fire-in-arizona-16138/",
+          "source_name": "NASA Earth Observatory",
+          "published_at": "2006-02-16T00:00:00.000Z",
+          "headline": "February Fire in Arizona",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NASA Earth Observatory"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "Tonto National Forest"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "The fire began on February 6, 2006, and has burned 4,243 acres (1,717 hectares).",
+            "source_url": "https://science.nasa.gov/earth/earth-observatory/february-fire-in-arizona-16138/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.8,
+        "location": 0.55,
+        "summary_grounding": 0.65
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "2006-02 Tonto National Forest fire north of Payson (Mogollon Rim)",
+        "fingerprint": "fp-200602-tonto-mogollonrim-payson-2006-02-06"
+      }
+    },
+    {
+      "event_id": "2006-02-10_flower-garden-banks_coral-recovery-noaa",
+      "title": "NOAA survey finds Flower Garden Banks corals recovering from bleaching, with some disease signs",
+      "description": "A NOAA report said surveys at Flower Garden Banks found most corals recovering from a previous bleaching event, with bleaching prevalence reduced compared to earlier observations. The report also noted some colonies showing disease-like symptoms consistent with white plague.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "2006-02-10T00:00:00.000Z",
+        "event_end": "2006-02-10T23:59:59.000Z",
+        "reported_at": "2006-02-10T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2006-02-10T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Flower Garden Banks National Marine Sanctuary, Gulf of Mexico (off Texas/Louisiana, USA)",
+        "jurisdiction_level": "site",
+        "admin1": null,
+        "country": "US",
+        "capital_used": null,
+        "lat": 27.9167,
+        "lon": -93.8333,
+        "precision": "exact",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://sanctuaries.noaa.gov/news/press/2006/pr021006.html",
+          "source_name": "NOAA Office of National Marine Sanctuaries",
+          "published_at": "2006-02-10T00:00:00.000Z",
+          "headline": "pr021006",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA",
+          "Flower Garden Banks National Marine Sanctuary"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "coral reef"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "most corals were recovering from the bleaching event",
+            "source_url": "https://sanctuaries.noaa.gov/news/press/2006/pr021006.html"
+          },
+          {
+            "quote": "some colonies showed disease-like symptoms consistent with white plague",
+            "source_url": "https://sanctuaries.noaa.gov/news/press/2006/pr021006.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.75,
+        "location": 0.55,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Flower Garden Banks coral bleaching recovery survey (NOAA)",
+        "fingerprint": "2006-02-10|noaa|flower-garden-banks|coral-recovery"
+      }
+    },
+    {
+      "event_id": "evt_20060215_eu_dir_2006_11_aquatic_dangerous_substances",
+      "title": "EU adopts Directive 2006/11/EC on dangerous substances in aquatic environments",
+      "description": "The European Parliament and Council adopted Directive 2006/11/EC (codified version) addressing pollution caused by certain dangerous substances discharged into the aquatic environment of the Community.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "2006-02-15T00:00:00.000Z",
+        "event_end": "2006-02-15T23:59:59.000Z",
+        "reported_at": "2006-02-15T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2006-02-15T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "European Union",
+        "jurisdiction_level": "supranational",
+        "admin1": null,
+        "country": null,
+        "capital_used": "Brussels",
+        "lat": 50.8503,
+        "lon": 4.3517,
+        "precision": "supranational",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://eur-lex.europa.eu/eli/dir/2006/11/oj/eng",
+          "source_name": "EUR-Lex",
+          "published_at": "2006-02-15T00:00:00.000Z",
+          "headline": "Directive 2006/11/EC",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.efta.int/eea-lex/32006l0011",
+          "source_name": "EFTA (EEA-Lex)",
+          "published_at": "2006-02-15T00:00:00.000Z",
+          "headline": "32006L0011",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "European Parliament",
+          "Council of the European Union"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "aquatic environment"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Directive 2006/11/EC ... on pollution caused by certain dangerous substances discharged into the aquatic environment",
+            "source_url": "https://eur-lex.europa.eu/eli/dir/2006/11/oj/eng"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.67,
+        "category": 0.8,
+        "location": 0.6,
+        "summary_grounding": 0.65
+      },
+      "quality_flags": [
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "EU Directive 2006/11/EC dangerous substances aquatic environment",
+        "fingerprint": "fp_evt_20060215_eu_dir_2006_11_aquatic_dangerous_substances"
+      }
+    },
+    {
+      "event_id": "evt_20060209_japan_cabinet_bill_amend_climate_change_policy_law",
+      "title": "Japan announces Cabinet decision on bill to amend climate policy law for Kyoto unit accounting",
+      "description": "Japan’s Ministry of the Environment stated that the Cabinet would decide on a bill partially amending the Climate Change Policy Law, including establishing a national registry for Kyoto Protocol units to support accurate accounting of Kyoto mechanism transactions.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "2006-02-09T00:00:00.000Z",
+        "event_end": "2006-02-10T23:59:59.000Z",
+        "reported_at": "2006-02-09T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2006-02-09T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Japan",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "JP",
+        "capital_used": "Tokyo",
+        "lat": 35.6762,
+        "lon": 139.6503,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.75
+      },
+      "sources": [
+        {
+          "url": "https://www.env.go.jp/en/press/2006/0209a.html",
+          "source_name": "Japan Ministry of the Environment",
+          "published_at": "2006-02-09T00:00:00.000Z",
+          "headline": "Press Release (2006/02/09)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Japan Ministry of the Environment",
+          "Cabinet of Japan"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "the Cabinet ... will decide on a bill ... establishing a national registry for Kyoto Protocol units",
+            "source_url": "https://www.env.go.jp/en/press/2006/0209a.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.64,
+        "category": 0.75,
+        "location": 0.75,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "Japan MOE press release on Climate Change Policy Law amendment and Kyoto unit registry",
+        "fingerprint": "fp_evt_20060209_japan_cabinet_bill_amend_climate_change_policy_law"
+      }
+    },
+    {
+      "event_id": "evt_20060206_eu_commission_dir_2006_14_plant_health_measures",
+      "title": "EU adopts Commission Directive 2006/14/EC updating plant-health protective measures",
+      "description": "The EU adopted Commission Directive 2006/14/EC amending Annex IV to Council Directive 2000/29/EC on protective measures against the introduction and spread of organisms harmful to plants or plant products.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "2006-02-06T00:00:00.000Z",
+        "event_end": "2006-02-06T23:59:59.000Z",
+        "reported_at": "2006-02-06T00:00:00.000Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "2006-02-06T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "European Union",
+        "jurisdiction_level": "supranational",
+        "admin1": null,
+        "country": null,
+        "capital_used": "Brussels",
+        "lat": 50.8503,
+        "lon": 4.3517,
+        "precision": "supranational",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://op.europa.eu/en/publication-detail/-/publication/b2f6a12b-6b34-47f4-b828-b82f2c749dfb/language-en",
+          "source_name": "Publications Office of the European Union",
+          "published_at": "2006-02-06T00:00:00.000Z",
+          "headline": "Commission Directive 2006/14/EC",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "European Commission"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Commission Directive 2006/14/EC ... amending Annex IV to Council Directive 2000/29/EC",
+            "source_url": "https://op.europa.eu/en/publication-detail/-/publication/b2f6a12b-6b34-47f4-b828-b82f2c749dfb/language-en"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.58,
+        "category": 0.7,
+        "location": 0.6,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "paywalled_or_partial",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "EU Commission Directive 2006/14/EC plant health harmful organisms protective measures",
+        "fingerprint": "fp_evt_20060206_eu_commission_dir_2006_14_plant_health_measures"
+      }
+    }
+  ]
+}

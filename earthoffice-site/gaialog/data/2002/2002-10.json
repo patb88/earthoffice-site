@@ -1,0 +1,791 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_2002-10_normalize_2026-01-16T023822026Z",
+    "generated_utc": "2026-01-16T02:38:22.026Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "2002-10",
+    "window": {
+      "start_utc": "2002-10-01T00:00:00.000Z",
+      "end_utc": "2002-10-31T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "pollution_contamination_mv-limburg-oil-spill_yemen_2002-10-06",
+      "title": "MV Limburg explosion and oil spill off Yemen (Gulf of Aden)",
+      "description": "An explosion damaged the oil tanker MV Limburg off Yemen on October 6, 2002, leading to an oil spill in the Gulf of Aden. The incident caused marine oil pollution and affected parts of Yemen’s coastline.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2002-10-06T00:00:00.000Z",
+        "event_end": "2002-10-06T23:59:59.000Z",
+        "reported_at": "2002-10-06T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2002-10-06T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Off Yemen (Gulf of Aden), near Al Mukalla / Mina al-Dabah",
+        "jurisdiction_level": "site",
+        "admin1": null,
+        "country": "YE",
+        "capital_used": null,
+        "lat": 14.5425,
+        "lon": 49.1242,
+        "precision": "neighborhood",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.5
+      },
+      "sources": [
+        {
+          "url": "https://disasterscharter.org/activations/oil-spill-in-the-gulf-of-aden",
+          "source_name": "Disasters Charter",
+          "published_at": "2002-10-06T00:00:00.000Z",
+          "headline": "Oil Spill in the Gulf of Aden",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "MV Limburg",
+          "Disasters Charter"
+        ],
+        "substances": [
+          "oil"
+        ],
+        "ecosystems": [
+          "Gulf of Aden"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Oil Spill in the Gulf of Aden",
+            "source_url": "https://disasterscharter.org/activations/oil-spill-in-the-gulf-of-aden"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.75,
+        "location": 0.5,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "MV Limburg oil spill Yemen Gulf of Aden 2002-10-06",
+        "fingerprint": "pollution_contamination|mv_limburg_explosion_oil_spill|YE|2002-10-06"
+      }
+    },
+    {
+      "event_id": "2002-10-weather_climate-hurricane-lili-louisiana",
+      "title": "Hurricane Lili peaks and makes landfall in Louisiana",
+      "description": "Hurricane Lili intensified over the Gulf of Mexico and made landfall in Louisiana on October 3, 2002. Impacts included damaging winds, storm surge, and heavy rainfall in affected areas.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2002-10-01T00:00:00.000Z",
+        "event_end": "2002-10-04T23:59:59.000Z",
+        "reported_at": "2002-01-01T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2002-10-03T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Louisiana, USA",
+        "jurisdiction_level": "state",
+        "admin1": "Louisiana",
+        "country": "US",
+        "capital_used": "Baton Rouge",
+        "lat": 30.451467,
+        "lon": -91.187149,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.8
+      },
+      "sources": [
+        {
+          "url": "https://www.nhc.noaa.gov/data/tcr/AL132002_Lili.pdf",
+          "source_name": "NOAA National Hurricane Center",
+          "published_at": "2002-01-01T00:00:00.000Z",
+          "headline": "Tropical Cyclone Report: Hurricane Lili (AL132002)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA National Hurricane Center"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Lili made landfall near Intracoastal City, Louisiana, around 13 UTC 3 October 2002.",
+            "source_url": "https://www.nhc.noaa.gov/data/tcr/AL132002_Lili.pdf"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.7,
+        "category": 0.85,
+        "location": 0.8,
+        "summary_grounding": 0.7
+      },
+      "quality_flags": [
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "Hurricane Lili Louisiana landfall Oct 2002",
+        "fingerprint": "fp_2002-10_hurricane-lili_louisiana_2002-10-03"
+      }
+    },
+    {
+      "event_id": "2002-10-weather_climate-hurricane-kyle-southeast",
+      "title": "Hurricane Kyle brings heavy rain and flooding to the U.S. Southeast and Bermuda",
+      "description": "In early October 2002, Tropical Storm/Hurricane Kyle produced heavy rainfall with localized flooding in parts of the U.S. Southeast and also brought notable rainfall to Bermuda.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2002-10-01T00:00:00.000Z",
+        "event_end": "2002-10-06T23:59:59.000Z",
+        "reported_at": "2002-01-01T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2002-10-03T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Georgia, USA",
+        "jurisdiction_level": "state",
+        "admin1": "Georgia",
+        "country": "US",
+        "capital_used": "Atlanta",
+        "lat": 33.748752,
+        "lon": -84.387684,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.nhc.noaa.gov/data/tcr/AL112002_Kyle.pdf",
+          "source_name": "NOAA National Hurricane Center",
+          "published_at": "2002-01-01T00:00:00.000Z",
+          "headline": "Tropical Cyclone Report: Hurricane Kyle (AL112002)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA National Hurricane Center"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Kyle produced heavy rainfall and localized flooding in portions of the southeastern United States.",
+            "source_url": "https://www.nhc.noaa.gov/data/tcr/AL112002_Kyle.pdf"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.65,
+        "category": 0.85,
+        "location": 0.6,
+        "summary_grounding": 0.65
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "Hurricane Kyle impacts Southeast US Oct 2002",
+        "fingerprint": "fp_2002-10_hurricane-kyle_georgia_2002-10-03"
+      }
+    },
+    {
+      "event_id": "evt_20021010_west_papua_eq_tsunami_landslides",
+      "title": "West Papua (Bird’s Head Peninsula) earthquake triggers local tsunami and landslides",
+      "description": "A major earthquake struck near the Bird’s Head Peninsula area of West Papua, Indonesia, on October 10, 2002. Reports referenced strong shaking with landslides and a locally damaging tsunami affecting nearby coastal communities.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2002-10-10T10:50:20.000Z",
+        "event_end": "2002-10-10T23:59:59.000Z",
+        "reported_at": "2002-10-10T10:50:20.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2002-10-10T10:50:20.000Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "West Papua Province, Indonesia (Bird’s Head Peninsula)",
+        "jurisdiction_level": "state",
+        "admin1": "West Papua Province",
+        "country": "ID",
+        "capital_used": "Manokwari",
+        "lat": -0.8617,
+        "lon": 134.0786,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://legacy.itic.ioc-unesco.org/legacy.itic.ioc-unesco.org/indexa51b.html?Itemid=2087&id=1475&option=com_content&view=article",
+          "source_name": "ITIC (IOC-UNESCO) Legacy",
+          "published_at": "2002-10-10T10:50:20.000Z",
+          "headline": "West Papua (Bird’s Head Peninsula) earthquake triggers local tsunami and landslides",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://earthquake.usgs.gov/earthquakes/eventpage/usp000be54/executive",
+          "source_name": "USGS Earthquake Hazards Program",
+          "published_at": "2002-10-10T10:50:20.000Z",
+          "headline": "USGS Executive Summary: event usp000be54",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "USGS",
+          "IOC-UNESCO (ITIC)"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.85,
+        "location": 0.6,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "2002-10-10 West Papua/Bird’s Head earthquake",
+        "fingerprint": "fp_20021010_westpapua_state_geological"
+      }
+    },
+    {
+      "event_id": "evt_20021027_etna_eruption_ash",
+      "title": "Mount Etna eruption begins with ash emissions affecting downwind communities",
+      "description": "An eruptive episode began at Mount Etna in late October 2002, producing ash plumes and sustained activity that continued beyond October. Ashfall and airborne emissions affected populated areas downwind of the volcano.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2002-10-27T00:00:00.000Z",
+        "event_end": "2002-10-31T23:59:59.000Z",
+        "reported_at": "2002-10-27T00:00:00.000Z",
+        "time_confidence": 0.45,
+        "event_date_utc": "2002-10-27T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Mount Etna, Sicily, Italy",
+        "jurisdiction_level": "site",
+        "admin1": "Sicily",
+        "country": "IT",
+        "capital_used": null,
+        "lat": 37.751,
+        "lon": 14.9934,
+        "precision": "exact",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://science.nasa.gov/earth/earth-observatory/eruption-of-sicilys-mt-etna-10396/",
+          "source_name": "NASA Earth Observatory",
+          "published_at": "2002-10-27T00:00:00.000Z",
+          "headline": "Eruption of Sicily’s Mt. Etna",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://mrmjournal.biomedcentral.com/articles/10.1186/2049-6958-8-51",
+          "source_name": "BMC (Medical Research Methodology)",
+          "published_at": "2014-01-01T00:00:00.000Z",
+          "headline": "Article referencing the 2002 eruption of Mount Etna",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NASA"
+        ],
+        "substances": [
+          "volcanic ash"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.46,
+        "category": 0.8,
+        "location": 0.7,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "2002-10 Mount Etna eruption (Oct 2002)",
+        "fingerprint": "fp_20021027_etna_site_geological"
+      }
+    },
+    {
+      "event_id": "evt_20021031_molise_apulia_eq",
+      "title": "Molise–Apulia earthquake causes major damage and casualties in southern Italy",
+      "description": "A damaging earthquake struck southern Italy on October 31, 2002, affecting the Molise and Apulia regions. Reporting referenced significant structural damage and casualties, including a deadly school collapse in San Giuliano di Puglia.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2002-10-31T10:32:58.000Z",
+        "event_end": "2002-10-31T23:59:59.000Z",
+        "reported_at": "2002-10-31T10:32:58.000Z",
+        "time_confidence": 0.75,
+        "event_date_utc": "2002-10-31T10:32:58.000Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Molise and Apulia regions, Italy",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "IT",
+        "capital_used": "Rome",
+        "lat": 41.9028,
+        "lon": 12.4964,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://earthquake.usgs.gov/earthquakes/eventpage/usp000bfqg/executive",
+          "source_name": "USGS Earthquake Hazards Program",
+          "published_at": "2002-10-31T10:32:58.000Z",
+          "headline": "USGS Executive Summary: event usp000bfqg",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.ingv.it/en/earthquakes-and-volcanoes/earthquakes/italian-earthquakes/the-2002-molise-earthquake-sequence",
+          "source_name": "Istituto Nazionale di Geofisica e Vulcanologia (INGV)",
+          "published_at": "2002-10-31T00:00:00.000Z",
+          "headline": "The 2002 Molise earthquake sequence",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "USGS",
+          "INGV"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.9,
+        "location": 0.55,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "2002-10-31 Molise–Apulia earthquake",
+        "fingerprint": "fp_20021031_italy_country_geological"
+      }
+    },
+    {
+      "event_id": "fires_2002-10_us_ca_los_angeles_county_williams_fire_contained",
+      "title": "Williams Fire declared fully contained in Los Angeles County, California",
+      "description": "The Williams Fire in Southern California, which started in late September 2002, was reported as fully contained on October 1, 2002. The fire burned a large area and caused smoke and air-quality impacts, with damage to structures reported.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2002-10-02T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2002-10-01T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Los Angeles County / Angeles National Forest, California, USA",
+        "jurisdiction_level": "site",
+        "admin1": "California",
+        "country": "US",
+        "capital_used": null,
+        "lat": 34.3828,
+        "lon": -118.2581,
+        "precision": "admin1",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.35
+      },
+      "sources": [
+        {
+          "url": "https://www.fire.ca.gov/incidents/2002/9/22/williams-fire/",
+          "source_name": "CAL FIRE",
+          "published_at": "2002-10-01T00:00:00Z",
+          "headline": "Williams Fire",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.latimes.com/archives/la-xpm-2002-oct-02-me-williams2-story.html",
+          "source_name": "Los Angeles Times",
+          "published_at": "2002-10-02T00:00:00Z",
+          "headline": "la-xpm-2002-oct-02-me-williams2-story",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "CAL FIRE"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Williams Fire",
+            "source_url": "https://www.fire.ca.gov/incidents/2002/9/22/williams-fire/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.45,
+        "category": 0.8,
+        "location": 0.35,
+        "summary_grounding": 0.4
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "paywalled_or_partial",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Williams Fire containment Oct 2002 Southern California",
+        "fingerprint": "fires|williams_fire_contained|US-CA|2002-10-01"
+      }
+    },
+    {
+      "event_id": "fires_2002-10_au_nsw_engadine_bushfire_homes_destroyed",
+      "title": "Engadine (Sydney) bushfire damages property during October 2002 fire conditions",
+      "description": "A bushfire in Engadine, Sydney (New South Wales) was documented in October 2002 and reported to have caused property losses, including homes destroyed. The incident occurred during severe fire weather and fire ban conditions noted in reporting and agency documentation.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2002-10-09T00:00:00.000Z",
+        "time_confidence": 0.45,
+        "event_date_utc": "2002-10-09T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Engadine, Sydney, New South Wales, Australia",
+        "jurisdiction_level": "city",
+        "admin1": "New South Wales",
+        "country": "AU",
+        "capital_used": null,
+        "lat": -34.0659,
+        "lon": 151.0127,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://knowledge.aidr.org.au/resources/bushfire-sydney-new-south-wales-2002/",
+          "source_name": "Australian Institute for Disaster Resilience (AIDR) Knowledge Hub",
+          "published_at": "2002-10-09T00:00:00.000Z",
+          "headline": "Bushfire, Sydney New South Wales 2002",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.rfs.nsw.gov.au/__data/assets/pdf_file/0004/11533/Annual-Report-2002-03.pdf",
+          "source_name": "NSW Rural Fire Service",
+          "published_at": "2003-01-01T00:00:00Z",
+          "headline": "Annual Report 2002-03",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NSW Rural Fire Service"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Bushfire, Sydney New South Wales 2002",
+            "source_url": "https://knowledge.aidr.org.au/resources/bushfire-sydney-new-south-wales-2002/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.75,
+        "location": 0.6,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Engadine bushfire Sydney Oct 2002",
+        "fingerprint": "fires|engadine_bushfire|AU-NSW|2002-10-09"
+      }
+    },
+    {
+      "event_id": "evt_200210_noaa_coral_reef_status_report",
+      "title": "NOAA and partners publish coral reef ecosystem status assessment for U.S. jurisdictions and Freely Associated States",
+      "description": "A NOAA-hosted repository entry indicates publication of a report assessing the status of coral reef ecosystems and associated threats across U.S. jurisdictions and the Pacific Freely Associated States. The assessment is framed as a baseline reference for coral reef condition and threats for the covered regions.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2002-10-15T00:00:00Z",
+        "time_confidence": 0.3,
+        "event_date_utc": null,
+        "event_date_precision": "month"
+      },
+      "location": {
+        "name": "United States (report scope)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://repository.library.noaa.gov/view/noaa/7762",
+          "source_name": "NOAA Institutional Repository",
+          "published_at": "2002-10-15T00:00:00Z",
+          "headline": "NOAA repository record for coral reef ecosystem status/threats assessment (report)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://oneocean.org/overseas/200210/coastal_alert.html",
+          "source_name": "OneOcean.org",
+          "published_at": "2002-10-01T00:00:00Z",
+          "headline": "Coastal alert page referencing coral reef status assessment (October 2002)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "coral reefs"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "repository.library.noaa.gov/view/noaa/7762",
+            "source_url": "https://repository.library.noaa.gov/view/noaa/7762"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.45,
+        "category": 0.6,
+        "location": 0.55,
+        "summary_grounding": 0.35
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "NOAA coral reef status assessment October 2002",
+        "fingerprint": "fp_noaa_coral_reef_status_assessment_us_2002-10"
+      }
+    },
+    {
+      "event_id": "2002-10_usfws_chula-vista_mscp_incidental-take_notice",
+      "title": "USFWS makes available EA and application for Chula Vista MSCP incidental take permit",
+      "description": "The U.S. Fish & Wildlife Service published a Federal Register notice announcing availability of an environmental assessment and application materials for an incidental take permit associated with Chula Vista’s Multiple Species Conservation Program under the Endangered Species Act.",
+      "category_primary": "policy_regulation",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "2002-10-10T00:00:00.000Z",
+        "event_end": "2002-10-10T23:59:59.000Z",
+        "reported_at": "2002-10-10T00:00:00.000Z",
+        "time_confidence": 0.85,
+        "event_date_utc": "2002-10-10T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Chula Vista, California, United States",
+        "jurisdiction_level": "city",
+        "admin1": "California",
+        "country": "US",
+        "capital_used": null,
+        "lat": 32.6401,
+        "lon": -117.0842,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.8
+      },
+      "sources": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/FR-2002-10-10/html/02-25727.htm",
+          "source_name": "Federal Register (via GovInfo)",
+          "published_at": "2002-10-10T00:00:00.000Z",
+          "headline": "02-25727",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.fws.gov/carlsbad/",
+          "source_name": "U.S. Fish & Wildlife Service (Carlsbad Fish and Wildlife Office)",
+          "published_at": "2002-10-10T00:00:00.000Z",
+          "headline": "Carlsbad Fish and Wildlife Office",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Fish & Wildlife Service",
+          "City of Chula Vista"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "multi-species habitat"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "notice of availability of an environmental assessment and application materials for an incidental take permit",
+            "source_url": "https://www.govinfo.gov/content/pkg/FR-2002-10-10/html/02-25727.htm"
+          },
+          {
+            "quote": "Multiple Species Conservation Program",
+            "source_url": "https://www.govinfo.gov/content/pkg/FR-2002-10-10/html/02-25727.htm"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.72,
+        "category": 0.8,
+        "location": 0.8,
+        "summary_grounding": 0.65
+      },
+      "quality_flags": [
+        "needs_dedupe_check",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "USFWS Chula Vista MSCP incidental take permit notice (Federal Register)",
+        "fingerprint": "usfws-chula-vista-mscp-incidental-take-notice_32.6401_-117.0842_2002-10-10"
+      }
+    }
+  ]
+}

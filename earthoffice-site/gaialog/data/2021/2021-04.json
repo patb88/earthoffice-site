@@ -1,0 +1,745 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_2021-04_normalize_2026-01-16T125654772Z",
+    "generated_utc": "2026-01-16T12:56:54.772Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "2021-04",
+    "window": {
+      "start_utc": "2021-04-01T00:00:00.000Z",
+      "end_utc": "2021-04-30T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "2021-04_pollution_contamination_columbia-river-fv-tiffany",
+      "title": "Derelict fishing vessel F/V Tiffany releases oil into the Columbia River near Lord Island, Oregon",
+      "description": "NOAA reported that the U.S. Coast Guard notified NOAA about an 80-foot derelict fishing vessel (F/V Tiffany) releasing oil into the Columbia River near Lord Island, Oregon. The response included deploying boom, assessing the vessel, and beginning lightering to remove fuel and other hazardous materials.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2021-04-30T23:59:59.000Z",
+        "time_confidence": 0.5,
+        "event_date_utc": "2021-04-27T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Columbia River near Lord Island, Oregon, USA",
+        "jurisdiction_level": "site",
+        "admin1": "Oregon",
+        "country": "US",
+        "capital_used": null,
+        "lat": 45.7107,
+        "lon": -121.5553,
+        "precision": "neighborhood",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://blog.response.restoration.noaa.gov/incident-responses-april-2021",
+          "source_name": "NOAA Response & Restoration Blog",
+          "published_at": "2021-04-30T23:59:59.000Z",
+          "headline": "Incident responses: April 2021",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Coast Guard",
+          "NOAA"
+        ],
+        "substances": [
+          "oil",
+          "fuel"
+        ],
+        "ecosystems": [
+          "Columbia River"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "U.S. Coast Guard notified NOAA of an 80-foot derelict fishing vessel releasing oil into the Columbia River.",
+            "source_url": "https://blog.response.restoration.noaa.gov/incident-responses-april-2021"
+          },
+          {
+            "quote": "Response actions included placing boom... and beginning lightering to remove fuel and other hazardous materials.",
+            "source_url": "https://blog.response.restoration.noaa.gov/incident-responses-april-2021"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.8,
+        "location": 0.55,
+        "summary_grounding": 0.65
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "F/V Tiffany oil release Columbia River Lord Island OR April 2021",
+        "fingerprint": "fp_2021-04_fv-tiffany_columbia-river_lord-island_2021-04-27"
+      }
+    },
+    {
+      "event_id": "evt_202104_south-mississippi-flooding_wlox_0417",
+      "title": "Torrential rain and flooding across South Mississippi; Gulfport on track for wettest April on record",
+      "description": "Several days of torrential rain produced flooding across South Mississippi. Local reporting citing National Weather Service records said Gulfport-Biloxi International Airport had recorded 14.95 inches of rain in April as of April 18, with much of it falling since April 13, putting the month in record territory.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2021-04-17T00:00:00Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "2021-04-17T00:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Gulfport, Mississippi, USA",
+        "jurisdiction_level": "city",
+        "admin1": "Mississippi",
+        "country": "US",
+        "capital_used": null,
+        "lat": 30.3674198,
+        "lon": -89.0928155,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.wlox.com/2021/04/17/april-wettest-record-gulfport-fourth-wettest-biloxi-so-far/",
+          "source_name": "WLOX",
+          "published_at": "2021-04-17T00:00:00Z",
+          "headline": "April wettest on record for Gulfport, fourth wettest for Biloxi so far",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "National Weather Service",
+          "Gulfport-Biloxi International Airport"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Gulfport-Biloxi International Airport has recorded 14.95 inches of rain in April so far.",
+            "source_url": "https://www.wlox.com/2021/04/17/april-wettest-record-gulfport-fourth-wettest-biloxi-so-far/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.75,
+        "location": 0.6,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "2021-04 South Mississippi flooding / extreme rainfall",
+        "fingerprint": "fp_202104_gulfport_ms_rainflood_20210417"
+      }
+    },
+    {
+      "event_id": "evt_202104_ne-south-dakota-rain_nws-abr_aprilreview",
+      "title": "Slow-moving storm system brings 3–4+ inches of rain in parts of NE South Dakota; river rises near action flood stage",
+      "description": "A slow-moving low-pressure system brought multi-inch rainfall totals across parts of northeastern South Dakota and nearby Minnesota during April 6–8, 2021. The National Weather Service event review reported daily precipitation records at several stations and noted river rises approaching action flood stage in some cases.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2021-05-01T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2021-04-07T00:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Aberdeen, South Dakota, USA (NWS Aberdeen service area)",
+        "jurisdiction_level": "city",
+        "admin1": "South Dakota",
+        "country": "US",
+        "capital_used": null,
+        "lat": 45.4646985,
+        "lon": -98.4864829,
+        "precision": "city",
+        "location_basis": "institution_proxy",
+        "location_confidence": 0.45
+      },
+      "sources": [
+        {
+          "url": "https://www.weather.gov/abr/April2021InReview",
+          "source_name": "NOAA/National Weather Service (Aberdeen, SD)",
+          "published_at": "2021-05-01T00:00:00Z",
+          "headline": "April 2021 in Review",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA",
+          "National Weather Service"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "A large, slow-moving low-pressure system brought 3 to 4+ inches of rain in some areas.",
+            "source_url": "https://www.weather.gov/abr/April2021InReview"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.8,
+        "location": 0.45,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "2021-04 NE South Dakota heavy rain / flooding concerns",
+        "fingerprint": "fp_202104_nesd_heavyrain_20210407"
+      }
+    },
+    {
+      "event_id": "evt_202104_svg_soufriere_explosive_phase",
+      "title": "La Soufrière enters explosive eruptive phase with widespread ashfall and evacuations",
+      "description": "La Soufrière volcano in St. Vincent and the Grenadines entered an explosive eruptive phase beginning on April 9, 2021, generating ash plumes and ashfall. Reports cited significant humanitarian impacts including disruption to water supplies and large-scale evacuations and displacement, with explosive activity continuing through at least April 22, 2021.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2021-04-09T00:00:00.000Z",
+        "event_end": "2021-04-22T23:59:59.000Z",
+        "reported_at": "2021-04-22T00:00:00.000Z",
+        "time_confidence": 0.8,
+        "event_date_utc": "2021-04-09T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "St. Vincent and the Grenadines",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "VC",
+        "capital_used": "Kingstown",
+        "lat": 13.16,
+        "lon": -61.2248,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.85
+      },
+      "sources": [
+        {
+          "url": "https://www.ifrc.org/press-release/soufriere-volcanic-eruptions-ifrc-warns-immediate-and-long-term-humanitarian-needs",
+          "source_name": "IFRC",
+          "published_at": "2021-04-13T00:00:00.000Z",
+          "headline": "Soufrière volcanic eruptions: IFRC warns of immediate and long-term humanitarian needs",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.paho.org/en/documents/st-vincent-and-grenadines-soufriere-volcano-donor-alert-1-10-april-2021",
+          "source_name": "PAHO",
+          "published_at": "2021-04-10T00:00:00.000Z",
+          "headline": "St. Vincent and the Grenadines: Soufriere Volcano Donor Alert 1 (10 April 2021)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.paho.org/en/natural-disasters-monitoring/natural-disasters-monitoring-april-22-2021",
+          "source_name": "PAHO",
+          "published_at": "2021-04-22T00:00:00.000Z",
+          "headline": "Natural Disasters Monitoring (April 22, 2021)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "IFRC",
+          "PAHO"
+        ],
+        "substances": [
+          "volcanic ash"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "La Soufrière volcano has erupted explosively since 9 April 2021.",
+            "source_url": "https://www.paho.org/en/documents/st-vincent-and-grenadines-soufriere-volcano-donor-alert-1-10-april-2021"
+          },
+          {
+            "quote": "IFRC warns of immediate and long-term humanitarian needs.",
+            "source_url": "https://www.ifrc.org/press-release/soufriere-volcanic-eruptions-ifrc-warns-immediate-and-long-term-humanitarian-needs"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.72,
+        "category": 0.9,
+        "location": 0.85,
+        "summary_grounding": 0.65
+      },
+      "quality_flags": [
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "La Soufriere 2021 eruption (St. Vincent and the Grenadines)",
+        "fingerprint": "soufriere-explosive-phase_st-vincent-and-the-grenadines_2021-04-09_to_2021-04-22"
+      }
+    },
+    {
+      "event_id": "evt_20210426_pahokee_marina_hab",
+      "title": "Harmful algal bloom prompts health alert and marina closure near Pahokee Marina (Lake Okeechobee)",
+      "description": "A harmful algal bloom near Pahokee Marina on Lake Okeechobee led to local public health concern and actions including closing the marina. The city cited toxic algae concerns in connection with the bloom during late April 2021.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2021-04-26T00:00:00.000Z",
+        "event_end": "2021-04-27T23:59:59.000Z",
+        "reported_at": "2021-04-26T00:00:00.000Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "2021-04-26T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Pahokee Marina, Lake Okeechobee, Florida, USA",
+        "jurisdiction_level": "site",
+        "admin1": "Florida",
+        "country": "US",
+        "capital_used": null,
+        "lat": 26.8203,
+        "lon": -80.6664,
+        "precision": "neighborhood",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.45
+      },
+      "sources": [
+        {
+          "url": "https://www.cityofpahokee.com/home/news/city-pahokee-marina-closed-due-toxic-algae-bloom",
+          "source_name": "City of Pahokee",
+          "published_at": "2021-04-26T00:00:00.000Z",
+          "headline": "City of Pahokee Marina Closed Due to Toxic Algae Bloom",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.wptv.com/news/protecting-paradise/toxic-algae-concerns-mount-as-rainy-season-warmer-weather-near",
+          "source_name": "WPTV",
+          "published_at": "2021-04-27T00:00:00.000Z",
+          "headline": "Toxic algae concerns mount as rainy season, warmer weather near",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.dvidshub.net/image/6998480/april-2021-algal-bloom-outbreak",
+          "source_name": "DVIDS Hub",
+          "published_at": "2021-04-01T00:00:00.000Z",
+          "headline": "April 2021 algal bloom outbreak",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "City of Pahokee",
+          "Florida Department of Health"
+        ],
+        "substances": [
+          "blue-green algae",
+          "algal toxins"
+        ],
+        "ecosystems": [
+          "Lake Okeechobee"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Marina Closed Due to Toxic Algae Bloom",
+            "source_url": "https://www.cityofpahokee.com/home/news/city-pahokee-marina-closed-due-toxic-algae-bloom"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.46,
+        "category": 0.65,
+        "location": 0.45,
+        "summary_grounding": 0.35
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "Lake Okeechobee harmful algal bloom April 2021",
+        "fingerprint": "fp_20210426_pahokee_marina_hab"
+      }
+    },
+    {
+      "event_id": "evt_20210416_swfl_red_tide_fish_kills",
+      "title": "Red tide (Karenia brevis) persists in Southwest Florida with suspected fish kills reported",
+      "description": "Florida Fish and Wildlife Conservation Commission updates during April 2021 reported ongoing Karenia brevis (red tide) presence in Southwest Florida sampling locations. The updates also noted suspected red tide-related fish kills reported in affected counties.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2021-04-16T00:00:00.000Z",
+        "event_end": "2021-04-23T23:59:59.000Z",
+        "reported_at": "2021-04-16T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2021-04-16T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Southwest Florida (including Sarasota and Charlotte counties), USA",
+        "jurisdiction_level": "state",
+        "admin1": "Florida",
+        "country": "US",
+        "capital_used": "Tallahassee",
+        "lat": 30.4383,
+        "lon": -84.2807,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://content.govdelivery.com/accounts/FLFFWCC/bulletins/2cd6857",
+          "source_name": "Florida Fish and Wildlife Conservation Commission (GovDelivery)",
+          "published_at": "2021-04-16T00:00:00.000Z",
+          "headline": "Red Tide Status Update",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://content.govdelivery.com/accounts/FLFFWCC/bulletins/2d03eb0",
+          "source_name": "Florida Fish and Wildlife Conservation Commission (GovDelivery)",
+          "published_at": "2021-04-23T00:00:00.000Z",
+          "headline": "Red Tide Status Update",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Florida Fish and Wildlife Conservation Commission"
+        ],
+        "substances": [
+          "Karenia brevis"
+        ],
+        "ecosystems": [
+          "Gulf of Mexico"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Red Tide Status Update",
+            "source_url": "https://content.govdelivery.com/accounts/FLFFWCC/bulletins/2cd6857"
+          },
+          {
+            "quote": "suspected red tide-related fish kills",
+            "source_url": "https://content.govdelivery.com/accounts/FLFFWCC/bulletins/2d03eb0"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.75,
+        "location": 0.7,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Florida red tide status updates April 2021",
+        "fingerprint": "fp_20210416_swfl_red_tide_fish_kills"
+      }
+    },
+    {
+      "event_id": "2021-04-policy_regulation-us-ndc-2030-50-52",
+      "title": "U.S. announces 2030 NDC target of 50%–52% greenhouse gas reduction from 2005 levels",
+      "description": "During the U.S.-hosted Leaders Summit on Climate on April 22, 2021, the Biden administration announced a new U.S. target to cut greenhouse gas emissions 50%–52% below 2005 levels by 2030 as part of U.S. climate policy and international commitments.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "2021-04-22T00:00:00.000Z",
+        "event_end": "2021-04-22T23:59:59.000Z",
+        "reported_at": "2021-04-22T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2021-04-22T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.8
+      },
+      "sources": [
+        {
+          "url": "https://news.trust.org/item/20210422085354-cmmk4",
+          "source_name": "Thomson Reuters Foundation / Trust.org",
+          "published_at": "2021-04-22T00:00:00.000Z",
+          "headline": "news.trust.org item 20210422085354-cmmk4",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.axios.com/2021/04/22/biden-carbon-goal",
+          "source_name": "Axios",
+          "published_at": "2021-04-22T00:00:00.000Z",
+          "headline": "Biden carbon goal (Axios)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Biden administration",
+          "United States"
+        ],
+        "substances": [
+          "greenhouse gases"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "announced a new U.S. target to cut greenhouse gas emissions 50%–52% below 2005 levels by 2030",
+            "source_url": "https://news.trust.org/item/20210422085354-cmmk4"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.75,
+        "location": 0.8,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "us_ndc_2030_50_52_2021-04-22",
+        "fingerprint": "us-ndc-2030-50-52|US|2021-04-22"
+      }
+    },
+    {
+      "event_id": "2021-04-policy_regulation-eu-european-climate-law-provisional-agreement",
+      "title": "EU negotiators reach provisional agreement on European Climate Law",
+      "description": "On April 21, 2021, EU negotiators reached a provisional agreement on the European Climate Law, setting a framework toward climate neutrality by 2050 and a 2030 net greenhouse gas reduction target of 55% compared to 1990 levels.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "2021-04-21T00:00:00.000Z",
+        "event_end": "2021-04-21T23:59:59.000Z",
+        "reported_at": "2021-04-21T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2021-04-21T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "European Union",
+        "jurisdiction_level": "supranational",
+        "admin1": null,
+        "country": null,
+        "capital_used": "Brussels",
+        "lat": 50.8466,
+        "lon": 4.3528,
+        "precision": "supranational",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.75
+      },
+      "sources": [
+        {
+          "url": "https://www.europarl.europa.eu/thinktank/en/document/EPRS_ATA%282021%29690672",
+          "source_name": "European Parliament Think Tank (EPRS)",
+          "published_at": "2021-04-21T00:00:00.000Z",
+          "headline": "EPRS ATA(2021)690672",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "European Parliament",
+          "Council of the European Union",
+          "European Union"
+        ],
+        "substances": [
+          "greenhouse gases"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "provisional agreement on the European Climate Law",
+            "source_url": "https://www.europarl.europa.eu/thinktank/en/document/EPRS_ATA%282021%29690672"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.75,
+        "location": 0.75,
+        "summary_grounding": 0.4
+      },
+      "quality_flags": [
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "eu_climate_law_provisional_agreement_2021-04-21",
+        "fingerprint": "eu-climate-law-provisional|EU|2021-04-21"
+      }
+    },
+    {
+      "event_id": "2021-04-policy_regulation-us-proclamation-10186-earth-day-2021",
+      "title": "U.S. Presidential Proclamation 10186 issued for Earth Day 2021",
+      "description": "On April 22, 2021, the U.S. President issued Proclamation 10186 for Earth Day 2021, encouraging public engagement in environmental protection and recognizing urgency around climate change.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "2021-04-22T00:00:00.000Z",
+        "event_end": "2021-04-22T23:59:59.000Z",
+        "reported_at": "2021-04-22T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2021-04-22T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.85
+      },
+      "sources": [
+        {
+          "url": "https://www.presidency.ucsb.edu/documents/proclamation-10186-earth-day-2021",
+          "source_name": "The American Presidency Project (UCSB)",
+          "published_at": "2021-04-22T00:00:00.000Z",
+          "headline": "Proclamation 10186—Earth Day, 2021",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Office of the President of the United States",
+          "United States"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Proclamation 10186—Earth Day, 2021",
+            "source_url": "https://www.presidency.ucsb.edu/documents/proclamation-10186-earth-day-2021"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.66,
+        "category": 0.7,
+        "location": 0.85,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "us_proclamation_10186_earth_day_2021-04-22",
+        "fingerprint": "us-proclamation-10186|US|2021-04-22"
+      }
+    }
+  ]
+}

@@ -1,0 +1,679 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_1997-04_normalize_2026-01-17T190703364Z",
+    "generated_utc": "2026-01-17T19:07:03.364Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "1997-04",
+    "window": {
+      "start_utc": "1997-04-01T00:00:00.000Z",
+      "end_utc": "1997-04-30T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "evt_199704_tx_rain_flashflood_usgs_nwc",
+      "title": "Heavy rainfall and flash flooding in Texas; record peak flows on Salt Fork of the Red River near Wellington",
+      "description": "USGS reported heavy rainfall totals in Texas in early April 1997, including nearly 10 inches in Victoria, triggering widespread flash flooding. The event also produced record peak flows on the Salt Fork of the Red River near Wellington, Texas.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1997-04-01T12:00:00Z",
+        "event_end": "1997-04-03T12:00:00Z",
+        "reported_at": "1997-04-01T00:00:00Z",
+        "time_confidence": 0.5,
+        "event_date_utc": "1997-04-02T00:00:00Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Texas, USA",
+        "jurisdiction_level": "state",
+        "admin1": "Texas",
+        "country": "US",
+        "capital_used": "Austin",
+        "lat": 30.2672,
+        "lon": -97.7431,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://water.usgs.gov/nwc/back_issues/apr97_cov.html",
+          "source_name": "USGS National Water Conditions (Back Issues)",
+          "published_at": "1997-04-01T00:00:00Z",
+          "headline": "April 1997 (cover) - National Water Conditions (back issue)",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Geological Survey (USGS)"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Heavy rainfall totals...triggered widespread flash flooding and produced record peak flows...near Wellington, Texas.",
+            "source_url": "https://water.usgs.gov/nwc/back_issues/apr97_cov.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.7,
+        "location": 0.7,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "USGS_NWC_Apr1997_heavy_rain_TX",
+        "fingerprint": "fp_tx_austin_1997-04-01_1997-04-03_usgs_nwc"
+      }
+    },
+    {
+      "event_id": "evt_199704_la_ar_rain_flashflood_usgs_nwc",
+      "title": "Heavy rains and flash flooding across Louisiana and Arkansas; record flooding on Bayou Dorcheat at Springhill, Louisiana",
+      "description": "USGS reported a multi-day heavy rainfall event in early April 1997 affecting parts of Louisiana and Arkansas and causing widespread flash flooding. Bayou Dorcheat at Springhill, Louisiana reached a record flood peak during the event.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1997-04-04T12:00:00Z",
+        "event_end": "1997-04-06T12:00:00Z",
+        "reported_at": "1997-04-01T00:00:00Z",
+        "time_confidence": 0.5,
+        "event_date_utc": "1997-04-05T00:00:00Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Louisiana, USA",
+        "jurisdiction_level": "state",
+        "admin1": "Louisiana",
+        "country": "US",
+        "capital_used": "Baton Rouge",
+        "lat": 30.4515,
+        "lon": -91.1871,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://water.usgs.gov/nwc/back_issues/apr97_cov.html",
+          "source_name": "USGS National Water Conditions (Back Issues)",
+          "published_at": "1997-04-01T00:00:00Z",
+          "headline": "April 1997 (cover) - National Water Conditions (back issue)",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Geological Survey (USGS)"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "...heavy-rain event...caused widespread flash flooding...Bayou Dorcheat at Springhill...reached a record flood peak.",
+            "source_url": "https://water.usgs.gov/nwc/back_issues/apr97_cov.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.7,
+        "location": 0.55,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "USGS_NWC_Apr1997_heavy_rain_LA_AR",
+        "fingerprint": "fp_la_batonrouge_1997-04-04_1997-04-06_usgs_nwc"
+      }
+    },
+    {
+      "event_id": "evt_199704_ne_us_aprilfools_blizzard_bluehill",
+      "title": "“April Fool’s” blizzard impacts in the U.S. Northeast",
+      "description": "A late-season winter storm around April 1, 1997 brought heavy wet snow and strong winds to parts of the U.S. Northeast. The storm caused widespread power outages in affected areas, according to the Blue Hill Observatory account.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1997-04-01T12:00:00Z",
+        "event_end": "1997-04-01T12:00:00Z",
+        "reported_at": "1997-04-01T00:00:00Z",
+        "time_confidence": 0.45,
+        "event_date_utc": "1997-04-01T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Northeastern United States",
+        "jurisdiction_level": "supranational",
+        "admin1": null,
+        "country": null,
+        "capital_used": null,
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "proxy",
+        "location_basis": "institution_proxy",
+        "location_confidence": 0.3
+      },
+      "sources": [
+        {
+          "url": "https://bluehill.org/april-fools-snowstorm-of-march-31-april-1-1997/",
+          "source_name": "Blue Hill Observatory",
+          "published_at": "1997-04-01T00:00:00Z",
+          "headline": "April Fool’s Snowstorm of March 31 – April 1, 1997",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Blue Hill Observatory"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "...producing heavy wet snow, strong winds, and widespread power outages...",
+            "source_url": "https://bluehill.org/april-fools-snowstorm-of-march-31-april-1-1997/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.4,
+        "category": 0.6,
+        "location": 0.3,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "secondary_sources_only",
+        "low_confidence_location"
+      ],
+      "dedupe": {
+        "cluster_hint": "NE_US_AprilFools_Blizzard_1997",
+        "fingerprint": "fp_ne_us_proxy_1997-04-01_bluehill"
+      }
+    },
+    {
+      "event_id": "evt_199704_nd_blizzard_nws_bis",
+      "title": "North Dakota blizzard with ice, snow, and major infrastructure and agricultural impacts",
+      "description": "The U.S. National Weather Service office in Bismarck documented a prolonged April 1997 storm in North Dakota that transitioned from freezing rain and sleet to heavy snow with high winds, producing blizzard conditions. Reported impacts included extensive power infrastructure damage and livestock losses across the state.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1997-04-04T12:00:00Z",
+        "event_end": "1997-04-07T12:00:00Z",
+        "reported_at": "1997-04-04T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1997-04-05T00:00:00Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "North Dakota, USA",
+        "jurisdiction_level": "state",
+        "admin1": "North Dakota",
+        "country": "US",
+        "capital_used": "Bismarck",
+        "lat": 46.8083,
+        "lon": -100.7837,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.8
+      },
+      "sources": [
+        {
+          "url": "https://www.weather.gov/bis/severewx04041997",
+          "source_name": "NOAA / National Weather Service (Bismarck, ND)",
+          "published_at": "1997-04-04T00:00:00Z",
+          "headline": "Severe Weather April 4, 1997",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA National Weather Service"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "...freezing rain/sleet to heavy snow with high winds, producing blizzard conditions...",
+            "source_url": "https://www.weather.gov/bis/severewx04041997"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.7,
+        "category": 0.75,
+        "location": 0.8,
+        "summary_grounding": 0.7
+      },
+      "quality_flags": [
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "NWS_BIS_ND_Blizzard_Apr1997",
+        "fingerprint": "fp_nd_bismarck_1997-04-04_1997-04-07_nws"
+      }
+    },
+    {
+      "event_id": "evt_199704_redriver_flood_grandforks_usgs_media",
+      "title": "Red River of the North flood peak in Grand Forks/East Grand Forks area in April 1997",
+      "description": "A timeline from the City of Grand Forks documents rapid escalation of flooding and evacuations in mid-to-late April 1997 in the Grand Forks area. A USGS image references the 1997 Red River flood; the flood in the Grand Forks/East Grand Forks area reached historic extreme levels during this period.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1997-04-18T12:00:00Z",
+        "event_end": "1997-04-22T12:00:00Z",
+        "reported_at": "1997-04-18T00:00:00Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "1997-04-20T00:00:00Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Grand Forks, North Dakota, USA",
+        "jurisdiction_level": "city",
+        "admin1": "North Dakota",
+        "country": "US",
+        "capital_used": null,
+        "lat": 47.9253,
+        "lon": -97.0329,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.75
+      },
+      "sources": [
+        {
+          "url": "https://www.grandforksgov.com/government/city-departments/public-information-center/1997-flood/1997-flood-timeline",
+          "source_name": "City of Grand Forks",
+          "published_at": "1997-04-18T00:00:00Z",
+          "headline": "1997 Flood Timeline",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.usgs.gov/media/images/red-river-flood-1997-3",
+          "source_name": "U.S. Geological Survey (USGS)",
+          "published_at": "1997-04-01T00:00:00Z",
+          "headline": "Red River Flood 1997 (image)",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "City of Grand Forks",
+          "U.S. Geological Survey (USGS)"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "...prompting evacuations in the Grand Forks area...",
+            "source_url": "https://www.grandforksgov.com/government/city-departments/public-information-center/1997-flood/1997-flood-timeline"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.7,
+        "location": 0.75,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "Red_River_Flood_Grand_Forks_Apr1997",
+        "fingerprint": "fp_grandforks_1997-04-18_1997-04-22_redriver"
+      }
+    },
+    {
+      "event_id": "1997-04-geological-jiashi-county-xinjiang-earthquake-upi-19970406",
+      "title": "Jiashi County (Xinjiang), China earthquake (reported ~M6.4) causing injuries and housing damage",
+      "description": "Reports said a strong earthquake struck Jiashi County in Xinjiang, China on April 6, 1997. The report described injuries and extensive housing damage, including thousands of homes destroyed.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1997-04-06T12:00:00Z",
+        "event_end": "1997-04-06T12:00:00Z",
+        "reported_at": "1997-04-06T00:00:00Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "1997-04-06T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Jiashi County (Kashi Prefecture), Xinjiang, China",
+        "jurisdiction_level": "site",
+        "admin1": "Xinjiang",
+        "country": "CN",
+        "capital_used": null,
+        "lat": 39.8,
+        "lon": 76.2,
+        "precision": "admin1",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.35
+      },
+      "sources": [
+        {
+          "url": "https://www.upi.com/Archives/1997/04/06/Report-China-hit-by-strong-quakes/8805860302800/",
+          "source_name": "UPI",
+          "published_at": "1997-04-06T00:00:00Z",
+          "headline": "Report-China hit by strong quakes",
+          "byline": null,
+          "accessed_utc": "2026-01-17T03:01:51.838Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Report-China hit by strong quakes",
+            "source_url": "https://www.upi.com/Archives/1997/04/06/Report-China-hit-by-strong-quakes/8805860302800/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.42,
+        "category": 0.85,
+        "location": 0.35,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "Jiashi County Xinjiang earthquake 1997-04-06",
+        "fingerprint": "fp_1997-04-06_jiashi-xinjiang_cn_earthquake"
+      }
+    },
+    {
+      "event_id": "1997-04-geological-torres-islands-quake-tsunami-noaa-19970421",
+      "title": "Torres Islands region earthquake generating a small regional tsunami (April 21, 1997)",
+      "description": "A major earthquake in the southwest Pacific on April 21, 1997 was associated with a small tsunami observed at several locations. The tsunami listing reports small wave heights at islands in the region and other Pacific sites.",
+      "category_primary": "geological",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "1997-04-21T12:00:00Z",
+        "event_end": "1997-04-21T12:00:00Z",
+        "reported_at": "1997-04-21T00:00:00Z",
+        "time_confidence": 0.65,
+        "event_date_utc": "1997-04-21T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Torres Islands, Vanuatu (regional proxy)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "VU",
+        "capital_used": "Port Vila",
+        "lat": -17.7333,
+        "lon": 168.3273,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.tsunami.gov/previous.events/?p=04-21-97",
+          "source_name": "NOAA Tsunami (tsunami.gov)",
+          "published_at": "1997-04-21T00:00:00Z",
+          "headline": "Previous events: 04-21-97",
+          "byline": null,
+          "accessed_utc": "2026-01-17T03:01:51.838Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://nhess.copernicus.org/articles/24/3461/2024/nhess-24-3461-2024.html",
+          "source_name": "Natural Hazards and Earth System Sciences (Copernicus)",
+          "published_at": "2024-01-01T00:00:00Z",
+          "headline": "NHESS Volume 24, page 3461 (2024) article",
+          "byline": null,
+          "accessed_utc": "2026-01-17T03:01:51.838Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Previous events: 04-21-97",
+            "source_url": "https://www.tsunami.gov/previous.events/?p=04-21-97"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.58,
+        "category": 0.9,
+        "location": 0.6,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "1997-04-21 southwest Pacific earthquake tsunami (Torres Islands/Vanuatu)",
+        "fingerprint": "fp_1997-04-21_vanuatu_vu_earthquake_tsunami"
+      }
+    },
+    {
+      "event_id": "1997-04-02_epa_marine_engines_rule_effective_us",
+      "title": "EPA marine spark-ignition engine emissions rule amendment takes effect",
+      "description": "A U.S. EPA final rule amending emissions requirements for new gasoline spark-ignition marine engines took effect. The amendment corrected an oversight related to production line testing program implementation dates, delaying implementation for certain engine categories.",
+      "category_primary": "policy_regulation",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "1997-04-02T12:00:00Z",
+        "event_end": "1997-04-02T12:00:00Z",
+        "reported_at": "1997-04-02T00:00:00Z",
+        "time_confidence": 0.75,
+        "event_date_utc": "1997-04-02T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.8
+      },
+      "sources": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/FR-1997-04-02/pdf/97-8380.pdf",
+          "source_name": "govinfo.gov (Federal Register)",
+          "published_at": "1997-04-02T00:00:00Z",
+          "headline": "97-8380",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.epa.gov/regulations-emissions-vehicles-and-engines/final-rule-amendment-emission-requirements-applicable",
+          "source_name": "U.S. Environmental Protection Agency",
+          "published_at": "1997-04-02T00:00:00Z",
+          "headline": "Final rule amendment emission requirements applicable (marine engines)",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Environmental Protection Agency (EPA)"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "This rule is effective April 2, 1997.",
+            "source_url": "https://www.govinfo.gov/content/pkg/FR-1997-04-02/pdf/97-8380.pdf"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.72,
+        "category": 0.85,
+        "location": 0.85,
+        "summary_grounding": 0.7
+      },
+      "quality_flags": [
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "EPA final rule effective date (Federal Register)",
+        "fingerprint": "1997-04-02|EPA marine spark-ignition engine emissions rule amendment takes effect|US"
+      }
+    },
+    {
+      "event_id": "1997-04-30_epa_antarctica_eia_rule_effective_us",
+      "title": "EPA interim final rule on environmental impact assessments for U.S. nongovernmental activities in Antarctica becomes effective",
+      "description": "A U.S. EPA interim final rule became effective establishing environmental impact assessment requirements for U.S.-jurisdiction nongovernmental activities in Antarctica. The rule implemented requirements under the Antarctic Science, Tourism, and Conservation Act of 1996 and referenced review coordination under the Protocol on Environmental Protection to the Antarctic Treaty.",
+      "category_primary": "policy_regulation",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "1997-04-30T12:00:00Z",
+        "event_end": "1997-04-30T12:00:00Z",
+        "reported_at": "1997-04-30T00:00:00Z",
+        "time_confidence": 0.75,
+        "event_date_utc": "1997-04-30T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States (rule applies to U.S.-jurisdiction operators)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.75
+      },
+      "sources": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/FR-1997-04-30/html/97-11075.htm",
+          "source_name": "govinfo.gov (Federal Register)",
+          "published_at": "1997-04-30T00:00:00Z",
+          "headline": "97-11075",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Environmental Protection Agency (EPA)"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "Antarctica"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "This interim final rule is effective April 30, 1997.",
+            "source_url": "https://www.govinfo.gov/content/pkg/FR-1997-04-30/html/97-11075.htm"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.74,
+        "category": 0.88,
+        "location": 0.8,
+        "summary_grounding": 0.72
+      },
+      "quality_flags": [
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "EPA interim final rule effective date (Federal Register)",
+        "fingerprint": "1997-04-30|EPA interim final rule on environmental impact assessments for U.S. nongovernmental activities in Antarctica becomes effective|US"
+      }
+    }
+  ]
+}

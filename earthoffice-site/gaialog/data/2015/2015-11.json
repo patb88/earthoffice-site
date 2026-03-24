@@ -1,0 +1,713 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_2015-11_normalize_2026-01-16T054352732Z",
+    "generated_utc": "2026-01-16T05:43:52.732Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "2015-11",
+    "window": {
+      "start_utc": "2015-11-01T00:00:00.000Z",
+      "end_utc": "2015-11-30T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "2015-11-pollution_contamination-fundao-rio-doce",
+      "title": "Fundão tailings dam collapse contaminates Rio Doce river system (Samarco), Brazil",
+      "description": "The Fundão tailings dam near Mariana collapsed, releasing a large volume of iron-ore mining waste into waterways feeding the Rio Doce. Reports in November 2015 described the contaminated plume moving downstream and reaching the Atlantic Ocean, with impacts to communities and ecosystems along the river.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2015-11-05T00:00:00.000Z",
+        "event_end": "2015-11-05T23:59:59.000Z",
+        "reported_at": "2015-11-22T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2015-11-05T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Mariana, Minas Gerais, Brazil (Rio Doce basin)",
+        "jurisdiction_level": "city",
+        "admin1": "Minas Gerais",
+        "country": "BR",
+        "capital_used": null,
+        "lat": -20.3778,
+        "lon": -43.416,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://www.aljazeera.com/news/2015/11/22/toxic-sludge-reaches-atlantic-after-brazil-dams-burst/",
+          "source_name": "Al Jazeera",
+          "published_at": "2015-11-22T00:00:00.000Z",
+          "headline": "Toxic sludge reaches Atlantic after Brazil dam’s burst",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.earthobservatory.nasa.gov/images/87083/contaminated-rio-doce-water-flows-into-the-atlantic",
+          "source_name": "NASA Earth Observatory",
+          "published_at": "2015-11-24T00:00:00.000Z",
+          "headline": "Contaminated Rio Doce Water Flows into the Atlantic",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://pubmed.ncbi.nlm.nih.gov/27502362/",
+          "source_name": "PubMed",
+          "published_at": "2016-08-10T00:00:00.000Z",
+          "headline": "PubMed record 27502362",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Samarco"
+        ],
+        "substances": [
+          "tailings",
+          "iron-ore mining waste"
+        ],
+        "ecosystems": [
+          "Rio Doce",
+          "Atlantic Ocean"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "toxic mud from a burst dam ... has reached the Atlantic Ocean",
+            "source_url": "https://www.aljazeera.com/news/2015/11/22/toxic-sludge-reaches-atlantic-after-brazil-dams-burst/"
+          },
+          {
+            "quote": "Contaminated Rio Doce Water Flows into the Atlantic",
+            "source_url": "https://www.earthobservatory.nasa.gov/images/87083/contaminated-rio-doce-water-flows-into-the-atlantic"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.72,
+        "category": 0.8,
+        "location": 0.7,
+        "summary_grounding": 0.7
+      },
+      "quality_flags": [
+        "needs_dedupe_check",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "Fundao tailings dam collapse / Rio Doce contamination",
+        "fingerprint": "fundao-tailings-dam-collapse|mariana-br|2015-11-05"
+      }
+    },
+    {
+      "event_id": "2015-11-pollution_contamination-shenyang-smog",
+      "title": "Smog episode reported in Shenyang, China with very high pollution levels",
+      "description": "Media reporting in early November 2015 described a severe haze/smog episode affecting parts of China, including Shenyang, with hazardous air quality conditions and public health concern. The source characterizes the episode as extreme but does not provide a single, clearly verifiable local event timestamp for Shenyang in the draft materials.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2015-11-08T00:00:00.000Z",
+        "event_end": "2015-11-09T23:59:59.000Z",
+        "reported_at": "2015-11-09T00:00:00.000Z",
+        "time_confidence": 0.5,
+        "event_date_utc": "2015-11-08T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Shenyang, Liaoning, China",
+        "jurisdiction_level": "city",
+        "admin1": "Liaoning",
+        "country": "CN",
+        "capital_used": null,
+        "lat": 41.8057,
+        "lon": 123.4315,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.theguardian.com/world/2015/nov/09/airpocalypse-now-china-pollution-reaching-record-levels",
+          "source_name": "The Guardian",
+          "published_at": "2015-11-09T00:00:00.000Z",
+          "headline": "‘Airpocalypse now’: China pollution reaching record levels",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [
+          "PM2.5"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "China’s pollution has reached record levels",
+            "source_url": "https://www.theguardian.com/world/2015/nov/09/airpocalypse-now-china-pollution-reaching-record-levels"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.7,
+        "location": 0.6,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "China smog episode Nov 2015 / Shenyang mention",
+        "fingerprint": "shenyang-smog|shenyang-cn|2015-11-08"
+      }
+    },
+    {
+      "event_id": "2015-11-weather-atlantic-hurricane-kate",
+      "title": "Hurricane Kate forms and peaks as a November Atlantic hurricane",
+      "description": "Late-season Atlantic tropical cyclone Kate formed on November 8, 2015 and strengthened into a hurricane around November 11 before weakening and dissipating by mid-November.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2015-11-08T00:00:00.000Z",
+        "event_end": "2015-11-13T23:59:59.000Z",
+        "reported_at": "2015-11-08T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2015-11-11T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Atlantic Ocean (near the Bahamas and Bermuda region)",
+        "jurisdiction_level": "global_proxy",
+        "admin1": null,
+        "country": null,
+        "capital_used": null,
+        "lat": 25.0343,
+        "lon": -77.3963,
+        "precision": "proxy",
+        "location_basis": "manual_override",
+        "location_confidence": 0.35
+      },
+      "sources": [
+        {
+          "url": "https://www.nhc.noaa.gov/archive/2015/KATE.shtml",
+          "source_name": "NOAA National Hurricane Center",
+          "published_at": "2015-11-08T00:00:00.000Z",
+          "headline": "Hurricane Kate Advisory Archive",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA National Hurricane Center"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Archive of advisories for Hurricane KATE.",
+            "source_url": "https://www.nhc.noaa.gov/archive/2015/KATE.shtml"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.75,
+        "location": 0.35,
+        "summary_grounding": 0.65
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "nhc_hurricane_kate_2015",
+        "fingerprint": "nhc_hurricane_kate_2015_atlantic_proxy_2015-11"
+      }
+    },
+    {
+      "event_id": "2015-11-weather-e-pacific-hurricane-sandra",
+      "title": "Hurricane Sandra becomes a record-strong November major hurricane in the Eastern Pacific",
+      "description": "Tropical cyclone Sandra developed in late November 2015 in the Eastern Pacific and rapidly intensified into a major hurricane before weakening offshore.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2015-11-23T00:00:00.000Z",
+        "event_end": "2015-11-29T23:59:59.000Z",
+        "reported_at": "2015-11-23T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2015-11-25T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Eastern Pacific Ocean (off Mexico)",
+        "jurisdiction_level": "global_proxy",
+        "admin1": null,
+        "country": null,
+        "capital_used": null,
+        "lat": 19.4326,
+        "lon": -99.1332,
+        "precision": "proxy",
+        "location_basis": "manual_override",
+        "location_confidence": 0.3
+      },
+      "sources": [
+        {
+          "url": "https://www.nhc.noaa.gov/archive/2015/SANDRA.shtml",
+          "source_name": "NOAA National Hurricane Center",
+          "published_at": "2015-11-23T00:00:00.000Z",
+          "headline": "Hurricane Sandra Advisory Archive",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA National Hurricane Center"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Archive of advisories for Hurricane SANDRA.",
+            "source_url": "https://www.nhc.noaa.gov/archive/2015/SANDRA.shtml"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.52,
+        "category": 0.75,
+        "location": 0.3,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "nhc_hurricane_sandra_2015",
+        "fingerprint": "nhc_hurricane_sandra_2015_epac_proxy_2015-11"
+      }
+    },
+    {
+      "event_id": "2015-11-weather-south-india-floods",
+      "title": "Flooding begins in South India amid extreme northeast monsoon rainfall",
+      "description": "Heavy northeast monsoon rains triggered flooding across parts of South India starting in early November 2015, including impacts around Chennai, with conditions continuing beyond November.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2015-11-08T00:00:00.000Z",
+        "event_end": "2015-11-30T23:59:59.000Z",
+        "reported_at": "2015-11-08T00:00:00.000Z",
+        "time_confidence": 0.45,
+        "event_date_utc": null,
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Chennai, Tamil Nadu, India",
+        "jurisdiction_level": "city",
+        "admin1": "Tamil Nadu",
+        "country": "IN",
+        "capital_used": null,
+        "lat": 13.0827,
+        "lon": 80.2707,
+        "precision": "city",
+        "location_basis": "manual_override",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://weather.com/news/news/chennai-india-floods-december-2015",
+          "source_name": "The Weather Channel",
+          "published_at": "2015-12-01T00:00:00.000Z",
+          "headline": "Chennai, India Floods (December 2015)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "The Weather Channel"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Chennai, India floods ... December 2015.",
+            "source_url": "https://weather.com/news/news/chennai-india-floods-december-2015"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.42,
+        "category": 0.65,
+        "location": 0.6,
+        "summary_grounding": 0.35
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "south_india_floods_2015_chennai_region",
+        "fingerprint": "south_india_floods_2015_chennai_2015-11"
+      }
+    },
+    {
+      "event_id": "2015-11-weather-noaa-warmest-november-record",
+      "title": "NOAA report cited November 2015 as the warmest November on record (at the time)",
+      "description": "A news report citing NOAA climate reporting described November 2015 as the warmest November in the instrumental record at that time, extending a run of record-warm months during 2015.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2015-11-01T00:00:00.000Z",
+        "event_end": "2015-11-30T23:59:59.000Z",
+        "reported_at": "2015-12-16T00:00:00.000Z",
+        "time_confidence": 0.4,
+        "event_date_utc": null,
+        "event_date_precision": "month"
+      },
+      "location": {
+        "name": "Global",
+        "jurisdiction_level": "global_proxy",
+        "admin1": null,
+        "country": null,
+        "capital_used": null,
+        "lat": 0,
+        "lon": 0,
+        "precision": "proxy",
+        "location_basis": "manual_override",
+        "location_confidence": 0.4
+      },
+      "sources": [
+        {
+          "url": "https://www.cbsnews.com/news/noaa-november-2015-warmest-temperature-record/",
+          "source_name": "CBS News",
+          "published_at": "2015-12-16T00:00:00.000Z",
+          "headline": "NOAA: November 2015 warmest temperature record",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA",
+          "CBS News"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "NOAA ... November 2015 ... warmest November on record.",
+            "source_url": "https://www.cbsnews.com/news/noaa-november-2015-warmest-temperature-record/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.38,
+        "category": 0.6,
+        "location": 0.4,
+        "summary_grounding": 0.35
+      },
+      "quality_flags": [
+        "secondary_sources_only",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "noaa_global_temp_record_nov2015",
+        "fingerprint": "noaa_warmest_november_record_global_2015-11"
+      }
+    },
+    {
+      "event_id": "2015-11-06_noaa_esa_dusky-sea-snake-foreign-corals_effective",
+      "title": "NOAA ESA listing for dusky sea snake and three foreign corals takes effect",
+      "description": "A final rule listing the dusky sea snake and three foreign coral species under the U.S. Endangered Species Act took effect on November 6, 2015. The action formally added these species to endangered status; critical habitat was not designated due to jurisdictional limits.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "2015-11-06T00:00:00.000Z",
+        "event_end": "2015-11-06T23:59:59.000Z",
+        "reported_at": "2015-11-06T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2015-11-06T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States (regulatory action)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.85
+      },
+      "sources": [
+        {
+          "url": "https://www.fisheries.noaa.gov/index.php/action/final-rule-list-dusky-sea-snake-and-three-foreign-corals-under-endangered-species-act",
+          "source_name": "NOAA Fisheries",
+          "published_at": "2015-11-06T00:00:00.000Z",
+          "headline": "Final rule to list dusky sea snake and three foreign corals under the Endangered Species Act",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://thefederalregister.org/80-FR/Issue-194",
+          "source_name": "TheFederalRegister.org",
+          "published_at": "2015-10-07T00:00:00.000Z",
+          "headline": "80 FR Issue 194",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA Fisheries",
+          "U.S. National Marine Fisheries Service (NMFS)"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "coral reefs"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Final rule to list dusky sea snake and three foreign corals under the Endangered Species Act",
+            "source_url": "https://www.fisheries.noaa.gov/index.php/action/final-rule-list-dusky-sea-snake-and-three-foreign-corals-under-endangered-species-act"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.75,
+        "location": 0.85,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "ESA listing dusky sea snake + foreign corals effective 2015-11-06",
+        "fingerprint": "esa_listing_dusky_sea_snake_foreign_corals_us_2015-11-06"
+      }
+    },
+    {
+      "event_id": "20151130_paris_cop21_opens",
+      "title": "COP21 (Paris Climate Change Conference) opens",
+      "description": "The UNFCCC Paris Climate Change Conference (COP21/CMP11) opened in Paris on November 30, 2015, starting negotiations that later led to the Paris Agreement in December 2015.",
+      "category_primary": "policy_regulation",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "2015-11-30T00:00:00.000Z",
+        "event_end": "2015-11-30T23:59:59.000Z",
+        "reported_at": "2015-11-30T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2015-11-30T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Paris, France",
+        "jurisdiction_level": "city",
+        "admin1": null,
+        "country": "FR",
+        "capital_used": null,
+        "lat": 48.8566,
+        "lon": 2.3522,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.8
+      },
+      "sources": [
+        {
+          "url": "https://unfccc.int/conference/paris-climate-change-conference-november-2015",
+          "source_name": "UNFCCC",
+          "published_at": "2015-11-30T00:00:00.000Z",
+          "headline": "Paris Climate Change Conference - November 2015",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.nrdc.org/bio/han-chen/paris-climate-conference-major-greenhouse-gas-emitters-climate-pledges-cop21",
+          "source_name": "NRDC",
+          "published_at": "2015-11-30T00:00:00.000Z",
+          "headline": "Paris climate conference: major greenhouse gas emitters’ climate pledges at COP21",
+          "byline": "Han Chen",
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "UNFCCC"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Paris Climate Change Conference - November 2015",
+            "source_url": "https://unfccc.int/conference/paris-climate-change-conference-november-2015"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.72,
+        "category": 0.8,
+        "location": 0.8,
+        "summary_grounding": 0.65
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "COP21 opening Paris 2015-11-30",
+        "fingerprint": "cop21_paris_fr_2015-11-30"
+      }
+    },
+    {
+      "event_id": "20151110_us_gao_epa_ozone_naaqs_major_rule_report",
+      "title": "U.S. GAO issues major-rule report on EPA’s 2015 ozone NAAQS",
+      "description": "On November 10, 2015, the U.S. Government Accountability Office transmitted a major-rule report concerning EPA’s 2015 revisions to the primary and secondary ozone National Ambient Air Quality Standards (NAAQS).",
+      "category_primary": "policy_regulation",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "2015-11-10T00:00:00.000Z",
+        "event_end": "2015-11-10T23:59:59.000Z",
+        "reported_at": "2015-11-10T00:00:00.000Z",
+        "time_confidence": 0.75,
+        "event_date_utc": "2015-11-10T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States (federal regulatory oversight)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.85
+      },
+      "sources": [
+        {
+          "url": "https://www.gao.gov/products/gao-16-207r",
+          "source_name": "U.S. Government Accountability Office",
+          "published_at": "2015-11-10T00:00:00.000Z",
+          "headline": "GAO-16-207R: Environmental Protection Agency: Ozone National Ambient Air Quality Standards",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://19january2017snapshot.epa.gov/ozone-pollution/2015-national-ambient-air-quality-standards-naaqs-ozone",
+          "source_name": "U.S. Environmental Protection Agency (archived snapshot)",
+          "published_at": "2015-10-01T00:00:00.000Z",
+          "headline": "2015 National Ambient Air Quality Standards (NAAQS) for Ozone",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Government Accountability Office",
+          "U.S. Environmental Protection Agency"
+        ],
+        "substances": [
+          "Ozone"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "GAO-16-207R",
+            "source_url": "https://www.gao.gov/products/gao-16-207r"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.76,
+        "category": 0.85,
+        "location": 0.85,
+        "summary_grounding": 0.7
+      },
+      "quality_flags": [
+        "paywalled_or_partial",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "GAO major rule report EPA ozone NAAQS 2015-11-10",
+        "fingerprint": "gao_epa_ozone_naaqs_us_2015-11-10"
+      }
+    }
+  ]
+}

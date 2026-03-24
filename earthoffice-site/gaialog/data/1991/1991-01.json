@@ -1,0 +1,829 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_1991-01_normalize_2026-01-17T170159617Z",
+    "generated_utc": "2026-01-17T17:01:59.617Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "1991-01",
+    "window": {
+      "start_utc": "1991-01-01T00:00:00.000Z",
+      "end_utc": "1991-01-31T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "1991-01_pollution_contamination_kuwait_gulf_oil_spill_01",
+      "title": "Kuwaiti oil releases into the Persian Gulf during the Gulf War",
+      "description": "During the 1991 Gulf War, actions impacting Kuwaiti oil facilities and marine infrastructure led to a large release of crude oil into the Persian (Arabian) Gulf. The incident is widely cited as one of the largest marine oil spills in the region.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1991-01-19T12:00:00Z",
+        "event_end": "1991-01-19T12:00:00Z",
+        "reported_at": "1992-01-01T00:00:00Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "1991-01-19T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Kuwait (capital proxy for Persian Gulf incident)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "KW",
+        "capital_used": "Kuwait City",
+        "lat": 29.3759,
+        "lon": 47.9774,
+        "precision": "proxy",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://incidentnews.noaa.gov/incident/6786",
+          "source_name": "NOAA IncidentNews",
+          "published_at": "1991-01-01T00:00:00Z",
+          "headline": "Incident 6786 (NOAA IncidentNews record)",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CZIC-td427-p4-o4-1992/html/CZIC-td427-p4-o4-1992.htm",
+          "source_name": "GovInfo",
+          "published_at": "1992-01-01T00:00:00Z",
+          "headline": "GovInfo document (CZIC-td427-p4-o4-1992)",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA"
+        ],
+        "substances": [
+          "crude oil"
+        ],
+        "ecosystems": [
+          "Persian Gulf"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.75,
+        "location": 0.6,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "1991 Gulf War Persian Gulf oil spill(s)",
+        "fingerprint": "1991-01|kuwait|pollution_contamination|kuwaiti oil releases into the persian gulf during the gulf war|1991-01-19"
+      }
+    },
+    {
+      "event_id": "evt_199101_indiana_flooding",
+      "title": "Flooding across Indiana from rain and snowmelt (early Jan 1991)",
+      "description": "Widespread flooding occurred across Indiana as snowmelt and 2–3 inches of rain fell on saturated or partially frozen ground. The flooding damaged structures and prompted evacuations, with fatalities and disaster declarations reported in multiple counties.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1991-01-01T12:00:00Z",
+        "event_end": "1991-01-07T12:00:00Z",
+        "reported_at": "1991-01-01T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": null,
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Indiana, United States",
+        "jurisdiction_level": "state",
+        "admin1": "Indiana",
+        "country": "US",
+        "capital_used": "Indianapolis",
+        "lat": 39.768403,
+        "lon": -86.158068,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.95
+      },
+      "sources": [
+        {
+          "url": "https://www.weather.gov/ind/dec1990flood",
+          "source_name": "NOAA/NWS Indianapolis",
+          "published_at": "1991-01-01T00:00:00Z",
+          "headline": "Dec 1990 Flood (NWS Indianapolis)",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA National Weather Service"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Widespread flooding occurred across Indiana as snowmelt and 2–3 inches of rain fell...",
+            "source_url": "https://www.weather.gov/ind/dec1990flood"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.8,
+        "location": 0.95,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "1991-01_indiana_flood",
+        "fingerprint": "fp_1991-01_indiana_flooding_weather_climate"
+      }
+    },
+    {
+      "event_id": "evt_199101_queensland_flooding_fitzroy",
+      "title": "Flooding in Queensland after ex-Tropical Cyclone Joy rains (Jan 1991)",
+      "description": "Heavy rainfall and runoff caused extensive flooding across coastal and inland Queensland, including the Fitzroy River at Rockhampton and coastal streams between Cairns and Gladstone. Reported peaks on the Fitzroy River at Rockhampton occurred on January 7 and January 12, with significant damage and fatalities described.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1991-01-07T12:00:00Z",
+        "event_end": "1991-01-12T12:00:00Z",
+        "reported_at": "1991-01-01T00:00:00Z",
+        "time_confidence": 0.55,
+        "event_date_utc": null,
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Queensland, Australia",
+        "jurisdiction_level": "state",
+        "admin1": "Queensland",
+        "country": "AU",
+        "capital_used": "Brisbane",
+        "lat": -27.4698,
+        "lon": 153.0251,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.9
+      },
+      "sources": [
+        {
+          "url": "https://www.bom.gov.au/qld/flood/fld_history/floodsum_1990.shtml",
+          "source_name": "Australian Bureau of Meteorology",
+          "published_at": "1991-01-01T00:00:00Z",
+          "headline": "Queensland flood history summary (BoM)",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Australian Bureau of Meteorology"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "The Fitzroy River at Rockhampton peaked at 9.15 m on January 7 and again at 9.30 m on January 12...",
+            "source_url": "https://www.bom.gov.au/qld/flood/fld_history/floodsum_1990.shtml"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.58,
+        "category": 0.8,
+        "location": 0.9,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "1991-01_queensland_flooding",
+        "fingerprint": "fp_1991-01_queensland_flooding_weather_climate"
+      }
+    },
+    {
+      "event_id": "evt_199101_cyclone_bella_rodrigues",
+      "title": "Cyclone Bella impacts Rodrigues, Mauritius (31 Jan 1991)",
+      "description": "Cyclone Bella passed close to Rodrigues on January 31, producing damaging winds and flooding impacts. The event was reported as one of the worst storms on the island in decades.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1991-01-31T12:00:00Z",
+        "event_end": "1991-01-31T12:00:00Z",
+        "reported_at": "1991-02-01T00:00:00Z",
+        "time_confidence": 0.65,
+        "event_date_utc": "1991-01-31T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Rodrigues, Mauritius",
+        "jurisdiction_level": "site",
+        "admin1": null,
+        "country": "MU",
+        "capital_used": null,
+        "lat": -19.717,
+        "lon": 63.417,
+        "precision": "exact",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://reliefweb.int/report/mauritius/mauritius-cyclone-bella-feb-1991-undro-information-report-no-1",
+          "source_name": "ReliefWeb (UNDRO report)",
+          "published_at": "1991-02-01T00:00:00Z",
+          "headline": "Mauritius: Cyclone Bella Feb 1991 UNDRO Information Report No. 1",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "UNDRO",
+          "ReliefWeb"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Cyclone Bella passed close to Rodrigues... producing damaging winds and flooding impacts...",
+            "source_url": "https://reliefweb.int/report/mauritius/mauritius-cyclone-bella-feb-1991-undro-information-report-no-1"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.75,
+        "location": 0.7,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "1991-01_cyclone_bella_rodrigues",
+        "fingerprint": "fp_1991-01_cyclone_bella_rodrigues_weather_climate"
+      }
+    },
+    {
+      "event_id": "1991-01-fires-paynes-prairie-i75-closure",
+      "title": "Smoke and fog from brush fire close Interstate 75 near Paynes Prairie",
+      "description": "A brush fire at Paynes Prairie produced smoke that mixed with fog, creating hazardous visibility conditions. Interstate 75 near Paynes Prairie/Gainesville was closed as a result.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1991-01-01T12:00:00Z",
+        "event_end": "1991-01-01T12:00:00Z",
+        "reported_at": "1991-01-01T12:00:00Z",
+        "time_confidence": 0.4,
+        "event_date_utc": "1991-01-01T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Paynes Prairie, near Gainesville, Florida, USA",
+        "jurisdiction_level": "site",
+        "admin1": "Florida",
+        "country": "US",
+        "capital_used": null,
+        "lat": 29.58,
+        "lon": -82.33,
+        "precision": "neighborhood",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://sun-index.aclib.us/node/132166",
+          "source_name": "Sun Index (Alachua County Library District)",
+          "published_at": "1991-01-01T12:00:00Z",
+          "headline": "Brush fire smoke and fog closes Interstate 75 at Paynes Prairie (Florida, USA)",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [
+          "smoke",
+          "fog"
+        ],
+        "ecosystems": [
+          "prairie"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.45,
+        "category": 0.7,
+        "location": 0.55,
+        "summary_grounding": 0.35
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "i75-paynes-prairie-smoke-fog-1991-01-01",
+        "fingerprint": "4f0e3e3b0bdb0c5f"
+      }
+    },
+    {
+      "event_id": "1991-01-fires-mendocino-nf-180-acres",
+      "title": "Wildfire burns about 180 acres near Mendocino National Forest during dry January",
+      "description": "A wildfire linked to debris burning spread into brush and timber near the Mendocino National Forest area, burning about 180 acres. Firefighters contained the fire before early February amid unusually dry January conditions.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1991-01-28T12:00:00Z",
+        "event_end": "1991-01-31T12:00:00Z",
+        "reported_at": "1991-02-01T12:00:00Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "1991-01-31T12:00:00Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Glenn County / Mendocino National Forest area, Northern California, USA",
+        "jurisdiction_level": "state",
+        "admin1": "California",
+        "country": "US",
+        "capital_used": "Sacramento",
+        "lat": 38.5816,
+        "lon": -121.4944,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.latimes.com/archives/la-xpm-1991-02-01-me-256-story.html",
+          "source_name": "Los Angeles Times",
+          "published_at": "1991-02-01T12:00:00Z",
+          "headline": "Rare January wildfire blackens 180 acres in/near Mendocino National Forest amid drought conditions (California, USA)",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [
+          "forest"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.75,
+        "location": 0.6,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "paywalled_or_partial",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "mendocino-nf-180-acres-jan-1991",
+        "fingerprint": "1d4d8f07e6f6f8c1"
+      }
+    },
+    {
+      "event_id": "1991-01_ecosystem_biodiversity_gulfspill_wildlife_upi_9702399351304",
+      "title": "Persian Gulf oil spill threatens and kills wildlife along Saudi Arabian shores",
+      "description": "A UPI report described wildlife impacts from a large oil slick in the Persian Gulf, including oiled bird carcasses washing up along Saudi Arabian shores. The report also cited threats to dugongs, turtles, dolphins/porpoises and coastal habitats such as coral reefs, mangroves, and seagrass beds.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1991-01-30T12:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1991-01-30T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Riyadh, Saudi Arabia",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "SA",
+        "capital_used": "Riyadh",
+        "lat": 24.7136,
+        "lon": 46.6753,
+        "precision": "proxy",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.4
+      },
+      "sources": [
+        {
+          "url": "https://www.upi.com/Archives/1991/01/30/Oil-spill-threatens-Persian-Gulf-wildlife/9702399351304/",
+          "source_name": "UPI",
+          "published_at": "1991-01-30T12:00:00Z",
+          "headline": "Oil spill threatens Persian Gulf wildlife",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "UPI"
+        ],
+        "substances": [
+          "oil"
+        ],
+        "ecosystems": [
+          "Persian Gulf",
+          "coral reefs",
+          "mangroves",
+          "seagrass beds"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "carcasses of oiled birds washing up along the Saudi Arabian shore",
+            "source_url": "https://www.upi.com/Archives/1991/01/30/Oil-spill-threatens-Persian-Gulf-wildlife/9702399351304/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.7,
+        "location": 0.4,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "1991 Persian Gulf oil spill wildlife impacts (late Jan 1991)",
+        "fingerprint": "fp_1991-01_gulfspill_wildlife_sa_1991-01-30"
+      }
+    },
+    {
+      "event_id": "1991-01_ecosystem_biodiversity_gulfspill_wildlife_upi_1805665125200",
+      "title": "Saudi officials report severe wildlife damage from Persian Gulf oil spill",
+      "description": "A UPI report quoted Saudi officials describing severe losses to sea life and wildlife from the Persian Gulf oil spill. The report also noted expectations that ecosystem impacts and recovery would take years as the slick movement and shoreline exposure changed.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1991-01-29T12:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1991-01-29T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Riyadh, Saudi Arabia",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "SA",
+        "capital_used": "Riyadh",
+        "lat": 24.7136,
+        "lon": 46.6753,
+        "precision": "proxy",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.4
+      },
+      "sources": [
+        {
+          "url": "https://www.upi.com/Archives/1991/01/29/Sea-life-losses-severe-in-gulf-spill/1805665125200/",
+          "source_name": "UPI",
+          "published_at": "1991-01-29T12:00:00Z",
+          "headline": "Sea life losses severe in gulf spill",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "UPI"
+        ],
+        "substances": [
+          "oil"
+        ],
+        "ecosystems": [
+          "Persian Gulf"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Sea life losses severe in gulf spill",
+            "source_url": "https://www.upi.com/Archives/1991/01/29/Sea-life-losses-severe-in-gulf-spill/1805665125200/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.52,
+        "category": 0.7,
+        "location": 0.4,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "1991 Persian Gulf oil spill wildlife impacts (late Jan 1991)",
+        "fingerprint": "fp_1991-01_gulfspill_wildlife_sa_1991-01-29"
+      }
+    },
+    {
+      "event_id": "1991-01-09_coalition-for-clean-air-v-epa_cdca",
+      "title": "Federal court vacates settlement and dismisses Clean Air Act case seeking EPA FIP for South Coast Air Basin",
+      "description": "On January 9, 1991, the U.S. District Court for the Central District of California granted a motion to vacate a settlement agreement and dismissed an action seeking to compel EPA to promulgate a Federal Implementation Plan for the South Coast Air Basin. The decision interpreted the 1990 Clean Air Act amendments as not requiring EPA to promulgate a full FIP before new State Implementation Plan procedures and schedules could proceed.",
+      "category_primary": "policy_regulation",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "1991-01-09T12:00:00Z",
+        "event_end": "1991-01-09T12:00:00Z",
+        "reported_at": "1991-01-09T12:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1991-01-09T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States (Central District of California)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://law.justia.com/cases/federal/district-courts/FSupp/762/1399/1620149/",
+          "source_name": "Justia (law.justia.com)",
+          "published_at": "1991-01-09T12:00:00Z",
+          "headline": "Coalition for Clean Air v. EPA, 762 F. Supp. 1399 (C.D. Cal. 1991)",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. District Court for the Central District of California",
+          "U.S. Environmental Protection Agency (EPA)",
+          "Coalition for Clean Air"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "South Coast Air Basin"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "granted a motion to vacate the settlement agreement and dismissed this action",
+            "source_url": "https://law.justia.com/cases/federal/district-courts/FSupp/762/1399/1620149/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.56,
+        "category": 0.7,
+        "location": 0.55,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Coalition for Clean Air v. EPA (C.D. Cal.) vacate settlement dismiss",
+        "fingerprint": "1991-01-09|federal-court-vacates-settlement-clean-air-act-case-seeking-epa-fip|US"
+      }
+    },
+    {
+      "event_id": "1991-01-30_epa_sdwa_phase_ii_drinking_water_rule",
+      "title": "EPA publishes Phase II drinking water rule setting standards for multiple contaminants",
+      "description": "On January 30, 1991, EPA published a final Safe Drinking Water Act (Phase II) rule establishing National Primary Drinking Water Regulations for multiple synthetic organic and inorganic contaminants, including monitoring and implementation provisions. The rulemaking also addressed certain National Secondary Drinking Water Regulations.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "1991-01-30T12:00:00Z",
+        "event_end": "1991-01-30T12:00:00Z",
+        "reported_at": "1991-01-30T12:00:00Z",
+        "time_confidence": 0.45,
+        "event_date_utc": "1991-01-30T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://www.epa.gov/dwreginfo/chemical-contaminant-phase-iiv-rule-regulatory-history",
+          "source_name": "U.S. Environmental Protection Agency (EPA)",
+          "published_at": "1991-01-30T12:00:00Z",
+          "headline": "Chemical Contaminant Phase II/V Rule: Regulatory History",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Environmental Protection Agency (EPA)"
+        ],
+        "substances": [
+          "synthetic organic contaminants",
+          "inorganic contaminants"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "published a final Safe Drinking Water Act rule (Phase II) establishing National Primary Drinking Water Regulations",
+            "source_url": "https://www.epa.gov/dwreginfo/chemical-contaminant-phase-iiv-rule-regulatory-history"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.52,
+        "category": 0.75,
+        "location": 0.7,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "EPA SDWA Phase II drinking water rule 56 FR 3526",
+        "fingerprint": "1991-01-30|epa-phase-ii-drinking-water-rule-standards|US"
+      }
+    },
+    {
+      "event_id": "1991-01-31_epa_rcra_third_third_ldr_corrections",
+      "title": "EPA issues corrections and clarifications to RCRA Land Disposal Restrictions for 'Third Third' scheduled wastes",
+      "description": "On January 31, 1991, EPA published a Federal Register-related notice correcting errors and clarifying language for the June 1, 1990 final rule establishing land disposal prohibitions for certain hazardous wastes ('Third Third' scheduled wastes) under RCRA. The notice focused on corrections and clarification to the prior rule text.",
+      "category_primary": "policy_regulation",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "1991-01-31T12:00:00Z",
+        "event_end": "1991-01-31T12:00:00Z",
+        "reported_at": "1991-01-31T12:00:00Z",
+        "time_confidence": 0.5,
+        "event_date_utc": "1991-01-31T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://www.epa.gov/rcra/land-disposal-restrictions-third-third-scheduled-wastes-federal-register-notice-january-31",
+          "source_name": "U.S. Environmental Protection Agency (EPA)",
+          "published_at": "1991-01-31T12:00:00Z",
+          "headline": "Land Disposal Restrictions for Third Third Scheduled Wastes: Federal Register Notice January 31, 1991",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://19january2021snapshot.epa.gov/rcra/land-disposal-restrictions-third-third-scheduled-wastes-federal-register-notice-january-31-1991_.html",
+          "source_name": "U.S. Environmental Protection Agency (EPA) - Snapshot",
+          "published_at": "1991-01-31T12:00:00Z",
+          "headline": "Land Disposal Restrictions for Third Third Scheduled Wastes: Federal Register Notice January 31, 1991 (Snapshot)",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Environmental Protection Agency (EPA)"
+        ],
+        "substances": [
+          "hazardous wastes"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "correcting errors and clarifying language for the June 1, 1990 final rule",
+            "source_url": "https://www.epa.gov/rcra/land-disposal-restrictions-third-third-scheduled-wastes-federal-register-notice-january-31"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.75,
+        "location": 0.7,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "EPA RCRA LDR Third Third corrections Jan 31 1991",
+        "fingerprint": "1991-01-31|epa-corrections-rcra-ldr-third-third|US"
+      }
+    }
+  ]
+}

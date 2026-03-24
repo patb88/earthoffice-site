@@ -1,0 +1,634 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_1992-04_normalize_2026-01-17T172422072Z",
+    "generated_utc": "2026-01-17T17:24:22.072Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "1992-04",
+    "window": {
+      "start_utc": "1992-04-01T00:00:00.000Z",
+      "end_utc": "1992-04-30T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "1992-04_katina-p_fuel-oil_spill_mozambique",
+      "title": "Katina P tanker grounded off Mozambique, releasing #6 fuel oil",
+      "description": "Following structural damage, the Katina P was intentionally grounded off Mozambique. The NOAA incident record reports two tanks were holed and estimates a release of about 25,000 barrels of #6 fuel oil.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1992-04-19T12:00:00Z",
+        "event_end": "1992-04-19T12:00:00Z",
+        "reported_at": "1992-04-19T12:00:00Z",
+        "time_confidence": 0.4,
+        "event_date_utc": "1992-04-19T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Maputo, Mozambique (incident reported ~25 miles north and ~6 miles offshore)",
+        "jurisdiction_level": "city",
+        "admin1": null,
+        "country": "MZ",
+        "capital_used": null,
+        "lat": -25.9653,
+        "lon": 32.5892,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.4
+      },
+      "sources": [
+        {
+          "url": "https://incidentnews.noaa.gov/incident/6884/508875",
+          "source_name": "NOAA IncidentNews",
+          "published_at": "1992-04-19T12:00:00Z",
+          "headline": "Katina P tanker intentionally grounded off Mozambique, releasing large quantities of #6 fuel oil",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:17:48.083Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA"
+        ],
+        "substances": [
+          "#6 fuel oil"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "...intentionally grounded the vessel; two tanks were reported holed... estimated 25,000 barrels of #6 fuel oil...",
+            "source_url": "https://incidentnews.noaa.gov/incident/6884/508875"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.8,
+        "location": 0.4,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "katina-p-mozambique-1992-04",
+        "fingerprint": "katina_p_mozambique_1992-04-19"
+      }
+    },
+    {
+      "event_id": "1992-04_arco_king-salmon_platform_spill_alaska",
+      "title": "ARCO King Salmon Platform incident listed for Cook Inlet region (Alaska)",
+      "description": "A NOAA IncidentNews browse page lists an incident dated April 25, 1992 associated with ARCO's King Salmon Platform in Alaska's MacArthur River Field. The draft does not provide a direct incident detail page for verification of spill specifics.",
+      "category_primary": "pollution_contamination",
+      "polarity": "unclear",
+      "severity": null,
+      "time": {
+        "event_start": "1992-04-25T12:00:00Z",
+        "event_end": "1992-04-25T12:00:00Z",
+        "reported_at": "1992-04-25T12:00:00Z",
+        "time_confidence": 0.2,
+        "event_date_utc": "1992-04-25T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "MacArthur River Field, Alaska, United States",
+        "jurisdiction_level": "state",
+        "admin1": "Alaska",
+        "country": "US",
+        "capital_used": "Juneau",
+        "lat": 58.3019,
+        "lon": -134.4197,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.3
+      },
+      "sources": [
+        {
+          "url": "https://incidentnews.noaa.gov/browse/date?page=158",
+          "source_name": "NOAA IncidentNews",
+          "published_at": "1992-04-25T12:00:00Z",
+          "headline": "ARCO King Salmon Platform spill (Cook Inlet region, Alaska)",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:17:48.083Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "ARCO",
+          "NOAA"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "...incident is listed in NOAA IncidentNews for April 25, 1992 at ARCO's King Salmon Platform...",
+            "source_url": "https://incidentnews.noaa.gov/browse/date?page=158"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.3,
+        "category": 0.5,
+        "location": 0.3,
+        "summary_grounding": 0.2
+      },
+      "quality_flags": [
+        "secondary_sources_only",
+        "paywalled_or_partial",
+        "date_ambiguous",
+        "location_ambiguous",
+        "low_confidence_location",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "arco-king-salmon-platform-alaska-1992-04-25",
+        "fingerprint": "arco_king_salm_platform_alaska_1992-04-25"
+      }
+    },
+    {
+      "event_id": "1992-04_weather_climate_tc_neville_darwin_au",
+      "title": "Tropical Cyclone Neville affected Northern Territory coasts and islands",
+      "description": "Tropical Cyclone Neville persisted from 7 to 13 April 1992 in the Australian region. Reports note widespread tree damage and destruction of a safari camp on Melville Island, with damage concentrated along parts of the northwest Top End coast and nearby islands.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1992-04-07T12:00:00Z",
+        "event_end": "1992-04-13T12:00:00Z",
+        "reported_at": "1992-04-01T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1992-04-10T00:00:00Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Northern Territory, Australia",
+        "jurisdiction_level": "state",
+        "admin1": "Northern Territory",
+        "country": "AU",
+        "capital_used": "Darwin",
+        "lat": -12.4634,
+        "lon": 130.8456,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.8
+      },
+      "sources": [
+        {
+          "url": "https://www.bom.gov.au/cyclone/history/neville.shtml",
+          "source_name": "Australian Bureau of Meteorology",
+          "published_at": "1992-04-01T00:00:00.000Z",
+          "headline": "Tropical Cyclone Neville",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Australian Bureau of Meteorology"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Tropical Cyclone Neville ... 7–13 April 1992",
+            "source_url": "https://www.bom.gov.au/cyclone/history/neville.shtml"
+          },
+          {
+            "quote": "widespread tree damage ... destroyed a safari camp on Melville Island",
+            "source_url": "https://www.bom.gov.au/cyclone/history/neville.shtml"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.72,
+        "category": 0.9,
+        "location": 0.8,
+        "summary_grounding": 0.7
+      },
+      "quality_flags": [
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "bom_cyclone_neville_1992",
+        "fingerprint": "fp_1992-04_neville_northern-territory_1992-04-07_1992-04-13"
+      }
+    },
+    {
+      "event_id": "1992-04_weather_climate_tc_jane_west_island_cc",
+      "title": "Severe Tropical Cyclone Jane tracked near Cocos (Keeling) Islands without reported impacts",
+      "description": "Severe Tropical Cyclone Jane occurred from 8 to 17 April 1992 in the Australian region. It reportedly had no effects on coastal or island communities and passed about 250 km east of the Cocos (Keeling) Islands around 10 April.",
+      "category_primary": "weather_climate",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "1992-04-08T12:00:00Z",
+        "event_end": "1992-04-17T12:00:00Z",
+        "reported_at": "1992-04-01T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1992-04-10T00:00:00Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Cocos (Keeling) Islands, Australia (West Island)",
+        "jurisdiction_level": "city",
+        "admin1": null,
+        "country": "AU",
+        "capital_used": null,
+        "lat": -12.1642,
+        "lon": 96.871,
+        "precision": "city",
+        "location_basis": "manual_override",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.bom.gov.au/cyclone/history/jane.shtml",
+          "source_name": "Australian Bureau of Meteorology",
+          "published_at": "1992-04-01T00:00:00.000Z",
+          "headline": "Severe Tropical Cyclone Jane",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Australian Bureau of Meteorology"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Severe Tropical Cyclone Jane ... 8–17 April 1992",
+            "source_url": "https://www.bom.gov.au/cyclone/history/jane.shtml"
+          },
+          {
+            "quote": "no effects on coastal or island communities",
+            "source_url": "https://www.bom.gov.au/cyclone/history/jane.shtml"
+          },
+          {
+            "quote": "about 250 km to the east of Cocos (Keeling) Islands",
+            "source_url": "https://www.bom.gov.au/cyclone/history/jane.shtml"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.7,
+        "category": 0.9,
+        "location": 0.6,
+        "summary_grounding": 0.7
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "bom_cyclone_jane_1992",
+        "fingerprint": "fp_1992-04_jane_cocos-keeling_1992-04-08_1992-04-17"
+      }
+    },
+    {
+      "event_id": "geol_roermond_eq_19920413",
+      "title": "Roermond earthquake near Limburg (Netherlands)",
+      "description": "An earthquake struck near Roermond in the Dutch province of Limburg on April 13, 1992. The shaking was felt across the Netherlands\u001b\u000f\u001b\u000fGermany\u001b\u000f\u001b\u000fBelgium border region and caused damage in the area, as described by a USGS publication.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1992-04-13T01:20:00Z",
+        "event_end": "1992-04-13T01:20:00Z",
+        "reported_at": "1992-04-13T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1992-04-13T01:20:00Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Near Roermond, Limburg, Netherlands",
+        "jurisdiction_level": "city",
+        "admin1": "Limburg",
+        "country": "NL",
+        "capital_used": null,
+        "lat": 51.1942,
+        "lon": 5.9873,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.usgs.gov/publications/earthquake-century-northwestern-europe-roermond-netherlands-earthquake-april-13-1992",
+          "source_name": "USGS",
+          "published_at": "1992-04-13T00:00:00Z",
+          "headline": "Earthquake of the Century in Northwestern Europe: The Roermond, Netherlands, Earthquake of April 13, 1992",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:18:27.709Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "USGS"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "...Roermond, Netherlands, earthquake of April 13, 1992...",
+            "source_url": "https://www.usgs.gov/publications/earthquake-century-northwestern-europe-roermond-netherlands-earthquake-april-13-1992"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.85,
+        "location": 0.6,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "roermond_1992_04_13",
+        "fingerprint": "roermond-earthquake|near roermond, limburg, netherlands|1992-04-13"
+      }
+    },
+    {
+      "event_id": "geol_joshua_tree_eq_19920423",
+      "title": "Joshua Tree earthquake near Southern California (US)",
+      "description": "An earthquake occurred near Joshua Tree, California on April 23, 1992. A USGS publication discussing the 1992 Landers earthquake sequence characterizes this event as an early part of that sequence.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1992-04-23T04:50:25Z",
+        "event_end": "1992-04-23T04:50:25Z",
+        "reported_at": "1992-04-23T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1992-04-23T04:50:25Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Near Joshua Tree, California, United States",
+        "jurisdiction_level": "city",
+        "admin1": "California",
+        "country": "US",
+        "capital_used": null,
+        "lat": 34.1347,
+        "lon": -116.3131,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.usgs.gov/publications/1992-landers-earthquake-sequence-seismological-observations",
+          "source_name": "USGS",
+          "published_at": "1992-04-23T00:00:00Z",
+          "headline": "The 1992 Landers Earthquake Sequence: Seismological Observations",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:18:27.709Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "USGS"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "The 1992 Landers earthquake sequence...",
+            "source_url": "https://www.usgs.gov/publications/1992-landers-earthquake-sequence-seismological-observations"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.5,
+        "category": 0.85,
+        "location": 0.55,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "joshua_tree_1992_04_23",
+        "fingerprint": "joshua-tree-earthquake|near joshua tree, california, united states|1992-04-23"
+      }
+    },
+    {
+      "event_id": "geol_cape_mendocino_eq_tsunami_19920425",
+      "title": "Cape Mendocino earthquakes and tsunami (Northern California)",
+      "description": "A large earthquake struck near Cape Mendocino in Northern California on April 25, 1992. USGS publications describe tsunami observations associated with the event and discuss the April 1992 Cape Mendocino-area earthquakes near the Mendocino Triple Junction.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1992-04-25T18:06:06Z",
+        "event_end": "1992-04-25T18:06:06Z",
+        "reported_at": "1992-04-25T00:00:00Z",
+        "time_confidence": 0.65,
+        "event_date_utc": "1992-04-25T18:06:06Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Near Cape Mendocino / Petrolia, California, United States",
+        "jurisdiction_level": "city",
+        "admin1": "California",
+        "country": "US",
+        "capital_used": null,
+        "lat": 40.322,
+        "lon": -124.292,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.5
+      },
+      "sources": [
+        {
+          "url": "https://www.usgs.gov/publications/cape-mendocino-tsunami",
+          "source_name": "USGS",
+          "published_at": "1992-04-25T00:00:00Z",
+          "headline": "Cape Mendocino Tsunami",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:18:27.709Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.usgs.gov/publications/cape-mendocino-california-earthquakes-april-1992-subduction-triple-junction",
+          "source_name": "USGS",
+          "published_at": "1992-04-25T00:00:00Z",
+          "headline": "Cape Mendocino, California, Earthquakes of April 1992: Subduction at a Triple Junction",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:18:27.709Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "USGS"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Cape Mendocino Tsunami",
+            "source_url": "https://www.usgs.gov/publications/cape-mendocino-tsunami"
+          },
+          {
+            "quote": "Earthquakes of April 1992... Subduction at a Triple Junction",
+            "source_url": "https://www.usgs.gov/publications/cape-mendocino-california-earthquakes-april-1992-subduction-triple-junction"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.85,
+        "location": 0.5,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "cape_mendocino_1992_04_25",
+        "fingerprint": "cape-mendocino-earthquakes-tsunami|near cape mendocino / petrolia, california, united states|1992-04-25"
+      }
+    },
+    {
+      "event_id": "1992-04-22_snake-river-chinook-esa-threatened",
+      "title": "Snake River spring/summer-run Chinook salmon listed as threatened under the U.S. Endangered Species Act",
+      "description": "A U.S. federal final listing action dated April 22, 1992 listed the Snake River spring/summer-run Chinook salmon as threatened under the Endangered Species Act. The action extended ESA protections to this distinct population segment/ESU in the Snake River basin.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "1992-04-22T12:00:00Z",
+        "event_end": "1992-04-22T12:00:00Z",
+        "reported_at": "1992-04-22T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1992-04-22T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States (Snake River Basin: Idaho/Oregon/Washington)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.fws.gov/species-publication-action/endangered-and-threatened-species-threatened-status-snake-river",
+          "source_name": "U.S. Fish & Wildlife Service",
+          "published_at": "1992-04-22T00:00:00Z",
+          "headline": "Endangered and Threatened Species; Threatened Status for Snake River ...",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.fws.gov/federal-register-file/endangered-and-threatened-species-threatened-status-snake-river-springsummer",
+          "source_name": "U.S. Fish & Wildlife Service (Federal Register file)",
+          "published_at": "1992-04-22T00:00:00Z",
+          "headline": "Endangered and Threatened Species; Threatened Status for Snake River Spring/Summer ...",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.fisheries.noaa.gov/west-coast/endangered-species-conservation/snake-river-spring-summer-run-chinook-salmon",
+          "source_name": "NOAA Fisheries",
+          "published_at": "1992-04-22T00:00:00Z",
+          "headline": "Snake River Spring/Summer-run Chinook Salmon",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Fish & Wildlife Service",
+          "NOAA Fisheries"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "Snake River Basin"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Threatened Status for Snake River Spring/Summer-Run Chinook Salmon.",
+            "source_url": "https://www.fws.gov/federal-register-file/endangered-and-threatened-species-threatened-status-snake-river-springsummer"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.85,
+        "location": 0.55,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Snake River spring/summer-run Chinook salmon threatened listing (ESA)",
+        "fingerprint": "1992-04-22_snake_river_spring_summer_chinook_threatened_us"
+      }
+    }
+  ]
+}

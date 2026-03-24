@@ -1,0 +1,773 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_1970-06_normalize_2026-01-19T033307707Z",
+    "generated_utc": "2026-01-19T03:33:07.707Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "1970-06",
+    "window": {
+      "start_utc": "1970-06-01T00:00:00.000Z",
+      "end_utc": "1970-06-30T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "1970-06-pollution_contamination-gcos-athabasca-pipeline-spill",
+      "title": "Great Canadian Oil Sands pipeline rupture spills oil near Athabasca River (Alberta)",
+      "description": "A pipeline operated by Great Canadian Oil Sands ruptured near the Athabasca River in Alberta, spilling oil. A Government of Alberta committee report documented the incident and spill estimate.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1970-06-06T12:00:00Z",
+        "event_end": "1970-06-06T12:00:00Z",
+        "reported_at": "1970-06-01T00:00:00.000Z",
+        "time_confidence": 0.4,
+        "event_date_utc": "1970-06-06T12:00:00Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Near the Athabasca River, Alberta, Canada (oil sands region near Fort McMurray/Fort McKay)",
+        "jurisdiction_level": "state",
+        "admin1": "Alberta",
+        "country": "CA",
+        "capital_used": "Edmonton",
+        "lat": 53.546124,
+        "lon": -113.493823,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://dn720003.ca.archive.org/0/items/albertagovernmen00unse/albertagovernmen00unse.pdf",
+          "source_name": "Internet Archive (Government of Alberta report scan)",
+          "published_at": "1970-06-01T00:00:00.000Z",
+          "headline": "Government of Alberta committee report (pipeline rupture / oil spill near Athabasca River)",
+          "byline": null,
+          "accessed_utc": "2026-01-19T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Great Canadian Oil Sands"
+        ],
+        "substances": [
+          "oil"
+        ],
+        "ecosystems": [
+          "Athabasca River"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.7,
+        "location": 0.6,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "GCOS Athabasca River pipeline spill (June 1970)",
+        "fingerprint": "1970-06-gcos-athabasca-pipeline-rupture-alberta-ca-1970-06-06"
+      }
+    },
+    {
+      "event_id": "19700601_hurricane_adele_epac",
+      "title": "Hurricane Adele active in the Eastern Pacific (off Mexico)",
+      "description": "Hurricane Adele was active in the Eastern Pacific in early June 1970. It reached hurricane strength before weakening to a depression by June 7.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1970-06-01T12:00:00Z",
+        "event_end": "1970-06-07T12:00:00Z",
+        "reported_at": "1970-06-01T12:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1970-06-01T12:00:00Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Eastern Pacific Ocean (off Mexico)",
+        "jurisdiction_level": "global_proxy",
+        "admin1": null,
+        "country": null,
+        "capital_used": null,
+        "lat": 15,
+        "lon": -110,
+        "precision": "proxy",
+        "location_basis": "manual_override",
+        "location_confidence": 0.3
+      },
+      "sources": [
+        {
+          "url": "https://www.aoml.noaa.gov/hrd/Storm_pages/Epac/year.html",
+          "source_name": "NOAA AOML Hurricane Research Division",
+          "published_at": "1970-06-01T12:00:00Z",
+          "headline": "Eastern Pacific hurricane season yearly storm pages",
+          "byline": null,
+          "accessed_utc": "2026-01-19T03:29:59.705Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA AOML Hurricane Research Division"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "Eastern Pacific Ocean"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Hurricane Adele was active during early June 1970... weakening to a depression by June 7.",
+            "source_url": "https://www.aoml.noaa.gov/hrd/Storm_pages/Epac/year.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.45,
+        "category": 0.8,
+        "location": 0.3,
+        "summary_grounding": 0.4
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "NOAA_AOML_EPac_1970_storms",
+        "fingerprint": "epac_adele_1970-06-01_15.0_-110.0"
+      }
+    },
+    {
+      "event_id": "19700610_tropical_storm_blanca_epac",
+      "title": "Tropical Storm Blanca active in the Eastern Pacific",
+      "description": "Tropical Storm Blanca occurred in the Eastern Pacific in mid-June 1970. It dissipated on June 12.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1970-06-10T12:00:00Z",
+        "event_end": "1970-06-12T12:00:00Z",
+        "reported_at": "1970-06-10T12:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1970-06-10T12:00:00Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Eastern Pacific Ocean",
+        "jurisdiction_level": "global_proxy",
+        "admin1": null,
+        "country": null,
+        "capital_used": null,
+        "lat": 15,
+        "lon": -120,
+        "precision": "proxy",
+        "location_basis": "manual_override",
+        "location_confidence": 0.25
+      },
+      "sources": [
+        {
+          "url": "https://www.aoml.noaa.gov/hrd/Storm_pages/Epac/year.html",
+          "source_name": "NOAA AOML Hurricane Research Division",
+          "published_at": "1970-06-10T12:00:00Z",
+          "headline": "Eastern Pacific hurricane season yearly storm pages",
+          "byline": null,
+          "accessed_utc": "2026-01-19T03:29:59.705Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA AOML Hurricane Research Division"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "Eastern Pacific Ocean"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Tropical Storm Blanca occurred in mid-June 1970... dissipated on June 12.",
+            "source_url": "https://www.aoml.noaa.gov/hrd/Storm_pages/Epac/year.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.42,
+        "category": 0.8,
+        "location": 0.25,
+        "summary_grounding": 0.4
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "NOAA_AOML_EPac_1970_storms",
+        "fingerprint": "epac_blanca_1970-06-10_15.0_-120.0"
+      }
+    },
+    {
+      "event_id": "19700617_tropical_storm_connie_epac",
+      "title": "Tropical Storm Connie stalled near Clarion Island area",
+      "description": "Tropical Storm Connie formed in the Eastern Pacific during June 1970. It dissipated after stalling near the Clarion Island area.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1970-06-17T12:00:00Z",
+        "event_end": "1970-06-21T12:00:00Z",
+        "reported_at": "1970-06-17T12:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1970-06-17T12:00:00Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Eastern Pacific Ocean (near Clarion Island area)",
+        "jurisdiction_level": "global_proxy",
+        "admin1": null,
+        "country": null,
+        "capital_used": null,
+        "lat": 18.35,
+        "lon": -114.72,
+        "precision": "proxy",
+        "location_basis": "manual_override",
+        "location_confidence": 0.35
+      },
+      "sources": [
+        {
+          "url": "https://www.aoml.noaa.gov/hrd/Storm_pages/Epac/year.html",
+          "source_name": "NOAA AOML Hurricane Research Division",
+          "published_at": "1970-06-17T12:00:00Z",
+          "headline": "Eastern Pacific hurricane season yearly storm pages",
+          "byline": null,
+          "accessed_utc": "2026-01-19T03:29:59.705Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA AOML Hurricane Research Division"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "Eastern Pacific Ocean"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Tropical Storm Connie formed... dissipated after stalling near Clarion Island.",
+            "source_url": "https://www.aoml.noaa.gov/hrd/Storm_pages/Epac/year.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.46,
+        "category": 0.8,
+        "location": 0.35,
+        "summary_grounding": 0.4
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "NOAA_AOML_EPac_1970_storms",
+        "fingerprint": "epac_connie_1970-06-17_18.35_-114.72"
+      }
+    },
+    {
+      "event_id": "19700626_tropical_storm_eileen_epac_mexico",
+      "title": "Tropical Storm Eileen formed off Mexico and made landfall in western Mexico",
+      "description": "Tropical Storm Eileen formed in late June 1970 off southern and western Mexico in the Eastern Pacific. It made landfall in western Mexico before the end of June.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1970-06-26T12:00:00Z",
+        "event_end": "1970-06-30T12:00:00Z",
+        "reported_at": "1970-06-26T12:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1970-06-26T12:00:00Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Western Mexico (landfall)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "MX",
+        "capital_used": "Mexico City",
+        "lat": 19.4326,
+        "lon": -99.1332,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.aoml.noaa.gov/hrd/Storm_pages/Epac/year.html",
+          "source_name": "NOAA AOML Hurricane Research Division",
+          "published_at": "1970-06-26T12:00:00Z",
+          "headline": "Eastern Pacific hurricane season yearly storm pages",
+          "byline": null,
+          "accessed_utc": "2026-01-19T03:29:59.705Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA AOML Hurricane Research Division"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Tropical Storm Eileen formed... off Mexico and made landfall in western Mexico.",
+            "source_url": "https://www.aoml.noaa.gov/hrd/Storm_pages/Epac/year.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.5,
+        "category": 0.8,
+        "location": 0.55,
+        "summary_grounding": 0.4
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "NOAA_AOML_EPac_1970_storms",
+        "fingerprint": "epac_eileen_1970-06-26_19.4326_-99.1332"
+      }
+    },
+    {
+      "event_id": "evt_197006_moua_pihaa_submarine_eruption",
+      "title": "Submarine eruption reported at Moua Pihaa (French Polynesia)",
+      "description": "The Smithsonian GVP volcano entry for Moua Pihaa lists an eruption in June 1970. The draft describes the episode as a confirmed submarine eruption detected by hydrophones during June 21–23, 1970, but this specific detection detail is not verified here beyond the provided URLs.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1970-06-21T12:00:00Z",
+        "event_end": "1970-06-23T12:00:00Z",
+        "reported_at": "1970-06-01T00:00:00.000Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "1970-06-22T00:00:00Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Moua Pihaa, French Polynesia",
+        "jurisdiction_level": "site",
+        "admin1": null,
+        "country": "PF",
+        "capital_used": null,
+        "lat": -16.29,
+        "lon": -148.23,
+        "precision": "exact",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://volcano.si.edu/volcano.cfm?vn=333030",
+          "source_name": "Smithsonian Global Volcanism Program",
+          "published_at": "1970-06-01T00:00:00.000Z",
+          "headline": "Moua Pihaa (Smithsonian GVP volcano entry)",
+          "byline": null,
+          "accessed_utc": "2026-01-19T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://volcano.si.edu/volcanolist_countries.cfm?country=France",
+          "source_name": "Smithsonian Global Volcanism Program",
+          "published_at": "1970-06-01T00:00:00.000Z",
+          "headline": "Volcanoes of France (Smithsonian GVP list page)",
+          "byline": null,
+          "accessed_utc": "2026-01-19T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Smithsonian Global Volcanism Program"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.52,
+        "category": 0.75,
+        "location": 0.55,
+        "summary_grounding": 0.4
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "secondary_sources_only",
+        "paywalled_or_partial"
+      ],
+      "dedupe": {
+        "cluster_hint": "GVP-333030-1970-06",
+        "fingerprint": "fp_moua_pihaa_1970_06_geological"
+      }
+    },
+    {
+      "event_id": "evt_19700619_us_endangered_species_conservation_act_in_force",
+      "title": "Endangered Species Conservation Act reported as in force (U.S. FWS press release, June 19, 1970)",
+      "description": "A U.S. Fish & Wildlife Service press release dated June 19, 1970 states that the Endangered Species Conservation Act was in force. The announcement relates to federal protection efforts for endangered wildlife and associated conservation measures.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1970-06-19T12:00:00Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "1970-06-19T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.8
+      },
+      "sources": [
+        {
+          "url": "https://www.fws.gov/press-release/1970-06/endangered-species-conservation-act-now-force-june-1970",
+          "source_name": "U.S. Fish & Wildlife Service",
+          "published_at": "1970-06-19T12:00:00Z",
+          "headline": "Endangered Species Conservation Act Now in Force (June 1970)",
+          "byline": null,
+          "accessed_utc": "2026-01-19T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.fws.gov/media/endangered-species-conservation-act-now-force-june-19-1970",
+          "source_name": "U.S. Fish & Wildlife Service",
+          "published_at": "1970-06-19T12:00:00Z",
+          "headline": "Endangered Species Conservation Act Now in Force (June 19, 1970)",
+          "byline": null,
+          "accessed_utc": "2026-01-19T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Fish & Wildlife Service"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Endangered Species Conservation Act ... now in force",
+            "source_url": "https://www.fws.gov/press-release/1970-06/endangered-species-conservation-act-now-force-june-1970"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.64,
+        "category": 0.7,
+        "location": 0.8,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "us-fws-press-release-1970-06-endangered-species-act",
+        "fingerprint": "fp_19700619_endangered_species_conservation_act_us"
+      }
+    },
+    {
+      "event_id": "evt_19700614_rachel_carson_nwr_dedication_announcement",
+      "title": "Rachel Carson National Wildlife Refuge dedication announced (U.S. FWS press release, June 14, 1970)",
+      "description": "A U.S. Fish & Wildlife Service press release dated June 14, 1970 reports that Secretary Walter Hickel would dedicate the Rachel Carson National Wildlife Refuge in Maine. The announcement is tied to protection and management of coastal wildlife habitat.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1970-06-14T12:00:00Z",
+        "time_confidence": 0.65,
+        "event_date_utc": "1970-06-14T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Maine, United States",
+        "jurisdiction_level": "state",
+        "admin1": "Maine",
+        "country": "US",
+        "capital_used": "Augusta, Maine",
+        "lat": 44.3106,
+        "lon": -69.7795,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.fws.gov/press-release/1970-06/secretary-hickel-dedicate-rachel-carson-national-wildlife-refuge-maine-june",
+          "source_name": "U.S. Fish & Wildlife Service",
+          "published_at": "1970-06-14T12:00:00Z",
+          "headline": "Secretary Hickel to Dedicate Rachel Carson National Wildlife Refuge in Maine (June 1970)",
+          "byline": null,
+          "accessed_utc": "2026-01-19T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.fws.gov/media/secretary-hickel-dedicate-rachel-carson-national-wildlife-refuge-maine-june-14-1970",
+          "source_name": "U.S. Fish & Wildlife Service",
+          "published_at": "1970-06-14T12:00:00Z",
+          "headline": "Secretary Hickel to Dedicate Rachel Carson National Wildlife Refuge in Maine (June 14, 1970)",
+          "byline": null,
+          "accessed_utc": "2026-01-19T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Fish & Wildlife Service"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "coastal habitat"
+        ],
+        "people": [
+          "Walter Hickel"
+        ]
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Secretary Hickel ... dedicate the Rachel Carson National Wildlife Refuge in Maine",
+            "source_url": "https://www.fws.gov/press-release/1970-06/secretary-hickel-dedicate-rachel-carson-national-wildlife-refuge-maine-june"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.7,
+        "location": 0.6,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "us-fws-press-release-1970-06-rachel-carson-nwr",
+        "fingerprint": "fp_19700614_rachel_carson_nwr_maine"
+      }
+    },
+    {
+      "event_id": "evt_19700602_federal_register_endangered_species_part17",
+      "title": "Federal Register item on endangered species and fish and wildlife (June 2, 1970)",
+      "description": "A University of Nebraska–Lincoln hosted record describes a Federal Register publication (Vol. 35, No. 106; June 2, 1970) concerning conservation of endangered species and other fish and wildlife, referencing regulatory material under 50 CFR Part 17. The entry indicates federal regulatory action relevant to endangered species conservation.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1970-06-02T12:00:00Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "1970-06-02T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://digitalcommons.unl.edu/endangeredspeciesbull/54/",
+          "source_name": "University of Nebraska–Lincoln (DigitalCommons)",
+          "published_at": "1970-06-02T12:00:00Z",
+          "headline": "Conservation of Endangered Species and Other Fish and Wildlife (Federal Register, June 2, 1970)",
+          "byline": null,
+          "accessed_utc": "2026-01-19T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Federal Register",
+          "University of Nebraska–Lincoln"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Federal Register ... June 2, 1970 ... Conservation of Endangered Species and Other Fish and Wildlife",
+            "source_url": "https://digitalcommons.unl.edu/endangeredspeciesbull/54/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.52,
+        "category": 0.65,
+        "location": 0.7,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "secondary_sources_only",
+        "paywalled_or_partial",
+        "low_confidence_category"
+      ],
+      "dedupe": {
+        "cluster_hint": "federal-register-1970-06-02-50cfr-part17",
+        "fingerprint": "fp_19700602_federal_register_part17_us"
+      }
+    },
+    {
+      "event_id": "evt_19700628_wildlife_restoration_funds_distributed",
+      "title": "U.S. FWS reports $15.9 million distributed to states for wildlife restoration (June 28, 1970)",
+      "description": "A U.S. Fish & Wildlife Service press release dated June 28, 1970 reports that $15.9 million was distributed to states for wildlife restoration. The funding supports wildlife and habitat management activities carried out through state programs.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1970-06-28T12:00:00Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "1970-06-28T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.8
+      },
+      "sources": [
+        {
+          "url": "https://www.fws.gov/press-release/1970-06/15900000-distributed-states-wildlife-restoration-june-28-1970",
+          "source_name": "U.S. Fish & Wildlife Service",
+          "published_at": "1970-06-28T12:00:00Z",
+          "headline": "$15,900,000 Distributed to States for Wildlife Restoration (June 28, 1970)",
+          "byline": null,
+          "accessed_utc": "2026-01-19T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.fws.gov/media/15900000-distributed-states-wildlife-restoration-june-28-1970",
+          "source_name": "U.S. Fish & Wildlife Service",
+          "published_at": "1970-06-28T12:00:00Z",
+          "headline": "$15,900,000 Distributed to States for Wildlife Restoration (June 28, 1970)",
+          "byline": null,
+          "accessed_utc": "2026-01-19T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Fish & Wildlife Service"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "$15,900,000 distributed to states for wildlife restoration",
+            "source_url": "https://www.fws.gov/press-release/1970-06/15900000-distributed-states-wildlife-restoration-june-28-1970"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.63,
+        "category": 0.7,
+        "location": 0.8,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "us-fws-press-release-1970-06-wildlife-restoration-funds",
+        "fingerprint": "fp_19700628_wildlife_restoration_funds_us"
+      }
+    }
+  ]
+}

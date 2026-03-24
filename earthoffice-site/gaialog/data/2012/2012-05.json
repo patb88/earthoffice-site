@@ -1,0 +1,428 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_2012-05_normalize_2026-01-16T043833238Z",
+    "generated_utc": "2026-01-16T04:38:33.238Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "2012-05",
+    "window": {
+      "start_utc": "2012-05-01T00:00:00.000Z",
+      "end_utc": "2012-05-31T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "20120523_algae_bloom_fish_kill_marley_furnace_creeks",
+      "title": "Algae bloom and low oxygen linked to fish kill in Marley and Furnace Creeks, Maryland",
+      "description": "Maryland state officials investigated reports of thousands of dead or dying fish in Marley and Furnace creeks in Anne Arundel County. Officials suspected low dissolved oxygen conditions caused by an algae bloom led to fish suffocation.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2012-05-23T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2012-05-23T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Marley Creek and Furnace Creek, Anne Arundel County, Maryland, USA",
+        "jurisdiction_level": "site",
+        "admin1": "Maryland",
+        "country": "US",
+        "capital_used": null,
+        "lat": 39.063,
+        "lon": -76.545,
+        "precision": "admin1",
+        "location_basis": "manual_override",
+        "location_confidence": 0.35
+      },
+      "sources": [
+        {
+          "url": "https://www.washingtonpost.com/local/officials-algae-bloom-suffocated-thousands-of-fish-to-death-in-anne-arundel-creeks/2012/05/23/gJQAlHBQkU_story.html",
+          "source_name": "The Washington Post",
+          "published_at": "2012-05-23T00:00:00.000Z",
+          "headline": "Officials: Algae bloom suffocated thousands of fish to death in Anne Arundel creeks",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Maryland state officials"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "Marley Creek",
+          "Furnace Creek"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "officials ... suspected low dissolved oxygen conditions were caused by an algae bloom",
+            "source_url": "https://www.washingtonpost.com/local/officials-algae-bloom-suffocated-thousands-of-fish-to-death-in-anne-arundel-creeks/2012/05/23/gJQAlHBQkU_story.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.75,
+        "location": 0.35,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "paywalled_or_partial"
+      ],
+      "dedupe": {
+        "cluster_hint": "anne-arundel-creeks-fish-kill-algae-bloom-2012-05",
+        "fingerprint": "anne_arundel_creeks_fish_kill_algae_bloom_2012_05_23_us_md"
+      }
+    },
+    {
+      "event_id": "evt_20120520_emilia_romagna_eq_sequence_start",
+      "title": "Emilia-Romagna (Po Plain) earthquake sequence begins with M5.9 quake",
+      "description": "A strong earthquake (reported as magnitude 5.9) struck Italy’s Po Plain in the Emilia-Romagna region and was followed by multiple aftershocks. Reports described damage to buildings and liquefaction effects in impacted areas.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2012-05-20T04:03:00.000Z",
+        "event_end": "2012-05-20T23:59:59.000Z",
+        "reported_at": "2012-05-20T00:00:00.000Z",
+        "time_confidence": 0.65,
+        "event_date_utc": "2012-05-20T04:03:00.000Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Emilia-Romagna, Italy",
+        "jurisdiction_level": "state",
+        "admin1": "Emilia-Romagna",
+        "country": "IT",
+        "capital_used": "Bologna",
+        "lat": 44.494887,
+        "lon": 11.342616,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.75
+      },
+      "sources": [
+        {
+          "url": "https://ambiente.regione.emilia-romagna.it/en/geologia/seismic-risk/earthquake-20-may-2012",
+          "source_name": "Regione Emilia-Romagna - Ambiente",
+          "published_at": "2012-05-20T00:00:00.000Z",
+          "headline": "Earthquake 20 May 2012",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.theguardian.com/world/2012/may/20/italy-earthquake-kills-five-history",
+          "source_name": "The Guardian",
+          "published_at": "2012-05-20T00:00:00.000Z",
+          "headline": "Italy earthquake kills five and revives memories of 2009 disaster",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://rosa.uniroma1.it/rosa02/engineering_geology_environment/article/view/992",
+          "source_name": "ROSA (Sapienza Università di Roma)",
+          "published_at": "2012-05-01T00:00:00.000Z",
+          "headline": "Article view (Engineering Geology for Society and Territory / related repository entry)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Regione Emilia-Romagna"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.85,
+        "location": 0.75,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "needs_dedupe_check",
+        "date_ambiguous",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "2012-05-20 Emilia-Romagna earthquake (Po Plain)",
+        "fingerprint": "fp_20120520_emilia_romagna_bologna_it_geological"
+      }
+    },
+    {
+      "event_id": "2012-05-fires-whitewater-baldy-complex-nm",
+      "title": "Whitewater–Baldy Complex Fire grows into New Mexico’s largest wildfire at the time",
+      "description": "Lightning-sparked fires in the Gila National Forest grew and ultimately merged into the Whitewater–Baldy Complex Fire. By late May 2012, it was reported as the largest wildfire in New Mexico state history at the time, prompting evacuations and causing some structure losses.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2012-05-09T00:00:00.000Z",
+        "event_end": "2012-05-31T23:59:59.000Z",
+        "reported_at": "2012-05-30T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2012-05-09T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Gila National Forest, New Mexico, USA",
+        "jurisdiction_level": "site",
+        "admin1": "New Mexico",
+        "country": "US",
+        "capital_used": null,
+        "lat": 33,
+        "lon": -108.5,
+        "precision": "admin1",
+        "location_basis": "manual_override",
+        "location_confidence": 0.4
+      },
+      "sources": [
+        {
+          "url": "https://www.kunm.org/2012-05-30/new-mexico-wildfire-now-biggest-in-state-history",
+          "source_name": "KUNM",
+          "published_at": "2012-05-30T00:00:00.000Z",
+          "headline": "New Mexico wildfire now biggest in state history",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.knau.org/2012-05-30/new-mexico-wildfire-now-biggest-in-state-history",
+          "source_name": "KNAU",
+          "published_at": "2012-05-30T00:00:00.000Z",
+          "headline": "New Mexico wildfire now biggest in state history",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.theguardian.com/world/2012/may/25/wildfires-sweep-across-south-west-us",
+          "source_name": "The Guardian",
+          "published_at": "2012-05-25T00:00:00.000Z",
+          "headline": "Wildfires sweep across south-west US",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [
+          "Gila National Forest"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "New Mexico wildfire now biggest in state history",
+            "source_url": "https://www.kunm.org/2012-05-30/new-mexico-wildfire-now-biggest-in-state-history"
+          },
+          {
+            "quote": "Wildfires sweep across south-west US",
+            "source_url": "https://www.theguardian.com/world/2012/may/25/wildfires-sweep-across-south-west-us"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.8,
+        "location": 0.4,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Whitewater–Baldy Complex Fire (New Mexico) May 2012",
+        "fingerprint": "whitewater-baldy-complex-fire|gila-national-forest-new-mexico-us|2012-05"
+      }
+    },
+    {
+      "event_id": "evt_20120523_marley_furnace_fishkill",
+      "title": "Algae bloom suspected in fish kill in Marley and Furnace Creeks (Anne Arundel County, Maryland)",
+      "description": "Thousands of fish were reported dead or dying in Marley Creek and Furnace Creek in Anne Arundel County, Maryland. Officials suspected low oxygen conditions linked to an algae bloom as the cause of the acute fish kill.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2012-05-23T00:00:00.000Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "2012-05-23T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Anne Arundel County, Maryland, USA",
+        "jurisdiction_level": "state",
+        "admin1": "Maryland",
+        "country": "US",
+        "capital_used": "Annapolis",
+        "lat": 38.9784,
+        "lon": -76.4922,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://www.washingtonpost.com/local/officials-algae-bloom-suffocated-thousands-of-fish-to-death-in-anne-arundel-creeks/2012/05/23/gJQAlHBQkU_story.html",
+          "source_name": "The Washington Post",
+          "published_at": "2012-05-23T00:00:00.000Z",
+          "headline": "Officials: Algae bloom suffocated thousands of fish to death in Anne Arundel creeks",
+          "byline": null,
+          "accessed_utc": "2012-05-23T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [
+          "creeks",
+          "fish"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Officials: Algae bloom suffocated thousands of fish to death in Anne Arundel creeks",
+            "source_url": "https://www.washingtonpost.com/local/officials-algae-bloom-suffocated-thousands-of-fish-to-death-in-anne-arundel-creeks/2012/05/23/gJQAlHBQkU_story.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.7,
+        "location": 0.7,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "paywalled_or_partial",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "anne-arundel-creeks-fish-kill-algae-bloom-2012-05",
+        "fingerprint": "fp_evt_20120523_marley_furnace_fishkill"
+      }
+    },
+    {
+      "event_id": "policyreg_us_epa_regional_haze_csapr_20120530",
+      "title": "EPA final action allows CSAPR trading as an alternative to source-by-source BART for Regional Haze planning",
+      "description": "The U.S. Environmental Protection Agency (EPA) finalized an action addressing Regional Haze requirements that allows participation in the Cross-State Air Pollution Rule (CSAPR) trading programs to serve as an alternative to determining source-by-source Best Available Retrofit Technology (BART) for certain power-plant emissions. The action also describes related EPA determinations and an implementation approach relying on CSAPR for affected states.",
+      "category_primary": "policy_regulation",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "2012-05-30T00:00:00.000Z",
+        "event_end": "2012-05-30T23:59:59.000Z",
+        "reported_at": "2012-05-30T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2012-05-30T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.epa.gov/visibility/final-action-address-regional-haze-2012",
+          "source_name": "U.S. Environmental Protection Agency (EPA)",
+          "published_at": "2012-05-30T00:00:00.000Z",
+          "headline": "Final Action Addressing Regional Haze 2012",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://19january2021snapshot.epa.gov/visibility/final-action-address-regional-haze-2012_.html",
+          "source_name": "U.S. Environmental Protection Agency (EPA)",
+          "published_at": "2012-05-30T00:00:00.000Z",
+          "headline": "Final Action Addressing Regional Haze 2012 (snapshot)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Environmental Protection Agency (EPA)"
+        ],
+        "substances": [
+          "SO2",
+          "NOx"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Final Action Addressing Regional Haze 2012",
+            "source_url": "https://www.epa.gov/visibility/final-action-address-regional-haze-2012"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.75,
+        "location": 0.6,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "EPA Regional Haze 2012 CSAPR BART final action",
+        "fingerprint": "policy_regulation|EPA final action allows CSAPR trading as an alternative to source-by-source BART for Regional Haze planning|US|2012-05-30"
+      }
+    }
+  ]
+}

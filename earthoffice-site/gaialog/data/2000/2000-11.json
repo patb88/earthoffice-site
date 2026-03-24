@@ -1,0 +1,631 @@
+{
+  "batch_meta": {
+    "batch_id": "2000-11_gaialog_001",
+    "generated_utc": "2026-01-11T00:00:00Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "2000-11",
+    "window": {
+      "start_utc": "2000-11-01T00:00:00.000Z",
+      "end_utc": "2000-11-30T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-discovery-draft-converter",
+      "version": "1.0",
+      "model": "unknown",
+      "retrieval_method": "curated"
+    }
+  },
+  "events": [
+    {
+      "event_id": "evt_20001113_sweet_water_branch_oil_spill_wv_us",
+      "title": "Crude oil spill from storage tank into Sweet Water Branch near Cabwaylingo State Forest, West Virginia",
+      "description": "A report describes crude oil released from a steel storage tank affecting Sweet Water Branch near Cabwaylingo State Forest. The incident summary estimates about 50 barrels discharged and notes oil reported in the water.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2000-11-13T00:00:00.000Z",
+        "event_end": "2000-11-13T23:59:59.000Z",
+        "reported_at": "2000-11-13T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2000-11-13T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Cabwaylingo State Forest near Doane, Wayne County, West Virginia, USA",
+        "jurisdiction_level": "site",
+        "admin1": "West Virginia",
+        "country": "US",
+        "capital_used": null,
+        "lat": 37.939,
+        "lon": -82.336,
+        "precision": "neighborhood",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.35
+      },
+      "sources": [
+        {
+          "url": "https://ncsp.tamu.edu/reports/NRC/storagetank6.htm",
+          "source_name": "Texas A&M National Spill Control School (NRC report mirror)",
+          "published_at": "2000-11-13T00:00:00.000Z",
+          "headline": "Storage Tank Incident Report (NRC mirror)",
+          "byline": null,
+          "accessed_utc": "2026-01-11T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [
+          "crude oil"
+        ],
+        "ecosystems": [
+          "Sweet Water Branch (stream)"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "estimated 50 barrels discharged; oil reported in water",
+            "source_url": "https://ncsp.tamu.edu/reports/NRC/storagetank6.htm"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.7,
+        "location": 0.35,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "2000-11-13 sweet water branch crude oil spill WV",
+        "fingerprint": "fp_evt_20001113_sweet_water_branch_oil_spill_wv_us"
+      }
+    },
+    {
+      "event_id": "evt_20001101_hawaii_floods_us",
+      "title": "Heavy rainfall and flooding across the Hawaiian Islands",
+      "description": "NOAA reporting attributes severe flooding and mudslides in Hawaii to heavy rains associated with an upper-level low and remnants of Tropical Storm Paul. Impacts included damage to infrastructure and property across parts of the islands.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2000-11-01T00:00:00.000Z",
+        "event_end": "2000-11-03T23:59:59.000Z",
+        "reported_at": "2000-11-01T00:00:00.000Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "2000-11-01T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Hawaii, USA",
+        "jurisdiction_level": "state",
+        "admin1": "Hawaii",
+        "country": "US",
+        "capital_used": "Honolulu",
+        "lat": 21.3069,
+        "lon": -157.8583,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.8
+      },
+      "sources": [
+        {
+          "url": "https://www.nhc.noaa.gov/data/tcr/EP172000_Paul.pdf",
+          "source_name": "NOAA NHC",
+          "published_at": "2000-01-01T00:00:00.000Z",
+          "headline": "Tropical Cyclone Report: Tropical Storm Paul (EP172000)",
+          "byline": null,
+          "accessed_utc": "2026-01-11T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.ncei.noaa.gov/pub/data/cmb/billings/200011.txt",
+          "source_name": "NOAA NCEI (Storm Data / Billings)",
+          "published_at": "2000-11-01T00:00:00.000Z",
+          "headline": "Storm Data (monthly text) - 2000-11",
+          "byline": null,
+          "accessed_utc": "2026-01-11T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "upper-level low ... remnants of Tropical Storm Paul ... severe flooding and mudslides",
+            "source_url": "https://www.nhc.noaa.gov/data/tcr/EP172000_Paul.pdf"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.75,
+        "location": 0.8,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "2000-11 Hawaii flooding remnants of TS Paul",
+        "fingerprint": "fp_evt_20001101_hawaii_floods_us"
+      }
+    },
+    {
+      "event_id": "evt_20001125_ts_rumbia_ph",
+      "title": "Tropical Storm Rumbia (Toyang) affects the Philippines with heavy rain and flooding",
+      "description": "Track datasets indicate Tropical Storm Rumbia (Toyang) formed in late November 2000 in the western North Pacific. Reports commonly associate the system with heavy rainfall and flooding impacts in parts of the Philippines during its late-November evolution.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2000-11-25T00:00:00.000Z",
+        "event_end": "2000-11-30T23:59:59.000Z",
+        "reported_at": "2000-11-25T00:00:00.000Z",
+        "time_confidence": 0.45,
+        "event_date_utc": "2000-11-25T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Philippines",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "PH",
+        "capital_used": "Manila",
+        "lat": 14.5995,
+        "lon": 120.9842,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.75
+      },
+      "sources": [
+        {
+          "url": "https://www.ncei.noaa.gov/data/international-best-track-archive-for-climate-stewardship-ibtracs/v04r00/access/csv/ibtracs.WP.list.v04r00.csv",
+          "source_name": "NOAA NCEI IBTrACS",
+          "published_at": "2000-11-25T00:00:00.000Z",
+          "headline": "IBTrACS Western North Pacific best-track list (CSV)",
+          "byline": null,
+          "accessed_utc": "2026-01-11T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.nrlmry.navy.mil/tcdat/tc00/WPAC/27W.RUMBIA/",
+          "source_name": "U.S. Naval Research Laboratory (NRL) TC archive",
+          "published_at": "2000-11-25T00:00:00.000Z",
+          "headline": "27W RUMBIA (2000) archive page",
+          "byline": null,
+          "accessed_utc": "2026-01-11T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA NCEI",
+          "U.S. Naval Research Laboratory"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "27W.RUMBIA",
+            "source_url": "https://www.nrlmry.navy.mil/tcdat/tc00/WPAC/27W.RUMBIA/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.45,
+        "category": 0.7,
+        "location": 0.75,
+        "summary_grounding": 0.35
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "2000-11 Tropical Storm Rumbia Toyang Philippines",
+        "fingerprint": "fp_evt_20001125_ts_rumbia_ph"
+      }
+    },
+    {
+      "event_id": "evt_20001121_paatuut_landslide_tsunami_gl",
+      "title": "Paatuut rockslide generates tsunami in the Vaigat (Sullorsuaq) Strait, West Greenland",
+      "description": "A publication record and an associated journal article describe a large rockslide at Paatuut on 21 November 2000 that entered the sea and generated a tsunami. The tsunami produced very high run-up near the source and affected communities across the strait.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2000-11-21T00:00:00.000Z",
+        "event_end": "2000-11-21T23:59:59.000Z",
+        "reported_at": "2000-11-21T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2000-11-21T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Paatuut, Nuussuaq Peninsula, West Greenland (Vaigat/Sullorsuaq Strait)",
+        "jurisdiction_level": "site",
+        "admin1": null,
+        "country": "GL",
+        "capital_used": null,
+        "lat": 70,
+        "lon": -53,
+        "precision": "admin1",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.3
+      },
+      "sources": [
+        {
+          "url": "https://pub.geus.dk/en/publications/landslide-and-tsunami-21-november-2000-in-paatuut-west-greenland",
+          "source_name": "GEUS (Geological Survey of Denmark and Greenland) Publications",
+          "published_at": "2000-11-21T00:00:00.000Z",
+          "headline": "Landslide and tsunami 21 November 2000 in Paatuut, West Greenland",
+          "byline": null,
+          "accessed_utc": "2026-01-11T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://doi.org/10.1023/B:NHAZ.0000020264.70048.95",
+          "source_name": "Natural Hazards (DOI record)",
+          "published_at": "2004-01-01T00:00:00.000Z",
+          "headline": "Landslide and tsunami 21 November 2000 in Paatuut, West Greenland",
+          "byline": null,
+          "accessed_utc": "2026-01-11T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "GEUS"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "Vaigat (Sullorsuaq) Strait"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "landslide and tsunami 21 November 2000 in Paatuut, West Greenland",
+            "source_url": "https://pub.geus.dk/en/publications/landslide-and-tsunami-21-november-2000-in-paatuut-west-greenland"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.8,
+        "location": 0.3,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "location_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "2000-11-21 Paatuut Greenland landslide tsunami",
+        "fingerprint": "fp_evt_20001121_paatuut_landslide_tsunami_gl"
+      }
+    },
+    {
+      "event_id": "evt_20001116_png_eq_sequence_new_britain_new_ireland_pg",
+      "title": "Strong earthquake sequence affects New Britain and New Ireland, Papua New Guinea",
+      "description": "USGS event pages document multiple strong earthquakes on 16–17 November 2000 in the New Britain/New Ireland region of Papua New Guinea, followed by extensive aftershocks. The sequence affected the islands and surrounding region.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2000-11-16T04:54:56.000Z",
+        "event_end": "2000-11-17T23:59:59.000Z",
+        "reported_at": "2000-11-16T04:54:56.000Z",
+        "time_confidence": 0.75,
+        "event_date_utc": "2000-11-16T04:54:56.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "New Britain and New Ireland islands, Papua New Guinea",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "PG",
+        "capital_used": "Port Moresby",
+        "lat": -9.4438,
+        "lon": 147.1803,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://earthquake.usgs.gov/earthquakes/eventpage/usp000a3qq/executive",
+          "source_name": "USGS Earthquake Hazards Program",
+          "published_at": "2000-11-16T04:54:56.000Z",
+          "headline": "USGS Event: usp000a3qq",
+          "byline": null,
+          "accessed_utc": "2026-01-11T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://earthquake.usgs.gov/earthquakes/eventpage/usp000a3sp/executive",
+          "source_name": "USGS Earthquake Hazards Program",
+          "published_at": "2000-11-17T00:00:00.000Z",
+          "headline": "USGS Event: usp000a3sp",
+          "byline": null,
+          "accessed_utc": "2026-01-11T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "USGS"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "USGS Event: usp000a3qq",
+            "source_url": "https://earthquake.usgs.gov/earthquakes/eventpage/usp000a3qq/executive"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.75,
+        "location": 0.7,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "2000-11 PNG New Britain New Ireland earthquake sequence",
+        "fingerprint": "fp_evt_20001116_png_eq_sequence_new_britain_new_ireland_pg"
+      }
+    },
+    {
+      "event_id": "evt_20001125_baku_eq_az",
+      "title": "Offshore earthquake near Baku affects Azerbaijan",
+      "description": "USGS and EMSC list an earthquake occurring offshore near Baku, Azerbaijan on 25 November 2000, with aftershocks noted in catalogs. The event was widely felt in the region based on summary reporting in those sources.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2000-11-25T18:09:11.000Z",
+        "event_end": "2000-11-25T23:59:59.000Z",
+        "reported_at": "2000-11-25T18:09:11.000Z",
+        "time_confidence": 0.8,
+        "event_date_utc": "2000-11-25T18:09:11.000Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Azerbaijan",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "AZ",
+        "capital_used": "Baku",
+        "lat": 40.4093,
+        "lon": 49.8671,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.8
+      },
+      "sources": [
+        {
+          "url": "https://earthquake.usgs.gov/earthquakes/eventpage/usp000a4xu/executive",
+          "source_name": "USGS Earthquake Hazards Program",
+          "published_at": "2000-11-25T18:09:11.000Z",
+          "headline": "USGS Event: usp000a4xu",
+          "byline": null,
+          "accessed_utc": "2026-01-11T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.emsc-csem.org/Earthquake/earthquake.php?id=200",
+          "source_name": "EMSC-CSEM",
+          "published_at": "2000-11-25T18:09:11.000Z",
+          "headline": "EMSC event page (ID 200)",
+          "byline": null,
+          "accessed_utc": "2026-01-11T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "USGS",
+          "EMSC-CSEM"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "usp000a4xu",
+            "source_url": "https://earthquake.usgs.gov/earthquakes/eventpage/usp000a4xu/executive"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.65,
+        "category": 0.75,
+        "location": 0.8,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [],
+      "dedupe": {
+        "cluster_hint": "2000-11-25 offshore Baku Azerbaijan earthquake",
+        "fingerprint": "fp_evt_20001125_baku_eq_az"
+      }
+    },
+    {
+      "event_id": "evt_20001130_epa_air_classification_settlement_us",
+      "title": "Court settlement announcement on EPA review of air pollution classifications in six U.S. communities",
+      "description": "An Earthjustice press release reports a court settlement requiring EPA to evaluate whether six communities should be reclassified into more serious air pollution categories. The announcement states reclassification could trigger stricter air pollution controls.",
+      "category_primary": "policy_regulation",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "2000-11-30T00:00:00.000Z",
+        "event_end": "2000-11-30T23:59:59.000Z",
+        "reported_at": "2000-11-30T00:00:00.000Z",
+        "time_confidence": 0.5,
+        "event_date_utc": "2000-11-30T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, D.C.",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.8
+      },
+      "sources": [
+        {
+          "url": "https://earthjustice.org/press/2000/court-settlement-requires-clean-air-actions-in-six-communities-across-nation",
+          "source_name": "Earthjustice (press release)",
+          "published_at": "2000-11-30T00:00:00.000Z",
+          "headline": "Court Settlement Requires Clean Air Actions in Six Communities Across Nation",
+          "byline": null,
+          "accessed_utc": "2026-01-11T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. EPA",
+          "Earthjustice"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "court settlement ... requires EPA to evaluate whether six communities should be reclassified",
+            "source_url": "https://earthjustice.org/press/2000/court-settlement-requires-clean-air-actions-in-six-communities-across-nation"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.52,
+        "category": 0.65,
+        "location": 0.8,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "possible_opinion_or_advocacy",
+        "secondary_sources_only",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "2000-11-30 EPA air classification settlement six communities",
+        "fingerprint": "fp_evt_20001130_epa_air_classification_settlement_us"
+      }
+    },
+    {
+      "event_id": "evt_20001122_epa_air_permit_programs_settlement_us",
+      "title": "Settlement announcement on strengthening air pollution permit programs across 33 states, D.C., and the U.S. Virgin Islands",
+      "description": "An Earthjustice press release describes a settlement with EPA aimed at addressing deficiencies in state air pollution permit programs. The announcement describes timelines for corrective actions and the possibility of federal takeover if not corrected.",
+      "category_primary": "policy_regulation",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "2000-11-22T00:00:00.000Z",
+        "event_end": "2000-11-22T23:59:59.000Z",
+        "reported_at": "2000-11-22T00:00:00.000Z",
+        "time_confidence": 0.5,
+        "event_date_utc": "2000-11-22T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, D.C.",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.8
+      },
+      "sources": [
+        {
+          "url": "https://earthjustice.org/press/2000/settlement-with-epa-provides-for-stronger-air-pollution-programs-across-the-u-s",
+          "source_name": "Earthjustice (press release)",
+          "published_at": "2000-11-22T00:00:00.000Z",
+          "headline": "Settlement With EPA Provides for Stronger Air Pollution Programs Across the U.S.",
+          "byline": null,
+          "accessed_utc": "2026-01-11T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. EPA",
+          "Earthjustice"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "settlement with EPA ... stronger air pollution programs across the U.S.",
+            "source_url": "https://earthjustice.org/press/2000/settlement-with-epa-provides-for-stronger-air-pollution-programs-across-the-u-s"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.5,
+        "category": 0.65,
+        "location": 0.8,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "possible_opinion_or_advocacy",
+        "secondary_sources_only",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "2000-11-22 EPA air permit programs settlement",
+        "fingerprint": "fp_evt_20001122_epa_air_permit_programs_settlement_us"
+      }
+    }
+  ]
+}

@@ -1,0 +1,909 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_1984-12_normalize_2026-01-18T101648543Z",
+    "generated_utc": "2026-01-18T10:16:48.543Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "1984-12",
+    "window": {
+      "start_utc": "1984-12-01T00:00:00.000Z",
+      "end_utc": "1984-12-31T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "evt_198412_bhopal_mic_release_01",
+      "title": "Bhopal toxic gas release from Union Carbide pesticide plant",
+      "description": "A toxic gas release involving methyl isocyanate (MIC) occurred at the Union Carbide pesticide plant in Bhopal, exposing nearby communities. Reporting and retrospective documentation describe widespread acute injuries and deaths associated with the release.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1984-12-01T00:00:00Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "1984-12-03T00:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Bhopal, Madhya Pradesh, India",
+        "jurisdiction_level": "city",
+        "admin1": "Madhya Pradesh",
+        "country": "IN",
+        "capital_used": null,
+        "lat": 23.259933,
+        "lon": 77.412615,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.8
+      },
+      "sources": [
+        {
+          "url": "https://www.hse.gov.uk/comah/sragtech/caseuncarbide84.htm",
+          "source_name": "HSE (UK Health and Safety Executive)",
+          "published_at": "1984-12-01T00:00:00Z",
+          "headline": "The Bhopal disaster (Union Carbide)",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://ehjournal.biomedcentral.com/articles/10.1186/1476-069X-4-6",
+          "source_name": "Environmental Health (BioMed Central)",
+          "published_at": "2005-01-01T00:00:00Z",
+          "headline": "Environmental Health article on the Bhopal disaster (MIC exposure)",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.britannica.com/event/Bhopal-disaster",
+          "source_name": "Encyclopaedia Britannica",
+          "published_at": "1984-12-01T00:00:00Z",
+          "headline": "Bhopal disaster",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Union Carbide"
+        ],
+        "substances": [
+          "methyl isocyanate"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "A release of methyl isocyanate (MIC) occurred at the Union Carbide plant in Bhopal.",
+            "source_url": "https://www.hse.gov.uk/comah/sragtech/caseuncarbide84.htm"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.8,
+        "location": 0.8,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "bhopal_mic_1984",
+        "fingerprint": "bhopal_toxic_gas_release|bhopal_madhya_pradesh_in|1984-12"
+      }
+    },
+    {
+      "event_id": "evt_19841203_snowstorm_northern_new_england",
+      "title": "Early-season snowstorm impacts northern New England",
+      "description": "An early-season snowstorm affected northern New England on December 3–4, 1984. Reported snowfall totals were broadly in the 6–9 inch range, with some locations exceeding 10 inches.",
+      "category_primary": "weather_climate",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "1984-12-03T12:00:00Z",
+        "event_end": "1984-12-04T12:00:00Z",
+        "reported_at": "1984-12-01T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1984-12-03T12:00:00Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Northern New England (Maine and New Hampshire, USA)",
+        "jurisdiction_level": "state",
+        "admin1": "Maine",
+        "country": "US",
+        "capital_used": "Augusta",
+        "lat": 44.3106,
+        "lon": -69.7795,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.45
+      },
+      "sources": [
+        {
+          "url": "https://repository.library.noaa.gov/view/noaa/70460",
+          "source_name": "NOAA Institutional Repository",
+          "published_at": "1984-12-01T00:00:00.000Z",
+          "headline": "Snowstorm in northern New England (first snowstorm of the 1984–85 winter season)",
+          "byline": null,
+          "accessed_utc": "2026-01-18T04:37:14.765Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "snowstorm struck northern New England on December 3, 1984 ... continued into ... December 4",
+            "source_url": "https://repository.library.noaa.gov/view/noaa/70460"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.75,
+        "location": 0.45,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "1984-12 northern New England snowstorm",
+        "fingerprint": "fp_1984-12_snowstorm_northern_new_england_augusta_1984-12-03"
+      }
+    },
+    {
+      "event_id": "evt_19841205_heavy_snow_nws_paducah_region",
+      "title": "Heavy snow across the NWS Paducah forecast area (Dec 5–6, 1984)",
+      "description": "A winter storm produced heavy snowfall across parts of southeast Missouri, southern Illinois, western Kentucky, and southwest Indiana on December 5–6, 1984. Some reported totals were around 10–11 inches.",
+      "category_primary": "weather_climate",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "1984-12-05T12:00:00Z",
+        "event_end": "1984-12-06T12:00:00Z",
+        "reported_at": "1984-12-01T00:00:00.000Z",
+        "time_confidence": 0.65,
+        "event_date_utc": "1984-12-05T12:00:00Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "NWS Paducah forecast area (KY/MO/IL/IN, USA)",
+        "jurisdiction_level": "city",
+        "admin1": "Kentucky",
+        "country": "US",
+        "capital_used": null,
+        "lat": 37.0834,
+        "lon": -88.6,
+        "precision": "city",
+        "location_basis": "institution_proxy",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.weather.gov/pah/SnowDec5-6_1984",
+          "source_name": "US National Weather Service (Paducah, KY)",
+          "published_at": "1984-12-01T00:00:00.000Z",
+          "headline": "Heavy snow event across the NWS Paducah (KY) region",
+          "byline": null,
+          "accessed_utc": "2026-01-18T04:37:14.765Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "US National Weather Service"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "heavy snowfall ... December 5–6, 1984 ... totals reaching around 10–11 inches",
+            "source_url": "https://www.weather.gov/pah/SnowDec5-6_1984"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.65,
+        "category": 0.8,
+        "location": 0.6,
+        "summary_grounding": 0.65
+      },
+      "quality_flags": [
+        "needs_dedupe_check",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "1984-12 NWS Paducah heavy snow",
+        "fingerprint": "fp_1984-12_heavy_snow_paducah_1984-12-05"
+      }
+    },
+    {
+      "event_id": "evt_19841212_hurricane_lili_1984",
+      "title": "Hurricane Lili forms in the Atlantic and dissipates near Hispaniola",
+      "description": "Hurricane Lili developed in the Atlantic in mid-December 1984 and became a rare December hurricane. It later weakened as it approached the northeastern Caribbean and dissipated near Hispaniola around December 24, 1984.",
+      "category_primary": "weather_climate",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "1984-12-12T12:00:00Z",
+        "event_end": "1984-12-24T12:00:00Z",
+        "reported_at": "1984-12-01T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1984-12-12T12:00:00Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Dominican Republic (near Hispaniola)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "DO",
+        "capital_used": "Santo Domingo",
+        "lat": 18.4861,
+        "lon": -69.9312,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.5
+      },
+      "sources": [
+        {
+          "url": "https://www.nhc.noaa.gov/archive/storm_wallets/atlantic/atl1984-prelim/lili/",
+          "source_name": "NOAA National Hurricane Center",
+          "published_at": "1984-12-01T00:00:00.000Z",
+          "headline": "Hurricane Lili (Atlantic)",
+          "byline": null,
+          "accessed_utc": "2026-01-18T04:37:14.765Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.nhc.noaa.gov/archive/storm_wallets/atlantic/atl1984-prelim/lili/prelim01.gif",
+          "source_name": "NOAA National Hurricane Center",
+          "published_at": "1984-12-01T00:00:00.000Z",
+          "headline": "Hurricane Lili (Atlantic) preliminary graphic",
+          "byline": null,
+          "accessed_utc": "2026-01-18T04:37:14.765Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA National Hurricane Center"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Hurricane Lili formed in mid-December 1984 ... dissipated near Hispaniola on December 24, 1984",
+            "source_url": "https://www.nhc.noaa.gov/archive/storm_wallets/atlantic/atl1984-prelim/lili/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.8,
+        "location": 0.5,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "1984-12 Hurricane Lili",
+        "fingerprint": "fp_1984-12_hurricane_lili_santo_domingo_1984-12-12"
+      }
+    },
+    {
+      "event_id": "evt_19841225_tropical_cyclone_monica_1984",
+      "title": "Tropical Cyclone Monica affects the Coral Sea and later moves toward the Fiji region",
+      "description": "Tropical Cyclone Monica affected the eastern Australian region during late December 1984. It formed in the Coral Sea and later moved into the Fiji area of responsibility while weakening.",
+      "category_primary": "weather_climate",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "1984-12-25T12:00:00Z",
+        "event_end": "1984-12-29T12:00:00Z",
+        "reported_at": "1984-12-01T00:00:00.000Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "1984-12-25T12:00:00Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Australia (eastern region / Coral Sea)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "AU",
+        "capital_used": "Canberra",
+        "lat": -35.2809,
+        "lon": 149.13,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.4
+      },
+      "sources": [
+        {
+          "url": "https://www.bom.gov.au/cyclone/history/monica84.shtml",
+          "source_name": "Australian Bureau of Meteorology",
+          "published_at": "1984-12-01T00:00:00.000Z",
+          "headline": "Tropical Cyclone Monica (Australian region)",
+          "byline": null,
+          "accessed_utc": "2026-01-18T04:37:14.765Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Australian Bureau of Meteorology"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Tropical Cyclone Monica affected the Eastern Australian region from December 25–29, 1984",
+            "source_url": "https://www.bom.gov.au/cyclone/history/monica84.shtml"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.5,
+        "category": 0.75,
+        "location": 0.4,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "1984-12 Tropical Cyclone Monica (AU)",
+        "fingerprint": "fp_1984-12_tc_monica_canberra_1984-12-25"
+      }
+    },
+    {
+      "event_id": "evt_19841227_western_new_york_flooding_erie_county",
+      "title": "Rain and flooding prompts warnings for Erie County creeks in Western New York",
+      "description": "Rain on December 28–29, 1984 contributed to flooding on several Erie County creeks in Western New York, prompting flood warnings. Some locations reported flooding impacts such as basement or underpass flooding and road closures.",
+      "category_primary": "weather_climate",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "1984-12-27T12:00:00Z",
+        "event_end": "1984-12-29T12:00:00Z",
+        "reported_at": "1984-12-01T00:00:00.000Z",
+        "time_confidence": 0.65,
+        "event_date_utc": "1984-12-28T12:00:00Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Buffalo area, Western New York (Erie County), USA",
+        "jurisdiction_level": "city",
+        "admin1": "New York",
+        "country": "US",
+        "capital_used": null,
+        "lat": 42.8864,
+        "lon": -78.8784,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://www.weather.gov/buf/HistoryDec29.html",
+          "source_name": "US National Weather Service (Buffalo, NY)",
+          "published_at": "1984-12-01T00:00:00.000Z",
+          "headline": "Western New York rain and flooding with flood warnings issued for Erie County creeks (Buffalo area)",
+          "byline": null,
+          "accessed_utc": "2026-01-18T04:37:14.765Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "US National Weather Service"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "flood warnings were issued ... for multiple Erie County creeks",
+            "source_url": "https://www.weather.gov/buf/HistoryDec29.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.65,
+        "category": 0.75,
+        "location": 0.7,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "needs_dedupe_check",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "1984-12 Erie County creeks flooding",
+        "fingerprint": "fp_1984-12_wny_flooding_buffalo_1984-12-28"
+      }
+    },
+    {
+      "event_id": "evt-19841202-east-central-pacific-earthquake",
+      "title": "Earthquake in the East Central Pacific Ocean",
+      "description": "An earthquake was reported in the East Central Pacific Ocean on December 2, 1984. The event is referenced via the International Seismological Centre (ISC) event bibliography index listing.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1984-12-02T12:00:00Z",
+        "event_end": "1984-12-02T12:00:00Z",
+        "reported_at": "1984-12-02T12:00:00Z",
+        "time_confidence": 0.4,
+        "event_date_utc": "1984-12-02T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "East Central Pacific Ocean",
+        "jurisdiction_level": "site",
+        "admin1": null,
+        "country": null,
+        "capital_used": null,
+        "lat": 20.3,
+        "lon": -115.8,
+        "precision": "exact",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.5
+      },
+      "sources": [
+        {
+          "url": "https://www.isc.ac.uk/projects/bibliography/eqlist/",
+          "source_name": "International Seismological Centre (ISC)",
+          "published_at": "1984-12-02T12:00:00Z",
+          "headline": "ISC event bibliography index (earthquake list)",
+          "byline": null,
+          "accessed_utc": "2026-01-18T04:37:57.879Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "International Seismological Centre (ISC)"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "ISC event bibliography index (earthquake list).",
+            "source_url": "https://www.isc.ac.uk/projects/bibliography/eqlist/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.45,
+        "category": 0.7,
+        "location": 0.5,
+        "summary_grounding": 0.4
+      },
+      "quality_flags": [
+        "secondary_sources_only",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": null,
+        "fingerprint": "geological|earthquake in the east central pacific ocean|20.3|-115.8|1984-12-02"
+      }
+    },
+    {
+      "event_id": "evt-19841216-eastern-kazakhstan-nuclear-test-seismic",
+      "title": "Seismic event attributed to an underground nuclear explosion in eastern Kazakhstan",
+      "description": "A seismic event described as an underground nuclear explosion signal was listed for eastern Kazakhstan on December 16, 1984, referenced via the ISC event bibliography index. The listing is treated here as a reported seismic event with unclear environmental implications from the provided source context.",
+      "category_primary": "conflict_militarization",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1984-12-16T12:00:00Z",
+        "event_end": "1984-12-16T12:00:00Z",
+        "reported_at": "1984-12-16T12:00:00Z",
+        "time_confidence": 0.35,
+        "event_date_utc": "1984-12-16T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Eastern Kazakhstan",
+        "jurisdiction_level": "state",
+        "admin1": "East Kazakhstan Region",
+        "country": "KZ",
+        "capital_used": "Astana",
+        "lat": 51.1694,
+        "lon": 71.4491,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.25
+      },
+      "sources": [
+        {
+          "url": "https://www.isc.ac.uk/projects/bibliography/eqlist/",
+          "source_name": "International Seismological Centre (ISC)",
+          "published_at": "1984-12-16T12:00:00Z",
+          "headline": "ISC event bibliography index (earthquake list)",
+          "byline": null,
+          "accessed_utc": "2026-01-18T04:37:57.879Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "International Seismological Centre (ISC)"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "ISC event bibliography index (earthquake list).",
+            "source_url": "https://www.isc.ac.uk/projects/bibliography/eqlist/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.25,
+        "category": 0.2,
+        "location": 0.25,
+        "summary_grounding": 0.35
+      },
+      "quality_flags": [
+        "low_confidence_category",
+        "low_confidence_location",
+        "secondary_sources_only",
+        "date_ambiguous",
+        "location_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": null,
+        "fingerprint": "conflict_militarization|seismic event attributed to an underground nuclear explosion in eastern kazakhstan|51.1694|71.4491|1984-12-16"
+      }
+    },
+    {
+      "event_id": "evt-19841218-off-fukushima-earthquake",
+      "title": "Offshore earthquake near Fukushima Prefecture, Japan",
+      "description": "An offshore earthquake near Fukushima Prefecture, Japan was reported on December 18, 1984. The event is referenced via the International Seismological Centre (ISC) event bibliography index listing.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1984-12-18T12:00:00Z",
+        "event_end": "1984-12-18T12:00:00Z",
+        "reported_at": "1984-12-18T12:00:00Z",
+        "time_confidence": 0.4,
+        "event_date_utc": "1984-12-18T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Off Fukushima Prefecture, Japan",
+        "jurisdiction_level": "site",
+        "admin1": "Fukushima",
+        "country": "JP",
+        "capital_used": null,
+        "lat": 37.2,
+        "lon": 141.5,
+        "precision": "exact",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.isc.ac.uk/projects/bibliography/eqlist/",
+          "source_name": "International Seismological Centre (ISC)",
+          "published_at": "1984-12-18T12:00:00Z",
+          "headline": "ISC event bibliography index (earthquake list)",
+          "byline": null,
+          "accessed_utc": "2026-01-18T04:37:57.879Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "International Seismological Centre (ISC)"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "ISC event bibliography index (earthquake list).",
+            "source_url": "https://www.isc.ac.uk/projects/bibliography/eqlist/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.5,
+        "category": 0.7,
+        "location": 0.6,
+        "summary_grounding": 0.4
+      },
+      "quality_flags": [
+        "secondary_sources_only",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": null,
+        "fingerprint": "geological|offshore earthquake near fukushima prefecture, japan|37.2|141.5|1984-12-18"
+      }
+    },
+    {
+      "event_id": "evt-19841222-onorskoe-sakhalin-earthquake",
+      "title": "Earthquake near Onorskoe, Sakhalin Island, Russia",
+      "description": "An earthquake near Onorskoe on Sakhalin Island, Russia was reported on December 22, 1984. The event is referenced via the International Seismological Centre (ISC) event bibliography index listing.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1984-12-22T12:00:00Z",
+        "event_end": "1984-12-22T12:00:00Z",
+        "reported_at": "1984-12-22T12:00:00Z",
+        "time_confidence": 0.4,
+        "event_date_utc": "1984-12-22T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Near Onorskoe, Sakhalin, Russia",
+        "jurisdiction_level": "site",
+        "admin1": null,
+        "country": "RU",
+        "capital_used": null,
+        "lat": 50,
+        "lon": 142.6,
+        "precision": "exact",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.5
+      },
+      "sources": [
+        {
+          "url": "https://www.isc.ac.uk/projects/bibliography/eqlist/",
+          "source_name": "International Seismological Centre (ISC)",
+          "published_at": "1984-12-22T12:00:00Z",
+          "headline": "ISC event bibliography index (earthquake list)",
+          "byline": null,
+          "accessed_utc": "2026-01-18T04:37:57.879Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "International Seismological Centre (ISC)"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "ISC event bibliography index (earthquake list).",
+            "source_url": "https://www.isc.ac.uk/projects/bibliography/eqlist/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.45,
+        "category": 0.7,
+        "location": 0.5,
+        "summary_grounding": 0.4
+      },
+      "quality_flags": [
+        "secondary_sources_only",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": null,
+        "fingerprint": "geological|earthquake near onorskoe, sakhalin island, russia|50|142.6|1984-12-22"
+      }
+    },
+    {
+      "event_id": "evt-19841228-kamchatka-east-coast-earthquake",
+      "title": "Earthquake near the east coast of the Kamchatka Peninsula, Russia",
+      "description": "A significant earthquake was reported near the east coast of Russia’s Kamchatka Peninsula on December 28, 1984. The event is referenced by an EarthquakeTrack event page and is also listed in the ISC event bibliography index.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1984-12-28T12:00:00Z",
+        "event_end": "1984-12-28T12:00:00Z",
+        "reported_at": "1984-12-28T12:00:00Z",
+        "time_confidence": 0.5,
+        "event_date_utc": "1984-12-28T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "East coast of the Kamchatka Peninsula, Russia",
+        "jurisdiction_level": "site",
+        "admin1": null,
+        "country": "RU",
+        "capital_used": null,
+        "lat": 56.2,
+        "lon": 163.3,
+        "precision": "exact",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://earthquaketrack.com/quakes/1984-12-28-10-37-53-utc-6-7-33",
+          "source_name": "EarthquakeTrack",
+          "published_at": "1984-12-28T10:37:53Z",
+          "headline": "Quake: 1984-12-28 10:37:53 (UTC)",
+          "byline": null,
+          "accessed_utc": "2026-01-18T04:37:57.879Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.isc.ac.uk/projects/bibliography/eqlist/",
+          "source_name": "International Seismological Centre (ISC)",
+          "published_at": "1984-12-28T12:00:00Z",
+          "headline": "ISC event bibliography index (earthquake list)",
+          "byline": null,
+          "accessed_utc": "2026-01-18T04:37:57.879Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "EarthquakeTrack",
+          "International Seismological Centre (ISC)"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Quake: 1984-12-28 10:37:53 (UTC).",
+            "source_url": "https://earthquaketrack.com/quakes/1984-12-28-10-37-53-utc-6-7-33"
+          },
+          {
+            "quote": "ISC event bibliography index (earthquake list).",
+            "source_url": "https://www.isc.ac.uk/projects/bibliography/eqlist/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.75,
+        "location": 0.55,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "secondary_sources_only",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": null,
+        "fingerprint": "geological|earthquake near the east coast of the kamchatka peninsula, russia|56.2|163.3|1984-12-28"
+      }
+    },
+    {
+      "event_id": "evt_1984_12_aus_nsw_north_west_bushfires_christmas_lightning",
+      "title": "Lightning outbreak sparked widespread bushfires in north-western New South Wales (Christmas Day 1984)",
+      "description": "On Christmas Day 1984, a lightning outbreak in north-western/western New South Wales reportedly ignited more than 100 bushfires. The fires burned large areas of grassland and caused significant agricultural impacts, including livestock losses, as part of the broader 1984–85 NSW bushfire season.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1984-12-25T12:00:00Z",
+        "event_end": "1984-12-25T12:00:00Z",
+        "reported_at": "2026-01-18T04:38:20.241Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1984-12-25T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "North-western New South Wales, Australia",
+        "jurisdiction_level": "state",
+        "admin1": "New South Wales",
+        "country": "AU",
+        "capital_used": "Sydney",
+        "lat": -33.8688,
+        "lon": 151.2093,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://knowledge.aidr.org.au/resources/bushfire-north-western-regions-new-south-wales/",
+          "source_name": "Australian Institute for Disaster Resilience (AIDR) Knowledge Hub",
+          "published_at": "2026-01-18T04:38:20.241Z",
+          "headline": "Bushfire - North-Western Regions, New South Wales",
+          "byline": null,
+          "accessed_utc": "2026-01-18T04:38:20.241Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Australian Institute for Disaster Resilience (AIDR)"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "grasslands"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "On Christmas Day 1984, a major lightning outbreak reportedly started more than 100 fires",
+            "source_url": "https://knowledge.aidr.org.au/resources/bushfire-north-western-regions-new-south-wales/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.75,
+        "location": 0.7,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "1984-85 NSW bushfire season - North-Western Regions lightning outbreak",
+        "fingerprint": "fire|north-western new south wales|1984-12-25"
+      }
+    }
+  ]
+}

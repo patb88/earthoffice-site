@@ -1,0 +1,843 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_2009-09_normalize_2026-01-16T040615159Z",
+    "generated_utc": "2026-01-16T04:06:15.159Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "2009-09",
+    "window": {
+      "start_utc": "2009-09-01T00:00:00.000Z",
+      "end_utc": "2009-09-30T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "evt_200909_montara_timor_sea_oilspill",
+      "title": "Montara offshore well oil spill continued in the Timor Sea during September 2009",
+      "description": "NASA Earth Observatory reported satellite imagery showing an oil slick in the Timor Sea from the Montara offshore oil platform incident. The spill was ongoing during September 2009 and continued beyond early September imagery referenced in the source.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2009-09-04T00:00:00.000Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "2009-09-04T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Timor Sea (off northern coast of Western Australia)",
+        "jurisdiction_level": "site",
+        "admin1": "Western Australia",
+        "country": "AU",
+        "capital_used": null,
+        "lat": -12,
+        "lon": 125,
+        "precision": "proxy",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.4
+      },
+      "sources": [
+        {
+          "url": "https://earthobservatory.nasa.gov/images/40123/oil-slick-in-the-timor-sea",
+          "source_name": "NASA Earth Observatory",
+          "published_at": "2009-09-04T00:00:00.000Z",
+          "headline": "Oil Slick in the Timor Sea",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NASA Earth Observatory"
+        ],
+        "substances": [
+          "oil"
+        ],
+        "ecosystems": [
+          "Timor Sea"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "The oil slick in the Timor Sea... captured by the Moderate Resolution Imaging Spectroradiometer (MODIS)",
+            "source_url": "https://earthobservatory.nasa.gov/images/40123/oil-slick-in-the-timor-sea"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.5,
+        "category": 0.8,
+        "location": 0.4,
+        "summary_grounding": 0.7
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Montara oil spill Timor Sea 2009",
+        "fingerprint": "fp_montara_timor_sea_2009_09"
+      }
+    },
+    {
+      "event_id": "evt_20090929_enbridge_line2_odessa_sk_leak",
+      "title": "Enbridge Line 2 crude oil pipeline leak near Odessa, Saskatchewan",
+      "description": "The Transportation Safety Board of Canada documented a crude oil release from Enbridge Pipelines Inc. Line 2 near Odessa, Saskatchewan. The report states oil entered a low-lying marsh area and that most of the released oil was recovered.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2009-09-29T08:40:00.000Z",
+        "event_end": "2009-09-29T23:59:59.000Z",
+        "reported_at": "2009-10-05T00:00:00.000Z",
+        "time_confidence": 0.8,
+        "event_date_utc": "2009-09-29T08:40:00.000Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Near Odessa, Saskatchewan, Canada",
+        "jurisdiction_level": "site",
+        "admin1": "Saskatchewan",
+        "country": "CA",
+        "capital_used": null,
+        "lat": 50,
+        "lon": -103,
+        "precision": "proxy",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.45
+      },
+      "sources": [
+        {
+          "url": "https://www.tsb.gc.ca/eng/rapports-reports/pipeline/2009/p09h0084/p09h0084.html",
+          "source_name": "Transportation Safety Board of Canada",
+          "published_at": "2009-10-05T00:00:00.000Z",
+          "headline": "Pipeline Investigation Report P09H0084",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Transportation Safety Board of Canada",
+          "Enbridge Pipelines Inc."
+        ],
+        "substances": [
+          "crude oil"
+        ],
+        "ecosystems": [
+          "marsh"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "released about 175 m³ of crude oil into a low-lying marsh",
+            "source_url": "https://www.tsb.gc.ca/eng/rapports-reports/pipeline/2009/p09h0084/p09h0084.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.85,
+        "location": 0.45,
+        "summary_grounding": 0.75
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Enbridge Line 2 leak Odessa Saskatchewan 2009-09-29",
+        "fingerprint": "fp_enbridge_line2_odessa_sk_2009_09_29"
+      }
+    },
+    {
+      "event_id": "evt_20090925_webberville_mi_ammonia_release_epa_settlement",
+      "title": "EPA reported settlement over anhydrous ammonia release during farm delivery in Webberville, Michigan",
+      "description": "The U.S. EPA published an enforcement news release describing a settlement connected to an anhydrous ammonia release during a delivery to a farm near Webberville, Michigan. The release and related reporting/notification issues were cited as the basis for the enforcement action described by EPA.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2009-09-25T00:00:00.000Z",
+        "event_end": "2009-09-25T23:59:59.000Z",
+        "reported_at": "2009-09-25T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2009-09-25T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Webberville, Michigan, USA",
+        "jurisdiction_level": "city",
+        "admin1": "Michigan",
+        "country": "US",
+        "capital_used": null,
+        "lat": 42.6669,
+        "lon": -84.1747,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://www.epa.gov/archive/epapages/newsroom_archive/newsreleases/f6b1e1145b1265fb8525763c006a1a13.html",
+          "source_name": "U.S. Environmental Protection Agency",
+          "published_at": "2009-09-25T00:00:00.000Z",
+          "headline": "News Release (archived): settlement related to anhydrous ammonia release and reporting violations",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Environmental Protection Agency"
+        ],
+        "substances": [
+          "anhydrous ammonia"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "a 920-pound anhydrous ammonia release during a delivery to a farm",
+            "source_url": "https://www.epa.gov/archive/epapages/newsroom_archive/newsreleases/f6b1e1145b1265fb8525763c006a1a13.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.85,
+        "location": 0.7,
+        "summary_grounding": 0.7
+      },
+      "quality_flags": [
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Webberville Michigan anhydrous ammonia release EPA settlement 2009-09-25",
+        "fingerprint": "fp_webberville_mi_ammonia_2009_09_25"
+      }
+    },
+    {
+      "event_id": "2009-09-us-se-floods-ga-2009-09-18",
+      "title": "Record flooding in northern Georgia and parts of the Southeast U.S. (September 2009)",
+      "description": "Prolonged heavy rainfall from September 18–21, 2009 led to widespread flash and areal flooding across northern Georgia (including the Atlanta metro) and nearby areas. Impacts continued through September 23, with significant damage and fatalities reported in post-event documentation.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2009-09-18T00:00:00.000Z",
+        "event_end": "2009-09-23T23:59:59.000Z",
+        "reported_at": "2009-09-30T23:59:59.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2009-09-18T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Atlanta metro area and northern Georgia, USA",
+        "jurisdiction_level": "state",
+        "admin1": "Georgia",
+        "country": "US",
+        "capital_used": "Atlanta",
+        "lat": 33.749,
+        "lon": -84.388,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://repository.library.noaa.gov/view/noaa/6988",
+          "source_name": "NOAA Institutional Repository",
+          "published_at": "2009-09-30T23:59:59.000Z",
+          "headline": "NOAA report/document on the September 2009 Southeast U.S. floods",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.usgs.gov/centers/sawsc/science/epic-september-2009-flooding-georgia",
+          "source_name": "USGS",
+          "published_at": "2009-09-30T23:59:59.000Z",
+          "headline": "Epic September 2009 Flooding in Georgia",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA",
+          "USGS"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "...epic September 2009 flooding in Georgia...",
+            "source_url": "https://www.usgs.gov/centers/sawsc/science/epic-september-2009-flooding-georgia"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.7,
+        "location": 0.7,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "2009-09 Southeast US floods Georgia",
+        "fingerprint": "fp_2009-09_us-se-floods_ga_atlanta_2009-09-18"
+      }
+    },
+    {
+      "event_id": "2009-09-typhoon-ketsana-philippines-2009-09-26",
+      "title": "Typhoon Ketsana (Ondoy) brought extreme rainfall and flooding to Luzon, Philippines",
+      "description": "Typhoon Ketsana produced extreme rainfall on September 26, 2009 and severe flooding in and around Metro Manila on Luzon. A NASA-described account highlighted unusually large rainfall totals near Manila over a short period.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2009-09-26T00:00:00.000Z",
+        "event_end": "2009-09-27T23:59:59.000Z",
+        "reported_at": "2009-10-01T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2009-09-26T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Metro Manila (Luzon), Philippines",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "PH",
+        "capital_used": "Manila",
+        "lat": 14.5995,
+        "lon": 120.9842,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://phys.org/news/2009-10-nasa-d-typhoon-ketsana-philippines.html",
+          "source_name": "Phys.org",
+          "published_at": "2009-10-01T00:00:00.000Z",
+          "headline": "NASA describes Typhoon Ketsana rainfall and flooding impacts in the Philippines",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NASA"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "NASA described rainfall totals near Manila...",
+            "source_url": "https://phys.org/news/2009-10-nasa-d-typhoon-ketsana-philippines.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.7,
+        "location": 0.6,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Typhoon Ketsana (Ondoy) flooding Metro Manila Sept 2009",
+        "fingerprint": "fp_2009-09_typhoon-ketsana_ph_manila_2009-09-26"
+      }
+    },
+    {
+      "event_id": "2009-09_fires_guiberson-fire_ventura-county-ca",
+      "title": "Guiberson Fire in Ventura County, California",
+      "description": "A wildfire ignited on September 22, 2009 in the Guiberson Canyon area of Ventura County, California, prompting emergency response actions. CAL FIRE incident information reported the fire burned about 17,500 acres and was contained on September 27, 2009.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2009-09-22T17:33:00.000Z",
+        "event_end": "2009-09-27T14:30:00.000Z",
+        "reported_at": "2009-09-22T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2009-09-22T17:33:00.000Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Ventura County, California, USA",
+        "jurisdiction_level": "state",
+        "admin1": "California",
+        "country": "US",
+        "capital_used": "Sacramento",
+        "lat": 38.581571,
+        "lon": -121.4944,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.75
+      },
+      "sources": [
+        {
+          "url": "https://www.fire.ca.gov/incidents/2009/9/22/guiberson-fire/",
+          "source_name": "CAL FIRE",
+          "published_at": "2009-09-22T00:00:00.000Z",
+          "headline": "Guiberson Fire",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://earthobservatory.nasa.gov/images/40281/fire-in-ventura-county-california-40281/",
+          "source_name": "NASA Earth Observatory",
+          "published_at": "2009-09-30T00:00:00.000Z",
+          "headline": "Fire in Ventura County, California",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "CAL FIRE",
+          "NASA Earth Observatory"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Guiberson Fire",
+            "source_url": "https://www.fire.ca.gov/incidents/2009/9/22/guiberson-fire/"
+          },
+          {
+            "quote": "Fire in Ventura County, California",
+            "source_url": "https://earthobservatory.nasa.gov/images/40281/fire-in-ventura-county-california-40281/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.65,
+        "category": 0.85,
+        "location": 0.75,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "guiberson_fire_ventura_county_2009-09",
+        "fingerprint": "guiberson-fire|california|2009-09-22"
+      }
+    },
+    {
+      "event_id": "2009-09_fires_station-fire_smoke-carbon-monoxide",
+      "title": "Station Fire smoke tracked for carbon monoxide in early September 2009",
+      "description": "Reports on satellite-based observations described carbon monoxide from the Station Fire smoke being lofted high into the atmosphere and tracked beyond California. The Station Fire began in late August 2009 and continued into early September.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2009-09-01T00:00:00.000Z",
+        "event_end": "2009-09-03T23:59:59.000Z",
+        "reported_at": "2009-09-08T00:00:00.000Z",
+        "time_confidence": 0.55,
+        "event_date_utc": null,
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Angeles National Forest (north of Los Angeles), California, USA",
+        "jurisdiction_level": "state",
+        "admin1": "California",
+        "country": "US",
+        "capital_used": "Sacramento",
+        "lat": 38.581571,
+        "lon": -121.4944,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.5
+      },
+      "sources": [
+        {
+          "url": "https://www.sciencedaily.com/releases/2009/09/090908133814.htm",
+          "source_name": "ScienceDaily",
+          "published_at": "2009-09-08T00:00:00.000Z",
+          "headline": "Station Fire smoke observations (carbon monoxide tracked by satellite)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "ScienceDaily",
+          "NASA",
+          "JPL"
+        ],
+        "substances": [
+          "carbon monoxide"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "carbon monoxide from the smoke ... lofted high into the atmosphere",
+            "source_url": "https://www.sciencedaily.com/releases/2009/09/090908133814.htm"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.5,
+        "category": 0.7,
+        "location": 0.5,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "secondary_sources_only",
+        "date_ambiguous",
+        "low_confidence_location",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "station_fire_smoke_carbon_monoxide_2009-09",
+        "fingerprint": "station-fire-smoke|california|2009-09"
+      }
+    },
+    {
+      "event_id": "2009-09_ecosystem_biodiversity_panama_bocas-del-toro_coral-bleaching_001",
+      "title": "Coral bleaching documented in Bocas del Toro region, Panama (late Sept 2009)",
+      "description": "A report described coral bleaching associated with unusually warm sea temperatures, with field observations noted for late September 2009 in the Bocas del Toro region of Panama. The observations were presented as evidence of significant stress on local coral reef ecosystems.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2009-09-20T00:00:00.000Z",
+        "event_end": "2009-09-30T23:59:59.000Z",
+        "reported_at": "2010-10-01T00:00:00.000Z",
+        "time_confidence": 0.55,
+        "event_date_utc": null,
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Bocas del Toro region (Isla Colón), Panama",
+        "jurisdiction_level": "site",
+        "admin1": null,
+        "country": "PA",
+        "capital_used": null,
+        "lat": 9.337,
+        "lon": -82.242,
+        "precision": "neighborhood",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://phys.org/news/2010-10-smithsonian-regional-sea-temperature-coral.html",
+          "source_name": "Phys.org",
+          "published_at": "2010-10-01T00:00:00.000Z",
+          "headline": "Smithsonian regional sea temperature rise linked to coral bleaching (western Caribbean)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Smithsonian"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "coral reefs"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "extensive coral bleaching documented in late September 2009",
+            "source_url": "https://phys.org/news/2010-10-smithsonian-regional-sea-temperature-coral.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.8,
+        "location": 0.6,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "secondary_sources_only",
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "coral bleaching western Caribbean late September 2009 bocas del toro",
+        "fingerprint": "fp_2009-09_coral_bleaching_bocas_del_toro_pa"
+      }
+    },
+    {
+      "event_id": "2009-09_ecosystem_biodiversity_us_fl_crystal-river_fish-kill_001",
+      "title": "Stressed/dead fish observed near Crystal River Energy Complex discharge canal (Florida)",
+      "description": "A U.S. NRC event notice reported observation of about 200 dead or stressed ladyfish near a discharge canal at the Crystal River Energy Complex. The notice attributed the incident to localized low dissolved oxygen linked to heavy precipitation runoff and rapid salinity change.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2009-09-14T00:00:00.000Z",
+        "event_end": "2009-09-14T23:59:59.000Z",
+        "reported_at": "2009-09-15T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2009-09-14T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Crystal River, Florida, USA",
+        "jurisdiction_level": "city",
+        "admin1": "FL",
+        "country": "US",
+        "capital_used": null,
+        "lat": 28.902,
+        "lon": -82.592,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.75
+      },
+      "sources": [
+        {
+          "url": "https://www.nrc.gov/reading-rm/doc-collections/event-status/event/2009/20090915en.html",
+          "source_name": "U.S. Nuclear Regulatory Commission (NRC)",
+          "published_at": "2009-09-15T00:00:00.000Z",
+          "headline": "Event Notification (EN) 20090915",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Nuclear Regulatory Commission (NRC)",
+          "Crystal River Energy Complex"
+        ],
+        "substances": [
+          "dissolved oxygen"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "approximately 200 deceased or stressed ladyfish",
+            "source_url": "https://www.nrc.gov/reading-rm/doc-collections/event-status/event/2009/20090915en.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.75,
+        "category": 0.8,
+        "location": 0.75,
+        "summary_grounding": 0.75
+      },
+      "quality_flags": [
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "crystal river energy complex discharge canal fish kill stressed ladyfish 2009-09-14",
+        "fingerprint": "fp_2009-09_fish_kill_crystal_river_fl_us"
+      }
+    },
+    {
+      "event_id": "evt_20090928_bangkok_unfccc_talks",
+      "title": "UNFCCC negotiating sessions convene in Bangkok ahead of COP15",
+      "description": "UNFCCC negotiating sessions (AWG-KP and AWG-LCA) convened in Bangkok starting September 28, 2009, as part of preparations for COP15 in Copenhagen, focusing on elements of a global climate agreement.",
+      "category_primary": "policy_regulation",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "2009-09-28T00:00:00.000Z",
+        "event_end": "2009-09-30T23:59:59.000Z",
+        "reported_at": "2009-09-28T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2009-09-28T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Bangkok, Thailand",
+        "jurisdiction_level": "city",
+        "admin1": null,
+        "country": "TH",
+        "capital_used": null,
+        "lat": 13.7563,
+        "lon": 100.5018,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://unfccc.int/event/bangkok-climate-change-conference-september-2009",
+          "source_name": "UNFCCC",
+          "published_at": "2009-09-28T00:00:00.000Z",
+          "headline": "Bangkok Climate Change Conference September 2009",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": "https://unfccc.int/event/bangkok-climate-change-conference-september-2009"
+        },
+        {
+          "url": "https://unfccc.int/conference/bangkok-climate-change-conference-september-2009",
+          "source_name": "UNFCCC",
+          "published_at": "2009-09-28T00:00:00.000Z",
+          "headline": "Bangkok Climate Change Conference September 2009",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": "https://unfccc.int/conference/bangkok-climate-change-conference-september-2009"
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "UNFCCC"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Bangkok Climate Change Conference September 2009",
+            "source_url": "https://unfccc.int/event/bangkok-climate-change-conference-september-2009"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.75,
+        "location": 0.7,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "UNFCCC Bangkok Climate Change Conference Sep 2009",
+        "fingerprint": "unfccc_bangkok_2009-09-28_policy_regulation"
+      }
+    },
+    {
+      "event_id": "evt_20090929_un_sg_press_conf_climate_week",
+      "title": "UN Secretary-General press conference cites momentum toward Copenhagen climate deal",
+      "description": "At a September 29, 2009 press conference, the UN Secretary-General discussed outcomes from the UN climate summit activities during UN General Assembly week, describing leader engagement and momentum toward a Copenhagen agreement, including topics such as temperature targets and finance.",
+      "category_primary": "policy_regulation",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "2009-09-29T00:00:00.000Z",
+        "event_end": "2009-09-29T23:59:59.000Z",
+        "reported_at": "2009-09-29T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2009-09-29T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United Nations Headquarters, New York, USA",
+        "jurisdiction_level": "site",
+        "admin1": "NY",
+        "country": "US",
+        "capital_used": null,
+        "lat": 40.7489,
+        "lon": -73.968,
+        "precision": "neighborhood",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.un.org/sg/en/content/highlight/2009-09-29.html",
+          "source_name": "United Nations Secretary-General",
+          "published_at": "2009-09-29T00:00:00.000Z",
+          "headline": "Highlight: 2009-09-29",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": "https://www.un.org/sg/en/content/highlight/2009-09-29.html"
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "United Nations"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Highlight: 2009-09-29",
+            "source_url": "https://www.un.org/sg/en/content/highlight/2009-09-29.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.7,
+        "location": 0.6,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "paywalled_or_partial"
+      ],
+      "dedupe": {
+        "cluster_hint": "UN SG press conference climate summit week 2009-09-29",
+        "fingerprint": "un_sg_press_conf_2009-09-29_new_york_policy_regulation"
+      }
+    }
+  ]
+}

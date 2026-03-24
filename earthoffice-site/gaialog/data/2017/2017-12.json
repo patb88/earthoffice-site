@@ -1,0 +1,331 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_2017-12_normalize_2026-01-16T061941775Z",
+    "generated_utc": "2026-01-16T06:19:41.775Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "2017-12",
+    "window": {
+      "start_utc": "2017-12-01T00:00:00.000Z",
+      "end_utc": "2017-12-31T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "evt_20171205_iucn_red_list_update_tokyo",
+      "title": "IUCN Red List update warns thousands of species are threatened with extinction",
+      "description": "The IUCN published an updated Red List in early December 2017, warning that thousands of species face extinction risk. The release highlighted human activity as a major driver of biodiversity loss.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2017-12-05T00:00:00.000Z",
+        "event_end": "2017-12-05T23:59:59.000Z",
+        "reported_at": "2017-12-05T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2017-12-05T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Tokyo, Japan",
+        "jurisdiction_level": "city",
+        "admin1": "Tokyo",
+        "country": "JP",
+        "capital_used": null,
+        "lat": 35.6895,
+        "lon": 139.6917,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.5
+      },
+      "sources": [
+        {
+          "url": "https://www.theguardian.com/environment/2017/dec/05/red-list-thousands-of-species-at-risk-of-extinction-due-to-human-activity",
+          "source_name": "The Guardian",
+          "published_at": "2017-12-05T00:00:00.000Z",
+          "headline": "Red List: thousands of species at risk of extinction due to human activity",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "IUCN"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Red List ... thousands of species are at risk of extinction due to human activity",
+            "source_url": "https://www.theguardian.com/environment/2017/dec/05/red-list-thousands-of-species-at-risk-of-extinction-due-to-human-activity"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.75,
+        "location": 0.5,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "IUCN Red List 2017-12 release",
+        "fingerprint": "fp_iucn_red_list_2017-12-05_tokyo"
+      }
+    },
+    {
+      "event_id": "evt_20171215_iucn_cetacean_red_list_update_globalproxy",
+      "title": "IUCN Cetacean Specialist Group summarizes 2017 cetacean Red List assessment updates",
+      "description": "An IUCN SSC Cetacean Specialist Group post in mid-December 2017 summarized 2017 IUCN Red List assessment updates for multiple cetacean taxa. The update described changes in conservation status for several species.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "2017-12-15T00:00:00.000Z",
+        "event_end": "2017-12-15T23:59:59.000Z",
+        "reported_at": "2017-12-15T00:00:00.000Z",
+        "time_confidence": 0.4,
+        "event_date_utc": "2017-12-15T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Global (IUCN SSC Cetacean Specialist Group update)",
+        "jurisdiction_level": "global_proxy",
+        "admin1": null,
+        "country": null,
+        "capital_used": null,
+        "lat": 0,
+        "lon": 0,
+        "precision": "proxy",
+        "location_basis": "institution_proxy",
+        "location_confidence": 0.3
+      },
+      "sources": [
+        {
+          "url": "https://iucn-csg.org/2017-cetacean-red-list-update/",
+          "source_name": "IUCN SSC Cetacean Specialist Group",
+          "published_at": "2017-12-15T00:00:00.000Z",
+          "headline": "2017 Cetacean Red List Update",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "IUCN SSC Cetacean Specialist Group",
+          "IUCN"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "2017 Cetacean Red List Update",
+            "source_url": "https://iucn-csg.org/2017-cetacean-red-list-update/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.4,
+        "category": 0.7,
+        "location": 0.3,
+        "summary_grounding": 0.4
+      },
+      "quality_flags": [
+        "secondary_sources_only",
+        "date_ambiguous",
+        "low_confidence_location"
+      ],
+      "dedupe": {
+        "cluster_hint": "IUCN cetacean Red List updates 2017",
+        "fingerprint": "fp_iucn_cetacean_red_list_2017-12-15_global"
+      }
+    },
+    {
+      "event_id": "evt_20171204_us_utah_monuments_proclamations",
+      "title": "Trump proclamations reduce Bears Ears and Grand Staircase–Escalante National Monuments",
+      "description": "On December 4, 2017, U.S. President Donald Trump signed proclamations to reduce the boundaries of Bears Ears and Grand Staircase–Escalante National Monuments in Utah. The action sparked controversy and legal challenges over Antiquities Act authority and implications for land protections.",
+      "category_primary": "policy_regulation",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "2017-12-04T00:00:00.000Z",
+        "event_end": "2017-12-04T23:59:59.000Z",
+        "reported_at": "2017-12-04T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2017-12-04T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Utah, United States",
+        "jurisdiction_level": "state",
+        "admin1": "Utah",
+        "country": "US",
+        "capital_used": "Salt Lake City",
+        "lat": 40.7607793,
+        "lon": -111.8910474,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://time.com/5047904/bears-ears-grand-staircase-trump-shrinks/",
+          "source_name": "Time",
+          "published_at": "2017-12-04T00:00:00.000Z",
+          "headline": "Trump Shrinks Bears Ears and Grand Staircase National Monuments in Utah",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.axios.com/2017/12/16/trump-shrinks-utah-national-monuments-by-millions-of-acres-1513388386",
+          "source_name": "Axios",
+          "published_at": "2017-12-16T00:00:00.000Z",
+          "headline": "Trump shrinks Utah national monuments by millions of acres",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "The White House",
+          "U.S. Department of the Interior"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": [
+          "Donald Trump"
+        ]
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "signed proclamations Monday shrinking Bears Ears and Grand Staircase-Escalante",
+            "source_url": "https://time.com/5047904/bears-ears-grand-staircase-trump-shrinks/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.75,
+        "location": 0.7,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "2017-12-04 Trump shrinks Utah national monuments",
+        "fingerprint": "fp_20171204_utah_us_monuments_shrink"
+      }
+    },
+    {
+      "event_id": "evt_20171208_us_blm_waste_prevention_delay",
+      "title": "BLM final rule delays parts of 2016 Waste Prevention (methane/venting and flaring) rule to 2019",
+      "description": "On December 8, 2017, the U.S. Bureau of Land Management published a final rule temporarily suspending or delaying certain requirements of its 2016 Waste Prevention Rule covering venting, flaring, and leaks on certain onshore oil and gas operations. The delay extended specified compliance deadlines until January 17, 2019.",
+      "category_primary": "policy_regulation",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2017-12-08T00:00:00.000Z",
+        "event_end": "2017-12-08T23:59:59.000Z",
+        "reported_at": "2017-12-08T00:00:00.000Z",
+        "time_confidence": 0.85,
+        "event_date_utc": "2017-12-08T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States (federal onshore oil and gas leases)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9071923,
+        "lon": -77.0368707,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.65
+      },
+      "sources": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/FR-2017-12-08/html/2017-26389.htm",
+          "source_name": "Federal Register (via GovInfo)",
+          "published_at": "2017-12-08T00:00:00.000Z",
+          "headline": "Waste Prevention, Production Subject to Royalties, and Resource Conservation; Rescission or Revision of Certain Requirements (Suspension/Delay Final Rule)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.blm.gov/policy/ib-2018-048",
+          "source_name": "Bureau of Land Management",
+          "published_at": "2018-01-01T00:00:00.000Z",
+          "headline": "IB 2018-048 (Waste Prevention Rule implementation guidance)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Bureau of Land Management",
+          "U.S. Department of the Interior"
+        ],
+        "substances": [
+          "methane",
+          "natural gas"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "This final rule delays compliance dates for certain requirements until January 17, 2019",
+            "source_url": "https://www.govinfo.gov/content/pkg/FR-2017-12-08/html/2017-26389.htm"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.74,
+        "category": 0.8,
+        "location": 0.65,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "2017-12-08 BLM Waste Prevention Rule delay final rule",
+        "fingerprint": "fp_20171208_us_blm_waste_prevention_delay"
+      }
+    }
+  ]
+}

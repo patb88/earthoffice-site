@@ -1,0 +1,974 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_2023-10_normalize_2026-01-16T134507784Z",
+    "generated_utc": "2026-01-16T13:45:07.784Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "2023-10",
+    "window": {
+      "start_utc": "2023-10-01T00:00:00.000Z",
+      "end_utc": "2023-10-31T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "evt_20231024_noaa_incident_10680_oil_signature_gulf",
+      "title": "Satellite-detected suspected oil spill in SE Gulf of Mexico (NW of Key West, Florida)",
+      "description": "NOAA IncidentNews reported a satellite-detected, high-confidence oil signature in the SE Gulf of Mexico northwest of Key West, Florida. The report noted U.S. Coast Guard overflight planning and NOAA trajectory support to help assess the situation and guide response activity.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2023-10-24T00:00:00.000Z",
+        "event_end": "2023-10-24T23:59:59.000Z",
+        "reported_at": "2023-10-24T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2023-10-24T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "SE Gulf of Mexico (NW of Key West, Florida, USA)",
+        "jurisdiction_level": "site",
+        "admin1": "Florida",
+        "country": "US",
+        "capital_used": null,
+        "lat": 24.5551,
+        "lon": -81.78,
+        "precision": "proxy",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.45
+      },
+      "sources": [
+        {
+          "url": "https://incidentnews.noaa.gov/incident/10680",
+          "source_name": "NOAA IncidentNews",
+          "published_at": "2023-10-24T00:00:00.000Z",
+          "headline": "Suspected oil spill detected by satellite imagery (SE Gulf of Mexico, NW of Key West, Florida)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA",
+          "U.S. Coast Guard"
+        ],
+        "substances": [
+          "oil"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "satellite-detected, high-confidence oil signature in the SE Gulf of Mexico",
+            "source_url": "https://incidentnews.noaa.gov/incident/10680"
+          },
+          {
+            "quote": "USCG overflight planning and trajectory support",
+            "source_url": "https://incidentnews.noaa.gov/incident/10680"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.58,
+        "category": 0.85,
+        "location": 0.45,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "noaa_incident_10680_gulf_oil_signature",
+        "fingerprint": "fp_noaa10680_2023-10-24_se-gulf-of-mexico"
+      }
+    },
+    {
+      "event_id": "evt_20231021_noaa_orr_little_lake_well_blowout",
+      "title": "Well blowout releases crude oil and condensate into Little Lake near Cut Off, Louisiana",
+      "description": "NOAA OR&R reported a well blowout near Cut Off, Louisiana, with an estimated 10–15 barrels of crude oil and condensate released into Little Lake. The release reportedly produced sheen and impacted wetland shoreline, prompting multi-agency response and assessment activities.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2023-10-21T00:00:00.000Z",
+        "event_end": "2023-10-24T23:59:59.000Z",
+        "reported_at": "2023-10-21T00:00:00.000Z",
+        "time_confidence": 0.5,
+        "event_date_utc": "2023-10-21T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Little Lake near Cut Off, Louisiana, USA",
+        "jurisdiction_level": "site",
+        "admin1": "Louisiana",
+        "country": "US",
+        "capital_used": null,
+        "lat": 29.4877,
+        "lon": -90.3387,
+        "precision": "proxy",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.4
+      },
+      "sources": [
+        {
+          "url": "https://blog.response.restoration.noaa.gov/incident-responses-october-2023",
+          "source_name": "NOAA Response & Restoration Blog",
+          "published_at": "2023-10-01T00:00:00.000Z",
+          "headline": "Incident responses: October 2023",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA OR&R"
+        ],
+        "substances": [
+          "crude oil",
+          "condensate"
+        ],
+        "ecosystems": [
+          "wetlands"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "well blowout with an estimated 10–15 barrels of crude oil and condensate released",
+            "source_url": "https://blog.response.restoration.noaa.gov/incident-responses-october-2023"
+          },
+          {
+            "quote": "producing sheen and wetland shoreline impacts",
+            "source_url": "https://blog.response.restoration.noaa.gov/incident-responses-october-2023"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.85,
+        "location": 0.4,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "noaa_orr_oct2023_little_lake_blowout",
+        "fingerprint": "fp_noaa_orr_littlelake_2023-10-21_cut-off-la"
+      }
+    },
+    {
+      "event_id": "evt_20231015_syr_solvvay_chemtrade_dumpster_fire_hazmat",
+      "title": "HazMat response to dumpster fire with orange smoke at Chemtrade Logistics facility in Solvay, New York",
+      "description": "A Syracuse city fire news release reported a dumpster fire at the Chemtrade Logistics facility in Solvay, New York, producing an orange smoke column. The Syracuse Fire Department HazMat team assisted local responders, treating the incident as a potential hazardous materials situation due to facility products.",
+      "category_primary": "pollution_contamination",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "2023-10-15T17:39:00.000Z",
+        "event_end": "2023-10-15T23:59:59.000Z",
+        "reported_at": "2023-10-15T17:39:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2023-10-15T17:39:00.000Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Chemtrade Logistics Facility, Solvay, New York, USA",
+        "jurisdiction_level": "site",
+        "admin1": "New York",
+        "country": "US",
+        "capital_used": null,
+        "lat": 43.0587,
+        "lon": -76.2077,
+        "precision": "proxy",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.5
+      },
+      "sources": [
+        {
+          "url": "https://www.syr.gov/News/Fire-News/Fire-2023/Copy-of-20231015FireNews1339",
+          "source_name": "City of Syracuse (syr.gov)",
+          "published_at": "2023-10-15T17:39:00.000Z",
+          "headline": "HazMat response to chemical-plant dumpster fire producing orange smoke column (Chemtrade Logistics, Solvay, New York)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Syracuse Fire Department",
+          "Chemtrade Logistics"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "HazMat team assisting local responders at a Chemtrade Logistics facility fire",
+            "source_url": "https://www.syr.gov/News/Fire-News/Fire-2023/Copy-of-20231015FireNews1339"
+          },
+          {
+            "quote": "dumpsters with facility products and an orange smoke column",
+            "source_url": "https://www.syr.gov/News/Fire-News/Fire-2023/Copy-of-20231015FireNews1339"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.75,
+        "location": 0.5,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "syr_fire_20231015_chemtrade_solvay",
+        "fingerprint": "fp_syrgov_chemtrade_solvay_2023-10-15"
+      }
+    },
+    {
+      "event_id": "evt_202310_noaa_global_climate_202310",
+      "title": "NOAA reports October 2023 as warmest October globally in its record",
+      "description": "NOAA/NCEI’s global climate reporting for October 2023 stated that it was the warmest October on record globally. The report also noted record-warm conditions in the context of broader global climate indicators such as ocean surface temperatures and sea ice extent.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2023-10-01T00:00:00.000Z",
+        "event_end": "2023-10-31T23:59:59.000Z",
+        "reported_at": "2023-11-15T00:00:00Z",
+        "time_confidence": 0.7,
+        "event_date_utc": null,
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Global",
+        "jurisdiction_level": "global_proxy",
+        "admin1": null,
+        "country": null,
+        "capital_used": null,
+        "lat": 0,
+        "lon": 0,
+        "precision": "proxy",
+        "location_basis": "manual_override",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.ncei.noaa.gov/news/global-climate-202310",
+          "source_name": "NOAA NCEI",
+          "published_at": "2023-11-15T00:00:00Z",
+          "headline": "Global Climate Report - October 2023",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA",
+          "NCEI"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Global surface temperature was the highest for October in the 174-year record.",
+            "source_url": "https://www.ncei.noaa.gov/news/global-climate-202310"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.8,
+        "location": 0.6,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "noaa_ncei_october_2023_global_climate_record",
+        "fingerprint": "fp_noaa_global_oct2023_global_proxy_2023-10"
+      }
+    },
+    {
+      "event_id": "evt_202310_noaa_national_climate_202310_conus",
+      "title": "NOAA reports contiguous U.S. October 2023 was 18th-warmest on record",
+      "description": "NOAA/NCEI’s national climate reporting for October 2023 stated the contiguous United States had an October average temperature above the 20th-century average, ranking as the 18th-warmest October in the record. The report highlighted notable state-level rankings including several in New England.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2023-10-01T00:00:00.000Z",
+        "event_end": "2023-10-31T23:59:59.000Z",
+        "reported_at": "2023-11-08T00:00:00Z",
+        "time_confidence": 0.7,
+        "event_date_utc": null,
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "United States (contiguous U.S.)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.85
+      },
+      "sources": [
+        {
+          "url": "https://www.ncei.noaa.gov/news/national-climate-202310",
+          "source_name": "NOAA NCEI",
+          "published_at": "2023-11-08T00:00:00Z",
+          "headline": "National Climate Report - October 2023",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA",
+          "NCEI"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "The contiguous U.S. average temperature during October was 55.7°F, 2.0°F above average.",
+            "source_url": "https://www.ncei.noaa.gov/news/national-climate-202310"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.7,
+        "category": 0.85,
+        "location": 0.85,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "noaa_ncei_october_2023_conus_national_climate",
+        "fingerprint": "fp_noaa_national_oct2023_US_2023-10"
+      }
+    },
+    {
+      "event_id": "evt_20231003_nepal_bajhang_quakes_landslide",
+      "title": "Two earthquakes in Nepal’s Bajhang district damage homes and trigger landslide",
+      "description": "Two earthquakes struck Nepal’s Bajhang district on October 3, 2023, damaging homes. A landslide also blocked a highway in the remote region, according to reporting by the Associated Press.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2023-10-03T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2023-10-03T00:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Bajhang district, Nepal",
+        "jurisdiction_level": "state",
+        "admin1": "Sudurpashchim Province",
+        "country": "NP",
+        "capital_used": "Dhangadhi",
+        "lat": 28.701,
+        "lon": 80.589,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://apnews.com/article/4279b060496dff859a3ea33504ff851c",
+          "source_name": "Associated Press",
+          "published_at": "2023-10-03T00:00:00Z",
+          "headline": "Two earthquakes strike northwestern Nepal, damaging homes and triggering landslide",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Associated Press"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Two earthquakes struck Nepal’s remote northwest... damaging homes and triggering a landslide that blocked a highway.",
+            "source_url": "https://apnews.com/article/4279b060496dff859a3ea33504ff851c"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.63,
+        "category": 0.85,
+        "location": 0.55,
+        "summary_grounding": 0.7
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "nepal-oct-2023-earthquake-landslide",
+        "fingerprint": "fp_nepal_bajhang_2023-10-03_geological"
+      }
+    },
+    {
+      "event_id": "evt_20231022_nepal_dhading_quake_landslide",
+      "title": "Magnitude 5.2 earthquake in Nepal’s Dhading district damages homes and triggers landslide",
+      "description": "A magnitude 5.2 earthquake struck Nepal’s Dhading district on October 22, 2023, damaging dozens of homes. Reporting also described a landslide linked to the quake in the hilly district near Kathmandu.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2023-10-22T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2023-10-22T00:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Dhading district, Nepal",
+        "jurisdiction_level": "state",
+        "admin1": "Bagmati Province",
+        "country": "NP",
+        "capital_used": "Hetauda",
+        "lat": 27.428,
+        "lon": 85.033,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://apnews.com/article/dfaf49fbad385c6ba584dff166e5e686",
+          "source_name": "Associated Press",
+          "published_at": "2023-10-22T00:00:00Z",
+          "headline": "Earthquake in Nepal damages homes and causes a landslide",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Associated Press"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "A magnitude 5.2 earthquake... damaged dozens of homes and triggered a landslide in Nepal’s hilly Dhading district.",
+            "source_url": "https://apnews.com/article/dfaf49fbad385c6ba584dff166e5e686"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.63,
+        "category": 0.85,
+        "location": 0.55,
+        "summary_grounding": 0.7
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "nepal-oct-2023-earthquake-landslide",
+        "fingerprint": "fp_nepal_dhading_2023-10-22_geological"
+      }
+    },
+    {
+      "event_id": "fires_2023-10-30_central-oahu-wildfire",
+      "title": "Wildfire in remote Central Oahu prompts helicopter response",
+      "description": "A wildfire burned in a remote mountainous area of Central Oahu on October 30, 2023. The fire produced smoke and ash and prompted an aerial firefighting response involving helicopters from Honolulu and the U.S. Army.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2023-10-30T00:00:00.000Z",
+        "event_end": "2023-10-30T23:59:59.000Z",
+        "reported_at": "2023-10-30T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2023-10-30T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Central Oahu, Hawaii, USA",
+        "jurisdiction_level": "state",
+        "admin1": "Hawaii",
+        "country": "US",
+        "capital_used": "Honolulu",
+        "lat": 21.306944,
+        "lon": -157.858333,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://apnews.com/article/645020d629f07b9e82e7e288e7630fe7",
+          "source_name": "AP News",
+          "published_at": "2023-10-30T00:00:00.000Z",
+          "headline": "Wildfire in remote Central Oahu prompts helicopter response (Hawaii)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Army"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "wildfire in a remote mountainous area of Central Oahu",
+            "source_url": "https://apnews.com/article/645020d629f07b9e82e7e288e7630fe7"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.8,
+        "location": 0.55,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Central Oahu wildfire helicopter response 2023-10-30",
+        "fingerprint": "fires|central oahu hawaii usa|2023-10-30"
+      }
+    },
+    {
+      "event_id": "fires_2023-10-02_nyc_smoke_canada",
+      "title": "Canadian wildfire smoke degrades air quality in New York City",
+      "description": "Canadian wildfire smoke drifted into the northeastern United States, reducing air quality in New York City in early October 2023. The report described haze and elevated air-quality readings affecting NYC and other cities in the region.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2023-10-02T00:00:00.000Z",
+        "event_end": "2023-10-02T23:59:59.000Z",
+        "reported_at": "2023-10-02T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2023-10-02T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "New York City, New York, USA",
+        "jurisdiction_level": "city",
+        "admin1": "New York",
+        "country": "US",
+        "capital_used": null,
+        "lat": 40.7128,
+        "lon": -74.006,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.75
+      },
+      "sources": [
+        {
+          "url": "https://www.theguardian.com/us-news/2023/oct/02/new-york-city-air-quality-smoke-canada-wildfires",
+          "source_name": "The Guardian",
+          "published_at": "2023-10-02T00:00:00.000Z",
+          "headline": "New York City air quality degraded by Canadian wildfire smoke transport",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [
+          "wildfire smoke"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Canadian wildfire smoke reduced air quality in New York City",
+            "source_url": "https://www.theguardian.com/us-news/2023/oct/02/new-york-city-air-quality-smoke-canada-wildfires"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.66,
+        "category": 0.8,
+        "location": 0.75,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "NYC air quality impacted by Canadian wildfire smoke 2023-10-02",
+        "fingerprint": "fires|new york city new york usa|2023-10-02"
+      }
+    },
+    {
+      "event_id": "evt_20231030_oahu_wildfire_native_forest",
+      "title": "Oahu wildfire burns into native forest and refuge lands, raising ecological damage concerns",
+      "description": "A wildfire on Oahu in late October 2023 was reported to be burning into areas of native forest, including refuge lands. Coverage noted concerns about long-term ecological damage and increased risk of invasive plant spread after the fire.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2023-10-30T00:00:00.000Z",
+        "event_end": "2023-10-31T23:59:59.000Z",
+        "reported_at": "2023-10-30T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2023-10-30T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Central Oahu, Hawaii, USA",
+        "jurisdiction_level": "site",
+        "admin1": "Hawaii",
+        "country": "US",
+        "capital_used": null,
+        "lat": 21.4389,
+        "lon": -158.0001,
+        "precision": "neighborhood",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.45
+      },
+      "sources": [
+        {
+          "url": "https://spectrumlocalnews.com/hi/hawaii/news/2023/10/30/firefighters-wildfire-mililani-mauka-",
+          "source_name": "Spectrum News",
+          "published_at": "2023-10-30T00:00:00.000Z",
+          "headline": "firefighters-wildfire-mililani-mauka-",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.wsls.com/news/2023/11/12/theres-another-wildfire-burning-in-hawaii-this-one-is-destroying-irreplaceable-rainforest-on-oahu/",
+          "source_name": "WSLS",
+          "published_at": "2023-11-12T00:00:00.000Z",
+          "headline": "There's another wildfire burning in Hawaii. This one is destroying irreplaceable rainforest on Oahu",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [
+          "native forest",
+          "rainforest",
+          "refuge lands"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.52,
+        "category": 0.7,
+        "location": 0.45,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "oahu-wildfire-oct-2023-native-forest",
+        "fingerprint": "fp_oahu_wildfire_2023-10-30_central-oahu"
+      }
+    },
+    {
+      "event_id": "evt_20231017_usfws_21_species_extinct_delisting",
+      "title": "U.S. Fish and Wildlife Service declares 21 endangered species extinct and delists them",
+      "description": "Reporting stated that the U.S. Fish and Wildlife Service removed 21 species from the endangered species list in October 2023 by declaring them extinct. The delisting was framed as reflecting severe biodiversity loss.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2023-10-16T00:00:00.000Z",
+        "event_end": "2023-10-16T23:59:59.000Z",
+        "reported_at": "2023-10-17T00:00:00.000Z",
+        "time_confidence": 0.4,
+        "event_date_utc": "2023-10-16T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.8
+      },
+      "sources": [
+        {
+          "url": "https://www.axios.com/2023/10/17/us-declares-21-endangered-species-extinct",
+          "source_name": "Axios",
+          "published_at": "2023-10-17T00:00:00.000Z",
+          "headline": "US declares 21 endangered species extinct",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Fish and Wildlife Service"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.75,
+        "location": 0.8,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "usfws-21-species-extinct-delisting-oct-2023",
+        "fingerprint": "fp_usfws_extinct_delisting_2023-10_us"
+      }
+    },
+    {
+      "event_id": "evt_20231020_epa_tri_pfas_rule_us",
+      "title": "EPA finalizes rule enhancing PFAS reporting to the Toxics Release Inventory (TRI)",
+      "description": "The US Environmental Protection Agency finalized a rule to require enhanced reporting for certain PFAS under the Toxics Release Inventory. The rule removes the de minimis exemption for TRI-listed PFAS and treats them as chemicals of special concern, expanding disclosure of PFAS releases and waste management.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "2023-10-20T00:00:00.000Z",
+        "event_end": "2023-10-20T23:59:59.000Z",
+        "reported_at": "2023-10-20T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2023-10-20T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States (federal regulation)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.8
+      },
+      "sources": [
+        {
+          "url": "https://www.epa.gov/newsreleases/epa-finalizes-rule-require-enhanced-pfas-reporting-toxics-release-inventory",
+          "source_name": "U.S. Environmental Protection Agency",
+          "published_at": "2023-10-20T00:00:00.000Z",
+          "headline": "EPA finalizes rule to require enhanced PFAS reporting to Toxics Release Inventory",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.epa.gov/pfas/key-epa-actions-address-pfas",
+          "source_name": "U.S. Environmental Protection Agency",
+          "published_at": "2023-10-20T00:00:00.000Z",
+          "headline": "Key EPA actions to address PFAS",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Environmental Protection Agency (EPA)"
+        ],
+        "substances": [
+          "PFAS"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "EPA finalized a rule ... require enhanced reporting for PFAS under the Toxics Release Inventory.",
+            "source_url": "https://www.epa.gov/newsreleases/epa-finalizes-rule-require-enhanced-pfas-reporting-toxics-release-inventory"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.72,
+        "category": 0.85,
+        "location": 0.85,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "needs_dedupe_check",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "epa_pfas_reporting_oct_2023",
+        "fingerprint": "fp_evt_20231020_epa_tri_pfas_rule_us"
+      }
+    },
+    {
+      "event_id": "evt_20231011_epa_tsca_8a7_pfas_rule_us",
+      "title": "EPA finalizes TSCA Section 8(a)(7) PFAS reporting and recordkeeping rule (PFAS manufactured/imported since 2011)",
+      "description": "The US Environmental Protection Agency finalized TSCA Section 8(a)(7) reporting and recordkeeping requirements for PFAS. The rule requires manufacturers and importers of PFAS (including in PFAS-containing articles) since 2011 to report information such as uses, production volumes, disposal, exposures, and hazards electronically to EPA.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "2023-10-11T00:00:00.000Z",
+        "event_end": "2023-10-11T23:59:59.000Z",
+        "reported_at": "2023-10-11T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2023-10-11T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States (federal regulation)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.8
+      },
+      "sources": [
+        {
+          "url": "https://www.epa.gov/assessing-and-managing-chemicals-under-tsca/tsca-section-8a7-reporting-and-recordkeeping",
+          "source_name": "U.S. Environmental Protection Agency",
+          "published_at": "2023-10-11T00:00:00.000Z",
+          "headline": "TSCA Section 8(a)(7) reporting and recordkeeping",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.epa.gov/pfas/key-epa-actions-address-pfas",
+          "source_name": "U.S. Environmental Protection Agency",
+          "published_at": "2023-10-11T00:00:00.000Z",
+          "headline": "Key EPA actions to address PFAS",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Environmental Protection Agency (EPA)"
+        ],
+        "substances": [
+          "PFAS"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "TSCA Section 8(a)(7) reporting and recordkeeping requirements for PFAS.",
+            "source_url": "https://www.epa.gov/assessing-and-managing-chemicals-under-tsca/tsca-section-8a7-reporting-and-recordkeeping"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.72,
+        "category": 0.85,
+        "location": 0.85,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "needs_dedupe_check",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "epa_pfas_reporting_oct_2023",
+        "fingerprint": "fp_evt_20231011_epa_tsca_8a7_pfas_rule_us"
+      }
+    }
+  ]
+}

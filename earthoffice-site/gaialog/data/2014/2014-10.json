@@ -1,0 +1,586 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_2014-10_normalize_2026-01-16T052328344Z",
+    "generated_utc": "2026-01-16T05:23:28.344Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "2014-10",
+    "window": {
+      "start_utc": "2014-10-01T00:00:00.000Z",
+      "end_utc": "2014-10-31T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "20141013-us-la-tete-bayou-mid-valley-pipeline-oil-spill",
+      "title": "Mid-Valley Pipeline crude oil spill into Tete Bayou near Mooringsport, Louisiana",
+      "description": "A crude oil release from the Mid-Valley Pipeline spilled into Tete Bayou near Mooringsport in Caddo Parish, Louisiana. Reporting described containment and cleanup efforts aimed at preventing the oil from reaching Caddo Lake.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2014-10-13T00:00:00.000Z",
+        "event_end": "2014-10-13T23:59:59.000Z",
+        "reported_at": "2014-10-31T23:59:59.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2014-10-13T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Tete Bayou near Mooringsport, Caddo Parish, Louisiana, USA",
+        "jurisdiction_level": "site",
+        "admin1": "Louisiana",
+        "country": "US",
+        "capital_used": null,
+        "lat": 32.7026,
+        "lon": -93.9819,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.sej.org/headlines/officials-say-oil-spill-has-not-reached-caddo-lake",
+          "source_name": "Society of Environmental Journalists (SEJ)",
+          "published_at": "2014-10-31T23:59:59.000Z",
+          "headline": "Officials say oil spill has not reached Caddo Lake",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.epa.gov/newsreleases/epa-and-partners-announce-sunoco-pipeline-and-mid-valley-pipeline-settle-oil-spill",
+          "source_name": "US EPA",
+          "published_at": "2014-10-31T23:59:59.000Z",
+          "headline": "EPA and partners announce Sunoco Pipeline and Mid-Valley Pipeline settle oil spill",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Mid-Valley Pipeline",
+          "Sunoco"
+        ],
+        "substances": [
+          "crude oil"
+        ],
+        "ecosystems": [
+          "Tete Bayou",
+          "Caddo Lake"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Officials say oil spill has not reached Caddo Lake.",
+            "source_url": "https://www.sej.org/headlines/officials-say-oil-spill-has-not-reached-caddo-lake"
+          },
+          {
+            "quote": "EPA and partners announce Sunoco Pipeline and Mid-Valley Pipeline settle oil spill.",
+            "source_url": "https://www.epa.gov/newsreleases/epa-and-partners-announce-sunoco-pipeline-and-mid-valley-pipeline-settle-oil-spill"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.8,
+        "location": 0.55,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Mid-Valley Pipeline oil spill Tete Bayou Mooringsport LA 2014-10-13",
+        "fingerprint": "mid-valley-pipeline-oil-spill|tete-bayou-mooringsport-la|2014-10-13"
+      }
+    },
+    {
+      "event_id": "evt_20141015_nsw_storm_flood_snow",
+      "title": "Severe storm brings flooding, power outages and snow in New South Wales",
+      "description": "A severe storm system impacted New South Wales, with reports of widespread power outages, flood rescues, fallen trees, and snow in parts of the Blue Mountains and nearby areas. Impacts were reported across the state during mid-October 2014.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2014-10-14T00:00:00.000Z",
+        "event_end": "2014-10-15T23:59:59.000Z",
+        "reported_at": "2014-10-15T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2014-10-15T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "New South Wales, Australia",
+        "jurisdiction_level": "state",
+        "admin1": "New South Wales",
+        "country": "AU",
+        "capital_used": "Sydney",
+        "lat": -33.8688,
+        "lon": 151.2093,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.75
+      },
+      "sources": [
+        {
+          "url": "https://www.abc.net.au/news/2014-10-15/nsw-snowstorms-and-floods-contrast-to-2013-bushfires/5814676",
+          "source_name": "ABC News (Australia)",
+          "published_at": "2014-10-15T00:00:00.000Z",
+          "headline": "NSW snowstorms and floods a contrast to 2013 bushfires",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Thousands of homes have been left without power as a fierce storm lashes New South Wales.",
+            "source_url": "https://www.abc.net.au/news/2014-10-15/nsw-snowstorms-and-floods-contrast-to-2013-bushfires/5814676"
+          },
+          {
+            "quote": "The Blue Mountains have been blanketed in snow as the wild weather continues.",
+            "source_url": "https://www.abc.net.au/news/2014-10-15/nsw-snowstorms-and-floods-contrast-to-2013-bushfires/5814676"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.7,
+        "category": 0.8,
+        "location": 0.75,
+        "summary_grounding": 0.65
+      },
+      "quality_flags": [
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "NSW storm flooding snow Oct 2014",
+        "fingerprint": "fp_evt_20141015_nsw_storm_flood_snow"
+      }
+    },
+    {
+      "event_id": "evt_20141031_ok_ar_climate_summary",
+      "title": "Eastern Oklahoma and northwest Arkansas see warm and wet October 2014 conditions",
+      "description": "A National Weather Service climate summary for October 2014 reported warmer-than-normal conditions across eastern Oklahoma and northwest Arkansas, with many locations also experiencing notably wet conditions. The summary noted multiple daily temperature and rainfall records set or tied during the month.",
+      "category_primary": "weather_climate",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "2014-10-01T00:00:00.000Z",
+        "event_end": "2014-10-31T23:59:59.000Z",
+        "reported_at": "2014-10-31T00:00:00.000Z",
+        "time_confidence": 0.5,
+        "event_date_utc": null,
+        "event_date_precision": "month"
+      },
+      "location": {
+        "name": "Oklahoma, USA (NWS Tulsa service area)",
+        "jurisdiction_level": "state",
+        "admin1": "Oklahoma",
+        "country": "US",
+        "capital_used": "Oklahoma City",
+        "lat": 35.4676,
+        "lon": -97.5164,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.weather.gov/tsa/climo_summary_oct2014",
+          "source_name": "NOAA National Weather Service (Tulsa, OK)",
+          "published_at": "2014-10-31T00:00:00.000Z",
+          "headline": "Climate Summary - October 2014",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA National Weather Service"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Climate Summary - October 2014",
+            "source_url": "https://www.weather.gov/tsa/climo_summary_oct2014"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.85,
+        "location": 0.6,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "NWS Tulsa October 2014 climate summary",
+        "fingerprint": "fp_evt_20141031_ok_ar_climate_summary"
+      }
+    },
+    {
+      "event_id": "geo_20141014_nicaragua_elsalvador_eq_tsunami",
+      "title": "M7.3 earthquake offshore Nicaragua/El Salvador with tsunami detection",
+      "description": "A magnitude 7.3 earthquake occurred offshore of Central America near the Nicaragua/El Salvador region. NOAA’s NCTR page documents the event and associated tsunami modeling/observations, and IRIS provides an event listing for the earthquake.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2014-10-14T03:51:35.000Z",
+        "event_end": "2014-10-14T03:51:35.000Z",
+        "reported_at": "2014-10-14T03:51:35.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2014-10-14T03:51:35.000Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Offshore near Jiquilillo, Nicaragua / off El Salvador coast",
+        "jurisdiction_level": "site",
+        "admin1": null,
+        "country": null,
+        "capital_used": null,
+        "lat": 12.5833,
+        "lon": -87.1333,
+        "precision": "neighborhood",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.35
+      },
+      "sources": [
+        {
+          "url": "https://nctr.pmel.noaa.gov/nicaragua20141014/",
+          "source_name": "NOAA PMEL NCTR",
+          "published_at": "2014-10-14T00:00:00Z",
+          "headline": "Nicaragua 2014/10/14 (NCTR event page)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.iris.edu/hq/retm/event/2769",
+          "source_name": "IRIS",
+          "published_at": "2014-10-14T00:00:00Z",
+          "headline": "IRIS event page (event 2769)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA PMEL",
+          "IRIS"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Nicaragua 2014/10/14",
+            "source_url": "https://nctr.pmel.noaa.gov/nicaragua20141014/"
+          },
+          {
+            "quote": "event/2769",
+            "source_url": "https://www.iris.edu/hq/retm/event/2769"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.5,
+        "category": 0.8,
+        "location": 0.35,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "2014-10-14 M7.3 offshore Nicaragua/El Salvador tsunami",
+        "fingerprint": "geo|m7.3_earthquake_offshore_nicaragua_el_salvador|offshore_near_jiquilillo|2014-10-14"
+      }
+    },
+    {
+      "event_id": "2014-10-us-hi-oahu-kaneohe-coral-bleaching-dlnr-20141006",
+      "title": "Hawaiʻi DLNR reports coral bleaching tied to warm sea temperatures",
+      "description": "Hawaiʻi’s Department of Land and Natural Resources reported coral bleaching at multiple nearshore sites, including windward Oʻahu/Kāneʻohe Bay, and linked bleaching to elevated sea-surface temperatures. The agency indicated monitoring and survey efforts were underway to track the extent and severity.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2014-10-06T00:00:00.000Z",
+        "time_confidence": 0.8,
+        "event_date_utc": "2014-10-06T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Kāneʻohe Bay, Oʻahu, Hawaiʻi, USA",
+        "jurisdiction_level": "site",
+        "admin1": "Hawaii",
+        "country": "US",
+        "capital_used": null,
+        "lat": 21.4411,
+        "lon": -157.8013,
+        "precision": "exact",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://dlnr.hawaii.gov/blog/2014/10/06/nr14-121/",
+          "source_name": "Hawaiʻi Department of Land and Natural Resources (DLNR)",
+          "published_at": "2014-10-06T00:00:00.000Z",
+          "headline": "nr14-121 (DLNR blog post)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://dlnr.hawaii.gov/reefresponse/current-rapid-responses/coral-bleaching-2014/",
+          "source_name": "Hawaiʻi DLNR Reef Response",
+          "published_at": "2014-10-01T00:00:00.000Z",
+          "headline": "Coral Bleaching 2014 (rapid response page)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Hawaiʻi Department of Land and Natural Resources (DLNR)"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "coral reefs",
+          "nearshore reef sites"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "reported above-normal coral bleaching at nearshore sites on Oʻahu",
+            "source_url": "https://dlnr.hawaii.gov/blog/2014/10/06/nr14-121/"
+          },
+          {
+            "quote": "elevated sea-surface temperatures",
+            "source_url": "https://dlnr.hawaii.gov/blog/2014/10/06/nr14-121/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.85,
+        "location": 0.6,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "2014 Hawaiʻi coral bleaching (Oʻahu/Kāneʻohe Bay)",
+        "fingerprint": "fp_2014-10_hi_kaneohe_bleaching_20141006"
+      }
+    },
+    {
+      "event_id": "2014-10-20_unfccc_adp_october_session_bonn",
+      "title": "UNFCCC ADP October climate session in Bonn advances negotiating text ahead of COP20",
+      "description": "Governments met in Bonn for the UNFCCC ADP October session to progress negotiating text and elements for a new global climate agreement ahead of COP20 in Lima.",
+      "category_primary": "policy_regulation",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "2014-10-20T00:00:00.000Z",
+        "event_end": "2014-10-25T23:59:59.000Z",
+        "reported_at": "2014-10-20T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2014-10-20T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Bonn, Germany",
+        "jurisdiction_level": "city",
+        "admin1": null,
+        "country": "DE",
+        "capital_used": null,
+        "lat": 50.7374,
+        "lon": 7.0982,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://unfccc.int/news/october-climate-session-adp",
+          "source_name": "UNFCCC",
+          "published_at": "2014-10-20T00:00:00.000Z",
+          "headline": "October climate session: ADP",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "UNFCCC",
+          "ADP"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "October climate session: ADP",
+            "source_url": "https://unfccc.int/news/october-climate-session-adp"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.75,
+        "location": 0.7,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "paywalled_or_partial",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "UNFCCC ADP October session Bonn 2014-10",
+        "fingerprint": "unfccc_adp_october_session|bonn_de|2014-10-20_2014-10-25"
+      }
+    },
+    {
+      "event_id": "2014-10-23_european_council_2030_climate_energy_framework",
+      "title": "European Council agrees 2030 EU climate and energy framework including at least 40% GHG cut by 2030",
+      "description": "EU leaders agreed the 2030 climate and energy policy framework, including at least a 40% reduction in greenhouse gas emissions by 2030 compared with 1990 levels, alongside EU-level renewables and efficiency elements.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "2014-10-23T00:00:00.000Z",
+        "event_end": "2014-10-24T23:59:59.000Z",
+        "reported_at": "2014-10-24T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2014-10-23T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "European Union (European Council meeting)",
+        "jurisdiction_level": "supranational",
+        "admin1": null,
+        "country": null,
+        "capital_used": "Brussels",
+        "lat": 50.8503,
+        "lon": 4.3517,
+        "precision": "supranational",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://www.consilium.europa.eu/en/meetings/european-council/2014/10/23-24/",
+          "source_name": "Council of the European Union (Consilium)",
+          "published_at": "2014-10-23T00:00:00.000Z",
+          "headline": "European Council, 23-24 October 2014",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://climate.ec.europa.eu/news-other-reads/news/eu-leaders-agree-2030-climate-and-energy-goals-2014-10-24_en",
+          "source_name": "European Commission (DG CLIMA)",
+          "published_at": "2014-10-24T00:00:00.000Z",
+          "headline": "EU leaders agree 2030 climate and energy goals",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "European Council",
+          "European Union",
+          "European Commission"
+        ],
+        "substances": [
+          "greenhouse gases"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "European Council, 23-24 October 2014",
+            "source_url": "https://www.consilium.europa.eu/en/meetings/european-council/2014/10/23-24/"
+          },
+          {
+            "quote": "EU leaders agree 2030 climate and energy goals",
+            "source_url": "https://climate.ec.europa.eu/news-other-reads/news/eu-leaders-agree-2030-climate-and-energy-goals-2014-10-24_en"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.7,
+        "category": 0.8,
+        "location": 0.7,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "EU 2030 climate and energy framework Oct 2014",
+        "fingerprint": "eu_2030_framework|brussels_be|2014-10-23_2014-10-24"
+      }
+    }
+  ]
+}

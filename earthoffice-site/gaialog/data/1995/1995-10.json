@@ -1,0 +1,1034 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_1995-10_normalize_2026-01-17T183032683Z",
+    "generated_utc": "2026-01-17T18:30:32.683Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "1995-10",
+    "window": {
+      "start_utc": "1995-10-01T00:00:00.000Z",
+      "end_utc": "1995-10-31T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "1995-10_pollution_contamination_antioch-ca_dow-chemical-leak",
+      "title": "Chemical release from Dow Chemical plant prompts shelter-in-place in Antioch, California",
+      "description": "A chemical release from Dow Chemical’s plant in Pittsburg, California led authorities to issue telephone alerts advising Antioch residents to remain indoors. The shelter-in-place advisory was lifted after officials declared the release over.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1995-10-20T00:00:00Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "1995-10-20T00:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Antioch, California, USA",
+        "jurisdiction_level": "city",
+        "admin1": "California",
+        "country": "US",
+        "capital_used": null,
+        "lat": 38.0049214,
+        "lon": -121.805789,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.8
+      },
+      "sources": [
+        {
+          "url": "https://www.sfgate.com/news/article/chemical-leak-clouds-antioch-2-treated-3021942.php",
+          "source_name": "SFGATE",
+          "published_at": "1995-10-20T00:00:00Z",
+          "headline": "Chemical Leak Clouds Antioch; 2 Treated",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Dow Chemical"
+        ],
+        "substances": [
+          "chlorine",
+          "carbon tetrachloride",
+          "hydrochloric acid"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "telephone alerts advising residents to remain indoors",
+            "source_url": "https://www.sfgate.com/news/article/chemical-leak-clouds-antioch-2-treated-3021942.php"
+          },
+          {
+            "quote": "the release was declared over",
+            "source_url": "https://www.sfgate.com/news/article/chemical-leak-clouds-antioch-2-treated-3021942.php"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.8,
+        "location": 0.8,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "paywalled_or_partial",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "dow-chemical-pittsburg-antioch-1995-10",
+        "fingerprint": "b26d86b477f2bc48"
+      }
+    },
+    {
+      "event_id": "1995-10_weather_climate_opal_landfall_pensacola_beach",
+      "title": "Hurricane Opal landfall near Pensacola Beach, Florida",
+      "description": "Hurricane Opal made U.S. landfall near Pensacola Beach, Florida on October 4, 1995. The storm produced destructive storm surge, damaging winds, and heavy rainfall across the Florida Panhandle and inland areas.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1995-10-04T12:00:00Z",
+        "event_end": "1995-10-04T12:00:00Z",
+        "reported_at": "1995-10-04T12:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1995-10-04T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Pensacola Beach, Florida, United States",
+        "jurisdiction_level": "city",
+        "admin1": "Florida",
+        "country": "US",
+        "capital_used": null,
+        "lat": 30.3333,
+        "lon": -87.1414,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://www.weather.gov/mob/opal",
+          "source_name": "NWS Mobile/Pensacola",
+          "published_at": "1995-10-04T12:00:00Z",
+          "headline": "Hurricane Opal",
+          "byline": null,
+          "accessed_utc": "2026-01-17T02:17:21.004Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://repository.library.noaa.gov/view/noaa/13820/noaa_13820_DS1.pdf",
+          "source_name": "NOAA Institutional Repository",
+          "published_at": "1995-10-04T12:00:00Z",
+          "headline": "NOAA report document (PDF) related to Hurricane Opal",
+          "byline": null,
+          "accessed_utc": "2026-01-17T02:17:21.004Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "National Weather Service (NWS)",
+          "NOAA"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Hurricane Opal made landfall near Pensacola Beach, Florida... October 4, 1995.",
+            "source_url": "https://www.weather.gov/mob/opal"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.85,
+        "location": 0.7,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "paywalled_or_partial",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Hurricane Opal (1995) landfall Florida Panhandle",
+        "fingerprint": "opal_landfall_pensacola_beach_1995-10-04"
+      }
+    },
+    {
+      "event_id": "1995-10_weather_climate_roxanne_mexico_impacts",
+      "title": "Hurricane Roxanne impacts Mexico, including the Yucatán Peninsula and Bay of Campeche",
+      "description": "Hurricane Roxanne affected Mexico in October 1995, including impacts on the Yucatán Peninsula and prolonged effects as the storm lingered in the Bay of Campeche. Reported impacts included heavy rainfall and flooding over parts of southern Mexico during October 9–21.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1995-10-09T12:00:00Z",
+        "event_end": "1995-10-21T12:00:00Z",
+        "reported_at": "1995-10-21T12:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": null,
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Mexico (storm impacts including Yucatán Peninsula and Bay of Campeche)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "MX",
+        "capital_used": "Mexico City",
+        "lat": 19.4326,
+        "lon": -99.1332,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.wpc.ncep.noaa.gov/tropical/rain/roxanne1995.html",
+          "source_name": "NOAA Weather Prediction Center (WPC)",
+          "published_at": "1995-10-21T12:00:00Z",
+          "headline": "Tropical Rainfall: Roxanne (1995)",
+          "byline": null,
+          "accessed_utc": "2026-01-17T02:17:21.004Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.nhc.noaa.gov/data/tcr/AL191995_Roxanne.pdf",
+          "source_name": "NOAA National Hurricane Center (NHC)",
+          "published_at": "1995-10-21T12:00:00Z",
+          "headline": "Tropical Cyclone Report: Hurricane Roxanne",
+          "byline": null,
+          "accessed_utc": "2026-01-17T02:17:21.004Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA",
+          "National Hurricane Center (NHC)",
+          "Weather Prediction Center (WPC)"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Tropical Cyclone Report: Hurricane Roxanne.",
+            "source_url": "https://www.nhc.noaa.gov/data/tcr/AL191995_Roxanne.pdf"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.85,
+        "location": 0.55,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Hurricane Roxanne (1995) Mexico impacts",
+        "fingerprint": "roxanne_mexico_1995-10-09_1995-10-21"
+      }
+    },
+    {
+      "event_id": "1995-10_weather_climate_southcentral_alaska_flooding_assessment",
+      "title": "Flooding in Southcentral Alaska documented into early October 1995",
+      "description": "A flood response assessment for Southcentral Alaska documented flooding impacts and conditions extending into early October 1995, following a prolonged heavy-rain event that began in mid-September. Locations referenced include areas such as Kenai, Matanuska-Susitna, Girdwood, and Knik.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1995-10-01T12:00:00Z",
+        "event_end": "1995-10-10T12:00:00Z",
+        "reported_at": "1996-01-01T00:00:00Z",
+        "time_confidence": 0.35,
+        "event_date_utc": null,
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Southcentral Alaska, United States",
+        "jurisdiction_level": "state",
+        "admin1": "Alaska",
+        "country": "US",
+        "capital_used": "Juneau",
+        "lat": 58.3019,
+        "lon": -134.4197,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.5
+      },
+      "sources": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CZIC-gb1399-2-s68-1996/html/CZIC-gb1399-2-s68-1996.htm",
+          "source_name": "GovInfo",
+          "published_at": "1996-01-01T00:00:00Z",
+          "headline": "Flood response assessment (Southcentral Alaska)",
+          "byline": null,
+          "accessed_utc": "2026-01-17T02:17:21.004Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "...impacts and conditions extending into early October 1995...",
+            "source_url": "https://www.govinfo.gov/content/pkg/CZIC-gb1399-2-s68-1996/html/CZIC-gb1399-2-s68-1996.htm"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.42,
+        "category": 0.7,
+        "location": 0.5,
+        "summary_grounding": 0.4
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Southcentral Alaska flooding early Oct 1995",
+        "fingerprint": "southcentral_alaska_flooding_1995-10"
+      }
+    },
+    {
+      "event_id": "1995-10_weather_climate_northeast_us_rain_ends_drought",
+      "title": "October 1995 rains ended drought conditions across parts of the Northeastern U.S.",
+      "description": "In October 1995, widespread rainfall across parts of the Northeastern United States increased streamflows and ended drought conditions in many areas. Reported drivers included rainfall from remnants of Hurricane Opal and additional heavy rain events later in the month.",
+      "category_primary": "weather_climate",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "1995-10-06T12:00:00Z",
+        "event_end": "1995-10-30T12:00:00Z",
+        "reported_at": "1995-10-01T00:00:00Z",
+        "time_confidence": 0.45,
+        "event_date_utc": null,
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Northeastern United States",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.4
+      },
+      "sources": [
+        {
+          "url": "https://water.usgs.gov/nwc/back_issues/oct95_cov.html",
+          "source_name": "USGS (National Water Conditions)",
+          "published_at": "1995-10-01T00:00:00Z",
+          "headline": "National Water Conditions (October 1995 coverage)",
+          "byline": null,
+          "accessed_utc": "2026-01-17T02:17:21.004Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "USGS"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "...widespread rainfall... ended drought conditions and raised streamflows...",
+            "source_url": "https://water.usgs.gov/nwc/back_issues/oct95_cov.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.48,
+        "category": 0.75,
+        "location": 0.4,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Northeast US Oct 1995 rainfall drought relief",
+        "fingerprint": "northeast_us_rain_drought_relief_1995-10"
+      }
+    },
+    {
+      "event_id": "geo-1995-10-01-dinar-turkey",
+      "title": "Dinar earthquake (Mw ~6.2) strikes Afyonkarahisar Province, Turkey",
+      "description": "A damaging earthquake struck near Dinar in southwest Turkey on October 1, 1995, causing fatalities and widespread building damage. The event is commonly referred to as the Dinar earthquake and is documented in earthquake reporting and hazard research sources.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1995-10-01T15:57:12Z",
+        "event_end": "1995-10-01T15:57:12Z",
+        "reported_at": "1995-10-01T15:57:12Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "1995-10-01T15:57:12Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Dinar District, Afyonkarahisar Province, Turkey",
+        "jurisdiction_level": "city",
+        "admin1": "Afyonkarahisar",
+        "country": "TR",
+        "capital_used": null,
+        "lat": 38.0647,
+        "lon": 30.1656,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://pubs.usgs.gov/publications/earthquake-data-report-october-1995",
+          "source_name": "USGS Publications",
+          "published_at": "1995-10-01T00:00:00Z",
+          "headline": "Earthquake Data Report October 1995",
+          "byline": null,
+          "accessed_utc": "2026-01-17T02:17:45.988Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://avesis.istanbul.edu.tr/yayin/32d5203c-c29e-45f9-843e-bae1f1a13b73/the-dinar-earthquake-m-w-6-2-october-1-1995-afyon-turkey-and-earthquake-hazard-of-the-dinar-civril-fault",
+          "source_name": "AVESIS (Istanbul University)",
+          "published_at": "1995-10-01T00:00:00Z",
+          "headline": "The Dinar Earthquake (M w 6.2) October 1, 1995, Afyon, Turkey and Earthquake Hazard of the Dinar-Çivril Fault",
+          "byline": null,
+          "accessed_utc": "2026-01-17T02:17:45.988Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "USGS"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Earthquake Data Report October 1995",
+            "source_url": "https://pubs.usgs.gov/publications/earthquake-data-report-october-1995"
+          },
+          {
+            "quote": "The Dinar Earthquake (M w 6.2) October 1, 1995",
+            "source_url": "https://avesis.istanbul.edu.tr/yayin/32d5203c-c29e-45f9-843e-bae1f1a13b73/the-dinar-earthquake-m-w-6-2-october-1-1995-afyon-turkey-and-earthquake-hazard-of-the-dinar-civril-fault"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.8,
+        "location": 0.5,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "1995-10-01 Dinar earthquake TR",
+        "fingerprint": "geo|dinar-earthquake|TR|1995-10-01"
+      }
+    },
+    {
+      "event_id": "geo-1995-10-05-bezymianny-kamchatka",
+      "title": "Bezymianny Volcano explosive eruption (Kamchatka Peninsula, Russia)",
+      "description": "An explosive eruption of Bezymianny Volcano in Kamchatka was reported for October 1995, producing an ash plume and ashfall in surrounding areas. Documentation of Kamchatka eruptions includes Bezymianny activity during this period.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1995-10-05T17:00:00Z",
+        "event_end": "1995-10-05T17:00:00Z",
+        "reported_at": "1995-10-05T17:00:00Z",
+        "time_confidence": 0.4,
+        "event_date_utc": "1995-10-05T17:00:00Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Bezymianny Volcano, Kamchatka Peninsula, Russia",
+        "jurisdiction_level": "site",
+        "admin1": null,
+        "country": "RU",
+        "capital_used": null,
+        "lat": 55.978,
+        "lon": 160.587,
+        "precision": "exact",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.65
+      },
+      "sources": [
+        {
+          "url": "https://pubs.usgs.gov/of/1996/0738/kamchatka.html",
+          "source_name": "USGS Publications",
+          "published_at": "1996-01-01T00:00:00Z",
+          "headline": "Kamchatka (Open-File Report 96-738)",
+          "byline": null,
+          "accessed_utc": "2026-01-17T02:17:45.988Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.geo.mtu.edu/volcanoes/kamchatka/bezymianny/updates/bezy_001.html",
+          "source_name": "Michigan Technological University (Geo.MTU)",
+          "published_at": "1995-10-01T00:00:00Z",
+          "headline": "Bezymianny updates (archived page)",
+          "byline": null,
+          "accessed_utc": "2026-01-17T02:17:45.988Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "USGS",
+          "Michigan Technological University"
+        ],
+        "substances": [
+          "volcanic ash"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Kamchatka",
+            "source_url": "https://pubs.usgs.gov/of/1996/0738/kamchatka.html"
+          },
+          {
+            "quote": "Bezymianny",
+            "source_url": "https://www.geo.mtu.edu/volcanoes/kamchatka/bezymianny/updates/bezy_001.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.5,
+        "category": 0.85,
+        "location": 0.7,
+        "summary_grounding": 0.4
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "1995-10 Bezymianny eruption",
+        "fingerprint": "geo|bezymianny-eruption|RU|1995-10-05"
+      }
+    },
+    {
+      "event_id": "geo-1995-10-06-kerinci-sungai-penuh",
+      "title": "Kerinci (Sungai Penuh area) earthquake impacts Sumatra, Indonesia",
+      "description": "An earthquake was reported near the Sungai Penuh/Kerinci area of Sumatra, Indonesia on October 6, 1995. The draft claims severe damage and landslides, but only a general earthquake-report URL is provided in the source list.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1995-10-06T18:09:45Z",
+        "event_end": "1995-10-06T18:09:45Z",
+        "reported_at": "1995-10-06T18:09:45Z",
+        "time_confidence": 0.35,
+        "event_date_utc": "1995-10-06T18:09:45Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Near Sungai Penuh, Jambi Province, Sumatra, Indonesia",
+        "jurisdiction_level": "city",
+        "admin1": "Jambi",
+        "country": "ID",
+        "capital_used": null,
+        "lat": -2.0667,
+        "lon": 101.3833,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.4
+      },
+      "sources": [
+        {
+          "url": "https://www.usgs.gov/publications/earthquake-data-report-october-1995",
+          "source_name": "USGS Publications",
+          "published_at": "1995-10-01T00:00:00Z",
+          "headline": "Earthquake Data Report October 1995",
+          "byline": null,
+          "accessed_utc": "2026-01-17T02:17:45.988Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "USGS"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Earthquake Data Report October 1995",
+            "source_url": "https://www.usgs.gov/publications/earthquake-data-report-october-1995"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.35,
+        "category": 0.75,
+        "location": 0.35,
+        "summary_grounding": 0.25
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "secondary_sources_only",
+        "low_confidence_location",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "1995-10-06 Sungai Penuh area earthquake ID",
+        "fingerprint": "geo|sungai-penuh-earthquake|ID|1995-10-06"
+      }
+    },
+    {
+      "event_id": "geo-1995-10-09-colima-jalisco-offshore",
+      "title": "Colima–Jalisco (Jalisco subduction) earthquake (Mw ~8.0) offshore western Mexico",
+      "description": "A major subduction-zone earthquake occurred offshore western Mexico on October 9, 1995 (often referred to as the Colima–Jalisco earthquake). USGS publications discuss the event’s geodetic signature and fault slip distribution.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1995-10-09T15:35:56Z",
+        "event_end": "1995-10-09T15:35:56Z",
+        "reported_at": "1995-10-09T15:35:56Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "1995-10-09T15:35:56Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Off the coast of Jalisco/Colima, Mexico",
+        "jurisdiction_level": "state",
+        "admin1": "Jalisco",
+        "country": "MX",
+        "capital_used": "Guadalajara",
+        "lat": 20.6597,
+        "lon": -103.3496,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.usgs.gov/publications/geodetic-signature-m80-oct-9-1995-jalisco-subduction-earthquake",
+          "source_name": "USGS",
+          "published_at": "1995-10-01T00:00:00Z",
+          "headline": "Geodetic signature of the M8.0 Oct 9, 1995 Jalisco subduction earthquake",
+          "byline": null,
+          "accessed_utc": "2026-01-17T02:17:45.988Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.usgs.gov/publications/fault-slip-distribution-1995-colima-jalisco-mexico-earthquake",
+          "source_name": "USGS",
+          "published_at": "1995-10-01T00:00:00Z",
+          "headline": "Fault slip distribution for the 1995 Colima-Jalisco Mexico earthquake",
+          "byline": null,
+          "accessed_utc": "2026-01-17T02:17:45.988Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "USGS"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "M8.0 Oct 9, 1995 Jalisco subduction earthquake",
+            "source_url": "https://www.usgs.gov/publications/geodetic-signature-m80-oct-9-1995-jalisco-subduction-earthquake"
+          },
+          {
+            "quote": "1995 Colima-Jalisco Mexico earthquake",
+            "source_url": "https://www.usgs.gov/publications/fault-slip-distribution-1995-colima-jalisco-mexico-earthquake"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.85,
+        "location": 0.55,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "1995-10-09 Colima-Jalisco earthquake MX",
+        "fingerprint": "geo|colima-jalisco-earthquake|MX-JAL|1995-10-09"
+      }
+    },
+    {
+      "event_id": "geo-1995-10-23-wuding-yunnan",
+      "title": "Wuding earthquake (Yunnan, China)",
+      "description": "An earthquake struck Wuding County in Yunnan, China on October 23, 1995. The draft describes casualties and extensive building damage, but only a general earthquake-report URL is provided among sources.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1995-10-23T22:46:53Z",
+        "event_end": "1995-10-23T22:46:53Z",
+        "reported_at": "1995-10-23T22:46:53Z",
+        "time_confidence": 0.35,
+        "event_date_utc": "1995-10-23T22:46:53Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Wuding County, Yunnan, China",
+        "jurisdiction_level": "city",
+        "admin1": "Yunnan",
+        "country": "CN",
+        "capital_used": null,
+        "lat": 25.53,
+        "lon": 102.405,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.35
+      },
+      "sources": [
+        {
+          "url": "https://www.usgs.gov/publications/earthquake-data-report-october-1995",
+          "source_name": "USGS Publications",
+          "published_at": "1995-10-01T00:00:00Z",
+          "headline": "Earthquake Data Report October 1995",
+          "byline": null,
+          "accessed_utc": "2026-01-17T02:17:45.988Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "USGS"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Earthquake Data Report October 1995",
+            "source_url": "https://www.usgs.gov/publications/earthquake-data-report-october-1995"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.33,
+        "category": 0.75,
+        "location": 0.35,
+        "summary_grounding": 0.25
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "secondary_sources_only",
+        "low_confidence_location",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "1995-10-23 Wuding earthquake CN",
+        "fingerprint": "geo|wuding-earthquake|CN|1995-10-23"
+      }
+    },
+    {
+      "event_id": "1995-10_us-ca-point-reyes_vision-fire",
+      "title": "Vision Fire burns Point Reyes National Seashore near Inverness, California",
+      "description": "A wildfire ignited by an illegal campfire near Mount Vision in Point Reyes National Seashore and spread rapidly under dry, windy conditions. The fire burned about 12,354 acres and damaged/destroyed structures in the Inverness area before being declared fully controlled in mid-October 1995.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1995-10-03T12:00:00Z",
+        "event_end": "1995-10-16T12:00:00Z",
+        "reported_at": "1995-10-14T00:00:00Z",
+        "time_confidence": 0.8,
+        "event_date_utc": "1995-10-03T12:00:00Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Point Reyes National Seashore / Inverness area (California, USA)",
+        "jurisdiction_level": "site",
+        "admin1": "California",
+        "country": "US",
+        "capital_used": null,
+        "lat": 38.07,
+        "lon": -122.8,
+        "precision": "exact",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.65
+      },
+      "sources": [
+        {
+          "url": "https://www.nps.gov/pore/learn/nature/wildlandfire_visionfire_whathappened_19951014.htm",
+          "source_name": "National Park Service (Point Reyes National Seashore)",
+          "published_at": "1995-10-14T00:00:00Z",
+          "headline": "Wildland Fire: Vision Fire (What happened)",
+          "byline": null,
+          "accessed_utc": "2026-01-17T02:18:06.220Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.nps.gov/pore/learn/nature/wildlandfire_visionfire_update_19951014.htm",
+          "source_name": "National Park Service (Point Reyes National Seashore)",
+          "published_at": "1995-10-14T00:00:00Z",
+          "headline": "Wildland Fire: Vision Fire Update",
+          "byline": null,
+          "accessed_utc": "2026-01-17T02:18:06.220Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.nps.gov/pore/learn/nature/wildlandfire_visionfire_burningissues.htm",
+          "source_name": "National Park Service (Point Reyes National Seashore)",
+          "published_at": "1995-10-14T00:00:00Z",
+          "headline": "Wildland Fire: Burning Issues",
+          "byline": null,
+          "accessed_utc": "2026-01-17T02:18:06.220Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "National Park Service"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "The Vision Fire started from an illegal campfire near Mount Vision.",
+            "source_url": "https://www.nps.gov/pore/learn/nature/wildlandfire_visionfire_whathappened_19951014.htm"
+          },
+          {
+            "quote": "The Vision Fire burned 12,354 acres.",
+            "source_url": "https://www.nps.gov/pore/learn/nature/wildlandfire_visionfire_whathappened_19951014.htm"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.7,
+        "category": 0.9,
+        "location": 0.65,
+        "summary_grounding": 0.75
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "Vision Fire Point Reyes 1995",
+        "fingerprint": "vision-fire_point-reyes_1995-10-03_1995-10"
+      }
+    },
+    {
+      "event_id": "1995-10-06_us_epa_mswlf_dry_remote_compliance_delay",
+      "title": "US EPA final rule delays compliance date for certain small MSW landfills in dry/remote areas",
+      "description": "The US Environmental Protection Agency published a final rule delaying the general compliance date for qualifying small municipal solid waste landfill facilities located in dry or remote areas. The rule extends the general compliance date from October 9, 1995 to October 9, 1997, as described in the Federal Register notice.",
+      "category_primary": "policy_regulation",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "1995-10-06T12:00:00Z",
+        "event_end": "1995-10-06T12:00:00Z",
+        "reported_at": "1995-10-06T00:00:00Z",
+        "time_confidence": 0.75,
+        "event_date_utc": "1995-10-06T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States (federal)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.8
+      },
+      "sources": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/FR-1995-10-06/html/95-24871.htm",
+          "source_name": "Federal Register (via GovInfo)",
+          "published_at": "1995-10-06T00:00:00Z",
+          "headline": "95-24871",
+          "byline": null,
+          "accessed_utc": "2026-01-17T02:18:50.786Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Environmental Protection Agency (EPA)"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "delaying the general compliance date... from October 9, 1995 to October 9, 1997",
+            "source_url": "https://www.govinfo.gov/content/pkg/FR-1995-10-06/html/95-24871.htm"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.72,
+        "category": 0.8,
+        "location": 0.8,
+        "summary_grounding": 0.65
+      },
+      "quality_flags": [
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "EPA MSWLF dry/remote compliance date delay (1995-10)",
+        "fingerprint": "f5b7c35b9f3e5d0d5d4e3c0a74d3e1e2"
+      }
+    },
+    {
+      "event_id": "1995-10-17_us_epa_nm_rcra_program_revision_authorization",
+      "title": "US EPA immediate final rule grants New Mexico final authorization for RCRA program revisions",
+      "description": "The US Environmental Protection Agency published an immediate final rule approving New Mexico’s application for final authorization of revisions to its hazardous waste management program under RCRA, subject to receipt of adverse comments. The notice states the authorization would be effective January 2, 1996 unless the EPA withdraws the rule through a subsequent Federal Register action.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "1995-10-17T12:00:00Z",
+        "event_end": "1995-10-17T12:00:00Z",
+        "reported_at": "1995-10-17T00:00:00Z",
+        "time_confidence": 0.75,
+        "event_date_utc": "1995-10-17T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "New Mexico, United States (EPA Region 6)",
+        "jurisdiction_level": "state",
+        "admin1": "New Mexico",
+        "country": "US",
+        "capital_used": "Santa Fe",
+        "lat": 35.687,
+        "lon": -105.9378,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.75
+      },
+      "sources": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/FR-1995-10-17/html/95-25652.htm",
+          "source_name": "Federal Register (via GovInfo)",
+          "published_at": "1995-10-17T00:00:00Z",
+          "headline": "95-25652",
+          "byline": null,
+          "accessed_utc": "2026-01-17T02:18:50.786Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Environmental Protection Agency (EPA)",
+          "New Mexico (state government)"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "immediate final rule... final authorization of revisions... hazardous waste program",
+            "source_url": "https://www.govinfo.gov/content/pkg/FR-1995-10-17/html/95-25652.htm"
+          },
+          {
+            "quote": "effective January 2, 1996 unless ... adverse comment",
+            "source_url": "https://www.govinfo.gov/content/pkg/FR-1995-10-17/html/95-25652.htm"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.72,
+        "category": 0.8,
+        "location": 0.75,
+        "summary_grounding": 0.65
+      },
+      "quality_flags": [
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "EPA New Mexico RCRA program revision authorization (1995-10)",
+        "fingerprint": "1f0d16c860edc9953b2de9a214c6b9c1"
+      }
+    }
+  ]
+}

@@ -1,0 +1,928 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_2019-01_normalize_2026-01-16T064119180Z",
+    "generated_utc": "2026-01-16T06:41:19.180Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "2019-01",
+    "window": {
+      "start_utc": "2019-01-01T00:00:00.000Z",
+      "end_utc": "2019-01-31T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "evt_20190125_brumadinho_tailings_dam_collapse_paraopeba",
+      "title": "Brumadinho tailings dam collapse contaminates the Paraopeba River",
+      "description": "A tailings dam at Vale’s Córrego do Feijão iron ore mine collapsed in Brumadinho, Minas Gerais, releasing mine tailings that flowed into the Paraopeba River basin. Reports and subsequent studies describe severe degradation of river water quality following the release.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2019-01-25T15:28:00.000Z",
+        "event_end": "2019-01-25T23:59:59.000Z",
+        "reported_at": "2019-01-28T00:00:00Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2019-01-25T15:28:00.000Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Brumadinho, Minas Gerais, Brazil",
+        "jurisdiction_level": "city",
+        "admin1": "Minas Gerais",
+        "country": "BR",
+        "capital_used": null,
+        "lat": -20.1417,
+        "lon": -44.2006,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://earthobservatory.nasa.gov/images/144501/another-deadly-dam-collapse-in-brazil",
+          "source_name": "NASA Earth Observatory",
+          "published_at": "2019-01-28T00:00:00Z",
+          "headline": "Another Deadly Dam Collapse in Brazil",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://pubmed.ncbi.nlm.nih.gov/31838417/",
+          "source_name": "PubMed",
+          "published_at": "2019-12-10T00:00:00Z",
+          "headline": "PubMed record 31838417",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://pubmed.ncbi.nlm.nih.gov/33321338/",
+          "source_name": "PubMed",
+          "published_at": "2020-12-14T00:00:00Z",
+          "headline": "PubMed record 33321338",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Vale"
+        ],
+        "substances": [
+          "mine tailings"
+        ],
+        "ecosystems": [
+          "Paraopeba River"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "A dam holding back iron mine waste collapsed near Brumadinho, Brazil, on January 25, 2019.",
+            "source_url": "https://earthobservatory.nasa.gov/images/144501/another-deadly-dam-collapse-in-brazil"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.7,
+        "category": 0.85,
+        "location": 0.7,
+        "summary_grounding": 0.7
+      },
+      "quality_flags": [
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "brumadinho_2019_dam_collapse_paraopeba",
+        "fingerprint": "brumadinho_tailings_dam_collapse_brumadinho_br_2019-01-25"
+      }
+    },
+    {
+      "event_id": "201901_weather_climate_polar_vortex_midwest_us",
+      "title": "Late-January 2019 polar vortex brings extreme cold to the U.S. Midwest",
+      "description": "In late January 2019, an Arctic outbreak linked to the polar vortex brought dangerously cold temperatures and extreme wind chills across parts of the U.S. Midwest, with widespread impacts in the Chicago area. Reports highlighted record or near-record lows in parts of Illinois during the coldest period.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2019-01-29T00:00:00.000Z",
+        "event_end": "2019-01-31T23:59:59.000Z",
+        "reported_at": "2019-01-29T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2019-01-30T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Chicago, Illinois, United States (Midwest region impacts)",
+        "jurisdiction_level": "city",
+        "admin1": "Illinois",
+        "country": "US",
+        "capital_used": null,
+        "lat": 41.8781,
+        "lon": -87.6298,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://weather.com/news/news/2019-01-29-polar-vortex-midwest-photos",
+          "source_name": "The Weather Channel",
+          "published_at": "2019-01-29T00:00:00.000Z",
+          "headline": "2019-01-29-polar-vortex-midwest-photos",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://weather.com/safety/winter/news/2019-03-07-illinois-all-time-record-low-set-mt-carroll-31jan2019",
+          "source_name": "The Weather Channel",
+          "published_at": "2019-03-07T00:00:00.000Z",
+          "headline": "2019-03-07-illinois-all-time-record-low-set-mt-carroll-31jan2019",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "The Weather Channel"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Polar vortex outbreak brought dangerous cold and wind chills across the Midwest.",
+            "source_url": "https://weather.com/news/news/2019-01-29-polar-vortex-midwest-photos"
+          },
+          {
+            "quote": "Illinois all-time record low set at Mt. Carroll on Jan. 31, 2019.",
+            "source_url": "https://weather.com/safety/winter/news/2019-03-07-illinois-all-time-record-low-set-mt-carroll-31jan2019"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.75,
+        "location": 0.55,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "2019-01 US Midwest polar vortex cold wave",
+        "fingerprint": "fp_2019-01_polar-vortex_chicago_2019-01-29_2019-01-31"
+      }
+    },
+    {
+      "event_id": "201901_weather_climate_baltic_storm_surge",
+      "title": "Early January 2019 storm tides cause coastal flooding around the Baltic Sea region",
+      "description": "In early January 2019, stormy conditions in northern Europe produced high water levels and coastal flooding risks around parts of the Baltic Sea and nearby waterways. Coverage noted impacts extending inland along rivers in northern Germany during successive winter storm periods.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2019-01-02T00:00:00.000Z",
+        "event_end": "2019-01-09T23:59:59.000Z",
+        "reported_at": "2019-01-07T00:00:00.000Z",
+        "time_confidence": 0.4,
+        "event_date_utc": "2019-01-07T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Hamburg, Germany (reported impacts in northern Europe/Baltic region)",
+        "jurisdiction_level": "city",
+        "admin1": "Hamburg",
+        "country": "DE",
+        "capital_used": null,
+        "lat": 53.5511,
+        "lon": 9.9937,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.35
+      },
+      "sources": [
+        {
+          "url": "https://weather.com/news/news/2019-01-07-europe-heavy-snow-cold-pattern-alps-italy-greece",
+          "source_name": "The Weather Channel",
+          "published_at": "2019-01-07T00:00:00.000Z",
+          "headline": "2019-01-07-europe-heavy-snow-cold-pattern-alps-italy-greece",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "The Weather Channel"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "Baltic Sea"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Stormy pattern affected northern Europe with impacts including high water/coastal effects.",
+            "source_url": "https://weather.com/news/news/2019-01-07-europe-heavy-snow-cold-pattern-alps-italy-greece"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.35,
+        "category": 0.6,
+        "location": 0.35,
+        "summary_grounding": 0.35
+      },
+      "quality_flags": [
+        "low_confidence_location",
+        "date_ambiguous",
+        "secondary_sources_only",
+        "low_confidence_category",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "2019-01 Baltic/North Sea storm surge and high water levels",
+        "fingerprint": "fp_2019-01_baltic_storm-tide_hamburg_2019-01-02_2019-01-09"
+      }
+    },
+    {
+      "event_id": "201901_weather_climate_tasmania_warm_dry_record",
+      "title": "Tasmania records warmest and driest January on record",
+      "description": "Tasmania experienced exceptional heat during January 2019 alongside very low rainfall, according to Australia’s Bureau of Meteorology monthly climate reporting. The combination of warmth and dryness contributed to heightened fire weather conditions during the month.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2019-01-01T00:00:00.000Z",
+        "event_end": "2019-01-31T23:59:59.000Z",
+        "reported_at": "2019-02-01T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": null,
+        "event_date_precision": "month"
+      },
+      "location": {
+        "name": "Tasmania, Australia",
+        "jurisdiction_level": "state",
+        "admin1": "Tasmania",
+        "country": "AU",
+        "capital_used": "Hobart",
+        "lat": -42.8821,
+        "lon": 147.3272,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.75
+      },
+      "sources": [
+        {
+          "url": "https://www.bom.gov.au/climate/current/month/tas/archive/201901.summary.shtml",
+          "source_name": "Australian Bureau of Meteorology",
+          "published_at": "2019-02-01T00:00:00.000Z",
+          "headline": "Tasmania in January 2019: Monthly climate summary",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Australian Bureau of Meteorology"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Tasmania experienced record warmth and very low January rainfall in 2019.",
+            "source_url": "https://www.bom.gov.au/climate/current/month/tas/archive/201901.summary.shtml"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.75,
+        "category": 0.8,
+        "location": 0.8,
+        "summary_grounding": 0.75
+      },
+      "quality_flags": [
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "2019-01 Tasmania record heat and low rainfall",
+        "fingerprint": "fp_2019-01_tasmania_record_warm_dry_hobart_2019-01"
+      }
+    },
+    {
+      "event_id": "evt-20190120-coquimbo-earthquake",
+      "title": "M6.7 earthquake off Coquimbo, Chile with dozens of aftershocks reported",
+      "description": "A magnitude 6.7 earthquake struck offshore near Coquimbo, Chile, and authorities reported more than 60 aftershocks afterward. Reports described strong shaking in the area.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2019-01-20T01:32:52.000Z",
+        "event_end": null,
+        "reported_at": "2019-01-21T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2019-01-20T01:32:52.000Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Coquimbo, Chile (offshore)",
+        "jurisdiction_level": "city",
+        "admin1": null,
+        "country": "CL",
+        "capital_used": null,
+        "lat": -29.9533,
+        "lon": -71.3436,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://france24.com/en/20190121-chile-more-60-aftershocks-after-67-magnitude-earthquake",
+          "source_name": "France 24",
+          "published_at": "2019-01-21T00:00:00Z",
+          "headline": "Chile: more than 60 aftershocks after 6.7-magnitude earthquake",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "more than 60 aftershocks after the 6.7-magnitude earthquake",
+            "source_url": "https://france24.com/en/20190121-chile-more-60-aftershocks-after-67-magnitude-earthquake"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.8,
+        "location": 0.55,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "coquimbo_chile_eq_2019-01-20",
+        "fingerprint": "coquimbo_chile_eq_2019-01-20"
+      }
+    },
+    {
+      "event_id": "evt-20190127-abancay-landslide",
+      "title": "Heavy rains trigger deadly landslide in Abancay, Peru",
+      "description": "Heavy rainfall triggered a landslide in Abancay, Peru, which hit a hotel area during a gathering and caused fatalities. The incident was reported as a rain-related slope failure.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2019-01-27T00:00:00.000Z",
+        "event_end": null,
+        "reported_at": "2019-01-28T00:00:00Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "2019-01-27T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Abancay, Peru",
+        "jurisdiction_level": "city",
+        "admin1": null,
+        "country": "PE",
+        "capital_used": null,
+        "lat": -13.6333,
+        "lon": -72.8833,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://www.bbc.com/news/world-latin-america-47030089",
+          "source_name": "BBC News",
+          "published_at": "2019-01-28T00:00:00Z",
+          "headline": "Peru landslide: Hotel hit at Abancay party kills at least 15",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "A landslide triggered by heavy rain hit a hotel in Abancay",
+            "source_url": "https://www.bbc.com/news/world-latin-america-47030089"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.7,
+        "category": 0.85,
+        "location": 0.7,
+        "summary_grounding": 0.75
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "abancay_peru_landslide_2019-01-27",
+        "fingerprint": "abancay_peru_landslide_2019-01-27"
+      }
+    },
+    {
+      "event_id": "evt_201901_tas_fires_01",
+      "title": "Tasmanian bushfires intensify after mid-January lightning, with major fires ongoing late January",
+      "description": "Lightning on 15 January 2019 sparked multiple bushfires in Tasmania that grew and continued burning through late January. Reports described large fires (including named incidents) producing smoke impacts and threatening wilderness areas.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2019-01-15T00:00:00.000Z",
+        "event_end": "2019-01-31T23:59:59.000Z",
+        "reported_at": "2019-01-31T23:59:59.000Z",
+        "time_confidence": 0.55,
+        "event_date_utc": null,
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Tasmania, Australia",
+        "jurisdiction_level": "state",
+        "admin1": "Tasmania",
+        "country": "AU",
+        "capital_used": "Hobart",
+        "lat": -42.8821,
+        "lon": 147.3272,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.bom.gov.au/climate/current/month/tas/archive/201901.summary.shtml",
+          "source_name": "Australian Bureau of Meteorology",
+          "published_at": "2019-01-31T23:59:59.000Z",
+          "headline": "Tasmania in January 2019: Summary",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://knowledge.aidr.org.au/resources/2018-19-bushfire-tas-tasmanian-bushfires/",
+          "source_name": "Australian Institute for Disaster Resilience (AIDR) Knowledge Hub",
+          "published_at": "2019-01-31T23:59:59.000Z",
+          "headline": "2018–19 Bushfire (TAS): Tasmanian bushfires",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.nesdis.noaa.gov/news/bushfires-rage-across-tasmania",
+          "source_name": "NOAA NESDIS",
+          "published_at": "2019-01-31T23:59:59.000Z",
+          "headline": "Bushfires rage across Tasmania",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Australian Bureau of Meteorology",
+          "NOAA NESDIS",
+          "Australian Institute for Disaster Resilience"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "wilderness areas",
+          "World Heritage area"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.52,
+        "category": 0.7,
+        "location": 0.65,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "tasmania_bushfires_jan_2019",
+        "fingerprint": "fp_tasmania_bushfires_2019-01"
+      }
+    },
+    {
+      "event_id": "evt_201901_hobart_smoke_01",
+      "title": "Tasmanian bushfire smoke plume turns the sky red over Hobart",
+      "description": "On 4 January 2019, smoke from a Tasmanian bushfire affected Hobart and nearby areas, with reports describing dramatic sky discoloration. The reporting also noted warnings and evacuations around nearby towns.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2019-01-04T00:00:00.000Z",
+        "event_end": "2019-01-04T23:59:59.000Z",
+        "reported_at": "2019-01-04T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2019-01-04T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Hobart, Tasmania, Australia",
+        "jurisdiction_level": "city",
+        "admin1": "Tasmania",
+        "country": "AU",
+        "capital_used": null,
+        "lat": -42.8821,
+        "lon": 147.3272,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.8
+      },
+      "sources": [
+        {
+          "url": "https://www.theguardian.com/australia-news/2019/jan/04/smoke-plume-from-tasmania-bushfire-turns-sky-red-over-hobart",
+          "source_name": "The Guardian",
+          "published_at": "2019-01-04T00:00:00.000Z",
+          "headline": "Smoke plume from Tasmania bushfire turns sky red over Hobart",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "The Guardian"
+        ],
+        "substances": [
+          "smoke"
+        ],
+        "ecosystems": [
+          "World Heritage area"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.75,
+        "location": 0.85,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "tasmania_bushfires_jan_2019",
+        "fingerprint": "fp_hobart_smoke_2019-01-04"
+      }
+    },
+    {
+      "event_id": "2019-01-23_mass-fish-kill_lake-inverell-macintyre_nsw_au",
+      "title": "Mass fish kill reported at Lake Inverell and the Macintyre River (NSW, Australia)",
+      "description": "A mass fish kill was reported at Lake Inverell in northern New South Wales, with dead fish also reported in the nearby Macintyre River. The incident prompted monitoring and investigation into contributing environmental conditions.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2019-01-23T00:00:00.000Z",
+        "event_end": "2019-01-23T23:59:59.000Z",
+        "reported_at": "2019-01-23T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2019-01-23T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Lake Inverell and Macintyre River, northern New South Wales, Australia",
+        "jurisdiction_level": "site",
+        "admin1": "New South Wales",
+        "country": "AU",
+        "capital_used": null,
+        "lat": -29.778,
+        "lon": 151.112,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.4
+      },
+      "sources": [
+        {
+          "url": "https://www.theguardian.com/australia-news/2019/jan/23/mass-fish-kill-strikes-at-lake-inverell-in-northern-nsw",
+          "source_name": "The Guardian",
+          "published_at": "2019-01-23T00:00:00.000Z",
+          "headline": "Mass fish kill strikes at Lake Inverell in northern NSW",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [
+          "freshwater river",
+          "lake"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Mass fish kill strikes at Lake Inverell in northern NSW",
+            "source_url": "https://www.theguardian.com/australia-news/2019/jan/23/mass-fish-kill-strikes-at-lake-inverell-in-northern-nsw"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.52,
+        "category": 0.7,
+        "location": 0.35,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "lake-inverell-mass-fish-kill-2019-01-23",
+        "fingerprint": "lake-inverell-macintyre-river|2019-01-23|mass-fish-kill"
+      }
+    },
+    {
+      "event_id": "2019-01-29_heatwave_flying-fox_mitchell-river_vic_au",
+      "title": "Extreme heat kills over 2,000 grey‑headed flying foxes in eastern Victoria (Australia)",
+      "description": "During an extreme heat event in late January 2019, more than 2,000 grey-headed flying foxes died in eastern Victoria. Reports highlighted severe heat stress affecting colonies around towns including Bairnsdale and Maffra.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2019-01-29T00:00:00.000Z",
+        "event_end": "2019-01-29T23:59:59.000Z",
+        "reported_at": "2019-01-29T00:00:00.000Z",
+        "time_confidence": 0.65,
+        "event_date_utc": "2019-01-29T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Eastern Victoria, Australia (Bairnsdale and Maffra area)",
+        "jurisdiction_level": "state",
+        "admin1": "Victoria",
+        "country": "AU",
+        "capital_used": "Melbourne",
+        "lat": -37.8136,
+        "lon": 144.9631,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.theguardian.com/weather/2019/jan/29/more-than-2000-flying-foxes-die-in-victorias-extreme-heatwave",
+          "source_name": "The Guardian",
+          "published_at": "2019-01-29T00:00:00.000Z",
+          "headline": "More than 2,000 flying foxes die in Victoria’s extreme heatwave",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [
+          "bat colony habitat"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "More than 2,000 flying foxes die in Victoria’s extreme heatwave",
+            "source_url": "https://www.theguardian.com/weather/2019/jan/29/more-than-2000-flying-foxes-die-in-victorias-extreme-heatwave"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.8,
+        "location": 0.6,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "victoria-flying-fox-heatwave-2019-01-29",
+        "fingerprint": "victoria-au|2019-01-29|flying-fox-heatwave"
+      }
+    },
+    {
+      "event_id": "2019-01-25_paraopeba_ecological-impacts_brumadinho_mg_br",
+      "title": "Ecological impacts reported in the Paraopeba River after Brumadinho tailings dam collapse (Brazil)",
+      "description": "After the Brumadinho tailings dam collapse on 25 January 2019, reports described severe ecological impacts affecting the Paraopeba River as mining waste moved downstream. Coverage noted risks to aquatic life and river habitats during a sensitive period for fish reproduction.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2019-01-25T15:28:00.000Z",
+        "event_end": "2019-01-31T23:59:59.000Z",
+        "reported_at": "2019-01-29T00:00:00.000Z",
+        "time_confidence": 0.75,
+        "event_date_utc": "2019-01-25T15:28:00.000Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Paraopeba River, Minas Gerais, Brazil",
+        "jurisdiction_level": "state",
+        "admin1": "Minas Gerais",
+        "country": "BR",
+        "capital_used": "Belo Horizonte",
+        "lat": -19.9167,
+        "lon": -43.9345,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.theguardian.com/world/2019/jan/29/the-river-is-dying-the-vast-ecological-cost-of-brazils-mining-disasters",
+          "source_name": "The Guardian",
+          "published_at": "2019-01-29T00:00:00.000Z",
+          "headline": "‘The river is dying’: the vast ecological cost of Brazil’s mining disasters",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://pubmed.ncbi.nlm.nih.gov/31838417/",
+          "source_name": "PubMed",
+          "published_at": "2019-12-01T00:00:00.000Z",
+          "headline": "PubMed record: 31838417",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Vale"
+        ],
+        "substances": [
+          "tailings"
+        ],
+        "ecosystems": [
+          "river"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "‘The river is dying’: the vast ecological cost of Brazil’s mining disasters",
+            "source_url": "https://www.theguardian.com/world/2019/jan/29/the-river-is-dying-the-vast-ecological-cost-of-brazils-mining-disasters"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.75,
+        "location": 0.6,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "brumadinho-paraopeba-ecological-impacts-2019-01",
+        "fingerprint": "minas-gerais-br|2019-01-25|paraopeba-ecological-impacts"
+      }
+    },
+    {
+      "event_id": "evt_20190118_eu_single_use_plastics_coreper",
+      "title": "EU Council confirms agreement on single-use plastics restrictions and bans",
+      "description": "EU member state representatives in COREPER confirmed an agreement on EU-wide measures targeting single-use plastics, including bans on certain throwaway plastic items. The confirmation advanced the legislative process aimed at reducing plastic pollution.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "2019-01-18T00:00:00.000Z",
+        "event_end": "2019-01-18T23:59:59.000Z",
+        "reported_at": "2019-01-18T00:00:00.000Z",
+        "time_confidence": 0.8,
+        "event_date_utc": "2019-01-18T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "European Union (Brussels)",
+        "jurisdiction_level": "supranational",
+        "admin1": null,
+        "country": null,
+        "capital_used": "Brussels",
+        "lat": 50.8503,
+        "lon": 4.3517,
+        "precision": "proxy",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.85
+      },
+      "sources": [
+        {
+          "url": "https://www.consilium.europa.eu/en/press/press-releases/2019/01/18/single-use-plastics-council-confirms-agreement-which-bans-certain-throwaway-plastic-items/",
+          "source_name": "Council of the European Union",
+          "published_at": "2019-01-18T00:00:00.000Z",
+          "headline": "Single-use plastics: Council confirms agreement which bans certain throwaway plastic items",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Council of the European Union",
+          "COREPER"
+        ],
+        "substances": [
+          "plastics"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Council confirmed an agreement that bans certain throwaway plastic items.",
+            "source_url": "https://www.consilium.europa.eu/en/press/press-releases/2019/01/18/single-use-plastics-council-confirms-agreement-which-bans-certain-throwaway-plastic-items/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.78,
+        "category": 0.9,
+        "location": 0.85,
+        "summary_grounding": 0.75
+      },
+      "quality_flags": [
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "eu_single_use_plastics_2019_01_18",
+        "fingerprint": "fp_eu_single_use_plastics_brussels_2019-01-18"
+      }
+    }
+  ]
+}

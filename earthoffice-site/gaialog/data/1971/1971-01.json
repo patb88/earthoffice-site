@@ -1,0 +1,558 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_1971-01_normalize_2026-01-19T040118530Z",
+    "generated_utc": "2026-01-19T04:01:18.530Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "1971-01",
+    "window": {
+      "start_utc": "1971-01-01T00:00:00.000Z",
+      "end_utc": "1971-01-31T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "evt_19710118_sfbay_oregonstandard_arizonastandard_spill",
+      "title": "Oregon Standard and Arizona Standard collision spills bunker C fuel oil into San Francisco Bay",
+      "description": "Two oil tankers, the Oregon Standard and the Arizona Standard, collided near the Golden Gate Bridge in San Francisco Bay, releasing bunker C fuel oil. Response actions included containment and cleanup operations as reported by the incident record.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1971-01-18T01:41:00Z",
+        "event_end": "1971-01-18T12:00:00Z",
+        "reported_at": "1971-01-31T23:59:59.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1971-01-18T01:41:00Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "San Francisco Bay near the Golden Gate Bridge, California, United States",
+        "jurisdiction_level": "site",
+        "admin1": "California",
+        "country": "US",
+        "capital_used": null,
+        "lat": 37.8199,
+        "lon": -122.4783,
+        "precision": "neighborhood",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://incidentnews.noaa.gov/incident/6212",
+          "source_name": "NOAA IncidentNews",
+          "published_at": "1971-01-31T23:59:59.000Z",
+          "headline": "Incident 6212",
+          "byline": null,
+          "accessed_utc": "2026-01-19T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.epa.gov/archive/epapages/newsroom_archive/newsreleases/50b05eca819f98ec852570d8005e140f.html",
+          "source_name": "US EPA (archive)",
+          "published_at": "1971-01-31T23:59:59.000Z",
+          "headline": "News release archive page",
+          "byline": null,
+          "accessed_utc": "2026-01-19T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA",
+          "US EPA",
+          "Standard Oil"
+        ],
+        "substances": [
+          "bunker C fuel oil"
+        ],
+        "ecosystems": [
+          "San Francisco Bay"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.8,
+        "location": 0.7,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Oregon Standard / Arizona Standard San Francisco Bay oil spill 1971-01-18",
+        "fingerprint": "fp_19710118_sanfranciscobay_oregonstandard_arizonastandard"
+      }
+    },
+    {
+      "event_id": "evt_19710123_lis_essogettysburg_grounding_spill",
+      "title": "Esso Gettysburg grounding spills heating oil into Long Island Sound",
+      "description": "The tanker Esso Gettysburg ran aground in Long Island Sound in January 1971, resulting in a spill of heating oil. A Library of Congress/HAER record is provided as supporting documentation in the draft.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1971-01-23T12:00:00Z",
+        "event_end": "1971-01-23T12:00:00Z",
+        "reported_at": "1971-01-31T23:59:59.000Z",
+        "time_confidence": 0.25,
+        "event_date_utc": "1971-01-23T12:00:00Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Long Island Sound, United States",
+        "jurisdiction_level": "site",
+        "admin1": null,
+        "country": "US",
+        "capital_used": null,
+        "lat": 41.1,
+        "lon": -72.9,
+        "precision": "admin1",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.35
+      },
+      "sources": [
+        {
+          "url": "https://www.loc.gov/pictures/collection/hh/item/ca3479/",
+          "source_name": "Library of Congress",
+          "published_at": "1971-01-31T23:59:59.000Z",
+          "headline": "HAER documentation item ca3479",
+          "byline": null,
+          "accessed_utc": "2026-01-19T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Library of Congress",
+          "HAER"
+        ],
+        "substances": [
+          "heating oil"
+        ],
+        "ecosystems": [
+          "Long Island Sound"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.4,
+        "category": 0.75,
+        "location": 0.35,
+        "summary_grounding": 0.35
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Esso Gettysburg Long Island Sound spill January 1971",
+        "fingerprint": "fp_19710123_longislandsound_essogettysburg"
+      }
+    },
+    {
+      "event_id": "evt_19710126_woden_valley_flash_flood",
+      "title": "Woden Valley flash flood following severe thunderstorm",
+      "description": "A severe thunderstorm produced intense short-duration rainfall that caused destructive flash flooding in the Woden Valley district of Canberra. The flooding resulted in fatalities and significant damage.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1971-01-26T12:00:00Z",
+        "event_end": "1971-01-26T12:00:00Z",
+        "reported_at": "1971-01-01T00:00:00Z",
+        "time_confidence": 0.5,
+        "event_date_utc": "1971-01-26T12:00:00Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Woden Valley district, Canberra, Australian Capital Territory, Australia",
+        "jurisdiction_level": "site",
+        "admin1": "Australian Capital Territory",
+        "country": "AU",
+        "capital_used": null,
+        "lat": -35.344,
+        "lon": 149.09,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://knowledge.aidr.org.au/resources/flood-woden-valley-act-1971/",
+          "source_name": "Australian Disaster Resilience Knowledge Hub (AIDR)",
+          "published_at": "1971-01-01T00:00:00Z",
+          "headline": "Flood - Woden Valley, ACT 1971",
+          "byline": null,
+          "accessed_utc": "2026-01-19T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.58,
+        "category": 0.7,
+        "location": 0.55,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "Woden Valley ACT flash flood 1971-01-26",
+        "fingerprint": "fp_woden_valley_act_1971-01-26_flash_flood"
+      }
+    },
+    {
+      "event_id": "evt_19710129_nz_makaraka_jt_hill_fire",
+      "title": "Fire damages J. T. Hill joinery factory and timber mill near Gisborne",
+      "description": "A fire at the J. T. Hill joinery factory and timber mill in Makaraka (near Gisborne) caused reported damage of about $40,000, destroying or badly damaging machinery, stores, vehicles and timber. The fire was reported to have started just after 8 p.m. and was brought under control by about 9:30 p.m.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1971-01-29T08:00:00.000Z",
+        "event_end": "1971-01-29T09:30:00.000Z",
+        "reported_at": "1971-02-24T00:00:00.000Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "1971-01-29T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Makaraka (near Gisborne), New Zealand",
+        "jurisdiction_level": "site",
+        "admin1": null,
+        "country": "NZ",
+        "capital_used": null,
+        "lat": -38.625,
+        "lon": 178,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://photonews.org.nz/gisborne/issue/GPN200_19710224/t1-body-d23.html",
+          "source_name": "PhotoNews (Gisborne)",
+          "published_at": "1971-02-24T00:00:00.000Z",
+          "headline": "J. T. Hill joinery factory and timber mill fire (Makaraka, Gisborne, New Zealand)",
+          "byline": null,
+          "accessed_utc": "2026-01-19T03:59:43.065Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "J. T. Hill"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "an evening fire ... caused an estimated $40,000 in damage",
+            "source_url": "https://photonews.org.nz/gisborne/issue/GPN200_19710224/t1-body-d23.html"
+          },
+          {
+            "quote": "broke out just after 8 p.m. and was brought under control by about 9.30 p.m.",
+            "source_url": "https://photonews.org.nz/gisborne/issue/GPN200_19710224/t1-body-d23.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.56,
+        "category": 0.85,
+        "location": 0.6,
+        "summary_grounding": 0.65
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "J. T. Hill joinery factory and timber mill fire Makaraka Gisborne 1971-01-29",
+        "fingerprint": "fp_evt_19710129_nz_makaraka_jt_hill_fire"
+      }
+    },
+    {
+      "event_id": "1971-01_sfbay_tanker-collision_oil-spill_seabirds",
+      "title": "San Francisco Bay tanker collision caused oil spill impacting seabirds",
+      "description": "A collision involving oil tankers Arizona Standard and Oregon Standard in San Francisco Bay led to an oil spill. Reports describe thousands of seabirds being oiled and volunteer-led rescue and rehabilitation efforts in response.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1971-01-18T12:00:00Z",
+        "event_end": "1971-01-18T12:00:00Z",
+        "reported_at": "1971-01-18T12:00:00Z",
+        "time_confidence": 0.4,
+        "event_date_utc": "1971-01-18T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "San Francisco Bay / near Golden Gate Bridge, California, USA",
+        "jurisdiction_level": "site",
+        "admin1": "California",
+        "country": "US",
+        "capital_used": null,
+        "lat": 37.8199,
+        "lon": -122.4783,
+        "precision": "neighborhood",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.birdingwire.com/releases/366105/",
+          "source_name": "Birding Wire",
+          "published_at": "1971-01-18T12:00:00Z",
+          "headline": "San Francisco Bay oil spill oiled thousands of seabirds after Arizona Standard and Oregon Standard tanker collision",
+          "byline": null,
+          "accessed_utc": "2026-01-19T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.outsidelands.org/1971_oil_spill.php",
+          "source_name": "Outside Lands (Western Neighborhoods Project)",
+          "published_at": "1971-01-18T12:00:00Z",
+          "headline": "1971 Oil Spill",
+          "byline": null,
+          "accessed_utc": "2026-01-19T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [
+          "crude oil"
+        ],
+        "ecosystems": [
+          "San Francisco Bay"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.48,
+        "category": 0.65,
+        "location": 0.55,
+        "summary_grounding": 0.4
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only",
+        "low_confidence_location",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "San Francisco Bay tanker collision oil spill (Arizona Standard / Oregon Standard)",
+        "fingerprint": "1971-01_san-francisco-bay_tanker-collision_oil-spill_1971-01-18"
+      }
+    },
+    {
+      "event_id": "1971-01-13_us_eo-11578_ohio-river-basin-commission",
+      "title": "Executive Order 11578 establishes the Ohio River Basin Commission",
+      "description": "On January 13, 1971, U.S. President Richard Nixon issued Executive Order 11578 establishing the Ohio River Basin Commission. The order created an intergovernmental basin commission under the Water Resources Planning Act framework and included federal representation (including EPA).",
+      "category_primary": "policy_regulation",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "1971-01-13T12:00:00Z",
+        "event_end": "1971-01-13T12:00:00Z",
+        "reported_at": "1971-01-13T12:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1971-01-13T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://www.presidency.ucsb.edu/documents/executive-order-11578-establishment-the-ohio-river-basin-commission",
+          "source_name": "The American Presidency Project (UCSB)",
+          "published_at": "1971-01-13T00:00:00Z",
+          "headline": "Executive Order 11578—Establishment of the Ohio River Basin Commission",
+          "byline": null,
+          "accessed_utc": "2026-01-19T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.archives.gov/federal-register/executive-orders/1971.html",
+          "source_name": "U.S. National Archives",
+          "published_at": "1971-01-01T00:00:00Z",
+          "headline": "1971 Executive Orders",
+          "byline": null,
+          "accessed_utc": "2026-01-19T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Ohio River Basin Commission",
+          "U.S. Environmental Protection Agency"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "Ohio River Basin"
+        ],
+        "people": [
+          "Richard Nixon"
+        ]
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Executive Order 11578—Establishment of the Ohio River Basin Commission",
+            "source_url": "https://www.presidency.ucsb.edu/documents/executive-order-11578-establishment-the-ohio-river-basin-commission"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.66,
+        "category": 0.75,
+        "location": 0.7,
+        "summary_grounding": 0.65
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "EO 11578 Ohio River Basin Commission",
+        "fingerprint": "f3f33f3b0c524e6f"
+      }
+    },
+    {
+      "event_id": "1971-01_epa_ddt_notices_intent_cancel_registrations",
+      "title": "EPA issues notices of intent to cancel remaining federal registrations of DDT products (court-ordered action)",
+      "description": "In January 1971, EPA issued notices of intent to cancel remaining federal registrations of DDT products, described in EPA materials as occurring following a court order connected to litigation. This action was part of early federal pesticide regulatory efforts affecting environmental and public health protections.",
+      "category_primary": "policy_regulation",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1975-01-01T00:00:00Z",
+        "time_confidence": 0.25,
+        "event_date_utc": null,
+        "event_date_precision": "month"
+      },
+      "location": {
+        "name": "United States",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://www.epa.gov/archive/epa/aboutepa/ddt-regulatory-history-brief-survey-1975.html",
+          "source_name": "U.S. Environmental Protection Agency (Archive)",
+          "published_at": "1975-01-01T00:00:00Z",
+          "headline": "DDT Regulatory History: A Brief Survey (1975)",
+          "byline": null,
+          "accessed_utc": "2026-01-19T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.epa.gov/archive/epa/aboutepa/guardian-epas-formative-years-1970-1973.html",
+          "source_name": "U.S. Environmental Protection Agency (Archive)",
+          "published_at": "1973-01-01T00:00:00Z",
+          "headline": "Guardian: EPA's Formative Years, 1970–1973",
+          "byline": null,
+          "accessed_utc": "2026-01-19T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Environmental Protection Agency",
+          "Environmental Defense Fund"
+        ],
+        "substances": [
+          "DDT"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "DDT Regulatory History: A Brief Survey (1975)",
+            "source_url": "https://www.epa.gov/archive/epa/aboutepa/ddt-regulatory-history-brief-survey-1975.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.38,
+        "category": 0.6,
+        "location": 0.7,
+        "summary_grounding": 0.35
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "EPA DDT notices of intent to cancel registrations (Jan 1971)",
+        "fingerprint": "67f9bcdab2c05a0e"
+      }
+    }
+  ]
+}

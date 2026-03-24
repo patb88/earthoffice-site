@@ -1,0 +1,1209 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_1999-10_normalize_2026-01-17T200118009Z",
+    "generated_utc": "2026-01-17T20:01:18.009Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "1999-10",
+    "window": {
+      "start_utc": "1999-10-01T00:00:00.000Z",
+      "end_utc": "1999-10-31T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "1999-10-jp5-spill-roosevelt-roads-ceiba-pr",
+      "title": "JP-5 fuel spill at Naval Air Station Roosevelt Roads affecting mangroves",
+      "description": "NOAA reported an approximately 100,000-gallon JP-5 fuel spill at Naval Air Station Roosevelt Roads, suspected to have resulted from a misaligned valve at a pump station. Response actions included placing booms and sand bags to limit spread toward Ensenada Harbor, with cleanup focused in mangrove areas reported as impacted.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1999-10-20T12:00:00Z",
+        "event_end": "1999-10-20T12:00:00Z",
+        "reported_at": "1999-10-20T12:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1999-10-20T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Naval Air Station Roosevelt Roads, Ceiba, Puerto Rico",
+        "jurisdiction_level": "site",
+        "admin1": "PR",
+        "country": "US",
+        "capital_used": null,
+        "lat": 18.2667,
+        "lon": -65.65,
+        "precision": "exact",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://incidentnews.noaa.gov/incident/5125",
+          "source_name": "NOAA IncidentNews",
+          "published_at": "1999-10-20T12:00:00Z",
+          "headline": "JP-5 fuel spill at Naval Air Station Roosevelt Roads affecting mangroves (Ceiba, Puerto Rico)",
+          "byline": null,
+          "accessed_utc": "2026-01-17T04:22:20.600Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA"
+        ],
+        "substances": [
+          "JP-5"
+        ],
+        "ecosystems": [
+          "mangroves"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "approximately 100,000-gallon JP-5 fuel spill",
+            "source_url": "https://incidentnews.noaa.gov/incident/5125"
+          },
+          {
+            "quote": "Booms and sand bags were placed to prevent fuel from reaching Ensenada Harbor",
+            "source_url": "https://incidentnews.noaa.gov/incident/5125"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.8,
+        "location": 0.5,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "noaa_incident_5125_jp5_roosevelt_roads",
+        "fingerprint": "1999-10-jp5-spill-naval-air-station-roosevelt-roads-ceiba-us-1999-10-20"
+      }
+    },
+    {
+      "event_id": "1999-10-chemical-fire-production-plating-eastpointe-mi",
+      "title": "Chemical fire at Production Plating Company prompts evacuations and air monitoring",
+      "description": "A chemical fire at the Production Plating Company in Eastpointe, Michigan reportedly exposed firefighters to fumes and led to hospital transport. Nearby residents, schools, and businesses were evacuated amid concern that smoke could contain hazardous materials, and EPA support included air monitoring.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1999-10-12T12:00:00Z",
+        "event_end": "1999-10-12T12:00:00Z",
+        "reported_at": "1999-10-12T12:00:00Z",
+        "time_confidence": 0.5,
+        "event_date_utc": "1999-10-12T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Eastpointe, Michigan, USA",
+        "jurisdiction_level": "city",
+        "admin1": "MI",
+        "country": "US",
+        "capital_used": null,
+        "lat": 42.4684,
+        "lon": -82.9555,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://ncsp.tamu.edu/reports/NRC/1999/chemicalfire.htm",
+          "source_name": "Texas A&M National Spill Control School (NRC reports)",
+          "published_at": "1999-10-12T12:00:00Z",
+          "headline": "Chemical fire with hazardous fumes at Production Plating Company (Eastpointe, Michigan)",
+          "byline": null,
+          "accessed_utc": "2026-01-17T04:22:20.600Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Production Plating Company",
+          "EPA"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "firefighters were affected by chemical fumes and transported to hospital",
+            "source_url": "https://ncsp.tamu.edu/reports/NRC/1999/chemicalfire.htm"
+          },
+          {
+            "quote": "residents, schools, and businesses were evacuated",
+            "source_url": "https://ncsp.tamu.edu/reports/NRC/1999/chemicalfire.htm"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.5,
+        "category": 0.75,
+        "location": 0.6,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "nrc_1999_chemicalfire_eastpointe",
+        "fingerprint": "1999-10-chemical-fire-production-plating-eastpointe-us-1999-10-12"
+      }
+    },
+    {
+      "event_id": "1999-10-chloroform-spill-union-carbide-texas-city-tx",
+      "title": "Chloroform spill during barge transfer at Union Carbide Turning Basin, Texas City",
+      "description": "NOAA IncidentNews reported a chloroform release during a transfer from a barge at the Union Carbide Turning Basin (Dock 66) in Texas City, Texas. The report stated that contaminated ballast water was released into the turning basin and that NOAA provided fate/effects and resources-at-risk support.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1999-10-30T12:00:00Z",
+        "event_end": "1999-10-30T12:00:00Z",
+        "reported_at": "1999-10-30T12:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1999-10-30T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Union Carbide Turning Basin (Dock 66), Texas City, Texas, USA",
+        "jurisdiction_level": "site",
+        "admin1": "TX",
+        "country": "US",
+        "capital_used": null,
+        "lat": 29.3839,
+        "lon": -94.9027,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.45
+      },
+      "sources": [
+        {
+          "url": "https://incidentnews.noaa.gov/incident/7446/505886",
+          "source_name": "NOAA IncidentNews",
+          "published_at": "1999-10-30T12:00:00Z",
+          "headline": "Chloroform spill from barge transfer failure at Union Carbide Turning Basin (Texas City, Texas)",
+          "byline": null,
+          "accessed_utc": "2026-01-17T04:22:20.600Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "USCG",
+          "NOAA",
+          "Union Carbide"
+        ],
+        "substances": [
+          "chloroform"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "10–20 tons of chloroform spilled due to a breach/failure during transfer from a barge",
+            "source_url": "https://incidentnews.noaa.gov/incident/7446/505886"
+          },
+          {
+            "quote": "contaminated ballast water ... released into the turning basin",
+            "source_url": "https://incidentnews.noaa.gov/incident/7446/505886"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.52,
+        "category": 0.8,
+        "location": 0.45,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "noaa_incident_7446_chloroform_texas_city",
+        "fingerprint": "1999-10-chloroform-spill-union-carbide-turning-basin-texas-city-us-1999-10-30"
+      }
+    },
+    {
+      "event_id": "1999-10_weather_climate_mexico_td11_floods",
+      "title": "Tropical Depression 11 triggers severe flooding and landslides in eastern Mexico",
+      "description": "A slow-moving tropical system (Tropical Depression 11) produced extreme rainfall in early October 1999. The rainfall contributed to severe flooding and landslides across parts of eastern Mexico, including Veracruz, Puebla, Hidalgo, and Tabasco.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1999-10-05T12:00:00Z",
+        "event_end": "1999-10-09T12:00:00Z",
+        "reported_at": "1999-10-05T12:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1999-10-07T00:00:00Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Mexico (eastern states affected incl. Veracruz, Puebla, Hidalgo, Tabasco)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "MX",
+        "capital_used": "Mexico City",
+        "lat": 19.4326,
+        "lon": -99.1332,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.wpc.ncep.noaa.gov/tropical/rain/td11of1999.html",
+          "source_name": "NOAA Weather Prediction Center (WPC)",
+          "published_at": "1999-10-05T12:00:00Z",
+          "headline": "td11of1999",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA Weather Prediction Center"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Tropical Depression 11",
+            "source_url": "https://www.wpc.ncep.noaa.gov/tropical/rain/td11of1999.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.75,
+        "location": 0.55,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "1999-10 Mexico Tropical Depression 11 flooding",
+        "fingerprint": "fp_1999-10_mexico_td11_flooding"
+      }
+    },
+    {
+      "event_id": "1999-10_weather_climate_hurricane_jose_leewards_flooding",
+      "title": "Hurricane Jose brings heavy rainfall and flooding impacts to parts of the northern Leeward Islands",
+      "description": "Hurricane Jose moved through the northeast Caribbean in late October 1999. Heavy rainfall associated with the system contributed to flooding impacts in parts of the northern Leeward Islands as it passed through the region.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1999-10-20T12:00:00Z",
+        "event_end": "1999-10-24T12:00:00Z",
+        "reported_at": "1999-10-20T12:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1999-10-22T00:00:00Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Antigua and Barbuda (northern Leeward Islands)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "AG",
+        "capital_used": "St. John's",
+        "lat": 17.1274,
+        "lon": -61.8468,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.45
+      },
+      "sources": [
+        {
+          "url": "https://www.wpc.ncep.noaa.gov/tropical/rain/jose1999.html",
+          "source_name": "NOAA Weather Prediction Center (WPC)",
+          "published_at": "1999-10-20T12:00:00Z",
+          "headline": "jose1999",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA Weather Prediction Center"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Hurricane Jose",
+            "source_url": "https://www.wpc.ncep.noaa.gov/tropical/rain/jose1999.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.48,
+        "category": 0.75,
+        "location": 0.45,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "1999-10 Hurricane Jose northern Leeward Islands flooding",
+        "fingerprint": "fp_1999-10_jose_leewards_flooding"
+      }
+    },
+    {
+      "event_id": "1999-10_weather_climate_illawarra_flash_flooding_wollongong",
+      "title": "Torrential rain causes flash flooding and landslides in the Illawarra region (NSW)",
+      "description": "Severe storms produced intense rainfall in the Illawarra region of New South Wales in October 1999. The rainfall led to flash flooding with property impacts and reports of landslides in the wider area including around Wollongong and near Berry.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1999-10-17T12:00:00Z",
+        "event_end": "1999-10-17T12:00:00Z",
+        "reported_at": "1999-10-17T12:00:00Z",
+        "time_confidence": 0.4,
+        "event_date_utc": "1999-10-17T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Wollongong, New South Wales, Australia (Illawarra region)",
+        "jurisdiction_level": "city",
+        "admin1": "New South Wales",
+        "country": "AU",
+        "capital_used": null,
+        "lat": -34.4278,
+        "lon": 150.8931,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.australianweathernews.com/news/1999/news9910.html",
+          "source_name": "Australian Weather News",
+          "published_at": "1999-10-01T00:00:00Z",
+          "headline": "news9910 (October 1999 archive)",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Illawarra",
+            "source_url": "https://www.australianweathernews.com/news/1999/news9910.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.45,
+        "category": 0.7,
+        "location": 0.6,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "paywalled_or_partial",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "1999-10 Illawarra NSW flash flooding Wollongong Berry",
+        "fingerprint": "fp_1999-10_illawarra_flash_flooding"
+      }
+    },
+    {
+      "event_id": "1999-10_weather_climate_tropical_storm_eve_central_vietnam_rains",
+      "title": "Tropical Storm Eve contributes to unusually heavy rainfall in central Vietnam",
+      "description": "In late October 1999, Tropical Storm Eve contributed to heavy to very heavy rainfall across central Vietnam. Reported multi-province rainfall totals by around 20 October were described as exceeding typical monthly averages and contributing to flood conditions.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1999-10-18T12:00:00Z",
+        "event_end": "1999-10-20T12:00:00Z",
+        "reported_at": "1999-10-20T00:00:00Z",
+        "time_confidence": 0.5,
+        "event_date_utc": "1999-10-19T12:00:00Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Vietnam (central provinces affected)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "VN",
+        "capital_used": "Hanoi",
+        "lat": 21.0278,
+        "lon": 105.8342,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.4
+      },
+      "sources": [
+        {
+          "url": "https://www.fao.org/4/ae080e/ae080e04.htm",
+          "source_name": "FAO",
+          "published_at": "1999-10-20T00:00:00Z",
+          "headline": "FAO situation update (ae080e04)",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "FAO"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Tropical Storm Eve",
+            "source_url": "https://www.fao.org/4/ae080e/ae080e04.htm"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.46,
+        "category": 0.7,
+        "location": 0.4,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "1999-10 Tropical Storm Eve central Vietnam heavy rains",
+        "fingerprint": "fp_1999-10_vietnam_eve_heavy_rains"
+      }
+    },
+    {
+      "event_id": "1999-10_weather_climate_odisha_super_cyclone_landfall",
+      "title": "1999 Odisha Super Cyclone makes landfall with destructive winds, storm surge, and flooding",
+      "description": "A Super Cyclonic Storm struck Odisha, India around 29 October 1999. The cyclone produced destructive winds and storm surge and was associated with exceptionally heavy rain and widespread flooding, with impacts continuing as the system weakened into the end of October.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1999-10-29T06:00:00Z",
+        "event_end": "1999-10-31T12:00:00Z",
+        "reported_at": "1999-10-29T06:00:00Z",
+        "time_confidence": 0.65,
+        "event_date_utc": "1999-10-29T12:00:00Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Odisha, India",
+        "jurisdiction_level": "state",
+        "admin1": "Odisha",
+        "country": "IN",
+        "capital_used": "Bhubaneswar",
+        "lat": 20.2961,
+        "lon": 85.8245,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://mausamjournal.imd.gov.in/index.php/MAUSAM/article/view/449",
+          "source_name": "MAUSAM (IMD journal platform)",
+          "published_at": "1999-10-29T06:00:00Z",
+          "headline": "MAUSAM article view 449",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.msf.org/orissa-state-devastated-worst-cyclone-century",
+          "source_name": "Médecins Sans Frontières (MSF)",
+          "published_at": "1999-10-29T06:00:00Z",
+          "headline": "Orissa state devastated by worst cyclone of the century",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.fao.org/4/x3688e/x3688e00.htm",
+          "source_name": "FAO",
+          "published_at": "1999-10-29T06:00:00Z",
+          "headline": "FAO report (x3688e00)",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "India Meteorological Department (IMD)",
+          "Médecins Sans Frontières (MSF)",
+          "FAO"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Super Cyclonic Storm",
+            "source_url": "https://mausamjournal.imd.gov.in/index.php/MAUSAM/article/view/449"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.75,
+        "location": 0.7,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "1999-10 Odisha Super Cyclone landfall flooding",
+        "fingerprint": "fp_1999-10_odisha_super_cyclone"
+      }
+    },
+    {
+      "event_id": "19991016_hector-mine_eq_mw7p1_mojave-ca-us",
+      "title": "Mw 7.1 Hector Mine earthquake in the Mojave Desert, California",
+      "description": "A magnitude 7.1 (Mw) earthquake occurred near Hector Mine in California’s Mojave Desert. USGS materials describe strong ground motion with limited impacts due to the remote location.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1999-10-16T09:46:00Z",
+        "event_end": "1999-10-16T09:46:00Z",
+        "reported_at": "1999-10-16T09:46:00Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "1999-10-16T09:46:00Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Near Hector Mine, Mojave Desert, California, USA",
+        "jurisdiction_level": "site",
+        "admin1": "California",
+        "country": "US",
+        "capital_used": null,
+        "lat": 34.603,
+        "lon": -116.271,
+        "precision": "exact",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.45
+      },
+      "sources": [
+        {
+          "url": "https://www.usgs.gov/publications/preliminary-report-16-october-1999-m-71-hector-mine-california-earthquake",
+          "source_name": "USGS",
+          "published_at": "1999-10-16T00:00:00Z",
+          "headline": "Preliminary report 16 October 1999 M 7.1 Hector Mine, California earthquake",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://escweb.wr.usgs.gov/nsmp-data/data_sets/19991016_1.html",
+          "source_name": "USGS (NSMP)",
+          "published_at": "1999-10-16T00:00:00Z",
+          "headline": "19991016_1 strong-motion dataset (Hector Mine event)",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "USGS"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "Mojave Desert"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Preliminary report 16 October 1999 M 7.1 Hector Mine, California earthquake",
+            "source_url": "https://www.usgs.gov/publications/preliminary-report-16-october-1999-m-71-hector-mine-california-earthquake"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.58,
+        "category": 0.9,
+        "location": 0.45,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "1999-10-16 Hector Mine Mw7.1 earthquake",
+        "fingerprint": "fp_19991016_hector-mine_eq_mw7p1_mojave-ca-us"
+      }
+    },
+    {
+      "event_id": "1999-10-fires-jones-fire-shasta-county",
+      "title": "Jones Fire destroys homes in Shasta County, California",
+      "description": "A wildfire in Shasta County, Northern California burned tens of thousands of acres and destroyed many homes in mid-October 1999, prompting evacuations and emergency response.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1999-10-18T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1999-10-18T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Shasta County, California, United States",
+        "jurisdiction_level": "state",
+        "admin1": "California",
+        "country": "US",
+        "capital_used": "Sacramento",
+        "lat": 38.5767,
+        "lon": -121.4944,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://www.washingtonpost.com/archive/politics/1999/10/18/wildfire-in-california-destroys-many-homes/a88ffe24-0d9d-4f7f-b9cc-d9e52bf5ee75/",
+          "source_name": "The Washington Post",
+          "published_at": "1999-10-18T00:00:00.000Z",
+          "headline": "Wildfire in California Destroys Many Homes",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Wildfire in California Destroys Many Homes",
+            "source_url": "https://www.washingtonpost.com/archive/politics/1999/10/18/wildfire-in-california-destroys-many-homes/a88ffe24-0d9d-4f7f-b9cc-d9e52bf5ee75/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.8,
+        "location": 0.7,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "paywalled_or_partial",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Jones Fire (Shasta County, CA) Oct 1999",
+        "fingerprint": "fp_1999-10_jones_fire_california_1999-10-18"
+      }
+    },
+    {
+      "event_id": "1999-10-fires-big-bar-complex-nps-morning-report",
+      "title": "Big Bar Complex wildfire reported at 133,805 acres and 61% contained",
+      "description": "A National Park Service morning report dated October 26, 1999 lists the Big Bar Complex wildfire in Northern California at 133,805 acres and 61% contained, indicating an ongoing large fire incident during the month.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1999-10-26T00:00:00.000Z",
+        "time_confidence": 0.65,
+        "event_date_utc": "1999-10-26T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "California, United States",
+        "jurisdiction_level": "state",
+        "admin1": "California",
+        "country": "US",
+        "capital_used": "Sacramento",
+        "lat": 38.5767,
+        "lon": -121.4944,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://npshistory.com/morningreport/1999/10-26.htm",
+          "source_name": "NPS History (Morning Report archive)",
+          "published_at": "1999-10-26T00:00:00.000Z",
+          "headline": "Morning Report - Wednesday, October 26, 1999",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "National Park Service"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Big Bar Complex ... 133,805 acres ... 61% contained",
+            "source_url": "https://npshistory.com/morningreport/1999/10-26.htm"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.75,
+        "location": 0.55,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Big Bar Complex (Northern CA) Oct 1999",
+        "fingerprint": "fp_1999-10_big_bar_complex_california_1999-10-26"
+      }
+    },
+    {
+      "event_id": "1999-10-us-fws-annual-notice-candidates-esa-19991025",
+      "title": "USFWS publishes annual notice reviewing candidate and proposed taxa for ESA listing",
+      "description": "The U.S. Fish and Wildlife Service published its annual notice reviewing plant and animal taxa that are candidates or proposed for listing under the Endangered Species Act. The notice summarizes status and prioritization information used to guide potential future protections.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1999-10-25T00:00:00Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "1999-10-25T00:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States (national)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9071923,
+        "lon": -77.0368707,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.9
+      },
+      "sources": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/FR-1999-10-25/html/99-27822.htm",
+          "source_name": "GovInfo (Federal Register)",
+          "published_at": "1999-10-25T00:00:00Z",
+          "headline": "Endangered and Threatened Wildlife and Plants; Review of Plant and Animal Taxa That Are Candidates or Proposed for Listing as Endangered or Threatened; Annual Notice of Findings on Recycled Petitions; Annual Description of Progress on Listing Actions",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.fws.gov/policy/library/1999/99fr57534.html",
+          "source_name": "U.S. Fish and Wildlife Service (policy library)",
+          "published_at": "1999-10-25T00:00:00Z",
+          "headline": "Endangered and Threatened Wildlife and Plants; Review of Plant and Animal Taxa That Are Candidates or Proposed for Listing as Endangered or Threatened; Annual Notice of Findings on Recycled Petitions; Annual Description of Progress on Listing Actions",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Fish and Wildlife Service"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "annual notice reviewing candidate and proposed taxa for listing under the Endangered Species Act",
+            "source_url": "https://www.govinfo.gov/content/pkg/FR-1999-10-25/html/99-27822.htm"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.72,
+        "category": 0.8,
+        "location": 0.9,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "USFWS ESA listing process guidance/notice (Oct 1999)",
+        "fingerprint": "b2f2edcd44d38eab36dce2dd2ff86f85"
+      }
+    },
+    {
+      "event_id": "1999-10-us-fws-final-listing-priority-guidance-fy2000-19991022",
+      "title": "USFWS issues final Listing Priority Guidance for FY2000 ESA section 4 actions",
+      "description": "The U.S. Fish and Wildlife Service issued final guidance describing how it would prioritize Endangered Species Act section 4 listing actions during fiscal year 2000. The guidance affects the sequencing of actions such as emergency listings, proposed and final determinations, and petition findings.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1999-10-22T00:00:00Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "1999-10-22T00:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States (national)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9071923,
+        "lon": -77.0368707,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.9
+      },
+      "sources": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/FR-1999-10-22/html/99-27689.htm",
+          "source_name": "GovInfo (Federal Register)",
+          "published_at": "1999-10-22T00:00:00Z",
+          "headline": "Endangered and Threatened Species Listing Priority Guidance for Fiscal Year 2000",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Fish and Wildlife Service"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Listing Priority Guidance for Fiscal Year 2000",
+            "source_url": "https://www.govinfo.gov/content/pkg/FR-1999-10-22/html/99-27689.htm"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.7,
+        "category": 0.8,
+        "location": 0.9,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "USFWS ESA listing process guidance/notice (Oct 1999)",
+        "fingerprint": "a20d6aeb5f0cbcb2e0d38ff0a82fc0b3"
+      }
+    },
+    {
+      "event_id": "1999-10-26_us_epa_neshap_potw_final_rule",
+      "title": "EPA final rule sets NESHAP requirements for publicly owned treatment works (POTWs)",
+      "description": "The U.S. Environmental Protection Agency published a final Clean Air Act rule establishing National Emission Standards for Hazardous Air Pollutants (NESHAP) requirements for new and existing publicly owned treatment works (POTWs). The rule addresses hazardous air pollutant emissions from wastewater treatment processes and related regulated industrial waste streams.",
+      "category_primary": "policy_regulation",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "1999-10-26T12:00:00Z",
+        "event_end": "1999-10-26T12:00:00Z",
+        "reported_at": "1999-10-26T00:00:00Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "1999-10-26T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.85
+      },
+      "sources": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/FR-1999-10-26/html/99-27799.htm",
+          "source_name": "Federal Register (GovInfo)",
+          "published_at": "1999-10-26T00:00:00Z",
+          "headline": "99-27799",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Environmental Protection Agency (EPA)"
+        ],
+        "substances": [
+          "hazardous air pollutants"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "final rule establishing National Emission Standards for Hazardous Air Pollutants ... for publicly owned treatment works",
+            "source_url": "https://www.govinfo.gov/content/pkg/FR-1999-10-26/html/99-27799.htm"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.72,
+        "category": 0.85,
+        "location": 0.85,
+        "summary_grounding": 0.65
+      },
+      "quality_flags": [
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "EPA NESHAP POTW final rule (1999-10-26)",
+        "fingerprint": "fp_1999-10-26_us_epa_neshap_potw_final_rule"
+      }
+    },
+    {
+      "event_id": "1999-10-25_us_nmfs_snake_river_chinook_critical_habitat_revision_napias_creek_falls",
+      "title": "NMFS revises Snake River spring/summer Chinook salmon critical habitat to exclude areas above Napias Creek Falls",
+      "description": "NOAA/NMFS published a final rule revising designated ESA critical habitat for Snake River spring/summer Chinook salmon. The revision excludes areas above Napias Creek Falls after determining the falls is a naturally impassable barrier.",
+      "category_primary": "policy_regulation",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "1999-10-25T12:00:00Z",
+        "event_end": "1999-10-25T12:00:00Z",
+        "reported_at": "1999-10-25T00:00:00Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "1999-10-25T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Napias Creek (near Salmon, Idaho), United States",
+        "jurisdiction_level": "site",
+        "admin1": "Idaho",
+        "country": "US",
+        "capital_used": null,
+        "lat": 45.1752,
+        "lon": -113.895,
+        "precision": "admin1",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.4
+      },
+      "sources": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/FR-1999-10-25/html/99-27585.htm",
+          "source_name": "Federal Register (GovInfo)",
+          "published_at": "1999-10-25T00:00:00Z",
+          "headline": "99-27585",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "National Marine Fisheries Service (NMFS)",
+          "National Oceanic and Atmospheric Administration (NOAA)"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "Snake River"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "final rule revising designated critical habitat ... excluding areas above Napias Creek Falls",
+            "source_url": "https://www.govinfo.gov/content/pkg/FR-1999-10-25/html/99-27585.htm"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.8,
+        "location": 0.4,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "low_confidence_location",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "NMFS critical habitat revision Napias Creek Falls (1999-10-25)",
+        "fingerprint": "fp_1999-10-25_us_nmfs_snake_river_chinook_critical_habitat_revision_napias_creek_falls"
+      }
+    },
+    {
+      "event_id": "1999-10-20_us_fws_pecos_sunflower_threatened_listing",
+      "title": "FWS lists Pecos sunflower (Helianthus paradoxus) as threatened under the ESA",
+      "description": "The U.S. Fish and Wildlife Service published a final rule listing Helianthus paradoxus (Pecos sunflower) as a threatened species under the Endangered Species Act. The rule cites the plant’s reliance on desert wetland habitats and threats such as groundwater depletion and wetland alteration.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "1999-10-20T12:00:00Z",
+        "event_end": "1999-10-20T12:00:00Z",
+        "reported_at": "1999-10-20T00:00:00Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "1999-10-20T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States (New Mexico and Texas)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/FR-1999-10-20/html/99-27186.htm",
+          "source_name": "Federal Register (GovInfo)",
+          "published_at": "1999-10-20T00:00:00Z",
+          "headline": "99-27186",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.fws.gov/species-publication-action/etwp-determination-threatened-status-plant-helianthus-paradoxicus-pecos",
+          "source_name": "U.S. Fish & Wildlife Service",
+          "published_at": "1999-10-20T00:00:00Z",
+          "headline": "Determination of Threatened Status for the Plant Helianthus paradoxus (Pecos Sunflower)",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Fish and Wildlife Service (FWS)"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "desert wetlands"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Determination of Threatened Status for the Plant Helianthus paradoxus (Pecos Sunflower)",
+            "source_url": "https://www.govinfo.gov/content/pkg/FR-1999-10-20/html/99-27186.htm"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.7,
+        "category": 0.85,
+        "location": 0.7,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "FWS Pecos sunflower threatened listing (1999-10-20)",
+        "fingerprint": "fp_1999-10-20_us_fws_pecos_sunflower_threatened_listing"
+      }
+    }
+  ]
+}

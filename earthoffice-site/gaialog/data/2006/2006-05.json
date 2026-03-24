@@ -1,0 +1,788 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_2006-05_normalize_2026-01-16T032147254Z",
+    "generated_utc": "2026-01-16T03:21:47.254Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "2006-05",
+    "window": {
+      "start_utc": "2006-05-01T00:00:00.000Z",
+      "end_utc": "2006-05-31T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "2006-05-01_prudhoe-bay-alaska-north-slope_oil-spill_guardian-2011-05-04",
+      "title": "Prudhoe Bay (Alaska North Slope) crude oil spill referenced in later enforcement coverage",
+      "description": "Later enforcement/settlement reporting describes a major crude-oil spill on BP's Alaska North Slope in 2006, widely reported as about 212,000 gallons. The coverage notes the spill reached a lake and led to significant operational and regulatory consequences.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2011-05-04T00:00:00.000Z",
+        "time_confidence": 0.3,
+        "event_date_utc": "2006-05-01T00:00:00.000Z",
+        "event_date_precision": "month"
+      },
+      "location": {
+        "name": "Prudhoe Bay / Alaska North Slope, United States",
+        "jurisdiction_level": "site",
+        "admin1": "Alaska",
+        "country": "US",
+        "capital_used": null,
+        "lat": 70.255,
+        "lon": -148.337,
+        "precision": "admin1",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.5
+      },
+      "sources": [
+        {
+          "url": "https://www.theguardian.com/environment/2011/may/04/bp-25m-north-slope-oil-spill",
+          "source_name": "The Guardian",
+          "published_at": "2011-05-04T00:00:00.000Z",
+          "headline": "BP fined $25m over Alaska North Slope oil spill",
+          "byline": null,
+          "accessed_utc": "2006-05-31T23:59:59.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "BP"
+        ],
+        "substances": [
+          "crude oil"
+        ],
+        "ecosystems": [
+          "lake"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "BP was fined $25m ... over an oil spill on Alaska’s North Slope.",
+            "source_url": "https://www.theguardian.com/environment/2011/may/04/bp-25m-north-slope-oil-spill"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.45,
+        "category": 0.7,
+        "location": 0.5,
+        "summary_grounding": 0.4
+      },
+      "quality_flags": [
+        "secondary_sources_only",
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Prudhoe Bay Alaska North Slope 2006 crude oil spill (~212,000 gallons)",
+        "fingerprint": "fp_2006-05_prudhoe-bay-alaska-north-slope_crude-oil-spill"
+      }
+    },
+    {
+      "event_id": "evt-200605-nh-mothersdayflood-usgs",
+      "title": "Mother’s Day Flood: severe flooding across New Hampshire",
+      "description": "Heavy rainfall in mid-May 2006 caused severe flooding across central and southern New Hampshire. USGS documentation describes impacts and measurements from the flood event.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2006-05-13T00:00:00.000Z",
+        "event_end": "2006-05-17T23:59:59.000Z",
+        "reported_at": "2006-05-01T00:00:00.000Z",
+        "time_confidence": 0.75,
+        "event_date_utc": null,
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "New Hampshire, United States",
+        "jurisdiction_level": "state",
+        "admin1": "New Hampshire",
+        "country": "US",
+        "capital_used": "Concord",
+        "lat": 43.20725,
+        "lon": -71.5366,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://www.usgs.gov/publications/flood-may-2006-new-hampshire",
+          "source_name": "USGS",
+          "published_at": "2006-05-01T00:00:00.000Z",
+          "headline": "Flood of May 2006 in New Hampshire",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "USGS"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Flood of May 2006 in New Hampshire",
+            "source_url": "https://www.usgs.gov/publications/flood-may-2006-new-hampshire"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.8,
+        "location": 0.7,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "paywalled_or_partial",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Mother’s Day Flood (May 2006) New England",
+        "fingerprint": "mothers-day-flood-severe-flooding-across-new-hampshire|concord-nh-us|2006-05-13_2006-05-17"
+      }
+    },
+    {
+      "event_id": "evt-200605-me-yorkcounty-flood-usgs",
+      "title": "Mother’s Day Flood: extreme rainfall and flooding in York County, Maine",
+      "description": "A mid-May 2006 storm produced extreme rainfall and flooding in York County, Maine. USGS publications document the flood and related hydrologic analyses.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2006-05-13T00:00:00.000Z",
+        "event_end": "2006-05-15T23:59:59.000Z",
+        "reported_at": "2006-05-01T00:00:00.000Z",
+        "time_confidence": 0.75,
+        "event_date_utc": null,
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "York County, Maine, United States",
+        "jurisdiction_level": "site",
+        "admin1": "Maine",
+        "country": "US",
+        "capital_used": null,
+        "lat": 43.1617,
+        "lon": -70.6483,
+        "precision": "city",
+        "location_basis": "manual_override",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.usgs.gov/publications/flood-may-2006-york-county-maine",
+          "source_name": "USGS",
+          "published_at": "2006-05-01T00:00:00.000Z",
+          "headline": "Flood of May 2006 in York County, Maine",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://pubs.usgs.gov/sir/2008/5047/",
+          "source_name": "USGS Publications Warehouse",
+          "published_at": "2008-01-01T00:00:00.000Z",
+          "headline": "Scientific Investigations Report 2008-5047",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "USGS"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Flood of May 2006 in York County, Maine",
+            "source_url": "https://www.usgs.gov/publications/flood-may-2006-york-county-maine"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.8,
+        "location": 0.55,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check",
+        "low_confidence_location"
+      ],
+      "dedupe": {
+        "cluster_hint": "Mother’s Day Flood (May 2006) New England",
+        "fingerprint": "mothers-day-flood-extreme-rainfall-and-flooding-in-york-county-maine|york-county-maine-us|2006-05-13_2006-05-15"
+      }
+    },
+    {
+      "event_id": "evt-200605-mn-memorialday-heat",
+      "title": "Upper Midwest late-May 2006 heat event in Minnesota (Memorial Day weekend)",
+      "description": "A late-May 2006 heat event affected Minnesota around Memorial Day weekend, with unusually warm conditions referenced by the Minnesota DNR climate journal entry. The source notes notable warmth during the holiday period.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2006-05-27T00:00:00.000Z",
+        "event_end": "2006-05-29T23:59:59.000Z",
+        "reported_at": "2006-05-01T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": null,
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Minnesota, United States",
+        "jurisdiction_level": "state",
+        "admin1": "Minnesota",
+        "country": "US",
+        "capital_used": "Saint Paul",
+        "lat": 44.9537,
+        "lon": -93.09,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://climateapps.dnr.state.mn.us/doc/journal/hotmemorial060529.htm",
+          "source_name": "Minnesota Department of Natural Resources",
+          "published_at": "2006-05-29T00:00:00.000Z",
+          "headline": "Hot Memorial Day Weekend (2006-05-29)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Minnesota Department of Natural Resources"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Hot Memorial Day Weekend",
+            "source_url": "https://climateapps.dnr.state.mn.us/doc/journal/hotmemorial060529.htm"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.58,
+        "category": 0.75,
+        "location": 0.7,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "paywalled_or_partial",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "Upper Midwest Heat (Memorial Day 2006)",
+        "fingerprint": "upper-midwest-late-may-2006-heat-event-in-minnesota-memorial-day-weekend|saint-paul-mn-us|2006-05-27_2006-05-29"
+      }
+    },
+    {
+      "event_id": "2006-05-03_tonga_eq_tsunami",
+      "title": "M~7.9 earthquake near Tonga prompts Pacific tsunami alerts; small tsunami recorded in Hawaii",
+      "description": "A strong earthquake near Tonga on May 3, 2006 prompted tsunami watches/warnings in parts of the Pacific. Tide gauges in Hawaii recorded a small tsunami.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2006-05-03T15:26:00.000Z",
+        "event_end": "2006-05-03T23:59:59.000Z",
+        "reported_at": "2006-05-03T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2006-05-03T15:26:00.000Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Near Tonga (South Pacific)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "TO",
+        "capital_used": "Nuku'alofa",
+        "lat": -21.1394,
+        "lon": -175.2048,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.weather.gov/hfo/may3tsunami",
+          "source_name": "National Weather Service (Honolulu Forecast Office)",
+          "published_at": "2006-05-03T00:00:00.000Z",
+          "headline": "May 3, 2006 Tsunami",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.thedailystar.net/2006/05/05/d605054308133.html",
+          "source_name": "The Daily Star",
+          "published_at": "2006-05-05T00:00:00.000Z",
+          "headline": "d605054308133",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "National Weather Service"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "May 3, 2006 Tsunami",
+            "source_url": "https://www.weather.gov/hfo/may3tsunami"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.75,
+        "location": 0.6,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "needs_dedupe_check",
+        "secondary_sources_only",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "2006-05-03 Tonga earthquake tsunami Hawaii gauges",
+        "fingerprint": "2006-05-03_tonga_eq_tsunami_near-tonga"
+      }
+    },
+    {
+      "event_id": "2006-05-20_soufriere_hills_dome_collapse",
+      "title": "Soufrière Hills Volcano dome collapse produces high ash plume in Montserrat",
+      "description": "Activity at Soufrière Hills Volcano on Montserrat on May 20, 2006 included a dome collapse that generated a large ash plume. Reports noted aviation impacts such as flight disruptions due to ash.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2006-05-20T00:00:00.000Z",
+        "event_end": "2006-05-20T23:59:59.000Z",
+        "reported_at": "2006-05-20T00:00:00.000Z",
+        "time_confidence": 0.5,
+        "event_date_utc": "2006-05-20T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Montserrat",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": null,
+        "capital_used": "Plymouth",
+        "lat": 16.7064,
+        "lon": -62.2158,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://science.nasa.gov/earth/earth-observatory/eruption-of-soufriere-hills-volcano-16083/",
+          "source_name": "NASA Earth Observatory",
+          "published_at": "2006-05-20T00:00:00.000Z",
+          "headline": "Eruption of Soufriere Hills Volcano",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NASA Earth Observatory"
+        ],
+        "substances": [
+          "volcanic ash"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Eruption of Soufriere Hills Volcano",
+            "source_url": "https://science.nasa.gov/earth/earth-observatory/eruption-of-soufriere-hills-volcano-16083/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.85,
+        "location": 0.55,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "needs_dedupe_check",
+        "date_ambiguous",
+        "location_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "2006-05-20 Soufriere Hills dome collapse ash plume Montserrat",
+        "fingerprint": "2006-05-20_soufriere_hills_dome_collapse_montserrat"
+      }
+    },
+    {
+      "event_id": "2006-05-us-pa-tussey-mountain-wildfire-20060501",
+      "title": "Tussey Mountain wildfire produces visible smoke plume near State College, Pennsylvania",
+      "description": "A wildfire on Tussey Mountain in the Rothrock State Forest area produced a smoke plume that was visible across the State College area and detectable via remote sensing, according to the US National Weather Service.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2006-05-01T00:00:00.000Z",
+        "event_end": "2006-05-01T23:59:59.000Z",
+        "reported_at": "2006-05-01T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2006-05-01T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Tussey Mountain / Rothrock State Forest area near State College, Pennsylvania, United States",
+        "jurisdiction_level": "site",
+        "admin1": "Pennsylvania",
+        "country": "US",
+        "capital_used": null,
+        "lat": 40.7901,
+        "lon": -77.8286,
+        "precision": "neighborhood",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.45
+      },
+      "sources": [
+        {
+          "url": "https://www.weather.gov/ctp/2006-05-01-Tussey-Mountain-Wildfire",
+          "source_name": "National Weather Service (weather.gov)",
+          "published_at": "2006-05-01T00:00:00.000Z",
+          "headline": "2006-05-01 Tussey Mountain Wildfire",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "National Weather Service"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "forest"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Tussey Mountain Wildfire",
+            "source_url": "https://www.weather.gov/ctp/2006-05-01-Tussey-Mountain-Wildfire"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.56,
+        "category": 0.75,
+        "location": 0.45,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "tussey-mountain-wildfire-2006-05-01",
+        "fingerprint": "fp-2006-05-us-pa-tussey-mountain-wildfire-20060501"
+      }
+    },
+    {
+      "event_id": "evt_20060524_h5n1_wild_birds_qinghai_tibet_cn",
+      "title": "China reports H5N1 avian influenza among wild birds in Qinghai and Tibet",
+      "description": "A report stated that China confirmed H5N1 avian influenza outbreaks among wild birds in remote areas of Qinghai province and Tibet, with hundreds of wild birds reported dead. The report also described response measures such as disinfection efforts in affected areas.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2006-05-24T00:00:00.000Z",
+        "event_end": "2006-05-24T23:59:59.000Z",
+        "reported_at": "2006-05-24T00:00:00Z",
+        "time_confidence": 0.8,
+        "event_date_utc": "2006-05-24T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Qinghai Province and Tibet, China",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "CN",
+        "capital_used": "Beijing",
+        "lat": 39.9042,
+        "lon": 116.4074,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.chinadaily.com.cn/china/2006-05/24/content_599538.htm",
+          "source_name": "China Daily",
+          "published_at": "2006-05-24T00:00:00Z",
+          "headline": "https://www.chinadaily.com.cn/china/2006-05/24/content_599538.htm",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "China Daily"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "China confirmed H5N1 outbreaks among wild birds in remote areas of Qinghai and Tibet",
+            "source_url": "https://www.chinadaily.com.cn/china/2006-05/24/content_599538.htm"
+          },
+          {
+            "quote": "hundreds of wild birds found dead",
+            "source_url": "https://www.chinadaily.com.cn/china/2006-05/24/content_599538.htm"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.7,
+        "location": 0.6,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "needs_dedupe_check",
+        "paywalled_or_partial",
+        "date_ambiguous",
+        "low_confidence_location"
+      ],
+      "dedupe": {
+        "cluster_hint": "H5N1 wild birds Qinghai Tibet May 2006",
+        "fingerprint": "fp_h5n1_wild_birds_qinghai_tibet_cn_2006-05-24"
+      }
+    },
+    {
+      "event_id": "2006-05_policyreg_unfccc_bonn_sb24_awgkp1",
+      "title": "UNFCCC Bonn Climate Change Conference (SB24) and Kyoto Protocol AWG-KP1 session",
+      "description": "International UNFCCC climate negotiations convened in Bonn in May 2006, including the 24th sessions of the UNFCCC Subsidiary Bodies (SBSTA/SBI) and associated meetings. The first session of the Kyoto Protocol Ad Hoc Working Group on further commitments for Annex I Parties (AWG-KP1) also met during the conference period.",
+      "category_primary": "policy_regulation",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "2006-05-17T00:00:00.000Z",
+        "event_end": "2006-05-26T23:59:59.000Z",
+        "reported_at": "2006-05-17T00:00:00.000Z",
+        "time_confidence": 0.75,
+        "event_date_utc": null,
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Bonn, Germany",
+        "jurisdiction_level": "city",
+        "admin1": null,
+        "country": "DE",
+        "capital_used": null,
+        "lat": 50.7374,
+        "lon": 7.0982,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.8
+      },
+      "sources": [
+        {
+          "url": "https://unfccc.int/event/bonn-climate-change-conference-may-2006",
+          "source_name": "UNFCCC",
+          "published_at": "2006-05-17T00:00:00.000Z",
+          "headline": "Bonn Climate Change Conference May 2006",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://enb.iisd.org/events/24th-session-unfccc-subsidiary-bodies-and-associated-meetings/summary-report-17-26-may-2006",
+          "source_name": "IISD Earth Negotiations Bulletin",
+          "published_at": "2006-05-26T00:00:00.000Z",
+          "headline": "Summary report, 17–26 May 2006",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "UNFCCC",
+          "SBSTA",
+          "SBI",
+          "Kyoto Protocol Ad Hoc Working Group (AWG-KP)",
+          "IISD Earth Negotiations Bulletin"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Bonn Climate Change Conference May 2006",
+            "source_url": "https://unfccc.int/event/bonn-climate-change-conference-may-2006"
+          },
+          {
+            "quote": "Summary report, 17–26 May 2006",
+            "source_url": "https://enb.iisd.org/events/24th-session-unfccc-subsidiary-bodies-and-associated-meetings/summary-report-17-26-may-2006"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.72,
+        "category": 0.85,
+        "location": 0.8,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "UNFCCC Bonn Climate Change Conference May 2006 (SB24/AWG-KP1)",
+        "fingerprint": "2006-05_policy_regulation_unfccc_bonn_2006-05-17_2006-05-26"
+      }
+    },
+    {
+      "event_id": "2006-05_policyreg_epa_camr_reaffirmation",
+      "title": "U.S. EPA final action on petitions to reconsider the Clean Air Mercury Rule (CAMR)",
+      "description": "The U.S. Environmental Protection Agency announced final action on petitions to reconsider mercury-related actions, reaffirming the Clean Air Mercury Rule and describing intended reductions in mercury emissions from coal-fired power plants.",
+      "category_primary": "policy_regulation",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "2006-05-31T00:00:00.000Z",
+        "event_end": "2006-05-31T23:59:59.000Z",
+        "reported_at": "2006-05-31T00:00:00.000Z",
+        "time_confidence": 0.8,
+        "event_date_utc": "2006-05-31T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States (federal)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.85
+      },
+      "sources": [
+        {
+          "url": "https://www.epa.gov/archive/epapages/newsroom_archive/newsreleases/91fb56e876bdf3318525717f0067040c.html",
+          "source_name": "U.S. EPA (archive)",
+          "published_at": "2006-05-31T00:00:00.000Z",
+          "headline": "News release (archive)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://archive.epa.gov/mercuryrule/web/html/fs20060531.html",
+          "source_name": "U.S. EPA (archive)",
+          "published_at": "2006-05-31T00:00:00.000Z",
+          "headline": "Fact sheet (May 31, 2006)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Environmental Protection Agency (EPA)"
+        ],
+        "substances": [
+          "mercury"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "final action on petitions to reconsider mercury-related actions",
+            "source_url": "https://www.epa.gov/archive/epapages/newsroom_archive/newsreleases/91fb56e876bdf3318525717f0067040c.html"
+          },
+          {
+            "quote": "reaffirming the Clean Air Mercury Rule",
+            "source_url": "https://archive.epa.gov/mercuryrule/web/html/fs20060531.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.78,
+        "category": 0.9,
+        "location": 0.9,
+        "summary_grounding": 0.65
+      },
+      "quality_flags": [
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "EPA Clean Air Mercury Rule reaffirmation (petition reconsideration)",
+        "fingerprint": "2006-05_policy_regulation_epa_camr_2006-05-31"
+      }
+    }
+  ]
+}

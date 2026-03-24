@@ -1,0 +1,641 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_1971-10_normalize_2026-01-19T043401403Z",
+    "generated_utc": "2026-01-19T04:34:01.403Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "1971-10",
+    "window": {
+      "start_utc": "1971-10-01T00:00:00.000Z",
+      "end_utc": "1971-10-31T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "evt_197110_td22_atlantic_apalachicola",
+      "title": "Tropical Depression Twenty-Two (1971) brought heavy rainfall from the western Caribbean to Florida Panhandle",
+      "description": "A tropical depression tracked from the western Caribbean across the Yucatán Peninsula into the Gulf of Mexico and into the Florida Panhandle area as a weakening system. The cited NOAA/WPC page documents the storm-total rainfall footprint associated with the system.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1971-10-06T12:00:00Z",
+        "event_end": "1971-10-14T12:00:00Z",
+        "reported_at": "1971-10-31T23:59:59.000Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "1971-10-06T12:00:00Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Florida (capital proxy for Florida Panhandle landfall near Apalachicola), United States",
+        "jurisdiction_level": "state",
+        "admin1": "Florida",
+        "country": "US",
+        "capital_used": "Tallahassee",
+        "lat": 30.4382559,
+        "lon": -84.2807329,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.wpc.ncep.noaa.gov/tropical/rain/td22aof1971.html",
+          "source_name": "NOAA/NWS Weather Prediction Center (WPC)",
+          "published_at": "1971-10-31T23:59:59.000Z",
+          "headline": "Tropical Depression Twenty-Two (Atlantic) 1971 Rainfall",
+          "byline": null,
+          "accessed_utc": "2026-01-19T04:31:03.115Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA",
+          "National Weather Service",
+          "Weather Prediction Center"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "...storm-total rainfall...",
+            "source_url": "https://www.wpc.ncep.noaa.gov/tropical/rain/td22aof1971.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.56,
+        "category": 0.75,
+        "location": 0.55,
+        "summary_grounding": 0.65
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "wpc_td22aof1971_rainfall",
+        "fingerprint": "fp_197110_td22_atlantic_florida_1971-10"
+      }
+    },
+    {
+      "event_id": "evt_197110_marfc_flood_episodes",
+      "title": "NWS MARFC list notes October 1971 flood episodes in the U.S. Middle Atlantic region",
+      "description": "The National Weather Service Middle Atlantic River Forecast Center flood-event summary list for 1971 includes October flood episodes dated Oct 10 and Oct 23–27. The page functions as a regional index of flood events rather than a single-location incident report.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1971-10-10T12:00:00Z",
+        "event_end": "1971-10-27T12:00:00Z",
+        "reported_at": "1971-10-31T23:59:59.000Z",
+        "time_confidence": 0.45,
+        "event_date_utc": "1971-10-10T12:00:00Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Pennsylvania (capital proxy for MARFC Middle Atlantic coverage), United States",
+        "jurisdiction_level": "state",
+        "admin1": "Pennsylvania",
+        "country": "US",
+        "capital_used": "Harrisburg",
+        "lat": 40.2731911,
+        "lon": -76.8867008,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.35
+      },
+      "sources": [
+        {
+          "url": "https://www.weather.gov/marfc/FloodEventSummary1971",
+          "source_name": "National Weather Service (NWS) MARFC",
+          "published_at": "1971-10-31T23:59:59.000Z",
+          "headline": "Flood Event Summary 1971",
+          "byline": null,
+          "accessed_utc": "2026-01-19T04:31:03.115Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "National Weather Service",
+          "Middle Atlantic River Forecast Center"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "...Oct 10, 1971... Oct 23–27, 1971...",
+            "source_url": "https://www.weather.gov/marfc/FloodEventSummary1971"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.4,
+        "category": 0.7,
+        "location": 0.35,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "marfc_flood_event_summary_1971_oct",
+        "fingerprint": "fp_197110_marfc_flood_middle_atlantic_1971-10"
+      }
+    },
+    {
+      "event_id": "ev_197110_romero_fire_santa_barbara_ca",
+      "title": "Romero Fire kills four firefighters near Montecito, California",
+      "description": "A wildfire known as the Romero Fire burned in the Montecito/Summerland area of Santa Barbara County, California in early October 1971. During suppression operations amid strong sundowner winds, a dozer group was overrun and four firefighters were killed; additional firefighters were injured. Reports describe substantial acreage burned and losses including destroyed homes.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2019-09-08T00:00:00Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "1971-10-06T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Montecito / Summerland area, Santa Barbara County, California, USA",
+        "jurisdiction_level": "city",
+        "admin1": "California",
+        "country": "US",
+        "capital_used": null,
+        "lat": 34.4528,
+        "lon": -119.6415,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://firelibrary.org/event/421/",
+          "source_name": "Fire Library",
+          "published_at": "1971-10-01T00:00:00Z",
+          "headline": "Event 421",
+          "byline": null,
+          "accessed_utc": "2026-01-19T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.noozhawk.com/romero_fire_memorial_site_rebuilt_to_honor_4_killed_in_1971_blaze_20190908/",
+          "source_name": "Noozhawk",
+          "published_at": "2019-09-08T00:00:00Z",
+          "headline": "Romero Fire memorial site rebuilt to honor 4 killed in 1971 blaze",
+          "byline": null,
+          "accessed_utc": "2026-01-19T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.edhat.com/news/romero-fire-sparked-50-years-ago/",
+          "source_name": "Edhat",
+          "published_at": "2021-10-01T00:00:00Z",
+          "headline": "Romero Fire Sparked 50 Years Ago",
+          "byline": null,
+          "accessed_utc": "2026-01-19T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.8,
+        "location": 0.55,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "needs_dedupe_check",
+        "secondary_sources_only",
+        "date_ambiguous",
+        "location_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "Romero Fire (1971) Santa Barbara County CA",
+        "fingerprint": "romero_fire_1971-10-06_montecito_ca_us"
+      }
+    },
+    {
+      "event_id": "evt_19711010_mbcc_humboldt_lewisclark_wolfisland",
+      "title": "U.S. commission approves new Humboldt Bay and Lewis and Clark National Wildlife Refuges and expansion at Wolf Island",
+      "description": "The Migratory Bird Conservation Commission approved land acquisition for two new National Wildlife Refuges—Humboldt Bay (California) and Lewis and Clark (Oregon)—to protect habitat used by migratory birds. The commission also approved acquisition of additional land for the Wolf Island National Wildlife Refuge in Georgia.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1971-10-10T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1971-10-10T00:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, D.C.",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://www.fws.gov/sites/default/files/documents/historic-news-releases/1971/19711010.PDF",
+          "source_name": "U.S. Fish & Wildlife Service",
+          "published_at": "1971-10-10T00:00:00Z",
+          "headline": "19711010 (Historic News Release PDF)",
+          "byline": null,
+          "accessed_utc": "2026-01-19T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.fws.gov/press-release/1971-10/migratory-bird-conservation-commission-approves-two-new-national-wildlife",
+          "source_name": "U.S. Fish & Wildlife Service",
+          "published_at": "1971-10-10T00:00:00Z",
+          "headline": "Migratory Bird Conservation Commission approves two new National Wildlife Refuges",
+          "byline": null,
+          "accessed_utc": "2026-01-19T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Migratory Bird Conservation Commission",
+          "U.S. Fish & Wildlife Service"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "estuarine habitat",
+          "waterfowl habitat"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.72,
+        "category": 0.8,
+        "location": 0.7,
+        "summary_grounding": 0.65
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "MBCC approves Humboldt Bay & Lewis and Clark NWRs; Wolf Island addition (1971-10-10)",
+        "fingerprint": "mbcc_1971-10-10_us_humboldt-lewisclark-wolfisland"
+      }
+    },
+    {
+      "event_id": "19711012_oilpol_gbr_imco",
+      "title": "OILPOL amendments adopted extending oil pollution protected zone to the Great Barrier Reef",
+      "description": "Amendments to the International Convention for the Prevention of Pollution of the Sea by Oil (OILPOL) were adopted with provisions relating to protection of the Great Barrier Reef. The event is referenced in the U.S. Senate treaty transmission (Treaty Doc. 92-23).",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "1971-10-12T12:00:00Z",
+        "event_end": "1971-10-12T12:00:00Z",
+        "reported_at": "1971-10-12T12:00:00Z",
+        "time_confidence": 0.5,
+        "event_date_utc": "1971-10-12T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "London, United Kingdom (IMCO/IMO)",
+        "jurisdiction_level": "city",
+        "admin1": null,
+        "country": "GB",
+        "capital_used": null,
+        "lat": 51.5074,
+        "lon": -0.1278,
+        "precision": "city",
+        "location_basis": "institution_proxy",
+        "location_confidence": 0.4
+      },
+      "sources": [
+        {
+          "url": "https://www.congress.gov/treaty-document/92nd-congress/23",
+          "source_name": "Congress.gov",
+          "published_at": "1971-01-01T00:00:00Z",
+          "headline": "Treaty Document 92-23",
+          "byline": null,
+          "accessed_utc": "2026-01-19T04:32:41.681Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "International Maritime Consultative Organization (IMCO)",
+          "International Maritime Organization (IMO)"
+        ],
+        "substances": [
+          "oil"
+        ],
+        "ecosystems": [
+          "Great Barrier Reef"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Treaty Document 92-23 ... International Convention for the Prevention of Pollution of the Sea by Oil (OILPOL).",
+            "source_url": "https://www.congress.gov/treaty-document/92nd-congress/23"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.45,
+        "category": 0.7,
+        "location": 0.35,
+        "summary_grounding": 0.4
+      },
+      "quality_flags": [
+        "secondary_sources_only",
+        "date_ambiguous",
+        "low_confidence_location",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "OILPOL_1971_IMCO_amendments",
+        "fingerprint": "oilpol-amendments-imco-1971-10-12-london"
+      }
+    },
+    {
+      "event_id": "19711015_oilpol_tanker_arrangement_imco",
+      "title": "OILPOL amendments adopted regarding tanker size and arrangement",
+      "description": "Amendments to the International Convention for the Prevention of Pollution of the Sea by Oil (OILPOL) were adopted relating to tanker size and arrangement. The amendments are referenced in the U.S. Senate treaty transmission (Treaty Doc. 92-23).",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "1971-10-15T12:00:00Z",
+        "event_end": "1971-10-15T12:00:00Z",
+        "reported_at": "1971-10-15T12:00:00Z",
+        "time_confidence": 0.5,
+        "event_date_utc": "1971-10-15T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "London, United Kingdom (IMCO/IMO)",
+        "jurisdiction_level": "city",
+        "admin1": null,
+        "country": "GB",
+        "capital_used": null,
+        "lat": 51.5074,
+        "lon": -0.1278,
+        "precision": "city",
+        "location_basis": "institution_proxy",
+        "location_confidence": 0.4
+      },
+      "sources": [
+        {
+          "url": "https://www.congress.gov/treaty-document/92nd-congress/23",
+          "source_name": "Congress.gov",
+          "published_at": "1971-01-01T00:00:00Z",
+          "headline": "Treaty Document 92-23",
+          "byline": null,
+          "accessed_utc": "2026-01-19T04:32:41.681Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "International Maritime Consultative Organization (IMCO)",
+          "International Maritime Organization (IMO)"
+        ],
+        "substances": [
+          "oil"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Treaty Document 92-23 ... International Convention for the Prevention of Pollution of the Sea by Oil (OILPOL).",
+            "source_url": "https://www.congress.gov/treaty-document/92nd-congress/23"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.45,
+        "category": 0.7,
+        "location": 0.35,
+        "summary_grounding": 0.4
+      },
+      "quality_flags": [
+        "secondary_sources_only",
+        "date_ambiguous",
+        "low_confidence_location",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "OILPOL_1971_IMCO_amendments",
+        "fingerprint": "oilpol-amendments-imco-1971-10-15-london"
+      }
+    },
+    {
+      "event_id": "19711018_us_eo_11628_epa_seal",
+      "title": "U.S. Executive Order 11628 establishes an official seal for the Environmental Protection Agency",
+      "description": "U.S. President Richard Nixon issued Executive Order 11628 approving and establishing an official seal for the Environmental Protection Agency. The action formalized the agency’s official insignia as part of federal administrative governance.",
+      "category_primary": "policy_regulation",
+      "polarity": "unclear",
+      "severity": null,
+      "time": {
+        "event_start": "1971-10-18T12:00:00Z",
+        "event_end": "1971-10-18T12:00:00Z",
+        "reported_at": "1971-10-18T12:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1971-10-18T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Washington, DC, United States (Federal)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.75
+      },
+      "sources": [
+        {
+          "url": "https://www.presidency.ucsb.edu/documents/executive-order-11628-establishing-seal-for-the-environmental-protection-agency",
+          "source_name": "The American Presidency Project",
+          "published_at": "1971-10-18T00:00:00Z",
+          "headline": "Executive Order 11628—Establishing Seal for the Environmental Protection Agency",
+          "byline": null,
+          "accessed_utc": "2026-01-19T04:32:41.681Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.archives.gov/federal-register/executive-orders/1971.html",
+          "source_name": "U.S. National Archives",
+          "published_at": "1971-01-01T00:00:00Z",
+          "headline": "Executive Orders Disposition Tables: 1971",
+          "byline": null,
+          "accessed_utc": "2026-01-19T04:32:41.681Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Environmental Protection Agency (EPA)"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": [
+          "Richard Nixon"
+        ]
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Executive Order 11628—Establishing Seal for the Environmental Protection Agency",
+            "source_url": "https://www.presidency.ucsb.edu/documents/executive-order-11628-establishing-seal-for-the-environmental-protection-agency"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.75,
+        "category": 0.7,
+        "location": 0.85,
+        "summary_grounding": 0.7
+      },
+      "quality_flags": [
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "US_EO_11628_EPA_seal",
+        "fingerprint": "us-eo-11628-epa-seal-1971-10-18-washington"
+      }
+    },
+    {
+      "event_id": "19711026_us_eo_11629_migratory_birds_mexico",
+      "title": "U.S. Executive Order 11629 delegates authority under the U.S.–Mexico migratory birds convention",
+      "description": "U.S. President Richard Nixon issued Executive Order 11629 delegating to the Secretary of State the President’s function under Article IV of the U.S.–Mexico convention covering protection of migratory birds and game mammals. The order enabled designation of additional bird species to be protected by common agreement with Mexico, with consultation with the Secretary of the Interior.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "1971-10-26T12:00:00Z",
+        "event_end": "1971-10-26T12:00:00Z",
+        "reported_at": "1971-10-26T12:00:00Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "1971-10-26T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Washington, DC, United States (Federal)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.8
+      },
+      "sources": [
+        {
+          "url": "https://www.archives.gov/federal-register/codification/executive-order/11629.html",
+          "source_name": "U.S. National Archives",
+          "published_at": "1971-10-26T00:00:00Z",
+          "headline": "Executive Order 11629",
+          "byline": null,
+          "accessed_utc": "2026-01-19T04:32:41.681Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.archives.gov/federal-register/executive-orders/1971.html",
+          "source_name": "U.S. National Archives",
+          "published_at": "1971-01-01T00:00:00Z",
+          "headline": "Executive Orders Disposition Tables: 1971",
+          "byline": null,
+          "accessed_utc": "2026-01-19T04:32:41.681Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Department of State",
+          "U.S. Department of the Interior"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": [
+          "Richard Nixon"
+        ]
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Executive Order 11629",
+            "source_url": "https://www.archives.gov/federal-register/codification/executive-order/11629.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.8,
+        "category": 0.75,
+        "location": 0.85,
+        "summary_grounding": 0.75
+      },
+      "quality_flags": [
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "US_EO_11629_Migratory_Birds_Mexico",
+        "fingerprint": "us-eo-11629-migratory-birds-1971-10-26-washington"
+      }
+    }
+  ]
+}

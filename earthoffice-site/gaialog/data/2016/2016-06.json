@@ -1,0 +1,896 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_2016-06_normalize_2026-01-16T055508181Z",
+    "generated_utc": "2026-01-16T05:55:08.181Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "2016-06",
+    "window": {
+      "start_utc": "2016-06-01T00:00:00.000Z",
+      "end_utc": "2016-06-30T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "20160603_mosier_oil_train_derailment",
+      "title": "Mosier, Oregon crude-oil train derailment and spill near the Columbia River",
+      "description": "A Union Pacific crude-oil train derailed in Mosier, Oregon, and multiple tank cars released oil. Emergency response actions and evacuations were reported, with concerns about impacts to nearby waterways including the Columbia River.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2016-06-03T19:15:00.000Z",
+        "event_end": "2016-06-03T23:59:59.000Z",
+        "reported_at": "2016-06-04T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2016-06-03T19:15:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Mosier, Oregon, USA",
+        "jurisdiction_level": "city",
+        "admin1": "Oregon",
+        "country": "US",
+        "capital_used": null,
+        "lat": 45.6843,
+        "lon": -121.4012,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://response.epa.gov/MosierOilTrainDerailment",
+          "source_name": "U.S. EPA Response",
+          "published_at": "2016-06-03T00:00:00.000Z",
+          "headline": "Mosier Oil Train Derailment",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.opb.org/news/series/oil-trains/oil-train-derails-hood-river-mosier-school/",
+          "source_name": "Oregon Public Broadcasting",
+          "published_at": "2016-06-03T00:00:00.000Z",
+          "headline": "Oil train derails near Mosier; school evacuated",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.theguardian.com/us-news/2016/jun/04/protest-oil-sheen-columbia-river-oregon-train-derailment",
+          "source_name": "The Guardian",
+          "published_at": "2016-06-04T00:00:00.000Z",
+          "headline": "Oil train derailment in Oregon sparks protests over safety",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Union Pacific",
+          "U.S. Environmental Protection Agency"
+        ],
+        "substances": [
+          "crude oil"
+        ],
+        "ecosystems": [
+          "Columbia River"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Mosier Oil Train Derailment",
+            "source_url": "https://response.epa.gov/MosierOilTrainDerailment"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.8,
+        "location": 0.7,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "needs_dedupe_check",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "Mosier, Oregon oil train derailment June 2016",
+        "fingerprint": "mosier-oregon-oil-train-2016-06-03"
+      }
+    },
+    {
+      "event_id": "20160614_coos_bay_sewer_overflow",
+      "title": "Coos Bay, Oregon sanitary sewer overflow reported into local waterways",
+      "description": "Coos Bay, Oregon reported a sanitary sewer overflow estimated at about 12,760 gallons due to a force-main pipe issue. The city reported the incident to state regulators and shut down the pump station to stop the release.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2016-06-14T00:00:00.000Z",
+        "event_end": "2016-06-14T23:59:59.000Z",
+        "reported_at": "2016-06-16T00:00:00.000Z",
+        "time_confidence": 0.5,
+        "event_date_utc": "2016-06-14T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Coos Bay, Oregon, USA",
+        "jurisdiction_level": "city",
+        "admin1": "Oregon",
+        "country": "US",
+        "capital_used": null,
+        "lat": 43.3665,
+        "lon": -124.2179,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://oregontoday.net/sanitary-sewer-overflow-update-june-16-2016/",
+          "source_name": "Oregon Today",
+          "published_at": "2016-06-16T00:00:00.000Z",
+          "headline": "Sanitary Sewer Overflow Update (June 16, 2016)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "City of Coos Bay",
+          "Oregon Department of Environmental Quality"
+        ],
+        "substances": [
+          "sewage"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "sanitary sewer overflow estimated at 12,760 gallons",
+            "source_url": "https://oregontoday.net/sanitary-sewer-overflow-update-june-16-2016/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.5,
+        "category": 0.75,
+        "location": 0.6,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "secondary_sources_only",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "Coos Bay sanitary sewer overflow June 2016",
+        "fingerprint": "coos-bay-oregon-sewer-overflow-2016-06-14"
+      }
+    },
+    {
+      "event_id": "20160630_vietnam_formosa_coastal_pollution_acknowledgement",
+      "title": "Formosa Ha Tinh Steel accepts responsibility for Vietnam coastal marine pollution",
+      "description": "Authorities and major news outlets reported that Formosa Ha Tinh Steel accepted responsibility for polluting Vietnam’s central coast after mass fish deaths earlier in 2016. The incident affected coastal waters and fisheries across multiple central provinces.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2016-06-30T00:00:00.000Z",
+        "event_end": "2016-06-30T23:59:59.000Z",
+        "reported_at": "2016-06-30T00:00:00.000Z",
+        "time_confidence": 0.75,
+        "event_date_utc": "2016-06-30T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Vietnam (central coast provinces)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "VN",
+        "capital_used": "Hanoi",
+        "lat": 21.0278,
+        "lon": 105.8342,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.reuters.com/article/us-vietnam-environment-formosa-idUSKCN0ZG13C",
+          "source_name": "Reuters",
+          "published_at": "2016-06-30T00:00:00.000Z",
+          "headline": "Vietnam blames Formosa steel plant for mass fish deaths",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.bbc.com/news/world-asia-36655341",
+          "source_name": "BBC News",
+          "published_at": "2016-06-30T00:00:00.000Z",
+          "headline": "Vietnam steel firm Formosa blamed for mass fish deaths",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Formosa Ha Tinh Steel"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "South China Sea (Vietnam central coast)"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Formosa Ha Tinh Steel accepted responsibility",
+            "source_url": "https://www.reuters.com/article/us-vietnam-environment-formosa-idUSKCN0ZG13C"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.63,
+        "category": 0.85,
+        "location": 0.55,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "location_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "Formosa Ha Tinh Steel Vietnam mass fish deaths responsibility June 2016",
+        "fingerprint": "vietnam-formosa-responsibility-2016-06-30"
+      }
+    },
+    {
+      "event_id": "evt_201606_wv_flooding_01",
+      "title": "Late-June 2016 flooding in West Virginia after repeated thunderstorms",
+      "description": "Several rounds of thunderstorms produced intense rainfall that led to flash flooding and river flooding across West Virginia in late June 2016. The event caused fatalities and widespread damage, and prompted emergency and disaster responses.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2016-06-23T00:00:00.000Z",
+        "event_end": "2016-06-24T23:59:59.000Z",
+        "reported_at": "2016-06-23T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2016-06-23T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "West Virginia, USA",
+        "jurisdiction_level": "state",
+        "admin1": "West Virginia",
+        "country": "US",
+        "capital_used": "Charleston",
+        "lat": 38.349819,
+        "lon": -81.632623,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.85
+      },
+      "sources": [
+        {
+          "url": "https://www.weather.gov/rlx/2016-historic-june-flooding",
+          "source_name": "National Weather Service (RLX)",
+          "published_at": "2016-06-23T00:00:00.000Z",
+          "headline": "2016 Historic June Flooding",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.weather.gov/rnk/2016_06_23_Flood",
+          "source_name": "National Weather Service (RNK)",
+          "published_at": "2016-06-23T00:00:00.000Z",
+          "headline": "2016-06-23 Flood",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "National Weather Service"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Several rounds of thunderstorms produced intense rainfall leading to catastrophic flash flooding",
+            "source_url": "https://www.weather.gov/rlx/2016-historic-june-flooding"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.66,
+        "category": 0.85,
+        "location": 0.85,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "paywalled_or_partial",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "2016-06 West Virginia flooding",
+        "fingerprint": "fp_wv_flood_20160623_charleston"
+      }
+    },
+    {
+      "event_id": "evt_201606_seine_paris_flood_01",
+      "title": "Seine River flooding peaks in Paris after heavy rains",
+      "description": "After days of heavy rain in France, the Seine rose to one of its highest levels in decades in early June 2016, disrupting transport in Paris. Cultural institutions implemented flood protection measures, including closures and moving works from vulnerable storage areas.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2016-06-03T00:00:00.000Z",
+        "event_end": "2016-06-07T23:59:59.000Z",
+        "reported_at": "2016-06-03T00:00:00.000Z",
+        "time_confidence": 0.65,
+        "event_date_utc": "2016-06-03T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Paris, France",
+        "jurisdiction_level": "city",
+        "admin1": null,
+        "country": "FR",
+        "capital_used": null,
+        "lat": 48.8566,
+        "lon": 2.3522,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.75
+      },
+      "sources": [
+        {
+          "url": "https://www.theguardian.com/world/2016/jun/03/paris-river-seine-floods",
+          "source_name": "The Guardian",
+          "published_at": "2016-06-03T00:00:00.000Z",
+          "headline": "Paris river Seine floods",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://gpm.nasa.gov/extreme-weather/gpm-imerg-sees-flooding-france",
+          "source_name": "NASA Global Precipitation Measurement (GPM)",
+          "published_at": "2016-06-01T00:00:00.000Z",
+          "headline": "GPM IMERG sees flooding in France",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.euronews.com/2016/06/05/flood-water-receding-in-paris",
+          "source_name": "Euronews",
+          "published_at": "2016-06-05T00:00:00.000Z",
+          "headline": "Flood water receding in Paris",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NASA"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "Seine River basin"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "the Seine reached its highest level in decades",
+            "source_url": "https://www.theguardian.com/world/2016/jun/03/paris-river-seine-floods"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.8,
+        "location": 0.75,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "paywalled_or_partial",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "2016-06 Seine flood Paris",
+        "fingerprint": "fp_paris_seine_flood_20160603"
+      }
+    },
+    {
+      "event_id": "evt_201606_noaa_warmest_june_conus_01",
+      "title": "NOAA reports June 2016 warmest June on record for the contiguous U.S.",
+      "description": "NOAA monthly climate reporting identified June 2016 as the warmest June on record for the contiguous United States based on records dating back to 1895. This indicates a significant national-scale temperature anomaly for the month.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2016-06-01T00:00:00.000Z",
+        "event_end": "2016-06-30T23:59:59.000Z",
+        "reported_at": "2016-06-01T00:00:00.000Z",
+        "time_confidence": 0.55,
+        "event_date_utc": null,
+        "event_date_precision": "month"
+      },
+      "location": {
+        "name": "United States (contiguous U.S.)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://www.climate.gov/news-features/featured-images/june-2016-warmest-june-record-us",
+          "source_name": "NOAA Climate.gov",
+          "published_at": "2016-07-01T00:00:00.000Z",
+          "headline": "June 2016 warmest June on record for the U.S.",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://weather.com/news/news/noaa-report-june-temperatures-record-warmth",
+          "source_name": "The Weather Channel",
+          "published_at": "2016-07-01T00:00:00.000Z",
+          "headline": "NOAA report: June temperatures record warmth",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "June 2016 was the warmest June on record for the contiguous United States",
+            "source_url": "https://www.climate.gov/news-features/featured-images/june-2016-warmest-june-record-us"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.64,
+        "category": 0.8,
+        "location": 0.7,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "2016-06 warmest June CONUS NOAA",
+        "fingerprint": "fp_conus_warmest_june_201606_dc"
+      }
+    },
+    {
+      "event_id": "evt_20160616_jp_uchiura_bay_eq_m53",
+      "title": "M5.3 earthquake reported in Uchiura Bay area, Hokkaido, Japan",
+      "description": "A magnitude 5.3 earthquake was reported in the Uchiura Bay area of Hokkaido, Japan on June 16, 2016. The Japan Earthquake Research Committee monthly evaluation reported the event and associated shaking intensity information.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2016-06-16T00:00:00.000Z",
+        "event_end": "2016-06-16T23:59:59.000Z",
+        "reported_at": "2016-07-01T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2016-06-16T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Uchiura Bay, Hokkaido, Japan",
+        "jurisdiction_level": "site",
+        "admin1": "Hokkaido",
+        "country": "JP",
+        "capital_used": null,
+        "lat": 42,
+        "lon": 140.5,
+        "precision": "admin1",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.4
+      },
+      "sources": [
+        {
+          "url": "https://www.jishin.go.jp/main/chousa/16jul/index-e.htm",
+          "source_name": "Headquarters for Earthquake Research Promotion (Japan)",
+          "published_at": "2016-07-01T00:00:00.000Z",
+          "headline": "July 2016 Monthly Evaluation (English)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Headquarters for Earthquake Research Promotion (Japan)"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Monthly Evaluation (July 2016)",
+            "source_url": "https://www.jishin.go.jp/main/chousa/16jul/index-e.htm"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.8,
+        "location": 0.4,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "JP-Hokkaido-UchiuraBay-2016-06-16-earthquake",
+        "fingerprint": "fp_jp_hokkaido_uchiura_20160616_eq"
+      }
+    },
+    {
+      "event_id": "20160615_sherpa_fire_santa_barbara_ca_us",
+      "title": "Sherpa Fire ignites near Refugio Canyon; evacuations and Highway 101 closures in Santa Barbara County",
+      "description": "A fast-moving wildfire began on June 15, 2016 near Refugio Canyon in Santa Barbara County, California. The fire grew rapidly, prompting evacuations, campground closures, and intermittent closures of Highway 101 as crews fought the blaze in difficult terrain.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2016-06-15T22:30:00.000Z",
+        "event_end": "2016-06-30T23:59:59.000Z",
+        "reported_at": "2016-06-16T00:00:00Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2016-06-15T22:30:00.000Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Santa Barbara County (Refugio Canyon/Gaviota Coast), California, USA",
+        "jurisdiction_level": "state",
+        "admin1": "California",
+        "country": "US",
+        "capital_used": "Sacramento",
+        "lat": 38.5816,
+        "lon": -121.4944,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.kclu.org/local-news/2016-06-16/sherpa-brush-fire-in-santa-barbara-county-grows-to-1100-acres-overnight",
+          "source_name": "KCLU",
+          "published_at": "2016-06-16T00:00:00Z",
+          "headline": "Sherpa Brush Fire in Santa Barbara County Grows to 1,100 Acres Overnight",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://abc7.com/news/sherpa-fire-is-93-percent-contained-calfire-says/1401263/",
+          "source_name": "ABC7",
+          "published_at": "2016-06-17T00:00:00Z",
+          "headline": "Sherpa Fire is 93 percent contained, Cal Fire says",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://time.com/4373823/california-wildfire-santa-barbara/",
+          "source_name": "TIME",
+          "published_at": "2016-06-17T00:00:00Z",
+          "headline": "Wildfire Near Santa Barbara Forces Evacuations and Highway Closures",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Cal Fire"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.85,
+        "location": 0.6,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Sherpa Fire Santa Barbara County June 2016",
+        "fingerprint": "sherpa_fire_santa_barbara_county_ca_2016-06-15"
+      }
+    },
+    {
+      "event_id": "20160604_old_fire_calabasas_ca_us",
+      "title": "Old Fire near Calabasas threatens homes; evacuations lifted as containment improves",
+      "description": "A brush fire in the Calabasas area of Los Angeles County, California, threatened homes and prompted evacuations. As conditions improved, containment increased and evacuation orders were lifted.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2016-06-04T00:00:00.000Z",
+        "event_end": "2016-06-06T23:59:59.000Z",
+        "reported_at": "2016-06-04T00:00:00Z",
+        "time_confidence": 0.45,
+        "event_date_utc": "2016-06-04T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Los Angeles County (Calabasas area), California, USA",
+        "jurisdiction_level": "state",
+        "admin1": "California",
+        "country": "US",
+        "capital_used": "Sacramento",
+        "lat": 38.5816,
+        "lon": -121.4944,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://weather.com/safety/wildfires/news/california-wildfire-brush-fire-june-2016",
+          "source_name": "The Weather Channel",
+          "published_at": "2016-06-04T00:00:00Z",
+          "headline": "California Wildfire: Brush Fire Forces Evacuations Near Calabasas",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.48,
+        "category": 0.75,
+        "location": 0.55,
+        "summary_grounding": 0.35
+      },
+      "quality_flags": [
+        "secondary_sources_only",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Old Fire Calabasas June 2016",
+        "fingerprint": "old_fire_calabasas_ca_2016-06-04"
+      }
+    },
+    {
+      "event_id": "20160603_mosier_oil_train_derailment_fire_or_us",
+      "title": "Mosier, Oregon oil-train derailment triggers fire and smoke; air quality advisories and evacuations reported",
+      "description": "A crude-oil train derailed near Mosier, Oregon, and multiple cars caught fire, producing heavy smoke. Officials issued air quality advisories and evacuations during the emergency response.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2016-06-03T19:15:00.000Z",
+        "event_end": "2016-06-04T23:59:59.000Z",
+        "reported_at": "2016-06-03T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2016-06-03T19:15:00.000Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Mosier, Oregon, USA",
+        "jurisdiction_level": "city",
+        "admin1": "Oregon",
+        "country": "US",
+        "capital_used": null,
+        "lat": 45.6843,
+        "lon": -121.3992,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.65
+      },
+      "sources": [
+        {
+          "url": "https://www.opb.org/news/series/oil-trains/oil-train-derails-hood-river-mosier-school/",
+          "source_name": "Oregon Public Broadcasting (OPB)",
+          "published_at": "2016-06-03T00:00:00Z",
+          "headline": "Oil Train Derails Near Mosier; School Evacuated",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://time.com/4357295/oregon-fire-columbia-river-gorge/",
+          "source_name": "TIME",
+          "published_at": "2016-06-04T00:00:00Z",
+          "headline": "Oil Train Derails in Oregon, Catching Fire",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [
+          "crude oil"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.7,
+        "location": 0.7,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Mosier oil train derailment fire June 2016",
+        "fingerprint": "mosier_oil_train_derailment_fire_2016-06-03"
+      }
+    },
+    {
+      "event_id": "20160622-us-tsca-lautenberg-act-signed",
+      "title": "U.S. TSCA reform signed: Frank R. Lautenberg Chemical Safety for the 21st Century Act",
+      "description": "President Barack Obama signed the Frank R. Lautenberg Chemical Safety for the 21st Century Act into law on June 22, 2016. The law amended the Toxic Substances Control Act (TSCA) and is described by EPA as strengthening the agency’s ability to evaluate and regulate chemicals.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "2016-06-22T00:00:00.000Z",
+        "event_end": "2016-06-22T23:59:59.000Z",
+        "reported_at": "2016-06-22T00:00:00.000Z",
+        "time_confidence": 0.85,
+        "event_date_utc": "2016-06-22T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States (federal)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.8
+      },
+      "sources": [
+        {
+          "url": "https://www.epa.gov/assessing-and-managing-chemicals-under-tsca/frank-r-lautenberg-chemical-safety-21st-century-act",
+          "source_name": "U.S. Environmental Protection Agency (EPA)",
+          "published_at": "2016-06-22T00:00:00.000Z",
+          "headline": "Frank R. Lautenberg Chemical Safety for the 21st Century Act",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.congress.gov/bill/114th-congress/house-bill/2576/text/pl",
+          "source_name": "Congress.gov",
+          "published_at": "2016-06-22T00:00:00.000Z",
+          "headline": "H.R.2576 - Frank R. Lautenberg Chemical Safety for the 21st Century Act (Public Law text)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://time.com/4378712/tsca-obama-toxic-chemicals/",
+          "source_name": "Time",
+          "published_at": "2016-06-22T00:00:00.000Z",
+          "headline": "Obama Signs Legislation to Overhaul Toxic Substances Control Act",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Environmental Protection Agency (EPA)",
+          "U.S. Congress"
+        ],
+        "substances": [
+          "industrial chemicals"
+        ],
+        "ecosystems": [],
+        "people": [
+          "Barack Obama"
+        ]
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "President Obama signed the Frank R. Lautenberg Chemical Safety for the 21st Century Act into law",
+            "source_url": "https://www.epa.gov/assessing-and-managing-chemicals-under-tsca/frank-r-lautenberg-chemical-safety-21st-century-act"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.82,
+        "category": 0.9,
+        "location": 0.85,
+        "summary_grounding": 0.75
+      },
+      "quality_flags": [
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "US TSCA reform Lautenberg Act signed 2016-06-22",
+        "fingerprint": "us_tsca_lautenberg_2016-06-22_washingtondc"
+      }
+    }
+  ]
+}

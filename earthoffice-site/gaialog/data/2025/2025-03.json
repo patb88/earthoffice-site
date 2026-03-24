@@ -1,0 +1,1077 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_2025-03_normalize_2026-01-16T141836365Z",
+    "generated_utc": "2026-01-16T14:18:36.365Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "2025-03",
+    "window": {
+      "start_utc": "2025-03-01T00:00:00.000Z",
+      "end_utc": "2025-03-31T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "evt_20250325_ecuador_sote_spill_esmeraldas",
+      "title": "Ecuador SOTE pipeline rupture spilled 25,116 barrels of oil in Esmeraldas province",
+      "description": "A rupture of Ecuador’s SOTE crude oil pipeline led to an oil spill that Petroecuador said totaled 25,116 barrels. The company reported impacts to rivers and beaches in Esmeraldas province and said it was conducting response and cleanup activities, including recovery of an oil-water mixture and monitoring.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2025-03-01T00:00:00.000Z",
+        "event_end": "2025-03-25T23:59:59.000Z",
+        "reported_at": "2025-03-25T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2025-03-25T00:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Esmeraldas province, Ecuador",
+        "jurisdiction_level": "state",
+        "admin1": "Esmeraldas",
+        "country": "EC",
+        "capital_used": "Esmeraldas",
+        "lat": 0.9592,
+        "lon": -79.6547,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.75
+      },
+      "sources": [
+        {
+          "url": "https://www.reuters.com/business/energy/rupture-ecuador-sote-pipeline-spilled-25116-barrels-oil-2025-03-25/",
+          "source_name": "Reuters",
+          "published_at": "2025-03-25T00:00:00Z",
+          "headline": "Rupture in Ecuador SOTE pipeline spilled 25,116 barrels of oil",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Petroecuador"
+        ],
+        "substances": [
+          "crude oil"
+        ],
+        "ecosystems": [
+          "rivers",
+          "beaches",
+          "farmland"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "...spilled 25,116 barrels of oil...",
+            "source_url": "https://www.reuters.com/business/energy/rupture-ecuador-sote-pipeline-spilled-25116-barrels-oil-2025-03-25/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.72,
+        "category": 0.85,
+        "location": 0.75,
+        "summary_grounding": 0.65
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Ecuador SOTE pipeline spill Esmeraldas March 2025",
+        "fingerprint": "fp_ecuador_sote_esmeraldas_2025-03"
+      }
+    },
+    {
+      "event_id": "evt_20250327_stclair_sarnia_suncor_spill",
+      "title": "Crude oil spill reported into the St. Clair River near Sarnia, Ontario",
+      "description": "NOAA incident reporting for March 2025 noted a crude oil spill into the St. Clair River near Sarnia, Ontario. The entry stated boom deployment and that the spill source was isolated and secured, with NOAA OR&R providing scientific support.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2025-03-27T00:00:00.000Z",
+        "event_end": "2025-03-28T23:59:59.000Z",
+        "reported_at": "2025-03-01T00:00:00Z",
+        "time_confidence": 0.45,
+        "event_date_utc": "2025-03-27T00:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "St. Clair River near Sarnia, Ontario, Canada",
+        "jurisdiction_level": "city",
+        "admin1": "Ontario",
+        "country": "CA",
+        "capital_used": null,
+        "lat": 42.9745,
+        "lon": -82.4066,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://blog.response.restoration.noaa.gov/incident-responses-march-2025",
+          "source_name": "NOAA OR&R (Response Restoration) Blog",
+          "published_at": "2025-03-01T00:00:00Z",
+          "headline": "Incident Responses: March 2025",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA OR&R",
+          "Suncor Energy"
+        ],
+        "substances": [
+          "crude oil"
+        ],
+        "ecosystems": [
+          "St. Clair River"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "...crude oil was reported spilled into the St. Clair River...",
+            "source_url": "https://blog.response.restoration.noaa.gov/incident-responses-march-2025"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.75,
+        "location": 0.6,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "St. Clair River Sarnia crude oil spill March 2025",
+        "fingerprint": "fp_stclair_sarnia_2025-03"
+      }
+    },
+    {
+      "event_id": "evt_20250315_zambia_kafue_sinometals_tailings_contamination",
+      "title": "Zambia Kafue River basin contamination reported after Sino-Metals tailings dam failure",
+      "description": "An Associated Press report described contamination in Zambia’s Kafue River basin linked to a tailings dam failure at Sino-Metals Leach Zambia. The report said acidic, metal-laden waste entered waterways and described impacts such as fish deaths and disruptions to water supplies.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2025-03-15T00:00:00.000Z",
+        "event_end": "2025-03-15T23:59:59.000Z",
+        "reported_at": "2025-03-15T00:00:00Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "2025-03-15T00:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Kafue River basin (via Mwambashi River), Zambia",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "ZM",
+        "capital_used": "Lusaka",
+        "lat": -15.3875,
+        "lon": 28.3228,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.5
+      },
+      "sources": [
+        {
+          "url": "https://apnews.com/article/93ee91d1156471aaf9a7ebd6f51333c1",
+          "source_name": "Associated Press",
+          "published_at": "2025-03-15T00:00:00Z",
+          "headline": "Acidic mining waste contamination in Zambia’s Kafue River basin following Sino-Metals Leach Zambia tailings dam failure",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Sino-Metals Leach Zambia",
+          "Associated Press"
+        ],
+        "substances": [
+          "acidic mining waste",
+          "tailings",
+          "heavy metals"
+        ],
+        "ecosystems": [
+          "Kafue River",
+          "Mwambashi River"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "...acidic, metal-laden waste... into the Kafue River system...",
+            "source_url": "https://apnews.com/article/93ee91d1156471aaf9a7ebd6f51333c1"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.8,
+        "location": 0.5,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Kafue River contamination Sino-Metals tailings Zambia March 2025",
+        "fingerprint": "fp_zambia_kafue_2025-03"
+      }
+    },
+    {
+      "event_id": "2025-03_weather_climate_us_ncei_national_climate_202503",
+      "title": "NOAA reports sixth-warmest March on record for the contiguous U.S. (March 2025)",
+      "description": "NOAA/NCEI reported that March 2025 was the sixth-warmest March on record for the contiguous United States. The report summarizes national temperature and climate conditions for the month.",
+      "category_primary": "weather_climate",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "2025-03-01T00:00:00.000Z",
+        "event_end": "2025-03-31T23:59:59.000Z",
+        "reported_at": "2025-04-01T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": null,
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "United States",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://www.ncei.noaa.gov/news/national-climate-202503",
+          "source_name": "NOAA NCEI",
+          "published_at": "2025-04-01T00:00:00.000Z",
+          "headline": "National Climate Report (March 2025)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA",
+          "National Centers for Environmental Information (NCEI)"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "March 2025 was the sixth-warmest March for the contiguous U.S.",
+            "source_url": "https://www.ncei.noaa.gov/news/national-climate-202503"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.7,
+        "location": 0.75,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "NOAA NCEI National Climate Report March 2025 (US)",
+        "fingerprint": "us|weather_climate|noaa_ncei_national_climate_202503|2025-03"
+      }
+    },
+    {
+      "event_id": "2025-03_weather_climate_us_severe_midmarch_ap_nasa",
+      "title": "Mid-March 2025 severe weather outbreak with tornadoes, dust storms, and fire impacts across multiple U.S. states",
+      "description": "News coverage described a multi-day mid-March 2025 severe weather outbreak across parts of the central and southern United States, including deadly tornadoes and widespread impacts. NASA Earth Observatory coverage highlighted concurrent hazards including dust and fire conditions tied to the event.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2025-03-14T00:00:00.000Z",
+        "event_end": "2025-03-16T23:59:59.000Z",
+        "reported_at": "2025-03-16T00:00:00.000Z",
+        "time_confidence": 0.55,
+        "event_date_utc": null,
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "United States",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://apnews.com/article/ce794c4070279fdca3e6ecdd67f9225b",
+          "source_name": "Associated Press",
+          "published_at": "2025-03-16T00:00:00.000Z",
+          "headline": "Associated Press story on mid-March 2025 severe weather impacts",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://science.nasa.gov/earth/earth-observatory/dusty-inferno-hits-oklahoma-154054/",
+          "source_name": "NASA Earth Observatory",
+          "published_at": "2025-03-16T00:00:00.000Z",
+          "headline": "Dusty Inferno Hits Oklahoma",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Associated Press",
+          "NASA Earth Observatory"
+        ],
+        "substances": [
+          "dust/sand (aerosols)"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.52,
+        "category": 0.65,
+        "location": 0.6,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Mid-March 2025 US severe weather outbreak (tornadoes/dust/fire)",
+        "fingerprint": "us|weather_climate|midmarch_outbreak|2025-03-14_2025-03-16"
+      }
+    },
+    {
+      "event_id": "evt_20250328_myanmar_earthquake_central",
+      "title": "Magnitude 7.7 earthquake strikes central Myanmar near Sagaing and Mandalay",
+      "description": "A magnitude 7.7 earthquake struck central Myanmar on March 28, 2025, affecting areas near Sagaing and Mandalay. Reports described substantial destruction and a major humanitarian emergency, with a strong aftershock occurring shortly afterward.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2025-03-28T06:20:52.000Z",
+        "event_end": "2025-03-28T23:59:59.000Z",
+        "reported_at": "2025-03-28T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2025-03-28T06:20:52.000Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Mandalay, Myanmar",
+        "jurisdiction_level": "city",
+        "admin1": "Mandalay Region",
+        "country": "MM",
+        "capital_used": null,
+        "lat": 21.9588,
+        "lon": 96.0891,
+        "precision": "city",
+        "location_basis": "manual_override",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://myanmar.un.org/en/291866-initial-situation-report-earthquake-central-myanmar-28-march-2025",
+          "source_name": "United Nations in Myanmar",
+          "published_at": "2025-03-28T00:00:00.000Z",
+          "headline": "Initial Situation Report: Earthquake in Central Myanmar (28 March 2025)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.ft.com/content/d2c4b833-366f-4eed-9100-b06ec39f6f4a",
+          "source_name": "Financial Times",
+          "published_at": "2025-03-28T00:00:00.000Z",
+          "headline": "Magnitude 7.7 earthquake strikes central Myanmar",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "United Nations"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Initial Situation Report: Earthquake in Central Myanmar (28 March 2025)",
+            "source_url": "https://myanmar.un.org/en/291866-initial-situation-report-earthquake-central-myanmar-28-march-2025"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.9,
+        "location": 0.55,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "paywalled_or_partial",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Myanmar central earthquake March 28 2025",
+        "fingerprint": "fp_myanmar_mandalay_2025-03-28_mag77"
+      }
+    },
+    {
+      "event_id": "evt_20250306_chile_earthquake_san_pedro_atacama",
+      "title": "Magnitude 6.1 earthquake near San Pedro de Atacama, Chile; no tsunami warning issued",
+      "description": "A magnitude 6.1 earthquake struck northern Chile near San Pedro de Atacama on March 6, 2025. Authorities reported no immediate injuries or major damage and said no tsunami warning was issued.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2025-03-06T00:00:00.000Z",
+        "event_end": "2025-03-06T23:59:59.000Z",
+        "reported_at": "2025-03-06T00:00:00.000Z",
+        "time_confidence": 0.4,
+        "event_date_utc": "2025-03-06T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "San Pedro de Atacama, Antofagasta Region, Chile",
+        "jurisdiction_level": "city",
+        "admin1": "Antofagasta Region",
+        "country": "CL",
+        "capital_used": null,
+        "lat": -22.9111,
+        "lon": -68.2013,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://apnews.com/article/9b42bb18d3652ee49a86464520371e4f",
+          "source_name": "AP News",
+          "published_at": "2025-03-06T00:00:00.000Z",
+          "headline": "Magnitude 6.1 earthquake shakes northern Chile; no tsunami warning issued",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "A 6.1-magnitude earthquake struck northern Chile on March 6, 2025.",
+            "source_url": "https://apnews.com/article/9b42bb18d3652ee49a86464520371e4f"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.68,
+        "category": 0.9,
+        "location": 0.6,
+        "summary_grounding": 0.65
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Chile earthquake near San Pedro de Atacama March 6 2025",
+        "fingerprint": "fp_chile_san_pedro_atacama_2025-03-06_mag61"
+      }
+    },
+    {
+      "event_id": "ev_202503_oklahoma_wind_wildfires_dust",
+      "title": "Wind-driven wildfires and dust storm impacts across Oklahoma and surrounding areas during mid-March severe weather",
+      "description": "A powerful storm system and extreme winds drove numerous wildfires and dust storms in mid-March 2025, contributing to damage and hazardous air/visibility conditions in Oklahoma and surrounding parts of the Southern Plains.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2025-03-14T00:00:00.000Z",
+        "event_end": "2025-03-16T23:59:59.000Z",
+        "reported_at": "2025-03-14T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2025-03-14T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Oklahoma and surrounding Southern Plains (U.S.)",
+        "jurisdiction_level": "state",
+        "admin1": "Oklahoma",
+        "country": "US",
+        "capital_used": "Oklahoma City",
+        "lat": 35.4676,
+        "lon": -97.5164,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://science.nasa.gov/earth/earth-observatory/dusty-inferno-hits-oklahoma-154054/",
+          "source_name": "NASA Earth Observatory (Science.NASA.gov)",
+          "published_at": "2025-03-14T00:00:00.000Z",
+          "headline": "Dusty Inferno Hits Oklahoma",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://apnews.com/article/ce794c4070279fdca3e6ecdd67f9225b",
+          "source_name": "Associated Press",
+          "published_at": "2025-03-14T00:00:00.000Z",
+          "headline": "AP News article (see URL)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NASA Earth Observatory",
+          "Associated Press"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Extreme winds helped drive wildfires and dust storms across Oklahoma and surrounding areas.",
+            "source_url": "https://science.nasa.gov/earth/earth-observatory/dusty-inferno-hits-oklahoma-154054/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.75,
+        "location": 0.55,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "2025-03 southern plains wind-driven fires + dust",
+        "fingerprint": "fp_202503_oklahoma_surrounding_wind_fires_dust_20250314"
+      }
+    },
+    {
+      "event_id": "ev_202503_us_south_wildfire_activity_11_states",
+      "title": "Southern U.S. wildfire activity persists across 11 states amid low humidity and frequent high winds",
+      "description": "USDA Forest Service reporting described elevated wildfire activity and response across multiple Southern U.S. states during March 2025, associated with low humidity and frequent high winds. The report noted fuels and conditions contributing to increased fire risk across the region.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2025-03-01T00:00:00.000Z",
+        "event_end": "2025-03-26T23:59:59.000Z",
+        "reported_at": "2025-03-01T00:00:00.000Z",
+        "time_confidence": 0.5,
+        "event_date_utc": null,
+        "event_date_precision": "month"
+      },
+      "location": {
+        "name": "United States (Southern states)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.4
+      },
+      "sources": [
+        {
+          "url": "https://www.fs.usda.gov/r08/newsroom/releases/wildfire-activity-and-response-continues-southern-states",
+          "source_name": "USDA Forest Service (Southern Region)",
+          "published_at": "2025-03-01T00:00:00.000Z",
+          "headline": "Wildfire activity and response continues in southern states",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.ncei.noaa.gov/news/national-climate-202503",
+          "source_name": "NOAA NCEI",
+          "published_at": "2025-04-01T00:00:00.000Z",
+          "headline": "National Climate Report (2025-03)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "USDA Forest Service",
+          "NOAA NCEI"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Wildfire activity and response continues in southern states.",
+            "source_url": "https://www.fs.usda.gov/r08/newsroom/releases/wildfire-activity-and-response-continues-southern-states"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.45,
+        "category": 0.7,
+        "location": 0.4,
+        "summary_grounding": 0.4
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "possible_opinion_or_advocacy",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "2025-03 southern US widespread wildfire activity",
+        "fingerprint": "fp_202503_southern_us_wildfire_activity_month"
+      }
+    },
+    {
+      "event_id": "ev_202503_texas_panhandle_wind_dust_wildfires",
+      "title": "Texas Panhandle strong winds, blowing dust, and multiple wildfires during March 18–19 event",
+      "description": "National Weather Service materials described a March 18–19, 2025 wind event in the Texas Panhandle that produced blowing dust and critical fire weather, with multiple wildfires reported during the period.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2025-03-18T00:00:00.000Z",
+        "event_end": "2025-03-19T23:59:59.000Z",
+        "reported_at": "2025-03-18T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2025-03-18T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Texas (Panhandle)",
+        "jurisdiction_level": "state",
+        "admin1": "Texas",
+        "country": "US",
+        "capital_used": "Austin",
+        "lat": 30.2672,
+        "lon": -97.7431,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.5
+      },
+      "sources": [
+        {
+          "url": "https://www.weather.gov/ama/March2025dust",
+          "source_name": "National Weather Service (Amarillo, TX)",
+          "published_at": "2025-03-18T00:00:00.000Z",
+          "headline": "March 2025 Dust (NWS Amarillo)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "National Weather Service"
+        ],
+        "substances": [
+          "dust"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "March 18–19 wind event produced blowing dust and critical fire weather in the Texas Panhandle.",
+            "source_url": "https://www.weather.gov/ama/March2025dust"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.75,
+        "location": 0.5,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "2025-03 Texas Panhandle wind + dust + wildfires",
+        "fingerprint": "fp_202503_texas_panhandle_wind_dust_wildfires_20250318"
+      }
+    },
+    {
+      "event_id": "evt_20250323_gbr_ningaloo_bleaching",
+      "title": "Simultaneous coral bleaching reported at Great Barrier Reef and Ningaloo Reef during marine heatwaves",
+      "description": "A late-March 2025 report described severe coral bleaching occurring at the same time at Australia’s Great Barrier Reef and Ningaloo Reef. The report linked the bleaching to extreme marine heat stress affecting shallow reef areas.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2025-03-23T00:00:00.000Z",
+        "event_end": "2025-03-23T23:59:59.000Z",
+        "reported_at": "2025-03-23T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2025-03-23T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Great Barrier Reef and Ningaloo Reef, Australia",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "AU",
+        "capital_used": "Canberra",
+        "lat": -35.2809,
+        "lon": 149.13,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.theguardian.com/environment/2025/mar/23/ningaloo-and-great-barrier-reef-hit-by-profoundly-distressing-simultaneous-coral-bleaching-events",
+          "source_name": "The Guardian",
+          "published_at": "2025-03-23T00:00:00.000Z",
+          "headline": "Ningaloo and Great Barrier Reef hit by ‘profoundly distressing’ simultaneous coral bleaching events",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [
+          "coral reef"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "simultaneous coral bleaching events",
+            "source_url": "https://www.theguardian.com/environment/2025/mar/23/ningaloo-and-great-barrier-reef-hit-by-profoundly-distressing-simultaneous-coral-bleaching-events"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.66,
+        "category": 0.8,
+        "location": 0.6,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "needs_dedupe_check",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "coral_bleaching_australia_2025_03",
+        "fingerprint": "fp_coral_bleaching_australia_2025-03-23"
+      }
+    },
+    {
+      "event_id": "evt_20250313_noaa_crw_southern_cook_bleaching_alert",
+      "title": "NOAA Coral Reef Watch raised heat-stress alert level for Southern Cook Islands virtual station region",
+      "description": "NOAA Coral Reef Watch’s Satellite Bleaching Alert System posted a mid-March 2025 update showing a heat-stress level change. The update included an increase to Alert Level 1 for the Southern Cook Islands virtual-station region, indicating conditions where bleaching is expected based on satellite metrics.",
+      "category_primary": "science_monitoring",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "2025-03-12T00:00:00.000Z",
+        "event_end": "2025-03-13T23:59:59.000Z",
+        "reported_at": "2025-03-13T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2025-03-13T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Southern Cook Islands",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "CK",
+        "capital_used": "Avarua",
+        "lat": -21.2075,
+        "lon": -159.775,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.ospo.noaa.gov/data/ocean/crw/alerts/2025/SBA_alerts_20250313.html",
+          "source_name": "NOAA OSPO / Coral Reef Watch",
+          "published_at": "2025-03-13T00:00:00.000Z",
+          "headline": "Satellite Bleaching Alert System (SBA) Alerts (2025-03-13)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA Coral Reef Watch"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "coral reef"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Alert Level 1",
+            "source_url": "https://www.ospo.noaa.gov/data/ocean/crw/alerts/2025/SBA_alerts_20250313.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.35,
+        "location": 0.6,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "low_confidence_category",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "noaa_crw_bleaching_alerts_2025_03",
+        "fingerprint": "fp_noaa_crw_southern_cook_alert_2025-03-13"
+      }
+    },
+    {
+      "event_id": "evt_20250315_kafue_river_acidic_mine_waste_impacts",
+      "title": "Ecosystem impacts reported in Zambia’s Kafue River after acidic mine-waste spill",
+      "description": "In March 2025, reports described fish deaths and other ecosystem impacts in the Kafue River system following a tailings-related spill that released acidic waste and heavy metals into the watershed. The report characterized ongoing environmental harm affecting the river basin.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2025-03-15T00:00:00.000Z",
+        "event_end": "2025-03-15T23:59:59.000Z",
+        "reported_at": "2025-03-15T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2025-03-15T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Kafue River basin, Zambia",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "ZM",
+        "capital_used": "Lusaka",
+        "lat": -15.3875,
+        "lon": 28.3228,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://apnews.com/article/93ee91d1156471aaf9a7ebd6f51333c1",
+          "source_name": "Associated Press",
+          "published_at": "2025-03-15T00:00:00.000Z",
+          "headline": "Zambia Kafue River ecosystem impacts reported following acidic mine-waste spill (fish deaths and wildlife impacts)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [
+          "acidic waste",
+          "heavy metals"
+        ],
+        "ecosystems": [
+          "river"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "acidic waste containing heavy metals",
+            "source_url": "https://apnews.com/article/93ee91d1156471aaf9a7ebd6f51333c1"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.67,
+        "category": 0.8,
+        "location": 0.55,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "needs_dedupe_check",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "kafue_river_mine_waste_spill_impacts_2025_03",
+        "fingerprint": "fp_kafue_river_zambia_impacts_2025-03-15"
+      }
+    },
+    {
+      "event_id": "evt-20250304-us-scotus-cwa-npdes-sanfrancisco-v-epa",
+      "title": "U.S. Supreme Court limits certain Clean Water Act NPDES permit requirements (City and County of San Francisco v. EPA)",
+      "description": "A March 4, 2025 U.S. Supreme Court decision in City and County of San Francisco v. EPA was reported as limiting EPA authority to impose certain broad “end-result” requirements in Clean Water Act NPDES discharge permits. The reporting suggests the ruling affects how EPA and states structure water quality-related permit conditions.",
+      "category_primary": "policy_regulation",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2025-03-01T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2025-03-04T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States (U.S. Supreme Court)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.8
+      },
+      "sources": [
+        {
+          "url": "https://www.law.georgetown.edu/environmental-law-review/blog/a-watershed-moment-supreme-court-narrows-epa-authority-in-recent-clean-water-act-permit-ruling/",
+          "source_name": "Georgetown Environmental Law Review (blog)",
+          "published_at": "2025-03-01T00:00:00Z",
+          "headline": "A Watershed Moment? Supreme Court Narrows EPA Authority in Recent Clean Water Act Permit Ruling",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.sidley.com/en/insights/newsupdates/2025/03/us-supreme-court-limits-epas-clean-water-act-authority-to-impose-water-quality-standards",
+          "source_name": "Sidley Austin",
+          "published_at": "2025-03-01T00:00:00Z",
+          "headline": "U.S. Supreme Court Limits EPA’s Clean Water Act Authority to Impose Water Quality Standards",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Supreme Court",
+          "U.S. Environmental Protection Agency (EPA)"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "the Clean Water Act does not authorize certain broad “end-result” requirements in discharge permits",
+            "source_url": "https://www.law.georgetown.edu/environmental-law-review/blog/a-watershed-moment-supreme-court-narrows-epa-authority-in-recent-clean-water-act-permit-ruling/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.85,
+        "location": 0.8,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "secondary_sources_only",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "scotus-san-francisco-v-epa-npdes-2025-03-04",
+        "fingerprint": "scotus_cwa_npdes_us_2025-03-04"
+      }
+    }
+  ]
+}

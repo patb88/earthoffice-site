@@ -1,0 +1,456 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_1975-11_normalize_2026-01-19T074208016Z",
+    "generated_utc": "2026-01-19T07:42:08.016Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "1975-11",
+    "window": {
+      "start_utc": "1975-11-01T00:00:00.000Z",
+      "end_utc": "1975-11-30T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "1975-11-12_olympic-alliance_hms-achilles_oil-spill_dover-strait",
+      "title": "Olympic Alliance–HMS Achilles collision and crude oil spill in the Dover Strait",
+      "description": "A collision involving the tank vessel Olympic Alliance and HMS Achilles in the Dover Strait reportedly ruptured a cargo tank and released crude oil. Cleanup/response actions including dispersant operations and shoreline response were reported in connection with the spill.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1975-11-12T12:00:00Z",
+        "event_end": "1975-11-12T12:00:00Z",
+        "reported_at": "1975-11-12T12:00:00Z",
+        "time_confidence": 0.5,
+        "event_date_utc": "1975-11-12T12:00:00Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Dover Strait, English Channel (approx. 13 miles southeast of Dover, England)",
+        "jurisdiction_level": "site",
+        "admin1": null,
+        "country": "GB",
+        "capital_used": null,
+        "lat": 51.066,
+        "lon": 1.45,
+        "precision": "proxy",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.45
+      },
+      "sources": [
+        {
+          "url": "https://incidentnews.noaa.gov/incident/6225",
+          "source_name": "NOAA IncidentNews",
+          "published_at": "1975-11-12T12:00:00Z",
+          "headline": "Incident 6225 (Olympic Alliance / HMS Achilles)",
+          "byline": null,
+          "accessed_utc": "2026-01-19T07:39:35.950Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA IncidentNews",
+          "HMS Achilles",
+          "Olympic Alliance"
+        ],
+        "substances": [
+          "crude oil"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.75,
+        "location": 0.45,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "olympic_alliance_hms_achilles_dover_strait_1975-11-12",
+        "fingerprint": "olympic-alliance-hms-achilles_dover-strait_1975-11-12"
+      }
+    },
+    {
+      "event_id": "1975-11_weather_climate_great-lakes-windstorm_edmund-fitzgerald",
+      "title": "Great Lakes windstorm contributed to sinking of SS Edmund Fitzgerald",
+      "description": "An intense low-pressure system crossed the northern Great Lakes, producing damaging winds and very large waves on Lake Superior. The storm is associated with the sinking of the SS Edmund Fitzgerald during the period.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1975-11-01T00:00:00.000Z",
+        "time_confidence": 0.45,
+        "event_date_utc": "1975-11-09T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Northern Great Lakes (Lake Superior; impacts noted across Michigan)",
+        "jurisdiction_level": "site",
+        "admin1": "Michigan",
+        "country": "US",
+        "capital_used": null,
+        "lat": 46.7,
+        "lon": -87.5,
+        "precision": "proxy",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.45
+      },
+      "sources": [
+        {
+          "url": "https://www.weather.gov/dtx/dtxHistory2",
+          "source_name": "NWS Detroit/Pontiac (weather.gov)",
+          "published_at": "1975-11-01T00:00:00.000Z",
+          "headline": "dtxHistory2 (NWS Detroit/Pontiac history page)",
+          "byline": null,
+          "accessed_utc": "2026-01-19T07:40:02.334Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "National Weather Service"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "Great Lakes",
+          "Lake Superior"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.42,
+        "category": 0.7,
+        "location": 0.45,
+        "summary_grounding": 0.4
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Great Lakes windstorm / Edmund Fitzgerald storm (Nov 1975)",
+        "fingerprint": "fp_1975-11_great_lakes_windstorm_lake_superior_1975-11-09"
+      }
+    },
+    {
+      "event_id": "1975-11_weather_climate_snowstorm_midmississippi_1975-11-26",
+      "title": "Late-November 1975 snowstorm across parts of southeast Missouri, southern Illinois, and southwest Indiana",
+      "description": "A winter storm produced widespread measurable snowfall across parts of southeast Missouri and southern Illinois, with lighter totals extending into nearby areas including southwest Indiana and Kentucky. The event is documented in an NWS Paducah historical summary and mapped analysis.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1975-11-01T00:00:00.000Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "1975-11-26T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Southeast Missouri; southern Illinois; southwest Indiana (NWS Paducah area)",
+        "jurisdiction_level": "site",
+        "admin1": null,
+        "country": "US",
+        "capital_used": null,
+        "lat": 37.0834,
+        "lon": -88.6,
+        "precision": "proxy",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.5
+      },
+      "sources": [
+        {
+          "url": "https://www.weather.gov/pah/SnowNov26-27_1975",
+          "source_name": "NWS Paducah (weather.gov)",
+          "published_at": "1975-11-01T00:00:00.000Z",
+          "headline": "Snow Nov 26-27, 1975 (NWS Paducah)",
+          "byline": null,
+          "accessed_utc": "2026-01-19T07:40:02.334Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "National Weather Service"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.75,
+        "location": 0.5,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Snow Nov 26-27 1975 (NWS PAH region)",
+        "fingerprint": "fp_1975-11_snowstorm_pah_region_1975-11-26"
+      }
+    },
+    {
+      "event_id": "1975-11_weather_climate_huntington-county-in_tornado_1975-11-10",
+      "title": "Tornado reported in Huntington County, Indiana (November 1975)",
+      "description": "A tornado is listed for Huntington County, Indiana in an NWS Northern Indiana historical compilation of November tornadoes, described as producing F1 damage and injuries around early morning local time.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1975-11-01T00:00:00.000Z",
+        "time_confidence": 0.5,
+        "event_date_utc": "1975-11-10T08:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Huntington County, Indiana, USA",
+        "jurisdiction_level": "site",
+        "admin1": "Indiana",
+        "country": "US",
+        "capital_used": null,
+        "lat": 40.8837,
+        "lon": -85.4975,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.weather.gov/iwx/history_november_tornadoes",
+          "source_name": "NWS Northern Indiana (weather.gov)",
+          "published_at": "1975-11-01T00:00:00.000Z",
+          "headline": "History: November tornadoes (NWS IWX)",
+          "byline": null,
+          "accessed_utc": "2026-01-19T07:40:02.334Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "National Weather Service"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.5,
+        "category": 0.8,
+        "location": 0.55,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Huntington County IN tornado (Nov 10, 1975)",
+        "fingerprint": "fp_1975-11_tornado_huntington_county_in_1975-11-10"
+      }
+    },
+    {
+      "event_id": "evt_19751101_guam_eq",
+      "title": "Earthquake strikes Guam (~M6.25)",
+      "description": "An earthquake affected Guam on November 1, 1975. A USGS Earthquake Information Bulletin article reports the event at about magnitude 6.25 and describes impacts and the author’s firsthand experience during the shaking.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1975-11-01T12:00:00Z",
+        "time_confidence": 0.4,
+        "event_date_utc": "1975-11-01T12:00:00Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Guam (U.S. territory)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "GU",
+        "capital_used": "Hagåtña",
+        "lat": 13.4757,
+        "lon": 144.7489,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.85
+      },
+      "sources": [
+        {
+          "url": "https://www.usgs.gov/publications/earthquake-40-feet",
+          "source_name": "USGS",
+          "published_at": "1975-11-01T12:00:00Z",
+          "headline": "Earthquake 40 Feet",
+          "byline": null,
+          "accessed_utc": "2026-01-19T07:40:19.592Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "USGS"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "reported as ~M6.25 ... impacts and the author’s firsthand experience",
+            "source_url": "https://www.usgs.gov/publications/earthquake-40-feet"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.9,
+        "location": 0.85,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "guam_earthquake_1975_11_01",
+        "fingerprint": "fp_guam_earthquake_1975-11-01_guam"
+      }
+    },
+    {
+      "event_id": "evt_19751129_kalapana_hawaii_eq_tsunami",
+      "title": "Kalapana-area Hawaiʻi earthquake triggers tsunami and ground deformation",
+      "description": "A major earthquake struck the Island of Hawaiʻi near the Kalapana area on November 29, 1975. USGS publications describe damaging effects including a tsunami, significant ground movements, and widespread aftershocks, with reported fatalities and injuries linked to the tsunami.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1975-11-29T12:00:00Z",
+        "time_confidence": 0.45,
+        "event_date_utc": "1975-11-29T12:00:00Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Kalapana area, Island of Hawaiʻi, United States",
+        "jurisdiction_level": "site",
+        "admin1": "HI",
+        "country": "US",
+        "capital_used": null,
+        "lat": 19.3517,
+        "lon": -155.0075,
+        "precision": "exact",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.usgs.gov/publications/earthquakes-and-related-catastrophic-events-island-hawaii-november-29-1975-a",
+          "source_name": "USGS",
+          "published_at": "1975-11-29T12:00:00Z",
+          "headline": "Earthquakes and related catastrophic events, Island of Hawaii, November 29, 1975 (A)",
+          "byline": null,
+          "accessed_utc": "2026-01-19T07:40:19.592Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.usgs.gov/publications/72-magnitude-earthquake-november-1975-island-hawaii-1",
+          "source_name": "USGS",
+          "published_at": "1975-11-29T12:00:00Z",
+          "headline": "7.2 magnitude earthquake, November 1975, Island of Hawaii (1)",
+          "byline": null,
+          "accessed_utc": "2026-01-19T07:40:19.592Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.ncei.noaa.gov/products/natural-hazards/tsunamis-earthquakes-volcanoes/tsunamis/travel-time-maps",
+          "source_name": "NOAA NCEI",
+          "published_at": "1975-11-29T12:00:00Z",
+          "headline": "Tsunami travel time maps (product page)",
+          "byline": null,
+          "accessed_utc": "2026-01-19T07:40:19.592Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "USGS",
+          "NOAA NCEI"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "largest Hawaiʻi earthquake in over a century ... damaging tsunami ... fatalities and injuries",
+            "source_url": "https://www.usgs.gov/publications/earthquakes-and-related-catastrophic-events-island-hawaii-november-29-1975-a"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.9,
+        "location": 0.6,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "kalapana_hawaii_eq_1975_11_29",
+        "fingerprint": "fp_kalapana_earthquake_1975-11-29_hawaii"
+      }
+    }
+  ]
+}

@@ -1,0 +1,824 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_2013-07_normalize_2026-01-16T050230086Z",
+    "generated_utc": "2026-01-16T05:02:30.086Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "2013-07",
+    "window": {
+      "start_utc": "2013-07-01T00:00:00.000Z",
+      "end_utc": "2013-07-31T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "evt_20130727_tha_rayong_kosamet_oilspill_pttgc",
+      "title": "Rayong offshore crude oil spill reaches Ao Phrao Beach on Ko Samet",
+      "description": "A crude oil leak from an offshore transfer hose/pipeline operated by PTTGC off Rayong Province released an estimated ~50,000 liters of oil on July 27, 2013. Oil later washed onto Ao Phrao Beach on Ko Samet, prompting cleanup operations and impacting tourism.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2013-07-27T00:00:00.000Z",
+        "event_end": "2013-07-29T23:59:59.000Z",
+        "reported_at": "2013-07-29T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2013-07-27T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Ao Phrao Beach, Ko Samet, Rayong Province, Thailand",
+        "jurisdiction_level": "site",
+        "admin1": "Rayong Province",
+        "country": "TH",
+        "capital_used": null,
+        "lat": 12.5609,
+        "lon": 101.4553,
+        "precision": "neighborhood",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.45
+      },
+      "sources": [
+        {
+          "url": "https://www.thephuketnews.com/oil-spill-hits-thai-tourist-island-41074.php",
+          "source_name": "The Phuket News",
+          "published_at": "2013-07-29T00:00:00.000Z",
+          "headline": "Oil spill hits Thai tourist island",
+          "byline": null,
+          "accessed_utc": "2013-07-31T23:59:59.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.gulf-times.com/story/361103/oil-spill-reaches-thai-tourist-island",
+          "source_name": "Gulf Times",
+          "published_at": "2013-07-29T00:00:00.000Z",
+          "headline": "Oil spill reaches Thai tourist island",
+          "byline": null,
+          "accessed_utc": "2013-07-31T23:59:59.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.naharnet.com/stories/en/92301-oil-spill-hits-thai-tourist-island",
+          "source_name": "Naharnet",
+          "published_at": "2013-07-29T00:00:00.000Z",
+          "headline": "Oil spill hits Thai tourist island",
+          "byline": null,
+          "accessed_utc": "2013-07-31T23:59:59.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "PTTGC"
+        ],
+        "substances": [
+          "crude oil"
+        ],
+        "ecosystems": [
+          "Gulf of Thailand"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "A crude oil spill has reached a Thai tourist island... after leaking from an offshore pipeline.",
+            "source_url": "https://www.thephuketnews.com/oil-spill-hits-thai-tourist-island-41074.php"
+          },
+          {
+            "quote": "about 50,000 litres of crude oil leaked into the sea off Rayong province on Saturday",
+            "source_url": "https://www.naharnet.com/stories/en/92301-oil-spill-hits-thai-tourist-island"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.8,
+        "location": 0.45,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "2013-07 Rayong/Ko Samet oil spill PTTGC",
+        "fingerprint": "fp_201307_rayong_kosamet_oilspill_pttgc"
+      }
+    },
+    {
+      "event_id": "2013-07-weather_climate-typhoon-soulik-taiwan-china",
+      "title": "Typhoon Soulik makes landfall in Taiwan and affects East China",
+      "description": "Typhoon Soulik struck Taiwan in mid-July 2013 with strong winds and heavy rain, causing damage such as power outages and flooding. The storm then moved toward East China, bringing further impacts.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2013-07-12T00:00:00.000Z",
+        "event_end": "2013-07-14T23:59:59.000Z",
+        "reported_at": "2013-07-01T00:00:00.000Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "2013-07-12T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Taipei, Taiwan (proxy for Northern Taiwan landfall region)",
+        "jurisdiction_level": "city",
+        "admin1": null,
+        "country": "TW",
+        "capital_used": null,
+        "lat": 25.033,
+        "lon": 121.5654,
+        "precision": "proxy",
+        "location_basis": "manual_override",
+        "location_confidence": 0.45
+      },
+      "sources": [
+        {
+          "url": "http://agora.ex.nii.ac.jp/digital-typhoon/summary/wnp/s/201307.html.en",
+          "source_name": "Digital Typhoon (NII)",
+          "published_at": "2013-07-01T00:00:00.000Z",
+          "headline": "2013/07 WNP Tropical Cyclone Summary",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Digital Typhoon"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Typhoon Soulik ... made landfall in Taiwan",
+            "source_url": "http://agora.ex.nii.ac.jp/digital-typhoon/summary/wnp/s/201307.html.en"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.52,
+        "category": 0.75,
+        "location": 0.45,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "typhoon_soulik_2013_07_taiwan",
+        "fingerprint": "typhoon-soulik|taipei-tw|2013-07-12_2013-07-14"
+      }
+    },
+    {
+      "event_id": "2013-07-weather_climate-southwest-china-heavy-rain-flooding",
+      "title": "Southwest China heavy-rain flooding begins (Sichuan, Yunnan)",
+      "description": "Reuters reported that heavy rains triggered flooding and related hazards across parts of Southwest China in mid-July 2013. The report referenced impacts in provinces including Sichuan and Yunnan.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2013-07-06T00:00:00.000Z",
+        "event_end": "2013-07-31T23:59:59.000Z",
+        "reported_at": "2013-07-16T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2013-07-16T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Chengdu, Sichuan, China (capital proxy for Sichuan)",
+        "jurisdiction_level": "state",
+        "admin1": "Sichuan",
+        "country": "CN",
+        "capital_used": "Chengdu",
+        "lat": 30.5728,
+        "lon": 104.0668,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.65
+      },
+      "sources": [
+        {
+          "url": "https://www.reuters.com/article/us-china-floods-idUSBRE96F06I20130716",
+          "source_name": "Reuters",
+          "published_at": "2013-07-16T00:00:00.000Z",
+          "headline": "China floods",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Reuters"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "heavy rain ... triggered floods in southwest China",
+            "source_url": "https://www.reuters.com/article/us-china-floods-idUSBRE96F06I20130716"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.7,
+        "location": 0.65,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "paywalled_or_partial",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "china_floods_sichuan_yunnan_2013_07",
+        "fingerprint": "sw-china-floods|chengdu-cn|2013-07-06_2013-07-31"
+      }
+    },
+    {
+      "event_id": "2013-07-weather_climate-europe-july-heat",
+      "title": "Heat hammers Europe (notable July 2013 warmth and heatwave conditions)",
+      "description": "A climate.gov event tracker post described unusually warm conditions across parts of Europe during July 2013. It highlighted national-scale metrics including the UK’s third-warmest July on record and Spain’s fifth-warmest July in their respective records.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2013-07-01T00:00:00.000Z",
+        "event_end": "2013-07-31T23:59:59.000Z",
+        "reported_at": "2013-08-01T00:00:00.000Z",
+        "time_confidence": 0.4,
+        "event_date_utc": null,
+        "event_date_precision": "month"
+      },
+      "location": {
+        "name": "London, United Kingdom (proxy for Europe focus incl. UK)",
+        "jurisdiction_level": "city",
+        "admin1": null,
+        "country": "GB",
+        "capital_used": null,
+        "lat": 51.5074,
+        "lon": -0.1278,
+        "precision": "proxy",
+        "location_basis": "manual_override",
+        "location_confidence": 0.35
+      },
+      "sources": [
+        {
+          "url": "https://www.climate.gov/news-features/event-tracker/heat-hammers-europe-july-and-august",
+          "source_name": "NOAA Climate.gov",
+          "published_at": "2013-08-01T00:00:00.000Z",
+          "headline": "Heat hammers Europe in July and August",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA Climate.gov"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "UK ... third warmest July on record",
+            "source_url": "https://www.climate.gov/news-features/event-tracker/heat-hammers-europe-july-and-august"
+          },
+          {
+            "quote": "Spain ... fifth warmest July",
+            "source_url": "https://www.climate.gov/news-features/event-tracker/heat-hammers-europe-july-and-august"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.45,
+        "category": 0.65,
+        "location": 0.35,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "europe_heat_july_2013",
+        "fingerprint": "europe-heat|london-gb|2013-07"
+      }
+    },
+    {
+      "event_id": "2013-07-weather_climate-malaysia-haze-sumatra-fires",
+      "title": "Haze from Indonesian fires returns to Malaysia (transboundary smoke episode)",
+      "description": "A report described haze affecting parts of Malaysia in late July 2013, linked to fires in Sumatra, Indonesia. Air quality readings reportedly reached “unhealthy” levels in some locations.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2013-07-22T00:00:00.000Z",
+        "event_end": "2013-07-24T23:59:59.000Z",
+        "reported_at": "2013-07-23T00:00:00.000Z",
+        "time_confidence": 0.65,
+        "event_date_utc": "2013-07-23T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Kuala Lumpur, Malaysia (proxy for affected areas in Peninsular Malaysia)",
+        "jurisdiction_level": "city",
+        "admin1": null,
+        "country": "MY",
+        "capital_used": null,
+        "lat": 3.139,
+        "lon": 101.6869,
+        "precision": "proxy",
+        "location_basis": "manual_override",
+        "location_confidence": 0.5
+      },
+      "sources": [
+        {
+          "url": "https://phys.org/news/2013-07-haze-indonesian-malaysia.html",
+          "source_name": "Phys.org",
+          "published_at": "2013-07-23T00:00:00.000Z",
+          "headline": "Haze from Indonesian fires returns to Malaysia",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Phys.org"
+        ],
+        "substances": [
+          "haze",
+          "smoke"
+        ],
+        "ecosystems": [
+          "peatland",
+          "forest"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Haze from Indonesian fires returned to Malaysia",
+            "source_url": "https://phys.org/news/2013-07-haze-indonesian-malaysia.html"
+          },
+          {
+            "quote": "Air Pollutant Index ... “unhealthy”",
+            "source_url": "https://phys.org/news/2013-07-haze-indonesian-malaysia.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.65,
+        "location": 0.5,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "location_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "sumatra_fires_malaysia_haze_2013_07",
+        "fingerprint": "malaysia-haze|kuala-lumpur-my|2013-07-22_2013-07-24"
+      }
+    },
+    {
+      "event_id": "2013-07-geological-aceh-indonesia-earthquake-m61",
+      "title": "M6.1 earthquake in Aceh, Indonesia",
+      "description": "A magnitude 6.1 earthquake struck Aceh Province, Sumatra, Indonesia on July 2, 2013. Reports described fatalities, injuries, structural damage, and landslides.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2013-07-02T07:37:02.000Z",
+        "event_end": "2013-07-02T23:59:59.000Z",
+        "reported_at": "2013-07-06T00:00:00Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2013-07-02T07:37:02.000Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Aceh Province, Indonesia",
+        "jurisdiction_level": "state",
+        "admin1": "Aceh",
+        "country": "ID",
+        "capital_used": "Banda Aceh",
+        "lat": 5.54829,
+        "lon": 95.323753,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.75
+      },
+      "sources": [
+        {
+          "url": "https://www.cnn.com/2013/07/06/world/asia/indonesia-earthquake/index.html",
+          "source_name": "CNN",
+          "published_at": "2013-07-06T00:00:00Z",
+          "headline": "Indonesia earthquake",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://earthquake.usgs.gov/earthquakes/eventpage/usb000i4re/executive",
+          "source_name": "USGS Earthquake Hazards Program",
+          "published_at": "2013-07-02T07:37:02.000Z",
+          "headline": "USGS Executive Summary: Event usb000i4re",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "CNN",
+          "USGS Earthquake Hazards Program"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "A magnitude 6.1 earthquake struck Aceh on July 2, 2013",
+            "source_url": "https://www.cnn.com/2013/07/06/world/asia/indonesia-earthquake/index.html"
+          },
+          {
+            "quote": "Executive Summary: Event usb000i4re",
+            "source_url": "https://earthquake.usgs.gov/earthquakes/eventpage/usb000i4re/executive"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.72,
+        "category": 0.95,
+        "location": 0.75,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "paywalled_or_partial",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Aceh M6.1 earthquake 2013-07-02",
+        "fingerprint": "fp_2013-07-geological-aceh-indonesia-2013-07-02"
+      }
+    },
+    {
+      "event_id": "2013-07-geological-seddon-cook-strait-nz-earthquake-m65",
+      "title": "M6.5 earthquake near Seddon (Cook Strait), New Zealand",
+      "description": "A magnitude 6.5 earthquake occurred near Seddon in the Cook Strait region of New Zealand on July 21, 2013. Reporting described damage and minor injuries, followed by aftershocks.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2013-07-21T05:09:31.000Z",
+        "event_end": "2013-07-21T23:59:59.000Z",
+        "reported_at": "2013-07-21T05:09:31.000Z",
+        "time_confidence": 0.75,
+        "event_date_utc": "2013-07-21T05:09:31.000Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Wellington Region, New Zealand (capital proxy for Cook Strait/Seddon area)",
+        "jurisdiction_level": "state",
+        "admin1": "Wellington Region",
+        "country": "NZ",
+        "capital_used": "Wellington",
+        "lat": -41.28664,
+        "lon": 174.77557,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.geonet.org.nz/earthquake/2013p544960",
+          "source_name": "GeoNet",
+          "published_at": "2013-07-21T05:09:31.000Z",
+          "headline": "GeoNet Earthquake: 2013p544960",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://earthquake.usgs.gov/earthquakes/eventpage/usb000iivv/executive",
+          "source_name": "USGS Earthquake Hazards Program",
+          "published_at": "2013-07-21T05:09:31.000Z",
+          "headline": "USGS Executive Summary: Event usb000iivv",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "GeoNet",
+          "USGS Earthquake Hazards Program"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "GeoNet Earthquake: 2013p544960",
+            "source_url": "https://www.geonet.org.nz/earthquake/2013p544960"
+          },
+          {
+            "quote": "Executive Summary: Event usb000iivv",
+            "source_url": "https://earthquake.usgs.gov/earthquakes/eventpage/usb000iivv/executive"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.66,
+        "category": 0.95,
+        "location": 0.55,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Seddon/Cook Strait M6.5 earthquake 2013-07-21",
+        "fingerprint": "fp_2013-07-geological-seddon-nz-2013-07-21"
+      }
+    },
+    {
+      "event_id": "evt-201307-quebec-smoke-atlantic-europe-01",
+      "title": "Canadian wildfires in Quebec generate smoke plumes transported across the Atlantic toward Europe",
+      "description": "In early July 2013, large wildfires in Quebec, Canada produced extensive smoke plumes captured in satellite imagery. Reports described smoke transport over the North Atlantic with impacts observed reaching Europe.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2013-07-04T00:00:00.000Z",
+        "event_end": "2013-07-12T23:59:59.000Z",
+        "reported_at": "2013-07-12T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": null,
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Canada (Quebec wildfires)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "CA",
+        "capital_used": "Ottawa",
+        "lat": 45.4215,
+        "lon": -75.6972,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://earthobservatory.nasa.gov/images/81613/smoke-and-wildfires-in-quebec",
+          "source_name": "NASA Earth Observatory",
+          "published_at": "2013-07-12T00:00:00.000Z",
+          "headline": "Smoke and Wildfires in Quebec",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.sciencedaily.com/releases/2013/07/130712084344.htm",
+          "source_name": "ScienceDaily",
+          "published_at": "2013-07-12T00:00:00.000Z",
+          "headline": "130712084344",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://phys.org/news/2013-07-satellite-quilt-wildfires-canada.html",
+          "source_name": "Phys.org",
+          "published_at": "2013-07-12T00:00:00.000Z",
+          "headline": "Satellite quilt reveals wildfires in Canada",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NASA"
+        ],
+        "substances": [
+          "wildfire smoke"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Smoke and Wildfires in Quebec",
+            "source_url": "https://earthobservatory.nasa.gov/images/81613/smoke-and-wildfires-in-quebec"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.8,
+        "location": 0.6,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "needs_dedupe_check",
+        "date_ambiguous",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "2013-07-quebec-wildfire-smoke-atlantic",
+        "fingerprint": "fp-201307-quebec-wildfire-smoke-canada-country-range"
+      }
+    },
+    {
+      "event_id": "evt-201307-almeria-lightning-fires-01",
+      "title": "Lightning sparks multiple forest fires in Almería province, Spain",
+      "description": "On July 12, 2013, a lightning storm in Spain’s Almería province reportedly ignited multiple forest fires near Turre, Mojácar, and Huércal-Overa. The incidents prompted evacuations and firefighting efforts, according to news reporting.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2013-07-12T00:00:00.000Z",
+        "event_end": "2013-07-12T23:59:59.000Z",
+        "reported_at": "2013-07-12T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2013-07-12T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Almería province, Spain",
+        "jurisdiction_level": "state",
+        "admin1": "Andalusia",
+        "country": "ES",
+        "capital_used": "Seville",
+        "lat": 37.3891,
+        "lon": -5.9845,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.upi.com/Top_News/World-News/2013/07/12/Three-fires-sparked-by-lightning-in-Spain/98011373640815/",
+          "source_name": "UPI",
+          "published_at": "2013-07-12T00:00:00.000Z",
+          "headline": "Three fires sparked by lightning in Spain",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [
+          "Mediterranean forests"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Three fires sparked by lightning in Spain",
+            "source_url": "https://www.upi.com/Top_News/World-News/2013/07/12/Three-fires-sparked-by-lightning-in-Spain/98011373640815/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.5,
+        "category": 0.75,
+        "location": 0.55,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "paywalled_or_partial"
+      ],
+      "dedupe": {
+        "cluster_hint": "2013-07-almeria-lightning-fires",
+        "fingerprint": "fp-20130712-almeria-lightning-fires-andalusia-admin1-day"
+      }
+    },
+    {
+      "event_id": "2013-07-26_usfws_diamond_darter_endangered_final_rule",
+      "title": "USFWS issues final rule listing the Diamond Darter as endangered",
+      "description": "A final rule published on July 26, 2013 lists the Diamond Darter (Crystallaria cincotta) as an endangered species under the U.S. Endangered Species Act. The rule describes threats including water-quality degradation and vulnerability to catastrophic events such as toxic spills.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "2013-07-26T00:00:00.000Z",
+        "event_end": "2013-07-26T23:59:59.000Z",
+        "reported_at": "2013-07-26T00:00:00.000Z",
+        "time_confidence": 0.8,
+        "event_date_utc": "2013-07-26T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.fws.gov/policy/library/2013/2013-17938.html",
+          "source_name": "U.S. Fish & Wildlife Service",
+          "published_at": "2013-07-26T00:00:00.000Z",
+          "headline": "Endangered and Threatened Wildlife and Plants; Endangered Species Status for Diamond Darter",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.federalregister.gov/documents/2013/07/26/2013-17938/endangered-and-threatened-wildlife-and-plants-endangered-species-status-for-diamond-darter",
+          "source_name": "Federal Register",
+          "published_at": "2013-07-26T00:00:00.000Z",
+          "headline": "Endangered and Threatened Wildlife and Plants; Endangered Species Status for Diamond Darter",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Fish & Wildlife Service"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "Elk River",
+          "Ohio River Basin"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "determines endangered species status for the Diamond Darter (Crystallaria cincotta) under the Endangered Species Act",
+            "source_url": "https://www.federalregister.gov/documents/2013/07/26/2013-17938/endangered-and-threatened-wildlife-and-plants-endangered-species-status-for-diamond-darter"
+          },
+          {
+            "quote": "threats include water-quality degradation and vulnerability to catastrophic events such as toxic spills",
+            "source_url": "https://www.federalregister.gov/documents/2013/07/26/2013-17938/endangered-and-threatened-wildlife-and-plants-endangered-species-status-for-diamond-darter"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.74,
+        "category": 0.85,
+        "location": 0.6,
+        "summary_grounding": 0.7
+      },
+      "quality_flags": [
+        "location_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "diamond_darter_endangered_final_rule_2013-07-26",
+        "fingerprint": "diamond-darter-endangered|US|2013-07-26"
+      }
+    }
+  ]
+}

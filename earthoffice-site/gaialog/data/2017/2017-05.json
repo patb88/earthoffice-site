@@ -1,0 +1,784 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_2017-05_normalize_2026-01-16T061117698Z",
+    "generated_utc": "2026-01-16T06:11:17.698Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "2017-05",
+    "window": {
+      "start_utc": "2017-05-01T00:00:00.000Z",
+      "end_utc": "2017-05-31T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "evt_20170507_coned_farragut_oilspill_eastriver",
+      "title": "Con Edison Farragut Substation oil/dielectric fluid discharge created sheen in NYC East River",
+      "description": "Reports said a transformer failure at Con Edison’s Farragut Substation led to a discharge of insulating oil/dielectric fluid into the East River near Brooklyn, creating an oil sheen. Response actions and follow-up testing were reported, including discussion of contaminants detected in water samples.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2017-05-07T00:00:00.000Z",
+        "event_end": "2017-05-12T23:59:59.000Z",
+        "reported_at": "2017-05-12T00:00:00Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2017-05-07T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "East River near DUMBO/Farragut Substation, Brooklyn, New York City, USA",
+        "jurisdiction_level": "site",
+        "admin1": "NY",
+        "country": "US",
+        "capital_used": null,
+        "lat": 40.7033,
+        "lon": -73.9896,
+        "precision": "neighborhood",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://content.govdelivery.com/accounts/USDHSCG/bulletins/19a3a2c",
+          "source_name": "GovDelivery (USDHS Coast Guard)",
+          "published_at": "2017-05-08T00:00:00Z",
+          "headline": "USDHS Coast Guard bulletin 19a3a2c (East River oil spill response)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://ny1.com/nyc/all-boroughs/news/2017/05/12/pcb-found-east-river-water-samples-after-oil-spill",
+          "source_name": "NY1",
+          "published_at": "2017-05-12T00:00:00Z",
+          "headline": "PCB found in East River water samples after oil spill",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://abc7ny.com/news/con-ed-working-to-contain-oil-spill-in-east-river/1970089/",
+          "source_name": "ABC7NY",
+          "published_at": "2017-05-08T00:00:00Z",
+          "headline": "Con Ed working to contain oil spill in East River",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Con Edison",
+          "U.S. Coast Guard"
+        ],
+        "substances": [
+          "dielectric fluid",
+          "insulating oil",
+          "PCBs"
+        ],
+        "ecosystems": [
+          "East River"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Con Ed working to contain oil spill in East River",
+            "source_url": "https://abc7ny.com/news/con-ed-working-to-contain-oil-spill-in-east-river/1970089/"
+          },
+          {
+            "quote": "PCB found in East River water samples after oil spill",
+            "source_url": "https://ny1.com/nyc/all-boroughs/news/2017/05/12/pcb-found-east-river-water-samples-after-oil-spill"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.75,
+        "location": 0.55,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Con Edison Farragut Substation East River oil spill May 2017",
+        "fingerprint": "fp_201705_coned_farragut_eastriver_oilspill"
+      }
+    },
+    {
+      "event_id": "evt_20170521_miamibeach_sewage_release_retentionpond",
+      "title": "Miami Beach raw sewage release entered storm drain and discharged to retention pond",
+      "description": "A Florida DEP (State Watch Office) pollution notice described a release of raw sewage from a manhole attributed to a blockage. The notice stated the sewage entered a storm drain and discharged to a retention pond in Miami Beach.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2017-05-21T00:00:00.000Z",
+        "event_end": "2017-05-21T23:59:59.000Z",
+        "reported_at": "2017-05-21T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2017-05-21T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Miami Beach, Florida, USA",
+        "jurisdiction_level": "city",
+        "admin1": "FL",
+        "country": "US",
+        "capital_used": null,
+        "lat": 25.7907,
+        "lon": -80.13,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://lists.dep.state.fl.us/pipermail/pollution.notice/2017-May/000557.html",
+          "source_name": "Florida DEP (pollution.notice list archive)",
+          "published_at": "2017-05-21T00:00:00Z",
+          "headline": "pollution.notice May 2017 message 000557 (Miami Beach sewage release)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Florida Department of Environmental Protection",
+          "Florida State Watch Office"
+        ],
+        "substances": [
+          "raw sewage"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "release of raw sewage from a manhole",
+            "source_url": "https://lists.dep.state.fl.us/pipermail/pollution.notice/2017-May/000557.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.5,
+        "category": 0.7,
+        "location": 0.5,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "paywalled_or_partial",
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Miami Beach raw sewage release storm drain retention pond May 2017",
+        "fingerprint": "fp_201705_miamibeach_sewage_retentionpond"
+      }
+    },
+    {
+      "event_id": "evt_20170501_pittsburgh_boil_water_advisory",
+      "title": "Boil water advisory issued for parts of Pittsburgh area after low chlorine levels",
+      "description": "A news report stated that a boil-water advisory was issued for parts of the Pittsburgh region as a precaution after low chlorine levels raised concerns about potential microbial contamination risk. The advisory was later lifted according to the report.",
+      "category_primary": "pollution_contamination",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "2017-05-01T00:00:00.000Z",
+        "event_end": "2017-05-01T23:59:59.000Z",
+        "reported_at": "2017-02-08T00:00:00Z",
+        "time_confidence": 0.3,
+        "event_date_utc": "2017-05-01T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Pittsburgh, Pennsylvania, USA",
+        "jurisdiction_level": "city",
+        "admin1": "PA",
+        "country": "US",
+        "capital_used": null,
+        "lat": 40.4406,
+        "lon": -79.9959,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.65
+      },
+      "sources": [
+        {
+          "url": "https://time.com/4657455/pittsburgh-water-boil-advisory/",
+          "source_name": "TIME",
+          "published_at": "2017-02-08T00:00:00Z",
+          "headline": "Pittsburgh Water Boil Advisory",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [
+          "chlorine"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "boil-water advisory ... due to low chlorine levels",
+            "source_url": "https://time.com/4657455/pittsburgh-water-boil-advisory/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.35,
+        "category": 0.6,
+        "location": 0.6,
+        "summary_grounding": 0.4
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "Pittsburgh area boil water advisory low chlorine",
+        "fingerprint": "fp_201705_pittsburgh_boilwater_lowchlorine"
+      }
+    },
+    {
+      "event_id": "201705-cyclone-mora-bangladesh-20170530",
+      "title": "Cyclone Mora makes landfall in Bangladesh, causing evacuations and damage",
+      "description": "Severe Cyclonic Storm Mora made landfall in Bangladesh on May 30, 2017, bringing strong winds and heavy rain. Reports described evacuations and damage in coastal areas, with impacts also noted in nearby regions.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2017-05-30T00:00:00.000Z",
+        "event_end": "2017-05-31T23:59:59.000Z",
+        "reported_at": "2017-05-30T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2017-05-30T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Bangladesh",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "BD",
+        "capital_used": "Dhaka",
+        "lat": 23.8103,
+        "lon": 90.4125,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.8
+      },
+      "sources": [
+        {
+          "url": "https://time.com/4799035/bangladesh-myanmar-cyclone-mora-rohingya/",
+          "source_name": "Time",
+          "published_at": "2017-05-30T00:00:00.000Z",
+          "headline": "Bangladesh Myanmar Cyclone Mora Rohingya",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Cyclone Mora made landfall in Bangladesh... prompting large-scale evacuations and widespread damage",
+            "source_url": "https://time.com/4799035/bangladesh-myanmar-cyclone-mora-rohingya/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.75,
+        "location": 0.8,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Cyclone Mora landfall Bangladesh May 2017",
+        "fingerprint": "cyclone-mora-landfall-bangladesh-2017-05-30-bd"
+      }
+    },
+    {
+      "event_id": "201705-nasa-giss-may2017-2nd-warmest",
+      "title": "NASA reports May 2017 was the second-warmest May on record",
+      "description": "NASA GISS reported that May 2017 ranked as the second-warmest May in the instrumental record. The update highlighted elevated global land-ocean temperature anomalies for the month.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2017-05-01T00:00:00.000Z",
+        "event_end": "2017-05-31T23:59:59.000Z",
+        "reported_at": "2017-06-15T00:00:00.000Z",
+        "time_confidence": 0.8,
+        "event_date_utc": null,
+        "event_date_precision": "month"
+      },
+      "location": {
+        "name": "Global",
+        "jurisdiction_level": "global_proxy",
+        "admin1": null,
+        "country": null,
+        "capital_used": null,
+        "lat": 0,
+        "lon": 0,
+        "precision": "proxy",
+        "location_basis": "manual_override",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://climate.nasa.gov/news/2600/may-2017-was-second-warmest-may-on-record/",
+          "source_name": "NASA Climate",
+          "published_at": "2017-06-15T00:00:00.000Z",
+          "headline": "May 2017 was second-warmest May on record",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://data.giss.nasa.gov/gistemp/news/20170615/",
+          "source_name": "NASA GISS",
+          "published_at": "2017-06-15T00:00:00.000Z",
+          "headline": "GISTEMP Update: June 2017",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NASA",
+          "GISS"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "May 2017 was the second-warmest May in the 137-year record",
+            "source_url": "https://climate.nasa.gov/news/2600/may-2017-was-second-warmest-may-on-record/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.7,
+        "category": 0.85,
+        "location": 0.6,
+        "summary_grounding": 0.7
+      },
+      "quality_flags": [
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "NASA GISS May 2017 second-warmest May",
+        "fingerprint": "nasa-giss-may-2017-second-warmest-global-2017-05"
+      }
+    },
+    {
+      "event_id": "evt_201705_bogoslof_explosive_activity_wired",
+      "title": "Bogoslof Volcano explosive activity and ash plume",
+      "description": "Bogoslof Volcano in Alaska’s Aleutian Islands had explosive activity reported in May 2017, producing an ash plume. The report described ash impacts on nearby islands.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2017-05-01T00:00:00Z",
+        "time_confidence": 0.4,
+        "event_date_utc": null,
+        "event_date_precision": "unknown"
+      },
+      "location": {
+        "name": "Bogoslof Island, Aleutian Islands, Alaska, USA",
+        "jurisdiction_level": "site",
+        "admin1": "Alaska",
+        "country": "US",
+        "capital_used": null,
+        "lat": 53.93,
+        "lon": -168.03,
+        "precision": "exact",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.45
+      },
+      "sources": [
+        {
+          "url": "https://www.wired.com/2017/05/volcanic-explosions-rock-alaskan-island-etna-rumbles/",
+          "source_name": "Wired",
+          "published_at": "2017-05-01T00:00:00Z",
+          "headline": "Volcanic Explosions Rock an Alaskan Island. Etna Rumbles",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [
+          "volcanic ash"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.42,
+        "category": 0.65,
+        "location": 0.45,
+        "summary_grounding": 0.35
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "secondary_sources_only",
+        "low_confidence_location"
+      ],
+      "dedupe": {
+        "cluster_hint": "bogoslof-volcano-aleutians-may-2017",
+        "fingerprint": "fp_bogoslof_volcano_aleutians_2017_05"
+      }
+    },
+    {
+      "event_id": "evt_201705_global_coral_bleaching_end_noaa",
+      "title": "NOAA: third global coral bleaching event likely ended by end of May 2017",
+      "description": "NOAA Coral Reef Watch reported that, as of the end of May 2017, the third global coral bleaching event (2014–2017) most likely ended. The update characterized the event as multi-year and associated with widespread heat stress affecting coral reefs globally.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2017-05-31T00:00:00.000Z",
+        "time_confidence": 0.4,
+        "event_date_utc": "2017-05-31T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Global (tropical coral reef regions)",
+        "jurisdiction_level": "global_proxy",
+        "admin1": null,
+        "country": null,
+        "capital_used": null,
+        "lat": 0,
+        "lon": 0,
+        "precision": "proxy",
+        "location_basis": "manual_override",
+        "location_confidence": 0.3
+      },
+      "sources": [
+        {
+          "url": "https://www.coralreefwatch.noaa.gov/satellite/analyses_guidance/global_coral_bleaching_2014-17_status.php",
+          "source_name": "NOAA Coral Reef Watch",
+          "published_at": "2017-05-31T00:00:00.000Z",
+          "headline": "Global Coral Bleaching 2014-17 Status",
+          "byline": null,
+          "accessed_utc": "2017-05-31T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://oceanservice.noaa.gov/annualreport/2017/crcp.html",
+          "source_name": "NOAA Ocean Service",
+          "published_at": "2017-01-01T00:00:00.000Z",
+          "headline": "Coral Reef Conservation Program (Annual Report 2017)",
+          "byline": null,
+          "accessed_utc": "2017-05-31T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA Coral Reef Watch",
+          "NOAA"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "coral reefs"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "as of the end of May 2017, the third global coral bleaching event most likely ended",
+            "source_url": "https://www.coralreefwatch.noaa.gov/satellite/analyses_guidance/global_coral_bleaching_2014-17_status.php"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.52,
+        "category": 0.75,
+        "location": 0.35,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "noaa_global_coral_bleaching_2014_2017_status_end_may_2017",
+        "fingerprint": "fp_noaa_global_bleaching_end_2017-05-31_global"
+      }
+    },
+    {
+      "event_id": "evt_20170510_hi_coral_bleaching_recovery_plan_dlnr",
+      "title": "Hawai‘i DLNR announced development of a coral bleaching recovery plan",
+      "description": "Hawai‘i’s Department of Land and Natural Resources (DLNR) announced development of the Hawai‘i Coral Bleaching Recovery Plan following successive summers of serious coral bleaching. The announcement described the plan as outlining management approaches to support coral reef recovery.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2017-05-10T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2017-05-10T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Hawai‘i, USA",
+        "jurisdiction_level": "state",
+        "admin1": "HI",
+        "country": "US",
+        "capital_used": "Honolulu",
+        "lat": 21.3069,
+        "lon": -157.8583,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.85
+      },
+      "sources": [
+        {
+          "url": "https://dlnr.hawaii.gov/blog/2017/05/10/nr17-078/",
+          "source_name": "Hawai‘i DLNR",
+          "published_at": "2017-05-10T00:00:00.000Z",
+          "headline": "NR17-078",
+          "byline": null,
+          "accessed_utc": "2017-05-10T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Hawai‘i Department of Land and Natural Resources (DLNR)"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "coral reefs"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "development of the Hawai‘i Coral Bleaching Recovery Plan",
+            "source_url": "https://dlnr.hawaii.gov/blog/2017/05/10/nr17-078/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.7,
+        "category": 0.8,
+        "location": 0.9,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "paywalled_or_partial",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "hawaii_dlnr_coral_bleaching_recovery_plan_2017_05_10",
+        "fingerprint": "fp_hawaii_coral_bleaching_recovery_plan_2017-05-10_HI"
+      }
+    },
+    {
+      "event_id": "20170531-us-dc-circuit-epa-methane-suspension-struck",
+      "title": "D.C. Circuit vacates EPA stay of methane and VOC standards for oil and gas sector",
+      "description": "A U.S. federal appeals court invalidated EPA’s attempt to suspend (stay) certain methane and related air-pollution protections for oil and gas operations. The decision reinstated the limits and blocked the rollback attempt described in the source.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2017-05-31T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2017-05-31T00:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Washington, DC, United States (D.C. Circuit Court of Appeals)",
+        "jurisdiction_level": "city",
+        "admin1": "DC",
+        "country": "US",
+        "capital_used": null,
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "city",
+        "location_basis": "institution_proxy",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://www.nrdc.org/press-releases/court-invalidates-epa-rollback-methane-pollution-protections",
+          "source_name": "NRDC",
+          "published_at": "2017-05-31T00:00:00Z",
+          "headline": "Court Invalidates EPA Rollback of Methane Pollution Protections",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Environmental Protection Agency (EPA)",
+          "U.S. Court of Appeals for the D.C. Circuit",
+          "NRDC"
+        ],
+        "substances": [
+          "methane"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Court Invalidates EPA Rollback of Methane Pollution Protections",
+            "source_url": "https://www.nrdc.org/press-releases/court-invalidates-epa-rollback-methane-pollution-protections"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.75,
+        "location": 0.7,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "possible_opinion_or_advocacy",
+        "secondary_sources_only",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "dc-circuit-epa-methane-stay-2017-05",
+        "fingerprint": "dc-circuit-epa-methane-stay-2017-05"
+      }
+    },
+    {
+      "event_id": "20170508-20170518-unfccc-bonn-sessions-progress",
+      "title": "UNFCCC Bonn sessions advance work on Paris Agreement implementation rules",
+      "description": "UNFCCC sessions held in Bonn in May 2017 advanced technical work on the rules and instruments intended to implement the Paris Agreement. The source characterizes the talks as steady progress on implementation.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "2017-05-08T00:00:00Z",
+        "event_end": "2017-05-18T23:59:59Z",
+        "reported_at": "2017-05-18T00:00:00Z",
+        "time_confidence": 0.8,
+        "event_date_utc": null,
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Bonn, Germany",
+        "jurisdiction_level": "city",
+        "admin1": null,
+        "country": "DE",
+        "capital_used": null,
+        "lat": 50.7374,
+        "lon": 7.0982,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.85
+      },
+      "sources": [
+        {
+          "url": "https://climate.ec.europa.eu/news-other-reads/news/eu-welcomes-steady-progress-paris-agreement-implementation-un-climate-talks-2017-05-18_en",
+          "source_name": "European Commission - Climate Action",
+          "published_at": "2017-05-18T00:00:00Z",
+          "headline": "EU welcomes steady progress on Paris Agreement implementation at UN climate talks",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "UNFCCC",
+          "European Commission"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "EU welcomes steady progress on Paris Agreement implementation at UN climate talks",
+            "source_url": "https://climate.ec.europa.eu/news-other-reads/news/eu-welcomes-steady-progress-paris-agreement-implementation-un-climate-talks-2017-05-18_en"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.7,
+        "category": 0.75,
+        "location": 0.85,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "secondary_sources_only",
+        "possible_opinion_or_advocacy",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "unfccc-bonn-may-2017-sessions",
+        "fingerprint": "unfccc-bonn-may-2017-sessions"
+      }
+    }
+  ]
+}

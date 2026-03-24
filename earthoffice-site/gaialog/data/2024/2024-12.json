@@ -1,0 +1,682 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_2024-12_normalize_2026-01-16T141323312Z",
+    "generated_utc": "2026-01-16T14:13:23.312Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "2024-12",
+    "window": {
+      "start_utc": "2024-12-01T00:00:00.000Z",
+      "end_utc": "2024-12-31T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "ev-202412-peru-talara-oilspill-emergency",
+      "title": "Peru declares environmental emergency after crude oil spill near Talara refinery",
+      "description": "A crude oil spill linked to pre-shipment maneuvers at Petroperú’s Talara refinery offshore terminal contaminated coastal waters and multiple beaches near Talara/Lobitos in Piura, Peru. Peru’s government declared an environmental emergency to support cleanup and remediation efforts, and authorities reported impacts to the marine area and wildlife.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2024-12-31T23:59:59.000Z",
+        "time_confidence": 0.5,
+        "event_date_utc": "2024-12-21T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Lobitos District / Talara refinery area, Piura, Peru",
+        "jurisdiction_level": "site",
+        "admin1": "Piura",
+        "country": "PE",
+        "capital_used": null,
+        "lat": -4.457,
+        "lon": -81.279,
+        "precision": "neighborhood",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.reuters.com/article/idUSL1N3KQ2QZ/",
+          "source_name": "Reuters",
+          "published_at": "2024-12-31T23:59:59.000Z",
+          "headline": "Peru declares environmental emergency after crude oil spill near Talara refinery affecting multiple beaches",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.tbsnews.net/world/peru-declares-environmental-emergency-after-oil-spill-1028171",
+          "source_name": "TBS News",
+          "published_at": "2024-12-31T23:59:59.000Z",
+          "headline": "Peru declares environmental emergency after oil spill",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.hydrocarbonprocessing.com/news/2024/12/peru-declares-environmental-emergency-after-oil-spill/",
+          "source_name": "Hydrocarbon Processing",
+          "published_at": "2024-12-31T23:59:59.000Z",
+          "headline": "Peru declares environmental emergency after oil spill",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Petroperú"
+        ],
+        "substances": [
+          "crude oil"
+        ],
+        "ecosystems": [
+          "coastal waters",
+          "beaches",
+          "marine environment"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Peru declared an environmental emergency after a crude oil spill",
+            "source_url": "https://www.reuters.com/article/idUSL1N3KQ2QZ/"
+          },
+          {
+            "quote": "spill ... during pre-shipment maneuvers ... Talara refinery offshore terminal",
+            "source_url": "https://www.reuters.com/article/idUSL1N3KQ2QZ/"
+          },
+          {
+            "quote": "contaminated ... multiple beaches",
+            "source_url": "https://www.reuters.com/article/idUSL1N3KQ2QZ/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.8,
+        "location": 0.55,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Peru Talara/Lobitos crude oil spill environmental emergency Dec 2024",
+        "fingerprint": "fp-202412-peru-talara-oilspill-emergency"
+      }
+    },
+    {
+      "event_id": "evt_20241223_texas_drought_proclamation",
+      "title": "Texas amends and renews statewide drought disaster proclamation",
+      "description": "Texas Governor Greg Abbott amended and renewed an ongoing drought disaster proclamation, citing persistent drought conditions in numerous counties. The proclamation authorizes the use of state and local resources and may allow certain regulatory suspensions to support response and mitigation.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2024-12-23T00:00:00.000Z",
+        "event_end": "2024-12-23T23:59:59.000Z",
+        "reported_at": "2024-12-23T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2024-12-23T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Texas, United States",
+        "jurisdiction_level": "state",
+        "admin1": "Texas",
+        "country": "US",
+        "capital_used": "Austin",
+        "lat": 30.2672,
+        "lon": -97.7431,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.85
+      },
+      "sources": [
+        {
+          "url": "https://gov.texas.gov/news/post/governor-abbott-amends-renews-drought-disaster-proclamation-in-december-2024",
+          "source_name": "Office of the Texas Governor",
+          "published_at": "2024-12-23T00:00:00.000Z",
+          "headline": "Governor Abbott Amends, Renews Drought Disaster Proclamation in December 2024",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Office of the Texas Governor"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": [
+          "Greg Abbott"
+        ]
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Governor Greg Abbott amended and renewed a drought disaster proclamation... due to persistent drought conditions.",
+            "source_url": "https://gov.texas.gov/news/post/governor-abbott-amends-renews-drought-disaster-proclamation-in-december-2024"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.72,
+        "category": 0.75,
+        "location": 0.85,
+        "summary_grounding": 0.65
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "texas_drought_disaster_proclamation_dec2024",
+        "fingerprint": "fp_texas_drought_disaster_proclamation_2024-12-23_austin"
+      }
+    },
+    {
+      "event_id": "evt_20241216_ny_drought_update",
+      "title": "New York updates statewide drought status; NYC and 10 counties downgraded to Drought Watch",
+      "description": "New York State’s Department of Environmental Conservation issued an update on statewide drought conditions, downgrading New York City and 10 counties from Drought Warning to Drought Watch after recent rainfall and improved indicators. The agency continued to urge voluntary water conservation statewide.",
+      "category_primary": "weather_climate",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "2024-12-16T00:00:00.000Z",
+        "event_end": "2024-12-16T23:59:59.000Z",
+        "reported_at": "2024-12-16T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2024-12-16T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "New York State, United States",
+        "jurisdiction_level": "state",
+        "admin1": "New York",
+        "country": "US",
+        "capital_used": "Albany",
+        "lat": 42.6526,
+        "lon": -73.7562,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.85
+      },
+      "sources": [
+        {
+          "url": "https://dec.ny.gov/news/press-releases/2024/12/dec-issues-update-on-statewide-drought-conditions",
+          "source_name": "New York State Department of Environmental Conservation",
+          "published_at": "2024-12-16T00:00:00.000Z",
+          "headline": "DEC Issues Update on Statewide Drought Conditions",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "New York State Department of Environmental Conservation"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "DEC is updating drought conditions statewide... NYC and 10 counties moved from Drought Warning to Drought Watch.",
+            "source_url": "https://dec.ny.gov/news/press-releases/2024/12/dec-issues-update-on-statewide-drought-conditions"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.7,
+        "category": 0.8,
+        "location": 0.85,
+        "summary_grounding": 0.65
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "ny_state_drought_update_dec2024",
+        "fingerprint": "fp_ny_state_drought_update_2024-12-16_albany"
+      }
+    },
+    {
+      "event_id": "evt_20241217_vanuatu_eq_portvila_001",
+      "title": "Magnitude 7.3 earthquake near Port Vila, Vanuatu disrupts utilities and damages infrastructure",
+      "description": "A major earthquake struck near Port Vila/Efate in Vanuatu, causing structural damage and disrupting roads, telecommunications, electricity, and water services. Immediate response and coordination issues were reported in the aftermath.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2024-12-17T01:47:26.000Z",
+        "event_end": "2024-12-17T23:59:59.000Z",
+        "reported_at": "2024-12-17T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2024-12-17T01:47:26.000Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Port Vila / Efate, Vanuatu",
+        "jurisdiction_level": "city",
+        "admin1": null,
+        "country": "VU",
+        "capital_used": null,
+        "lat": -17.7333,
+        "lon": 168.3273,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://www.etcluster.org/emergency/vanuatu-earthquake-december-2024",
+          "source_name": "ETC Cluster (Emergency Telecommunications Cluster)",
+          "published_at": "2024-12-17T00:00:00Z",
+          "headline": "Vanuatu earthquake December 2024",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Emergency Telecommunications Cluster (ETC Cluster)"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "earthquake ... causing extensive structural damage and major disruptions to roads, telecommunications, electricity and water services",
+            "source_url": "https://www.etcluster.org/emergency/vanuatu-earthquake-december-2024"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.85,
+        "location": 0.7,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "vanuatu-port-vila-efate-earthquake-2024-12-17",
+        "fingerprint": "fp_vanuatu_portvila_2024-12-17_geological"
+      }
+    },
+    {
+      "event_id": "fires_franklin-fire_malibu-ca_us_2024-12-09",
+      "title": "Franklin Fire burns near Malibu in Los Angeles County, damaging structures and prompting evacuations",
+      "description": "The Franklin Fire burned near Malibu in Los Angeles County during strong wind conditions, leading to evacuations and road closures. Reporting described thousands of acres burned and damage to structures before the fire’s containment progressed in mid-December.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2024-12-09T00:00:00.000Z",
+        "event_end": "2024-12-18T23:59:59.000Z",
+        "reported_at": "2024-12-09T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2024-12-09T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Los Angeles County (Malibu), California, United States",
+        "jurisdiction_level": "site",
+        "admin1": "California",
+        "country": "US",
+        "capital_used": null,
+        "lat": 34.0259,
+        "lon": -118.7798,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://www.cbsnews.com/losangeles/news/roads-in-malibu-close-as-franklin-fire-burns-thousands-of-acres-near-pepperdine-university/",
+          "source_name": "CBS News Los Angeles",
+          "published_at": "2024-12-09T00:00:00.000Z",
+          "headline": "Roads in Malibu close as Franklin Fire burns thousands of acres near Pepperdine University",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://abcnews.go.com/US/firefighters-boost-containment-california-wildfire-burned-4000/story?id=116679911",
+          "source_name": "ABC News",
+          "published_at": "2024-12-12T00:00:00.000Z",
+          "headline": "Firefighters boost containment of California wildfire that burned about 4,000 acres",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.fire.ca.gov/incidents/2024/12/9/franklin-fire/",
+          "source_name": "CAL FIRE",
+          "published_at": "2024-12-09T00:00:00.000Z",
+          "headline": "Franklin Fire",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "CAL FIRE"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Roads in Malibu close as the Franklin Fire burns thousands of acres near Pepperdine University.",
+            "source_url": "https://www.cbsnews.com/losangeles/news/roads-in-malibu-close-as-franklin-fire-burns-thousands-of-acres-near-pepperdine-university/"
+          },
+          {
+            "quote": "Firefighters boost containment of California wildfire that burned about 4,000 acres.",
+            "source_url": "https://abcnews.go.com/US/firefighters-boost-containment-california-wildfire-burned-4000/story?id=116679911"
+          },
+          {
+            "quote": "Franklin Fire",
+            "source_url": "https://www.fire.ca.gov/incidents/2024/12/9/franklin-fire/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.66,
+        "category": 0.85,
+        "location": 0.7,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "needs_dedupe_check",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "Franklin Fire Malibu December 2024",
+        "fingerprint": "fires|franklin-fire|malibu-ca|2024-12-09"
+      }
+    },
+    {
+      "event_id": "evt-2024-12-usfws-blue-tree-monitor-emergency-listing",
+      "title": "USFWS issues emergency endangered listing for the blue tree monitor",
+      "description": "The U.S. Fish and Wildlife Service announced an emergency action to list the blue tree monitor (Varanus macraei) as endangered under the Endangered Species Act for a temporary period. The agency cited urgent threats including overcollection for the pet trade and habitat loss, which would trigger federal protections affecting import and trade.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "2024-12-26T00:00:00.000Z",
+        "event_end": "2024-12-26T23:59:59.000Z",
+        "reported_at": "2024-12-26T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2024-12-26T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://www.fws.gov/press-release/2024-12/us-fish-and-wildlife-service-emergency-lists-blue-tree-monitor-endangered",
+          "source_name": "U.S. Fish and Wildlife Service",
+          "published_at": "2024-12-26T00:00:00.000Z",
+          "headline": "U.S. Fish and Wildlife Service emergency lists blue tree monitor endangered",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Fish and Wildlife Service"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "Coral reefs"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "emergency action to list the blue tree monitor as endangered",
+            "source_url": "https://www.fws.gov/press-release/2024-12/us-fish-and-wildlife-service-emergency-lists-blue-tree-monitor-endangered"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.75,
+        "location": 0.7,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "needs_dedupe_check",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "USFWS emergency listing blue tree monitor (Varanus macraei)",
+        "fingerprint": "fp-usfws-blue-tree-monitor-2024-12-26-us"
+      }
+    },
+    {
+      "event_id": "evt-2024-12-noaa-crw-sba-updates",
+      "title": "NOAA Coral Reef Watch publishes December 2024 Satellite Bleaching Alert updates",
+      "description": "NOAA Coral Reef Watch posted multiple Satellite Bleaching Alert (SBA) updates in December 2024. The updates describe changing heat-stress and coral bleaching alert levels across monitored reef regions as part of ongoing marine heat stress conditions.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2024-12-01T00:00:00.000Z",
+        "event_end": "2024-12-26T23:59:59.000Z",
+        "reported_at": "2024-12-02T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": null,
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Global (NOAA Coral Reef Watch stations)",
+        "jurisdiction_level": "global_proxy",
+        "admin1": null,
+        "country": null,
+        "capital_used": null,
+        "lat": 0,
+        "lon": 0,
+        "precision": "proxy",
+        "location_basis": "institution_proxy",
+        "location_confidence": 0.5
+      },
+      "sources": [
+        {
+          "url": "https://www.ospo.noaa.gov/data/ocean/crw/alerts/2024/SBA_alerts_20241202.html",
+          "source_name": "NOAA Coral Reef Watch (OSPO)",
+          "published_at": "2024-12-02T00:00:00.000Z",
+          "headline": "Satellite Bleaching Alert updates (2024-12-02)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.ospo.noaa.gov/data/ocean/crw/alerts/2024/SBA_alerts_20241216.html",
+          "source_name": "NOAA Coral Reef Watch (OSPO)",
+          "published_at": "2024-12-16T00:00:00.000Z",
+          "headline": "Satellite Bleaching Alert updates (2024-12-16)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.ospo.noaa.gov/data/ocean/crw/alerts/2024/SBA_alerts_20241226.html",
+          "source_name": "NOAA Coral Reef Watch (OSPO)",
+          "published_at": "2024-12-26T00:00:00.000Z",
+          "headline": "Satellite Bleaching Alert updates (2024-12-26)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA Coral Reef Watch",
+          "NOAA Office of Satellite and Product Operations"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "Coral reefs"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Satellite Bleaching Alert updates",
+            "source_url": "https://www.ospo.noaa.gov/data/ocean/crw/alerts/2024/SBA_alerts_20241202.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.7,
+        "location": 0.5,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "needs_dedupe_check",
+        "location_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "NOAA CRW Satellite Bleaching Alert updates December 2024",
+        "fingerprint": "fp-noaa-crw-sba-dec-2024-global"
+      }
+    },
+    {
+      "event_id": "ev_2024-12_plastics_inc5_busan_no_agreement",
+      "title": "INC-5 plastics treaty talks adjourn in Busan without agreement; negotiations to continue in 2025",
+      "description": "The fifth session of the Intergovernmental Negotiating Committee (INC-5) to develop a legally binding instrument on plastic pollution adjourned in Busan without a finalized treaty text. According to the UN Geneva summary, talks were suspended with the intention to resume next year, with negotiations continuing based on the Chair’s text amid unresolved differences on core provisions.",
+      "category_primary": "policy_regulation",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2024-12-02T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2024-12-02T00:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Busan, Republic of Korea",
+        "jurisdiction_level": "city",
+        "admin1": null,
+        "country": "KR",
+        "capital_used": null,
+        "lat": 35.1796,
+        "lon": 129.0756,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.75
+      },
+      "sources": [
+        {
+          "url": "https://www.ungeneva.org/en/news-media/news/2024/12/100870/plastic-pollution-treaty-negotiations-adjourn-busan-resume-next-year",
+          "source_name": "UN Geneva",
+          "published_at": "2024-12-02T00:00:00Z",
+          "headline": "Plastic pollution treaty negotiations adjourn in Busan, resume next year",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://environment.ec.europa.eu/news/eu-regrets-inconclusive-global-plastics-treaty-2024-12-02_en",
+          "source_name": "European Commission (DG Environment)",
+          "published_at": "2024-12-02T00:00:00Z",
+          "headline": "EU regrets inconclusive global plastics treaty",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Intergovernmental Negotiating Committee (INC)",
+          "United Nations Office at Geneva",
+          "European Commission"
+        ],
+        "substances": [
+          "plastic pollution"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Plastic pollution treaty negotiations adjourn in Busan, resume next year",
+            "source_url": "https://www.ungeneva.org/en/news-media/news/2024/12/100870/plastic-pollution-treaty-negotiations-adjourn-busan-resume-next-year"
+          },
+          {
+            "quote": "EU regrets inconclusive global plastics treaty",
+            "source_url": "https://environment.ec.europa.eu/news/eu-regrets-inconclusive-global-plastics-treaty-2024-12-02_en"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.72,
+        "category": 0.85,
+        "location": 0.75,
+        "summary_grounding": 0.7
+      },
+      "quality_flags": [
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "UN global plastics treaty INC-5 Busan adjourned without agreement",
+        "fingerprint": "fp_inc5_busan_2024-12-02"
+      }
+    }
+  ]
+}

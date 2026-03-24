@@ -1,0 +1,322 @@
+{
+  "batch_meta": {
+    "batch_id": "7da3d56b-0e8a-4c72-9068-266c0e3657f8",
+    "generated_utc": "2026-01-11T00:00:00Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "2000-02",
+    "window": {
+      "start_utc": "2000-02-01T00:00:00.000Z",
+      "end_utc": "2000-02-29T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-event-ingest",
+      "version": "1.0",
+      "model": "unknown",
+      "retrieval_method": "mixed"
+    }
+  },
+  "events": [
+    {
+      "event_id": "200002-baia-mare-cyanide-tisza-danube-guardian-2000-02-14",
+      "title": "Baia Mare cyanide spill impacts the River Tisza and Danube with major fish kills",
+      "description": "A cyanide-contaminated pulse linked to a Romanian mine tailings spill was reported moving down the River Tisza and toward the Danube in mid-February 2000. Reporting described extensive fish mortality and cross-border concern about ecological damage.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2000-02-14T00:00:00Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "2000-02-14T00:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Budapest, Hungary (capital proxy for River Tisza/Danube reporting)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "HU",
+        "capital_used": "Budapest",
+        "lat": 47.4979,
+        "lon": 19.0402,
+        "precision": "proxy",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.35
+      },
+      "sources": [
+        {
+          "url": "https://www.theguardian.com/world/2000/feb/14/1",
+          "source_name": "The Guardian",
+          "published_at": "2000-02-14T00:00:00Z",
+          "headline": "https://www.theguardian.com/world/2000/feb/14/1",
+          "byline": null,
+          "accessed_utc": "2026-01-11T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [
+          "cyanide"
+        ],
+        "ecosystems": [
+          "River Tisza",
+          "Danube River"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "...toxic cyanide pulse moving down the River Tisza... spreading downstream into the Danube...",
+            "source_url": "https://www.theguardian.com/world/2000/feb/14/1"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.52,
+        "category": 0.7,
+        "location": 0.35,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "paywalled_or_partial",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "baia-mare-cyanide-spill-tisza-danube-2000-02",
+        "fingerprint": "fp_baia_mare_cyanide_tisza_danube_2000_02_guardian"
+      }
+    },
+    {
+      "event_id": "200002-hekla-eruption-start-nasa-20000097954",
+      "title": "Mt. Hekla eruption begins in southern Iceland; SO₂ cloud tracked by satellite",
+      "description": "Mt. Hekla began erupting on Feb. 26, 2000, and satellite analysis documented a sulfur dioxide cloud transported over the North Atlantic and toward northern Europe in the following days. The source describes the plume’s movement and timing based on remote sensing.",
+      "category_primary": "geological",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "2000-02-26T18:19:00Z",
+        "event_end": null,
+        "reported_at": "2000-01-01T00:00:00Z",
+        "time_confidence": 0.75,
+        "event_date_utc": "2000-02-26T18:19:00Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Mt. Hekla, Iceland",
+        "jurisdiction_level": "site",
+        "admin1": null,
+        "country": "IS",
+        "capital_used": null,
+        "lat": 63.98,
+        "lon": -19.7,
+        "precision": "exact",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://ntrs.nasa.gov/citations/20000097954",
+          "source_name": "NASA NTRS",
+          "published_at": "2000-01-01T00:00:00Z",
+          "headline": "https://ntrs.nasa.gov/citations/20000097954",
+          "byline": null,
+          "accessed_utc": "2026-01-11T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NASA"
+        ],
+        "substances": [
+          "sulfur dioxide"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Mt. Hekla began erupting on February 26, 2000 (18:19 GMT).",
+            "source_url": "https://ntrs.nasa.gov/citations/20000097954"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.75,
+        "location": 0.6,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "heklA-2000-02-eruption-and-so2-plume",
+        "fingerprint": "fp_heklA_eruption_2000_02_nasa_20000097954"
+      }
+    },
+    {
+      "event_id": "200002-cyclone-eline-mozambique-guardian-2000-02-23",
+      "title": "Cyclone Eline makes landfall in Mozambique amid severe flooding",
+      "description": "Tropical Cyclone Eline struck Mozambique in late February 2000, worsening an ongoing flood emergency. Reporting described destructive winds and heavy rain intensifying inundation and related health and environmental risks.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2000-02-23T00:00:00Z",
+        "time_confidence": 0.5,
+        "event_date_utc": "2000-02-23T00:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Maputo, Mozambique (capital proxy for national-impact storm reporting)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "MZ",
+        "capital_used": "Maputo",
+        "lat": -25.9692,
+        "lon": 32.5732,
+        "precision": "proxy",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.4
+      },
+      "sources": [
+        {
+          "url": "https://www.theguardian.com/environment/2000/feb/23/weather.mozambique",
+          "source_name": "The Guardian",
+          "published_at": "2000-02-23T00:00:00Z",
+          "headline": "https://www.theguardian.com/environment/2000/feb/23/weather.mozambique",
+          "byline": null,
+          "accessed_utc": "2026-01-11T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "...Cyclone Eline hit Mozambique... compounding an ongoing flood disaster...",
+            "source_url": "https://www.theguardian.com/environment/2000/feb/23/weather.mozambique"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.5,
+        "category": 0.65,
+        "location": 0.4,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "paywalled_or_partial"
+      ],
+      "dedupe": {
+        "cluster_hint": "cyclone-eline-mozambique-feb-2000",
+        "fingerprint": "fp_cyclone_eline_mozambique_2000_02_guardian"
+      }
+    },
+    {
+      "event_id": "200002-us-epa-tier2-final-rule-2000-02-10",
+      "title": "U.S. EPA issues Tier 2 vehicle emissions and gasoline sulfur controls (final rule published)",
+      "description": "The U.S. EPA published the Tier 2 final rule establishing tighter tailpipe emission standards for passenger vehicles and requiring reductions in gasoline sulfur content to support emission-control technologies. The rule applied nationally in the United States.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2000-02-10T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2000-02-10T00:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Washington, DC, United States (capital proxy for federal regulation)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "proxy",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.65
+      },
+      "sources": [
+        {
+          "url": "https://www.epa.gov/regulations-emissions-vehicles-and-engines/final-rule-control-air-pollution-new-motor-vehicles-tier",
+          "source_name": "U.S. Environmental Protection Agency",
+          "published_at": "2000-02-10T00:00:00Z",
+          "headline": "https://www.epa.gov/regulations-emissions-vehicles-and-engines/final-rule-control-air-pollution-new-motor-vehicles-tier",
+          "byline": null,
+          "accessed_utc": "2026-01-11T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.gao.gov/products/ogc-00-22",
+          "source_name": "U.S. Government Accountability Office",
+          "published_at": "2000-02-10T00:00:00Z",
+          "headline": "https://www.gao.gov/products/ogc-00-22",
+          "byline": null,
+          "accessed_utc": "2026-01-11T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Environmental Protection Agency",
+          "U.S. Government Accountability Office"
+        ],
+        "substances": [
+          "sulfur"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "...final rule... Tier 2... gasoline sulfur...",
+            "source_url": "https://www.epa.gov/regulations-emissions-vehicles-and-engines/final-rule-control-air-pollution-new-motor-vehicles-tier"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.75,
+        "location": 0.7,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "epa-tier2-gasoline-sulfur-2000-02",
+        "fingerprint": "fp_epa_tier2_2000_02_10"
+      }
+    }
+  ]
+}

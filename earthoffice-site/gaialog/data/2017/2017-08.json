@@ -1,0 +1,770 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_2017-08_normalize_2026-01-16T061441308Z",
+    "generated_utc": "2026-01-16T06:14:41.308Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "2017-08",
+    "window": {
+      "start_utc": "2017-08-01T00:00:00.000Z",
+      "end_utc": "2017-08-31T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "pollution_contamination_2017-08-03_mississippi-sound_cat-island_ammonia-barge-fire",
+      "title": "Barge carrying anhydrous ammonia catches fire and drifts near Cat Island (Mississippi Sound)",
+      "description": "A barge carrying anhydrous ammonia reportedly caught fire, was cut loose from its tow, and drifted in the Mississippi Sound near Cat Island. The U.S. Coast Guard requested NOAA scientific support for hazard analysis due to potential chemical risks.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2017-08-03T00:00:00.000Z",
+        "event_end": "2017-08-03T23:59:59.000Z",
+        "reported_at": "2017-08-03T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2017-08-03T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Mississippi Sound near Cat Island, Mississippi, USA",
+        "jurisdiction_level": "site",
+        "admin1": "Mississippi",
+        "country": "US",
+        "capital_used": null,
+        "lat": 30.217,
+        "lon": -89.079,
+        "precision": "neighborhood",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://incidentnews.noaa.gov/incident/9538",
+          "source_name": "NOAA IncidentNews",
+          "published_at": "2017-08-03T00:00:00.000Z",
+          "headline": "Incident 9538",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Coast Guard",
+          "NOAA"
+        ],
+        "substances": [
+          "anhydrous ammonia"
+        ],
+        "ecosystems": [
+          "Mississippi Sound",
+          "Gulf of Mexico"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "USCG requested NOAA scientific support for hazard analysis",
+            "source_url": "https://incidentnews.noaa.gov/incident/9538"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.56,
+        "category": 0.7,
+        "location": 0.55,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "noaa_incident_9538",
+        "fingerprint": "pollution_contamination|ammonia barge fire|mississippi sound cat island|2017-08-03"
+      }
+    },
+    {
+      "event_id": "pollution_contamination_2017-08-31_crosby-tx_arkema_harvey_fires",
+      "title": "Arkema Crosby plant fires/explosions during Hurricane Harvey",
+      "description": "Flooding during Hurricane Harvey reportedly disabled refrigeration at Arkema’s Crosby, Texas plant, leading to fires and explosions. Reporting described environmental concerns related to chemical combustion and potential releases associated with flooded facilities.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2017-08-31T00:00:00.000Z",
+        "event_end": "2017-08-31T23:59:59.000Z",
+        "reported_at": "2017-08-31T00:00:00.000Z",
+        "time_confidence": 0.5,
+        "event_date_utc": "2017-08-31T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Crosby, Texas, USA",
+        "jurisdiction_level": "city",
+        "admin1": "Texas",
+        "country": "US",
+        "capital_used": null,
+        "lat": 29.9119,
+        "lon": -95.0624,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://www.newyorker.com/news/amy-davidson-sorkin/the-smoke-from-hurricane-harvey-looking-beyond-the-crosby-chemical-plant-explosion",
+          "source_name": "The New Yorker",
+          "published_at": "2017-08-31T00:00:00.000Z",
+          "headline": "The Smoke from Hurricane Harvey, Looking Beyond the Crosby Chemical-Plant Explosion",
+          "byline": "Amy Davidson Sorkin",
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.axios.com/2017/12/15/explosions-reported-at-houston-area-chemical-plant-1513305207",
+          "source_name": "Axios",
+          "published_at": "2017-08-31T00:00:00.000Z",
+          "headline": "Explosions reported at Houston-area chemical plant",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Arkema"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Flooding from Hurricane Harvey disabled refrigeration at the Arkema Crosby plant",
+            "source_url": "https://www.newyorker.com/news/amy-davidson-sorkin/the-smoke-from-hurricane-harvey-looking-beyond-the-crosby-chemical-plant-explosion"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.75,
+        "location": 0.7,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "arkema_crosby_harvey_2017",
+        "fingerprint": "pollution_contamination|arkema crosby fires explosions|crosby texas|2017-08-31"
+      }
+    },
+    {
+      "event_id": "evt_201708_harvey_texas_us_01",
+      "title": "Hurricane Harvey makes Category 4 landfall in Texas and causes catastrophic flooding",
+      "description": "Hurricane Harvey made Category 4 landfall in Texas on August 25, 2017 and produced record rainfall and catastrophic flooding across parts of Texas Gulf Coast and Southeast Texas, with impacts extending beyond Texas afterward.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2017-08-25T00:00:00.000Z",
+        "event_end": "2017-08-29T23:59:59.000Z",
+        "reported_at": "2017-08-25T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2017-08-25T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Texas Gulf Coast and Southeast Texas, USA",
+        "jurisdiction_level": "state",
+        "admin1": "Texas",
+        "country": "US",
+        "capital_used": "Austin",
+        "lat": 30.2672,
+        "lon": -97.7431,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.8
+      },
+      "sources": [
+        {
+          "url": "https://www.weather.gov/lch/2017harvey",
+          "source_name": "National Weather Service (weather.gov)",
+          "published_at": "2017-08-25T00:00:00.000Z",
+          "headline": "2017 Harvey",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.weather.gov/crp/hurricane_harvey",
+          "source_name": "National Weather Service (weather.gov)",
+          "published_at": "2017-08-25T00:00:00.000Z",
+          "headline": "Hurricane Harvey",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "National Weather Service"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Hurricane Harvey made landfall on the Texas coast as a Category 4 hurricane.",
+            "source_url": "https://www.weather.gov/lch/2017harvey"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.72,
+        "category": 0.85,
+        "location": 0.8,
+        "summary_grounding": 0.65
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "hurricane_harvey_2017_texas",
+        "fingerprint": "fp_harvey_texas_2017-08-25"
+      }
+    },
+    {
+      "event_id": "evt_201708_south_asia_monsoon_floods_01",
+      "title": "Severe monsoon flooding across South Asia (India, Bangladesh, Nepal)",
+      "description": "During August 2017, severe monsoon flooding affected areas of India, Bangladesh, and Nepal, with widespread impacts on people and infrastructure reported across the region.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2017-08-01T00:00:00.000Z",
+        "event_end": "2017-08-31T23:59:59.000Z",
+        "reported_at": "2017-08-30T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": null,
+        "event_date_precision": "month"
+      },
+      "location": {
+        "name": "India, Bangladesh, and Nepal",
+        "jurisdiction_level": "supranational",
+        "admin1": null,
+        "country": null,
+        "capital_used": "New Delhi",
+        "lat": 28.6139,
+        "lon": 77.209,
+        "precision": "supranational",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.35
+      },
+      "sources": [
+        {
+          "url": "https://www.theguardian.com/world/2017/aug/30/mumbai-paralysed-by-floods-as-india-and-region-hit-by-worst-monsoon-rains-in-years",
+          "source_name": "The Guardian",
+          "published_at": "2017-08-30T00:00:00.000Z",
+          "headline": "Mumbai paralysed by floods as India and region hit by worst monsoon rains in years",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://time.com/4921340/south-asia-floods-india-mumbai-bangladesh-nepal/",
+          "source_name": "TIME",
+          "published_at": "2017-08-23T00:00:00.000Z",
+          "headline": "South Asia Floods: India, Bangladesh, Nepal Hit by Monsoon Rains",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Floods and landslides have killed hundreds across India, Nepal and Bangladesh.",
+            "source_url": "https://time.com/4921340/south-asia-floods-india-mumbai-bangladesh-nepal/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.75,
+        "location": 0.35,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "secondary_sources_only",
+        "low_confidence_location"
+      ],
+      "dedupe": {
+        "cluster_hint": "south_asia_monsoon_floods_aug2017",
+        "fingerprint": "fp_south_asia_floods_2017-08"
+      }
+    },
+    {
+      "event_id": "evt_201708_europe_heatwave_40c_01",
+      "title": "Extreme heat warnings issued across parts of Europe as temperatures exceed 40°C",
+      "description": "In early August 2017, authorities issued extreme-heat warnings across parts of Europe as temperatures reached or exceeded 40°C in multiple countries, including areas such as Italy and the Balkans.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2017-08-04T00:00:00.000Z",
+        "event_end": "2017-08-04T23:59:59.000Z",
+        "reported_at": "2017-08-04T00:00:00.000Z",
+        "time_confidence": 0.65,
+        "event_date_utc": "2017-08-04T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Parts of Southern/Central/Eastern Europe (including Italy and the Balkans)",
+        "jurisdiction_level": "supranational",
+        "admin1": null,
+        "country": null,
+        "capital_used": "Rome",
+        "lat": 41.9028,
+        "lon": 12.4964,
+        "precision": "supranational",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.3
+      },
+      "sources": [
+        {
+          "url": "https://www.theguardian.com/world/2017/aug/04/extreme-heat-warnings-issued-europe-temperatures-pass-40c",
+          "source_name": "The Guardian",
+          "published_at": "2017-08-04T00:00:00.000Z",
+          "headline": "Extreme heat warnings issued as Europe temperatures pass 40C",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Extreme heat warnings have been issued across parts of Europe as temperatures passed 40C.",
+            "source_url": "https://www.theguardian.com/world/2017/aug/04/extreme-heat-warnings-issued-europe-temperatures-pass-40c"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.52,
+        "category": 0.7,
+        "location": 0.3,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "secondary_sources_only",
+        "low_confidence_location"
+      ],
+      "dedupe": {
+        "cluster_hint": "europe_heatwave_aug2017_40c",
+        "fingerprint": "fp_europe_heat_2017-08-04"
+      }
+    },
+    {
+      "event_id": "2017-08_us-tx_crosby_arkema_harvey_fires",
+      "title": "Arkema chemical plant fires and explosions after Hurricane Harvey flooding",
+      "description": "Flooding from Hurricane Harvey disabled critical systems at the Arkema chemical plant in Crosby, Texas, leading to fires and explosions. Officials warned about hazardous smoke and potential chemical exposure risks in the surrounding area.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2017-08-31T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2017-08-31T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Crosby, Texas, USA",
+        "jurisdiction_level": "city",
+        "admin1": "Texas",
+        "country": "US",
+        "capital_used": null,
+        "lat": 29.9111,
+        "lon": -95.0622,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://www.newyorker.com/news/amy-davidson-sorkin/the-smoke-from-hurricane-harvey-looking-beyond-the-crosby-chemical-plant-explosion",
+          "source_name": "The New Yorker",
+          "published_at": "2017-08-31T00:00:00Z",
+          "headline": "The Smoke From Hurricane Harvey, Looking Beyond the Crosby Chemical Plant Explosion",
+          "byline": "Amy Davidson Sorkin",
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.axios.com/2017/12/15/explosions-reported-at-houston-area-chemical-plant-1513305207",
+          "source_name": "Axios",
+          "published_at": "2017-08-31T00:00:00Z",
+          "headline": "Explosions reported at Houston-area chemical plant",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Arkema"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.7,
+        "location": 0.7,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Arkema Crosby Hurricane Harvey chemical plant explosions/fires",
+        "fingerprint": "arkema-chemical-plant-fires-explosions-after-hurricane-harvey-flooding|crosby-texas-usa|2017-08-31"
+      }
+    },
+    {
+      "event_id": "2017-08_us-or_madras_whitewater_fire_eclipse",
+      "title": "Whitewater Fire near Madras, Oregon prompts evacuations ahead of solar eclipse crowds",
+      "description": "The Whitewater Fire near Madras, Oregon expanded and triggered evacuations and warnings by August 19, 2017. The fire drew added concern due to its proximity to the solar eclipse path of totality and expected visitor influx.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2017-08-19T00:00:00Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "2017-08-19T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Near Madras, Oregon, USA",
+        "jurisdiction_level": "city",
+        "admin1": "Oregon",
+        "country": "US",
+        "capital_used": null,
+        "lat": 44.6332,
+        "lon": -121.1295,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://time.com/4907933/an-oregon-wildfire-is-blazing-in-the-eclipses-path-of-totality/",
+          "source_name": "Time",
+          "published_at": "2017-08-19T00:00:00Z",
+          "headline": "An Oregon Wildfire Is Blazing in the Eclipse’s Path of Totality",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.56,
+        "category": 0.75,
+        "location": 0.55,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check",
+        "location_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "Whitewater Fire near Madras Oregon (Aug 2017)",
+        "fingerprint": "whitewater-fire-near-madras-oregon-prompts-evacuations-ahead-of-solar-eclipse-crowds|near-madras-oregon-usa|2017-08-19"
+      }
+    },
+    {
+      "event_id": "2017-08-04_us_paris_withdrawal_notice_un",
+      "title": "U.S. notifies the UN of its intent to withdraw from the Paris Agreement",
+      "description": "A UN Note to Correspondents stated that the UN Secretary-General, acting as Depositary, received a communication from the United States regarding its intent to withdraw from the Paris Agreement. The note indicated the U.S. position that withdrawal would take effect as soon as it is eligible under Article 28, unless it identifies terms for re-engagement.",
+      "category_primary": "policy_regulation",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2017-08-04T00:00:00.000Z",
+        "time_confidence": 0.8,
+        "event_date_utc": "2017-08-04T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United Nations Headquarters, New York City, United States",
+        "jurisdiction_level": "site",
+        "admin1": "NY",
+        "country": "US",
+        "capital_used": null,
+        "lat": 40.7489,
+        "lon": -73.968,
+        "precision": "neighborhood",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.un.org/sg/en/content/sg/notes-correspondents/2017-08-04/note-correspondents-the-paris-climate-agreement",
+          "source_name": "United Nations - Secretary-General",
+          "published_at": "2017-08-04T00:00:00.000Z",
+          "headline": "Note to Correspondents: The Paris Climate Agreement",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "United Nations",
+          "UN Secretary-General",
+          "United States"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "confirmed receipt of the communication from the United States on the Paris Agreement",
+            "source_url": "https://www.un.org/sg/en/content/sg/notes-correspondents/2017-08-04/note-correspondents-the-paris-climate-agreement"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.85,
+        "location": 0.55,
+        "summary_grounding": 0.7
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "US Paris Agreement withdrawal notice to UN (Aug 2017)",
+        "fingerprint": "2017-08-04_us_paris_withdrawal_notice_un"
+      }
+    },
+    {
+      "event_id": "2017-08-15_eo_13807_one_federal_decision",
+      "title": "Executive Order 13807 signed to accelerate federal environmental review/permitting for infrastructure projects (\"One Federal Decision\")",
+      "description": "The U.S. issued Executive Order 13807 directing federal agencies to coordinate and streamline environmental reviews and permitting decisions for major infrastructure projects. The order advanced a \"One Federal Decision\" approach intended to speed project approvals by setting timeframes and coordination requirements.",
+      "category_primary": "policy_regulation",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2017-08-15T00:00:00.000Z",
+        "time_confidence": 0.85,
+        "event_date_utc": "2017-08-15T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Washington, D.C., United States",
+        "jurisdiction_level": "city",
+        "admin1": "DC",
+        "country": "US",
+        "capital_used": null,
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "city",
+        "location_basis": "institution_proxy",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.presidency.ucsb.edu/documents/executive-order-13807-establishing-discipline-and-accountability-the-environmental-review",
+          "source_name": "The American Presidency Project (UCSB)",
+          "published_at": "2017-08-15T00:00:00.000Z",
+          "headline": "Executive Order 13807—Establishing Discipline and Accountability in the Environmental Review and Permitting Process for Infrastructure Projects",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.doi.gov/ocl/hr-4419",
+          "source_name": "U.S. Department of the Interior",
+          "published_at": "2017-08-15T00:00:00.000Z",
+          "headline": "HR 4419",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Executive Office of the President of the United States",
+          "Federal agencies",
+          "U.S. Department of the Interior"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": [
+          "Donald Trump"
+        ]
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Establishing Discipline and Accountability in the Environmental Review and Permitting Process",
+            "source_url": "https://www.presidency.ucsb.edu/documents/executive-order-13807-establishing-discipline-and-accountability-the-environmental-review"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.72,
+        "category": 0.85,
+        "location": 0.6,
+        "summary_grounding": 0.65
+      },
+      "quality_flags": [
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "EO 13807 One Federal Decision (Aug 2017)",
+        "fingerprint": "2017-08-15_eo_13807_one_federal_decision"
+      }
+    },
+    {
+      "event_id": "2017-08-09_state_ags_oppose_epa_methane_delay_comments",
+      "title": "California-led coalition of attorneys general submits comments opposing EPA’s proposed delay of an oil-and-gas methane rule",
+      "description": "The California Attorney General’s office announced that a coalition of attorneys general submitted comments opposing EPA’s proposed delay of compliance requirements for a methane rule affecting new oil and gas sources. The announcement framed the proposed delay as unlawful and urged EPA not to proceed with it.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2017-08-09T00:00:00.000Z",
+        "time_confidence": 0.8,
+        "event_date_utc": "2017-08-09T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Sacramento, California, United States",
+        "jurisdiction_level": "city",
+        "admin1": "CA",
+        "country": "US",
+        "capital_used": null,
+        "lat": 38.5816,
+        "lon": -121.4944,
+        "precision": "city",
+        "location_basis": "institution_proxy",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://oag.ca.gov/news/press-releases/attorney-general-becerra-leads-coalition-opposing-epa%E2%80%99s-illegal-proposed-delay",
+          "source_name": "California Department of Justice (Office of the Attorney General)",
+          "published_at": "2017-08-09T00:00:00.000Z",
+          "headline": "Attorney General Becerra Leads Coalition Opposing EPA’s Illegal Proposed Delay",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "California Department of Justice",
+          "Office of the Attorney General",
+          "U.S. Environmental Protection Agency"
+        ],
+        "substances": [
+          "methane"
+        ],
+        "ecosystems": [],
+        "people": [
+          "Xavier Becerra"
+        ]
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "leads coalition opposing EPA’s illegal proposed delay",
+            "source_url": "https://oag.ca.gov/news/press-releases/attorney-general-becerra-leads-coalition-opposing-epa%E2%80%99s-illegal-proposed-delay"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.7,
+        "category": 0.85,
+        "location": 0.7,
+        "summary_grounding": 0.65
+      },
+      "quality_flags": [],
+      "dedupe": {
+        "cluster_hint": "AG coalition comments opposing EPA methane rule delay (Aug 2017)",
+        "fingerprint": "2017-08-09_state_ags_oppose_epa_methane_delay_comments"
+      }
+    }
+  ]
+}

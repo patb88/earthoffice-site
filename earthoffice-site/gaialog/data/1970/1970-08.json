@@ -1,0 +1,434 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_1970-08_normalize_2026-01-19T034059822Z",
+    "generated_utc": "2026-01-19T03:40:59.822Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "1970-08",
+    "window": {
+      "start_utc": "1970-08-01T00:00:00.000Z",
+      "end_utc": "1970-08-31T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "evt_19700820_mercury_waterfowl_nd_mi",
+      "title": "U.S. Fish and Wildlife Service reports mercury residues found in sampled waterfowl",
+      "description": "A U.S. Fish and Wildlife Service (then Bureau of Sport Fisheries and Wildlife) news release reported mercury detected in sampled ducks from North Dakota wetlands and from the Lake St. Clair–Detroit River area. The release described measured residue ranges in duck tissues and discussed possible sources, noting Lake St. Clair as heavily polluted with mercury.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1970-08-20T00:00:00Z",
+        "time_confidence": 0.85,
+        "event_date_utc": "1970-08-20T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "North Dakota and Lake St. Clair–Detroit River area (United States)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, D.C.",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.fws.gov/sites/default/files/documents/historic-news-releases/1970/19700820.PDF",
+          "source_name": "U.S. Fish and Wildlife Service",
+          "published_at": "1970-08-20T00:00:00Z",
+          "headline": "Mercury residues discovered in waterfowl",
+          "byline": null,
+          "accessed_utc": "2026-01-19T03:37:39.982Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.fws.gov/press-release/1970-08/mercury-residues-discovered-waterfowl-august-1970",
+          "source_name": "U.S. Fish and Wildlife Service",
+          "published_at": "1970-08-20T00:00:00Z",
+          "headline": "Mercury residues discovered in waterfowl (August 1970)",
+          "byline": null,
+          "accessed_utc": "2026-01-19T03:37:39.982Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Fish and Wildlife Service",
+          "Bureau of Sport Fisheries and Wildlife",
+          "U.S. Department of the Interior"
+        ],
+        "substances": [
+          "mercury"
+        ],
+        "ecosystems": [
+          "wetlands"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "mercury was detected in all ducks sampled from North Dakota and the Lake St. Clair-Detroit River area",
+            "source_url": "https://www.fws.gov/sites/default/files/documents/historic-news-releases/1970/19700820.PDF"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.68,
+        "category": 0.8,
+        "location": 0.55,
+        "summary_grounding": 0.7
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "mercury residues discovered in waterfowl (USFWS)",
+        "fingerprint": "fp_evt_19700820_mercury_waterfowl_us"
+      }
+    },
+    {
+      "event_id": "197008_hurricane_celia_corpus_christi_tx",
+      "title": "Hurricane Celia makes landfall near Corpus Christi, Texas",
+      "description": "Hurricane Celia made landfall on the Texas coast near the Corpus Christi/Port Aransas area in early August 1970, bringing damaging winds and heavy rainfall. Impacts continued as the storm moved inland across South Texas.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1970-08-01T00:00:00.000Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "1970-08-03T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Corpus Christi, Texas, United States",
+        "jurisdiction_level": "city",
+        "admin1": "Texas",
+        "country": "US",
+        "capital_used": null,
+        "lat": 27.800583,
+        "lon": -97.396381,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://www.weather.gov/crp/hurricanecelia",
+          "source_name": "National Weather Service (weather.gov)",
+          "published_at": "1970-08-01T00:00:00.000Z",
+          "headline": "Hurricane Celia",
+          "byline": null,
+          "accessed_utc": "2026-01-19T03:38:06.220Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.wpc.ncep.noaa.gov/tropical/rain/celia1970.html",
+          "source_name": "NOAA Weather Prediction Center (wpc.ncep.noaa.gov)",
+          "published_at": "1970-08-01T00:00:00.000Z",
+          "headline": "Tropical Rainfall: Celia (1970)",
+          "byline": null,
+          "accessed_utc": "2026-01-19T03:38:06.220Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.weather.gov/lch/1970Celia",
+          "source_name": "National Weather Service (weather.gov)",
+          "published_at": "1970-08-01T00:00:00.000Z",
+          "headline": "Hurricane Celia (1970)",
+          "byline": null,
+          "accessed_utc": "2026-01-19T03:38:06.220Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "National Weather Service",
+          "NOAA Weather Prediction Center"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.68,
+        "category": 0.85,
+        "location": 0.7,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "Hurricane Celia (1970) landfall near Corpus Christi, TX",
+        "fingerprint": "celia_19700803_corpus_christi_tx_weather_climate"
+      }
+    },
+    {
+      "event_id": "197008_entiat_burn_wenatchee_nf",
+      "title": "Entiat Burn: lightning-ignited fires in Wenatchee National Forest burn ~122,000 acres",
+      "description": "A lightning storm starting on August 23, 1970 ignited numerous fires that merged into several major fires in the Entiat area of Washington's Wenatchee National Forest. Collectively described as the “Entiat Burn,” the incident burned about 122,000 acres and took roughly 15 days to contain, with the community of Ardenvoir threatened.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1970-08-23T12:00:00Z",
+        "event_end": "1970-09-07T12:00:00Z",
+        "reported_at": "1970-08-23T12:00:00Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "1970-08-23T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Wenatchee National Forest (Entiat area), Washington, USA",
+        "jurisdiction_level": "state",
+        "admin1": "Washington",
+        "country": "US",
+        "capital_used": "Olympia",
+        "lat": 47.0379,
+        "lon": -122.9007,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://forestservicemuseum.pastperfectonline.com/archive/E5658911-62E0-4F10-BFBD-063181789471",
+          "source_name": "Forest Service Museum (PastPerfect Online)",
+          "published_at": "1970-08-23T12:00:00Z",
+          "headline": "Entiat Burn archival record",
+          "byline": null,
+          "accessed_utc": "2026-01-19T03:38:59.651Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://historylink.org/File/5498",
+          "source_name": "HistoryLink",
+          "published_at": "1970-08-23T12:00:00Z",
+          "headline": "HistoryLink File 5498",
+          "byline": null,
+          "accessed_utc": "2026-01-19T03:38:59.651Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://dlg.usg.edu/record/dlg_ggpd_i-ga-bf600-b-pp1-bf6-b23-s4",
+          "source_name": "Digital Library of Georgia",
+          "published_at": "1970-08-23T12:00:00Z",
+          "headline": "Georgia Forestry Commission publication (scanned)",
+          "byline": null,
+          "accessed_utc": "2026-01-19T03:38:59.651Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Forest Service"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "forest"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.85,
+        "location": 0.55,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Entiat Burn 1970 Wenatchee National Forest",
+        "fingerprint": "entiat-burn|washington-us|1970-08"
+      }
+    },
+    {
+      "event_id": "evt-19700807-columbian-white-tailed-deer-protection",
+      "title": "State wildlife agencies agree to protect the endangered Columbian white-tailed deer",
+      "description": "U.S. Interior Secretary Walter J. Hickel praised a decision by state wildlife agencies to protect the endangered Columbian white-tailed deer. The action concerned the Columbian white-tailed deer in the Pacific Northwest region referenced in the release.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "1970-08-07T12:00:00Z",
+        "event_end": "1970-08-07T12:00:00Z",
+        "reported_at": "1970-08-07T12:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1970-08-07T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States (Pacific Northwest: Oregon & Washington)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, D.C.",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.fws.gov/press-release/1970-08/hickel-hails-decision-state-wildlife-agencies-protect-endangered-columbian",
+          "source_name": "U.S. Fish & Wildlife Service",
+          "published_at": "1970-08-07T12:00:00Z",
+          "headline": "Hickel hails decision of state wildlife agencies to protect endangered Columbian white-tailed deer",
+          "byline": null,
+          "accessed_utc": "1970-08-31T23:59:59.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.fws.gov/media/hickel-hails-decision-state-wildlife-agencies-protect-endangered-columbian-white-tailed-deer",
+          "source_name": "U.S. Fish & Wildlife Service",
+          "published_at": "1970-08-07T12:00:00Z",
+          "headline": "Hickel hails decision of state wildlife agencies to protect endangered Columbian white-tailed deer",
+          "byline": null,
+          "accessed_utc": "1970-08-31T23:59:59.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Department of the Interior",
+          "U.S. Fish & Wildlife Service"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": [
+          "Walter J. Hickel"
+        ]
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Hickel hails decision of state wildlife agencies to protect endangered Columbian white-tailed deer",
+            "source_url": "https://www.fws.gov/press-release/1970-08/hickel-hails-decision-state-wildlife-agencies-protect-endangered-columbian"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.7,
+        "location": 0.6,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "columbian-white-tailed-deer-protection-1970-08",
+        "fingerprint": "fp-1970-08-07-us-columbian-white-tailed-deer-protection"
+      }
+    },
+    {
+      "event_id": "1970-08-10_us_ceq_first_annual_report_transmitted",
+      "title": "Nixon transmits first annual Council on Environmental Quality report to Congress",
+      "description": "President Richard Nixon sent Congress a message transmitting the first annual report of the Council on Environmental Quality (CEQ). The message accompanied the CEQ report on the state of the environment, reflecting early federal environmental governance under NEPA.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "1970-08-10T12:00:00Z",
+        "event_end": "1970-08-10T12:00:00Z",
+        "reported_at": "1970-08-10T12:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1970-08-10T12:00:00Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "United States (federal)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9071923,
+        "lon": -77.0368707,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.9
+      },
+      "sources": [
+        {
+          "url": "https://www.presidency.ucsb.edu/documents/message-the-congress-transmitting-the-first-annual-report-the-council-environmental",
+          "source_name": "The American Presidency Project (UCSB)",
+          "published_at": "1970-08-10T12:00:00Z",
+          "headline": "Message to the Congress Transmitting the First Annual Report of the Council on Environmental Quality",
+          "byline": null,
+          "accessed_utc": "2026-01-19T03:40:05.009Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Council on Environmental Quality (CEQ)",
+          "U.S. Congress"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": [
+          "Richard Nixon"
+        ]
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Message to the Congress Transmitting the First Annual Report of the Council on Environmental Quality",
+            "source_url": "https://www.presidency.ucsb.edu/documents/message-the-congress-transmitting-the-first-annual-report-the-council-environmental"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.72,
+        "category": 0.85,
+        "location": 0.9,
+        "summary_grounding": 0.65
+      },
+      "quality_flags": [
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "nixon-ceq-first-annual-report-1970-08-10",
+        "fingerprint": "1970-08-10_us_ceq_first_annual_report_transmitted|US|1970-08-10"
+      }
+    }
+  ]
+}

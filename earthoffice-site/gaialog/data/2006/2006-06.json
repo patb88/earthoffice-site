@@ -1,0 +1,621 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_2006-06_normalize_2026-01-16T032313956Z",
+    "generated_utc": "2026-01-16T03:23:13.956Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "2006-06",
+    "window": {
+      "start_utc": "2006-06-01T00:00:00.000Z",
+      "end_utc": "2006-06-30T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "evt_20060601_valero_corpus_christi_ship_channel_oil_spill",
+      "title": "Valero Corpus Christi Ship Channel oil spill (~3,400 barrels)",
+      "description": "Oil was reported to have spilled into the Corpus Christi Ship Channel from Valero’s Corpus Christi Refinery-West Plant on June 1, 2006. Subsequent reporting and enforcement-related documentation referenced the spill and associated Clean Water Act issues.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2006-06-01T00:00:00.000Z",
+        "event_end": "2006-06-01T23:59:59.000Z",
+        "reported_at": "2006-12-11T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2006-06-01T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Corpus Christi Ship Channel, Corpus Christi, Texas, USA",
+        "jurisdiction_level": "city",
+        "admin1": "Texas",
+        "country": "US",
+        "capital_used": null,
+        "lat": 27.8006,
+        "lon": -97.3964,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://www.epa.gov/archive/epapages/newsroom_archive/newsreleases/b4a9cb157a51ec7d85257464007354dd.html",
+          "source_name": "U.S. Environmental Protection Agency (archive)",
+          "published_at": "2006-12-11T00:00:00Z",
+          "headline": "Valero Resolves Clean Water Act Violations Following 2006 Oil Spill at Corpus Christi Refinery",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.ogj.com/refining-processing/article/17268500/valero-resolves-cwa-violations-following-2006-oil-spill",
+          "source_name": "Oil & Gas Journal",
+          "published_at": "2006-12-12T00:00:00Z",
+          "headline": "Valero resolves CWA violations following 2006 oil spill",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.mrt.com/news/article/Fire-cleanup-continues-at-Corpus-Christi-port-7635049.php",
+          "source_name": "Midland Reporter-Telegram",
+          "published_at": "2006-06-09T00:00:00Z",
+          "headline": "Fire cleanup continues at Corpus Christi port",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Valero",
+          "U.S. Environmental Protection Agency"
+        ],
+        "substances": [
+          "oil"
+        ],
+        "ecosystems": [
+          "ship channel"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "...resolves Clean Water Act violations following a June 1, 2006 oil spill at its Corpus Christi refinery...",
+            "source_url": "https://www.ogj.com/refining-processing/article/17268500/valero-resolves-cwa-violations-following-2006-oil-spill"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.85,
+        "location": 0.7,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "needs_dedupe_check",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "valero-corpus-christi-2006-06-oil-spill",
+        "fingerprint": "fp_valero_corpus_christi_2006-06-01"
+      }
+    },
+    {
+      "event_id": "evt_20060619_citgo_calcasieu_estuary_oily_wastewater_discharge",
+      "title": "CITGO Lake Charles complex overflow discharged oily wastewater to Calcasieu Estuary",
+      "description": "Severe rainfall contributed to an overflow of waste oil and oily wastewater from areas at the CITGO facility near Lake Charles, with impacts reported in Indian Marais and downstream waters of the Calcasieu River/Estuary beginning around June 19, 2006. NOAA spill documentation describes the incident location and environmental impacts.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2006-06-19T00:00:00.000Z",
+        "event_end": "2006-06-20T23:59:59.000Z",
+        "reported_at": "2006-06-19T00:00:00Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2006-06-19T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Calcasieu River / Calcasieu Estuary near Lake Charles, Louisiana, USA",
+        "jurisdiction_level": "city",
+        "admin1": "Louisiana",
+        "country": "US",
+        "capital_used": null,
+        "lat": 30.2266,
+        "lon": -93.2174,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://darrp.noaa.gov/oil-spills/citgo-refinery-calcasieu-river",
+          "source_name": "NOAA DARRP",
+          "published_at": "2006-06-19T00:00:00Z",
+          "headline": "CITGO Refinery - Calcasieu River",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://incidentnews.noaa.gov/incident/6094",
+          "source_name": "NOAA IncidentNews",
+          "published_at": "2006-06-19T00:00:00Z",
+          "headline": "CITGO Refinery Calcasieu River",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.marinelink.com/news/continues-calcasieu310425",
+          "source_name": "MarineLink",
+          "published_at": "2006-06-21T00:00:00Z",
+          "headline": "Cleanup Continues On Calcasieu River After Citgo Spill",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "CITGO",
+          "NOAA"
+        ],
+        "substances": [
+          "waste oil",
+          "oily wastewater"
+        ],
+        "ecosystems": [
+          "Calcasieu River",
+          "Calcasieu Estuary",
+          "Indian Marais"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "...oily wastewater discharged into Indian Marais and the Calcasieu River...",
+            "source_url": "https://incidentnews.noaa.gov/incident/6094"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.7,
+        "category": 0.9,
+        "location": 0.6,
+        "summary_grounding": 0.7
+      },
+      "quality_flags": [
+        "needs_dedupe_check",
+        "location_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "citgo-calcasieu-2006-06-oily-wastewater",
+        "fingerprint": "fp_citgo_calcasieu_2006-06-19"
+      }
+    },
+    {
+      "event_id": "evt_20060622_cuyahoga_flood_independence_oh",
+      "title": "June 2006 flooding in north-central Ohio (Cuyahoga River near Independence)",
+      "description": "Heavy rain from June 22–24, 2006 caused severe flooding and property damage in north-central Ohio. A USGS report documents flooding with emphasis on the Cuyahoga River near Independence and related streamgage observations.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2006-06-22T00:00:00.000Z",
+        "event_end": "2006-06-24T23:59:59.000Z",
+        "reported_at": "2006-06-01T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2006-06-22T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Independence, Ohio, USA (Cuyahoga River)",
+        "jurisdiction_level": "city",
+        "admin1": "Ohio",
+        "country": "US",
+        "capital_used": null,
+        "lat": 41.3684,
+        "lon": -81.6379,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://www.usgs.gov/publications/flood-june-22-24-2006-north-central-ohio-emphasis-cuyahoga-river-near-independence",
+          "source_name": "USGS",
+          "published_at": "2006-06-01T00:00:00.000Z",
+          "headline": "Flood of June 22-24, 2006, in North-Central Ohio with Emphasis on the Cuyahoga River near Independence",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.weather.gov/cle/event_20060621-22_tornado_flooding",
+          "source_name": "NWS Cleveland",
+          "published_at": "2006-06-01T00:00:00.000Z",
+          "headline": "Event: June 21-22 Tornado/Flooding",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.weather.gov/cle/event_2006flashfloods",
+          "source_name": "NWS Cleveland",
+          "published_at": "2006-06-01T00:00:00.000Z",
+          "headline": "2006 Flash Floods",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "USGS",
+          "National Weather Service"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "river"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Flood of June 22-24, 2006, in North-Central Ohio... Cuyahoga River near Independence",
+            "source_url": "https://www.usgs.gov/publications/flood-june-22-24-2006-north-central-ohio-emphasis-cuyahoga-river-near-independence"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.8,
+        "location": 0.7,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "paywalled_or_partial",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "2006-06_cuyahoga_flood_oh",
+        "fingerprint": "fp_20060622_cuyahoga_independence_oh"
+      }
+    },
+    {
+      "event_id": "evt_20060613_ts_alberto_florida_landfall",
+      "title": "Tropical Storm Alberto landfall in Florida (June 2006)",
+      "description": "Tropical Storm Alberto formed in June 2006 and produced heavy rainfall impacts, including around its Florida landfall, as documented by NOAA’s Weather Prediction Center rainfall summary page. Impacts later extended northeastward as the system moved inland and transitioned.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2006-06-11T00:00:00.000Z",
+        "event_end": "2006-06-15T23:59:59.000Z",
+        "reported_at": "2006-06-01T00:00:00.000Z",
+        "time_confidence": 0.5,
+        "event_date_utc": "2006-06-13T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Florida, USA (landfall area near Tallahassee)",
+        "jurisdiction_level": "state",
+        "admin1": "Florida",
+        "country": "US",
+        "capital_used": "Tallahassee",
+        "lat": 30.4383,
+        "lon": -84.2807,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.wpc.ncep.noaa.gov/tropical/rain/alberto2006.html",
+          "source_name": "NOAA Weather Prediction Center",
+          "published_at": "2006-06-01T00:00:00.000Z",
+          "headline": "Tropical Cyclone Rainfall: Alberto (2006)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA",
+          "NOAA Weather Prediction Center"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Tropical Cyclone Rainfall: Alberto (2006)",
+            "source_url": "https://www.wpc.ncep.noaa.gov/tropical/rain/alberto2006.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.45,
+        "category": 0.75,
+        "location": 0.6,
+        "summary_grounding": 0.4
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "2006-06_ts_alberto_florida",
+        "fingerprint": "fp_20060613_alberto_florida"
+      }
+    },
+    {
+      "event_id": "evt_200606_warm_fire_kaibab_grand_canyon",
+      "title": "Warm Fire in northern Arizona produces heavy smoke near Grand Canyon",
+      "description": "A lightning-caused wildfire known as the Warm Fire burned in northern Arizona in late June 2006. NASA Earth Observatory reported heavy smoke from the fire visible in satellite imagery and noted impacts such as closures in the affected area.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2006-06-19T00:00:00.000Z",
+        "event_end": "2006-06-27T23:59:59.000Z",
+        "reported_at": "2006-06-27T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": null,
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Kaibab National Forest near Grand Canyon, Arizona, USA",
+        "jurisdiction_level": "site",
+        "admin1": "Arizona",
+        "country": "US",
+        "capital_used": null,
+        "lat": 36.3,
+        "lon": -112.06,
+        "precision": "proxy",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.45
+      },
+      "sources": [
+        {
+          "url": "https://science.nasa.gov/earth/earth-observatory/warm-fire-in-northern-arizona-6673/",
+          "source_name": "NASA Earth Observatory",
+          "published_at": "2006-06-27T00:00:00.000Z",
+          "headline": "Warm Fire in Northern Arizona",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://science.nasa.gov/earth/earth-observatory/warm-fire-in-northern-arizona-16843/",
+          "source_name": "NASA Earth Observatory",
+          "published_at": "2006-06-27T00:00:00.000Z",
+          "headline": "Warm Fire in Northern Arizona",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NASA Earth Observatory"
+        ],
+        "substances": [
+          "smoke"
+        ],
+        "ecosystems": [
+          "Kaibab National Forest"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "The Warm Fire in northern Arizona produced heavy smoke visible in satellite imagery.",
+            "source_url": "https://science.nasa.gov/earth/earth-observatory/warm-fire-in-northern-arizona-6673/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.8,
+        "location": 0.45,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "needs_dedupe_check",
+        "location_ambiguous",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "Warm Fire (Kaibab National Forest) June 2006",
+        "fingerprint": "fp_warm_fire_kaibab_2006-06"
+      }
+    },
+    {
+      "event_id": "2006-06-15_papahanaumokuakea_marine_monument",
+      "title": "U.S. establishes Northwestern Hawaiian Islands Marine National Monument (Papahānaumokuākea)",
+      "description": "On June 15, 2006, U.S. President George W. Bush established the Northwestern Hawaiian Islands Marine National Monument by presidential proclamation. The action created a large marine protected area under the Antiquities Act framework.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "2006-06-15T00:00:00.000Z",
+        "event_end": "2006-06-15T23:59:59.000Z",
+        "reported_at": "2007-03-02T00:00:00.000Z",
+        "time_confidence": 0.75,
+        "event_date_utc": "2006-06-15T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Northwestern Hawaiian Islands, United States",
+        "jurisdiction_level": "site",
+        "admin1": "Hawaii",
+        "country": "US",
+        "capital_used": null,
+        "lat": 25,
+        "lon": -170,
+        "precision": "proxy",
+        "location_basis": "manual_override",
+        "location_confidence": 0.45
+      },
+      "sources": [
+        {
+          "url": "https://oceanservice.noaa.gov/news/first-marine-monument/",
+          "source_name": "NOAA Ocean Service",
+          "published_at": "2006-06-15T00:00:00.000Z",
+          "headline": "First Marine National Monument",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.papahanaumokuakea.gov/15year/",
+          "source_name": "Papahānaumokuākea Marine National Monument (official site)",
+          "published_at": "2021-06-15T00:00:00.000Z",
+          "headline": "15 Year Anniversary",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://georgewbush-whitehouse.archives.gov/news/releases/2007/03/20070302-4.html",
+          "source_name": "George W. Bush White House Archives",
+          "published_at": "2007-03-02T00:00:00.000Z",
+          "headline": "President Bush Establishes the Northwestern Hawaiian Islands Marine National Monument",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA",
+          "The White House"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "coral reef"
+        ],
+        "people": [
+          "George W. Bush"
+        ]
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "President Bush established the Northwestern Hawaiian Islands Marine National Monument",
+            "source_url": "https://georgewbush-whitehouse.archives.gov/news/releases/2007/03/20070302-4.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.8,
+        "location": 0.45,
+        "summary_grounding": 0.7
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "papahanaumokuakea-marine-national-monument-established-2006-06-15",
+        "fingerprint": "papahanaumokuakea|northwestern hawaiian islands|2006-06-15"
+      }
+    },
+    {
+      "event_id": "2006-06-27_eu_reach_common_position",
+      "title": "EU Council adopts common position on REACH chemicals legislation",
+      "description": "On June 27, 2006, the EU Council adopted a common position related to the REACH chemicals regulatory package. This marked a key milestone in the legislative process that later produced the REACH regulation.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "2006-06-27T00:00:00.000Z",
+        "event_end": "2006-06-27T23:59:59.000Z",
+        "reported_at": "2006-06-27T00:00:00.000Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "2006-06-27T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "European Union (Council of the EU), Brussels, Belgium",
+        "jurisdiction_level": "supranational",
+        "admin1": null,
+        "country": null,
+        "capital_used": "Brussels",
+        "lat": 50.8503,
+        "lon": 4.3517,
+        "precision": "supranational",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.europarl.europa.eu/commonpositions/2006/default_en.htm",
+          "source_name": "European Parliament",
+          "published_at": "2006-06-27T00:00:00.000Z",
+          "headline": "Common positions (2006)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Council of the European Union",
+          "European Parliament"
+        ],
+        "substances": [
+          "industrial chemicals"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.44,
+        "category": 0.65,
+        "location": 0.6,
+        "summary_grounding": 0.35
+      },
+      "quality_flags": [
+        "paywalled_or_partial",
+        "date_ambiguous",
+        "low_confidence_category"
+      ],
+      "dedupe": {
+        "cluster_hint": "eu-council-common-position-reach-2006-06-27",
+        "fingerprint": "reach|eu council common position|2006-06-27"
+      }
+    }
+  ]
+}

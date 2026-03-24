@@ -1,0 +1,605 @@
+{
+  "batch_meta": {
+    "batch_id": "2001-03_gaialog_001",
+    "generated_utc": "2026-01-11T00:00:00Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "2001-03",
+    "window": {
+      "start_utc": "2001-03-01T00:00:00.000Z",
+      "end_utc": "2001-03-31T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-discovery-draft-converter",
+      "version": "1.0",
+      "model": "api",
+      "retrieval_method": "mixed"
+    }
+  },
+  "events": [
+    {
+      "event_id": "evt_20010329_baltic_carrier_tern_oilspill_denmark",
+      "title": "Baltic Carrier and Tern collision spills oil in Danish Baltic Sea waters",
+      "description": "A collision between the chemical tanker \"Baltic Carrier\" and the cargo ship \"Tern\" spilled oil into the Baltic Sea in Danish territorial waters, reported as occurring about 30 km south of Møn. The International Charter (Space and Major Disasters) activation indicates European Commission services requested satellite monitoring support the next day.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2001-03-29T00:00:00.000Z",
+        "event_end": "2001-03-31T23:59:59.000Z",
+        "reported_at": "2001-03-29T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2001-03-29T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Baltic Sea (Danish territorial waters, ~30 km south of Møn)",
+        "jurisdiction_level": "site",
+        "admin1": null,
+        "country": "DK",
+        "capital_used": null,
+        "lat": 54.95,
+        "lon": 12.25,
+        "precision": "proxy",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.35
+      },
+      "sources": [
+        {
+          "url": "https://disasterscharter.org/activations/denmark-oil-spill",
+          "source_name": "International Charter \"Space and Major Disasters\"",
+          "published_at": "2001-03-29T00:00:00.000Z",
+          "headline": "Denmark - Oil Spill",
+          "byline": null,
+          "accessed_utc": "2026-01-11T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "European Commission",
+          "International Charter \"Space and Major Disasters\""
+        ],
+        "substances": [
+          "oil"
+        ],
+        "ecosystems": [
+          "Baltic Sea"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "collision ... spilled oil into the Baltic Sea in Danish waters",
+            "source_url": "https://disasterscharter.org/activations/denmark-oil-spill"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.75,
+        "location": 0.35,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "baltic-carrier-tern-2001-03-denmark-oil-spill",
+        "fingerprint": "fp_baltic_carrier_tern_denmark_2001-03-29"
+      }
+    },
+    {
+      "event_id": "evt_20010331_gulf_of_mexico_platform_oilspill_galveston",
+      "title": "Offshore platform oil spill reported about 70 miles south of Galveston, Texas",
+      "description": "A report described an offshore production platform releasing about 5,000 gallons of crude oil roughly 70 miles south of Galveston in the Gulf of Mexico. The report said the U.S. Coast Guard and other agencies responded.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2001-03-31T00:00:00.000Z",
+        "event_end": "2001-03-31T23:59:59.000Z",
+        "reported_at": "2001-03-31T00:00:00.000Z",
+        "time_confidence": 0.4,
+        "event_date_utc": "2001-03-31T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Gulf of Mexico (off Texas; ~70 miles south of Galveston)",
+        "jurisdiction_level": "site",
+        "admin1": "Texas",
+        "country": "US",
+        "capital_used": null,
+        "lat": 28.35,
+        "lon": -94.75,
+        "precision": "proxy",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.3
+      },
+      "sources": [
+        {
+          "url": "https://www.chron.com/neighborhood/article/Spill-dumps-5-000-gallons-crude-oil-in-Gulf-of-9947073.php",
+          "source_name": "Houston Chronicle",
+          "published_at": "2001-03-31T00:00:00.000Z",
+          "headline": "Spill dumps 5,000 gallons crude oil in Gulf of Mexico",
+          "byline": null,
+          "accessed_utc": "2026-01-11T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Coast Guard"
+        ],
+        "substances": [
+          "crude oil"
+        ],
+        "ecosystems": [
+          "Gulf of Mexico"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Spill dumps 5,000 gallons crude oil in Gulf of Mexico",
+            "source_url": "https://www.chron.com/neighborhood/article/Spill-dumps-5-000-gallons-crude-oil-in-Gulf-of-9947073.php"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.45,
+        "category": 0.7,
+        "location": 0.3,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "paywalled_or_partial",
+        "location_ambiguous",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "2001-03-31-gulf-platform-oilspill-galveston",
+        "fingerprint": "fp_gulf_platform_oilspill_2001-03-31"
+      }
+    },
+    {
+      "event_id": "evt_20010305_noreaster_new_england_snow_flooding",
+      "title": "Nor'easter brings heavy snow and coastal flooding to the Northeast U.S.",
+      "description": "A strong coastal storm affected the northeastern United States, bringing heavy snow and causing coastal flooding linked to strong winds and high tides. Reports referenced evacuations and power outages in parts of coastal Massachusetts.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2001-03-05T00:00:00.000Z",
+        "event_end": "2001-03-07T23:59:59.000Z",
+        "reported_at": "2001-03-06T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2001-03-06T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Massachusetts (focus of reported coastal impacts)",
+        "jurisdiction_level": "state",
+        "admin1": "Massachusetts",
+        "country": "US",
+        "capital_used": "Boston",
+        "lat": 42.3601,
+        "lon": -71.0589,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.upi.com/Archives/2001/03/06/Snowstorm-batters-Northeast-New-England/9752983854800/",
+          "source_name": "UPI",
+          "published_at": "2001-03-06T00:00:00.000Z",
+          "headline": "Snowstorm batters Northeast; New England",
+          "byline": null,
+          "accessed_utc": "2026-01-11T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.met.reading.ac.uk/~brugge/world2001.html",
+          "source_name": "University of Reading (archived weather compilation)",
+          "published_at": "2001-03-01T00:00:00.000Z",
+          "headline": "World Weather 2001 (archive page)",
+          "byline": null,
+          "accessed_utc": "2026-01-11T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Snowstorm batters Northeast; New England",
+            "source_url": "https://www.upi.com/Archives/2001/03/06/Snowstorm-batters-Northeast-New-England/9752983854800/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.7,
+        "location": 0.6,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "2001-03-noreaster-new-england",
+        "fingerprint": "fp_noreaster_ma_2001-03-06"
+      }
+    },
+    {
+      "event_id": "evt_20010301_midwest_march2001_cool_dry_summary",
+      "title": "Climate summary describes March 2001 as cool and very dry across the U.S. Midwest",
+      "description": "A Midwest Regional Climate Center monthly summary characterizes March 2001 as very dry and quite cool across the Midwest, with below-average precipitation and temperatures. The summary also notes snowpack and melt conditions contributing to flooding concerns in some areas.",
+      "category_primary": "weather_climate",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "2001-03-01T00:00:00.000Z",
+        "event_end": "2001-03-31T23:59:59.000Z",
+        "reported_at": "2001-03-31T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": null,
+        "event_date_precision": "month"
+      },
+      "location": {
+        "name": "Midwest United States (regional)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.4
+      },
+      "sources": [
+        {
+          "url": "https://mrcc.purdue.edu/index.php/climatesummaries/259",
+          "source_name": "Midwest Regional Climate Center (Purdue)",
+          "published_at": "2001-03-31T00:00:00.000Z",
+          "headline": "March 2001 Climate Summary (Midwest)",
+          "byline": null,
+          "accessed_utc": "2026-01-11T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Midwest Regional Climate Center"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "March 2001 ... very dry and quite cool",
+            "source_url": "https://mrcc.purdue.edu/index.php/climatesummaries/259"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.65,
+        "location": 0.4,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "mrcc-midwest-march-2001-summary",
+        "fingerprint": "fp_mrcc_midwest_2001-03"
+      }
+    },
+    {
+      "event_id": "evt_20010301_mississippi_flood_2001_setup_march_conditions",
+      "title": "March 2001 snow and cold cited in setup for Mississippi River Flood of 2001",
+      "description": "A National Weather Service summary on the 2001 Mississippi River flooding describes March 2001 storms adding significant snow in parts of Minnesota and Wisconsin, with cold temperatures limiting melt. The summary indicates these conditions contributed to spring flood development along the Mississippi River system in 2001.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2001-03-01T00:00:00.000Z",
+        "event_end": "2001-03-31T23:59:59.000Z",
+        "reported_at": "2001-03-31T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": null,
+        "event_date_precision": "month"
+      },
+      "location": {
+        "name": "Minnesota (referenced as part of Upper Mississippi basin impacts)",
+        "jurisdiction_level": "state",
+        "admin1": "Minnesota",
+        "country": "US",
+        "capital_used": "Saint Paul",
+        "lat": 44.9537,
+        "lon": -93.09,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.45
+      },
+      "sources": [
+        {
+          "url": "https://www.weather.gov/arx/missflood_2001",
+          "source_name": "US National Weather Service (NWS)",
+          "published_at": "2001-03-31T00:00:00.000Z",
+          "headline": "Mississippi River Flood of 2001 (summary page)",
+          "byline": null,
+          "accessed_utc": "2026-01-11T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "National Weather Service"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "Upper Mississippi River basin",
+          "Mississippi River"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "March 2001 storms ... significant snow ... cold temperatures limiting melt",
+            "source_url": "https://www.weather.gov/arx/missflood_2001"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.65,
+        "location": 0.45,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "mississippi-flood-2001-march-setup",
+        "fingerprint": "fp_mississippi_flood_setup_2001-03"
+      }
+    },
+    {
+      "event_id": "evt_20010315_tallahassee_cwa_tornadoes_florida_georgia",
+      "title": "Tornadoes in NWS Tallahassee area on March 15, 2001",
+      "description": "An NWS Tallahassee event summary reports four tornadoes during the early morning hours, including an F2 tornado tracking across Washington County, Florida into southwestern Jackson County. The event caused damage along the tornado path.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2001-03-15T00:00:00.000Z",
+        "event_end": "2001-03-15T23:59:59.000Z",
+        "reported_at": "2001-03-15T00:00:00.000Z",
+        "time_confidence": 0.75,
+        "event_date_utc": "2001-03-15T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Florida (NWS Tallahassee warning area referenced; impacted counties in FL)",
+        "jurisdiction_level": "state",
+        "admin1": "Florida",
+        "country": "US",
+        "capital_used": "Tallahassee",
+        "lat": 30.4383,
+        "lon": -84.2807,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.weather.gov/tae/event-20010315",
+          "source_name": "US National Weather Service (NWS)",
+          "published_at": "2001-03-15T00:00:00.000Z",
+          "headline": "Event Summary: 15 March 2001",
+          "byline": null,
+          "accessed_utc": "2026-01-11T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "National Weather Service"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Four tornadoes touched down",
+            "source_url": "https://www.weather.gov/tae/event-20010315"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.65,
+        "category": 0.75,
+        "location": 0.6,
+        "summary_grounding": 0.65
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "2001-03-15-nws-tae-tornadoes",
+        "fingerprint": "fp_tae_tornadoes_2001-03-15"
+      }
+    },
+    {
+      "event_id": "evt_20010329_epa_msat_final_rule",
+      "title": "EPA final rule on hazardous air pollutants from mobile sources (MSAT) published",
+      "description": "A Federal Register document indicates EPA published a final rule titled \"Control of Emissions of Hazardous Air Pollutants from Mobile Sources.\" The rule addresses mobile source air toxics and related requirements intended to prevent backsliding in gasoline toxics performance.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "2001-03-29T00:00:00.000Z",
+        "event_end": "2001-03-29T23:59:59.000Z",
+        "reported_at": "2001-03-29T00:00:00.000Z",
+        "time_confidence": 0.85,
+        "event_date_utc": "2001-03-29T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States (federal rulemaking)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.8
+      },
+      "sources": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/FR-2001-03-29/html/01-37.htm",
+          "source_name": "Federal Register (GovInfo)",
+          "published_at": "2001-03-29T00:00:00.000Z",
+          "headline": "Control of Emissions of Hazardous Air Pollutants from Mobile Sources",
+          "byline": null,
+          "accessed_utc": "2026-01-11T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Environmental Protection Agency"
+        ],
+        "substances": [
+          "hazardous air pollutants"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Control of Emissions of Hazardous Air Pollutants from Mobile Sources",
+            "source_url": "https://www.govinfo.gov/content/pkg/FR-2001-03-29/html/01-37.htm"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.75,
+        "category": 0.85,
+        "location": 0.8,
+        "summary_grounding": 0.7
+      },
+      "quality_flags": [
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "epa-msat-final-rule-2001-03-29",
+        "fingerprint": "fp_epa_msat_2001-03-29"
+      }
+    },
+    {
+      "event_id": "evt_20010319_epa_amended_consent_decree_pesticides_nrdc",
+      "title": "EPA submits amended consent decree related to pesticide regulatory decisions (NRDC litigation)",
+      "description": "An EPA archived newsroom release states the agency submitted an amended consent decree to resolve lawsuits concerning scientific and regulatory decisions affecting certain pesticides. The release references negotiations with NRDC and intervenors representing industry and farming interests.",
+      "category_primary": "policy_regulation",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "2001-03-19T00:00:00.000Z",
+        "event_end": "2001-03-20T23:59:59.000Z",
+        "reported_at": "2001-03-19T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2001-03-19T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States (federal action; court filing referenced)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.65
+      },
+      "sources": [
+        {
+          "url": "https://www.epa.gov/archive/epapages/newsroom_archive/newsreleases/9f4e0dbf704cde7f85256a1500623d9a.html",
+          "source_name": "US Environmental Protection Agency (archive)",
+          "published_at": "2001-03-19T00:00:00.000Z",
+          "headline": "EPA Files Amended Consent Decree (pesticides/NRDC litigation)",
+          "byline": null,
+          "accessed_utc": "2026-01-11T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Environmental Protection Agency",
+          "Natural Resources Defense Council (NRDC)"
+        ],
+        "substances": [
+          "pesticides"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "submitted an amended consent decree to resolve lawsuits",
+            "source_url": "https://www.epa.gov/archive/epapages/newsroom_archive/newsreleases/9f4e0dbf704cde7f85256a1500623d9a.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.7,
+        "category": 0.8,
+        "location": 0.65,
+        "summary_grounding": 0.7
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "epa-amended-consent-decree-pesticides-2001-03",
+        "fingerprint": "fp_epa_consent_decree_pesticides_2001-03-19"
+      }
+    }
+  ]
+}

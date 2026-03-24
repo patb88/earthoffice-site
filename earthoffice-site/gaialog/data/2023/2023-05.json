@@ -1,0 +1,478 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_2023-05_normalize_2026-01-16T133709698Z",
+    "generated_utc": "2026-01-16T13:37:09.698Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "2023-05",
+    "window": {
+      "start_utc": "2023-05-01T00:00:00.000Z",
+      "end_utc": "2023-05-31T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "pollution_contamination_shell-deer-park-refinery-explosion-fire_2023-05-05",
+      "title": "Explosion and fire at Shell Deer Park refinery prompts response and air monitoring",
+      "description": "An explosion and subsequent refinery fire at the Shell Deer Park facility in Deer Park, Texas triggered response activity and monitoring. NOAA OR&R summarized the incident and noted ongoing air monitoring and evaluation of potential impacts to nearby resources.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2023-05-05T00:00:00.000Z",
+        "event_end": "2023-05-07T23:59:59.000Z",
+        "reported_at": "2023-05-05T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2023-05-05T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Deer Park, Texas, United States",
+        "jurisdiction_level": "city",
+        "admin1": "Texas",
+        "country": "US",
+        "capital_used": null,
+        "lat": 29.7058,
+        "lon": -95.1238,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://blog.response.restoration.noaa.gov/incident-responses-may-2023",
+          "source_name": "NOAA OR&R Blog",
+          "published_at": "2023-05-01T00:00:00Z",
+          "headline": "Incident Responses May 2023",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.axios.com/local/houston/2023/05/05/deer-park-fire-pemex-shell-houston-texas",
+          "source_name": "Axios (Houston)",
+          "published_at": "2023-05-05T00:00:00Z",
+          "headline": "Deer Park fire at Pemex/Shell facility near Houston, Texas",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Shell",
+          "NOAA OR&R",
+          "Pemex"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "NOAA OR&R described the incident and noted ongoing air monitoring.",
+            "source_url": "https://blog.response.restoration.noaa.gov/incident-responses-may-2023"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.7,
+        "location": 0.6,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "shell deer park refinery fire may 2023",
+        "fingerprint": "shell-deer-park-refinery-fire_deer-park-tx_2023-05"
+      }
+    },
+    {
+      "event_id": "evt-20230510-southern-minnesota-flooding",
+      "title": "Heavy rain and flooding in southern Minnesota (May 10–14, 2023)",
+      "description": "A slow-moving weather system brought multiple rounds of heavy rain and thunderstorms to southern Minnesota. The event produced widespread 4+ inch rainfall totals in places and led to flooding impacts including major flood stage on the Cottonwood River.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2023-05-10T00:00:00.000Z",
+        "event_end": "2023-05-14T23:59:59.000Z",
+        "reported_at": "2023-05-01T00:00:00.000Z",
+        "time_confidence": 0.65,
+        "event_date_utc": null,
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Southern Minnesota (Cottonwood and Minnesota River basins), United States",
+        "jurisdiction_level": "state",
+        "admin1": "Minnesota",
+        "country": "US",
+        "capital_used": "Saint Paul",
+        "lat": 44.9537,
+        "lon": -93.09,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.8
+      },
+      "sources": [
+        {
+          "url": "https://www.dnr.state.mn.us/climate/journal/southern-minnesota-heavy-rain-and-flooding-may-10-14-2023.html",
+          "source_name": "Minnesota Department of Natural Resources",
+          "published_at": "2023-05-01T00:00:00.000Z",
+          "headline": "Southern Minnesota heavy rain and flooding May 10-14, 2023",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Minnesota Department of Natural Resources"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "Cottonwood River",
+          "Minnesota River"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Southern Minnesota heavy rain and flooding May 10-14, 2023",
+            "source_url": "https://www.dnr.state.mn.us/climate/journal/southern-minnesota-heavy-rain-and-flooding-may-10-14-2023.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.75,
+        "location": 0.8,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "southern-minnesota-heavy-rain-flooding-2023-05-10",
+        "fingerprint": "fp-20230510-mn-flooding-southern"
+      }
+    },
+    {
+      "event_id": "evt-20230508-pahala-m38-earthquake-usgs-hvo",
+      "title": "M3.8 earthquake beneath Pāhala region, Island of Hawaiʻi (USGS HVO)",
+      "description": "USGS Hawaiian Volcano Observatory reported a magnitude 3.8 earthquake beneath the Pāhala region on the Island of Hawaiʻi. The notice described it as part of an ongoing deep earthquake swarm and noted no damage was expected.",
+      "category_primary": "geological",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "2023-05-08T10:52:00.000Z",
+        "event_end": "2023-05-08T10:52:00.000Z",
+        "reported_at": "2023-05-08T10:27:40.000Z",
+        "time_confidence": 0.75,
+        "event_date_utc": "2023-05-08T10:52:00.000Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Pāhala area, Island of Hawaiʻi, Hawaiʻi, United States",
+        "jurisdiction_level": "site",
+        "admin1": "Hawaiʻi",
+        "country": "US",
+        "capital_used": null,
+        "lat": 19.202,
+        "lon": -155.478,
+        "precision": "neighborhood",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://volcanoes.usgs.gov/hans-public/notice/DOI-USGS-HVO-2023-05-08T03%3A27%3A40-07%3A00",
+          "source_name": "USGS Hawaiian Volcano Observatory (HANS notice)",
+          "published_at": "2023-05-08T10:27:40.000Z",
+          "headline": "DOI-USGS-HVO-2023-05-08T03:27:40-07:00",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "USGS Hawaiian Volcano Observatory",
+          "U.S. Geological Survey"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "reported a M3.8 earthquake beneath the Pāhala region",
+            "source_url": "https://volcanoes.usgs.gov/hans-public/notice/DOI-USGS-HVO-2023-05-08T03%3A27%3A40-07%3A00"
+          },
+          {
+            "quote": "part of an ongoing swarm since 2019",
+            "source_url": "https://volcanoes.usgs.gov/hans-public/notice/DOI-USGS-HVO-2023-05-08T03%3A27%3A40-07%3A00"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.9,
+        "location": 0.55,
+        "summary_grounding": 0.7
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "USGS HVO Pāhala deep earthquake swarm notices (2019–ongoing)",
+        "fingerprint": "fp-20230508-pahala-m38-island-of-hawaii-2023-05-08"
+      }
+    },
+    {
+      "event_id": "evt_20230521_canada_wildfire_smoke_us_alerts",
+      "title": "Canadian wildfire smoke triggers air-quality alerts across parts of the U.S. (May 2023)",
+      "description": "Smoke from wildfires in Canada drifted into the United States in late May 2023, creating haze and prompting air-quality alerts in multiple states. Weather offices warned of reduced visibility and degraded air quality.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2023-05-21T00:00:00.000Z",
+        "event_end": "2023-05-22T23:59:59.000Z",
+        "reported_at": "2023-05-21T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2023-05-21T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "United States (multi-state)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, D.C.",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.4
+      },
+      "sources": [
+        {
+          "url": "https://www.axios.com/2023/05/21/canada-wildfire-smoke-hits-air-quality-us-states",
+          "source_name": "Axios",
+          "published_at": "2023-05-21T00:00:00.000Z",
+          "headline": "Canada wildfire smoke hits air quality in U.S. states",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [
+          "wildfire smoke"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Smoke from wildfires in Canada is impacting air quality across parts of the U.S.",
+            "source_url": "https://www.axios.com/2023/05/21/canada-wildfire-smoke-hits-air-quality-us-states"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.48,
+        "category": 0.8,
+        "location": 0.4,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "canada-wildfire-smoke-us-alerts-may-2023",
+        "fingerprint": "fp_canada_wildfire_smoke_us_multi_2023-05-21"
+      }
+    },
+    {
+      "event_id": "evt_2023-05_us_hellbender_esa_reconsideration_ap_92307812",
+      "title": "Judge orders U.S. Fish & Wildlife Service to redo ESA decision on eastern hellbender salamander",
+      "description": "A federal judge ordered the U.S. Fish and Wildlife Service to reconsider its prior decision that the eastern hellbender salamander did not warrant protection under the Endangered Species Act. The ruling requires a new analysis, affecting conservation considerations across the species’ river and stream habitats.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "2023-05-05T00:00:00.000Z",
+        "event_end": "2023-05-05T23:59:59.000Z",
+        "reported_at": "2023-05-05T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2023-05-05T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://apnews.com/article/92307812d42abadf84ac2861074ee079",
+          "source_name": "Associated Press",
+          "published_at": "2023-05-05T00:00:00.000Z",
+          "headline": "Federal judge orders U.S. Fish & Wildlife Service to reconsider ESA protection decision for the eastern hellbender salamander",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Fish and Wildlife Service"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "rivers",
+          "streams"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "A federal judge overturned a prior (2019) agency finding... requiring a new analysis.",
+            "source_url": "https://apnews.com/article/92307812d42abadf84ac2861074ee079"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.72,
+        "category": 0.85,
+        "location": 0.7,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "US eastern hellbender ESA reconsideration (AP)",
+        "fingerprint": "fp_us_eastern_hellbender_esa_2023-05-05"
+      }
+    },
+    {
+      "event_id": "evt-20230517-us-in-whiting-bp-clean-air-act-settlement",
+      "title": "Proposed Clean Air Act settlement for BP Whiting Refinery benzene/VOC emissions reductions",
+      "description": "The U.S. EPA and Department of Justice announced a proposed Clean Air Act settlement with BP Products North America related to emissions at the Whiting Refinery. The proposal includes requirements intended to reduce benzene, hazardous air pollutants and volatile organic compounds, along with a civil penalty.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "2023-05-17T00:00:00.000Z",
+        "event_end": "2023-05-17T23:59:59.000Z",
+        "reported_at": "2023-05-17T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2023-05-17T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Whiting, Indiana, United States",
+        "jurisdiction_level": "city",
+        "admin1": "Indiana",
+        "country": "US",
+        "capital_used": null,
+        "lat": 41.6798,
+        "lon": -87.4945,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://www.epa.gov/newsreleases/epa-and-justice-department-announce-settlement-reduce-hazardous-air-emissions-bp",
+          "source_name": "U.S. Environmental Protection Agency (EPA)",
+          "published_at": "2023-05-17T00:00:00.000Z",
+          "headline": "EPA and Justice Department announce settlement to reduce hazardous air emissions from BP Products North America facility",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.epa.gov/enforcement/2023-bp-products-clean-air-act-benzene-and-volatile-organic-compounds-settlement",
+          "source_name": "U.S. Environmental Protection Agency (EPA)",
+          "published_at": "2023-05-17T00:00:00.000Z",
+          "headline": "2023 BP Products Clean Air Act benzene and volatile organic compounds settlement",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Environmental Protection Agency (EPA)",
+          "U.S. Department of Justice (DOJ)",
+          "BP Products North America"
+        ],
+        "substances": [
+          "benzene",
+          "volatile organic compounds (VOCs)",
+          "hazardous air pollutants"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.64,
+        "category": 0.85,
+        "location": 0.7,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "needs_dedupe_check",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "bp-whiting-clean-air-act-settlement-benzene-voc-2023-05-17",
+        "fingerprint": "bp-whiting-clean-air-act-settlement|whiting-in-us|2023-05-17"
+      }
+    }
+  ]
+}

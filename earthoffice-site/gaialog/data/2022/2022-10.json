@@ -1,0 +1,813 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_2022-10_normalize_2026-01-16T132649717Z",
+    "generated_utc": "2026-01-16T13:26:49.717Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "2022-10",
+    "window": {
+      "start_utc": "2022-10-01T00:00:00.000Z",
+      "end_utc": "2022-10-31T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "evt-2022-10-stillwater-tailings-overflow",
+      "title": "Tailings overflow from failed pipe fitting at Stillwater mine inspection vault",
+      "description": "A failed pipe fitting in a buried tailings pipeline inspection vault caused an overflow of about 190 m³ of tailings that entered a dry irrigation ditch on private land near the Stillwater mine in Montana. Berms/dams were constructed and impacted soils and tailings were excavated for removal, with additional cleanup delayed by winter conditions.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2022-10-30T00:00:00.000Z",
+        "event_end": "2022-10-30T23:59:59.000Z",
+        "reported_at": "2022-12-19T00:00:00Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "2022-10-30T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Stillwater mine, Montana, United States",
+        "jurisdiction_level": "site",
+        "admin1": "Montana",
+        "country": "US",
+        "capital_used": null,
+        "lat": 45.494,
+        "lon": -109.522,
+        "precision": "proxy",
+        "location_basis": "manual_override",
+        "location_confidence": 0.35
+      },
+      "sources": [
+        {
+          "url": "https://www.marketscreener.com/quote/stock/SIBANYE-STILLWATER-LIMITE-103499149/news/Sibanye-Stillwater-Environmental-incidents-in-2022-43617820/",
+          "source_name": "MarketScreener",
+          "published_at": "2022-12-19T00:00:00Z",
+          "headline": "Sibanye-Stillwater Environmental incidents in 2022",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Sibanye-Stillwater"
+        ],
+        "substances": [
+          "tailings"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "failed pipe fitting... overflow of approximately 190 m³ of tailings",
+            "source_url": "https://www.marketscreener.com/quote/stock/SIBANYE-STILLWATER-LIMITE-103499149/news/Sibanye-Stillwater-Environmental-incidents-in-2022-43617820/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.52,
+        "category": 0.8,
+        "location": 0.35,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "low_confidence_location",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "stillwater-mine-tailings-overflow-2022-10-30",
+        "fingerprint": "fp-stillwater-mine-mt-us-2022-10-30-tailings-overflow"
+      }
+    },
+    {
+      "event_id": "2022-10-us-mid-atlantic-coastal-flooding-ian-remnants",
+      "title": "Coastal flooding along the U.S. Mid-Atlantic from remnants of Hurricane Ian",
+      "description": "In early October 2022, coastal flood alerts were issued as the remnants of Hurricane Ian lingered offshore. Flooding was reported along parts of the U.S. Mid-Atlantic coast, affecting areas from the Carolinas to New Jersey.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2022-10-01T00:00:00.000Z",
+        "event_end": "2022-10-05T23:59:59.000Z",
+        "reported_at": "2022-11-10T00:00:00Z",
+        "time_confidence": 0.7,
+        "event_date_utc": null,
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "U.S. Mid-Atlantic coast (Carolinas to New Jersey), United States",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.ncei.noaa.gov/index.php/news/national-climate-202210",
+          "source_name": "NOAA National Centers for Environmental Information (NCEI)",
+          "published_at": "2022-11-10T00:00:00Z",
+          "headline": "National Climate Report - October 2022",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "National Weather Service",
+          "NOAA National Centers for Environmental Information (NCEI)"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "National Weather Service coastal flood alerts were issued... flooding from the Carolinas to New Jersey.",
+            "source_url": "https://www.ncei.noaa.gov/index.php/news/national-climate-202210"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.75,
+        "location": 0.6,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "NCEI National Climate October 2022 - coastal flooding Ian remnants",
+        "fingerprint": "fp_2022-10_us_mid_atlantic_flooding_ian_us_2022-10-01_2022-10-05"
+      }
+    },
+    {
+      "event_id": "2022-10-pacific-northwest-heatwave-record-highs",
+      "title": "Historic mid-October heatwave in the Pacific Northwest (record highs, including Seattle)",
+      "description": "On October 16, 2022, unusually warm conditions brought summer-like temperatures to parts of the U.S. Pacific Northwest. Daily high temperature records were broken in multiple locations, including Seattle.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2022-10-16T00:00:00.000Z",
+        "event_end": "2022-10-16T23:59:59.000Z",
+        "reported_at": "2022-11-10T00:00:00Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2022-10-16T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Pacific Northwest, United States",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.ncei.noaa.gov/index.php/news/national-climate-202210",
+          "source_name": "NOAA National Centers for Environmental Information (NCEI)",
+          "published_at": "2022-11-10T00:00:00Z",
+          "headline": "National Climate Report - October 2022",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.ncei.noaa.gov/news/national-climate-202210",
+          "source_name": "NOAA National Centers for Environmental Information (NCEI)",
+          "published_at": "2022-11-10T00:00:00Z",
+          "headline": "National Climate Report - October 2022",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA National Centers for Environmental Information (NCEI)"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "A historic October heatwave... shattered daily high temperature records across the Pacific Northwest, including Seattle.",
+            "source_url": "https://www.ncei.noaa.gov/index.php/news/national-climate-202210"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.75,
+        "location": 0.55,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "NCEI National Climate October 2022 - Pacific Northwest heatwave",
+        "fingerprint": "fp_2022-10_pnw_heatwave_us_2022-10-16"
+      }
+    },
+    {
+      "event_id": "2022-10-us-drought-monitor-record-dryness-extent",
+      "title": "U.S. Drought Monitor reports record extent of dryness/drought across the continental U.S.",
+      "description": "In mid-October 2022, the U.S. Drought Monitor reported that a very large share of the contiguous United States was classified as abnormally dry or in drought. The report described this as the largest area affected in the history of the U.S. Drought Monitor (which began in 2000).",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2022-10-13T00:00:00.000Z",
+        "event_end": "2022-10-13T23:59:59.000Z",
+        "reported_at": "2022-11-10T00:00:00Z",
+        "time_confidence": 0.65,
+        "event_date_utc": "2022-10-13T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Continental United States",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.ncei.noaa.gov/news/national-climate-202210",
+          "source_name": "NOAA National Centers for Environmental Information (NCEI)",
+          "published_at": "2022-11-10T00:00:00Z",
+          "headline": "National Climate Report - October 2022",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Drought Monitor",
+          "NOAA National Centers for Environmental Information (NCEI)"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "nearly 82% of the continental U.S. as abnormally dry or in drought... largest area affected in the history of the U.S. Drought Monitor.",
+            "source_url": "https://www.ncei.noaa.gov/news/national-climate-202210"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.75,
+        "location": 0.6,
+        "summary_grounding": 0.58
+      },
+      "quality_flags": [
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "NCEI National Climate October 2022 - US Drought Monitor record extent",
+        "fingerprint": "fp_2022-10_usdm_record_extent_us_2022-10-13"
+      }
+    },
+    {
+      "event_id": "evt_20221009_stromboli_pyroclastic_tsunami",
+      "title": "Stromboli eruption triggers pyroclastic flow and small tsunami",
+      "description": "Stromboli volcano produced a pyroclastic flow down the Sciara del Fuoco that reached the sea and generated a small tsunami, recorded by local sensors. The event was documented by Italy’s National Institute of Geophysics and Volcanology (INGV).",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2022-10-09T07:22:00.000Z",
+        "event_end": "2022-10-09T08:30:00.000Z",
+        "reported_at": "2022-10-09T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2022-10-09T07:22:00.000Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Stromboli, Aeolian Islands, Italy",
+        "jurisdiction_level": "site",
+        "admin1": null,
+        "country": "IT",
+        "capital_used": null,
+        "lat": 38.789,
+        "lon": 15.213,
+        "precision": "exact",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://cat.ingv.it/en/media-and-documents/news-en/360-stromboli-october-9-2022-a-small-volcanic-tsunami",
+          "source_name": "INGV",
+          "published_at": "2022-10-09T00:00:00.000Z",
+          "headline": "Stromboli October 9, 2022: a small volcanic tsunami",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "National Institute of Geophysics and Volcanology (INGV)"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "a small volcanic tsunami",
+            "source_url": "https://cat.ingv.it/en/media-and-documents/news-en/360-stromboli-october-9-2022-a-small-volcanic-tsunami"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.85,
+        "location": 0.7,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "stromboli_2022-10-09_pyroclastic_flow_tsunami",
+        "fingerprint": "fp_stromboli_it_2022-10-09_pyroclastic_tsunami"
+      }
+    },
+    {
+      "event_id": "evt_20221025_alumrock_m51_quake",
+      "title": "M5.1 Alum Rock earthquake near San Jose, California",
+      "description": "A magnitude 5.1 earthquake occurred near the Alum Rock area of San Jose, California. The event was reported in news coverage and discussed in a USGS publication analyzing rupture directivity for the earthquake.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2022-10-25T18:42:02.000Z",
+        "event_end": "2022-10-25T19:42:02.000Z",
+        "reported_at": "2022-10-25T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2022-10-25T18:42:02.000Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Near Alum Rock / San Jose, California, United States",
+        "jurisdiction_level": "city",
+        "admin1": "California",
+        "country": "US",
+        "capital_used": null,
+        "lat": 37.3382,
+        "lon": -121.8863,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.axios.com/2022/10/25/earthquake-near-san-jose-california",
+          "source_name": "Axios",
+          "published_at": "2022-10-25T00:00:00.000Z",
+          "headline": "Earthquake near San Jose, California",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.usgs.gov/publications/rupture-directivity-25-october-2022-mw-51-alum-rock-earthquake",
+          "source_name": "USGS",
+          "published_at": "2022-10-25T00:00:00.000Z",
+          "headline": "Rupture Directivity, 25 October 2022 Mw 5.1 Alum Rock Earthquake",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Geological Survey (USGS)"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Mw 5.1 Alum Rock Earthquake",
+            "source_url": "https://www.usgs.gov/publications/rupture-directivity-25-october-2022-mw-51-alum-rock-earthquake"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.65,
+        "category": 0.85,
+        "location": 0.6,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "alum_rock_sanjose_2022-10-25_m5.1",
+        "fingerprint": "fp_sanjose_us_2022-10-25_m5.1"
+      }
+    },
+    {
+      "event_id": "evt_20221002_osumi_m59_quake",
+      "title": "M5.9 earthquake offshore east of the Osumi Peninsula, Japan",
+      "description": "Japan’s Earthquake Research Committee reported an M5.9 earthquake offshore east of the Osumi Peninsula, with maximum seismic intensity 5 Lower observed in Miyazaki Prefecture. The source is a monthly committee update referencing October 2022 seismicity.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2022-10-02T00:00:00.000Z",
+        "event_end": "2022-10-02T23:59:59.000Z",
+        "reported_at": "2022-11-01T00:00:00.000Z",
+        "time_confidence": 0.5,
+        "event_date_utc": "2022-10-02T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Offshore east of the Osumi Peninsula, Japan",
+        "jurisdiction_level": "site",
+        "admin1": null,
+        "country": "JP",
+        "capital_used": null,
+        "lat": 31,
+        "lon": 131,
+        "precision": "proxy",
+        "location_basis": "manual_override",
+        "location_confidence": 0.35
+      },
+      "sources": [
+        {
+          "url": "https://www.jishin.go.jp/main/chousa/22nov/index-e.htm",
+          "source_name": "Earthquake Research Committee (Japan)",
+          "published_at": "2022-11-01T00:00:00.000Z",
+          "headline": "Earthquake Research Committee: November 2022 (English index)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Earthquake Research Committee (Japan)"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "an M5.9 earthquake occurred offshore east of the Osumi Peninsula",
+            "source_url": "https://www.jishin.go.jp/main/chousa/22nov/index-e.htm"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.45,
+        "category": 0.8,
+        "location": 0.35,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "secondary_sources_only",
+        "low_confidence_location",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "osumi_offshore_2022-10-02_m5.9",
+        "fingerprint": "fp_osumi_jp_2022-10-02_m5.9"
+      }
+    },
+    {
+      "event_id": "evt_20221016_nakia_creek_fire_camas_wa",
+      "title": "Nakia Creek Fire rapid growth and evacuations near Camas, Washington",
+      "description": "Incident updates reported that strong east winds drove rapid growth of the Nakia Creek Fire to roughly 2,000 acres with low containment and evacuations in place near Camas in Clark County, Washington.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2022-10-16T00:00:00.000Z",
+        "event_end": "2022-10-16T23:59:59.000Z",
+        "reported_at": "2022-10-16T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2022-10-16T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Near Camas (Clark County), Washington, United States",
+        "jurisdiction_level": "site",
+        "admin1": "Washington",
+        "country": "US",
+        "capital_used": null,
+        "lat": 45.587,
+        "lon": -122.399,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.4
+      },
+      "sources": [
+        {
+          "url": "https://inciweb.wildfire.gov/node/312423",
+          "source_name": "InciWeb",
+          "published_at": "2022-10-16T00:00:00.000Z",
+          "headline": "Nakia Creek Fire expands rapidly and prompts evacuations in Washington state",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.45,
+        "category": 0.8,
+        "location": 0.4,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "Nakia Creek Fire (Oct 2022)",
+        "fingerprint": "nakiacreekfire_camaswa_2022-10-16"
+      }
+    },
+    {
+      "event_id": "evt_20221020_20221022_nakia_creek_fire_update_camas_wa",
+      "title": "Nakia Creek Fire containment improves and evacuations lifted near Camas, Washington",
+      "description": "Incident updates reported evacuations were lifted on October 20, 2022, and that by October 22 containment had increased substantially while the fire area remained about 1,918 acres amid rainfall and cooler conditions.",
+      "category_primary": "fires",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "2022-10-20T00:00:00.000Z",
+        "event_end": "2022-10-22T23:59:59.000Z",
+        "reported_at": "2022-10-20T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": null,
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Near Camas (Clark County), Washington, United States",
+        "jurisdiction_level": "site",
+        "admin1": "Washington",
+        "country": "US",
+        "capital_used": null,
+        "lat": 45.587,
+        "lon": -122.399,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.4
+      },
+      "sources": [
+        {
+          "url": "https://inciweb.wildfire.gov/node/312499",
+          "source_name": "InciWeb",
+          "published_at": "2022-10-20T00:00:00.000Z",
+          "headline": "Nakia Creek Fire status update (containment increases; evacuations lifted)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://inciweb.wildfire.gov/node/312498",
+          "source_name": "InciWeb",
+          "published_at": "2022-10-22T00:00:00.000Z",
+          "headline": "Nakia Creek Fire status update (containment increases; evacuations lifted)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.45,
+        "category": 0.8,
+        "location": 0.4,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "Nakia Creek Fire (Oct 2022)",
+        "fingerprint": "nakiacreekfire_camaswa_2022-10-20_2022-10-22"
+      }
+    },
+    {
+      "event_id": "evt_20221024_eu_council_cop15_position",
+      "title": "EU Council sets EU negotiating position for UN biodiversity COP15",
+      "description": "The Council of the European Union approved conclusions setting the EU’s general negotiating position for the UN Convention on Biological Diversity COP15 summit in Montreal. The conclusions outline the EU’s stance ahead of the December 2022 negotiations.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "2022-10-24T00:00:00.000Z",
+        "event_end": "2022-10-24T23:59:59.000Z",
+        "reported_at": "2022-10-24T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2022-10-24T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Brussels, Belgium (Council of the European Union)",
+        "jurisdiction_level": "city",
+        "admin1": null,
+        "country": "BE",
+        "capital_used": null,
+        "lat": 50.8503,
+        "lon": 4.3517,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.75
+      },
+      "sources": [
+        {
+          "url": "https://www.consilium.europa.eu/en/press/press-releases/2022/10/24/council-approves-conclusions-for-un-biodiversity-summit-in-montreal-cop15/",
+          "source_name": "Council of the European Union (Consilium)",
+          "published_at": "2022-10-24T00:00:00.000Z",
+          "headline": "Council approves conclusions for UN biodiversity summit in Montreal (COP15)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Council of the European Union"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "The Council approved conclusions setting out the EU’s general negotiating position for COP15.",
+            "source_url": "https://www.consilium.europa.eu/en/press/press-releases/2022/10/24/council-approves-conclusions-for-un-biodiversity-summit-in-montreal-cop15/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.72,
+        "category": 0.85,
+        "location": 0.75,
+        "summary_grounding": 0.75
+      },
+      "quality_flags": [
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "eu_council_cop15_position_oct2022",
+        "fingerprint": "fp_eu_council_cop15_position_brussels_2022-10-24"
+      }
+    },
+    {
+      "event_id": "evt_20221028_eu_2035_co2_cars_deal",
+      "title": "EU negotiators agree on 2035 zero-CO₂ target for new cars",
+      "description": "EU negotiators reached an agreement on stricter CO₂ emission standards requiring a 100% reduction in CO₂ emissions for new cars by 2035. The deal is widely described as effectively ending sales of new petrol and diesel cars in the EU from 2035.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "2022-10-28T00:00:00.000Z",
+        "event_end": "2022-10-28T23:59:59.000Z",
+        "reported_at": "2022-10-28T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2022-10-28T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Brussels, Belgium (EU negotiations)",
+        "jurisdiction_level": "city",
+        "admin1": null,
+        "country": "BE",
+        "capital_used": null,
+        "lat": 50.8503,
+        "lon": 4.3517,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.euronews.com/2022/10/28/climate-change-eu-autos",
+          "source_name": "Euronews",
+          "published_at": "2022-10-28T00:00:00.000Z",
+          "headline": "Climate change: EU autos",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "European Union"
+        ],
+        "substances": [
+          "CO₂"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "EU negotiators reached an agreement on a law requiring a 100% cut in CO₂ emissions for new cars by 2035.",
+            "source_url": "https://www.euronews.com/2022/10/28/climate-change-eu-autos"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.75,
+        "location": 0.6,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "eu_2035_new_cars_co2_standard_oct2022",
+        "fingerprint": "fp_eu_2035_new_cars_brussels_2022-10-28"
+      }
+    }
+  ]
+}

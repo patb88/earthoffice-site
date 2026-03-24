@@ -1,0 +1,395 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_2004-08_normalize_2026-01-16T030028467Z",
+    "generated_utc": "2026-01-16T03:00:28.467Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "2004-08",
+    "window": {
+      "start_utc": "2004-08-01T00:00:00.000Z",
+      "end_utc": "2004-08-31T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "evt_20040808_chicago_river_bus_waste_dump",
+      "title": "Tour bus dumps human waste into Chicago River from Kinzie Street Bridge",
+      "description": "A tour bus released human waste from its blackwater tank onto the Chicago River from the Kinzie Street Bridge in Chicago. The discharge polluted the river and reportedly splashed passengers on a boat below.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2004-08-08T17:00:00.000Z",
+        "event_end": "2004-08-08T18:00:00.000Z",
+        "reported_at": "2024-08-08T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2004-08-08T17:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Chicago River, Chicago, Illinois, USA",
+        "jurisdiction_level": "site",
+        "admin1": "Illinois",
+        "country": "US",
+        "capital_used": null,
+        "lat": 41.8883,
+        "lon": -87.6298,
+        "precision": "neighborhood",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://people.com/chicago-marks-20-years-of-dave-matthews-band-dumping-800-lbs-human-waste-river-8692544",
+          "source_name": "People",
+          "published_at": "2024-08-08T00:00:00Z",
+          "headline": "Chicago Marks 20 Years of Dave Matthews Band Dumping 800 Lbs. of Human Waste into River",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Dave Matthews Band"
+        ],
+        "substances": [
+          "human waste"
+        ],
+        "ecosystems": [
+          "Chicago River"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "dumping 800 lbs. of human waste into river",
+            "source_url": "https://people.com/chicago-marks-20-years-of-dave-matthews-band-dumping-800-lbs-human-waste-river-8692544"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.8,
+        "location": 0.7,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "secondary_sources_only",
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Dave Matthews Band bus human waste dump Chicago River Kinzie Street Bridge",
+        "fingerprint": "fp_20040808_chicago_river_bus_waste_dump"
+      }
+    },
+    {
+      "event_id": "2004-08-weather_climate-hurricane-charley-florida",
+      "title": "Hurricane Charley makes landfall in Florida after impacting the Caribbean",
+      "description": "Hurricane Charley intensified into a major Atlantic hurricane in August 2004, affecting parts of the Caribbean before making landfall in Florida on August 13, 2004. The system caused destructive impacts along its track, as documented in the official tropical cyclone report.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2004-08-09T00:00:00.000Z",
+        "event_end": "2004-08-15T23:59:59.000Z",
+        "reported_at": "2004-12-01T00:00:00Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2004-08-13T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Florida, USA",
+        "jurisdiction_level": "state",
+        "admin1": "Florida",
+        "country": "US",
+        "capital_used": "Tallahassee",
+        "lat": 30.4383,
+        "lon": -84.2807,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://www.nhc.noaa.gov/data/tcr/AL032004_Charley.pdf",
+          "source_name": "NOAA National Hurricane Center",
+          "published_at": "2004-12-01T00:00:00Z",
+          "headline": "Tropical Cyclone Report: Hurricane Charley",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": "https://www.nhc.noaa.gov/data/tcr/AL032004_Charley.pdf"
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA National Hurricane Center"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Charley made landfall near Cayo Costa, Florida, around 1945 UTC 13 August.",
+            "source_url": "https://www.nhc.noaa.gov/data/tcr/AL032004_Charley.pdf"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.7,
+        "category": 0.8,
+        "location": 0.7,
+        "summary_grounding": 0.7
+      },
+      "quality_flags": [
+        "needs_dedupe_check",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "Hurricane Charley Aug 2004 Florida",
+        "fingerprint": "fp_hurricane_charley_florida_2004-08"
+      }
+    },
+    {
+      "event_id": "2004-08-fires-bear-fire-shasta",
+      "title": "Bear Fire in Shasta County burns over 10,000 acres and destroys structures",
+      "description": "The Bear Fire in Shasta County, California burned about 10,484 acres in August 2004. The incident involved evacuations and destruction of structures, as documented in CAL FIRE incident reporting.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2004-08-11T22:29:00.000Z",
+        "event_end": "2004-08-16T19:00:00.000Z",
+        "reported_at": "2004-08-11T22:29:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2004-08-11T22:29:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Jones Valley, Shasta County, California, USA",
+        "jurisdiction_level": "site",
+        "admin1": "California",
+        "country": "US",
+        "capital_used": null,
+        "lat": 40.6182,
+        "lon": -122.4467,
+        "precision": "city",
+        "location_basis": "manual_override",
+        "location_confidence": 0.35
+      },
+      "sources": [
+        {
+          "url": "https://www.fire.ca.gov/incidents/2004/8/11/bear-fire/",
+          "source_name": "CAL FIRE",
+          "published_at": "2004-08-11T22:29:00.000Z",
+          "headline": "Bear Fire",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "CAL FIRE"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Acres Burned: 10,484",
+            "source_url": "https://www.fire.ca.gov/incidents/2004/8/11/bear-fire/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.85,
+        "location": 0.35,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "low_confidence_location"
+      ],
+      "dedupe": {
+        "cluster_hint": "bear fire shasta 2004-08",
+        "fingerprint": "bear-fire-shasta-county-2004-08-11"
+      }
+    },
+    {
+      "event_id": "2004-08-fires-alaska-smoke-fairbanks",
+      "title": "Smoke from Alaska wildfires causes hazardous air quality near Fairbanks",
+      "description": "NASA Earth Observatory reported thick smoke from Alaska wildfires affecting interior Alaska, with imagery documenting the smoke plume. The report describes degraded air quality conditions associated with wildfire smoke around Fairbanks.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2004-08-21T00:00:00.000Z",
+        "event_end": "2004-08-21T23:59:59.000Z",
+        "reported_at": "2004-08-21T00:00:00.000Z",
+        "time_confidence": 0.4,
+        "event_date_utc": "2004-08-21T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Fairbanks area, Interior Alaska, USA",
+        "jurisdiction_level": "city",
+        "admin1": "Alaska",
+        "country": "US",
+        "capital_used": null,
+        "lat": 64.8378,
+        "lon": -147.7164,
+        "precision": "city",
+        "location_basis": "manual_override",
+        "location_confidence": 0.5
+      },
+      "sources": [
+        {
+          "url": "https://earthobservatory.nasa.gov/images/13465/smoke-from-alaska-fires",
+          "source_name": "NASA Earth Observatory",
+          "published_at": "2004-08-21T00:00:00.000Z",
+          "headline": "Smoke from Alaska Fires",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": "https://earthobservatory.nasa.gov/images/13465/smoke-from-alaska-fires"
+        },
+        {
+          "url": "https://science.nasa.gov/earth/earth-observatory/smoke-from-alaska-fires/",
+          "source_name": "NASA Science",
+          "published_at": "2004-08-21T00:00:00.000Z",
+          "headline": "Smoke from Alaska Fires",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NASA Earth Observatory",
+          "NASA"
+        ],
+        "substances": [
+          "wildfire smoke"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Smoke from Alaska Fires",
+            "source_url": "https://earthobservatory.nasa.gov/images/13465/smoke-from-alaska-fires"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.5,
+        "category": 0.8,
+        "location": 0.5,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "alaska fires smoke fairbanks 2004-08",
+        "fingerprint": "alaska-smoke-fairbanks-2004-08-21"
+      }
+    },
+    {
+      "event_id": "2004-08-26_us_epa_final_rule_40cfr52_fr0419523",
+      "title": "EPA publishes Clean Air Act final rule (40 CFR Part 52) in Federal Register",
+      "description": "A Clean Air Act-related final rule action concerning 40 CFR Part 52 was published in the Federal Register on August 26, 2004. The notice lists an effective date of September 27, 2004.",
+      "category_primary": "policy_regulation",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "2004-08-26T00:00:00.000Z",
+        "event_end": "2004-08-26T23:59:59.000Z",
+        "reported_at": "2004-08-26T00:00:00.000Z",
+        "time_confidence": 0.85,
+        "event_date_utc": "2004-08-26T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States (federal regulation)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.8
+      },
+      "sources": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/FR-2004-08-26/html/04-19523.htm",
+          "source_name": "govinfo.gov (Federal Register)",
+          "published_at": "2004-08-26T00:00:00.000Z",
+          "headline": "04-19523",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Environmental Protection Agency (EPA)"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "final rule action ... 40 CFR Part 52",
+            "source_url": "https://www.govinfo.gov/content/pkg/FR-2004-08-26/html/04-19523.htm"
+          },
+          {
+            "quote": "effective date ... September 27, 2004",
+            "source_url": "https://www.govinfo.gov/content/pkg/FR-2004-08-26/html/04-19523.htm"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.72,
+        "category": 0.8,
+        "location": 0.8,
+        "summary_grounding": 0.65
+      },
+      "quality_flags": [
+        "needs_dedupe_check",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "Federal Register final rule 40 CFR Part 52 (Aug 26 2004)",
+        "fingerprint": "2004-08-26_us_epa_final_rule_40cfr52_fr0419523"
+      }
+    }
+  ]
+}

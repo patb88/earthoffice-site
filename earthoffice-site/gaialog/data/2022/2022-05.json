@@ -1,0 +1,866 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_2022-05_normalize_2026-01-16T131841084Z",
+    "generated_utc": "2026-01-16T13:18:41.084Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "2022-05",
+    "window": {
+      "start_utc": "2022-05-01T00:00:00.000Z",
+      "end_utc": "2022-05-31T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "20220502_mystery_oil_sheen_mississippi_canyon_245",
+      "title": "Mystery oil sheen reported near Mississippi Canyon Block 245 (Gulf of Mexico)",
+      "description": "U.S. Coast Guard notified NOAA about an oil sheen of unknown source near BOEM Mississippi Canyon lease block 245 in the Gulf of Mexico. NOAA provided trajectory/forecasting support for response planning.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2022-05-02T00:00:00.000Z",
+        "event_end": "2022-05-02T23:59:59.000Z",
+        "reported_at": "2022-05-02T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2022-05-02T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Gulf of Mexico (Mississippi Canyon Block 245), southeast of South Pass, Louisiana, USA",
+        "jurisdiction_level": "site",
+        "admin1": "Louisiana",
+        "country": "US",
+        "capital_used": null,
+        "lat": 0,
+        "lon": 0,
+        "precision": "proxy",
+        "location_basis": "manual_override",
+        "location_confidence": 0.2
+      },
+      "sources": [
+        {
+          "url": "https://incidentnews.noaa.gov/incident/10450",
+          "source_name": "NOAA IncidentNews",
+          "published_at": "2022-05-02T00:00:00.000Z",
+          "headline": "Incident 10450",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://blog.response.restoration.noaa.gov/incident-responses-may-2022",
+          "source_name": "NOAA Response & Restoration Blog",
+          "published_at": "2022-05-01T00:00:00.000Z",
+          "headline": "Incident Responses: May 2022",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Coast Guard",
+          "NOAA"
+        ],
+        "substances": [
+          "oil"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "U.S. Coast Guard notified NOAA of an oil sheen of unknown source near BOEM lease block 245.",
+            "source_url": "https://blog.response.restoration.noaa.gov/incident-responses-may-2022"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.8,
+        "location": 0.2,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "low_confidence_location",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "noaa_incident_10450_mississippi_canyon_245",
+        "fingerprint": "fp_20220502_mystery_oil_sheen_mississippi_canyon_245"
+      }
+    },
+    {
+      "event_id": "20220509_pipeline_discharge_hackberry_louisiana",
+      "title": "Aboveground pipeline crude oil discharge into marsh near Hackberry, Louisiana",
+      "description": "A crude oil discharge from an aboveground pipeline was reported in a marsh near Hackberry, Louisiana, with some oil described as migrating toward/into Black Lake. Responders deployed containment and skimming and requested NOAA technical support.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2022-05-09T00:00:00.000Z",
+        "event_end": "2022-05-09T23:59:59.000Z",
+        "reported_at": "2022-05-09T00:00:00.000Z",
+        "time_confidence": 0.5,
+        "event_date_utc": "2022-05-09T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Marsh near Hackberry, Louisiana, USA",
+        "jurisdiction_level": "city",
+        "admin1": "Louisiana",
+        "country": "US",
+        "capital_used": null,
+        "lat": 29.996,
+        "lon": -93.369,
+        "precision": "city",
+        "location_basis": "manual_override",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://blog.response.restoration.noaa.gov/incident-responses-may-2022",
+          "source_name": "NOAA Response & Restoration Blog",
+          "published_at": "2022-05-01T00:00:00.000Z",
+          "headline": "Incident Responses: May 2022",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA"
+        ],
+        "substances": [
+          "crude oil"
+        ],
+        "ecosystems": [
+          "marsh"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "A discharge from an aboveground pipeline in a marsh near Hackberry, Louisiana was reported.",
+            "source_url": "https://blog.response.restoration.noaa.gov/incident-responses-may-2022"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.8,
+        "location": 0.6,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "noaa_may_2022_hackberry_pipeline_discharge",
+        "fingerprint": "fp_20220509_pipeline_discharge_hackberry_louisiana"
+      }
+    },
+    {
+      "event_id": "20220507_yacht_fire_sinking_domani_olympic_coast_sanctuary",
+      "title": "Yacht fire and sinking with potential diesel/oil release in Olympic Coast National Marine Sanctuary",
+      "description": "A 140-foot yacht reportedly caught fire and took on water off Washington State within the Olympic Coast National Marine Sanctuary, creating a potential fuel spill risk. The incident was described as involving a potential release of diesel and other oils.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2022-05-07T00:00:00.000Z",
+        "event_end": "2022-05-07T23:59:59.000Z",
+        "reported_at": "2022-05-07T00:00:00.000Z",
+        "time_confidence": 0.45,
+        "event_date_utc": "2022-05-07T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Olympic Coast National Marine Sanctuary (off Washington State), USA",
+        "jurisdiction_level": "state",
+        "admin1": "Washington",
+        "country": "US",
+        "capital_used": "Olympia",
+        "lat": 47.0379,
+        "lon": -122.9007,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.5
+      },
+      "sources": [
+        {
+          "url": "https://blog.response.restoration.noaa.gov/incident-responses-may-2022",
+          "source_name": "NOAA Response & Restoration Blog",
+          "published_at": "2022-05-01T00:00:00.000Z",
+          "headline": "Incident Responses: May 2022",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA"
+        ],
+        "substances": [
+          "diesel",
+          "oil"
+        ],
+        "ecosystems": [
+          "marine sanctuary"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "A 140-foot yacht reportedly caught fire and took on water offshore Washington, posing a potential spill risk.",
+            "source_url": "https://blog.response.restoration.noaa.gov/incident-responses-may-2022"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.75,
+        "location": 0.5,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "low_confidence_location",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "noaa_may_2022_yacht_fire_olympic_coast_sanctuary",
+        "fingerprint": "fp_20220507_yacht_fire_sinking_domani_olympic_coast_sanctuary"
+      }
+    },
+    {
+      "event_id": "evt_202205_us_noaa_national_climate_202205",
+      "title": "NOAA reports warmer-than-average May 2022 in the contiguous U.S., ongoing drought, and notable severe weather",
+      "description": "NOAA/NCEI’s May 2022 national climate report describes the contiguous United States averaging warmer than normal for the month, alongside persistent drought conditions (especially in the West). The report also highlights notable severe weather impacts during the month.",
+      "category_primary": "weather_climate",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2022-06-09T00:00:00Z",
+        "time_confidence": 0.55,
+        "event_date_utc": null,
+        "event_date_precision": "month"
+      },
+      "location": {
+        "name": "United States",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.75
+      },
+      "sources": [
+        {
+          "url": "https://www.ncei.noaa.gov/news/national-climate-202205",
+          "source_name": "NOAA NCEI",
+          "published_at": "2022-06-09T00:00:00Z",
+          "headline": "National Climate Report - May 2022",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA",
+          "NOAA National Centers for Environmental Information (NCEI)"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "National Climate Report - May 2022",
+            "source_url": "https://www.ncei.noaa.gov/news/national-climate-202205"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.8,
+        "location": 0.75,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "low_confidence_category",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "US-May-2022-national-climate-summary",
+        "fingerprint": "fp_us_may2022_noaa_national_climate"
+      }
+    },
+    {
+      "event_id": "evt_20220508_20220514_midwest_highplains_heatwave",
+      "title": "Record-setting warmth across the U.S. Midwest and High Plains (May 8–14, 2022)",
+      "description": "Regional climate summaries report a short but intense heat episode across parts of the U.S. Midwest and High Plains during May 8–14, 2022. The period included unusually hot conditions and daily record temperatures across multiple locations.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2022-05-08T00:00:00Z",
+        "event_end": "2022-05-14T23:59:59Z",
+        "reported_at": "2022-06-27T00:00:00Z",
+        "time_confidence": 0.75,
+        "event_date_utc": "2022-05-11T00:00:00Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "United States",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.45
+      },
+      "sources": [
+        {
+          "url": "https://www.mrcc.purdue.edu/climatesummaries/225",
+          "source_name": "Midwestern Regional Climate Center (MRCC)",
+          "published_at": "2022-06-01T00:00:00Z",
+          "headline": "May 2022 Climate Summary (MRCC)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://hprcc.unl.edu/blog/2022/06/27/may-2022-climate-summary/",
+          "source_name": "High Plains Regional Climate Center (HPRCC)",
+          "published_at": "2022-06-27T00:00:00Z",
+          "headline": "May 2022 Climate Summary",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Midwestern Regional Climate Center (MRCC)",
+          "High Plains Regional Climate Center (HPRCC)"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "May 2022 Climate Summary",
+            "source_url": "https://hprcc.unl.edu/blog/2022/06/27/may-2022-climate-summary/"
+          },
+          {
+            "quote": "Climate Summaries",
+            "source_url": "https://www.mrcc.purdue.edu/climatesummaries/225"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.58,
+        "category": 0.75,
+        "location": 0.45,
+        "summary_grounding": 0.4
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "paywalled_or_partial",
+        "needs_dedupe_check",
+        "low_confidence_location"
+      ],
+      "dedupe": {
+        "cluster_hint": "Midwest-HighPlains-heat-May8-14-2022",
+        "fingerprint": "fp_us_midwest_highplains_heat_20220508_20220514"
+      }
+    },
+    {
+      "event_id": "evt_20220511_kilauea_summit_activity",
+      "title": "Kīlauea summit eruption activity documented in May 2022 (Halema‘uma‘u)",
+      "description": "USGS photo and video chronology entries dated May 11 and May 16, 2022 document ongoing eruptive activity at Kīlauea’s summit, with lava within Halema‘uma‘u crater in Hawai‘i Volcanoes National Park.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2022-05-11T00:00:00.000Z",
+        "event_end": "2022-05-16T23:59:59.000Z",
+        "reported_at": "2022-05-11T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": null,
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Kīlauea summit (Halema‘uma‘u crater), Hawai‘i, USA",
+        "jurisdiction_level": "site",
+        "admin1": "Hawaii",
+        "country": "US",
+        "capital_used": null,
+        "lat": 19.421,
+        "lon": -155.287,
+        "precision": "exact",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://www.usgs.gov/volcanoes/kilauea/news/photo-and-video-chronology-kilauea-may-11-2022",
+          "source_name": "USGS Volcanoes",
+          "published_at": "2022-05-11T00:00:00.000Z",
+          "headline": "Photo and Video Chronology: Kīlauea - May 11, 2022",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.usgs.gov/volcanoes/kilauea/news/photo-and-video-chronology-kilauea-may-16-2022",
+          "source_name": "USGS Volcanoes",
+          "published_at": "2022-05-16T00:00:00.000Z",
+          "headline": "Photo and Video Chronology: Kīlauea - May 16, 2022",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "USGS"
+        ],
+        "substances": [
+          "lava"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Photo and Video Chronology: Kīlauea - May 11, 2022",
+            "source_url": "https://www.usgs.gov/volcanoes/kilauea/news/photo-and-video-chronology-kilauea-may-11-2022"
+          },
+          {
+            "quote": "Photo and Video Chronology: Kīlauea - May 16, 2022",
+            "source_url": "https://www.usgs.gov/volcanoes/kilauea/news/photo-and-video-chronology-kilauea-may-16-2022"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.85,
+        "location": 0.7,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "kilauea_summit_eruption_may_2022",
+        "fingerprint": "kilauea_summit_eruption_halemaumau_us_2022-05"
+      }
+    },
+    {
+      "event_id": "evt_20220518_amchitka_m57_quake",
+      "title": "Magnitude 5.7 earthquake reported south of Amchitka (Aleutian Islands)",
+      "description": "The Alaska Earthquake Center’s May 2022 monthly report lists a magnitude 5.7 earthquake occurring south of Amchitka in the Aleutian Islands on May 18, 2022 (UTC).",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2022-05-18T06:27:55.000Z",
+        "event_end": "2022-05-18T06:27:55.000Z",
+        "reported_at": "2022-05-18T06:27:55.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2022-05-18T06:27:55.000Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Aleutian Islands, Alaska, USA (south of Amchitka)",
+        "jurisdiction_level": "state",
+        "admin1": "Alaska",
+        "country": "US",
+        "capital_used": "Juneau",
+        "lat": 58.3019,
+        "lon": -134.4197,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.4
+      },
+      "sources": [
+        {
+          "url": "https://earthquake.alaska.edu/earthquakes/reports/monthly/may-2022",
+          "source_name": "Alaska Earthquake Center",
+          "published_at": "2022-05-01T00:00:00.000Z",
+          "headline": "Monthly Seismicity Report: May 2022",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Alaska Earthquake Center"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Monthly Seismicity Report: May 2022",
+            "source_url": "https://earthquake.alaska.edu/earthquakes/reports/monthly/may-2022"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.5,
+        "category": 0.85,
+        "location": 0.4,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "low_confidence_location"
+      ],
+      "dedupe": {
+        "cluster_hint": "aleutians_amchitka_m57_2022-05-18",
+        "fingerprint": "aleutian_islands_ak_us_m5.7_2022-05-18"
+      }
+    },
+    {
+      "event_id": "evt_202205_nm_calfcanyon_hermitspeak_active_may",
+      "title": "Calf Canyon/Hermits Peak Fire remains active through May 2022 in northeastern New Mexico",
+      "description": "Daily incident updates documented the Hermits Peak/Calf Canyon Fire as a large, ongoing wildfire during May 2022, with evacuations, closures, and significant firefighting resources deployed. The updates reflect continued impacts across multiple northeastern New Mexico counties during the month.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2022-05-25T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2022-05-25T00:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "San Miguel, Mora, and Taos counties, New Mexico, USA",
+        "jurisdiction_level": "state",
+        "admin1": "New Mexico",
+        "country": "US",
+        "capital_used": "Santa Fe",
+        "lat": 35.687,
+        "lon": -105.9378,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://nmfireinfo.com/2022/05/25/hermits-peak-and-calf-canyon-fires-may-25-2022/",
+          "source_name": "NM Fire Info",
+          "published_at": "2022-05-25T00:00:00Z",
+          "headline": "Hermits Peak and Calf Canyon Fires – May 25, 2022",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://nmfireinfo.com/2022/05/26/hermits-peak-and-calf-canyon-fires-may-26-2022/",
+          "source_name": "NM Fire Info",
+          "published_at": "2022-05-26T00:00:00Z",
+          "headline": "Hermits Peak and Calf Canyon Fires – May 26, 2022",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Hermits Peak/Calf Canyon Fire update (May 25, 2022).",
+            "source_url": "https://nmfireinfo.com/2022/05/25/hermits-peak-and-calf-canyon-fires-may-25-2022/"
+          },
+          {
+            "quote": "Hermits Peak/Calf Canyon Fire update (May 26, 2022).",
+            "source_url": "https://nmfireinfo.com/2022/05/26/hermits-peak-and-calf-canyon-fires-may-26-2022/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.85,
+        "location": 0.7,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Hermits Peak / Calf Canyon Fire (May 2022, New Mexico)",
+        "fingerprint": "fp_hermitspeak_calfcanyon_nm_2022-05"
+      }
+    },
+    {
+      "event_id": "evt_20220511_nm_wildfire_taos_threat",
+      "title": "Wildfire threatens Taos-area communities amid extreme fire weather in northern New Mexico",
+      "description": "A May 11, 2022 report described rapid wildfire spread in northern New Mexico driven by high winds and drought conditions, threatening communities in the Taos/Angel Fire area. The reporting noted evacuations and road closures as fire behavior intensified.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2022-05-11T00:00:00Z",
+        "time_confidence": 0.8,
+        "event_date_utc": "2022-05-11T00:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Northern New Mexico, USA (Taos/Angel Fire vicinity)",
+        "jurisdiction_level": "state",
+        "admin1": "New Mexico",
+        "country": "US",
+        "capital_used": "Santa Fe",
+        "lat": 35.687,
+        "lon": -105.9378,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.theguardian.com/world/2022/may/11/new-mexico-wildfire-spreading-wind-mountain-resort-towns-taos",
+          "source_name": "The Guardian",
+          "published_at": "2022-05-11T00:00:00Z",
+          "headline": "New Mexico wildfire spreading amid extreme fire weather threatens mountain resort towns near Taos",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "The Guardian"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "New Mexico wildfire spreading amid extreme fire weather threatens mountain resort towns near Taos.",
+            "source_url": "https://www.theguardian.com/world/2022/may/11/new-mexico-wildfire-spreading-wind-mountain-resort-towns-taos"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.85,
+        "location": 0.55,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Northern New Mexico wildfire threat near Taos (May 11, 2022)",
+        "fingerprint": "fp_nm_taos_area_wildfire_2022-05-11"
+      }
+    },
+    {
+      "event_id": "202205-gbr-coral-bleaching-survey-release",
+      "title": "Great Barrier Reef bleaching survey results reported in May 2022",
+      "description": "Media reports said Australian government scientists released survey results indicating widespread coral bleaching across the Great Barrier Reef during 2022. The reports described most surveyed reefs showing some bleaching, characterizing it as a mass bleaching event.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2022-05-10T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2022-05-10T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Great Barrier Reef, Queensland, Australia",
+        "jurisdiction_level": "state",
+        "admin1": "Queensland",
+        "country": "AU",
+        "capital_used": "Brisbane",
+        "lat": -27.4698,
+        "lon": 153.0251,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.theguardian.com/environment/2022/may/10/devastating-90-of-reefs-surveyed-on-great-barrier-reef-affected-by-coral-bleaching-in-2022",
+          "source_name": "The Guardian",
+          "published_at": "2022-05-10T00:00:00.000Z",
+          "headline": "Devastating: 90% of reefs surveyed on Great Barrier Reef affected by coral bleaching in 2022",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.axios.com/2022/05/11/great-barrier-reef-mass-coral-bleaching-2022-report",
+          "source_name": "Axios",
+          "published_at": "2022-05-11T00:00:00.000Z",
+          "headline": "Great Barrier Reef mass coral bleaching, 2022 report",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Australian government scientists"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "Great Barrier Reef"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.8,
+        "location": 0.55,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "great-barrier-reef_coral-bleaching_2022-05",
+        "fingerprint": "great-barrier-reef-bleaching-survey_queensland_2022-05-10"
+      }
+    },
+    {
+      "event_id": "evt_20220512_fws_esa_5yr_reviews_35_species",
+      "title": "U.S. Fish and Wildlife Service opens five-year ESA status reviews for 35 species",
+      "description": "The U.S. Fish and Wildlife Service announced it will conduct five-year status reviews for 35 endangered or threatened species. The agency invited the public to submit new scientific or commercial information as part of Endangered Species Act requirements.",
+      "category_primary": "policy_regulation",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2022-05-12T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2022-05-12T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States (U.S. Fish and Wildlife Service)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.fws.gov/press-release/2022-05/five-year-status-reviews-35-southeastern-species",
+          "source_name": "U.S. Fish & Wildlife Service",
+          "published_at": "2022-05-12T00:00:00.000Z",
+          "headline": "Five-year status reviews for 35 southeastern species",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Fish & Wildlife Service"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "announced it will conduct five-year status reviews for 35 endangered or threatened species",
+            "source_url": "https://www.fws.gov/press-release/2022-05/five-year-status-reviews-35-southeastern-species"
+          },
+          {
+            "quote": "inviting the public to submit any new scientific or commercial information",
+            "source_url": "https://www.fws.gov/press-release/2022-05/five-year-status-reviews-35-southeastern-species"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.66,
+        "category": 0.8,
+        "location": 0.6,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "fws-esa-five-year-status-reviews-35-southeastern-species-2022-05-12",
+        "fingerprint": "fws_esa_5yr_reviews_35_species_us_2022-05-12"
+      }
+    }
+  ]
+}

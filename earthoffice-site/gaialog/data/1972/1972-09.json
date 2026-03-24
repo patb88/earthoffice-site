@@ -1,0 +1,602 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_1972-09_normalize_2026-01-19T051113283Z",
+    "generated_utc": "2026-01-19T05:11:13.283Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "1972-09",
+    "window": {
+      "start_utc": "1972-09-01T00:00:00.000Z",
+      "end_utc": "1972-09-30T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "evt-1972-09-cayuga-lake-pcb-lake-trout-science",
+      "title": "Science report finds PCB residues in Cayuga Lake trout increasing with age",
+      "description": "A report indexed on PubMed describes polychlorinated biphenyl (PCB) residues detected in Cayuga Lake lake trout and reports higher concentrations in older fish, consistent with bioaccumulation in the lake ecosystem.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1972-09-29T12:00:00Z",
+        "time_confidence": 0.45,
+        "event_date_utc": "1972-09-29T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Cayuga Lake, New York, United States",
+        "jurisdiction_level": "site",
+        "admin1": "New York",
+        "country": "US",
+        "capital_used": null,
+        "lat": 42.75,
+        "lon": -76.7,
+        "precision": "admin1",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.35
+      },
+      "sources": [
+        {
+          "url": "https://pubmed.ncbi.nlm.nih.gov/4626944/",
+          "source_name": "PubMed",
+          "published_at": "1972-09-29T12:00:00Z",
+          "headline": "PubMed record: PCB residues accumulating in lake trout with age (Cayuga Lake)",
+          "byline": null,
+          "accessed_utc": "2026-01-19T05:07:59.167Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Science"
+        ],
+        "substances": [
+          "polychlorinated biphenyls (PCBs)"
+        ],
+        "ecosystems": [
+          "freshwater lake"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.52,
+        "category": 0.8,
+        "location": 0.35,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "secondary_sources_only",
+        "location_ambiguous",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "cayuga-lake-pcb-lake-trout-1972-09",
+        "fingerprint": "fp-1972-09-cayuga-lake-pcb-lake-trout-science"
+      }
+    },
+    {
+      "event_id": "evt_197209_carrie_new_england",
+      "title": "Tropical Storm Carrie brings heavy rain and winds to southeastern New England during extratropical transition",
+      "description": "In early September 1972, Tropical Storm Carrie affected the U.S. East Coast. The system brought heavy rainfall and strong winds to parts of New England as it transitioned to an extratropical storm.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1972-09-01T12:00:00Z",
+        "event_end": "1972-09-05T12:00:00Z",
+        "reported_at": "1972-09-01T00:00:00Z",
+        "time_confidence": 0.5,
+        "event_date_utc": "1972-09-01T12:00:00Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "United States (southeastern New England)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, D.C.",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.4
+      },
+      "sources": [
+        {
+          "url": "https://www.wpc.ncep.noaa.gov/tropical/rain/carrie1972.html",
+          "source_name": "NOAA/NCEP Weather Prediction Center",
+          "published_at": "1972-09-01T00:00:00Z",
+          "headline": "Tropical Storm Carrie (1972) Rainfall Summary",
+          "byline": null,
+          "accessed_utc": "2026-01-19T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA",
+          "NCEP",
+          "Weather Prediction Center"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "bringing heavy rainfall and strong winds to parts of New England",
+            "source_url": "https://www.wpc.ncep.noaa.gov/tropical/rain/carrie1972.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.52,
+        "category": 0.7,
+        "location": 0.4,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "1972 Atlantic tropical cyclone rainfall summaries (NOAA WPC)",
+        "fingerprint": "fp_carrie_197209_us_country"
+      }
+    },
+    {
+      "event_id": "evt_197209_dawn_offshore_seus",
+      "title": "Tropical Storm Dawn lingers offshore the U.S. Southeast and briefly reaches hurricane-force intensity over water",
+      "description": "In September 1972, Tropical Storm Dawn became stationary near Florida before moving offshore. It briefly reached hurricane-force intensity while remaining primarily over water, then weakened and dissipated after lingering offshore.",
+      "category_primary": "weather_climate",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "1972-09-04T12:00:00Z",
+        "event_end": "1972-09-15T12:00:00Z",
+        "reported_at": "1972-09-04T00:00:00Z",
+        "time_confidence": 0.5,
+        "event_date_utc": "1972-09-04T12:00:00Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "United States (offshore Southeast coast)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, D.C.",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.35
+      },
+      "sources": [
+        {
+          "url": "https://www.wpc.ncep.noaa.gov/tropical/rain/dawn1972.html",
+          "source_name": "NOAA/NCEP Weather Prediction Center",
+          "published_at": "1972-09-04T00:00:00Z",
+          "headline": "Tropical Storm Dawn (1972) Rainfall Summary",
+          "byline": null,
+          "accessed_utc": "2026-01-19T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA",
+          "NCEP",
+          "Weather Prediction Center"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "became stationary near Florida... moved offshore... briefly reached hurricane-force intensity",
+            "source_url": "https://www.wpc.ncep.noaa.gov/tropical/rain/dawn1972.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.5,
+        "category": 0.7,
+        "location": 0.35,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "1972 Atlantic tropical cyclone rainfall summaries (NOAA WPC)",
+        "fingerprint": "fp_dawn_197209_us_country"
+      }
+    },
+    {
+      "event_id": "evt_19720903_hillsboro_nm_flash_flood",
+      "title": "Flash flood on Percha Creek impacts Hillsboro, New Mexico",
+      "description": "On September 3, 1972, a flash flood affected Hillsboro, New Mexico after heavy rainfall in the Percha Creek basin. USGS documentation describes fatalities and major local damage from the event.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1972-09-03T12:00:00Z",
+        "event_end": "1972-09-03T12:00:00Z",
+        "reported_at": "1972-09-03T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1972-09-03T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Hillsboro, New Mexico, United States",
+        "jurisdiction_level": "site",
+        "admin1": "New Mexico",
+        "country": "US",
+        "capital_used": null,
+        "lat": 32.9217,
+        "lon": -107.5767,
+        "precision": "city",
+        "location_basis": "manual_override",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.usgs.gov/publications/flood-september-3-1972-hillsboro-new-mexico",
+          "source_name": "U.S. Geological Survey",
+          "published_at": "1972-09-03T00:00:00Z",
+          "headline": "Flood of September 3, 1972, Hillsboro, New Mexico",
+          "byline": null,
+          "accessed_utc": "2026-01-19T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://pubs.usgs.gov/publication/ofr73356",
+          "source_name": "U.S. Geological Survey Publications Warehouse",
+          "published_at": "1973-01-01T00:00:00Z",
+          "headline": "Flood of September 3, 1972, Hillsboro, New Mexico (Open-File Report 73-356)",
+          "byline": null,
+          "accessed_utc": "2026-01-19T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Geological Survey",
+          "USGS"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "Percha Creek"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Flood of September 3, 1972, Hillsboro, New Mexico",
+            "source_url": "https://www.usgs.gov/publications/flood-september-3-1972-hillsboro-new-mexico"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.58,
+        "category": 0.75,
+        "location": 0.55,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "1972-09-03 Hillsboro NM flood (USGS)",
+        "fingerprint": "fp_hillsboro_nm_flood_19720903"
+      }
+    },
+    {
+      "event_id": "evt_akutan_1972-09_eruption_start",
+      "title": "Akutan Volcano eruptive activity reported to begin in September 1972",
+      "description": "The Alaska Volcano Observatory describes eruptive activity at Akutan Volcano as beginning in September 1972 and continuing into 1973. The AVO record notes reported ash/steam activity over multiple months and references satellite imagery from September 1972 showing unusual snow-free conditions.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2026-01-19T05:08:53.975Z",
+        "time_confidence": 0.55,
+        "event_date_utc": null,
+        "event_date_precision": "month"
+      },
+      "location": {
+        "name": "Akutan Volcano, Aleutian Islands, Alaska, United States",
+        "jurisdiction_level": "site",
+        "admin1": "Alaska",
+        "country": "US",
+        "capital_used": null,
+        "lat": 54.133,
+        "lon": -165.986,
+        "precision": "exact",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.75
+      },
+      "sources": [
+        {
+          "url": "https://avo.alaska.edu/eruption/akutan-1972-9",
+          "source_name": "Alaska Volcano Observatory (AVO)",
+          "published_at": "2026-01-19T05:08:53.975Z",
+          "headline": "Akutan 1972/09",
+          "byline": null,
+          "accessed_utc": "2026-01-19T05:08:53.975Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Alaska Volcano Observatory"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Akutan 1972/09",
+            "source_url": "https://avo.alaska.edu/eruption/akutan-1972-9"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.63,
+        "category": 0.8,
+        "location": 0.75,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "akutan-volcano-1972-09",
+        "fingerprint": "fp_akutan_volcano_1972-09"
+      }
+    },
+    {
+      "event_id": "fws-19720917-seal-beach-nwr-authorization",
+      "title": "Seal Beach National Wildlife Refuge authorized to protect coastal salt marsh habitat",
+      "description": "A U.S. Fish and Wildlife Service news release dated September 17, 1972 reported that legislation signed by President Richard Nixon authorized establishment of the Seal Beach National Wildlife Refuge. The release described the refuge as protecting a large undisturbed coastal salt marsh and associated wildlife values, including habitat for migratory birds and listed species.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "1972-09-17T12:00:00Z",
+        "event_end": "1972-09-17T12:00:00Z",
+        "reported_at": "1972-09-17T00:00:00Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "1972-09-17T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Seal Beach, California, United States",
+        "jurisdiction_level": "city",
+        "admin1": "California",
+        "country": "US",
+        "capital_used": null,
+        "lat": 33.7414,
+        "lon": -118.1048,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://www.fws.gov/sites/default/files/documents/historic-news-releases/1972/19720917.PDF",
+          "source_name": "U.S. Fish and Wildlife Service",
+          "published_at": "1972-09-17T00:00:00Z",
+          "headline": "Historic News Release (1972-09-17)",
+          "byline": null,
+          "accessed_utc": "2026-01-19T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Fish and Wildlife Service",
+          "Migratory Bird Conservation Commission"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "coastal salt marsh"
+        ],
+        "people": [
+          "Richard Nixon"
+        ]
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "legislation signed by President Richard Nixon authorized establishment of the Seal Beach National Wildlife Refuge",
+            "source_url": "https://www.fws.gov/sites/default/files/documents/historic-news-releases/1972/19720917.PDF"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.68,
+        "category": 0.75,
+        "location": 0.7,
+        "summary_grounding": 0.65
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "paywalled_or_partial"
+      ],
+      "dedupe": {
+        "cluster_hint": "fws_historic_news_release_1972_09_17_seal_beach_nwr",
+        "fingerprint": "fws-19720917-seal-beach-nwr-authorization|seal-beach-ca|1972-09-17"
+      }
+    },
+    {
+      "event_id": "fws-19720929-mbcc-refuge-additions-chassahowitzka-brazoria",
+      "title": "Migratory Bird Conservation Commission approves refuge land additions in Florida and Texas",
+      "description": "A U.S. Fish and Wildlife Service news release dated September 29, 1972 reported that the Migratory Bird Conservation Commission approved purchases adding acreage to Chassahowitzka National Wildlife Refuge in Florida and Brazoria National Wildlife Refuge in Texas. The action was described as supporting refuge acquisition and strengthening habitat protection for waterfowl and other wildlife along the Gulf of Mexico.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "1972-09-29T12:00:00Z",
+        "event_end": "1972-09-29T12:00:00Z",
+        "reported_at": "1972-09-29T00:00:00Z",
+        "time_confidence": 0.65,
+        "event_date_utc": "1972-09-29T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Washington, DC, United States (MBCC approval reported by USFWS)",
+        "jurisdiction_level": "city",
+        "admin1": "District of Columbia",
+        "country": "US",
+        "capital_used": null,
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "city",
+        "location_basis": "institution_proxy",
+        "location_confidence": 0.45
+      },
+      "sources": [
+        {
+          "url": "https://www.fws.gov/sites/default/files/documents/historic-news-releases/1972/19720929.PDF",
+          "source_name": "U.S. Fish and Wildlife Service",
+          "published_at": "1972-09-29T00:00:00Z",
+          "headline": "Historic News Release (1972-09-29)",
+          "byline": null,
+          "accessed_utc": "2026-01-19T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Fish and Wildlife Service",
+          "Migratory Bird Conservation Commission"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "the Migratory Bird Conservation Commission approved purchases adding acreage to Chassahowitzka and Brazoria National Wildlife Refuges",
+            "source_url": "https://www.fws.gov/sites/default/files/documents/historic-news-releases/1972/19720929.PDF"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.7,
+        "location": 0.45,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "paywalled_or_partial"
+      ],
+      "dedupe": {
+        "cluster_hint": "fws_historic_news_release_1972_09_29_mbcc_refuge_additions",
+        "fingerprint": "fws-19720929-mbcc-refuge-additions-chassahowitzka-brazoria|institution_proxy_washington_dc|1972-09-29"
+      }
+    },
+    {
+      "event_id": "1972-09-in-wildlife-protection-act-1972-enacted",
+      "title": "India enacts the Wild Life (Protection) Act, 1972",
+      "description": "India enacted the Wild Life (Protection) Act, 1972 (Act No. 53 of 1972), establishing a national legal framework for the protection of wild animals, birds, and plants.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "1972-09-09T12:00:00Z",
+        "event_end": "1972-09-09T12:00:00Z",
+        "reported_at": "1972-09-09T12:00:00Z",
+        "time_confidence": 0.4,
+        "event_date_utc": "1972-09-09T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "India (national)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "IN",
+        "capital_used": "New Delhi",
+        "lat": 28.6139,
+        "lon": 77.209,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.9
+      },
+      "sources": [
+        {
+          "url": "https://www.indiacode.nic.in/handle/123456789/1726",
+          "source_name": "India Code",
+          "published_at": "1972-09-09T12:00:00Z",
+          "headline": "The Wild Life (Protection) Act, 1972",
+          "byline": null,
+          "accessed_utc": "2026-01-19T05:09:56.801Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Government of India"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.8,
+        "location": 0.9,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "India Wild Life (Protection) Act 1972 enactment",
+        "fingerprint": "fp_1972-09_india_wildlife_protection_act_1972_new_delhi_1972-09-09"
+      }
+    }
+  ]
+}

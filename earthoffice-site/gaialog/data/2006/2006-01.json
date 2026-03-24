@@ -1,0 +1,580 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_2006-01_normalize_2026-01-16T031545808Z",
+    "generated_utc": "2026-01-16T03:15:45.808Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "2006-01",
+    "window": {
+      "start_utc": "2006-01-01T00:00:00.000Z",
+      "end_utc": "2006-01-31T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "evt_200601_rockefeller_university_mercury_spill_case_report",
+      "title": "Case report describes mercury contamination incident at Rockefeller University",
+      "description": "A case report in the Journal of Chemical Health & Safety describes an incident at Rockefeller University in which mercury from a thermometer was heated until vaporized in an unventilated cold room, leading to contamination. The report discusses hazards and cleanup effectiveness following the incident.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2006-01-01T00:00:00.000Z",
+        "time_confidence": 0.5,
+        "event_date_utc": "2006-01-01T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "New York City, New York, United States",
+        "jurisdiction_level": "city",
+        "admin1": "New York",
+        "country": "US",
+        "capital_used": null,
+        "lat": 40.7128,
+        "lon": -74.006,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://pubs.acs.org/doi/10.1016/j.chs.2005.01.014",
+          "source_name": "ACS Publications",
+          "published_at": "2006-01-01T00:00:00.000Z",
+          "headline": "Mercury spill contamination incident at Rockefeller University described in Journal of Chemical Health & Safety",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.sciencedirect.com/science/article/abs/pii/S1074909805000286",
+          "source_name": "ScienceDirect",
+          "published_at": "2006-01-01T00:00:00.000Z",
+          "headline": "Mercury spill contamination incident at Rockefeller University described in Journal of Chemical Health & Safety",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Rockefeller University",
+          "Journal of Chemical Health & Safety"
+        ],
+        "substances": [
+          "mercury"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.58,
+        "category": 0.75,
+        "location": 0.6,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "paywalled_or_partial"
+      ],
+      "dedupe": {
+        "cluster_hint": "rockefeller_university_mercury_vapor_cold_room",
+        "fingerprint": "fp_200601_rockefeller_university_mercury_vapor_cold_room_nyc_2006-01-01"
+      }
+    },
+    {
+      "event_id": "2006-01_weather_climate_cyclone_clare_pilbara_au",
+      "title": "Severe Tropical Cyclone Clare impacts Western Australia with damaging winds and heavy rain",
+      "description": "Severe Tropical Cyclone Clare affected Western Australia's Pilbara coast in early January 2006, bringing strong winds and heavy rainfall. The Bureau of Meteorology event page describes impacts consistent with damaging winds and flooding rains in the region.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2006-01-06T00:00:00.000Z",
+        "event_end": "2006-01-10T23:59:59.000Z",
+        "reported_at": "2006-01-10T23:59:59.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": null,
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Pilbara region, Western Australia, Australia",
+        "jurisdiction_level": "state",
+        "admin1": "Western Australia",
+        "country": "AU",
+        "capital_used": "Perth",
+        "lat": -31.9523,
+        "lon": 115.8613,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.65
+      },
+      "sources": [
+        {
+          "url": "https://www.bom.gov.au/cyclone/history/clare.shtml",
+          "source_name": "Australian Bureau of Meteorology",
+          "published_at": "2006-01-10T23:59:59.000Z",
+          "headline": "Tropical Cyclone Clare",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Australian Bureau of Meteorology"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Tropical Cyclone Clare",
+            "source_url": "https://www.bom.gov.au/cyclone/history/clare.shtml"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.8,
+        "location": 0.65,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Severe Tropical Cyclone Clare (2006) - Western Australia",
+        "fingerprint": "evt_2006-01_weather_climate_cyclone_clare_western_australia_2006-01-06_2006-01-10"
+      }
+    },
+    {
+      "event_id": "2006-01_weather_climate_flooding_malawi_mozambique_zambezi",
+      "title": "Flooding persists in southern Malawi and central Mozambique; Zambezi River flooding prompts evacuations",
+      "description": "Climate impacts reporting for early 2006 notes that flooding continued in southern Malawi and central Mozambique during January 2006. The same reporting references flooding in the Zambezi River basin with evacuations mentioned.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2006-01-01T00:00:00.000Z",
+        "event_end": "2006-01-31T23:59:59.000Z",
+        "reported_at": "2006-02-01T00:00:00.000Z",
+        "time_confidence": 0.4,
+        "event_date_utc": null,
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Southern Malawi and central Mozambique (including Zambezi River basin)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "MZ",
+        "capital_used": "Maputo",
+        "lat": -25.9653,
+        "lon": 32.5892,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.35
+      },
+      "sources": [
+        {
+          "url": "https://iri.columbia.edu/climate/cid/Feb2006/impacts.html",
+          "source_name": "IRI (Columbia University) - Climate Impacts Database",
+          "published_at": "2006-02-01T00:00:00.000Z",
+          "headline": "Climate Impacts Database (Feb 2006) - impacts",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://iri.columbia.edu/climate/cid/Feb2006/impactc.html",
+          "source_name": "IRI (Columbia University) - Climate Impacts Database",
+          "published_at": "2006-02-01T00:00:00.000Z",
+          "headline": "Climate Impacts Database (Feb 2006) - impactc",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "International Research Institute for Climate and Society (IRI), Columbia University"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "Zambezi River basin"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "impacts",
+            "source_url": "https://iri.columbia.edu/climate/cid/Feb2006/impacts.html"
+          },
+          {
+            "quote": "impactc",
+            "source_url": "https://iri.columbia.edu/climate/cid/Feb2006/impactc.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.4,
+        "category": 0.75,
+        "location": 0.35,
+        "summary_grounding": 0.35
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check",
+        "low_confidence_location"
+      ],
+      "dedupe": {
+        "cluster_hint": "Jan 2006 flooding - Malawi/Mozambique/Zambezi",
+        "fingerprint": "evt_2006-01_weather_climate_flooding_malawi_mozambique_zambezi_2006-01"
+      }
+    },
+    {
+      "event_id": "2006-01_weather_climate_cold_snap_europe_abc_2006_01_29",
+      "title": "Late-January 2006 cold snap causes disruption and reported fatalities across parts of Europe",
+      "description": "A January 29, 2006 report describes freezing temperatures affecting several European countries, with transport disruptions noted. The report also mentions deaths and injuries associated with the cold conditions in multiple locations.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2006-01-29T00:00:00.000Z",
+        "event_end": "2006-01-29T23:59:59.000Z",
+        "reported_at": "2006-01-29T00:00:00.000Z",
+        "time_confidence": 0.75,
+        "event_date_utc": "2006-01-29T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Europe (multiple countries)",
+        "jurisdiction_level": "supranational",
+        "admin1": null,
+        "country": null,
+        "capital_used": "Brussels",
+        "lat": 50.8467,
+        "lon": 4.3525,
+        "precision": "supranational",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.5
+      },
+      "sources": [
+        {
+          "url": "https://www.abc.net.au/news/2006-01-29/freezing-weather-wreaks-havoc-across-europe/787714",
+          "source_name": "ABC News (Australia)",
+          "published_at": "2006-01-29T00:00:00.000Z",
+          "headline": "Freezing weather wreaks havoc across Europe",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "ABC News (Australia)"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Freezing weather wreaks havoc across Europe",
+            "source_url": "https://www.abc.net.au/news/2006-01-29/freezing-weather-wreaks-havoc-across-europe/787714"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.7,
+        "location": 0.5,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Europe cold snap - 2006-01-29",
+        "fingerprint": "evt_2006-01_weather_climate_cold_snap_europe_2006-01-29"
+      }
+    },
+    {
+      "event_id": "evt_200601_augustine_volcano_explosive_phase",
+      "title": "Augustine Volcano begins explosive eruption phase",
+      "description": "Augustine Volcano in Alaska entered an eruptive period in January 2006, including explosive activity that produced ash clouds. The event posed aviation and ash-fall hazards during the month, with activity documented by USGS and NASA materials.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2006-01-11T00:00:00.000Z",
+        "event_end": "2006-01-31T23:59:59.000Z",
+        "reported_at": "2006-01-31T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2006-01-11T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Augustine Volcano, Cook Inlet, Alaska, United States",
+        "jurisdiction_level": "site",
+        "admin1": "Alaska",
+        "country": "US",
+        "capital_used": null,
+        "lat": 59.363,
+        "lon": -153.43,
+        "precision": "exact",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.75
+      },
+      "sources": [
+        {
+          "url": "https://www.usgs.gov/publications/predicting-and-validating-motion-ash-cloud-during-2006-eruption-mount-augustine",
+          "source_name": "USGS",
+          "published_at": "2006-01-01T00:00:00Z",
+          "headline": "Predicting and Validating the Motion of the Ash Cloud During the 2006 Eruption of Mount Augustine",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://science.nasa.gov/photojournal/augustine-volcano-cook-inlet-alaska-january-31-2006/",
+          "source_name": "NASA",
+          "published_at": "2006-01-31T00:00:00Z",
+          "headline": "Augustine Volcano, Cook Inlet, Alaska (January 31, 2006)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.usgs.gov/publications/a-parametric-study-january-2006-explosive-eruptions-augustine-volcano-using-seismic",
+          "source_name": "USGS",
+          "published_at": "2006-01-01T00:00:00Z",
+          "headline": "A Parametric Study of the January 2006 Explosive Eruptions of Augustine Volcano Using Seismic Data",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "USGS",
+          "NASA"
+        ],
+        "substances": [
+          "volcanic ash"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "...during the 2006 eruption of Mount Augustine... ash cloud...",
+            "source_url": "https://www.usgs.gov/publications/predicting-and-validating-motion-ash-cloud-during-2006-eruption-mount-augustine"
+          },
+          {
+            "quote": "Augustine Volcano, Cook Inlet, Alaska (January 31, 2006)",
+            "source_url": "https://science.nasa.gov/photojournal/augustine-volcano-cook-inlet-alaska-january-31-2006/"
+          },
+          {
+            "quote": "...January 2006 explosive eruptions of Augustine Volcano...",
+            "source_url": "https://www.usgs.gov/publications/a-parametric-study-january-2006-explosive-eruptions-augustine-volcano-using-seismic"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.85,
+        "location": 0.75,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Augustine Volcano January 2006 eruption",
+        "fingerprint": "fp_augustine_2006-01_us_alaska_eruption"
+      }
+    },
+    {
+      "event_id": "2006-01_fires_table-mountain-wildfire_cape-town_01",
+      "title": "Table Mountain wildfire in Table Mountain National Park",
+      "description": "A wildfire burned in and around Table Mountain National Park near Cape Town in late January 2006. Reports described dry conditions and strong winds contributing to the fire and threatening nearby areas.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2006-01-26T00:00:00.000Z",
+        "event_end": "2006-01-28T23:59:59.000Z",
+        "reported_at": "2006-01-28T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2006-01-26T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Cape Town (Table Mountain National Park), South Africa",
+        "jurisdiction_level": "city",
+        "admin1": "Western Cape",
+        "country": "ZA",
+        "capital_used": null,
+        "lat": -33.9249,
+        "lon": 18.4241,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://apnews.com/article/419adfc3283dfb8d4cfc9a36d40bb8c1",
+          "source_name": "AP News",
+          "published_at": "2006-01-28T00:00:00.000Z",
+          "headline": "Table Mountain wildfire in Cape Town under control",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.capetownmagazine.com/news/fire-table-mountain-in-cape-town-under-control/10_22_1212",
+          "source_name": "CapeTownMagazine.com",
+          "published_at": "2006-01-28T00:00:00.000Z",
+          "headline": "Fire Table Mountain in Cape Town under control",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [
+          "fynbos"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "wildfire ... on Table Mountain ... under control",
+            "source_url": "https://apnews.com/article/419adfc3283dfb8d4cfc9a36d40bb8c1"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.8,
+        "location": 0.7,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Table Mountain wildfire Jan 2006",
+        "fingerprint": "2006-01|fires|table mountain wildfire|cape town|2006-01-26_2006-01-28"
+      }
+    },
+    {
+      "event_id": "2006-01-25_djibouti_opcw_cwc_ratification",
+      "title": "Djibouti deposits instrument of ratification of the Chemical Weapons Convention (CWC)",
+      "description": "According to the OPCW, Djibouti deposited its instrument of ratification of the Chemical Weapons Convention on 25 January 2006. The OPCW noted the Convention would enter into force for Djibouti 30 days after the deposit.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "2006-01-25T00:00:00.000Z",
+        "event_end": "2006-01-25T23:59:59.000Z",
+        "reported_at": "2006-01-25T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2006-01-25T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Djibouti",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "DJ",
+        "capital_used": "Djibouti",
+        "lat": 11.588333,
+        "lon": 43.145,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.8
+      },
+      "sources": [
+        {
+          "url": "https://www.opcw.org/media-centre/news/2006/01/djibouti-ratifies-chemical-weapons-convention",
+          "source_name": "OPCW",
+          "published_at": "2006-01-25T00:00:00.000Z",
+          "headline": "Djibouti Ratifies the Chemical Weapons Convention",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "OPCW"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Djibouti deposited its instrument of ratification of the Chemical Weapons Convention on 25 January 2006.",
+            "source_url": "https://www.opcw.org/media-centre/news/2006/01/djibouti-ratifies-chemical-weapons-convention"
+          },
+          {
+            "quote": "The Convention will enter into force for Djibouti 30 days after the deposit.",
+            "source_url": "https://www.opcw.org/media-centre/news/2006/01/djibouti-ratifies-chemical-weapons-convention"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.74,
+        "category": 0.8,
+        "location": 0.8,
+        "summary_grounding": 0.7
+      },
+      "quality_flags": [
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "opcw_cwc_ratification_djibouti_2006-01-25",
+        "fingerprint": "opcw_cwc_ratification_djibouti_2006-01-25"
+      }
+    }
+  ]
+}

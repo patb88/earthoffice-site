@@ -1,0 +1,770 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_2018-09_normalize_2026-01-16T063325899Z",
+    "generated_utc": "2026-01-16T06:33:25.899Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "2018-09",
+    "window": {
+      "start_utc": "2018-09-01T00:00:00.000Z",
+      "end_utc": "2018-09-30T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "2018-09_pollution_contamination_port-reading-nj_diesel-spill-arthur-kill",
+      "title": "Diesel fuel spill near Buckeye Terminal affects Arthur Kill waterway",
+      "description": "A mechanical failure during a barge loading operation led to a reported diesel spill near Port Reading (Woodbridge Township), New Jersey, creating a visible sheen in the Arthur Kill. Containment and recovery operations were initiated in response to the spill.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2018-09-06T00:00:00.000Z",
+        "event_end": "2018-09-13T00:00:00.000Z",
+        "reported_at": "2018-09-01T00:00:00.000Z",
+        "time_confidence": 0.5,
+        "event_date_utc": "2018-09-06T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Port Reading (Woodbridge Township), New Jersey, USA (Arthur Kill waterway)",
+        "jurisdiction_level": "site",
+        "admin1": "New Jersey",
+        "country": "US",
+        "capital_used": null,
+        "lat": 40.5637,
+        "lon": -74.2563,
+        "precision": "neighborhood",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://blog.response.restoration.noaa.gov/september-2018-incidents-fiscal-year-ends-over-200-spill-responses",
+          "source_name": "NOAA Response & Restoration Blog",
+          "published_at": "2018-09-01T00:00:00.000Z",
+          "headline": "September 2018 Incidents: Fiscal Year Ends Over 200 Spill Responses",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA"
+        ],
+        "substances": [
+          "diesel fuel"
+        ],
+        "ecosystems": [
+          "Arthur Kill"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "reported 5,000-gallon diesel spill near Port Reading, New Jersey",
+            "source_url": "https://blog.response.restoration.noaa.gov/september-2018-incidents-fiscal-year-ends-over-200-spill-responses"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.46,
+        "category": 0.75,
+        "location": 0.55,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Port Reading diesel spill Arthur Kill (Sep 2018)",
+        "fingerprint": "fp_2018-09_port-reading_nj_diesel_arthur-kill"
+      }
+    },
+    {
+      "event_id": "2018-09_pollution_contamination_revere-ma_anhydrous-ammonia_release",
+      "title": "Anhydrous ammonia release at NECCO plant in Revere, Massachusetts",
+      "description": "An anhydrous ammonia release occurred at a facility in Revere, Massachusetts, described as involving cross-contamination with copper piping and an anhydrous ammonia tank. Response coordination involved the U.S. Coast Guard and NOAA per incident reporting.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2018-09-11T00:00:00.000Z",
+        "event_end": "2018-09-11T23:59:59.000Z",
+        "reported_at": "2018-09-01T00:00:00.000Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "2018-09-11T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Revere, Massachusetts, USA",
+        "jurisdiction_level": "city",
+        "admin1": "Massachusetts",
+        "country": "US",
+        "capital_used": null,
+        "lat": 42.4084,
+        "lon": -71.011,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.8
+      },
+      "sources": [
+        {
+          "url": "https://incidentnews.noaa.gov/incident/9793",
+          "source_name": "NOAA IncidentNews",
+          "published_at": "2018-09-01T00:00:00.000Z",
+          "headline": "Incident 9793",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://blog.response.restoration.noaa.gov/september-2018-incidents-fiscal-year-ends-over-200-spill-responses",
+          "source_name": "NOAA Response & Restoration Blog",
+          "published_at": "2018-09-01T00:00:00.000Z",
+          "headline": "September 2018 Incidents: Fiscal Year Ends Over 200 Spill Responses",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA",
+          "U.S. Coast Guard"
+        ],
+        "substances": [
+          "anhydrous ammonia"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "A release of anhydrous ammonia occurred",
+            "source_url": "https://incidentnews.noaa.gov/incident/9793"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.52,
+        "category": 0.8,
+        "location": 0.8,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Revere MA NECCO anhydrous ammonia release (Sep 2018)",
+        "fingerprint": "fp_2018-09_revere_ma_ammonia_release"
+      }
+    },
+    {
+      "event_id": "2018-09_pollution_contamination_wilmington-nc_sutton-dam-breach_coal-ash-concerns",
+      "title": "Sutton Lake dam breach during Hurricane Florence prompts coal ash contamination monitoring",
+      "description": "Flooding associated with Hurricane Florence led to a breach in the Sutton Lake dam at Duke Energy’s L.V. Sutton facility near Wilmington, North Carolina. State regulators reported the breach and monitored coal ash basins amid concerns that coal combustion residuals could enter Sutton Lake and the Cape Fear River.",
+      "category_primary": "pollution_contamination",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "2018-09-21T00:00:00.000Z",
+        "event_end": "2018-09-24T23:59:59.000Z",
+        "reported_at": "2018-09-21T00:00:00.000Z",
+        "time_confidence": 0.75,
+        "event_date_utc": "2018-09-21T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "L.V. Sutton Power Station / Sutton Lake, Wilmington, North Carolina, USA",
+        "jurisdiction_level": "site",
+        "admin1": "North Carolina",
+        "country": "US",
+        "capital_used": null,
+        "lat": 34.1706,
+        "lon": -77.9447,
+        "precision": "neighborhood",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.deq.nc.gov/news/press-releases/2018/09/21/statement-sutton-plant",
+          "source_name": "North Carolina Department of Environmental Quality",
+          "published_at": "2018-09-21T00:00:00.000Z",
+          "headline": "Statement on Sutton Plant",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.cnbc.com/2018/09/21/duke-energy-says-dam-breached-at-north-carolina-plant-and-coal-ash-may-be-flowing-into-cape-fear-river.html",
+          "source_name": "CNBC",
+          "published_at": "2018-09-21T00:00:00.000Z",
+          "headline": "Duke Energy says dam breached at North Carolina plant and coal ash may be flowing into Cape Fear River",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.insurancejournal.com/news/southeast/2018/09/24/502096.htm",
+          "source_name": "Insurance Journal",
+          "published_at": "2018-09-24T00:00:00.000Z",
+          "headline": "Article 502096",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Duke Energy",
+          "North Carolina Department of Environmental Quality"
+        ],
+        "substances": [
+          "coal ash",
+          "coal combustion residuals"
+        ],
+        "ecosystems": [
+          "Sutton Lake",
+          "Cape Fear River"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "breaches in the Sutton Lake dam at Duke Energy’s Sutton facility",
+            "source_url": "https://www.deq.nc.gov/news/press-releases/2018/09/21/statement-sutton-plant"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.68,
+        "category": 0.75,
+        "location": 0.6,
+        "summary_grounding": 0.65
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Sutton Lake dam breach coal ash monitoring Hurricane Florence (Sep 2018)",
+        "fingerprint": "fp_2018-09_sutton_nc_dam_breach_coal_ash"
+      }
+    },
+    {
+      "event_id": "2018-09_weather_climate_florence_carolinas",
+      "title": "Hurricane Florence brings record rainfall and historic flooding in the Carolinas",
+      "description": "Hurricane Florence made landfall on September 14, 2018 and then slowed, producing very heavy rainfall and widespread flooding in parts of North Carolina and South Carolina. USGS reported preliminary peak stage and streamflow data associated with the flooding, and NASA documented extensive inundation impacts.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2018-09-14T00:00:00.000Z",
+        "event_end": "2018-09-18T23:59:59.000Z",
+        "reported_at": "2018-09-14T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2018-09-14T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "North Carolina and South Carolina, USA",
+        "jurisdiction_level": "state",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Raleigh, NC",
+        "lat": 35.7796,
+        "lon": -78.6382,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.45
+      },
+      "sources": [
+        {
+          "url": "https://www.weather.gov/ilm/hurricaneflorence",
+          "source_name": "US National Weather Service (NWS)",
+          "published_at": "2018-09-14T00:00:00.000Z",
+          "headline": "Hurricane Florence",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.usgs.gov/news/hurricane-florence-preliminary-peak-stage-and-streamflow-data-report",
+          "source_name": "USGS",
+          "published_at": "2018-09-14T00:00:00.000Z",
+          "headline": "Hurricane Florence Preliminary Peak Stage and Streamflow Data Report",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://science.nasa.gov/earth/earth-observatory/florence-inundates-the-carolinas-92775/",
+          "source_name": "NASA Earth Observatory",
+          "published_at": "2018-09-27T00:00:00.000Z",
+          "headline": "Florence Inundates the Carolinas",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "US National Weather Service",
+          "USGS",
+          "NASA"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.8,
+        "location": 0.45,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "low_confidence_location",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Hurricane Florence flooding Carolinas Sept 2018",
+        "fingerprint": "fp_2018-09_florence_carolinas"
+      }
+    },
+    {
+      "event_id": "2018-09_weather_climate_mangkhut_luzon_china",
+      "title": "Super Typhoon Mangkhut (Ompong) causes severe flooding and wind damage across Luzon and later impacts Hong Kong/Guangdong",
+      "description": "Super Typhoon Mangkhut impacted northern Philippines (Luzon) with very strong winds and heavy rain and then moved into southern China, affecting Hong Kong and Guangdong with damaging winds and flooding. NOAA satellite reporting and other media accounts described widespread destruction and coastal/urban impacts along its track.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2018-09-15T00:00:00.000Z",
+        "event_end": "2018-09-16T23:59:59.000Z",
+        "reported_at": "2018-09-15T00:00:00.000Z",
+        "time_confidence": 0.65,
+        "event_date_utc": "2018-09-15T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Northern Philippines (Luzon), then Hong Kong and Guangdong, China",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "PH",
+        "capital_used": "Manila",
+        "lat": 14.5995,
+        "lon": 120.9842,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.35
+      },
+      "sources": [
+        {
+          "url": "https://www.nesdis.noaa.gov/news/typhoon-mangkhut-slams-china-and-the-philippines",
+          "source_name": "NOAA NESDIS",
+          "published_at": "2018-09-16T00:00:00.000Z",
+          "headline": "Typhoon Mangkhut Slams China and the Philippines",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.dw.com/en/typhoon-mangkhut-leaves-trail-of-destruction-in-china/a-45514612",
+          "source_name": "Deutsche Welle (DW)",
+          "published_at": "2018-09-16T00:00:00.000Z",
+          "headline": "Typhoon Mangkhut leaves trail of destruction in China",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://en.people.cn/n3/2018/0916/c90000-9500747.html",
+          "source_name": "People.cn",
+          "published_at": "2018-09-16T00:00:00.000Z",
+          "headline": "Typhoon Mangkhut hits south China",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA NESDIS",
+          "Deutsche Welle",
+          "People.cn"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.56,
+        "category": 0.75,
+        "location": 0.35,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "low_confidence_location",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Typhoon Mangkhut (Ompong) Sept 2018 Luzon to South China",
+        "fingerprint": "fp_2018-09_mangkhut_luzon_china"
+      }
+    },
+    {
+      "event_id": "evt_20180928_sulawesi_palu_bay_eq_tsunami",
+      "title": "Central Sulawesi earthquake triggers tsunami and liquefaction around Palu Bay",
+      "description": "A magnitude 7.5 earthquake struck near Central Sulawesi, Indonesia, generating a tsunami and causing severe liquefaction and landslide-related impacts in areas around Palu Bay. The event heavily affected communities including Palu and surrounding districts.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2019-12-02T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2018-09-28T10:02:43.000Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Central Sulawesi (Palu/Donggala/Sigi), Indonesia",
+        "jurisdiction_level": "state",
+        "admin1": "Central Sulawesi",
+        "country": "ID",
+        "capital_used": "Palu",
+        "lat": -0.9,
+        "lon": 119.87,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.75
+      },
+      "sources": [
+        {
+          "url": "https://www.ngdc.noaa.gov/hazard/28sep2018.html",
+          "source_name": "NOAA NCEI (NGDC) Natural Hazards",
+          "published_at": "2018-09-28T00:00:00Z",
+          "headline": "28 September 2018 Sulawesi earthquake and tsunami",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://nctr.pmel.noaa.gov/sulawesi20180928/",
+          "source_name": "NOAA PMEL (NCTR)",
+          "published_at": "2018-09-28T00:00:00Z",
+          "headline": "Sulawesi 20180928 event page",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://nhess.copernicus.org/articles/19/2781/2019/",
+          "source_name": "Natural Hazards and Earth System Sciences (Copernicus)",
+          "published_at": "2019-12-02T00:00:00Z",
+          "headline": "Natural Hazards and Earth System Sciences, Volume 19, Pages 2781–2801 (2019)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA NCEI",
+          "NOAA PMEL"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "M 7.5 - 70km N of Palu, Indonesia",
+            "source_url": "https://www.ngdc.noaa.gov/hazard/28sep2018.html"
+          },
+          {
+            "quote": "Sulawesi 20180928",
+            "source_url": "https://nctr.pmel.noaa.gov/sulawesi20180928/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.7,
+        "category": 0.85,
+        "location": 0.75,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "needs_dedupe_check",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "2018-09-28 Central Sulawesi Indonesia earthquake tsunami Palu Bay",
+        "fingerprint": "fp_20180928_central_sulawesi_palu_bay_eq_tsunami"
+      }
+    },
+    {
+      "event_id": "fires-us-ca-delta-fire-2018-09",
+      "title": "Delta Fire expands in Northern California, prompting evacuations and Interstate 5 disruptions",
+      "description": "In early September 2018, the Delta Fire in Northern California expanded rapidly, leading to evacuations and disruptions including closures affecting Interstate 5. The incident generated significant smoke impacts in the surrounding area.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2018-09-05T00:00:00.000Z",
+        "event_end": "2018-09-30T23:59:59.000Z",
+        "reported_at": "2018-09-06T00:00:00Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "2018-09-05T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "California, USA",
+        "jurisdiction_level": "state",
+        "admin1": "California",
+        "country": "US",
+        "capital_used": "Sacramento",
+        "lat": 38.5767,
+        "lon": -121.4944,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.65
+      },
+      "sources": [
+        {
+          "url": "https://time.com/5389049/delta-fire-california-map/",
+          "source_name": "Time",
+          "published_at": "2018-09-06T00:00:00Z",
+          "headline": "Delta Fire California Map",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "The Delta Fire grew quickly... prompting evacuations and closing a long stretch of Interstate 5",
+            "source_url": "https://time.com/5389049/delta-fire-california-map/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.7,
+        "location": 0.65,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "paywalled_or_partial",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Delta Fire (California) September 2018",
+        "fingerprint": "fires|delta fire expands in northern california, prompting evacuations and interstate 5 disruptions|california, usa|2018-09"
+      }
+    },
+    {
+      "event_id": "20180920_ca_ab1884_straws_on_request",
+      "title": "California enacts AB 1884 requiring plastic straws only upon request at full-service restaurants",
+      "description": "California Governor Jerry Brown signed AB 1884, requiring full-service restaurants to provide single-use plastic straws only upon customer request. The law was reported as taking effect January 1, 2019.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2018-09-20T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2018-09-20T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "California, USA",
+        "jurisdiction_level": "state",
+        "admin1": "California",
+        "country": "US",
+        "capital_used": "Sacramento",
+        "lat": 38.5816,
+        "lon": -121.4944,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.85
+      },
+      "sources": [
+        {
+          "url": "https://legiscan.com/CA/text/AB1884/id/1820628",
+          "source_name": "LegiScan",
+          "published_at": "2018-09-20T00:00:00.000Z",
+          "headline": "AB 1884",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.cnbc.com/2018/09/20/california-gov-jerry-brown-signs-bill-to-reduce-plastic-straw-use.html",
+          "source_name": "CNBC",
+          "published_at": "2018-09-20T00:00:00.000Z",
+          "headline": "California Gov. Jerry Brown signs bill to reduce plastic straw use",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "California State Government"
+        ],
+        "substances": [
+          "single-use plastic"
+        ],
+        "ecosystems": [],
+        "people": [
+          "Jerry Brown"
+        ]
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Governor Jerry Brown signed AB 1884",
+            "source_url": "https://www.cnbc.com/2018/09/20/california-gov-jerry-brown-signs-bill-to-reduce-plastic-straw-use.html"
+          },
+          {
+            "quote": "full-service restaurants provide single-use straws upon request",
+            "source_url": "https://www.cnbc.com/2018/09/20/california-gov-jerry-brown-signs-bill-to-reduce-plastic-straw-use.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.72,
+        "category": 0.8,
+        "location": 0.85,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "paywalled_or_partial"
+      ],
+      "dedupe": {
+        "cluster_hint": "CA AB1884 plastic straws on request",
+        "fingerprint": "20180920|california|ab1884|straws_on_request"
+      }
+    },
+    {
+      "event_id": "20180912_global_climate_action_summit_sf",
+      "title": "Global Climate Action Summit held in San Francisco to advance non-state climate commitments",
+      "description": "The Global Climate Action Summit took place in San Francisco from September 12–14, 2018. The event convened governments, cities, businesses, and NGOs to showcase and accelerate climate action commitments.",
+      "category_primary": "policy_regulation",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "2018-09-12T00:00:00.000Z",
+        "event_end": "2018-09-14T23:59:59.000Z",
+        "reported_at": "2018-09-12T00:00:00.000Z",
+        "time_confidence": 0.8,
+        "event_date_utc": null,
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "San Francisco, California, USA",
+        "jurisdiction_level": "city",
+        "admin1": "California",
+        "country": "US",
+        "capital_used": null,
+        "lat": 37.7749,
+        "lon": -122.4194,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.9
+      },
+      "sources": [
+        {
+          "url": "https://www.wri.org/events/2018/09/global-climate-action-summit",
+          "source_name": "World Resources Institute",
+          "published_at": "2018-09-12T00:00:00.000Z",
+          "headline": "Global Climate Action Summit",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "World Resources Institute"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Global Climate Action Summit",
+            "source_url": "https://www.wri.org/events/2018/09/global-climate-action-summit"
+          },
+          {
+            "quote": "September 12–14, 2018",
+            "source_url": "https://www.wri.org/events/2018/09/global-climate-action-summit"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.68,
+        "category": 0.6,
+        "location": 0.9,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "Global Climate Action Summit 2018 San Francisco",
+        "fingerprint": "20180912-20180914|san_francisco_ca|global_climate_action_summit"
+      }
+    }
+  ]
+}

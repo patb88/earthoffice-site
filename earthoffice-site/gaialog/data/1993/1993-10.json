@@ -1,0 +1,837 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_1993-10_normalize_2026-01-17T175210405Z",
+    "generated_utc": "2026-01-17T17:52:10.405Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "1993-10",
+    "window": {
+      "start_utc": "1993-10-01T00:00:00.000Z",
+      "end_utc": "1993-10-31T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "1993-10-13_mystery-spill-virginia-beach-sandbridge",
+      "title": "Mystery oil spill offshore Virginia Beach with oil landing on Sandbridge",
+      "description": "The U.S. Coast Guard received a report of black oil about five miles off Virginia Beach on October 13, 1993. By October 14, oil had come ashore at Sandbridge; the material was described as heavy black oil.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1993-10-13T12:00:00Z",
+        "event_end": "1993-10-14T12:00:00Z",
+        "reported_at": "1993-10-13T12:00:00Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "1993-10-13T12:00:00Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Virginia Beach / Sandbridge, Virginia, USA",
+        "jurisdiction_level": "city",
+        "admin1": "Virginia",
+        "country": "US",
+        "capital_used": null,
+        "lat": 36.8529,
+        "lon": -75.978,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://incidentnews.noaa.gov/incident/6964",
+          "source_name": "NOAA IncidentNews",
+          "published_at": "1993-10-13T12:00:00Z",
+          "headline": "Mystery Spill off Virginia Beach (heavy black oil observed offshore; oil landed on Sandbridge next day)",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Coast Guard",
+          "NOAA"
+        ],
+        "substances": [
+          "heavy black oil"
+        ],
+        "ecosystems": [
+          "Atlantic Ocean"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "report of black oil about five miles off Virginia Beach",
+            "source_url": "https://incidentnews.noaa.gov/incident/6964"
+          },
+          {
+            "quote": "by October 14 the oil had come ashore at Sandbridge",
+            "source_url": "https://incidentnews.noaa.gov/incident/6964"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.85,
+        "location": 0.6,
+        "summary_grounding": 0.7
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "noaa_incident_6964",
+        "fingerprint": "fp_1993-10-13_mystery_oil_spill_virginia_beach_sandbridge"
+      }
+    },
+    {
+      "event_id": "1993-10-14_jin-shiang-fa_grounding_rose-island",
+      "title": "F/V Jin Shiang Fa grounding at Rose Island with reported diesel/lube oil sheen",
+      "description": "After midnight on October 14, 1993, the Taiwanese-flagged fishing vessel Jin Shiang Fa ran aground on Rose Island. Reports indicated the vessel carried substantial diesel fuel, and an overflight observed a sheen trailing from the vessel that expanded the following day.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1993-10-14T12:00:00Z",
+        "event_end": "1993-10-15T12:00:00Z",
+        "reported_at": "1993-10-14T12:00:00Z",
+        "time_confidence": 0.65,
+        "event_date_utc": "1993-10-14T12:00:00Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Rose Island, American Samoa",
+        "jurisdiction_level": "site",
+        "admin1": null,
+        "country": "AS",
+        "capital_used": null,
+        "lat": -14.545,
+        "lon": -168.157,
+        "precision": "exact",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://incidentnews.noaa.gov/incident/6966",
+          "source_name": "NOAA IncidentNews",
+          "published_at": "1993-10-14T12:00:00Z",
+          "headline": "F/V Jin Shiang Fa grounding at Rose Island (diesel/lube oil release and sheen)",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA"
+        ],
+        "substances": [
+          "diesel fuel",
+          "lube oil"
+        ],
+        "ecosystems": [
+          "coral reef",
+          "island"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "ran aground on Rose Island",
+            "source_url": "https://incidentnews.noaa.gov/incident/6966"
+          },
+          {
+            "quote": "an overflight observed a sheen trailing from the vessel",
+            "source_url": "https://incidentnews.noaa.gov/incident/6966"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.58,
+        "category": 0.85,
+        "location": 0.55,
+        "summary_grounding": 0.65
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "noaa_incident_6966",
+        "fingerprint": "fp_1993-10-14_jin_shiang_fa_grounding_rose_island"
+      }
+    },
+    {
+      "event_id": "1993-10_weather_climate_mississippi-stlouis_below-flood-stage_1993-10-07",
+      "title": "Mississippi River at St. Louis falls below flood stage after 1993 flooding",
+      "description": "The National Weather Service St. Louis event summary for the 1993 flood reports that the Mississippi River at St. Louis fell below flood stage on October 7, 1993, marking the end of flood-stage conditions there following months of flooding.",
+      "category_primary": "weather_climate",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "1993-10-07T12:00:00Z",
+        "event_end": "1993-10-07T12:00:00Z",
+        "reported_at": "1993-10-07T12:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1993-10-07T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "St. Louis, Missouri, USA (Mississippi River)",
+        "jurisdiction_level": "city",
+        "admin1": "Missouri",
+        "country": "US",
+        "capital_used": null,
+        "lat": 38.627002,
+        "lon": -90.199404,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.8
+      },
+      "sources": [
+        {
+          "url": "https://www.weather.gov/lsx/1993_flood",
+          "source_name": "NOAA / National Weather Service (St. Louis, MO)",
+          "published_at": "1993-10-07T12:00:00Z",
+          "headline": "1993 Flood (St. Louis area)",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA National Weather Service"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "Mississippi River"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Mississippi River ... fell below flood stage ... October 7, 1993",
+            "source_url": "https://www.weather.gov/lsx/1993_flood"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.66,
+        "category": 0.8,
+        "location": 0.8,
+        "summary_grounding": 0.65
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "1993 Great Flood (Mississippi River) - St. Louis receding below flood stage",
+        "fingerprint": "fp_1993-10-07_mississippi-river_st-louis_below-flood-stage"
+      }
+    },
+    {
+      "event_id": "1993-10_weather_climate_cincinnati_white-halloween-snow_1993-10-30",
+      "title": "Early-season snowstorm brings record October snowfall to Cincinnati (\"White Halloween\")",
+      "description": "An early-season winter storm brought heavy snow to the Cincinnati area on October 30–31, 1993. The National Weather Service Wilmington climatology page notes Cincinnati’s record earliest/October snowfall totals including 5.9 inches on October 30, 1993, with additional snow on October 31.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1993-10-30T12:00:00Z",
+        "event_end": "1993-10-31T12:00:00Z",
+        "reported_at": "1993-10-30T12:00:00Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "1993-10-30T12:00:00Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Cincinnati, Ohio, USA",
+        "jurisdiction_level": "city",
+        "admin1": "Ohio",
+        "country": "US",
+        "capital_used": null,
+        "lat": 39.103118,
+        "lon": -84.51202,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.8
+      },
+      "sources": [
+        {
+          "url": "https://www.weather.gov/iln/EarliestSnowClimo",
+          "source_name": "NOAA / National Weather Service (Wilmington, OH)",
+          "published_at": "1993-10-30T12:00:00Z",
+          "headline": "Earliest Snow Climatology",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA National Weather Service"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Cincinnati ... 5.9\" ... 10/30/1993",
+            "source_url": "https://www.weather.gov/iln/EarliestSnowClimo"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.63,
+        "category": 0.8,
+        "location": 0.8,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "1993 White Halloween / early snowstorm - Cincinnati",
+        "fingerprint": "fp_1993-10-30_cincinnati_record-october-snow"
+      }
+    },
+    {
+      "event_id": "1993-10_fires_laguna-fire_orange-county-ca",
+      "title": "Laguna Fire in Laguna Canyon, Orange County (1993)",
+      "description": "A wind-driven wildfire began on October 27, 1993 in the Laguna Canyon area of Orange County, California. The fire forced evacuations and destroyed numerous structures before being contained by October 31, 1993.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1993-10-27T12:00:00Z",
+        "event_end": "1993-10-31T12:00:00Z",
+        "reported_at": "1993-10-01T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1993-10-27T12:00:00Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Orange County (Laguna Beach / Laguna Canyon), California, USA",
+        "jurisdiction_level": "site",
+        "admin1": "California",
+        "country": "US",
+        "capital_used": null,
+        "lat": 33.5606,
+        "lon": -117.7726,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.45
+      },
+      "sources": [
+        {
+          "url": "https://www.lbcwd.org/about-us/district-history/1993-fire-storm",
+          "source_name": "Laguna Beach County Water District",
+          "published_at": "1993-10-01T00:00:00.000Z",
+          "headline": "1993 Fire Storm",
+          "byline": null,
+          "accessed_utc": "2026-01-17T01:10:44.795Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Laguna Beach County Water District"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "1993 Fire Storm",
+            "source_url": "https://www.lbcwd.org/about-us/district-history/1993-fire-storm"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.48,
+        "category": 0.8,
+        "location": 0.45,
+        "summary_grounding": 0.35
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "1993 Southern California firestorm (Oct 1993)",
+        "fingerprint": "1993-10_fires_laguna-fire_orange-county-ca_1993-10"
+      }
+    },
+    {
+      "event_id": "1993-10_fires_kinneloa-fire_los-angeles-county-ca",
+      "title": "Kinneloa-area wildfire in Los Angeles County during Santa Ana winds (1993)",
+      "description": "A Santa Ana wind-driven wildfire ignited on October 27, 1993 in foothill areas of Los Angeles County (Altadena/Kinneloa Mesa vicinity). Reporting described major structural losses as the fire spread, with impacts continuing beyond October.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1993-10-27T12:00:00Z",
+        "event_end": "1993-10-31T12:00:00Z",
+        "reported_at": "1993-10-30T00:00:00Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "1993-10-27T12:00:00Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Los Angeles County (Altadena / Kinneloa Mesa / Sierra Madre foothills), California, USA",
+        "jurisdiction_level": "site",
+        "admin1": "California",
+        "country": "US",
+        "capital_used": null,
+        "lat": 34.1897,
+        "lon": -118.1312,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.5
+      },
+      "sources": [
+        {
+          "url": "https://www.latimes.com/archives/la-xpm-1993-10-30-mn-51251-story.html",
+          "source_name": "Los Angeles Times",
+          "published_at": "1993-10-30T00:00:00Z",
+          "headline": "https://www.latimes.com/archives/la-xpm-1993-10-30-mn-51251-story.html",
+          "byline": null,
+          "accessed_utc": "2026-01-17T01:10:44.795Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Los Angeles Times"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "https://www.latimes.com/archives/la-xpm-1993-10-30-mn-51251-story.html",
+            "source_url": "https://www.latimes.com/archives/la-xpm-1993-10-30-mn-51251-story.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.85,
+        "location": 0.5,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "paywalled_or_partial",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "1993 Southern California firestorm (Oct 1993)",
+        "fingerprint": "1993-10_fires_kinneloa-fire_los-angeles-county-ca_1993-10"
+      }
+    },
+    {
+      "event_id": "1993-10_fires_green-meadow-fire_ventura-county-ca",
+      "title": "Green Meadow brush fire near Thousand Oaks, Ventura County (1993)",
+      "description": "A large brush fire started around October 26, 1993 near Thousand Oaks in Ventura County, California. Contemporary reporting indicated the incident burned for more than 10 days, extending beyond October.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1993-10-26T12:00:00Z",
+        "event_end": "1993-10-31T12:00:00Z",
+        "reported_at": "1993-11-05T00:00:00Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "1993-10-26T12:00:00Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Ventura County (near Thousand Oaks / Santa Monica Mountains), California, USA",
+        "jurisdiction_level": "site",
+        "admin1": "California",
+        "country": "US",
+        "capital_used": null,
+        "lat": 34.1706,
+        "lon": -118.8376,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.5
+      },
+      "sources": [
+        {
+          "url": "https://www.latimes.com/archives/la-xpm-1993-11-05-me-53425-story.html",
+          "source_name": "Los Angeles Times",
+          "published_at": "1993-11-05T00:00:00Z",
+          "headline": "https://www.latimes.com/archives/la-xpm-1993-11-05-me-53425-story.html",
+          "byline": null,
+          "accessed_utc": "2026-01-17T01:10:44.795Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.latimes.com/archives/la-xpm-1993-12-24-mn-5157-story.html",
+          "source_name": "Los Angeles Times",
+          "published_at": "1993-12-24T00:00:00Z",
+          "headline": "https://www.latimes.com/archives/la-xpm-1993-12-24-mn-5157-story.html",
+          "byline": null,
+          "accessed_utc": "2026-01-17T01:10:44.795Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Los Angeles Times"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "https://www.latimes.com/archives/la-xpm-1993-11-05-me-53425-story.html",
+            "source_url": "https://www.latimes.com/archives/la-xpm-1993-11-05-me-53425-story.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.52,
+        "category": 0.85,
+        "location": 0.5,
+        "summary_grounding": 0.35
+      },
+      "quality_flags": [
+        "paywalled_or_partial",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "1993 Southern California firestorm (Oct 1993)",
+        "fingerprint": "1993-10_fires_green-meadow-fire_ventura-county-ca_1993-10"
+      }
+    },
+    {
+      "event_id": "1993-10_fires_pendola-fire_yuba-county-ca",
+      "title": "Pendola Fire in Yuba County, California (1993)",
+      "description": "A wildfire began on October 16, 1993 in Yuba County, California, and expanded over subsequent days amid windy conditions. The event record captures the initial period through October 18, 1993 as described in a NOAA repository document.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1993-10-16T12:00:00Z",
+        "event_end": "1993-10-18T12:00:00Z",
+        "reported_at": "1993-10-01T00:00:00.000Z",
+        "time_confidence": 0.45,
+        "event_date_utc": "1993-10-16T12:00:00Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Yuba County (near Camptonville / New Bullards Bar Reservoir), California, USA",
+        "jurisdiction_level": "site",
+        "admin1": "California",
+        "country": "US",
+        "capital_used": null,
+        "lat": 39.4543,
+        "lon": -121.4686,
+        "precision": "admin1",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.3
+      },
+      "sources": [
+        {
+          "url": "https://repository.library.noaa.gov/view/noaa/14448",
+          "source_name": "NOAA Institutional Repository",
+          "published_at": "1993-10-01T00:00:00.000Z",
+          "headline": "https://repository.library.noaa.gov/view/noaa/14448",
+          "byline": null,
+          "accessed_utc": "2026-01-17T01:10:44.795Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "https://repository.library.noaa.gov/view/noaa/14448",
+            "source_url": "https://repository.library.noaa.gov/view/noaa/14448"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.34,
+        "category": 0.7,
+        "location": 0.3,
+        "summary_grounding": 0.25
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "secondary_sources_only",
+        "low_confidence_location",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": null,
+        "fingerprint": "1993-10_fires_pendola-fire_yuba-county-ca_1993-10"
+      }
+    },
+    {
+      "event_id": "1993-10_fires_brush-fire_wild-animal-park_escondido-ca",
+      "title": "Brush fire reaches San Diego Wild Animal Park property (1993)",
+      "description": "During Santa Ana wind conditions on October 27, 1993, a fast-moving brush fire reached the San Diego Wild Animal Park (now Safari Park) area near Escondido, California. The incident prompted emergency response actions aimed at protecting facilities and animals.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1993-10-27T12:00:00Z",
+        "event_end": "1993-10-27T12:00:00Z",
+        "reported_at": "1993-10-01T00:00:00.000Z",
+        "time_confidence": 0.35,
+        "event_date_utc": "1993-10-27T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "San Diego County (near the Wild Animal Park / Escondido area), California, USA",
+        "jurisdiction_level": "site",
+        "admin1": "California",
+        "country": "US",
+        "capital_used": null,
+        "lat": 33.0975,
+        "lon": -117.034,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.45
+      },
+      "sources": [
+        {
+          "url": "https://timeline.sdzwa.org/1993/1993-3/",
+          "source_name": "San Diego Zoo Wildlife Alliance Timeline",
+          "published_at": "1993-10-01T00:00:00.000Z",
+          "headline": "https://timeline.sdzwa.org/1993/1993-3/",
+          "byline": null,
+          "accessed_utc": "2026-01-17T01:10:44.795Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "San Diego Zoo Wildlife Alliance"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "https://timeline.sdzwa.org/1993/1993-3/",
+            "source_url": "https://timeline.sdzwa.org/1993/1993-3/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.38,
+        "category": 0.75,
+        "location": 0.45,
+        "summary_grounding": 0.25
+      },
+      "quality_flags": [
+        "secondary_sources_only",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "1993 Southern California firestorm (Oct 1993)",
+        "fingerprint": "1993-10_fires_brush-fire_wild-animal-park_escondido-ca_1993-10"
+      }
+    },
+    {
+      "event_id": "1993-10-01_us_epa_mswlf_effective_dates_rule",
+      "title": "EPA final rule adjusts effective dates for MSW landfill criteria and addresses small-landfill groundwater monitoring exemption",
+      "description": "A final EPA rule concerning the Municipal Solid Waste Landfill (MSWLF) criteria under RCRA Subtitle D adjusted effective date timing for certain landfill categories. The draft also links this rulemaking to rescinding the small-landfill groundwater monitoring exemption in response to litigation, but the provided URLs do not match October 1993 publication and require verification.",
+      "category_primary": "policy_regulation",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1994-01-13T00:00:00Z",
+        "time_confidence": 0.3,
+        "event_date_utc": "1993-10-01T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States (federal)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.8
+      },
+      "sources": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/FR-1994-01-13/html/94-860.htm",
+          "source_name": "Federal Register (govinfo.gov)",
+          "published_at": "1994-01-13T00:00:00Z",
+          "headline": "94-860 (Federal Register document)",
+          "byline": null,
+          "accessed_utc": "2026-01-17T01:12:12.912Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.govinfo.gov/content/pkg/FR-1996-09-25/html/96-24591.htm",
+          "source_name": "Federal Register (govinfo.gov)",
+          "published_at": "1996-09-25T00:00:00Z",
+          "headline": "96-24591 (Federal Register document)",
+          "byline": null,
+          "accessed_utc": "2026-01-17T01:12:12.912Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.govinfo.gov/content/pkg/FR-1994-05-09/html/94-11083.htm",
+          "source_name": "Federal Register (govinfo.gov)",
+          "published_at": "1994-05-09T00:00:00Z",
+          "headline": "94-11083 (Federal Register document)",
+          "byline": null,
+          "accessed_utc": "2026-01-17T01:12:12.912Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Environmental Protection Agency (EPA)"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.35,
+        "category": 0.75,
+        "location": 0.8,
+        "summary_grounding": 0.2
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only",
+        "low_confidence_category"
+      ],
+      "dedupe": {
+        "cluster_hint": "epa-mswlf-effective-dates-groundwater-monitoring-exemption",
+        "fingerprint": "fp_1993-10-01_us_epa_mswlf_effective_dates_rule_us_country"
+      }
+    },
+    {
+      "event_id": "1993-10-04_eo_12866_published_federal_register",
+      "title": "Executive Order 12866 (Regulatory Planning and Review) published",
+      "description": "Executive Order 12866, establishing a framework for regulatory planning and review including OIRA review of significant regulatory actions, is cited as being published in the Federal Register on October 4, 1993. The provided source is an EPA summary page rather than the Federal Register notice itself.",
+      "category_primary": "policy_regulation",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2017-01-19T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1993-10-04T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States (federal)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.8
+      },
+      "sources": [
+        {
+          "url": "https://19january2017snapshot.epa.gov/laws-regulations/summary-executive-order-12866-regulatory-planning-and-review_.html",
+          "source_name": "U.S. EPA (archived snapshot)",
+          "published_at": "2017-01-19T00:00:00Z",
+          "headline": "Summary of Executive Order 12866 (Regulatory Planning and Review)",
+          "byline": null,
+          "accessed_utc": "2026-01-17T01:12:12.912Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Executive Office of the President",
+          "Office of Information and Regulatory Affairs (OIRA)"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.5,
+        "category": 0.8,
+        "location": 0.8,
+        "summary_grounding": 0.35
+      },
+      "quality_flags": [
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "eo-12866-federal-register-publication",
+        "fingerprint": "fp_1993-10-04_eo_12866_published_federal_register_us_country"
+      }
+    }
+  ]
+}

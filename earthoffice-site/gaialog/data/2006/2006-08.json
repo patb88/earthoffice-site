@@ -1,0 +1,578 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_2006-08_normalize_2026-01-16T032545791Z",
+    "generated_utc": "2026-01-16T03:25:45.791Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "2006-08",
+    "window": {
+      "start_utc": "2006-08-01T00:00:00.000Z",
+      "end_utc": "2006-08-31T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "2006-08_pollution_contamination_guimaras_solar1_oilspill",
+      "title": "MT Solar 1 sinks off Guimaras, spilling bunker fuel and contaminating coastal ecosystems",
+      "description": "On August 11, 2006, the MT Solar 1 sank off Guimaras in the Philippines, releasing bunker fuel that contaminated coastal waters and shorelines. Reports described damage to ecosystems including mangroves and impacts on fishing and coastal habitats.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2006-08-11T00:00:00.000Z",
+        "event_end": "2006-08-11T23:59:59.000Z",
+        "reported_at": "2006-09-22T00:00:00.000Z",
+        "time_confidence": 0.85,
+        "event_date_utc": "2006-08-11T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Guimaras, Philippines",
+        "jurisdiction_level": "state",
+        "admin1": "Guimaras",
+        "country": "PH",
+        "capital_used": "Jordan, Guimaras",
+        "lat": 10.6448,
+        "lon": 122.5976,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.philstar.com/headlines/2006/09/22/359362/1500-hectares-ecosystem-damaged-guimaras-oil-spill-151-denr",
+          "source_name": "Philstar.com",
+          "published_at": "2006-09-22T00:00:00.000Z",
+          "headline": "1,500 hectares ecosystem damaged by Guimaras oil spill — 151 DENR",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.sciencedirect.com/science/article/pii/S0025326X17302813",
+          "source_name": "ScienceDirect",
+          "published_at": "2017-01-01T00:00:00.000Z",
+          "headline": "ScienceDirect article (Marine Pollution Bulletin, S0025326X17302813)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "DENR (Philippines)"
+        ],
+        "substances": [
+          "bunker fuel oil"
+        ],
+        "ecosystems": [
+          "mangroves",
+          "coastal waters",
+          "marine reserves"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "the MT Solar 1 sank off Guimaras",
+            "source_url": "https://www.philstar.com/headlines/2006/09/22/359362/1500-hectares-ecosystem-damaged-guimaras-oil-spill-151-denr"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.85,
+        "location": 0.6,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "secondary_sources_only",
+        "paywalled_or_partial",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "solar-1-guimaras-2006-08",
+        "fingerprint": "solar1_guimaras_ph_2006-08-11"
+      }
+    },
+    {
+      "event_id": "2006-08_pollution_contamination_prudhoe_bay_bp_transit_line_leak",
+      "title": "BP Prudhoe Bay transit-line corrosion leak triggers shutdown and inspections",
+      "description": "In early August 2006, BP reported corrosion and a small leak from oil transit lines at the Prudhoe Bay oil field on Alaska’s North Slope. The company shut down production while inspecting lines and working with regulators.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2006-08-06T00:00:00.000Z",
+        "event_end": "2006-08-07T23:59:59.000Z",
+        "reported_at": "2006-08-07T00:00:00.000Z",
+        "time_confidence": 0.75,
+        "event_date_utc": "2006-08-06T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Prudhoe Bay, Alaska, United States",
+        "jurisdiction_level": "site",
+        "admin1": "Alaska",
+        "country": "US",
+        "capital_used": null,
+        "lat": 70.255,
+        "lon": -148.337,
+        "precision": "exact",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://money.cnn.com/2006/08/07/news/international/oil_alaska/index.htm",
+          "source_name": "CNN Money",
+          "published_at": "2006-08-07T00:00:00.000Z",
+          "headline": "Oil spill shuts down BP's Alaska oil field",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.petroleumnews.com/pntruncate/416077370.shtml",
+          "source_name": "Petroleum News",
+          "published_at": "2006-01-01T00:00:00.000Z",
+          "headline": "Petroleum News truncated article (ID 416077370)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "BP"
+        ],
+        "substances": [
+          "crude oil"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "BP ... began shutting down production ... while inspecting lines",
+            "source_url": "https://money.cnn.com/2006/08/07/news/international/oil_alaska/index.htm"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.8,
+        "location": 0.55,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "paywalled_or_partial",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "bp-prudhoe-bay-leak-2006-08",
+        "fingerprint": "bp_prudhoe_bay_us_2006-08-06"
+      }
+    },
+    {
+      "event_id": "evt_200608_tx_drought_01",
+      "title": "Texas drought conditions continued through August 2006 despite localized heavy rainfall",
+      "description": "A Texas climate bulletin for August 2006 reported drought conditions continuing across much of Texas, described as persisting into a 17th month. The bulletin also noted that some areas received above-normal rainfall during the month, indicating localized relief amid broader drought conditions.",
+      "category_primary": "weather_climate",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2006-08-01T00:00:00Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "2006-08-01T00:00:00Z",
+        "event_date_precision": "month"
+      },
+      "location": {
+        "name": "Texas, USA",
+        "jurisdiction_level": "state",
+        "admin1": "Texas",
+        "country": "US",
+        "capital_used": "Austin",
+        "lat": 30.267153,
+        "lon": -97.743061,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.9
+      },
+      "sources": [
+        {
+          "url": "https://climatexas.tamu.edu/products/texas-climate-bulletins/monthly/2006/august-2006.html",
+          "source_name": "Texas Climate Bulletin (Texas A&M / State Climatologist)",
+          "published_at": "2006-08-01T00:00:00Z",
+          "headline": "August 2006",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Texas A&M University"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "drought continued to persist across much of Texas into its 17th month",
+            "source_url": "https://climatexas.tamu.edu/products/texas-climate-bulletins/monthly/2006/august-2006.html"
+          },
+          {
+            "quote": "some areas received above normal rainfall",
+            "source_url": "https://climatexas.tamu.edu/products/texas-climate-bulletins/monthly/2006/august-2006.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.72,
+        "category": 0.85,
+        "location": 0.9,
+        "summary_grounding": 0.7
+      },
+      "quality_flags": [
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "Texas drought August 2006 Texas Climate Bulletin",
+        "fingerprint": "fp_200608_tx_drought_aug2006_austin"
+      }
+    },
+    {
+      "event_id": "evt_200608_tungurahua_eruption_ec",
+      "title": "Tungurahua eruption prompts evacuations and damages nearby areas",
+      "description": "An eruption of Ecuador’s Tungurahua volcano in mid-August 2006 produced ash emissions and volcanic activity affecting surrounding communities, prompting evacuations and causing damage in the area. NASA Earth Observatory documented the event and its impacts using satellite observations.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2006-08-16T00:00:00.000Z",
+        "event_end": "2006-08-18T23:59:59.000Z",
+        "reported_at": "2006-08-18T00:00:00.000Z",
+        "time_confidence": 0.5,
+        "event_date_utc": "2006-08-16T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Tungurahua Volcano area, Ecuador",
+        "jurisdiction_level": "site",
+        "admin1": null,
+        "country": "EC",
+        "capital_used": null,
+        "lat": -1.467,
+        "lon": -78.442,
+        "precision": "exact",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.65
+      },
+      "sources": [
+        {
+          "url": "https://earthobservatory.nasa.gov/images/6858/eruption-of-tungurahua",
+          "source_name": "NASA Earth Observatory",
+          "published_at": "2006-08-18T00:00:00.000Z",
+          "headline": "Eruption of Tungurahua",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": "https://earthobservatory.nasa.gov/images/6858/eruption-of-tungurahua"
+        },
+        {
+          "url": "https://science.nasa.gov/earth/earth-observatory/eruption-of-tungurahua-6858/",
+          "source_name": "NASA Science (Earth Observatory)",
+          "published_at": "2006-08-18T00:00:00.000Z",
+          "headline": "Eruption of Tungurahua (6858)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NASA Earth Observatory"
+        ],
+        "substances": [
+          "volcanic ash"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Eruption of Tungurahua",
+            "source_url": "https://earthobservatory.nasa.gov/images/6858/eruption-of-tungurahua"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.56,
+        "category": 0.85,
+        "location": 0.65,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Tungurahua eruption Aug 2006",
+        "fingerprint": "fp_tungurahua_ec_2006-08-16_2006-08-18"
+      }
+    },
+    {
+      "event_id": "20060814_fires_oregon_satellite_nasa",
+      "title": "Satellite observations show multiple active wildfires in Oregon, including the Lake George Fire",
+      "description": "NASA Earth Observatory reported multiple active fires in Oregon based on satellite imagery around August 14, 2006. The report highlighted the Lake George Fire as the largest at the time and noted limited containment information attributed to NIFC estimates.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2006-08-14T00:00:00.000Z",
+        "event_end": "2006-08-15T23:59:59.000Z",
+        "reported_at": "2006-08-17T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2006-08-14T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Oregon, USA",
+        "jurisdiction_level": "state",
+        "admin1": "Oregon",
+        "country": "US",
+        "capital_used": "Salem",
+        "lat": 44.9429,
+        "lon": -123.0351,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://science.nasa.gov/earth/earth-observatory/fires-in-oregon-17186/",
+          "source_name": "NASA Earth Observatory",
+          "published_at": "2006-08-17T00:00:00.000Z",
+          "headline": "Fires in Oregon",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NASA Earth Observatory",
+          "National Interagency Fire Center (NIFC)"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "Cascade Mountains"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "More than a dozen fires were burning in Oregon on August 14, 2006.",
+            "source_url": "https://science.nasa.gov/earth/earth-observatory/fires-in-oregon-17186/"
+          },
+          {
+            "quote": "The Lake George Fire was the largest... according to the National Interagency Fire Center.",
+            "source_url": "https://science.nasa.gov/earth/earth-observatory/fires-in-oregon-17186/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.85,
+        "location": 0.7,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Oregon wildfires Aug 2006 (Cascade Mountains)",
+        "fingerprint": "oregon_wildfires_2006-08-14"
+      }
+    },
+    {
+      "event_id": "20060819_puzzle_fire_cascade_crest_complex_oregon",
+      "title": "Puzzle Fire grows rapidly after ignition within Oregon’s Cascade Crest Complex",
+      "description": "A report described the Puzzle Fire as part of Oregon’s Cascade Crest Complex, stating it started on August 19, 2006 and expanded to thousands of acres over subsequent days. The fire contributed to a broader multi-fire complex burning across the Oregon Cascades.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2006-08-19T00:00:00.000Z",
+        "event_end": "2006-08-22T23:59:59.000Z",
+        "reported_at": "2006-03-05T00:00:00.000Z",
+        "time_confidence": 0.35,
+        "event_date_utc": "2006-08-19T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Oregon, USA",
+        "jurisdiction_level": "state",
+        "admin1": "Oregon",
+        "country": "US",
+        "capital_used": "Salem",
+        "lat": 44.9429,
+        "lon": -123.0351,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.4
+      },
+      "sources": [
+        {
+          "url": "https://www.craterlakeinstitute.com/crater-lake-new-archives/2006-2/2006-03-5/",
+          "source_name": "Crater Lake Institute (archives)",
+          "published_at": "2006-03-05T00:00:00.000Z",
+          "headline": "Cascade Crest Complex (archive page)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [
+          "Cascade Mountains"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.35,
+        "category": 0.6,
+        "location": 0.4,
+        "summary_grounding": 0.25
+      },
+      "quality_flags": [
+        "paywalled_or_partial",
+        "secondary_sources_only",
+        "date_ambiguous",
+        "low_confidence_location",
+        "low_confidence_category",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Cascade Crest Complex / Puzzle Fire (Oregon) Aug 2006",
+        "fingerprint": "puzzle_fire_oregon_2006-08-19"
+      }
+    },
+    {
+      "event_id": "200608_guimaras_solar1_ecosystem_damage",
+      "title": "Guimaras oil spill damages mangroves, seagrass and coral reefs (Solar 1)",
+      "description": "After the Solar 1 tanker sank on August 11, 2006, oil contamination affected coastal ecosystems in Guimaras and nearby areas. Reported impacts included damage to mangroves, seagrass beds and coral reefs, including areas associated with the Taklong Island National Marine Reserve.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2006-08-11T00:00:00.000Z",
+        "event_end": "2006-08-31T23:59:59.000Z",
+        "reported_at": "2006-09-22T00:00:00Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2006-08-11T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Taklong Island National Marine Reserve / Guimaras, Philippines",
+        "jurisdiction_level": "site",
+        "admin1": null,
+        "country": "PH",
+        "capital_used": null,
+        "lat": 10.5,
+        "lon": 122.56,
+        "precision": "neighborhood",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.45
+      },
+      "sources": [
+        {
+          "url": "https://www.philstar.com/headlines/2006/09/22/359362/1500-hectares-ecosystem-damaged-guimaras-oil-spill-151-denr",
+          "source_name": "Philstar.com",
+          "published_at": "2006-09-22T00:00:00Z",
+          "headline": "1500 hectares of ecosystem damaged by Guimaras oil spill — 151 DENR",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.sciencedirect.com/science/article/pii/S0025326X17302813",
+          "source_name": "ScienceDirect",
+          "published_at": "2017-01-01T00:00:00Z",
+          "headline": "",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "DENR (Philippines)"
+        ],
+        "substances": [
+          "oil"
+        ],
+        "ecosystems": [
+          "mangroves",
+          "seagrass beds",
+          "coral reefs"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "1500 hectares of ecosystem damaged by Guimaras oil spill",
+            "source_url": "https://www.philstar.com/headlines/2006/09/22/359362/1500-hectares-ecosystem-damaged-guimaras-oil-spill-151-denr"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.8,
+        "location": 0.45,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "needs_dedupe_check",
+        "location_ambiguous",
+        "paywalled_or_partial"
+      ],
+      "dedupe": {
+        "cluster_hint": "Solar 1 Guimaras oil spill ecosystem damage",
+        "fingerprint": "guimaras_solar1_ecosystem_damage_2006-08_taklong"
+      }
+    }
+  ]
+}

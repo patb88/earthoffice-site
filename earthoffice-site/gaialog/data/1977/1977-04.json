@@ -1,0 +1,767 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_1977-04_normalize_2026-01-19T084551740Z",
+    "generated_utc": "2026-01-19T08:45:51.740Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "1977-04",
+    "window": {
+      "start_utc": "1977-04-01T00:00:00.000Z",
+      "end_utc": "1977-04-30T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "ev_197704_appalachian_flood_us",
+      "title": "Central Appalachian flooding from heavy rains (KY–TN–VA–WV)",
+      "description": "Heavy rainfall from April 2–5, 1977 (reported as 4 to 15.5 inches in hardest-hit areas) caused record flooding across multiple river basins in the central Appalachians. The flooding led to major damage and loss of life across parts of Kentucky, Tennessee, Virginia, and West Virginia.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1977-04-02T12:00:00Z",
+        "event_end": "1977-04-05T12:00:00Z",
+        "reported_at": "1977-04-01T00:00:00Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "1977-04-03T00:00:00Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Appalachian region of the United States (KY, TN, VA, WV)",
+        "jurisdiction_level": "supranational",
+        "admin1": null,
+        "country": null,
+        "capital_used": "Washington, D.C.",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "proxy",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.4
+      },
+      "sources": [
+        {
+          "url": "https://pubs.usgs.gov/publication/pp1098",
+          "source_name": "USGS Publications Warehouse",
+          "published_at": "1977-04-01T00:00:00Z",
+          "headline": "USGS publication page (Professional Paper 1098)",
+          "byline": null,
+          "accessed_utc": "2026-01-19T08:42:56.927Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.weather.gov/jkl/1977flood",
+          "source_name": "US National Weather Service (weather.gov)",
+          "published_at": "1977-04-01T00:00:00Z",
+          "headline": "NWS Jackson, KY page on the 1977 flood",
+          "byline": null,
+          "accessed_utc": "2026-01-19T08:42:56.927Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "US Geological Survey",
+          "National Weather Service"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Heavy rains during April 2–5, 1977 ... produced record flooding across multiple river basins",
+            "source_url": "https://www.weather.gov/jkl/1977flood"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.85,
+        "location": 0.4,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "1977 Appalachian flood KY TN VA WV",
+        "fingerprint": "fp_1977-04_appalachian_flood_ky_tn_va_wv"
+      }
+    },
+    {
+      "event_id": "ev_197704_greymouth_flood_nz",
+      "title": "Greymouth flooding after very heavy rainfall (West Coast, New Zealand)",
+      "description": "Greymouth experienced severe flooding on April 13–14, 1977, associated with very heavy rainfall over a roughly 12-hour period. The flooding prompted evacuations and landslips that endangered residents.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1977-04-13T12:00:00Z",
+        "event_end": "1977-04-14T12:00:00Z",
+        "reported_at": "1977-04-01T00:00:00Z",
+        "time_confidence": 0.5,
+        "event_date_utc": "1977-04-14T00:00:00Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Greymouth, West Coast, New Zealand",
+        "jurisdiction_level": "city",
+        "admin1": "West Coast",
+        "country": "NZ",
+        "capital_used": null,
+        "lat": -42.45,
+        "lon": 171.21,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www3.stats.govt.nz/New_Zealand_Official_Yearbooks/1979/NZOYB_1979.html",
+          "source_name": "Statistics New Zealand (New Zealand Official Yearbooks)",
+          "published_at": "1979-01-01T00:00:00Z",
+          "headline": "New Zealand Official Yearbook 1979 (HTML)",
+          "byline": null,
+          "accessed_utc": "2026-01-19T08:42:56.927Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Statistics New Zealand"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Greymouth experienced its worst flooding in many years ... very heavy rainfall over a 12-hour period",
+            "source_url": "https://www3.stats.govt.nz/New_Zealand_Official_Yearbooks/1979/NZOYB_1979.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.58,
+        "category": 0.8,
+        "location": 0.6,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "1977-04 Greymouth flood",
+        "fingerprint": "fp_1977-04_greymouth_flood"
+      }
+    },
+    {
+      "event_id": "ev_197704_cyclone_robert_spacific",
+      "title": "Tropical Cyclone Robert tracked in South Pacific",
+      "description": "Tropical Cyclone Robert was active during April 16–23, 1977 in the South Pacific according to best-track listings. Track information is commonly associated with the French Polynesia region in cyclone datasets.",
+      "category_primary": "weather_climate",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "1977-04-16T00:00:00Z",
+        "event_end": "1977-04-23T12:00:00Z",
+        "reported_at": "1977-04-01T00:00:00Z",
+        "time_confidence": 0.5,
+        "event_date_utc": "1977-04-19T00:00:00Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "South Pacific (French Polynesia region, proxy)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "PF",
+        "capital_used": "Papeete",
+        "lat": -17.5516,
+        "lon": -149.5585,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.35
+      },
+      "sources": [
+        {
+          "url": "https://www.australiasevereweather.com/tropical_cyclones/1976_1977/jtwc/tropical_cyclone_robert.htm",
+          "source_name": "Australia Severe Weather",
+          "published_at": "1977-04-01T00:00:00Z",
+          "headline": "Tropical Cyclone Robert (JTWC best-track page)",
+          "byline": null,
+          "accessed_utc": "2026-01-19T08:42:56.927Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "JTWC"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Tropical Cyclone Robert was active from April 16–23, 1977 in the South Pacific",
+            "source_url": "https://www.australiasevereweather.com/tropical_cyclones/1976_1977/jtwc/tropical_cyclone_robert.htm"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.45,
+        "category": 0.75,
+        "location": 0.35,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "1977 TC Robert South Pacific",
+        "fingerprint": "fp_1977-04_tc_robert_sp"
+      }
+    },
+    {
+      "event_id": "ev_197704_cyclone_verna_aus_region",
+      "title": "Tropical Cyclone Verna forms in Australian region (late April 1977)",
+      "description": "Tropical Cyclone Verna formed on April 28, 1977 in the Australian region and continued beyond April into early May. Within April, the cyclone was tracked with positions and intensities reported at regular intervals in best-track listings.",
+      "category_primary": "weather_climate",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "1977-04-28T00:00:00Z",
+        "event_end": "1977-04-30T23:59:59Z",
+        "reported_at": "1977-04-01T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1977-04-29T00:00:00Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Australia (proxy for Australian region cyclone track)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "AU",
+        "capital_used": "Canberra",
+        "lat": -35.2809,
+        "lon": 149.13,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.3
+      },
+      "sources": [
+        {
+          "url": "https://australiasevereweather.com.au/tropical_cyclones/1976_1977/bom/tropical_cyclone_verna.htm",
+          "source_name": "Australia Severe Weather",
+          "published_at": "1977-04-01T00:00:00Z",
+          "headline": "Tropical Cyclone Verna (BoM best-track page)",
+          "byline": null,
+          "accessed_utc": "2026-01-19T08:42:56.927Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Bureau of Meteorology"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Tropical Cyclone Verna formed on April 28, 1977 and continued into early May",
+            "source_url": "https://australiasevereweather.com.au/tropical_cyclones/1976_1977/bom/tropical_cyclone_verna.htm"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.5,
+        "category": 0.75,
+        "location": 0.3,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "1977 TC Verna Australian region",
+        "fingerprint": "fp_1977-04_tc_verna_aus"
+      }
+    },
+    {
+      "event_id": "evt_19770406_naghan_iran_eq",
+      "title": "Earthquake near Naghan/Ardal, Chaharmahal and Bakhtiari Province, Iran (Apr 6, 1977)",
+      "description": "A damaging earthquake struck southwestern Iran on April 6, 1977, affecting the Naghan/Ardal area in Chaharmahal and Bakhtiari Province. The draft notes widespread building destruction and fatalities in the region.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1977-04-06T13:36:37Z",
+        "event_end": "1977-04-06T13:36:37Z",
+        "reported_at": "1977-04-06T13:36:37Z",
+        "time_confidence": 0.5,
+        "event_date_utc": "1977-04-06T13:36:37Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Chaharmahal and Bakhtiari Province, Iran",
+        "jurisdiction_level": "state",
+        "admin1": "Chaharmahal and Bakhtiari Province",
+        "country": "IR",
+        "capital_used": "Shahrekord",
+        "lat": 32.3256,
+        "lon": 50.8644,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.usgs.gov/data-services/expo-cat",
+          "source_name": "USGS",
+          "published_at": "1977-04-06T13:36:37Z",
+          "headline": "EXPO-CAT (Earthquake Public Observatory Catalog)",
+          "byline": null,
+          "accessed_utc": "2026-01-19T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.usgs.gov/publications/earthquakes-march-april-1977",
+          "source_name": "USGS",
+          "published_at": "1977-04-01T00:00:00Z",
+          "headline": "Earthquakes March-April 1977",
+          "byline": null,
+          "accessed_utc": "2026-01-19T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "USGS"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.7,
+        "location": 0.6,
+        "summary_grounding": 0.4
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only",
+        "low_confidence_location"
+      ],
+      "dedupe": {
+        "cluster_hint": "iran_naghan_1977_04_06_eq",
+        "fingerprint": "fp_iran_chaharmahal_bakhtiari_19770406_naghan_eq"
+      }
+    },
+    {
+      "event_id": "evt_1977-04_brockway_fire_wi",
+      "title": "Brockway Fire burned 17,590 acres near Black River Falls, Wisconsin",
+      "description": "Wisconsin DNR records describe the Brockway Fire as a merged incident involving fires ignited along a railroad track and an escaped cooking fire. The fire burned 17,590 acres near Black River Falls, Wisconsin, and was ultimately controlled after major property losses.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1977-04-01T00:00:00.000Z",
+        "time_confidence": 0.3,
+        "event_date_utc": null,
+        "event_date_precision": "month"
+      },
+      "location": {
+        "name": "Near Black River Falls, Wisconsin, USA",
+        "jurisdiction_level": "city",
+        "admin1": "Wisconsin",
+        "country": "US",
+        "capital_used": null,
+        "lat": 44.2947,
+        "lon": -90.8515,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://dnr.wisconsin.gov/topic/forestfire/wisconsinfires.html",
+          "source_name": "Wisconsin Department of Natural Resources",
+          "published_at": "1977-04-01T00:00:00.000Z",
+          "headline": "Wisconsin Fires (historical fire summaries)",
+          "byline": null,
+          "accessed_utc": "2026-01-19T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Wisconsin Department of Natural Resources"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "forest"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "The Brockway Fire... burned 17,590 acres",
+            "source_url": "https://dnr.wisconsin.gov/topic/forestfire/wisconsinfires.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.46,
+        "category": 0.75,
+        "location": 0.6,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "WI major fires April 1977",
+        "fingerprint": "brockway-fire|black-river-falls-wi-us|1977-04"
+      }
+    },
+    {
+      "event_id": "evt_1977-04_saratoga_fire_wi",
+      "title": "Saratoga Fire burned 6,159 acres in Wisconsin",
+      "description": "Wisconsin DNR historical fire summaries list the Saratoga Fire as beginning on April 27, 1977 and burning 6,159 acres. The summary reports extensive firefighting resources and that structures were destroyed with damages exceeding $1 million.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1977-04-27T12:00:00Z",
+        "event_end": "1977-04-27T12:00:00Z",
+        "reported_at": "1977-04-01T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1977-04-27T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Saratoga, Wisconsin, USA",
+        "jurisdiction_level": "city",
+        "admin1": "Wisconsin",
+        "country": "US",
+        "capital_used": null,
+        "lat": 44.2103,
+        "lon": -89.2696,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.35
+      },
+      "sources": [
+        {
+          "url": "https://dnr.wisconsin.gov/topic/forestfire/wisconsinfires.html",
+          "source_name": "Wisconsin Department of Natural Resources",
+          "published_at": "1977-04-01T00:00:00.000Z",
+          "headline": "Wisconsin Fires (historical fire summaries)",
+          "byline": null,
+          "accessed_utc": "2026-01-19T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Wisconsin Department of Natural Resources"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "forest"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "The Saratoga Fire began on April 27, 1977 and burned 6,159 acres.",
+            "source_url": "https://dnr.wisconsin.gov/topic/forestfire/wisconsinfires.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.38,
+        "category": 0.75,
+        "location": 0.35,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "WI major fires April 1977",
+        "fingerprint": "saratoga-fire|saratoga-wi-us|1977-04-27"
+      }
+    },
+    {
+      "event_id": "evt_1977-04_five_mile_tower_fire_wi",
+      "title": "Five Mile Tower Fire burned over 13,000 acres in northwestern Wisconsin",
+      "description": "Two news articles retrospectively describe the Five Mile Tower Fire as starting in the afternoon of April 30, 1977 in northwestern Wisconsin. Reports state it burned over 13,000 acres of pine forest, destroyed buildings, and prompted evacuations during extreme fire-weather conditions.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1977-04-30T12:00:00Z",
+        "event_end": "1977-04-30T12:00:00Z",
+        "reported_at": "2022-01-01T00:00:00.000Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "1977-04-30T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Washburn and Douglas counties (near Minong/Chicog), Wisconsin, USA",
+        "jurisdiction_level": "state",
+        "admin1": "Wisconsin",
+        "country": "US",
+        "capital_used": "Madison",
+        "lat": 43.0748,
+        "lon": -89.3848,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://pbswisconsin.org/news-item/what-a-1977-inferno-in-the-north-woods-left-in-its-wake/",
+          "source_name": "PBS Wisconsin",
+          "published_at": "2022-01-01T00:00:00.000Z",
+          "headline": "What a 1977 inferno in the North Woods left in its wake",
+          "byline": null,
+          "accessed_utc": "2026-01-19T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.superiortelegram.com/news/local/five-mile-tower-fire-remembered-45-years-later",
+          "source_name": "Superior Telegram",
+          "published_at": "2022-01-01T00:00:00.000Z",
+          "headline": "Five Mile Tower fire remembered 45 years later",
+          "byline": null,
+          "accessed_utc": "2026-01-19T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [
+          "pine forest"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "started the afternoon of April 30, 1977",
+            "source_url": "https://pbswisconsin.org/news-item/what-a-1977-inferno-in-the-north-woods-left-in-its-wake/"
+          },
+          {
+            "quote": "burned over 13,000 acres",
+            "source_url": "https://www.superiortelegram.com/news/local/five-mile-tower-fire-remembered-45-years-later"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.5,
+        "category": 0.75,
+        "location": 0.6,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "WI major fires April 1977",
+        "fingerprint": "five-mile-tower-fire|wisconsin-us|1977-04-30"
+      }
+    },
+    {
+      "event_id": "evt_19770414_andrus_spring_salmon_pnw",
+      "title": "Interior Secretary Cecil Andrus announces actions to protect Pacific Northwest spring salmon run",
+      "description": "A U.S. Fish & Wildlife Service press release reports Interior Secretary Cecil Andrus announcing actions intended to help save the spring salmon run in the Pacific Northwest. The announcement is framed as a conservation intervention tied to salmon population viability.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "1977-04-14T12:00:00Z",
+        "event_end": "1977-04-14T12:00:00Z",
+        "reported_at": "1977-04-14T12:00:00Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "1977-04-14T12:00:00Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Pacific Northwest, United States",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.45
+      },
+      "sources": [
+        {
+          "url": "https://www.fws.gov/press-release/1977-04/andrus-moves-save-spring-salmon-run-pacific-northwest-april-14-1977",
+          "source_name": "U.S. Fish & Wildlife Service",
+          "published_at": "1977-04-14T12:00:00Z",
+          "headline": "Andrus moves to save spring salmon run in Pacific Northwest April 14, 1977",
+          "byline": null,
+          "accessed_utc": "2026-01-19T08:44:11.546Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.fws.gov/media/andrus-moves-save-spring-salmon-run-pacific-northwest-april-14-1977",
+          "source_name": "U.S. Fish & Wildlife Service",
+          "published_at": "1977-04-14T12:00:00Z",
+          "headline": "Andrus moves to save spring salmon run in Pacific Northwest April 14, 1977",
+          "byline": null,
+          "accessed_utc": "2026-01-19T08:44:11.546Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Fish & Wildlife Service",
+          "U.S. Department of the Interior"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "Pacific Northwest salmon rivers"
+        ],
+        "people": [
+          "Cecil Andrus"
+        ]
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.7,
+        "location": 0.45,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "andrus_spring_salmon_run_pacific_northwest_1977_04_14",
+        "fingerprint": "fp_andrus_spring_salmon_pnw_19770414_us"
+      }
+    },
+    {
+      "event_id": "evt_197704_pollution_fish_kills_monthly_summary_us",
+      "title": "EPA report summarizes April 1977 pollution-related fish kills in the United States",
+      "description": "An EPA NEPIS-hosted report summarizing fish kills caused by pollution includes a month-by-month national summary for April 1977. The summary reports 51 fish-kill reports in April (44 specifying numbers) totaling 208,312 fish killed, indicating aggregated biodiversity impacts during the month.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1977-04-01T12:00:00Z",
+        "event_end": "1977-04-30T12:00:00Z",
+        "reported_at": "1977-04-30T12:00:00Z",
+        "time_confidence": 0.35,
+        "event_date_utc": null,
+        "event_date_precision": "month"
+      },
+      "location": {
+        "name": "United States (multi-state)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.8
+      },
+      "sources": [
+        {
+          "url": "https://nepis.epa.gov/Exe/ZyPURL.cgi?Dockey=91022WAF.TXT",
+          "source_name": "U.S. Environmental Protection Agency (NEPIS)",
+          "published_at": "1977-04-30T12:00:00Z",
+          "headline": "Fish Kills Caused by Pollution in 1977: Eighteenth Report",
+          "byline": null,
+          "accessed_utc": "2026-01-19T08:44:11.546Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Environmental Protection Agency"
+        ],
+        "substances": [
+          "pollution"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.6,
+        "location": 0.8,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "epa_fish_kills_pollution_monthly_summary_april_1977_us",
+        "fingerprint": "fp_epa_fish_kills_1977_04_us"
+      }
+    }
+  ]
+}

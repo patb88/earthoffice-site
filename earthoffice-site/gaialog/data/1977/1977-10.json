@@ -1,0 +1,254 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_1977-10_normalize_2026-01-19T090822412Z",
+    "generated_utc": "2026-01-19T09:08:22.412Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "1977-10",
+    "window": {
+      "start_utc": "1977-10-01T00:00:00.000Z",
+      "end_utc": "1977-10-31T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "ev_19771029_al_rawdatain_genoa_multedo_oil_spill",
+      "title": "Oil spill from tanker Al Rawdatain during offloading at Genoa-Multedo dock",
+      "description": "During offloading at the Genoa-Multedo dock in Genoa, an open valve led to a spill of Kuwait crude oil from the tanker Al Rawdatain over several hours. The reported spill volume was 7,350 barrels, and chemical dispersants were used; the incident report notes no shoreline impacts.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1977-10-29T12:00:00Z",
+        "event_end": "1977-10-29T12:00:00Z",
+        "reported_at": "1992-01-01T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1977-10-29T12:00:00Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Genoa (Genoa-Multedo dock), Italy",
+        "jurisdiction_level": "city",
+        "admin1": "Liguria",
+        "country": "IT",
+        "capital_used": null,
+        "lat": 44.40565,
+        "lon": 8.94626,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://incidentnews.noaa.gov/incident/6238",
+          "source_name": "NOAA IncidentNews",
+          "published_at": "1977-10-29T00:00:00Z",
+          "headline": "Incident 6238",
+          "byline": null,
+          "accessed_utc": "2026-01-19T09:05:48.473Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CZIC-td427-p4-o4-1992/html/CZIC-td427-p4-o4-1992.htm",
+          "source_name": "govinfo.gov",
+          "published_at": "1992-01-01T00:00:00Z",
+          "headline": "CZIC-td427-p4-o4-1992 (HTML)",
+          "byline": null,
+          "accessed_utc": "2026-01-19T09:05:48.473Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA"
+        ],
+        "substances": [
+          "Kuwait crude oil",
+          "chemical dispersants"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "oil spill ... Al Rawdatain ... Genoa-Multedo dock",
+            "source_url": "https://incidentnews.noaa.gov/incident/6238"
+          },
+          {
+            "quote": "reported volume was 7,350 barrels of Kuwait crude oil",
+            "source_url": "https://incidentnews.noaa.gov/incident/6238"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.8,
+        "location": 0.7,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "needs_dedupe_check",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "Al Rawdatain Genoa-Multedo oil spill 1977-10-29",
+        "fingerprint": "fp_19771029_al_rawdatain_genoa_multedo_oil_spill"
+      }
+    },
+    {
+      "event_id": "evt_197710_stcroix_flood_1977-10-08",
+      "title": "Severe flooding on St. Croix from tropical storm rainfall",
+      "description": "A tropical storm brought extreme rainfall to St. Croix on October 8, 1977, causing severe flooding in multiple areas including Frederiksted, Mon Bijou, and near the airport. The USGS report describes high flood depths in urban areas and very high peak discharge on River Gut near the airport.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1977-10-08T12:00:00Z",
+        "event_end": "1977-10-08T12:00:00Z",
+        "reported_at": "1977-10-08T12:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1977-10-08T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "St. Croix, U.S. Virgin Islands",
+        "jurisdiction_level": "site",
+        "admin1": null,
+        "country": "US",
+        "capital_used": null,
+        "lat": 17.7294,
+        "lon": -64.734,
+        "precision": "proxy",
+        "location_basis": "manual_override",
+        "location_confidence": 0.45
+      },
+      "sources": [
+        {
+          "url": "https://www.usgs.gov/publications/flood-october-8-1977-st-croix-us-virgin-islands",
+          "source_name": "USGS",
+          "published_at": "1977-10-08T12:00:00Z",
+          "headline": "Flood of October 8, 1977, St. Croix, U.S. Virgin Islands",
+          "byline": null,
+          "accessed_utc": "2026-01-19T09:06:20.402Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Geological Survey (USGS)"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Flood of October 8, 1977, St. Croix, U.S. Virgin Islands",
+            "source_url": "https://www.usgs.gov/publications/flood-october-8-1977-st-croix-us-virgin-islands"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.58,
+        "category": 0.8,
+        "location": 0.45,
+        "summary_grounding": 0.65
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "low_confidence_location",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "St. Croix flood Oct 1977",
+        "fingerprint": "fp_197710_stcroix_flood_oct8_1977_usvi"
+      }
+    },
+    {
+      "event_id": "evt_197710_gao_california_drought_report_1977-10-19",
+      "title": "GAO publishes federal report on 1976–1977 California drought impacts and response",
+      "description": "A U.S. Government Accountability Office report released in October 1977 documented the scope and impacts of the 1976–1977 California drought and discussed governmental response. The publication framed drought conditions and water-supply stress as a major ongoing issue through 1977.",
+      "category_primary": "weather_climate",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "1977-10-19T12:00:00Z",
+        "event_end": "1977-10-19T12:00:00Z",
+        "reported_at": "1977-10-19T12:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1977-10-19T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "California, United States",
+        "jurisdiction_level": "state",
+        "admin1": "California",
+        "country": "US",
+        "capital_used": "Sacramento",
+        "lat": 38.5816,
+        "lon": -121.4944,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.8
+      },
+      "sources": [
+        {
+          "url": "https://www.gao.gov/products/ced-77-137",
+          "source_name": "U.S. Government Accountability Office (GAO)",
+          "published_at": "1977-10-19T12:00:00Z",
+          "headline": "CED-77-137",
+          "byline": null,
+          "accessed_utc": "2026-01-19T09:06:20.402Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Government Accountability Office (GAO)"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "CED-77-137",
+            "source_url": "https://www.gao.gov/products/ced-77-137"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.75,
+        "location": 0.85,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "California drought 1976-1977 GAO report",
+        "fingerprint": "fp_197710_california_drought_gao_ced-77-137"
+      }
+    }
+  ]
+}

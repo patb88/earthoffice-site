@@ -1,0 +1,727 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_2015-03_normalize_2026-01-16T053023110Z",
+    "generated_utc": "2026-01-16T05:30:23.110Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "2015-03",
+    "window": {
+      "start_utc": "2015-03-01T00:00:00.000Z",
+      "end_utc": "2015-03-31T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "evt_201503_mount_carbon_epa_csx_order_cleanup",
+      "title": "EPA orders CSX to clean up areas impacted by Mount Carbon, West Virginia oil train derailment",
+      "description": "U.S. EPA issued an order requiring CSX to clean up and restore areas impacted by the crude oil train derailment near Mount Carbon, West Virginia. The derailment and fire affected nearby areas and required cleanup actions to address environmental impacts.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2015-03-06T00:00:00Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "2015-03-06T00:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Mount Carbon, West Virginia, United States",
+        "jurisdiction_level": "city",
+        "admin1": "West Virginia",
+        "country": "US",
+        "capital_used": null,
+        "lat": 38.1643,
+        "lon": -81.319,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://19january2017snapshot.epa.gov/newsreleases/csx-agrees-epa-order-clean-areas-impacted-west-virginia-train-derailment",
+          "source_name": "U.S. Environmental Protection Agency (archive snapshot)",
+          "published_at": "2015-03-06T00:00:00Z",
+          "headline": "CSX agrees to EPA order to clean areas impacted by West Virginia train derailment",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://19january2017snapshot.epa.gov/newsreleases/epa-orders-csx-clean-areas-impacted-west-virginia-train-derailment_.html",
+          "source_name": "U.S. Environmental Protection Agency (archive snapshot)",
+          "published_at": "2015-03-03T00:00:00Z",
+          "headline": "EPA orders CSX to clean areas impacted by West Virginia train derailment",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Environmental Protection Agency (EPA)",
+          "CSX"
+        ],
+        "substances": [
+          "crude oil"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "EPA orders CSX to clean areas impacted by West Virginia train derailment",
+            "source_url": "https://19january2017snapshot.epa.gov/newsreleases/epa-orders-csx-clean-areas-impacted-west-virginia-train-derailment_.html"
+          },
+          {
+            "quote": "CSX agrees to EPA order to clean areas impacted by West Virginia train derailment",
+            "source_url": "https://19january2017snapshot.epa.gov/newsreleases/csx-agrees-epa-order-clean-areas-impacted-west-virginia-train-derailment"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.75,
+        "location": 0.6,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Mount Carbon WV oil train derailment EPA order/settlement",
+        "fingerprint": "fp_evt_201503_mount_carbon_epa_csx_order_cleanup"
+      }
+    },
+    {
+      "event_id": "evt_20150305_kentucky_flood_winterstorm_jkl",
+      "title": "Early March 2015 flooding and winter storm in eastern Kentucky (NWS Jackson KY area)",
+      "description": "A storm system brought heavy rain that transitioned to sleet and snow, producing significant river flooding in parts of eastern Kentucky alongside winter storm impacts. The National Weather Service (Jackson, KY) documented notable river crests and impacts during the early March 2015 event.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2015-03-04T00:00:00.000Z",
+        "event_end": "2015-03-06T23:59:59.000Z",
+        "reported_at": "2015-03-05T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": null,
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Eastern Kentucky, United States (NWS Jackson KY forecast area)",
+        "jurisdiction_level": "state",
+        "admin1": "Kentucky",
+        "country": "US",
+        "capital_used": "Frankfort",
+        "lat": 38.2009,
+        "lon": -84.8733,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://www.weather.gov/jkl/20150305_floodwinterstorm",
+          "source_name": "NOAA National Weather Service (Jackson, KY)",
+          "published_at": "2015-03-05T00:00:00.000Z",
+          "headline": "Flooding and Winter Storm - March 5, 2015",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA National Weather Service"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "A storm system brought heavy rain that transitioned to sleet and snow.",
+            "source_url": "https://www.weather.gov/jkl/20150305_floodwinterstorm"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.8,
+        "location": 0.7,
+        "summary_grounding": 0.65
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "2015-03_KY_flood_snow",
+        "fingerprint": "fp_201503_kentucky_flood_snow_jkl"
+      }
+    },
+    {
+      "event_id": "evt_20150304_kentucky_southernindiana_flood_snow_lmk",
+      "title": "Heavy rain followed by historic snowstorm in parts of Kentucky and southern Indiana (NWS Louisville KY area)",
+      "description": "A two-wave storm produced heavy rainfall followed by a transition to heavy snow in parts of Kentucky and southern Indiana. The National Weather Service (Louisville, KY) documented high snowfall totals and records associated with the event.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2015-03-04T00:00:00.000Z",
+        "event_end": "2015-03-05T23:59:59.000Z",
+        "reported_at": "2015-03-05T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": null,
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Kentucky and southern Indiana, United States (NWS Louisville KY forecast area)",
+        "jurisdiction_level": "state",
+        "admin1": "Kentucky",
+        "country": "US",
+        "capital_used": "Frankfort",
+        "lat": 38.2009,
+        "lon": -84.8733,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.weather.gov/lmk/march_2015_flood_and_snowstorm",
+          "source_name": "NOAA National Weather Service (Louisville, KY)",
+          "published_at": "2015-03-05T00:00:00.000Z",
+          "headline": "March 2015 Flood and Snowstorm",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA National Weather Service"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "A two-wave storm produced ... rain followed by a transition to heavy snow.",
+            "source_url": "https://www.weather.gov/lmk/march_2015_flood_and_snowstorm"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.58,
+        "category": 0.8,
+        "location": 0.55,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "2015-03_KY_flood_snow",
+        "fingerprint": "fp_201503_kentucky_flood_snow_lmk"
+      }
+    },
+    {
+      "event_id": "evt_20150323_chile_atacama_antofagasta_floods",
+      "title": "Extreme rainfall triggered flooding and mudflows in northern Chile (Atacama/Antofagasta)",
+      "description": "Unseasonal torrential rains in northern Chile triggered major flooding and mudflows affecting communities in the Atacama Desert region. News reporting described fatalities and missing persons as well as extensive damage and emergency response needs.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2015-03-23T00:00:00.000Z",
+        "event_end": "2015-03-26T23:59:59.000Z",
+        "reported_at": "2015-03-30T00:00:00.000Z",
+        "time_confidence": 0.65,
+        "event_date_utc": null,
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Atacama and Antofagasta Regions, Chile",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "CL",
+        "capital_used": "Santiago",
+        "lat": -33.4489,
+        "lon": -70.6693,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.5
+      },
+      "sources": [
+        {
+          "url": "https://www.theguardian.com/world/2015/mar/30/chile-floods-17-dead-20-missing-aid",
+          "source_name": "The Guardian",
+          "published_at": "2015-03-30T00:00:00.000Z",
+          "headline": "Chile floods: 17 dead, 20 missing as aid arrives",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.wunderground.com/blog/JeffMasters/march-2015-another-warmest-month-on-record-for-the-planet.html",
+          "source_name": "Weather Underground",
+          "published_at": "2015-03-31T00:00:00.000Z",
+          "headline": "March 2015: Another Warmest Month on Record for the Planet",
+          "byline": "Jeff Masters",
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [
+          "Atacama Desert"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Unseasonal torrential rains ... triggered major flooding and mudflows.",
+            "source_url": "https://www.theguardian.com/world/2015/mar/30/chile-floods-17-dead-20-missing-aid"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.75,
+        "location": 0.5,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "2015-03_Chile_Atacama_floods",
+        "fingerprint": "fp_201503_chile_atacama_floods"
+      }
+    },
+    {
+      "event_id": "evt_20150313_washington_state_drought_declaration",
+      "title": "Washington State issued drought declarations amid very low snowpack",
+      "description": "Washington State officials issued drought-related declarations amid unusually low snowpack following a record-warm period. The University of Washington climate blog summarized the conditions and the governor’s action dated March 13, 2015.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2015-03-13T00:00:00.000Z",
+        "event_end": "2015-03-13T23:59:59.000Z",
+        "reported_at": "2015-04-15T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2015-03-13T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Washington State, United States",
+        "jurisdiction_level": "state",
+        "admin1": "Washington",
+        "country": "US",
+        "capital_used": "Olympia",
+        "lat": 47.0379,
+        "lon": -122.9007,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.85
+      },
+      "sources": [
+        {
+          "url": "https://climate.uw.edu/2015/04/15/washington-state-drought-2015/",
+          "source_name": "University of Washington Climate Impacts Group",
+          "published_at": "2015-04-15T00:00:00.000Z",
+          "headline": "Washington State Drought 2015",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "University of Washington Climate Impacts Group",
+          "Washington State government"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Washington’s governor issued an initial set of drought declarations on March 13, 2015.",
+            "source_url": "https://climate.uw.edu/2015/04/15/washington-state-drought-2015/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.66,
+        "category": 0.75,
+        "location": 0.85,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "2015-03_WA_drought_declaration",
+        "fingerprint": "fp_201503_wa_drought_declaration"
+      }
+    },
+    {
+      "event_id": "evt_201503_us_cpc_monthly_drought_outlook",
+      "title": "NOAA CPC issued March 2015 U.S. monthly drought assessment/outlook",
+      "description": "NOAA’s Climate Prediction Center published a March 2015 monthly drought assessment describing ongoing and evolving drought conditions in the United States and providing an outlook for drought development and improvement during the month.",
+      "category_primary": "weather_climate",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "2015-03-01T00:00:00.000Z",
+        "event_end": "2015-03-31T23:59:59.000Z",
+        "reported_at": "2015-03-31T00:00:00.000Z",
+        "time_confidence": 0.55,
+        "event_date_utc": null,
+        "event_date_precision": "month"
+      },
+      "location": {
+        "name": "United States (national drought conditions/outlook)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.8951,
+        "lon": -77.0364,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.9
+      },
+      "sources": [
+        {
+          "url": "https://www.cpc.ncep.noaa.gov/products/expert_assessment/mdo_archive/2015/mdo_mar15_text.shtml",
+          "source_name": "NOAA Climate Prediction Center",
+          "published_at": "2015-03-31T00:00:00.000Z",
+          "headline": "Monthly Drought Outlook: March 2015 (text)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA Climate Prediction Center"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Monthly drought assessment ... describing ongoing and evolving drought conditions.",
+            "source_url": "https://www.cpc.ncep.noaa.gov/products/expert_assessment/mdo_archive/2015/mdo_mar15_text.shtml"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.64,
+        "category": 0.8,
+        "location": 0.9,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "2015-03_US_CPC_drought_outlook",
+        "fingerprint": "fp_201503_us_cpc_drought_outlook"
+      }
+    },
+    {
+      "event_id": "evt_20150303_villarrica_eruption_pucon_cl",
+      "title": "Villarrica Volcano eruption prompts evacuations near Pucón",
+      "description": "Villarrica volcano erupted on March 3, 2015, sending ash and volcanic material into the air and prompting evacuations in nearby areas. Satellite observations documented ash/tephra effects on surrounding terrain, including snow and glaciers.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2015-03-03T06:00:00.000Z",
+        "event_end": "2015-03-03T23:59:59.000Z",
+        "reported_at": "2015-03-03T00:00:00.000Z",
+        "time_confidence": 0.75,
+        "event_date_utc": "2015-03-03T06:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Near Pucón, Araucanía Region, Chile",
+        "jurisdiction_level": "site",
+        "admin1": "Araucanía Region",
+        "country": "CL",
+        "capital_used": null,
+        "lat": -39.2829,
+        "lon": -71.9544,
+        "precision": "neighborhood",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.abc.net.au/news/2015-03-03/volcano-villarrica-erupts-in-southern-chile/6278596",
+          "source_name": "ABC News (Australia)",
+          "published_at": "2015-03-03T00:00:00.000Z",
+          "headline": "Volcano Villarrica erupts in southern Chile",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://science.nasa.gov/earth/earth-observatory/eruption-of-villarrica-volcano-85465/",
+          "source_name": "NASA Earth Observatory",
+          "published_at": "2015-03-03T00:00:00.000Z",
+          "headline": "Eruption of Villarrica Volcano",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://cimss.ssec.wisc.edu/satellite-blog/archives/17829",
+          "source_name": "CIMSS Satellite Blog (University of Wisconsin–Madison)",
+          "published_at": "2015-03-03T00:00:00.000Z",
+          "headline": "(Satellite Blog) Villarrica volcano eruption (March 2015)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NASA Earth Observatory",
+          "CIMSS (University of Wisconsin–Madison)"
+        ],
+        "substances": [
+          "ash",
+          "tephra"
+        ],
+        "ecosystems": [
+          "glaciers",
+          "snowpack"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Villarrica volcano erupted... prompting the evacuation of thousands.",
+            "source_url": "https://www.abc.net.au/news/2015-03-03/volcano-villarrica-erupts-in-southern-chile/6278596"
+          },
+          {
+            "quote": "Ash and tephra... masked snow and glaciers on the volcano’s slopes.",
+            "source_url": "https://science.nasa.gov/earth/earth-observatory/eruption-of-villarrica-volcano-85465/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.68,
+        "category": 0.9,
+        "location": 0.6,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "villarrica_volcano_eruption_2015_03_03",
+        "fingerprint": "villarrica_volcano_eruption_near_pucon_cl_2015-03-03"
+      }
+    },
+    {
+      "event_id": "evt_201503_noaa_coral_bleaching_outlook_01",
+      "title": "NOAA warns warm oceans could drive major coral bleaching risk (Mar–Jun 2015 outlook)",
+      "description": "NOAA reported that warm ocean temperatures could set the stage for a major coral bleaching event in 2015. The outlook highlighted widespread areas with a high likelihood of coral heat stress from March through June 2015.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2015-03-01T00:00:00.000Z",
+        "event_end": "2015-06-30T23:59:59.000Z",
+        "reported_at": "2015-03-01T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2015-03-01T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Tropical Pacific and Indian Oceans (global coral reef regions)",
+        "jurisdiction_level": "global_proxy",
+        "admin1": null,
+        "country": null,
+        "capital_used": null,
+        "lat": 0,
+        "lon": 0,
+        "precision": "proxy",
+        "location_basis": "manual_override",
+        "location_confidence": 0.3
+      },
+      "sources": [
+        {
+          "url": "https://www.climate.gov/news-features/featured-images/warm-oceans-pose-risk-global-coral-bleaching-event-2015",
+          "source_name": "Climate.gov (NOAA)",
+          "published_at": "2015-03-01T00:00:00.000Z",
+          "headline": "Warm Oceans Pose Risk of Global Coral Bleaching Event in 2015",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "coral reefs",
+          "tropical oceans"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "warm ocean temperatures could set the stage for a major coral bleaching event in 2015",
+            "source_url": "https://www.climate.gov/news-features/featured-images/warm-oceans-pose-risk-global-coral-bleaching-event-2015"
+          },
+          {
+            "quote": "high likelihood of coral heat stress from March through June 2015",
+            "source_url": "https://www.climate.gov/news-features/featured-images/warm-oceans-pose-risk-global-coral-bleaching-event-2015"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.8,
+        "location": 0.3,
+        "summary_grounding": 0.65
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "low_confidence_location"
+      ],
+      "dedupe": {
+        "cluster_hint": "noaa-coral-bleaching-outlook-2015",
+        "fingerprint": "fp_noaa_coral_bleaching_outlook_2015_global_2015-03"
+      }
+    },
+    {
+      "event_id": "2015-03-31_us_indc_unfccc_submission",
+      "title": "United States submits climate action plan (INDC) to UNFCCC ahead of Paris negotiations",
+      "description": "The UNFCCC reported that the United States submitted its climate action plan (its intended nationally determined contribution) to the UNFCCC as part of preparations for the 2015 Paris climate conference.",
+      "category_primary": "policy_regulation",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2015-03-31T00:00:00Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2015-03-31T00:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "UNFCCC (Bonn, Germany)",
+        "jurisdiction_level": "city",
+        "admin1": null,
+        "country": "DE",
+        "capital_used": null,
+        "lat": 50.7374,
+        "lon": 7.0982,
+        "precision": "city",
+        "location_basis": "institution_proxy",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://unfccc.int/news/united-states-submits-its-climate-action-plan-ahead-of-2015-paris-agreement",
+          "source_name": "UNFCCC",
+          "published_at": "2015-03-31T00:00:00Z",
+          "headline": "United States submits its climate action plan ahead of 2015 Paris agreement negotiations",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://unfccc.int/news/first-set-of-climate-action-plans-gets-world-on-track-to-paris-agreement",
+          "source_name": "UNFCCC",
+          "published_at": "2015-03-31T00:00:00Z",
+          "headline": "First set of climate action plans gets world on track to Paris agreement",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "UNFCCC",
+          "United States"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "United States submits its climate action plan ahead of 2015 Paris agreement negotiations",
+            "source_url": "https://unfccc.int/news/united-states-submits-its-climate-action-plan-ahead-of-2015-paris-agreement"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.63,
+        "category": 0.8,
+        "location": 0.55,
+        "summary_grounding": 0.65
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "US INDC submission to UNFCCC (March 2015)",
+        "fingerprint": "fp_2015-03-31_us_indc_unfccc_submission_bonn_de"
+      }
+    }
+  ]
+}

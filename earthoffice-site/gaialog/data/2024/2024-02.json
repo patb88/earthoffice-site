@@ -1,0 +1,806 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_2024-02_normalize_2026-01-16T135226667Z",
+    "generated_utc": "2026-01-16T13:52:26.667Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "2024-02",
+    "window": {
+      "start_utc": "2024-02-01T00:00:00.000Z",
+      "end_utc": "2024-02-29T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "ev_20240208_black_lake_oil_spill_noaa_10737",
+      "title": "Crude oil spill from pipeline into Black Lake near Hackberry, Louisiana",
+      "description": "NOAA IncidentNews reported a crude oil release (reported about four barrels) from a 4-inch pipeline that entered Black Lake near Hackberry, Louisiana. The U.S. Coast Guard notified NOAA and requested a trajectory analysis, and the source was reported secured.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2024-02-08T00:00:00.000Z",
+        "event_end": "2024-02-08T23:59:59.000Z",
+        "reported_at": "2024-02-08T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2024-02-08T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Black Lake (near Hackberry), Louisiana, United States",
+        "jurisdiction_level": "site",
+        "admin1": "Louisiana",
+        "country": "US",
+        "capital_used": null,
+        "lat": 29.996,
+        "lon": -93.343,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.35
+      },
+      "sources": [
+        {
+          "url": "https://incidentnews.noaa.gov/incident/10737",
+          "source_name": "NOAA IncidentNews",
+          "published_at": "2024-02-08T00:00:00.000Z",
+          "headline": "Incident 10737",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA",
+          "U.S. Coast Guard"
+        ],
+        "substances": [
+          "crude oil"
+        ],
+        "ecosystems": [
+          "Black Lake"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "reported to be about 4 barrels of crude oil from a 4-inch pipeline entered Black Lake",
+            "source_url": "https://incidentnews.noaa.gov/incident/10737"
+          },
+          {
+            "quote": "USCG notified NOAA and requested a trajectory analysis",
+            "source_url": "https://incidentnews.noaa.gov/incident/10737"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.8,
+        "location": 0.35,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "noaa_incident_10737_black_lake_crude_oil",
+        "fingerprint": "fp_20240208_black_lake_louisiana_crude_oil_spill"
+      }
+    },
+    {
+      "event_id": "ev_20240213_copler_heap_leach_landslide_cyanide_concerns",
+      "title": "Heap-leach landslide at Çöpler gold mine triggers contamination concerns in Erzincan, Turkey",
+      "description": "Reporting on a landslide at the Çöpler gold mine said heap-leach material was involved and raised concerns about cyanide contamination. Turkish authorities were reported to have sealed a stream running from the open pit to prevent downstream pollution toward the Euphrates basin.",
+      "category_primary": "pollution_contamination",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "2024-02-13T00:00:00.000Z",
+        "event_end": "2024-02-13T23:59:59.000Z",
+        "reported_at": "2024-02-13T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2024-02-13T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Çöpler Gold Mine, İliç District, Erzincan Province, Turkey",
+        "jurisdiction_level": "site",
+        "admin1": "Erzincan Province",
+        "country": "TR",
+        "capital_used": null,
+        "lat": 39.451,
+        "lon": 38.564,
+        "precision": "exact",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.4
+      },
+      "sources": [
+        {
+          "url": "https://www.theguardian.com/world/2024/feb/13/rescue-workers-search-for-missing-miners-after-landslide-in-turkey",
+          "source_name": "The Guardian",
+          "published_at": "2024-02-13T00:00:00.000Z",
+          "headline": "Rescue workers search for missing miners after landslide in Turkey",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.mining.com/ssr-withdraws-guidance-for-copler-in-light-of-mine-disaster/",
+          "source_name": "MINING.COM",
+          "published_at": "2024-02-13T00:00:00.000Z",
+          "headline": "SSR withdraws guidance for Copler in light of mine disaster",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Turkish authorities",
+          "SSR"
+        ],
+        "substances": [
+          "cyanide"
+        ],
+        "ecosystems": [
+          "Euphrates basin"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "raised concerns about cyanide-laced waste",
+            "source_url": "https://www.theguardian.com/world/2024/feb/13/rescue-workers-search-for-missing-miners-after-landslide-in-turkey"
+          },
+          {
+            "quote": "authorities reported sealing a stream running from the open pit",
+            "source_url": "https://www.theguardian.com/world/2024/feb/13/rescue-workers-search-for-missing-miners-after-landslide-in-turkey"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.5,
+        "category": 0.7,
+        "location": 0.4,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "possible_opinion_or_advocacy",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "copler_gold_mine_heap_leach_landslide_feb_2024",
+        "fingerprint": "fp_20240213_copler_ilic_erzincan_heap_leach_landslide"
+      }
+    },
+    {
+      "event_id": "evt_202402_ca_storms_atmospheric_river_001",
+      "title": "Early February 2024 atmospheric river storms cause flooding and wind damage in California",
+      "description": "A series of storms described as atmospheric rivers brought heavy rain and strong winds to California in early February 2024. The event resulted in flooding and other storm impacts such as landslides, with emergency actions reported by local authorities.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2024-02-04T00:00:00.000Z",
+        "event_end": "2024-02-07T23:59:59.000Z",
+        "reported_at": "2024-02-01T00:00:00.000Z",
+        "time_confidence": 0.4,
+        "event_date_utc": null,
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "California, USA",
+        "jurisdiction_level": "state",
+        "admin1": "California",
+        "country": "US",
+        "capital_used": "Sacramento",
+        "lat": 38.581571,
+        "lon": -121.4944,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://www.sfchronicle.com/weather/article/california-storm-snow-flooding-20163877.php",
+          "source_name": "San Francisco Chronicle",
+          "published_at": "2024-02-01T00:00:00.000Z",
+          "headline": "https://www.sfchronicle.com/weather/article/california-storm-snow-flooding-20163877.php",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.35,
+        "category": 0.6,
+        "location": 0.7,
+        "summary_grounding": 0.2
+      },
+      "quality_flags": [
+        "paywalled_or_partial",
+        "date_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "California atmospheric river storms early Feb 2024",
+        "fingerprint": "fp_202402_ca_storms_atmospheric_river_001"
+      }
+    },
+    {
+      "event_id": "evt-20240208-reykjanes-eruption-sylingarfell",
+      "title": "Reykjanes Peninsula fissure eruption near Grindavík (Sýlingarfell area)",
+      "description": "A fissure eruption began on February 8, 2024 on Iceland’s Reykjanes Peninsula after heightened seismic activity. Reports described lava flows and disruptions affecting heat/hot water infrastructure in some communities.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2024-02-08T00:00:00.000Z",
+        "event_end": "2024-02-08T23:59:59.000Z",
+        "reported_at": "2024-02-08T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2024-02-08T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Reykjanes Peninsula, Iceland (near Grindavík)",
+        "jurisdiction_level": "site",
+        "admin1": null,
+        "country": "IS",
+        "capital_used": null,
+        "lat": 63.85,
+        "lon": -22.5,
+        "precision": "admin1",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.45
+      },
+      "sources": [
+        {
+          "url": "https://www.visitreykjanes.is/en/blogg/new-eruption-has-started",
+          "source_name": "Visit Reykjanes",
+          "published_at": "2024-02-08T00:00:00Z",
+          "headline": "New eruption has started",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://phys.org/news/2024-02-volcano-erupts-southwestern-iceland-earlier.html",
+          "source_name": "Phys.org",
+          "published_at": "2024-02-08T00:00:00Z",
+          "headline": "Volcano erupts in southwestern Iceland for the third time since December",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "New eruption has started",
+            "source_url": "https://www.visitreykjanes.is/en/blogg/new-eruption-has-started"
+          },
+          {
+            "quote": "Volcano erupts in southwestern Iceland",
+            "source_url": "https://phys.org/news/2024-02-volcano-erupts-southwestern-iceland-earlier.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.5,
+        "category": 0.9,
+        "location": 0.45,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "reykjanes-peninsula-fissure-eruption-2024-02-08",
+        "fingerprint": "reykjanes-peninsula-fissure-eruption|IS|2024-02-08"
+      }
+    },
+    {
+      "event_id": "evt-20240219-nuristan-landslide",
+      "title": "Landslide in Nuristan Province, Afghanistan, reported to have killed dozens",
+      "description": "A landslide in Afghanistan’s Nuristan Province was reported on February 19, 2024 to have killed dozens of people and destroyed homes. Severe weather conditions were reported to be hampering rescue operations.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2024-02-19T00:00:00.000Z",
+        "event_end": "2024-02-19T23:59:59.000Z",
+        "reported_at": "2024-02-19T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2024-02-19T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Nuristan Province, Afghanistan",
+        "jurisdiction_level": "state",
+        "admin1": "Nuristan",
+        "country": "AF",
+        "capital_used": "Kabul",
+        "lat": 34.5553,
+        "lon": 69.2075,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.85
+      },
+      "sources": [
+        {
+          "url": "https://www.dw.com/en/afghanistan-landslide-leaves-25-dead/a-68297529",
+          "source_name": "DW",
+          "published_at": "2024-02-19T00:00:00Z",
+          "headline": "Afghanistan landslide leaves 25 dead",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "DW"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "landslide leaves 25 dead",
+            "source_url": "https://www.dw.com/en/afghanistan-landslide-leaves-25-dead/a-68297529"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.75,
+        "category": 0.9,
+        "location": 0.85,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "needs_dedupe_check",
+        "paywalled_or_partial"
+      ],
+      "dedupe": {
+        "cluster_hint": "nuristan-landslide-2024-02-19",
+        "fingerprint": "nuristan-landslide|AF|2024-02-19"
+      }
+    },
+    {
+      "event_id": "fires_chile_valparaiso_2024-02-02",
+      "title": "Central Chile wildfires affect Valparaíso Region",
+      "description": "Severe wildfires in central Chile affected the Valparaíso Region and surrounding areas during the first week of February 2024. Reporting described rapid fire growth under hot, dry and windy conditions with major damage to homes and significant humanitarian impacts.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2024-02-02T00:00:00.000Z",
+        "event_end": "2024-02-08T23:59:59.000Z",
+        "reported_at": "2024-02-08T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2024-02-02T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Valparaíso Region, Chile",
+        "jurisdiction_level": "state",
+        "admin1": "Valparaíso Region",
+        "country": "CL",
+        "capital_used": "Valparaíso",
+        "lat": -33.0472,
+        "lon": -71.6127,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://science.nasa.gov/earth/earth-observatory/inferno-scars-valparaiso-152417/",
+          "source_name": "NASA Earth Observatory",
+          "published_at": "2024-02-08T00:00:00.000Z",
+          "headline": "Inferno Scars Valparaíso",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.paho.org/en/natural-hazards-monitoring/natural-hazards-monitoring-8-february-2024-0",
+          "source_name": "PAHO",
+          "published_at": "2024-02-08T00:00:00.000Z",
+          "headline": "Natural Hazards Monitoring - 8 February 2024",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NASA Earth Observatory",
+          "Pan American Health Organization (PAHO)"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Inferno scars Valparaíso.",
+            "source_url": "https://science.nasa.gov/earth/earth-observatory/inferno-scars-valparaiso-152417/"
+          },
+          {
+            "quote": "Natural Hazards Monitoring - 8 February 2024.",
+            "source_url": "https://www.paho.org/en/natural-hazards-monitoring/natural-hazards-monitoring-8-february-2024-0"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.8,
+        "location": 0.7,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "needs_dedupe_check",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "Central Chile / Valparaíso wildfires early Feb 2024",
+        "fingerprint": "fires|valparaiso_region_cl|2024-02-02_2024-02-08|central_chile_wildfires"
+      }
+    },
+    {
+      "event_id": "fires_us_texas_panhandle_smokehouse_creek_2024-02-26",
+      "title": "Smokehouse Creek Fire burns across Texas Panhandle and into Oklahoma",
+      "description": "The Smokehouse Creek Fire ignited in the Texas Panhandle on February 26, 2024 and rapidly expanded during red flag conditions. Contemporary reporting described evacuations, heavy smoke, and spread into western Oklahoma, and noted it was being described as the largest fire in Texas history by February 29.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2024-02-26T00:00:00.000Z",
+        "event_end": "2024-02-29T23:59:59.000Z",
+        "reported_at": "2024-02-29T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2024-02-26T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Texas, United States (Texas Panhandle)",
+        "jurisdiction_level": "state",
+        "admin1": "Texas",
+        "country": "US",
+        "capital_used": "Austin",
+        "lat": 30.2672,
+        "lon": -97.7431,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.cnbc.com/2024/02/29/a-wildfire-scorching-the-texas-panhandle-has-grown-to-the-largest-in-state-history.html",
+          "source_name": "CNBC",
+          "published_at": "2024-02-29T00:00:00.000Z",
+          "headline": "A wildfire scorching the Texas Panhandle has grown to the largest in state history",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://science.nasa.gov/earth/earth-observatory/fires-char-cattle-country-152524/",
+          "source_name": "NASA Earth Observatory",
+          "published_at": "2024-02-29T00:00:00.000Z",
+          "headline": "Fires Char Cattle Country",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NASA Earth Observatory",
+          "CNBC"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "grasslands"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "...has grown to the largest in state history.",
+            "source_url": "https://www.cnbc.com/2024/02/29/a-wildfire-scorching-the-texas-panhandle-has-grown-to-the-largest-in-state-history.html"
+          },
+          {
+            "quote": "Fires char cattle country.",
+            "source_url": "https://science.nasa.gov/earth/earth-observatory/fires-char-cattle-country-152524/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.65,
+        "category": 0.85,
+        "location": 0.6,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "needs_dedupe_check",
+        "secondary_sources_only",
+        "location_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "Smokehouse Creek Fire Feb 2024 Texas Panhandle",
+        "fingerprint": "fires|texas_us|2024-02-26_2024-02-29|smokehouse_creek_fire"
+      }
+    },
+    {
+      "event_id": "2024-02-noaa-crw-sba-20240208-global",
+      "title": "NOAA Coral Reef Watch satellite bleaching alert update based on Feb 7, 2024 data",
+      "description": "NOAA Coral Reef Watch published a Satellite Bleaching Alert update on Feb 8, 2024 using data from Feb 7, 2024. The update reports changes in coral heat-stress alert levels across monitored reef locations.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "2024-02-07T00:00:00.000Z",
+        "event_end": "2024-02-07T23:59:59.000Z",
+        "reported_at": "2024-02-08T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2024-02-07T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Global (NOAA Coral Reef Watch monitored reef regions)",
+        "jurisdiction_level": "global_proxy",
+        "admin1": null,
+        "country": null,
+        "capital_used": null,
+        "lat": 0,
+        "lon": 0,
+        "precision": "proxy",
+        "location_basis": "institution_proxy",
+        "location_confidence": 0.4
+      },
+      "sources": [
+        {
+          "url": "https://ospo.noaa.gov/data/ocean/crw/alerts/2024/SBA_alerts_20240208.html",
+          "source_name": "NOAA OSPO / Coral Reef Watch",
+          "published_at": "2024-02-08T00:00:00.000Z",
+          "headline": "SBA alerts 20240208",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA Coral Reef Watch",
+          "NOAA OSPO"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "coral reefs"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Satellite Bleaching Alert (SBA) products based on data through 2024-02-07",
+            "source_url": "https://ospo.noaa.gov/data/ocean/crw/alerts/2024/SBA_alerts_20240208.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.7,
+        "location": 0.4,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "noaa-crw-satellite-bleaching-alert-2024-02-08",
+        "fingerprint": "noaa_crw_sba_20240208_global_2024-02-07"
+      }
+    },
+    {
+      "event_id": "evt-20240207-us-epa-pm25-naaqs",
+      "title": "U.S. EPA finalizes stronger annual PM2.5 air quality standard",
+      "description": "On Feb. 7, 2024, the U.S. Environmental Protection Agency published a final reconsideration of the National Ambient Air Quality Standards for particulate matter (PM). The action strengthens the annual PM2.5 (fine particulate) standard as part of federal air quality regulation.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "2024-02-07T00:00:00.000Z",
+        "event_end": "2024-02-07T23:59:59.000Z",
+        "reported_at": "2024-02-07T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2024-02-07T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States (federal)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.8
+      },
+      "sources": [
+        {
+          "url": "https://www.epa.gov/pm-pollution/final-reconsideration-national-ambient-air-quality-standards-particulate-matter-pm",
+          "source_name": "U.S. Environmental Protection Agency",
+          "published_at": "2024-02-07T00:00:00.000Z",
+          "headline": "Final Reconsideration of National Ambient Air Quality Standards for Particulate Matter (PM)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Environmental Protection Agency (EPA)"
+        ],
+        "substances": [
+          "PM2.5",
+          "particulate matter"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Final Reconsideration of National Ambient Air Quality Standards for Particulate Matter (PM)",
+            "source_url": "https://www.epa.gov/pm-pollution/final-reconsideration-national-ambient-air-quality-standards-particulate-matter-pm"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.68,
+        "category": 0.85,
+        "location": 0.8,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "US_EPA_PM25_NAAQS_2024_02",
+        "fingerprint": "fp-us-epa-pm25-naaqs-2024-02-07-us"
+      }
+    },
+    {
+      "event_id": "evt-20240227-eu-nature-restoration-law-ep-vote",
+      "title": "European Parliament approves EU Nature Restoration Law in plenary vote",
+      "description": "On Feb. 27, 2024, the European Parliament approved the EU Nature Restoration Law in a plenary vote. The vote advanced the legislation setting restoration requirements and targets for nature across the European Union.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "2024-02-27T00:00:00.000Z",
+        "event_end": "2024-02-27T23:59:59.000Z",
+        "reported_at": "2024-02-27T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2024-02-27T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "European Union (European Parliament vote)",
+        "jurisdiction_level": "supranational",
+        "admin1": null,
+        "country": null,
+        "capital_used": "Brussels",
+        "lat": 50.8503,
+        "lon": 4.3517,
+        "precision": "supranational",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.65
+      },
+      "sources": [
+        {
+          "url": "https://www.dw.com/en/european-parliament-passes-landmark-nature-restoration-law/a-68384624",
+          "source_name": "Deutsche Welle",
+          "published_at": "2024-02-27T00:00:00.000Z",
+          "headline": "European Parliament passes landmark nature restoration law",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.euronews.com/my-europe/2024/02/27/meps-approve-nature-restoration-law-amid-right-wing-backlash-and-farmer-protests",
+          "source_name": "Euronews",
+          "published_at": "2024-02-27T00:00:00.000Z",
+          "headline": "MEPs approve nature restoration law amid right-wing backlash and farmer protests",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "European Parliament",
+          "European Union"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "European Parliament passes landmark nature restoration law",
+            "source_url": "https://www.dw.com/en/european-parliament-passes-landmark-nature-restoration-law/a-68384624"
+          },
+          {
+            "quote": "MEPs approve nature restoration law",
+            "source_url": "https://www.euronews.com/my-europe/2024/02/27/meps-approve-nature-restoration-law-amid-right-wing-backlash-and-farmer-protests"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.64,
+        "category": 0.8,
+        "location": 0.65,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "EU_Nature_Restoration_Law_EP_vote_2024_02",
+        "fingerprint": "fp-eu-nature-restoration-law-2024-02-27-eu"
+      }
+    }
+  ]
+}

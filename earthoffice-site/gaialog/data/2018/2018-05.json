@@ -1,0 +1,707 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_2018-05_normalize_2026-01-16T062637900Z",
+    "generated_utc": "2026-01-16T06:26:37.900Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "2018-05",
+    "window": {
+      "start_utc": "2018-05-01T00:00:00.000Z",
+      "end_utc": "2018-05-31T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "evt_20180530_kilauea_epa_air_monitoring",
+      "title": "EPA air monitoring during Kīlauea eruption (SO2, H2S, particulates)",
+      "description": "During the 2018 Kīlauea eruption response, U.S. EPA Region 9 reported monitoring volcanic gas emissions and operating/installing air monitoring stations in affected areas. The update referenced measurements including sulfur dioxide (SO2), hydrogen sulfide (H2S), and particulates.",
+      "category_primary": "pollution_contamination",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "2018-05-30T00:00:00.000Z",
+        "event_end": "2018-05-30T23:59:59.000Z",
+        "reported_at": "2018-05-30T00:00:00.000Z",
+        "time_confidence": 0.8,
+        "event_date_utc": "2018-05-30T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Hawaiʻi Island, Hawaiʻi, United States",
+        "jurisdiction_level": "site",
+        "admin1": "Hawaiʻi",
+        "country": "US",
+        "capital_used": null,
+        "lat": 19.5429,
+        "lon": -155.6659,
+        "precision": "admin1",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.epa.gov/archive/epa/newsreleases/epa-kilauea-eruption-response-update-may-30-2018.html",
+          "source_name": "U.S. Environmental Protection Agency (EPA)",
+          "published_at": "2018-05-30T00:00:00.000Z",
+          "headline": "EPA Kīlauea Eruption Response Update - May 30, 2018",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Environmental Protection Agency (EPA)",
+          "EPA Region 9"
+        ],
+        "substances": [
+          "sulfur dioxide (SO2)",
+          "hydrogen sulfide (H2S)",
+          "particulate matter"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "EPA is monitoring air quality... to measure sulfur dioxide (SO2), hydrogen sulfide (H2S) and particulates.",
+            "source_url": "https://www.epa.gov/archive/epa/newsreleases/epa-kilauea-eruption-response-update-may-30-2018.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.72,
+        "category": 0.75,
+        "location": 0.55,
+        "summary_grounding": 0.75
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "low_confidence_location"
+      ],
+      "dedupe": {
+        "cluster_hint": "kilauea_2018_epa_air_monitoring",
+        "fingerprint": "fp_kilauea_epa_air_monitoring_2018-05-30_hawaii-island"
+      }
+    },
+    {
+      "event_id": "evt_20180523_bienville_parish_gas_well_fire_evac",
+      "title": "Gas well site fire prompts evacuations in Bienville Parish, Louisiana",
+      "description": "A fire at a gas well site in Bienville Parish, Louisiana prompted evacuations of nearby residents and a hazmat response. An all-clear was later issued and residents were allowed to return home, according to local reporting.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2018-05-23T21:00:00.000Z",
+        "event_end": "2018-05-24T01:00:00.000Z",
+        "reported_at": "2018-05-24T00:00:00.000Z",
+        "time_confidence": 0.45,
+        "event_date_utc": "2018-05-23T21:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Bienville Parish, Louisiana, United States (Lake Bistineau area / Pine Bluff Road)",
+        "jurisdiction_level": "state",
+        "admin1": "Louisiana",
+        "country": "US",
+        "capital_used": "Baton Rouge",
+        "lat": 30.4515,
+        "lon": -91.1871,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.65
+      },
+      "sources": [
+        {
+          "url": "https://www.ksla.com/story/38266273/all-clear-issued-after-bienville-parish-gas-well-fire-residents-allowed-home/",
+          "source_name": "KSLA",
+          "published_at": "2018-05-24T00:00:00.000Z",
+          "headline": "All clear issued after Bienville Parish gas well fire, residents allowed home",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "All clear issued after Bienville Parish gas well fire, residents allowed home.",
+            "source_url": "https://www.ksla.com/story/38266273/all-clear-issued-after-bienville-parish-gas-well-fire-residents-allowed-home/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.58,
+        "category": 0.6,
+        "location": 0.65,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "paywalled_or_partial"
+      ],
+      "dedupe": {
+        "cluster_hint": "bienville_parish_gas_well_fire_2018-05",
+        "fingerprint": "fp_bienville_parish_fire_2018-05-23_louisiana"
+      }
+    },
+    {
+      "event_id": "evt_201805_alberto_southeast_us",
+      "title": "Subtropical Storm Alberto landfall and flooding impacts across the U.S. Southeast",
+      "description": "Subtropical Storm Alberto formed in late May 2018 and made landfall on the U.S. Gulf Coast, bringing heavy rainfall. The storm and its remnants contributed to flooding impacts across parts of the U.S. Southeast during the discovery window.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2018-05-29T00:00:00Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "2018-05-28T00:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States (Washington, DC)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://weather.com/storms/hurricane/news/2018-05-29-subtropical-storm-depression-alberto-southeast",
+          "source_name": "The Weather Channel",
+          "published_at": "2018-05-29T00:00:00Z",
+          "headline": "Subtropical Storm Alberto impacts Southeast (coverage page)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Subtropical Storm Alberto formed May 25 and made landfall on May 28 in Florida.",
+            "source_url": "https://weather.com/storms/hurricane/news/2018-05-29-subtropical-storm-depression-alberto-southeast"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.75,
+        "location": 0.55,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "paywalled_or_partial"
+      ],
+      "dedupe": {
+        "cluster_hint": "alberto_2018_us_southeast",
+        "fingerprint": "alberto_2018-05_us_country"
+      }
+    },
+    {
+      "event_id": "evt_201805_noaa_ncei_climate_summary_us",
+      "title": "NOAA May 2018 U.S. climate summary notes flooding and drought conditions",
+      "description": "NOAA’s National Centers for Environmental Information published a May 2018 U.S. climate summary describing notable precipitation extremes and associated flooding and mudslides in some regions. The summary also described evolving drought conditions across parts of the country during May 2018.",
+      "category_primary": "weather_climate",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2018-06-01T00:00:00Z",
+        "time_confidence": 0.4,
+        "event_date_utc": null,
+        "event_date_precision": "month"
+      },
+      "location": {
+        "name": "United States (Washington, DC)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.65
+      },
+      "sources": [
+        {
+          "url": "https://www.ncei.noaa.gov/news/national-climate-201805",
+          "source_name": "NOAA NCEI",
+          "published_at": "2018-06-01T00:00:00Z",
+          "headline": "National Climate Report — May 2018",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA",
+          "NOAA NCEI"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "National Climate Report — May 2018",
+            "source_url": "https://www.ncei.noaa.gov/news/national-climate-201805"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.8,
+        "location": 0.65,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "noaa_ncei_may_2018_us_climate",
+        "fingerprint": "noaa_ncei_2018-05_us_country"
+      }
+    },
+    {
+      "event_id": "evt_20180517_kilauea_summit_ash_red",
+      "title": "Kīlauea summit ash eruptions intensify; aviation color code raised to RED",
+      "description": "USGS reported intensified ash eruptions at Kīlauea’s summit and warned that sudden, larger steam-driven explosive eruptions were possible, potentially sending ash to high altitudes. A related NWS/NOAA notice referenced the aviation color code being set to RED for the hazard.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2018-05-17T00:00:00.000Z",
+        "event_end": "2018-05-17T23:59:59.000Z",
+        "reported_at": "2018-05-17T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2018-05-17T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Kīlauea Volcano summit, Hawaiʻi Island, United States",
+        "jurisdiction_level": "site",
+        "admin1": "HI",
+        "country": "US",
+        "capital_used": null,
+        "lat": 19.421,
+        "lon": -155.287,
+        "precision": "exact",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.usgs.gov/news/national-news-release/kilauea-volcanic-activity-and-ash-eruptions-intensify",
+          "source_name": "USGS",
+          "published_at": "2018-05-17T00:00:00.000Z",
+          "headline": "Kīlauea volcanic activity and ash eruptions intensify",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.weather.gov/wrn/181605-kilauea-volcanic-activity",
+          "source_name": "NWS/NOAA",
+          "published_at": "2018-05-17T00:00:00.000Z",
+          "headline": "Kīlauea volcanic activity (WRN 181605)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "USGS",
+          "NOAA",
+          "National Weather Service"
+        ],
+        "substances": [
+          "volcanic ash"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Kīlauea volcanic activity and ash eruptions intensify",
+            "source_url": "https://www.usgs.gov/news/national-news-release/kilauea-volcanic-activity-and-ash-eruptions-intensify"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.58,
+        "category": 0.9,
+        "location": 0.55,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "kilauea_2018_unrest",
+        "fingerprint": "kilauea_summit_ash_red_2018-05-17_hawaii-island"
+      }
+    },
+    {
+      "event_id": "evt_20180504_m69_hawaii_island_eq",
+      "title": "Magnitude 6.9 earthquake strikes Hawaiʻi Island during Kīlauea unrest",
+      "description": "Media reports described a magnitude 6.9 earthquake on May 4, 2018 affecting Hawaiʻi Island amid the wider Kīlauea volcanic activity and related evacuations. The coverage characterized it as among the strongest earthquakes in Hawaiʻi in decades.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2018-05-04T22:32:55.000Z",
+        "event_end": "2018-05-04T23:59:59.000Z",
+        "reported_at": "2018-05-05T00:00:00.000Z",
+        "time_confidence": 0.5,
+        "event_date_utc": "2018-05-04T22:32:55.000Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Hawaiʻi Island, Hawaiʻi, United States",
+        "jurisdiction_level": "state",
+        "admin1": "HI",
+        "country": "US",
+        "capital_used": "Honolulu",
+        "lat": 21.3069,
+        "lon": -157.8583,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.75
+      },
+      "sources": [
+        {
+          "url": "https://www.axios.com/2018/05/05/hawaii-hit-by-two-earthquakes-friday",
+          "source_name": "Axios",
+          "published_at": "2018-05-05T00:00:00.000Z",
+          "headline": "Hawaii hit by two earthquakes Friday",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.theguardian.com/us-news/2018/may/04/hawaii-evacuations-ordered-as-kilauea-volcano-erupts",
+          "source_name": "The Guardian",
+          "published_at": "2018-05-04T00:00:00.000Z",
+          "headline": "Hawaii evacuations ordered as Kilauea volcano erupts",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "USGS"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Hawaii hit by two earthquakes Friday",
+            "source_url": "https://www.axios.com/2018/05/05/hawaii-hit-by-two-earthquakes-friday"
+          },
+          {
+            "quote": "Hawaii evacuations ordered as Kilauea volcano erupts",
+            "source_url": "https://www.theguardian.com/us-news/2018/may/04/hawaii-evacuations-ordered-as-kilauea-volcano-erupts"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.52,
+        "category": 0.75,
+        "location": 0.8,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "secondary_sources_only",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "kilauea_2018_unrest",
+        "fingerprint": "m6.9_eq_2018-05-04_hawaii_admin1"
+      }
+    },
+    {
+      "event_id": "2018-05_ecosystem_biodiversity_gbr_aims_condition_summary_2017_2018",
+      "title": "AIMS Great Barrier Reef condition summary (2017/18) reports coral cover declines and crown-of-thorns starfish outbreaks",
+      "description": "The Australian Institute of Marine Science (AIMS) Great Barrier Reef condition summary for 2017/18, based on monitoring surveys through May 2018, reported declines in mean coral cover in central and southern regions. It also noted intense crown-of-thorns starfish outbreaks affecting parts of the southern Swain Reefs.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2018-05-01T00:00:00.000Z",
+        "time_confidence": 0.4,
+        "event_date_utc": null,
+        "event_date_precision": "month"
+      },
+      "location": {
+        "name": "Great Barrier Reef, Queensland, Australia",
+        "jurisdiction_level": "state",
+        "admin1": "Queensland",
+        "country": "AU",
+        "capital_used": "Brisbane",
+        "lat": -27.4698,
+        "lon": 153.0251,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.aims.gov.au/reef-monitoring/gbr-condition-summary-2017-2018",
+          "source_name": "Australian Institute of Marine Science (AIMS)",
+          "published_at": "2018-05-01T00:00:00.000Z",
+          "headline": "GBR condition summary 2017-2018",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Australian Institute of Marine Science (AIMS)"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "Great Barrier Reef",
+          "Swain Reefs"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "condition summary for 2017-2018",
+            "source_url": "https://www.aims.gov.au/reef-monitoring/gbr-condition-summary-2017-2018"
+          },
+          {
+            "quote": "surveys through May 2018",
+            "source_url": "https://www.aims.gov.au/reef-monitoring/gbr-condition-summary-2017-2018"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.8,
+        "location": 0.6,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "low_confidence_location",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "AIMS GBR condition summary 2017-2018 coral cover crown-of-thorns starfish May 2018",
+        "fingerprint": "fp_2018-05_aims_gbr_condition_summary_qld"
+      }
+    },
+    {
+      "event_id": "2018-05-epa-final-rule-definition-of-solid-waste",
+      "title": "EPA signs final rule responding to court vacatur on Definition of Solid Waste",
+      "description": "The U.S. Environmental Protection Agency (EPA) signed a final rule on May 23, 2018 and noted publication on May 30, 2018. The rule responded to court decisions affecting provisions of the Definition of Solid Waste regulations related to hazardous secondary materials recycling and legitimacy factors.",
+      "category_primary": "policy_regulation",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "2018-05-23T00:00:00.000Z",
+        "event_end": "2018-05-23T23:59:59.000Z",
+        "reported_at": "2018-05-30T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2018-05-23T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States (federal rulemaking)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.8
+      },
+      "sources": [
+        {
+          "url": "https://www.epa.gov/hw/final-rule-2018-definition-solid-waste-dsw-response-court-vacatur",
+          "source_name": "U.S. Environmental Protection Agency",
+          "published_at": "2018-05-30T00:00:00.000Z",
+          "headline": "Final Rule (2018): Definition of Solid Waste (DSW) Response to Court Vacatur",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Environmental Protection Agency (EPA)"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "EPA signed a final rule on May 23, 2018 (published May 30) ... Definition of Solid Waste ... Response to Court Vacatur.",
+            "source_url": "https://www.epa.gov/hw/final-rule-2018-definition-solid-waste-dsw-response-court-vacatur"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.72,
+        "category": 0.8,
+        "location": 0.8,
+        "summary_grounding": 0.65
+      },
+      "quality_flags": [
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "epa_definition_of_solid_waste_final_rule_2018",
+        "fingerprint": "2018-05-epa-final-rule-definition-of-solid-waste|US|2018-05-23"
+      }
+    },
+    {
+      "event_id": "2018-05-multistate-suit-epa-landfill-methane-controls",
+      "title": "Multi-state lawsuit challenges EPA over landfill methane and air pollution controls",
+      "description": "A coalition of state attorneys general announced a lawsuit alleging the U.S. EPA failed to implement or enforce requirements intended to reduce landfill emissions, including methane and hazardous air pollutants. The filing date is described as May 31, 2018 in the draft, but the provided sources are press/announcement pages rather than the court docket entry.",
+      "category_primary": "policy_regulation",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2018-05-31T00:00:00.000Z",
+        "event_end": "2018-05-31T23:59:59.000Z",
+        "reported_at": "2018-05-31T00:00:00.000Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "2018-05-31T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States (federal litigation; referenced as filed in N.D. California)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.attorneygeneral.gov/taking-action/attorney-general-shapiro-sues-epa-over-failure-to-enforce-a-critical-rule-on-methane-in-landfills/",
+          "source_name": "Office of Attorney General of Pennsylvania",
+          "published_at": "2018-05-31T00:00:00.000Z",
+          "headline": "Attorney General Shapiro Sues EPA Over Failure To Enforce A Critical Rule On Methane In Landfills",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://oag.ca.gov/news/press-releases/attorney-general-becerra-applauds-court-ruling-advancing-multistate-challenge-us",
+          "source_name": "California Department of Justice (Office of the Attorney General)",
+          "published_at": "2018-05-31T00:00:00.000Z",
+          "headline": "Attorney General Becerra ... multistate challenge ...",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Environmental Protection Agency (EPA)",
+          "Office of Attorney General of Pennsylvania",
+          "California Department of Justice"
+        ],
+        "substances": [
+          "methane"
+        ],
+        "ecosystems": [],
+        "people": [
+          "Josh Shapiro",
+          "Xavier Becerra"
+        ]
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Sues EPA over failure to enforce ... rule on methane in landfills.",
+            "source_url": "https://www.attorneygeneral.gov/taking-action/attorney-general-shapiro-sues-epa-over-failure-to-enforce-a-critical-rule-on-methane-in-landfills/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.75,
+        "location": 0.6,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "secondary_sources_only",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "multistate_landfill_methane_enforcement_suit_2018",
+        "fingerprint": "2018-05-multistate-suit-epa-landfill-methane-controls|US|2018-05-31"
+      }
+    }
+  ]
+}

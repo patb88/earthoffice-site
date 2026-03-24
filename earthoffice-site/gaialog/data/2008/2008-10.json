@@ -1,0 +1,560 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_2008-10_normalize_2026-01-16T035410637Z",
+    "generated_utc": "2026-01-16T03:54:10.637Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "2008-10",
+    "window": {
+      "start_utc": "2008-10-01T00:00:00.000Z",
+      "end_utc": "2008-10-31T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "evt_20081011_oleum_release_petrolia_pa",
+      "title": "Oleum release at INDSPEC Chemical causes corrosive cloud and evacuations near Petrolia, Pennsylvania",
+      "description": "A release of oleum (fuming sulfuric acid) at INDSPEC Chemical Corp. generated a corrosive airborne cloud described as sulfur trioxide/sulfuric acid mist. The incident prompted evacuations and/or shelter-in-place actions for residents in surrounding areas, as documented by the U.S. Chemical Safety Board.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2008-10-11T00:00:00.000Z",
+        "event_end": "2008-10-11T23:59:59.000Z",
+        "reported_at": "2008-10-11T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2008-10-11T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Petrolia area, Pennsylvania, USA",
+        "jurisdiction_level": "city",
+        "admin1": "Pennsylvania",
+        "country": "US",
+        "capital_used": null,
+        "lat": 40.8167,
+        "lon": -79.7667,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.45
+      },
+      "sources": [
+        {
+          "url": "https://www.csb.gov/csb-issues-final-report-on-oleum-release-from-indspec-chemical-corp-that-forced-thousands-to-evacuate-in-october-2008-report-cites-use-of-pump-power-supply-that-lacked-safeguards/",
+          "source_name": "U.S. Chemical Safety Board (CSB)",
+          "published_at": "2008-10-11T00:00:00.000Z",
+          "headline": "CSB Issues Final Report on Oleum Release from INDSPEC Chemical Corp. That Forced Thousands to Evacuate in October 2008; Report Cites Use of Pump Power Supply That Lacked Safeguards",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "INDSPEC Chemical Corp.",
+          "U.S. Chemical Safety Board (CSB)"
+        ],
+        "substances": [
+          "oleum",
+          "sulfur trioxide",
+          "sulfuric acid"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "oleum release from INDSPEC Chemical Corp. that forced thousands to evacuate",
+            "source_url": "https://www.csb.gov/csb-issues-final-report-on-oleum-release-from-indspec-chemical-corp-that-forced-thousands-to-evacuate-in-october-2008-report-cites-use-of-pump-power-supply-that-lacked-safeguards/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.75,
+        "location": 0.45,
+        "summary_grounding": 0.65
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "INDSPEC_oleum_release_Oct2008_PetroliaPA",
+        "fingerprint": "fp_20081011_indspec_oleum_petrolia_pa"
+      }
+    },
+    {
+      "event_id": "evt_2008-10_central_america_floods_td16",
+      "title": "October 2008 flooding in Central America linked to Tropical Depression Sixteen and other rain systems",
+      "description": "Multiple heavy-rain systems during October 2008, including Tropical Depression Sixteen, contributed to widespread flooding across parts of Central America. Reports described major humanitarian impacts and damage to infrastructure in affected areas.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2008-10-01T00:00:00.000Z",
+        "event_end": "2008-10-31T23:59:59.000Z",
+        "reported_at": "2008-10-31T23:59:59.000Z",
+        "time_confidence": 0.5,
+        "event_date_utc": null,
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Central America",
+        "jurisdiction_level": "supranational",
+        "admin1": null,
+        "country": null,
+        "capital_used": "Belmopan",
+        "lat": 17.2514,
+        "lon": -88.7669,
+        "precision": "supranational",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.4
+      },
+      "sources": [
+        {
+          "url": "https://reliefweb.int/disaster/fl-2008-000198-blz",
+          "source_name": "ReliefWeb",
+          "published_at": "2008-10-31T23:59:59.000Z",
+          "headline": "FL-2008-000198-BLZ",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.nhc.noaa.gov/archive/2008/tws/MIATWSAT_oct.shtml",
+          "source_name": "NOAA NHC",
+          "published_at": "2008-10-31T23:59:59.000Z",
+          "headline": "Tropical Weather Summary Archive (October 2008)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA National Hurricane Center",
+          "ReliefWeb"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "disaster/fl-2008-000198-blz",
+            "source_url": "https://reliefweb.int/disaster/fl-2008-000198-blz"
+          },
+          {
+            "quote": "Tropical Weather Summary Archive (October 2008)",
+            "source_url": "https://www.nhc.noaa.gov/archive/2008/tws/MIATWSAT_oct.shtml"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.43,
+        "category": 0.6,
+        "location": 0.4,
+        "summary_grounding": 0.4
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Central America floods October 2008 Tropical Depression Sixteen",
+        "fingerprint": "fp_central_america_floods_2008-10"
+      }
+    },
+    {
+      "event_id": "evt_2008-10_hurricane_omar_ne_caribbean",
+      "title": "Hurricane Omar impacts parts of the northeastern Caribbean (October 2008)",
+      "description": "Hurricane Omar formed in mid-October 2008 and rapidly intensified before weakening. Impacts reported for parts of the northeastern Caribbean included hazardous seas and coastal effects, with damaging conditions in some islands along its track.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2008-10-13T00:00:00.000Z",
+        "event_end": "2008-10-21T23:59:59.000Z",
+        "reported_at": "2008-10-21T23:59:59.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": null,
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Eastern Caribbean",
+        "jurisdiction_level": "supranational",
+        "admin1": null,
+        "country": null,
+        "capital_used": "Bridgetown",
+        "lat": 13.0975,
+        "lon": -59.6167,
+        "precision": "supranational",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.4
+      },
+      "sources": [
+        {
+          "url": "https://www.nhc.noaa.gov/archive/2008/tws/MIATWSAT_nov.shtml",
+          "source_name": "NOAA NHC",
+          "published_at": "2008-11-30T23:59:59.000Z",
+          "headline": "Tropical Weather Summary Archive (November 2008)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://science.nasa.gov/earth/earth-observatory/hurricane-omar-35557/",
+          "source_name": "NASA Earth Observatory",
+          "published_at": "2008-10-16T00:00:00.000Z",
+          "headline": "Hurricane Omar",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA National Hurricane Center",
+          "NASA Earth Observatory"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Hurricane Omar",
+            "source_url": "https://science.nasa.gov/earth/earth-observatory/hurricane-omar-35557/"
+          },
+          {
+            "quote": "Tropical Weather Summary Archive (November 2008)",
+            "source_url": "https://www.nhc.noaa.gov/archive/2008/tws/MIATWSAT_nov.shtml"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.75,
+        "location": 0.4,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Hurricane Omar October 2008 northeastern Caribbean",
+        "fingerprint": "fp_hurricane_omar_2008-10"
+      }
+    },
+    {
+      "event_id": "2008-10-pakistan-quetta-ziarat-m6-4-doublet",
+      "title": "Two M6.4 earthquakes near Quetta/Ziarat, Balochistan, Pakistan",
+      "description": "Two strong earthquakes (reported as magnitude 6.4) struck the Quetta/Ziarat area of Balochistan in late October 2008, with major shocks occurring about 12 hours apart. Reports describe building damage, landslides, casualties and displacement in affected areas.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2008-10-28T23:09:57.000Z",
+        "event_end": "2008-10-29T11:32:41.000Z",
+        "reported_at": "2008-10-29T00:00:00Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2008-10-28T23:09:57.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Balochistan Province, Pakistan",
+        "jurisdiction_level": "state",
+        "admin1": "Balochistan",
+        "country": "PK",
+        "capital_used": "Quetta",
+        "lat": 30.1798,
+        "lon": 66.975,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://www.usgs.gov/media/audio/magnitude-64s-pakistan",
+          "source_name": "USGS",
+          "published_at": "2008-10-29T00:00:00Z",
+          "headline": "Magnitude 6.4s in Pakistan",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://science.nasa.gov/earth/earth-observatory/64-magnitude-earthquake-near-quetta-pakistan-35705/",
+          "source_name": "NASA Earth Observatory",
+          "published_at": "2008-10-29T00:00:00Z",
+          "headline": "6.4 Magnitude Earthquake near Quetta, Pakistan",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "USGS",
+          "NASA Earth Observatory"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Magnitude 6.4s in Pakistan",
+            "source_url": "https://www.usgs.gov/media/audio/magnitude-64s-pakistan"
+          },
+          {
+            "quote": "6.4 Magnitude Earthquake near Quetta, Pakistan",
+            "source_url": "https://science.nasa.gov/earth/earth-observatory/64-magnitude-earthquake-near-quetta-pakistan-35705/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.85,
+        "location": 0.7,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "needs_dedupe_check",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "2008-10 Quetta/Ziarat Pakistan M6.4 doublet",
+        "fingerprint": "evt|two-m6-4-earthquakes-near-quetta-ziarat-balochistan-pakistan|quetta|2008-10-28"
+      }
+    },
+    {
+      "event_id": "2008-10-kilauea-halemaumau-oct12-explosive",
+      "title": "Explosive event at Kīlauea’s Halema‘uma‘u Overlook vent (Oct 12, 2008)",
+      "description": "An explosive event occurred at Kīlauea volcano’s Halema‘uma‘u Overlook vent on October 12, 2008. The source describes it in the context of eruptive activity at the vent during that period.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2008-10-12T00:00:00.000Z",
+        "event_end": "2008-10-12T23:59:59.000Z",
+        "reported_at": "2008-10-12T00:00:00Z",
+        "time_confidence": 0.4,
+        "event_date_utc": "2008-10-12T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Halema‘uma‘u Crater, Kīlauea Volcano, Hawai‘i, USA",
+        "jurisdiction_level": "site",
+        "admin1": "Hawaii",
+        "country": "US",
+        "capital_used": null,
+        "lat": 19.4069,
+        "lon": -155.2834,
+        "precision": "exact",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.usgs.gov/publications/externally-triggered-renewed-bubble-nucleation-basaltic-magma-12-october-2008-eruption",
+          "source_name": "USGS",
+          "published_at": "2008-10-12T00:00:00Z",
+          "headline": "Externally triggered renewed bubble nucleation in basaltic magma: 12 October 2008 eruption",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "USGS"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "12 October 2008 eruption",
+            "source_url": "https://www.usgs.gov/publications/externally-triggered-renewed-bubble-nucleation-basaltic-magma-12-october-2008-eruption"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.48,
+        "category": 0.8,
+        "location": 0.6,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "paywalled_or_partial"
+      ],
+      "dedupe": {
+        "cluster_hint": "2008-10 Kilauea Halemaumau Oct 12 explosive event",
+        "fingerprint": "evt|explosive-event-at-kilaueas-halemaumau-overlook-vent-oct-12-2008|halemaumau|2008-10-12"
+      }
+    },
+    {
+      "event_id": "2008-10-17_usfws_san-bernardino-kangaroo-rat_critical-habitat_final-rule",
+      "title": "USFWS final rule revises critical habitat for the San Bernardino kangaroo rat",
+      "description": "The U.S. Fish & Wildlife Service published a final rule revising the designated critical habitat for the endangered San Bernardino kangaroo rat. The rule updates habitat units/acreage relative to earlier designations and states an effective date of November 17, 2008.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "2008-10-17T00:00:00.000Z",
+        "event_end": "2008-10-17T23:59:59.000Z",
+        "reported_at": "2008-10-17T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2008-10-17T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "San Bernardino and Riverside Counties, California, USA",
+        "jurisdiction_level": "state",
+        "admin1": "California",
+        "country": "US",
+        "capital_used": "Sacramento",
+        "lat": 38.5815719,
+        "lon": -121.4943996,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.fws.gov/policy/library/2008/E8-23515.html",
+          "source_name": "U.S. Fish & Wildlife Service",
+          "published_at": "2008-10-17T00:00:00.000Z",
+          "headline": "E8-23515",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Fish & Wildlife Service"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.85,
+        "location": 0.55,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "USFWS critical habitat San Bernardino kangaroo rat final rule 2008-10",
+        "fingerprint": "f1f6f4b8e3b5b4a6"
+      }
+    },
+    {
+      "event_id": "2008-10-21_usfws_kauai_48-species_proposed-esa-listing-critical-habitat",
+      "title": "USFWS proposes listing 48 Kaua‘i species and designating critical habitat for 47",
+      "description": "The U.S. Fish & Wildlife Service proposed listing 48 endemic species from Kaua‘i as endangered. The proposal also included designation of critical habitat for 47 of the species, as published as an ESA regulatory action in October 2008.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "2008-10-21T00:00:00.000Z",
+        "event_end": "2008-10-21T23:59:59.000Z",
+        "reported_at": "2008-10-21T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2008-10-21T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Kaua‘i, Hawai‘i, USA",
+        "jurisdiction_level": "state",
+        "admin1": "Hawaii",
+        "country": "US",
+        "capital_used": "Honolulu",
+        "lat": 21.3069444,
+        "lon": -157.8583333,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.fws.gov/policy/library/2008/E8-23561.html",
+          "source_name": "U.S. Fish & Wildlife Service",
+          "published_at": "2008-10-21T00:00:00.000Z",
+          "headline": "E8-23561",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.fws.gov/species-publication-action/listing-48-species-kauai-endangered-and-designating-critical-habitat-83",
+          "source_name": "U.S. Fish & Wildlife Service",
+          "published_at": "2008-10-21T00:00:00.000Z",
+          "headline": "Listing 48 species on Kaua‘i as endangered and designating critical habitat",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Fish & Wildlife Service"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.65,
+        "category": 0.85,
+        "location": 0.6,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "USFWS Kauai 48 species proposed listing critical habitat 2008-10",
+        "fingerprint": "d8b4c5a1a6b0d2c9"
+      }
+    }
+  ]
+}

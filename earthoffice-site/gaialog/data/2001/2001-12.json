@@ -1,0 +1,551 @@
+{
+  "batch_meta": {
+    "batch_id": "2001-12_gaialog_001",
+    "generated_utc": "2026-01-11T00:00:00Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "2001-12",
+    "window": {
+      "start_utc": "2001-12-01T00:00:00.000Z",
+      "end_utc": "2001-12-31T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-json-normalizer",
+      "version": "1.0",
+      "model": "api-assistant",
+      "retrieval_method": "curated"
+    }
+  },
+  "events": [
+    {
+      "event_id": "evt_20011202_fairhaven_gasoline_spill",
+      "title": "Interstate 195 tanker crash spills gasoline into wetland near Fairhaven, Massachusetts",
+      "description": "An EPA report says a tanker truck accident on December 2, 2001 led to a gasoline spill estimated at more than 9,000 gallons into an embankment and an adjacent wetland area near Fairhaven, Massachusetts. The EPA report notes the initial emergency response phase concluded on December 10, 2001.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2001-12-02T23:00:00.000Z",
+        "event_end": "2001-12-10T23:59:59.000Z",
+        "reported_at": "2001-12-10T00:00:00Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "2001-12-02T23:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Fairhaven, Massachusetts, USA (I-195 area)",
+        "jurisdiction_level": "city",
+        "admin1": "Massachusetts",
+        "country": "US",
+        "capital_used": null,
+        "lat": 41.6376,
+        "lon": -70.9036,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.epa.gov/archive/epapages/newsroom_archive/newsreleases/c19f1ba9a863686885257457004712cf.html",
+          "source_name": "U.S. Environmental Protection Agency (archive)",
+          "published_at": "2001-12-10T00:00:00Z",
+          "headline": "News release (EPA archive)",
+          "byline": null,
+          "accessed_utc": "2026-01-11T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Environmental Protection Agency",
+          "Massachusetts Department of Environmental Protection"
+        ],
+        "substances": [
+          "gasoline"
+        ],
+        "ecosystems": [
+          "wetland"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "estimated spill of more than 9,000 gallons of gasoline",
+            "source_url": "https://www.epa.gov/archive/epapages/newsroom_archive/newsreleases/c19f1ba9a863686885257457004712cf.html"
+          },
+          {
+            "quote": "initial emergency response phase concluded",
+            "source_url": "https://www.epa.gov/archive/epapages/newsroom_archive/newsreleases/c19f1ba9a863686885257457004712cf.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.8,
+        "location": 0.6,
+        "summary_grounding": 0.7
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "fairhaven_ma_gasoline_spill_2001-12",
+        "fingerprint": "fp_fairhaven_ma_gasoline_spill_200112"
+      }
+    },
+    {
+      "event_id": "evt_20011218_delaware_basin_drought_emergency",
+      "title": "Drought emergency declared for the Delaware River Basin",
+      "description": "The Delaware River Basin Commission announced a drought emergency on December 18, 2001, citing water-supply conditions below seasonal averages. The declaration enabled emergency measures to manage basin water supplies, including actions intended to protect aquatic life and reduce saltwater intrusion risk.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2001-12-18T00:00:00.000Z",
+        "event_end": "2001-12-18T23:59:59.000Z",
+        "reported_at": "2001-12-18T00:00:00Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2001-12-18T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Delaware River Basin (NY/PA/NJ/DE, USA)",
+        "jurisdiction_level": "supranational",
+        "admin1": null,
+        "country": null,
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "proxy",
+        "location_basis": "institution_proxy",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.nj.gov/drbc/home/newsroom/news/approved/20011218_drought121801_press.html",
+          "source_name": "Delaware River Basin Commission (via nj.gov)",
+          "published_at": "2001-12-18T00:00:00Z",
+          "headline": "Press release",
+          "byline": null,
+          "accessed_utc": "2026-01-11T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Delaware River Basin Commission"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "river basin"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "declared a drought emergency",
+            "source_url": "https://www.nj.gov/drbc/home/newsroom/news/approved/20011218_drought121801_press.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.58,
+        "category": 0.75,
+        "location": 0.45,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "low_confidence_location"
+      ],
+      "dedupe": {
+        "cluster_hint": "delaware_river_basin_drought_emergency_2001-12-18",
+        "fingerprint": "fp_delaware_basin_drought_emergency_20011218"
+      }
+    },
+    {
+      "event_id": "evt_20011218_yonaguni_eq_tsunami",
+      "title": "M7.3 earthquake near Yonaguni Island triggers tsunami observations in Okinawa",
+      "description": "A Japanese seismic report describes a magnitude 7.3 earthquake in the sea near Yonagunijima (Yonaguni Island) on December 18, 2001. The report indicates a tsunami was observed in Okinawa Prefecture following the earthquake sequence.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2001-12-18T04:02:00.000Z",
+        "event_end": "2001-12-18T23:59:59.000Z",
+        "reported_at": "2002-01-01T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2001-12-18T04:02:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Yonaguni, Okinawa Prefecture, Japan (nearby sea)",
+        "jurisdiction_level": "site",
+        "admin1": "Okinawa",
+        "country": "JP",
+        "capital_used": null,
+        "lat": 24.4672,
+        "lon": 122.9784,
+        "precision": "admin1",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.jishin.go.jp/main/chousa/02jan/index-e.htm",
+          "source_name": "Headquarters for Earthquake Research Promotion, Japan (jishin.go.jp)",
+          "published_at": "2002-01-01T00:00:00Z",
+          "headline": "Monthly seismicity report (English)",
+          "byline": null,
+          "accessed_utc": "2026-01-11T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.irishtimes.com/news/powerful-earthquake-strikes-southern-japan-1.407788",
+          "source_name": "The Irish Times",
+          "published_at": "2001-12-18T00:00:00Z",
+          "headline": "Powerful earthquake strikes southern Japan",
+          "byline": null,
+          "accessed_utc": "2026-01-11T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [
+          "coastal waters"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "earthquake ... near Yonagunijima",
+            "source_url": "https://www.jishin.go.jp/main/chousa/02jan/index-e.htm"
+          },
+          {
+            "quote": "tsunami was observed",
+            "source_url": "https://www.jishin.go.jp/main/chousa/02jan/index-e.htm"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.75,
+        "location": 0.55,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "yonaguni_okinawa_m7_3_eq_2001-12-18",
+        "fingerprint": "fp_yonaguni_eq_20011218"
+      }
+    },
+    {
+      "event_id": "evt_20011223_nsw_black_christmas_fires",
+      "title": "‘Black Christmas’ bushfires outbreak begins in New South Wales",
+      "description": "NASA Earth Observatory and JPL imagery/documentation describe widespread smoke from bushfires in New South Wales in late December 2001, part of a larger fire outbreak often referred to as the “Black Christmas” fires. The event generated extensive smoke affecting the Sydney region and continued into early January 2002.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2001-12-23T00:00:00.000Z",
+        "event_end": "2001-12-31T23:59:59.000Z",
+        "reported_at": "2001-12-30T00:00:00Z",
+        "time_confidence": 0.4,
+        "event_date_utc": "2001-12-23T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "New South Wales, Australia",
+        "jurisdiction_level": "state",
+        "admin1": "New South Wales",
+        "country": "AU",
+        "capital_used": "Sydney",
+        "lat": -33.8688,
+        "lon": 151.2093,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://science.nasa.gov/earth/earth-observatory/smoke-blankets-new-south-wales-australia-2089/",
+          "source_name": "NASA Earth Observatory",
+          "published_at": "2001-12-30T00:00:00Z",
+          "headline": "Smoke blankets New South Wales, Australia",
+          "byline": null,
+          "accessed_utc": "2026-01-11T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.jpl.nasa.gov/images/pia03438-smoke-blankets-new-south-wales-australia/",
+          "source_name": "NASA Jet Propulsion Laboratory",
+          "published_at": "2001-12-30T00:00:00Z",
+          "headline": "Smoke blankets New South Wales, Australia (PIA03438)",
+          "byline": null,
+          "accessed_utc": "2026-01-11T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NASA Earth Observatory",
+          "NASA Jet Propulsion Laboratory"
+        ],
+        "substances": [
+          "smoke"
+        ],
+        "ecosystems": [
+          "bushland"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Smoke blankets New South Wales",
+            "source_url": "https://science.nasa.gov/earth/earth-observatory/smoke-blankets-new-south-wales-australia-2089/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.52,
+        "category": 0.75,
+        "location": 0.75,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "nsw_black_christmas_fires_2001-12",
+        "fingerprint": "fp_nsw_black_christmas_fires_200112"
+      }
+    },
+    {
+      "event_id": "evt_20011214_iowa_anhydrous_ammonia_fish_kill",
+      "title": "Anhydrous ammonia pipeline rupture causes major fish kill in Iowa waterways",
+      "description": "A Radio Iowa report says an anhydrous ammonia pipeline rupture on December 14, 2001 led to a major fish kill affecting waterways including Lotts Creek and the East Fork of the Des Moines River. The report describes later estimates increasing to roughly 1.3 million fish killed across many miles of stream.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2001-12-14T00:00:00.000Z",
+        "event_end": "2001-12-27T23:59:59.000Z",
+        "reported_at": "2001-12-27T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2001-12-14T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Kossuth County area waterways (near Whittemore), Iowa, USA",
+        "jurisdiction_level": "state",
+        "admin1": "Iowa",
+        "country": "US",
+        "capital_used": "Des Moines",
+        "lat": 41.5868,
+        "lon": -93.625,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.5
+      },
+      "sources": [
+        {
+          "url": "https://www.radioiowa.com/2001/12/27/estimate-raised-on-largest-fish-kill/",
+          "source_name": "Radio Iowa",
+          "published_at": "2001-12-27T00:00:00Z",
+          "headline": "Estimate raised on largest fish kill",
+          "byline": null,
+          "accessed_utc": "2026-01-11T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [
+          "anhydrous ammonia"
+        ],
+        "ecosystems": [
+          "streams",
+          "river"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "anhydrous ammonia spill from a ruptured pipeline",
+            "source_url": "https://www.radioiowa.com/2001/12/27/estimate-raised-on-largest-fish-kill/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.5,
+        "category": 0.7,
+        "location": 0.5,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "low_confidence_location",
+        "date_ambiguous",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "iowa_anhydrous_ammonia_fish_kill_2001-12",
+        "fingerprint": "fp_iowa_ammonia_fish_kill_20011214"
+      }
+    },
+    {
+      "event_id": "evt_20011213_exxonmobil_hazwaste_settlement",
+      "title": "U.S. announces $11.2 million hazardous waste settlement with Mobil Oil (ExxonMobil)",
+      "description": "An EPA archived press release announces a hazardous-waste enforcement settlement involving Mobil Oil Corporation (ExxonMobil), including a consent decree and a monetary settlement of $11.2 million. The announcement was issued on December 13, 2001.",
+      "category_primary": "policy_regulation",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "2001-12-13T00:00:00.000Z",
+        "event_end": "2001-12-13T23:59:59.000Z",
+        "reported_at": "2001-12-13T00:00:00Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2001-12-13T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States (federal enforcement announcement)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://www.epa.gov/archive/epapages/newsroom_archive/newsreleases/3bf48e43351e730d85256b2100644bb0.html",
+          "source_name": "U.S. Environmental Protection Agency (archive)",
+          "published_at": "2001-12-13T00:00:00Z",
+          "headline": "News release (EPA archive)",
+          "byline": null,
+          "accessed_utc": "2026-01-11T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Environmental Protection Agency",
+          "Mobil Oil Corporation",
+          "ExxonMobil"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "$11.2 million",
+            "source_url": "https://www.epa.gov/archive/epapages/newsroom_archive/newsreleases/3bf48e43351e730d85256b2100644bb0.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.75,
+        "location": 0.75,
+        "summary_grounding": 0.7
+      },
+      "quality_flags": [],
+      "dedupe": {
+        "cluster_hint": "epa_exxonmobil_mobil_oil_hazwaste_settlement_2001-12-13",
+        "fingerprint": "fp_epa_exxonmobil_settlement_20011213"
+      }
+    },
+    {
+      "event_id": "evt_20011221_epa_dioxin_sludge_decision",
+      "title": "EPA announces decision not to regulate dioxin in sewage sludge for certain management methods",
+      "description": "An EPA archived press release states the agency finalized a decision not to regulate dioxin in sewage sludge for certain management methods, referencing its evaluation of exposure risks and existing regulations. The EPA announcement is dated December 21, 2001.",
+      "category_primary": "policy_regulation",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "2001-12-21T00:00:00.000Z",
+        "event_end": "2001-12-21T23:59:59.000Z",
+        "reported_at": "2001-12-21T00:00:00Z",
+        "time_confidence": 0.75,
+        "event_date_utc": "2001-12-21T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States (EPA national decision)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://www.epa.gov/archive/epapages/newsroom_archive/newsreleases/d13b8430ac4c1b8785256b290061a2f8.html",
+          "source_name": "U.S. Environmental Protection Agency (archive)",
+          "published_at": "2001-12-21T00:00:00Z",
+          "headline": "News release (EPA archive)",
+          "byline": null,
+          "accessed_utc": "2026-01-11T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Environmental Protection Agency"
+        ],
+        "substances": [
+          "dioxin",
+          "sewage sludge"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "final decision not to regulate dioxin in sewage sludge",
+            "source_url": "https://www.epa.gov/archive/epapages/newsroom_archive/newsreleases/d13b8430ac4c1b8785256b290061a2f8.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.64,
+        "category": 0.75,
+        "location": 0.75,
+        "summary_grounding": 0.7
+      },
+      "quality_flags": [],
+      "dedupe": {
+        "cluster_hint": "epa_dioxin_sewage_sludge_decision_2001-12-21",
+        "fingerprint": "fp_epa_dioxin_sludge_20011221"
+      }
+    }
+  ]
+}

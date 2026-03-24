@@ -1,0 +1,870 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_2023-04_normalize_2026-01-16T133606079Z",
+    "generated_utc": "2026-01-16T13:36:06.079Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "2023-04",
+    "window": {
+      "start_utc": "2023-04-01T00:00:00.000Z",
+      "end_utc": "2023-04-30T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "evt_20230426_intracoastal_oil_hackberry_la",
+      "title": "Crude oil discharged into the Intracoastal Waterway during pipeline pressure test near Hackberry, Louisiana",
+      "description": "NOAA IncidentNews reported a discharge of crude oil into the Intracoastal Waterway during a pipeline pressure test near Hackberry, Louisiana. The incident log described spill response/support context and estimated the discharge at about 30 barrels.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2023-04-26T00:00:00.000Z",
+        "event_end": "2023-04-26T23:59:59.000Z",
+        "reported_at": "2023-04-26T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2023-04-26T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Hackberry, Louisiana, USA (Intracoastal Waterway)",
+        "jurisdiction_level": "city",
+        "admin1": "Louisiana",
+        "country": "US",
+        "capital_used": null,
+        "lat": 29.9961,
+        "lon": -93.3424,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://incidentnews.noaa.gov/incident/10602",
+          "source_name": "NOAA IncidentNews",
+          "published_at": "2023-04-26T00:00:00.000Z",
+          "headline": "Incident 10602",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA"
+        ],
+        "substances": [
+          "crude oil"
+        ],
+        "ecosystems": [
+          "Intracoastal Waterway"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Estimated ~30 barrels of crude oil were discharged into the Intracoastal Waterway during a pipeline pressure test.",
+            "source_url": "https://incidentnews.noaa.gov/incident/10602"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.8,
+        "location": 0.55,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "noaa_incident_10602_hackberry_intracoastal_oil",
+        "fingerprint": "fp_noaa_10602_hackberry_2023-04-26"
+      }
+    },
+    {
+      "event_id": "evt_20230405_jones_falls_vinegar_discharges_baltimore_md",
+      "title": "Legal actions allege ongoing industrial/acidic discharges to Jones Falls in Baltimore, Maryland",
+      "description": "Local reporting said Blue Water Baltimore filed a lawsuit alleging illegal acidic or industrial discharges from the Fleischmann’s Vinegar facility into Jones Falls. Coverage also referenced related state legal action and prior fish-kill impacts tied to discharges.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2023-04-05T00:00:00.000Z",
+        "event_end": "2023-04-05T23:59:59.000Z",
+        "reported_at": "2023-04-05T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2023-04-05T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Jones Falls, Baltimore, Maryland, USA",
+        "jurisdiction_level": "city",
+        "admin1": "Maryland",
+        "country": "US",
+        "capital_used": null,
+        "lat": 39.2904,
+        "lon": -76.6122,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://www.baltimorebrew.com/2023/04/05/environmental-group-sues-fleishmanns-says-vinegar-company-is-still-polluting-the-jones-falls/",
+          "source_name": "Baltimore Brew",
+          "published_at": "2023-04-05T00:00:00.000Z",
+          "headline": "Environmental group sues Fleischmann’s, says vinegar company is still polluting the Jones Falls",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.wypr.org/wypr-news/2023-04-06/major-vinegar-maker-accused-of-polluting-baltimores-jones-falls-waterway-killing-1-000-fish",
+          "source_name": "WYPR",
+          "published_at": "2023-04-06T00:00:00.000Z",
+          "headline": "Major vinegar maker accused of polluting Baltimore’s Jones Falls waterway, killing 1,000 fish",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Blue Water Baltimore",
+          "Fleischmann’s Vinegar",
+          "Kerry Group"
+        ],
+        "substances": [
+          "acidic discharge",
+          "industrial discharge"
+        ],
+        "ecosystems": [
+          "Jones Falls"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Blue Water Baltimore filed suit alleging illegal acidic/industrial discharges into Jones Falls.",
+            "source_url": "https://www.baltimorebrew.com/2023/04/05/environmental-group-sues-fleishmanns-says-vinegar-company-is-still-polluting-the-jones-falls/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.65,
+        "category": 0.8,
+        "location": 0.7,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "jones_falls_fleischmanns_blue_water_baltimore_lawsuit_2023-04",
+        "fingerprint": "fp_jonesfalls_baltimore_2023-04-05"
+      }
+    },
+    {
+      "event_id": "evt_20230401_eastern_kentucky_windstorm",
+      "title": "Strong to damaging winds from intense low-pressure system (Eastern Kentucky)",
+      "description": "A National Weather Service event write-up documented strong to damaging winds in Eastern Kentucky on April 1, 2023, associated with an unseasonably intense low-pressure system. The write-up noted widespread wind gusts and localized impacts including flooding.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2023-04-01T00:00:00.000Z",
+        "event_end": "2023-04-01T23:59:59.000Z",
+        "reported_at": "2023-04-01T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2023-04-01T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Eastern Kentucky, USA",
+        "jurisdiction_level": "state",
+        "admin1": "Kentucky",
+        "country": "US",
+        "capital_used": "Frankfort",
+        "lat": 38.200905,
+        "lon": -84.873284,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://noaa-mirror.org/www.weather.gov/jkl/2023-04-01-eastern_kentucky-windstorm",
+          "source_name": "NOAA / National Weather Service (mirror)",
+          "published_at": "2023-04-01T00:00:00.000Z",
+          "headline": "Anomalously deep storm system brings strong to damaging winds (Eastern Kentucky, USA)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "National Weather Service"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "documented strong to damaging winds on April 1, 2023",
+            "source_url": "https://noaa-mirror.org/www.weather.gov/jkl/2023-04-01-eastern_kentucky-windstorm"
+          },
+          {
+            "quote": "associated with an unseasonably intense low-pressure system",
+            "source_url": "https://noaa-mirror.org/www.weather.gov/jkl/2023-04-01-eastern_kentucky-windstorm"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.75,
+        "location": 0.7,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "paywalled_or_partial",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "2023-04-01 Eastern Kentucky windstorm",
+        "fingerprint": "fp_20230401_eastern_kentucky_us_weather_climate"
+      }
+    },
+    {
+      "event_id": "evt_20230411_shiveluch_ash_kamchatka",
+      "title": "Shiveluch volcano eruption produces major ash plume and ashfall in Kamchatka",
+      "description": "Shiveluch volcano on Russia’s Kamchatka Peninsula erupted in April 2023, sending a large ash plume high into the atmosphere and causing ashfall in nearby areas. Aviation alerts were issued due to the ash hazard.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2023-04-11T00:00:00.000Z",
+        "event_end": "2023-04-11T23:59:59.000Z",
+        "reported_at": "2023-04-11T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2023-04-11T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Kamchatka Peninsula, Russia (Shiveluch volcano region)",
+        "jurisdiction_level": "site",
+        "admin1": null,
+        "country": "RU",
+        "capital_used": null,
+        "lat": 56.65,
+        "lon": 161.36,
+        "precision": "admin1",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.dw.com/en/volcanic-eruption-in-russias-kamchatka-threatens-aviation/a-65275061",
+          "source_name": "Deutsche Welle",
+          "published_at": "2023-04-11T00:00:00.000Z",
+          "headline": "Volcanic eruption in Russia's Kamchatka threatens aviation",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://apnews.com/article/9c25897fb9821c4cb3fe1f59878824fe",
+          "source_name": "Associated Press",
+          "published_at": "2023-04-11T00:00:00.000Z",
+          "headline": "Shiveluch volcano erupts in Russia’s Far East",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Deutsche Welle",
+          "Associated Press"
+        ],
+        "substances": [
+          "volcanic ash"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Shiveluch volcano erupted ... sending ash high into the sky and blanketing nearby areas.",
+            "source_url": "https://www.dw.com/en/volcanic-eruption-in-russias-kamchatka-threatens-aviation/a-65275061"
+          },
+          {
+            "quote": "Aviation alerts were issued due to the ash cloud.",
+            "source_url": "https://apnews.com/article/9c25897fb9821c4cb3fe1f59878824fe"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.85,
+        "location": 0.55,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Shiveluch April 2023 major eruption/ash plume",
+        "fingerprint": "shiveluch-volcano-eruption-produces-major-ash-plume-and-ashfall-in-kamchatka|kamchatka-peninsula-russia-shiveluch-volcano-region|2023-04-11"
+      }
+    },
+    {
+      "event_id": "evt_20230424_kermadec_m71_eq",
+      "title": "Magnitude 7.1 earthquake near the Kermadec Islands region",
+      "description": "A magnitude 7.1 earthquake occurred near the Kermadec Islands region in the South Pacific on April 24, 2023 (UTC). The event is listed in an earthquake database with timing and magnitude parameters.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2023-04-24T00:41:55.000Z",
+        "event_end": "2023-04-24T01:41:55.000Z",
+        "reported_at": "2023-04-24T00:41:55.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2023-04-24T00:41:55.000Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Kermadec Islands region (South Pacific)",
+        "jurisdiction_level": "supranational",
+        "admin1": null,
+        "country": null,
+        "capital_used": "Nukuʻalofa",
+        "lat": -21.1393,
+        "lon": -175.2049,
+        "precision": "proxy",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.25
+      },
+      "sources": [
+        {
+          "url": "https://iisee.kenken.go.jp/en/database/quakes/20230424.html",
+          "source_name": "IISEE (Building Research Institute, Japan)",
+          "published_at": "2023-04-24T00:00:00.000Z",
+          "headline": "Earthquake information (2023-04-24)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "IISEE (Building Research Institute, Japan)"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "M 7.1 earthquake near the Kermadec Islands on 2023/04/24.",
+            "source_url": "https://iisee.kenken.go.jp/en/database/quakes/20230424.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.35,
+        "category": 0.7,
+        "location": 0.25,
+        "summary_grounding": 0.4
+      },
+      "quality_flags": [
+        "low_confidence_location",
+        "location_ambiguous",
+        "date_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Kermadec Islands region M7.1 earthquake 2023-04-24",
+        "fingerprint": "magnitude-7-1-earthquake-near-the-kermadec-islands-region|kermadec-islands-region-south-pacific|2023-04-24"
+      }
+    },
+    {
+      "event_id": "2023-04_fires_somerset-me_train-derailment-fire",
+      "title": "Freight train derailment sparks forest fire in Somerset County, Maine",
+      "description": "A freight train derailment in northern Somerset County, Maine, led to fire involving locomotives/cars and ignited a forest fire in nearby woods. Responders asked the public to avoid the area while crews responded.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2023-04-15T00:00:00.000Z",
+        "event_end": "2023-04-15T23:59:59.000Z",
+        "reported_at": "2023-04-15T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2023-04-15T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Somerset County, Maine, USA",
+        "jurisdiction_level": "state",
+        "admin1": "Maine",
+        "country": "US",
+        "capital_used": "Augusta",
+        "lat": 44.3106,
+        "lon": -69.7795,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.65
+      },
+      "sources": [
+        {
+          "url": "https://www.wabi.tv/2023/04/15/fire-breaks-out-after-train-derailed-north-rockwood/",
+          "source_name": "WABI TV5",
+          "published_at": "2023-04-15T00:00:00Z",
+          "headline": "Fire breaks out after train derailed in North Rockwood",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://apnews.com/article/f891c340141ead29e3f5055810032d89",
+          "source_name": "Associated Press",
+          "published_at": "2023-04-15T00:00:00Z",
+          "headline": "Freight train derails in Maine, catches fire and sparks forest fire",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [
+          "forest"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "fire breaks out after train derailed",
+            "source_url": "https://www.wabi.tv/2023/04/15/fire-breaks-out-after-train-derailed-north-rockwood/"
+          },
+          {
+            "quote": "catches fire and sparks forest fire",
+            "source_url": "https://apnews.com/article/f891c340141ead29e3f5055810032d89"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.85,
+        "location": 0.65,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "maine_train_derailment_forest_fire_2023-04-15",
+        "fingerprint": "fires|maine|augusta|2023-04-15|train-derailment-forest-fire"
+      }
+    },
+    {
+      "event_id": "2023-04_fires_tacoma-wa_vessel-fire_hylebos",
+      "title": "Fishing vessel fire in Tacoma’s Hylebos Waterway with spill and freon hazards",
+      "description": "NOAA OR&R reported a fishing vessel fire in the Hylebos Waterway in Tacoma, Washington, that posed a potential diesel release risk. The incident also involved a hazardous freon tank, and preventive response actions included protective booming and staging.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2023-04-08T00:00:00.000Z",
+        "event_end": "2023-04-08T23:59:59.000Z",
+        "reported_at": "2023-04-01T00:00:00Z",
+        "time_confidence": 0.5,
+        "event_date_utc": "2023-04-08T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Hylebos Waterway, Tacoma, Washington, USA",
+        "jurisdiction_level": "city",
+        "admin1": "Washington",
+        "country": "US",
+        "capital_used": null,
+        "lat": 47.2529,
+        "lon": -122.4443,
+        "precision": "city",
+        "location_basis": "manual_override",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://blog.response.restoration.noaa.gov/incident-responses-april-2023",
+          "source_name": "NOAA OR&R Blog",
+          "published_at": "2023-04-01T00:00:00Z",
+          "headline": "Incident Responses – April 2023",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA"
+        ],
+        "substances": [
+          "diesel",
+          "freon"
+        ],
+        "ecosystems": [
+          "waterway"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Incident Responses – April 2023",
+            "source_url": "https://blog.response.restoration.noaa.gov/incident-responses-april-2023"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.7,
+        "location": 0.6,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "secondary_sources_only",
+        "date_ambiguous",
+        "needs_dedupe_check",
+        "low_confidence_location"
+      ],
+      "dedupe": {
+        "cluster_hint": "tacoma_hylebos_waterway_vessel_fire_2023-04-08",
+        "fingerprint": "fires|tacoma|2023-04-08|vessel-fire-hylebos"
+      }
+    },
+    {
+      "event_id": "evt_20230427_menindee_fishkill_water_testing",
+      "title": "Water testing after Menindee fish kill finds elevated nutrient loads and ongoing river health concerns",
+      "description": "Water testing following a major fish kill near Menindee on the Darling-Baaka River reported elevated nutrient loads and ongoing concerns about river health, including conditions associated with algae. The reporting linked these stressors to broader ecosystem pressures affecting fish and river conditions.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2023-04-27T00:00:00.000Z",
+        "event_end": "2023-04-27T23:59:59.000Z",
+        "reported_at": "2023-04-27T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2023-04-27T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Darling-Baaka River near Menindee, New South Wales, Australia",
+        "jurisdiction_level": "site",
+        "admin1": "New South Wales",
+        "country": "AU",
+        "capital_used": null,
+        "lat": -32.3949,
+        "lon": 142.4109,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.theguardian.com/australia-news/2023/apr/27/water-testing-after-the-menindee-fish-kill-shows-a-chronically-sick-river",
+          "source_name": "The Guardian",
+          "published_at": "2023-04-27T00:00:00.000Z",
+          "headline": "Water testing after the Menindee fish kill shows a ‘chronically sick’ river",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [
+          "ammonia",
+          "nitrogen",
+          "phosphorus"
+        ],
+        "ecosystems": [
+          "Darling-Baaka River"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Water testing after the Menindee fish kill shows a ‘chronically sick’ river",
+            "source_url": "https://www.theguardian.com/australia-news/2023/apr/27/water-testing-after-the-menindee-fish-kill-shows-a-chronically-sick-river"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.7,
+        "location": 0.55,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Menindee fish kill follow-up testing April 2023",
+        "fingerprint": "fp_menindee_darling_baaka_2023-04-27"
+      }
+    },
+    {
+      "event_id": "evt_20230423_spotted_lanternfly_spring_reemergence",
+      "title": "Spotted lanternfly expected to reemerge in spring 2023, with renewed invasive-species pressure",
+      "description": "Reporting warned that spotted lanternflies were expected to reemerge strongly in spring 2023, emphasizing invasive-species pressure and potential impacts. The article called for public actions intended to help limit spread and harm to agriculture and ecosystems.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2023-04-23T00:00:00.000Z",
+        "event_end": "2023-04-23T23:59:59.000Z",
+        "reported_at": "2023-04-23T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2023-04-23T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States (Northeast and Mid-Atlantic)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.theguardian.com/environment/2023/apr/23/spotted-lanternflies-spring-hatch",
+          "source_name": "The Guardian",
+          "published_at": "2023-04-23T00:00:00.000Z",
+          "headline": "Spotted lanternflies: spring hatch",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Spotted lanternflies: spring hatch",
+            "source_url": "https://www.theguardian.com/environment/2023/apr/23/spotted-lanternflies-spring-hatch"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.65,
+        "location": 0.6,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Spotted lanternfly spring 2023 reemergence (US)",
+        "fingerprint": "fp_spotted_lanternfly_us_2023-04-23"
+      }
+    },
+    {
+      "event_id": "evt_20230413_epa_anprm_pfas_cercla_us",
+      "title": "EPA issues ANPRM seeking input on potential future PFAS CERCLA hazardous substance designations",
+      "description": "On April 13, 2023, the U.S. Environmental Protection Agency announced an Advance Notice of Proposed Rulemaking requesting public input and data on potential future designations of additional PFAS as hazardous substances under CERCLA (Superfund). The action is framed as a step in EPA’s PFAS Strategic Roadmap and seeks information to inform possible future rulemaking.",
+      "category_primary": "policy_regulation",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "2023-04-13T00:00:00.000Z",
+        "event_end": "2023-04-13T23:59:59.000Z",
+        "reported_at": "2023-04-13T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2023-04-13T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States (federal policy)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.8
+      },
+      "sources": [
+        {
+          "url": "https://www.epa.gov/newsreleases/epa-takes-important-step-advance-pfas-strategic-roadmap-requests-public-input-and-data",
+          "source_name": "U.S. Environmental Protection Agency",
+          "published_at": "2023-04-13T00:00:00.000Z",
+          "headline": "EPA takes important step to advance PFAS Strategic Roadmap; requests public input and data",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.epa.gov/superfund/advanced-notice-proposed-rulemaking-potential-future-designations-and-polyfluoroalkyl",
+          "source_name": "U.S. Environmental Protection Agency",
+          "published_at": "2023-04-13T00:00:00.000Z",
+          "headline": "Advanced Notice of Proposed Rulemaking: Potential Future Designations and Polyfluoroalkyl Substances (PFAS) under CERCLA",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Environmental Protection Agency (EPA)"
+        ],
+        "substances": [
+          "PFAS",
+          "CERCLA hazardous substances"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "EPA announced an Advance Notice of Proposed Rulemaking ... requesting public input and data",
+            "source_url": "https://www.epa.gov/newsreleases/epa-takes-important-step-advance-pfas-strategic-roadmap-requests-public-input-and-data"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.72,
+        "category": 0.85,
+        "location": 0.85,
+        "summary_grounding": 0.7
+      },
+      "quality_flags": [
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "EPA PFAS CERCLA ANPRM April 2023",
+        "fingerprint": "fp_20230413_epa_anprm_pfas_cercla_us"
+      }
+    },
+    {
+      "event_id": "evt_20230421_ma_eo_single_use_bottles",
+      "title": "Massachusetts executive order bans state agency purchases of small single-use plastic water bottles",
+      "description": "On April 21, 2023, Massachusetts Governor Maura Healey signed an executive order directing state agencies to stop purchasing single-use plastic water bottles under 21 ounces, with exceptions for emergencies. The procurement change is intended to reduce plastic waste generated by state government operations.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "2023-04-21T00:00:00.000Z",
+        "event_end": "2023-04-21T23:59:59.000Z",
+        "reported_at": "2023-04-21T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2023-04-21T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Massachusetts, USA",
+        "jurisdiction_level": "state",
+        "admin1": "Massachusetts",
+        "country": "US",
+        "capital_used": "Boston",
+        "lat": 42.3601,
+        "lon": -71.0589,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.85
+      },
+      "sources": [
+        {
+          "url": "https://apnews.com/article/5d83a295a008577057762bed11404353",
+          "source_name": "Associated Press",
+          "published_at": "2023-04-21T00:00:00.000Z",
+          "headline": "Massachusetts bans state agencies from buying single-use plastic water bottles",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Commonwealth of Massachusetts"
+        ],
+        "substances": [
+          "single-use plastic water bottles"
+        ],
+        "ecosystems": [],
+        "people": [
+          "Maura Healey"
+        ]
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "signed an executive order prohibiting state agencies from purchasing single-use plastic water bottles under 21 ounces",
+            "source_url": "https://apnews.com/article/5d83a295a008577057762bed11404353"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.66,
+        "category": 0.8,
+        "location": 0.9,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "Massachusetts EO plastic water bottles April 2023",
+        "fingerprint": "fp_20230421_ma_eo_single_use_bottles"
+      }
+    }
+  ]
+}

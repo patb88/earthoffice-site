@@ -1,0 +1,325 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_2004-11_normalize_2026-01-16T030403544Z",
+    "generated_utc": "2026-01-16T03:04:03.544Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "2004-11",
+    "window": {
+      "start_utc": "2004-11-01T00:00:00.000Z",
+      "end_utc": "2004-11-30T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "2004-11_us_delaware-river_athos-i_oil-spill",
+      "title": "M/T Athos I oil spill on the Delaware River near Philadelphia",
+      "description": "The tanker M/T Athos I struck a submerged obstruction near Philadelphia, damaging a cargo tank and releasing oil into the Delaware River. The spill oiled shorelines and caused downstream impacts along parts of Pennsylvania, New Jersey, and Delaware.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2004-11-26T21:30:00.000Z",
+        "event_end": "2004-11-30T23:59:59.000Z",
+        "reported_at": "2004-11-26T21:30:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2004-11-26T21:30:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Delaware River near Philadelphia, Pennsylvania, USA",
+        "jurisdiction_level": "site",
+        "admin1": "Pennsylvania",
+        "country": "US",
+        "capital_used": null,
+        "lat": 39.9526,
+        "lon": -75.1652,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://incidentnews.noaa.gov/incident/1236",
+          "source_name": "NOAA IncidentNews",
+          "published_at": "2004-11-26T21:30:00.000Z",
+          "headline": "M/T Athos I oil spill on the Delaware River (New Jersey/Pennsylvania/Delaware shorelines oiled)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA"
+        ],
+        "substances": [
+          "crude oil"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "M/T Athos I oil spill on the Delaware River",
+            "source_url": "https://incidentnews.noaa.gov/incident/1236"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.8,
+        "location": 0.6,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "athos-i-delaware-river-2004-11",
+        "fingerprint": "athos_i_delaware_river_philadelphia_2004-11-26"
+      }
+    },
+    {
+      "event_id": "2004-11_mx_offshore-manzanillo_vigilance_adrift_spill-risk",
+      "title": "T/V Vigilance adrift offshore southwest of Manzanillo, Mexico (spill risk)",
+      "description": "The tanker T/V Vigilance reportedly suffered a mechanical casualty and went adrift offshore southwest of Manzanillo, Mexico, while carrying a large gasoline cargo. The incident triggered trajectory support requests to assess potential drift and spill risk.",
+      "category_primary": "pollution_contamination",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "2004-11-01T00:00:00.000Z",
+        "event_end": "2004-11-01T23:59:59.000Z",
+        "reported_at": "2004-11-01T00:00:00.000Z",
+        "time_confidence": 0.4,
+        "event_date_utc": "2004-11-01T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Offshore southwest of Manzanillo, Colima, Mexico",
+        "jurisdiction_level": "site",
+        "admin1": "Colima",
+        "country": "MX",
+        "capital_used": null,
+        "lat": 19.1138,
+        "lon": -104.3385,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.35
+      },
+      "sources": [
+        {
+          "url": "https://incidentnews.noaa.gov/incident/1233",
+          "source_name": "NOAA IncidentNews",
+          "published_at": "2004-11-01T00:00:00.000Z",
+          "headline": "T/V Vigilance tanker adrift offshore Mexico with large gasoline cargo (spill risk event)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Coast Guard",
+          "NOAA"
+        ],
+        "substances": [
+          "gasoline"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "tanker adrift offshore Mexico with large gasoline cargo",
+            "source_url": "https://incidentnews.noaa.gov/incident/1233"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.45,
+        "category": 0.7,
+        "location": 0.35,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check",
+        "low_confidence_location"
+      ],
+      "dedupe": {
+        "cluster_hint": "vigilance-adrift-manzanillo-2004-11",
+        "fingerprint": "vigilance_offshore_manzanillo_2004-11-01"
+      }
+    },
+    {
+      "event_id": "evt_200411_manam_volcano_unrest_evacuation",
+      "title": "Manam Volcano unrest and ash/steam emissions prompt evacuations",
+      "description": "In late November 2004, Manam Volcano on Manam Island produced ongoing ash and steam emissions. Reporting noted that deteriorating conditions prompted evacuation efforts for residents, and satellite imagery captured an ash plume on November 29, 2004.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2004-11-29T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2004-11-29T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Manam Island, Papua New Guinea",
+        "jurisdiction_level": "site",
+        "admin1": null,
+        "country": "PG",
+        "capital_used": null,
+        "lat": -4.08,
+        "lon": 145.04,
+        "precision": "exact",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://science.nasa.gov/earth/earth-observatory/continued-eruption-of-manam-volcano-14171/",
+          "source_name": "NASA Earth Observatory",
+          "published_at": "2004-11-29T00:00:00.000Z",
+          "headline": "Continued Eruption of Manam Volcano",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NASA Earth Observatory"
+        ],
+        "substances": [
+          "ash",
+          "steam"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Satellite imagery captured an ash plume on November 29, 2004.",
+            "source_url": "https://science.nasa.gov/earth/earth-observatory/continued-eruption-of-manam-volcano-14171/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.85,
+        "location": 0.7,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Manam Volcano late Nov 2004 ash plume/evacuation",
+        "fingerprint": "fp_manam_volcano_pg_2004-11-29"
+      }
+    },
+    {
+      "event_id": "2004-11-18_russia_kyoto_ratification_instrument_deposited",
+      "title": "Russia deposits instrument of ratification of the Kyoto Protocol with the UN",
+      "description": "On 18 November 2004, the UN Secretary-General received the Russian Federation’s instrument of ratification for the Kyoto Protocol. This deposit enabled the Protocol to enter into force 90 days later, on 16 February 2005.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "2004-11-18T00:00:00.000Z",
+        "event_end": "2004-11-18T23:59:59.000Z",
+        "reported_at": "2004-11-18T00:00:00.000Z",
+        "time_confidence": 0.8,
+        "event_date_utc": "2004-11-18T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Moscow, Russian Federation",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "RU",
+        "capital_used": "Moscow",
+        "lat": 55.7558,
+        "lon": 37.6173,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://press.un.org/en/2004/sgsm9599.doc.htm",
+          "source_name": "UN Press",
+          "published_at": "2004-11-18T00:00:00.000Z",
+          "headline": "Secretary-General Receives Instrument of Ratification of Kyoto Protocol from Russian Federation",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "United Nations",
+          "Russian Federation"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": [
+          "UN Secretary-General"
+        ]
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Secretary-General Kofi Annan received today the instrument of ratification of the Kyoto Protocol from the Russian Federation.",
+            "source_url": "https://press.un.org/en/2004/sgsm9599.doc.htm"
+          },
+          {
+            "quote": "The Protocol will enter into force on 16 February 2005.",
+            "source_url": "https://press.un.org/en/2004/sgsm9599.doc.htm"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.72,
+        "category": 0.8,
+        "location": 0.55,
+        "summary_grounding": 0.75
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Kyoto Protocol Russia instrument of ratification deposit UN 2004-11-18",
+        "fingerprint": "2004-11-18_russia_kyoto_protocol_ratification_moscow"
+      }
+    }
+  ]
+}

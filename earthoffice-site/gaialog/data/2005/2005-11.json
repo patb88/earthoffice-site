@@ -1,0 +1,634 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_2005-11_normalize_2026-01-16T031031162Z",
+    "generated_utc": "2026-01-16T03:10:31.162Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "2005-11",
+    "window": {
+      "start_utc": "2005-11-01T00:00:00.000Z",
+      "end_utc": "2005-11-30T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "2005-11-jilin-songhua-benzene-nitrobenzene",
+      "title": "Jilin petrochemical plant explosions pollute the Songhua River",
+      "description": "Explosions at a petrochemical plant in Jilin City released pollutants including benzene and nitrobenzene into the Songhua River. Reports described a downstream contamination event affecting communities such as Harbin later in November.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2005-11-13T00:00:00.000Z",
+        "event_end": "2005-11-13T23:59:59.000Z",
+        "reported_at": "2011-04-15T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2005-11-13T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Jilin City, Jilin, China",
+        "jurisdiction_level": "city",
+        "admin1": "Jilin",
+        "country": "CN",
+        "capital_used": null,
+        "lat": 43.8378,
+        "lon": 126.5494,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://www.bbc.co.uk/news/world-asia-pacific-13117652",
+          "source_name": "BBC News",
+          "published_at": "2011-04-15T00:00:00.000Z",
+          "headline": "world-asia-pacific-13117652",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.bbc.co.uk/news/world-asia-pacific-13117160",
+          "source_name": "BBC News",
+          "published_at": "2011-04-15T00:00:00.000Z",
+          "headline": "world-asia-pacific-13117160",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "BBC News"
+        ],
+        "substances": [
+          "benzene",
+          "nitrobenzene"
+        ],
+        "ecosystems": [
+          "Songhua River"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "released pollutants including benzene and nitrobenzene into the Songhua River",
+            "source_url": "https://www.bbc.co.uk/news/world-asia-pacific-13117652"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.8,
+        "location": 0.7,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "secondary_sources_only",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Songhua River benzene spill (Jilin plant explosions)",
+        "fingerprint": "jilin-petrochemical-explosions-songhua-river|jilin-city-cn|2005-11-13"
+      }
+    },
+    {
+      "event_id": "2005-11-metropolis-il-uf6-leak-honeywell",
+      "title": "UF6 leak declared a Plant Emergency at Honeywell uranium conversion facility",
+      "description": "A small uranium hexafluoride (UF6) release occurred during maintenance on a valve at the Honeywell uranium conversion facility in Metropolis, Illinois. The NRC reported the leak was isolated, with no injuries and no release of radioactivity to the environment.",
+      "category_primary": "pollution_contamination",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "2005-11-15T16:47:00.000Z",
+        "event_end": "2005-11-15T20:22:00.000Z",
+        "reported_at": "2005-11-16T00:00:00.000Z",
+        "time_confidence": 0.85,
+        "event_date_utc": "2005-11-15T16:47:00.000Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Metropolis, Illinois, United States",
+        "jurisdiction_level": "city",
+        "admin1": "Illinois",
+        "country": "US",
+        "capital_used": null,
+        "lat": 37.1514,
+        "lon": 88.7328,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.8
+      },
+      "sources": [
+        {
+          "url": "https://www.nrc.gov/reading-rm/doc-collections/event-status/morning/2005/20051116mr.html",
+          "source_name": "U.S. Nuclear Regulatory Commission (NRC)",
+          "published_at": "2005-11-16T00:00:00.000Z",
+          "headline": "NRC Event Notification Report (Morning Report) - 2005-11-16",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Honeywell",
+          "U.S. Nuclear Regulatory Commission (NRC)"
+        ],
+        "substances": [
+          "uranium hexafluoride (UF6)"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "A small UF6 release occurred during maintenance on a valve",
+            "source_url": "https://www.nrc.gov/reading-rm/doc-collections/event-status/morning/2005/20051116mr.html"
+          },
+          {
+            "quote": "no injuries and no release of radioactivity to the environment",
+            "source_url": "https://www.nrc.gov/reading-rm/doc-collections/event-status/morning/2005/20051116mr.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.75,
+        "category": 0.85,
+        "location": 0.8,
+        "summary_grounding": 0.7
+      },
+      "quality_flags": [
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Honeywell Metropolis UF6 release (2005-11-15)",
+        "fingerprint": "uf6-leak-honeywell-metropolis-il|metropolis-il-us|2005-11-15T16:47:00Z"
+      }
+    },
+    {
+      "event_id": "evt_200511_gamma_honduras_flooding",
+      "title": "Tropical Storm Gamma triggers flooding and landslides in Honduras",
+      "description": "According to NOAA’s Tropical Cyclone Report, Tropical Storm Gamma in mid-November 2005 produced heavy rainfall that led to flooding and landslides, with significant impacts in Honduras.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2005-11-14T00:00:00.000Z",
+        "event_end": "2005-11-22T23:59:59.000Z",
+        "reported_at": "2006-01-16T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": null,
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Honduras",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "HN",
+        "capital_used": "Tegucigalpa",
+        "lat": 14.0723,
+        "lon": -87.1921,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.95
+      },
+      "sources": [
+        {
+          "url": "https://www.nhc.noaa.gov/data/tcr/AL252005_Gamma.pdf",
+          "source_name": "NOAA National Hurricane Center",
+          "published_at": "2006-01-16T00:00:00.000Z",
+          "headline": "Tropical Cyclone Report: Tropical Storm Gamma (AL252005)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA National Hurricane Center"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Gamma produced heavy rainfall that caused flooding and landslides in Honduras.",
+            "source_url": "https://www.nhc.noaa.gov/data/tcr/AL252005_Gamma.pdf"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.72,
+        "category": 0.9,
+        "location": 0.95,
+        "summary_grounding": 0.7
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "2005-11 Tropical Storm Gamma Honduras flooding landslides",
+        "fingerprint": "fp_200511_gamma_honduras_weather_climate"
+      }
+    },
+    {
+      "event_id": "evt_200511_epsilon_central_atlantic_formation",
+      "title": "Tropical Storm Epsilon forms in the central Atlantic near the end of the 2005 hurricane season",
+      "description": "A NASA Earth Observatory feature reports that Tropical Storm Epsilon formed on November 29, 2005 in the central Atlantic Ocean well east of Bermuda and later strengthened further in early December.",
+      "category_primary": "weather_climate",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "2005-11-29T00:00:00.000Z",
+        "event_end": "2005-11-30T23:59:59.000Z",
+        "reported_at": "2005-12-02T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": null,
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Central Atlantic Ocean (east of Bermuda)",
+        "jurisdiction_level": "global_proxy",
+        "admin1": null,
+        "country": null,
+        "capital_used": null,
+        "lat": 0,
+        "lon": 0,
+        "precision": "proxy",
+        "location_basis": "manual_override",
+        "location_confidence": 0.3
+      },
+      "sources": [
+        {
+          "url": "https://science.nasa.gov/earth/earth-observatory/tropical-storm-epsilon-15839/",
+          "source_name": "NASA Earth Observatory",
+          "published_at": "2005-12-02T00:00:00.000Z",
+          "headline": "Tropical Storm Epsilon",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NASA Earth Observatory"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Tropical Storm Epsilon formed on November 29, 2005, in the central Atlantic Ocean well east of Bermuda.",
+            "source_url": "https://science.nasa.gov/earth/earth-observatory/tropical-storm-epsilon-15839/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.85,
+        "location": 0.3,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check",
+        "low_confidence_location"
+      ],
+      "dedupe": {
+        "cluster_hint": "2005-11 Tropical Storm Epsilon formation central Atlantic east of Bermuda",
+        "fingerprint": "fp_200511_epsilon_central_atlantic_weather_climate"
+      }
+    },
+    {
+      "event_id": "evt_20051127_qeshm_island_earthquake_ir",
+      "title": "Earthquake strikes Qeshm Island, Iran",
+      "description": "A moderate earthquake struck Qeshm Island in Hormozgan Province, Iran on November 27, 2005. The event caused fatalities and injuries and damaged villages in the affected area.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2005-11-27T10:22:17.000Z",
+        "event_end": "2005-11-27T23:59:59.000Z",
+        "reported_at": "2005-11-27T10:22:17.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2005-11-27T10:22:17.000Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Qeshm Island, Hormozgan Province, Iran",
+        "jurisdiction_level": "site",
+        "admin1": "Hormozgan Province",
+        "country": "IR",
+        "capital_used": null,
+        "lat": 26.81,
+        "lon": 55.89,
+        "precision": "exact",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://earthquake.usgs.gov/earthquakes/eventpage/usp000e501/executive",
+          "source_name": "USGS Earthquake Hazards Program",
+          "published_at": "2005-11-27T10:22:17.000Z",
+          "headline": "USGS Event Page: usp000e501 (executive)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": "https://earthquake.usgs.gov/earthquakes/eventpage/usp000e501/executive"
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "USGS"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "A moderate earthquake struck Qeshm Island on November 27, 2005.",
+            "source_url": "https://earthquake.usgs.gov/earthquakes/eventpage/usp000e501/executive"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.85,
+        "location": 0.55,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "needs_dedupe_check",
+        "location_ambiguous",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "usp000e501_qeshm_island_2005-11-27",
+        "fingerprint": "fp_usp000e501_qeshm_island_ir_2005-11-27"
+      }
+    },
+    {
+      "event_id": "2005-11_ramsar_cop9_kampala",
+      "title": "Ramsar Convention COP9 convenes in Kampala",
+      "description": "The 9th Meeting of the Conference of the Parties (COP9) to the Ramsar Convention on Wetlands was held in Kampala. Delegates met under the theme “Wetlands and water: supporting life, sustaining livelihoods” and discussed implementation and related outcomes for wetlands conservation and wise use.",
+      "category_primary": "policy_regulation",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "2005-11-08T00:00:00.000Z",
+        "event_end": "2005-11-15T23:59:59.000Z",
+        "reported_at": "2005-11-08T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2005-11-08T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Kampala, Uganda",
+        "jurisdiction_level": "city",
+        "admin1": null,
+        "country": "UG",
+        "capital_used": null,
+        "lat": 0.3476,
+        "lon": 32.5825,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://enb.iisd.org/ramsar/cop9/nov08.html",
+          "source_name": "IISD Earth Negotiations Bulletin",
+          "published_at": "2005-11-08T00:00:00.000Z",
+          "headline": "Ramsar COP9 (8-15 November 2005)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://enb.iisd.org/events/9th-meeting-conference-parties-ramsar-convention-cop9/summary-report-8-15-november-2005",
+          "source_name": "IISD Earth Negotiations Bulletin",
+          "published_at": "2005-11-15T00:00:00.000Z",
+          "headline": "Summary Report of the 9th Meeting of the Conference of the Parties to the Ramsar Convention (COP 9): 8-15 November 2005",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Ramsar Convention on Wetlands"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "wetlands"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "9th Meeting of the Conference of the Parties to the Ramsar Convention on Wetlands",
+            "source_url": "https://enb.iisd.org/events/9th-meeting-conference-parties-ramsar-convention-cop9/summary-report-8-15-november-2005"
+          },
+          {
+            "quote": "Wetlands and water: supporting life, sustaining livelihoods",
+            "source_url": "https://enb.iisd.org/ramsar/cop9/nov08.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.7,
+        "category": 0.75,
+        "location": 0.7,
+        "summary_grounding": 0.65
+      },
+      "quality_flags": [
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "ramsar_cop9_2005_kampala",
+        "fingerprint": "ramsar_cop9|kampala_ug|2005-11-08_2005-11-15"
+      }
+    },
+    {
+      "event_id": "2005-11_cms_cop8_nairobi",
+      "title": "Convention on Migratory Species COP8 opens in Nairobi",
+      "description": "The 8th Meeting of the Conference of the Parties (COP8) to the Convention on Migratory Species (CMS) convened at UNEP Headquarters in Nairobi. The meeting addressed measures and resolutions related to migratory species conservation, including issues such as by-catch and avian influenza.",
+      "category_primary": "policy_regulation",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "2005-11-20T00:00:00.000Z",
+        "event_end": "2005-11-25T23:59:59.000Z",
+        "reported_at": "2005-11-20T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2005-11-20T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Nairobi, Kenya (UNEP Headquarters, Gigiri)",
+        "jurisdiction_level": "city",
+        "admin1": null,
+        "country": "KE",
+        "capital_used": null,
+        "lat": -1.2921,
+        "lon": 36.8219,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.65
+      },
+      "sources": [
+        {
+          "url": "https://enb.iisd.org/cms/cop8/nov20.html",
+          "source_name": "IISD Earth Negotiations Bulletin",
+          "published_at": "2005-11-20T00:00:00.000Z",
+          "headline": "CMS COP8 (20-25 November 2005)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://enb.iisd.org/events/8th-meeting-cms-conference-parties-cop-8/summary-report-20-25-november-2005",
+          "source_name": "IISD Earth Negotiations Bulletin",
+          "published_at": "2005-11-25T00:00:00.000Z",
+          "headline": "Summary Report of the 8th Meeting of the Conference of the Parties to the Convention on Migratory Species (COP 8): 20-25 November 2005",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Convention on Migratory Species (CMS)",
+          "United Nations Environment Programme (UNEP)"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "8th Meeting of the Conference of the Parties to the Convention on Migratory Species (COP 8)",
+            "source_url": "https://enb.iisd.org/events/8th-meeting-cms-conference-parties-cop-8/summary-report-20-25-november-2005"
+          },
+          {
+            "quote": "UNEP Headquarters in Nairobi",
+            "source_url": "https://enb.iisd.org/cms/cop8/nov20.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.68,
+        "category": 0.75,
+        "location": 0.65,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "cms_cop8_2005_nairobi",
+        "fingerprint": "cms_cop8|nairobi_ke|2005-11-20_2005-11-25"
+      }
+    },
+    {
+      "event_id": "2005-11_unfccc_cop11_cmp1_montreal_opening",
+      "title": "UN Climate Change Conference (COP11/CMP1) begins in Montreal",
+      "description": "The UNFCCC COP11 and the first Meeting of the Parties to the Kyoto Protocol (CMP1) opened in Montreal on 28 November 2005. The conference marked a milestone for Kyoto Protocol implementation and continued negotiations on future climate commitments.",
+      "category_primary": "policy_regulation",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "2005-11-28T00:00:00.000Z",
+        "event_end": "2005-11-30T23:59:59.000Z",
+        "reported_at": "2005-11-28T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2005-11-28T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Montreal, Quebec, Canada",
+        "jurisdiction_level": "city",
+        "admin1": "Quebec",
+        "country": "CA",
+        "capital_used": null,
+        "lat": 45.5017,
+        "lon": -73.5673,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://unfccc.int/event/montreal-climate-change-conference-december-2005",
+          "source_name": "UNFCCC",
+          "published_at": "2005-11-28T00:00:00.000Z",
+          "headline": "Montreal Climate Change Conference - December 2005",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "UNFCCC",
+          "Kyoto Protocol"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Montreal Climate Change Conference - December 2005",
+            "source_url": "https://unfccc.int/event/montreal-climate-change-conference-december-2005"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.7,
+        "location": 0.7,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "needs_dedupe_check",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "unfccc_cop11_cmp1_2005_montreal_opening",
+        "fingerprint": "unfccc_cop11_cmp1|montreal_ca|2005-11-28_2005-11-30"
+      }
+    }
+  ]
+}

@@ -1,0 +1,617 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_2012-04_normalize_2026-01-16T043726000Z",
+    "generated_utc": "2026-01-16T04:37:26.000Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "2012-04",
+    "window": {
+      "start_utc": "2012-04-01T00:00:00.000Z",
+      "end_utc": "2012-04-30T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "20120428_exxonmobil_north_line_spill_torbert_la",
+      "title": "ExxonMobil North Line pipeline rupture spills crude oil near Torbert, Louisiana",
+      "description": "ExxonMobil reported a rupture of its North Line crude oil pipeline near Torbert in Pointe Coupee Parish, Louisiana, which resulted in a crude oil spill impacting nearby land and water. Cleanup and response activities were reported as continuing during the last days of April 2012.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2012-04-30T00:00:00Z",
+        "time_confidence": 0.65,
+        "event_date_utc": "2012-04-28T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Near Torbert, Pointe Coupee Parish, Louisiana, USA",
+        "jurisdiction_level": "site",
+        "admin1": "Louisiana",
+        "country": "US",
+        "capital_used": null,
+        "lat": 30.696,
+        "lon": -91.595,
+        "precision": "neighborhood",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.45
+      },
+      "sources": [
+        {
+          "url": "https://ir.exxonmobil.com/news-releases/news-release-details/cleanup-continuing-location-crude-oil-spill-exxonmobil-pipeline/",
+          "source_name": "Exxon Mobil Corporation (Investor Relations)",
+          "published_at": "2012-04-30T00:00:00Z",
+          "headline": "Cleanup Continuing at Location of Crude Oil Spill from ExxonMobil Pipeline in Louisiana",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.ogj.com/pipelines-transportation/article/17274807/exxonmobil-pipeline-co-cleaning-louisiana-oil-spill-site",
+          "source_name": "Oil & Gas Journal",
+          "published_at": "2012-04-30T00:00:00Z",
+          "headline": "ExxonMobil Pipeline Co. cleaning Louisiana oil spill site",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.epa.gov/archive/epapages/newsroom_archive/newsreleases/55b7e7f27932fe8885257d40006f410e.html",
+          "source_name": "U.S. Environmental Protection Agency (archive)",
+          "published_at": "2012-04-30T00:00:00Z",
+          "headline": "EPA Responding to ExxonMobil Pipeline Spill in Pointe Coupee Parish, Louisiana",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "ExxonMobil",
+          "ExxonMobil Pipeline Company",
+          "U.S. Environmental Protection Agency"
+        ],
+        "substances": [
+          "crude oil"
+        ],
+        "ecosystems": [
+          "tributary (Bayou Cholpe watershed)"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Cleanup is continuing at the location of the crude oil spill from an ExxonMobil pipeline in Louisiana.",
+            "source_url": "https://ir.exxonmobil.com/news-releases/news-release-details/cleanup-continuing-location-crude-oil-spill-exxonmobil-pipeline/"
+          },
+          {
+            "quote": "EPA is responding to an oil spill from an ExxonMobil pipeline in Pointe Coupee Parish, Louisiana.",
+            "source_url": "https://www.epa.gov/archive/epapages/newsroom_archive/newsreleases/55b7e7f27932fe8885257d40006f410e.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.8,
+        "location": 0.45,
+        "summary_grounding": 0.65
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "ExxonMobil North Line crude oil pipeline spill near Torbert, Pointe Coupee Parish, Louisiana (Apr 2012)",
+        "fingerprint": "exxonmobil-north-line-pipeline-rupture-spills-crude-oil-near-torbert-louisiana|near-torbert-pointe-coupee-parish-louisiana-usa|2012-04"
+      }
+    },
+    {
+      "event_id": "evt_201204_noaa_april2012_third_warmest_conus",
+      "title": "NOAA: April 2012 ranked third-warmest April for the contiguous United States",
+      "description": "Reporting on NOAA climate monitoring indicated that April 2012 ranked as the third-warmest April on record for the contiguous United States. Coverage noted widespread record warm temperatures during the month following an exceptionally warm March.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2012-05-08T00:00:00Z",
+        "time_confidence": 0.55,
+        "event_date_utc": null,
+        "event_date_precision": "month"
+      },
+      "location": {
+        "name": "Contiguous United States",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.75
+      },
+      "sources": [
+        {
+          "url": "https://weather.com/news/news/noaa-april-report-20120508",
+          "source_name": "The Weather Channel",
+          "published_at": "2012-05-08T00:00:00Z",
+          "headline": "NOAA April report (April 2012 climate summary)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.climatecentral.org/news/april-checks-in-at-no.-3-on-all-time-warmest-list-for-u.s",
+          "source_name": "Climate Central",
+          "published_at": "2012-05-08T00:00:00Z",
+          "headline": "April checks in at No. 3 on all-time warmest list for U.S.",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://phys.org/news/2012-05-april-5th-warmest-month-globally.html",
+          "source_name": "Phys.org",
+          "published_at": "2012-05-16T00:00:00Z",
+          "headline": "April 2012 was 5th warmest month globally (coverage of climate reporting)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "April 2012 ranked as the third-warmest April on record for the contiguous U.S.",
+            "source_url": "https://www.climatecentral.org/news/april-checks-in-at-no.-3-on-all-time-warmest-list-for-u.s"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.75,
+        "location": 0.75,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "noaa_april_2012_conus_third_warmest",
+        "fingerprint": "fp_noaa_april2012_conus_third_warmest_2012-04"
+      }
+    },
+    {
+      "event_id": "20120411_sumatra_mw86_quake_tsunami_warnings",
+      "title": "Mw 8.6 earthquake off northern Sumatra prompts Indian Ocean tsunami warnings",
+      "description": "A magnitude 8.6 earthquake struck off northern Sumatra on April 11, 2012, followed by a large aftershock. Tsunami alerts/warnings were issued around the Indian Ocean and later canceled.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2012-04-11T00:00:00Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2012-04-11T06:38:00.000Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Off Aceh, northern Sumatra, Indonesia (Indian Ocean)",
+        "jurisdiction_level": "site",
+        "admin1": "Aceh",
+        "country": "ID",
+        "capital_used": null,
+        "lat": 3.75,
+        "lon": 95.99,
+        "precision": "proxy",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.45
+      },
+      "sources": [
+        {
+          "url": "https://www.theguardian.com/world/2012/apr/11/indonesia-tsunami-warning-earthquake-aceh",
+          "source_name": "The Guardian",
+          "published_at": "2012-04-11T00:00:00Z",
+          "headline": "Indonesia tsunami warning after earthquake off Aceh",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.usgs.gov/publications/real-time-forecasting-april-11-2012-sumatra-tsunami",
+          "source_name": "USGS",
+          "published_at": "2012-04-11T00:00:00Z",
+          "headline": "Real-time Forecasting the April 11, 2012 Sumatra Tsunami",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.upi.com/Top_News/World-News/2012/04/11/Post-quake-tsunami-alert-canceled/90771334142635/",
+          "source_name": "UPI",
+          "published_at": "2012-04-11T00:00:00Z",
+          "headline": "Post-quake tsunami alert canceled",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "USGS"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "Indian Ocean"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Indonesia issued a tsunami warning after an 8.6 magnitude earthquake struck off the coast of Aceh.",
+            "source_url": "https://www.theguardian.com/world/2012/apr/11/indonesia-tsunami-warning-earthquake-aceh"
+          },
+          {
+            "quote": "Real-time Forecasting the April 11, 2012 Sumatra Tsunami",
+            "source_url": "https://www.usgs.gov/publications/real-time-forecasting-april-11-2012-sumatra-tsunami"
+          },
+          {
+            "quote": "Post-quake tsunami alert canceled",
+            "source_url": "https://www.upi.com/Top_News/World-News/2012/04/11/Post-quake-tsunami-alert-canceled/90771334142635/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.85,
+        "location": 0.45,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "2012-04-11 Sumatra Mw8.6 earthquake tsunami warnings",
+        "fingerprint": "20120411_sumatra_mw86_quake_tsunami_warnings_off_aceh_2012-04-11"
+      }
+    },
+    {
+      "event_id": "2012-04_fires_us-tx-livermore-ranch-complex",
+      "title": "Lightning-sparked Livermore Ranch Complex Fire prompts evacuations near Fort Davis, Texas",
+      "description": "Lightning-sparked wildfires in the Davis Mountains area of West Texas in late April 2012 threatened communities near Fort Davis and prompted evacuations and firefighting response. Reports described difficult conditions influenced by dry fuels and terrain.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2012-04-24T00:00:00.000Z",
+        "event_end": "2012-04-30T23:59:59.000Z",
+        "reported_at": "2012-04-29T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2012-04-24T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Jeff Davis County / Davis Mountains area near Fort Davis, Texas, USA",
+        "jurisdiction_level": "site",
+        "admin1": "Texas",
+        "country": "US",
+        "capital_used": null,
+        "lat": 30.5882,
+        "lon": -103.8946,
+        "precision": "admin1",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.5
+      },
+      "sources": [
+        {
+          "url": "https://stateimpact.npr.org/texas/2012/05/01/first-major-wildfires-of-2012-tear-through-west-texas/",
+          "source_name": "StateImpact Texas (NPR)",
+          "published_at": "2012-05-01T00:00:00.000Z",
+          "headline": "First major wildfires of 2012 tear through West Texas",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.marfapublicradio.org/2012-04-29/sunday-wildfire-update-from-fire-officials",
+          "source_name": "Marfa Public Radio",
+          "published_at": "2012-04-29T00:00:00.000Z",
+          "headline": "Sunday Wildfire Update From Fire Officials",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://wildfiretoday.com/evacuations-in-progress-in-davis-mountains-in-west-texas/",
+          "source_name": "Wildfire Today",
+          "published_at": "2012-04-29T00:00:00.000Z",
+          "headline": "Evacuations in progress in Davis Mountains in West Texas",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.5,
+        "category": 0.85,
+        "location": 0.5,
+        "summary_grounding": 0.4
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Davis Mountains / Livermore Ranch Complex Fire evacuations (late Apr 2012)",
+        "fingerprint": "2012-04_fires_davis-mountains-texas_2012-04-24"
+      }
+    },
+    {
+      "event_id": "2012-04_fires_npl_nationwide-forest-fires",
+      "title": "Numerous forest fires burn across Nepal during late-April 2012 dry spell",
+      "description": "Satellite imagery and reporting documented many active fires across Nepal in late April 2012. The coverage linked the fires to a prolonged dry period and noted that wind and human activity could contribute to ignition and spread.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2012-04-24T00:00:00.000Z",
+        "event_end": "2012-04-30T23:59:59.000Z",
+        "reported_at": "2012-04-24T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2012-04-24T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Nepal",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "NP",
+        "capital_used": "Kathmandu",
+        "lat": 27.7172,
+        "lon": 85.324,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.85
+      },
+      "sources": [
+        {
+          "url": "https://earthobservatory.nasa.gov/images/77784/fires-in-nepal",
+          "source_name": "NASA Earth Observatory",
+          "published_at": "2012-04-24T00:00:00.000Z",
+          "headline": "Fires in Nepal",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NASA Earth Observatory"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.7,
+        "category": 0.9,
+        "location": 0.9,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Nepal widespread forest fires (late Apr 2012)",
+        "fingerprint": "2012-04_fires_nepal_2012-04-24"
+      }
+    },
+    {
+      "event_id": "2012-04_ecosystem_biodiversity_gbr-townsville-bleaching-aims",
+      "title": "AIMS surveys report low-level coral bleaching and above-average water temperatures in the Townsville sector of the Great Barrier Reef",
+      "description": "Australian Institute of Marine Science monitoring surveys conducted during April 2012 reported low levels of bleaching in hard and soft corals across multiple reefs in the Townsville sector of the Great Barrier Reef. The surveys also noted above-average water temperatures at several monitoring sites.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2012-04-11T00:00:00.000Z",
+        "event_end": "2012-04-28T23:59:59.000Z",
+        "reported_at": "2012-04-28T23:59:59.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": null,
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Townsville sector, Great Barrier Reef, Queensland, Australia",
+        "jurisdiction_level": "site",
+        "admin1": "Queensland",
+        "country": "AU",
+        "capital_used": null,
+        "lat": -19.258963,
+        "lon": 146.816948,
+        "precision": "proxy",
+        "location_basis": "institution_proxy",
+        "location_confidence": 0.35
+      },
+      "sources": [
+        {
+          "url": "https://www.aims.gov.au/docs/research/monitoring/reef/ltm11-28-april",
+          "source_name": "Australian Institute of Marine Science (AIMS)",
+          "published_at": "2012-04-28T23:59:59.000Z",
+          "headline": "Great Barrier Reef (Townsville sector) surveys record low-level coral bleaching and note above-average water temperatures",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Australian Institute of Marine Science"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "Great Barrier Reef",
+          "coral reefs"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "monitoring surveys ... documented low levels of bleaching in hard and soft corals",
+            "source_url": "https://www.aims.gov.au/docs/research/monitoring/reef/ltm11-28-april"
+          },
+          {
+            "quote": "reported above-average water temperatures at several sites",
+            "source_url": "https://www.aims.gov.au/docs/research/monitoring/reef/ltm11-28-april"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.52,
+        "category": 0.7,
+        "location": 0.35,
+        "summary_grounding": 0.4
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "low_confidence_location",
+        "paywalled_or_partial"
+      ],
+      "dedupe": {
+        "cluster_hint": "aims_gbr_townsville_bleaching_april2012",
+        "fingerprint": "2012-04_ecosystem_biodiversity_aims_gbr_townsville_bleaching"
+      }
+    },
+    {
+      "event_id": "evt_20120417_epa_oil_gas_air_rules_us",
+      "title": "EPA finalizes Clean Air Act air rules for oil and natural gas industry",
+      "description": "On April 17, 2012, the U.S. Environmental Protection Agency announced final Clean Air Act air rules for the oil and natural gas industry. EPA stated the rules included the first federal air standards addressing emissions from hydraulically fractured natural gas wells and other previously unregulated sources.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "2012-04-17T00:00:00.000Z",
+        "event_end": "2012-04-17T23:59:59.000Z",
+        "reported_at": "2012-04-17T00:00:00.000Z",
+        "time_confidence": 0.8,
+        "event_date_utc": "2012-04-17T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States (federal regulation)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.85
+      },
+      "sources": [
+        {
+          "url": "https://www.epa.gov/controlling-air-pollution-oil-and-natural-gas-operations/2012-final-rules-oil-and-natural-gas",
+          "source_name": "U.S. Environmental Protection Agency",
+          "published_at": "2012-04-17T00:00:00.000Z",
+          "headline": "2012 Final Rules - Oil and Natural Gas",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://19january2021snapshot.epa.gov/controlling-air-pollution-oil-and-natural-gas-industry/2012-final-rules-oil-and-natural-gas-industry_.html",
+          "source_name": "U.S. Environmental Protection Agency (Archive Snapshot)",
+          "published_at": "2012-04-17T00:00:00.000Z",
+          "headline": "2012 Final Rules - Oil and Natural Gas Industry",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Environmental Protection Agency (EPA)"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "On April 17, 2012, EPA announced final air rules for the oil and natural gas industry.",
+            "source_url": "https://www.epa.gov/controlling-air-pollution-oil-and-natural-gas-operations/2012-final-rules-oil-and-natural-gas"
+          },
+          {
+            "quote": "The rules include the first federal air standards for hydraulically fractured natural gas wells.",
+            "source_url": "https://www.epa.gov/controlling-air-pollution-oil-and-natural-gas-operations/2012-final-rules-oil-and-natural-gas"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.78,
+        "category": 0.9,
+        "location": 0.85,
+        "summary_grounding": 0.75
+      },
+      "quality_flags": [
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "EPA 2012 final air rules for oil and natural gas industry",
+        "fingerprint": "fp_20120417_epa_oil_gas_air_rules_us"
+      }
+    }
+  ]
+}

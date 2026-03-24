@@ -1,0 +1,743 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_2025-01_normalize_2026-01-16T141440914Z",
+    "generated_utc": "2026-01-16T14:14:40.914Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "2025-01",
+    "window": {
+      "start_utc": "2025-01-01T00:00:00.000Z",
+      "end_utc": "2025-01-31T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "uk-mod-pfas-raf-bases-2025-01-15",
+      "title": "UK MoD documents report PFAS groundwater pollution hotspots at multiple RAF bases",
+      "description": "Reporting citing UK Ministry of Defence documents described elevated PFAS levels in groundwater at several RAF bases. The findings raised concerns about potential risks to nearby drinking-water protection zones and surrounding communities and agriculture.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2025-01-15T00:00:00.000Z",
+        "time_confidence": 0.65,
+        "event_date_utc": "2025-01-15T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United Kingdom",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "GB",
+        "capital_used": "London",
+        "lat": 51.5074,
+        "lon": -0.1278,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://www.theguardian.com/environment/2025/jan/15/raf-bases-hotspots-of-forever-chemical-groundwater-pollution-mod-documents-show",
+          "source_name": "The Guardian",
+          "published_at": "2025-01-15T00:00:00.000Z",
+          "headline": "RAF bases hotspots of forever chemical groundwater pollution, MoD documents show",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "UK Ministry of Defence",
+          "Royal Air Force"
+        ],
+        "substances": [
+          "PFAS"
+        ],
+        "ecosystems": [
+          "groundwater"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "...hotspots of forever chemical groundwater pollution... MoD documents show",
+            "source_url": "https://www.theguardian.com/environment/2025/jan/15/raf-bases-hotspots-of-forever-chemical-groundwater-pollution-mod-documents-show"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.72,
+        "category": 0.8,
+        "location": 0.7,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "UK RAF bases PFAS groundwater hotspots (MoD documents)",
+        "fingerprint": "uk-raf-pfas-groundwater-2025-01-15-gb"
+      }
+    },
+    {
+      "event_id": "evt-2025-01-us-arctic-outbreak-winter-storm-jan05",
+      "title": "Polar-vortex-related Arctic outbreak and major winter storm across the U.S. (Jan 5–6, 2025)",
+      "description": "A NOAA story described a polar-vortex-related cold surge that helped drive a major winter storm across the United States in early January 2025, producing widespread snow/ice and disruptions across multiple regions.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2025-01-05T00:00:00.000Z",
+        "event_end": "2025-01-06T23:59:59.000Z",
+        "reported_at": "2025-01-06T00:00:00.000Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "2025-01-05T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "United States (multi-state)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.8
+      },
+      "sources": [
+        {
+          "url": "https://www.nesdis.noaa.gov/index.php/news/noaa-satellites-capture-the-chilling-impact-of-polar-vortex",
+          "source_name": "NOAA NESDIS",
+          "published_at": "2025-01-06T00:00:00.000Z",
+          "headline": "NOAA satellites capture the chilling impact of polar vortex",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA",
+          "NOAA NESDIS"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "NOAA satellites capture the chilling impact of polar vortex",
+            "source_url": "https://www.nesdis.noaa.gov/index.php/news/noaa-satellites-capture-the-chilling-impact-of-polar-vortex"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.7,
+        "location": 0.8,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "US Arctic outbreak / winter storm early Jan 2025",
+        "fingerprint": "fp-2025-01-us-arctic-outbreak-jan05-06"
+      }
+    },
+    {
+      "event_id": "evt-2025-01-us-southern-snowstorm-arctic-blast-jan19",
+      "title": "Historic snow and extreme cold in the Southern U.S. during an Arctic blast (Jan 19–22, 2025)",
+      "description": "A NOAA Climate.gov event tracker entry documented an Arctic blast that reached the Southeast U.S., bringing extreme cold and unusually heavy snowfall in parts of the South during mid-to-late January 2025.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2025-01-19T00:00:00.000Z",
+        "event_end": "2025-01-22T23:59:59.000Z",
+        "reported_at": "2025-01-22T00:00:00.000Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "2025-01-19T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Southern United States (e.g., Louisiana, Florida Panhandle)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.65
+      },
+      "sources": [
+        {
+          "url": "https://prod-01-asg-www-climate.woc.noaa.gov/news-features/event-tracker/historic-january-2025-snowstorm-southern-us",
+          "source_name": "NOAA Climate.gov",
+          "published_at": "2025-01-22T00:00:00.000Z",
+          "headline": "Historic January 2025 snowstorm in the Southern U.S.",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA",
+          "NOAA Climate.gov"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Historic January 2025 snowstorm in the Southern U.S.",
+            "source_url": "https://prod-01-asg-www-climate.woc.noaa.gov/news-features/event-tracker/historic-january-2025-snowstorm-southern-us"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.7,
+        "location": 0.65,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Southern US snowstorm / Arctic blast mid-late Jan 2025",
+        "fingerprint": "fp-2025-01-us-southern-snowstorm-jan19-22"
+      }
+    },
+    {
+      "event_id": "evt-2025-01-us-ncei-climate-summary-202501",
+      "title": "NOAA NCEI January 2025 U.S. climate summary notes Arctic outbreak and destructive Southern California wildfires",
+      "description": "NOAA NCEI’s January 2025 U.S. climate summary reported major national impacts during the month, including destructive wildfires in Southern California and an Arctic air mass that pushed cold and snowfall unusually far south later in January.",
+      "category_primary": "weather_climate",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "2025-01-01T00:00:00.000Z",
+        "event_end": "2025-01-31T23:59:59.000Z",
+        "reported_at": "2025-01-31T00:00:00.000Z",
+        "time_confidence": 0.4,
+        "event_date_utc": null,
+        "event_date_precision": "month"
+      },
+      "location": {
+        "name": "United States (national summary; includes Southern California and Gulf Coast impacts)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.ncei.noaa.gov/news/national-climate-202501",
+          "source_name": "NOAA NCEI",
+          "published_at": "2025-01-31T00:00:00.000Z",
+          "headline": "National Climate Report: January 2025",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA",
+          "NOAA NCEI"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "National Climate Report: January 2025",
+            "source_url": "https://www.ncei.noaa.gov/news/national-climate-202501"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.52,
+        "category": 0.65,
+        "location": 0.6,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "NOAA NCEI Jan 2025 climate summary (US)",
+        "fingerprint": "fp-2025-01-us-ncei-national-climate-202501"
+      }
+    },
+    {
+      "event_id": "evt-2025-01-de-rhine-moselle-flooding-jan10",
+      "title": "Rhine/Moselle basin river flooding with peak stages around Jan 10–11, 2025",
+      "description": "An event report documented elevated river levels and flooding stages on major waterways in the Rhine/Moselle basin area (including gauges cited for Trier and Koblenz) around Jan 10–11, 2025.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2025-01-10T00:00:00.000Z",
+        "event_end": "2025-01-11T23:59:59.000Z",
+        "reported_at": "2025-01-11T00:00:00.000Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "2025-01-10T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Germany (Rhineland-Palatinate) and adjacent Rhine/Moselle basin areas",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "DE",
+        "capital_used": "Berlin",
+        "lat": 52.52,
+        "lon": 13.405,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.wettergefahren-fruehwarnung.de/Ereignis/20250111_e.html",
+          "source_name": "wettergefahren-fruehwarnung.de",
+          "published_at": "2025-01-11T00:00:00.000Z",
+          "headline": "Ereignis (2025-01-11)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Ereignis (2025-01-11)",
+            "source_url": "https://www.wettergefahren-fruehwarnung.de/Ereignis/20250111_e.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.46,
+        "category": 0.55,
+        "location": 0.6,
+        "summary_grounding": 0.35
+      },
+      "quality_flags": [
+        "secondary_sources_only",
+        "translation_used",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Rhine/Moselle flooding Jan 10-11 2025",
+        "fingerprint": "fp-2025-01-de-rhine-moselle-flooding-jan10-11"
+      }
+    },
+    {
+      "event_id": "evt-2025-01-uk-flooding-jan01-07",
+      "title": "Flooding incidents in the UK around New Year’s Day and early January 2025 (Jan 1–7)",
+      "description": "A report described flooding impacts and major-incident responses in parts of the UK following very heavy rainfall around New Year’s Day 2025, with additional incidents reported in early January.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2025-01-01T00:00:00.000Z",
+        "event_end": "2025-01-07T23:59:59.000Z",
+        "reported_at": "2025-02-07T00:00:00.000Z",
+        "time_confidence": 0.65,
+        "event_date_utc": "2025-01-01T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "United Kingdom (multiple regions)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "GB",
+        "capital_used": "London",
+        "lat": 51.5074,
+        "lon": -0.1278,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.65
+      },
+      "sources": [
+        {
+          "url": "https://floodcontrolinternational.com/2025/02/07/the-impact-of-january-2025-flooding/",
+          "source_name": "Flood Control International",
+          "published_at": "2025-02-07T00:00:00.000Z",
+          "headline": "The impact of January 2025 flooding",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "The impact of January 2025 flooding",
+            "source_url": "https://floodcontrolinternational.com/2025/02/07/the-impact-of-january-2025-flooding/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.48,
+        "category": 0.6,
+        "location": 0.65,
+        "summary_grounding": 0.4
+      },
+      "quality_flags": [
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "UK flooding early Jan 2025",
+        "fingerprint": "fp-2025-01-uk-flooding-jan01-07"
+      }
+    },
+    {
+      "event_id": "evt-20250103-us-fws-esa-5yr-reviews-14-species",
+      "title": "USFWS initiates ESA 5-year status reviews for 14 listed species",
+      "description": "A notice announced the initiation of Endangered Species Act 5-year status reviews for 14 listed animal and plant species and requested information to support the reviews. The reviews are a procedural step that can inform future conservation decisions.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "2025-01-03T00:00:00.000Z",
+        "event_end": "2025-01-03T23:59:59.000Z",
+        "reported_at": "2025-01-03T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2025-01-03T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.fws.gov/policy/library/2025/2024-31552.html",
+          "source_name": "U.S. Fish and Wildlife Service (Policy Library)",
+          "published_at": "2025-01-03T00:00:00.000Z",
+          "headline": "U.S. Fish and Wildlife Service initiates Endangered Species Act 5-year status reviews for 14 listed species (notice published Jan 3)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Fish and Wildlife Service"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "initiates 5-year status reviews for 14 listed species",
+            "source_url": "https://www.fws.gov/policy/library/2025/2024-31552.html"
+          },
+          {
+            "quote": "requested information to support the reviews",
+            "source_url": "https://www.fws.gov/policy/library/2025/2024-31552.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.7,
+        "location": 0.6,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "USFWS ESA procedural notices Jan 2025",
+        "fingerprint": "fp-usfws-esa-procedural-2025-01-03-us"
+      }
+    },
+    {
+      "event_id": "evt-20250121-us-fws-esa-90day-petition-findings-status-reviews",
+      "title": "USFWS issues ESA 90-day petition findings and initiates status reviews for multiple species",
+      "description": "A notice reported Endangered Species Act 90-day petition findings for multiple species and initiated status reviews. This is an early procedural step in potential future listing or other ESA actions.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "2025-01-21T00:00:00.000Z",
+        "event_end": "2025-01-21T23:59:59.000Z",
+        "reported_at": "2025-01-21T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2025-01-21T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.fws.gov/policy/library/2025/2025-01118.html",
+          "source_name": "U.S. Fish and Wildlife Service (Policy Library)",
+          "published_at": "2025-01-21T00:00:00.000Z",
+          "headline": "U.S. Fish and Wildlife Service issues ESA 90-day petition findings and initiates status reviews for multiple species (published Jan 21)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Fish and Wildlife Service"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "90-day petition findings",
+            "source_url": "https://www.fws.gov/policy/library/2025/2025-01118.html"
+          },
+          {
+            "quote": "initiation of status reviews",
+            "source_url": "https://www.fws.gov/policy/library/2025/2025-01118.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.7,
+        "location": 0.6,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "USFWS ESA procedural notices Jan 2025",
+        "fingerprint": "fp-usfws-esa-procedural-2025-01-21-us"
+      }
+    },
+    {
+      "event_id": "evt_20250120_us_paris_withdrawal_eo",
+      "title": "White House executive order directs notice of U.S. withdrawal from the Paris Agreement",
+      "description": "A White House presidential action titled “Putting America First in International Environmental Agreements” directs the U.S. Ambassador to the United Nations to submit notice of U.S. withdrawal from the Paris Agreement under the UNFCCC framework.",
+      "category_primary": "policy_regulation",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2025-01-20T00:00:00.000Z",
+        "event_end": "2025-01-20T23:59:59.000Z",
+        "reported_at": "2025-01-20T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2025-01-20T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States (federal)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.8
+      },
+      "sources": [
+        {
+          "url": "https://www.whitehouse.gov/presidential-actions/2025/01/putting-america-first-in-international-environmental-agreements/",
+          "source_name": "The White House",
+          "published_at": "2025-01-20T00:00:00.000Z",
+          "headline": "Putting America First in International Environmental Agreements",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "The White House",
+          "United Nations"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "directs the U.S. Ambassador to the United Nations to submit notice of U.S. withdrawal from the Paris Agreement",
+            "source_url": "https://www.whitehouse.gov/presidential-actions/2025/01/putting-america-first-in-international-environmental-agreements/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.75,
+        "location": 0.8,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "US-Paris-Agreement-withdrawal-EO-Jan2025",
+        "fingerprint": "fp_us_paris_withdrawal_2025-01-20_washingtondc"
+      }
+    },
+    {
+      "event_id": "evt_20250130_us_paris_withdrawal_eo_fedreg",
+      "title": "Executive order on international environmental agreements published in the Federal Register",
+      "description": "The executive order titled “Putting America First in International Environmental Agreements,” including language directing withdrawal steps from the Paris Agreement, was published as a presidential document in a Federal Register posting.",
+      "category_primary": "policy_regulation",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2025-01-30T00:00:00.000Z",
+        "event_end": "2025-01-30T23:59:59.000Z",
+        "reported_at": "2025-01-30T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2025-01-30T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States (federal)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.8
+      },
+      "sources": [
+        {
+          "url": "https://regulations.justia.com/regulations/fedreg/2025/01/30/2025-02010.html",
+          "source_name": "Justia (Federal Register reprint)",
+          "published_at": "2025-01-30T00:00:00.000Z",
+          "headline": "2025-02010",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Federal Register"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "published ... as a Presidential Document in the Federal Register",
+            "source_url": "https://regulations.justia.com/regulations/fedreg/2025/01/30/2025-02010.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.75,
+        "location": 0.8,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "paywalled_or_partial",
+        "secondary_sources_only",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "US-Paris-Agreement-withdrawal-EO-Jan2025",
+        "fingerprint": "fp_us_paris_withdrawal_2025-01-30_washingtondc"
+      }
+    }
+  ]
+}

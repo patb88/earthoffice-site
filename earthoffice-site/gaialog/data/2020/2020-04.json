@@ -1,0 +1,684 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_2020-04_normalize_2026-01-16T071102143Z",
+    "generated_utc": "2026-01-16T07:11:02.143Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "2020-04",
+    "window": {
+      "start_utc": "2020-04-01T00:00:00.000Z",
+      "end_utc": "2020-04-30T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "pollution_contamination_valdez-marine-terminal-sump-oily-water-spill_2020-04-12",
+      "title": "Valdez Marine Terminal sump oily-water spill into Port Valdez",
+      "description": "An oily-water discharge containing Alaska North Slope crude and water was reported entering Port Valdez from the Valdez Marine Terminal. The source was identified as an overflow/failed sump, prompting containment and recovery actions with agency oversight/support noted in incident reporting.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2020-04-12T19:55:00.000Z",
+        "event_end": "2020-04-12T23:59:59.000Z",
+        "reported_at": "2020-04-01T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2020-04-12T19:55:00.000Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Port Valdez, Alaska, USA",
+        "jurisdiction_level": "city",
+        "admin1": "Alaska",
+        "country": "US",
+        "capital_used": null,
+        "lat": 61.1308,
+        "lon": -146.3483,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://cms.dec.alaska.gov/spar/ppr/spill-information/response/2020/02-vmt-sump-oily-water-spill/",
+          "source_name": "Alaska Department of Environmental Conservation (ADEC)",
+          "published_at": "2020-04-01T00:00:00.000Z",
+          "headline": "02 VMT Sump Oily Water Spill",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://blog.response.restoration.noaa.gov/incident-responses-april-2020",
+          "source_name": "NOAA OR&R Response Blog",
+          "published_at": "2020-04-01T00:00:00.000Z",
+          "headline": "Incident Responses - April 2020",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://dec.alaska.gov/spar/ppr/spill-information/response/2020/02-vmt-sump-oily-water-spill/fact-sheet-2/",
+          "source_name": "Alaska Department of Environmental Conservation (ADEC)",
+          "published_at": "2020-04-01T00:00:00.000Z",
+          "headline": "Fact Sheet 2 - 02 VMT Sump Oily Water Spill",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Alaska Department of Environmental Conservation (ADEC)",
+          "NOAA",
+          "U.S. Coast Guard (USCG)"
+        ],
+        "substances": [
+          "Alaska North Slope crude oil",
+          "oily water"
+        ],
+        "ecosystems": [
+          "Port Valdez"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "oily-water discharge",
+            "source_url": "https://blog.response.restoration.noaa.gov/incident-responses-april-2020"
+          },
+          {
+            "quote": "sump",
+            "source_url": "https://cms.dec.alaska.gov/spar/ppr/spill-information/response/2020/02-vmt-sump-oily-water-spill/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.8,
+        "location": 0.7,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "needs_dedupe_check",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "VMT sump oily-water spill / Port Valdez / 2020-04-12",
+        "fingerprint": "vmt-sump-oily-water-spill|port-valdez-ak-us|2020-04-12"
+      }
+    },
+    {
+      "event_id": "pollution_contamination_port-valdez-sheen-vmt-sump_2020-04-12",
+      "title": "Oily sheen observed in Port Valdez linked to Valdez Marine Terminal sump discharge",
+      "description": "Incident reporting noted an oily-water discharge on April 12 that produced a visible sheen in Port Valdez. The discharge was attributed to a failed sump and response actions included securing the source and deploying boom to contain the sheen.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2020-04-12T00:00:00.000Z",
+        "event_end": "2020-04-12T23:59:59.000Z",
+        "reported_at": "2020-04-01T00:00:00.000Z",
+        "time_confidence": 0.5,
+        "event_date_utc": "2020-04-12T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Port Valdez, Alaska, USA",
+        "jurisdiction_level": "city",
+        "admin1": "Alaska",
+        "country": "US",
+        "capital_used": null,
+        "lat": 61.1308,
+        "lon": -146.3483,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://blog.response.restoration.noaa.gov/incident-responses-april-2020",
+          "source_name": "NOAA OR&R Response Blog",
+          "published_at": "2020-04-01T00:00:00.000Z",
+          "headline": "Incident Responses - April 2020",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://cms.dec.alaska.gov/spar/ppr/spill-information/response/2020/02-vmt-sump-oily-water-spill/",
+          "source_name": "Alaska Department of Environmental Conservation (ADEC)",
+          "published_at": "2020-04-01T00:00:00.000Z",
+          "headline": "02 VMT Sump Oily Water Spill",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://cms.dec.alaska.gov/spar/ppr/spill-information/response/2020/02-vmt-sump-oily-water-spill/fact-sheet-8/",
+          "source_name": "Alaska Department of Environmental Conservation (ADEC)",
+          "published_at": "2020-04-01T00:00:00.000Z",
+          "headline": "Fact Sheet 8 - 02 VMT Sump Oily Water Spill",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA",
+          "Alaska Department of Environmental Conservation (ADEC)"
+        ],
+        "substances": [
+          "oily water",
+          "crude oil"
+        ],
+        "ecosystems": [
+          "Port Valdez"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "visible sheen",
+            "source_url": "https://blog.response.restoration.noaa.gov/incident-responses-april-2020"
+          },
+          {
+            "quote": "failed sump",
+            "source_url": "https://cms.dec.alaska.gov/spar/ppr/spill-information/response/2020/02-vmt-sump-oily-water-spill/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.75,
+        "location": 0.7,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "needs_dedupe_check",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "VMT sump oily-water spill / Port Valdez / 2020-04-12",
+        "fingerprint": "vmt-sump-oily-water-spill|port-valdez-ak-us|2020-04-12"
+      }
+    },
+    {
+      "event_id": "evt_202004_tc_harold_south_pacific",
+      "title": "Tropical Cyclone Harold impacts Solomon Islands, Vanuatu, Fiji and Tonga with destructive winds and heavy rainfall",
+      "description": "Tropical Cyclone Harold rapidly intensified in early April 2020 and affected parts of the South Pacific. NASA reporting described very heavy rainfall and damaging conditions as the storm tracked from near the Solomon Islands toward Vanuatu, Fiji and Tonga.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2020-04-01T00:00:00.000Z",
+        "event_end": "2020-04-08T23:59:59.000Z",
+        "reported_at": "2020-04-06T00:00:00Z",
+        "time_confidence": 0.7,
+        "event_date_utc": null,
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "South Pacific (Solomon Islands, Vanuatu, Fiji, Tonga)",
+        "jurisdiction_level": "supranational",
+        "admin1": null,
+        "country": null,
+        "capital_used": null,
+        "lat": -9,
+        "lon": 160,
+        "precision": "proxy",
+        "location_basis": "manual_override",
+        "location_confidence": 0.25
+      },
+      "sources": [
+        {
+          "url": "https://blogs.nasa.gov/hurricanes/2020/04/",
+          "source_name": "NASA Hurricanes Blog",
+          "published_at": "2020-04-01T00:00:00Z",
+          "headline": "NASA Hurricanes Blog (April 2020 archive)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://blogs.nasa.gov/hurricanes/2020/04/06/nasa-finds-heavy-rainfall-in-powerful-tropical-cyclone-harold/",
+          "source_name": "NASA Hurricanes Blog",
+          "published_at": "2020-04-06T00:00:00Z",
+          "headline": "NASA Finds Heavy Rainfall in Powerful Tropical Cyclone Harold",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://blogs.nasa.gov/hurricanes/2020/04/08/nasa-finds-very-heavy-rainfall-in-major-tropical-cyclone-harold/",
+          "source_name": "NASA Hurricanes Blog",
+          "published_at": "2020-04-08T00:00:00Z",
+          "headline": "NASA Finds Very Heavy Rainfall in Major Tropical Cyclone Harold",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NASA"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Tropical Cyclone Harold ... moved into the South Pacific Ocean.",
+            "source_url": "https://blogs.nasa.gov/hurricanes/2020/04/06/nasa-finds-heavy-rainfall-in-powerful-tropical-cyclone-harold/"
+          },
+          {
+            "quote": "NASA analyzed rainfall rates within Tropical Cyclone Harold.",
+            "source_url": "https://blogs.nasa.gov/hurricanes/2020/04/08/nasa-finds-very-heavy-rainfall-in-major-tropical-cyclone-harold/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.46,
+        "category": 0.7,
+        "location": 0.25,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "low_confidence_location",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "tropical_cyclone_harold_apr2020_south_pacific",
+        "fingerprint": "fp_tc_harold_south_pacific_2020-04-01_2020-04-08"
+      }
+    },
+    {
+      "event_id": "2020-04-geological-anak-krakatau-eruption-01",
+      "title": "Anak Krakatau erupts, prompting aviation warnings",
+      "description": "Reports in April 2020 said Indonesia’s Anak Krakatau volcano erupted, sending ash and smoke plumes into the air and triggering aviation-related warnings. Coverage characterized the activity as notably strong/long compared with typical recent activity and referenced the 2018 deadly eruption and tsunami sequence for context.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2020-04-10T00:00:00.000Z",
+        "event_end": "2020-04-11T23:59:59.000Z",
+        "reported_at": "2020-04-11T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2020-04-11T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Anak Krakatau (Sunda Strait), Indonesia",
+        "jurisdiction_level": "site",
+        "admin1": null,
+        "country": "ID",
+        "capital_used": null,
+        "lat": -6.102,
+        "lon": 105.423,
+        "precision": "exact",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.5
+      },
+      "sources": [
+        {
+          "url": "https://www.smithsonianmag.com/smart-news/indonesian-volcano-anak-krakatau-fires-lava-and-ash-sky-180974665/",
+          "source_name": "Smithsonian Magazine",
+          "published_at": "2020-04-11T00:00:00.000Z",
+          "headline": "Indonesian Volcano Anak Krakatau Fires Lava and Ash Into the Sky",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://weather.com/news/news/2020-04-11-anak-krakatau-volcano-indonesia-eruption",
+          "source_name": "The Weather Channel",
+          "published_at": "2020-04-11T00:00:00.000Z",
+          "headline": "Indonesia's Anak Krakatau Volcano Erupts, Prompts Aviation Warning",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.upi.com/Top_News/World-News/2020/04/11/Indonesias-Anak-Krakatau-volcano-erupts-ash-rises-over-1600-feet/2831586612995/",
+          "source_name": "UPI",
+          "published_at": "2020-04-11T00:00:00.000Z",
+          "headline": "Indonesia's Anak Krakatau volcano erupts, ash rises over 1,600 feet",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [
+          "volcanic ash"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.8,
+        "location": 0.5,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Anak Krakatau eruption April 2020",
+        "fingerprint": "anak-krakatau-eruption|anak-krakatau-sunda-strait-indonesia|2020-04-10_2020-04-11"
+      }
+    },
+    {
+      "event_id": "2020-04-fires-rus-siberia-spring-fires-001",
+      "title": "Siberian spring fires and smoke linked to abnormal spring heat",
+      "description": "Reporting described widespread spring landscape fires across Siberia and parts of the Russian Far East during April 2020, producing smoke affecting multiple regions. Articles linked the early-season fire activity and rapid spread to unusually warm conditions and, in some areas, strong winds.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2020-05-14T00:00:00Z",
+        "time_confidence": 0.35,
+        "event_date_utc": null,
+        "event_date_precision": "month"
+      },
+      "location": {
+        "name": "Russia (Siberia and Russian Far East)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "RU",
+        "capital_used": "Moscow",
+        "lat": 55.7558,
+        "lon": 37.6173,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://news.mongabay.com/2020/05/siberia-experiences-hottest-spring-on-record-fueling-wildfires/",
+          "source_name": "Mongabay",
+          "published_at": "2020-05-14T00:00:00Z",
+          "headline": "Siberia experiences hottest spring on record, fueling wildfires",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.ecowatch.com/wildfires-siberia-russia-2645912533.html",
+          "source_name": "EcoWatch",
+          "published_at": "2020-04-15T00:00:00Z",
+          "headline": "Wildfires Are Raging in Siberia, as Russia’s ‘Strongest Heat Wave’ in Decades Sweeps Across Region",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.iawfonline.org/article/fire-in-the-north-the-2020-siberian-fire-season/",
+          "source_name": "International Association of Wildland Fire (IAWF)",
+          "published_at": "2020-07-08T00:00:00Z",
+          "headline": "Fire in the North: The 2020 Siberian Fire Season",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [
+          "smoke"
+        ],
+        "ecosystems": [
+          "grassland",
+          "boreal forest"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Siberia’s record-hot spring has fueled wildfires across the region.",
+            "source_url": "https://news.mongabay.com/2020/05/siberia-experiences-hottest-spring-on-record-fueling-wildfires/"
+          },
+          {
+            "quote": "Wildfires are raging in Siberia as a strong heat wave sweeps the region.",
+            "source_url": "https://www.ecowatch.com/wildfires-siberia-russia-2645912533.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.8,
+        "location": 0.6,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "2020-04 Siberia/Russian Far East spring fires smoke heat",
+        "fingerprint": "fires|russia|2020-04|siberian-spring-fires-smoke-heat"
+      }
+    },
+    {
+      "event_id": "202004_desert_locust_upsurge_east_africa_yemen",
+      "title": "Desert Locust upsurge response updates for East Africa and Yemen amid COVID-19 constraints",
+      "description": "April 2020 updates described the continuing Desert Locust upsurge affecting parts of East Africa and Yemen, with warnings about risks to crops, pasture, and food security. Response operations were reported as ongoing, with constraints related to COVID-19 disruptions.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2020-04-27T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": null,
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "East Africa and Yemen",
+        "jurisdiction_level": "supranational",
+        "admin1": null,
+        "country": null,
+        "capital_used": "Addis Ababa",
+        "lat": 8.9806,
+        "lon": 38.7578,
+        "precision": "proxy",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.45
+      },
+      "sources": [
+        {
+          "url": "https://www.fao.org/newsroom/detail/FAO-continues-to-fight-Desert-Locust-upsurge-in-East-Africa-and-Yemen-despite-COVID-19-constraints/en",
+          "source_name": "FAO",
+          "published_at": "2020-04-09T00:00:00Z",
+          "headline": "FAO continues to fight Desert Locust upsurge in East Africa and Yemen despite COVID-19 constraints",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://somalia.un.org/en/44088-desert-locust-emergency-somalia-update-03-15-april-2020",
+          "source_name": "UN Somalia",
+          "published_at": "2020-04-15T00:00:00Z",
+          "headline": "Desert Locust Emergency in Somalia Update 03 (1-15 April 2020)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.worldbank.org/en/news/factsheet/2020/04/27/the-locust-crisis-the-world-banks-response",
+          "source_name": "World Bank",
+          "published_at": "2020-04-27T00:00:00Z",
+          "headline": "The locust crisis: the World Bank’s response",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "FAO",
+          "United Nations",
+          "World Bank"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "croplands",
+          "pastures"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "FAO continues to fight Desert Locust upsurge in East Africa and Yemen despite COVID-19 constraints.",
+            "source_url": "https://www.fao.org/newsroom/detail/FAO-continues-to-fight-Desert-Locust-upsurge-in-East-Africa-and-Yemen-despite-COVID-19-constraints/en"
+          },
+          {
+            "quote": "Desert Locust Emergency in Somalia Update 03 (1-15 April 2020).",
+            "source_url": "https://somalia.un.org/en/44088-desert-locust-emergency-somalia-update-03-15-april-2020"
+          },
+          {
+            "quote": "The locust crisis: the World Bank’s response.",
+            "source_url": "https://www.worldbank.org/en/news/factsheet/2020/04/27/the-locust-crisis-the-world-banks-response"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.75,
+        "location": 0.45,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Desert Locust upsurge East Africa/Yemen April 2020",
+        "fingerprint": "202004|desert-locust-upsurge-response-updates-for-east-africa-and-yemen-amid-covid-19-constraints|addis-ababa|2020-04"
+      }
+    },
+    {
+      "event_id": "2020-04-23_us_scotus_maui_functional_equivalent",
+      "title": "U.S. Supreme Court sets Clean Water Act 'functional equivalent' test (County of Maui v. Hawaii Wildlife Fund)",
+      "description": "On April 23, 2020, the U.S. Supreme Court held that the Clean Water Act can require permits not only for direct discharges, but also for discharges through groundwater that are the \"functional equivalent\" of a direct discharge into navigable waters. The decision clarified permitting obligations for certain indirect pollution pathways.",
+      "category_primary": "policy_regulation",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "2020-04-23T00:00:00.000Z",
+        "event_end": "2020-04-23T23:59:59.000Z",
+        "reported_at": "2020-04-23T00:00:00.000Z",
+        "time_confidence": 0.8,
+        "event_date_utc": "2020-04-23T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States (case concerning Maui, Hawaii)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.85
+      },
+      "sources": [
+        {
+          "url": "https://www.law.cornell.edu/supremecourt/text/18-260",
+          "source_name": "Cornell Law School (Legal Information Institute)",
+          "published_at": "2020-04-23T00:00:00.000Z",
+          "headline": "County of Maui v. Hawaii Wildlife Fund",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://supreme.justia.com/cases/federal/us/590/18-260/",
+          "source_name": "Justia (U.S. Supreme Court Cases)",
+          "published_at": "2020-04-23T00:00:00.000Z",
+          "headline": "County of Maui v. Hawaii Wildlife Fund",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://earthjustice.org/press/2020/decision-on-supreme-court-clean-water-case",
+          "source_name": "Earthjustice",
+          "published_at": "2020-04-23T00:00:00.000Z",
+          "headline": "Decision on Supreme Court Clean Water Case",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Supreme Court",
+          "Hawaii Wildlife Fund"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "the permitting requirement applies not only to direct discharges, but also to the functional equivalent of a direct discharge",
+            "source_url": "https://www.law.cornell.edu/supremecourt/text/18-260"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.78,
+        "category": 0.85,
+        "location": 0.85,
+        "summary_grounding": 0.7
+      },
+      "quality_flags": [
+        "needs_dedupe_check",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "County of Maui v. Hawaii Wildlife Fund functional equivalent test",
+        "fingerprint": "fp_2020-04-23_us_scotus_maui_country"
+      }
+    }
+  ]
+}

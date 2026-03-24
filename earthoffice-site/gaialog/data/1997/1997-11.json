@@ -1,0 +1,935 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_1997-11_normalize_2026-01-17T192109524Z",
+    "generated_utc": "2026-01-17T19:21:09.524Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "1997-11",
+    "window": {
+      "start_utc": "1997-11-01T00:00:00.000Z",
+      "end_utc": "1997-11-30T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "1997-11_us-ca-humboldtbay_kure_oilspill",
+      "title": "Oil spill from M/V Kure in Humboldt Bay, California",
+      "description": "The vessel M/V Kure allided with pilings/loading infrastructure while shifting at the Louisiana-Pacific dock area, puncturing a fuel tank and releasing fuel oil into Humboldt Bay. Containment and cleanup operations were initiated in response.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1997-11-05T12:00:00Z",
+        "event_end": "1997-11-05T12:00:00Z",
+        "reported_at": "1997-11-05T12:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1997-11-05T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Humboldt Bay (near Samoa/Eureka), California, USA",
+        "jurisdiction_level": "site",
+        "admin1": "California",
+        "country": "US",
+        "capital_used": null,
+        "lat": 40.8021,
+        "lon": -124.1637,
+        "precision": "neighborhood",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://incidentnews.noaa.gov/incident/7239/510060",
+          "source_name": "NOAA IncidentNews",
+          "published_at": "1997-11-05T12:00:00Z",
+          "headline": "Incident: Kure (Humboldt Bay)",
+          "byline": null,
+          "accessed_utc": "2026-01-17T03:21:49.648Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://wildlife.ca.gov/OSPR/NRDA/Kure",
+          "source_name": "California Department of Fish and Wildlife (OSPR)",
+          "published_at": "1997-11-05T12:00:00Z",
+          "headline": "NRDA: Kure",
+          "byline": null,
+          "accessed_utc": "2026-01-17T03:21:49.648Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://ncsp.tamu.edu/reports/NRC/1997/is3897.htm",
+          "source_name": "National Response Center / Texas A&M NRC reports mirror",
+          "published_at": "1997-11-05T12:00:00Z",
+          "headline": "NRC Report (1997)",
+          "byline": null,
+          "accessed_utc": "2026-01-17T03:21:49.648Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA",
+          "California Department of Fish and Wildlife (OSPR)",
+          "National Response Center"
+        ],
+        "substances": [
+          "fuel oil",
+          "intermediate fuel oil"
+        ],
+        "ecosystems": [
+          "Humboldt Bay"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "releasing intermediate fuel oil into Humboldt Bay",
+            "source_url": "https://incidentnews.noaa.gov/incident/7239/510060"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.8,
+        "location": 0.55,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "M/V Kure Humboldt Bay oil spill 1997-11",
+        "fingerprint": "fp_1997-11_kure_humboldt_bay_1997-11-05"
+      }
+    },
+    {
+      "event_id": "1997-11_us-ca-pointreyes_tarballs_oiling",
+      "title": "Oil tarballs/oiling incident affecting Point Reyes National Seashore beaches, California",
+      "description": "Oil globules/tar balls washed up on beaches at Point Reyes National Seashore, prompting investigations into the unknown source and response actions such as shoreline surveys and wildlife rescue. Multiple agencies, including the U.S. Coast Guard and California entities, participated in response and assessment.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1997-11-16T12:00:00Z",
+        "event_end": "1997-11-16T12:00:00Z",
+        "reported_at": "1997-11-17T00:00:00Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "1997-11-16T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Point Reyes National Seashore (Drakes Beach area), Marin County, California, USA",
+        "jurisdiction_level": "site",
+        "admin1": "California",
+        "country": "US",
+        "capital_used": null,
+        "lat": 38.0194,
+        "lon": -122.831,
+        "precision": "exact",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.75
+      },
+      "sources": [
+        {
+          "url": "https://www.nps.gov/pore/learn/news/newsreleases_19971117_drakeoilspill97.htm",
+          "source_name": "National Park Service (Point Reyes National Seashore)",
+          "published_at": "1997-11-17T00:00:00Z",
+          "headline": "News Release: Drake Beach oiling incident (1997)",
+          "byline": null,
+          "accessed_utc": "2026-01-17T03:21:49.648Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://npshistory.com/morningreport/1997/11-20.htm",
+          "source_name": "NPS Morning Report (archive)",
+          "published_at": "1997-11-20T00:00:00Z",
+          "headline": "NPS Morning Report 1997-11-20",
+          "byline": null,
+          "accessed_utc": "2026-01-17T03:21:49.648Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.sfgate.com/news/article/Origin-of-oil-fouling-local-waters-unknown-3089245.php",
+          "source_name": "SFGATE",
+          "published_at": "1997-11-20T00:00:00Z",
+          "headline": "Origin of oil fouling local waters unknown",
+          "byline": null,
+          "accessed_utc": "2026-01-17T03:21:49.648Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "National Park Service",
+          "U.S. Coast Guard"
+        ],
+        "substances": [
+          "oil",
+          "tar balls"
+        ],
+        "ecosystems": [
+          "Point Reyes National Seashore"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Thick oil globules (tar balls) began washing up on Point Reyes beaches",
+            "source_url": "https://www.nps.gov/pore/learn/news/newsreleases_19971117_drakeoilspill97.htm"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.65,
+        "category": 0.85,
+        "location": 0.8,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Point Reyes tarballs/oiling incident 1997-11",
+        "fingerprint": "fp_1997-11_point_reyes_tarballs_1997-11-16"
+      }
+    },
+    {
+      "event_id": "1997-11_us-ak-unalaska_kuroshima_grounding_oilspill",
+      "title": "M/V Kuroshima grounding and bunker fuel oil spill near Dutch Harbor (Unalaska Island), Alaska",
+      "description": "During severe weather, the M/V Kuroshima grounded near Dutch Harbor on Unalaska Island, releasing bunker fuel oil. Reports described oil spreading in nearby waters and impacts to adjacent areas, while response efforts focused on assessment and cleanup support.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1997-11-26T12:00:00Z",
+        "event_end": "1997-11-26T12:00:00Z",
+        "reported_at": "1997-11-26T12:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1997-11-26T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Summer Bay, Unalaska Island (near Dutch Harbor), Alaska, USA",
+        "jurisdiction_level": "site",
+        "admin1": "Alaska",
+        "country": "US",
+        "capital_used": null,
+        "lat": 53.8736,
+        "lon": -166.5369,
+        "precision": "neighborhood",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://incidentnews.noaa.gov/incident/5011",
+          "source_name": "NOAA IncidentNews",
+          "published_at": "1997-11-26T12:00:00Z",
+          "headline": "Incident: Kuroshima (Unalaska)",
+          "byline": null,
+          "accessed_utc": "2026-01-17T03:21:49.648Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://repository.library.noaa.gov/view/noaa/2585",
+          "source_name": "NOAA Institutional Repository",
+          "published_at": "1997-11-26T12:00:00Z",
+          "headline": "Kuroshima spill documentation (NOAA repository record)",
+          "byline": null,
+          "accessed_utc": "2026-01-17T03:21:49.648Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.congress.gov/event/110th-congress/senate-event/LC8922/text",
+          "source_name": "Congress.gov",
+          "published_at": "2008-01-01T00:00:00Z",
+          "headline": "Congressional hearing text referencing the Kuroshima spill",
+          "byline": null,
+          "accessed_utc": "2026-01-17T03:21:49.648Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA"
+        ],
+        "substances": [
+          "bunker fuel oil"
+        ],
+        "ecosystems": [
+          "Summer Bay",
+          "Unalaska Island"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "ran aground ... releasing bunker fuel oil",
+            "source_url": "https://incidentnews.noaa.gov/incident/5011"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.85,
+        "location": 0.6,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "M/V Kuroshima grounding spill near Dutch Harbor 1997-11",
+        "fingerprint": "fp_1997-11_kuroshima_unalaska_1997-11-26"
+      }
+    },
+    {
+      "event_id": "1997-11_weather_climate_super-typhoon-keith_northern-mariana-islands",
+      "title": "Super Typhoon Keith impacts the Northern Mariana Islands",
+      "description": "Super Typhoon Keith reached super-typhoon strength around November 1, 1997 and passed through/near the Northern Mariana Islands. Reports summarize widespread wind damage to homes and infrastructure across islands including Saipan, Rota, and Tinian.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1997-11-01T12:00:00Z",
+        "event_end": "1997-11-01T12:00:00Z",
+        "reported_at": "1997-11-01T12:00:00Z",
+        "time_confidence": 0.45,
+        "event_date_utc": "1997-11-01T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Northern Mariana Islands",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "MP",
+        "capital_used": "Saipan",
+        "lat": 15.1778,
+        "lon": 145.7505,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.85
+      },
+      "sources": [
+        {
+          "url": "http://agora.ex.nii.ac.jp/digital-typhoon/summary/wnp/s/199725.html.en",
+          "source_name": "Digital Typhoon (NII, Japan)",
+          "published_at": "1997-11-01T12:00:00Z",
+          "headline": "Typhoon 199725 (Keith) Summary",
+          "byline": null,
+          "accessed_utc": "2026-01-17T03:22:24.226Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "intensified to super-typhoon strength",
+            "source_url": "http://agora.ex.nii.ac.jp/digital-typhoon/summary/wnp/s/199725.html.en"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.8,
+        "location": 0.85,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Keith_1997_WNP_NorthernMariana",
+        "fingerprint": "keith_1997-11-01_northern-mariana-islands"
+      }
+    },
+    {
+      "event_id": "1997-11_weather_climate_hurricane-rick_oaxaca-mexico",
+      "title": "Hurricane Rick brings heavy rainfall to Oaxaca, Mexico",
+      "description": "Hurricane Rick affected southern Mexico in early-to-mid November 1997, with rainfall analyses documenting heavy precipitation in association with the storm. The event includes impacts around Oaxaca and near the Puerto Escondido area.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1997-11-09T12:00:00Z",
+        "event_end": "1997-11-10T12:00:00Z",
+        "reported_at": "1997-11-09T12:00:00Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "1997-11-09T12:00:00Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Oaxaca, Mexico",
+        "jurisdiction_level": "state",
+        "admin1": "Oaxaca",
+        "country": "MX",
+        "capital_used": "Oaxaca de Juárez",
+        "lat": 17.0732,
+        "lon": -96.7266,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.8
+      },
+      "sources": [
+        {
+          "url": "https://www.wpc.ncep.noaa.gov/tropical/rain/rick1997.html",
+          "source_name": "NOAA/NWS Weather Prediction Center",
+          "published_at": "1997-11-09T12:00:00Z",
+          "headline": "Tropical Cyclone Rainfall: Hurricane Rick (1997)",
+          "byline": null,
+          "accessed_utc": "2026-01-17T03:22:24.226Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA",
+          "NWS Weather Prediction Center"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Tropical Cyclone Rainfall: Hurricane Rick (1997)",
+            "source_url": "https://www.wpc.ncep.noaa.gov/tropical/rain/rick1997.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.66,
+        "category": 0.85,
+        "location": 0.8,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Rick_1997_EPac_Oaxaca",
+        "fingerprint": "rick_1997-11-09_oaxaca-mexico"
+      }
+    },
+    {
+      "event_id": "1997-11-geol-cap-rouge-quake",
+      "title": "Cap-Rouge (Quebec City area), Canada earthquake",
+      "description": "An earthquake centered near Cap-Rouge, southwest of Quebec City, occurred at 02:34:33 UTC on November 6, 1997 (late November 5 local time). It was widely felt across Quebec and into northern New England, with minor damage reported near the epicenter and aftershocks noted afterward.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1997-11-06T02:34:33Z",
+        "event_end": "1997-11-06T02:34:33Z",
+        "reported_at": "1997-11-06T00:00:00Z",
+        "time_confidence": 0.8,
+        "event_date_utc": "1997-11-06T02:34:33Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Cap-Rouge (Quebec City), Québec, Canada",
+        "jurisdiction_level": "site",
+        "admin1": "Québec",
+        "country": "CA",
+        "capital_used": null,
+        "lat": 46.761,
+        "lon": -71.334,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.maine.gov/DACF/mgs/hazards/earthquakes/quake-11-5-97.htm",
+          "source_name": "Maine Geological Survey (maine.gov)",
+          "published_at": "1997-11-06T00:00:00Z",
+          "headline": "Earthquake of November 5, 1997",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Maine Geological Survey"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Earthquake of November 5, 1997 ... (02:34:33 UTC on Nov 6).",
+            "source_url": "https://www.maine.gov/DACF/mgs/hazards/earthquakes/quake-11-5-97.htm"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.8,
+        "location": 0.55,
+        "summary_grounding": 0.7
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "1997-11-06_cap-rouge_quebec_earthquake",
+        "fingerprint": "fp_1997-11-06_cap-rouge-quebec_geological"
+      }
+    },
+    {
+      "event_id": "1997-11-geol-coquimbo-punitaqui-aftershock",
+      "title": "Coquimbo Region, Chile aftershock in the 1997 Punitaqui earthquake sequence",
+      "description": "A paper describing the 1997 Punitaqui earthquake sequence reports a significant aftershock occurring on November 3, 1997. The draft indicates damage and landslides in the epicentral area as part of the continuing sequence.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1997-11-03T12:00:00Z",
+        "event_end": "1997-11-03T12:00:00Z",
+        "reported_at": "2001-01-01T00:00:00Z",
+        "time_confidence": 0.35,
+        "event_date_utc": "1997-11-03T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Coquimbo Region, Chile",
+        "jurisdiction_level": "state",
+        "admin1": "Coquimbo Region",
+        "country": "CL",
+        "capital_used": "La Serena",
+        "lat": -29.9027,
+        "lon": -71.2519,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.sciencedirect.com/science/article/pii/S004019510100213X",
+          "source_name": "ScienceDirect",
+          "published_at": "2001-01-01T00:00:00Z",
+          "headline": "ScienceDirect article (S004019510100213X)",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.4,
+        "category": 0.7,
+        "location": 0.6,
+        "summary_grounding": 0.3
+      },
+      "quality_flags": [
+        "paywalled_or_partial",
+        "secondary_sources_only",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "1997-11_punitaqui_sequence_aftershock_coquimbo",
+        "fingerprint": "fp_1997-11-03_coquimbo-la-serena_geological"
+      }
+    },
+    {
+      "event_id": "fires_1997-11_nsw_bushfires_aidr",
+      "title": "Sydney–Hunter–Pilliga bushfires in New South Wales",
+      "description": "Multiple bushfires affected parts of New South Wales in mid-November 1997, including areas around Sydney, the Hunter region and the Pilliga. The Australian Institute for Disaster Resilience notes major impacts including large burned area, property losses and firefighter fatalities.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1997-11-15T12:00:00Z",
+        "event_end": "1997-11-20T12:00:00Z",
+        "reported_at": "1997-11-01T00:00:00.000Z",
+        "time_confidence": 0.45,
+        "event_date_utc": null,
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "New South Wales, Australia",
+        "jurisdiction_level": "state",
+        "admin1": "New South Wales",
+        "country": "AU",
+        "capital_used": "Sydney",
+        "lat": -33.8688,
+        "lon": 151.2093,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://knowledge.aidr.org.au/resources/bushfire-sydney-hunter-pilliga/",
+          "source_name": "Australian Institute for Disaster Resilience (AIDR) Knowledge Hub",
+          "published_at": "1997-11-01T00:00:00.000Z",
+          "headline": "Bushfire: Sydney, Hunter and Pilliga",
+          "byline": null,
+          "accessed_utc": "2026-01-17T03:23:26.769Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Australian Institute for Disaster Resilience (AIDR)"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Bushfire: Sydney, Hunter and Pilliga",
+            "source_url": "https://knowledge.aidr.org.au/resources/bushfire-sydney-hunter-pilliga/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.85,
+        "location": 0.75,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "NSW bushfires Nov 1997",
+        "fingerprint": "fires|sydney–hunter–pilliga bushfires in new south wales|new south wales au|1997-11"
+      }
+    },
+    {
+      "event_id": "fires_1997-11_point_reyes_scotch_broom_prescribed_burn_nps",
+      "title": "Prescribed burn to control scotch broom at Point Reyes (Olema Valley)",
+      "description": "The U.S. National Park Service announced a planned prescribed burn on a small site in Olema Valley at Point Reyes National Seashore on November 5, 1997. The stated purpose was to remove invasive scotch broom and protect native vegetation, with implementation dependent on suitable conditions and staffed/monitored by park personnel.",
+      "category_primary": "fires",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "1997-11-05T18:30:00Z",
+        "event_end": "1997-11-05T20:30:00Z",
+        "reported_at": "1997-11-05T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1997-11-05T18:30:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Olema Valley, Point Reyes National Seashore, California, USA",
+        "jurisdiction_level": "site",
+        "admin1": "California",
+        "country": "US",
+        "capital_used": null,
+        "lat": 38.0432,
+        "lon": -122.7919,
+        "precision": "exact",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.nps.gov/pore/learn/news/newsreleases_19971105_hagmaierburn.htm",
+          "source_name": "U.S. National Park Service (Point Reyes National Seashore)",
+          "published_at": "1997-11-05T00:00:00.000Z",
+          "headline": "News Release: Hagmaier Ranch prescribed burn (Nov. 5, 1997)",
+          "byline": null,
+          "accessed_utc": "2026-01-17T03:23:26.769Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "National Park Service"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "News Release: ... prescribed burn ... (Nov. 5, 1997)",
+            "source_url": "https://www.nps.gov/pore/learn/news/newsreleases_19971105_hagmaierburn.htm"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.8,
+        "location": 0.55,
+        "summary_grounding": 0.65
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Point Reyes prescribed burn Nov 1997",
+        "fingerprint": "fires|prescribed burn to control scotch broom at point reyes (olema valley)|olema valley point reyes national seashore california usa|1997-11"
+      }
+    },
+    {
+      "event_id": "1997-11-us-ca-fur-seal-pup-dieoff-el-nino",
+      "title": "Northern fur seal pup die-off linked to El Niño reported on California coast",
+      "description": "A Nov. 14, 1997 news report described widespread deaths of northern fur seal pups along the California coast, including reports of about 1,500 dead pups on San Miguel Island earlier that fall. The report attributed the die-off to El Niño-related changes that reduced prey availability and affected maternal nutrition.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1997-11-14T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1997-11-14T00:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "San Miguel Island (Channel Islands), California, USA",
+        "jurisdiction_level": "site",
+        "admin1": "California",
+        "country": "US",
+        "capital_used": null,
+        "lat": 34.045,
+        "lon": -120.365,
+        "precision": "exact",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.65
+      },
+      "sources": [
+        {
+          "url": "https://www.deseret.com/1997/11/14/19345699/dead-seal-pups-are-el-nino-s-latest-casualties-scientists-say/",
+          "source_name": "Deseret News",
+          "published_at": "1997-11-14T00:00:00Z",
+          "headline": "Dead seal pups are El Nino's latest casualties, scientists say",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [
+          "marine ecosystem",
+          "Channel Islands"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Dead seal pups are El Nino's latest casualties, scientists say",
+            "source_url": "https://www.deseret.com/1997/11/14/19345699/dead-seal-pups-are-el-nino-s-latest-casualties-scientists-say/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.75,
+        "location": 0.65,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "northern fur seal pup die-off el nino california 1997",
+        "fingerprint": "fp_1997-11-us-ca-fur-seal-pup-dieoff-el-nino"
+      }
+    },
+    {
+      "event_id": "1997-11-us-fws-proposed-endangered-listing-riparian-brush-rabbit-woodrat",
+      "title": "USFWS proposes endangered listing for riparian brush rabbit and riparian woodrat",
+      "description": "On Nov. 21, 1997, the U.S. Fish & Wildlife Service published a proposed rule to list the riparian brush rabbit and the riparian (San Joaquin Valley) woodrat as endangered. The proposal cited the limited known populations and multiple threats affecting their riparian habitat in California’s San Joaquin Valley.",
+      "category_primary": "policy_regulation",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1997-11-21T00:00:00Z",
+        "time_confidence": 0.9,
+        "event_date_utc": "1997-11-21T00:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Sacramento, California, USA (USFWS jurisdiction proxy for California listing action)",
+        "jurisdiction_level": "state",
+        "admin1": "California",
+        "country": "US",
+        "capital_used": "Sacramento",
+        "lat": 38.5767,
+        "lon": -121.4944,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.8
+      },
+      "sources": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/FR-1997-11-21/html/97-30553.htm",
+          "source_name": "Federal Register (govinfo.gov)",
+          "published_at": "1997-11-21T00:00:00Z",
+          "headline": "Endangered and Threatened Wildlife and Plants; Proposed Endangered Status for the Riparian Brush Rabbit and the Riparian (San Joaquin Valley) Woodrat",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Fish and Wildlife Service"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "riparian habitat",
+          "San Joaquin Valley"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Proposed Endangered Status for the Riparian Brush Rabbit and the Riparian (San Joaquin Valley) Woodrat",
+            "source_url": "https://www.govinfo.gov/content/pkg/FR-1997-11-21/html/97-30553.htm"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.78,
+        "category": 0.45,
+        "location": 0.8,
+        "summary_grounding": 0.75
+      },
+      "quality_flags": [
+        "low_confidence_category",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "USFWS proposed listing riparian brush rabbit woodrat 1997-11-21",
+        "fingerprint": "fp_1997-11-us-fws-proposed-endangered-listing-riparian-brush-rabbit-woodrat"
+      }
+    },
+    {
+      "event_id": "evt_19971125_nmfs_coho_critical_habitat_proposed_rule",
+      "title": "NMFS proposed coho salmon critical habitat designations for two West Coast ESUs",
+      "description": "The U.S. National Marine Fisheries Service published a proposed rule requesting comments and announcing public hearings on designating critical habitat for two threatened coho salmon evolutionarily significant units (ESUs): Central California Coast and Southern Oregon/Northern California Coast, under the Endangered Species Act.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "1997-11-25T12:00:00Z",
+        "event_end": "1997-11-25T12:00:00Z",
+        "reported_at": "1997-11-25T00:00:00Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "1997-11-25T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.8951,
+        "lon": -77.0364,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/FR-1997-11-25/html/97-30865.htm",
+          "source_name": "GovInfo (Federal Register)",
+          "published_at": "1997-11-25T00:00:00Z",
+          "headline": "Proposed Rule: Designation of Critical Habitat for Two Coho Salmon ESUs (Central California Coast and Southern Oregon/Northern California Coast)",
+          "byline": null,
+          "accessed_utc": "2026-01-17T03:24:23.844Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "National Marine Fisheries Service (NMFS)",
+          "National Oceanic and Atmospheric Administration (NOAA)"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "Pacific coastal and riverine salmon habitat"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "NMFS proposes to designate critical habitat for the Central California Coast and Southern Oregon/Northern California Coast coho salmon ESUs.",
+            "source_url": "https://www.govinfo.gov/content/pkg/FR-1997-11-25/html/97-30865.htm"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.78,
+        "category": 0.85,
+        "location": 0.7,
+        "summary_grounding": 0.8
+      },
+      "quality_flags": [
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "nmfs-coho-critical-habitat-proposed-rule-1997-11-25",
+        "fingerprint": "fp_19971125_nmfs_coho_us_policy_regulation"
+      }
+    }
+  ]
+}

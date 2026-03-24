@@ -1,0 +1,944 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_1991-08_normalize_2026-01-17T171323082Z",
+    "generated_utc": "2026-01-17T17:13:23.082Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "1991-08",
+    "window": {
+      "start_utc": "1991-08-01T00:00:00.000Z",
+      "end_utc": "1991-08-31T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "1991-08-weather_climate-hurricane-bob-us",
+      "title": "Hurricane Bob impacts U.S. East Coast and New England",
+      "description": "Hurricane Bob brought hurricane-force winds, heavy rainfall, and coastal impacts along parts of the U.S. East Coast and New England in August 1991, including landfalls in Rhode Island and Maine. National Weather Service and NOAA materials document notable rainfall totals and impacts across the region.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1991-08-18T12:00:00Z",
+        "event_end": "1991-08-21T12:00:00Z",
+        "reported_at": "2026-01-16T23:53:35.720Z",
+        "time_confidence": 0.65,
+        "event_date_utc": "1991-08-19T00:00:00Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "United States",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.wpc.ncep.noaa.gov/tropical/rain/bob1991.html",
+          "source_name": "NOAA Weather Prediction Center",
+          "published_at": "1991-08-01T00:00:00Z",
+          "headline": "Tropical Storm/Hurricane Bob - August 1991",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.weather.gov/box/hurricane_bob",
+          "source_name": "National Weather Service (Boston/Norton, MA)",
+          "published_at": "1991-08-01T00:00:00Z",
+          "headline": "Hurricane Bob",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.weather.gov/mhx/HurricaneBob1991EventReview",
+          "source_name": "National Weather Service (Morehead City, NC)",
+          "published_at": "1991-08-01T00:00:00Z",
+          "headline": "Hurricane Bob (1991) - Event Review",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA Weather Prediction Center",
+          "National Weather Service"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Tropical Storm/Hurricane Bob - August 1991",
+            "source_url": "https://www.wpc.ncep.noaa.gov/tropical/rain/bob1991.html"
+          },
+          {
+            "quote": "Hurricane Bob",
+            "source_url": "https://www.weather.gov/box/hurricane_bob"
+          },
+          {
+            "quote": "Hurricane Bob (1991) - Event Review",
+            "source_url": "https://www.weather.gov/mhx/HurricaneBob1991EventReview"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.8,
+        "location": 0.6,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Hurricane Bob (1991) impacts Northeast US",
+        "fingerprint": "1991-08-hurricane-bob-impacts-united-states-1991-08"
+      }
+    },
+    {
+      "event_id": "1991-08-geological-cerro-hudson-paroxysmal-19910812",
+      "title": "Cerro Hudson paroxysmal explosive phase (1991 eruption)",
+      "description": "During the 1991 Cerro Hudson eruption, an intense explosive phase began around August 12, 1991 and continued through about August 15. Reports describe high eruption columns and widespread tephra fall affecting areas downwind, with a major sulfur dioxide (SO2)-rich plume dispersing widely.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1991-08-12T12:00:00Z",
+        "event_end": "1991-08-15T12:00:00Z",
+        "reported_at": "1991-07-01T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1991-08-12T12:00:00Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Cerro Hudson, Aysén Region, Chile",
+        "jurisdiction_level": "site",
+        "admin1": "Aysén Region",
+        "country": "CL",
+        "capital_used": null,
+        "lat": -45.9,
+        "lon": -72.7,
+        "precision": "exact",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://volcano.si.edu/showreport.cfm?doi=10.5479/si.GVP.BGVN199107-358057",
+          "source_name": "Smithsonian Institution Global Volcanism Program (BGVN)",
+          "published_at": "1991-07-01T00:00:00Z",
+          "headline": "BGVN report for Hudson (Cerro Hudson)",
+          "byline": null,
+          "accessed_utc": "1991-08-31T23:59:59.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Smithsonian Institution Global Volcanism Program"
+        ],
+        "substances": [
+          "SO2",
+          "tephra",
+          "ash"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Paroxysmal explosive phase began 12 August and continued through about 15 August.",
+            "source_url": "https://volcano.si.edu/showreport.cfm?doi=10.5479/si.GVP.BGVN199107-358057"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.8,
+        "location": 0.45,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "low_confidence_location"
+      ],
+      "dedupe": {
+        "cluster_hint": "cerro-hudson-1991-eruption",
+        "fingerprint": "fp_199108_cerro_hudson_paroxysmal_cl"
+      }
+    },
+    {
+      "event_id": "1991-08-geological-offshore-norcal-earthquake-19910817",
+      "title": "Offshore Northern California earthquakes near Crescent City/Eureka (Aug 17, 1991)",
+      "description": "Multiple strong earthquakes were reported offshore of Northern California on August 17, 1991, felt along the northern coast. Contemporary accounts place the activity offshore west of Crescent City near the Oregon border, with reported magnitudes varying by source.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1991-08-17T12:00:00Z",
+        "event_end": "1991-08-17T12:00:00Z",
+        "reported_at": "1991-08-17T00:00:00Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "1991-08-17T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Crescent City, California, United States (offshore)",
+        "jurisdiction_level": "city",
+        "admin1": "California",
+        "country": "US",
+        "capital_used": null,
+        "lat": 41.7558,
+        "lon": -124.2017,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.upi.com/Archives/1991/08/17/Two-quakes-hit-Northern-California-coast/3513682401600/",
+          "source_name": "UPI Archives",
+          "published_at": "1991-08-17T00:00:00Z",
+          "headline": "Two quakes hit Northern California coast",
+          "byline": null,
+          "accessed_utc": "1991-08-31T23:59:59.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.usgs.gov/publications/earthquakes-july-august-1991",
+          "source_name": "USGS",
+          "published_at": "1991-08-01T00:00:00Z",
+          "headline": "Earthquakes July–August 1991",
+          "byline": null,
+          "accessed_utc": "1991-08-31T23:59:59.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.conservation.ca.gov/cgs/siteassets/earthquakes-datatable.aspx",
+          "source_name": "California Geological Survey",
+          "published_at": "1991-08-01T00:00:00Z",
+          "headline": "Earthquakes data table",
+          "byline": null,
+          "accessed_utc": "1991-08-31T23:59:59.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "USGS",
+          "California Geological Survey",
+          "UPI"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Two strong earthquakes hit the Northern California coast... offshore west of Crescent City.",
+            "source_url": "https://www.upi.com/Archives/1991/08/17/Two-quakes-hit-Northern-California-coast/3513682401600/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.85,
+        "location": 0.6,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "1991-08-17-offshore-northern-california-earthquakes",
+        "fingerprint": "fp_19910817_offshore_norcal_crescent_city"
+      }
+    },
+    {
+      "event_id": "1991-08-geological-cerro-hudson-initial-activity-19910808",
+      "title": "Cerro Hudson eruption begins with initial explosive activity (Aug 8–10, 1991)",
+      "description": "Cerro Hudson began a new eruptive episode around August 8, 1991, with strong explosive activity continuing into about August 10. Reports describe an ash-laden eruption column and significant ash dispersal preceding the later, more intense phase in mid-August.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1991-08-08T12:00:00Z",
+        "event_end": "1991-08-10T12:00:00Z",
+        "reported_at": "1991-07-01T00:00:00Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "1991-08-08T12:00:00Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Cerro Hudson, Aysén Region, Chile",
+        "jurisdiction_level": "site",
+        "admin1": "Aysén Region",
+        "country": "CL",
+        "capital_used": null,
+        "lat": -45.9,
+        "lon": -72.7,
+        "precision": "exact",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://volcano.si.edu/showreport.cfm?doi=10.5479/si.GVP.BGVN199107-358057",
+          "source_name": "Smithsonian Institution Global Volcanism Program (BGVN)",
+          "published_at": "1991-07-01T00:00:00Z",
+          "headline": "BGVN report for Hudson (Cerro Hudson)",
+          "byline": null,
+          "accessed_utc": "1991-08-31T23:59:59.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Smithsonian Institution Global Volcanism Program"
+        ],
+        "substances": [
+          "ash"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "New eruptive episode began 8 August with strong explosive activity continuing into 10 August.",
+            "source_url": "https://volcano.si.edu/showreport.cfm?doi=10.5479/si.GVP.BGVN199107-358057"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.52,
+        "category": 0.8,
+        "location": 0.45,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "low_confidence_location"
+      ],
+      "dedupe": {
+        "cluster_hint": "cerro-hudson-1991-eruption",
+        "fingerprint": "fp_199108_cerro_hudson_initial_cl"
+      }
+    },
+    {
+      "event_id": "1991-08_fires_medicine-tail-fire_custer-battlefield-nm",
+      "title": "Medicine Tail Fire reaches Custer Battlefield National Monument (Montana), prompting closure/evacuation",
+      "description": "A human-caused wildfire spread into Custer Battlefield National Monument on August 20, 1991, burning about 125 acres along Battle Ridge. The fire came within roughly 300 yards of the visitor center, leading to closure and evacuation; firefighters stopped it along the park road.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1991-08-20T12:00:00Z",
+        "event_end": "1991-08-20T12:00:00Z",
+        "reported_at": "1991-08-22T00:00:00Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "1991-08-20T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Little Bighorn Battlefield National Monument (formerly Custer Battlefield National Monument), Montana, USA",
+        "jurisdiction_level": "site",
+        "admin1": "Montana",
+        "country": "US",
+        "capital_used": null,
+        "lat": 45.5656,
+        "lon": -107.429,
+        "precision": "exact",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://npshistory.com/morningreport/1991/08-22.htm",
+          "source_name": "NPS Morning Report (NPSHistory.com)",
+          "published_at": "1991-08-22T00:00:00Z",
+          "headline": "NPS Morning Report (Aug 22, 1991)",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "National Park Service"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "human-caused fire spread into the national monument ... burning about 125 acres",
+            "source_url": "https://npshistory.com/morningreport/1991/08-22.htm"
+          },
+          {
+            "quote": "came within ~300 yards of the visitor center, and leading to closure and evacuation",
+            "source_url": "https://npshistory.com/morningreport/1991/08-22.htm"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.85,
+        "location": 0.55,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Medicine Tail Fire - Little Bighorn Battlefield NM - 1991-08-20",
+        "fingerprint": "1991-08_fires_medicine-tail-fire_little-bighorn-battlefield-nm_1991-08-20"
+      }
+    },
+    {
+      "event_id": "1991-08_fires_red-canyon-fire_blm-boise-district",
+      "title": "Red Canyon Fire (BLM Boise District, Idaho) expands to about 2,500 acres",
+      "description": "Federal fire situation reporting listed the Red Canyon Fire in the BLM Boise District growing from about 1,000 acres on August 25, 1991 to about 2,500 acres by August 26, 1991. The report also noted a target containment date around August 30.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1991-08-25T12:00:00Z",
+        "event_end": "1991-08-26T12:00:00Z",
+        "reported_at": "1991-08-26T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1991-08-26T12:00:00Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "BLM Boise District, Idaho, USA",
+        "jurisdiction_level": "state",
+        "admin1": "Idaho",
+        "country": "US",
+        "capital_used": "Boise",
+        "lat": 43.615,
+        "lon": -116.2023,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.5
+      },
+      "sources": [
+        {
+          "url": "https://npshistory.com/morningreport/1991/08-26.htm",
+          "source_name": "NPS Morning Report (NPSHistory.com)",
+          "published_at": "1991-08-26T00:00:00Z",
+          "headline": "NPS Morning Report (Aug 26, 1991)",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Bureau of Land Management"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "fire situation reporting grew from about 1,000 acres on August 25 to about 2,500 acres by August 26",
+            "source_url": "https://npshistory.com/morningreport/1991/08-26.htm"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.5,
+        "category": 0.85,
+        "location": 0.5,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Red Canyon Fire - BLM Boise District - 1991-08-25 to 1991-08-26",
+        "fingerprint": "1991-08_fires_red-canyon-fire_blm-boise-district_1991-08-25_1991-08-26"
+      }
+    },
+    {
+      "event_id": "1991-08_fires_mckim-fire_blm-salmon-district",
+      "title": "McKim Fire (BLM Salmon District, Idaho) reported as a new Type I incident at roughly 3,000+ acres",
+      "description": "A federal fire activity report listed the McKim Fire in the BLM Salmon District as a newly reported Type I incident on August 26, 1991. The report indicated the fire size was roughly 3,000+ acres at the time of reporting.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1991-08-26T12:00:00Z",
+        "event_end": "1991-08-26T12:00:00Z",
+        "reported_at": "1991-08-26T00:00:00Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "1991-08-26T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "BLM Salmon District, Idaho, USA",
+        "jurisdiction_level": "state",
+        "admin1": "Idaho",
+        "country": "US",
+        "capital_used": "Boise",
+        "lat": 43.615,
+        "lon": -116.2023,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.45
+      },
+      "sources": [
+        {
+          "url": "https://npshistory.com/morningreport/1991/08-26.htm",
+          "source_name": "NPS Morning Report (NPSHistory.com)",
+          "published_at": "1991-08-26T00:00:00Z",
+          "headline": "NPS Morning Report (Aug 26, 1991)",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Bureau of Land Management"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "A newly reported Type I fire ... listed at roughly 3,000+ acres on August 26, 1991",
+            "source_url": "https://npshistory.com/morningreport/1991/08-26.htm"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.45,
+        "category": 0.85,
+        "location": 0.45,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "McKim Fire - BLM Salmon District - 1991-08-26",
+        "fingerprint": "1991-08_fires_mckim-fire_blm-salmon-district_1991-08-26"
+      }
+    },
+    {
+      "event_id": "1991-08_fires_reservation-hill-fire_humboldt-nf-nevada",
+      "title": "Reservation Hill Fire (Humboldt National Forest area, Nevada) listed at about 3,522 acres",
+      "description": "A federal fire situation report listed the Reservation Hill Fire on August 26, 1991 at about 3,522 acres. The report also included containment information in the situation listing.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1991-08-26T12:00:00Z",
+        "event_end": "1991-08-26T12:00:00Z",
+        "reported_at": "1991-08-26T00:00:00Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "1991-08-26T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Nevada, USA (Humboldt National Forest area)",
+        "jurisdiction_level": "state",
+        "admin1": "Nevada",
+        "country": "US",
+        "capital_used": "Carson City",
+        "lat": 39.1638,
+        "lon": -119.7674,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.4
+      },
+      "sources": [
+        {
+          "url": "https://npshistory.com/morningreport/1991/08-26.htm",
+          "source_name": "NPS Morning Report (NPSHistory.com)",
+          "published_at": "1991-08-26T00:00:00Z",
+          "headline": "NPS Morning Report (Aug 26, 1991)",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Forest Service"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "reported at about 3,522 acres with containment noted in the situation report",
+            "source_url": "https://npshistory.com/morningreport/1991/08-26.htm"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.42,
+        "category": 0.85,
+        "location": 0.4,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Reservation Hill Fire - Humboldt NF area - 1991-08-26",
+        "fingerprint": "1991-08_fires_reservation-hill-fire_humboldt-nf-nevada_1991-08-26"
+      }
+    },
+    {
+      "event_id": "1991-08_fires_tetlin-nwr-fire-113349_alaska",
+      "title": "Tetlin National Wildlife Refuge Fire 113349 (Alaska) reported at about 16,280 acres",
+      "description": "A wildfire incident identified as Fire 113349 on Tetlin National Wildlife Refuge was reported in federal fire activity updates as growing from about 8,000 acres (Aug 21, 1991) to about 16,280 acres (Aug 22, 1991). The same reporting indicated containment was not yet estimated.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1991-08-21T12:00:00Z",
+        "event_end": "1991-08-22T12:00:00Z",
+        "reported_at": "1991-08-22T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1991-08-22T12:00:00Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Tetlin National Wildlife Refuge, Alaska, USA",
+        "jurisdiction_level": "site",
+        "admin1": "Alaska",
+        "country": "US",
+        "capital_used": null,
+        "lat": 63.3417,
+        "lon": -142.5242,
+        "precision": "exact",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.45
+      },
+      "sources": [
+        {
+          "url": "https://npshistory.com/morningreport/1991/08-22.htm",
+          "source_name": "NPS Morning Report (NPSHistory.com)",
+          "published_at": "1991-08-22T00:00:00Z",
+          "headline": "NPS Morning Report (Aug 22, 1991)",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Fish and Wildlife Service"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "reported growing from about 8,000 acres (Aug 21) to about 16,280 acres (Aug 22)",
+            "source_url": "https://npshistory.com/morningreport/1991/08-22.htm"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.45,
+        "category": 0.85,
+        "location": 0.45,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Tetlin NWR Fire 113349 - 1991-08-21 to 1991-08-22",
+        "fingerprint": "1991-08_fires_tetlin-nwr_fire-113349_1991-08-21_1991-08-22"
+      }
+    },
+    {
+      "event_id": "1991-08-us-epa-ldr-k061-htmr-final-rule",
+      "title": "U.S. EPA finalizes RCRA Land Disposal Restrictions treatment standards for electric arc furnace dust (K061)",
+      "description": "The U.S. Environmental Protection Agency finalized Land Disposal Restrictions under RCRA establishing treatment standards for high zinc-containing electric arc furnace dust (K061). The rule set standards based on high temperature metal recovery (HTMR) and addressed related exclusions for certain HTMR residuals.",
+      "category_primary": "policy_regulation",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "1991-08-19T12:00:00Z",
+        "event_end": "1991-08-19T12:00:00Z",
+        "reported_at": "1991-08-19T12:00:00Z",
+        "time_confidence": 0.4,
+        "event_date_utc": "1991-08-19T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States (federal)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.9
+      },
+      "sources": [
+        {
+          "url": "https://archive.epa.gov/epawaste/hazard/web/html/rulesp92.html",
+          "source_name": "U.S. Environmental Protection Agency (archive.epa.gov)",
+          "published_at": "1991-08-19T12:00:00Z",
+          "headline": "Rules (1992) page (includes historical RCRA rule references)",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://19january2021snapshot.epa.gov/rcra/rule-checklists-applications-state-authorization-under-resource-conservation-and-recovery-act_.html",
+          "source_name": "U.S. Environmental Protection Agency (19january2021snapshot.epa.gov)",
+          "published_at": "1991-08-19T12:00:00Z",
+          "headline": "Rule checklists / state authorization (RCRA)",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Environmental Protection Agency (EPA)"
+        ],
+        "substances": [
+          "electric arc furnace dust (K061)"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.8,
+        "location": 0.9,
+        "summary_grounding": 0.4
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "epa_rcra_ldr_1991_08",
+        "fingerprint": "epa_rcra_ldr_k061_htmr_us_1991-08-19"
+      }
+    },
+    {
+      "event_id": "1991-08-us-epa-rcra-ldr-mixed-waste-enforcement-policy",
+      "title": "U.S. EPA issues civil enforcement policy on RCRA LDR storage prohibition for mixed waste when capacity is unavailable",
+      "description": "The U.S. Environmental Protection Agency issued an enforcement policy statement describing how it would prioritize civil enforcement of the RCRA section 3004(j) storage prohibition for mixed radioactive/hazardous wastes when treatment or disposal capacity was not available.",
+      "category_primary": "policy_regulation",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "1991-08-29T12:00:00Z",
+        "event_end": "1991-08-29T12:00:00Z",
+        "reported_at": "1991-08-29T12:00:00Z",
+        "time_confidence": 0.2,
+        "event_date_utc": "1991-08-29T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States (federal)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.9
+      },
+      "sources": [
+        {
+          "url": "https://archive.epa.gov/epawaste/hazard/web/html/rulesp92.html",
+          "source_name": "U.S. Environmental Protection Agency (archive.epa.gov)",
+          "published_at": "1991-08-29T12:00:00Z",
+          "headline": "Rules (1992) page (includes historical RCRA rule references)",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.govinfo.gov/content/pkg/FR-1998-11-06/html/98-29819.htm",
+          "source_name": "GovInfo (Federal Register)",
+          "published_at": "1998-11-06T00:00:00Z",
+          "headline": "Federal Register document (1998-11-06)",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Environmental Protection Agency (EPA)"
+        ],
+        "substances": [
+          "mixed radioactive/hazardous waste"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.35,
+        "category": 0.8,
+        "location": 0.9,
+        "summary_grounding": 0.25
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "epa_rcra_ldr_mixed_waste_policy",
+        "fingerprint": "epa_rcra_ldr_mixed_waste_enforcement_us_1991-08-29"
+      }
+    },
+    {
+      "event_id": "1991-08-us-epa-bif-technical-amendments",
+      "title": "U.S. EPA publishes technical amendments to hazardous waste Boiler and Industrial Furnace (BIF) regulations",
+      "description": "The U.S. Environmental Protection Agency published technical amendments intended to clarify and correct issues in regulations governing the burning of hazardous waste in boilers and industrial furnaces. The amendments were presented as corrections/clarifications to the existing BIF regulatory framework.",
+      "category_primary": "policy_regulation",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "1991-08-27T12:00:00Z",
+        "event_end": "1991-08-27T12:00:00Z",
+        "reported_at": "1991-08-27T12:00:00Z",
+        "time_confidence": 0.5,
+        "event_date_utc": "1991-08-27T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States (federal)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.9
+      },
+      "sources": [
+        {
+          "url": "https://19january2021snapshot.epa.gov/rcra/burning-hazardous-waste-boilers-and-industrial-furnaces-federal-register-notice-august-27-1991_.html",
+          "source_name": "U.S. Environmental Protection Agency (19january2021snapshot.epa.gov)",
+          "published_at": "1991-08-27T00:00:00Z",
+          "headline": "Burning Hazardous Waste in Boilers and Industrial Furnaces - Federal Register Notice (August 27, 1991)",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.epa.gov/hwpermitting/list-federal-register-notices-pertaining-hazardous-waste",
+          "source_name": "U.S. Environmental Protection Agency (epa.gov)",
+          "published_at": "1991-08-27T00:00:00Z",
+          "headline": "List of Federal Register notices pertaining to hazardous waste",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Environmental Protection Agency (EPA)"
+        ],
+        "substances": [
+          "hazardous waste"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.8,
+        "location": 0.9,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "epa_bif_technical_amendments_1991_08_27",
+        "fingerprint": "epa_bif_technical_amendments_us_1991-08-27"
+      }
+    }
+  ]
+}

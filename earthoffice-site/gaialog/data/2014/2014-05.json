@@ -1,0 +1,529 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_2014-05_normalize_2026-01-16T051717737Z",
+    "generated_utc": "2026-01-16T05:17:17.737Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "2014-05",
+    "window": {
+      "start_utc": "2014-05-01T00:00:00.000Z",
+      "end_utc": "2014-05-31T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "evt_20140502_dan_river_coal_ash_cleanup_agreement",
+      "title": "EPA and Duke Energy reach $3M cleanup agreement after Dan River coal ash spill",
+      "description": "The U.S. Environmental Protection Agency announced an agreement with Duke Energy requiring assessment and removal of coal ash deposits in the Dan River following the February 2014 release. The agreement also required Duke Energy to reimburse EPA response costs up to $3 million.",
+      "category_primary": "pollution_contamination",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2014-05-02T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2014-05-02T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Dan River (Eden area), North Carolina, USA",
+        "jurisdiction_level": "site",
+        "admin1": "North Carolina",
+        "country": "US",
+        "capital_used": null,
+        "lat": 36.503476,
+        "lon": -79.743644,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.5
+      },
+      "sources": [
+        {
+          "url": "https://www.epa.gov/enforcement/case-summary-duke-energy-agrees-3-million-cleanup-coal-ash-release-dan-river",
+          "source_name": "U.S. Environmental Protection Agency (EPA)",
+          "published_at": "2014-05-02T00:00:00.000Z",
+          "headline": "Case Summary: Duke Energy Agrees to $3 Million Cleanup of Coal Ash Release to Dan River",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://archive.epa.gov/epa/dukeenergy-coalash/history-and-response-timeline.html",
+          "source_name": "U.S. Environmental Protection Agency (EPA) Archive",
+          "published_at": "2014-05-02T00:00:00.000Z",
+          "headline": "Duke Energy Coal Ash Release: History and Response Timeline",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Environmental Protection Agency (EPA)",
+          "Duke Energy"
+        ],
+        "substances": [
+          "coal ash"
+        ],
+        "ecosystems": [
+          "Dan River"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Duke Energy agrees to assess and remove coal ash deposits in the Dan River.",
+            "source_url": "https://www.epa.gov/enforcement/case-summary-duke-energy-agrees-3-million-cleanup-coal-ash-release-dan-river"
+          },
+          {
+            "quote": "reimburse EPA response costs up to $3 million.",
+            "source_url": "https://www.epa.gov/enforcement/case-summary-duke-energy-agrees-3-million-cleanup-coal-ash-release-dan-river"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.68,
+        "category": 0.85,
+        "location": 0.5,
+        "summary_grounding": 0.75
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "dan_river_coal_ash_spill_cleanup_agreement",
+        "fingerprint": "fp_dan_river_coal_ash_cleanup_agreement_2014-05-02_eden_nc"
+      }
+    },
+    {
+      "event_id": "evt_201405_balkans_floods_tamara_yvette",
+      "title": "Severe flooding and landslides in the Balkans (Serbia, Bosnia and Herzegovina, Croatia)",
+      "description": "A stationary low-pressure system brought extreme rainfall in mid-to-late May 2014, causing widespread flooding and large numbers of landslides across parts of Southeast Europe, including Serbia, Bosnia and Herzegovina, and Croatia. Reports described major displacement and additional hazards such as landslides and disturbed minefields.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2014-05-13T00:00:00.000Z",
+        "event_end": "2014-05-27T23:59:59.000Z",
+        "reported_at": "2014-05-17T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": null,
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Belgrade, Serbia (proxy for multi-country Balkans flooding)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "RS",
+        "capital_used": "Belgrade",
+        "lat": 44.8125,
+        "lon": 20.4612,
+        "precision": "proxy",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://science.nasa.gov/earth/earth-observatory/severe-flooding-in-the-balkans-83697/",
+          "source_name": "NASA Earth Observatory",
+          "published_at": "2014-05-23T00:00:00.000Z",
+          "headline": "Severe Flooding in the Balkans",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.theguardian.com/world/2014/may/17/floods-serbia-bosnia-rain-balkans",
+          "source_name": "The Guardian",
+          "published_at": "2014-05-17T00:00:00.000Z",
+          "headline": "Floods in Serbia and Bosnia 'worst in 120 years'",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.dw.com/en/flooding-in-balkans-triggers-landslides-disturbs-minefields/a-17644507",
+          "source_name": "Deutsche Welle",
+          "published_at": "2014-05-19T00:00:00.000Z",
+          "headline": "Flooding in Balkans triggers landslides, disturbs minefields",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Flooding in the Balkans triggers landslides, disturbs minefields",
+            "source_url": "https://www.dw.com/en/flooding-in-balkans-triggers-landslides-disturbs-minefields/a-17644507"
+          },
+          {
+            "quote": "Severe Flooding in the Balkans",
+            "source_url": "https://science.nasa.gov/earth/earth-observatory/severe-flooding-in-the-balkans-83697/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.73,
+        "category": 0.8,
+        "location": 0.55,
+        "summary_grounding": 0.7
+      },
+      "quality_flags": [
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "2014-05 Balkans floods",
+        "fingerprint": "fp_201405_balkans_floods_serbia_20140513_20140527"
+      }
+    },
+    {
+      "event_id": "evt_201405_tropical_storm_amanda_record_may_epac",
+      "title": "Tropical Storm Amanda sets a May intensity record in the eastern Pacific (per secondary summary)",
+      "description": "A late-May 2014 eastern Pacific tropical cyclone, Tropical Storm Amanda, rapidly intensified and was described as setting a record for the strongest eastern Pacific tropical cyclone observed in May in the modern record. The provided source summary indicates it did not make landfall.",
+      "category_primary": "weather_climate",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "2014-05-25T00:00:00.000Z",
+        "event_end": "2014-05-26T23:59:59.000Z",
+        "reported_at": "2014-05-31T00:00:00.000Z",
+        "time_confidence": 0.55,
+        "event_date_utc": null,
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Eastern Pacific Ocean (proxy: Mexico City, Mexico)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "MX",
+        "capital_used": "Mexico City",
+        "lat": 19.4326,
+        "lon": -99.1332,
+        "precision": "proxy",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.35
+      },
+      "sources": [
+        {
+          "url": "https://www.wunderground.com/blog/weatherhistorian/may-2014-global-weather-extremes-summary.html",
+          "source_name": "Weather Underground (blog)",
+          "published_at": "2014-05-31T00:00:00.000Z",
+          "headline": "May 2014 Global Weather Extremes Summary",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "May 2014 Global Weather Extremes Summary",
+            "source_url": "https://www.wunderground.com/blog/weatherhistorian/may-2014-global-weather-extremes-summary.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.45,
+        "category": 0.65,
+        "location": 0.35,
+        "summary_grounding": 0.4
+      },
+      "quality_flags": [
+        "secondary_sources_only",
+        "location_ambiguous",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "2014-05 Tropical Storm Amanda",
+        "fingerprint": "fp_201405_amanda_epac_may_record_20140525_20140526"
+      }
+    },
+    {
+      "event_id": "2014-05-geological-sangeang-api-eruption-ash-so2",
+      "title": "Sangeang Api eruption sends ash and SO2 plume, disrupting flights near Darwin",
+      "description": "Sangeang Api volcano in Indonesia erupted explosively on May 30, 2014, generating a large ash plume tracked by satellite and advisories. The ash cloud disrupted regional aviation, including flight impacts around Darwin, Australia.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2014-05-30T00:00:00.000Z",
+        "event_end": "2014-05-31T23:59:59.000Z",
+        "reported_at": "2014-05-31T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2014-05-30T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Sangeang Api, Indonesia",
+        "jurisdiction_level": "site",
+        "admin1": null,
+        "country": "ID",
+        "capital_used": null,
+        "lat": -8.198,
+        "lon": 119.07,
+        "precision": "exact",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.earthobservatory.nasa.gov/images/83799/sangeang-api-erupts",
+          "source_name": "NASA Earth Observatory",
+          "published_at": "2014-05-31T00:00:00.000Z",
+          "headline": "Sangeang Api Erupts",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://science.nasa.gov/earth/earth-observatory/sangeang-api-erupts-83799/",
+          "source_name": "NASA Science (Earth Observatory)",
+          "published_at": "2014-05-31T00:00:00.000Z",
+          "headline": "Sangeang Api Erupts (83799)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.abc.net.au/news/2014-05-31/volcanic-ash-plume-keeps-darwin-flights-grounded/5491870",
+          "source_name": "ABC News (Australia)",
+          "published_at": "2014-05-31T00:00:00.000Z",
+          "headline": "Volcanic ash plume keeps Darwin flights grounded",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NASA Earth Observatory",
+          "ABC News"
+        ],
+        "substances": [
+          "volcanic ash",
+          "sulfur dioxide (SO2)"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Sangeang Api erupted explosively on May 30, 2014.",
+            "source_url": "https://www.earthobservatory.nasa.gov/images/83799/sangeang-api-erupts"
+          },
+          {
+            "quote": "Volcanic ash plume keeps Darwin flights grounded.",
+            "source_url": "https://www.abc.net.au/news/2014-05-31/volcanic-ash-plume-keeps-darwin-flights-grounded/5491870"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.85,
+        "location": 0.6,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Sangeang Api eruption May 2014 ash plume",
+        "fingerprint": "fp_2014-05_sangeang-api_id_2014-05-30"
+      }
+    },
+    {
+      "event_id": "2014-05-05_noaa_crw_v2_5km_global_product_suite",
+      "title": "NOAA Coral Reef Watch announces Version 2.0 experimental daily global 5km bleaching heat-stress products",
+      "description": "NOAA Coral Reef Watch announced an updated experimental Version 2.0 product suite providing daily global ~5 km satellite-based monitoring of coral bleaching heat stress. The update is intended to improve reef-scale decision support for reef managers and scientists.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "2014-05-05T00:00:00.000Z",
+        "event_end": "2014-05-05T23:59:59.000Z",
+        "reported_at": "2014-05-05T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2014-05-05T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Global (NOAA Coral Reef Watch monitoring)",
+        "jurisdiction_level": "global_proxy",
+        "admin1": null,
+        "country": null,
+        "capital_used": null,
+        "lat": 0,
+        "lon": 0,
+        "precision": "proxy",
+        "location_basis": "institution_proxy",
+        "location_confidence": 0.4
+      },
+      "sources": [
+        {
+          "url": "https://coralreefwatch.noaa.gov/product/5km/history_5km_products.php",
+          "source_name": "NOAA Coral Reef Watch",
+          "published_at": "2014-05-05T00:00:00.000Z",
+          "headline": "Global 5km Product Suite History",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://coralreefwatch.noaa.gov/messages/announcements.php",
+          "source_name": "NOAA Coral Reef Watch",
+          "published_at": "2014-05-05T00:00:00.000Z",
+          "headline": "Announcements",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA Coral Reef Watch",
+          "NOAA"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "Coral reefs"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.56,
+        "category": 0.75,
+        "location": 0.4,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "noaa_coral_reef_watch_5km_v2_announcement",
+        "fingerprint": "fp_2014-05-05_noaa_crw_global_proxy_v2_5km"
+      }
+    },
+    {
+      "event_id": "2014-05_policy_regulation_eu_plastic_carrier_bags_vote",
+      "title": "European Parliament advances rules to cut plastic carrier bag use",
+      "description": "In April 2014, the European Parliament voted at first reading to strengthen measures aimed at reducing the use of lightweight plastic carrier bags across the EU. The vote set the stage for negotiations with EU member states on the final rules.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2014-04-11T00:00:00Z",
+        "time_confidence": 0.7,
+        "event_date_utc": null,
+        "event_date_precision": "month"
+      },
+      "location": {
+        "name": "European Union (European Parliament)",
+        "jurisdiction_level": "supranational",
+        "admin1": null,
+        "country": null,
+        "capital_used": "Brussels",
+        "lat": 50.8503,
+        "lon": 4.3517,
+        "precision": "supranational",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.8
+      },
+      "sources": [
+        {
+          "url": "https://www.europarl.europa.eu/news/en/press-room/20140411IPR43461/meps-clamp-down-on-wasteful-use-of-plastic-carrier-bags",
+          "source_name": "European Parliament",
+          "published_at": "2014-04-11T00:00:00Z",
+          "headline": "MEPs clamp down on wasteful use of plastic carrier bags",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://zerowasteeurope.eu/2014/04/european-parliament-votes-in-favour-of-reducing-single-use-plastic-bags/",
+          "source_name": "Zero Waste Europe",
+          "published_at": "2014-04-01T00:00:00Z",
+          "headline": "European Parliament votes in favour of reducing single-use plastic bags",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "European Parliament"
+        ],
+        "substances": [
+          "plastic"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "MEPs voted ... to cut the use of plastic carrier bags and reduce littering.",
+            "source_url": "https://www.europarl.europa.eu/news/en/press-room/20140411IPR43461/meps-clamp-down-on-wasteful-use-of-plastic-carrier-bags"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.72,
+        "category": 0.8,
+        "location": 0.8,
+        "summary_grounding": 0.65
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "possible_opinion_or_advocacy",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "eu_plastic_bags_first_reading_2014",
+        "fingerprint": "eu_plastic_bags_first_reading_2014_brussels_2014-05"
+      }
+    }
+  ]
+}

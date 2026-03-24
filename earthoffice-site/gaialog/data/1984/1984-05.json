@@ -1,0 +1,607 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_1984-05_normalize_2026-01-18T100744294Z",
+    "generated_utc": "2026-01-18T10:07:44.294Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "1984-05",
+    "window": {
+      "start_utc": "1984-05-01T00:00:00.000Z",
+      "end_utc": "1984-05-31T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "evt_19840515_mission_creek_tanker_spill_santa_barbara",
+      "title": "Chemical slurry spill from tanker truck threatens Mission Creek in Santa Barbara, California",
+      "description": "A leaking tanker truck spilled a reactive chemical mixture, with some of the material reported to have reached Mission Creek in Santa Barbara. Authorities ordered evacuations and road closures while hazardous-materials crews conducted cleanup and allowed residents to return.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1984-05-15T00:00:00Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "1984-05-15T00:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Santa Barbara, California, United States",
+        "jurisdiction_level": "city",
+        "admin1": "California",
+        "country": "US",
+        "capital_used": null,
+        "lat": 34.4208,
+        "lon": -119.6982,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://www.upi.com/Archives/1984/05/15/Another-500-people-were-allowed-to-return-to-their/4860453441600/",
+          "source_name": "UPI",
+          "published_at": "1984-05-15T00:00:00Z",
+          "headline": "Another 500 people were allowed to return to their ...",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [
+          "Mission Creek"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Another 500 people were allowed to return to their",
+            "source_url": "https://www.upi.com/Archives/1984/05/15/Another-500-people-were-allowed-to-return-to-their/4860453441600/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.75,
+        "location": 0.7,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "paywalled_or_partial",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "Santa Barbara Mission Creek tanker chemical spill May 1984",
+        "fingerprint": "fp_19840515_santa_barbara_mission_creek_spill"
+      }
+    },
+    {
+      "event_id": "evt_19840506_kytvawv_floods",
+      "title": "May 6–7, 1984 flooding across Kentucky, Tennessee, Virginia and West Virginia",
+      "description": "A major storm system produced extreme rainfall and widespread flooding across parts of Kentucky, Tennessee, Virginia, and West Virginia. The event resulted in fatalities and major economic damage, with many rivers reaching near-record crests.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1984-05-06T12:00:00Z",
+        "event_end": "1984-05-07T12:00:00Z",
+        "reported_at": "1984-05-01T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1984-05-06T12:00:00Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "United States (Kentucky, Tennessee, Virginia, West Virginia)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://repository.library.noaa.gov/view/noaa/56788",
+          "source_name": "NOAA Repository (NCEI)",
+          "published_at": "1984-05-01T00:00:00.000Z",
+          "headline": "Floods of May 6–7, 1984 across Kentucky, Tennessee, Virginia, and West Virginia",
+          "byline": null,
+          "accessed_utc": "2026-01-18T04:18:28.514Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Floods of May 6–7, 1984 across Kentucky, Tennessee, Virginia, and West Virginia",
+            "source_url": "https://repository.library.noaa.gov/view/noaa/56788"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.7,
+        "location": 0.55,
+        "summary_grounding": 0.4
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only",
+        "location_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "US_multi_state_flood_1984_05_06",
+        "fingerprint": "fp_us_multi_state_flood_1984-05-06_weather_climate"
+      }
+    },
+    {
+      "event_id": "evt_19840526_tulsa_flash_flood",
+      "title": "Tulsa Memorial Day flash flood (May 26–27, 1984)",
+      "description": "Severe thunderstorms produced intense rainfall leading to catastrophic flash flooding in Tulsa, Oklahoma. Government sources document the event as a major flood disaster for the city with substantial casualties and property damage.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1984-05-26T20:30:00Z",
+        "event_end": "1984-05-27T04:30:00Z",
+        "reported_at": "1984-05-01T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "1984-05-26T20:30:00Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Tulsa, Oklahoma, United States",
+        "jurisdiction_level": "city",
+        "admin1": "Oklahoma",
+        "country": "US",
+        "capital_used": null,
+        "lat": 36.154,
+        "lon": -95.9928,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.8
+      },
+      "sources": [
+        {
+          "url": "https://www.weather.gov/tsa/1984may26_tulsamemorialdayflood",
+          "source_name": "US National Weather Service (weather.gov)",
+          "published_at": "1984-05-01T00:00:00.000Z",
+          "headline": "1984 May 26 Tulsa Memorial Day Flood",
+          "byline": null,
+          "accessed_utc": "2026-01-18T04:18:28.514Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.usgs.gov/publications/flood-may-26-27-1984-tulsa-oklahoma",
+          "source_name": "US Geological Survey (USGS)",
+          "published_at": "1984-05-01T00:00:00.000Z",
+          "headline": "Flood of May 26-27, 1984, Tulsa, Oklahoma",
+          "byline": null,
+          "accessed_utc": "2026-01-18T04:18:28.514Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "National Weather Service",
+          "USGS"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "1984 May 26 Tulsa Memorial Day Flood",
+            "source_url": "https://www.weather.gov/tsa/1984may26_tulsamemorialdayflood"
+          },
+          {
+            "quote": "Flood of May 26-27, 1984, Tulsa, Oklahoma",
+            "source_url": "https://www.usgs.gov/publications/flood-may-26-27-1984-tulsa-oklahoma"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.7,
+        "category": 0.8,
+        "location": 0.8,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "Tulsa_OK_flash_flood_1984_05_26",
+        "fingerprint": "fp_tulsa_ok_flash_flood_1984-05-26_weather_climate"
+      }
+    },
+    {
+      "event_id": "evt_19840507_italy_apennines_quake_upi",
+      "title": "Earthquake and aftershocks in central/southern Italy (Abruzzo/Apennines)",
+      "description": "A strong earthquake struck central/southern Italy and was followed by numerous aftershocks. Contemporary reporting described fatalities and injuries along with disruptions to services and damage in mountain towns.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1984-05-07T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1984-05-07T00:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Central & southern Italy (Abruzzo/central Apennines region)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "IT",
+        "capital_used": "Rome",
+        "lat": 41.9028,
+        "lon": 12.4964,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://www.upi.com/Archives/1984/05/07/A-strong-earthquake-followed-by-more-than-20-lesser/7483452750400/",
+          "source_name": "UPI",
+          "published_at": "1984-05-07T00:00:00Z",
+          "headline": "A strong earthquake followed by more than 20 lesser...",
+          "byline": null,
+          "accessed_utc": "2026-01-18T04:18:54.172Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.upi.com/Archives/1984/05/08/Some-45-aftershocks-today-sent-residents-running-to-the/6120452836800/",
+          "source_name": "UPI",
+          "published_at": "1984-05-08T00:00:00Z",
+          "headline": "Some 45 aftershocks today sent residents running to the...",
+          "byline": null,
+          "accessed_utc": "2026-01-18T04:18:54.172Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "UPI"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.66,
+        "category": 0.85,
+        "location": 0.7,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "italy_apennines_quake_1984-05-07",
+        "fingerprint": "fp_italy_apennines_1984-05-07"
+      }
+    },
+    {
+      "event_id": "evt_19840513_yugoslavia_adriatic_quake_upi",
+      "title": "Earthquake along Yugoslavia’s Adriatic coast with rockslide fatality (near Ljubinje)",
+      "description": "A strong earthquake affected the Adriatic coast region of Yugoslavia, prompting reports of panic and minor structural damage. Contemporary coverage reported a fatal rockslide and additional injuries, with aftershocks continuing.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1984-05-13T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1984-05-13T00:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Yugoslavia (Adriatic coast; reports referenced Sarajevo, Split, Dubrovnik; epicentral area near Ljubinje)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": null,
+        "capital_used": "Belgrade",
+        "lat": 44.8176,
+        "lon": 20.4633,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.4
+      },
+      "sources": [
+        {
+          "url": "https://www.upi.com/Archives/1984/05/13/Strong-quake-rocks-Yugoslavia/1087453268800/",
+          "source_name": "UPI",
+          "published_at": "1984-05-13T00:00:00Z",
+          "headline": "Strong quake rocks Yugoslavia",
+          "byline": null,
+          "accessed_utc": "2026-01-18T04:18:54.172Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.upi.com/Archives/1984/05/14/Yugoslav-quakes-panics-popular-tourist-area/6112453355200/",
+          "source_name": "UPI",
+          "published_at": "1984-05-14T00:00:00Z",
+          "headline": "Yugoslav quakes panics popular tourist area",
+          "byline": null,
+          "accessed_utc": "2026-01-18T04:18:54.172Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "UPI"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.85,
+        "location": 0.45,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "low_confidence_location"
+      ],
+      "dedupe": {
+        "cluster_hint": "yugoslavia_adriatic_quake_1984-05-13",
+        "fingerprint": "fp_yugoslavia_adriatic_1984-05-13"
+      }
+    },
+    {
+      "event_id": "evt_19840530_png_bismarck_sea_quake_upi",
+      "title": "Magnitude ~7 earthquake in the Bismarck Sea off New Britain, Papua New Guinea",
+      "description": "A strong earthquake was recorded in the Bismarck Sea off New Britain island in Papua New Guinea. Contemporary reporting indicated no immediate casualties or damage and noted it was not connected to the Rabaul volcano.",
+      "category_primary": "geological",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1984-05-30T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1984-05-30T00:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Papua New Guinea (Bismarck Sea, off New Britain)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "PG",
+        "capital_used": "Port Moresby",
+        "lat": -9.4438,
+        "lon": 147.1803,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.upi.com/Archives/1984/05/30/A-strong-earthquake-rumbled-across-Papua-New-Guinea-Wednesday/9295454737600/",
+          "source_name": "UPI",
+          "published_at": "1984-05-30T00:00:00Z",
+          "headline": "A strong earthquake rumbled across Papua New Guinea Wednesday...",
+          "byline": null,
+          "accessed_utc": "2026-01-18T04:18:54.172Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "UPI"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.64,
+        "category": 0.85,
+        "location": 0.65,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "png_bismarck_sea_quake_1984-05-30",
+        "fingerprint": "fp_png_bismarck_sea_1984-05-30"
+      }
+    },
+    {
+      "event_id": "evt_19840529_utah_prairie_dog_reclass_4d",
+      "title": "USFWS reclassifies Utah prairie dog to Threatened with special 4(d) rule allowing regulated take",
+      "description": "A U.S. Fish & Wildlife Service final rule reclassified the Utah prairie dog from Endangered to Threatened and established a special rule allowing regulated take under specified conditions. The decision changed the species’ federal protection and management framework.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "1984-05-29T12:00:00Z",
+        "event_end": "1984-05-29T12:00:00Z",
+        "reported_at": "1984-05-29T12:00:00Z",
+        "time_confidence": 0.5,
+        "event_date_utc": "1984-05-29T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Utah, United States",
+        "jurisdiction_level": "state",
+        "admin1": "Utah",
+        "country": "US",
+        "capital_used": "Salt Lake City",
+        "lat": 40.7608,
+        "lon": -111.891,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.65
+      },
+      "sources": [
+        {
+          "url": "https://www.fws.gov/species-publication-action/final-rule-reclassify-utah-prairie-dog-thr-w-special-rule-allow",
+          "source_name": "U.S. Fish & Wildlife Service",
+          "published_at": "1984-05-29T12:00:00Z",
+          "headline": "Final Rule to reclassify Utah Prairie Dog to Thr w Special Rule to allow ...",
+          "byline": null,
+          "accessed_utc": "2026-01-18T04:19:28.901Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Fish & Wildlife Service"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.56,
+        "category": 0.75,
+        "location": 0.65,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "paywalled_or_partial"
+      ],
+      "dedupe": {
+        "cluster_hint": "USFWS Utah prairie dog reclassification 4(d) rule",
+        "fingerprint": "fp_198405_utah_prairie_dog_reclass_salt_lake_city"
+      }
+    },
+    {
+      "event_id": "19840510-us-epa-rcra-warfarin-zinc-phosphide-listing",
+      "title": "US EPA final rule listing warfarin and zinc phosphide products as hazardous waste under RCRA",
+      "description": "The US Environmental Protection Agency published a final rule under the Resource Conservation and Recovery Act (RCRA) listing certain commercial chemical products (including warfarin and zinc phosphide) as hazardous waste. The draft cites EPA RCRA state authorization rule checklist materials that reference a Federal Register final rule dated May 10, 1984 (49 FR 19922).",
+      "category_primary": "policy_regulation",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "1984-05-10T12:00:00Z",
+        "event_end": "1984-05-10T12:00:00Z",
+        "reported_at": "1984-05-10T12:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1984-05-10T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States (federal rulemaking)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.8
+      },
+      "sources": [
+        {
+          "url": "https://www.epa.gov/rcra/rule-checklists-applications-state-authorization-under-resource-conservation-and-recovery-act",
+          "source_name": "U.S. Environmental Protection Agency (EPA)",
+          "published_at": "1984-05-10T12:00:00Z",
+          "headline": "RCRA rule checklists / state authorization under RCRA (referencing 49 FR 19922)",
+          "byline": null,
+          "accessed_utc": "2026-01-18T04:20:02.540Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.epa.gov/rcra/state-authorization-rule-checklists-1-through-38-hazardous-waste-rulemakings-published-between",
+          "source_name": "U.S. Environmental Protection Agency (EPA)",
+          "published_at": "1984-05-10T12:00:00Z",
+          "headline": "State authorization rule checklists 1–38 (hazardous waste rulemakings; includes May 10, 1984 / 49 FR 19922 reference)",
+          "byline": null,
+          "accessed_utc": "2026-01-18T04:20:02.540Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Environmental Protection Agency (EPA)"
+        ],
+        "substances": [
+          "warfarin",
+          "zinc phosphide"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Federal Register final rule dated May 10, 1984 (49 FR 19922).",
+            "source_url": "https://www.epa.gov/rcra/rule-checklists-applications-state-authorization-under-resource-conservation-and-recovery-act"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.75,
+        "location": 0.8,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "secondary_sources_only",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "1984-05-10 49 FR 19922 RCRA warfarin zinc phosphide listing",
+        "fingerprint": "a8d8f6a83a1d8df29cc1fa1a5c0dbe6f"
+      }
+    }
+  ]
+}

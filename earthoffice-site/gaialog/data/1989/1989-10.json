@@ -1,0 +1,964 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_1989-10_normalize_2026-01-18T120956991Z",
+    "generated_utc": "2026-01-18T12:09:56.991Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "1989-10",
+    "window": {
+      "start_utc": "1989-10-01T00:00:00.000Z",
+      "end_utc": "1989-10-31T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "evt_19891012_glenville_ny_hexane_derailment",
+      "title": "Freight train derailment spills hexane prompting evacuation near Glenville, New York",
+      "description": "A Boston and Maine freight train derailment reportedly spilled hexane, described as toxic and flammable. Authorities responded as a hazardous materials incident and evacuated people within about a half-mile perimeter.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1989-10-12T12:00:00Z",
+        "event_end": "1989-10-12T12:00:00Z",
+        "reported_at": "1989-10-12T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1989-10-12T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Glenville, New York, USA",
+        "jurisdiction_level": "city",
+        "admin1": "New York",
+        "country": "US",
+        "capital_used": null,
+        "lat": 42.9001,
+        "lon": -73.9396,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.upi.com/Archives/1989/10/12/Chemical-spill-forces-evacuation/1104624168000/",
+          "source_name": "UPI",
+          "published_at": "1989-10-12T00:00:00Z",
+          "headline": "Chemical spill forces evacuation",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Boston and Maine"
+        ],
+        "substances": [
+          "hexane"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Chemical spill forces evacuation",
+            "source_url": "https://www.upi.com/Archives/1989/10/12/Chemical-spill-forces-evacuation/1104624168000/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.8,
+        "location": 0.55,
+        "summary_grounding": 0.7
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "UPI chemical spill evacuation Glenville NY hexane derailment 1989-10-12",
+        "fingerprint": "fp_1989-10-12_glenville-ny_hexane_derailment"
+      }
+    },
+    {
+      "event_id": "evt_19891016_sandiego_missionbay_sewage_spill",
+      "title": "Sewage spill into Mission Bay after power failure at San Diego plant",
+      "description": "A power failure at a sewage plant reportedly led to an estimated 7,500 gallons of sewage flowing into Mission Bay in San Diego. Warning signs were posted while water-quality testing was conducted.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1989-10-16T12:00:00Z",
+        "event_end": "1989-10-16T12:00:00Z",
+        "reported_at": "1989-10-16T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1989-10-16T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Mission Bay, San Diego, California, USA",
+        "jurisdiction_level": "city",
+        "admin1": "California",
+        "country": "US",
+        "capital_used": null,
+        "lat": 32.7767,
+        "lon": -117.2306,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.latimes.com/archives/la-xpm-1989-10-16-me-79-story.html",
+          "source_name": "Los Angeles Times",
+          "published_at": "1989-10-16T00:00:00Z",
+          "headline": "Power failure at sewage plant leads to sewage spill into Mission Bay",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [
+          "sewage"
+        ],
+        "ecosystems": [
+          "Mission Bay"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "...7,500 gallons of sewage... into Mission Bay...",
+            "source_url": "https://www.latimes.com/archives/la-xpm-1989-10-16-me-79-story.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.75,
+        "location": 0.6,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "paywalled_or_partial",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "LA Times sewage spill Mission Bay San Diego power failure 1989-10-16",
+        "fingerprint": "fp_1989-10-16_san-diego-ca_mission-bay_sewage_spill"
+      }
+    },
+    {
+      "event_id": "evt_19891015_hurricane_jerry_galveston_tx",
+      "title": "Hurricane Jerry makes landfall near Galveston Island, Texas (USA)",
+      "description": "National Weather Service documentation describes Hurricane Jerry impacting the Upper Texas coast in mid-October 1989, including landfall near the Galveston area and associated damaging weather effects.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2026-01-18T00:00:00Z",
+        "time_confidence": 0.3,
+        "event_date_utc": null,
+        "event_date_precision": "unknown"
+      },
+      "location": {
+        "name": "Austin, Texas, United States (capital proxy for Texas)",
+        "jurisdiction_level": "state",
+        "admin1": "Texas",
+        "country": "US",
+        "capital_used": "Austin",
+        "lat": 30.2672,
+        "lon": -97.7431,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.weather.gov/lch/1989Jerry",
+          "source_name": "National Weather Service",
+          "published_at": "2026-01-18T00:00:00Z",
+          "headline": "1989 Jerry",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "National Weather Service"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "1989 Jerry",
+            "source_url": "https://www.weather.gov/lch/1989Jerry"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.45,
+        "category": 0.7,
+        "location": 0.6,
+        "summary_grounding": 0.35
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "1989_hurricane_jerry_texas",
+        "fingerprint": "fp_198910_hurricane_jerry_texas"
+      }
+    },
+    {
+      "event_id": "evt_19891019_cold_front_gulf_coast",
+      "title": "Unseasonably strong cold front brings record low temperatures in parts of the U.S. Gulf Coast region",
+      "description": "A National Weather Service page discussing Hurricane Jerry also references an unseasonably strong cold front and unusually low temperatures in the Gulf Coast region in the days following the storm.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2026-01-18T00:00:00Z",
+        "time_confidence": 0.25,
+        "event_date_utc": null,
+        "event_date_precision": "unknown"
+      },
+      "location": {
+        "name": "United States (capital proxy for country-level Gulf Coast region)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, D.C.",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.35
+      },
+      "sources": [
+        {
+          "url": "https://www.weather.gov/lch/1989Jerry",
+          "source_name": "National Weather Service",
+          "published_at": "2026-01-18T00:00:00Z",
+          "headline": "1989 Jerry",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "National Weather Service"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "1989 Jerry",
+            "source_url": "https://www.weather.gov/lch/1989Jerry"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.35,
+        "category": 0.6,
+        "location": 0.35,
+        "summary_grounding": 0.3
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "1989_cold_front_gulf_coast",
+        "fingerprint": "fp_198910_cold_front_gulf_coast"
+      }
+    },
+    {
+      "event_id": "evt_19891018_loma_prieta_california_us",
+      "title": "Loma Prieta earthquake (M 6.9) impacted the San Francisco and Monterey Bay regions",
+      "description": "A magnitude 6.9 earthquake struck near Loma Prieta in California, affecting the San Francisco and Monterey Bay regions. The quake caused widespread damage and triggered aftershocks and secondary hazards such as landslides.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1989-10-18T00:04:15Z",
+        "event_end": "1989-10-18T00:04:15Z",
+        "reported_at": "1989-10-18T00:04:15Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "1989-10-18T00:04:15Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Near Loma Prieta peak (Santa Cruz Mountains), California, USA",
+        "jurisdiction_level": "site",
+        "admin1": "California",
+        "country": "US",
+        "capital_used": null,
+        "lat": 37.115,
+        "lon": -121.642,
+        "precision": "exact",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.usgs.gov/programs/earthquake-hazards/science/m-69-october-17-1989-loma-prieta-earthquake",
+          "source_name": "USGS",
+          "published_at": "1989-10-18T00:00:00.000Z",
+          "headline": "M 6.9 - October 17, 1989 - Loma Prieta Earthquake",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.conservation.ca.gov/cgs/earthquakes/loma-prieta",
+          "source_name": "California Geological Survey (CA Dept. of Conservation)",
+          "published_at": "1989-10-18T00:00:00.000Z",
+          "headline": "Loma Prieta Earthquake (1989)",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.usgs.gov/publications/loma-prieta-california-earthquake-october-17-1989-main-shock-characteristics",
+          "source_name": "USGS Publications",
+          "published_at": "1989-10-18T00:00:00.000Z",
+          "headline": "Loma Prieta, California, earthquake October 17, 1989: main shock characteristics",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "USGS",
+          "California Geological Survey"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "M 6.9 - October 17, 1989 - Loma Prieta Earthquake",
+            "source_url": "https://www.usgs.gov/programs/earthquake-hazards/science/m-69-october-17-1989-loma-prieta-earthquake"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.58,
+        "category": 0.85,
+        "location": 0.55,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "1989-10 Loma Prieta earthquake",
+        "fingerprint": "fp_19891018_loma_prieta_site_000415Z"
+      }
+    },
+    {
+      "event_id": "evt_19891019_north_china_quake_sequence_shanxi_hebei_cn",
+      "title": "Earthquake sequence struck rural northern China (Shanxi/Hebei region)",
+      "description": "News reports described a series of earthquakes affecting rural northern China in the Shanxi/Hebei region, with substantial damage to homes and reported casualties. The reporting referenced shocks occurring across Oct 18–19, 1989 (local time).",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1989-10-19T12:00:00Z",
+        "event_end": "1989-10-19T12:00:00Z",
+        "reported_at": "1989-10-20T00:00:00.000Z",
+        "time_confidence": 0.35,
+        "event_date_utc": "1989-10-19T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Shanxi/Hebei region (near Datong area), China",
+        "jurisdiction_level": "state",
+        "admin1": "Shanxi",
+        "country": "CN",
+        "capital_used": "Taiyuan",
+        "lat": 37.87059,
+        "lon": 112.54888,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.35
+      },
+      "sources": [
+        {
+          "url": "https://www.washingtonpost.com/archive/politics/1989/10/20/strong-tremors-hit-rural-northern-china/8ee8af2a-e471-4313-a21a-f16c80419ae2/",
+          "source_name": "The Washington Post",
+          "published_at": "1989-10-20T00:00:00.000Z",
+          "headline": "Strong Tremors Hit Rural Northern China",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.upi.com/Archives/1989/10/23/New-aftershock-hits-quake-affected-area/6003625118400/",
+          "source_name": "UPI",
+          "published_at": "1989-10-23T00:00:00.000Z",
+          "headline": "New aftershock hits quake-affected area",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "The Washington Post",
+          "UPI"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Strong Tremors Hit Rural Northern China",
+            "source_url": "https://www.washingtonpost.com/archive/politics/1989/10/20/strong-tremors-hit-rural-northern-china/8ee8af2a-e471-4313-a21a-f16c80419ae2/"
+          },
+          {
+            "quote": "New aftershock hits quake-affected area",
+            "source_url": "https://www.upi.com/Archives/1989/10/23/New-aftershock-hits-quake-affected-area/6003625118400/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.42,
+        "category": 0.75,
+        "location": 0.35,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "paywalled_or_partial",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "1989-10 North China earthquake sequence (Shanxi/Hebei/Inner Mongolia vicinity)",
+        "fingerprint": "fp_19891019_north_china_sequence_shanxi_capital"
+      }
+    },
+    {
+      "event_id": "evt_19891023_north_china_aftershock_shanxi_cn",
+      "title": "Aftershock reported in northern China quake zone (M 5.2)",
+      "description": "A news report said a magnitude 5.2 aftershock struck the northern China earthquake-affected area, following an earlier damaging quake sequence in the region. The report described the aftershock as occurring on Oct 23, 1989 local time.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1989-10-23T12:00:00Z",
+        "event_end": "1989-10-23T12:00:00Z",
+        "reported_at": "1989-10-23T00:00:00.000Z",
+        "time_confidence": 0.35,
+        "event_date_utc": "1989-10-23T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Border region of Shanxi, Hebei, and Inner Mongolia, China",
+        "jurisdiction_level": "state",
+        "admin1": "Shanxi",
+        "country": "CN",
+        "capital_used": "Taiyuan",
+        "lat": 37.87059,
+        "lon": 112.54888,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.25
+      },
+      "sources": [
+        {
+          "url": "https://www.upi.com/Archives/1989/10/23/New-aftershock-hits-quake-affected-area/6003625118400/",
+          "source_name": "UPI",
+          "published_at": "1989-10-23T00:00:00.000Z",
+          "headline": "New aftershock hits quake-affected area",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "UPI"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "New aftershock hits quake-affected area",
+            "source_url": "https://www.upi.com/Archives/1989/10/23/New-aftershock-hits-quake-affected-area/6003625118400/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.36,
+        "category": 0.7,
+        "location": 0.25,
+        "summary_grounding": 0.4
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "1989-10 North China earthquake sequence aftershocks",
+        "fingerprint": "fp_19891023_north_china_aftershock_shanxi_capital"
+      }
+    },
+    {
+      "event_id": "evt_19891029_chenoua_tipaza_algeria_quake",
+      "title": "Earthquake struck the Chenoua/Tipaza area in northern Algeria (Mw ~6.0)",
+      "description": "A scientific article describes a damaging earthquake in northern Algeria in the Chenoua/Tipaza area on Oct 29, 1989, including rupture complexity and sub-events. The source frames the event as significant and damaging in the region.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1989-10-29T19:09:15Z",
+        "event_end": "1989-10-29T19:09:15Z",
+        "reported_at": "1989-10-29T19:09:15Z",
+        "time_confidence": 0.3,
+        "event_date_utc": "1989-10-29T19:09:15Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Chenoua / Tipaza region, Northern Algeria",
+        "jurisdiction_level": "state",
+        "admin1": "Tipaza",
+        "country": "DZ",
+        "capital_used": "Tipaza",
+        "lat": 36.58972,
+        "lon": 2.4475,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.3
+      },
+      "sources": [
+        {
+          "url": "https://www.annalsofgeophysics.eu/index.php/annals/article/view/4370",
+          "source_name": "Annals of Geophysics",
+          "published_at": "1989-10-29T00:00:00.000Z",
+          "headline": "Article on the 1989 Chenoua (Tipaza) earthquake",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Annals of Geophysics"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "annals/article/view/4370",
+            "source_url": "https://www.annalsofgeophysics.eu/index.php/annals/article/view/4370"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.28,
+        "category": 0.65,
+        "location": 0.3,
+        "summary_grounding": 0.25
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "1989-10 Chenoua/Tipaza earthquake Algeria",
+        "fingerprint": "fp_19891029_tipaza_admin1_capital"
+      }
+    },
+    {
+      "event_id": "evt_198910_jamaica_coral_bleaching_onset",
+      "title": "Widespread coral bleaching reported along Jamaica’s north coast (early Oct 1989)",
+      "description": "A scientific report describes reef-building corals along Jamaica’s north coast beginning to bleach from early October 1989. The report characterizes bleaching as widespread across multiple sites and depths, indicating a mass bleaching event affecting reef ecosystem health.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1989-10-01T12:00:00Z",
+        "event_end": "1989-10-31T12:00:00Z",
+        "reported_at": "1989-10-01T00:00:00Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "1989-10-01T12:00:00Z",
+        "event_date_precision": "month"
+      },
+      "location": {
+        "name": "Jamaica (north coast reefs)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "JM",
+        "capital_used": "Kingston",
+        "lat": 17.9714,
+        "lon": -76.7936,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://globalcoral.org/_oldgcra/Coral%20Bleaching%20in%20Jamaica.htm",
+          "source_name": "Global Coral Reef Alliance (archived page)",
+          "published_at": "1989-10-01T00:00:00Z",
+          "headline": "Coral Bleaching in Jamaica",
+          "byline": null,
+          "accessed_utc": "2026-01-18T07:26:55.117Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.nature.com/articles/343417a0",
+          "source_name": "Nature",
+          "published_at": "1990-01-01T00:00:00Z",
+          "headline": "343, 417a0",
+          "byline": null,
+          "accessed_utc": "2026-01-18T07:26:55.117Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Global Coral Reef Alliance",
+          "Nature"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "coral reefs"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "since early October 1989, reef-building corals in Jamaica began to lose pigmentation",
+            "source_url": "https://globalcoral.org/_oldgcra/Coral%20Bleaching%20in%20Jamaica.htm"
+          },
+          {
+            "quote": "widespread across depths and sites along the north coast",
+            "source_url": "https://globalcoral.org/_oldgcra/Coral%20Bleaching%20in%20Jamaica.htm"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.56,
+        "category": 0.8,
+        "location": 0.55,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "paywalled_or_partial",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "jamaica coral bleaching early oct 1989",
+        "fingerprint": "fp_jamaica_coral_bleaching_1989_10"
+      }
+    },
+    {
+      "event_id": "evt_19891019_hurricane_hugo_endangered_species_habitat_damage",
+      "title": "U.S. Fish & Wildlife Service reports Hurricane Hugo habitat damage affecting endangered species (Oct 19, 1989)",
+      "description": "A U.S. Fish & Wildlife Service release reports preliminary post–Hurricane Hugo surveys documenting extensive damage to habitats in Puerto Rico, the U.S. Virgin Islands (including St. Croix), and coastal South Carolina. The update notes concerns and early status information for multiple endangered species, including impacts to nesting or shelter areas and loss of critical cavity trees for some bird species.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1989-10-19T12:00:00Z",
+        "event_end": "1989-10-19T12:00:00Z",
+        "reported_at": "1989-10-19T00:00:00Z",
+        "time_confidence": 0.85,
+        "event_date_utc": "1989-10-19T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States (FWS-reported impacts in Puerto Rico, U.S. Virgin Islands, and South Carolina)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, D.C.",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.fws.gov/press-release/1989-10/remarkable-survival-endangered-species-reported-hurricanes-impact-habitat",
+          "source_name": "U.S. Fish & Wildlife Service",
+          "published_at": "1989-10-19T00:00:00Z",
+          "headline": "Remarkable Survival Of Endangered Species Reported As Hurricanes Impact Habitat",
+          "byline": null,
+          "accessed_utc": "2026-01-18T07:26:55.117Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.fws.gov/sites/default/files/documents/historic-news-releases/1989/19891019.PDF",
+          "source_name": "U.S. Fish & Wildlife Service (PDF)",
+          "published_at": "1989-10-19T00:00:00Z",
+          "headline": "Remarkable Survival Of Endangered Species Reported As Hurricanes Impact Habitat (News Release)",
+          "byline": null,
+          "accessed_utc": "2026-01-18T07:26:55.117Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Fish & Wildlife Service"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "coastal habitats",
+          "forests"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "preliminary post–Hurricane Hugo surveys documenting heavy damage to vital habitat",
+            "source_url": "https://www.fws.gov/sites/default/files/documents/historic-news-releases/1989/19891019.PDF"
+          },
+          {
+            "quote": "status updates for multiple endangered taxa",
+            "source_url": "https://www.fws.gov/sites/default/files/documents/historic-news-releases/1989/19891019.PDF"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.72,
+        "category": 0.75,
+        "location": 0.6,
+        "summary_grounding": 0.7
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "hurricane hugo endangered species habitat damage fws 1989-10-19",
+        "fingerprint": "fp_hugo_fws_endangered_species_1989_10_19"
+      }
+    },
+    {
+      "event_id": "1989-10-21_langkawi-declaration_environment_commonwealth",
+      "title": "Commonwealth leaders issue the Langkawi Declaration on the Environment",
+      "description": "Commonwealth Heads of Government issued the Langkawi Declaration on the Environment in Langkawi, Malaysia. The declaration set out commitments for Commonwealth action and international cooperation on major global environmental issues including climate change, ozone depletion, pollution, land degradation, and biodiversity loss.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "1989-10-21T12:00:00Z",
+        "event_end": "1989-10-21T12:00:00Z",
+        "reported_at": "1989-10-26T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1989-10-21T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Langkawi, Malaysia",
+        "jurisdiction_level": "site",
+        "admin1": null,
+        "country": "MY",
+        "capital_used": null,
+        "lat": 6.35,
+        "lon": 99.8,
+        "precision": "admin1",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://thecommonwealth.org/langkawi-declaration-environment-1989",
+          "source_name": "The Commonwealth",
+          "published_at": "1989-10-21T00:00:00Z",
+          "headline": "Langkawi Declaration on the Environment (1989)",
+          "byline": null,
+          "accessed_utc": "2026-01-18T07:27:22.700Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://api.parliament.uk/historic-hansard/commons/1989/oct/26/commonwealth-conference",
+          "source_name": "UK Parliament (Historic Hansard)",
+          "published_at": "1989-10-26T00:00:00Z",
+          "headline": "Commonwealth Conference",
+          "byline": null,
+          "accessed_utc": "2026-01-18T07:27:22.700Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Commonwealth Heads of Government",
+          "The Commonwealth"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Langkawi Declaration on the Environment (1989)",
+            "source_url": "https://thecommonwealth.org/langkawi-declaration-environment-1989"
+          },
+          {
+            "quote": "Commonwealth Conference",
+            "source_url": "https://api.parliament.uk/historic-hansard/commons/1989/oct/26/commonwealth-conference"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.58,
+        "category": 0.75,
+        "location": 0.55,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "langkawi_declaration_1989",
+        "fingerprint": "langkawi-declaration-environment_commonwealth_langkawi-my_1989-10-21"
+      }
+    },
+    {
+      "event_id": "1989-10-17_mepc28_north-sea_special-area_marpol-annex-v",
+      "title": "IMO designates the North Sea as a MARPOL Annex V Special Area",
+      "description": "The International Maritime Organization lists the North Sea as a Special Area under MARPOL Annex V, which imposes stricter controls on garbage discharges from ships in the designated sea area. The draft cites this designation as adopted around October 1989 (MEPC 28), but the provided sources do not verify the specific meeting date in this record.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "1989-10-17T12:00:00Z",
+        "event_end": "1989-10-17T12:00:00Z",
+        "reported_at": "1989-10-17T12:00:00Z",
+        "time_confidence": 0.3,
+        "event_date_utc": "1989-10-17T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "North Sea region (IMO action)",
+        "jurisdiction_level": "supranational",
+        "admin1": null,
+        "country": null,
+        "capital_used": "London",
+        "lat": 51.5074,
+        "lon": -0.1278,
+        "precision": "proxy",
+        "location_basis": "institution_proxy",
+        "location_confidence": 0.35
+      },
+      "sources": [
+        {
+          "url": "https://www.imo.org/en/ourwork/environment/pages/special-areas-marpol.aspx",
+          "source_name": "International Maritime Organization (IMO)",
+          "published_at": "1989-10-01T00:00:00Z",
+          "headline": "Special Areas under MARPOL",
+          "byline": null,
+          "accessed_utc": "2026-01-18T07:27:22.700Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://puc.overheid.nl/nsi/doc/%20PUC_1637_14/2/",
+          "source_name": "PUC Overheid (Netherlands government publication portal)",
+          "published_at": "1989-10-01T00:00:00Z",
+          "headline": "PUC_1637_14 (document)",
+          "byline": null,
+          "accessed_utc": "2026-01-18T07:27:22.700Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "International Maritime Organization (IMO)",
+          "MEPC"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "North Sea"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Special Areas under MARPOL",
+            "source_url": "https://www.imo.org/en/ourwork/environment/pages/special-areas-marpol.aspx"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.38,
+        "category": 0.65,
+        "location": 0.35,
+        "summary_grounding": 0.35
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "paywalled_or_partial",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "marpol_annex_v_north_sea_special_area",
+        "fingerprint": "imo-marpol-annex-v-special-area_north-sea-london-proxy_1989-10-17"
+      }
+    }
+  ]
+}

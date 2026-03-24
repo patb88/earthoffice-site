@@ -1,0 +1,694 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_2006-10_normalize_2026-01-16T032818437Z",
+    "generated_utc": "2026-01-16T03:28:18.437Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "2006-10",
+    "window": {
+      "start_utc": "2006-10-01T00:00:00.000Z",
+      "end_utc": "2006-10-31T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "evt_20061006_seasia_haze_indonesia",
+      "title": "Transboundary haze from Indonesia peat and forest fires affects Indonesia and Malaysia",
+      "description": "Reports described severe smoke haze linked to widespread peat and forest fires in Indonesia, particularly in Sumatra and Borneo (Kalimantan). Air quality deteriorated to unhealthy or very unhealthy levels with disruptions such as school closures and mask use reported in affected areas including parts of Malaysia.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2006-10-06T00:00:00.000Z",
+        "event_end": "2006-10-07T23:59:59.000Z",
+        "reported_at": "2006-10-06T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2006-10-06T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Indonesia (regional impacts in Sumatra and Kalimantan; transboundary haze reported in Malaysia)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "ID",
+        "capital_used": "Jakarta",
+        "lat": -6.208763,
+        "lon": 106.845599,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.theguardian.com/environment/2006/oct/06/indonesia.pollution",
+          "source_name": "The Guardian",
+          "published_at": "2006-10-06T00:00:00.000Z",
+          "headline": "Indonesia/Southeast Asia transboundary haze episode from peat/forest fires (air pollution)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.theguardian.com/world/2006/oct/07/indonesia.pollution",
+          "source_name": "The Guardian",
+          "published_at": "2006-10-07T00:00:00.000Z",
+          "headline": "Indonesia/Southeast Asia transboundary haze episode from peat/forest fires (air pollution)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://news.mongabay.com/2006/10/borneo-and-sumatra-burn-as-forest-fires-rage/",
+          "source_name": "Mongabay",
+          "published_at": "2006-10-01T00:00:00.000Z",
+          "headline": "Borneo and Sumatra burn as forest fires rage",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [
+          "smoke haze",
+          "particulate air pollution"
+        ],
+        "ecosystems": [
+          "peatlands",
+          "tropical forests"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.63,
+        "category": 0.75,
+        "location": 0.55,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "2006_se_asia_haze_indonesia_peat_fires",
+        "fingerprint": "fp_200610_seasia_haze_indonesia"
+      }
+    },
+    {
+      "event_id": "evt_20061016_western_gulf_coast_heavy_rain_flooding",
+      "title": "Western Gulf Coast heavy rain and flooding (NWS Jackson)",
+      "description": "The National Weather Service office in Jackson documented heavy rain, flash flooding, and severe weather affecting west-central Mississippi and nearby Gulf Coast areas on October 16–17, 2006. The event summary attributes the impacts to an atmospheric setup that produced very large rainfall totals over parts of the region.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2006-10-16T00:00:00.000Z",
+        "event_end": "2006-10-17T23:59:59.000Z",
+        "reported_at": "2006-10-16T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2006-10-16T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Jackson, Mississippi, United States (proxy for west-central Mississippi/Gulf Coast region)",
+        "jurisdiction_level": "city",
+        "admin1": "MS",
+        "country": "US",
+        "capital_used": null,
+        "lat": 32.298757,
+        "lon": -90.18481,
+        "precision": "proxy",
+        "location_basis": "manual_override",
+        "location_confidence": 0.45
+      },
+      "sources": [
+        {
+          "url": "https://www.weather.gov/jan/2006_10_16_17_heavy_rain_and_severe_weather",
+          "source_name": "National Weather Service (Jackson, MS)",
+          "published_at": "2006-10-16T00:00:00.000Z",
+          "headline": "2006 10 16-17 Heavy Rain and Severe Weather",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "National Weather Service"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Heavy rain and severe weather",
+            "source_url": "https://www.weather.gov/jan/2006_10_16_17_heavy_rain_and_severe_weather"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.8,
+        "location": 0.45,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "NWS_JAN_2006-10-16-17_heavy_rain",
+        "fingerprint": "fp_20061016_jacksonms_heavyrain"
+      }
+    },
+    {
+      "event_id": "evt_20061031_hawaii_heavy_rain_flooding_onset",
+      "title": "Heavy rainfall and flooding begins in Hawaii (NWS Honolulu)",
+      "description": "The National Weather Service office in Honolulu documented a heavy rainfall episode affecting Hawaii that began on October 31, 2006 and continued into early November. The event summary describes flooding impacts in windward areas and discusses the meteorological setup contributing to the rainfall.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2006-10-31T00:00:00.000Z",
+        "event_end": "2006-10-31T23:59:59.000Z",
+        "reported_at": "2006-10-31T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2006-10-31T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Honolulu, Hawaii, United States (proxy for Hawaii; impacts noted on Kauai and Oahu)",
+        "jurisdiction_level": "city",
+        "admin1": "HI",
+        "country": "US",
+        "capital_used": null,
+        "lat": 21.306944,
+        "lon": -157.858333,
+        "precision": "proxy",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.weather.gov/hfo/31Oct2Nov06",
+          "source_name": "National Weather Service (Honolulu, HI)",
+          "published_at": "2006-10-31T00:00:00.000Z",
+          "headline": "31 Oct-2 Nov 2006 Heavy Rainfall and Flooding",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "National Weather Service"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "31 Oct-2 Nov 2006 Heavy Rainfall and Flooding",
+            "source_url": "https://www.weather.gov/hfo/31Oct2Nov06"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.85,
+        "location": 0.6,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "NWS_HFO_2006-10-31_heavy_rain_flooding",
+        "fingerprint": "fp_20061031_honolulu_hi_heavyrain"
+      }
+    },
+    {
+      "event_id": "2006-10-geological-rabaul-volcano-ash-so2",
+      "title": "Rabaul Volcano eruption with ashfall and sulfur dioxide cloud",
+      "description": "Rabaul Volcano erupted on October 7, 2006, producing ashfall and volcanic gas emissions. NASA Earth Observatory documented the eruption and noted a sulfur dioxide cloud detected in the days following the event.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2006-10-07T00:00:00.000Z",
+        "event_end": "2006-10-07T23:59:59.000Z",
+        "reported_at": "2006-10-07T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2006-10-07T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Rabaul, East New Britain, Papua New Guinea",
+        "jurisdiction_level": "city",
+        "admin1": "East New Britain",
+        "country": "PG",
+        "capital_used": null,
+        "lat": -4.196,
+        "lon": 152.172,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://earthobservatory.nasa.gov/images/17486)/eruption-from-rabaul-volcano",
+          "source_name": "NASA Earth Observatory",
+          "published_at": "2006-10-07T00:00:00.000Z",
+          "headline": "Eruption from Rabaul Volcano",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://science.nasa.gov/earth/earth-observatory/sulfur-dioxide-cloud-from-rabaul-volcano-7018/",
+          "source_name": "NASA Earth Observatory (Science/NASA)",
+          "published_at": "2006-10-07T00:00:00.000Z",
+          "headline": "Sulfur Dioxide Cloud from Rabaul Volcano",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NASA Earth Observatory"
+        ],
+        "substances": [
+          "sulfur dioxide"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.8,
+        "location": 0.6,
+        "summary_grounding": 0.4
+      },
+      "quality_flags": [
+        "paywalled_or_partial",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Rabaul Volcano eruption Oct 2006",
+        "fingerprint": "fp_200610_rabaul_volcano_ash_so2"
+      }
+    },
+    {
+      "event_id": "2006-10-geological-mount-rainier-md45-earthquake",
+      "title": "Magnitude ~4.5 earthquake near Mount Rainier National Park",
+      "description": "A magnitude (Md) 4.5 earthquake occurred near Mount Rainier National Park on October 8, 2006 at 02:48 UTC. A USGS publication documents the event and discusses it in the context of seismicity near Mount Rainier.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2006-10-08T02:48:00.000Z",
+        "event_end": "2006-10-08T02:48:00.000Z",
+        "reported_at": "2006-10-08T02:48:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2006-10-08T02:48:00.000Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Mount Rainier National Park area, Washington, United States",
+        "jurisdiction_level": "site",
+        "admin1": "Washington",
+        "country": "US",
+        "capital_used": null,
+        "lat": 46.879967,
+        "lon": -121.726906,
+        "precision": "exact",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.4
+      },
+      "sources": [
+        {
+          "url": "https://pubs.usgs.gov/publication/70031999",
+          "source_name": "USGS Publications Warehouse",
+          "published_at": "2006-10-08T00:00:00.000Z",
+          "headline": "USGS publication documenting a Mount Rainier-area earthquake (Md 4.5)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "USGS"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.45,
+        "category": 0.75,
+        "location": 0.35,
+        "summary_grounding": 0.35
+      },
+      "quality_flags": [
+        "paywalled_or_partial",
+        "location_ambiguous",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Mount Rainier area Md 4.5 earthquake Oct 2006",
+        "fingerprint": "fp_200610_mount_rainier_md45"
+      }
+    },
+    {
+      "event_id": "2006-10-fires-indonesia-haze-peat-forest",
+      "title": "Indonesia peat and forest fires produce regional haze",
+      "description": "Early October 2006 reporting described widespread land-clearing, forest, and peat fires in Indonesia (including Sumatra and Borneo/Kalimantan) generating extensive smoke haze. The haze degraded air quality and disrupted daily life and transport, with impacts extending to nearby countries.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2006-10-04T00:00:00.000Z",
+        "event_end": "2006-10-07T23:59:59.000Z",
+        "reported_at": "2006-10-06T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": null,
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Indonesia (affected areas including Sumatra and Borneo/Kalimantan)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "ID",
+        "capital_used": "Jakarta",
+        "lat": -6.2088,
+        "lon": 106.8456,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://news.mongabay.com/2006/10/borneo-and-sumatra-burn-as-forest-fires-rage/",
+          "source_name": "Mongabay",
+          "published_at": "2006-10-06T00:00:00.000Z",
+          "headline": "Borneo and Sumatra burn as forest fires rage",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.theguardian.com/environment/2006/oct/06/indonesia.pollution",
+          "source_name": "The Guardian",
+          "published_at": "2006-10-06T00:00:00.000Z",
+          "headline": "indonesia.pollution",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [
+          "smoke haze"
+        ],
+        "ecosystems": [
+          "peatlands",
+          "tropical forests"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Borneo and Sumatra burn as forest fires rage",
+            "source_url": "https://news.mongabay.com/2006/10/borneo-and-sumatra-burn-as-forest-fires-rage/"
+          },
+          {
+            "quote": "indonesia.pollution",
+            "source_url": "https://www.theguardian.com/environment/2006/oct/06/indonesia.pollution"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.8,
+        "location": 0.7,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "2006 Southeast Asian haze (Indonesia fires)",
+        "fingerprint": "2006-10-indonesia-fires-haze-country-range"
+      }
+    },
+    {
+      "event_id": "2006-10-fires-australia-southeast-multi-state",
+      "title": "Bushfires burn across four southeastern Australian states",
+      "description": "On October 13, 2006, Australian reporting described multiple bushfires burning across four southeastern states, with firefighting efforts ongoing. Reports noted smoke impacts and health effects including smoke inhalation cases.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2006-10-13T00:00:00.000Z",
+        "event_end": "2006-10-13T23:59:59.000Z",
+        "reported_at": "2006-10-13T00:00:00.000Z",
+        "time_confidence": 0.75,
+        "event_date_utc": "2006-10-13T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Australia (multi-state: Tasmania, Victoria, South Australia, New South Wales)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "AU",
+        "capital_used": "Canberra",
+        "lat": -35.2809,
+        "lon": 149.13,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.75
+      },
+      "sources": [
+        {
+          "url": "https://www.abc.net.au/news/2006-10-13/bushfires-continue-to-burn-in-four-states/1285656",
+          "source_name": "ABC News (Australia)",
+          "published_at": "2006-10-13T00:00:00.000Z",
+          "headline": "Bushfires continue to burn in four states",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [
+          "smoke"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Bushfires continue to burn in four states",
+            "source_url": "https://www.abc.net.au/news/2006-10-13/bushfires-continue-to-burn-in-four-states/1285656"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.7,
+        "category": 0.8,
+        "location": 0.75,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Oct 2006 southeastern Australia bushfires (multi-state)",
+        "fingerprint": "2006-10-australia-bushfires-country-2006-10-13"
+      }
+    },
+    {
+      "event_id": "evt_20061024_us_caribbean_coral_reef_task_force_meeting_st_thomas",
+      "title": "U.S. Coral Reef Task Force 16th meeting held in St. Thomas, U.S. Virgin Islands",
+      "description": "The U.S. Coral Reef Task Force held its 16th meeting in St. Thomas, U.S. Virgin Islands, with agenda items focused on coral reef ecosystem issues. The meeting materials reference threats including coral disease and discussion of Endangered Species Act listing-related topics for reef-building corals.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "2006-10-24T00:00:00.000Z",
+        "event_end": "2006-10-28T23:59:59.000Z",
+        "reported_at": "2006-10-24T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2006-10-24T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "St. Thomas, U.S. Virgin Islands",
+        "jurisdiction_level": "site",
+        "admin1": null,
+        "country": "VI",
+        "capital_used": null,
+        "lat": 18.3358,
+        "lon": -64.8963,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://taskforce.coralreef.noaa.gov/meeting16/welcome.html",
+          "source_name": "NOAA Coral Reef Conservation Program / U.S. Coral Reef Task Force",
+          "published_at": "2006-10-24T00:00:00.000Z",
+          "headline": "16th Meeting - Welcome",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Coral Reef Task Force",
+          "NOAA"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "coral reefs"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "16th Meeting",
+            "source_url": "https://taskforce.coralreef.noaa.gov/meeting16/welcome.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.7,
+        "location": 0.7,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "U.S. Coral Reef Task Force 16th meeting St. Thomas Oct 2006",
+        "fingerprint": "fp_20061024_st_thomas_vi_us_coral_reef_task_force_16"
+      }
+    },
+    {
+      "event_id": "2006-10-17_us_epa_pm_naaqs_final_rule",
+      "title": "U.S. EPA publishes final rule revising PM2.5 and PM10 National Ambient Air Quality Standards",
+      "description": "A U.S. EPA final rule revising the National Ambient Air Quality Standards for particulate matter (PM2.5 and PM10) was published in October 2006. The rule strengthened the 24-hour PM2.5 standard and revoked the annual PM10 standard, as summarized by the referenced agency/partner page.",
+      "category_primary": "policy_regulation",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "2006-10-17T00:00:00.000Z",
+        "event_end": "2006-10-17T23:59:59.000Z",
+        "reported_at": "2006-10-17T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2006-10-17T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.8
+      },
+      "sources": [
+        {
+          "url": "https://www.fhwa.dot.gov/ENVIRonment/air_quality/conformity/laws_and_regs/2006standards.cfm",
+          "source_name": "Federal Highway Administration (FHWA)",
+          "published_at": "2006-10-17T00:00:00.000Z",
+          "headline": "2006 Particulate Matter (PM) Standards",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Environmental Protection Agency (EPA)",
+          "Federal Highway Administration (FHWA)"
+        ],
+        "substances": [
+          "PM2.5",
+          "PM10"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.8,
+        "location": 0.8,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "secondary_sources_only",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "epa_pm_naaqs_2006_final_rule",
+        "fingerprint": "epa_pm_naaqs_2006-10-17_us"
+      }
+    }
+  ]
+}

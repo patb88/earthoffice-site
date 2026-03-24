@@ -1,0 +1,599 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_1990-12_normalize_2026-01-17T170038459Z",
+    "generated_utc": "2026-01-17T17:00:38.459Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "1990-12",
+    "window": {
+      "start_utc": "1990-12-01T00:00:00.000Z",
+      "end_utc": "1990-12-31T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "19901209-los-angeles-harbor-trichloroethane-spill",
+      "title": "Trichloroethane spill during ship-to-rail transfer at Los Angeles Harbor (Berth 150)",
+      "description": "About 1,000 gallons of trichloroethane spilled onto a dock at Los Angeles Harbor during a transfer from a ship to a railroad car. The berth was temporarily closed and later reopened, and four people reported dizziness with some treated at hospitals.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1990-12-09T12:00:00Z",
+        "event_end": "1990-12-09T12:00:00Z",
+        "reported_at": "1990-12-11T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1990-12-09T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Los Angeles Harbor (Berth 150), Los Angeles, California, USA",
+        "jurisdiction_level": "site",
+        "admin1": "California",
+        "country": "US",
+        "capital_used": null,
+        "lat": 33.7406,
+        "lon": -118.271,
+        "precision": "neighborhood",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.latimes.com/archives/la-xpm-1990-12-11-me-6155-story.html",
+          "source_name": "Los Angeles Times",
+          "published_at": "1990-12-11T00:00:00Z",
+          "headline": "Trichloroethane spill during ship-to-rail transfer at Los Angeles Harbor (Berth 150), injuring four and temporarily closing the berth",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [
+          "trichloroethane"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "About 1,000 gallons of trichloroethane ... spilled onto a dock at Los Angeles Harbor.",
+            "source_url": "https://www.latimes.com/archives/la-xpm-1990-12-11-me-6155-story.html"
+          },
+          {
+            "quote": "Four people reported dizziness ... several were treated at hospitals.",
+            "source_url": "https://www.latimes.com/archives/la-xpm-1990-12-11-me-6155-story.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.56,
+        "category": 0.8,
+        "location": 0.55,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "paywalled_or_partial"
+      ],
+      "dedupe": {
+        "cluster_hint": "Los Angeles Harbor trichloroethane spill Dec 1990",
+        "fingerprint": "f3d2b6b10c9c8d48d4de6d3948d0c0f5"
+      }
+    },
+    {
+      "event_id": "evt_19901202_blizzard_upper_midwest_us",
+      "title": "Dec 2–4, 1990 blizzard across parts of Iowa and southeastern Minnesota",
+      "description": "A rapidly intensifying winter storm produced blizzard conditions and heavy snowfall across parts of Iowa and southeastern Minnesota. Strong winds caused whiteouts and major travel disruption.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1990-12-02T12:00:00Z",
+        "event_end": "1990-12-04T12:00:00Z",
+        "reported_at": "1990-12-01T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1990-12-03T00:00:00Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Des Moines, Iowa, United States (proxy for Upper Midwest blizzard area)",
+        "jurisdiction_level": "state",
+        "admin1": "Iowa",
+        "country": "US",
+        "capital_used": "Des Moines",
+        "lat": 41.5868,
+        "lon": -93.625,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.5
+      },
+      "sources": [
+        {
+          "url": "https://www.weather.gov/arx/dec0390",
+          "source_name": "NWS La Crosse (weather.gov)",
+          "published_at": "1990-12-01T00:00:00Z",
+          "headline": "dec0390",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "National Weather Service"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "A rapidly intensifying winter storm produced blizzard conditions and heavy snowfall.",
+            "source_url": "https://www.weather.gov/arx/dec0390"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.75,
+        "location": 0.5,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "1990-12 upper midwest blizzard",
+        "fingerprint": "fp_blizzard_1990-12-02_iowa"
+      }
+    },
+    {
+      "event_id": "evt_19901229_indiana_flooding",
+      "title": "Late Dec 1990 flooding across Indiana",
+      "description": "At the end of December 1990, rapid warming that melted snowpack along with heavy rainfall on saturated or partially frozen ground contributed to widespread river flooding in Indiana. Reports described evacuations and significant damages, including impacts in the White River basin.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1990-12-29T12:00:00Z",
+        "event_end": "1990-12-31T12:00:00Z",
+        "reported_at": "1990-12-31T00:00:00Z",
+        "time_confidence": 0.65,
+        "event_date_utc": "1990-12-30T00:00:00Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Indianapolis, Indiana, United States (statewide flood proxy)",
+        "jurisdiction_level": "state",
+        "admin1": "Indiana",
+        "country": "US",
+        "capital_used": "Indianapolis",
+        "lat": 39.7684,
+        "lon": -86.1581,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://www.weather.gov/ind/dec1990flood",
+          "source_name": "NWS Indianapolis (weather.gov)",
+          "published_at": "1990-12-01T00:00:00Z",
+          "headline": "dec1990flood",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.deseret.com/1990/12/31/18898572/floods-soak-the-midwest-cold-takes-toll-in-west/",
+          "source_name": "Deseret News (deseret.com)",
+          "published_at": "1990-12-31T00:00:00Z",
+          "headline": "Floods soak the Midwest, cold takes toll in West",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "National Weather Service"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "rapid warming melted existing snowpack and heavy rainfall fell on saturated/partially frozen ground",
+            "source_url": "https://www.weather.gov/ind/dec1990flood"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.65,
+        "category": 0.8,
+        "location": 0.7,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "1990-12 indiana flooding",
+        "fingerprint": "fp_flood_1990-12-29_indiana"
+      }
+    },
+    {
+      "event_id": "evt_19901231_martinsburg_wv_flood",
+      "title": "Dec 31, 1990 minor flooding in the Potomac Basin near Martinsburg, West Virginia",
+      "description": "Heavy rain beginning December 30 and continuing into January 1, combined with melting snow, led to minor flooding in the Potomac Basin. A crest was documented at Martinsburg on Opequon Creek.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1990-12-31T12:00:00Z",
+        "event_end": "1990-12-31T12:00:00Z",
+        "reported_at": "1990-12-31T00:00:00Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "1990-12-31T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Martinsburg, West Virginia, United States",
+        "jurisdiction_level": "city",
+        "admin1": "West Virginia",
+        "country": "US",
+        "capital_used": null,
+        "lat": 39.4562,
+        "lon": -77.9639,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://www.weather.gov/media/marfc/Flood_Events_2016/1990/Dec31%2C1990.pdf",
+          "source_name": "NWS Middle Atlantic River Forecast Center (weather.gov)",
+          "published_at": "1990-12-31T00:00:00Z",
+          "headline": "Dec 31, 1990 Flood Event (Potomac Basin)",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "National Weather Service"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "river basin"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Heavy rain ... combined with melting snow, led to minor flooding in the Potomac Basin",
+            "source_url": "https://www.weather.gov/media/marfc/Flood_Events_2016/1990/Dec31%2C1990.pdf"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.67,
+        "category": 0.75,
+        "location": 0.7,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "1990-12 potomac basin minor flood",
+        "fingerprint": "fp_flood_1990-12-31_martinsburg_wv"
+      }
+    },
+    {
+      "event_id": "evt_19901218_seattle_convergence_zone_snow",
+      "title": "Dec 18, 1990 Seattle-area heavy snow from a Puget Sound Convergence Zone",
+      "description": "A Puget Sound Convergence Zone produced an intense, localized snowfall event around Seattle on December 18, 1990. Subsequent cold conditions kept snow on the ground for days according to a retrospective account.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1990-12-18T12:00:00Z",
+        "event_end": "1990-12-18T12:00:00Z",
+        "reported_at": "2026-01-16T23:31:03.421Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "1990-12-18T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Seattle, Washington, United States",
+        "jurisdiction_level": "city",
+        "admin1": "Washington",
+        "country": "US",
+        "capital_used": null,
+        "lat": 47.6062,
+        "lon": -122.3321,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.8
+      },
+      "sources": [
+        {
+          "url": "https://seattleweatherblog.com/snow/the-mother-of-all-convergence-zones/",
+          "source_name": "Seattle Weather Blog",
+          "published_at": "2026-01-16T23:31:03.421Z",
+          "headline": "The Mother of All Convergence Zones",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "A strong Puget Sound Convergence Zone produced an intense, localized snowfall event",
+            "source_url": "https://seattleweatherblog.com/snow/the-mother-of-all-convergence-zones/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.52,
+        "category": 0.65,
+        "location": 0.8,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "secondary_sources_only",
+        "possible_opinion_or_advocacy",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "1990-12 seattle convergence zone snow",
+        "fingerprint": "fp_snow_1990-12-18_seattle"
+      }
+    },
+    {
+      "event_id": "geological_19901213_carlentini_augusta_siracusa_it",
+      "title": "Eastern Sicily earthquake damages towns near Carlentini and Augusta (Italy)",
+      "description": "A strong earthquake struck southeastern/eastern Sicily in the early hours of December 13, 1990, affecting towns including Carlentini and Augusta in the Siracusa area. Reports described fatalities, injuries, and significant building damage.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1990-12-13T00:24:25Z",
+        "event_end": "1990-12-13T00:24:25Z",
+        "reported_at": "1990-12-13T00:00:00Z",
+        "time_confidence": 0.85,
+        "event_date_utc": "1990-12-13T00:24:25Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Siracusa (proxy for eastern Sicily earthquake area), Italy",
+        "jurisdiction_level": "city",
+        "admin1": "Sicily",
+        "country": "IT",
+        "capital_used": null,
+        "lat": 37.0755,
+        "lon": 15.2866,
+        "precision": "city",
+        "location_basis": "manual_override",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.upi.com/Archives/1990/12/13/Strong-earthquake-hits-southeastern-Sicily/4634661064400/",
+          "source_name": "UPI",
+          "published_at": "1990-12-13T00:00:00Z",
+          "headline": "Strong earthquake hits southeastern Sicily",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://studyres.com/doc/14505095/the-augusta--sicily-earthquake-of-13-december-1990",
+          "source_name": "StudyRes",
+          "published_at": "1990-12-13T00:00:00Z",
+          "headline": "The Augusta, Sicily earthquake of 13 December 1990",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Strong earthquake hits southeastern Sicily",
+            "source_url": "https://www.upi.com/Archives/1990/12/13/Strong-earthquake-hits-southeastern-Sicily/4634661064400/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.9,
+        "location": 0.55,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "1990-12-13 Sicily earthquake (Augusta/Siracusa/Carlentini)",
+        "fingerprint": "geological|1990-12-13T00:24:25Z|siracusa_it|eastern_sicily_earthquake"
+      }
+    },
+    {
+      "event_id": "geological_19901222_sanjose_puriscal_cr",
+      "title": "Earthquake disrupts services in Costa Rica, affecting San José area",
+      "description": "A strong earthquake struck Costa Rica on December 22, 1990, with impacts reported in and around the capital region, including disruption to telephone service. Reports noted damage and aftershocks following the main quake.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1990-12-22T17:28:00Z",
+        "event_end": "1990-12-22T17:28:00Z",
+        "reported_at": "1990-12-22T00:00:00Z",
+        "time_confidence": 0.75,
+        "event_date_utc": "1990-12-22T17:28:00Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "San José, Costa Rica",
+        "jurisdiction_level": "city",
+        "admin1": "San José",
+        "country": "CR",
+        "capital_used": null,
+        "lat": 9.9281,
+        "lon": -84.0907,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://www.upi.com/Archives/1990/12/22/A-strong-earthquake-jolted-the-Costa-Rican-capital-of/2954661842000/",
+          "source_name": "UPI",
+          "published_at": "1990-12-22T00:00:00Z",
+          "headline": "A strong earthquake jolted the Costa Rican capital of ...",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "A strong earthquake jolted the Costa Rican capital",
+            "source_url": "https://www.upi.com/Archives/1990/12/22/A-strong-earthquake-jolted-the-Costa-Rican-capital-of/2954661842000/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.7,
+        "category": 0.9,
+        "location": 0.7,
+        "summary_grounding": 0.7
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "1990-12-22 Costa Rica earthquake (San José/Puriscal)",
+        "fingerprint": "geological|1990-12-22T17:28:00Z|san_jose_cr|costa_rica_earthquake"
+      }
+    },
+    {
+      "event_id": "fires__strathbogie-ranges-bushfire__1990-12-27",
+      "title": "Strathbogie Ranges bushfire starts in Victoria, Australia",
+      "description": "A bushfire started in the Strathbogie Ranges of Victoria in late December 1990 and continued into January 1991. The referenced summary reports fatalities, home losses, and impacts to livestock and other buildings, but details are not fully verifiable from the provided draft alone.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1990-12-27T12:00:00Z",
+        "event_end": "1990-12-27T12:00:00Z",
+        "reported_at": "1990-12-27T12:00:00Z",
+        "time_confidence": 0.45,
+        "event_date_utc": "1990-12-27T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Strathbogie Ranges, Victoria, Australia",
+        "jurisdiction_level": "state",
+        "admin1": "Victoria",
+        "country": "AU",
+        "capital_used": "Melbourne",
+        "lat": -37.8136,
+        "lon": 144.9631,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://knowledge.aidr.org.au/resources/bushfire-strathbogie/",
+          "source_name": "Australian Disaster Resilience Knowledge Hub",
+          "published_at": "1990-12-27T12:00:00Z",
+          "headline": "Bushfire - Strathbogie",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.5,
+        "category": 0.75,
+        "location": 0.6,
+        "summary_grounding": 0.35
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Strathbogie bushfire Dec 1990 / Jan 1991",
+        "fingerprint": "fires|strathbogie-ranges|victoria|1990-12-27"
+      }
+    }
+  ]
+}

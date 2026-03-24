@@ -1,0 +1,782 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_1991-05_normalize_2026-01-17T170850010Z",
+    "generated_utc": "2026-01-17T17:08:50.010Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "1991-05",
+    "window": {
+      "start_utc": "1991-05-01T00:00:00.000Z",
+      "end_utc": "1991-05-31T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "1991-05_pollution_contamination_fullerton_hughes_tce_1",
+      "title": "TCE groundwater contamination plume announced near Hughes Aircraft facility in Fullerton, California",
+      "description": "A report described officials publicly announcing a large trichloroethylene (TCE) groundwater contamination plume linked to a Hughes Aircraft facility in Fullerton, including reported plume extent and high concentrations. The incident reflects groundwater solvent contamination concerns reported in May 1991.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1991-05-21T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1991-05-21T00:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Fullerton, California, USA",
+        "jurisdiction_level": "city",
+        "admin1": "California",
+        "country": "US",
+        "capital_used": null,
+        "lat": 33.8704,
+        "lon": -117.9242,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://www.latimes.com/archives/la-xpm-1991-05-21-mn-2304-story.html",
+          "source_name": "Los Angeles Times",
+          "published_at": "1991-05-21T00:00:00Z",
+          "headline": "TCE groundwater contamination plume publicly announced at Hughes Aircraft Co. plant in Fullerton, California",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Hughes Aircraft Co."
+        ],
+        "substances": [
+          "trichloroethylene (TCE)"
+        ],
+        "ecosystems": [
+          "groundwater"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "officials announced ... trichloroethylene (TCE) groundwater contamination plume ... associated with a Hughes Aircraft facility",
+            "source_url": "https://www.latimes.com/archives/la-xpm-1991-05-21-mn-2304-story.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.75,
+        "location": 0.7,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "paywalled_or_partial",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "hughes-aircraft-fullerton-tce-1991-05",
+        "fingerprint": "1991-05|pollution_contamination|hughes-aircraft-fullerton-tce|fullerton-ca-us|1991-05-21"
+      }
+    },
+    {
+      "event_id": "evt_199105_dc_heat_wapo_0601",
+      "title": "Record-setting May heat in Washington, D.C. (Reagan National Airport) culminates in 99°F on May 31",
+      "description": "A Washington Post report describes unusually hot conditions in Washington, D.C. at Reagan National Airport, including a 99°F high on May 31, 1991. The report notes the month’s heat set or tied local records referenced in the article.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1991-06-01T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "1991-05-31T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Washington, D.C., USA",
+        "jurisdiction_level": "city",
+        "admin1": "DC",
+        "country": "US",
+        "capital_used": null,
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.85
+      },
+      "sources": [
+        {
+          "url": "https://www.washingtonpost.com/archive/politics/1991/06/01/may-jumps-to-99-degree-conclusion/857a1f88-cc9e-475c-8e63-e7b6fa272fab/",
+          "source_name": "The Washington Post",
+          "published_at": "1991-06-01T00:00:00.000Z",
+          "headline": "May Jumps to 99-Degree Conclusion",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Reagan National Airport",
+          "The Washington Post"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "May jumped to a 99-degree conclusion yesterday...",
+            "source_url": "https://www.washingtonpost.com/archive/politics/1991/06/01/may-jumps-to-99-degree-conclusion/857a1f88-cc9e-475c-8e63-e7b6fa272fab/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.72,
+        "category": 0.85,
+        "location": 0.85,
+        "summary_grounding": 0.65
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "paywalled_or_partial",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "washington_dc_may1991_heat",
+        "fingerprint": "fp_199105_washington_dc_heat_may31"
+      }
+    },
+    {
+      "event_id": "evt_19910518_inland_nw_flood_landslide_nws_otx",
+      "title": "Heavy rain causes flooding and landslides in eastern Washington and nearby Idaho on May 18, 1991",
+      "description": "A National Weather Service Spokane (OTX) weather history page describes a heavy-rain event around May 18, 1991 that led to flooding and landslides in parts of eastern Washington and nearby areas. The page notes impacts including landslides and travel disruption, with referenced rainfall totals for locations such as Lewiston and Walla Walla.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1991-05-18T12:00:00.000Z",
+        "event_end": "1991-05-18T12:00:00.000Z",
+        "reported_at": "2026-01-17T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "1991-05-18T12:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Eastern Washington, USA (regional impacts)",
+        "jurisdiction_level": "state",
+        "admin1": "WA",
+        "country": "US",
+        "capital_used": "Olympia",
+        "lat": 47.0379,
+        "lon": -122.9007,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.weather.gov/otx/May-WeatherHistory",
+          "source_name": "National Weather Service (Spokane, OTX)",
+          "published_at": "2026-01-17T00:00:00.000Z",
+          "headline": "May Weather History (NWS Spokane OTX)",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "National Weather Service"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.75,
+        "location": 0.55,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "secondary_sources_only",
+        "location_ambiguous",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "1991-05-18_eastern_wa_heavy_rain",
+        "fingerprint": "fp_19910518_eastern_wa_heavy_rain"
+      }
+    },
+    {
+      "event_id": "evt_19910508_12_tc_lisa_bom",
+      "title": "Tropical Cyclone Lisa tracked across the Southwest Pacific (May 8–12, 1991)",
+      "description": "The Australian Bureau of Meteorology cyclone history entry for Lisa describes the cyclone’s formation near Bougainville and its subsequent movement and dissipation over the Southwest Pacific during May 8–12, 1991. The entry indicates no significant damage was reported in the official summary referenced there.",
+      "category_primary": "weather_climate",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "1991-05-08T12:00:00.000Z",
+        "event_end": "1991-05-12T12:00:00.000Z",
+        "reported_at": "2026-01-17T00:00:00.000Z",
+        "time_confidence": 0.8,
+        "event_date_utc": "1991-05-08T12:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Port Vila, Vanuatu (regional proxy for Southwest Pacific track)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "VU",
+        "capital_used": "Port Vila",
+        "lat": -17.7333,
+        "lon": 168.3273,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.4
+      },
+      "sources": [
+        {
+          "url": "https://www.bom.gov.au/cyclone/history/lisa.shtml",
+          "source_name": "Australian Bureau of Meteorology",
+          "published_at": "2026-01-17T00:00:00.000Z",
+          "headline": "Tropical Cyclone Lisa",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Australian Bureau of Meteorology"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "Southwest Pacific"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.58,
+        "category": 0.8,
+        "location": 0.4,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "tc_lisa_1991_sw_pacific",
+        "fingerprint": "fp_199105_tc_lisa_sw_pacific"
+      }
+    },
+    {
+      "event_id": "1991-05_geological_alaska_petersville_eq_01",
+      "title": "Alaska earthquake reported near Petersville (Mw ~6.3)",
+      "description": "A magnitude ~6.3 earthquake was reported in Alaska near Petersville. The source notes minor damage reported in Anchorage.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1991-05-01T12:00:00Z",
+        "event_end": "1991-05-01T12:00:00Z",
+        "reported_at": "1991-05-01T12:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1991-05-01T12:00:00Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Alaska, United States (reported near Petersville; minor damage reported in Anchorage)",
+        "jurisdiction_level": "state",
+        "admin1": "Alaska",
+        "country": "US",
+        "capital_used": "Juneau",
+        "lat": 58.301944,
+        "lon": -134.419722,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.8
+      },
+      "sources": [
+        {
+          "url": "https://www.usgs.gov/publications/earthquakes-may-june-1991",
+          "source_name": "USGS",
+          "published_at": "1991-05-01T00:00:00Z",
+          "headline": "Earthquakes May–June 1991",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "USGS"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "A magnitude ~6.3 earthquake occurred in Alaska (reported as 33 km west of Petersville)",
+            "source_url": "https://www.usgs.gov/publications/earthquakes-may-june-1991"
+          },
+          {
+            "quote": "minor damage reported in Anchorage",
+            "source_url": "https://www.usgs.gov/publications/earthquakes-may-june-1991"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.9,
+        "location": 0.75,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "paywalled_or_partial",
+        "date_ambiguous",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "USGS_earthquakes_may_june_1991_alaska_petersville_1991-05-01",
+        "fingerprint": "1991-05-01_alaska-us_juneau_alaska-earthquake-reported-near-petersville-mw-6-3"
+      }
+    },
+    {
+      "event_id": "1991-05_geological_racha_aftershock_landslides_02",
+      "title": "Aftershock activity in Georgia’s Racha region with landslide-related fatalities reported",
+      "description": "Sources describe aftershock activity following the late-April 1991 Racha earthquake in Georgia (then the Georgian SSR). Reports attribute fatalities during the aftershock period to landslides in the Western Caucasus/Racha area.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1991-05-03T12:00:00Z",
+        "event_end": "1991-05-03T12:00:00Z",
+        "reported_at": "1991-05-04T00:00:00Z",
+        "time_confidence": 0.4,
+        "event_date_utc": "1991-05-03T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Racha region, Georgia (then Georgian SSR, USSR)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "GE",
+        "capital_used": "Tbilisi",
+        "lat": 41.715,
+        "lon": 44.827,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.65
+      },
+      "sources": [
+        {
+          "url": "https://www.usgs.gov/publications/earthquakes-may-june-1991",
+          "source_name": "USGS",
+          "published_at": "1991-05-01T00:00:00Z",
+          "headline": "Earthquakes May–June 1991",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.latimes.com/archives/la-xpm-1991-05-04-mn-974-story.html",
+          "source_name": "Los Angeles Times",
+          "published_at": "1991-05-04T00:00:00Z",
+          "headline": "Article (May 4, 1991)",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "USGS",
+          "Los Angeles Times"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "An aftershock sequence following the late-April 1991 Racha earthquake included a May 3 aftershock",
+            "source_url": "https://www.usgs.gov/publications/earthquakes-may-june-1991"
+          },
+          {
+            "quote": "attribute fatalities to landslides during the aftershock activity",
+            "source_url": "https://www.latimes.com/archives/la-xpm-1991-05-04-mn-974-story.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.5,
+        "category": 0.85,
+        "location": 0.65,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "paywalled_or_partial",
+        "date_ambiguous",
+        "secondary_sources_only",
+        "location_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "racha_aftershock_landslides_georgia_1991-05-03",
+        "fingerprint": "1991-05-03_georgia-ge_tbilisi_aftershock-activity-in-georgias-racha-region-with-landslide-related-fatalities-reported"
+      }
+    },
+    {
+      "event_id": "1991-05_fires_madison_wi_central-storage-warehouse-fire",
+      "title": "Central Storage & Warehouse fire in Madison, Wisconsin",
+      "description": "A multi-alarm fire broke out at the Central Storage & Warehouse complex in Madison, Wisconsin in early May 1991, involving large quantities of stored dairy products including butter. Reports described extensive melting product and runoff during firefighting, with the incident continuing beyond the initial outbreak as crews managed the scene.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1991-05-03T12:00:00Z",
+        "event_end": "1991-05-13T12:00:00Z",
+        "reported_at": "1991-05-04T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1991-05-03T12:00:00Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Madison, Wisconsin, United States",
+        "jurisdiction_level": "city",
+        "admin1": "Wisconsin",
+        "country": "US",
+        "capital_used": null,
+        "lat": 43.074761,
+        "lon": -89.38484,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.85
+      },
+      "sources": [
+        {
+          "url": "https://www.upi.com/Archives/1991/05/04/Dairy-warehouse-fire-melts-butter-lots-of-it/9579673329600/",
+          "source_name": "UPI",
+          "published_at": "1991-05-04T00:00:00Z",
+          "headline": "Dairy warehouse fire melts butter -- lots of it",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.fireengineering.com/technical-rescue/central-storage-warehouse-fire-madison-wisconsin/",
+          "source_name": "Fire Engineering",
+          "published_at": "1991-05-01T00:00:00Z",
+          "headline": "Central Storage & Warehouse Fire, Madison, Wisconsin",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Central Storage & Warehouse"
+        ],
+        "substances": [
+          "butter",
+          "dairy products"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Dairy warehouse fire melts butter -- lots of it",
+            "source_url": "https://www.upi.com/Archives/1991/05/04/Dairy-warehouse-fire-melts-butter-lots-of-it/9579673329600/"
+          },
+          {
+            "quote": "Central Storage & Warehouse Fire, Madison, Wisconsin",
+            "source_url": "https://www.fireengineering.com/technical-rescue/central-storage-warehouse-fire-madison-wisconsin/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.8,
+        "location": 0.85,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only",
+        "paywalled_or_partial"
+      ],
+      "dedupe": {
+        "cluster_hint": "central_storage_warehouse_madison_wi_1991_05",
+        "fingerprint": "f9c915c5adf1e1f814c3c34c8c7ab6f2"
+      }
+    },
+    {
+      "event_id": "1991-05-14_partners-in-flight_agreement_us",
+      "title": "U.S. federal agencies announce Partners in Flight agreement to conserve Neotropical migratory birds",
+      "description": "U.S. federal agencies announced an agreement under the Partners in Flight effort to address documented declines in Neotropical migratory birds. The agreement aimed to coordinate conservation actions for migratory bird habitats across their ranges, including threats such as habitat loss and fragmentation.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "1991-05-14T12:00:00Z",
+        "event_end": "1991-05-14T12:00:00Z",
+        "reported_at": "1991-05-15T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1991-05-14T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States (federal interagency; impacts across the Western Hemisphere)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://www.fws.gov/press-release/1991-05/agreement-launched-halt-decline-some-americas-favorite-birds",
+          "source_name": "U.S. Fish & Wildlife Service",
+          "published_at": "1991-05-15T00:00:00Z",
+          "headline": "Agreement launched to halt decline of some of America's favorite birds",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.fws.gov/media/agreement-launced-halt-decline-some-americas-favorite-birds-may-15-1991",
+          "source_name": "U.S. Fish & Wildlife Service",
+          "published_at": "1991-05-15T00:00:00Z",
+          "headline": "Agreement launced to halt decline of some America's favorite birds (May 15, 1991)",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Fish & Wildlife Service",
+          "Partners in Flight"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Seven U.S. federal agencies signed an agreement ... to halt the decline of Neotropical migratory birds.",
+            "source_url": "https://www.fws.gov/press-release/1991-05/agreement-launched-halt-decline-some-americas-favorite-birds"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.66,
+        "category": 0.75,
+        "location": 0.7,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "partners-in-flight-agreement-neotropical-migratory-birds-1991-05",
+        "fingerprint": "8d1f9c1c0f51b2c0d93d2a2a5f5f96c3"
+      }
+    },
+    {
+      "event_id": "1991-05-21_eu_urban_wastewater_directive_91_271_eec",
+      "title": "EU adopts Council Directive 91/271/EEC on urban waste-water treatment",
+      "description": "The Council adopted Directive 91/271/EEC setting requirements for the collection, treatment, and discharge of urban waste water and certain industrial waste water. The directive aims to protect the environment from adverse effects of waste-water discharges.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "1991-05-21T12:00:00Z",
+        "event_end": "1991-05-21T12:00:00Z",
+        "reported_at": "1991-05-21T12:00:00Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "1991-05-21T12:00:00Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "European Communities (European Union)",
+        "jurisdiction_level": "supranational",
+        "admin1": null,
+        "country": null,
+        "capital_used": "Brussels",
+        "lat": 50.8503,
+        "lon": 4.3517,
+        "precision": "supranational",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.75
+      },
+      "sources": [
+        {
+          "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:31991L0271",
+          "source_name": "EUR-Lex",
+          "published_at": "1991-05-21T12:00:00Z",
+          "headline": "Council Directive 91/271/EEC of 21 May 1991 concerning urban waste-water treatment",
+          "byline": null,
+          "accessed_utc": "2026-01-16T23:45:53.955Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.eea.europa.eu/policy-documents/council-directive-91-271-eec",
+          "source_name": "European Environment Agency (EEA)",
+          "published_at": "1991-05-21T12:00:00Z",
+          "headline": "Council Directive 91/271/EEC",
+          "byline": null,
+          "accessed_utc": "2026-01-16T23:45:53.955Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Council of the European Communities"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Council Directive 91/271/EEC ... concerning urban waste-water treatment",
+            "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:31991L0271"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.74,
+        "category": 0.85,
+        "location": 0.75,
+        "summary_grounding": 0.7
+      },
+      "quality_flags": [
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "EU urban waste-water treatment directive 91/271/EEC",
+        "fingerprint": "fp_1991-05-21_eu_urban_wastewater_50.8503_4.3517"
+      }
+    },
+    {
+      "event_id": "1991-05-30_ecj_commission_v_germany_c-361-88_air_quality_transposition",
+      "title": "European Court of Justice judgment in Commission v Germany (Case C-361/88) on air-pollution limit-value directive transposition",
+      "description": "The European Court of Justice issued a judgment in an infringement case concerning Germany’s transposition of EU air-quality limit values for sulphur dioxide and suspended particulates under Directive 80/779/EEC. The case addressed the need for binding national measures to implement EU air-pollution standards.",
+      "category_primary": "policy_regulation",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "1991-05-30T12:00:00Z",
+        "event_end": "1991-05-30T12:00:00Z",
+        "reported_at": "1991-05-30T12:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1991-05-30T12:00:00Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "European Communities (European Union)",
+        "jurisdiction_level": "supranational",
+        "admin1": null,
+        "country": null,
+        "capital_used": "Brussels",
+        "lat": 50.8503,
+        "lon": 4.3517,
+        "precision": "supranational",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.75
+      },
+      "sources": [
+        {
+          "url": "https://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=CELEX:61988CJ0361:EN:HTML",
+          "source_name": "EUR-Lex",
+          "published_at": "1991-05-30T12:00:00Z",
+          "headline": "Judgment of the Court ... Case C-361/88",
+          "byline": null,
+          "accessed_utc": "2026-01-16T23:45:53.955Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "European Court of Justice",
+          "European Commission",
+          "Germany"
+        ],
+        "substances": [
+          "sulphur dioxide",
+          "suspended particulates"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Case C-361/88",
+            "source_url": "https://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=CELEX:61988CJ0361:EN:HTML"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.75,
+        "location": 0.75,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "needs_dedupe_check",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "ECJ infringement case C-361/88 Commission v Germany air quality directive 80/779/EEC",
+        "fingerprint": "fp_1991-05-30_ecj_c36188_50.8503_4.3517"
+      }
+    }
+  ]
+}

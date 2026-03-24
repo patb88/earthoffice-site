@@ -1,0 +1,696 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_2014-03_normalize_2026-01-16T051340388Z",
+    "generated_utc": "2026-01-16T05:13:40.388Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "2014-03",
+    "window": {
+      "start_utc": "2014-03-01T00:00:00.000Z",
+      "end_utc": "2014-03-31T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "evt_201403_bp_whiting_lake_michigan_spill_epa_nofi",
+      "title": "BP Whiting refinery oil spill into Lake Michigan; EPA issues Notice of Federal Interest",
+      "description": "EPA reported that BP notified the National Response Center on March 24, 2014 of an oil spill to Lake Michigan from its Whiting refinery. EPA said it responded and issued a Notice of Federal Interest outlining actions for response and cleanup.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2014-03-24T00:00:00.000Z",
+        "event_end": "2014-03-25T23:59:59.000Z",
+        "reported_at": "2014-03-26T00:00:00.000Z",
+        "time_confidence": 0.8,
+        "event_date_utc": "2014-03-24T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Whiting, Indiana (Lake Michigan), United States",
+        "jurisdiction_level": "city",
+        "admin1": "IN",
+        "country": "US",
+        "capital_used": null,
+        "lat": 41.6795,
+        "lon": -87.4945,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.epa.gov/archive/epapages/newsroom_archive/newsreleases/20e08f7504345d4d85257ca700022d62.html",
+          "source_name": "U.S. Environmental Protection Agency (EPA)",
+          "published_at": "2014-03-26T00:00:00.000Z",
+          "headline": "EPA Responds to BP Oil Spill in Lake Michigan, Issues Notice of Federal Interest",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "BP",
+          "U.S. Environmental Protection Agency (EPA)",
+          "National Response Center"
+        ],
+        "substances": [
+          "oil"
+        ],
+        "ecosystems": [
+          "Lake Michigan"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "BP notified the National Response Center on March 24, 2014 of an oil spill to Lake Michigan",
+            "source_url": "https://www.epa.gov/archive/epapages/newsroom_archive/newsreleases/20e08f7504345d4d85257ca700022d62.html"
+          },
+          {
+            "quote": "EPA responded and issued a Notice of Federal Interest",
+            "source_url": "https://www.epa.gov/archive/epapages/newsroom_archive/newsreleases/20e08f7504345d4d85257ca700022d62.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.72,
+        "category": 0.9,
+        "location": 0.6,
+        "summary_grounding": 0.85
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "BP Whiting Lake Michigan oil spill Mar 2014",
+        "fingerprint": "fp_201403_bp_whiting_lake_michigan_spill"
+      }
+    },
+    {
+      "event_id": "evt_201403_back_river_baltimore_sso_wastewater_release",
+      "title": "Sanitary sewer overflow sends partially treated wastewater to Back River in Baltimore",
+      "description": "Baltimore City Department of Public Works reported a sanitary sewer overflow linked to an electrical disruption at the Back River Wastewater Treatment Facility. The city said up to 1.3 million gallons of partially treated wastewater entered storm drains and flowed into the Back River.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2014-03-26T00:00:00.000Z",
+        "event_end": "2014-03-26T23:59:59.000Z",
+        "reported_at": "2014-03-26T00:00:00.000Z",
+        "time_confidence": 0.8,
+        "event_date_utc": "2014-03-26T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Baltimore, Maryland (Back River), United States",
+        "jurisdiction_level": "city",
+        "admin1": "MD",
+        "country": "US",
+        "capital_used": null,
+        "lat": 39.2904,
+        "lon": -76.6122,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://publicworks.baltimorecity.gov/news/press-releases/2014-03-26-city-reports-sanitary-sewer-overflow-back-river",
+          "source_name": "Baltimore City Department of Public Works",
+          "published_at": "2014-03-26T00:00:00.000Z",
+          "headline": "City reports sanitary sewer overflow to Back River",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Baltimore City Department of Public Works"
+        ],
+        "substances": [
+          "partially treated wastewater"
+        ],
+        "ecosystems": [
+          "Back River"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "up to 1.3 million gallons of partially treated wastewater entered storm drains and flowed into Back River",
+            "source_url": "https://publicworks.baltimorecity.gov/news/press-releases/2014-03-26-city-reports-sanitary-sewer-overflow-back-river"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.68,
+        "category": 0.9,
+        "location": 0.55,
+        "summary_grounding": 0.75
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Back River WWTP overflow Baltimore Mar 2014",
+        "fingerprint": "fp_201403_back_river_baltimore_sso"
+      }
+    },
+    {
+      "event_id": "evt_201403_apr_alabama_swamp_crude_train_oil_residual_impacts",
+      "title": "Ongoing oil contamination concerns reported at Alabama swamp site of prior crude-by-rail derailment",
+      "description": "Alabama Public Radio reported in mid-March 2014 on continuing concerns about oil contamination at the site of an earlier crude-oil train derailment near Aliceville, Alabama. The report described remaining impacts and questions about oil in swamp/wetland areas months after the crash.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2014-03-16T00:00:00.000Z",
+        "event_end": "2014-03-16T23:59:59.000Z",
+        "reported_at": "2014-03-16T00:00:00.000Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "2014-03-16T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Aliceville area, Alabama, United States",
+        "jurisdiction_level": "city",
+        "admin1": "AL",
+        "country": "US",
+        "capital_used": null,
+        "lat": 33.1293,
+        "lon": -88.1595,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.35
+      },
+      "sources": [
+        {
+          "url": "https://www.apr.org/science-health/2014-03-16/oil-mars-alabama-swamp-months-after-crude-train-crash",
+          "source_name": "Alabama Public Radio (APR)",
+          "published_at": "2014-03-16T00:00:00.000Z",
+          "headline": "Oil mars Alabama swamp months after crude train crash",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Alabama Public Radio (APR)"
+        ],
+        "substances": [
+          "oil",
+          "crude oil"
+        ],
+        "ecosystems": [
+          "wetland",
+          "swamp"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Oil mars Alabama swamp months after crude train crash",
+            "source_url": "https://www.apr.org/science-health/2014-03-16/oil-mars-alabama-swamp-months-after-crude-train-crash"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.5,
+        "category": 0.75,
+        "location": 0.35,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "needs_dedupe_check",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "Aliceville AL crude-by-rail derailment residual oil impacts Mar 2014",
+        "fingerprint": "fp_201403_alic eville_al_swamp_oil_residual"
+      }
+    },
+    {
+      "event_id": "20140331_ipcc_ar5_wg2_release_yokohama",
+      "title": "IPCC AR5 WGII report released in Yokohama on climate impacts and preparedness gaps",
+      "description": "On March 31, 2014, the IPCC released its Fifth Assessment Report Working Group II contribution (Impacts, Adaptation and Vulnerability) in Yokohama. The UN statement notes that climate-change impacts are already widespread and that the world is not adequately prepared for many climate-related risks.",
+      "category_primary": "weather_climate",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2014-03-31T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2014-03-31T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Yokohama, Japan",
+        "jurisdiction_level": "city",
+        "admin1": null,
+        "country": "JP",
+        "capital_used": null,
+        "lat": 35.4437,
+        "lon": 139.638,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.un.org/sg/en/content/former-secretary-general/statements/2014-03-31/statement-attributable-the-spokesman-for-the-secretary-general-the-release-of-the-ipcc-fifth-assessment-report-working-group-ii",
+          "source_name": "United Nations - Secretary-General Statements",
+          "published_at": "2014-03-31T00:00:00.000Z",
+          "headline": "Statement attributable to the Spokesman for the Secretary-General on the release of the IPCC Fifth Assessment Report Working Group II",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.un.org/sg/en/content/highlight/2014-03-31.html",
+          "source_name": "United Nations - Secretary-General Highlights",
+          "published_at": "2014-03-31T00:00:00.000Z",
+          "headline": "2014-03-31",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "IPCC",
+          "United Nations"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "climate-change impacts are already widespread",
+            "source_url": "https://www.un.org/sg/en/content/former-secretary-general/statements/2014-03-31/statement-attributable-the-spokesman-for-the-secretary-general-the-release-of-the-ipcc-fifth-assessment-report-working-group-ii"
+          },
+          {
+            "quote": "the world is ill-prepared for many climate-related risks",
+            "source_url": "https://www.un.org/sg/en/content/former-secretary-general/statements/2014-03-31/statement-attributable-the-spokesman-for-the-secretary-general-the-release-of-the-ipcc-fifth-assessment-report-working-group-ii"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.72,
+        "category": 0.85,
+        "location": 0.6,
+        "summary_grounding": 0.75
+      },
+      "quality_flags": [
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "IPCC AR5 WGII release Yokohama 2014-03-31",
+        "fingerprint": "ipcc_ar5_wgii_release|yokohama_jp|2014-03-31"
+      }
+    },
+    {
+      "event_id": "geological_oso_sr530_landslide_2014-03-22",
+      "title": "SR 530 (Oso) landslide in Washington state",
+      "description": "A major landslide occurred on March 22, 2014 near Oso, Washington, blocking the North Fork Stillaguamish River and destroying homes and infrastructure. The U.S. Geological Survey documented the event and contributed information relevant to hazard monitoring and response.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2014-03-22T17:36:00.000Z",
+        "event_end": "2014-03-22T23:59:59.000Z",
+        "reported_at": "2019-03-22T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2014-03-22T17:36:00.000Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Near Oso, Washington, USA (North Fork Stillaguamish River valley)",
+        "jurisdiction_level": "site",
+        "admin1": "Washington",
+        "country": "US",
+        "capital_used": null,
+        "lat": 48.183,
+        "lon": -121.833,
+        "precision": "neighborhood",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.usgs.gov/news/featured-story/five-years-later-oso-sr-530-landslide-washington",
+          "source_name": "U.S. Geological Survey (USGS)",
+          "published_at": "2019-03-22T00:00:00.000Z",
+          "headline": "Five years later: Oso (SR 530) landslide, Washington",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.usgs.gov/publications/geotechnical-soil-characterization-intact-quaternary-deposits-forming-march-22-2014-sr",
+          "source_name": "U.S. Geological Survey (USGS) Publications",
+          "published_at": "2014-03-22T00:00:00.000Z",
+          "headline": "Geotechnical soil characterization… forming March 22, 2014 SR 530 landslide near Oso, Washington",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Geological Survey (USGS)"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "North Fork Stillaguamish River"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "A catastrophic landslide occurred on March 22, 2014 near Oso, Washington",
+            "source_url": "https://www.usgs.gov/news/featured-story/five-years-later-oso-sr-530-landslide-washington"
+          },
+          {
+            "quote": "...forming March 22, 2014 SR 530 landslide near Oso, Washington",
+            "source_url": "https://www.usgs.gov/publications/geotechnical-soil-characterization-intact-quaternary-deposits-forming-march-22-2014-sr"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.8,
+        "location": 0.55,
+        "summary_grounding": 0.65
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "Oso SR 530 landslide (2014-03-22)",
+        "fingerprint": "geological|sr 530 (oso) landslide in washington state|near oso, washington, usa (north fork stillaguamish river valley)|2014-03-22"
+      }
+    },
+    {
+      "event_id": "evt_201403_riau_fires_haze",
+      "title": "Riau peat and forest fires trigger severe haze over Sumatra and parts of Southeast Asia",
+      "description": "In early March 2014, numerous forest and peat fires in Indonesia’s Riau Province (Sumatra) produced heavy smoke and regional haze. Reports described degraded air quality and associated respiratory/health impacts, with haze affecting areas beyond Riau.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2014-03-07T00:00:00.000Z",
+        "time_confidence": 0.65,
+        "event_date_utc": "2014-03-07T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Pekanbaru, Riau, Indonesia",
+        "jurisdiction_level": "state",
+        "admin1": "Riau",
+        "country": "ID",
+        "capital_used": "Pekanbaru",
+        "lat": 0.5071,
+        "lon": 101.4478,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://science.nasa.gov/earth/earth-observatory/fires-in-indonesia-83304/",
+          "source_name": "NASA Earth Observatory",
+          "published_at": "2014-03-13T00:00:00.000Z",
+          "headline": "Fires in Indonesia",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.wri.org/insights/fires-indonesia-spike-highest-levels-june-2013-haze-emergency",
+          "source_name": "World Resources Institute (WRI)",
+          "published_at": "2014-03-14T00:00:00.000Z",
+          "headline": "Fires in Indonesia Spike to Highest Levels Since June 2013 Haze Emergency",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.abc.net.au/news/2014-03-07/an-indonesia-smog-crisis-deepens/5307220",
+          "source_name": "ABC News (Australia)",
+          "published_at": "2014-03-07T00:00:00.000Z",
+          "headline": "An Indonesia smog crisis deepens",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NASA Earth Observatory",
+          "World Resources Institute (WRI)",
+          "ABC News (Australia)"
+        ],
+        "substances": [
+          "haze",
+          "smoke"
+        ],
+        "ecosystems": [
+          "peatlands",
+          "tropical forest"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Fires in Indonesia’s Riau province produced a thick pall of smoke.",
+            "source_url": "https://science.nasa.gov/earth/earth-observatory/fires-in-indonesia-83304/"
+          },
+          {
+            "quote": "Fires have spiked to the highest levels since the June 2013 haze emergency.",
+            "source_url": "https://www.wri.org/insights/fires-indonesia-spike-highest-levels-june-2013-haze-emergency"
+          },
+          {
+            "quote": "The smog crisis has deepened as haze from fires blankets parts of Sumatra.",
+            "source_url": "https://www.abc.net.au/news/2014-03-07/an-indonesia-smog-crisis-deepens/5307220"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.72,
+        "category": 0.9,
+        "location": 0.7,
+        "summary_grounding": 0.75
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "2014-03 Indonesia Riau fires haze",
+        "fingerprint": "fp_201403_riau_fires_haze_2014-03"
+      }
+    },
+    {
+      "event_id": "2014-03-05_eu_invasive_alien_species_agreement_brussels",
+      "title": "EU negotiators reach agreement on invasive alien species regulation",
+      "description": "European Parliament and Council negotiators reached a political agreement on draft EU legislation aimed at preventing the introduction and spread of invasive alien species. The agreement included coordinated measures and the possibility of restrictions on species designated as being of \"Union concern.\"",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2014-03-04T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2014-03-05T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Brussels, Belgium (EU policy process)",
+        "jurisdiction_level": "city",
+        "admin1": null,
+        "country": "BE",
+        "capital_used": null,
+        "lat": 50.8503,
+        "lon": 4.3517,
+        "precision": "city",
+        "location_basis": "institution_proxy",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.europarl.europa.eu/news/en/press-room/20140304IPR37510/invasive-alien-species-meps-reach-agreement-with-the-greek-presidency",
+          "source_name": "European Parliament",
+          "published_at": "2014-03-04T00:00:00.000Z",
+          "headline": "Invasive alien species: MEPs reach agreement with the Greek Presidency",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://ieep.eu/news/agreement-on-eu-invasive-alien-species-regulation/",
+          "source_name": "IEEP",
+          "published_at": "2014-03-05T00:00:00.000Z",
+          "headline": "Agreement on EU invasive alien species regulation",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "European Parliament",
+          "Council of the European Union",
+          "Greek Presidency"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "MEPs have reached an agreement with the Greek Presidency on draft EU legislation to prevent and manage the introduction and spread of invasive alien species.",
+            "source_url": "https://www.europarl.europa.eu/news/en/press-room/20140304IPR37510/invasive-alien-species-meps-reach-agreement-with-the-greek-presidency"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.72,
+        "category": 0.8,
+        "location": 0.6,
+        "summary_grounding": 0.7
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "EU invasive alien species regulation political agreement March 2014",
+        "fingerprint": "eu_invasive_alien_species_agreement_brussels_2014-03-05"
+      }
+    },
+    {
+      "event_id": "evt_20140305_eu_invasive_alien_species_agreement",
+      "title": "EU co-legislators reach political agreement on invasive alien species regulation framework",
+      "description": "EU negotiators from the European Parliament and the Council Presidency reached a political agreement on a regulation addressing invasive alien species. The framework aimed to improve coordination on prevention, early detection, rapid response, and management across EU member states.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "2014-03-05T00:00:00.000Z",
+        "event_end": "2014-03-05T23:59:59.000Z",
+        "reported_at": "2014-03-04T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2014-03-05T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "European Union",
+        "jurisdiction_level": "supranational",
+        "admin1": null,
+        "country": null,
+        "capital_used": "Brussels",
+        "lat": 50.8503,
+        "lon": 4.3517,
+        "precision": "supranational",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.8
+      },
+      "sources": [
+        {
+          "url": "https://www.europarl.europa.eu/news/en/press-room/20140304IPR37510/invasive-alien-species-meps-reach-agreement-with-the-greek-presidency",
+          "source_name": "European Parliament",
+          "published_at": "2014-03-04T00:00:00.000Z",
+          "headline": "Invasive alien species: MEPs reach agreement with the Greek Presidency",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.europeansources.info/record/regulation-1143-2014-prevention-management-introduction-spread-invasive-alien-species/",
+          "source_name": "European Sources Online",
+          "published_at": "2014-01-01T00:00:00.000Z",
+          "headline": "Regulation 1143/2014: prevention and management of the introduction and spread of invasive alien species",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://ieep.eu/news/agreement-on-eu-invasive-alien-species-regulation/",
+          "source_name": "IEEP",
+          "published_at": "2014-03-05T00:00:00.000Z",
+          "headline": "Agreement on EU invasive alien species regulation",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "European Parliament",
+          "Council of the European Union",
+          "Greek Presidency"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "MEPs and the Greek Presidency reached a political agreement on the draft law on invasive alien species.",
+            "source_url": "https://www.europarl.europa.eu/news/en/press-room/20140304IPR37510/invasive-alien-species-meps-reach-agreement-with-the-greek-presidency"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.72,
+        "category": 0.85,
+        "location": 0.8,
+        "summary_grounding": 0.7
+      },
+      "quality_flags": [
+        "secondary_sources_only",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "eu_invasive_alien_species_regulation_agreement_2014",
+        "fingerprint": "fp_eu_invasive_alien_species_regulation_agreement_2014-03-05_brussels"
+      }
+    }
+  ]
+}

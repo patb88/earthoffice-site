@@ -1,0 +1,885 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_2012-07_normalize_2026-01-16T044217875Z",
+    "generated_utc": "2026-01-16T04:42:17.875Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "2012-07",
+    "window": {
+      "start_utc": "2012-07-01T00:00:00.000Z",
+      "end_utc": "2012-07-31T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "evt_20120701_mississippi_oilspill_reserve_la",
+      "title": "Barge collision spills crude oil into the Mississippi River near Reserve, Louisiana",
+      "description": "Reports said a barge collision released crude oil into the Mississippi River near Reserve, Louisiana. Response actions referenced included boom deployment and precautions around water intakes while spill volume and impacts were assessed.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2012-07-01T00:00:00.000Z",
+        "event_end": "2012-07-01T23:59:59.000Z",
+        "reported_at": "2012-07-01T00:00:00Z",
+        "time_confidence": 0.5,
+        "event_date_utc": "2012-07-01T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Reserve area, Louisiana (Mississippi River), USA",
+        "jurisdiction_level": "site",
+        "admin1": "Louisiana",
+        "country": "US",
+        "capital_used": null,
+        "lat": 30.0583,
+        "lon": -90.5518,
+        "precision": "neighborhood",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.5
+      },
+      "sources": [
+        {
+          "url": "https://iowastatedaily.com/140677/news-nation/barge-collision-spills-oil-into-the-mississippi/",
+          "source_name": "Iowa State Daily",
+          "published_at": "2012-07-01T00:00:00Z",
+          "headline": "Barge collision spills oil into the Mississippi",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://shipandbunker.com/news/am/11-barge-collision-and-oil-spill-on-the-mississippi",
+          "source_name": "Ship & Bunker",
+          "published_at": "2012-07-01T00:00:00Z",
+          "headline": "Barge Collision and Oil Spill on the Mississippi",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [
+          "crude oil"
+        ],
+        "ecosystems": [
+          "Mississippi River"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "barge collision and oil spill on the Mississippi",
+            "source_url": "https://shipandbunker.com/news/am/11-barge-collision-and-oil-spill-on-the-mississippi"
+          },
+          {
+            "quote": "spills oil into the Mississippi",
+            "source_url": "https://iowastatedaily.com/140677/news-nation/barge-collision-spills-oil-into-the-mississippi/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.42,
+        "category": 0.75,
+        "location": 0.5,
+        "summary_grounding": 0.35
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "mississippi_river_oilspill_reserve_la_2012-07-01",
+        "fingerprint": "fp_mississippi_river_reserve_la_2012-07-01_barge_collision_oilspill"
+      }
+    },
+    {
+      "event_id": "evt_201207_chicago_heatwave_0704",
+      "title": "Early-July 2012 heat wave brings record highs in Chicago area",
+      "description": "An early-July 2012 heat wave brought dangerous heat and record high temperatures to the Chicago area, including O'Hare Airport reaching 103°F on July 5–6. The National Weather Service documented multiple consecutive 100°F days during the peak period.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2012-07-04T00:00:00.000Z",
+        "event_end": "2012-07-07T23:59:59.000Z",
+        "reported_at": "2012-07-01T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2012-07-05T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Chicago, Illinois, United States",
+        "jurisdiction_level": "city",
+        "admin1": "Illinois",
+        "country": "US",
+        "capital_used": null,
+        "lat": 41.8781,
+        "lon": -87.6298,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.65
+      },
+      "sources": [
+        {
+          "url": "https://www.weather.gov/lot/2012July_heat",
+          "source_name": "NWS Chicago (weather.gov)",
+          "published_at": "2012-07-01T00:00:00.000Z",
+          "headline": "2012 July Heat",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.climatecentral.org/news/historic-heat-wave-marches-on-as-drought-expands",
+          "source_name": "Climate Central",
+          "published_at": "2012-07-01T00:00:00.000Z",
+          "headline": "Historic heat wave marches on as drought expands",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "National Weather Service"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "103°F at O'Hare on July 5–6",
+            "source_url": "https://www.weather.gov/lot/2012July_heat"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.85,
+        "location": 0.65,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "2012-07 US Midwest heat wave (Chicago area)",
+        "fingerprint": "fp_201207_weather_climate_chicago_heat_0704_0707"
+      }
+    },
+    {
+      "event_id": "evt_201207_us_drought_usda_0726",
+      "title": "USDA reports expanding drought impacts across U.S. agriculture (July 26, 2012)",
+      "description": "A USDA update reported that drought conditions were expanding and affecting large portions of major crop areas, including corn and soybeans. NASA Earth Observatory coverage also described drought conditions gripping parts of the United States during the period.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2012-07-26T00:00:00.000Z",
+        "event_end": "2012-07-26T23:59:59.000Z",
+        "reported_at": "2012-07-26T00:00:00.000Z",
+        "time_confidence": 0.9,
+        "event_date_utc": "2012-07-26T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States (national scale)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.85
+      },
+      "sources": [
+        {
+          "url": "https://www.usda.gov/about-usda/news/blog/2012/07/26/agricultural-weather-and-drought-update-72612",
+          "source_name": "USDA",
+          "published_at": "2012-07-26T00:00:00.000Z",
+          "headline": "Agricultural Weather and Drought Update 7/26/12",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://science.nasa.gov/earth/earth-observatory/drought-grips-the-united-states-78553/",
+          "source_name": "NASA Earth Observatory",
+          "published_at": "2012-07-01T00:00:00.000Z",
+          "headline": "Drought Grips the United States",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "USDA",
+          "NASA Earth Observatory"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Agricultural Weather and Drought Update 7/26/12",
+            "source_url": "https://www.usda.gov/about-usda/news/blog/2012/07/26/agricultural-weather-and-drought-update-72612"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.85,
+        "location": 0.85,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "2012 U.S. drought (USDA/NASA updates)",
+        "fingerprint": "fp_201207_weather_climate_us_drought_0726"
+      }
+    },
+    {
+      "event_id": "evt_201207_beijing_flood_0721",
+      "title": "Record rain triggers deadly flash flooding in Beijing",
+      "description": "A severe rainstorm on July 21, 2012 caused major flooding in Beijing, with widespread disruption and reported fatalities. Reporting described evacuations and significant damage following the storm.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2012-07-21T00:00:00.000Z",
+        "event_end": "2012-07-21T23:59:59.000Z",
+        "reported_at": "2012-07-22T00:00:00.000Z",
+        "time_confidence": 0.85,
+        "event_date_utc": "2012-07-21T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Beijing, China",
+        "jurisdiction_level": "city",
+        "admin1": "Beijing",
+        "country": "CN",
+        "capital_used": null,
+        "lat": 39.9042,
+        "lon": 116.4074,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.9
+      },
+      "sources": [
+        {
+          "url": "https://www.bbc.co.uk/news/world-asia-china-18934162",
+          "source_name": "BBC News",
+          "published_at": "2012-07-22T00:00:00.000Z",
+          "headline": "Beijing hit by deadly flash floods after heaviest rain in 60 years",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.wsj.com/articles/SB10000872396390444405804577540413877327110",
+          "source_name": "The Wall Street Journal",
+          "published_at": "2012-07-22T00:00:00.000Z",
+          "headline": "Beijing Flooding Kills Dozens After Heavy Rains",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "BBC News",
+          "The Wall Street Journal"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "deadly flash floods after heaviest rain in 60 years",
+            "source_url": "https://www.bbc.co.uk/news/world-asia-china-18934162"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.68,
+        "category": 0.85,
+        "location": 0.9,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "paywalled_or_partial",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "2012-07 Beijing flood (July 21)",
+        "fingerprint": "fp_201207_weather_climate_beijing_flood_0721"
+      }
+    },
+    {
+      "event_id": "evt_20120729_guatemala_ocos_eq_m6_0",
+      "title": "M6.0 earthquake off Guatemala’s Pacific coast near Ocos",
+      "description": "A magnitude 6.0 earthquake occurred off Guatemala’s Pacific coast near Ocos on July 29, 2012 (UTC). The event details are documented by the USGS event page.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2012-07-29T12:22:11.000Z",
+        "event_end": "2012-07-29T13:22:11.000Z",
+        "reported_at": "2012-07-29T12:22:11.000Z",
+        "time_confidence": 0.85,
+        "event_date_utc": "2012-07-29T12:22:11.000Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Off the Pacific coast near Ocos, Guatemala",
+        "jurisdiction_level": "site",
+        "admin1": null,
+        "country": "GT",
+        "capital_used": null,
+        "lat": 14.5,
+        "lon": -92.2,
+        "precision": "proxy",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.3
+      },
+      "sources": [
+        {
+          "url": "https://earthquake.usgs.gov/earthquakes/eventpage/usp000j7i9/executive",
+          "source_name": "USGS Earthquake Hazards Program",
+          "published_at": "2012-07-29T12:22:11.000Z",
+          "headline": "USGS event page: usp000j7i9",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://earthquake.usgs.gov/earthquakes/map/?extent=9.1021,-93.82324&extent=19.97335,-84.15527&listOnlyShown=true&timeZone=utc&starttime=2012-07-29%2000:00:00&endtime=2012-07-30%2000:00:00",
+          "source_name": "USGS Earthquake Hazards Program",
+          "published_at": "2012-07-29T00:00:00.000Z",
+          "headline": "USGS earthquakes map (UTC filter)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "USGS"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.85,
+        "location": 0.3,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "USGS_usp000j7i9",
+        "fingerprint": "fp_20120729_guatemala_ocos_eq_m6_0"
+      }
+    },
+    {
+      "event_id": "2012-07-fires-waldo-canyon-containment",
+      "title": "Waldo Canyon Fire declared 100% contained",
+      "description": "Officials reported the Waldo Canyon Fire near Colorado Springs, Colorado, as 100% contained on July 10, 2012. The fire had caused evacuations and substantial structure losses during late June and early July.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2012-07-10T00:00:00.000Z",
+        "event_end": "2012-07-10T23:59:59.000Z",
+        "reported_at": "2012-07-10T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2012-07-10T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Colorado Springs area, Colorado, USA",
+        "jurisdiction_level": "city",
+        "admin1": "Colorado",
+        "country": "US",
+        "capital_used": null,
+        "lat": 38.8339,
+        "lon": -104.8214,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://inciweb.nwcg.gov/incident/2856/",
+          "source_name": "InciWeb",
+          "published_at": "2012-07-10T00:00:00.000Z",
+          "headline": "Incident Information System (Waldo Canyon)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.nps.gov/articles/000/waldo-canyon-fire.htm",
+          "source_name": "National Park Service",
+          "published_at": "2012-07-10T00:00:00.000Z",
+          "headline": "Waldo Canyon Fire",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "InciWeb",
+          "National Park Service"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "boreal forest"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "declared 100% contained",
+            "source_url": "https://inciweb.nwcg.gov/incident/2856/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.75,
+        "location": 0.6,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Waldo Canyon Fire containment July 2012",
+        "fingerprint": "waldo-canyon-fire-declared-100-contained|colorado-springs-area-colorado-usa|2012-07-10"
+      }
+    },
+    {
+      "event_id": "2012-07-fires-siberia-yakutia-smoke-plumes",
+      "title": "Siberian (Yakutia) wildfires produce thick smoke plumes observed by satellite",
+      "description": "NASA Earth Observatory reported extensive wildfires in Siberia, including in Yakutia, producing thick smoke plumes visible from space in mid-July 2012. Satellite imagery documented active fire hotspots and transported smoke.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2012-07-10T00:00:00.000Z",
+        "event_end": "2012-07-11T23:59:59.000Z",
+        "reported_at": "2012-07-10T00:00:00.000Z",
+        "time_confidence": 0.5,
+        "event_date_utc": null,
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Yakutia and broader Siberia, Russia",
+        "jurisdiction_level": "state",
+        "admin1": "Sakha Republic (Yakutia)",
+        "country": "RU",
+        "capital_used": "Yakutsk",
+        "lat": 62.0339,
+        "lon": 129.7331,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://earthobservatory.nasa.gov/images/78515/wildfires-in-siberia",
+          "source_name": "NASA Earth Observatory",
+          "published_at": "2012-07-10T00:00:00.000Z",
+          "headline": "Wildfires in Siberia",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://science.nasa.gov/earth/earth-observatory/wildfires-in-siberia-78515/",
+          "source_name": "NASA Science",
+          "published_at": "2012-07-10T00:00:00.000Z",
+          "headline": "Wildfires in Siberia",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NASA Earth Observatory",
+          "NASA"
+        ],
+        "substances": [
+          "smoke"
+        ],
+        "ecosystems": [
+          "boreal forest"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Wildfires in Siberia",
+            "source_url": "https://earthobservatory.nasa.gov/images/78515/wildfires-in-siberia"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.8,
+        "location": 0.55,
+        "summary_grounding": 0.65
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "low_confidence_location",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Siberia/Yakutia wildfires smoke plumes July 2012",
+        "fingerprint": "siberian-yakutia-wildfires-smoke-plumes-observed-by-satellite|yakutia-and-broader-siberia-russia|2012-07-10_2012-07-11"
+      }
+    },
+    {
+      "event_id": "2012-07-fires-alt-emporda-catalonia",
+      "title": "Alt Empordà wildfires in Catalonia burn large areas and cause casualties",
+      "description": "Wildfires in the Alt Empordà area of Catalonia spread rapidly in late July 2012, prompting evacuations and disrupting transport and services. Reporting described fatalities and injuries alongside significant burned area.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2012-07-22T00:00:00.000Z",
+        "event_end": "2012-07-24T23:59:59.000Z",
+        "reported_at": "2012-07-22T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2012-07-22T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Alt Empordà (Girona Province), Catalonia, Spain",
+        "jurisdiction_level": "state",
+        "admin1": "Catalonia",
+        "country": "ES",
+        "capital_used": "Barcelona",
+        "lat": 41.3851,
+        "lon": 2.1734,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.bbc.co.uk/news/world-europe-18954337",
+          "source_name": "BBC News",
+          "published_at": "2012-07-22T00:00:00.000Z",
+          "headline": "Spain wildfires: Thousands flee Catalonia blaze",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "BBC News"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "Mediterranean forest"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Thousands flee Catalonia blaze",
+            "source_url": "https://www.bbc.co.uk/news/world-europe-18954337"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.8,
+        "location": 0.6,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Alt Emporda Catalonia wildfires July 2012",
+        "fingerprint": "alt-emporda-wildfires-in-catalonia-burn-large-areas-and-cause-casualties|alt-emporda-girona-province-catalonia-spain|2012-07-22_2012-07-24"
+      }
+    },
+    {
+      "event_id": "evt_20120716_us_drought_vegetation_nasaeo",
+      "title": "NASA Earth Observatory documents vegetation stress during U.S. drought",
+      "description": "A NASA Earth Observatory assessment reported widespread drought conditions across the United States in mid-July 2012 and described impacts on vegetation across large areas, reflecting ecosystem stress during the growing season.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2012-07-16T00:00:00.000Z",
+        "event_end": "2012-07-16T23:59:59.000Z",
+        "reported_at": "2012-07-16T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2012-07-16T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.75
+      },
+      "sources": [
+        {
+          "url": "https://science.nasa.gov/earth/earth-observatory/drought-grips-the-united-states-78553/",
+          "source_name": "NASA Science (Earth Observatory)",
+          "published_at": "2012-07-16T00:00:00.000Z",
+          "headline": "Drought Grips the United States",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.usda.gov/about-usda/news/blog/agricultural-weather-and-drought-update-71212",
+          "source_name": "USDA",
+          "published_at": "2012-07-12T00:00:00.000Z",
+          "headline": "Agricultural Weather and Drought Update 7/12/12",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NASA Earth Observatory",
+          "USDA"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "U.S. agricultural landscapes"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.7,
+        "location": 0.8,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "2012_us_drought_vegetation_nasaeo",
+        "fingerprint": "fp_20120716_us_drought_vegetation"
+      }
+    },
+    {
+      "event_id": "evt-20120720-us-dc-circuit-so2-naaqs-upheld",
+      "title": "D.C. Circuit upholds EPA’s 1-hour SO₂ NAAQS (75 ppb)",
+      "description": "A U.S. Court of Appeals decision upheld EPA’s 1-hour sulfur dioxide (SO₂) National Ambient Air Quality Standard (NAAQS) at 75 ppb. The ruling rejected challenges and left the federal air-quality standard in place.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "2012-07-20T00:00:00.000Z",
+        "event_end": "2012-07-20T23:59:59.000Z",
+        "reported_at": "2012-07-20T00:00:00.000Z",
+        "time_confidence": 0.4,
+        "event_date_utc": "2012-07-20T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States (D.C. Circuit Court of Appeals)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.khlaw.com/insights/environmental-business-alert-5",
+          "source_name": "Kelley Drye & Warren LLP (khlaw.com)",
+          "published_at": "2012-07-20T00:00:00.000Z",
+          "headline": "Environmental Business Alert (referencing D.C. Circuit decision upholding 1-hour SO2 NAAQS)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Environmental Protection Agency (EPA)",
+          "U.S. Court of Appeals for the D.C. Circuit"
+        ],
+        "substances": [
+          "sulfur dioxide (SO₂)"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "upheld EPA’s 1-hour SO2 NAAQS at 75 ppb",
+            "source_url": "https://www.khlaw.com/insights/environmental-business-alert-5"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.5,
+        "category": 0.75,
+        "location": 0.6,
+        "summary_grounding": 0.35
+      },
+      "quality_flags": [
+        "secondary_sources_only",
+        "date_ambiguous",
+        "paywalled_or_partial"
+      ],
+      "dedupe": {
+        "cluster_hint": "us-dc-circuit-so2-naaqs-75ppb-2012-07",
+        "fingerprint": "fp-us-dc-circuit-so2-naaqs-75ppb-2012-07-20"
+      }
+    },
+    {
+      "event_id": "evt-20120704-eu-seveso-iii-directive-adopted",
+      "title": "EU adopts Seveso III Directive (Directive 2012/18/EU) on major-accident hazards",
+      "description": "The European Union adopted Directive 2012/18/EU (Seveso III) to strengthen rules on preventing and controlling major accidents involving dangerous substances. The directive updated and replaced earlier Seveso requirements for industrial sites handling hazardous materials.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "2012-07-04T00:00:00.000Z",
+        "event_end": "2012-07-04T23:59:59.000Z",
+        "reported_at": "2012-07-04T00:00:00.000Z",
+        "time_confidence": 0.5,
+        "event_date_utc": "2012-07-04T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "European Union",
+        "jurisdiction_level": "supranational",
+        "admin1": null,
+        "country": null,
+        "capital_used": "Brussels",
+        "lat": 50.8503,
+        "lon": 4.3517,
+        "precision": "supranational",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.85
+      },
+      "sources": [
+        {
+          "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32012L0018",
+          "source_name": "EUR-Lex",
+          "published_at": "2012-07-04T00:00:00.000Z",
+          "headline": "Directive 2012/18/EU (Seveso III)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://publications.jrc.ec.europa.eu/repository/handle/JRC72840",
+          "source_name": "European Commission Joint Research Centre (JRC) Publications Repository",
+          "published_at": "2012-07-04T00:00:00.000Z",
+          "headline": "JRC publication entry related to Seveso III / major accident hazards (supporting background)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "European Union",
+          "European Commission"
+        ],
+        "substances": [
+          "dangerous substances"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Directive 2012/18/EU",
+            "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32012L0018"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.78,
+        "category": 0.85,
+        "location": 0.85,
+        "summary_grounding": 0.7
+      },
+      "quality_flags": [],
+      "dedupe": {
+        "cluster_hint": "eu-seveso-iii-directive-2012-18-eu-2012-07",
+        "fingerprint": "fp-eu-seveso-iii-2012-18-eu-2012-07-04"
+      }
+    }
+  ]
+}

@@ -1,0 +1,734 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_2021-06_normalize_2026-01-16T125951075Z",
+    "generated_utc": "2026-01-16T12:59:51.075Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "2021-06",
+    "window": {
+      "start_utc": "2021-06-01T00:00:00.000Z",
+      "end_utc": "2021-06-30T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "evt_202106_xpress_pearl_sri_lanka_pollution",
+      "title": "X-Press Pearl: ongoing debris and pollution concerns off Sri Lanka",
+      "description": "In June 2021, following the X-Press Pearl incident, Sri Lanka reported continuing impacts from lost cargo and debris, including plastic nurdles washing ashore, alongside concerns about potential oil pollution. Reports described response efforts such as beach cleanups and restrictions affecting coastal areas.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2021-06-01T00:00:00.000Z",
+        "event_end": "2021-06-30T23:59:59.000Z",
+        "reported_at": "2021-06-03T00:00:00.000Z",
+        "time_confidence": 0.65,
+        "event_date_utc": null,
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Colombo area, Sri Lanka (offshore)",
+        "jurisdiction_level": "city",
+        "admin1": null,
+        "country": "LK",
+        "capital_used": null,
+        "lat": 6.9271,
+        "lon": 79.8612,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.theguardian.com/world/2021/jun/03/sri-lanka-officials-brace-oil-spill-sinking-cargo-ship",
+          "source_name": "The Guardian",
+          "published_at": "2021-06-03T00:00:00.000Z",
+          "headline": "Sri Lanka officials brace for oil spill after sinking cargo ship",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://blog.response.restoration.noaa.gov/incident-responses-june-2021",
+          "source_name": "NOAA Response & Restoration Blog",
+          "published_at": "2021-06-01T00:00:00.000Z",
+          "headline": "Incident responses – June 2021",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA"
+        ],
+        "substances": [
+          "plastic nurdles",
+          "oil"
+        ],
+        "ecosystems": [
+          "coastal beaches",
+          "marine waters"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "officials brace for oil spill after sinking cargo ship",
+            "source_url": "https://www.theguardian.com/world/2021/jun/03/sri-lanka-officials-brace-oil-spill-sinking-cargo-ship"
+          },
+          {
+            "quote": "Incident responses – June 2021",
+            "source_url": "https://blog.response.restoration.noaa.gov/incident-responses-june-2021"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.8,
+        "location": 0.55,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "needs_dedupe_check",
+        "date_ambiguous",
+        "location_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "x-press-pearl_sri-lanka_2021-06",
+        "fingerprint": "fp_xpress_pearl_sri_lanka_2021_06"
+      }
+    },
+    {
+      "event_id": "evt_202106_stingray_pipeline_leak_gom",
+      "title": "Stingray Pipeline leak reported offshore Texas",
+      "description": "A sheen observed on June 14, 2021 offshore Texas was identified as a pipeline leak, with response actions continuing later in June. The incident report described containment and response efforts related to a discharge of petroleum product.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2021-06-14T00:00:00.000Z",
+        "event_end": "2021-06-30T23:59:59.000Z",
+        "reported_at": "2021-06-01T00:00:00.000Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "2021-06-14T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "West Cameron Block 551, Gulf of Mexico (offshore Texas, USA)",
+        "jurisdiction_level": "site",
+        "admin1": "Texas",
+        "country": "US",
+        "capital_used": null,
+        "lat": 27.5,
+        "lon": -93,
+        "precision": "proxy",
+        "location_basis": "manual_override",
+        "location_confidence": 0.25
+      },
+      "sources": [
+        {
+          "url": "https://blog.response.restoration.noaa.gov/incident-responses-june-2021",
+          "source_name": "NOAA Response & Restoration Blog",
+          "published_at": "2021-06-01T00:00:00.000Z",
+          "headline": "Incident responses – June 2021",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA"
+        ],
+        "substances": [
+          "condensate",
+          "oil"
+        ],
+        "ecosystems": [
+          "marine waters"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Incident responses – June 2021",
+            "source_url": "https://blog.response.restoration.noaa.gov/incident-responses-june-2021"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.45,
+        "category": 0.75,
+        "location": 0.25,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "low_confidence_location"
+      ],
+      "dedupe": {
+        "cluster_hint": "stingray-pipeline_west-cameron-block-551_2021-06",
+        "fingerprint": "fp_stingray_pipeline_wcb551_2021_06"
+      }
+    },
+    {
+      "event_id": "evt_202106_simmonds_hill_utqiagvik_tanks_leak",
+      "title": "Abandoned tanks reported leaking near Utqiagvik, Alaska",
+      "description": "An incident report dated June 22, 2021 described abandoned tanks on an eroding berm near Utqiagvik with a tar-like substance leaking onto a nearby beach area along the Beaufort Sea coast. The report noted response actions to plug a tank and indicated continued erosion could expose additional contamination.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2021-06-22T00:00:00.000Z",
+        "event_end": "2021-06-30T23:59:59.000Z",
+        "reported_at": "2021-06-01T00:00:00.000Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "2021-06-22T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Simmonds Hill area near Utqiagvik (Barrow), Alaska, USA",
+        "jurisdiction_level": "city",
+        "admin1": "Alaska",
+        "country": "US",
+        "capital_used": null,
+        "lat": 71.2906,
+        "lon": -156.7887,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://blog.response.restoration.noaa.gov/incident-responses-june-2021",
+          "source_name": "NOAA Response & Restoration Blog",
+          "published_at": "2021-06-01T00:00:00.000Z",
+          "headline": "Incident responses – June 2021",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA"
+        ],
+        "substances": [
+          "tar-like substance",
+          "oil"
+        ],
+        "ecosystems": [
+          "coastal beaches",
+          "Beaufort Sea"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Incident responses – June 2021",
+            "source_url": "https://blog.response.restoration.noaa.gov/incident-responses-june-2021"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.8,
+        "location": 0.6,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "utqiagvik_simmonds-hill_abandoned-tanks_2021-06",
+        "fingerprint": "fp_utqiagvik_simmonds_hill_2021_06"
+      }
+    },
+    {
+      "event_id": "2021-06_weather_climate_pnw_heat_dome",
+      "title": "Late-June 2021 Pacific Northwest and British Columbia record heatwave",
+      "description": "An extreme late-June 2021 heatwave set all-time temperature records across parts of the U.S. Pacific Northwest and Western Canada. Reported records included 116°F in Portland and 108°F in Seattle on June 28, with widespread heat impacts.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2021-06-26T00:00:00.000Z",
+        "event_end": "2021-06-29T23:59:59.000Z",
+        "reported_at": "2021-06-29T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2021-06-28T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Pacific Northwest (USA) and British Columbia (Canada)",
+        "jurisdiction_level": "supranational",
+        "admin1": null,
+        "country": null,
+        "capital_used": "Washington, D.C.",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "proxy",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.45
+      },
+      "sources": [
+        {
+          "url": "https://prod-01-asg-www-climate.woc.noaa.gov/news-features/event-tracker/astounding-heat-obliterates-all-time-records-across-pacific-northwest",
+          "source_name": "NOAA Climate.gov",
+          "published_at": "2021-06-29T00:00:00.000Z",
+          "headline": "Astounding heat obliterates all-time records across Pacific Northwest",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.dw.com/en/us-heat-wave-breaks-temperature-records-in-seattle-portland/a-58062741",
+          "source_name": "Deutsche Welle",
+          "published_at": "2021-06-29T00:00:00.000Z",
+          "headline": "US heat wave breaks temperature records in Seattle, Portland",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Astounding heat obliterates all-time records across Pacific Northwest",
+            "source_url": "https://prod-01-asg-www-climate.woc.noaa.gov/news-features/event-tracker/astounding-heat-obliterates-all-time-records-across-pacific-northwest"
+          },
+          {
+            "quote": "breaks temperature records in Seattle, Portland",
+            "source_url": "https://www.dw.com/en/us-heat-wave-breaks-temperature-records-in-seattle-portland/a-58062741"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.8,
+        "location": 0.45,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "2021-06 Pacific Northwest heat dome",
+        "fingerprint": "fp_2021-06_pnw_bc_heat_dome"
+      }
+    },
+    {
+      "event_id": "evt_20210605_mount_hood_eq_39",
+      "title": "M3.9 earthquake near Mount Hood, Oregon",
+      "description": "A magnitude 3.9 earthquake occurred near Mount Hood on June 5, 2021, with associated foreshocks and aftershocks reported. The Cascades Volcano Observatory reported no change in volcanic hazard at that time.",
+      "category_primary": "geological",
+      "polarity": "unclear",
+      "severity": null,
+      "time": {
+        "event_start": "2021-06-05T00:00:00.000Z",
+        "event_end": "2021-06-05T23:59:59.000Z",
+        "reported_at": "2021-06-05T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2021-06-05T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Mount Hood area, Oregon, USA",
+        "jurisdiction_level": "site",
+        "admin1": "Oregon",
+        "country": "US",
+        "capital_used": null,
+        "lat": 45.3735,
+        "lon": -121.6959,
+        "precision": "exact",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.usgs.gov/news/mount-hoods-june-5-2021-earthquake",
+          "source_name": "USGS",
+          "published_at": "2021-06-05T00:00:00.000Z",
+          "headline": "Mount Hood’s June 5, 2021 earthquake",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "USGS",
+          "Cascades Volcano Observatory"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "A magnitude 3.9 earthquake occurred near Mount Hood on June 5, 2021.",
+            "source_url": "https://www.usgs.gov/news/mount-hoods-june-5-2021-earthquake"
+          },
+          {
+            "quote": "Cascades Volcano Observatory reported no change in volcanic hazard.",
+            "source_url": "https://www.usgs.gov/news/mount-hoods-june-5-2021-earthquake"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.85,
+        "location": 0.6,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "USGS Mount Hood June 5 2021 earthquake",
+        "fingerprint": "fp_mount_hood_or_2021-06-05_geological"
+      }
+    },
+    {
+      "event_id": "evt_202106_chemtool_fire_rockton_il",
+      "title": "Chemtool facility fire prompts evacuations and air-monitoring response in Rockton, Illinois",
+      "description": "A large fire occurred at the Chemtool lubricants facility in Rockton, Illinois, producing heavy smoke and prompting evacuations in surrounding areas. State and federal agencies supported response actions and conducted environmental monitoring and follow-up activities.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2021-06-01T00:00:00.000Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "2021-06-14T12:00:00.000Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Rockton, Illinois, USA",
+        "jurisdiction_level": "city",
+        "admin1": "Illinois",
+        "country": "US",
+        "capital_used": null,
+        "lat": 42.4528,
+        "lon": -89.0723,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://epa.illinois.gov/topics/community-relations/sites/chemtool.html",
+          "source_name": "Illinois EPA",
+          "published_at": "2021-06-01T00:00:00.000Z",
+          "headline": "Chemtool Site",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.csb.gov/chemtool-rockton-il-explosion-and-fire-/",
+          "source_name": "U.S. Chemical Safety and Hazard Investigation Board",
+          "published_at": "2021-06-01T00:00:00.000Z",
+          "headline": "Chemtool, Rockton, IL Explosion and Fire",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.arl.noaa.gov/news-pubs/arl-news-stories/illinois-chemtool-plant-fire-response-informed-by-hysplit/",
+          "source_name": "NOAA Air Resources Laboratory",
+          "published_at": "2021-06-01T00:00:00.000Z",
+          "headline": "Illinois Chemtool Plant Fire Response Informed by HYSPLIT",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Chemtool",
+          "Illinois Environmental Protection Agency",
+          "U.S. Chemical Safety and Hazard Investigation Board",
+          "NOAA Air Resources Laboratory"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.8,
+        "location": 0.7,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Chemtool Rockton IL fire June 2021",
+        "fingerprint": "chemtool_facility_fire_rockton_il_2021-06-14"
+      }
+    },
+    {
+      "event_id": "evt_20210616_asian_giant_hornet_snohomish_wa",
+      "title": "Dead Asian giant hornet reported in Washington state (first 2021 report)",
+      "description": "A dead Asian giant hornet (an invasive species) was reported found in the Snohomish County area near Seattle in mid-June 2021. The report was described as the first U.S. detection reported in 2021.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2021-06-16T00:00:00.000Z",
+        "event_end": "2021-06-16T23:59:59.000Z",
+        "reported_at": "2021-06-16T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2021-06-16T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Snohomish County area, Washington, USA",
+        "jurisdiction_level": "state",
+        "admin1": "Washington",
+        "country": "US",
+        "capital_used": "Olympia",
+        "lat": 47.0379,
+        "lon": -122.9007,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.axios.com/2021/06/16/dead-murder-hornet-seattle-us-first-2021",
+          "source_name": "Axios",
+          "published_at": "2021-06-16T00:00:00.000Z",
+          "headline": "Dead Asian giant hornet found near Seattle, first U.S. detection of 2021 (report)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "A dead Asian giant hornet was found near Seattle, marking the first reported U.S. detection of 2021.",
+            "source_url": "https://www.axios.com/2021/06/16/dead-murder-hornet-seattle-us-first-2021"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.75,
+        "location": 0.55,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "asian_giant_hornet_wa_2021_report",
+        "fingerprint": "fp_asian_giant_hornet_snohomish_wa_2021-06-16"
+      }
+    },
+    {
+      "event_id": "evt-202106-001",
+      "title": "EU Council adopts European Climate Law, setting binding 2050 climate-neutrality and 2030 -55% target",
+      "description": "The Council of the European Union adopted the European Climate Law, putting into legislation the EU’s objective of climate neutrality by 2050. The law also sets a binding EU target of at least a 55% net reduction in greenhouse gas emissions by 2030 compared to 1990 levels.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "2021-06-28T00:00:00.000Z",
+        "event_end": "2021-06-28T23:59:59.000Z",
+        "reported_at": "2021-06-28T00:00:00.000Z",
+        "time_confidence": 0.8,
+        "event_date_utc": "2021-06-28T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "European Union",
+        "jurisdiction_level": "supranational",
+        "admin1": null,
+        "country": null,
+        "capital_used": "Brussels",
+        "lat": 50.8503,
+        "lon": 4.3517,
+        "precision": "supranational",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.8
+      },
+      "sources": [
+        {
+          "url": "https://www.consilium.europa.eu/en/press/press-releases/2021/06/28/council-adopts-european-climate-law/",
+          "source_name": "Council of the European Union",
+          "published_at": "2021-06-28T00:00:00.000Z",
+          "headline": "Council adopts European Climate Law",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Council of the European Union"
+        ],
+        "substances": [
+          "greenhouse gases"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "The Council adopted a regulation establishing the framework for achieving climate neutrality in the EU by 2050.",
+            "source_url": "https://www.consilium.europa.eu/en/press/press-releases/2021/06/28/council-adopts-european-climate-law/"
+          },
+          {
+            "quote": "It sets a binding EU target of a net domestic reduction in greenhouse gas emissions of at least 55% by 2030 compared to 1990.",
+            "source_url": "https://www.consilium.europa.eu/en/press/press-releases/2021/06/28/council-adopts-european-climate-law/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.85,
+        "category": 0.9,
+        "location": 0.8,
+        "summary_grounding": 0.85
+      },
+      "quality_flags": [
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "EU Climate Law adoption June 2021",
+        "fingerprint": "fp_eu_climate_law_2021-06-28_brussels"
+      }
+    },
+    {
+      "event_id": "evt-202106-002",
+      "title": "U.S. Supreme Court rules on Renewable Fuel Standard small-refinery hardship exemption timing",
+      "description": "The U.S. Supreme Court held that small refineries may seek an “extension” of Renewable Fuel Standard (RFS) hardship exemptions even after a lapse in prior exemptions. The decision affects how the federal biofuel-blending program’s refinery exemptions can be requested and administered.",
+      "category_primary": "policy_regulation",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "2021-06-25T00:00:00.000Z",
+        "event_end": "2021-06-25T23:59:59.000Z",
+        "reported_at": "2021-06-25T00:00:00.000Z",
+        "time_confidence": 0.75,
+        "event_date_utc": "2021-06-25T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.8
+      },
+      "sources": [
+        {
+          "url": "https://www.supremecourt.gov/opinions/20pdf/20-472_7m58.pdf",
+          "source_name": "Supreme Court of the United States",
+          "published_at": "2021-06-25T00:00:00.000Z",
+          "headline": "HollyFrontier Cheyenne Refining, LLC v. Renewable Fuels Association (Opinion)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.oyez.org/cases/2020/20-472",
+          "source_name": "Oyez",
+          "published_at": "2021-06-25T00:00:00.000Z",
+          "headline": "HollyFrontier Cheyenne Refining v. Renewable Fuels Association",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Supreme Court of the United States",
+          "Renewable Fuels Association",
+          "HollyFrontier Cheyenne Refining"
+        ],
+        "substances": [
+          "biofuels"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "A small refinery may obtain an ‘extension’ under §7545(o)(9)(B)(i) even if it did not receive exemptions in prior years.",
+            "source_url": "https://www.supremecourt.gov/opinions/20pdf/20-472_7m58.pdf"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.78,
+        "category": 0.85,
+        "location": 0.85,
+        "summary_grounding": 0.75
+      },
+      "quality_flags": [
+        "needs_dedupe_check",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "US Supreme Court RFS small refinery exemptions June 2021",
+        "fingerprint": "fp_scotus_rfs_exemptions_2021-06-25_washingtondc"
+      }
+    }
+  ]
+}

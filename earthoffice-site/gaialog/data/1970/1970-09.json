@@ -1,0 +1,973 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_1970-09_normalize_2026-01-19T034558512Z",
+    "generated_utc": "2026-01-19T03:45:58.512Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "1970-09",
+    "window": {
+      "start_utc": "1970-09-01T00:00:00.000Z",
+      "end_utc": "1970-09-30T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "evt-197009-colonial-pipeline-jacksonville-md",
+      "title": "Colonial Pipeline petroleum products release near Jacksonville, Maryland with excavation fire/explosion",
+      "description": "Residents near Jacksonville, Maryland reported gasoline odors and observed gasoline in a nearby creek on September 2, 1970. During efforts to expose the pipeline, an explosion and fire occurred the morning of September 3, 1970, injuring five people; the incident involved released gasoline and kerosene.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1970-09-01T00:00:00.000Z",
+        "time_confidence": 0.35,
+        "event_date_utc": "1970-09-03T00:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Jacksonville, Maryland, USA",
+        "jurisdiction_level": "city",
+        "admin1": "Maryland",
+        "country": "US",
+        "capital_used": null,
+        "lat": 39.6626,
+        "lon": -76.6305,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.45
+      },
+      "sources": [
+        {
+          "url": "https://ncsp.tamu.edu/reports/NTSB/ntsbPipeReport.htm",
+          "source_name": "National Center for Spectator Sports Safety and Security (TAMU) - NTSB pipeline report mirror",
+          "published_at": "1970-09-01T00:00:00.000Z",
+          "headline": "NTSB Pipeline Report (mirror)",
+          "byline": null,
+          "accessed_utc": "2026-01-19T03:41:29.994Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Colonial Pipeline"
+        ],
+        "substances": [
+          "gasoline",
+          "kerosene"
+        ],
+        "ecosystems": [
+          "creek"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Residents detected gasoline odors and observed gasoline in a nearby creek.",
+            "source_url": "https://ncsp.tamu.edu/reports/NTSB/ntsbPipeReport.htm"
+          },
+          {
+            "quote": "An explosion and fire occurred ... injuring five people.",
+            "source_url": "https://ncsp.tamu.edu/reports/NTSB/ntsbPipeReport.htm"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.42,
+        "category": 0.75,
+        "location": 0.45,
+        "summary_grounding": 0.4
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only",
+        "low_confidence_location"
+      ],
+      "dedupe": {
+        "cluster_hint": "colonial-pipeline-jacksonville-md-1970-09",
+        "fingerprint": "fp-1970-09-colonial-pipeline-jacksonville-md"
+      }
+    },
+    {
+      "event_id": "evt-197009-irving-whale-sink-gulf-st-lawrence",
+      "title": "Barge Irving Whale sinks in Gulf of St. Lawrence with Bunker C discharge contaminating coastline",
+      "description": "On September 7, 1970, the tank barge Irving Whale sank in the Gulf of St. Lawrence while carrying Bunker C fuel oil. Reports describe an oil discharge after sinking that contaminated shoreline, with cleanup continuing into November 1970 and intermittent leakage reported afterward.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1970-09-01T00:00:00.000Z",
+        "time_confidence": 0.3,
+        "event_date_utc": "1970-09-07T00:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Gulf of St. Lawrence (between Prince Edward Island and the Magdalen Islands), Canada",
+        "jurisdiction_level": "site",
+        "admin1": null,
+        "country": "CA",
+        "capital_used": null,
+        "lat": 47,
+        "lon": -61.5,
+        "precision": "proxy",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.3
+      },
+      "sources": [
+        {
+          "url": "https://admiraltylaw.com/1998/12/21/canada-v-j-d-irving-ltd/",
+          "source_name": "AdmiraltyLaw.com",
+          "published_at": "1998-12-21T00:00:00Z",
+          "headline": "Canada v. J.D. Irving, Ltd.",
+          "byline": null,
+          "accessed_utc": "2026-01-19T03:41:29.994Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://studylib.net/doc/18268876/incidents-involving-the-iopc-funds",
+          "source_name": "StudyLib (document mirror)",
+          "published_at": "1970-09-01T00:00:00.000Z",
+          "headline": "Incidents involving the IOPC Funds (document mirror)",
+          "byline": null,
+          "accessed_utc": "2026-01-19T03:41:29.994Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Irving Whale"
+        ],
+        "substances": [
+          "Bunker C fuel oil"
+        ],
+        "ecosystems": [
+          "coastline"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "the tank barge Irving Whale sank ... carrying Bunker C fuel oil",
+            "source_url": "https://studylib.net/doc/18268876/incidents-involving-the-iopc-funds"
+          },
+          {
+            "quote": "A quantity of oil was discharged immediately after sinking",
+            "source_url": "https://admiraltylaw.com/1998/12/21/canada-v-j-d-irving-ltd/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.35,
+        "category": 0.7,
+        "location": 0.3,
+        "summary_grounding": 0.35
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "secondary_sources_only",
+        "low_confidence_location"
+      ],
+      "dedupe": {
+        "cluster_hint": "irving-whale-gulf-st-lawrence-1970-09",
+        "fingerprint": "fp-1970-09-irving-whale-gulf-st-lawrence"
+      }
+    },
+    {
+      "event_id": "evt_1970-09_usgs_fourcorners_floods_19700905",
+      "title": "Flooding in Arizona and the Four Corners region from tropical moisture associated with Pacific storm Norma",
+      "description": "USGS reports that unusually large floods occurred in parts of Arizona, Utah, Colorado, and New Mexico in early September 1970 after tropical moisture associated with Pacific storm Norma interacted with a cold front. The event produced very heavy precipitation and resulted in damaging flooding, including fatalities in affected areas.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1970-09-05T12:00:00Z",
+        "event_end": "1970-09-07T12:00:00Z",
+        "reported_at": "1970-09-01T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1970-09-06T00:00:00Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "United States (Four Corners region and Arizona)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://pubs.usgs.gov/publication/wsp2052",
+          "source_name": "USGS Publications Warehouse",
+          "published_at": "1970-09-01T00:00:00.000Z",
+          "headline": "Water-Supply Paper 2052 (Floods September 1970 in Arizona, Utah, Colorado, and New Mexico)",
+          "byline": null,
+          "accessed_utc": "2026-01-19T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.usgs.gov/publications/floods-september-1970-arizona-utah-colorado-and-new-mexico",
+          "source_name": "U.S. Geological Survey (USGS)",
+          "published_at": "1970-09-01T00:00:00.000Z",
+          "headline": "Floods September 1970 in Arizona, Utah, Colorado, and New Mexico",
+          "byline": null,
+          "accessed_utc": "2026-01-19T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Geological Survey (USGS)"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Floods September 1970 in Arizona, Utah, Colorado, and New Mexico",
+            "source_url": "https://www.usgs.gov/publications/floods-september-1970-arizona-utah-colorado-and-new-mexico"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.8,
+        "location": 0.55,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "USGS September 1970 Four Corners floods",
+        "fingerprint": "fp_1970-09_us_floods_fourcorners_19700905"
+      }
+    },
+    {
+      "event_id": "evt_1970-09_usgs_fourcorners_floods_19700912",
+      "title": "Second mid-September 1970 storm causes additional flooding in the Four Corners region",
+      "description": "USGS documentation of September 1970 flooding in Arizona, Utah, Colorado, and New Mexico includes a second storm period in mid-September that produced additional flooding. Reported impacts were generally less severe than the early-September floods but still caused damage in the region.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1970-09-12T12:00:00Z",
+        "event_end": "1970-09-14T12:00:00Z",
+        "reported_at": "1970-09-01T00:00:00.000Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "1970-09-13T00:00:00Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "United States (Four Corners region)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.5
+      },
+      "sources": [
+        {
+          "url": "https://pubs.usgs.gov/publication/wsp2052",
+          "source_name": "USGS Publications Warehouse",
+          "published_at": "1970-09-01T00:00:00.000Z",
+          "headline": "Water-Supply Paper 2052 (Floods September 1970 in Arizona, Utah, Colorado, and New Mexico)",
+          "byline": null,
+          "accessed_utc": "2026-01-19T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.usgs.gov/publications/floods-september-1970-arizona-utah-colorado-and-new-mexico",
+          "source_name": "U.S. Geological Survey (USGS)",
+          "published_at": "1970-09-01T00:00:00.000Z",
+          "headline": "Floods September 1970 in Arizona, Utah, Colorado, and New Mexico",
+          "byline": null,
+          "accessed_utc": "2026-01-19T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Geological Survey (USGS)"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Floods September 1970 in Arizona, Utah, Colorado, and New Mexico",
+            "source_url": "https://www.usgs.gov/publications/floods-september-1970-arizona-utah-colorado-and-new-mexico"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.56,
+        "category": 0.8,
+        "location": 0.5,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "USGS September 1970 Four Corners floods",
+        "fingerprint": "fp_1970-09_us_floods_fourcorners_19700912"
+      }
+    },
+    {
+      "event_id": "evt_1970-09_noaa_felice_tx_19700915",
+      "title": "Tropical Storm Felice landfall near Gilchrist, Texas with surge and heavy rain impacts",
+      "description": "NWS Lake Charles event documentation describes Tropical Storm Felice forming in September 1970, strengthening in the Gulf of Mexico, and making landfall near Gilchrist, Texas. The storm produced coastal storm surge and heavy rainfall with impacts across southeast Texas and parts of southwest Louisiana.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1970-09-11T12:00:00Z",
+        "event_end": "1970-09-19T12:00:00Z",
+        "reported_at": "1970-09-01T00:00:00.000Z",
+        "time_confidence": 0.65,
+        "event_date_utc": "1970-09-15T00:00:00Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "United States (Texas upper coast and southwest Louisiana)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.weather.gov/lch/1970Felice",
+          "source_name": "NOAA/NWS Weather.gov (Lake Charles, LA)",
+          "published_at": "1970-09-01T00:00:00.000Z",
+          "headline": "Tropical Storm Felice (1970)",
+          "byline": null,
+          "accessed_utc": "2026-01-19T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.weather.gov/lch/1970Felice-Surge",
+          "source_name": "NOAA/NWS Weather.gov (Lake Charles, LA)",
+          "published_at": "1970-09-01T00:00:00.000Z",
+          "headline": "Tropical Storm Felice (1970) - Storm Surge",
+          "byline": null,
+          "accessed_utc": "2026-01-19T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA National Weather Service (NWS)"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Tropical Storm Felice (1970)",
+            "source_url": "https://www.weather.gov/lch/1970Felice"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.8,
+        "location": 0.55,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Tropical Storm Felice (1970) impacts",
+        "fingerprint": "fp_1970-09_us_felice_19700915"
+      }
+    },
+    {
+      "event_id": "evt_1970-09_noaa_greta_fl_19700926",
+      "title": "Tropical Storm Greta (1970) brings heavy rainfall to Florida after forming in the Bahamas",
+      "description": "NOAA/WPC rainfall documentation for Tropical Storm Greta (1970) indicates the system formed from a low in the Bahamas and contributed to heavy rainfall in parts of Florida. The event began in late September 1970 and continued into early October, with moisture interacting with frontal boundaries to produce significant totals.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1970-09-26T12:00:00Z",
+        "event_end": "1970-10-01T12:00:00Z",
+        "reported_at": "1970-09-26T00:00:00Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "1970-09-26T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Bahamas and Florida, United States",
+        "jurisdiction_level": "supranational",
+        "admin1": null,
+        "country": null,
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "proxy",
+        "location_basis": "manual_override",
+        "location_confidence": 0.35
+      },
+      "sources": [
+        {
+          "url": "https://www.wpc.ncep.noaa.gov/tropical/rain/greta1970.html",
+          "source_name": "NOAA Weather Prediction Center (WPC)",
+          "published_at": "1970-09-26T00:00:00Z",
+          "headline": "Tropical Storm Greta (1970) - Rainfall Summary",
+          "byline": null,
+          "accessed_utc": "2026-01-19T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA Weather Prediction Center (WPC)"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Tropical Storm Greta 1970",
+            "source_url": "https://www.wpc.ncep.noaa.gov/tropical/rain/greta1970.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.5,
+        "category": 0.75,
+        "location": 0.35,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check",
+        "low_confidence_location"
+      ],
+      "dedupe": {
+        "cluster_hint": "Tropical Storm Greta (1970) rainfall",
+        "fingerprint": "fp_1970-09_greta_19700926"
+      }
+    },
+    {
+      "event_id": "fires_us_ca_sandiego_laguna_fire_1970-09-26",
+      "title": "Laguna Fire ignites in eastern San Diego County (Cleveland National Forest)",
+      "description": "A wind-driven brush fire known as the Laguna Fire ignited in the Mount Laguna area of eastern San Diego County during late September 1970 Santa Ana conditions. Reports describe rapid spread toward populated areas including the outskirts of El Cajon and Spring Valley.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1970-09-26T00:00:00Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "1970-09-26T00:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Laguna Mountains (Mount Laguna area), San Diego County, California, United States",
+        "jurisdiction_level": "site",
+        "admin1": "California",
+        "country": "US",
+        "capital_used": null,
+        "lat": 32.862,
+        "lon": -116.422,
+        "precision": "neighborhood",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://wildfiretoday.com/laguna-fire-september-26-1970/",
+          "source_name": "Wildfire Today",
+          "published_at": "1970-09-26T00:00:00Z",
+          "headline": "Laguna Fire September 26, 1970",
+          "byline": null,
+          "accessed_utc": "2026-01-19T03:43:03.216Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://crestcahistory.com/2019/09/21/the-laguna-fire-1970/",
+          "source_name": "Crestline/El Cajon History (crestcahistory.com)",
+          "published_at": "2019-09-21T00:00:00Z",
+          "headline": "The Laguna Fire (1970)",
+          "byline": null,
+          "accessed_utc": "2026-01-19T03:43:03.216Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [
+          "chaparral",
+          "brushland"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Laguna Fire September 26, 1970",
+            "source_url": "https://wildfiretoday.com/laguna-fire-september-26-1970/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.85,
+        "location": 0.6,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "1970 Southern California late-September firestorm (Laguna/Clampitt/Wright)",
+        "fingerprint": "fires|laguna fire ignites in eastern san diego county (cleveland national forest)|laguna mountains|1970-09-26"
+      }
+    },
+    {
+      "event_id": "fires_us_ca_losangeles_clampitt_fire_1970-09-25",
+      "title": "Clampitt Fire ignites near Newhall Pass and runs toward the Malibu coast",
+      "description": "The Clampitt Fire was reported to have started near the Newhall Pass area on September 25, 1970. Driven by strong Santa Ana winds, it made a rapid run toward the coast and is often discussed in connection with other fires in Malibu Canyon during the same period.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1970-09-25T00:00:00Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "1970-09-25T00:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Newhall Pass, Los Angeles County, California, United States",
+        "jurisdiction_level": "site",
+        "admin1": "California",
+        "country": "US",
+        "capital_used": null,
+        "lat": 34.336,
+        "lon": -118.496,
+        "precision": "neighborhood",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://scvhistory.com/gif/galleries/fire092570/",
+          "source_name": "SCVHistory.com",
+          "published_at": "1970-09-25T00:00:00Z",
+          "headline": "Fire 09/25/70 (gallery)",
+          "byline": null,
+          "accessed_utc": "2026-01-19T03:43:03.216Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.hometownstation.com/santa-clarita-news/community-news/today-in-scv-history/today-in-scv-history-september-25-1970-lagasse-family-saves-mentryville-from-clampitt-fire-565581",
+          "source_name": "KHTS Hometown Station",
+          "published_at": "1970-09-25T00:00:00Z",
+          "headline": "Today in SCV History: September 25, 1970 | Lagasse Family Saves Mentryville From Clampitt Fire",
+          "byline": null,
+          "accessed_utc": "2026-01-19T03:43:03.216Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [
+          "chaparral"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "...saves Mentryville from Clampitt Fire",
+            "source_url": "https://www.hometownstation.com/santa-clarita-news/community-news/today-in-scv-history/today-in-scv-history-september-25-1970-lagasse-family-saves-mentryville-from-clampitt-fire-565581"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.52,
+        "category": 0.85,
+        "location": 0.55,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "1970 Southern California late-September firestorm (Laguna/Clampitt/Wright)",
+        "fingerprint": "fires|clampitt fire ignites near newhall pass and runs toward the malibu coast|newhall pass|1970-09-25"
+      }
+    },
+    {
+      "event_id": "fires_us_ca_losangeles_wright_fire_1970-09-25",
+      "title": "Wright Fire burns in Malibu Canyon area during late-September 1970 firestorm",
+      "description": "A wildfire often referred to as the Wright Fire burned in the Malibu Canyon area during late September 1970. It is frequently cited alongside the Clampitt Fire in accounts of the Newhall-to-Malibu firestorm.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1970-09-25T00:00:00Z",
+        "time_confidence": 0.45,
+        "event_date_utc": "1970-09-25T00:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Malibu Canyon, Los Angeles County, California, United States",
+        "jurisdiction_level": "site",
+        "admin1": "California",
+        "country": "US",
+        "capital_used": null,
+        "lat": 34.0406,
+        "lon": -118.7076,
+        "precision": "neighborhood",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.5
+      },
+      "sources": [
+        {
+          "url": "https://malibutimes.com/article_5bc46f69-1861-5afa-91bb-f6d0da749022",
+          "source_name": "The Malibu Times",
+          "published_at": "1970-09-25T00:00:00Z",
+          "headline": "article_5bc46f69-1861-5afa-91bb-f6d0da749022",
+          "byline": null,
+          "accessed_utc": "2026-01-19T03:43:03.216Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://scvhistory.com/gif/galleries/fire092570/",
+          "source_name": "SCVHistory.com",
+          "published_at": "1970-09-25T00:00:00Z",
+          "headline": "Fire 09/25/70 (gallery)",
+          "byline": null,
+          "accessed_utc": "2026-01-19T03:43:03.216Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [
+          "chaparral"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "...part of the combined Newhall-to-Malibu firestorm...",
+            "source_url": "https://scvhistory.com/gif/galleries/fire092570/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.45,
+        "category": 0.85,
+        "location": 0.5,
+        "summary_grounding": 0.35
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "1970 Southern California late-September firestorm (Laguna/Clampitt/Wright)",
+        "fingerprint": "fires|wright fire burns in malibu canyon area during late-september 1970 firestorm|malibu canyon|1970-09-25"
+      }
+    },
+    {
+      "event_id": "evt-19700925-san-pablo-bay-nwr-negotiations",
+      "title": "Interior Department begins negotiations to establish San Pablo Bay National Wildlife Refuge",
+      "description": "The U.S. Department of the Interior announced it was negotiating to establish a new federal wildlife preserve at San Pablo Bay. The proposed refuge would protect remaining waterfowl habitat and provide protection for depleted species including the California clapper rail and the salt marsh harvest mouse.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "1970-09-25T12:00:00Z",
+        "event_end": "1970-09-25T12:00:00Z",
+        "reported_at": "1970-09-25T12:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1970-09-25T12:00:00Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "San Pablo Bay (San Francisco Bay Area), California, USA",
+        "jurisdiction_level": "site",
+        "admin1": "California",
+        "country": "US",
+        "capital_used": null,
+        "lat": 38.0403,
+        "lon": -122.2697,
+        "precision": "neighborhood",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.fws.gov/sites/default/files/documents/historic-news-releases/1970/19700925A.PDF",
+          "source_name": "U.S. Fish and Wildlife Service (Historic News Release PDF)",
+          "published_at": "1970-09-25T12:00:00Z",
+          "headline": "19700925A",
+          "byline": null,
+          "accessed_utc": "2026-01-19T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Department of the Interior",
+          "U.S. Fish and Wildlife Service"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "San Pablo Bay",
+          "salt marsh habitat"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "announced negotiations to establish San Pablo Bay National Wildlife Refuge",
+            "source_url": "https://www.fws.gov/sites/default/files/documents/historic-news-releases/1970/19700925A.PDF"
+          },
+          {
+            "quote": "proposing about 12,000 acres of remaining waterfowl habitat",
+            "source_url": "https://www.fws.gov/sites/default/files/documents/historic-news-releases/1970/19700925A.PDF"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.8,
+        "location": 0.55,
+        "summary_grounding": 0.7
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "san_pablo_bay_nwr_1970-09-25",
+        "fingerprint": "san_pablo_bay_nwr|san_pablo_bay_ca|1970-09-25"
+      }
+    },
+    {
+      "event_id": "evt-19700921-anadromous-fish-conservation-act-report",
+      "title": "U.S. Fish and Wildlife Service publishes report on anadromous fish conservation program",
+      "description": "The U.S. Fish and Wildlife Service announced publication of a report describing a federal-state cooperative program under the Anadromous Fish Conservation Act. The report covered efforts and funding intended to conserve, develop, and enhance anadromous fish populations.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "1970-09-21T12:00:00Z",
+        "event_end": "1970-09-21T12:00:00Z",
+        "reported_at": "1970-09-21T12:00:00Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "1970-09-21T12:00:00Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "United States",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.8
+      },
+      "sources": [
+        {
+          "url": "https://www.fws.gov/sites/default/files/documents/historic-news-releases/1970/19700921B.PDF",
+          "source_name": "U.S. Fish and Wildlife Service (Historic News Release PDF)",
+          "published_at": "1970-09-21T12:00:00Z",
+          "headline": "19700921B",
+          "byline": null,
+          "accessed_utc": "2026-01-19T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Fish and Wildlife Service"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "anadromous fish habitats"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "publication of a report describing the federal-state cooperative program",
+            "source_url": "https://www.fws.gov/sites/default/files/documents/historic-news-releases/1970/19700921B.PDF"
+          },
+          {
+            "quote": "to conserve, develop, and enhance anadromous fish populations",
+            "source_url": "https://www.fws.gov/sites/default/files/documents/historic-news-releases/1970/19700921B.PDF"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.75,
+        "location": 0.8,
+        "summary_grounding": 0.65
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "anadromous_fish_conservation_act_report_1970-09-21",
+        "fingerprint": "anadromous_fish_report|us|1970-09-21"
+      }
+    },
+    {
+      "event_id": "evt_19700906_fws_endangered_species_import_restrictions_press_release",
+      "title": "U.S. Fish & Wildlife Service press release urges hunters to comply with Endangered Species Conservation Act import restrictions",
+      "description": "An archived federal news release from the Bureau of Sport Fisheries and Wildlife (U.S. Department of the Interior) advised U.S. hunters traveling abroad to comply with restrictions and regulations for importing foreign endangered wildlife into the United States. The release referenced penalties and requirements such as designated ports of entry for certain wildlife imports, framing it as a compliance and enforcement communication tied to endangered species protections.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "1970-09-06T12:00:00Z",
+        "event_end": "1970-09-06T12:00:00Z",
+        "reported_at": "1970-09-06T12:00:00Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "1970-09-06T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States (federal policy)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.8
+      },
+      "sources": [
+        {
+          "url": "https://www.fws.gov/sites/default/files/documents/historic-news-releases/1970/19700906.PDF",
+          "source_name": "U.S. Fish & Wildlife Service (historic news release PDF)",
+          "published_at": "1970-09-06T12:00:00Z",
+          "headline": "Historic news release (1970-09-06) on Endangered Species Conservation Act import restrictions",
+          "byline": null,
+          "accessed_utc": "2026-01-19T03:44:15.872Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Bureau of Sport Fisheries and Wildlife",
+          "U.S. Department of the Interior",
+          "U.S. Fish & Wildlife Service"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "advised U.S. hunters traveling abroad to comply with restrictions... governing importation of listed foreign endangered wildlife",
+            "source_url": "https://www.fws.gov/sites/default/files/documents/historic-news-releases/1970/19700906.PDF"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.66,
+        "category": 0.75,
+        "location": 0.8,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "paywalled_or_partial",
+        "date_ambiguous",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "FWS historic news release 1970-09-06 endangered species import restrictions",
+        "fingerprint": "fp_19700906_us_washingtondc_policy_regulation_endangered_species_import_restrictions"
+      }
+    }
+  ]
+}

@@ -1,0 +1,781 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_2023-08_normalize_2026-01-16T134123428Z",
+    "generated_utc": "2026-01-16T13:41:23.428Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "2023-08",
+    "window": {
+      "start_utc": "2023-08-01T00:00:00.000Z",
+      "end_utc": "2023-08-31T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "evt_20230802_fontanelle_ia_wastewater_overflow",
+      "title": "Fontanelle, Iowa wastewater overflow discharged about 500,000 gallons to creek",
+      "description": "After heavy rainfall, Fontanelle’s sewer system overflowed an estimated 500,000 gallons of untreated wastewater into a nearby creek that feeds the Middle Nodaway River. Iowa DNR investigated and indicated rainfall likely diluted the discharge.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2023-08-02T07:50:00.000Z",
+        "event_end": "2023-08-02T23:59:59.000Z",
+        "reported_at": "2023-08-03T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2023-08-02T12:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Fontanelle, Iowa, USA",
+        "jurisdiction_level": "city",
+        "admin1": "Iowa",
+        "country": "US",
+        "capital_used": null,
+        "lat": 41.2897,
+        "lon": -94.5611,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://iowacapitaldispatch.com/briefs/fontanelle-searches-for-cause-of-500000-gallon-wastewater-overflow/",
+          "source_name": "Iowa Capital Dispatch",
+          "published_at": "2023-08-03T00:00:00Z",
+          "headline": "Fontanelle searches for cause of 500,000-gallon wastewater overflow",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Iowa Department of Natural Resources"
+        ],
+        "substances": [
+          "untreated wastewater"
+        ],
+        "ecosystems": [
+          "Middle Nodaway River"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "about 500,000 gallons of untreated wastewater overflowed",
+            "source_url": "https://iowacapitaldispatch.com/briefs/fontanelle-searches-for-cause-of-500000-gallon-wastewater-overflow/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.63,
+        "category": 0.75,
+        "location": 0.7,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Fontanelle IA wastewater overflow Aug 2023",
+        "fingerprint": "fp_fontanelle_ia_wastewater_overflow_2023-08-02"
+      }
+    },
+    {
+      "event_id": "evt_20230825_garyville_la_marathon_refinery_fire",
+      "title": "Marathon Petroleum’s Garyville refinery fire sent smoke plume after naphtha leak",
+      "description": "A naphtha leak at Marathon Petroleum’s Garyville, Louisiana refinery ignited a fire and produced a heavy smoke plume. Authorities reported response actions including evacuations in the area and air-quality monitoring.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2023-08-25T00:00:00.000Z",
+        "event_end": "2023-08-25T23:59:59.000Z",
+        "reported_at": "2023-08-25T00:00:00Z",
+        "time_confidence": 0.45,
+        "event_date_utc": "2023-08-25T12:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Garyville, Louisiana, USA",
+        "jurisdiction_level": "city",
+        "admin1": "Louisiana",
+        "country": "US",
+        "capital_used": null,
+        "lat": 30.0566,
+        "lon": -90.619,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.65
+      },
+      "sources": [
+        {
+          "url": "https://apnews.com/article/8acd26a19faee26206ba61d570ac0b6a",
+          "source_name": "Associated Press",
+          "published_at": "2023-08-25T00:00:00Z",
+          "headline": "Fire at Marathon Petroleum refinery in Louisiana sends black smoke into air",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Marathon Petroleum"
+        ],
+        "substances": [
+          "naphtha",
+          "smoke"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "A naphtha leak ... ignited a fire and sent black smoke",
+            "source_url": "https://apnews.com/article/8acd26a19faee26206ba61d570ac0b6a"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.75,
+        "location": 0.65,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Marathon Garyville refinery fire Aug 2023",
+        "fingerprint": "fp_garyville_la_marathon_fire_2023-08-25"
+      }
+    },
+    {
+      "event_id": "evt_2023-08_us_gulf_coast_record_warmth",
+      "title": "Record to near-record warmth along the U.S. Gulf Coast in August 2023 (NOAA NCEI)",
+      "description": "NOAA’s National Centers for Environmental Information reported near-record to record-warm temperatures along the Gulf of Mexico during August 2023, including numerous counties with their warmest August on record.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2023-08-01T00:00:00.000Z",
+        "event_end": "2023-08-31T23:59:59.000Z",
+        "reported_at": "2023-09-01T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": null,
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "United States",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.ncei.noaa.gov/news/national-climate-202308",
+          "source_name": "NOAA NCEI",
+          "published_at": "2023-09-01T00:00:00.000Z",
+          "headline": "National Climate Report - August 2023",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA",
+          "NCEI"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "near-record to record-warm temperatures were observed along the Gulf of Mexico",
+            "source_url": "https://www.ncei.noaa.gov/news/national-climate-202308"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.8,
+        "location": 0.6,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "NOAA NCEI August 2023 Gulf Coast warmth",
+        "fingerprint": "us_gulf_coast_record_warmth_2023-08_country"
+      }
+    },
+    {
+      "event_id": "evt_2023-08_mobile_pensacola_heat_records",
+      "title": "Record-warm August 2023 in Mobile, Alabama and Pensacola, Florida (NWS climate summaries)",
+      "description": "National Weather Service climate summaries reported record-warm average temperatures for August 2023 at Mobile, Alabama and Pensacola, Florida, along with multiple daily record highs and record high minimums. The summaries also noted worsening dryness and drought conditions toward the end of the month.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2023-08-01T00:00:00.000Z",
+        "event_end": "2023-08-31T23:59:59.000Z",
+        "reported_at": "2023-09-01T00:00:00.000Z",
+        "time_confidence": 0.55,
+        "event_date_utc": null,
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Mobile, Alabama & Pensacola, Florida, USA",
+        "jurisdiction_level": "city",
+        "admin1": "Alabama/Florida",
+        "country": "US",
+        "capital_used": null,
+        "lat": 30.6954,
+        "lon": -88.0399,
+        "precision": "city",
+        "location_basis": "manual_override",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.weather.gov/mob/August2023climatesummaries",
+          "source_name": "NWS Mobile/Pensacola (weather.gov)",
+          "published_at": "2023-09-01T00:00:00.000Z",
+          "headline": "August 2023 Climate Summaries",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "National Weather Service"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "August 2023 Climate Summaries",
+            "source_url": "https://www.weather.gov/mob/August2023climatesummaries"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.75,
+        "location": 0.5,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "NWS Mobile/Pensacola August 2023 heat records",
+        "fingerprint": "mobile_pensacola_heat_records_2023-08_city"
+      }
+    },
+    {
+      "event_id": "evt_2023-08_hurricane_idalia_se_us",
+      "title": "Hurricane Idalia impacts the southeastern United States (landfall Aug 30, 2023)",
+      "description": "Hurricane Idalia formed in late August 2023 and made landfall in Florida’s Big Bend on August 30. It brought storm surge, heavy rainfall, and strong winds affecting parts of Florida, Georgia, and the Carolinas.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2023-08-26T00:00:00.000Z",
+        "event_end": "2023-08-31T23:59:59.000Z",
+        "reported_at": "2023-08-30T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": null,
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Southeastern United States",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://disasters.nasa.gov/what-we-do/disasters/disasters-activations/hurricane-idalia-2023",
+          "source_name": "NASA Disasters Program",
+          "published_at": "2023-08-30T00:00:00.000Z",
+          "headline": "Hurricane Idalia 2023 (Disasters Activation)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.wpc.ncep.noaa.gov/tropical/rain/idalia2023.html",
+          "source_name": "NOAA NCEP WPC",
+          "published_at": "2023-08-30T00:00:00.000Z",
+          "headline": "Hurricane Idalia Rainfall Summary",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NASA",
+          "NOAA",
+          "NCEP",
+          "Weather Prediction Center"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Hurricane Idalia 2023",
+            "source_url": "https://disasters.nasa.gov/what-we-do/disasters/disasters-activations/hurricane-idalia-2023"
+          },
+          {
+            "quote": "idalia2023",
+            "source_url": "https://www.wpc.ncep.noaa.gov/tropical/rain/idalia2023.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.63,
+        "category": 0.8,
+        "location": 0.55,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Hurricane Idalia Aug 2023 SE US impacts",
+        "fingerprint": "hurricane_idalia_se_us_2023-08_country"
+      }
+    },
+    {
+      "event_id": "fires_2023-08_maui-lahaina-wildfires",
+      "title": "Maui wildfires including Lahaina destroy structures and raise toxic smoke/contamination concerns",
+      "description": "Fast-moving wildfires burned on Maui in August 2023, including the Lahaina fire, causing extensive destruction and prompting evacuations. Reporting noted concerns about hazardous smoke and potential lingering contamination during recovery efforts.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2023-08-08T00:00:00.000Z",
+        "event_end": "2023-08-31T23:59:59.000Z",
+        "reported_at": "2023-08-09T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2023-08-08T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Lahaina, Maui, Hawaii, USA",
+        "jurisdiction_level": "site",
+        "admin1": "Hawaii",
+        "country": "US",
+        "capital_used": null,
+        "lat": 20.8783,
+        "lon": -156.6825,
+        "precision": "city",
+        "location_basis": "manual_override",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://apnews.com/article/2a2e25c013c9fce39041718848028c3b",
+          "source_name": "Associated Press",
+          "published_at": "2023-08-09T00:00:00.000Z",
+          "headline": "People in Hawaii flee into ocean to escape wildfires that are burning a popular Maui tourist town",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.local10.com/news/national/2023/08/09/people-in-hawaii-flee-into-ocean-to-escape-wildfires-that-are-burning-a-popular-maui-tourist-town/",
+          "source_name": "Local 10 News",
+          "published_at": "2023-08-09T00:00:00.000Z",
+          "headline": "People in Hawaii flee into ocean to escape wildfires that are burning a popular Maui tourist town",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "People in Hawaii fled into the ocean to escape fast-moving wildfires burning a popular Maui tourist town.",
+            "source_url": "https://apnews.com/article/2a2e25c013c9fce39041718848028c3b"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.85,
+        "location": 0.6,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "maui-lahaina-wildfires-2023-08",
+        "fingerprint": "fires|maui_lahaina|2023-08-08"
+      }
+    },
+    {
+      "event_id": "2023-08-us-fl-keys-coral-bleaching-heatwave",
+      "title": "Florida Keys coral bleaching amid extreme marine heatwave",
+      "description": "During August 2023, extreme ocean heat in the Florida Keys region drove significant coral bleaching, with reports of widespread bleaching and some coral rescue/relocation efforts intended to protect remaining genotypes and nursery stocks.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2023-08-01T00:00:00.000Z",
+        "event_end": "2023-08-31T23:59:59.000Z",
+        "reported_at": "2023-08-01T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2023-08-01T00:00:00.000Z",
+        "event_date_precision": "month"
+      },
+      "location": {
+        "name": "Florida Keys National Marine Sanctuary, Florida, USA",
+        "jurisdiction_level": "site",
+        "admin1": "Florida",
+        "country": "US",
+        "capital_used": null,
+        "lat": 24.7095,
+        "lon": -81.0814,
+        "precision": "proxy",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.4
+      },
+      "sources": [
+        {
+          "url": "https://sanctuaries.noaa.gov/news/aug23/florida-corals-relocated-heatwave.html",
+          "source_name": "NOAA National Marine Sanctuaries",
+          "published_at": "2023-08-01T00:00:00.000Z",
+          "headline": "Florida corals relocated amid heatwave",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://apnews.com/article/45e03ca1a6521e46720119b799e96116",
+          "source_name": "Associated Press",
+          "published_at": "2023-08-01T00:00:00.000Z",
+          "headline": "AP report on Florida Keys coral bleaching / heat",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://floridakeys.noaa.gov/coral-bleaching-faqs.html",
+          "source_name": "Florida Keys National Marine Sanctuary (NOAA)",
+          "published_at": "2023-08-01T00:00:00.000Z",
+          "headline": "Coral bleaching FAQs",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA",
+          "Florida Keys National Marine Sanctuary"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "Coral reefs"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.75,
+        "location": 0.4,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "low_confidence_location",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Florida Keys coral bleaching Aug 2023",
+        "fingerprint": "fp_2023-08_us_fl_keys_coral_bleaching"
+      }
+    },
+    {
+      "event_id": "2023-08-us-ga-savannah-yellow-legged-hornet-detection",
+      "title": "First live US detection of invasive yellow-legged hornet confirmed near Savannah, Georgia",
+      "description": "Georgia officials and partners reported confirming the first live detection of a yellow-legged hornet (Vespa velutina) in the United States near the Savannah area and initiated response actions due to potential risks to pollinators and beekeeping.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2023-08-09T00:00:00.000Z",
+        "event_end": "2023-08-15T23:59:59.000Z",
+        "reported_at": "2023-08-09T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2023-08-09T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Savannah area, Georgia, USA",
+        "jurisdiction_level": "city",
+        "admin1": "Georgia",
+        "country": "US",
+        "capital_used": null,
+        "lat": 32.0809,
+        "lon": -81.0912,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.agr.ga.gov/pr/discovery-yellow-legged-hornet-confirmed-georgia-first-time",
+          "source_name": "Georgia Department of Agriculture",
+          "published_at": "2023-08-09T00:00:00.000Z",
+          "headline": "Discovery of yellow-legged hornet confirmed in Georgia for first time",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Georgia Department of Agriculture",
+          "USDA APHIS",
+          "University of Georgia"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.65,
+        "category": 0.8,
+        "location": 0.6,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Yellow-legged hornet first live detection Savannah GA Aug 2023",
+        "fingerprint": "fp_2023-08_us_ga_savannah_vespa_velutina_detection"
+      }
+    },
+    {
+      "event_id": "2023-08-us-ga-savannah-yellow-legged-hornet-nest-eradicated",
+      "title": "Yellow-legged hornet nest eradicated in Savannah area following detection",
+      "description": "Georgia officials reported locating and eradicating a yellow-legged hornet nest in the Savannah area after an initial detection, aiming to prevent the invasive species from establishing locally.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "2023-08-23T00:00:00.000Z",
+        "event_end": "2023-08-25T23:59:59.000Z",
+        "reported_at": "2023-08-23T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2023-08-23T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Savannah, Georgia, USA",
+        "jurisdiction_level": "city",
+        "admin1": "Georgia",
+        "country": "US",
+        "capital_used": null,
+        "lat": 32.0809,
+        "lon": -81.0912,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://www.agr.ga.gov/pr/yellow-legged-hornet-nest-eradicated-savannah-area",
+          "source_name": "Georgia Department of Agriculture",
+          "published_at": "2023-08-23T00:00:00.000Z",
+          "headline": "Yellow-legged hornet nest eradicated in Savannah area",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Georgia Department of Agriculture"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.67,
+        "category": 0.8,
+        "location": 0.7,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Yellow-legged hornet nest eradicated Savannah GA Aug 2023",
+        "fingerprint": "fp_2023-08_us_ga_savannah_vespa_velutina_eradication"
+      }
+    },
+    {
+      "event_id": "evt_20230829_wotus_sackett_final_rule_us",
+      "title": "EPA and Army Corps amend WOTUS rule to conform with Sackett v. EPA",
+      "description": "The U.S. Environmental Protection Agency and the Department of the Army issued a final rule amending the 2023 definition of “waters of the United States” to align with the Supreme Court’s decision in Sackett v. EPA. The change narrows which waters and wetlands are covered under the Clean Water Act.",
+      "category_primary": "policy_regulation",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "2023-08-29T00:00:00.000Z",
+        "event_end": "2023-08-29T23:59:59.000Z",
+        "reported_at": "2023-08-29T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2023-08-29T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States (federal regulatory action)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.8
+      },
+      "sources": [
+        {
+          "url": "https://www.epa.gov/newsreleases/conform-recent-supreme-court-decision-epa-and-army-amend-waters-united-states-rule",
+          "source_name": "U.S. Environmental Protection Agency",
+          "published_at": "2023-08-29T00:00:00.000Z",
+          "headline": "To Conform with Recent Supreme Court Decision, EPA and Army Amend \"Waters of the United States\" Rule",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://apnews.com/article/a2101597f96ca9f0dcc6917832906b1e",
+          "source_name": "Associated Press",
+          "published_at": "2023-08-29T00:00:00.000Z",
+          "headline": "U.S. regulators update definition of waterways subject to federal oversight",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Environmental Protection Agency (EPA)",
+          "U.S. Department of the Army",
+          "U.S. Army Corps of Engineers",
+          "U.S. Supreme Court"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "wetlands"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "EPA and the Department of the Army today announced a final rule to amend the 2023 definition of “waters of the United States.”",
+            "source_url": "https://www.epa.gov/newsreleases/conform-recent-supreme-court-decision-epa-and-army-amend-waters-united-states-rule"
+          },
+          {
+            "quote": "The final rule makes targeted amendments to conform the rule with the Supreme Court’s decision in Sackett v. EPA.",
+            "source_url": "https://www.epa.gov/newsreleases/conform-recent-supreme-court-decision-epa-and-army-amend-waters-united-states-rule"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.75,
+        "category": 0.85,
+        "location": 0.8,
+        "summary_grounding": 0.7
+      },
+      "quality_flags": [
+        "needs_dedupe_check",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "US WOTUS Sackett conforming amendments final rule (Aug 2023)",
+        "fingerprint": "fp_20230829_us_wotus_sackett_policy_regulation"
+      }
+    }
+  ]
+}

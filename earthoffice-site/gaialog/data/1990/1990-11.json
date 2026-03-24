@@ -1,0 +1,816 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_1990-11_normalize_2026-01-17T165937692Z",
+    "generated_utc": "2026-01-17T16:59:37.692Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "1990-11",
+    "window": {
+      "start_utc": "1990-11-01T00:00:00.000Z",
+      "end_utc": "1990-11-30T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "1990-11_berge-broker_oil-spill_north-atlantic",
+      "title": "Berge Broker oil spill reported in North Atlantic",
+      "description": "Reports citing U.S. Coast Guard statements said the Norwegian-flagged tanker Berge Broker spilled an estimated 4–6 million gallons of crude oil in the North Atlantic after encountering rough seas. The spill was described as far offshore, and responders indicated no active response was underway at the time due to limited perceived threat to shorelines or people.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1990-11-13T12:00:00Z",
+        "event_end": "1990-11-13T12:00:00Z",
+        "reported_at": "1990-11-17T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1990-11-13T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "North Atlantic Ocean (offshore southeast of Nova Scotia)",
+        "jurisdiction_level": "global_proxy",
+        "admin1": null,
+        "country": null,
+        "capital_used": null,
+        "lat": 44,
+        "lon": -50,
+        "precision": "proxy",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.35
+      },
+      "sources": [
+        {
+          "url": "https://www.washingtonpost.com/archive/national/1990/11/17/tanker-oil-spill-in-atlantic-ocean-reported/20f975cf-b055-427a-ad86-8e47b849358d/",
+          "source_name": "The Washington Post",
+          "published_at": "1990-11-17T00:00:00Z",
+          "headline": "Tanker Oil Spill In Atlantic Ocean Reported",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.latimes.com/archives/la-xpm-1990-11-17-mn-4292-story.html",
+          "source_name": "Los Angeles Times",
+          "published_at": "1990-11-17T00:00:00Z",
+          "headline": "Tanker Oil Spill in Atlantic Ocean Reported",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Coast Guard"
+        ],
+        "substances": [
+          "crude oil"
+        ],
+        "ecosystems": [
+          "North Atlantic Ocean"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "spilled an estimated 4 million to 6 million gallons of crude oil",
+            "source_url": "https://www.washingtonpost.com/archive/national/1990/11/17/tanker-oil-spill-in-atlantic-ocean-reported/20f975cf-b055-427a-ad86-8e47b849358d/"
+          },
+          {
+            "quote": "about 700 miles southeast of Nova Scotia",
+            "source_url": "https://www.latimes.com/archives/la-xpm-1990-11-17-mn-4292-story.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.58,
+        "category": 0.85,
+        "location": 0.35,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "paywalled_or_partial",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Berge Broker oil spill North Atlantic Nov 1990",
+        "fingerprint": "berge-broker|north-atlantic|1990-11-13"
+      }
+    },
+    {
+      "event_id": "evt_19901112_mike_ruping_central_philippines_upi",
+      "title": "Super Typhoon Mike (Ruping) impacts the central Philippines",
+      "description": "Reporting in mid-November 1990 describes Super Typhoon Mike striking the central Philippines with damaging winds and flooding and prompting evacuations. Follow-up reporting cited rising fatalities and widespread displacement before the storm moved on toward Vietnam.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1990-11-12T12:00:00Z",
+        "event_end": "1990-11-15T12:00:00Z",
+        "reported_at": "1990-11-12T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1990-11-12T12:00:00Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Philippines (national impact reported; central regions mentioned)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "PH",
+        "capital_used": "Manila",
+        "lat": 14.5995,
+        "lon": 120.9842,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.65
+      },
+      "sources": [
+        {
+          "url": "https://www.upi.com/Archives/1990/11/12/Super-typhoon-hits-central-Philippines/9284658386000/",
+          "source_name": "UPI",
+          "published_at": "1990-11-12T00:00:00Z",
+          "headline": "Super typhoon hits central Philippines",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.upi.com/Archives/1990/11/15/Typhoon-hits-Vietnam-after-killing-176-in-Philippines/2697658645200/",
+          "source_name": "UPI",
+          "published_at": "1990-11-15T00:00:00Z",
+          "headline": "Typhoon hits Vietnam after killing 176 in Philippines",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Super typhoon hits central Philippines",
+            "source_url": "https://www.upi.com/Archives/1990/11/12/Super-typhoon-hits-central-Philippines/9284658386000/"
+          },
+          {
+            "quote": "Typhoon hits Vietnam after killing 176 in Philippines",
+            "source_url": "https://www.upi.com/Archives/1990/11/15/Typhoon-hits-Vietnam-after-killing-176-in-Philippines/2697658645200/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.68,
+        "category": 0.9,
+        "location": 0.65,
+        "summary_grounding": 0.65
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Super Typhoon Mike (Ruping) Nov 1990 Philippines/Vietnam",
+        "fingerprint": "fp_mike_ruping_1990-11_ph"
+      }
+    },
+    {
+      "event_id": "evt_19901115_mike_ruping_northern_vietnam_upi",
+      "title": "Typhoon Mike makes landfall in northern Vietnam",
+      "description": "A November 15, 1990 report states Typhoon Mike struck northern Vietnam after crossing the Philippines, indicating continued hazardous cyclone conditions in Vietnam. The report frames this as a continuation of the same storm system moving westward.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1990-11-15T12:00:00Z",
+        "event_end": "1990-11-15T12:00:00Z",
+        "reported_at": "1990-11-15T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1990-11-15T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Vietnam (reported landfall in the north)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "VN",
+        "capital_used": "Hanoi",
+        "lat": 21.0278,
+        "lon": 105.8342,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.upi.com/Archives/1990/11/15/Typhoon-hits-Vietnam-after-killing-176-in-Philippines/2697658645200/",
+          "source_name": "UPI",
+          "published_at": "1990-11-15T00:00:00Z",
+          "headline": "Typhoon hits Vietnam after killing 176 in Philippines",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Typhoon hits Vietnam after killing 176 in Philippines",
+            "source_url": "https://www.upi.com/Archives/1990/11/15/Typhoon-hits-Vietnam-after-killing-176-in-Philippines/2697658645200/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.66,
+        "category": 0.9,
+        "location": 0.6,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Super Typhoon Mike (Ruping) Nov 1990 Philippines/Vietnam",
+        "fingerprint": "fp_mike_ruping_1990-11_vn"
+      }
+    },
+    {
+      "event_id": "evt_19901129_typhoon_page_japan_upi",
+      "title": "Typhoon Page threatens Japan with possible landfall",
+      "description": "A November 29, 1990 report describes Typhoon Page buffeting remote Pacific islands near Okinawa and says Japan’s meteorological agency expected the storm could make landfall in central Japan the next day. The reporting presents this as an imminent high-impact weather threat.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1990-11-29T12:00:00Z",
+        "event_end": "1990-11-29T12:00:00Z",
+        "reported_at": "1990-11-29T00:00:00Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "1990-11-29T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Japan (forecast landfall in central Japan)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "JP",
+        "capital_used": "Tokyo",
+        "lat": 35.6762,
+        "lon": 139.6503,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.upi.com/Archives/1990/11/29/Powerful-typhoon-Page-aims-at-Japan-mainland/4843659854800/",
+          "source_name": "UPI",
+          "published_at": "1990-11-29T00:00:00Z",
+          "headline": "Powerful typhoon Page aims at Japan mainland",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Japan Meteorological Agency"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Powerful typhoon Page aims at Japan mainland",
+            "source_url": "https://www.upi.com/Archives/1990/11/29/Powerful-typhoon-Page-aims-at-Japan-mainland/4843659854800/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.64,
+        "category": 0.9,
+        "location": 0.6,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "Typhoon Page Nov 1990 Japan",
+        "fingerprint": "fp_typhoon_page_1990-11_jp"
+      }
+    },
+    {
+      "event_id": "evt_19901106_iran_fars_darab_earthquake_upi_wapo",
+      "title": "Earthquake near Darab, Fars Province, Iran reported to cause casualties and village damage",
+      "description": "News reports said a strong earthquake struck southern Iran near Darab in Fars Province on November 6, 1990. The reports described heavy damage across villages and casualties and displacement in the area.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1990-11-06T12:00:00Z",
+        "event_end": "1990-11-06T12:00:00Z",
+        "reported_at": "1990-11-06T00:00:00Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "1990-11-06T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Near Darab, Fars Province, Iran",
+        "jurisdiction_level": "site",
+        "admin1": "Fars Province",
+        "country": "IR",
+        "capital_used": null,
+        "lat": 28.7519,
+        "lon": 54.5446,
+        "precision": "admin1",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.upi.com/Archives/1990/11/06/Major-earthquake-hits-southern-Iran/3867657867600/",
+          "source_name": "UPI",
+          "published_at": "1990-11-06T00:00:00Z",
+          "headline": "Major earthquake hits southern Iran",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.upi.com/Archives/1990/11/07/Major-earthquake-hits-southern-Iran/3750657954000/ph",
+          "source_name": "UPI",
+          "published_at": "1990-11-07T00:00:00Z",
+          "headline": "Major earthquake hits southern Iran",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.washingtonpost.com/archive/politics/1990/11/07/powerful-quake-hits-villages-in-southern-iran/cc691433-7aa9-4c03-9ee7-ca783e931a12/",
+          "source_name": "The Washington Post",
+          "published_at": "1990-11-07T00:00:00Z",
+          "headline": "Powerful Quake Hits Villages in Southern Iran",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "UPI",
+          "The Washington Post"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Major earthquake hits southern Iran",
+            "source_url": "https://www.upi.com/Archives/1990/11/06/Major-earthquake-hits-southern-Iran/3867657867600/"
+          },
+          {
+            "quote": "Powerful Quake Hits Villages in Southern Iran",
+            "source_url": "https://www.washingtonpost.com/archive/politics/1990/11/07/powerful-quake-hits-villages-in-southern-iran/cc691433-7aa9-4c03-9ee7-ca783e931a12/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.53,
+        "category": 0.8,
+        "location": 0.55,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "paywalled_or_partial",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "1990-11-06 Darab/Fars Iran earthquake (UPI/WaPo)",
+        "fingerprint": "fp_19901106_earthquake_near_darab_fars_iran"
+      }
+    },
+    {
+      "event_id": "1990-11-us-clean-air-act-amendments-1990",
+      "title": "U.S. Clean Air Act Amendments of 1990 signed into law",
+      "description": "President George H. W. Bush signed the Clean Air Act Amendments of 1990 into law, creating new federal air-pollution control programs. These included provisions addressing acid rain, urban smog/nonattainment, air toxics, and ozone-depleting substances.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "1990-11-15T12:00:00Z",
+        "event_end": "1990-11-15T12:00:00Z",
+        "reported_at": "1990-11-15T12:00:00Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "1990-11-15T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.95
+      },
+      "sources": [
+        {
+          "url": "https://www.congress.gov/bill/101st-congress/senate-bill/1630/all-actions-without-amendments",
+          "source_name": "Congress.gov",
+          "published_at": "1990-11-15T12:00:00Z",
+          "headline": "S.1630 - Clean Air Act Amendments of 1990 (all actions)",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.epa.gov/clean-air-act-overview/1990-clean-air-act-amendment-summary",
+          "source_name": "U.S. Environmental Protection Agency",
+          "published_at": "1990-11-15T12:00:00Z",
+          "headline": "1990 Clean Air Act Amendment Summary",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Congress",
+          "U.S. Environmental Protection Agency",
+          "White House"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": [
+          "George H. W. Bush"
+        ]
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "S. 1630 ... Clean Air Act Amendments of 1990",
+            "source_url": "https://www.congress.gov/bill/101st-congress/senate-bill/1630/all-actions-without-amendments"
+          },
+          {
+            "quote": "1990 amendments ... created major new programs to clean up air pollution",
+            "source_url": "https://www.epa.gov/clean-air-act-overview/1990-clean-air-act-amendment-summary"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.76,
+        "category": 0.9,
+        "location": 0.95,
+        "summary_grounding": 0.7
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "US Clean Air Act Amendments 1990 signed",
+        "fingerprint": "us-clean-air-act-amendments-1990|US|1990-11-15"
+      }
+    },
+    {
+      "event_id": "1990-11-uk-environmental-protection-act-1990-royal-assent",
+      "title": "UK Environmental Protection Act 1990 receives Royal Assent",
+      "description": "The UK Environmental Protection Act 1990 received Royal Assent, establishing frameworks for pollution control, waste regulation, and related environmental governance.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "1990-11-01T12:00:00Z",
+        "event_end": "1990-11-01T12:00:00Z",
+        "reported_at": "1990-11-01T12:00:00Z",
+        "time_confidence": 0.65,
+        "event_date_utc": "1990-11-01T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United Kingdom",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "GB",
+        "capital_used": "London",
+        "lat": 51.5074,
+        "lon": -0.1278,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.95
+      },
+      "sources": [
+        {
+          "url": "https://www.legislation.gov.uk/ukpga/1990/43",
+          "source_name": "legislation.gov.uk",
+          "published_at": "1990-11-01T12:00:00Z",
+          "headline": "Environmental Protection Act 1990",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.legislation.gov.uk/ukpga/1990/43/england",
+          "source_name": "legislation.gov.uk",
+          "published_at": "1990-11-01T12:00:00Z",
+          "headline": "Environmental Protection Act 1990 (as applicable in England)",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Parliament of the United Kingdom"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Environmental Protection Act 1990",
+            "source_url": "https://www.legislation.gov.uk/ukpga/1990/43"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.72,
+        "category": 0.9,
+        "location": 0.95,
+        "summary_grounding": 0.65
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "UK Environmental Protection Act 1990 Royal Assent",
+        "fingerprint": "uk-environmental-protection-act-1990|GB|1990-11-01"
+      }
+    },
+    {
+      "event_id": "1990-11-us-pollution-prevention-act-1990",
+      "title": "U.S. Pollution Prevention Act of 1990 enacted",
+      "description": "U.S. federal pollution-prevention provisions were enacted, establishing a national policy to prevent or reduce pollution at the source and expanding related program authorities.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "1990-11-05T12:00:00Z",
+        "event_end": "1990-11-05T12:00:00Z",
+        "reported_at": "1990-11-05T12:00:00Z",
+        "time_confidence": 0.45,
+        "event_date_utc": "1990-11-05T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.95
+      },
+      "sources": [
+        {
+          "url": "https://www.congress.gov/bill/101st-congress/house-bill/5931/all-info",
+          "source_name": "Congress.gov",
+          "published_at": "1990-11-05T12:00:00Z",
+          "headline": "H.R.5931 - (bill information)",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Congress"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "H.R. 5931 ... (bill information)",
+            "source_url": "https://www.congress.gov/bill/101st-congress/house-bill/5931/all-info"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.5,
+        "category": 0.85,
+        "location": 0.95,
+        "summary_grounding": 0.4
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "US Pollution Prevention Act 1990 enacted",
+        "fingerprint": "us-pollution-prevention-act-1990|US|1990-11-05"
+      }
+    },
+    {
+      "event_id": "1990-11-us-global-change-research-act-1990",
+      "title": "U.S. Global Change Research Act of 1990 signed into law",
+      "description": "The Global Change Research Act of 1990 became law, establishing the U.S. Global Change Research Program to coordinate federal research on global change and to support periodic assessments.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "1990-11-16T12:00:00Z",
+        "event_end": "1990-11-16T12:00:00Z",
+        "reported_at": "1990-11-16T12:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1990-11-16T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.95
+      },
+      "sources": [
+        {
+          "url": "https://www.congress.gov/bill/101st-congress/senate-bill/169",
+          "source_name": "Congress.gov",
+          "published_at": "1990-11-16T12:00:00Z",
+          "headline": "S.169 - Global Change Research Act of 1990",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Congress",
+          "U.S. Global Change Research Program"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "S. 169 ... Global Change Research Act of 1990",
+            "source_url": "https://www.congress.gov/bill/101st-congress/senate-bill/169"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.85,
+        "location": 0.95,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "US Global Change Research Act 1990 signed",
+        "fingerprint": "us-global-change-research-act-1990|US|1990-11-16"
+      }
+    },
+    {
+      "event_id": "1990-11-us-tongass-timber-reform-act-1990",
+      "title": "Tongass Timber Reform Act signed into law",
+      "description": "The Tongass Timber Reform Act became law, amending management provisions for the Tongass National Forest and increasing environmental protections affecting logging and related land-management practices.",
+      "category_primary": "policy_regulation",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "1990-11-28T12:00:00Z",
+        "event_end": "1990-11-28T12:00:00Z",
+        "reported_at": "1990-11-28T12:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1990-11-28T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Tongass National Forest, Alaska, United States",
+        "jurisdiction_level": "site",
+        "admin1": "Alaska",
+        "country": "US",
+        "capital_used": null,
+        "lat": 56.8,
+        "lon": -133.8,
+        "precision": "proxy",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.4
+      },
+      "sources": [
+        {
+          "url": "https://www.congress.gov/bill/101st-congress/house-bill/987/all-actions",
+          "source_name": "Congress.gov",
+          "published_at": "1990-11-28T12:00:00Z",
+          "headline": "H.R.987 - Tongass Timber Reform Act (all actions)",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.congress.gov/bill/101st-congress/house-bill/987",
+          "source_name": "Congress.gov",
+          "published_at": "1990-11-28T12:00:00Z",
+          "headline": "H.R.987 - Tongass Timber Reform Act",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Congress",
+          "U.S. Forest Service"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "temperate rainforest"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "H.R. 987 ... Tongass Timber Reform Act",
+            "source_url": "https://www.congress.gov/bill/101st-congress/house-bill/987"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.8,
+        "location": 0.4,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "low_confidence_location",
+        "location_ambiguous",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Tongass Timber Reform Act 1990 signed",
+        "fingerprint": "tongass-timber-reform-act-1990|US-AK|1990-11-28"
+      }
+    }
+  ]
+}

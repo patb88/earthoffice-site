@@ -1,0 +1,1184 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_1990-01_normalize_2026-01-17T163148751Z",
+    "generated_utc": "2026-01-17T16:31:48.751Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "1990-01",
+    "window": {
+      "start_utc": "1990-01-01T00:00:00.000Z",
+      "end_utc": "1990-01-31T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "1990-01-01_exxon-bayway_oil-spill_arthur-kill",
+      "title": "Exxon Bayway fuel oil spill into the Arthur Kill near Linden, New Jersey",
+      "description": "An underwater pipeline at Exxon’s Bayway facility released No. 2 fuel oil into the Arthur Kill in early January 1990. The spill contaminated shoreline and marsh habitats and affected local wildlife such as fish, shellfish, and waterbirds.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2026-01-17T00:00:00.000Z",
+        "time_confidence": 0.5,
+        "event_date_utc": "1990-01-01T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Arthur Kill near Linden, New Jersey, USA",
+        "jurisdiction_level": "site",
+        "admin1": "New Jersey",
+        "country": "US",
+        "capital_used": null,
+        "lat": 40.6173,
+        "lon": -74.2443,
+        "precision": "exact",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://darrp.noaa.gov/oil-spills/exxon-bayway",
+          "source_name": "NOAA DARRP",
+          "published_at": "2026-01-17T00:00:00.000Z",
+          "headline": "Exxon Bayway",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://response.restoration.noaa.gov/timelines/30-years-ago-oil-pollution-act-1990",
+          "source_name": "NOAA Restoration (response.restoration.noaa.gov)",
+          "published_at": "2026-01-17T00:00:00.000Z",
+          "headline": "30 years ago: Oil Pollution Act of 1990",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Exxon",
+          "NOAA"
+        ],
+        "substances": [
+          "No. 2 fuel oil"
+        ],
+        "ecosystems": [
+          "shoreline",
+          "marsh"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Exxon Bayway",
+            "source_url": "https://darrp.noaa.gov/oil-spills/exxon-bayway"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.8,
+        "location": 0.55,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "exxon bayway arthur kill jan 1990 spill",
+        "fingerprint": "exxon-bayway|arthur-kill|1990-01"
+      }
+    },
+    {
+      "event_id": "1990-01_weather_climate_rosita_au_bom",
+      "title": "Tropical Cyclone Rosita tracked in the Australian region (Jan 1990)",
+      "description": "Tropical Cyclone Rosita persisted in the Australian region from 4–17 January 1990. The Bureau of Meteorology describes its evolution from a low-pressure centre, a generally westward track, and intensification inhibited by vertical wind shear.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1990-01-04T18:00:00Z",
+        "event_end": "1990-01-17T23:59:59Z",
+        "reported_at": "1990-01-01T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1990-01-04T18:00:00Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Australian region (Bureau of Meteorology cyclone basin; proxied to Canberra, Australia)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "AU",
+        "capital_used": "Canberra",
+        "lat": -35.2809,
+        "lon": 149.13,
+        "precision": "proxy",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.bom.gov.au/cyclone/history/rosita90.shtml",
+          "source_name": "Australian Bureau of Meteorology (BoM)",
+          "published_at": "1990-01-01T00:00:00Z",
+          "headline": "Tropical Cyclone Rosita",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Australian Bureau of Meteorology"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Tropical Cyclone Rosita persisted ... from 4–17 January 1990.",
+            "source_url": "https://www.bom.gov.au/cyclone/history/rosita90.shtml"
+          },
+          {
+            "quote": "... intensification inhibited by vertical shear.",
+            "source_url": "https://www.bom.gov.au/cyclone/history/rosita90.shtml"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.75,
+        "location": 0.55,
+        "summary_grounding": 0.7
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "BOM Australian region cyclone Rosita 1990-01",
+        "fingerprint": "fp_rosita_au_1990-01"
+      }
+    },
+    {
+      "event_id": "1990-01_weather_climate_sam_au_bom",
+      "title": "Severe Tropical Cyclone Sam in the Australian region (Jan 1990)",
+      "description": "Severe Tropical Cyclone Sam occurred 13–20 January 1990 in the Australian region. The Bureau of Meteorology describes development from a monsoon-trough low near Darwin, intensification to severe cyclone strength, and later weakening under strong vertical wind shear.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1990-01-13T00:00:00Z",
+        "event_end": "1990-01-20T23:59:59Z",
+        "reported_at": "1990-01-01T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1990-01-13T00:00:00Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Australian region (BoM cyclone basin; proxied to Canberra, Australia)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "AU",
+        "capital_used": "Canberra",
+        "lat": -35.2809,
+        "lon": 149.13,
+        "precision": "proxy",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.bom.gov.au/cyclone/history/sam90.shtml",
+          "source_name": "Australian Bureau of Meteorology (BoM)",
+          "published_at": "1990-01-01T00:00:00Z",
+          "headline": "Severe Tropical Cyclone Sam",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Australian Bureau of Meteorology"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Severe Tropical Cyclone Sam occurred 13–20 January 1990.",
+            "source_url": "https://www.bom.gov.au/cyclone/history/sam90.shtml"
+          },
+          {
+            "quote": "... weakening under strong vertical shear.",
+            "source_url": "https://www.bom.gov.au/cyclone/history/sam90.shtml"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.75,
+        "location": 0.55,
+        "summary_grounding": 0.7
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "BOM Australian region cyclone Sam 1990-01",
+        "fingerprint": "fp_sam_au_1990-01"
+      }
+    },
+    {
+      "event_id": "1990-01_weather_climate_burns_day_storm_nw_europe",
+      "title": "Burns Day Storm (Cyclone Daria) windstorm affected Ireland and the UK (Jan 1990)",
+      "description": "An intense extratropical windstorm known as the Burns Day Storm (Cyclone Daria) affected Ireland and the United Kingdom on 25 January 1990, with impacts continuing into 26 January. A Royal Meteorological Society article and Met Office historical weather pages describe severe gales, damage, and major disruption across parts of northwestern Europe.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1990-01-25T00:00:00Z",
+        "event_end": "1990-01-26T23:59:59Z",
+        "reported_at": "1990-01-01T00:00:00Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "1990-01-25T00:00:00Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "United Kingdom (impacts also reported in Ireland and NW Europe; proxied to London, UK)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "GB",
+        "capital_used": "London",
+        "lat": 51.5074,
+        "lon": -0.1278,
+        "precision": "proxy",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.5
+      },
+      "sources": [
+        {
+          "url": "https://www.rmets.org/metmatters/day-burns-day-storm-1990",
+          "source_name": "Royal Meteorological Society (RMetS)",
+          "published_at": "1990-01-01T00:00:00Z",
+          "headline": "The day of the Burns Day Storm 1990",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.metoffice.gov.uk/research/library-and-archive/publications/historical-facts/historical-weather",
+          "source_name": "Met Office (UK)",
+          "published_at": "1990-01-01T00:00:00Z",
+          "headline": "Historical weather (historical facts)",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Royal Meteorological Society",
+          "Met Office"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "... Burns Day Storm 1990 ...",
+            "source_url": "https://www.rmets.org/metmatters/day-burns-day-storm-1990"
+          },
+          {
+            "quote": "Historical weather ... severe gales ...",
+            "source_url": "https://www.metoffice.gov.uk/research/library-and-archive/publications/historical-facts/historical-weather"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.52,
+        "category": 0.7,
+        "location": 0.5,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "Burns Day Storm / Cyclone Daria 1990-01-25",
+        "fingerprint": "fp_burns_day_storm_1990-01-25_gb"
+      }
+    },
+    {
+      "event_id": "1990-01_weather_climate_tina_au_bom",
+      "title": "Tropical Cyclone Tina passed close to Learmonth, Western Australia (Jan 1990)",
+      "description": "Tropical Cyclone Tina occurred 25–28 January 1990. The Bureau of Meteorology describes a weak but gale-surrounded system that accelerated south and passed very close to Learmonth on 27 January, with radar observation noted.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1990-01-25T00:01:00Z",
+        "event_end": "1990-01-28T23:59:59Z",
+        "reported_at": "1990-01-01T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1990-01-25T00:01:00Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Learmonth, Western Australia, Australia",
+        "jurisdiction_level": "site",
+        "admin1": "Western Australia",
+        "country": "AU",
+        "capital_used": null,
+        "lat": -22.2356,
+        "lon": 114.0889,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.5
+      },
+      "sources": [
+        {
+          "url": "https://www.bom.gov.au/cyclone/history/tina.shtml",
+          "source_name": "Australian Bureau of Meteorology (BoM)",
+          "published_at": "1990-01-01T00:00:00Z",
+          "headline": "Tropical Cyclone Tina",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Australian Bureau of Meteorology"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Tropical Cyclone Tina occurred 25–28 January 1990.",
+            "source_url": "https://www.bom.gov.au/cyclone/history/tina.shtml"
+          },
+          {
+            "quote": "... passed very close to Learmonth on 27 January ...",
+            "source_url": "https://www.bom.gov.au/cyclone/history/tina.shtml"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.58,
+        "category": 0.75,
+        "location": 0.5,
+        "summary_grounding": 0.7
+      },
+      "quality_flags": [
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "BOM Tropical Cyclone Tina 1990-01 Learmonth",
+        "fingerprint": "fp_tina_learmonth_1990-01"
+      }
+    },
+    {
+      "event_id": "1990-01_weather_climate_ny_state_snow_noaa_70022",
+      "title": "Heavy snowfall event impacted New York State (Jan 1990)",
+      "description": "A snowstorm affected New York State on 29–30 January 1990, producing widespread heavy snowfall totals. The event is documented in a NOAA/NWS Eastern Region technical attachment hosted in the NOAA institutional repository.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1990-01-29T00:00:00Z",
+        "event_end": "1990-01-30T23:59:59Z",
+        "reported_at": "1990-01-01T00:00:00Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "1990-01-29T00:00:00Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "New York State, United States (proxied to Albany, NY)",
+        "jurisdiction_level": "state",
+        "admin1": "New York",
+        "country": "US",
+        "capital_used": "Albany",
+        "lat": 42.6526,
+        "lon": -73.7562,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.65
+      },
+      "sources": [
+        {
+          "url": "https://repository.library.noaa.gov/view/noaa/70022",
+          "source_name": "NOAA Institutional Repository",
+          "published_at": "1990-01-01T00:00:00Z",
+          "headline": "NOAA/NWS Eastern Region technical attachment (case study)",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA",
+          "National Weather Service"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "... snowstorm affected New York State from 29–30 January 1990 ...",
+            "source_url": "https://repository.library.noaa.gov/view/noaa/70022"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.5,
+        "category": 0.7,
+        "location": 0.65,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "paywalled_or_partial",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "NY State snowstorm 1990-01-29 NOAA 70022",
+        "fingerprint": "fp_ny_snow_1990-01-29"
+      }
+    },
+    {
+      "event_id": "1990-01_geological_bezymianny_eruption_start_1990-01-29",
+      "title": "Bezymianny eruption began (Kamchatka, Russia)",
+      "description": "The Smithsonian Global Volcanism Program lists an eruption at Bezymianny with a start date of 1990-01-29, indicating renewed eruptive activity during January 1990.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1990-01-29T00:00:00.000Z",
+        "event_end": "1990-01-29T23:59:59.000Z",
+        "reported_at": "1990-01-29T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "1990-01-29T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Bezymianny volcano, Kamchatka Peninsula, Russia",
+        "jurisdiction_level": "site",
+        "admin1": null,
+        "country": "RU",
+        "capital_used": null,
+        "lat": 55.978,
+        "lon": 160.595,
+        "precision": "exact",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://volcano.si.edu/faq/index.cfm?checkyear=1990&question=eruptionsbyyear",
+          "source_name": "Smithsonian Institution - Global Volcanism Program",
+          "published_at": "1990-01-29T00:00:00.000Z",
+          "headline": "Eruptions by Year (1990)",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://volcano.si.edu/volcano.cfm?vn=300250",
+          "source_name": "Smithsonian Institution - Global Volcanism Program",
+          "published_at": "1990-01-29T00:00:00.000Z",
+          "headline": "Bezymianny",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Smithsonian Institution - Global Volcanism Program"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Eruptions by Year (1990)",
+            "source_url": "https://volcano.si.edu/faq/index.cfm?checkyear=1990&question=eruptionsbyyear"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.85,
+        "location": 0.7,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "GVP_eruption_start_Bezymianny_1990-01",
+        "fingerprint": "gvp|bezymianny|ru|1990-01-29"
+      }
+    },
+    {
+      "event_id": "1990-01_geological_akutan_eruption_start_1990-01-26",
+      "title": "Akutan eruption occurred (Aleutian Islands, Alaska, USA)",
+      "description": "The Smithsonian Global Volcanism Program lists an eruption at Akutan with a start date of 1990-01-26, with uncertainty placing the onset in late January 1990.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1990-01-26T00:00:00.000Z",
+        "event_end": "1990-01-26T23:59:59.000Z",
+        "reported_at": "1990-01-26T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1990-01-26T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Akutan volcano, Aleutian Islands, Alaska, United States",
+        "jurisdiction_level": "site",
+        "admin1": "Alaska",
+        "country": "US",
+        "capital_used": null,
+        "lat": 54.133,
+        "lon": -165.985,
+        "precision": "exact",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://volcano.si.edu/faq/index.cfm?checkyear=1990&question=eruptionsbyyear",
+          "source_name": "Smithsonian Institution - Global Volcanism Program",
+          "published_at": "1990-01-26T00:00:00.000Z",
+          "headline": "Eruptions by Year (1990)",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://volcano.si.edu/volcano.cfm?vn=311240",
+          "source_name": "Smithsonian Institution - Global Volcanism Program",
+          "published_at": "1990-01-26T00:00:00.000Z",
+          "headline": "Akutan",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Smithsonian Institution - Global Volcanism Program"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Eruptions by Year (1990)",
+            "source_url": "https://volcano.si.edu/faq/index.cfm?checkyear=1990&question=eruptionsbyyear"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.85,
+        "location": 0.7,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "GVP_eruption_start_Akutan_1990-01",
+        "fingerprint": "gvp|akutan|us|1990-01-26"
+      }
+    },
+    {
+      "event_id": "1990-01_geological_piton_de_la_fournaise_eruption_start_1990-01-18",
+      "title": "Piton de la Fournaise eruption began (Réunion, France)",
+      "description": "The Smithsonian Global Volcanism Program lists an eruption at Piton de la Fournaise beginning on 1990-01-18, marking volcanic activity during January 1990.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1990-01-18T00:00:00.000Z",
+        "event_end": "1990-01-18T23:59:59.000Z",
+        "reported_at": "1990-01-18T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "1990-01-18T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Piton de la Fournaise, Réunion (France)",
+        "jurisdiction_level": "site",
+        "admin1": null,
+        "country": "FR",
+        "capital_used": null,
+        "lat": -21.244,
+        "lon": 55.708,
+        "precision": "exact",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://volcano.si.edu/faq/index.cfm?checkyear=1990&question=eruptionsbyyear",
+          "source_name": "Smithsonian Institution - Global Volcanism Program",
+          "published_at": "1990-01-18T00:00:00.000Z",
+          "headline": "Eruptions by Year (1990)",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://volcano.si.edu/volcano.cfm?vn=233020",
+          "source_name": "Smithsonian Institution - Global Volcanism Program",
+          "published_at": "1990-01-18T00:00:00.000Z",
+          "headline": "Piton de la Fournaise",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Smithsonian Institution - Global Volcanism Program"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Eruptions by Year (1990)",
+            "source_url": "https://volcano.si.edu/faq/index.cfm?checkyear=1990&question=eruptionsbyyear"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.85,
+        "location": 0.7,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "GVP_eruption_start_PitonDeLaFournaise_1990-01",
+        "fingerprint": "gvp|piton_de_la_fournaise|fr|1990-01-18"
+      }
+    },
+    {
+      "event_id": "1990-01_geological_sheveluch_eruption_start_1990-01-10",
+      "title": "Sheveluch eruption began (Kamchatka, Russia)",
+      "description": "The Smithsonian Global Volcanism Program lists an eruption at Sheveluch with a start date of 1990-01-10, indicating volcanic activity in Kamchatka during January 1990.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1990-01-10T00:00:00.000Z",
+        "event_end": "1990-01-10T23:59:59.000Z",
+        "reported_at": "1990-01-10T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "1990-01-10T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Sheveluch volcano, Kamchatka Peninsula, Russia",
+        "jurisdiction_level": "site",
+        "admin1": null,
+        "country": "RU",
+        "capital_used": null,
+        "lat": 56.653,
+        "lon": 161.36,
+        "precision": "exact",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://volcano.si.edu/faq/index.cfm?checkyear=1990&question=eruptionsbyyear",
+          "source_name": "Smithsonian Institution - Global Volcanism Program",
+          "published_at": "1990-01-10T00:00:00.000Z",
+          "headline": "Eruptions by Year (1990)",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://volcano.si.edu/volcano.cfm?vn=300270",
+          "source_name": "Smithsonian Institution - Global Volcanism Program",
+          "published_at": "1990-01-10T00:00:00.000Z",
+          "headline": "Sheveluch",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Smithsonian Institution - Global Volcanism Program"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Eruptions by Year (1990)",
+            "source_url": "https://volcano.si.edu/faq/index.cfm?checkyear=1990&question=eruptionsbyyear"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.85,
+        "location": 0.7,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "GVP_eruption_start_Sheveluch_1990-01",
+        "fingerprint": "gvp|sheveluch|ru|1990-01-10"
+      }
+    },
+    {
+      "event_id": "1990-01_geological_ruapehu_eruption_start_1990-01-07",
+      "title": "Ruapehu eruptive episode began (North Island, New Zealand)",
+      "description": "The Smithsonian Global Volcanism Program lists an eruptive episode at Mount Ruapehu beginning on 1990-01-07, with activity continuing later in January 1990.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1990-01-07T00:00:00.000Z",
+        "event_end": "1990-01-07T23:59:59.000Z",
+        "reported_at": "1990-01-07T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "1990-01-07T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Mount Ruapehu, North Island, New Zealand",
+        "jurisdiction_level": "site",
+        "admin1": null,
+        "country": "NZ",
+        "capital_used": null,
+        "lat": -39.28,
+        "lon": 175.57,
+        "precision": "exact",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://volcano.si.edu/faq/index.cfm?checkyear=1990&question=eruptionsbyyear",
+          "source_name": "Smithsonian Institution - Global Volcanism Program",
+          "published_at": "1990-01-07T00:00:00.000Z",
+          "headline": "Eruptions by Year (1990)",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://volcano.si.edu/volcano.cfm?vn=241010",
+          "source_name": "Smithsonian Institution - Global Volcanism Program",
+          "published_at": "1990-01-07T00:00:00.000Z",
+          "headline": "Ruapehu",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Smithsonian Institution - Global Volcanism Program"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Eruptions by Year (1990)",
+            "source_url": "https://volcano.si.edu/faq/index.cfm?checkyear=1990&question=eruptionsbyyear"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.85,
+        "location": 0.7,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "GVP_eruption_start_Ruapehu_1990-01",
+        "fingerprint": "gvp|ruapehu|nz|1990-01-07"
+      }
+    },
+    {
+      "event_id": "evt_199001_gulf_coast_dolphin_mortality_cluster",
+      "title": "Gulf Coast bottlenose dolphin mortality cluster reported across multiple U.S. Gulf states",
+      "description": "Reporting described an unusual increase in bottlenose dolphin deaths and strandings along parts of the U.S. Gulf Coast, prompting investigation. The cause was not identified in the reporting cited here.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1990-06-10T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1990-01-01T00:00:00.000Z",
+        "event_date_precision": "month"
+      },
+      "location": {
+        "name": "United States (Gulf Coast)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, D.C.",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.45
+      },
+      "sources": [
+        {
+          "url": "https://www.latimes.com/archives/la-xpm-1990-06-10-mn-143-story.html",
+          "source_name": "Los Angeles Times",
+          "published_at": "1990-06-10T00:00:00.000Z",
+          "headline": "https://www.latimes.com/archives/la-xpm-1990-06-10-mn-143-story.html",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [
+          "Gulf of Mexico (coastal waters)"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "unusually high numbers of dead or dying dolphins washing ashore",
+            "source_url": "https://www.latimes.com/archives/la-xpm-1990-06-10-mn-143-story.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.7,
+        "location": 0.45,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "paywalled_or_partial",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "gulf_coast_dolphin_strandings_1990",
+        "fingerprint": "fp_gulf_coast_dolphin_strandings_us_1990-01"
+      }
+    },
+    {
+      "event_id": "evt_199001_florida_green_sea_turtles_cold_stun_rescue",
+      "title": "Florida cold snap aftermath reported: green sea turtles rescued and rehabilitated",
+      "description": "Following a late-December freeze, reporting described green sea turtles rescued from cold-stunned conditions in shallow Florida waters and taken for rehabilitation. The accounts referenced ongoing impacts into early 1990, including mortality and treatment of affected turtles.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1990-02-07T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1990-01-01T00:00:00.000Z",
+        "event_date_precision": "month"
+      },
+      "location": {
+        "name": "Florida, United States",
+        "jurisdiction_level": "state",
+        "admin1": "Florida",
+        "country": "US",
+        "capital_used": "Tallahassee",
+        "lat": 30.4383,
+        "lon": -84.2807,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.65
+      },
+      "sources": [
+        {
+          "url": "https://www.latimes.com/archives/la-xpm-1990-02-07-mn-264-story.html",
+          "source_name": "Los Angeles Times",
+          "published_at": "1990-02-07T00:00:00.000Z",
+          "headline": "https://www.latimes.com/archives/la-xpm-1990-02-07-mn-264-story.html",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://sun-index.aclib.us/node/147677",
+          "source_name": "Sun Index (aclib.us)",
+          "published_at": "1990-01-01T00:00:00.000Z",
+          "headline": "https://sun-index.aclib.us/node/147677",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "SeaWorld Orlando"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "Mosquito Lagoon",
+          "Indian River Lagoon"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "rescued from shallow coastal waterways in Florida",
+            "source_url": "https://www.latimes.com/archives/la-xpm-1990-02-07-mn-264-story.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.75,
+        "location": 0.65,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "paywalled_or_partial",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "florida_cold_stun_turtles_1989_1990",
+        "fingerprint": "fp_florida_cold_stun_turtles_us-fl_1990-01"
+      }
+    },
+    {
+      "event_id": "1990-01-18_spaw_protocol_done_kingston_jm",
+      "title": "SPAW Protocol to the Cartagena Convention concluded in Kingston",
+      "description": "The Protocol Concerning Specially Protected Areas and Wildlife (SPAW), under the Cartagena Convention for the Wider Caribbean Region, was concluded (done) in Kingston, Jamaica on January 18, 1990. The protocol establishes a legal framework for specially protected areas and wildlife protection in the region.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "1990-01-18T00:00:00.000Z",
+        "event_end": "1990-01-18T23:59:59.000Z",
+        "reported_at": "1990-01-18T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "1990-01-18T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Kingston, Jamaica",
+        "jurisdiction_level": "city",
+        "admin1": null,
+        "country": "JM",
+        "capital_used": null,
+        "lat": 17.9712,
+        "lon": -76.7936,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.8
+      },
+      "sources": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CRPT-107erpt8/html/CRPT-107erpt8.htm",
+          "source_name": "govinfo.gov",
+          "published_at": "2001-01-01T00:00:00.000Z",
+          "headline": "CRPT-107erpt8",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.congress.gov/treaty-document/103rd-congress/5",
+          "source_name": "Congress.gov",
+          "published_at": "1993-01-01T00:00:00.000Z",
+          "headline": "Treaty Document 103-5",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://verdragenbank.overheid.nl/en/Treaty/Details/003990",
+          "source_name": "verdragenbank.overheid.nl",
+          "published_at": "1990-01-18T00:00:00.000Z",
+          "headline": "Treaty details (003990)",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Cartagena Convention",
+          "SPAW Protocol"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "Wider Caribbean Region"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.75,
+        "location": 0.8,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "secondary_sources_only",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "spaw_protocol_kingston_1990_01",
+        "fingerprint": "spaw_protocol_concluded|kingston_jamaica|1990-01-18"
+      }
+    },
+    {
+      "event_id": "1990-01-15_spaw_plenipotentiaries_conference_kingston_jm",
+      "title": "Conference of Plenipotentiaries on SPAW held in Kingston",
+      "description": "A Conference of Plenipotentiaries on Specially Protected Areas and Wildlife (SPAW) in the Wider Caribbean Region was held in Kingston, Jamaica from January 15–18, 1990. The meeting is associated with the negotiation and finalization process for the SPAW Protocol and related resolutions/annex materials.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "1990-01-15T00:00:00.000Z",
+        "event_end": "1990-01-18T23:59:59.000Z",
+        "reported_at": "1991-01-01T00:00:00.000Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "1990-01-15T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Kingston, Jamaica",
+        "jurisdiction_level": "city",
+        "admin1": null,
+        "country": "JM",
+        "capital_used": null,
+        "lat": 17.9712,
+        "lon": -76.7936,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.75
+      },
+      "sources": [
+        {
+          "url": "https://www.unep.org/cep/resources/policy-and-strategy/spaw-final-act-resolution-appendix-and-species-annexes-i-ii-iii-1991",
+          "source_name": "UNEP",
+          "published_at": "1991-01-01T00:00:00.000Z",
+          "headline": "SPAW Final Act, Resolution, Appendix and Species Annexes I, II, III (1991)",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "UNEP",
+          "SPAW"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "Wider Caribbean Region"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.52,
+        "category": 0.7,
+        "location": 0.75,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "secondary_sources_only",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "spaw_conference_kingston_1990_01",
+        "fingerprint": "spaw_plenipotentiaries_conference|kingston_jamaica|1990-01-15_1990-01-18"
+      }
+    }
+  ]
+}

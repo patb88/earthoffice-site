@@ -1,0 +1,963 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_1980-05_normalize_2026-01-18T090739189Z",
+    "generated_utc": "2026-01-18T09:07:39.189Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "1980-05",
+    "window": {
+      "start_utc": "1980-05-01T00:00:00.000Z",
+      "end_utc": "1980-05-31T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "1980-05-16_exxon_diesel_spill_platform-a_red-fox_gulf-of-mexico",
+      "title": "Exxon diesel spill involving Platform A and OSV “Red Fox” (Gulf of Mexico OCS) — 150 barrels",
+      "description": "A U.S. offshore spill record lists a diesel spill attributed to Exxon Corporation involving Platform A and the offshore supply vessel “Red Fox.” The record indicates 150 barrels spilled and notes equipment failure as the cause.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1980-05-16T12:00:00Z",
+        "event_end": "1980-05-16T12:00:00Z",
+        "reported_at": "2012-08-03T00:00:00Z",
+        "time_confidence": 0.4,
+        "event_date_utc": "1980-05-16T12:00:00Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "U.S. Outer Continental Shelf (Gulf of Mexico)",
+        "jurisdiction_level": "site",
+        "admin1": null,
+        "country": "US",
+        "capital_used": null,
+        "lat": 0,
+        "lon": 0,
+        "precision": "proxy",
+        "location_basis": "manual_override",
+        "location_confidence": 0.2
+      },
+      "sources": [
+        {
+          "url": "https://www.bsee.gov/sites/bsee.gov/files/reports/incident-and-investigations/spills-greater-than-50-barrels1964-2012-as-of-august-3-2012.pdf",
+          "source_name": "BSEE (U.S. Bureau of Safety and Environmental Enforcement)",
+          "published_at": "2012-08-03T00:00:00Z",
+          "headline": "Spills Greater Than 50 Barrels 1964–2012 (as of August 3, 2012)",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Exxon Corporation"
+        ],
+        "substances": [
+          "diesel"
+        ],
+        "ecosystems": [
+          "Gulf of Mexico"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Spills Greater Than 50 Barrels 1964–2012 (as of August 3, 2012)",
+            "source_url": "https://www.bsee.gov/sites/bsee.gov/files/reports/incident-and-investigations/spills-greater-than-50-barrels1964-2012-as-of-august-3-2012.pdf"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.45,
+        "category": 0.75,
+        "location": 0.2,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "secondary_sources_only",
+        "low_confidence_location"
+      ],
+      "dedupe": {
+        "cluster_hint": "bsee_spills_gom_1980-05-16_exxon_platform-a_red-fox",
+        "fingerprint": "bsee_spills_gom|exxon diesel spill involving platform a and osv red fox|us_ocs_gulf_of_mexico|1980-05-16"
+      }
+    },
+    {
+      "event_id": "evt_19800501_wv_potomac_minor_flooding",
+      "title": "Minor flooding at Great Cacapon and Springfield, West Virginia after cut-off low rainfall",
+      "description": "Rain showers from a weak cut-off low on April 30–May 1 produced pockets of heavy rain in the Potomac Basin. Minor flooding was reported at forecast points including Great Cacapon on the Cacapon River and Springfield on the South Branch Potomac River.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1980-05-01T00:00:00Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "1980-05-01T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Morgan County & Hampshire County, West Virginia, USA (Potomac Basin)",
+        "jurisdiction_level": "state",
+        "admin1": "West Virginia",
+        "country": "US",
+        "capital_used": "Charleston",
+        "lat": 38.3498,
+        "lon": -81.6326,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.weather.gov/media/marfc/Flood_Events_2016/1980/May1%2C1980.pdf",
+          "source_name": "NWS Middle Atlantic River Forecast Center (MARFC)",
+          "published_at": "1980-05-01T00:00:00Z",
+          "headline": "May 1, 1980 Flood Event (MARFC)",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "National Weather Service (NWS)",
+          "Middle Atlantic River Forecast Center (MARFC)"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "Potomac River Basin"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "pockets of heavy rain caused minor flooding",
+            "source_url": "https://www.weather.gov/media/marfc/Flood_Events_2016/1980/May1%2C1980.pdf"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.8,
+        "location": 0.6,
+        "summary_grounding": 0.65
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "MARFC_minor_flooding_WV_1980-05",
+        "fingerprint": "marfc_minor_flooding_west_virginia_1980-05-01"
+      }
+    },
+    {
+      "event_id": "evt_19800522_martinsburg_wv_opequon_minor_flooding",
+      "title": "Minor flooding along Opequon Creek in Martinsburg, West Virginia after coastal low rainfall",
+      "description": "A weak coastal low moving up the U.S. Eastern Seaboard brought heavy rain across parts of the Mid-Atlantic around May 20–21. Minor flooding occurred along Opequon Creek in Martinsburg, West Virginia.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1980-05-22T00:00:00Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "1980-05-22T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Martinsburg, Berkeley County, West Virginia, USA (Potomac Basin)",
+        "jurisdiction_level": "city",
+        "admin1": "West Virginia",
+        "country": "US",
+        "capital_used": null,
+        "lat": 39.4562,
+        "lon": -77.9639,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.75
+      },
+      "sources": [
+        {
+          "url": "https://www.weather.gov/media/marfc/Flood_Events_2016/1980/May22%2C1980.pdf",
+          "source_name": "NWS Middle Atlantic River Forecast Center (MARFC)",
+          "published_at": "1980-05-22T00:00:00Z",
+          "headline": "May 22, 1980 Flood Event (MARFC)",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "National Weather Service (NWS)",
+          "Middle Atlantic River Forecast Center (MARFC)"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "Potomac River Basin"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "minor flooding occurred along Opequon Creek in Martinsburg",
+            "source_url": "https://www.weather.gov/media/marfc/Flood_Events_2016/1980/May22%2C1980.pdf"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.68,
+        "category": 0.8,
+        "location": 0.75,
+        "summary_grounding": 0.65
+      },
+      "quality_flags": [
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "MARFC_minor_flooding_Martinsburg_1980-05",
+        "fingerprint": "marfc_minor_flooding_martinsburg_wv_1980-05-22"
+      }
+    },
+    {
+      "event_id": "evt_19800513_kalamazoo_mi_tornado",
+      "title": "F3 tornado strikes Kalamazoo, Michigan causing fatalities and injuries",
+      "description": "An F3 tornado moved through Kalamazoo, Michigan on May 13, 1980, including downtown areas. The event caused deaths and numerous injuries and produced a damage path through the city.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1980-05-13T20:09:00Z",
+        "event_end": "1980-05-13T20:25:00Z",
+        "reported_at": "1980-05-13T00:00:00Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "1980-05-13T20:09:00Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Kalamazoo, Michigan, USA",
+        "jurisdiction_level": "city",
+        "admin1": "Michigan",
+        "country": "US",
+        "capital_used": null,
+        "lat": 42.2917,
+        "lon": -85.5872,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://www.kpl.gov/local-history/kalamazoo-history/general/twister/",
+          "source_name": "Kalamazoo Public Library",
+          "published_at": "2026-01-17T23:01:41.839Z",
+          "headline": "Kalamazoo History: Twister (1980 tornado)",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://kalamazoomuseum.org/exhibits/tracing-the-path-the-1980-kalamazoo-tornado",
+          "source_name": "Kalamazoo Valley Museum",
+          "published_at": "2026-01-17T23:01:41.839Z",
+          "headline": "Tracing the Path: The 1980 Kalamazoo Tornado",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://weather.com/news/weather/news/2025-05-12-kalamazoo-michigan-f3-tornado-1980",
+          "source_name": "The Weather Channel",
+          "published_at": "2025-05-12T00:00:00Z",
+          "headline": "Kalamazoo, Michigan F3 tornado (1980)",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Kalamazoo Public Library",
+          "Kalamazoo Valley Museum",
+          "The Weather Channel"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "F3 tornado moved through the heart of Kalamazoo",
+            "source_url": "https://www.kpl.gov/local-history/kalamazoo-history/general/twister/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.7,
+        "location": 0.7,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "secondary_sources_only",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "Kalamazoo_tornado_1980-05-13",
+        "fingerprint": "kalamazoo_mi_tornado_1980-05-13"
+      }
+    },
+    {
+      "event_id": "evt_19800515_typhoon_dom_ditang_philippines",
+      "title": "Typhoon Dom (Ditang) brings heavy rain and damage reports in the Philippines",
+      "description": "JTWC’s 1980 annual tropical cyclone report documents Typhoon Dom (Philippine name Ditang) affecting the Philippines region. The report includes references to heavy rainfall and damage impacts associated with the system during mid-May 1980.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1980-12-31T00:00:00Z",
+        "time_confidence": 0.35,
+        "event_date_utc": "1980-05-15T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Philippines (Luzon)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "PH",
+        "capital_used": "Manila",
+        "lat": 14.5995,
+        "lon": 120.9842,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.5
+      },
+      "sources": [
+        {
+          "url": "https://www.metoc.navy.mil/jtwc/products/atcr/1980atcr.pdf",
+          "source_name": "Joint Typhoon Warning Center (JTWC)",
+          "published_at": "1980-12-31T00:00:00Z",
+          "headline": "Annual Tropical Cyclone Report: 1980",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Joint Typhoon Warning Center (JTWC)"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Annual Tropical Cyclone Report: 1980",
+            "source_url": "https://www.metoc.navy.mil/jtwc/products/atcr/1980atcr.pdf"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.42,
+        "category": 0.7,
+        "location": 0.5,
+        "summary_grounding": 0.35
+      },
+      "quality_flags": [
+        "secondary_sources_only",
+        "date_ambiguous",
+        "location_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "Typhoon_Dom_Ditang_1980-05",
+        "fingerprint": "typhoon_dom_ditang_philippines_1980-05"
+      }
+    },
+    {
+      "event_id": "evt_19800516_typhoon_ellen_japan_impacts",
+      "title": "Typhoon Ellen brings heavy rain and flooding/landslide impacts in Japan",
+      "description": "JTWC’s 1980 annual tropical cyclone report describes Typhoon Ellen tracking near Japan in mid-to-late May 1980. The report references heavy rainfall and associated flooding and landslide impacts in parts of Japan during the system’s influence.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1980-12-31T00:00:00Z",
+        "time_confidence": 0.35,
+        "event_date_utc": "1980-05-16T12:00:00Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Japan",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "JP",
+        "capital_used": "Tokyo",
+        "lat": 35.6762,
+        "lon": 139.6503,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.metoc.navy.mil/jtwc/products/atcr/1980atcr.pdf",
+          "source_name": "Joint Typhoon Warning Center (JTWC)",
+          "published_at": "1980-12-31T00:00:00Z",
+          "headline": "Annual Tropical Cyclone Report: 1980",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Joint Typhoon Warning Center (JTWC)"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Annual Tropical Cyclone Report: 1980",
+            "source_url": "https://www.metoc.navy.mil/jtwc/products/atcr/1980atcr.pdf"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.4,
+        "category": 0.7,
+        "location": 0.55,
+        "summary_grounding": 0.35
+      },
+      "quality_flags": [
+        "secondary_sources_only",
+        "date_ambiguous",
+        "location_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "Typhoon_Ellen_Japan_1980-05",
+        "fingerprint": "typhoon_ellen_japan_1980-05"
+      }
+    },
+    {
+      "event_id": "evt_19800518_mount_st_helens_sector_collapse_eruption",
+      "title": "Mount St. Helens sector collapse and catastrophic eruption triggered by M5.1 earthquake",
+      "description": "An M5.1 earthquake on May 18, 1980 triggered the collapse of Mount St. Helens’ north flank (a debris avalanche) and initiated the catastrophic eruption sequence.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1980-05-18T15:32:00Z",
+        "time_confidence": 0.8,
+        "event_date_utc": "1980-05-18T15:32:00Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Mount St. Helens, Washington, United States",
+        "jurisdiction_level": "site",
+        "admin1": "Washington",
+        "country": "US",
+        "capital_used": null,
+        "lat": 46.1912,
+        "lon": -122.1944,
+        "precision": "exact",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://www.usgs.gov/volcanoes/mount-st.-helens/science/1980-cataclysmic-eruption",
+          "source_name": "USGS",
+          "published_at": "1980-05-18T15:32:00Z",
+          "headline": "1980 Cataclysmic Eruption",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.usgs.gov/media/images/eruption-column-may-18-1980-mount-st-helens-eruption",
+          "source_name": "USGS",
+          "published_at": "1980-05-18T15:32:00Z",
+          "headline": "Eruption column, May 18, 1980, Mount St. Helens eruption",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "USGS"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "A magnitude 5.1 earthquake triggered the collapse of the volcano’s north flank.",
+            "source_url": "https://www.usgs.gov/volcanoes/mount-st.-helens/science/1980-cataclysmic-eruption"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.72,
+        "category": 0.9,
+        "location": 0.7,
+        "summary_grounding": 0.75
+      },
+      "quality_flags": [
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "1980-05-18_mount_st_helens_eruption",
+        "fingerprint": "fp_19800518_mount_st_helens_461912_-1221944"
+      }
+    },
+    {
+      "event_id": "evt_19800525_mammoth_lakes_long_valley_m6_sequence",
+      "title": "M6+ earthquake sequence begins near Mammoth Lakes / Long Valley (California)",
+      "description": "A sequence of strong earthquakes (including multiple events of magnitude 6 or higher) began in the Mammoth Lakes/Long Valley area in late May 1980, as analyzed in a USGS open-file report.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1980-05-25T16:33:00Z",
+        "time_confidence": 0.45,
+        "event_date_utc": "1980-05-25T16:33:00Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Mammoth Lakes / Long Valley Caldera area, California, United States",
+        "jurisdiction_level": "site",
+        "admin1": "California",
+        "country": "US",
+        "capital_used": null,
+        "lat": 37.6433,
+        "lon": -118.9669,
+        "precision": "exact",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.45
+      },
+      "sources": [
+        {
+          "url": "https://www.usgs.gov/publications/preliminary-analysis-digital-seismograms-mammoth-lakes-california-earthquake-sequence",
+          "source_name": "USGS",
+          "published_at": "1980-05-25T16:33:00Z",
+          "headline": "Preliminary analysis of digital seismograms: Mammoth Lakes, California earthquake sequence",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "USGS"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Mammoth Lakes, California earthquake sequence",
+            "source_url": "https://www.usgs.gov/publications/preliminary-analysis-digital-seismograms-mammoth-lakes-california-earthquake-sequence"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.45,
+        "category": 0.85,
+        "location": 0.45,
+        "summary_grounding": 0.4
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "1980-05_mammoth_lakes_long_valley_sequence",
+        "fingerprint": "fp_19800525_mammoth_lakes_long_valley_376433_-1189669"
+      }
+    },
+    {
+      "event_id": "evt_19800527_mammoth_lakes_long_valley_m62",
+      "title": "M6.2 earthquake in the Mammoth Lakes / Long Valley sequence (May 1980)",
+      "description": "During the late-May 1980 Mammoth Lakes/Long Valley earthquake sequence, a magnitude 6.2 event occurred on May 27, as summarized in a USGS analysis of the sequence.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1980-05-27T14:50:00Z",
+        "time_confidence": 0.45,
+        "event_date_utc": "1980-05-27T14:50:00Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Mammoth Lakes / Long Valley Caldera area, California, United States",
+        "jurisdiction_level": "site",
+        "admin1": "California",
+        "country": "US",
+        "capital_used": null,
+        "lat": 37.6433,
+        "lon": -118.9669,
+        "precision": "exact",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.45
+      },
+      "sources": [
+        {
+          "url": "https://www.usgs.gov/publications/preliminary-analysis-digital-seismograms-mammoth-lakes-california-earthquake-sequence",
+          "source_name": "USGS",
+          "published_at": "1980-05-27T14:50:00Z",
+          "headline": "Preliminary analysis of digital seismograms: Mammoth Lakes, California earthquake sequence",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "USGS"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Mammoth Lakes, California earthquake sequence",
+            "source_url": "https://www.usgs.gov/publications/preliminary-analysis-digital-seismograms-mammoth-lakes-california-earthquake-sequence"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.45,
+        "category": 0.85,
+        "location": 0.45,
+        "summary_grounding": 0.4
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "1980-05_mammoth_lakes_long_valley_sequence",
+        "fingerprint": "fp_19800527_mammoth_lakes_long_valley_376433_-1189669"
+      }
+    },
+    {
+      "event_id": "evt_19800503_helsinki_convention_entered_into_force",
+      "title": "Helsinki Convention for Baltic Sea marine protection entered into force",
+      "description": "The Convention on the Protection of the Marine Environment of the Baltic Sea Area (Helsinki Convention) entered into force, establishing a regional legal framework to prevent and eliminate pollution and protect the Baltic marine environment.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "1980-05-03T12:00:00Z",
+        "event_end": "1980-05-03T12:00:00Z",
+        "reported_at": "1980-05-03T12:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1980-05-03T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Baltic Sea region (Baltic Sea coastal states)",
+        "jurisdiction_level": "supranational",
+        "admin1": null,
+        "country": null,
+        "capital_used": null,
+        "lat": 0,
+        "lon": 0,
+        "precision": "proxy",
+        "location_basis": "manual_override",
+        "location_confidence": 0.2
+      },
+      "sources": [
+        {
+          "url": "https://helcom.fi/about-us/convention/",
+          "source_name": "HELCOM",
+          "published_at": "1980-05-03T12:00:00Z",
+          "headline": "Convention",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.unep.org/index.php/helsinki-convention",
+          "source_name": "UNEP",
+          "published_at": "1980-05-03T12:00:00Z",
+          "headline": "Helsinki Convention",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "HELCOM",
+          "UNEP"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "Baltic Sea"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.35,
+        "category": 0.7,
+        "location": 0.2,
+        "summary_grounding": 0.4
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "secondary_sources_only",
+        "low_confidence_location"
+      ],
+      "dedupe": {
+        "cluster_hint": "helsinki_convention_in_force",
+        "fingerprint": "helsinki_convention_in_force|baltic_sea_region|1980-05-03"
+      }
+    },
+    {
+      "event_id": "evt_19800519_epa_rcra_tsdf_standards_45fr33154",
+      "title": "EPA issued RCRA hazardous-waste TSDF standards (45 FR 33154)",
+      "description": "The U.S. Environmental Protection Agency published standards for owners/operators of hazardous-waste treatment, storage, and disposal facilities under RCRA, including interim-status standards and initial permit standards.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "1980-05-19T12:00:00Z",
+        "event_end": "1980-05-19T12:00:00Z",
+        "reported_at": "1980-05-19T12:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1980-05-19T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States (federal regulation)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.9
+      },
+      "sources": [
+        {
+          "url": "https://19january2021snapshot.epa.gov/hwpermitting/federal-register-notice-final-rule-and-interim-final-rule-standards-owners-and_.html",
+          "source_name": "US EPA (snapshot)",
+          "published_at": "1980-05-19T12:00:00Z",
+          "headline": "Federal Register Notice: Final Rule and Interim Final Rule: Standards for Owners and Operators of Hazardous Waste Treatment, Storage, and Disposal Facilities",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "US Environmental Protection Agency (EPA)"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.8,
+        "location": 0.9,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "paywalled_or_partial"
+      ],
+      "dedupe": {
+        "cluster_hint": "epa_rcra_tsdf_standards_45fr33154",
+        "fingerprint": "epa_rcra_tsdf_standards_45fr33154|US|1980-05-19"
+      }
+    },
+    {
+      "event_id": "evt_19800519_epa_consolidated_permit_program_45fr33290",
+      "title": "EPA established consolidated permit program requirements (45 FR 33290)",
+      "description": "The U.S. Environmental Protection Agency established consolidated permitting requirements and procedures across multiple environmental programs, including hazardous waste (RCRA), underground injection control (SDWA), water permits (CWA), and certain air permits (CAA).",
+      "category_primary": "policy_regulation",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "1980-05-19T12:00:00Z",
+        "event_end": "1980-05-19T12:00:00Z",
+        "reported_at": "1980-05-19T12:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1980-05-19T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States (federal regulation)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.9
+      },
+      "sources": [
+        {
+          "url": "https://19january2021snapshot.epa.gov/hwpermitting/federal-register-notice-final-rule-establishing-consolidated-permit-program-requirements_.html",
+          "source_name": "US EPA (snapshot)",
+          "published_at": "1980-05-19T12:00:00Z",
+          "headline": "Federal Register Notice: Final Rule Establishing Consolidated Permit Program Requirements and Procedures",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "US Environmental Protection Agency (EPA)"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.5,
+        "category": 0.75,
+        "location": 0.9,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "paywalled_or_partial"
+      ],
+      "dedupe": {
+        "cluster_hint": "epa_consolidated_permit_program_45fr33290",
+        "fingerprint": "epa_consolidated_permit_program_45fr33290|US|1980-05-19"
+      }
+    },
+    {
+      "event_id": "evt_19800519_epa_financial_responsibility_revised_proposal_45fr33260",
+      "title": "EPA revised proposed financial responsibility requirements for hazardous-waste facilities (45 FR 33260)",
+      "description": "The U.S. Environmental Protection Agency issued a revised proposal for financial assurance requirements for hazardous-waste management facilities, including closure/post-closure funding and proposed liability insurance for interim-status facilities.",
+      "category_primary": "policy_regulation",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "1980-05-19T12:00:00Z",
+        "event_end": "1980-05-19T12:00:00Z",
+        "reported_at": "1980-05-19T12:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1980-05-19T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States (federal regulation proposal)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.9
+      },
+      "sources": [
+        {
+          "url": "https://19january2021snapshot.epa.gov/hwpermitting/federal-register-notice-revision-proposed-financial-requirements-owners-and-operators_.html",
+          "source_name": "US EPA (snapshot)",
+          "published_at": "1980-05-19T12:00:00Z",
+          "headline": "Federal Register Notice: Revision to Proposed Financial Requirements for Owners and Operators of Hazardous Waste Management Facilities",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "US Environmental Protection Agency (EPA)"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.5,
+        "category": 0.75,
+        "location": 0.9,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "paywalled_or_partial"
+      ],
+      "dedupe": {
+        "cluster_hint": "epa_financial_responsibility_revised_proposal_45fr33260",
+        "fingerprint": "epa_financial_responsibility_revised_proposal_45fr33260|US|1980-05-19"
+      }
+    }
+  ]
+}

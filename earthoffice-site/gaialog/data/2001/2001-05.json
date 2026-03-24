@@ -1,0 +1,338 @@
+{
+  "batch_meta": {
+    "batch_id": "2001-05_gaialog_001",
+    "generated_utc": "2026-01-11T00:00:00Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "2001-05",
+    "window": {
+      "start_utc": "2001-05-01T00:00:00.000Z",
+      "end_utc": "2001-05-31T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-event-ingest",
+      "version": "1.0",
+      "model": "unknown",
+      "retrieval_method": "curated"
+    }
+  },
+  "events": [
+    {
+      "event_id": "evt_200105_001_feddeke_creek_fertilizer_fishkill",
+      "title": "Fertilizer spill triggers fish kill in Butler County, Iowa",
+      "description": "A liquid nitrogen fertilizer spill in Butler County, Iowa was reported to have killed large numbers of fish along several miles of Feddeke Creek. The incident was attributed to equipment failure on a fertilizer tank during high winds.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2001-04-23T00:00:00.000Z",
+        "event_end": "2001-04-27T23:59:59.000Z",
+        "reported_at": "2001-04-27T00:00:00Z",
+        "time_confidence": 0.55,
+        "event_date_utc": null,
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Butler County, Iowa, USA",
+        "jurisdiction_level": "state",
+        "admin1": "Iowa",
+        "country": "US",
+        "capital_used": "Des Moines",
+        "lat": 41.5868,
+        "lon": -93.625,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://www.radioiowa.com/2001/04/27/fertilizer-spill-kills-fish-in-butler-county/",
+          "source_name": "Radio Iowa",
+          "published_at": "2001-04-27T00:00:00Z",
+          "headline": "Fertilizer spill kills fish in Butler County",
+          "byline": null,
+          "accessed_utc": "2026-01-11T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [
+          "liquid nitrogen fertilizer"
+        ],
+        "ecosystems": [
+          "Feddeke Creek",
+          "West Fork Cedar River watershed"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Fertilizer spill kills fish in Butler County",
+            "source_url": "https://www.radioiowa.com/2001/04/27/fertilizer-spill-kills-fish-in-butler-county/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.7,
+        "location": 0.7,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "butler-county-ia-fertilizer-fishkill-2001-04",
+        "fingerprint": "fp_butler_ia_fishkill_20010423_20010427"
+      }
+    },
+    {
+      "event_id": "evt_200105_002_florida_dixie_lafayette_smoke_plume",
+      "title": "Wildfire complex produces large smoke plume over northern Florida",
+      "description": "A wildfire complex in northern Florida burned during mid-to-late May 2001 and produced a large smoke plume captured in GOES-8 satellite imagery. The source notes the fires began May 16 and had burned roughly 20,000 acres by the morning of May 25.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2001-05-16T00:00:00.000Z",
+        "event_end": "2001-05-25T23:59:59.000Z",
+        "reported_at": "2001-05-24T00:00:00Z",
+        "time_confidence": 0.75,
+        "event_date_utc": "2001-05-24T00:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Florida, USA (Dixie and Lafayette counties)",
+        "jurisdiction_level": "state",
+        "admin1": "Florida",
+        "country": "US",
+        "capital_used": "Tallahassee",
+        "lat": 30.4383,
+        "lon": -84.2807,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.65
+      },
+      "sources": [
+        {
+          "url": "https://cimss.ssec.wisc.edu/goes/misc/010524/010524.html",
+          "source_name": "CIMSS (SSEC, University of Wisconsin–Madison)",
+          "published_at": "2001-05-24T00:00:00Z",
+          "headline": "GOES-8 imagery showing smoke plume (May 24, 2001)",
+          "byline": null,
+          "accessed_utc": "2026-01-11T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "CIMSS",
+          "SSEC"
+        ],
+        "substances": [
+          "wildfire smoke"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "fires began on May 16, 2001 ... burned about 20,000 acres by the morning of May 25",
+            "source_url": "https://cimss.ssec.wisc.edu/goes/misc/010524/010524.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.7,
+        "category": 0.8,
+        "location": 0.65,
+        "summary_grounding": 0.7
+      },
+      "quality_flags": [],
+      "dedupe": {
+        "cluster_hint": "florida-dixie-lafayette-wildfire-smoke-2001-05",
+        "fingerprint": "fp_florida_wildfire_smoke_20010516_20010525"
+      }
+    },
+    {
+      "event_id": "evt_200105_003_chisholm_wildfire_alberta",
+      "title": "Chisholm wildfire ignites in Alberta, later exhibiting extreme fire behavior",
+      "description": "The Chisholm wildfire ignited on May 23, 2001 in Alberta and rapidly expanded under dry conditions and strong winds. Subsequent reporting and later analysis describe extreme fire behavior, including a notable pyro-cumulonimbus event later in the month.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2001-05-23T21:19:00.000Z",
+        "event_end": "2001-05-31T23:59:59.000Z",
+        "reported_at": "2001-05-30T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2001-05-23T21:19:00.000Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Alberta, Canada (Chisholm/Flatbush area)",
+        "jurisdiction_level": "state",
+        "admin1": "Alberta",
+        "country": "CA",
+        "capital_used": "Edmonton",
+        "lat": 53.5461,
+        "lon": -113.4938,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://wildfire.fpinnovations.ca/chisholm-wildfire-entrapment-investigation/",
+          "source_name": "FPInnovations (Wildfire)",
+          "published_at": "2001-05-23T00:00:00Z",
+          "headline": "Chisholm wildfire entrapment investigation (summary page)",
+          "byline": null,
+          "accessed_utc": "2026-01-11T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.upi.com/Archives/2001/05/30/Light-rain-dampens-huge-Alberta-fire/2876991195200/",
+          "source_name": "UPI",
+          "published_at": "2001-05-30T00:00:00Z",
+          "headline": "Light rain dampens huge Alberta fire",
+          "byline": null,
+          "accessed_utc": "2026-01-11T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://acp.copernicus.org/articles/7/645/2007/",
+          "source_name": "Atmospheric Chemistry and Physics (Copernicus)",
+          "published_at": "2007-02-21T00:00:00Z",
+          "headline": "Peer-reviewed article referencing Chisholm fire plume/pyro-convection (published 2007)",
+          "byline": null,
+          "accessed_utc": "2026-01-11T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "FPInnovations",
+          "UPI"
+        ],
+        "substances": [
+          "wildfire smoke"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Light rain dampens huge Alberta fire",
+            "source_url": "https://www.upi.com/Archives/2001/05/30/Light-rain-dampens-huge-Alberta-fire/2876991195200/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.75,
+        "location": 0.55,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "chisholm-wildfire-alberta-2001-05",
+        "fingerprint": "fp_alberta_chisholm_fire_20010523"
+      }
+    },
+    {
+      "event_id": "evt_200105_004_stockholm_convention_us_signs",
+      "title": "United States signs the Stockholm Convention on Persistent Organic Pollutants",
+      "description": "The United States announced that its representative signed the Stockholm Convention on Persistent Organic Pollutants (POPs) in Stockholm on May 23, 2001. The convention targets a set of persistent toxic chemicals for global action.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "2001-05-23T00:00:00.000Z",
+        "event_end": "2001-05-23T23:59:59.000Z",
+        "reported_at": "2001-05-23T00:00:00Z",
+        "time_confidence": 0.8,
+        "event_date_utc": "2001-05-23T00:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Stockholm, Sweden",
+        "jurisdiction_level": "city",
+        "admin1": null,
+        "country": "SE",
+        "capital_used": null,
+        "lat": 59.3293,
+        "lon": 18.0686,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.75
+      },
+      "sources": [
+        {
+          "url": "https://www.epa.gov/archive/epapages/newsroom_archive/newsreleases/2a8911e6632ced6785256a56004f38be.html",
+          "source_name": "U.S. EPA (News Releases Archive)",
+          "published_at": "2001-05-23T00:00:00Z",
+          "headline": "EPA Administrator signs global treaty on persistent organic pollutants",
+          "byline": null,
+          "accessed_utc": "2026-01-11T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://treaties.un.org/pages/viewdetails.aspx?chapter=27&clang=_en&mtdsg_no=xxvii-15&src=ind",
+          "source_name": "United Nations Treaty Collection",
+          "published_at": "2001-05-23T00:00:00Z",
+          "headline": "Stockholm Convention on Persistent Organic Pollutants (signature details)",
+          "byline": null,
+          "accessed_utc": "2026-01-11T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Environmental Protection Agency",
+          "United Nations"
+        ],
+        "substances": [
+          "persistent organic pollutants (POPs)"
+        ],
+        "ecosystems": [],
+        "people": [
+          "Christine Todd Whitman"
+        ]
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "EPA Administrator Christine Todd Whitman signed the Stockholm Convention",
+            "source_url": "https://www.epa.gov/archive/epapages/newsroom_archive/newsreleases/2a8911e6632ced6785256a56004f38be.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.75,
+        "category": 0.8,
+        "location": 0.75,
+        "summary_grounding": 0.7
+      },
+      "quality_flags": [],
+      "dedupe": {
+        "cluster_hint": "stockholm-convention-us-signs-2001-05-23",
+        "fingerprint": "fp_stockholm_pops_us_signature_20010523"
+      }
+    }
+  ]
+}

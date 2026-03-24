@@ -1,0 +1,741 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_2020-03_normalize_2026-01-16T070905566Z",
+    "generated_utc": "2026-01-16T07:09:05.566Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "2020-03",
+    "window": {
+      "start_utc": "2020-03-01T00:00:00.000Z",
+      "end_utc": "2020-03-31T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "ev_20200311_lauderdalelakes_sewage_spill",
+      "title": "Raw sewage spill (~10,000 gallons) entered storm drain to canal in Lauderdale Lakes, Florida",
+      "description": "A blockage in a gravity line caused an estimated 10,000-gallon raw sewage spill in Lauderdale Lakes, Florida. The release entered a storm drain that discharges to an unnamed canal, and cleanup was conducted by the reporting party.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2020-03-11T07:10:00.000Z",
+        "event_end": "2020-03-11T07:10:00.000Z",
+        "reported_at": "2020-03-11T07:10:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2020-03-11T07:10:00.000Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Lauderdale Lakes, Florida, USA",
+        "jurisdiction_level": "city",
+        "admin1": "Florida",
+        "country": "US",
+        "capital_used": null,
+        "lat": 26.1656,
+        "lon": -80.2064,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.75
+      },
+      "sources": [
+        {
+          "url": "https://content.govdelivery.com/accounts/FLDEM/bulletins/280ba08",
+          "source_name": "GovDelivery (FLDEM bulletin)",
+          "published_at": "2020-03-11T07:10:00.000Z",
+          "headline": "Raw sewage spill (~10,000 gallons) in Lauderdale Lakes, Florida entered storm drain discharging to an unnamed canal",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Florida Division of Emergency Management (FLDEM)"
+        ],
+        "substances": [
+          "raw sewage"
+        ],
+        "ecosystems": [
+          "canal"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "estimated 10,000-gallon raw sewage spill; the release entered a storm drain",
+            "source_url": "https://content.govdelivery.com/accounts/FLDEM/bulletins/280ba08"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.8,
+        "location": 0.7,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "needs_dedupe_check",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "FLDEM pollution bulletin sewage spill Lauderdale Lakes 2020-03-11",
+        "fingerprint": "fp_20200311_lauderdalelakes_sewage_spill"
+      }
+    },
+    {
+      "event_id": "ev_20200307_pensacola_diesel_spill",
+      "title": "Diesel spill (approx. 25–50 gallons) from abandoned drums in Pensacola area, Florida",
+      "description": "Approximately 25–50 gallons of diesel spilled from two abandoned drums found in the Pensacola area in Escambia County, Florida. Officials reported no storm drains or waterways were affected, and cleanup was conducted by local responders and DEP.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2020-03-07T00:57:00.000Z",
+        "event_end": "2020-03-07T00:57:00.000Z",
+        "reported_at": "2020-03-07T00:57:00.000Z",
+        "time_confidence": 0.5,
+        "event_date_utc": "2020-03-07T00:57:00.000Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Pensacola, Florida, USA",
+        "jurisdiction_level": "city",
+        "admin1": "Florida",
+        "country": "US",
+        "capital_used": null,
+        "lat": 30.4213,
+        "lon": -87.2169,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://content.govdelivery.com/accounts/FLDEM/bulletins/27fd808",
+          "source_name": "GovDelivery (FLDEM bulletin)",
+          "published_at": "2020-03-07T00:57:00.000Z",
+          "headline": "Diesel spill (approx. 25–50 gallons) from abandoned drums in Pensacola area, Florida",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Florida Division of Emergency Management (FLDEM)",
+          "Florida Department of Environmental Protection (DEP)"
+        ],
+        "substances": [
+          "diesel"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Approximately 25–50 gallons of diesel spilled from two abandoned drums",
+            "source_url": "https://content.govdelivery.com/accounts/FLDEM/bulletins/27fd808"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.58,
+        "category": 0.8,
+        "location": 0.6,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "needs_dedupe_check",
+        "location_ambiguous",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "FLDEM pollution bulletin diesel spill Pensacola area 2020-03-07",
+        "fingerprint": "fp_20200307_pensacola_diesel_spill"
+      }
+    },
+    {
+      "event_id": "ev_20200304_miami_jetfuel_spill",
+      "title": "Jet fuel spill (~45 gallons) impacted a storm drain in Miami, Florida",
+      "description": "A reported 45 gallons of jet fuel spilled in Miami, Florida due to over-fueling. The spill impacted a nearby storm drain and cleanup was conducted by the reporting party.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2020-03-04T23:40:00.000Z",
+        "event_end": "2020-03-04T23:40:00.000Z",
+        "reported_at": "2020-03-04T23:40:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2020-03-04T23:40:00.000Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Miami, Florida, USA",
+        "jurisdiction_level": "city",
+        "admin1": "Florida",
+        "country": "US",
+        "capital_used": null,
+        "lat": 25.7617,
+        "lon": -80.1918,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.75
+      },
+      "sources": [
+        {
+          "url": "https://content.govdelivery.com/accounts/FLDEM/bulletins/27f6abb",
+          "source_name": "GovDelivery (FLDEM bulletin)",
+          "published_at": "2020-03-04T23:40:00.000Z",
+          "headline": "Jet fuel spill (~45 gallons) in Miami, Florida impacted a storm drain due to over-fueling",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Florida Division of Emergency Management (FLDEM)"
+        ],
+        "substances": [
+          "jet fuel"
+        ],
+        "ecosystems": [
+          "storm drain"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "45 gallons of jet fuel spilled ... due to over-fueling and impacted a nearby storm drain",
+            "source_url": "https://content.govdelivery.com/accounts/FLDEM/bulletins/27f6abb"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.8,
+        "location": 0.75,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "needs_dedupe_check",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "FLDEM pollution bulletin jet fuel spill Miami 2020-03-04",
+        "fingerprint": "fp_20200304_miami_jetfuel_spill"
+      }
+    },
+    {
+      "event_id": "202003_weatherclimate_global_march2020_second_warmest_noaa",
+      "title": "March 2020 reported as second-warmest March globally (NOAA/NCEI as cited)",
+      "description": "A report citing NOAA/NCEI’s global climate assessment described March 2020 as the second-warmest March in the instrumental record, indicating near-record global warmth during the month.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2020-03-01T00:00:00.000Z",
+        "event_end": "2020-03-31T23:59:59.000Z",
+        "reported_at": "2020-04-13T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": null,
+        "event_date_precision": "month"
+      },
+      "location": {
+        "name": "Global",
+        "jurisdiction_level": "global_proxy",
+        "admin1": null,
+        "country": null,
+        "capital_used": null,
+        "lat": 0,
+        "lon": 0,
+        "precision": "proxy",
+        "location_basis": "manual_override",
+        "location_confidence": 0.5
+      },
+      "sources": [
+        {
+          "url": "https://weather.com/news/climate/news/2020-04-13-march-global-temperatures-second-warmest-noaa-climate-report",
+          "source_name": "The Weather Channel",
+          "published_at": "2020-04-13T00:00:00.000Z",
+          "headline": "2020-04-13-march-global-temperatures-second-warmest-noaa-climate-report",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA",
+          "NCEI"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.7,
+        "location": 0.5,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "secondary_sources_only",
+        "date_ambiguous",
+        "low_confidence_location",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "NOAA_NCEI_March2020_global_temp_rank",
+        "fingerprint": "fp_202003_weatherclimate_global_march2020_second_warmest_noaa"
+      }
+    },
+    {
+      "event_id": "202003_weatherclimate_us_march2020_10th_warmest_noaa_ncei",
+      "title": "March 2020 ranked 10th-warmest March for the contiguous U.S. (NOAA/NCEI)",
+      "description": "NOAA/NCEI’s March 2020 national climate report stated that temperatures were above average across much of the U.S., ranking the month as the 10th warmest March for the contiguous United States. The report also noted record warmth in parts of the Gulf Coast and Florida’s warmest March on record.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2020-03-01T00:00:00.000Z",
+        "event_end": "2020-03-31T23:59:59.000Z",
+        "reported_at": "2020-04-01T00:00:00.000Z",
+        "time_confidence": 0.75,
+        "event_date_utc": null,
+        "event_date_precision": "month"
+      },
+      "location": {
+        "name": "United States (contiguous U.S.; Florida referenced)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://www.ncei.noaa.gov/news/national-climate-202003",
+          "source_name": "NOAA NCEI",
+          "published_at": "2020-04-01T00:00:00.000Z",
+          "headline": "National Climate Report - March 2020",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA",
+          "NCEI"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.72,
+        "category": 0.8,
+        "location": 0.75,
+        "summary_grounding": 0.7
+      },
+      "quality_flags": [
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "NOAA_NCEI_March2020_US_temp_rank",
+        "fingerprint": "fp_202003_weatherclimate_us_march2020_10th_warmest_noaa_ncei"
+      }
+    },
+    {
+      "event_id": "202003_weatherclimate_western_qld_flooding_ex_tc_esther",
+      "title": "Early March 2020 flooding in western Queensland linked to ex-tropical cyclone Esther (BoM)",
+      "description": "Australia’s Bureau of Meteorology monthly climate summary for Queensland reported heavy rainfall in early March 2020 associated with ex-tropical cyclone Esther. The rainfall contributed to significant flooding and related impacts (such as road closures and isolation) across parts of western Queensland.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2020-03-01T00:00:00.000Z",
+        "event_end": "2020-03-10T23:59:59.000Z",
+        "reported_at": "2020-04-01T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2020-03-01T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Western Queensland, Australia",
+        "jurisdiction_level": "state",
+        "admin1": "Queensland",
+        "country": "AU",
+        "capital_used": "Brisbane",
+        "lat": -27.4698,
+        "lon": 153.0251,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.65
+      },
+      "sources": [
+        {
+          "url": "https://www.bom.gov.au/climate/current/month/qld/archive/202003.summary.shtml",
+          "source_name": "Australian Bureau of Meteorology",
+          "published_at": "2020-04-01T00:00:00.000Z",
+          "headline": "Queensland in March 2020 (monthly summary)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Australian Bureau of Meteorology"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "river catchments"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.64,
+        "category": 0.7,
+        "location": 0.7,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "BoM_Qld_March2020_exTC_Esther_flooding",
+        "fingerprint": "fp_202003_weatherclimate_western_qld_flooding_ex_tc_esther"
+      }
+    },
+    {
+      "event_id": "evt-20200322-zagreb-earthquake",
+      "title": "Earthquake near Zagreb caused building damage and injuries",
+      "description": "A strong earthquake struck near Zagreb, Croatia on March 22, 2020, damaging buildings and injuring residents. Reports described it as the strongest earthquake affecting Zagreb in about 140 years.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2020-03-22T05:24:03.000Z",
+        "event_end": "2020-03-22T05:24:03.000Z",
+        "reported_at": "2020-03-22T00:00:00Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2020-03-22T05:24:03.000Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Zagreb, Croatia",
+        "jurisdiction_level": "city",
+        "admin1": null,
+        "country": "HR",
+        "capital_used": null,
+        "lat": 45.815,
+        "lon": 15.9819,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.8
+      },
+      "sources": [
+        {
+          "url": "https://weather.com/news/news/2020-03-22-zagreb-croatia-earthquake-magnitude",
+          "source_name": "The Weather Channel",
+          "published_at": "2020-03-22T00:00:00Z",
+          "headline": "2020-03-22-zagreb-croatia-earthquake-magnitude",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.mdpi.com/2076-3263/10/7/252",
+          "source_name": "MDPI (Geosciences)",
+          "published_at": "2020-07-01T00:00:00Z",
+          "headline": "Geosciences 10(7):252",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "largest in Zagreb in roughly 140 years",
+            "source_url": "https://weather.com/news/news/2020-03-22-zagreb-croatia-earthquake-magnitude"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.85,
+        "location": 0.8,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "needs_dedupe_check",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "zagreb-earthquake-2020-03-22",
+        "fingerprint": "zagreb-earthquake|zagreb-croatia|2020-03-22"
+      }
+    },
+    {
+      "event_id": "evt-20200327-merapi-eruption",
+      "title": "Mount Merapi eruption produced a large ash column and ashfall",
+      "description": "Mount Merapi in Indonesia erupted on March 27, 2020, generating a large ash column and depositing ash and sand in nearby areas. Reporting noted it was the second major eruption of Merapi in March 2020.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2020-03-27T00:00:00.000Z",
+        "event_end": "2020-03-27T23:59:59.000Z",
+        "reported_at": "2020-03-27T00:00:00Z",
+        "time_confidence": 0.5,
+        "event_date_utc": "2020-03-27T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Mount Merapi, near Yogyakarta, Java, Indonesia",
+        "jurisdiction_level": "site",
+        "admin1": null,
+        "country": "ID",
+        "capital_used": null,
+        "lat": -7.5407,
+        "lon": 110.446,
+        "precision": "exact",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.65
+      },
+      "sources": [
+        {
+          "url": "https://phys.org/news/2020-03-indonesian-volcano-spews-massive-ash.html",
+          "source_name": "Phys.org",
+          "published_at": "2020-03-27T00:00:00Z",
+          "headline": "Indonesian volcano spews massive ash",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [
+          "volcanic ash"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "spews massive ash",
+            "source_url": "https://phys.org/news/2020-03-indonesian-volcano-spews-massive-ash.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.58,
+        "category": 0.85,
+        "location": 0.65,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "needs_dedupe_check",
+        "secondary_sources_only",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "merapi-eruption-2020-03-27",
+        "fingerprint": "merapi-eruption|mount-merapi-indonesia|2020-03-27"
+      }
+    },
+    {
+      "event_id": "2020-03-ecosystem_biodiversity-desert-locust-east-africa-yemen-001",
+      "title": "March 2020 desert locust upsurge risk in East Africa and Yemen amid rains",
+      "description": "In March 2020, agencies monitoring food security warned that rainfall could drive a sharp increase in desert locust numbers, threatening crops and pasture. The expected upsurge posed significant risks to food security and livelihoods across affected areas in East Africa and nearby regions including Yemen.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2020-03-01T00:00:00.000Z",
+        "time_confidence": 0.4,
+        "event_date_utc": "2020-03-15T00:00:00Z",
+        "event_date_precision": "month"
+      },
+      "location": {
+        "name": "East Africa and Yemen",
+        "jurisdiction_level": "supranational",
+        "admin1": null,
+        "country": null,
+        "capital_used": null,
+        "lat": 0,
+        "lon": 0,
+        "precision": "proxy",
+        "location_basis": "manual_override",
+        "location_confidence": 0.2
+      },
+      "sources": [
+        {
+          "url": "https://fews.net/east-africa/food-security-outlook/march-2020",
+          "source_name": "FEWS NET",
+          "published_at": "2020-03-01T00:00:00.000Z",
+          "headline": "East Africa Food Security Outlook (March 2020)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.worldbank.org/en/news/factsheet/2020/04/27/the-locust-crisis-the-world-banks-response",
+          "source_name": "World Bank",
+          "published_at": "2020-04-27T00:00:00.000Z",
+          "headline": "The locust crisis: The World Bank’s response",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "FEWS NET",
+          "World Bank"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Widespread rainfall was expected to produce a dramatic increase in desert locust numbers.",
+            "source_url": "https://fews.net/east-africa/food-security-outlook/march-2020"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.38,
+        "category": 0.6,
+        "location": 0.2,
+        "summary_grounding": 0.35
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "secondary_sources_only",
+        "low_confidence_location",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "desert_locust_upsurge_east_africa_yemen_2020_03",
+        "fingerprint": "desert-locust-upsurge-east-africa-yemen-2020-03"
+      }
+    },
+    {
+      "event_id": "20200326_us_epa_enforcement_discretion_covid19",
+      "title": "U.S. EPA announced temporary enforcement discretion policy during COVID-19 pandemic",
+      "description": "On March 26, 2020, the U.S. Environmental Protection Agency announced a temporary enforcement discretion policy related to COVID-19, describing how it would approach certain civil violations when compliance was affected by pandemic-related disruptions.",
+      "category_primary": "policy_regulation",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "2020-03-26T00:00:00.000Z",
+        "event_end": "2020-03-26T23:59:59.000Z",
+        "reported_at": "2020-03-26T00:00:00.000Z",
+        "time_confidence": 0.8,
+        "event_date_utc": "2020-03-26T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.85
+      },
+      "sources": [
+        {
+          "url": "https://www.epa.gov/newsreleases/epa-announces-enforcement-discretion-policy-covid-19-pandemic",
+          "source_name": "U.S. Environmental Protection Agency (EPA)",
+          "published_at": "2020-03-26T00:00:00.000Z",
+          "headline": "EPA Announces Enforcement Discretion Policy During COVID-19 Pandemic",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Environmental Protection Agency (EPA)"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "EPA is announcing a temporary policy regarding EPA’s enforcement of environmental legal obligations during the COVID-19 pandemic.",
+            "source_url": "https://www.epa.gov/newsreleases/epa-announces-enforcement-discretion-policy-covid-19-pandemic"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.76,
+        "category": 0.85,
+        "location": 0.85,
+        "summary_grounding": 0.75
+      },
+      "quality_flags": [
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "EPA enforcement discretion policy COVID-19 March 2020",
+        "fingerprint": "fp_20200326_us_epa_enforcement_discretion_covid19_us"
+      }
+    }
+  ]
+}

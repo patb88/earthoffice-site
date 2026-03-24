@@ -1,0 +1,496 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_2023-03_normalize_2026-01-16T133410866Z",
+    "generated_utc": "2026-01-16T13:34:10.866Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "2023-03",
+    "window": {
+      "start_utc": "2023-03-01T00:00:00.000Z",
+      "end_utc": "2023-03-31T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "evt_202303_bristol_pa_trinseo_release_01",
+      "title": "Latex emulsion release from Trinseo Bristol plant contaminates Otter Creek and Delaware River",
+      "description": "An equipment failure at Trinseo’s Altuglas facility in Bristol, Pennsylvania resulted in an estimated 8,100 gallons of acrylic latex polymer solution overflowing containment, entering storm drains, and reaching Otter Creek and the Delaware River. Pennsylvania DEP and other agencies responded with monitoring and updates related to downstream water systems.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2023-03-24T23:30:00.000Z",
+        "event_end": "2023-03-26T23:59:59.000Z",
+        "reported_at": "2023-03-26T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2023-03-24T23:30:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Bristol, Pennsylvania, USA (Otter Creek to Delaware River)",
+        "jurisdiction_level": "city",
+        "admin1": "Pennsylvania",
+        "country": "US",
+        "capital_used": null,
+        "lat": 40.1007,
+        "lon": -74.8518,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://www.pa.gov/agencies/dep/newsroom/2023-03-26-dep-provides-update-on-delaware-river-pollution-event",
+          "source_name": "Pennsylvania Department of Environmental Protection",
+          "published_at": "2023-03-26T00:00:00.000Z",
+          "headline": "DEP Provides Update on Delaware River Pollution Event",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.trinseo.com/news-and-events/trinseo-news/2023/march/latex-emulsion-release-to-waterway-at-trinseos-bristol-plant",
+          "source_name": "Trinseo",
+          "published_at": "2023-03-26T00:00:00.000Z",
+          "headline": "Latex emulsion release to waterway at Trinseo’s Bristol plant",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.trinseo.com/news-and-events/trinseo-news/2023/march/statement-from-trinseo-plc-on-status-of-release-to-waterway-at-bristol-plant",
+          "source_name": "Trinseo",
+          "published_at": "2023-03-27T00:00:00.000Z",
+          "headline": "Statement from Trinseo PLC on status of release to waterway at Bristol plant",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Trinseo",
+          "Altuglas",
+          "Pennsylvania Department of Environmental Protection"
+        ],
+        "substances": [
+          "acrylic latex polymer solution",
+          "latex emulsion"
+        ],
+        "ecosystems": [
+          "Otter Creek",
+          "Delaware River"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "estimated 8,100 gallons of latex emulsion entered a stormwater system and flowed into Otter Creek",
+            "source_url": "https://www.pa.gov/agencies/dep/newsroom/2023-03-26-dep-provides-update-on-delaware-river-pollution-event"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.66,
+        "category": 0.75,
+        "location": 0.7,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "needs_dedupe_check",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "trinseo bristol latex emulsion release delaware river march 2023",
+        "fingerprint": "fp_evt_202303_bristol_pa_trinseo_release_01"
+      }
+    },
+    {
+      "event_id": "evt_202303_pajaro_river_levee_breach_flooding",
+      "title": "Pajaro River levee breach causes major flooding near Pajaro, California",
+      "description": "During March 2023 atmospheric-river storms, a levee breach on the Pajaro River led to significant flooding in and around the community of Pajaro in Monterey County. News and state water agency reporting described evacuations, emergency response, and flood-fight activities following the breach.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2023-03-10T08:00:00.000Z",
+        "event_end": "2023-03-10T23:59:59.000Z",
+        "reported_at": "2023-03-23T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2023-03-10T08:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Pajaro, Monterey County, California, USA",
+        "jurisdiction_level": "site",
+        "admin1": "California",
+        "country": "US",
+        "capital_used": null,
+        "lat": 36.9049,
+        "lon": -121.7594,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://apnews.com/article/2677c9eeb138f2a672a2596ef4b1563e",
+          "source_name": "AP News",
+          "published_at": "2023-03-11T00:00:00.000Z",
+          "headline": "Pajaro River levee break floods Monterey County community",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://water.ca.gov/News/Blog/2023/Mar-23/DWR-Supports-Flood-Fight-Efforts-at-Pajaro-River-Levee-Break",
+          "source_name": "California Department of Water Resources",
+          "published_at": "2023-03-23T00:00:00.000Z",
+          "headline": "DWR Supports Flood-Fight Efforts at Pajaro River Levee Break",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.cnrfc.noaa.gov/storm_summaries/febMar2023storms.php",
+          "source_name": "NOAA California-Nevada River Forecast Center",
+          "published_at": "2023-03-01T00:00:00.000Z",
+          "headline": "Feb-Mar 2023 Storm Summary",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "California Department of Water Resources",
+          "NOAA California-Nevada River Forecast Center"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "river floodplain"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "A levee breach on the Pajaro River ... triggered flooding and evacuations.",
+            "source_url": "https://apnews.com/article/2677c9eeb138f2a672a2596ef4b1563e"
+          },
+          {
+            "quote": "DWR Supports Flood-Fight Efforts at Pajaro River Levee Break.",
+            "source_url": "https://water.ca.gov/News/Blog/2023/Mar-23/DWR-Supports-Flood-Fight-Efforts-at-Pajaro-River-Levee-Break"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.75,
+        "location": 0.6,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "needs_dedupe_check",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "Pajaro River levee breach March 2023",
+        "fingerprint": "fp_pajaro_river_levee_breach_2023_03_10_pajaro_ca"
+      }
+    },
+    {
+      "event_id": "evt_202303_cyclone_freddy_malawi_impacts",
+      "title": "Cyclone Freddy causes severe flooding and damage in southern Malawi",
+      "description": "Cyclone Freddy brought heavy rainfall and strong winds that caused flooding and damage across multiple districts in southern Malawi in March 2023. Humanitarian and medical organizations reported disrupted access to healthcare, displacement, and impacts to infrastructure during and after the storm.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2023-03-10T00:00:00.000Z",
+        "event_end": "2023-03-14T23:59:59.000Z",
+        "reported_at": "2023-03-15T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2023-03-10T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Southern Malawi, Malawi",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "MW",
+        "capital_used": "Lilongwe",
+        "lat": -13.9626,
+        "lon": 33.7741,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://actalliance.org/appeals-rapid-response-funds/saf-231/",
+          "source_name": "ACT Alliance",
+          "published_at": "2023-03-15T00:00:00.000Z",
+          "headline": "SAF-231 Cyclone Freddy Malawi Appeal",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.msf.org/people-cut-healthcare-after-cyclone-freddy-batters-malawi",
+          "source_name": "Médecins Sans Frontières (MSF)",
+          "published_at": "2023-03-15T00:00:00.000Z",
+          "headline": "People cut off from healthcare after Cyclone Freddy batters Malawi",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.undrr.org/resource/southern-africa-cyclone-2023-forensic-analysis",
+          "source_name": "UNDRR",
+          "published_at": "2023-03-01T00:00:00.000Z",
+          "headline": "Southern Africa Cyclone 2023 Forensic Analysis",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "ACT Alliance",
+          "Médecins Sans Frontières (MSF)",
+          "UNDRR"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "People cut off from healthcare after Cyclone Freddy batters Malawi.",
+            "source_url": "https://www.msf.org/people-cut-healthcare-after-cyclone-freddy-batters-malawi"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.56,
+        "category": 0.7,
+        "location": 0.55,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "needs_dedupe_check",
+        "secondary_sources_only",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "Cyclone Freddy Malawi March 2023 impacts",
+        "fingerprint": "fp_cyclone_freddy_malawi_2023_03_10"
+      }
+    },
+    {
+      "event_id": "evt_202303_menindee_fish_kill_01",
+      "title": "Mass fish deaths reported in the Darling-Baaka River at Menindee, New South Wales",
+      "description": "Reports in early-to-mid March 2023 described major fish-death events in the Darling-Baaka (Darling) River near Menindee in far west New South Wales, with large numbers of fish dying. Authorities and experts attributed the deaths to hypoxic (low dissolved oxygen) conditions linked to interacting environmental factors.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2023-03-03T00:00:00.000Z",
+        "event_end": "2023-03-18T23:59:59.000Z",
+        "reported_at": "2023-03-03T00:00:00Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2023-03-03T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Menindee / Darling-Baaka River, New South Wales, Australia",
+        "jurisdiction_level": "site",
+        "admin1": "New South Wales",
+        "country": "AU",
+        "capital_used": null,
+        "lat": -32.394,
+        "lon": 142.412,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://www.theguardian.com/australia-news/2023/mar/03/menindee-second-mass-fish-death-kill-in-two-weeks-water-quality-monitoring",
+          "source_name": "The Guardian",
+          "published_at": "2023-03-03T00:00:00Z",
+          "headline": "Menindee second mass fish death kill in two weeks as water quality monitoring begins",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.abc.net.au/news/2023-03-18/nsw-menindee-mass-fish-kill-worst-in-region/102115184",
+          "source_name": "ABC News (Australia)",
+          "published_at": "2023-03-18T00:00:00Z",
+          "headline": "Menindee mass fish kill described as worst in region",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.csiro.au/en/news/All/News/2023/March/Expert-Commentary-on-Menindee-fish-kill",
+          "source_name": "CSIRO",
+          "published_at": "2023-03-01T00:00:00Z",
+          "headline": "Expert Commentary on Menindee fish kill",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NSW authorities",
+          "CSIRO"
+        ],
+        "substances": [
+          "dissolved oxygen"
+        ],
+        "ecosystems": [
+          "Darling-Baaka (Darling) River"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "reports describing millions of fish killed",
+            "source_url": "https://www.abc.net.au/news/2023-03-18/nsw-menindee-mass-fish-kill-worst-in-region/102115184"
+          },
+          {
+            "quote": "hypoxic (low dissolved oxygen) conditions",
+            "source_url": "https://www.csiro.au/en/news/All/News/2023/March/Expert-Commentary-on-Menindee-fish-kill"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.66,
+        "category": 0.75,
+        "location": 0.7,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "needs_dedupe_check",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "Menindee Darling-Baaka fish kill March 2023",
+        "fingerprint": "fp_menindee_darlingbaaka_fishkill_2023-03"
+      }
+    },
+    {
+      "event_id": "evt_20230320_us_wotus_effective",
+      "title": "U.S. revised 'Waters of the United States' (WOTUS) rule takes effect",
+      "description": "According to the U.S. Army Corps of Engineers and EPA, the final revised definition of “Waters of the United States” under the Clean Water Act became effective on March 20, 2023. EPA documentation notes implementation details and that applicability varied in certain jurisdictions due to litigation.",
+      "category_primary": "policy_regulation",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "2023-03-20T00:00:00.000Z",
+        "event_end": "2023-03-20T23:59:59.000Z",
+        "reported_at": "2023-03-20T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2023-03-20T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.75
+      },
+      "sources": [
+        {
+          "url": "https://www.usace.army.mil/Media/Announcements/Article/3335318/20-march-2023-final-revised-definition-of-waters-of-the-united-states-becomes-e/",
+          "source_name": "U.S. Army Corps of Engineers",
+          "published_at": "2023-03-20T00:00:00.000Z",
+          "headline": "20 March 2023 Final Revised Definition of “Waters of the United States” Becomes Effective",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.epa.gov/wotus/revising-definition-waters-united-states",
+          "source_name": "U.S. Environmental Protection Agency",
+          "published_at": "2023-03-20T00:00:00.000Z",
+          "headline": "Revising the Definition of Waters of the United States",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.epa.gov/wotus/final-rule-navigable-waters-protection-rule",
+          "source_name": "U.S. Environmental Protection Agency",
+          "published_at": "2023-03-20T00:00:00.000Z",
+          "headline": "Final Rule: Navigable Waters Protection Rule",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Army Corps of Engineers",
+          "U.S. Environmental Protection Agency (EPA)"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Final Revised Definition of “Waters of the United States” Becomes Effective.",
+            "source_url": "https://www.usace.army.mil/Media/Announcements/Article/3335318/20-march-2023-final-revised-definition-of-waters-of-the-united-states-becomes-e/"
+          },
+          {
+            "quote": "Revising the Definition of Waters of the United States.",
+            "source_url": "https://www.epa.gov/wotus/revising-definition-waters-united-states"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.72,
+        "category": 0.85,
+        "location": 0.75,
+        "summary_grounding": 0.65
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "US WOTUS revised definition effective March 2023",
+        "fingerprint": "fp_evt_20230320_us_wotus_effective_us_2023-03-20"
+      }
+    }
+  ]
+}

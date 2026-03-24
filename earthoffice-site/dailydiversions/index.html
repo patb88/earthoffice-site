@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Daily Diversions</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app">
+    <header class="header">
+      <div class="brand">
+        <div class="brand-mark" aria-hidden="true"></div>
+        <div class="brand-text">
+          <div class="brand-title">Daily Diversions</div>
+          <div class="brand-subtitle">
+            Same word, same diversion—daily (UTC). Answer unlocks context and conversation.
+          </div>
+        </div>
+      </div>
+
+      <div class="header-meta">
+        <div class="pill" id="utcPill">UTC: --</div>
+        <div class="pill subtle" id="statusPill">Loading…</div>
+      </div>
+    </header>
+
+    <main class="layout">
+      <!-- Left: Word list -->
+      <section class="panel left">
+        <div class="panel-header">
+          <div class="panel-title">Topics</div>
+          <input id="wordSearch" class="input" type="search" placeholder="Search words…" autocomplete="off" />
+        </div>
+        <div class="panel-body" id="wordList" role="listbox" aria-label="Topics list">
+          <!-- populated by JS -->
+        </div>
+        <div class="panel-footer">
+          <div class="small muted" id="wordCount">0 words</div>
+        </div>
+      </section>
+
+      <!-- Center: Content -->
+      <section class="panel center">
+        <div class="panel-header">
+          <div class="panel-title">
+            <span id="selectedWordLabel">Select a topic</span>
+          </div>
+          <div class="panel-actions">
+            <button class="btn ghost" id="openSourceBtn" type="button" disabled>Open source</button>
+          </div>
+        </div>
+
+        <div class="panel-body content-body" id="contentBody">
+          <div class="empty-state" id="contentEmpty">
+            <div class="empty-title">Choose a topic on the left.</div>
+            <div class="empty-text">
+              The center tile shows the selected content. The right tile stays locked until you answer the prompt.
+            </div>
+          </div>
+
+          <div class="content-stage hidden" id="contentStage">
+            <div class="content-frame" id="contentFrame">
+              <!-- image/text inserted by JS -->
+            </div>
+            <div class="attribution" id="attributionLine"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Right: Challenge + Description + Comments -->
+      <section class="panel right">
+        <div class="panel-header">
+          <div class="panel-title">Context & Discussion</div>
+        </div>
+
+        <div class="panel-body right-body">
+          <div class="card" id="challengeCard">
+            <div class="card-title">Challenge prompt</div>
+            <div class="card-text" id="challengeText">Select a topic to see the prompt.</div>
+
+            <div class="form-row">
+              <input id="challengeInput" class="input" type="text" placeholder="Type any answer to unlock…" disabled />
+              <button id="challengeSubmit" class="btn" type="button" disabled>Unlock</button>
+            </div>
+
+            <div class="small muted" id="challengeHint">
+              No grading. Any answer unlocks the description and comments.
+            </div>
+          </div>
+
+          <div class="card locked" id="descriptionCard" aria-disabled="true">
+            <div class="card-title">Description</div>
+            <div class="card-text" id="descriptionText">
+              Locked. Answer the prompt to reveal.
+            </div>
+          </div>
+
+          <div class="card locked" id="commentsCard" aria-disabled="true">
+            <div class="card-title">Comments</div>
+
+            <div class="comments-list" id="commentsList">
+              <div class="small muted">Locked. Answer the prompt to view and post.</div>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="form-col">
+              <textarea id="commentInput" class="textarea" rows="3" placeholder="Write a comment…" disabled></textarea>
+              <div class="form-row space-between">
+                <div class="small muted" id="commentMeta">Posting is stubbed in MVP.</div>
+                <button id="commentPost" class="btn" type="button" disabled>Post</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="card subtle" id="devCard">
+            <div class="card-title">Dev status</div>
+            <div class="small muted" id="devStatus">
+              Selection uses daily override when present; otherwise makeSelection() chooses from the local sample pool.
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="small muted">
+        EarthOffice.net · Daily Diversions · Static MVP · No user identifiers stored.
+      </div>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

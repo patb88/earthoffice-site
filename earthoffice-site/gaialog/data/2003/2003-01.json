@@ -1,0 +1,533 @@
+{
+  "batch_meta": {
+    "batch_id": "2003-01_ingest_20260111T000000Z_01",
+    "generated_utc": "2026-01-11T00:00:00Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "2003-01",
+    "window": {
+      "start_utc": "2003-01-01T00:00:00.000Z",
+      "end_utc": "2003-01-31T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog_event_ingester",
+      "version": "1.0",
+      "model": "api",
+      "retrieval_method": "curated"
+    }
+  },
+  "events": [
+    {
+      "event_id": "evt_20030102_snow_cny_nepa_01",
+      "title": "Coastal storm brings heavy snow to Central New York and Northeast Pennsylvania",
+      "description": "A coastal storm system produced significant snowfall across parts of Central New York and Northeast Pennsylvania in early January 2003. The NWS Binghamton event summary documents the storm and reported accumulations/impacts in the service area.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2003-01-02T00:00:00.000Z",
+        "event_end": "2003-01-04T23:59:59.000Z",
+        "reported_at": "2003-01-02T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2003-01-03T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Binghamton NWS forecast area (Central New York and Northeast Pennsylvania), United States",
+        "jurisdiction_level": "city",
+        "admin1": "New York",
+        "country": "US",
+        "capital_used": null,
+        "lat": 42.0987,
+        "lon": -75.918,
+        "precision": "city",
+        "location_basis": "institution_proxy",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.weather.gov/bgm/pastWinterJanuary02042003",
+          "source_name": "US National Weather Service (BGM)",
+          "published_at": "2003-01-02T00:00:00.000Z",
+          "headline": "Past Winter Weather: January 2–4, 2003",
+          "byline": null,
+          "accessed_utc": "2026-01-11T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "US National Weather Service"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Past Winter Weather: January 2–4, 2003",
+            "source_url": "https://www.weather.gov/bgm/pastWinterJanuary02042003"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.8,
+        "location": 0.55,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "US_NY-PA_snowstorm_2003-01-02_04",
+        "fingerprint": "fp_us_ny_pa_snow_2003-01-02_2003-01-04"
+      }
+    },
+    {
+      "event_id": "evt_20030114_flood_mal_moz_01",
+      "title": "Heavy rains cause flooding in Malawi and Mozambique",
+      "description": "NASA Earth Observatory reported that heavy rains led to extensive flooding in Malawi and Mozambique, displacing people and damaging cropland. Satellite imagery documented inundation including around the Zambeze River Delta and other flooded areas.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2003-01-14T00:00:00.000Z",
+        "event_end": "2003-01-14T23:59:59.000Z",
+        "reported_at": "2003-01-14T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2003-01-14T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Mozambique",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "MZ",
+        "capital_used": "Maputo",
+        "lat": -25.9692,
+        "lon": 32.5732,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://science.nasa.gov/earth/earth-observatory/flooding-in-southeastern-africa-10814/",
+          "source_name": "NASA Earth Observatory",
+          "published_at": "2003-01-14T00:00:00.000Z",
+          "headline": "Flooding in Southeastern Africa",
+          "byline": null,
+          "accessed_utc": "2026-01-11T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NASA Earth Observatory"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "Zambezi River Delta"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Flooding in Southeastern Africa",
+            "source_url": "https://science.nasa.gov/earth/earth-observatory/flooding-in-southeastern-africa-10814/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.8,
+        "location": 0.6,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "SE_Africa_flooding_2003-01",
+        "fingerprint": "fp_mz_flood_2003-01-14"
+      }
+    },
+    {
+      "event_id": "evt_20030122_winter_storm_us_01",
+      "title": "Winter storm brings snow and record cold across parts of the United States",
+      "description": "NASA Earth Observatory reported a winter storm that produced widespread snow and unusually low temperatures across parts of the United States, including uncommon snow on North Carolina’s Outer Banks. Satellite observations documented the storm’s snow cover extent.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2003-01-22T00:00:00.000Z",
+        "event_end": "2003-01-23T23:59:59.000Z",
+        "reported_at": "2003-01-22T00:00:00.000Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "2003-01-22T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "United States",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://science.nasa.gov/earth/earth-observatory/snowstorm-rolls-across-the-us-10636/",
+          "source_name": "NASA Earth Observatory",
+          "published_at": "2003-01-22T00:00:00.000Z",
+          "headline": "Snowstorm Rolls Across the U.S.",
+          "byline": null,
+          "accessed_utc": "2026-01-11T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NASA Earth Observatory"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Snowstorm Rolls Across the U.S.",
+            "source_url": "https://science.nasa.gov/earth/earth-observatory/snowstorm-rolls-across-the-us-10636/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.63,
+        "category": 0.8,
+        "location": 0.7,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "US_winter_storm_2003-01-22_23",
+        "fingerprint": "fp_us_winterstorm_2003-01-22_2003-01-23"
+      }
+    },
+    {
+      "event_id": "evt_20030122_eq_colima_mx_01",
+      "title": "M 7.6 Tecomán/Colima, Mexico earthquake triggers widespread landslides",
+      "description": "A large earthquake near Tecomán/Colima, Mexico triggered widespread landsliding across affected terrain, damaging infrastructure such as roads and irrigation systems. The USGS publication documents landslides attributed to the earthquake.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2003-01-22T02:06:34.000Z",
+        "event_end": "2003-01-22T23:59:59.000Z",
+        "reported_at": "2003-01-22T02:06:34.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2003-01-22T02:06:34.000Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Colima (state capital), Colima, Mexico",
+        "jurisdiction_level": "state",
+        "admin1": "Colima",
+        "country": "MX",
+        "capital_used": "Colima",
+        "lat": 19.2433,
+        "lon": -103.725,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://www.usgs.gov/publications/landslides-caused-m-76-tecoman-mexico-earthquake-january-21-2003",
+          "source_name": "USGS",
+          "published_at": "2003-01-22T00:00:00.000Z",
+          "headline": "Landslides caused by the M 7.6 Tecoman, Mexico earthquake (January 21, 2003)",
+          "byline": null,
+          "accessed_utc": "2026-01-11T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "USGS"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Landslides caused by the M 7.6 Tecoman, Mexico earthquake",
+            "source_url": "https://www.usgs.gov/publications/landslides-caused-m-76-tecoman-mexico-earthquake-january-21-2003"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.66,
+        "category": 0.85,
+        "location": 0.7,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "Tecoman_Colima_EQ_landslides_2003-01-22",
+        "fingerprint": "fp_mx_colima_eq_landslides_2003-01-22"
+      }
+    },
+    {
+      "event_id": "evt_20030118_canberra_bushfires_01",
+      "title": "ACT bushfires intensify and enter Canberra suburbs",
+      "description": "During January 2003, severe bushfires in the Australian Capital Territory intensified under extreme conditions and impacted Canberra, burning large areas including protected lands. Sources describe major fire and smoke impacts as fires entered suburbs.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2003-01-18T00:00:00.000Z",
+        "event_end": "2003-01-21T23:59:59.000Z",
+        "reported_at": "2023-01-18T00:00:00.000Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "2003-01-18T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Australian Capital Territory (capital: Canberra), Australia",
+        "jurisdiction_level": "state",
+        "admin1": "Australian Capital Territory",
+        "country": "AU",
+        "capital_used": "Canberra",
+        "lat": -35.2809,
+        "lon": 149.13,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.75
+      },
+      "sources": [
+        {
+          "url": "https://www.nma.gov.au/defining-moments/resources/canberra-bushfires",
+          "source_name": "National Museum of Australia",
+          "published_at": "2003-01-18T00:00:00.000Z",
+          "headline": "Canberra bushfires",
+          "byline": null,
+          "accessed_utc": "2026-01-11T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.abc.net.au/news/2023-01-18/act-2003-canberra-fires-20-year-anniversary/101865824",
+          "source_name": "ABC News (Australia)",
+          "published_at": "2023-01-18T00:00:00.000Z",
+          "headline": "ACT 2003 Canberra fires 20-year anniversary",
+          "byline": null,
+          "accessed_utc": "2026-01-11T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "National Museum of Australia",
+          "ABC News"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "Namadgi National Park"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Canberra bushfires",
+            "source_url": "https://www.nma.gov.au/defining-moments/resources/canberra-bushfires"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.8,
+        "location": 0.75,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "secondary_sources_only",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Canberra_ACT_bushfires_2003-01",
+        "fingerprint": "fp_au_act_fires_2003-01-18_2003-01-21"
+      }
+    },
+    {
+      "event_id": "evt_20030128_eu_dir_envinfo_01",
+      "title": "EU adopts Directive 2003/4/EC on access to environmental information",
+      "description": "The European Union adopted Directive 2003/4/EC to strengthen public access rights to environmental information held by public authorities and to support transparency and dissemination of environmental information. The directive text and official publication record the adoption date.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "2003-01-28T00:00:00.000Z",
+        "event_end": "2003-01-28T23:59:59.000Z",
+        "reported_at": "2003-01-28T00:00:00.000Z",
+        "time_confidence": 0.75,
+        "event_date_utc": "2003-01-28T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "European Union",
+        "jurisdiction_level": "supranational",
+        "admin1": null,
+        "country": null,
+        "capital_used": "Brussels",
+        "lat": 50.8503,
+        "lon": 4.3517,
+        "precision": "supranational",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.8
+      },
+      "sources": [
+        {
+          "url": "https://eur-lex.europa.eu/eli/dir/2003/4/oj/eng",
+          "source_name": "EUR-Lex",
+          "published_at": "2003-01-28T00:00:00.000Z",
+          "headline": "Directive 2003/4/EC (public access to environmental information)",
+          "byline": null,
+          "accessed_utc": "2026-01-11T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://op.europa.eu/en/publication-detail/-/publication/65bee8e7-6e37-49c9-a431-67083fe22157",
+          "source_name": "Publications Office of the European Union",
+          "published_at": "2003-01-28T00:00:00.000Z",
+          "headline": "Directive 2003/4/EC publication record",
+          "byline": null,
+          "accessed_utc": "2026-01-11T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "European Union"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Directive 2003/4/EC",
+            "source_url": "https://eur-lex.europa.eu/eli/dir/2003/4/oj/eng"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.72,
+        "category": 0.8,
+        "location": 0.8,
+        "summary_grounding": 0.7
+      },
+      "quality_flags": [
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "EU_Directive_2003_4_EC",
+        "fingerprint": "fp_eu_envinfo_directive_2003-01-28"
+      }
+    },
+    {
+      "event_id": "evt_20030123_us_epa_erulemaking_01",
+      "title": "U.S. EPA announces launch of federal e-rulemaking website for online public comments",
+      "description": "The U.S. EPA announced the launch of a federal e-rulemaking website intended to make it easier for the public to find open federal rules and submit comments online. The EPA newsroom archive page documents the announcement.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "2003-01-23T14:30:00.000Z",
+        "event_end": "2003-01-23T23:59:59.000Z",
+        "reported_at": "2003-01-23T14:30:00.000Z",
+        "time_confidence": 0.75,
+        "event_date_utc": "2003-01-23T14:30:00.000Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "United States",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.85
+      },
+      "sources": [
+        {
+          "url": "https://www.epa.gov/archive/epapages/newsroom_archive/newsreleases/c0eb1eb356df789885256cb6007868d7.html",
+          "source_name": "US EPA",
+          "published_at": "2003-01-23T14:30:00.000Z",
+          "headline": "EPA announces launch of one-stop e-rulemaking website",
+          "byline": null,
+          "accessed_utc": "2026-01-11T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "US EPA"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "launch of one-stop e-rulemaking website",
+            "source_url": "https://www.epa.gov/archive/epapages/newsroom_archive/newsreleases/c0eb1eb356df789885256cb6007868d7.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.7,
+        "category": 0.75,
+        "location": 0.85,
+        "summary_grounding": 0.65
+      },
+      "quality_flags": [],
+      "dedupe": {
+        "cluster_hint": "US_EPA_e-rulemaking_2003-01-23",
+        "fingerprint": "fp_us_epa_erulemaking_2003-01-23"
+      }
+    }
+  ]
+}

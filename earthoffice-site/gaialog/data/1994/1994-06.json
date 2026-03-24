@@ -1,0 +1,1352 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_1994-06_normalize_2026-01-17T180336382Z",
+    "generated_utc": "2026-01-17T18:03:36.382Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "1994-06",
+    "window": {
+      "start_utc": "1994-06-01T00:00:00.000Z",
+      "end_utc": "1994-06-30T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "incidentnews_noaa_7024_star_terminal_gasoline_release_1994-06-22",
+      "title": "Star Terminal tank farm gasoline release after valve failure",
+      "description": "During a transfer operation at the Star Terminal tank farm, a valve failure released an estimated 50,000 gallons of unleaded gasoline into a bermed area. Fire response applied foam and state/federal agencies were notified.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1994-06-22T12:00:00Z",
+        "event_end": "1994-06-22T12:00:00Z",
+        "reported_at": "1994-06-01T00:00:00.000Z",
+        "time_confidence": 0.4,
+        "event_date_utc": "1994-06-22T12:00:00Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Providence, Rhode Island, USA",
+        "jurisdiction_level": "city",
+        "admin1": "Rhode Island",
+        "country": "US",
+        "capital_used": null,
+        "lat": 41.824,
+        "lon": -71.4128,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://incidentnews.noaa.gov/incident/7024",
+          "source_name": "NOAA IncidentNews",
+          "published_at": "1994-06-01T00:00:00.000Z",
+          "headline": "Star Terminal tank farm gasoline release (valve failure)",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Star Terminal"
+        ],
+        "substances": [
+          "unleaded gasoline"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "a valve gave way, releasing about 50,000 gallons of unleaded gasoline into a bermed area",
+            "source_url": "https://incidentnews.noaa.gov/incident/7024"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.8,
+        "location": 0.7,
+        "summary_grounding": 0.7
+      },
+      "quality_flags": [
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "noaa_incident_7024",
+        "fingerprint": "noaa_7024_star_terminal_providence_1994-06-22"
+      }
+    },
+    {
+      "event_id": "1994-06-weather-tn-waynesboro-flashflood-19940609",
+      "title": "Waynesboro, Tennessee flash flood after ~9.5 inches of rain in ~4 hours",
+      "description": "A localized extreme rainfall event near Waynesboro, Tennessee dropped about 9.5 inches of rain in roughly four hours. The intense rainfall produced flash flooding that damaged homes and required evacuations.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1994-06-09T12:00:00Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "1994-06-09T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Waynesboro, Tennessee, USA",
+        "jurisdiction_level": "city",
+        "admin1": "Tennessee",
+        "country": "US",
+        "capital_used": null,
+        "lat": 35.31952,
+        "lon": -87.76253,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.75
+      },
+      "sources": [
+        {
+          "url": "https://www.weather.gov/ohx/19940609",
+          "source_name": "NOAA/NWS (weather.gov)",
+          "published_at": "1994-06-09T12:00:00Z",
+          "headline": "19940609 (NWS OHX event page)",
+          "byline": null,
+          "accessed_utc": "2026-01-17T01:31:42.366Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA",
+          "National Weather Service"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "about 9.5 inches in roughly four hours",
+            "source_url": "https://www.weather.gov/ohx/19940609"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.58,
+        "category": 0.7,
+        "location": 0.75,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "Waynesboro TN flash flood 1994-06-09",
+        "fingerprint": "b3afc1e31bb46c1eb0912a5ff0cd9871"
+      }
+    },
+    {
+      "event_id": "1994-06-weather-india-pakistan-heatwave-199406",
+      "title": "Severe heat wave across northern/central India and Pakistan persisted into mid-June 1994",
+      "description": "A severe heat wave affected parts of northern and central India and Pakistan and persisted into mid-June 1994. Sources report extremely high temperatures (including very high readings in Delhi and parts of Pakistan) and significant mortality impacts.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1994-06-08T12:00:00Z",
+        "event_end": "1994-06-15T12:00:00Z",
+        "reported_at": "1994-06-14T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": null,
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "India (Delhi) and Pakistan (heat wave impacts reported across regions)",
+        "jurisdiction_level": "supranational",
+        "admin1": null,
+        "country": null,
+        "capital_used": "New Delhi",
+        "lat": 28.6139,
+        "lon": 77.209,
+        "precision": "proxy",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.5
+      },
+      "sources": [
+        {
+          "url": "https://www.cpc.ncep.noaa.gov/products/assessments/assess_94/india.html",
+          "source_name": "NOAA CPC",
+          "published_at": "1994-06-01T00:00:00Z",
+          "headline": "India (NOAA CPC 1994 assessment page)",
+          "byline": null,
+          "accessed_utc": "2026-01-17T01:31:42.366Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.washingtonpost.com/archive/politics/1994/06/14/new-delhi-cools-off-at-98-degrees/6145296b-be47-4e62-a9b9-f7681388938e/",
+          "source_name": "The Washington Post",
+          "published_at": "1994-06-14T00:00:00Z",
+          "headline": "New Delhi Cools Off At 98 Degrees",
+          "byline": null,
+          "accessed_utc": "2026-01-17T01:31:42.366Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA Climate Prediction Center"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "exceptional heat wave persisted into mid-June",
+            "source_url": "https://www.cpc.ncep.noaa.gov/products/assessments/assess_94/india.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.56,
+        "category": 0.75,
+        "location": 0.5,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "paywalled_or_partial"
+      ],
+      "dedupe": {
+        "cluster_hint": "1994 India/Pakistan heat wave June",
+        "fingerprint": "e3c0e8cf331e0b4b3c8acacda1efc2f5"
+      }
+    },
+    {
+      "event_id": "1994-06-weather-russ-flooding-china-vietnam-199406",
+      "title": "Tropical Storm Russ brought heavy rain and flooding in southeastern China and northern Vietnam (early June 1994)",
+      "description": "Tropical Storm Russ brought heavy rainfall to parts of southeastern China and northern Vietnam in early June 1994. The impacts summary reports flooding with fatalities, people stranded, and significant economic losses in affected areas.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1994-06-03T12:00:00Z",
+        "event_end": "1994-06-09T12:00:00Z",
+        "reported_at": "1994-06-01T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": null,
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "China (Beijing proxy) and northern Vietnam (storm/flood impacts reported regionally)",
+        "jurisdiction_level": "supranational",
+        "admin1": null,
+        "country": null,
+        "capital_used": "Beijing",
+        "lat": 39.9042,
+        "lon": 116.4074,
+        "precision": "proxy",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.35
+      },
+      "sources": [
+        {
+          "url": "https://www.cpc.ncep.noaa.gov/products/assessments/assess_94/impacts.html",
+          "source_name": "NOAA CPC",
+          "published_at": "1994-06-01T00:00:00Z",
+          "headline": "Impacts (NOAA CPC 1994 assessment page)",
+          "byline": null,
+          "accessed_utc": "2026-01-17T01:31:42.366Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA Climate Prediction Center"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Tropical Storm Russ brought heavy rainfall leading to flooding",
+            "source_url": "https://www.cpc.ncep.noaa.gov/products/assessments/assess_94/impacts.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.48,
+        "category": 0.7,
+        "location": 0.35,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "location_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "Tropical Storm Russ flooding SE China northern Vietnam early June 1994",
+        "fingerprint": "5d5bb6c5d8f3a784d01c9bc4c9e8e286"
+      }
+    },
+    {
+      "event_id": "1994-06-weather-flooding-guangxi-guangdong-19940605-19940618",
+      "title": "Prolonged heavy rains caused severe flooding in Guangxi and Guangdong, China (June 5–18, 1994)",
+      "description": "A prolonged heavy-rain episode affected Guangxi and Guangdong provinces in China from June 5 to June 18, 1994. The impacts summary describes severe flooding with large reported casualties and displacement and notes rainfall totals on the order of hundreds of millimeters.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1994-06-05T12:00:00Z",
+        "event_end": "1994-06-18T12:00:00Z",
+        "reported_at": "1994-06-01T00:00:00Z",
+        "time_confidence": 0.7,
+        "event_date_utc": null,
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "China (Beijing proxy) — flooding reported in Guangxi and Guangdong provinces",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "CN",
+        "capital_used": "Beijing",
+        "lat": 39.9042,
+        "lon": 116.4074,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.5
+      },
+      "sources": [
+        {
+          "url": "https://www.cpc.ncep.noaa.gov/products/assessments/assess_94/impacts.html",
+          "source_name": "NOAA CPC",
+          "published_at": "1994-06-01T00:00:00Z",
+          "headline": "Impacts (NOAA CPC 1994 assessment page)",
+          "byline": null,
+          "accessed_utc": "2026-01-17T01:31:42.366Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA Climate Prediction Center"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "heavy rains ... caused severe flooding ... across portions of Guangxi and Guangdong",
+            "source_url": "https://www.cpc.ncep.noaa.gov/products/assessments/assess_94/impacts.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.7,
+        "location": 0.5,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [],
+      "dedupe": {
+        "cluster_hint": "Guangxi/Guangdong flooding June 5-18 1994",
+        "fingerprint": "c19b6c7d8f4fa5eb36db92d8f8b2b95f"
+      }
+    },
+    {
+      "event_id": "1994-06-weather-alberto-formation-19940630",
+      "title": "Tropical Depression One formed (precursor to Tropical Storm Alberto) on June 30, 1994",
+      "description": "A tropical system became Tropical Depression One on June 30, 1994, initiating the lifecycle of what later became Tropical Storm Alberto. Subsequent major flooding impacts occurred in early July, outside this month’s window.",
+      "category_primary": "weather_climate",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "1994-06-30T12:00:00Z",
+        "event_end": "1994-06-30T12:00:00Z",
+        "reported_at": "1995-01-01T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1994-06-30T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Northwestern Caribbean Sea / Gulf-bound system (Havana proxy)",
+        "jurisdiction_level": "supranational",
+        "admin1": null,
+        "country": null,
+        "capital_used": "Havana",
+        "lat": 23.1136,
+        "lon": -82.3666,
+        "precision": "proxy",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.3
+      },
+      "sources": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CZIC-qc945-t76-1995/html/CZIC-qc945-t76-1995.htm",
+          "source_name": "GovInfo (U.S. Government Publishing Office)",
+          "published_at": "1995-01-01T00:00:00Z",
+          "headline": "Tropical cyclones ... 1994 (GovInfo hosted document)",
+          "byline": null,
+          "accessed_utc": "2026-01-17T01:31:42.366Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.wpc.ncep.noaa.gov/tropical/rain/alberto1994.html",
+          "source_name": "NOAA WPC",
+          "published_at": "1994-07-01T00:00:00Z",
+          "headline": "Tropical Rainfall: Alberto (1994)",
+          "byline": null,
+          "accessed_utc": "2026-01-17T01:31:42.366Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA Weather Prediction Center"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "became Tropical Depression One on June 30, 1994",
+            "source_url": "https://www.wpc.ncep.noaa.gov/tropical/rain/alberto1994.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.44,
+        "category": 0.65,
+        "location": 0.3,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "Tropical Depression One formed June 30 1994 (Alberto)",
+        "fingerprint": "c93c4aa4e8dc6fa9d6b5e1e8c0b26f29"
+      }
+    },
+    {
+      "event_id": "19940602_java_indonesia_tsunami_eq",
+      "title": "Offshore East Java earthquake generated destructive tsunami affecting East Java and Bali",
+      "description": "A large offshore earthquake south of East Java generated a destructive tsunami that struck coastal areas of East Java and Bali. Reports describe significant coastal damage and fatalities, with waves arriving tens of minutes after the main shock.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1994-06-02T18:17:34Z",
+        "event_end": "1994-06-02T18:17:34Z",
+        "reported_at": "1994-06-01T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1994-06-02T18:17:34Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Off the southeastern coast of Java (East Java), Indonesia; impacts along southern East Java coast and Bali",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "ID",
+        "capital_used": "Jakarta",
+        "lat": -6.2088,
+        "lon": 106.8456,
+        "precision": "proxy",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.4
+      },
+      "sources": [
+        {
+          "url": "https://tsunami.ioc.unesco.org/en/tsunamis-1990-1999",
+          "source_name": "IOC UNESCO Tsunami",
+          "published_at": "1994-06-01T00:00:00.000Z",
+          "headline": "Tsunamis 1990–1999",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://data.commerce.gov/june-1994-java-indonesia-images",
+          "source_name": "data.commerce.gov",
+          "published_at": "1994-06-01T00:00:00.000Z",
+          "headline": "June 1994 Java, Indonesia images",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "IOC UNESCO"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.5,
+        "category": 0.8,
+        "location": 0.4,
+        "summary_grounding": 0.4
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "low_confidence_location",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "1994-06-02 Java Indonesia tsunami earthquake",
+        "fingerprint": "19940602_java_indonesia_tsunami_eq"
+      }
+    },
+    {
+      "event_id": "19940606_rio_paez_colombia_eq_landslides",
+      "title": "Río Páez basin earthquake triggered landslides and debris flows in southwestern Colombia",
+      "description": "An earthquake in the Río Páez (Páez River) basin triggered widespread landslides and debris/mud flows along river valleys in southwestern Colombia. The event destroyed villages and damaged infrastructure, causing major humanitarian impacts.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1994-06-06T20:47:41Z",
+        "event_end": "1994-06-06T20:47:41Z",
+        "reported_at": "2001-01-01T00:00:00Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "1994-06-06T20:47:41Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Río Páez drainage / Páez River basin, Cauca and Huila departments, Colombia",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "CO",
+        "capital_used": "Bogotá",
+        "lat": 4.711,
+        "lon": -74.0721,
+        "precision": "proxy",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.4
+      },
+      "sources": [
+        {
+          "url": "https://pubs.usgs.gov/of/2001/ofr-01-0276/index.html",
+          "source_name": "USGS Publications",
+          "published_at": "2001-01-01T00:00:00Z",
+          "headline": "USGS Open-File Report 01-0276",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "USGS"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.85,
+        "location": 0.4,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "low_confidence_location",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "1994-06-06 Colombia Paez River earthquake landslides",
+        "fingerprint": "19940606_rio_paez_colombia_eq_landslides"
+      }
+    },
+    {
+      "event_id": "19940609_bolivia_deep_focus_eq",
+      "title": "Deep-focus Bolivia earthquake felt across a wide region",
+      "description": "A very large deep-focus earthquake occurred beneath Bolivia and was reported as an exceptional event for its depth and broad felt area. Coverage described long-distance shaking observations and scientific interest in the unusual subduction-zone context.",
+      "category_primary": "geological",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "1994-06-09T00:33:16Z",
+        "event_end": "1994-06-09T00:33:16Z",
+        "reported_at": "1994-06-09T00:00:00Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "1994-06-09T00:33:16Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Bolivia (deep-focus earthquake beneath northern Bolivia)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "BO",
+        "capital_used": "Sucre",
+        "lat": -19.0196,
+        "lon": -65.2619,
+        "precision": "proxy",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.4
+      },
+      "sources": [
+        {
+          "url": "https://www.usgs.gov/publications/9-june-94-bolivian-deep-earthquake-exceptional-event-extraordinary-subduction-zone",
+          "source_name": "USGS Publications",
+          "published_at": "1994-06-09T00:00:00Z",
+          "headline": "9 June 94 Bolivian deep earthquake: exceptional event in extraordinary subduction zone",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.upi.com/Archives/1994/06/09/Earthquake-was-largest-of-its-kind/3750771134400/",
+          "source_name": "UPI Archives",
+          "published_at": "1994-06-09T00:00:00Z",
+          "headline": "Earthquake was largest of its kind",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "USGS",
+          "UPI"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.85,
+        "location": 0.4,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "low_confidence_location",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "1994-06-09 Bolivia deep-focus earthquake",
+        "fingerprint": "19940609_bolivia_deep_focus_eq"
+      }
+    },
+    {
+      "event_id": "1994-06_fires_mackenzie-fire-shelter-deployment_hualapai-mountains",
+      "title": "Mackenzie Fire shelter deployment (burnover) in the Hualapai Mountains, Arizona",
+      "description": "During the Mackenzie Fire, three members of the Prescott Interagency Hotshot Crew deployed fire shelters on June 1, 1994 and survived a high-intensity burnover with minor injuries. The incident is documented as an operational wildfire safety event.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1994-06-01T12:00:00Z",
+        "event_end": "1994-06-01T12:00:00Z",
+        "reported_at": "1994-06-01T12:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1994-06-01T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Hualapai Mountains, Arizona, USA",
+        "jurisdiction_level": "state",
+        "admin1": "Arizona",
+        "country": "US",
+        "capital_used": "Phoenix",
+        "lat": 33.4484,
+        "lon": -112.074,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.nwcg.gov/6mfs/day-in-history/mackenzie-fire-shelter-deployment-june-1-1994",
+          "source_name": "NWCG",
+          "published_at": "1994-06-01T12:00:00Z",
+          "headline": "Mackenzie Fire Shelter Deployment June 1, 1994",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NWCG",
+          "Prescott Interagency Hotshot Crew"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "three members of the Prescott Interagency Hotshot Crew deployed fire shelters",
+            "source_url": "https://www.nwcg.gov/6mfs/day-in-history/mackenzie-fire-shelter-deployment-june-1-1994"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.8,
+        "location": 0.55,
+        "summary_grounding": 0.65
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "Mackenzie Fire shelter deployment (June 1, 1994)",
+        "fingerprint": "1994-06-mackenzie-fire-shelter-deployment-arizona-1994-06-01"
+      }
+    },
+    {
+      "event_id": "1994-06_fires_socal-brush-forest-fires_wrightwood-pinon-hills",
+      "title": "Southern California brush and forest fires destroy homes near Wrightwood/Pinon Hills",
+      "description": "Multiple wildfires in Southern California were fueled by hot temperatures and high winds on June 26, 1994, including a large fire in/near Angeles National Forest that spread into San Bernardino County. The fires burned thousands of acres, destroyed homes, and prompted evacuations and emergency response.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1994-06-26T12:00:00Z",
+        "event_end": "1994-06-26T12:00:00Z",
+        "reported_at": "1994-06-26T12:00:00Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "1994-06-26T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "California, USA (Angeles & San Bernardino National Forests near Wrightwood/Pinon Hills)",
+        "jurisdiction_level": "state",
+        "admin1": "California",
+        "country": "US",
+        "capital_used": "Sacramento",
+        "lat": 38.5816,
+        "lon": -121.4944,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.5
+      },
+      "sources": [
+        {
+          "url": "https://www.latimes.com/archives/la-xpm-1994-06-26-mn-8898-story.html",
+          "source_name": "Los Angeles Times",
+          "published_at": "1994-06-26T12:00:00Z",
+          "headline": "Southern California brush and forest fires (Angeles & San Bernardino National Forests near Wrightwood/Pinon Hills) destroy homes",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "American Red Cross"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "Angeles National Forest",
+          "San Bernardino National Forest"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "scorching temperatures and high winds fanned multiple fires across Southern California",
+            "source_url": "https://www.latimes.com/archives/la-xpm-1994-06-26-mn-8898-story.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.5,
+        "category": 0.8,
+        "location": 0.5,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "paywalled_or_partial",
+        "location_ambiguous",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "June 1994 Southern California (Wrightwood/Pinon Hills) fires",
+        "fingerprint": "1994-06-socal-fires-california-1994-06-26"
+      }
+    },
+    {
+      "event_id": "1994-06_fires_socal-fires-continue_wrightwood",
+      "title": "Southern California fires continue near Wrightwood; containment anticipated",
+      "description": "By June 27, 1994, firefighters were continuing to battle major wildfires in Southern California, including a damaging blaze near Wrightwood that had burned thousands of acres and destroyed homes and vehicles. Officials indicated the fire was largely surrounded and expected full containment soon.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1994-06-27T12:00:00Z",
+        "event_end": "1994-06-27T12:00:00Z",
+        "reported_at": "1994-06-27T12:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1994-06-27T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "California, USA (near Wrightwood)",
+        "jurisdiction_level": "state",
+        "admin1": "California",
+        "country": "US",
+        "capital_used": "Sacramento",
+        "lat": 38.5816,
+        "lon": -121.4944,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.5
+      },
+      "sources": [
+        {
+          "url": "https://www.upi.com/Archives/1994/06/27/Southern-California-fires-rage/6363772689600/",
+          "source_name": "UPI",
+          "published_at": "1994-06-27T12:00:00Z",
+          "headline": "Southern-California fires rage",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [
+          "Angeles National Forest",
+          "San Bernardino National Forest"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "the most damaging fire near Wrightwood had burned thousands of acres",
+            "source_url": "https://www.upi.com/Archives/1994/06/27/Southern-California-fires-rage/6363772689600/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.8,
+        "location": 0.5,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "June 1994 Southern California (Wrightwood) fires continuation",
+        "fingerprint": "1994-06-socal-fires-continue-california-1994-06-27"
+      }
+    },
+    {
+      "event_id": "1994-06-03-nmfs-critical-habitat-northern-right-whale",
+      "title": "U.S. NMFS designates critical habitat for the endangered northern right whale along the U.S. Atlantic coast",
+      "description": "A U.S. National Marine Fisheries Service (NMFS) final rule designates multiple marine areas as critical habitat for the endangered northern right whale. The designated areas include the Great South Channel, Cape Cod Bay, and coastal waters off the southeastern U.S.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "1994-06-03T12:00:00Z",
+        "event_end": "1994-06-03T12:00:00Z",
+        "reported_at": "1994-06-03T00:00:00Z",
+        "time_confidence": 0.85,
+        "event_date_utc": "1994-06-03T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States (Great South Channel; Cape Cod Bay; coastal waters Georgia–Florida)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/FR-1994-06-03/html/94-13500.htm",
+          "source_name": "Federal Register (via GovInfo)",
+          "published_at": "1994-06-03T00:00:00Z",
+          "headline": "94-13500",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. National Marine Fisheries Service (NMFS)"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "Great South Channel",
+          "Cape Cod Bay",
+          "U.S. Atlantic coastal waters"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "designates multiple marine areas as critical habitat",
+            "source_url": "https://www.govinfo.gov/content/pkg/FR-1994-06-03/html/94-13500.htm"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.72,
+        "category": 0.75,
+        "location": 0.6,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "location_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "US-NMFS-northern-right-whale-critical-habitat-1994-06-03",
+        "fingerprint": "fp_1994-06-03_us_northern_right_whale_critical_habitat"
+      }
+    },
+    {
+      "event_id": "1994-06-27-fws-endangered-plants-waianae-oahu",
+      "title": "U.S. FWS lists three Waianae Mountains (Oahu) plant taxa as endangered",
+      "description": "A U.S. Fish and Wildlife Service final rule lists three plant taxa from the Waianae Mountains on Oahu as endangered. The rule cites threats such as invasive vegetation, habitat degradation, and impacts from feral animals.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "1994-06-27T12:00:00Z",
+        "event_end": "1994-06-27T12:00:00Z",
+        "reported_at": "1994-06-27T00:00:00Z",
+        "time_confidence": 0.85,
+        "event_date_utc": "1994-06-27T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Waianae Mountains, Oahu, Hawaii, United States",
+        "jurisdiction_level": "site",
+        "admin1": "Hawaii",
+        "country": "US",
+        "capital_used": null,
+        "lat": 21.4389,
+        "lon": -158.1733,
+        "precision": "exact",
+        "location_basis": "manual_override",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/FR-1994-06-27/html/94-15539.htm",
+          "source_name": "Federal Register (via GovInfo)",
+          "published_at": "1994-06-27T00:00:00Z",
+          "headline": "94-15539",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Fish and Wildlife Service (FWS)"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "Waianae Mountains"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "final rule determines endangered status for three Hawaiian plant taxa",
+            "source_url": "https://www.govinfo.gov/content/pkg/FR-1994-06-27/html/94-15539.htm"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.7,
+        "category": 0.75,
+        "location": 0.55,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [],
+      "dedupe": {
+        "cluster_hint": "US-FWS-Waianae-endangered-plants-1994-06-27",
+        "fingerprint": "fp_1994-06-27_waianae_endangered_plants"
+      }
+    },
+    {
+      "event_id": "1994-06-20-iccbd-2-montreal-cbd-interim-process",
+      "title": "ICCBD second session meets in Montreal to advance Convention on Biological Diversity implementation work",
+      "description": "The second session of the Intergovernmental Committee for the Convention on Biological Diversity (ICCBD) convenes in Montreal. The meeting focuses on institutional and scientific/technical groundwork and decisions to guide intersessional work ahead of the Convention’s early implementation.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "1994-06-20T12:00:00Z",
+        "event_end": "1994-06-30T12:00:00Z",
+        "reported_at": "1994-06-30T00:00:00Z",
+        "time_confidence": 0.55,
+        "event_date_utc": null,
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Montreal, Quebec, Canada",
+        "jurisdiction_level": "city",
+        "admin1": "Quebec",
+        "country": "CA",
+        "capital_used": null,
+        "lat": 45.5017,
+        "lon": -73.5673,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.75
+      },
+      "sources": [
+        {
+          "url": "https://enb.iisd.org/events/2nd-session-intergovernmental-committee-convention-biological-diversity-iccbd/summary-report",
+          "source_name": "IISD Earth Negotiations Bulletin",
+          "published_at": "1994-06-30T00:00:00Z",
+          "headline": "Summary report: 2nd session of the ICCBD",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://enb.iisd.org/events/2nd-session-intergovernmental-committee-convention-biological-diversity-iccbd/daily-report-2",
+          "source_name": "IISD Earth Negotiations Bulletin",
+          "published_at": "1994-06-21T00:00:00Z",
+          "headline": "Daily report 2: ICCBD-2",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://enb.iisd.org/events/2nd-session-intergovernmental-committee-convention-biological-diversity-iccbd/daily-report-6",
+          "source_name": "IISD Earth Negotiations Bulletin",
+          "published_at": "1994-06-29T00:00:00Z",
+          "headline": "Daily report 6: ICCBD-2",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Intergovernmental Committee for the Convention on Biological Diversity (ICCBD)",
+          "Convention on Biological Diversity (CBD)",
+          "IISD Earth Negotiations Bulletin"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "second session of the Intergovernmental Committee for the Convention on Biological Diversity",
+            "source_url": "https://enb.iisd.org/events/2nd-session-intergovernmental-committee-convention-biological-diversity-iccbd/summary-report"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.68,
+        "category": 0.65,
+        "location": 0.75,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "CBD-ICCBD2-Montreal-1994-06",
+        "fingerprint": "fp_1994-06_iccbd2_montreal_cbd"
+      }
+    },
+    {
+      "event_id": "1994-06-02_us_epa_rcra_expanded_public_participation_59fr28680",
+      "title": "US EPA proposed rule on RCRA expanded public participation and hazardous waste combustion permitting (59 FR 28680)",
+      "description": "The U.S. Environmental Protection Agency published a proposed rule intended to expand public participation in the RCRA hazardous-waste permitting process and revise permitting procedures for hazardous waste combustion.",
+      "category_primary": "policy_regulation",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "1994-06-02T12:00:00Z",
+        "event_end": "1994-06-02T12:00:00Z",
+        "reported_at": "1994-06-02T12:00:00Z",
+        "time_confidence": 0.65,
+        "event_date_utc": "1994-06-02T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States (federal)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.8
+      },
+      "sources": [
+        {
+          "url": "https://www.epa.gov/hwpermitting/list-federal-register-notices-pertaining-hazardous-waste",
+          "source_name": "US EPA",
+          "published_at": "1994-06-02T12:00:00Z",
+          "headline": "List of Federal Register notices pertaining to hazardous waste",
+          "byline": null,
+          "accessed_utc": "2026-01-17T01:33:17.625Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://archive.epa.gov/epawaste/hazard/web/html/pubpart.html",
+          "source_name": "US EPA (archive.epa.gov)",
+          "published_at": "1994-06-02T12:00:00Z",
+          "headline": "Public Participation (RCRA)",
+          "byline": null,
+          "accessed_utc": "2026-01-17T01:33:17.625Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Environmental Protection Agency (EPA)"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "proposed rule to expand public participation in the RCRA hazardous-waste permitting process",
+            "source_url": "https://archive.epa.gov/epawaste/hazard/web/html/pubpart.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.7,
+        "location": 0.85,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "secondary_sources_only",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "EPA RCRA public participation proposed rule 59 FR 28680",
+        "fingerprint": "f5e2c5aee5c2f4a6"
+      }
+    },
+    {
+      "event_id": "1994-06-10_us_epa_financial_assurance_letter_of_credit_59fr29958",
+      "title": "US EPA final rule revising financial assurance letter-of-credit provisions (59 FR 29958)",
+      "description": "The U.S. Environmental Protection Agency published a final rule revising financial assurance (letter of credit) provisions applicable to hazardous-waste treatment, storage, and disposal facilities, with related references in other regulatory contexts cited by EPA.",
+      "category_primary": "policy_regulation",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "1994-06-10T12:00:00Z",
+        "event_end": "1994-06-10T12:00:00Z",
+        "reported_at": "1994-06-10T12:00:00Z",
+        "time_confidence": 0.45,
+        "event_date_utc": "1994-06-10T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States (federal)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.8
+      },
+      "sources": [
+        {
+          "url": "https://www.epa.gov/hwpermitting/list-federal-register-notices-pertaining-hazardous-waste",
+          "source_name": "US EPA",
+          "published_at": "1994-06-10T12:00:00Z",
+          "headline": "List of Federal Register notices pertaining to hazardous waste",
+          "byline": null,
+          "accessed_utc": "2026-01-17T01:33:17.625Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.govinfo.gov/content/pkg/FR-2010-12-10/html/2010-29954.htm",
+          "source_name": "GovInfo (U.S. Government Publishing Office)",
+          "published_at": "2010-12-10T00:00:00Z",
+          "headline": "2010-29954",
+          "byline": null,
+          "accessed_utc": "2026-01-17T01:33:17.625Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Environmental Protection Agency (EPA)"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.25,
+        "category": 0.6,
+        "location": 0.85,
+        "summary_grounding": 0.15
+      },
+      "quality_flags": [
+        "secondary_sources_only",
+        "date_ambiguous",
+        "low_confidence_category",
+        "paywalled_or_partial"
+      ],
+      "dedupe": {
+        "cluster_hint": "EPA financial assurance letter of credit 59 FR 29958",
+        "fingerprint": "4b1d59b9c0bd79c2"
+      }
+    },
+    {
+      "event_id": "1994-06-14_unece_executive_body_adopts_1994_oslo_sulphur_protocol",
+      "title": "UNECE Executive Body adopted the 1994 Oslo Protocol on further sulphur-emission reductions",
+      "description": "The Executive Body under the UNECE Convention on Long-range Transboundary Air Pollution adopted the 1994 Oslo Protocol, setting additional commitments and measures aimed at reducing sulphur emissions among participating parties.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "1994-06-14T12:00:00Z",
+        "event_end": "1994-06-14T12:00:00Z",
+        "reported_at": "1994-06-14T12:00:00Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "1994-06-14T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Oslo, Norway",
+        "jurisdiction_level": "city",
+        "admin1": null,
+        "country": "NO",
+        "capital_used": null,
+        "lat": 59.9139,
+        "lon": 10.7522,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://unece.org/environment-policy/air/protocol-further-reduction-sulphur-emissions",
+          "source_name": "UNECE",
+          "published_at": "1994-06-14T12:00:00Z",
+          "headline": "Protocol on Further Reduction of Sulphur Emissions",
+          "byline": null,
+          "accessed_utc": "2026-01-17T01:33:17.625Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://digitallibrary.un.org/record/189902",
+          "source_name": "UN Digital Library",
+          "published_at": "1994-06-14T12:00:00Z",
+          "headline": "Record 189902",
+          "byline": null,
+          "accessed_utc": "2026-01-17T01:33:17.625Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://treaties.un.org/Pages/ShowMTDSGDetails.aspx?chapter=27&lang=en&mtdsg_no=XXVII-1-e&src=UNTSONLINE&tabid=2",
+          "source_name": "United Nations Treaty Collection",
+          "published_at": "1994-06-14T12:00:00Z",
+          "headline": "Convention on Long-range Transboundary Air Pollution: Protocols (status page)",
+          "byline": null,
+          "accessed_utc": "2026-01-17T01:33:17.625Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "UNECE",
+          "Convention on Long-range Transboundary Air Pollution (CLRTAP) Executive Body"
+        ],
+        "substances": [
+          "sulphur (sulfur) emissions",
+          "sulphur dioxide (SO2)"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.5,
+        "category": 0.7,
+        "location": 0.8,
+        "summary_grounding": 0.35
+      },
+      "quality_flags": [
+        "secondary_sources_only",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "UNECE Oslo Protocol 1994 adoption",
+        "fingerprint": "6d5f5f9f6d6b2c2a"
+      }
+    }
+  ]
+}

@@ -1,0 +1,958 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_2021-08_normalize_2026-01-16T130350029Z",
+    "generated_utc": "2026-01-16T13:03:50.029Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "2021-08",
+    "window": {
+      "start_utc": "2021-08-01T00:00:00.000Z",
+      "end_utc": "2021-08-31T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "evt_202108_wv_pax_paintcreek_detergent_spill",
+      "title": "Detergent chemical spill into tributary of Paint Creek causes large fish kill near Pax, West Virginia",
+      "description": "Reporting describes a truck-related incident that released about 3,000 gallons of a detergent compound into a creek that flows to Paint Creek near Pax, West Virginia. The spill was associated with a large fish kill, reported as more than 30,000 fish, and was discussed in the context of subsequent legal action.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2021-08-01T00:00:00.000Z",
+        "time_confidence": 0.3,
+        "event_date_utc": "2021-08-01T00:00:00.000Z",
+        "event_date_precision": "month"
+      },
+      "location": {
+        "name": "Near Pax, West Virginia, USA (tributary to Paint Creek)",
+        "jurisdiction_level": "city",
+        "admin1": "West Virginia",
+        "country": "US",
+        "capital_used": null,
+        "lat": 37.9215,
+        "lon": -81.7543,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://apnews.com/article/dcc51a578b50c4d5d1b2d0fb7d56d2de",
+          "source_name": "AP News",
+          "published_at": "2021-08-01T00:00:00.000Z",
+          "headline": "Detergent chemical spill into a tributary of Paint Creek causes large fish kill (West Virginia, USA)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [
+          "detergent compound"
+        ],
+        "ecosystems": [
+          "Paint Creek"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "released about 3,000 gallons of a detergent compound into a creek flowing to Paint Creek",
+            "source_url": "https://apnews.com/article/dcc51a578b50c4d5d1b2d0fb7d56d2de"
+          },
+          {
+            "quote": "death of more than 30,000 fish",
+            "source_url": "https://apnews.com/article/dcc51a578b50c4d5d1b2d0fb7d56d2de"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.52,
+        "category": 0.75,
+        "location": 0.55,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Paint Creek detergent spill near Pax WV (fish kill)",
+        "fingerprint": "fp_paintcreek_pax_wv_2021-08"
+      }
+    },
+    {
+      "event_id": "evt_202108_fl_piney_point_rainfall_overflow_risk",
+      "title": "Heavy rainfall raises concern of additional Piney Point wastewater discharge risk to Tampa Bay",
+      "description": "A report described heavy rainfall adding water to a polluted retention pond at the Piney Point site in Florida. The added water was reported to increase concern about potential additional releases of nutrient-rich wastewater into Tampa Bay and related water-quality impacts.",
+      "category_primary": "pollution_contamination",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "2021-08-18T00:00:00.000Z",
+        "event_end": "2021-08-18T23:59:59.000Z",
+        "reported_at": "2021-08-18T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2021-08-18T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Piney Point site / Tampa Bay area, Florida, USA",
+        "jurisdiction_level": "state",
+        "admin1": "Florida",
+        "country": "US",
+        "capital_used": "Tallahassee",
+        "lat": 30.4383,
+        "lon": -84.2807,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.axios.com/local/tampa-bay/2021/08/18/tampa-bay-piney-point-wastewater-rainfall",
+          "source_name": "Axios (Tampa Bay)",
+          "published_at": "2021-08-18T00:00:00.000Z",
+          "headline": "Risk of additional nutrient-rich wastewater discharge from Piney Point site highlighted amid heavy rainfall (Florida, USA)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [
+          "nutrient-rich wastewater"
+        ],
+        "ecosystems": [
+          "Tampa Bay"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "heavy rainfall adding substantial water to a polluted retention pond at the Piney Point site",
+            "source_url": "https://www.axios.com/local/tampa-bay/2021/08/18/tampa-bay-piney-point-wastewater-rainfall"
+          },
+          {
+            "quote": "raising concern about potential additional releases of nutrient-rich wastewater into Tampa Bay",
+            "source_url": "https://www.axios.com/local/tampa-bay/2021/08/18/tampa-bay-piney-point-wastewater-rainfall"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.7,
+        "location": 0.6,
+        "summary_grounding": 0.4
+      },
+      "quality_flags": [
+        "needs_dedupe_check",
+        "possible_opinion_or_advocacy"
+      ],
+      "dedupe": {
+        "cluster_hint": "Piney Point rainfall risk of discharge (Tampa Bay)",
+        "fingerprint": "fp_piney_point_fl_2021-08-18"
+      }
+    },
+    {
+      "event_id": "evt_20210829_hurricane_ida_port_fourchon_la",
+      "title": "Hurricane Ida makes Category 4 landfall in Louisiana",
+      "description": "Hurricane Ida made landfall in Louisiana as a Category 4 storm on August 29, 2021. The event caused catastrophic wind impacts and storm surge across coastal Louisiana and significant damage inland as it moved north.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2021-08-29T15:55:00.000Z",
+        "event_end": "2021-08-29T23:59:59.000Z",
+        "reported_at": "2021-08-29T00:00:00Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2021-08-29T15:55:00.000Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Lafourche Parish near Port Fourchon, Louisiana, USA",
+        "jurisdiction_level": "site",
+        "admin1": "Louisiana",
+        "country": "US",
+        "capital_used": null,
+        "lat": 29.1142,
+        "lon": -90.1996,
+        "precision": "neighborhood",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://oceanservice.noaa.gov/annualreport/2021/hurricane-ida.html",
+          "source_name": "NOAA Ocean Service",
+          "published_at": "2021-01-01T00:00:00Z",
+          "headline": "Hurricane Ida",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Hurricane Ida made landfall in Louisiana as a Category 4 hurricane on August 29, 2021",
+            "source_url": "https://oceanservice.noaa.gov/annualreport/2021/hurricane-ida.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.56,
+        "category": 0.75,
+        "location": 0.55,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "paywalled_or_partial",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "hurricane_ida_2021_08_29_louisiana",
+        "fingerprint": "fp_hurricane_ida_lafourche_2021-08-29"
+      }
+    },
+    {
+      "event_id": "evt_20210814_haiti_eq_72",
+      "title": "Magnitude 7.2 earthquake strikes Haiti (Tiburon Peninsula)",
+      "description": "A magnitude 7.2 earthquake struck Haiti on August 14, 2021, centered in the Tiburon Peninsula region. Reports described widespread destruction and a major humanitarian emergency, with significant aftershock activity.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2021-08-14T12:29:08.000Z",
+        "event_end": "2021-08-14T12:29:08.000Z",
+        "reported_at": "2021-08-14T12:29:08.000Z",
+        "time_confidence": 0.75,
+        "event_date_utc": "2021-08-14T12:29:08.000Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Tiburon Peninsula region, Haiti",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "HT",
+        "capital_used": "Port-au-Prince",
+        "lat": 18.5944,
+        "lon": -72.3074,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.usgs.gov/news/featured-story/magnitude-72-earthquake-haiti",
+          "source_name": "USGS",
+          "published_at": "2021-08-14T00:00:00Z",
+          "headline": "Magnitude 7.2 Earthquake, Haiti",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.paho.org/en/haiti-earthquake-august-2021",
+          "source_name": "PAHO",
+          "published_at": "2021-08-01T00:00:00Z",
+          "headline": "Haiti Earthquake August 2021",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "USGS",
+          "PAHO"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Magnitude 7.2 Earthquake, Haiti",
+            "source_url": "https://www.usgs.gov/news/featured-story/magnitude-72-earthquake-haiti"
+          },
+          {
+            "quote": "Haiti Earthquake August 2021",
+            "source_url": "https://www.paho.org/en/haiti-earthquake-august-2021"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.85,
+        "location": 0.6,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only",
+        "location_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "haiti_earthquake_2021-08-14",
+        "fingerprint": "fp_haiti_eq_72_2021-08-14_port-au-prince"
+      }
+    },
+    {
+      "event_id": "evt_202108_greece_wildfires_evia_early_aug",
+      "title": "Major wildfire outbreak across Greece (including Evia) in early August 2021",
+      "description": "In early August 2021, widespread wildfires affected multiple parts of Greece, including Evia, following extreme heat. Reporting and satellite-based coverage documented large burned areas and heavy smoke impacts, with evacuations in some locations.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2021-08-03T00:00:00.000Z",
+        "event_end": "2021-08-11T23:59:59.000Z",
+        "reported_at": "2021-08-08T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": null,
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Greece",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "GR",
+        "capital_used": "Athens",
+        "lat": 37.9838,
+        "lon": 23.7275,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.8
+      },
+      "sources": [
+        {
+          "url": "https://science.nasa.gov/earth/earth-observatory/fire-consumes-large-swaths-of-greece-148682/",
+          "source_name": "NASA Earth Observatory",
+          "published_at": "2021-08-12T00:00:00.000Z",
+          "headline": "Fire Consumes Large Swaths of Greece",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.cnbc.com/2021/08/08/fire-devastates-greek-island-evia-as-residents-and-tourists-evacuatedare-.html",
+          "source_name": "CNBC",
+          "published_at": "2021-08-08T00:00:00.000Z",
+          "headline": "Fire devastates Greek island Evia as residents and tourists evacuated",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Fire Consumes Large Swaths of Greece",
+            "source_url": "https://science.nasa.gov/earth/earth-observatory/fire-consumes-large-swaths-of-greece-148682/"
+          },
+          {
+            "quote": "Fire devastates Greek island Evia as residents and tourists evacuated",
+            "source_url": "https://www.cnbc.com/2021/08/08/fire-devastates-greek-island-evia-as-residents-and-tourists-evacuatedare-.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.72,
+        "category": 0.9,
+        "location": 0.8,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "needs_dedupe_check",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "Greece wildfires early Aug 2021 Evia",
+        "fingerprint": "greece-wildfires-2021-08-03_2021-08-11-athens"
+      }
+    },
+    {
+      "event_id": "evt_202108_algeria_kabylia_wildfires_aug9",
+      "title": "Deadly wildfires across northern Algeria including the Kabylia region (August 2021)",
+      "description": "Around August 9–11, 2021, multiple wildfires burned across northern Algeria, including the Kabylia region. Reporting described significant fatalities and difficult firefighting conditions alongside extensive fire impacts.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2021-08-09T00:00:00.000Z",
+        "event_end": "2021-08-11T23:59:59.000Z",
+        "reported_at": "2021-08-10T00:00:00.000Z",
+        "time_confidence": 0.75,
+        "event_date_utc": null,
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Algeria",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "DZ",
+        "capital_used": "Algiers",
+        "lat": 36.7538,
+        "lon": 3.0588,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://www.theguardian.com/world/2021/aug/10/wildfires-in-algeria-dozens-of-civilians-and-soldiers-reported-dead",
+          "source_name": "The Guardian",
+          "published_at": "2021-08-10T00:00:00.000Z",
+          "headline": "Wildfires in Algeria: dozens of civilians and soldiers reported dead",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.axios.com/2021/08/11/algeria-wildfires-dead-soldiers",
+          "source_name": "Axios",
+          "published_at": "2021-08-11T00:00:00.000Z",
+          "headline": "Wildfires in Algeria leave dozens dead, including soldiers",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Wildfires in Algeria: dozens of civilians and soldiers reported dead",
+            "source_url": "https://www.theguardian.com/world/2021/aug/10/wildfires-in-algeria-dozens-of-civilians-and-soldiers-reported-dead"
+          },
+          {
+            "quote": "Algeria wildfires leave dozens dead, including soldiers",
+            "source_url": "https://www.axios.com/2021/08/11/algeria-wildfires-dead-soldiers"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.7,
+        "category": 0.9,
+        "location": 0.7,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "needs_dedupe_check",
+        "date_ambiguous",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "Algeria Kabylia wildfires Aug 2021",
+        "fingerprint": "algeria-wildfires-2021-08-09_2021-08-11-algiers"
+      }
+    },
+    {
+      "event_id": "evt_202108_caldor_fire_grizzly_flats_mid_aug",
+      "title": "Caldor Fire expansion damages Grizzly Flats area in El Dorado County, California (mid-August 2021)",
+      "description": "In mid-August 2021, the Caldor Fire rapidly grew in California’s El Dorado County and heavily damaged the community of Grizzly Flats. Reporting described evacuations and hazardous conditions as the fire expanded.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2021-08-15T00:00:00.000Z",
+        "event_end": "2021-08-17T23:59:59.000Z",
+        "reported_at": "2021-08-17T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": null,
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "California, USA",
+        "jurisdiction_level": "state",
+        "admin1": "California",
+        "country": "US",
+        "capital_used": "Sacramento",
+        "lat": 38.5816,
+        "lon": -121.4944,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.75
+      },
+      "sources": [
+        {
+          "url": "https://www.theguardian.com/us-news/2021/aug/17/california-wildfires-caldor-fire-dixie",
+          "source_name": "The Guardian",
+          "published_at": "2021-08-17T00:00:00.000Z",
+          "headline": "California wildfires: Caldor fire destroys homes as Dixie blaze continues",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Caldor fire destroys homes as Dixie blaze continues",
+            "source_url": "https://www.theguardian.com/us-news/2021/aug/17/california-wildfires-caldor-fire-dixie"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.85,
+        "location": 0.8,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "needs_dedupe_check",
+        "secondary_sources_only",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "Caldor Fire Grizzly Flats Aug 2021",
+        "fingerprint": "caldor-fire-2021-08-15_2021-08-17-sacramento"
+      }
+    },
+    {
+      "event_id": "20210809-red-tide-sw-florida",
+      "title": "Red tide conditions persist in Southwest Florida with suspected fish kills and respiratory irritation",
+      "description": "A report dated August 9, 2021 described ongoing red tide conditions across multiple counties in Southwest Florida. The update referenced suspected fish kills and widespread reports of respiratory irritation consistent with a harmful algal bloom affecting coastal ecosystems and beachgoers.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2021-08-09T00:00:00.000Z",
+        "event_end": "2021-08-09T23:59:59.000Z",
+        "reported_at": "2021-08-09T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2021-08-09T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Tampa, Florida, USA (proxy for Southwest Florida / Tampa Bay area)",
+        "jurisdiction_level": "city",
+        "admin1": "Florida",
+        "country": "US",
+        "capital_used": null,
+        "lat": 27.9506,
+        "lon": -82.4572,
+        "precision": "proxy",
+        "location_basis": "manual_override",
+        "location_confidence": 0.35
+      },
+      "sources": [
+        {
+          "url": "https://www.theguardian.com/us-news/2021/aug/09/red-tide-florida-beaches-fish-kill-phosphate-pollution",
+          "source_name": "The Guardian",
+          "published_at": "2021-08-09T00:00:00.000Z",
+          "headline": "Red tide florida beaches fish kill phosphate pollution",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://news.wgcu.org/2021-02-11/red-tide-report",
+          "source_name": "WGCU",
+          "published_at": "2021-02-11T00:00:00.000Z",
+          "headline": "red tide report",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "Coastal waters",
+          "Marine ecosystem"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "persistent red tide conditions across multiple counties in Southwest Florida",
+            "source_url": "https://www.theguardian.com/us-news/2021/aug/09/red-tide-florida-beaches-fish-kill-phosphate-pollution"
+          },
+          {
+            "quote": "suspected fish kills",
+            "source_url": "https://www.theguardian.com/us-news/2021/aug/09/red-tide-florida-beaches-fish-kill-phosphate-pollution"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.46,
+        "category": 0.75,
+        "location": 0.35,
+        "summary_grounding": 0.35
+      },
+      "quality_flags": [
+        "needs_dedupe_check",
+        "location_ambiguous",
+        "date_ambiguous",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "florida-red-tide-aug-2021",
+        "fingerprint": "florida_red_tide_tampa_proxy_2021-08-09"
+      }
+    },
+    {
+      "event_id": "20210825-ngi-hornet-nest-whatcom",
+      "title": "Northern giant hornet nest eradicated near Blaine in Whatcom County, Washington",
+      "description": "News reports stated that Washington State officials eradicated a northern giant hornet (Asian giant hornet) nest near Blaine in Whatcom County on August 25, 2021. The action was presented as an invasive-species response intended to reduce risks to local pollinators and ecosystems.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "2021-08-25T00:00:00.000Z",
+        "event_end": "2021-08-25T23:59:59.000Z",
+        "reported_at": "2021-08-25T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2021-08-25T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Blaine, Washington, USA",
+        "jurisdiction_level": "city",
+        "admin1": "Washington",
+        "country": "US",
+        "capital_used": null,
+        "lat": 48.9937,
+        "lon": -122.7471,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.cbsnews.com/news/murder-hornet-nest-destroyed-washington/",
+          "source_name": "CBS News",
+          "published_at": "2021-08-25T00:00:00.000Z",
+          "headline": "murder hornet nest destroyed washington",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://whatcom-news.com/asian-giant-hornet-nest-with-nearly-1500-hornets-eradicated-in-east-blaine_149807/",
+          "source_name": "Whatcom News",
+          "published_at": "2021-08-25T00:00:00.000Z",
+          "headline": "asian giant hornet nest with nearly 1500 hornets eradicated in east blaine",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Washington State officials"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "Local ecosystems"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "nest destroyed ... in Washington",
+            "source_url": "https://www.cbsnews.com/news/murder-hornet-nest-destroyed-washington/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.7,
+        "location": 0.6,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "needs_dedupe_check",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "northern-giant-hornet-whatcom-aug-2021",
+        "fingerprint": "ngi_hornet_blaine_2021-08-25"
+      }
+    },
+    {
+      "event_id": "20210831-noaa-crw-bleaching-warning-micronesia-wake",
+      "title": "NOAA Coral Reef Watch reported bleaching warning for parts of Micronesia and Wake Atoll",
+      "description": "A NOAA Coral Reef Watch analysis dated August 31, 2021 stated that a Bleaching Warning was issued for parts of the Federated States of Micronesia and Wake Atoll as heat stress increased. The warning indicated elevated risk of coral bleaching in the region.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2021-08-31T00:00:00.000Z",
+        "event_end": "2021-08-31T23:59:59.000Z",
+        "reported_at": "2021-08-31T00:00:00.000Z",
+        "time_confidence": 0.8,
+        "event_date_utc": "2021-08-31T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Federated States of Micronesia",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "FM",
+        "capital_used": "Palikir",
+        "lat": 6.9248,
+        "lon": 158.161,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://coralreefwatch.noaa.gov/satellite/analyses_guidance/pacific_cbts_ag_20210831.php",
+          "source_name": "NOAA Coral Reef Watch",
+          "published_at": "2021-08-31T00:00:00.000Z",
+          "headline": "Pacific Coral Bleaching Thermal Stress Analysis Guidance (20210831)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA Coral Reef Watch"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "Coral reefs"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "issued a Bleaching Warning for the Federated States of Micronesia and Wake Atoll",
+            "source_url": "https://coralreefwatch.noaa.gov/satellite/analyses_guidance/pacific_cbts_ag_20210831.php"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.7,
+        "location": 0.55,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "needs_dedupe_check",
+        "location_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "noaa-crw-bleaching-warning-micronesia-wake-2021-08",
+        "fingerprint": "noaa_crw_bleaching_warning_fm_2021-08-31"
+      }
+    },
+    {
+      "event_id": "20210818_epa_chlorpyrifos_food_tolerances_us",
+      "title": "U.S. EPA revokes all chlorpyrifos food tolerances",
+      "description": "The U.S. Environmental Protection Agency announced a final rule revoking all tolerances for chlorpyrifos on food. EPA said the action was intended to address risks associated with chlorpyrifos exposure, including protections for children and farmworkers.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "2021-08-18T00:00:00.000Z",
+        "event_end": "2021-08-18T23:59:59.000Z",
+        "reported_at": "2021-08-18T00:00:00.000Z",
+        "time_confidence": 0.8,
+        "event_date_utc": "2021-08-18T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.85
+      },
+      "sources": [
+        {
+          "url": "https://www.epa.gov/newsreleases/epa-takes-action-address-risk-chlorpyrifos-and-protect-childrens-health",
+          "source_name": "U.S. Environmental Protection Agency",
+          "published_at": "2021-08-18T00:00:00.000Z",
+          "headline": "EPA takes action to address risk from chlorpyrifos and protect children’s health",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.axios.com/2021/08/18/epa-bans-pesticide-children-concerns-chlorpyrifos",
+          "source_name": "Axios",
+          "published_at": "2021-08-18T00:00:00.000Z",
+          "headline": "EPA bans pesticide due to children's health concerns: Chlorpyrifos",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Environmental Protection Agency (EPA)"
+        ],
+        "substances": [
+          "chlorpyrifos"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "EPA is revoking all tolerances... for chlorpyrifos on food.",
+            "source_url": "https://www.epa.gov/newsreleases/epa-takes-action-address-risk-chlorpyrifos-and-protect-childrens-health"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.76,
+        "category": 0.9,
+        "location": 0.85,
+        "summary_grounding": 0.7
+      },
+      "quality_flags": [
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "EPA chlorpyrifos tolerance revocation Aug 2021",
+        "fingerprint": "fp_20210818_epa_chlorpyrifos_us"
+      }
+    },
+    {
+      "event_id": "20210809_ipcc_ar6_wg1_release_global",
+      "title": "IPCC releases AR6 Working Group I report on the physical science basis of climate change",
+      "description": "The Intergovernmental Panel on Climate Change released the Working Group I contribution to its Sixth Assessment Report, assessing the physical science basis of climate change. The report is used as scientific input for climate policy and international negotiations.",
+      "category_primary": "policy_regulation",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "2021-08-09T00:00:00.000Z",
+        "event_end": "2021-08-09T23:59:59.000Z",
+        "reported_at": "2021-08-09T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2021-08-09T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Global",
+        "jurisdiction_level": "global_proxy",
+        "admin1": null,
+        "country": null,
+        "capital_used": null,
+        "lat": 0,
+        "lon": 0,
+        "precision": "proxy",
+        "location_basis": "institution_proxy",
+        "location_confidence": 0.5
+      },
+      "sources": [
+        {
+          "url": "https://www.ipcc.ch/2021/06/29/wg1-ar6-release-date-and-approval-session-details/",
+          "source_name": "IPCC",
+          "published_at": "2021-06-29T00:00:00.000Z",
+          "headline": "WG1 AR6 release date and approval session details",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.ipcc.ch/2021/08/",
+          "source_name": "IPCC",
+          "published_at": "2021-08-01T00:00:00.000Z",
+          "headline": "IPCC (August 2021 archive)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Intergovernmental Panel on Climate Change (IPCC)"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "On Monday 9 August 2021, IPCC will release the Working Group I contribution to the Sixth Assessment Report.",
+            "source_url": "https://www.ipcc.ch/2021/06/29/wg1-ar6-release-date-and-approval-session-details/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.75,
+        "location": 0.55,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "low_confidence_location"
+      ],
+      "dedupe": {
+        "cluster_hint": "IPCC AR6 WG1 report release Aug 2021",
+        "fingerprint": "fp_20210809_ipcc_ar6_wg1_global"
+      }
+    }
+  ]
+}

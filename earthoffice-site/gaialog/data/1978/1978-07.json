@@ -1,0 +1,741 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_1978-07_normalize_2026-01-19T094320725Z",
+    "generated_utc": "2026-01-19T09:43:20.725Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "1978-07",
+    "window": {
+      "start_utc": "1978-07-01T00:00:00.000Z",
+      "end_utc": "1978-07-31T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "evt-19780731-rockaway-fuel-oil-spill",
+      "title": "Dredge Pennsylvania sinks entering Rockaway Inlet, releasing fuel oil",
+      "description": "On July 31, 1978, the dredge Pennsylvania sank after running aground while entering Rockaway Inlet in heavy weather, releasing No. 2 and No. 6 fuel oils. The release reportedly oiled birds and affected beaches in parts of New York and New Jersey for days afterward.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1978-07-31T12:00:00Z",
+        "event_end": "1978-07-31T12:00:00Z",
+        "reported_at": "1978-07-31T12:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1978-07-31T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Rockaway Inlet / Rockaway Point, New York, USA",
+        "jurisdiction_level": "site",
+        "admin1": "NY",
+        "country": "US",
+        "capital_used": null,
+        "lat": 40.5667,
+        "lon": -73.8667,
+        "precision": "neighborhood",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://incidentnews.noaa.gov/incident/6243",
+          "source_name": "NOAA IncidentNews",
+          "published_at": "1978-07-31T12:00:00Z",
+          "headline": "Incident 6243",
+          "byline": null,
+          "accessed_utc": "2026-01-19T09:39:43.163Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA"
+        ],
+        "substances": [
+          "No. 2 fuel oil",
+          "No. 6 fuel oil"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "the dredge Pennsylvania sank... releasing No. 2 and No. 6 fuel oils",
+            "source_url": "https://incidentnews.noaa.gov/incident/6243"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.58,
+        "category": 0.8,
+        "location": 0.55,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "noaa-incident-6243-rockaway-inlet-19780731",
+        "fingerprint": "fp-19780731-rockaway-inlet-6243"
+      }
+    },
+    {
+      "event_id": "evt-197807-nc-pcb-dumping-warrenton",
+      "title": "PCB-contaminated oil dumping discovered along North Carolina highways",
+      "description": "In July 1978, officials in North Carolina discovered a malodorous oily substance along road edges that was later identified as PCB-contaminated oil. Reporting described it as part of deliberate dumping along roadways across multiple counties in the state.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1978-07-31T12:00:00Z",
+        "time_confidence": 0.35,
+        "event_date_utc": null,
+        "event_date_precision": "month"
+      },
+      "location": {
+        "name": "Warrenton (Warren County), North Carolina, USA",
+        "jurisdiction_level": "city",
+        "admin1": "NC",
+        "country": "US",
+        "capital_used": null,
+        "lat": 36.3985,
+        "lon": -78.1547,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.5
+      },
+      "sources": [
+        {
+          "url": "https://time.com/archive/6856919/no-dumping/",
+          "source_name": "TIME",
+          "published_at": "1978-07-31T12:00:00Z",
+          "headline": "No Dumping",
+          "byline": null,
+          "accessed_utc": "2026-01-19T09:39:43.163Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [
+          "PCB-contaminated oil",
+          "PCBs"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "malodorous oily substance... later identified as PCB-contaminated oil",
+            "source_url": "https://time.com/archive/6856919/no-dumping/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.5,
+        "category": 0.75,
+        "location": 0.5,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "nc-pcb-roadside-dumping-summer-1978",
+        "fingerprint": "fp-197807-nc-pcb-dumping-warrenton"
+      }
+    },
+    {
+      "event_id": "evt_197807_kickapoo_river_flood_wi",
+      "title": "Kickapoo River flash flood in southwestern Wisconsin",
+      "description": "Intense storms in late June to early July 1978 led to major flooding on the Kickapoo River in southwestern Wisconsin during July 1–5. Sources describe rainfall totals on the order of several inches and flood levels at or near historic records, with major reported damages.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1978-07-01T12:00:00Z",
+        "event_end": "1978-07-05T12:00:00Z",
+        "reported_at": "1978-07-01T00:00:00Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "1978-07-03T00:00:00Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Kickapoo River valley, southwestern Wisconsin, United States",
+        "jurisdiction_level": "state",
+        "admin1": "Wisconsin",
+        "country": "US",
+        "capital_used": "Madison",
+        "lat": 43.074761,
+        "lon": -89.384841,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.75
+      },
+      "sources": [
+        {
+          "url": "https://www.usgs.gov/publications/flood-july-1-5-1978-kickapoo-river-southwestern-wisconsin",
+          "source_name": "USGS",
+          "published_at": "1978-07-01T00:00:00Z",
+          "headline": "Flood of July 1-5, 1978 on the Kickapoo River in Southwestern Wisconsin",
+          "byline": null,
+          "accessed_utc": "2026-01-19T09:40:10.485Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.weather.gov/arx/flood_1978",
+          "source_name": "NOAA/NWS La Crosse (ARX)",
+          "published_at": "1978-07-01T00:00:00Z",
+          "headline": "1978 Floods",
+          "byline": null,
+          "accessed_utc": "2026-01-19T09:40:10.485Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "USGS",
+          "NOAA National Weather Service"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "river"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Flood of July 1-5, 1978 on the Kickapoo River in Southwestern Wisconsin",
+            "source_url": "https://www.usgs.gov/publications/flood-july-1-5-1978-kickapoo-river-southwestern-wisconsin"
+          },
+          {
+            "quote": "1978 Floods",
+            "source_url": "https://www.weather.gov/arx/flood_1978"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.8,
+        "location": 0.75,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "1978 Upper Midwest floods (NWS ARX / USGS reports)",
+        "fingerprint": "kickapoo-river-flash-flood|wisconsin-us|1978-07"
+      }
+    },
+    {
+      "event_id": "evt_197807_rochester_mn_zumbro_flood",
+      "title": "South Fork Zumbro River flooding in Rochester, Minnesota",
+      "description": "An intense thunderstorm in early July 1978 caused record flooding on the South Fork Zumbro River at Rochester, Minnesota, with severe impacts reported by hydrologic and weather sources. The event is described as producing very high peak flows with significant damage and emergency response impacts.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1978-07-05T12:00:00Z",
+        "event_end": "1978-07-07T12:00:00Z",
+        "reported_at": "1978-07-05T00:00:00Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "1978-07-06T00:00:00Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Rochester, Minnesota, United States (South Fork Zumbro River)",
+        "jurisdiction_level": "city",
+        "admin1": "Minnesota",
+        "country": "US",
+        "capital_used": null,
+        "lat": 44.012122,
+        "lon": -92.480199,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.8
+      },
+      "sources": [
+        {
+          "url": "https://www.usgs.gov/publications/flood-july-5-7-1978-south-fork-zumbro-river-rochester-minnesota",
+          "source_name": "USGS",
+          "published_at": "1978-07-05T00:00:00Z",
+          "headline": "Flood of July 5-7, 1978 on the South Fork Zumbro River at Rochester, Minnesota",
+          "byline": null,
+          "accessed_utc": "2026-01-19T09:40:10.485Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.weather.gov/arx/flood_1978",
+          "source_name": "NOAA/NWS La Crosse (ARX)",
+          "published_at": "1978-07-05T00:00:00Z",
+          "headline": "1978 Floods",
+          "byline": null,
+          "accessed_utc": "2026-01-19T09:40:10.485Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "USGS",
+          "NOAA National Weather Service"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "river"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Flood of July 5-7, 1978 on the South Fork Zumbro River at Rochester, Minnesota",
+            "source_url": "https://www.usgs.gov/publications/flood-july-5-7-1978-south-fork-zumbro-river-rochester-minnesota"
+          },
+          {
+            "quote": "1978 Floods",
+            "source_url": "https://www.weather.gov/arx/flood_1978"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.66,
+        "category": 0.8,
+        "location": 0.8,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "1978 Upper Midwest floods (NWS ARX / USGS reports)",
+        "fingerprint": "south-fork-zumbro-rochester|rochester-minnesota-us|1978-07"
+      }
+    },
+    {
+      "event_id": "evt_197807_austin_mn_flash_flood",
+      "title": "Flash flooding in and near Austin, Minnesota",
+      "description": "Heavy rainfall in mid-July 1978 led to flash flooding affecting Austin and nearby areas in southeastern Minnesota. Weather-service reporting describes impacts including flooded roads and infrastructure disruptions in the affected county and communities.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1978-07-16T12:00:00Z",
+        "event_end": "1978-07-17T12:00:00Z",
+        "reported_at": "1978-07-16T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1978-07-17T00:00:00Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Austin and surrounding areas, southeast Minnesota, United States",
+        "jurisdiction_level": "city",
+        "admin1": "Minnesota",
+        "country": "US",
+        "capital_used": null,
+        "lat": 43.666629,
+        "lon": -92.974636,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.65
+      },
+      "sources": [
+        {
+          "url": "https://www.weather.gov/arx/flood_1978",
+          "source_name": "NOAA/NWS La Crosse (ARX)",
+          "published_at": "1978-07-16T00:00:00Z",
+          "headline": "1978 Floods",
+          "byline": null,
+          "accessed_utc": "2026-01-19T09:40:10.485Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA National Weather Service"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "1978 Floods",
+            "source_url": "https://www.weather.gov/arx/flood_1978"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.5,
+        "category": 0.75,
+        "location": 0.65,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "1978 Upper Midwest floods (NWS ARX)",
+        "fingerprint": "austin-mn-flash-flood|austin-minnesota-us|1978-07"
+      }
+    },
+    {
+      "event_id": "evt_197807_north_bihar_bagmati_adhwara_floods",
+      "title": "Monsoon-season flooding in Bagmati and Adhwara river basins, north Bihar",
+      "description": "A scientific article in MAUSAM discusses severe flooding affecting the Bagmati and Adhwara river groups in north Bihar during July 1978. The paper attributes high flood levels to short-duration, high-intensity storm rainfall and compares levels with prior historic floods.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1978-07-15T12:00:00Z",
+        "event_end": "1978-07-15T12:00:00Z",
+        "reported_at": "1978-07-15T00:00:00Z",
+        "time_confidence": 0.4,
+        "event_date_utc": "1978-07-15T00:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "North Bihar, India (Bagmati and Adhwara river basins)",
+        "jurisdiction_level": "state",
+        "admin1": "Bihar",
+        "country": "IN",
+        "capital_used": "Patna",
+        "lat": 25.594095,
+        "lon": 85.137566,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://mausamjournal.imd.gov.in/index.php/MAUSAM/article/view/3347",
+          "source_name": "MAUSAM (India Meteorological Department journal)",
+          "published_at": "1978-07-15T00:00:00Z",
+          "headline": "MAUSAM article view 3347",
+          "byline": null,
+          "accessed_utc": "2026-01-19T09:40:10.485Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://doi.org/10.54302/mausam.v32i4.3347",
+          "source_name": "DOI",
+          "published_at": "1978-07-15T00:00:00Z",
+          "headline": "10.54302/mausam.v32i4.3347",
+          "byline": null,
+          "accessed_utc": "2026-01-19T09:40:10.485Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "India Meteorological Department"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "river basin"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "MAUSAM/article/view/3347",
+            "source_url": "https://mausamjournal.imd.gov.in/index.php/MAUSAM/article/view/3347"
+          },
+          {
+            "quote": "10.54302/mausam.v32i4.3347",
+            "source_url": "https://doi.org/10.54302/mausam.v32i4.3347"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.48,
+        "category": 0.75,
+        "location": 0.6,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "1978 Bihar monsoon flooding (Bagmati/Adhwara)",
+        "fingerprint": "bagmati-adhwara-floods|bihar-in|1978-07"
+      }
+    },
+    {
+      "event_id": "evt-19780703-tecopa-pupfish-proposed-delisting",
+      "title": "U.S. Fish & Wildlife Service proposes delisting Tecopa pupfish due to presumed extinction",
+      "description": "On July 3, 1978, the U.S. Fish and Wildlife Service issued a news release proposing to remove the Tecopa pupfish from the endangered species list because it was presumed extinct after repeated surveys failed to find it. The release attributed the loss to habitat changes and human-related impacts in its springs habitat.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1978-07-03T12:00:00Z",
+        "event_end": "1978-07-03T12:00:00Z",
+        "reported_at": "1978-07-03T00:00:00Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "1978-07-03T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Tecopa area (Inyo County, California, USA)",
+        "jurisdiction_level": "site",
+        "admin1": "California",
+        "country": "US",
+        "capital_used": null,
+        "lat": 35.8464,
+        "lon": -116.2264,
+        "precision": "exact",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.5
+      },
+      "sources": [
+        {
+          "url": "https://www.fws.gov/sites/default/files/documents/historic-news-releases/1978/19780703B.PDF",
+          "source_name": "U.S. Fish & Wildlife Service",
+          "published_at": "1978-07-03T00:00:00Z",
+          "headline": "Historic news release (Tecopa pupfish proposed delisting)",
+          "byline": null,
+          "accessed_utc": "2026-01-19T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.fws.gov/species-publication-action/proposed-delisting-tecopa-pupfish",
+          "source_name": "U.S. Fish & Wildlife Service",
+          "published_at": "1978-07-03T00:00:00Z",
+          "headline": "Proposed delisting: Tecopa pupfish",
+          "byline": null,
+          "accessed_utc": "2026-01-19T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Fish and Wildlife Service"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "desert springs"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "proposes to remove the Tecopa pupfish ... because it is presumed to be extinct",
+            "source_url": "https://www.fws.gov/sites/default/files/documents/historic-news-releases/1978/19780703B.PDF"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.8,
+        "location": 0.5,
+        "summary_grounding": 0.7
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "tecopa-pupfish-delisting-1978-07",
+        "fingerprint": "fp-evt-19780703-tecopa-pupfish-proposed-delisting-tecopa-ca-us-1978-07"
+      }
+    },
+    {
+      "event_id": "evt_19780719_us_senate_esa_amendments_s2899",
+      "title": "U.S. Senate passes Endangered Species Act Amendments bill (S. 2899)",
+      "description": "The U.S. Senate passed S. 2899, a bill to amend the Endangered Species Act. The bill was part of the legislative activity that culminated in 1978 ESA amendments, including creation of the Endangered Species Committee and changes to consultation/exemption processes.",
+      "category_primary": "policy_regulation",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "1978-07-19T12:00:00Z",
+        "event_end": "1978-07-19T12:00:00Z",
+        "reported_at": "1978-07-19T12:00:00Z",
+        "time_confidence": 0.5,
+        "event_date_utc": "1978-07-19T12:00:00Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "United States (U.S. Senate)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.8
+      },
+      "sources": [
+        {
+          "url": "https://www.congress.gov/bill/95th-congress/senate-bill/2899",
+          "source_name": "Congress.gov",
+          "published_at": "1978-07-19T12:00:00Z",
+          "headline": "S.2899 — A bill to amend the Endangered Species Act of 1973, and for other purposes.",
+          "byline": null,
+          "accessed_utc": "2026-01-19T09:42:03.255Z",
+          "canonical_url": null
+        },
+        {
+          "url": "http://www.gpo.gov/fdsys/pkg/STATUTE-92/pdf/STATUTE-92-Pg3751.pdf",
+          "source_name": "U.S. Government Publishing Office (GPO)",
+          "published_at": "1978-11-10T00:00:00Z",
+          "headline": "Public Law 95-632 (Endangered Species Act Amendments of 1978)",
+          "byline": null,
+          "accessed_utc": "2026-01-19T09:42:03.255Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Senate",
+          "U.S. Congress"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "S.2899 — A bill to amend the Endangered Species Act of 1973, and for other purposes.",
+            "source_url": "https://www.congress.gov/bill/95th-congress/senate-bill/2899"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.75,
+        "location": 0.8,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "US_ESA_1978_legislation",
+        "fingerprint": "fp_us_esa_s2899_19780719_washingtondc"
+      }
+    },
+    {
+      "event_id": "evt_19780728_us_house_uranium_mill_tailings_hr13650_intro",
+      "title": "U.S. House bill introduced to address uranium mill tailings risks (H.R. 13650)",
+      "description": "H.R. 13650 was introduced in the U.S. House to address environmental and public-health risks from uranium mill tailings. The measure preceded later 1978 enactment directing EPA standards and federal responsibilities for stabilization, disposal, and cleanup of uranium mill waste.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "1978-07-28T12:00:00Z",
+        "event_end": "1978-07-28T12:00:00Z",
+        "reported_at": "1978-07-28T12:00:00Z",
+        "time_confidence": 0.5,
+        "event_date_utc": "1978-07-28T12:00:00Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "United States (U.S. House of Representatives)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.8
+      },
+      "sources": [
+        {
+          "url": "https://www.congress.gov/bill/95th-congress/house-bill/13650",
+          "source_name": "Congress.gov",
+          "published_at": "1978-07-28T12:00:00Z",
+          "headline": "H.R.13650 — A bill to provide for the stabilization, disposal, and control of uranium mill tailings…",
+          "byline": null,
+          "accessed_utc": "2026-01-19T09:42:03.255Z",
+          "canonical_url": null
+        },
+        {
+          "url": "http://www.gpo.gov/fdsys/pkg/STATUTE-92/pdf/STATUTE-92-Pg3021.pdf",
+          "source_name": "U.S. Government Publishing Office (GPO)",
+          "published_at": "1978-11-08T00:00:00Z",
+          "headline": "Public Law 95-604 (Uranium Mill Tailings Radiation Control Act of 1978)",
+          "byline": null,
+          "accessed_utc": "2026-01-19T09:42:03.255Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. House of Representatives",
+          "U.S. Congress",
+          "U.S. Environmental Protection Agency (EPA)"
+        ],
+        "substances": [
+          "uranium mill tailings"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "H.R.13650 — A bill to provide for the stabilization, disposal, and control of uranium mill tailings…",
+            "source_url": "https://www.congress.gov/bill/95th-congress/house-bill/13650"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.75,
+        "location": 0.8,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "US_UMTRCA_1978_legislation",
+        "fingerprint": "fp_us_umtrca_hr13650_19780728_washingtondc"
+      }
+    }
+  ]
+}

@@ -1,0 +1,1157 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_2018-11_normalize_2026-01-16T063758537Z",
+    "generated_utc": "2026-01-16T06:37:58.537Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "2018-11",
+    "window": {
+      "start_utc": "2018-11-01T00:00:00.000Z",
+      "end_utc": "2018-11-30T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "evt_20181115_lake_paige_dulac_oil_discharge",
+      "title": "Crude oil discharged into marsh near Dulac at Lake Paige Oil and Gas Field",
+      "description": "NOAA incident reporting indicates a flow line owned by Texas Petroleum Investment Corporation discharged an estimated ~10 barrels of crude oil into an unnamed marsh near Dulac, Louisiana. Additional oil was later found trapped in floating marsh, and an in-situ burn was used as part of response actions.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2018-11-15T00:00:00.000Z",
+        "event_end": "2018-11-19T23:59:59.000Z",
+        "reported_at": "2018-11-01T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2018-11-15T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Near Dulac, Louisiana, USA",
+        "jurisdiction_level": "site",
+        "admin1": "Louisiana",
+        "country": "US",
+        "capital_used": null,
+        "lat": 29.3888,
+        "lon": -90.7132,
+        "precision": "neighborhood",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.45
+      },
+      "sources": [
+        {
+          "url": "https://incidentnews.noaa.gov/incident/9819/541410",
+          "source_name": "NOAA IncidentNews",
+          "published_at": "2018-11-01T00:00:00.000Z",
+          "headline": "Incident 9819",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://blog.response.restoration.noaa.gov/incident-responses-november-2018",
+          "source_name": "NOAA Response & Restoration Blog",
+          "published_at": "2018-11-01T00:00:00.000Z",
+          "headline": "Incident Responses: November 2018",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Texas Petroleum Investment Corporation",
+          "NOAA",
+          "U.S. Coast Guard"
+        ],
+        "substances": [
+          "crude oil"
+        ],
+        "ecosystems": [
+          "marsh"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "discharged an estimated ~10 barrels of crude oil into an unnamed marsh",
+            "source_url": "https://incidentnews.noaa.gov/incident/9819/541410"
+          },
+          {
+            "quote": "additional oil was later found trapped in the floating marsh and an in-situ burn was applied",
+            "source_url": "https://blog.response.restoration.noaa.gov/incident-responses-november-2018"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.85,
+        "location": 0.45,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "NOAA_RR_Nov2018_oil_incidents_LA_TX",
+        "fingerprint": "fp_20181115_lake_paige_dulac_oil_discharge"
+      }
+    },
+    {
+      "event_id": "evt_20181115_port_arthur_offshore_oil_sheen",
+      "title": "Offshore oil sheen near platform about 6 miles off Port Arthur, Texas",
+      "description": "NOAA’s November 2018 incident response reporting describes U.S. Coast Guard contact regarding an offshore oil sheen/discharge near a platform roughly six miles off Port Arthur, Texas. NOAA provided trajectory support, and a subsequent overflight reportedly observed no recoverable oil.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2018-11-15T00:00:00.000Z",
+        "event_end": "2018-11-18T23:59:59.000Z",
+        "reported_at": "2018-11-01T00:00:00.000Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "2018-11-15T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Offshore near Port Arthur, Texas, USA (Gulf of Mexico)",
+        "jurisdiction_level": "site",
+        "admin1": "Texas",
+        "country": "US",
+        "capital_used": null,
+        "lat": 29.8849,
+        "lon": -93.9399,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.35
+      },
+      "sources": [
+        {
+          "url": "https://blog.response.restoration.noaa.gov/incident-responses-november-2018",
+          "source_name": "NOAA Response & Restoration Blog",
+          "published_at": "2018-11-01T00:00:00.000Z",
+          "headline": "Incident Responses: November 2018",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA",
+          "U.S. Coast Guard"
+        ],
+        "substances": [
+          "oil"
+        ],
+        "ecosystems": [
+          "Gulf of Mexico"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "offshore oil sheen/discharge near a platform",
+            "source_url": "https://blog.response.restoration.noaa.gov/incident-responses-november-2018"
+          },
+          {
+            "quote": "subsequent overflight reported no recoverable oil observed",
+            "source_url": "https://blog.response.restoration.noaa.gov/incident-responses-november-2018"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.48,
+        "category": 0.8,
+        "location": 0.35,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "NOAA_RR_Nov2018_oil_incidents_LA_TX",
+        "fingerprint": "fp_20181115_port_arthur_offshore_oil_sheen"
+      }
+    },
+    {
+      "event_id": "evt_20181128_breton_sound_corrosion_pinhole_sheen",
+      "title": "Oil sheen near Breton Sound lease blocks attributed to corrosion pinhole leak",
+      "description": "NOAA’s November 2018 incident response reporting describes a Coast Guard report of an unsecured discharge with a sheen observed by overflight near Breton Sound lease blocks 21 and 32. NOAA provided fate/trajectory and resources-at-risk support, and the discharge was attributed to a pinhole leak caused by excessive corrosion.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2018-11-28T00:00:00.000Z",
+        "event_end": "2018-11-29T23:59:59.000Z",
+        "reported_at": "2018-11-01T00:00:00.000Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "2018-11-28T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Breton Sound, Louisiana, USA (near lease blocks 21 and 32)",
+        "jurisdiction_level": "site",
+        "admin1": "Louisiana",
+        "country": "US",
+        "capital_used": null,
+        "lat": 29.51,
+        "lon": -89.7,
+        "precision": "admin1",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.3
+      },
+      "sources": [
+        {
+          "url": "https://blog.response.restoration.noaa.gov/incident-responses-november-2018",
+          "source_name": "NOAA Response & Restoration Blog",
+          "published_at": "2018-11-01T00:00:00.000Z",
+          "headline": "Incident Responses: November 2018",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA",
+          "U.S. Coast Guard"
+        ],
+        "substances": [
+          "oil"
+        ],
+        "ecosystems": [
+          "Breton Sound"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "sheen observed by overflight",
+            "source_url": "https://blog.response.restoration.noaa.gov/incident-responses-november-2018"
+          },
+          {
+            "quote": "pinhole leak caused by excessive corrosion",
+            "source_url": "https://blog.response.restoration.noaa.gov/incident-responses-november-2018"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.45,
+        "category": 0.8,
+        "location": 0.3,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "NOAA_RR_Nov2018_oil_incidents_LA_TX",
+        "fingerprint": "fp_20181128_breton_sound_corrosion_pinhole_sheen"
+      }
+    },
+    {
+      "event_id": "evt_20181128_venice_la_storage_tank_overflow",
+      "title": "Crude oil discharge from storage tank overflow at facility in Venice, Louisiana",
+      "description": "NOAA’s November 2018 incident response reporting describes Coast Guard contact regarding a crude oil discharge from an overflow storage tank at a facility in Venice, Louisiana. NOAA provided trajectory analysis; the discharge was reported to originate from a crack in casing on an inactive well and was being actively contained with boom.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2018-11-28T00:00:00.000Z",
+        "event_end": "2018-11-29T23:59:59.000Z",
+        "reported_at": "2018-11-01T00:00:00.000Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "2018-11-28T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Venice, Louisiana, USA",
+        "jurisdiction_level": "city",
+        "admin1": "Louisiana",
+        "country": "US",
+        "capital_used": null,
+        "lat": 29.2772,
+        "lon": -89.3545,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://blog.response.restoration.noaa.gov/incident-responses-november-2018",
+          "source_name": "NOAA Response & Restoration Blog",
+          "published_at": "2018-11-01T00:00:00.000Z",
+          "headline": "Incident Responses: November 2018",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA",
+          "U.S. Coast Guard"
+        ],
+        "substances": [
+          "crude oil"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "crude oil discharge from an overflow storage tank",
+            "source_url": "https://blog.response.restoration.noaa.gov/incident-responses-november-2018"
+          },
+          {
+            "quote": "actively contained with boom",
+            "source_url": "https://blog.response.restoration.noaa.gov/incident-responses-november-2018"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.52,
+        "category": 0.8,
+        "location": 0.7,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "NOAA_RR_Nov2018_oil_incidents_LA_TX",
+        "fingerprint": "fp_20181128_venice_la_storage_tank_overflow"
+      }
+    },
+    {
+      "event_id": "201811_camp_fire_smoke_norcal_air_quality",
+      "title": "Camp Fire smoke degrades air quality across Northern California",
+      "description": "As the Camp Fire burned in Butte County, wildfire smoke led to unhealthy to hazardous air quality across parts of Northern California, including the San Francisco Bay Area and the Sacramento region, prompting public health advisories.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2018-11-08T00:00:00.000Z",
+        "event_end": "2018-11-20T23:59:59.000Z",
+        "reported_at": "2018-11-12T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2018-11-12T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Northern California (San Francisco Bay Area and Sacramento), United States",
+        "jurisdiction_level": "state",
+        "admin1": "California",
+        "country": "US",
+        "capital_used": "Sacramento",
+        "lat": 38.5816,
+        "lon": -121.4944,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://weather.com/news/news/2018-11-12-camp-fire-sacramento-san-francisco-air-quality",
+          "source_name": "The Weather Channel",
+          "published_at": "2018-11-12T00:00:00.000Z",
+          "headline": "2018-11-12-camp-fire-sacramento-san-francisco-air-quality",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.baaqmd.gov/news-and-events/page-resources/2018-news/111218-wsta",
+          "source_name": "Bay Area Air Quality Management District",
+          "published_at": "2018-11-12T00:00:00.000Z",
+          "headline": "111218-wsta",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Bay Area Air Quality Management District"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.7,
+        "location": 0.7,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "needs_dedupe_check",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "Camp Fire smoke air quality Northern California Nov 2018",
+        "fingerprint": "camp_fire_smoke_northern_california_2018-11"
+      }
+    },
+    {
+      "event_id": "201811_victoria_au_winds_flooding_hail",
+      "title": "Strong winds, flash flooding and hail events in Victoria, Australia",
+      "description": "Early November 2018 in Victoria included episodes of strong winds and periods of heavy rainfall associated with a trough that produced flash flooding in Melbourne, with hail also reported in the period.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2018-11-02T00:00:00.000Z",
+        "event_end": "2018-11-07T23:59:59.000Z",
+        "reported_at": "2018-12-01T00:00:00.000Z",
+        "time_confidence": 0.5,
+        "event_date_utc": null,
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Victoria, Australia",
+        "jurisdiction_level": "state",
+        "admin1": "Victoria",
+        "country": "AU",
+        "capital_used": "Melbourne",
+        "lat": -37.8136,
+        "lon": 144.9631,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://www.bom.gov.au/climate/current/month/vic/archive/201811.summary.shtml",
+          "source_name": "Australian Bureau of Meteorology",
+          "published_at": "2018-12-01T00:00:00.000Z",
+          "headline": "Victoria November 2018 climate summary (archive)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Australian Bureau of Meteorology"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.7,
+        "location": 0.7,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "BOM Victoria Nov 2018 severe weather episodes",
+        "fingerprint": "vic_au_winds_flooding_hail_2018-11"
+      }
+    },
+    {
+      "event_id": "201811_qld_au_severe_thunderstorms_hail_winds",
+      "title": "Severe thunderstorms with damaging winds and hail in Queensland, Australia",
+      "description": "During November 2018, severe thunderstorms affected parts of Queensland, including reports of hail in southeast Queensland and later storms with strong winds, including a high gust reported at Lucinda Point.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2018-11-17T00:00:00.000Z",
+        "event_end": "2018-11-28T23:59:59.000Z",
+        "reported_at": "2018-12-01T00:00:00.000Z",
+        "time_confidence": 0.5,
+        "event_date_utc": null,
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Queensland, Australia",
+        "jurisdiction_level": "state",
+        "admin1": "Queensland",
+        "country": "AU",
+        "capital_used": "Brisbane",
+        "lat": -27.4698,
+        "lon": 153.0251,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://www.bom.gov.au/climate/current/month/qld/archive/201811.summary.shtml",
+          "source_name": "Australian Bureau of Meteorology",
+          "published_at": "2018-12-01T00:00:00.000Z",
+          "headline": "Queensland November 2018 climate summary (archive)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Australian Bureau of Meteorology"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.7,
+        "location": 0.7,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "BOM Queensland Nov 2018 severe thunderstorms",
+        "fingerprint": "qld_au_severe_thunderstorms_2018-11"
+      }
+    },
+    {
+      "event_id": "201811_nt_au_monthly_warm_wet_conditions",
+      "title": "Above-average warmth and wetter conditions in Northern Territory, Australia (monthly summary)",
+      "description": "A monthly climate summary for November 2018 reported above-average temperatures in the Northern Territory, including notably warm overnight temperatures, along with above-average rainfall in parts of the territory, particularly the southeast.",
+      "category_primary": "weather_climate",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "2018-11-01T00:00:00.000Z",
+        "event_end": "2018-11-30T23:59:59.000Z",
+        "reported_at": "2018-12-01T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": null,
+        "event_date_precision": "month"
+      },
+      "location": {
+        "name": "Northern Territory, Australia",
+        "jurisdiction_level": "state",
+        "admin1": "Northern Territory",
+        "country": "AU",
+        "capital_used": "Darwin",
+        "lat": -12.4634,
+        "lon": 130.8456,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://www.bom.gov.au/climate/current/month/nt/archive/201811.summary.shtml",
+          "source_name": "Australian Bureau of Meteorology",
+          "published_at": "2018-12-01T00:00:00.000Z",
+          "headline": "Northern Territory November 2018 climate summary (archive)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Australian Bureau of Meteorology"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.7,
+        "location": 0.7,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "BOM Northern Territory Nov 2018 climate summary warm wet",
+        "fingerprint": "nt_au_monthly_warm_wet_2018-11"
+      }
+    },
+    {
+      "event_id": "201811_nws_aberdeen_cold_wintry_precip_sd_mn",
+      "title": "Cold anomalies and wintry precipitation episodes in northeastern South Dakota and western Minnesota",
+      "description": "A National Weather Service Aberdeen summary described November conditions as colder than average for the area, with record cold values on multiple days and several wintry precipitation events during the month.",
+      "category_primary": "weather_climate",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "2018-11-09T00:00:00.000Z",
+        "event_end": "2018-11-28T23:59:59.000Z",
+        "reported_at": "2018-12-31T00:00:00.000Z",
+        "time_confidence": 0.4,
+        "event_date_utc": null,
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "South Dakota, United States (NWS Aberdeen service area)",
+        "jurisdiction_level": "state",
+        "admin1": "South Dakota",
+        "country": "US",
+        "capital_used": "Pierre",
+        "lat": 44.3683,
+        "lon": -100.3509,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.weather.gov/abr/Top10WeatherEventsof2018Etc",
+          "source_name": "National Weather Service (Aberdeen, SD)",
+          "published_at": "2018-12-31T00:00:00.000Z",
+          "headline": "Top 10 Weather Events of 2018 (and related summaries)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "National Weather Service"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.45,
+        "category": 0.6,
+        "location": 0.55,
+        "summary_grounding": 0.35
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "NWS Aberdeen Nov 2018 cold and wintry precipitation",
+        "fingerprint": "nws_aberdeen_cold_wintry_sd_mn_2018-11"
+      }
+    },
+    {
+      "event_id": "20181130_anchorage_earthquake_m71_usgs",
+      "title": "Mw 7.1 earthquake near Anchorage, Alaska",
+      "description": "A magnitude 7.1 earthquake struck near Anchorage, Alaska on November 30, 2018, producing strong shaking. USGS materials describe associated ground failures including landslides, liquefaction, and ground cracking.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2018-11-30T17:29:28.000Z",
+        "event_end": "2018-11-30T23:59:59.000Z",
+        "reported_at": "2018-11-30T17:29:28.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2018-11-30T17:29:28.000Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Near Anchorage, Alaska, USA",
+        "jurisdiction_level": "city",
+        "admin1": "Alaska",
+        "country": "US",
+        "capital_used": null,
+        "lat": 61.2181,
+        "lon": -149.9003,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.usgs.gov/centers/alaska-science-center/science/m71-november-30-2018-anchorage-earthquake",
+          "source_name": "USGS",
+          "published_at": "2018-11-30T00:00:00Z",
+          "headline": "M7.1 November 30, 2018 Anchorage Earthquake",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.usgs.gov/publications/ground-failure-anchorage-alaska-earthquake-30-november-2018",
+          "source_name": "USGS Publications",
+          "published_at": "2018-11-30T00:00:00Z",
+          "headline": "Ground failure in Anchorage, Alaska, from the earthquake of 30 November 2018",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "USGS"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "A magnitude 7.1 earthquake struck north of Anchorage on Nov 30, 2018.",
+            "source_url": "https://www.usgs.gov/centers/alaska-science-center/science/m71-november-30-2018-anchorage-earthquake"
+          },
+          {
+            "quote": "Ground failure ... included landslides, liquefaction, and ground cracking.",
+            "source_url": "https://www.usgs.gov/publications/ground-failure-anchorage-alaska-earthquake-30-november-2018"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.66,
+        "category": 0.9,
+        "location": 0.6,
+        "summary_grounding": 0.65
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Anchorage Alaska earthquake 2018-11-30",
+        "fingerprint": "anchorage-alaska-us_2018-11-30_mw7-1"
+      }
+    },
+    {
+      "event_id": "2018-11-fires-camp-fire-smoke-northern-california",
+      "title": "Camp Fire and widespread smoke impacts across Northern California",
+      "description": "The Camp Fire started on November 8, 2018 in Northern California and produced extensive smoke that degraded air quality across the region. Reports described prolonged poor air quality and related public health advisories impacting multiple cities in Northern California.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2018-11-08T00:00:00.000Z",
+        "event_end": "2018-11-25T23:59:59.000Z",
+        "reported_at": "2018-11-12T00:00:00Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2018-11-08T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Butte County, California, USA",
+        "jurisdiction_level": "state",
+        "admin1": "California",
+        "country": "US",
+        "capital_used": "Sacramento",
+        "lat": 38.5816,
+        "lon": -121.4944,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://weather.com/news/news/2018-11-12-camp-fire-sacramento-san-francisco-air-quality",
+          "source_name": "The Weather Channel",
+          "published_at": "2018-11-12T00:00:00Z",
+          "headline": "2018-11-12-camp-fire-sacramento-san-francisco-air-quality",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://time.com/5453092/california-wildfires-smoke-space-image/",
+          "source_name": "TIME",
+          "published_at": "2018-11-16T00:00:00Z",
+          "headline": "California Wildfires Smoke Space Image (TIME.com/5453092)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [
+          "wildfire smoke",
+          "particulate matter"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "The Camp Fire began Nov. 8, 2018 and produced extensive wildfire smoke that degraded air quality across Northern California.",
+            "source_url": "https://weather.com/news/news/2018-11-12-camp-fire-sacramento-san-francisco-air-quality"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.8,
+        "location": 0.6,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "needs_dedupe_check",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "Camp Fire smoke impacts Northern California Nov 2018",
+        "fingerprint": "camp-fire-and-widespread-smoke-impacts-across-northern-california|california|2018-11-08"
+      }
+    },
+    {
+      "event_id": "2018-11-fires-woolsey-fire-southern-california",
+      "title": "Woolsey Fire in Southern California prompts evacuations and smoke impacts",
+      "description": "The Woolsey Fire ignited on November 8, 2018 in Southern California and burned in Los Angeles and Ventura counties. Coverage described significant smoke impacts and large-scale evacuations affecting nearby communities including the Malibu and Thousand Oaks areas.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2018-11-08T00:00:00.000Z",
+        "event_end": "2018-11-21T23:59:59.000Z",
+        "reported_at": "2018-11-09T00:00:00Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2018-11-08T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Los Angeles and Ventura Counties, California, USA",
+        "jurisdiction_level": "state",
+        "admin1": "California",
+        "country": "US",
+        "capital_used": "Sacramento",
+        "lat": 38.5816,
+        "lon": -121.4944,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://abc7.com/woolsey-fire-burns-more-than-83200-acres-as-it-burns-in-la-ventura-county-area/4661280/",
+          "source_name": "ABC7 Los Angeles",
+          "published_at": "2018-11-09T00:00:00Z",
+          "headline": "Woolsey Fire burns more than 83,200 acres as it burns in LA, Ventura County area (ABC7)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://abc7.com/post/woolsey-fire-containment-reaches-100-percent/4736532/",
+          "source_name": "ABC7 Los Angeles",
+          "published_at": "2018-11-21T00:00:00Z",
+          "headline": "Woolsey Fire containment reaches 100 percent (ABC7)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [
+          "wildfire smoke"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "The Woolsey Fire ignited Nov 8, 2018 and burned through parts of Los Angeles and Ventura counties.",
+            "source_url": "https://abc7.com/woolsey-fire-burns-more-than-83200-acres-as-it-burns-in-la-ventura-county-area/4661280/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.85,
+        "location": 0.55,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "needs_dedupe_check",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "Woolsey Fire Southern California Nov 2018",
+        "fingerprint": "woolsey-fire-in-southern-california-prompts-evacuations-and-smoke-impacts|california|2018-11-08"
+      }
+    },
+    {
+      "event_id": "20181117_egypt_sharm-el-sheikh_cbd_cop14",
+      "title": "CBD COP14 biodiversity conference convenes in Sharm El-Sheikh, Egypt",
+      "description": "The Convention on Biological Diversity (CBD) Conference of the Parties (COP14) convened in Sharm El-Sheikh, Egypt in November 2018. The meeting addressed mainstreaming biodiversity across sectors and advanced work toward the post-2020 global biodiversity framework process.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "2018-11-17T00:00:00.000Z",
+        "event_end": "2018-11-29T23:59:59.000Z",
+        "reported_at": "2018-11-17T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2018-11-17T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Sharm El-Sheikh, Egypt",
+        "jurisdiction_level": "city",
+        "admin1": null,
+        "country": "EG",
+        "capital_used": null,
+        "lat": 27.9158,
+        "lon": 34.3299,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://whc.unesco.org/en/news/1917",
+          "source_name": "UNESCO World Heritage Centre",
+          "published_at": "2018-11-17T00:00:00.000Z",
+          "headline": "UN Biodiversity Conference opens in Sharm El-Sheikh, Egypt",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://enb.iisd.org/biodiv/cop14/enb/about.html",
+          "source_name": "IISD Earth Negotiations Bulletin",
+          "published_at": "2018-11-17T00:00:00.000Z",
+          "headline": "About CBD COP 14",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Convention on Biological Diversity (CBD)",
+          "UNESCO",
+          "International Institute for Sustainable Development (IISD)"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "biodiversity"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "UN Biodiversity Conference opens in Sharm El-Sheikh, Egypt",
+            "source_url": "https://whc.unesco.org/en/news/1917"
+          },
+          {
+            "quote": "COP 14 took place in Sharm El-Sheikh, Egypt",
+            "source_url": "https://enb.iisd.org/biodiv/cop14/enb/about.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.7,
+        "location": 0.7,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "CBD COP14 Sharm El-Sheikh Nov 2018",
+        "fingerprint": "fp_20181117_sharm_el_sheikh_egypt_cbd_cop14"
+      }
+    },
+    {
+      "event_id": "evt_20181127_us_supreme_court_weyerhaeuser_dusky_gopher_frog",
+      "title": "U.S. Supreme Court vacates and remands Weyerhaeuser case on dusky gopher frog critical habitat",
+      "description": "On Nov. 27, 2018, the U.S. Supreme Court issued its decision in Weyerhaeuser Co. v. U.S. Fish and Wildlife Service concerning designation of critical habitat for the dusky gopher frog. The Court held that \"critical habitat\" must be \"habitat\" and that certain agency decisions not to exclude areas from critical habitat can be subject to judicial review, and it vacated and remanded for further proceedings.",
+      "category_primary": "policy_regulation",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2018-11-27T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2018-11-27T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States Supreme Court (Washington, DC)",
+        "jurisdiction_level": "site",
+        "admin1": "DC",
+        "country": "US",
+        "capital_used": null,
+        "lat": 38.8906,
+        "lon": -77.0044,
+        "precision": "exact",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://supreme.justia.com/cases/federal/us/586/17-71/",
+          "source_name": "Justia U.S. Supreme Court Center",
+          "published_at": "2018-11-27T00:00:00.000Z",
+          "headline": "Weyerhaeuser Co. v. U.S. Fish and Wildlife Service",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.biologicaldiversity.org/news/press_releases/2018/dusky-gopher-frog-11-27-2018.php",
+          "source_name": "Center for Biological Diversity",
+          "published_at": "2018-11-27T00:00:00.000Z",
+          "headline": "Press release on dusky gopher frog Supreme Court decision",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Supreme Court",
+          "U.S. Fish and Wildlife Service",
+          "Weyerhaeuser Co.",
+          "Center for Biological Diversity"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Critical habitat under the Act is not habitat at all; it is simply ‘critical’ to the species.",
+            "source_url": "https://supreme.justia.com/cases/federal/us/586/17-71/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.7,
+        "category": 0.85,
+        "location": 0.6,
+        "summary_grounding": 0.65
+      },
+      "quality_flags": [
+        "secondary_sources_only",
+        "date_ambiguous",
+        "location_ambiguous",
+        "possible_opinion_or_advocacy",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Weyerhaeuser dusky gopher frog critical habitat Supreme Court decision",
+        "fingerprint": "fp_20181127_weyerhaeuser_supreme_court_dc"
+      }
+    },
+    {
+      "event_id": "evt_20181105_fws_reopens_comment_spring_pygmy_sunfish_critical_habitat",
+      "title": "U.S. Fish and Wildlife Service reopens comment period and proposes revisions to spring pygmy sunfish critical habitat",
+      "description": "On Nov. 5, 2018, the U.S. Fish and Wildlife Service published a Federal Register-related notice reopening the comment period and proposing revisions to the critical habitat designation for the spring pygmy sunfish. The notice described changes to proposed critical habitat units, including a proposed unit in Madison County, Alabama.",
+      "category_primary": "policy_regulation",
+      "polarity": "unclear",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2018-11-05T00:00:00.000Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "2018-11-05T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Madison County, Alabama, United States",
+        "jurisdiction_level": "state",
+        "admin1": "AL",
+        "country": "US",
+        "capital_used": "Montgomery",
+        "lat": 32.3668,
+        "lon": -86.3,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.5
+      },
+      "sources": [
+        {
+          "url": "https://www.fws.gov/policy/library/2018/2018-24162.html",
+          "source_name": "U.S. Fish and Wildlife Service",
+          "published_at": "2018-11-05T00:00:00.000Z",
+          "headline": "2018-24162",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Fish and Wildlife Service"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.7,
+        "location": 0.5,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "paywalled_or_partial",
+        "low_confidence_location",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Spring pygmy sunfish critical habitat comment period reopened",
+        "fingerprint": "fp_20181105_spring_pygmy_sunfish_al"
+      }
+    }
+  ]
+}

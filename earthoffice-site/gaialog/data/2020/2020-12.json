@@ -1,0 +1,627 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_2020-12_normalize_2026-01-16T072525796Z",
+    "generated_utc": "2026-01-16T07:25:25.796Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "2020-12",
+    "window": {
+      "start_utc": "2020-12-01T00:00:00.000Z",
+      "end_utc": "2020-12-31T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "evt_20201222_bnsf_custer_crude_derailment",
+      "title": "BNSF crude oil unit train derailment and fire near Custer, Washington",
+      "description": "A BNSF crude oil unit train derailed near Custer, Washington, and several tank cars caught fire. Reports indicated crude oil was released from multiple tank cars and responders conducted investigation and cleanup actions.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2020-12-22T19:38:00.000Z",
+        "event_end": "2020-12-23T00:00:00.000Z",
+        "reported_at": "2020-12-22T19:38:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2020-12-22T19:38:00.000Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Custer, Washington, USA",
+        "jurisdiction_level": "city",
+        "admin1": "Washington",
+        "country": "US",
+        "capital_used": null,
+        "lat": 48.9437,
+        "lon": -122.6107,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://incidentnews.noaa.gov/incident/10213",
+          "source_name": "NOAA IncidentNews",
+          "published_at": "2020-12-22T00:00:00Z",
+          "headline": "Incident 10213",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.ntsb.gov/investigations/Pages/HMD21LR001.aspx",
+          "source_name": "NTSB",
+          "published_at": "2020-12-22T00:00:00Z",
+          "headline": "HMD21LR001",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://ecology.wa.gov/Spills-Cleanup/Spills/Spill-preparedness-response/Responding-to-spill-incidents/Spill-incidents/Custer-Crude-Oil-Derailment-2020",
+          "source_name": "Washington State Department of Ecology",
+          "published_at": "2020-12-22T00:00:00Z",
+          "headline": "Custer Crude Oil Derailment (2020)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "BNSF Railway",
+          "National Transportation Safety Board",
+          "NOAA",
+          "Washington State Department of Ecology"
+        ],
+        "substances": [
+          "crude oil"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Unit train derailment and fire",
+            "source_url": "https://incidentnews.noaa.gov/incident/10213"
+          },
+          {
+            "quote": "Custer Crude Oil Derailment",
+            "source_url": "https://ecology.wa.gov/Spills-Cleanup/Spills/Spill-preparedness-response/Responding-to-spill-incidents/Spill-incidents/Custer-Crude-Oil-Derailment-2020"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.8,
+        "location": 0.6,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "BNSF Custer WA crude oil derailment fire 2020-12-22",
+        "fingerprint": "fp_bnsf_custer_wa_2020-12-22"
+      }
+    },
+    {
+      "event_id": "evt_20201226_uscg_spar_hydraulic_oil_womens_bay",
+      "title": "USCG Cutter SPAR hydraulic oil discharge in Womens Bay near Kodiak, Alaska",
+      "description": "Reports said the U.S. Coast Guard responded to a hydraulic oil discharge from the cutter SPAR in Womens Bay near Kodiak, Alaska. Response actions included deploying containment and recovery equipment such as booms and absorbent materials while assessing the amount released.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2020-12-26T18:40:00.000Z",
+        "event_end": "2020-12-28T23:59:59.000Z",
+        "reported_at": "2020-12-27T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2020-12-26T18:40:00.000Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Womens Bay, Kodiak, Alaska, USA",
+        "jurisdiction_level": "site",
+        "admin1": "Alaska",
+        "country": "US",
+        "capital_used": null,
+        "lat": 57.79,
+        "lon": -152.407,
+        "precision": "neighborhood",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.5
+      },
+      "sources": [
+        {
+          "url": "https://www.adn.com/alaska-news/2020/12/27/coast-guard-vessel-spills-hydraulic-oil-in-kodiak/",
+          "source_name": "Anchorage Daily News",
+          "published_at": "2020-12-27T00:00:00Z",
+          "headline": "Coast Guard vessel spills hydraulic oil in Kodiak",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.alaskasnewssource.com/2020/12/27/coast-guard-responding-to-hydraulic-oil-spill-near-kodiak/",
+          "source_name": "Alaska's News Source",
+          "published_at": "2020-12-27T00:00:00Z",
+          "headline": "Coast Guard responding to hydraulic oil spill near Kodiak",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.offshore-energy.biz/uscg-vessel-spills-oil-in-alaska/",
+          "source_name": "Offshore Energy",
+          "published_at": "2020-12-27T00:00:00Z",
+          "headline": "USCG vessel spills oil in Alaska",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Coast Guard"
+        ],
+        "substances": [
+          "hydraulic oil"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "spills hydraulic oil in Kodiak",
+            "source_url": "https://www.adn.com/alaska-news/2020/12/27/coast-guard-vessel-spills-hydraulic-oil-in-kodiak/"
+          },
+          {
+            "quote": "responding to hydraulic oil spill near Kodiak",
+            "source_url": "https://www.alaskasnewssource.com/2020/12/27/coast-guard-responding-to-hydraulic-oil-spill-near-kodiak/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.8,
+        "location": 0.5,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "USCG cutter SPAR hydraulic oil discharge Womens Bay Kodiak 2020-12-26",
+        "fingerprint": "fp_uscg_spar_womens_bay_2020-12-26"
+      }
+    },
+    {
+      "event_id": "2020-12_weather_climate_northeast-us_snowstorm_gail",
+      "title": "Major Northeast U.S. snowstorm (Dec 16–17, 2020) sets local snowfall records and disrupts travel",
+      "description": "A major winter storm in mid-December 2020 produced heavy snowfall across parts of the Northeastern United States, with reports of record totals in locations such as Binghamton, New York and Williamsport, Pennsylvania. The storm caused hazardous travel conditions and significant disruption across the region.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2020-12-16T00:00:00.000Z",
+        "event_end": "2020-12-17T23:59:59.000Z",
+        "reported_at": "2020-12-17T00:00:00Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2020-12-16T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Northeastern United States",
+        "jurisdiction_level": "supranational",
+        "admin1": null,
+        "country": null,
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "proxy",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.5
+      },
+      "sources": [
+        {
+          "url": "https://weather.com/storms/winter/news/2020-12-17-winter-storm-gail-record-snow-binghamton-williamsport",
+          "source_name": "The Weather Channel",
+          "published_at": "2020-12-17T00:00:00Z",
+          "headline": "Winter Storm Gail Sets Snowfall Records in the Northeast",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.weather.gov/ctp/dec2020snow",
+          "source_name": "NWS State College (weather.gov)",
+          "published_at": "2020-12-01T00:00:00Z",
+          "headline": "December 2020 Snow Event (Central Pennsylvania)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://weather.com/safety/winter/news/2020-12-17-winter-storm-gail-northeast-snowstorm-forecast",
+          "source_name": "The Weather Channel",
+          "published_at": "2020-12-17T00:00:00Z",
+          "headline": "Winter Storm Gail Brings Heavy Snow to the Northeast",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "The Weather Channel",
+          "National Weather Service (NWS)"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.8,
+        "location": 0.5,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Winter Storm Gail (Dec 16–17 2020) Northeast US heavy snow",
+        "fingerprint": "ws_gail_northeast_us_2020-12-16_2020-12-17"
+      }
+    },
+    {
+      "event_id": "geol_idn_semeru_2020-12-01",
+      "title": "Mount Semeru eruption produces pyroclastic flows in East Java, Indonesia",
+      "description": "Reports in early December 2020 described eruptive activity at Mount Semeru in East Java, including pyroclastic flows and ash emissions. The coverage noted increased pyroclastic-flow activity around December 1, 2020.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2020-12-01T00:00:00.000Z",
+        "event_end": "2020-12-02T23:59:59.000Z",
+        "reported_at": "2020-12-02T00:00:00Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2020-12-01T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Semeru volcano, East Java, Indonesia",
+        "jurisdiction_level": "site",
+        "admin1": "East Java",
+        "country": "ID",
+        "capital_used": null,
+        "lat": -8.108,
+        "lon": 112.922,
+        "precision": "exact",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.75
+      },
+      "sources": [
+        {
+          "url": "https://watchers.news/2020/12/02/eruptions-at-semeru-volcano-generate-spectacular-pyroclastic-flows-indonesia/",
+          "source_name": "The Watchers",
+          "published_at": "2020-12-02T00:00:00Z",
+          "headline": "Eruptions at Semeru volcano generate spectacular pyroclastic flows, Indonesia",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://watchers.news/2020/12/10/the-weekly-volcanic-activity-report-december-2-8-2020/",
+          "source_name": "The Watchers",
+          "published_at": "2020-12-10T00:00:00Z",
+          "headline": "The weekly volcanic activity report: December 2 – 8, 2020",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [
+          "volcanic ash"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Eruptions at Semeru volcano generate ... pyroclastic flows",
+            "source_url": "https://watchers.news/2020/12/02/eruptions-at-semeru-volcano-generate-spectacular-pyroclastic-flows-indonesia/"
+          },
+          {
+            "quote": "weekly volcanic activity report: December 2 – 8, 2020",
+            "source_url": "https://watchers.news/2020/12/10/the-weekly-volcanic-activity-report-december-2-8-2020/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.58,
+        "category": 0.8,
+        "location": 0.55,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "needs_dedupe_check",
+        "date_ambiguous",
+        "low_confidence_location",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "Semeru eruption pyroclastic flows early Dec 2020",
+        "fingerprint": "geological|mount_semeru_pyroclastic_flows|semeru_volcano_east_java_id|2020-12-01"
+      }
+    },
+    {
+      "event_id": "evt-20201217-eu-council-climate-law-55-2030",
+      "title": "EU Council agrees general approach on European Climate Law with at least 55% emissions cut by 2030",
+      "description": "The Council of the European Union agreed a general approach on the European Climate Law proposal. The position endorsed an EU greenhouse-gas emissions reduction target of at least 55% by 2030 (vs. 1990) and the objective of climate neutrality by 2050.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "2020-12-17T15:00:00.000Z",
+        "event_end": "2020-12-17T23:59:59.000Z",
+        "reported_at": "2020-12-17T00:00:00.000Z",
+        "time_confidence": 0.75,
+        "event_date_utc": "2020-12-17T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "European Union (Council of the EU)",
+        "jurisdiction_level": "supranational",
+        "admin1": null,
+        "country": null,
+        "capital_used": "Brussels",
+        "lat": 50.8503,
+        "lon": 4.3517,
+        "precision": "proxy",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://www.consilium.europa.eu/en/press/press-releases/2020/12/17/council-agrees-on-full-general-approach-on-european-climate-law-proposal/",
+          "source_name": "Council of the EU (Consilium)",
+          "published_at": "2020-12-17T00:00:00.000Z",
+          "headline": "Council agrees on full general approach on European Climate Law proposal",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Council of the European Union"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Council agreed on its general approach on the proposed European climate law.",
+            "source_url": "https://www.consilium.europa.eu/en/press/press-releases/2020/12/17/council-agrees-on-full-general-approach-on-european-climate-law-proposal/"
+          },
+          {
+            "quote": "...a binding EU target of a net domestic reduction in greenhouse gas emissions of at least 55% by 2030 compared to 1990.",
+            "source_url": "https://www.consilium.europa.eu/en/press/press-releases/2020/12/17/council-agrees-on-full-general-approach-on-european-climate-law-proposal/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.76,
+        "category": 0.85,
+        "location": 0.7,
+        "summary_grounding": 0.75
+      },
+      "quality_flags": [
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "EU Council general approach European Climate Law 55% 2030 Dec 2020",
+        "fingerprint": "fp-20201217-eu-council-climate-law-brussels"
+      }
+    },
+    {
+      "event_id": "evt-20201218-usfws-critical-habitat-final-rule",
+      "title": "U.S. Fish and Wildlife Service publishes final rule on designating critical habitat under the ESA",
+      "description": "The U.S. Fish and Wildlife Service published a final rule revising portions of the regulations implementing ESA section 4 relating to designating critical habitat. The rule was published in the Federal Register on December 18, 2020.",
+      "category_primary": "policy_regulation",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "2020-12-18T00:00:00.000Z",
+        "event_end": "2020-12-18T23:59:59.000Z",
+        "reported_at": "2020-12-18T00:00:00.000Z",
+        "time_confidence": 0.8,
+        "event_date_utc": "2020-12-18T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States (U.S. Fish and Wildlife Service, Department of the Interior)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.8
+      },
+      "sources": [
+        {
+          "url": "https://www.fws.gov/policy/library/2020/2020-28033.html",
+          "source_name": "U.S. Fish and Wildlife Service",
+          "published_at": "2020-12-18T00:00:00.000Z",
+          "headline": "2020-28033",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://wildlife.org/final-critical-habitat-rule-released/",
+          "source_name": "The Wildlife Society",
+          "published_at": "2020-12-18T00:00:00.000Z",
+          "headline": "Final critical habitat rule released",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Fish and Wildlife Service",
+          "U.S. Department of the Interior"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "A final rule revising portions of our regulations for designating critical habitat was published in the Federal Register on December 18, 2020.",
+            "source_url": "https://www.fws.gov/policy/library/2020/2020-28033.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.73,
+        "category": 0.8,
+        "location": 0.8,
+        "summary_grounding": 0.7
+      },
+      "quality_flags": [
+        "possible_opinion_or_advocacy"
+      ],
+      "dedupe": {
+        "cluster_hint": "USFWS final rule critical habitat ESA section 4 Dec 2020",
+        "fingerprint": "fp-20201218-usfws-critical-habitat-washingtondc"
+      }
+    },
+    {
+      "event_id": "evt-20201204-us-epa-fuels-regulatory-streamlining-final",
+      "title": "U.S. EPA finalizes Fuels Regulatory Streamlining rule consolidating gasoline and diesel fuel programs",
+      "description": "The U.S. Environmental Protection Agency issued a final rule to streamline and consolidate existing gasoline and diesel fuel programs. The action moved provisions into a consolidated structure in 40 CFR part 1090 and removed redundant or expired provisions while maintaining program performance.",
+      "category_primary": "policy_regulation",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "2020-12-04T00:00:00.000Z",
+        "event_end": "2020-12-04T23:59:59.000Z",
+        "reported_at": "2020-12-04T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2020-12-04T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States (U.S. Environmental Protection Agency)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.8
+      },
+      "sources": [
+        {
+          "url": "https://www.epa.gov/diesel-fuel-standards/final-rulemaking-streamlining-and-consolidating-existing-gasoline-and-diesel",
+          "source_name": "U.S. Environmental Protection Agency",
+          "published_at": "2020-12-04T00:00:00.000Z",
+          "headline": "Final rulemaking: Streamlining and consolidating existing gasoline and diesel fuel programs",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.epa.gov/diesel-fuel-standards/fuels-regulatory-streamlining",
+          "source_name": "U.S. Environmental Protection Agency",
+          "published_at": "2020-12-04T00:00:00.000Z",
+          "headline": "Fuels Regulatory Streamlining",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.epa.gov/gasoline-standards/streamlined-procedures-opting-out-rfg-requirements",
+          "source_name": "U.S. Environmental Protection Agency",
+          "published_at": "2020-12-04T00:00:00.000Z",
+          "headline": "Streamlined procedures for opting out of RFG requirements",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Environmental Protection Agency"
+        ],
+        "substances": [
+          "gasoline",
+          "diesel"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Final rulemaking: Streamlining and consolidating existing gasoline and diesel fuel programs.",
+            "source_url": "https://www.epa.gov/diesel-fuel-standards/final-rulemaking-streamlining-and-consolidating-existing-gasoline-and-diesel"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.68,
+        "category": 0.8,
+        "location": 0.8,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "EPA Fuels Regulatory Streamlining final rule 40 CFR part 1090 Dec 2020",
+        "fingerprint": "fp-20201204-epa-fuels-streamlining-washingtondc"
+      }
+    }
+  ]
+}

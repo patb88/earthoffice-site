@@ -1,0 +1,1220 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_1986-04_normalize_2026-01-18T104149015Z",
+    "generated_utc": "2026-01-18T10:41:49.015Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "1986-04",
+    "window": {
+      "start_utc": "1986-04-01T00:00:00.000Z",
+      "end_utc": "1986-04-30T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "evt_19860405_sfbay_oil_slick_beaver_state",
+      "title": "Oil slick in San Francisco Bay linked to tanker Beaver State cargo",
+      "description": "An oil slick was reported in San Francisco Bay and sampled; findings were reported as consistent with North Slope crude oil carried by the tanker Beaver State. Cleanup of the slick and affected pier pilings was reported as completed the next day, with enforcement actions initiated.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1986-04-05T12:00:00Z",
+        "event_end": "1986-04-06T12:00:00Z",
+        "reported_at": "1986-04-05T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1986-04-05T12:00:00Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "San Francisco Bay, California, United States",
+        "jurisdiction_level": "site",
+        "admin1": "California",
+        "country": "US",
+        "capital_used": null,
+        "lat": 37.7749,
+        "lon": -122.4194,
+        "precision": "proxy",
+        "location_basis": "manual_override",
+        "location_confidence": 0.45
+      },
+      "sources": [
+        {
+          "url": "https://incidentnews.noaa.gov/incident/6360",
+          "source_name": "NOAA IncidentNews",
+          "published_at": "1986-04-05T00:00:00Z",
+          "headline": "Incident 6360",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA"
+        ],
+        "substances": [
+          "crude oil",
+          "North Slope crude"
+        ],
+        "ecosystems": [
+          "San Francisco Bay"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "sampling indicated North Slope crude matching oil carried by the tanker Beaver State",
+            "source_url": "https://incidentnews.noaa.gov/incident/6360"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.8,
+        "location": 0.45,
+        "summary_grounding": 0.65
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "San Francisco Bay oil slick Beaver State Apr 1986",
+        "fingerprint": "fp_1986-04-05_sanfranciscobay_oil_slick_beaver_state"
+      }
+    },
+    {
+      "event_id": "evt_19860414_la_freeway_ethyl_ether_drums",
+      "title": "Dumped drums of ethyl ether reported on Los Angeles freeway on-ramp",
+      "description": "Multiple containers, including three 55-gallon drums reported to contain ethyl ether, were found dumped on a freeway on-ramp in Los Angeles. A worker reportedly experienced symptoms after inhaling fumes, and a private cleanup firm was called to remove the chemicals.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1986-04-14T12:00:00Z",
+        "event_end": "1986-04-14T12:00:00Z",
+        "reported_at": "1986-04-14T00:00:00Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "1986-04-14T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "National Boulevard on-ramp to the southbound San Diego Freeway, Los Angeles, California, United States",
+        "jurisdiction_level": "site",
+        "admin1": "California",
+        "country": "US",
+        "capital_used": null,
+        "lat": 34.0522,
+        "lon": -118.2437,
+        "precision": "city",
+        "location_basis": "manual_override",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.latimes.com/archives/la-xpm-1986-04-14-mn-3748-story.html",
+          "source_name": "Los Angeles Times",
+          "published_at": "1986-04-14T00:00:00Z",
+          "headline": "Toxic chemical dumping: 55-gallon drums (ethyl ether) found on San Diego Freeway on-ramp",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Caltrans"
+        ],
+        "substances": [
+          "ethyl ether"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "three 55-gallon drums, dumped on a freeway on-ramp; the containers were reported to contain ethyl ether",
+            "source_url": "https://www.latimes.com/archives/la-xpm-1986-04-14-mn-3748-story.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.66,
+        "category": 0.8,
+        "location": 0.6,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "paywalled_or_partial",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Los Angeles freeway on-ramp ethyl ether drums Apr 1986",
+        "fingerprint": "fp_1986-04-14_losangeles_ethyl_ether_drums"
+      }
+    },
+    {
+      "event_id": "ev_19860401_newbrunswick_flood_162",
+      "title": "Spring freshet flooding with ice jams in New Brunswick river basins",
+      "description": "Flooding in early April 1986 affected multiple New Brunswick river basins, with snowmelt/rain and ice-related conditions contributing to elevated water levels and impacts. Reported effects included evacuations, road closures, and infrastructure damage, including a reported sewage-lagoon wall failure in Salisbury.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1986-04-01T12:00:00Z",
+        "event_end": "1986-04-04T12:00:00Z",
+        "reported_at": "1986-04-01T00:00:00Z",
+        "time_confidence": 0.5,
+        "event_date_utc": "1986-04-02T00:00:00Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Fredericton, New Brunswick, Canada",
+        "jurisdiction_level": "state",
+        "admin1": "New Brunswick",
+        "country": "CA",
+        "capital_used": "Fredericton",
+        "lat": 45.9636,
+        "lon": -66.6431,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://www.elgegl.gnb.ca/0001/en/Flood/Details/162",
+          "source_name": "Government of New Brunswick (ELGEGL)",
+          "published_at": "1986-04-01T00:00:00Z",
+          "headline": "Flood Details 162",
+          "byline": null,
+          "accessed_utc": "2026-01-18T05:21:27.688Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [
+          "river"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Flooding occurred during April 1–4, 1986",
+            "source_url": "https://www.elgegl.gnb.ca/0001/en/Flood/Details/162"
+          },
+          {
+            "quote": "evacuations... road closures... infrastructure damage",
+            "source_url": "https://www.elgegl.gnb.ca/0001/en/Flood/Details/162"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.8,
+        "location": 0.7,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "NB_flood_apr1986",
+        "fingerprint": "nb_flood_apr1986_fredericton_1986-04-01_1986-04-04"
+      }
+    },
+    {
+      "event_id": "ev_19860424_iowa_hail_noaa33739",
+      "title": "Severe thunderstorms with hail in south-central Iowa",
+      "description": "A NOAA/NWS technical attachment documents severe thunderstorms on April 24, 1986 in south-central Iowa, with hail reported as the primary severe hazard and little wind reported.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1986-04-24T12:00:00Z",
+        "event_end": "1986-04-24T12:00:00Z",
+        "reported_at": "1986-04-24T00:00:00Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "1986-04-24T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Des Moines, Iowa, United States",
+        "jurisdiction_level": "state",
+        "admin1": "Iowa",
+        "country": "US",
+        "capital_used": "Des Moines",
+        "lat": 41.5868,
+        "lon": -93.625,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.65
+      },
+      "sources": [
+        {
+          "url": "https://repository.library.noaa.gov/view/noaa/33739",
+          "source_name": "NOAA Institutional Repository",
+          "published_at": "1986-04-24T00:00:00Z",
+          "headline": "NOAA/NWS Central Region technical attachment (record)",
+          "byline": null,
+          "accessed_utc": "2026-01-18T05:21:27.688Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://repository.library.noaa.gov/view/noaa/33739/noaa_33739_DS1.pdf",
+          "source_name": "NOAA Institutional Repository",
+          "published_at": "1986-04-24T00:00:00Z",
+          "headline": "NOAA/NWS Central Region technical attachment (PDF)",
+          "byline": null,
+          "accessed_utc": "2026-01-18T05:21:27.688Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA",
+          "National Weather Service"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "severe thunderstorms on Thursday, April 24, 1986",
+            "source_url": "https://repository.library.noaa.gov/view/noaa/33739"
+          },
+          {
+            "quote": "primary severe hazard being hail (little wind reported)",
+            "source_url": "https://repository.library.noaa.gov/view/noaa/33739/noaa_33739_DS1.pdf"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.64,
+        "category": 0.85,
+        "location": 0.65,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "IA_hail_1986-04-24",
+        "fingerprint": "ia_hail_1986-04-24_desmoines"
+      }
+    },
+    {
+      "event_id": "ev_19860426_tri_state_hail_abr",
+      "title": "Thunderstorms with large hail and damaging winds in SD/MN/IA region",
+      "description": "An NWS ‘This Day in Weather History’ entry for April 26 describes intense thunderstorms affecting southeast South Dakota, southwest Minnesota, and northwest Iowa. Reported impacts include very large hail, damaging winds, and localized heavy rainfall totals.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1986-04-26T12:00:00Z",
+        "event_end": "1986-04-26T12:00:00Z",
+        "reported_at": "1986-04-26T00:00:00Z",
+        "time_confidence": 0.5,
+        "event_date_utc": "1986-04-26T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Pierre, South Dakota, United States",
+        "jurisdiction_level": "state",
+        "admin1": "South Dakota",
+        "country": "US",
+        "capital_used": "Pierre",
+        "lat": 44.3683,
+        "lon": -100.3509,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.5
+      },
+      "sources": [
+        {
+          "url": "https://www.weather.gov/abr/This_Day_in_Weather_History_Apr_26",
+          "source_name": "US National Weather Service (Aberdeen, SD)",
+          "published_at": "1986-04-26T00:00:00Z",
+          "headline": "This Day in Weather History: Apr 26",
+          "byline": null,
+          "accessed_utc": "2026-01-18T05:21:27.688Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "National Weather Service"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "intense thunderstorms affecting southeast South Dakota, southwest Minnesota, and northwest Iowa",
+            "source_url": "https://www.weather.gov/abr/This_Day_in_Weather_History_Apr_26"
+          },
+          {
+            "quote": "baseball-size hail",
+            "source_url": "https://www.weather.gov/abr/This_Day_in_Weather_History_Apr_26"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.58,
+        "category": 0.8,
+        "location": 0.5,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "SD_MN_IA_storms_1986-04-26",
+        "fingerprint": "sd_mn_ia_storms_1986-04-26_pierre"
+      }
+    },
+    {
+      "event_id": "ev_19860425_pnw_spring_storm_upi",
+      "title": "Pacific Northwest spring storm brings rain, mountain snow, and gusty winds",
+      "description": "Reporting dated April 25, 1986 describes a spring storm bringing rain, mountain snow, and gusty winds to parts of the U.S. Pacific Northwest, including travel advisories for blowing or drifting snow in mountain areas.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1986-04-25T12:00:00Z",
+        "event_end": "1986-04-25T12:00:00Z",
+        "reported_at": "1986-04-25T00:00:00Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "1986-04-25T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Olympia, Washington, United States",
+        "jurisdiction_level": "state",
+        "admin1": "Washington",
+        "country": "US",
+        "capital_used": "Olympia",
+        "lat": 47.0379,
+        "lon": -122.9007,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.upi.com/Archives/1986/04/25/A-spring-storm-riding-a-wave-of-cold-air/1293514789200/",
+          "source_name": "United Press International (UPI) Archives",
+          "published_at": "1986-04-25T00:00:00Z",
+          "headline": "A spring storm riding a wave of cold air",
+          "byline": null,
+          "accessed_utc": "2026-01-18T05:21:27.688Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "United Press International"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "mountains"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "A spring storm... bringing rain, mountain snow and gusty winds",
+            "source_url": "https://www.upi.com/Archives/1986/04/25/A-spring-storm-riding-a-wave-of-cold-air/1293514789200/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.57,
+        "category": 0.75,
+        "location": 0.55,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "PNW_storm_1986-04-25",
+        "fingerprint": "pnw_storm_1986-04-25_olympia"
+      }
+    },
+    {
+      "event_id": "ev_19860427_rockies_snow_heatwave_latimes",
+      "title": "Late-April weather extremes: heavy Rocky Mountain snow and record Midwest/South heat",
+      "description": "A late-April 1986 weather report describes a wintry storm producing heavy snowfall in parts of the U.S. Rocky Mountains while a warm spell set record high temperatures in multiple cities across parts of the Midwest and South.",
+      "category_primary": "weather_climate",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "1986-04-27T12:00:00Z",
+        "event_end": "1986-04-27T12:00:00Z",
+        "reported_at": "1986-04-27T00:00:00Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "1986-04-27T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Denver, Colorado, United States",
+        "jurisdiction_level": "state",
+        "admin1": "Colorado",
+        "country": "US",
+        "capital_used": "Denver",
+        "lat": 39.7392,
+        "lon": -104.9903,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.45
+      },
+      "sources": [
+        {
+          "url": "https://www.latimes.com/archives/la-xpm-1986-04-27-mn-24109-story.html",
+          "source_name": "Los Angeles Times",
+          "published_at": "1986-04-27T00:00:00Z",
+          "headline": "Wintry storm in Rockies while record highs set elsewhere (archive story)",
+          "byline": null,
+          "accessed_utc": "2026-01-18T05:21:27.688Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Los Angeles Times"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "mountains"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "wintry storm delivering... two feet of snow in parts of the Rockies",
+            "source_url": "https://www.latimes.com/archives/la-xpm-1986-04-27-mn-24109-story.html"
+          },
+          {
+            "quote": "warm spell set record highs in numerous Midwestern and Southern cities",
+            "source_url": "https://www.latimes.com/archives/la-xpm-1986-04-27-mn-24109-story.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.5,
+        "category": 0.75,
+        "location": 0.45,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "paywalled_or_partial",
+        "location_ambiguous",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "US_weather_extremes_1986-04-27",
+        "fingerprint": "us_weather_extremes_1986-04-27_denver"
+      }
+    },
+    {
+      "event_id": "geol_19860405_peru_cusco_eq",
+      "title": "Earthquake near Cusco, Peru causes deaths, damage, and landslides",
+      "description": "A magnitude 5.5 earthquake jolted the Cusco (Cuzco) area in Peru on April 5, 1986. Reports said it caused fatalities and injuries, damaged buildings including older structures and facilities, and triggered landslides in surrounding areas.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1986-04-05T20:15:00Z",
+        "event_end": "1986-04-05T20:15:00Z",
+        "reported_at": "1986-04-06T00:00:00Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "1986-04-05T20:15:00Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Cusco (Cuzco) area, Peru",
+        "jurisdiction_level": "city",
+        "admin1": "Cusco",
+        "country": "PE",
+        "capital_used": null,
+        "lat": -13.53195,
+        "lon": -71.96746,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.upi.com/Archives/1986/04/06/An-earthquake-registering-55-on-the-Richter-scale-jolted/5987513147600/",
+          "source_name": "UPI",
+          "published_at": "1986-04-06T00:00:00Z",
+          "headline": "An earthquake registering 5.5 on the Richter scale jolted...",
+          "byline": null,
+          "accessed_utc": "2026-01-18T05:21:58.438Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "An earthquake registering 5.5 on the Richter scale jolted",
+            "source_url": "https://www.upi.com/Archives/1986/04/06/An-earthquake-registering-55-on-the-Richter-scale-jolted/5987513147600/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.56,
+        "category": 0.85,
+        "location": 0.6,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "1986-04-05 Cusco Peru earthquake",
+        "fingerprint": "geological|cusco_peru|-13.53195,-71.96746|1986-04-05"
+      }
+    },
+    {
+      "event_id": "geol_19860426_india_kangra_eq",
+      "title": "Earthquake impacts Dharamshala–Kangra area in Himachal Pradesh, India",
+      "description": "A moderate earthquake was reported to have struck the Dharamshala–Kangra area of Himachal Pradesh, India on April 26, 1986. The draft indicates deaths, injuries, and building damage, but the provided source link is not a contemporaneous news report in the draft.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1986-04-26T12:00:00Z",
+        "event_end": "1986-04-26T12:00:00Z",
+        "reported_at": "1986-04-26T12:00:00Z",
+        "time_confidence": 0.4,
+        "event_date_utc": "1986-04-26T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Dharamshala–Kangra area, Himachal Pradesh, India",
+        "jurisdiction_level": "state",
+        "admin1": "Himachal Pradesh",
+        "country": "IN",
+        "capital_used": "Shimla",
+        "lat": 31.1048,
+        "lon": 77.1734,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.seismosoc.org/Publications/BSSA_html/bssa_100-2/2008328-esupp/annotations.html",
+          "source_name": "Seismological Society of America (BSSA supplement page)",
+          "published_at": "1986-04-26T12:00:00Z",
+          "headline": "annotations.html",
+          "byline": null,
+          "accessed_utc": "2026-01-18T05:21:58.438Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Seismological Society of America"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.35,
+        "category": 0.7,
+        "location": 0.6,
+        "summary_grounding": 0.25
+      },
+      "quality_flags": [
+        "secondary_sources_only",
+        "date_ambiguous",
+        "low_confidence_location"
+      ],
+      "dedupe": {
+        "cluster_hint": "1986-04-26 Himachal Pradesh (Kangra/Dharamshala) earthquake",
+        "fingerprint": "geological|shimla_hp_in|31.1048,77.1734|1986-04-26"
+      }
+    },
+    {
+      "event_id": "geol_19860430_mexico_eq",
+      "title": "Strong earthquake felt in Mexico City; panic and minor damage reported",
+      "description": "A strong earthquake was reported in early coverage on April 30, 1986, and was strongly felt in Mexico City, prompting many residents to flee outdoors. Initial reports described service disruptions and generally minor damage, with no immediate injuries mentioned at the time of reporting.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1986-04-30T07:07:00Z",
+        "event_end": "1986-04-30T07:07:00Z",
+        "reported_at": "1986-04-30T00:00:00Z",
+        "time_confidence": 0.65,
+        "event_date_utc": "1986-04-30T07:07:00Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Mexico City, Mexico (felt strongly)",
+        "jurisdiction_level": "city",
+        "admin1": "Ciudad de México",
+        "country": "MX",
+        "capital_used": null,
+        "lat": 19.43261,
+        "lon": -99.13321,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.upi.com/Archives/1986/04/30/A-major-earthquake-measuring-70-on-the-Richter-scale/9049515217600/",
+          "source_name": "UPI",
+          "published_at": "1986-04-30T00:00:00Z",
+          "headline": "A major earthquake measuring 7.0 on the Richter scale...",
+          "byline": null,
+          "accessed_utc": "2026-01-18T05:21:58.438Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "A major earthquake measuring 7.0 on the Richter scale",
+            "source_url": "https://www.upi.com/Archives/1986/04/30/A-major-earthquake-measuring-70-on-the-Richter-scale/9049515217600/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.85,
+        "location": 0.6,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "location_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "1986-04-30 Mexico City felt earthquake",
+        "fingerprint": "geological|mexico_city_mx|19.43261,-99.13321|1986-04-30"
+      }
+    },
+    {
+      "event_id": "geol_19860428_us_cleveland_eruption",
+      "title": "Mount Cleveland (Alaska) eruption observed (VEI 2)",
+      "description": "An eruptive episode at Mount Cleveland on Chuginadak Island in Alaska was reported as beginning on April 28, 1986. The Alaska Volcano Observatory catalog lists the episode with an eruption plume observation and VEI 2 classification.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1986-04-28T12:00:00Z",
+        "event_end": "1986-04-28T12:00:00Z",
+        "reported_at": "1986-04-28T12:00:00Z",
+        "time_confidence": 0.5,
+        "event_date_utc": "1986-04-28T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Mount Cleveland, Chuginadak Island, Alaska, USA",
+        "jurisdiction_level": "site",
+        "admin1": "Alaska",
+        "country": "US",
+        "capital_used": null,
+        "lat": 52.825,
+        "lon": -169.944,
+        "precision": "exact",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.75
+      },
+      "sources": [
+        {
+          "url": "https://avo.alaska.edu/eruption/cleveland-1986-4",
+          "source_name": "Alaska Volcano Observatory",
+          "published_at": "1986-04-28T12:00:00Z",
+          "headline": "Cleveland 1986/4 eruption",
+          "byline": null,
+          "accessed_utc": "2026-01-18T05:21:58.438Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Alaska Volcano Observatory"
+        ],
+        "substances": [
+          "tephra"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.9,
+        "location": 0.8,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "1986-04 Mount Cleveland eruption (AVO)",
+        "fingerprint": "geological|mount_cleveland_ak|52.825,-169.944|1986-04-28"
+      }
+    },
+    {
+      "event_id": "fires_1986-04_us-ma-otis_otis-forest-fire-impact-area_1986-04-01",
+      "title": "Otis Forest Fire spreads from impact area on Cape Cod",
+      "description": "A forest fire at Otis on Cape Cod reportedly began in the impact area and spread south, jumping multiple fire roads over a period of hours. The incident is documented in Cape Cod Brush Breakers fire history materials.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2026-01-18T05:22:21.483Z",
+        "time_confidence": 0.35,
+        "event_date_utc": "1986-04-01T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Otis (Cape Cod), Massachusetts, USA",
+        "jurisdiction_level": "site",
+        "admin1": "Massachusetts",
+        "country": "US",
+        "capital_used": null,
+        "lat": 41.65,
+        "lon": -70.57,
+        "precision": "neighborhood",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.4
+      },
+      "sources": [
+        {
+          "url": "https://capecodfd.com/PAGES%20Special/Breakers_22.htm",
+          "source_name": "capecodfd.com",
+          "published_at": "2026-01-18T05:22:21.483Z",
+          "headline": "Breakers_22 (Cape Cod Brush Breakers fire history material)",
+          "byline": null,
+          "accessed_utc": "2026-01-18T05:22:21.483Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Cape Cod Brush Breakers"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "forest"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "forest fire at Otis began in the impact area and rapidly spread south",
+            "source_url": "https://capecodfd.com/PAGES%20Special/Breakers_22.htm"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.42,
+        "category": 0.8,
+        "location": 0.45,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Otis Forest Fire (Cape Cod) April 1986",
+        "fingerprint": "fires|otis-cape-cod-ma-us|1986-04"
+      }
+    },
+    {
+      "event_id": "fires_1986-04_us-ma-otis_otis-forest-fire-wood-road_1986-04-19",
+      "title": "Otis Forest Fire reported near Wood Road on Cape Cod",
+      "description": "A forest fire incident labeled \"Otis Forest Fire — Wood Road\" is listed for April 19, 1986 in Cape Cod Brush Breakers' major brush and forest fire incident materials. The listing indicates an incident occurred in the Wood Road area of Otis on Cape Cod.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2026-01-18T05:22:21.483Z",
+        "time_confidence": 0.4,
+        "event_date_utc": "1986-04-19T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Otis (Wood Road area), Massachusetts, USA",
+        "jurisdiction_level": "site",
+        "admin1": "Massachusetts",
+        "country": "US",
+        "capital_used": null,
+        "lat": 41.65,
+        "lon": -70.57,
+        "precision": "neighborhood",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.35
+      },
+      "sources": [
+        {
+          "url": "https://capecodfd.com/PAGES_Brush/BB_03_Fires.htm",
+          "source_name": "capecodfd.com",
+          "published_at": "2026-01-18T05:22:21.483Z",
+          "headline": "Major Brush & Forest Fire Incidents list (BB_03_Fires)",
+          "byline": null,
+          "accessed_utc": "2026-01-18T05:22:21.483Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.capecodfd.com/PAGES%20Special/Brush_Breaker_01_Main.htm",
+          "source_name": "capecodfd.com",
+          "published_at": "2026-01-18T05:22:21.483Z",
+          "headline": "Brush Breaker main page",
+          "byline": null,
+          "accessed_utc": "2026-01-18T05:22:21.483Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Cape Cod Brush Breakers"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "forest"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Otis Forest Fire — Wood Road",
+            "source_url": "https://capecodfd.com/PAGES_Brush/BB_03_Fires.htm"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.4,
+        "category": 0.8,
+        "location": 0.4,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Otis Forest Fire (Cape Cod) April 1986",
+        "fingerprint": "fires|otis-cape-cod-ma-us|1986-04-19"
+      }
+    },
+    {
+      "event_id": "fires_1986-04_us-ca-san-francisco_bayview-industrial-explosion-fire_1986-04-05",
+      "title": "Explosion and fire destroy Bayview industrial building in San Francisco",
+      "description": "Reports describe a major explosion and subsequent fire that destroyed an industrial complex in San Francisco's Bayview area. Investigators attributed the incident to an illegal fireworks manufacturing operation, with fatalities, injuries, and extensive property damage reported.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1986-04-09T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1986-04-05T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Bayview District, San Francisco, California, USA",
+        "jurisdiction_level": "city",
+        "admin1": "California",
+        "country": "US",
+        "capital_used": null,
+        "lat": 37.7749,
+        "lon": -122.4194,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://www.upi.com/Archives/1986/04/09/Illegal-fireworks-factory-blamed-for-explosion/2693513406800/",
+          "source_name": "UPI",
+          "published_at": "1986-04-09T00:00:00Z",
+          "headline": "Illegal fireworks factory blamed for explosion",
+          "byline": null,
+          "accessed_utc": "2026-01-18T05:22:21.483Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.upi.com/Archives/1986/04/10/Illegal-fireworks-plant-sparked-fire/2521513493200/",
+          "source_name": "UPI",
+          "published_at": "1986-04-10T00:00:00Z",
+          "headline": "Illegal fireworks plant sparked fire",
+          "byline": null,
+          "accessed_utc": "2026-01-18T05:22:21.483Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.latimes.com/archives/la-xpm-1986-04-10-mn-3095-story.html",
+          "source_name": "Los Angeles Times",
+          "published_at": "1986-04-10T00:00:00Z",
+          "headline": "(LA Times archive) Illegal fireworks operation linked to Bayview blast and fire",
+          "byline": null,
+          "accessed_utc": "2026-01-18T05:22:21.483Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "UPI",
+          "Los Angeles Times"
+        ],
+        "substances": [
+          "fireworks"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Illegal fireworks factory blamed for explosion",
+            "source_url": "https://www.upi.com/Archives/1986/04/09/Illegal-fireworks-factory-blamed-for-explosion/2693513406800/"
+          },
+          {
+            "quote": "Illegal fireworks plant sparked fire",
+            "source_url": "https://www.upi.com/Archives/1986/04/10/Illegal-fireworks-plant-sparked-fire/2521513493200/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.7,
+        "category": 0.85,
+        "location": 0.75,
+        "summary_grounding": 0.7
+      },
+      "quality_flags": [
+        "needs_dedupe_check",
+        "paywalled_or_partial"
+      ],
+      "dedupe": {
+        "cluster_hint": "San Francisco Bayview illegal fireworks factory explosion/fire April 1986",
+        "fingerprint": "fires|san-francisco-ca-us|1986-04-05_bayview-industrial-explosion-fire"
+      }
+    },
+    {
+      "event_id": "19860426-ua-chernobyl-ecosystem-contamination-001",
+      "title": "Chernobyl accident triggers immediate aquatic and terrestrial ecosystem contamination",
+      "description": "On 26 April 1986, the Chernobyl nuclear power plant accident released radionuclides that contaminated nearby environments. Technical summaries report elevated radioactivity in river waters in late April and early May 1986, indicating early impacts and exposure pathways for aquatic and connected terrestrial food webs.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1986-04-26T12:00:00Z",
+        "event_end": "1986-04-26T12:00:00Z",
+        "reported_at": "2026-01-18T05:22:47.465Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1986-04-26T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Chernobyl Nuclear Power Plant area; Pripyat River basin (now Ukraine)",
+        "jurisdiction_level": "site",
+        "admin1": null,
+        "country": "UA",
+        "capital_used": null,
+        "lat": 51.389,
+        "lon": 30.099,
+        "precision": "exact",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.oecd-nea.org/jcms/pl_28351/chernobyl-chapter-vi-agricultural-and-environmental-impacts",
+          "source_name": "OECD NEA",
+          "published_at": "1986-04-01T00:00:00Z",
+          "headline": "Chernobyl: Chapter VI. Agricultural and Environmental Impacts",
+          "byline": null,
+          "accessed_utc": "2026-01-18T05:22:47.465Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.usgs.gov/publications/chernobyl-nuclear-power-plant-accident-ecotoxicological-update",
+          "source_name": "USGS",
+          "published_at": "1986-04-01T00:00:00Z",
+          "headline": "Chernobyl Nuclear Power Plant Accident: Ecotoxicological Update",
+          "byline": null,
+          "accessed_utc": "2026-01-18T05:22:47.465Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "OECD Nuclear Energy Agency (NEA)",
+          "U.S. Geological Survey (USGS)"
+        ],
+        "substances": [
+          "radionuclides"
+        ],
+        "ecosystems": [
+          "Pripyat River basin"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.65,
+        "location": 0.6,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "chernobyl_ecosystem_impacts_apr1986",
+        "fingerprint": "chernobyl_accident|pripyat_river_basin|1986-04-26"
+      }
+    },
+    {
+      "event_id": "19860426-ua-chernobyl-red-forest-001",
+      "title": "Acute die-off of pine forest near Chernobyl begins ('Red Forest')",
+      "description": "After the 26 April 1986 Chernobyl accident, forest stands near the plant received very high radiation doses. Technical summaries describe rapid browning and mortality of pine trees in the area later known as the 'Red Forest,' reflecting acute habitat loss close to the accident site.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1986-04-26T12:00:00Z",
+        "event_end": "1986-04-30T12:00:00Z",
+        "reported_at": "2026-01-18T05:22:47.465Z",
+        "time_confidence": 0.5,
+        "event_date_utc": "1986-04-26T12:00:00Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Area surrounding the Chernobyl Nuclear Power Plant (Chernobyl Exclusion Zone, Ukraine)",
+        "jurisdiction_level": "site",
+        "admin1": null,
+        "country": "UA",
+        "capital_used": null,
+        "lat": 51.389,
+        "lon": 30.099,
+        "precision": "exact",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.usgs.gov/publications/chernobyl-nuclear-power-plant-accident-ecotoxicological-update",
+          "source_name": "USGS",
+          "published_at": "1986-04-01T00:00:00Z",
+          "headline": "Chernobyl Nuclear Power Plant Accident: Ecotoxicological Update",
+          "byline": null,
+          "accessed_utc": "2026-01-18T05:22:47.465Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.oecd-nea.org/jcms/pl_28351/chernobyl-chapter-vi-agricultural-and-environmental-impacts",
+          "source_name": "OECD NEA",
+          "published_at": "1986-04-01T00:00:00Z",
+          "headline": "Chernobyl: Chapter VI. Agricultural and Environmental Impacts",
+          "byline": null,
+          "accessed_utc": "2026-01-18T05:22:47.465Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Geological Survey (USGS)",
+          "OECD Nuclear Energy Agency (NEA)"
+        ],
+        "substances": [
+          "radiation",
+          "radionuclides"
+        ],
+        "ecosystems": [
+          "conifer forest"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.7,
+        "location": 0.6,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "chernobyl_red_forest_apr1986",
+        "fingerprint": "red_forest|chernobyl_exclusion_zone|1986-04-26"
+      }
+    }
+  ]
+}

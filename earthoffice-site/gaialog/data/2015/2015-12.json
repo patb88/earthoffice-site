@@ -1,0 +1,588 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_2015-12_normalize_2026-01-16T054510585Z",
+    "generated_utc": "2026-01-16T05:45:10.585Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "2015-12",
+    "window": {
+      "start_utc": "2015-12-01T00:00:00.000Z",
+      "end_utc": "2015-12-31T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "evt-20151215-us-ca-porter-ranch-aliso-canyon-emergency",
+      "title": "Los Angeles County declares local emergency over Aliso Canyon methane leak",
+      "description": "Los Angeles County declared a local state of emergency in response to the Aliso Canyon natural gas storage leak near Porter Ranch amid ongoing methane emissions and resident impacts. The declaration occurred while efforts to stop the leak and address health and community disruptions continued.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2015-12-15T00:00:00.000Z",
+        "event_end": "2015-12-15T23:59:59.000Z",
+        "reported_at": "2015-12-15T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2015-12-15T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Porter Ranch / Aliso Canyon Natural Gas Storage Facility, Los Angeles County, California, USA",
+        "jurisdiction_level": "site",
+        "admin1": "California",
+        "country": "US",
+        "capital_used": null,
+        "lat": 34.312,
+        "lon": -118.534,
+        "precision": "neighborhood",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://time.com/4149170/california-natural-gas-methane-leak/",
+          "source_name": "TIME",
+          "published_at": "2015-12-15T00:00:00.000Z",
+          "headline": "California Declares State of Emergency Over Huge Methane Leak",
+          "byline": null,
+          "accessed_utc": "2015-12-31T23:59:59.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://ens-newswire.com/aliso-canyon-gas-leak-permanently-sealed/",
+          "source_name": "ENS Newswire",
+          "published_at": "2016-02-19T00:00:00.000Z",
+          "headline": "Aliso Canyon Gas Leak Permanently Sealed",
+          "byline": null,
+          "accessed_utc": "2015-12-31T23:59:59.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Los Angeles County"
+        ],
+        "substances": [
+          "methane"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "declared a state of emergency over the massive methane leak",
+            "source_url": "https://time.com/4149170/california-natural-gas-methane-leak/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.58,
+        "category": 0.75,
+        "location": 0.55,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "needs_dedupe_check",
+        "date_ambiguous",
+        "secondary_sources_only",
+        "low_confidence_location"
+      ],
+      "dedupe": {
+        "cluster_hint": "Aliso Canyon methane leak emergency declaration",
+        "fingerprint": "fp-aliso-canyon-porter-ranch-2015-12-15"
+      }
+    },
+    {
+      "event_id": "evt-20151228-us-mo-flood-sewage-treatment-failures",
+      "title": "Missouri floodwaters inundate sewage-treatment plants, contributing untreated sewage",
+      "description": "During late-December flooding in Missouri, USGS reported inundation and failure of sewage-treatment facilities and a drinking-water plant, with untreated sewage entering floodwaters. USGS sampling during and after the event focused on fecal bacteria and wastewater-related chemicals in affected waters.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2015-12-28T00:00:00.000Z",
+        "event_end": "2015-12-31T23:59:59.000Z",
+        "reported_at": "2016-01-01T00:00:00.000Z",
+        "time_confidence": 0.4,
+        "event_date_utc": null,
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Missouri, USA",
+        "jurisdiction_level": "state",
+        "admin1": "Missouri",
+        "country": "US",
+        "capital_used": "Jefferson City",
+        "lat": 38.5767,
+        "lon": -92.1735,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://water.usgs.gov/owq/floods/2016/winter/",
+          "source_name": "USGS",
+          "published_at": "2016-01-01T00:00:00.000Z",
+          "headline": "Winter Floods 2015-2016 (Water Quality)",
+          "byline": null,
+          "accessed_utc": "2015-12-31T23:59:59.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "USGS"
+        ],
+        "substances": [
+          "untreated sewage"
+        ],
+        "ecosystems": [
+          "Mississippi River Basin",
+          "Missouri River Basin"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Two sewage-treatment plants and a drinking-water treatment plant were inundated",
+            "source_url": "https://water.usgs.gov/owq/floods/2016/winter/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.52,
+        "category": 0.7,
+        "location": 0.65,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "Dec 2015 Missouri flooding sewage treatment plant inundation",
+        "fingerprint": "fp-missouri-flood-sewage-2015-12"
+      }
+    },
+    {
+      "event_id": "evt_201512_chennai_floods_20151201",
+      "title": "Historic rainfall triggers severe flooding in Chennai and Tamil Nadu (South India)",
+      "description": "Heavy rainfall on December 1–2, 2015 contributed to severe flooding in and around Chennai in the Indian state of Tamil Nadu. Reports describe widespread inundation and significant disruption affecting the region.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2015-12-01T00:00:00.000Z",
+        "event_end": "2015-12-02T23:59:59.000Z",
+        "reported_at": "2015-12-07T00:00:00Z",
+        "time_confidence": 0.65,
+        "event_date_utc": "2015-12-01T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Chennai, Tamil Nadu, India",
+        "jurisdiction_level": "city",
+        "admin1": "Tamil Nadu",
+        "country": "IN",
+        "capital_used": null,
+        "lat": 13.0827,
+        "lon": 80.2707,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.75
+      },
+      "sources": [
+        {
+          "url": "https://science.nasa.gov/earth/earth-observatory/historic-rainfall-floods-southeast-india-87131/",
+          "source_name": "NASA Earth Observatory",
+          "published_at": "2015-12-07T00:00:00Z",
+          "headline": "Historic Rainfall Floods Southeast India",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.worldweatherattribution.org/chennai-floods-december-2015/",
+          "source_name": "World Weather Attribution",
+          "published_at": "2015-12-15T00:00:00Z",
+          "headline": "Chennai Floods December 2015",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NASA Earth Observatory",
+          "World Weather Attribution"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Historic Rainfall Floods Southeast India",
+            "source_url": "https://science.nasa.gov/earth/earth-observatory/historic-rainfall-floods-southeast-india-87131/"
+          },
+          {
+            "quote": "Chennai Floods December 2015",
+            "source_url": "https://www.worldweatherattribution.org/chennai-floods-december-2015/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.75,
+        "location": 0.75,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "secondary_sources_only",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Chennai floods Dec 2015",
+        "fingerprint": "fp_201512_chennai_city_IN_20151201_weather_climate"
+      }
+    },
+    {
+      "event_id": "evt_20151207_tjk_eq_usgs_us100044k6",
+      "title": "M7.2 earthquake in Tajikistan (Pamir region)",
+      "description": "A magnitude 7.2 earthquake struck Tajikistan’s Pamir region on December 7, 2015, and was felt across parts of Central and South Asia. Reporting indicated casualties and damage, including homes affected.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2015-12-07T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2015-12-07T07:50:05.000Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Murghob (Pamir), Tajikistan",
+        "jurisdiction_level": "site",
+        "admin1": null,
+        "country": "TJ",
+        "capital_used": null,
+        "lat": 38.1706,
+        "lon": 73.9667,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us100044k6",
+          "source_name": "USGS Earthquake Hazards Program",
+          "published_at": "2015-12-07T07:50:05.000Z",
+          "headline": "M 7.2 - Tajikistan",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.reuters.com/article/us-tajikistan-quake-idUSKBN0TQ0UP20151207",
+          "source_name": "Reuters",
+          "published_at": "2015-12-07T00:00:00Z",
+          "headline": "Earthquake hits Tajikistan, shaking buildings in Central Asia and northern India",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "USGS"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "M 7.2 - Tajikistan",
+            "source_url": "https://earthquake.usgs.gov/earthquakes/eventpage/us100044k6"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.9,
+        "location": 0.55,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "us100044k6",
+        "fingerprint": "geological|m7.2 earthquake in tajikistan pamir|murghob|2015-12-07"
+      }
+    },
+    {
+      "event_id": "evt_20151220_chn_shenzhen_landslide",
+      "title": "Shenzhen construction-waste landslide in Guangming New District",
+      "description": "A landslide involving construction waste struck an industrial park area in Shenzhen’s Guangming New District on December 20, 2015, burying buildings. News reports described significant casualties and major disruption to local infrastructure and services.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2015-12-20T00:00:00Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "2015-12-20T03:40:00.000Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Guangming New District, Shenzhen, Guangdong, China",
+        "jurisdiction_level": "city",
+        "admin1": "Guangdong",
+        "country": "CN",
+        "capital_used": null,
+        "lat": 22.5431,
+        "lon": 114.0579,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.bbc.com/news/world-asia-china-35129514",
+          "source_name": "BBC News",
+          "published_at": "2015-12-20T00:00:00Z",
+          "headline": "China landslide: Shenzhen buildings buried by mudslide",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.nytimes.com/2015/12/21/world/asia/china-shenzhen-landslide.html",
+          "source_name": "The New York Times",
+          "published_at": "2015-12-21T00:00:00Z",
+          "headline": "Landslide in China Buries Buildings and Traps Dozens",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "BBC",
+          "The New York Times"
+        ],
+        "substances": [
+          "construction waste"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Shenzhen buildings buried by mudslide",
+            "source_url": "https://www.bbc.com/news/world-asia-china-35129514"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.68,
+        "category": 0.85,
+        "location": 0.6,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "paywalled_or_partial",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "shenzhen_construction_waste_landslide_2015_12_20",
+        "fingerprint": "geological|shenzhen construction-waste landslide|guangming new district shenzhen|2015-12-20"
+      }
+    },
+    {
+      "event_id": "evt_20151225_afg_hindukush_eq_usgs_us100049i1",
+      "title": "M6.3 earthquake in the Hindu Kush region (felt across South Asia)",
+      "description": "A deep magnitude 6.3 earthquake struck the Hindu Kush region near the Afghanistan–Tajikistan border on December 25, 2015. Reports said it was felt across Afghanistan, Pakistan, and India and caused casualties.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2015-12-25T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2015-12-25T19:14:47.000Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Hindu Kush region (Afghanistan)",
+        "jurisdiction_level": "site",
+        "admin1": null,
+        "country": "AF",
+        "capital_used": null,
+        "lat": 35,
+        "lon": 71,
+        "precision": "admin1",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.4
+      },
+      "sources": [
+        {
+          "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us100049i1",
+          "source_name": "USGS Earthquake Hazards Program",
+          "published_at": "2015-12-25T19:14:47.000Z",
+          "headline": "M 6.3 - Afghanistan-Tajikistan border region",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://tribune.com.pk/story/1012869/earthquake-jolts-parts-of-pakistan-afghanistan/",
+          "source_name": "The Express Tribune",
+          "published_at": "2015-12-25T00:00:00Z",
+          "headline": "Earthquake jolts parts of Pakistan, Afghanistan",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "USGS"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "M 6.3 - Afghanistan-Tajikistan border region",
+            "source_url": "https://earthquake.usgs.gov/earthquakes/eventpage/us100049i1"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.56,
+        "category": 0.9,
+        "location": 0.4,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "needs_dedupe_check",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "us100049i1",
+        "fingerprint": "geological|m6.3 earthquake hindu kush|hindu kush afghanistan|2015-12-25"
+      }
+    },
+    {
+      "event_id": "evt_20151212_paris_agreement_adopted",
+      "title": "Paris Agreement adopted at UNFCCC COP21",
+      "description": "On December 12, 2015, Parties to the UNFCCC adopted the Paris Agreement, an international climate treaty intended to guide and strengthen national climate action to limit global temperature rise over time.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "2015-12-12T00:00:00.000Z",
+        "event_end": "2015-12-12T23:59:59.000Z",
+        "reported_at": "2015-12-12T00:00:00.000Z",
+        "time_confidence": 0.85,
+        "event_date_utc": "2015-12-12T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Le Bourget, Paris, France",
+        "jurisdiction_level": "city",
+        "admin1": "Île-de-France",
+        "country": "FR",
+        "capital_used": null,
+        "lat": 48.9386,
+        "lon": 2.4265,
+        "precision": "exact",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.8
+      },
+      "sources": [
+        {
+          "url": "https://unfccc.int/process-and-meetings/the-paris-agreement",
+          "source_name": "UNFCCC",
+          "published_at": "2015-12-12T00:00:00.000Z",
+          "headline": "The Paris Agreement",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://apnews.com/article/1e6b6db3416c19180da72893f42c5505",
+          "source_name": "Associated Press",
+          "published_at": "2015-12-12T00:00:00.000Z",
+          "headline": "AP coverage of adoption of the Paris climate agreement at COP21",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "UNFCCC"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Parties to the United Nations Framework Convention on Climate Change reached an agreement to combat climate change.",
+            "source_url": "https://unfccc.int/process-and-meetings/the-paris-agreement"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.78,
+        "category": 0.85,
+        "location": 0.8,
+        "summary_grounding": 0.7
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "Paris Agreement adoption COP21 2015-12-12",
+        "fingerprint": "fp_paris_agreement_adoption_le_bourget_2015-12-12"
+      }
+    }
+  ]
+}

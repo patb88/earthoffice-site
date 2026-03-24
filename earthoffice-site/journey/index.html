@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HRT Journey Prompts</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<!-- Top branding banner (120px) --><header class="site-header">
+<div class="header-inner">
+<div class="branding">
+<h1>HRT Journey Archive</h1>
+<p class="branding-subtitle">Prompt &amp; Response Explorer</p>
+</div>
+<div class="counters" aria-label="Time since start counters">
+<div class="counter counter-pink">
+<div id="counter-days" class="counter-value">—</div>
+<div class="counter-label">days</div>
+</div>
+<div class="counter counter-purple">
+<div id="counter-weeks" class="counter-value">—</div>
+<div class="counter-label">weeks</div>
+</div>
+<div class="counter counter-blue">
+<div id="counter-months" class="counter-value">—</div>
+<div class="counter-label">months</div>
+</div>
+</div>
+</div>
+</header>
+<div class="layout"><!-- Sidebar filters -->
+<aside class="sidebar">
+<h2 class="sidebar-title">Filters</h2>
+<section class="filter-section">
+<h3>HRT Days</h3>
+<div class="field"><label for="day-min">Min</label> <input id="day-min" class="number-input" type="number" /></div>
+<div class="field"><label for="day-max">Max</label> <input id="day-max" class="number-input" type="number" /></div>
+</section>
+<section class="filter-section">
+<h3>Class</h3>
+<select id="class-filter" class="multi-select" multiple="multiple"></select>
+<p class="filter-help">Ctrl/Cmd-click to select multiple.</p>
+</section>
+<section class="filter-section">
+<h3>Phase</h3>
+<select id="phase-filter" class="multi-select" multiple="multiple"></select></section>
+<section class="filter-section">
+<h3>Tags</h3>
+<select id="tag-filter" class="multi-select" multiple="multiple"></select></section>
+<button id="clear-filters" class="clear-button">Clear Filters</button></aside>
+<!-- Main content area --><main class="content">
+<div class="content-grid">
+<section class="prompt-list" aria-label="Prompt list">
+<div class="prompt-list-header">
+<h2>Prompts</h2>
+<input id="search-input" class="search-input" type="text" placeholder="Search prompt text…" /></div>
+<div id="prompt-list" class="prompt-list-items"><!-- Prompt cards injected here --></div>
+</section>
+<section class="response-viewer" aria-label="Response viewer">
+<div id="response-meta" class="response-meta">
+<h2 id="response-title">Select a prompt to view its response</h2>
+<p id="response-subtitle"></p>
+</div>
+<article id="response-content" class="response-content">
+<p class="response-placeholder">Use the filters and prompt list on the left to explore the journey.</p>
+</article>
+</section>
+</div>
+</main></div>
+</body>
+</html>
+<script src="script.js?v=1"></script>

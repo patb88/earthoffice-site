@@ -1,0 +1,717 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_1970-02_normalize_2026-01-19T032000666Z",
+    "generated_utc": "2026-01-19T03:20:00.666Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "1970-02",
+    "window": {
+      "start_utc": "1970-02-01T00:00:00.000Z",
+      "end_utc": "1970-02-28T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "evt_19700204_ss_arrow_oil_spill_chedabucto_bay_ns_ca",
+      "title": "SS Arrow oil spill after grounding at Cerberus Rock (Chedabucto Bay, Nova Scotia)",
+      "description": "The oil tanker SS Arrow grounded at Cerberus Rock in Chedabucto Bay, Nova Scotia, releasing Bunker C fuel oil. Cold winter conditions hampered response efforts and the spill contaminated shoreline areas, affecting wildlife and fisheries.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1970-02-04T12:00:00Z",
+        "event_end": "1970-02-04T12:00:00Z",
+        "reported_at": "2026-01-19T03:16:37.438Z",
+        "time_confidence": 0.4,
+        "event_date_utc": "1970-02-04T12:00:00Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Chedabucto Bay, Nova Scotia, Canada",
+        "jurisdiction_level": "site",
+        "admin1": "Nova Scotia",
+        "country": "CA",
+        "capital_used": null,
+        "lat": 45.6167,
+        "lon": -61.35,
+        "precision": "neighborhood",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.35
+      },
+      "sources": [
+        {
+          "url": "https://www.canada.ca/en/environment-climate-change/campaigns/50-years-environmental-action/history-photos/environmental-emergencies.html",
+          "source_name": "Government of Canada (Environment and Climate Change Canada)",
+          "published_at": "2026-01-19T03:16:37.438Z",
+          "headline": "Environmental emergencies (history photos)",
+          "byline": null,
+          "accessed_utc": "2026-01-19T03:16:37.438Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Environment and Climate Change Canada"
+        ],
+        "substances": [
+          "Bunker C fuel oil"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Oil tanker S.S. Arrow grounded ... carrying Bunker C fuel oil",
+            "source_url": "https://www.canada.ca/en/environment-climate-change/campaigns/50-years-environmental-action/history-photos/environmental-emergencies.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.38,
+        "category": 0.75,
+        "location": 0.35,
+        "summary_grounding": 0.4
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "SS Arrow oil spill Chedabucto Bay 1970-02",
+        "fingerprint": "fp_6c1f0d62a6f23f7e"
+      }
+    },
+    {
+      "event_id": "1970-02_weather_climate_new-brunswick-icejam-flooding_1970-02-02",
+      "title": "Ice-jam and heavy-rain flooding across multiple New Brunswick rivers",
+      "description": "Unseasonably warm temperatures and heavy rain over winter river ice led to breakup and ice-jam flooding across multiple rivers in New Brunswick. The event caused widespread property and infrastructure impacts in affected communities.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1970-02-02T12:00:00Z",
+        "event_end": "1970-02-06T12:00:00Z",
+        "reported_at": "1970-02-01T00:00:00.000Z",
+        "time_confidence": 0.5,
+        "event_date_utc": "1970-02-02T12:00:00Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "New Brunswick, Canada",
+        "jurisdiction_level": "state",
+        "admin1": "New Brunswick",
+        "country": "CA",
+        "capital_used": "Fredericton",
+        "lat": 45.963589,
+        "lon": -66.643115,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.9
+      },
+      "sources": [
+        {
+          "url": "https://www.elgegl.gnb.ca/0001/en/Flood/Details/251",
+          "source_name": "Government of New Brunswick (Flood Details)",
+          "published_at": "1970-02-01T00:00:00.000Z",
+          "headline": "Flood Details (Record 251)",
+          "byline": null,
+          "accessed_utc": "2026-01-19T03:17:13.011Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Unseasonably warm temperatures and heavy rain...triggered breakup and significant ice-jam flooding across multiple New Brunswick rivers",
+            "source_url": "https://www.elgegl.gnb.ca/0001/en/Flood/Details/251"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.75,
+        "location": 0.9,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "New Brunswick ice-jam flooding Feb 1970",
+        "fingerprint": "fp_newbrunswick_icejam_flood_1970-02-02"
+      }
+    },
+    {
+      "event_id": "1970-02_weather_climate_tasiilaq-piteraq_1970-02-06",
+      "title": "Piteraq windstorm damages Tasiilaq (Angmagssalik), Greenland",
+      "description": "A piteraq (katabatic windstorm) struck Tasiilaq on Feb. 6, 1970, with extreme winds reported around the early evening. The storm caused major damage and later informed changes to warning practices.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1970-02-06T18:00:00Z",
+        "event_end": "1970-02-06T18:00:00Z",
+        "reported_at": "1970-02-01T00:00:00.000Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "1970-02-06T18:00:00Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Tasiilaq, Greenland",
+        "jurisdiction_level": "city",
+        "admin1": null,
+        "country": "GL",
+        "capital_used": null,
+        "lat": 65.6146,
+        "lon": -37.6368,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.75
+      },
+      "sources": [
+        {
+          "url": "https://www.whoi.edu/oceanus/feature/piteraqs/",
+          "source_name": "Woods Hole Oceanographic Institution (Oceanus)",
+          "published_at": "1970-02-01T00:00:00.000Z",
+          "headline": "Piteraqs",
+          "byline": null,
+          "accessed_utc": "2026-01-19T03:17:13.011Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Woods Hole Oceanographic Institution"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "A severe piteraq (katabatic windstorm) hit Tasiilaq on Feb. 6, 1970 (noted as around 6 p.m.)",
+            "source_url": "https://www.whoi.edu/oceanus/feature/piteraqs/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.58,
+        "category": 0.7,
+        "location": 0.75,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Tasiilaq piteraq Feb 1970",
+        "fingerprint": "fp_tasiilaq_piteraq_1970-02-06"
+      }
+    },
+    {
+      "event_id": "1970-02_weather_climate_typhoon-nancy-atang_yap-philippines_1970-02-20",
+      "title": "Typhoon Nancy (Atang) affects Yap and the eastern Philippines",
+      "description": "Typhoon Nancy (Atang), an early-season western North Pacific tropical cyclone, intensified in late February 1970. It produced gale conditions near Yap and affected parts of the eastern Philippines, including areas such as Catanduanes and Samar.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1970-02-20T12:00:00Z",
+        "event_end": "1970-02-28T12:00:00Z",
+        "reported_at": "1970-02-01T00:00:00.000Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "1970-02-20T12:00:00Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Western North Pacific (Yap / eastern Philippines region)",
+        "jurisdiction_level": "supranational",
+        "admin1": null,
+        "country": null,
+        "capital_used": "Manila",
+        "lat": 14.599512,
+        "lon": 120.98422,
+        "precision": "proxy",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.4
+      },
+      "sources": [
+        {
+          "url": "https://www.metoc.navy.mil/jtwc/products/best-tracks/tc-bt-report.html",
+          "source_name": "JTWC (U.S. Navy)",
+          "published_at": "1970-02-01T00:00:00.000Z",
+          "headline": "Best Tracks / TC BT Report",
+          "byline": null,
+          "accessed_utc": "2026-01-19T03:17:13.011Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Joint Typhoon Warning Center"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "An unusually early-season typhoon (Nancy/Atang) strengthened rapidly in late February 1970",
+            "source_url": "https://www.metoc.navy.mil/jtwc/products/best-tracks/tc-bt-report.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.45,
+        "category": 0.7,
+        "location": 0.4,
+        "summary_grounding": 0.4
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "needs_dedupe_check",
+        "low_confidence_location"
+      ],
+      "dedupe": {
+        "cluster_hint": "Typhoon Nancy/Atang Feb 1970",
+        "fingerprint": "fp_typhoon_nancy_atang_1970-02-20"
+      }
+    },
+    {
+      "event_id": "1970-02_weather_climate_marfc-flood-event_1970-02-02",
+      "title": "Multi-basin flood event recorded in the U.S. Mid-Atlantic (MARFC area)",
+      "description": "NOAA/NWS Middle Atlantic River Forecast Center documentation recorded a flood event spanning Feb. 2–4, 1970 across multiple forecast points in the Mid-Atlantic region. Several locations reached minor to moderate flood categories.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1970-02-02T12:00:00Z",
+        "event_end": "1970-02-04T12:00:00Z",
+        "reported_at": "1970-02-01T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1970-02-02T12:00:00Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "United States (Mid-Atlantic; MARFC area)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, D.C.",
+        "lat": 38.907192,
+        "lon": -77.036871,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.weather.gov/media/marfc/Flood_Events_2016/1970/Feb2-4%2C1970.pdf",
+          "source_name": "NOAA / NWS MARFC",
+          "published_at": "1970-02-01T00:00:00.000Z",
+          "headline": "Feb 2-4, 1970 Flood Event (MARFC)",
+          "byline": null,
+          "accessed_utc": "2026-01-19T03:17:13.011Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA",
+          "National Weather Service",
+          "Middle Atlantic River Forecast Center"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "A multi-basin flood event was recorded by NOAA/NWS MARFC for Feb. 2–4, 1970",
+            "source_url": "https://www.weather.gov/media/marfc/Flood_Events_2016/1970/Feb2-4%2C1970.pdf"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.75,
+        "location": 0.55,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "MARFC Feb 2-4 1970 flood event",
+        "fingerprint": "fp_marfc_flood_1970-02-02"
+      }
+    },
+    {
+      "event_id": "evt_197002_ss_arrow_chedebucto_bay",
+      "title": "SS Arrow oil spill impacts seabirds and shoreline in Chedabucto Bay, Nova Scotia",
+      "description": "The oil tanker SS Arrow grounded on Cerberus Rock in early February 1970 and released heavy fuel oil into Chedabucto Bay. Reports describe extensive shoreline oiling and impacts to seabirds and other coastal wildlife.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1970-02-04T12:00:00Z",
+        "event_end": "1970-02-12T12:00:00Z",
+        "reported_at": "1992-01-01T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1970-02-04T12:00:00Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Chedabucto Bay (near Point Tupper), Nova Scotia, Canada",
+        "jurisdiction_level": "site",
+        "admin1": "Nova Scotia",
+        "country": "CA",
+        "capital_used": null,
+        "lat": 45.6417,
+        "lon": -61.3653,
+        "precision": "neighborhood",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://incidentnews.noaa.gov/incident/6208",
+          "source_name": "NOAA IncidentNews",
+          "published_at": "1970-02-01T00:00:00Z",
+          "headline": "SS Arrow",
+          "byline": null,
+          "accessed_utc": "2026-01-19T03:18:05.367Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://historicnovascotia.ca/items/show/174",
+          "source_name": "Historic Nova Scotia",
+          "published_at": "1970-02-01T00:00:00Z",
+          "headline": "SS Arrow oil spill",
+          "byline": null,
+          "accessed_utc": "2026-01-19T03:18:05.367Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CZIC-td427-p4-o4-1992/html/CZIC-td427-p4-o4-1992.htm",
+          "source_name": "GovInfo",
+          "published_at": "1992-01-01T00:00:00Z",
+          "headline": "Oil spill-related report (archival document)",
+          "byline": null,
+          "accessed_utc": "2026-01-19T03:18:05.367Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA"
+        ],
+        "substances": [
+          "Bunker C oil",
+          "heavy fuel oil"
+        ],
+        "ecosystems": [
+          "coastal shoreline",
+          "Chedabucto Bay"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "The tanker SS Arrow grounded on Cerberus Rock... spilled Bunker C fuel oil.",
+            "source_url": "https://incidentnews.noaa.gov/incident/6208"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.75,
+        "location": 0.6,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "needs_dedupe_check",
+        "date_ambiguous",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "ss-arrow-oil-spill-chedebucto-bay-1970-02",
+        "fingerprint": "fp_ss_arrow_chedebucto_bay_1970_02"
+      }
+    },
+    {
+      "event_id": "policyreg_us_eo11507_19700204",
+      "title": "U.S. Executive Order 11507 on pollution prevention at federal facilities",
+      "description": "President Richard Nixon signed Executive Order 11507 directing federal agencies to ensure their facilities conform to applicable air and water quality standards. The order also addresses waste minimization, prevention of accidental pollution, and planning for abatement actions at existing federal facilities.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "1970-02-04T12:00:00Z",
+        "event_end": "1970-02-04T12:00:00Z",
+        "reported_at": "1970-02-04T12:00:00Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "1970-02-04T12:00:00Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "United States",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.8
+      },
+      "sources": [
+        {
+          "url": "https://www.presidency.ucsb.edu/documents/executive-order-11507-prevention-control-and-abatement-air-and-water-pollution-federal",
+          "source_name": "The American Presidency Project (UCSB)",
+          "published_at": "1970-02-04T12:00:00Z",
+          "headline": "Executive Order 11507—Prevention, Control, and Abatement of Air and Water Pollution at Federal Facilities",
+          "byline": null,
+          "accessed_utc": "2026-01-19T03:18:34.344Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.archives.gov/federal-register/executive-orders/1970.html",
+          "source_name": "U.S. National Archives",
+          "published_at": "1970-01-01T00:00:00Z",
+          "headline": "Executive Orders Disposition Tables: 1970",
+          "byline": null,
+          "accessed_utc": "2026-01-19T03:18:34.344Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Federal Government",
+          "Executive Office of the President"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": [
+          "Richard Nixon"
+        ]
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Prevention, Control, and Abatement of Air and Water Pollution at Federal Facilities",
+            "source_url": "https://www.presidency.ucsb.edu/documents/executive-order-11507-prevention-control-and-abatement-air-and-water-pollution-federal"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.72,
+        "category": 0.85,
+        "location": 0.8,
+        "summary_grounding": 0.75
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "US Nixon executive orders Feb 1970",
+        "fingerprint": "policy_regulation|US|1970-02-04|eo11507"
+      }
+    },
+    {
+      "event_id": "policyreg_us_nixon_message_env_quality_19700210",
+      "title": "Nixon Special Message to Congress on Environmental Quality outlines pollution-control agenda",
+      "description": "President Richard Nixon sent a Special Message to Congress on Environmental Quality outlining a broad environmental program. The message describes pollution-control initiatives and proposed legislative and administrative actions, including items related to air and water pollution and vehicle emissions.",
+      "category_primary": "policy_regulation",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "1970-02-10T12:00:00Z",
+        "event_end": "1970-02-10T12:00:00Z",
+        "reported_at": "1970-02-10T12:00:00Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "1970-02-10T12:00:00Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "United States",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.8
+      },
+      "sources": [
+        {
+          "url": "https://www.presidency.ucsb.edu/documents/special-message-the-congress-environmental-quality",
+          "source_name": "The American Presidency Project (UCSB)",
+          "published_at": "1970-02-10T12:00:00Z",
+          "headline": "Special Message to the Congress on Environmental Quality",
+          "byline": null,
+          "accessed_utc": "2026-01-19T03:18:34.344Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.presidency.ucsb.edu/documents/remarks-transmitting-special-message-the-congress-environmental-quality",
+          "source_name": "The American Presidency Project (UCSB)",
+          "published_at": "1970-02-10T12:00:00Z",
+          "headline": "Remarks on Transmitting a Special Message to the Congress on Environmental Quality",
+          "byline": null,
+          "accessed_utc": "2026-01-19T03:18:34.344Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Congress",
+          "Executive Office of the President"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": [
+          "Richard Nixon"
+        ]
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Special Message to the Congress on Environmental Quality",
+            "source_url": "https://www.presidency.ucsb.edu/documents/special-message-the-congress-environmental-quality"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.68,
+        "category": 0.8,
+        "location": 0.8,
+        "summary_grounding": 0.7
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "US Nixon environmental quality message Feb 1970",
+        "fingerprint": "policy_regulation|US|1970-02-10|nixon_env_quality_message"
+      }
+    },
+    {
+      "event_id": "policyreg_us_eo11508_property_review_board_19700210",
+      "title": "U.S. Executive Order 11508 establishes process to identify unneeded federal real property",
+      "description": "President Richard Nixon signed Executive Order 11508 requiring executive agencies to survey and report underutilized or unneeded federal real property. The order created a Property Review Board that included the Chairman of the Council on Environmental Quality and aimed to support disposition for alternative public uses.",
+      "category_primary": "policy_regulation",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "1970-02-10T12:00:00Z",
+        "event_end": "1970-02-10T12:00:00Z",
+        "reported_at": "1970-02-10T12:00:00Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "1970-02-10T12:00:00Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "United States",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.8
+      },
+      "sources": [
+        {
+          "url": "https://www.presidency.ucsb.edu/documents/executive-order-11508-providing-for-the-identification-unneeded-federal-real-property",
+          "source_name": "The American Presidency Project (UCSB)",
+          "published_at": "1970-02-10T12:00:00Z",
+          "headline": "Executive Order 11508—Providing for the Identification of Unneeded Federal Real Property",
+          "byline": null,
+          "accessed_utc": "2026-01-19T03:18:34.344Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.archives.gov/federal-register/executive-orders/1970.html",
+          "source_name": "U.S. National Archives",
+          "published_at": "1970-01-01T00:00:00Z",
+          "headline": "Executive Orders Disposition Tables: 1970",
+          "byline": null,
+          "accessed_utc": "2026-01-19T03:18:34.344Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Council on Environmental Quality",
+          "U.S. Federal Government"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": [
+          "Richard Nixon"
+        ]
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Providing for the Identification of Unneeded Federal Real Property",
+            "source_url": "https://www.presidency.ucsb.edu/documents/executive-order-11508-providing-for-the-identification-unneeded-federal-real-property"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.66,
+        "category": 0.7,
+        "location": 0.8,
+        "summary_grounding": 0.7
+      },
+      "quality_flags": [
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "US Nixon executive orders Feb 1970",
+        "fingerprint": "policy_regulation|US|1970-02-10|eo11508"
+      }
+    }
+  ]
+}

@@ -1,0 +1,831 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_1984-06_normalize_2026-01-18T100851015Z",
+    "generated_utc": "2026-01-18T10:08:51.015Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "1984-06",
+    "window": {
+      "start_utc": "1984-06-01T00:00:00.000Z",
+      "end_utc": "1984-06-30T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "1984-06-weather_climate-usgs-ne-sd-floods",
+      "title": "Flooding across eastern Nebraska and southeastern South Dakota raises Missouri River stages",
+      "description": "USGS reports that rapid-succession thunderstorms in June 1984 produced substantial flooding across multiple basins in eastern Nebraska and southeastern South Dakota. The tributary flooding contributed to the highest and most widespread Missouri River flooding from Sioux City, Iowa to Rulo, Nebraska since April 1952.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1984-06-01T12:00:00Z",
+        "event_end": "1984-06-30T12:00:00Z",
+        "reported_at": "1987-01-01T00:00:00Z",
+        "time_confidence": 0.55,
+        "event_date_utc": null,
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Eastern Nebraska and southeastern South Dakota, USA",
+        "jurisdiction_level": "state",
+        "admin1": "Nebraska",
+        "country": "US",
+        "capital_used": "Lincoln",
+        "lat": 40.8136,
+        "lon": -96.7026,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.usgs.gov/publications/floods-eastern-nebraska-and-southeastern-south-dakota-june-1984",
+          "source_name": "USGS",
+          "published_at": "1987-01-01T00:00:00Z",
+          "headline": "Floods in eastern Nebraska and southeastern South Dakota, June 1984",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://pubs.usgs.gov/of/1987/0215/report.pdf",
+          "source_name": "USGS Publications (Open-File Report PDF)",
+          "published_at": "1987-01-01T00:00:00Z",
+          "headline": "Floods in eastern Nebraska and southeastern South Dakota, June 1984 (report)",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "USGS"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Rapid-succession thunderstorms during June 1984 caused substantial flooding",
+            "source_url": "https://www.usgs.gov/publications/floods-eastern-nebraska-and-southeastern-south-dakota-june-1984"
+          },
+          {
+            "quote": "highest stages and most widespread flooding along the Missouri River",
+            "source_url": "https://www.usgs.gov/publications/floods-eastern-nebraska-and-southeastern-south-dakota-june-1984"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.8,
+        "location": 0.55,
+        "summary_grounding": 0.75
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "1984-06-ne-sd-flooding-missouri-river",
+        "fingerprint": "1984-06-weather_climate-flooding-across-eastern-nebraska-and-southeastern-south-dakota-1984-06"
+      }
+    },
+    {
+      "event_id": "1984-06-weather_climate-upi-elkhorn-flood",
+      "title": "Heavy rain floods towns in Nebraska’s Elkhorn River basin (Howells–Scribner–Hooper)",
+      "description": "A UPI report says nearly five inches of rain in parts of Nebraska’s Elkhorn River basin caused floodwaters to rush through streets and into homes and businesses. The story also reports a dike break on Maple Creek that sent a “wall of water” through Howells.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1984-06-16T12:00:00Z",
+        "event_end": "1984-06-16T12:00:00Z",
+        "reported_at": "1984-06-16T00:00:00Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "1984-06-16T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Nebraska, USA (Elkhorn River basin)",
+        "jurisdiction_level": "state",
+        "admin1": "Nebraska",
+        "country": "US",
+        "capital_used": "Lincoln",
+        "lat": 40.8136,
+        "lon": -96.7026,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.upi.com/Archives/1984/06/16/Floodwaters-caused-by-nearly-5-inches-of-rain-in/5805456206400/",
+          "source_name": "UPI",
+          "published_at": "1984-06-16T00:00:00Z",
+          "headline": "Floodwaters caused by nearly 5 inches of rain in ...",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "UPI"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "nearly 5 inches of rain",
+            "source_url": "https://www.upi.com/Archives/1984/06/16/Floodwaters-caused-by-nearly-5-inches-of-rain-in/5805456206400/"
+          },
+          {
+            "quote": "dike break on Maple Creek sent a wall of water through Howells",
+            "source_url": "https://www.upi.com/Archives/1984/06/16/Floodwaters-caused-by-nearly-5-inches-of-rain-in/5805456206400/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.66,
+        "category": 0.75,
+        "location": 0.6,
+        "summary_grounding": 0.7
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "1984-06-nebraska-elkhorn-flooding",
+        "fingerprint": "1984-06-weather_climate-heavy-rain-floods-towns-in-nebraskas-elkhorn-river-basin-howells-scribner-hooper-1984-06-16"
+      }
+    },
+    {
+      "event_id": "1984-06-weather_climate-upi-india-monsoon-floods-landslides",
+      "title": "Monsoon rains cause floods and landslides in India (Tripura and Kerala)",
+      "description": "A UPI report states that monsoon rains led to deadly flooding and rain-triggered landslides in India, including drownings in Kerala and landslides in Tripura. The report also notes many people were left homeless.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1984-06-17T12:00:00Z",
+        "event_end": "1984-06-19T12:00:00Z",
+        "reported_at": "1984-06-19T00:00:00Z",
+        "time_confidence": 0.65,
+        "event_date_utc": null,
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "India (Tripura and Kerala)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "IN",
+        "capital_used": "New Delhi",
+        "lat": 28.6139,
+        "lon": 77.209,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.upi.com/Archives/1984/06/19/Monsoon-floods-and-landslides-have-killed-at-least-35/1110456465600/",
+          "source_name": "UPI",
+          "published_at": "1984-06-19T00:00:00Z",
+          "headline": "Monsoon floods and landslides have killed at least 35",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "UPI"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Monsoon floods and landslides have killed at least 35",
+            "source_url": "https://www.upi.com/Archives/1984/06/19/Monsoon-floods-and-landslides-have-killed-at-least-35/1110456465600/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.7,
+        "location": 0.55,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "1984-06-india-monsoon-floods-landslides",
+        "fingerprint": "1984-06-weather_climate-monsoon-rains-cause-floods-and-landslides-in-india-tripura-and-kerala-1984-06"
+      }
+    },
+    {
+      "event_id": "1984-06-weather_climate-ejssm-ussr-tornado-outbreak",
+      "title": "Severe convective storms produce rare tornado outbreak in the Soviet Union (Ivanovo–Yaroslavl)",
+      "description": "An EJSSM article documents a destructive tornado outbreak on 9 June 1984 associated with severe convective storms and a synoptic-scale low/cold front. The article characterizes the event as one of the most significant tornado episodes in Russia/Soviet history.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1984-06-09T00:00:00Z",
+        "event_end": "1984-06-09T12:00:00Z",
+        "reported_at": "2011-01-01T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1984-06-09T00:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Soviet Union (Ivanovo and Yaroslavl regions)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": null,
+        "capital_used": "Moscow",
+        "lat": 55.7558,
+        "lon": 37.6173,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.45
+      },
+      "sources": [
+        {
+          "url": "https://ejssm.com/ojs/index.php/site/article/view/40",
+          "source_name": "EJSSM",
+          "published_at": "2011-01-01T00:00:00Z",
+          "headline": "(EJSSM article) Tornado outbreak in the Soviet Union (9 June 1984)",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "EJSSM"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "tornado outbreak",
+            "source_url": "https://ejssm.com/ojs/index.php/site/article/view/40"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.48,
+        "category": 0.65,
+        "location": 0.45,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "secondary_sources_only",
+        "low_confidence_location",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "1984-06-09-ussr-ivanovo-yaroslavl-tornado-outbreak",
+        "fingerprint": "1984-06-weather_climate-severe-convective-storms-produce-rare-tornado-outbreak-in-the-soviet-union-ivanovo-yaroslavl-1984-06-09"
+      }
+    },
+    {
+      "event_id": "evt_19840624_domrep_offshore_eq_upi",
+      "title": "Offshore earthquake north of the Dominican Republic (June 24, 1984)",
+      "description": "News reporting described an earthquake centered offshore from the Dominican Republic on June 24, 1984. The report indicated the quake was felt and placed the epicenter roughly 60 miles off the country.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1984-06-24T00:00:00Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "1984-06-24T11:17:11Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Off the coast of the Dominican Republic (near San Pedro de Macorís / San Pedro Basin)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "DO",
+        "capital_used": "Santo Domingo",
+        "lat": 18.4861,
+        "lon": -69.9312,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://www.upi.com/Archives/1984/06/24/An-earthquake-centered-60-miles-off-the-Dominican-Republic/3149456897600/",
+          "source_name": "UPI",
+          "published_at": "1984-06-24T00:00:00Z",
+          "headline": "An earthquake centered 60 miles off the Dominican Republic",
+          "byline": null,
+          "accessed_utc": "2026-01-18T04:21:16.805Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://earthquaketrack.com/quakes/1984-06-24-11-17-11-utc-6-9-23",
+          "source_name": "earthquaketrack.com",
+          "published_at": "1984-06-24T11:17:11Z",
+          "headline": "1984-06-24 11:17:11 UTC (M6.9) earthquake",
+          "byline": null,
+          "accessed_utc": "2026-01-18T04:21:16.805Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "An earthquake centered 60 miles off the Dominican Republic...",
+            "source_url": "https://www.upi.com/Archives/1984/06/24/An-earthquake-centered-60-miles-off-the-Dominican-Republic/3149456897600/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.8,
+        "location": 0.7,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "1984-06-24 Dominican Republic offshore earthquake",
+        "fingerprint": "fp_1984-06-24_domrep_offshore_eq_country"
+      }
+    },
+    {
+      "event_id": "1984-06-25-chevron-usa-v-nrdc-ussc-washingtondc",
+      "title": "U.S. Supreme Court issues Chevron U.S.A., Inc. v. NRDC decision affecting Clean Air Act interpretation",
+      "description": "The U.S. Supreme Court issued its decision in Chevron U.S.A., Inc. v. Natural Resources Defense Council, Inc. on June 25, 1984. The ruling upheld EPA’s interpretation of “stationary source” under the Clean Air Act permitting program and is widely cited for establishing judicial deference to reasonable agency interpretations of ambiguous statutes.",
+      "category_primary": "policy_regulation",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "1984-06-25T12:00:00Z",
+        "event_end": "1984-06-25T12:00:00Z",
+        "reported_at": "1984-06-25T12:00:00Z",
+        "time_confidence": 0.8,
+        "event_date_utc": "1984-06-25T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Washington, D.C., United States (U.S. Supreme Court)",
+        "jurisdiction_level": "city",
+        "admin1": "DC",
+        "country": "US",
+        "capital_used": null,
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.refworld.org/caselaw/ussct/1984/en/95268",
+          "source_name": "Refworld",
+          "published_at": "1984-06-25T00:00:00Z",
+          "headline": "Chevron U.S.A., Inc. v. Natural Resources Defense Council, Inc.",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.epa.gov/archive/epa/aboutepa/statement-us-supreme-courts-ruling-june-25th-epas-bubble-policy-control-air-pollution.html",
+          "source_name": "U.S. Environmental Protection Agency (archive)",
+          "published_at": "1984-06-25T00:00:00Z",
+          "headline": "Statement on U.S. Supreme Court’s ruling (June 25th) on EPA’s bubble policy to control air pollution",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Supreme Court",
+          "U.S. Environmental Protection Agency (EPA)",
+          "Natural Resources Defense Council (NRDC)"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "decided June 25, 1984",
+            "source_url": "https://www.refworld.org/caselaw/ussct/1984/en/95268"
+          },
+          {
+            "quote": "EPA’s bubble policy to control air pollution",
+            "source_url": "https://www.epa.gov/archive/epa/aboutepa/statement-us-supreme-courts-ruling-june-25th-epas-bubble-policy-control-air-pollution.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.66,
+        "category": 0.85,
+        "location": 0.6,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Chevron U.S.A., Inc. v. NRDC (1984-06-25)",
+        "fingerprint": "1984-06-25|chevron usa v nrdc|washington dc us"
+      }
+    },
+    {
+      "event_id": "1984-06-19-vermont-wilderness-act-pl98-322-us-washingtondc",
+      "title": "Vermont Wilderness Act of 1984 signed into law (Public Law 98-322)",
+      "description": "Public Law 98-322 (Vermont Wilderness Act of 1984) became law on June 19, 1984. The act designated certain National Forest System lands in Vermont for inclusion in the National Wilderness Preservation System and also designated a National Recreation Area.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "1984-06-19T12:00:00Z",
+        "event_end": "1984-06-19T12:00:00Z",
+        "reported_at": "1984-06-19T12:00:00Z",
+        "time_confidence": 0.75,
+        "event_date_utc": "1984-06-19T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States (federal law signing)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, D.C.",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.congress.gov/bill/98th-congress/house-bill/4198",
+          "source_name": "Congress.gov",
+          "published_at": "1984-06-19T00:00:00Z",
+          "headline": "H.R.4198 - Vermont Wilderness Act of 1984",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.reaganlibrary.gov/archives/speech/remarks-signing-four-bills-designating-wilderness-areas",
+          "source_name": "Ronald Reagan Presidential Library",
+          "published_at": "1984-06-19T00:00:00Z",
+          "headline": "Remarks on Signing Four Bills Designating Wilderness Areas",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Congress",
+          "Ronald Reagan Presidential Library"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "National Wilderness Preservation System"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "H.R.4198",
+            "source_url": "https://www.congress.gov/bill/98th-congress/house-bill/4198"
+          },
+          {
+            "quote": "Signing Four Bills Designating Wilderness Areas",
+            "source_url": "https://www.reaganlibrary.gov/archives/speech/remarks-signing-four-bills-designating-wilderness-areas"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.7,
+        "category": 0.85,
+        "location": 0.55,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "1984-06-19 wilderness bills signing",
+        "fingerprint": "1984-06-19|vermont wilderness act pl 98-322|us"
+      }
+    },
+    {
+      "event_id": "1984-06-19-wisconsin-wilderness-act-pl98-321-us-washingtondc",
+      "title": "Wisconsin Wilderness Act of 1984 signed into law (Public Law 98-321)",
+      "description": "Public Law 98-321 (Wisconsin Wilderness Act of 1984) became law on June 19, 1984. The act designated wilderness areas in Wisconsin for inclusion in the National Wilderness Preservation System.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "1984-06-19T12:00:00Z",
+        "event_end": "1984-06-19T12:00:00Z",
+        "reported_at": "1984-06-19T12:00:00Z",
+        "time_confidence": 0.75,
+        "event_date_utc": "1984-06-19T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States (federal law signing)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, D.C.",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.congress.gov/bill/98th-congress/house-bill/3578",
+          "source_name": "Congress.gov",
+          "published_at": "1984-06-19T00:00:00Z",
+          "headline": "H.R.3578 - Wisconsin Wilderness Act of 1984",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.reaganlibrary.gov/archives/speech/remarks-signing-four-bills-designating-wilderness-areas",
+          "source_name": "Ronald Reagan Presidential Library",
+          "published_at": "1984-06-19T00:00:00Z",
+          "headline": "Remarks on Signing Four Bills Designating Wilderness Areas",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Congress",
+          "Ronald Reagan Presidential Library"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "National Wilderness Preservation System"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "H.R.3578",
+            "source_url": "https://www.congress.gov/bill/98th-congress/house-bill/3578"
+          },
+          {
+            "quote": "Signing Four Bills Designating Wilderness Areas",
+            "source_url": "https://www.reaganlibrary.gov/archives/speech/remarks-signing-four-bills-designating-wilderness-areas"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.69,
+        "category": 0.85,
+        "location": 0.55,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "1984-06-19 wilderness bills signing",
+        "fingerprint": "1984-06-19|wisconsin wilderness act pl 98-321|us"
+      }
+    },
+    {
+      "event_id": "1984-06-19-new-hampshire-wilderness-act-pl98-323-us-washingtondc",
+      "title": "New Hampshire Wilderness Act of 1984 signed into law (Public Law 98-323)",
+      "description": "Public Law 98-323 (New Hampshire Wilderness Act of 1984) became law on June 19, 1984. The act designated certain lands for wilderness protection in New Hampshire under the National Wilderness Preservation System.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "1984-06-19T12:00:00Z",
+        "event_end": "1984-06-19T12:00:00Z",
+        "reported_at": "1984-06-19T12:00:00Z",
+        "time_confidence": 0.75,
+        "event_date_utc": "1984-06-19T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States (federal law signing)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, D.C.",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.congress.gov/bill/98th-congress/house-bill/3921",
+          "source_name": "Congress.gov",
+          "published_at": "1984-06-19T00:00:00Z",
+          "headline": "H.R.3921 - New Hampshire Wilderness Act of 1984",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.reaganlibrary.gov/archives/speech/remarks-signing-four-bills-designating-wilderness-areas",
+          "source_name": "Ronald Reagan Presidential Library",
+          "published_at": "1984-06-19T00:00:00Z",
+          "headline": "Remarks on Signing Four Bills Designating Wilderness Areas",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Congress",
+          "Ronald Reagan Presidential Library"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "National Wilderness Preservation System"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "H.R.3921",
+            "source_url": "https://www.congress.gov/bill/98th-congress/house-bill/3921"
+          },
+          {
+            "quote": "Signing Four Bills Designating Wilderness Areas",
+            "source_url": "https://www.reaganlibrary.gov/archives/speech/remarks-signing-four-bills-designating-wilderness-areas"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.69,
+        "category": 0.85,
+        "location": 0.55,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "1984-06-19 wilderness bills signing",
+        "fingerprint": "1984-06-19|new hampshire wilderness act pl 98-323|us"
+      }
+    },
+    {
+      "event_id": "1984-06-19-north-carolina-wilderness-act-pl98-324-us-washingtondc",
+      "title": "North Carolina Wilderness Act of 1984 signed into law (Public Law 98-324)",
+      "description": "Public Law 98-324 (North Carolina Wilderness Act of 1984) became law on June 19, 1984. The act designated wilderness areas in North Carolina under the National Wilderness Preservation System.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "1984-06-19T12:00:00Z",
+        "event_end": "1984-06-19T12:00:00Z",
+        "reported_at": "1984-06-19T12:00:00Z",
+        "time_confidence": 0.75,
+        "event_date_utc": "1984-06-19T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States (federal law signing)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, D.C.",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.congress.gov/bill/98th-congress/house-bill/3960",
+          "source_name": "Congress.gov",
+          "published_at": "1984-06-19T00:00:00Z",
+          "headline": "H.R.3960 - North Carolina Wilderness Act of 1984",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.reaganlibrary.gov/archives/speech/remarks-signing-four-bills-designating-wilderness-areas",
+          "source_name": "Ronald Reagan Presidential Library",
+          "published_at": "1984-06-19T00:00:00Z",
+          "headline": "Remarks on Signing Four Bills Designating Wilderness Areas",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Congress",
+          "Ronald Reagan Presidential Library"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "National Wilderness Preservation System"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "H.R.3960",
+            "source_url": "https://www.congress.gov/bill/98th-congress/house-bill/3960"
+          },
+          {
+            "quote": "Signing Four Bills Designating Wilderness Areas",
+            "source_url": "https://www.reaganlibrary.gov/archives/speech/remarks-signing-four-bills-designating-wilderness-areas"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.69,
+        "category": 0.85,
+        "location": 0.55,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "1984-06-19 wilderness bills signing",
+        "fingerprint": "1984-06-19|north carolina wilderness act pl 98-324|us"
+      }
+    }
+  ]
+}

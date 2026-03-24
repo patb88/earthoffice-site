@@ -1,0 +1,594 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_2013-11_normalize_2026-01-16T050858451Z",
+    "generated_utc": "2026-01-16T05:08:58.451Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "2013-11",
+    "window": {
+      "start_utc": "2013-11-01T00:00:00.000Z",
+      "end_utc": "2013-11-30T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "evt_20131122_qingdao_huangdao_oil_pipeline_blast",
+      "title": "Qingdao Huangdao crude-oil pipeline leak and explosions contaminate streets and coastal waters",
+      "description": "A crude-oil pipeline leak in Qingdao's Huangdao District sent oil into municipal drainage systems and toward the nearby coast. Explosions and fires were reported during the incident/response, with contamination reported in adjacent coastal waters.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2013-11-22T02:30:00.000Z",
+        "event_end": "2013-11-22T05:00:00.000Z",
+        "reported_at": "2013-11-22T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2013-11-22T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Huangdao District, Qingdao, Shandong, China",
+        "jurisdiction_level": "site",
+        "admin1": "Shandong",
+        "country": "CN",
+        "capital_used": null,
+        "lat": 36.0671,
+        "lon": 120.3826,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.cnbc.com/2013/11/22/sinopec-oil-pipeline-blast-kills-22-in-china-state-media.html",
+          "source_name": "CNBC",
+          "published_at": "2013-11-22T00:00:00Z",
+          "headline": "Sinopec oil pipeline blast kills 22 in China: state media",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.chinadaily.com.cn/china/2013-11/22/content_17125771.htm",
+          "source_name": "China Daily",
+          "published_at": "2013-11-22T00:00:00Z",
+          "headline": "Oil pipeline explosion kills 22 in Qingdao",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.aljazeera.com/news/2013/11/22/dozens-killed-in-chinese-oil-explosion",
+          "source_name": "Al Jazeera",
+          "published_at": "2013-11-22T00:00:00Z",
+          "headline": "Dozens killed in Chinese oil explosion",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Sinopec"
+        ],
+        "substances": [
+          "crude oil"
+        ],
+        "ecosystems": [
+          "coastal waters",
+          "Jiaozhou Bay"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.8,
+        "location": 0.6,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Qingdao Huangdao oil pipeline leak explosion 2013-11-22",
+        "fingerprint": "qingdao_huangdao_oil_pipeline_leak_explosion_2013-11-22_cn"
+      }
+    },
+    {
+      "event_id": "20131108_super_typhoon_haiyan_philippines",
+      "title": "Super Typhoon Haiyan makes catastrophic landfall in the Philippines",
+      "description": "Super Typhoon Haiyan (Yolanda) struck the central Philippines in early November 2013 with extreme winds and destructive storm surge, causing widespread coastal flooding and damage. The storm later crossed into the South China Sea and affected Vietnam after weakening.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2013-11-08T00:00:00.000Z",
+        "event_end": "2013-11-10T23:59:59.000Z",
+        "reported_at": "2013-11-08T00:00:00Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2013-11-08T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Philippines (central regions incl. Samar and Leyte)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "PH",
+        "capital_used": "Manila",
+        "lat": 14.5995,
+        "lon": 120.9842,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.75
+      },
+      "sources": [
+        {
+          "url": "https://www.climate.gov/news-features/understanding-climate/2013-state-climate-record-breaking-super-typhoon-haiyan",
+          "source_name": "NOAA Climate.gov",
+          "published_at": "2013-11-08T00:00:00Z",
+          "headline": "2013 State of the Climate: Record-breaking Super Typhoon Haiyan",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.theguardian.com/world/2013/nov/08/typhoon-haiyan-hits-philippines-live-updates",
+          "source_name": "The Guardian",
+          "published_at": "2013-11-08T00:00:00Z",
+          "headline": "Typhoon Haiyan hits Philippines – live updates",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Record-breaking Super Typhoon Haiyan",
+            "source_url": "https://www.climate.gov/news-features/understanding-climate/2013-state-climate-record-breaking-super-typhoon-haiyan"
+          },
+          {
+            "quote": "Typhoon Haiyan hits Philippines",
+            "source_url": "https://www.theguardian.com/world/2013/nov/08/typhoon-haiyan-hits-philippines-live-updates"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.8,
+        "location": 0.75,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Super Typhoon Haiyan (Yolanda) Philippines Nov 2013",
+        "fingerprint": "haiyan_philippines_2013-11-08"
+      }
+    },
+    {
+      "event_id": "evt_201311_sinabung_eruption_north_sumatra",
+      "title": "Mount Sinabung eruptions intensify with ash plumes and expanded evacuations in North Sumatra",
+      "description": "Reports in mid-to-late November 2013 described ongoing eruptions at Mount Sinabung in North Sumatra producing significant ash plumes and prompting large-scale evacuations. News coverage noted thousands of residents displaced as activity continued and evacuation measures expanded.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2013-11-14T00:00:00.000Z",
+        "event_end": "2013-11-25T23:59:59.000Z",
+        "reported_at": "2013-11-15T00:00:00Z",
+        "time_confidence": 0.75,
+        "event_date_utc": "2013-11-14T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Karo Regency, North Sumatra, Indonesia",
+        "jurisdiction_level": "site",
+        "admin1": "North Sumatra",
+        "country": "ID",
+        "capital_used": null,
+        "lat": 3.1702,
+        "lon": 98.3922,
+        "precision": "exact",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.abc.net.au/news/2013-11-15/an-indonesia27s-mt-sinabung-continues-to-erupt/5094128",
+          "source_name": "ABC News (Australia)",
+          "published_at": "2013-11-15T00:00:00Z",
+          "headline": "An Indonesia's Mt Sinabung continues to erupt",
+          "byline": null,
+          "accessed_utc": "2013-11-15T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.abc.net.au/news/2013-11-26/182c000-flee-volcano-eruption-in-indonesia/5116284",
+          "source_name": "ABC News (Australia)",
+          "published_at": "2013-11-26T00:00:00Z",
+          "headline": "18,000 flee volcano eruption in Indonesia",
+          "byline": null,
+          "accessed_utc": "2013-11-26T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.theguardian.com/world/2013/nov/18/indonesia-volcanoes-erupt-mount-merapi-sinabung",
+          "source_name": "The Guardian",
+          "published_at": "2013-11-18T00:00:00Z",
+          "headline": "Indonesia volcanoes erupt: Mount Merapi and Sinabung spew ash",
+          "byline": null,
+          "accessed_utc": "2013-11-18T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [
+          "volcanic ash"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Mt Sinabung continues to erupt",
+            "source_url": "https://www.abc.net.au/news/2013-11-15/an-indonesia27s-mt-sinabung-continues-to-erupt/5094128"
+          },
+          {
+            "quote": "18,000 flee volcano eruption in Indonesia",
+            "source_url": "https://www.abc.net.au/news/2013-11-26/182c000-flee-volcano-eruption-in-indonesia/5116284"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.66,
+        "category": 0.9,
+        "location": 0.6,
+        "summary_grounding": 0.7
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Mount Sinabung November 2013 eruptions/evacuations",
+        "fingerprint": "fp_evt_201311_sinabung_eruption_north_sumatra"
+      }
+    },
+    {
+      "event_id": "2013-11-fires-howes-swamp-yengo-nsw",
+      "title": "Howes Swamp fire remained active in Yengo National Park, New South Wales",
+      "description": "NASA Earth Observatory reporting indicated the Howes Swamp fire in New South Wales was still active in early November 2013. Firefighters continued suppression operations as the fire burned a large area in and around Yengo National Park.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2013-11-05T00:00:00.000Z",
+        "event_end": "2013-11-07T23:59:59.000Z",
+        "reported_at": "2013-11-06T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2013-11-06T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Yengo National Park, New South Wales, Australia",
+        "jurisdiction_level": "site",
+        "admin1": "New South Wales",
+        "country": "AU",
+        "capital_used": null,
+        "lat": -33.3389,
+        "lon": 150.8606,
+        "precision": "exact",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://science.nasa.gov/earth/earth-observatory/howes-swamp-fire-new-south-wales-82338/",
+          "source_name": "NASA Earth Observatory",
+          "published_at": "2013-11-06T00:00:00.000Z",
+          "headline": "Howes Swamp Fire, New South Wales",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": "https://www.earthobservatory.nasa.gov/images/82338/howes-swamp-fire-new-south-wales"
+        },
+        {
+          "url": "https://www.earthobservatory.nasa.gov/images/82338/howes-swamp-fire-new-south-wales",
+          "source_name": "NASA Earth Observatory",
+          "published_at": "2013-11-06T00:00:00.000Z",
+          "headline": "Howes Swamp Fire, New South Wales",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": "https://www.earthobservatory.nasa.gov/images/82338/howes-swamp-fire-new-south-wales"
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NASA Earth Observatory"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "temperate forest"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "The Howes Swamp Fire was still burning in early November 2013.",
+            "source_url": "https://www.earthobservatory.nasa.gov/images/82338/howes-swamp-fire-new-south-wales"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.85,
+        "location": 0.55,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Howes Swamp Fire (Yengo National Park)",
+        "fingerprint": "howes-swamp-fire-yengo-national-park-nsw-au-2013-11-06"
+      }
+    },
+    {
+      "event_id": "2013-11-fires-nsw-alerts-downgraded-sydney-wollongong",
+      "title": "Bushfire alerts downgraded near Sydney and west of Wollongong after cooler conditions",
+      "description": "On 3 November 2013, authorities reported cooler overnight conditions helped ease bushfire activity in parts of New South Wales. Alerts were downgraded for fires burning north-west of Sydney and west of Wollongong, according to ABC News reporting.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2013-11-03T00:00:00.000Z",
+        "event_end": "2013-11-03T23:59:59.000Z",
+        "reported_at": "2013-11-03T00:00:00.000Z",
+        "time_confidence": 0.65,
+        "event_date_utc": "2013-11-03T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "New South Wales, Australia (Sydney/Wollongong region)",
+        "jurisdiction_level": "state",
+        "admin1": "New South Wales",
+        "country": "AU",
+        "capital_used": "Sydney",
+        "lat": -33.8688,
+        "lon": 151.2093,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.abc.net.au/news/2013-11-03/nsw-fires-watch-and-act-alerts/5066528",
+          "source_name": "ABC News (Australia)",
+          "published_at": "2013-11-03T00:00:00.000Z",
+          "headline": "NSW fires: Watch and act alerts downgraded as cooler conditions bring relief",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "ABC News (Australia)"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "cooler conditions brought relief as some watch and act alerts were downgraded",
+            "source_url": "https://www.abc.net.au/news/2013-11-03/nsw-fires-watch-and-act-alerts/5066528"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.75,
+        "location": 0.7,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "location_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "NSW bushfire alerts downgraded (Sydney/Wollongong)",
+        "fingerprint": "nsw-bushfire-alerts-downgraded-sydney-wollongong-au-2013-11-03"
+      }
+    },
+    {
+      "event_id": "2013-11-us-willow-beach-fish-die-off",
+      "title": "Fish die-off reported at Willow Beach National Fish Hatchery on Lake Mohave",
+      "description": "The U.S. Fish and Wildlife Service reported a large fish die-off at the Willow Beach National Fish Hatchery on Lake Mohave. The agency associated the incident with low lake elevation affecting hatchery operations, and provided updates during November 2013.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2013-11-15T00:00:00.000Z",
+        "event_end": "2013-11-21T23:59:59.000Z",
+        "reported_at": "2013-11-01T00:00:00.000Z",
+        "time_confidence": 0.5,
+        "event_date_utc": "2013-11-15T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Willow Beach National Fish Hatchery / Lake Mohave (Arizona/Nevada), United States",
+        "jurisdiction_level": "site",
+        "admin1": "Arizona/Nevada",
+        "country": "US",
+        "capital_used": null,
+        "lat": 0,
+        "lon": 0,
+        "precision": "proxy",
+        "location_basis": "manual_override",
+        "location_confidence": 0.2
+      },
+      "sources": [
+        {
+          "url": "https://www.fws.gov/press-release/2013-11/update-massive-fish-die-willow-beach-national-fish-hatchery",
+          "source_name": "U.S. Fish & Wildlife Service",
+          "published_at": "2013-11-01T00:00:00.000Z",
+          "headline": "Update: Massive Fish Die-off at Willow Beach National Fish Hatchery",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Fish & Wildlife Service"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "Lake Mohave"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.35,
+        "category": 0.7,
+        "location": 0.2,
+        "summary_grounding": 0.4
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "low_confidence_location",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "willow_beach_fish_dieoff_lake_mohave_2013_11",
+        "fingerprint": "willow-beach-fish-dieoff|lake-mohave|2013-11"
+      }
+    },
+    {
+      "event_id": "evt_201311_warsaw_wim_loss_damage",
+      "title": "COP19 establishes the Warsaw International Mechanism for Loss and Damage",
+      "description": "At the UN climate conference (COP19) in Warsaw, Parties established the Warsaw International Mechanism for Loss and Damage to address loss and damage associated with climate-change impacts, particularly in vulnerable developing countries. The mechanism is referenced in COP19 decision 2/CP.19.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "2013-11-11T00:00:00.000Z",
+        "event_end": "2013-11-22T23:59:59.000Z",
+        "reported_at": "2013-11-22T23:59:59.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2013-11-11T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Warsaw, Poland",
+        "jurisdiction_level": "city",
+        "admin1": null,
+        "country": "PL",
+        "capital_used": null,
+        "lat": 52.2297,
+        "lon": 21.0122,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.85
+      },
+      "sources": [
+        {
+          "url": "https://unfccc.int/process-and-meetings/bodies/constituted-bodies/wim-excom/chronology",
+          "source_name": "UNFCCC",
+          "published_at": "2013-11-22T23:59:59.000Z",
+          "headline": "Chronology (WIM ExCom)",
+          "byline": null,
+          "accessed_utc": "2013-11-30T23:59:59.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://unfccc.int/topics/resilience/resources/questions-and-answers-ld-mechanism",
+          "source_name": "UNFCCC",
+          "published_at": "2013-11-22T23:59:59.000Z",
+          "headline": "Questions and answers: Loss and Damage mechanism",
+          "byline": null,
+          "accessed_utc": "2013-11-30T23:59:59.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://unfccc.int/conference/warsaw-climate-change-conference-november-2013",
+          "source_name": "UNFCCC",
+          "published_at": "2013-11-22T23:59:59.000Z",
+          "headline": "Warsaw Climate Change Conference (November 2013)",
+          "byline": null,
+          "accessed_utc": "2013-11-30T23:59:59.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "UNFCCC",
+          "Conference of the Parties (COP)"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Parties established the Warsaw International Mechanism for Loss and Damage",
+            "source_url": "https://unfccc.int/process-and-meetings/bodies/constituted-bodies/wim-excom/chronology"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.72,
+        "category": 0.8,
+        "location": 0.85,
+        "summary_grounding": 0.7
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "COP19_Warsaw_WIM_Loss_and_Damage_2013-11",
+        "fingerprint": "fp_cop19_warsaw_wim_20131111_20131122_warsaw_pl"
+      }
+    }
+  ]
+}

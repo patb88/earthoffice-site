@@ -1,0 +1,870 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_2020-07_normalize_2026-01-16T071640561Z",
+    "generated_utc": "2026-01-16T07:16:40.561Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "2020-07",
+    "window": {
+      "start_utc": "2020-07-01T00:00:00.000Z",
+      "end_utc": "2020-07-31T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "evt_202007_morrocoy_el_palito_oil_spill",
+      "title": "Oil spill from El Palito refinery affects waters near Morrocoy National Park",
+      "description": "Satellite imagery and reporting from the Copernicus EU programme documented an oil spill affecting coastal waters near Morrocoy National Park, Venezuela, associated with the El Palito refinery.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2020-07-19T00:00:00.000Z",
+        "event_end": "2020-07-22T23:59:59.000Z",
+        "reported_at": "2020-07-22T00:00:00Z",
+        "time_confidence": 0.5,
+        "event_date_utc": "2020-07-22T00:00:00Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Morrocoy National Park / Golfo Triste, Venezuela",
+        "jurisdiction_level": "site",
+        "admin1": null,
+        "country": "VE",
+        "capital_used": null,
+        "lat": 10.883,
+        "lon": -68.233,
+        "precision": "admin1",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.4
+      },
+      "sources": [
+        {
+          "url": "https://www.copernicus.eu/en/media/image-day-gallery/oil-spill-morrocoy-national-park-venezuela",
+          "source_name": "Copernicus (EU)",
+          "published_at": "2020-07-22T00:00:00Z",
+          "headline": "Oil spill in Morrocoy National Park, Venezuela",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Copernicus"
+        ],
+        "substances": [
+          "oil"
+        ],
+        "ecosystems": [
+          "coastal waters",
+          "national park"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Oil spill in Morrocoy National Park, Venezuela",
+            "source_url": "https://www.copernicus.eu/en/media/image-day-gallery/oil-spill-morrocoy-national-park-venezuela"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.45,
+        "category": 0.7,
+        "location": 0.35,
+        "summary_grounding": 0.4
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "El Palito refinery oil spill affecting Morrocoy National Park (July 2020)",
+        "fingerprint": "fp_evt_202007_morrocoy_el_palito_oil_spill"
+      }
+    },
+    {
+      "event_id": "evt_202007_huntersville_colonial_pipeline_gasoline_release",
+      "title": "Colonial Pipeline gasoline release begins near Huntersville, North Carolina",
+      "description": "Reporting in 2022 cited Colonial Pipeline identifying July 27, 2020 as the start date of a gasoline release into the subsurface at/near Oehler Nature Preserve near Huntersville, North Carolina; the spill was discovered later, in August 2020.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2020-07-27T00:00:00.000Z",
+        "event_end": "2020-07-31T23:59:59.000Z",
+        "reported_at": "2022-07-22T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2020-07-27T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Oehler Nature Preserve near Huntersville, North Carolina, United States",
+        "jurisdiction_level": "site",
+        "admin1": "North Carolina",
+        "country": "US",
+        "capital_used": null,
+        "lat": 35.4107,
+        "lon": -80.8429,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.wfae.org/energy-environment/2022-07-22/colonial-pipeline-raises-estimate-of-huntersville-gasoline-spill",
+          "source_name": "WFAE",
+          "published_at": "2022-07-22T00:00:00Z",
+          "headline": "Colonial Pipeline raises estimate of Huntersville gasoline spill",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.wunc.org/2022-07-22/colonial-pipeline-raises-estimate-of-huntersville-gasoline-spill",
+          "source_name": "WUNC",
+          "published_at": "2022-07-22T00:00:00Z",
+          "headline": "Colonial Pipeline raises estimate of Huntersville gasoline spill",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Colonial Pipeline"
+        ],
+        "substances": [
+          "gasoline"
+        ],
+        "ecosystems": [
+          "subsurface"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "identified July 27, 2020 as the start date",
+            "source_url": "https://www.wfae.org/energy-environment/2022-07-22/colonial-pipeline-raises-estimate-of-huntersville-gasoline-spill"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.65,
+        "category": 0.8,
+        "location": 0.55,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Colonial Pipeline Huntersville (Oehler Nature Preserve) gasoline release start date July 2020",
+        "fingerprint": "fp_evt_202007_huntersville_colonial_pipeline_gasoline_release"
+      }
+    },
+    {
+      "event_id": "202007-hanna-south-texas-mx",
+      "title": "Hurricane Hanna makes landfall in South Texas and affects northeastern Mexico",
+      "description": "Hurricane Hanna formed on July 23, 2020 and made landfall as a Category 1 hurricane on July 25, bringing damaging winds and flooding rainfall across South Texas and into northeastern Mexico before weakening on July 26.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2020-07-23T00:00:00.000Z",
+        "event_end": "2020-07-26T23:59:59.000Z",
+        "reported_at": "2020-07-25T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": null,
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "South Texas, United States",
+        "jurisdiction_level": "state",
+        "admin1": "Texas",
+        "country": "US",
+        "capital_used": "Austin",
+        "lat": 30.2672,
+        "lon": -97.7431,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.weather.gov/lch/2020Hanna",
+          "source_name": "NWS (weather.gov)",
+          "published_at": "2020-07-25T00:00:00.000Z",
+          "headline": "2020 Hanna",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://noaa-mirror.org/www.weather.gov/bro/2020event_hanna",
+          "source_name": "NWS (weather.gov) mirror",
+          "published_at": "2020-07-25T00:00:00.000Z",
+          "headline": "2020 Event: Hurricane Hanna",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "National Weather Service",
+          "NOAA"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Hurricane Hanna formed July 23, 2020 and made landfall as a Category 1 hurricane on July 25.",
+            "source_url": "https://www.weather.gov/lch/2020Hanna"
+          },
+          {
+            "quote": "...damaging winds and flooding rainfall across South Texas... before weakening on July 26.",
+            "source_url": "https://noaa-mirror.org/www.weather.gov/bro/2020event_hanna"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.85,
+        "location": 0.55,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "paywalled_or_partial",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Hurricane Hanna (2020)",
+        "fingerprint": "hurricane-hanna-makes-landfall-south-texas-and-affects-northeastern-mexico|austin-tx|2020-07-23/2020-07-26"
+      }
+    },
+    {
+      "event_id": "20200731-europe-heatwave",
+      "title": "European heatwave highlighted by Copernicus imagery (July 2020)",
+      "description": "Copernicus published an image-of-the-day gallery item highlighting heatwave conditions affecting parts of Europe, including the United Kingdom and France, around late July 2020.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2020-07-31T00:00:00.000Z",
+        "event_end": "2020-07-31T23:59:59.000Z",
+        "reported_at": "2020-07-31T00:00:00.000Z",
+        "time_confidence": 0.35,
+        "event_date_utc": "2020-07-31T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Western Europe (United Kingdom and France)",
+        "jurisdiction_level": "supranational",
+        "admin1": null,
+        "country": null,
+        "capital_used": "Brussels",
+        "lat": 50.8466,
+        "lon": 4.3528,
+        "precision": "supranational",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.3
+      },
+      "sources": [
+        {
+          "url": "https://www.copernicus.eu/en/media/image-day-gallery/heatwave-europe",
+          "source_name": "Copernicus (EU)",
+          "published_at": "2020-07-31T00:00:00.000Z",
+          "headline": "Heatwave in Europe",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Copernicus"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Copernicus image-of-the-day gallery item highlighting a heatwave in Europe.",
+            "source_url": "https://www.copernicus.eu/en/media/image-day-gallery/heatwave-europe"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.35,
+        "category": 0.7,
+        "location": 0.3,
+        "summary_grounding": 0.35
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Europe heatwave late July 2020",
+        "fingerprint": "european-heatwave-highlighted-by-copernicus-imagery-july-2020|brussels|2020-07-31"
+      }
+    },
+    {
+      "event_id": "evt-20200722-alaska-peninsula-m78",
+      "title": "M7.8 earthquake off Alaska Peninsula prompts tsunami warnings",
+      "description": "A magnitude 7.8 earthquake occurred off the Alaska Peninsula near the Simeonof Island/Perryville area, prompting tsunami warnings and coastal evacuations in parts of Alaska.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2020-07-22T06:12:42.000Z",
+        "event_end": "2020-07-22T06:12:42.000Z",
+        "reported_at": "2020-07-21T00:00:00Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2020-07-22T06:12:42.000Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Alaska Peninsula region (south of Perryville / Simeonof Island), United States",
+        "jurisdiction_level": "site",
+        "admin1": "Alaska",
+        "country": "US",
+        "capital_used": null,
+        "lat": 55,
+        "lon": -159,
+        "precision": "admin1",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.35
+      },
+      "sources": [
+        {
+          "url": "https://earthquake.alaska.edu/event/0209dha24u",
+          "source_name": "Alaska Earthquake Center",
+          "published_at": "2020-07-22T00:00:00Z",
+          "headline": "Event 0209dha24u",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://earthquake.alaska.edu/event/0209dha24u/detail",
+          "source_name": "Alaska Earthquake Center",
+          "published_at": "2020-07-22T00:00:00Z",
+          "headline": "Event 0209dha24u (detail)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.adn.com/alaska-news/2020/07/21/strong-earthquake-prompts-tsunami-warning-from-alaska-peninsula-to-western-kenai/",
+          "source_name": "Anchorage Daily News",
+          "published_at": "2020-07-21T00:00:00Z",
+          "headline": "Strong earthquake prompts tsunami warning from Alaska Peninsula to Western Kenai",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Alaska Earthquake Center"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Strong earthquake prompts tsunami warning from Alaska Peninsula to Western Kenai",
+            "source_url": "https://www.adn.com/alaska-news/2020/07/21/strong-earthquake-prompts-tsunami-warning-from-alaska-peninsula-to-western-kenai/"
+          },
+          {
+            "quote": "Event 0209dha24u",
+            "source_url": "https://earthquake.alaska.edu/event/0209dha24u"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.52,
+        "category": 0.9,
+        "location": 0.35,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "paywalled_or_partial",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "2020-07-22 Alaska Peninsula M7.8 tsunami warning",
+        "fingerprint": "fp-20200722-alaska-peninsula-m78"
+      }
+    },
+    {
+      "event_id": "evt-20200727-hawaii-m47",
+      "title": "M4.7 earthquake south of Hawai‘i Island felt with light shaking",
+      "description": "A magnitude 4.7 earthquake occurred south of the Island of Hawai‘i near the Nā‘ālehu area and was reported as felt across parts of Hawai‘i Island, with light shaking.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2020-07-27T16:06:00.000Z",
+        "event_end": "2020-07-27T16:06:00.000Z",
+        "reported_at": "2020-07-27T00:00:00Z",
+        "time_confidence": 0.65,
+        "event_date_utc": "2020-07-27T16:06:00.000Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "South of Hawai‘i Island (near Nā‘ālehu), United States",
+        "jurisdiction_level": "site",
+        "admin1": "Hawaii",
+        "country": "US",
+        "capital_used": null,
+        "lat": 19.067,
+        "lon": -155.587,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.4
+      },
+      "sources": [
+        {
+          "url": "https://www.usgs.gov/news/usgs-hvo-press-release-magnitude-47-earthquake-south-island-hawaii",
+          "source_name": "USGS",
+          "published_at": "2020-07-27T00:00:00Z",
+          "headline": "USGS HVO press release: Magnitude 4.7 earthquake south of the Island of Hawai‘i",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "USGS",
+          "Hawaiian Volcano Observatory"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Magnitude 4.7 earthquake south of the Island of Hawai‘i",
+            "source_url": "https://www.usgs.gov/news/usgs-hvo-press-release-magnitude-47-earthquake-south-island-hawaii"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.85,
+        "location": 0.4,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "2020-07-27 Hawai‘i Island M4.7 earthquake",
+        "fingerprint": "fp-20200727-hawaii-m47"
+      }
+    },
+    {
+      "event_id": "evt_20200707_hudson_river_dead_fish",
+      "title": "Thousands of dead fish reported in and around the Hudson River",
+      "description": "Riverkeeper reported thousands of dead fish found in and around the Hudson River on July 7, 2020. Experts cited in the report suggested the fish likely suffocated.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2020-07-07T00:00:00.000Z",
+        "event_end": "2020-07-07T23:59:59.000Z",
+        "reported_at": "2020-07-07T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2020-07-07T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Hudson River, New York, United States",
+        "jurisdiction_level": "site",
+        "admin1": "New York",
+        "country": "US",
+        "capital_used": null,
+        "lat": 42.2506,
+        "lon": -73.7907,
+        "precision": "proxy",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.45
+      },
+      "sources": [
+        {
+          "url": "https://www.riverkeeper.org/news-and-events/news-and-updates/thousands-of-dead-fish-found-in-and-around-hudson-river-experts-say-they-suffocated",
+          "source_name": "Riverkeeper",
+          "published_at": "2020-07-07T00:00:00.000Z",
+          "headline": "Thousands of dead fish found in and around Hudson River; experts say they suffocated",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Riverkeeper"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "Hudson River"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Riverkeeper reported \"thousands of dead fish\" found in and around the Hudson River.",
+            "source_url": "https://www.riverkeeper.org/news-and-events/news-and-updates/thousands-of-dead-fish-found-in-and-around-hudson-river-experts-say-they-suffocated"
+          },
+          {
+            "quote": "Experts said the fish likely \"suffocated\" (as reported by Riverkeeper).",
+            "source_url": "https://www.riverkeeper.org/news-and-events/news-and-updates/thousands-of-dead-fish-found-in-and-around-hudson-river-experts-say-they-suffocated"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.7,
+        "location": 0.45,
+        "summary_grounding": 0.65
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "hudson river dead fish july 2020",
+        "fingerprint": "fp_hudson_dead_fish_2020-07-07"
+      }
+    },
+    {
+      "event_id": "evt_20200728_fao_locust_east_africa_risk",
+      "title": "FAO warns East Africa remains at risk despite progress against desert locust upsurge",
+      "description": "A July 28, 2020 FAO update described progress against a desert locust upsurge in Kenya while emphasizing that East Africa remained at risk. The update highlighted the need for continued surveillance and control to prevent re-infestation.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "2020-07-28T00:00:00.000Z",
+        "event_end": "2020-07-28T23:59:59.000Z",
+        "reported_at": "2020-07-28T00:00:00.000Z",
+        "time_confidence": 0.75,
+        "event_date_utc": "2020-07-28T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "East Africa (regional; FAO update focused on Kenya)",
+        "jurisdiction_level": "supranational",
+        "admin1": null,
+        "country": null,
+        "capital_used": null,
+        "lat": 0,
+        "lon": 0,
+        "precision": "proxy",
+        "location_basis": "institution_proxy",
+        "location_confidence": 0.25
+      },
+      "sources": [
+        {
+          "url": "https://www.fao.org/newsroom/detail/Kenya-beats-back-desert-locust-upsurge-for-now-but-East-Africa-remains-at-risk/en",
+          "source_name": "FAO",
+          "published_at": "2020-07-28T00:00:00.000Z",
+          "headline": "Kenya beats back desert locust upsurge for now, but East Africa remains at risk",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Food and Agriculture Organization of the United Nations (FAO)"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "The FAO said Kenya \"beats back\" the upsurge \"for now\" but East Africa \"remains at risk\".",
+            "source_url": "https://www.fao.org/newsroom/detail/Kenya-beats-back-desert-locust-upsurge-for-now-but-East-Africa-remains-at-risk/en"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.65,
+        "location": 0.25,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "low_confidence_location",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "FAO desert locust east africa risk 2020-07-28",
+        "fingerprint": "fp_fao_locust_east_africa_2020-07-28"
+      }
+    },
+    {
+      "event_id": "evt_202007_washington_asian_giant_hornet_first_trap",
+      "title": "Washington State reports first trapped Asian giant hornet specimen near Birch Bay",
+      "description": "In July 2020, Washington State officials reported trapping their first Asian giant hornet specimen near Birch Bay in Whatcom County. The invasive species is considered a threat to pollinators and could affect local ecosystems.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2020-07-01T00:00:00.000Z",
+        "time_confidence": 0.4,
+        "event_date_utc": null,
+        "event_date_precision": "month"
+      },
+      "location": {
+        "name": "Near Birch Bay, Whatcom County, Washington, United States",
+        "jurisdiction_level": "site",
+        "admin1": "Washington",
+        "country": "US",
+        "capital_used": null,
+        "lat": 48.9171,
+        "lon": -122.7446,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.5
+      },
+      "sources": [
+        {
+          "url": "https://time.com/5874650/murder-hornet-washington-trap/",
+          "source_name": "Time",
+          "published_at": "2020-07-01T00:00:00.000Z",
+          "headline": "Washington State Traps Its First Murder Hornet",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Washington State officials reported trapping their first Asian giant hornet specimen.",
+            "source_url": "https://time.com/5874650/murder-hornet-washington-trap/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.5,
+        "category": 0.6,
+        "location": 0.5,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "paywalled_or_partial",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "washington first asian giant hornet trap july 2020 birch bay",
+        "fingerprint": "fp_wa_ag_hornet_birchbay_2020-07"
+      }
+    },
+    {
+      "event_id": "20200716_us_blm_methane_rule_rollback_invalidated",
+      "title": "Federal court invalidates rollback of BLM methane waste-prevention rule",
+      "description": "A U.S. federal district court invalidated the Trump administration’s rollback of the Bureau of Land Management Waste Prevention Rule. The decision reinstated requirements related to methane waste, including controls on venting and flaring on covered lands.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2020-07-16T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2020-07-16T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://earthjustice.org/press/2020/court-slaps-down-trump-administrations-rollback-of-methane-rule",
+          "source_name": "Earthjustice",
+          "published_at": "2020-07-16T00:00:00.000Z",
+          "headline": "Court slaps down Trump administration’s rollback of methane rule",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Bureau of Land Management (BLM)",
+          "Earthjustice"
+        ],
+        "substances": [
+          "methane"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "court ... invalidated the Trump administration’s rollback of the BLM Waste Prevention Rule",
+            "source_url": "https://earthjustice.org/press/2020/court-slaps-down-trump-administrations-rollback-of-methane-rule"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.75,
+        "location": 0.6,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "possible_opinion_or_advocacy",
+        "date_ambiguous",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "BLM Waste Prevention Rule rollback invalidated (methane venting/flaring)",
+        "fingerprint": "blm-waste-prevention-rule-rollback-invalidated|US|2020-07-16"
+      }
+    },
+    {
+      "event_id": "20200715_us_nepa_regulations_overhaul_finalized",
+      "title": "Trump administration finalizes overhaul of NEPA implementing regulations",
+      "description": "The Council on Environmental Quality announced a final rule revising the implementing regulations for the National Environmental Policy Act (NEPA). The change was presented as streamlining federal environmental reviews and was described as the first major update in decades.",
+      "category_primary": "policy_regulation",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2020-07-15T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2020-07-15T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.65
+      },
+      "sources": [
+        {
+          "url": "https://trumpwhitehouse.archives.gov/ceq/nepa-modernization",
+          "source_name": "Trump White House Archives",
+          "published_at": "2020-07-15T00:00:00.000Z",
+          "headline": "NEPA Modernization",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.wilmerhale.com/en/insights/client-alerts/20200717-nepa-overhaul-trump-administration-finalizes-landmark-rule-reform",
+          "source_name": "WilmerHale",
+          "published_at": "2020-07-17T00:00:00.000Z",
+          "headline": "NEPA Overhaul: Trump Administration Finalizes Landmark Rule Reform",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Council on Environmental Quality (CEQ)"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Council on Environmental Quality announced a final rule revising NEPA implementing regulations",
+            "source_url": "https://trumpwhitehouse.archives.gov/ceq/nepa-modernization"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.64,
+        "category": 0.8,
+        "location": 0.65,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "CEQ final rule revising NEPA implementing regulations (NEPA modernization)",
+        "fingerprint": "nepa-implementing-regulations-overhaul-final-rule|US|2020-07-15"
+      }
+    }
+  ]
+}

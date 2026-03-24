@@ -1,0 +1,820 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_2023-09_normalize_2026-01-16T134325714Z",
+    "generated_utc": "2026-01-16T13:43:25.714Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "2023-09",
+    "window": {
+      "start_utc": "2023-09-01T00:00:00.000Z",
+      "end_utc": "2023-09-30T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "evt_202309_noaa_orr_incidents_sep2023_us",
+      "title": "NOAA OR&R reported 18 pollution-related incident responses during September 2023 (United States)",
+      "description": "NOAA’s Office of Response and Restoration reported providing response support during September 2023 for 18 incidents. The monthly update included oil spills, chemical releases from industrial fires, and a monitoring request related to a harmful algal bloom.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2023-09-01T00:00:00.000Z",
+        "time_confidence": 0.4,
+        "event_date_utc": null,
+        "event_date_precision": "month"
+      },
+      "location": {
+        "name": "United States",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, D.C.",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://blog.response.restoration.noaa.gov/incident-responses-september-2023",
+          "source_name": "NOAA OR&R Blog",
+          "published_at": "2023-09-01T00:00:00.000Z",
+          "headline": "Incident Responses September 2023",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA Office of Response and Restoration (OR&R)"
+        ],
+        "substances": [
+          "oil",
+          "chemicals"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "providing response support during September 2023 for 18 incidents",
+            "source_url": "https://blog.response.restoration.noaa.gov/incident-responses-september-2023"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.75,
+        "location": 0.7,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "NOAA OR&R incident responses September 2023",
+        "fingerprint": "fp_noaa_orr_sep2023_us"
+      }
+    },
+    {
+      "event_id": "evt_20230906_neuse_river_fish_kill_nc",
+      "title": "Fish kills on the lower Neuse River linked to hot water temperatures and nutrient pollution (North Carolina, U.S.)",
+      "description": "Reports of fish kills on the lower Neuse River were linked to unusually hot water temperatures and nutrient pollution. North Carolina DEQ staff reported hypoxia and algal blooms, conditions that can reduce dissolved oxygen needed for aquatic life.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2023-09-06T00:00:00.000Z",
+        "event_end": "2023-09-06T23:59:59.000Z",
+        "reported_at": "2023-09-06T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2023-09-06T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Lower Neuse River near New Bern/Bridgeton, North Carolina, United States",
+        "jurisdiction_level": "site",
+        "admin1": "North Carolina",
+        "country": "US",
+        "capital_used": null,
+        "lat": 35.1085,
+        "lon": -77.0441,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.publicradioeast.org/2023-09-06/hot-water-temps-pollution-led-to-fish-kills-on-the-neuse-river",
+          "source_name": "Public Radio East",
+          "published_at": "2023-09-06T00:00:00.000Z",
+          "headline": "Hot water temps, pollution led to fish kills on the Neuse River",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "North Carolina Department of Environmental Quality (NC DEQ)"
+        ],
+        "substances": [
+          "nutrients"
+        ],
+        "ecosystems": [
+          "Neuse River"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "hot water temperatures and nutrient pollution",
+            "source_url": "https://www.publicradioeast.org/2023-09-06/hot-water-temps-pollution-led-to-fish-kills-on-the-neuse-river"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.66,
+        "category": 0.8,
+        "location": 0.55,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Neuse River fish kill Sep 2023",
+        "fingerprint": "fp_neuse_fishkill_20230906_nc"
+      }
+    },
+    {
+      "event_id": "evt_202309_global_warmest_sept_record",
+      "title": "September 2023 reported as warmest September on record globally with record ocean heat and low Antarctic sea ice",
+      "description": "Multiple climate monitoring reports stated that September 2023 was the warmest September in the instrumental record. The reporting also highlighted record-high ocean surface temperatures and unusually low Antarctic sea-ice extent for the time of year.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2023-09-30T00:00:00Z",
+        "time_confidence": 0.55,
+        "event_date_utc": null,
+        "event_date_precision": "month"
+      },
+      "location": {
+        "name": "Global",
+        "jurisdiction_level": "global_proxy",
+        "admin1": null,
+        "country": null,
+        "capital_used": null,
+        "lat": 0,
+        "lon": 0,
+        "precision": "proxy",
+        "location_basis": "manual_override",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://wmo.int/media/news/september-smashes-monthly-temperature-record",
+          "source_name": "WMO",
+          "published_at": "2023-10-06T00:00:00Z",
+          "headline": "September smashes monthly temperature record",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://apnews.com/article/1d80d23b98efd62d20b79f83619dfb82",
+          "source_name": "AP News",
+          "published_at": "2023-10-05T00:00:00Z",
+          "headline": "September was hottest on record — by far — as the world’s oceans and air hit new heat marks",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.copernicus.eu/en/media/image-day-gallery/september-2023-warmest-september-record",
+          "source_name": "Copernicus",
+          "published_at": "2023-10-05T00:00:00Z",
+          "headline": "September 2023: Warmest September on record",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "World Meteorological Organization (WMO)",
+          "Copernicus Climate Change Service (C3S)"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "Antarctic sea ice",
+          "global oceans"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.8,
+        "location": 0.6,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "global_september_2023_record_heat",
+        "fingerprint": "fp_global_sept2023_record_heat"
+      }
+    },
+    {
+      "event_id": "evt_20230911_leominster_flash_flooding",
+      "title": "Flash flooding after extreme rainfall in Leominster area, Massachusetts (Sept 11, 2023)",
+      "description": "A severe rainstorm on September 11, 2023 produced extreme rainfall totals in and around Leominster, Massachusetts, causing significant flooding and damage. Reports described evacuations and impacts to local infrastructure during the event.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2023-09-11T00:00:00.000Z",
+        "event_end": "2023-09-11T23:59:59.000Z",
+        "reported_at": "2023-09-12T00:00:00Z",
+        "time_confidence": 0.75,
+        "event_date_utc": "2023-09-11T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Leominster, Massachusetts, United States",
+        "jurisdiction_level": "city",
+        "admin1": "Massachusetts",
+        "country": "US",
+        "capital_used": null,
+        "lat": 42.5251,
+        "lon": -71.7606,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://apnews.com/article/e423e4c821b8e11f0a424a6d48814563",
+          "source_name": "AP News",
+          "published_at": "2023-09-12T00:00:00Z",
+          "headline": "Heavy rains cause flooding, evacuations in Massachusetts town; dam breached",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.7,
+        "category": 0.8,
+        "location": 0.65,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "leominster_ma_flash_flood_2023_09_11",
+        "fingerprint": "fp_leominster_ma_20230911_flood"
+      }
+    },
+    {
+      "event_id": "evt_20230910_libya_storm_daniel_floods_reported",
+      "title": "Storm Daniel-linked extreme rainfall and catastrophic flooding impacts in Libya highlighted in September 2023 climate reporting",
+      "description": "September 2023 climate reporting referenced extreme rainfall associated with Storm Daniel and linked it to devastating flooding impacts in Libya, including the Derna area. The reporting framed the flooding as a major impact event connected to the storm’s rainfall.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2023-09-10T00:00:00.000Z",
+        "event_end": "2023-09-12T23:59:59.000Z",
+        "reported_at": "2023-10-06T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": null,
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Tripoli, Libya",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "LY",
+        "capital_used": "Tripoli",
+        "lat": 32.8872,
+        "lon": 13.1913,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.wmo.int/media/news/september-smashes-monthly-temperature-record",
+          "source_name": "WMO",
+          "published_at": "2023-10-06T00:00:00Z",
+          "headline": "September smashes monthly temperature record",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.meteorologicaltechnologyinternational.com/news/climate-measurement/unprecedented-september-temperatures-to-make-2023-the-warmest-year-on-record-copernicus-reports.html",
+          "source_name": "Meteorological Technology International",
+          "published_at": "2023-10-05T00:00:00Z",
+          "headline": "Unprecedented September temperatures to make 2023 the warmest year on record, Copernicus reports",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "World Meteorological Organization (WMO)",
+          "Copernicus"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.58,
+        "category": 0.75,
+        "location": 0.55,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "secondary_sources_only",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "libya_derna_storm_daniel_floods_sep2023",
+        "fingerprint": "fp_libya_stormdaniel_202309"
+      }
+    },
+    {
+      "event_id": "evt_20230909_sulawesi_quake_peoplecn",
+      "title": "Offshore earthquake near Central Sulawesi prompts evacuations; no tsunami alert",
+      "description": "An offshore earthquake struck near Central Sulawesi, Indonesia, leading some coastal residents to evacuate due to concerns about aftershocks. Authorities reported the quake did not have tsunami potential.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2023-09-09T14:43:00.000Z",
+        "event_end": "2023-09-09T15:30:00.000Z",
+        "reported_at": "2023-09-10T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2023-09-09T14:43:00.000Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Off Central Sulawesi (near Donggala Regency), Indonesia",
+        "jurisdiction_level": "site",
+        "admin1": "Central Sulawesi",
+        "country": "ID",
+        "capital_used": null,
+        "lat": -0.8,
+        "lon": 119.9,
+        "precision": "admin1",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.35
+      },
+      "sources": [
+        {
+          "url": "https://en.people.cn/n3/2023/0910/c90000-20069954.html",
+          "source_name": "People.cn",
+          "published_at": "2023-09-10T00:00:00.000Z",
+          "headline": "Magnitude ~6.1 earthquake off Central Sulawesi with no tsunami alert (Indonesia)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "authorities reported it did not have tsunami potential",
+            "source_url": "https://en.people.cn/n3/2023/0910/c90000-20069954.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.45,
+        "category": 0.8,
+        "location": 0.35,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "2023-09-09 Central Sulawesi offshore earthquake (M~6.1)",
+        "fingerprint": "fp_20230909_central_sulawesi_offshore_eq_m61"
+      }
+    },
+    {
+      "event_id": "evt_20230907_canada_wildfire_smoke_us_axios",
+      "title": "Canadian wildfire smoke triggers U.S. air-quality alerts (Sept 7, 2023)",
+      "description": "Active wildfires in Canada continued to generate smoke that drifted into parts of the United States. The smoke contributed to degraded air quality and prompted air-quality alerts in multiple U.S. states.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2023-09-07T00:00:00.000Z",
+        "event_end": "2023-09-07T23:59:59.000Z",
+        "reported_at": "2023-09-07T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2023-09-07T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Canada (smoke impacts in parts of the United States)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "CA",
+        "capital_used": "Ottawa",
+        "lat": 45.4215,
+        "lon": -75.6972,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.45
+      },
+      "sources": [
+        {
+          "url": "https://www.axios.com/2023/09/07/canada-wildfires-unhealthy-air-quality-us",
+          "source_name": "Axios",
+          "published_at": "2023-09-07T00:00:00.000Z",
+          "headline": "Canada wildfires unhealthy air quality us",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [
+          "wildfire smoke"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Smoke from Canada’s wildfires is drifting into parts of the U.S.",
+            "source_url": "https://www.axios.com/2023/09/07/canada-wildfires-unhealthy-air-quality-us"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.75,
+        "location": 0.45,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "2023-09 Canada wildfire smoke impacts US air quality",
+        "fingerprint": "fp_20230907_canada_smoke_us_axios"
+      }
+    },
+    {
+      "event_id": "evt_20230913_galveston_fish_kill",
+      "title": "Fish kill reported on Galveston-area beaches amid prolonged heat (Texas, US)",
+      "description": "Large numbers of dead fish were reported washing ashore on Galveston-area beaches in mid-September 2023. Reporting cited prolonged hot conditions and low dissolved oxygen as contributing factors, with state wildlife officials describing elevated stress on aquatic resources after an exceptionally hot summer.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2023-09-13T00:00:00.000Z",
+        "event_end": "2023-09-13T23:59:59.000Z",
+        "reported_at": "2023-09-13T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2023-09-13T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Galveston-area beaches, Texas, United States",
+        "jurisdiction_level": "site",
+        "admin1": "Texas",
+        "country": "US",
+        "capital_used": null,
+        "lat": 29.3013,
+        "lon": -94.7977,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.houstonpublicmedia.org/articles/news/local/2023/09/13/462295/recent-fish-kills-in-galveston-area-could-be-product-of-prolonged-hot-weather/",
+          "source_name": "Houston Public Media",
+          "published_at": "2023-09-13T00:00:00.000Z",
+          "headline": "Recent fish kills in Galveston area could be product of prolonged hot weather",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Recent fish kills in the Galveston area could be the product of prolonged hot weather.",
+            "source_url": "https://www.houstonpublicmedia.org/articles/news/local/2023/09/13/462295/recent-fish-kills-in-galveston-area-could-be-product-of-prolonged-hot-weather/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.58,
+        "category": 0.7,
+        "location": 0.55,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "galveston_fish_kill_sep2023",
+        "fingerprint": "galveston_fish_kill_texas_us_2023-09-13"
+      }
+    },
+    {
+      "event_id": "evt_202309_newjersey_shelf_hypoxia_mortalities",
+      "title": "Low oxygen/low pH conditions reported on New Jersey shelf with fish and crustacean mortalities (Aug–Sep 2023)",
+      "description": "Rutgers-led sampling reported low dissolved oxygen and low pH conditions over parts of the New Jersey shelf during August and September 2023. The reporting also described numerous mortalities of fish, lobsters, and crabs within the sampled area, consistent with ecological stress linked to hypoxia/acidification conditions.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2023-09-01T00:00:00.000Z",
+        "event_end": "2023-09-30T23:59:59.000Z",
+        "reported_at": "2023-09-01T00:00:00.000Z",
+        "time_confidence": 0.45,
+        "event_date_utc": null,
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Coastal/offshore waters from Sandy Hook to Tuckerton, New Jersey, United States",
+        "jurisdiction_level": "state",
+        "admin1": "New Jersey",
+        "country": "US",
+        "capital_used": "Trenton",
+        "lat": 40.2170534,
+        "lon": -74.7429384,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.seafoodsource.com/national-fisherman/fish-mortalities-up-in-new-jersey-waters-due-to-low-oxygen-levels",
+          "source_name": "SeafoodSource / National Fisherman",
+          "published_at": "2023-09-01T00:00:00.000Z",
+          "headline": "Fish mortalities up in New Jersey waters due to low oxygen levels",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Rutgers"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Fish mortalities up in New Jersey waters due to low oxygen levels.",
+            "source_url": "https://www.seafoodsource.com/national-fisherman/fish-mortalities-up-in-new-jersey-waters-due-to-low-oxygen-levels"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.52,
+        "category": 0.65,
+        "location": 0.6,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "paywalled_or_partial"
+      ],
+      "dedupe": {
+        "cluster_hint": "nj_shelf_hypoxia_aug_sep2023",
+        "fingerprint": "nj_shelf_hypoxia_mortalities_new_jersey_us_2023-09"
+      }
+    },
+    {
+      "event_id": "evt_20230908_us_wotus_conforming_rule",
+      "title": "EPA and U.S. Army issue post-Sackett Clean Water Act WOTUS conforming rule (effective Sep 8, 2023)",
+      "description": "The U.S. Environmental Protection Agency and the U.S. Army issued a final rule amending the January 2023 definition of “waters of the United States” under the Clean Water Act to conform with the U.S. Supreme Court’s Sackett decision. The agencies stated the final rule became effective upon publication on September 8, 2023.",
+      "category_primary": "policy_regulation",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "2023-09-08T00:00:00.000Z",
+        "event_end": "2023-09-08T23:59:59.000Z",
+        "reported_at": "2023-09-08T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2023-09-08T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.8
+      },
+      "sources": [
+        {
+          "url": "https://www.epa.gov/wotus/final-rule-navigable-waters-protection-rule",
+          "source_name": "U.S. Environmental Protection Agency",
+          "published_at": "2023-09-08T00:00:00.000Z",
+          "headline": "Final Rule (Waters of the United States)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.usace.army.mil/Media/Announcements/Article/3520843/8-september-2023-epa-and-the-army-issue-final-rule-to-amend-2023-rule/",
+          "source_name": "U.S. Army Corps of Engineers",
+          "published_at": "2023-09-08T00:00:00.000Z",
+          "headline": "8 September 2023 - EPA and the Army issue final rule to amend 2023 rule",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Environmental Protection Agency (EPA)",
+          "U.S. Army",
+          "U.S. Army Corps of Engineers"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "EPA and the Army issue final rule to amend 2023 rule",
+            "source_url": "https://www.usace.army.mil/Media/Announcements/Article/3520843/8-september-2023-epa-and-the-army-issue-final-rule-to-amend-2023-rule/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.8,
+        "location": 0.8,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "needs_dedupe_check",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "US Clean Water Act WOTUS conforming rule Sep 2023",
+        "fingerprint": "fp_us_wotus_conforming_2023-09-08_us"
+      }
+    },
+    {
+      "event_id": "evt_20230914_us_cwa_401_cert_improvement_rule",
+      "title": "EPA finalizes Clean Water Act Section 401 Water Quality Certification Improvement Rule (Sep 14, 2023)",
+      "description": "The U.S. Environmental Protection Agency announced a final rule updating Clean Water Act Section 401 water quality certification procedures. EPA described the rule as strengthening water protections while supporting clearer and timelier reviews for infrastructure and development projects.",
+      "category_primary": "policy_regulation",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "2023-09-14T00:00:00.000Z",
+        "event_end": "2023-09-14T23:59:59.000Z",
+        "reported_at": "2023-09-14T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2023-09-14T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.8
+      },
+      "sources": [
+        {
+          "url": "https://www.epa.gov/newsreleases/epa-issues-final-rule-strengthen-water-protections-support-clear-and-timely-reviews",
+          "source_name": "U.S. Environmental Protection Agency",
+          "published_at": "2023-09-14T00:00:00.000Z",
+          "headline": "EPA issues final rule to strengthen water protections, support clear and timely reviews",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Environmental Protection Agency (EPA)"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "EPA issues final rule to strengthen water protections, support clear and timely reviews",
+            "source_url": "https://www.epa.gov/newsreleases/epa-issues-final-rule-strengthen-water-protections-support-clear-and-timely-reviews"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.66,
+        "category": 0.85,
+        "location": 0.8,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "needs_dedupe_check",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "US CWA Section 401 Water Quality Certification Improvement Rule Sep 2023",
+        "fingerprint": "fp_us_cwa401_rule_2023-09-14_us"
+      }
+    }
+  ]
+}

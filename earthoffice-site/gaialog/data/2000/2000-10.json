@@ -1,0 +1,582 @@
+{
+  "batch_meta": {
+    "batch_id": "2000-10-gaialog-001",
+    "generated_utc": "2026-01-11T00:00:00Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "2000-10",
+    "window": {
+      "start_utc": "2000-10-01T00:00:00.000Z",
+      "end_utc": "2000-10-31T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-event-normalizer",
+      "version": "1.0",
+      "model": "api",
+      "retrieval_method": "curated"
+    }
+  },
+  "events": [
+    {
+      "event_id": "evt_20001011_martin_county_coal_slurry_spill",
+      "title": "Martin County coal slurry spill contaminates waterways in Kentucky",
+      "description": "A coal slurry impoundment failure released a very large volume of coal waste into waterways in Martin County, Kentucky, contaminating local streams and tributaries. The incident affected waterways including Wolf Creek and Coldwater Fork, with major environmental impacts and subsequent cleanup efforts.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2000-10-11T06:00:00.000Z",
+        "event_end": "2000-10-11T23:59:59.000Z",
+        "reported_at": "2000-10-11T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2000-10-11T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Martin County, Kentucky, USA",
+        "jurisdiction_level": "state",
+        "admin1": "Kentucky",
+        "country": "US",
+        "capital_used": "Frankfort",
+        "lat": 38.200905,
+        "lon": -84.873284,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.85
+      },
+      "sources": [
+        {
+          "url": "https://www.britannica.com/event/Martin-County-coal-slurry-spill",
+          "source_name": "Encyclopaedia Britannica",
+          "published_at": "2000-10-11T00:00:00.000Z",
+          "headline": "Martin-County coal slurry spill",
+          "byline": null,
+          "accessed_utc": "2026-01-11T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.energy.gov/lm/articles/cleanup-martin-county-coal-slurry-spill-kentucky",
+          "source_name": "U.S. Department of Energy",
+          "published_at": "2000-10-11T00:00:00.000Z",
+          "headline": "Cleanup: Martin County Coal Slurry Spill in Kentucky",
+          "byline": null,
+          "accessed_utc": "2026-01-11T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Massey Energy",
+          "U.S. Department of Energy"
+        ],
+        "substances": [
+          "coal slurry",
+          "coal waste"
+        ],
+        "ecosystems": [
+          "streams",
+          "river tributaries"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "a coal slurry impoundment failure released ... coal waste into local waterways",
+            "source_url": "https://www.energy.gov/lm/articles/cleanup-martin-county-coal-slurry-spill-kentucky"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.64,
+        "category": 0.8,
+        "location": 0.85,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "martin-county-coal-slurry-spill-2000-10",
+        "fingerprint": "fp_martin_county_kentucky_2000-10-11_slurry"
+      }
+    },
+    {
+      "event_id": "evt_20001003_south_florida_flooding_leslie_precursor",
+      "title": "Early October flooding in South Florida linked to disturbance that became Tropical Storm Leslie",
+      "description": "Heavy rainfall and flooding affected South Florida in early October 2000, associated with a disturbance and frontal setup connected to the system that later became Tropical Storm Leslie. Reports describe widespread flooding impacts in the Miami-area region over multiple days.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2000-10-03T00:00:00.000Z",
+        "event_end": "2000-10-04T23:59:59.000Z",
+        "reported_at": "2000-10-03T00:00:00.000Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "2000-10-03T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Florida, USA (South Florida)",
+        "jurisdiction_level": "state",
+        "admin1": "Florida",
+        "country": "US",
+        "capital_used": "Tallahassee",
+        "lat": 30.438256,
+        "lon": -84.280733,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.nhc.noaa.gov/data/tcr/AL122000_Leslie.pdf",
+          "source_name": "NOAA National Hurricane Center",
+          "published_at": "2000-10-11T00:00:00.000Z",
+          "headline": "Tropical Cyclone Report: Tropical Storm Leslie (AL122000)",
+          "byline": null,
+          "accessed_utc": "2026-01-11T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.weather.gov/media/mfl/news/flood2000.pdf",
+          "source_name": "NWS Miami (weather.gov)",
+          "published_at": "2000-10-01T00:00:00.000Z",
+          "headline": "South Florida Floods of October 2000",
+          "byline": null,
+          "accessed_utc": "2026-01-11T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA National Hurricane Center",
+          "National Weather Service"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "South Florida Floods of October 2000",
+            "source_url": "https://www.weather.gov/media/mfl/news/flood2000.pdf"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.58,
+        "category": 0.85,
+        "location": 0.6,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "south-florida-floods-oct-2000",
+        "fingerprint": "fp_florida_2000-10-03_flood"
+      }
+    },
+    {
+      "event_id": "evt_20001028_atlantic_canada_storm_complex",
+      "title": "Late-October storm brings coastal flooding and surge impacts in Atlantic Canada",
+      "description": "A late-October 2000 storm complex affected Atlantic Canada, with coastal impacts including storm surge and flooding along with heavy precipitation. Impacts were also reported in nearby regions including parts of New England.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2000-10-28T00:00:00.000Z",
+        "event_end": "2000-10-31T23:59:59.000Z",
+        "reported_at": "2000-10-31T00:00:00.000Z",
+        "time_confidence": 0.5,
+        "event_date_utc": "2000-10-28T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Canada (Atlantic Canada)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "CA",
+        "capital_used": "Ottawa",
+        "lat": 45.42153,
+        "lon": -75.697193,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.45
+      },
+      "sources": [
+        {
+          "url": "https://publications.gc.ca/collections/Collection/En56-1-2000E.pdf",
+          "source_name": "Environment Canada (Publications.gc.ca)",
+          "published_at": "2000-12-31T00:00:00.000Z",
+          "headline": "Canadian Climate Highlights 2000",
+          "byline": null,
+          "accessed_utc": "2026-01-11T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.canada.ca/en/environment-climate-change/services/top-ten-weather-stories/2000.html",
+          "source_name": "Environment and Climate Change Canada",
+          "published_at": "2000-12-31T00:00:00.000Z",
+          "headline": "Canada’s Top Ten Weather Stories for 2000",
+          "byline": null,
+          "accessed_utc": "2026-01-11T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Environment Canada",
+          "Environment and Climate Change Canada"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "coastlines"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Top Ten Weather Stories for 2000",
+            "source_url": "https://www.canada.ca/en/environment-climate-change/services/top-ten-weather-stories/2000.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.46,
+        "category": 0.75,
+        "location": 0.45,
+        "summary_grounding": 0.4
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "atlantic-canada-storm-late-oct-2000",
+        "fingerprint": "fp_canada_2000-10-28_storm"
+      }
+    },
+    {
+      "event_id": "evt_20001006_western_tottori_earthquake",
+      "title": "Western Tottori earthquake causes damage and landslides in Japan",
+      "description": "A strong earthquake struck western Tottori Prefecture, Japan, on October 6, 2000, producing intense shaking and widespread damage. Reports note landslides and significant impacts across affected areas.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2000-10-06T04:30:20.000Z",
+        "event_end": "2000-10-06T23:59:59.000Z",
+        "reported_at": "2000-10-06T04:30:20.000Z",
+        "time_confidence": 0.85,
+        "event_date_utc": "2000-10-06T04:30:20.000Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Tottori Prefecture, Japan",
+        "jurisdiction_level": "state",
+        "admin1": "Tottori",
+        "country": "JP",
+        "capital_used": "Tottori",
+        "lat": 35.501133,
+        "lon": 134.235091,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.8
+      },
+      "sources": [
+        {
+          "url": "https://earthquake.usgs.gov/earthquakes/eventpage/iscgem1839998/executive",
+          "source_name": "USGS",
+          "published_at": "2000-10-06T00:00:00.000Z",
+          "headline": "M 6.8 - near the west coast of Honshu, Japan (ISC-GEM)",
+          "byline": null,
+          "accessed_utc": "2026-01-11T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.jma.go.jp/jma/en/Activities/earthquake.html",
+          "source_name": "Japan Meteorological Agency",
+          "published_at": "2000-10-06T00:00:00.000Z",
+          "headline": "Earthquakes (JMA information)",
+          "byline": null,
+          "accessed_utc": "2026-01-11T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "USGS",
+          "Japan Meteorological Agency"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "M 6.8 - near the west coast of Honshu, Japan",
+            "source_url": "https://earthquake.usgs.gov/earthquakes/eventpage/iscgem1839998/executive"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.72,
+        "category": 0.9,
+        "location": 0.8,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "paywalled_or_partial"
+      ],
+      "dedupe": {
+        "cluster_hint": "western-tottori-earthquake-2000-10-06",
+        "fingerprint": "fp_tottori_jp_2000-10-06_eq"
+      }
+    },
+    {
+      "event_id": "evt_20001009_lee_valley_ramsar_designation",
+      "title": "Lee Valley wetlands designated as a Ramsar site in England",
+      "description": "The Lee Valley wetland complex in England was designated as a Ramsar Wetland of International Importance on October 9, 2000. The designation recognizes the site’s value for waterbirds and wetland habitats.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "2000-10-09T00:00:00.000Z",
+        "event_end": "2000-10-09T23:59:59.000Z",
+        "reported_at": "2000-10-09T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2000-10-09T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United Kingdom (England)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "GB",
+        "capital_used": "London",
+        "lat": 51.507351,
+        "lon": -0.127758,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://rsis.ramsar.org/ris/1037",
+          "source_name": "Ramsar Sites Information Service",
+          "published_at": "2000-10-09T00:00:00.000Z",
+          "headline": "Lee Valley",
+          "byline": null,
+          "accessed_utc": "2026-01-11T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.ramsar.org/sites/default/files/documents/library/sitelist.pdf",
+          "source_name": "Ramsar",
+          "published_at": "2000-10-09T00:00:00.000Z",
+          "headline": "Ramsar List of Wetlands of International Importance",
+          "byline": null,
+          "accessed_utc": "2026-01-11T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Ramsar Convention"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "wetlands"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Date of Ramsar designation: 09-10-2000",
+            "source_url": "https://rsis.ramsar.org/ris/1037"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.85,
+        "location": 0.55,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "location_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "ramsar-lee-valley-2000-10-09",
+        "fingerprint": "fp_gb_2000-10-09_ramsar_lee_valley"
+      }
+    },
+    {
+      "event_id": "evt_20001009_south_west_london_waterbodies_ramsar_designation",
+      "title": "South West London Waterbodies designated as a Ramsar site in England",
+      "description": "A group of reservoirs and former gravel pits in South West London was designated as a Ramsar Wetland of International Importance on October 9, 2000. The listing recognizes internationally important numbers of wintering waterfowl supported by the waterbodies.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "2000-10-09T00:00:00.000Z",
+        "event_end": "2000-10-09T23:59:59.000Z",
+        "reported_at": "2000-10-09T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2000-10-09T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United Kingdom (England)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "GB",
+        "capital_used": "London",
+        "lat": 51.507351,
+        "lon": -0.127758,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://rsis.ramsar.org/ris/1038",
+          "source_name": "Ramsar Sites Information Service",
+          "published_at": "2000-10-09T00:00:00.000Z",
+          "headline": "South West London Waterbodies",
+          "byline": null,
+          "accessed_utc": "2026-01-11T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.ramsar.org/sites/default/files/documents/library/sitelist.pdf",
+          "source_name": "Ramsar",
+          "published_at": "2000-10-09T00:00:00.000Z",
+          "headline": "Ramsar List of Wetlands of International Importance",
+          "byline": null,
+          "accessed_utc": "2026-01-11T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Ramsar Convention"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "wetlands"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Date of Ramsar designation: 09-10-2000",
+            "source_url": "https://rsis.ramsar.org/ris/1038"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.85,
+        "location": 0.55,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "location_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "ramsar-south-west-london-waterbodies-2000-10-09",
+        "fingerprint": "fp_gb_2000-10-09_ramsar_swlw"
+      }
+    },
+    {
+      "event_id": "evt_20001016_ramsar_honduras_ecological_concerns_shrimp",
+      "title": "Ramsar Secretariat reports concerns about ecological character at Honduras Ramsar site linked to shrimp production",
+      "description": "The Ramsar Secretariat published an account of a Bureau visit and follow-up actions regarding complaints that shrimp production activities were affecting the ecological character of a Ramsar site in southern Honduras (Golfo de Fonseca area). The publication documents reported concerns and related engagement by the Ramsar body.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "2000-10-16T00:00:00.000Z",
+        "event_end": "2000-10-16T23:59:59.000Z",
+        "reported_at": "2000-10-16T00:00:00.000Z",
+        "time_confidence": 0.45,
+        "event_date_utc": "2000-10-16T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Honduras (Golfo de Fonseca area)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "HN",
+        "capital_used": "Tegucigalpa",
+        "lat": 14.072275,
+        "lon": -87.192136,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.4
+      },
+      "sources": [
+        {
+          "url": "https://www.ramsar.org/es/node/9081",
+          "source_name": "Ramsar",
+          "published_at": "2000-10-16T00:00:00.000Z",
+          "headline": "(Ramsar publication page)",
+          "byline": null,
+          "accessed_utc": "2026-01-11T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Ramsar Secretariat"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "wetlands"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "complaints that shrimp production activities were detrimental to the ecological character",
+            "source_url": "https://www.ramsar.org/es/node/9081"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.43,
+        "category": 0.75,
+        "location": 0.4,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "secondary_sources_only",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "ramsar-honduras-site-1000-shrimp-ecological-character",
+        "fingerprint": "fp_honduras_2000-10-16_ramsar_shrimp"
+      }
+    }
+  ]
+}

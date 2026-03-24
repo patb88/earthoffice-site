@@ -1,0 +1,526 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_2021-01_normalize_2026-01-16T072632099Z",
+    "generated_utc": "2026-01-16T07:26:32.099Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "2021-01",
+    "window": {
+      "start_utc": "2021-01-01T00:00:00.000Z",
+      "end_utc": "2021-01-31T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "2021-01_us-nc_huntersville_colonial-pipeline_spill-revision",
+      "title": "Colonial Pipeline gasoline spill estimate revised to ~1.2 million gallons near Huntersville, North Carolina",
+      "description": "Colonial Pipeline submitted information to North Carolina regulators revising the estimated size of a previously discovered gasoline leak to roughly 1.2 million gallons. The revision prompted expanded remediation actions, according to the report.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2021-01-21T00:00:00.000Z",
+        "event_end": "2021-01-21T23:59:59.000Z",
+        "reported_at": "2021-03-08T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2021-01-21T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Near Huntersville, North Carolina, USA",
+        "jurisdiction_level": "city",
+        "admin1": "North Carolina",
+        "country": "US",
+        "capital_used": null,
+        "lat": 35.4107,
+        "lon": -80.8429,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://weather.com/news/news/2021-03-08-north-carolina-gasoline-spill-colonial-pipeline-oehler-nature-preserve",
+          "source_name": "The Weather Channel",
+          "published_at": "2021-03-08T00:00:00Z",
+          "headline": "2021-03-08-north-carolina-gasoline-spill-colonial-pipeline-oehler-nature-preserve",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Colonial Pipeline"
+        ],
+        "substances": [
+          "gasoline"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "revising the estimate ... to roughly 1.2 million gallons",
+            "source_url": "https://weather.com/news/news/2021-03-08-north-carolina-gasoline-spill-colonial-pipeline-oehler-nature-preserve"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.8,
+        "location": 0.6,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Colonial Pipeline Huntersville NC gasoline spill estimate revision",
+        "fingerprint": "colpipe-huntersville-nc-gasoline-2021-01-21"
+      }
+    },
+    {
+      "event_id": "2021-01_ca-nu_mary-river_lubricating-oil_spill-report",
+      "title": "Lubricating oil spill reported at Mary River Mine site, Nunavut",
+      "description": "A spill listing on the Government of Northwest Territories spills site includes an entry for a release of lubricating oil at the Mary River Mine site. The entry reports a quantity of 967 liters.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2021-01-22T00:00:00.000Z",
+        "event_end": "2021-01-22T23:59:59.000Z",
+        "reported_at": "2021-01-22T00:00:00Z",
+        "time_confidence": 0.4,
+        "event_date_utc": "2021-01-22T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Mary River Mine site, Baffin Island, Nunavut, Canada",
+        "jurisdiction_level": "site",
+        "admin1": "Nunavut",
+        "country": "CA",
+        "capital_used": null,
+        "lat": 71.3225,
+        "lon": -79.3,
+        "precision": "exact",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.3
+      },
+      "sources": [
+        {
+          "url": "https://www.gov.nt.ca/ecc/en/spills?field_occurance_date_value%5Bmax%5D%5Bday%5D=&field_occurance_date_value%5Bmax%5D%5Bmonth%5D=&field_occurance_date_value%5Bmax%5D%5Byear%5D=&field_occurance_date_value%5Bmin%5D%5Bday%5D=&field_occurance_date_value%5Bmin%5D%5Bmonth%5D=&field_occurance_date_value%5Bmin%5D%5Byear%5D=&field_spill_location_description_value=mary+river&field_spill_location_tid=All&field_spill_region_value=All&items_per_page=10&order=field_lead_agency&page=20&sort=desc&title=",
+          "source_name": "Government of Northwest Territories (Spills)",
+          "published_at": "2021-01-22T00:00:00Z",
+          "headline": "Spills listing search results (Mary River)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [
+          "lubricating oil"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "release of lubricating oil ... reported quantity of 967 liters",
+            "source_url": "https://www.gov.nt.ca/ecc/en/spills?field_occurance_date_value%5Bmax%5D%5Bday%5D=&field_occurance_date_value%5Bmax%5D%5Bmonth%5D=&field_occurance_date_value%5Bmax%5D%5Byear%5D=&field_occurance_date_value%5Bmin%5D%5Bday%5D=&field_occurance_date_value%5Bmin%5D%5Bmonth%5D=&field_occurance_date_value%5Bmin%5D%5Byear%5D=&field_spill_location_description_value=mary+river&field_spill_location_tid=All&field_spill_region_value=All&items_per_page=10&order=field_lead_agency&page=20&sort=desc&title="
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.35,
+        "category": 0.75,
+        "location": 0.3,
+        "summary_grounding": 0.3
+      },
+      "quality_flags": [
+        "paywalled_or_partial",
+        "date_ambiguous",
+        "location_ambiguous",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "Mary River Mine spill listing (lubricating oil)",
+        "fingerprint": "mary-river-nunavut-lubricating-oil-2021-01-22"
+      }
+    },
+    {
+      "event_id": "2021-01_ca-nu_mary-river_wastewater_spill-report",
+      "title": "Wastewater/impacted water spill reported at Mary River Mine site, Nunavut",
+      "description": "A spill listing on the Government of Northwest Territories spills site includes an entry categorized as wastewater/impacted water at the Mary River Mine site. The entry reports a quantity of 2,000 liters.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2021-01-23T00:00:00.000Z",
+        "event_end": "2021-01-23T23:59:59.000Z",
+        "reported_at": "2021-01-23T00:00:00Z",
+        "time_confidence": 0.4,
+        "event_date_utc": "2021-01-23T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Mary River Mine site, Baffin Island, Nunavut, Canada",
+        "jurisdiction_level": "site",
+        "admin1": "Nunavut",
+        "country": "CA",
+        "capital_used": null,
+        "lat": 71.3225,
+        "lon": -79.3,
+        "precision": "exact",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.3
+      },
+      "sources": [
+        {
+          "url": "https://www.gov.nt.ca/ecc/en/spills?field_occurance_date_value%5Bmax%5D%5Bday%5D=&field_occurance_date_value%5Bmax%5D%5Bmonth%5D=&field_occurance_date_value%5Bmax%5D%5Byear%5D=&field_occurance_date_value%5Bmin%5D%5Bday%5D=&field_occurance_date_value%5Bmin%5D%5Bmonth%5D=&field_occurance_date_value%5Bmin%5D%5Byear%5D=&field_spill_location_description_value=mary+river&field_spill_location_tid=All&field_spill_region_value=All&items_per_page=10&order=field_lead_agency&page=20&sort=desc&title=",
+          "source_name": "Government of Northwest Territories (Spills)",
+          "published_at": "2021-01-23T00:00:00Z",
+          "headline": "Spills listing search results (Mary River)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [
+          "wastewater",
+          "impacted water"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "release categorized as wastewater/impacted water ... quantity of 2,000 liters",
+            "source_url": "https://www.gov.nt.ca/ecc/en/spills?field_occurance_date_value%5Bmax%5D%5Bday%5D=&field_occurance_date_value%5Bmax%5D%5Bmonth%5D=&field_occurance_date_value%5Bmax%5D%5Byear%5D=&field_occurance_date_value%5Bmin%5D%5Bday%5D=&field_occurance_date_value%5Bmin%5D%5Bmonth%5D=&field_occurance_date_value%5Bmin%5D%5Byear%5D=&field_spill_location_description_value=mary+river&field_spill_location_tid=All&field_spill_region_value=All&items_per_page=10&order=field_lead_agency&page=20&sort=desc&title="
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.35,
+        "category": 0.75,
+        "location": 0.3,
+        "summary_grounding": 0.3
+      },
+      "quality_flags": [
+        "paywalled_or_partial",
+        "date_ambiguous",
+        "location_ambiguous",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "Mary River Mine spill listing (wastewater/impacted water)",
+        "fingerprint": "mary-river-nunavut-wastewater-2021-01-23"
+      }
+    },
+    {
+      "event_id": "evt-202101-south-carolina-flooding-nws-cae",
+      "title": "Heavy rainfall and river flooding in the Columbia, South Carolina area and downstream rivers",
+      "description": "NWS Columbia’s January 2021 climate narrative describes a multi-day heavy rainfall period that led to river flooding and multiple river gauge crests, including on the Congaree River at Columbia and downstream locations. The narrative also notes impacts including flooding in Congaree National Park.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2021-01-02T00:00:00.000Z",
+        "event_end": "2021-01-06T23:59:59.000Z",
+        "reported_at": "2021-01-01T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": null,
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Columbia, South Carolina, USA",
+        "jurisdiction_level": "city",
+        "admin1": "South Carolina",
+        "country": "US",
+        "capital_used": null,
+        "lat": 34.0007,
+        "lon": -81.0348,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://www.weather.gov/cae/January2021Climate",
+          "source_name": "NOAA/National Weather Service (NWS) Columbia, SC",
+          "published_at": "2021-01-01T00:00:00.000Z",
+          "headline": "January 2021 Climate",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA National Weather Service (NWS) Columbia, SC"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "Congaree National Park"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "January 2021 climate summary documents multi-day heavy rainfall and river flooding... including the Congaree River at Columbia.",
+            "source_url": "https://www.weather.gov/cae/January2021Climate"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.75,
+        "location": 0.7,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "South Carolina Columbia Congaree River flooding early Jan 2021",
+        "fingerprint": "fp-202101-sc-columbia-flood-jan02-06"
+      }
+    },
+    {
+      "event_id": "2021-01-us-fl-winter-springs-fish-kill",
+      "title": "Fish kill discovered in Winter Springs pond (Florida)",
+      "description": "A fish kill was discovered at a pond in Winter Springs, Florida, during January 2021. State reporting later described an investigation and possible violations connected to the incident.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2021-05-04T00:00:00Z",
+        "time_confidence": 0.45,
+        "event_date_utc": "2021-01-15T00:00:00Z",
+        "event_date_precision": "month"
+      },
+      "location": {
+        "name": "Winter Springs, Florida, USA",
+        "jurisdiction_level": "city",
+        "admin1": "Florida",
+        "country": "US",
+        "capital_used": null,
+        "lat": 28.6989,
+        "lon": -81.3087,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://www.clickorlando.com/news/local/2021/05/04/state-finds-24-possible-violations-after-massive-winter-springs-fish-kill/",
+          "source_name": "ClickOrlando",
+          "published_at": "2021-05-04T00:00:00Z",
+          "headline": "State finds 24 possible violations after massive Winter Springs fish kill",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Florida Department of Environmental Protection"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "pond"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "State finds 24 possible violations after massive Winter Springs fish kill",
+            "source_url": "https://www.clickorlando.com/news/local/2021/05/04/state-finds-24-possible-violations-after-massive-winter-springs-fish-kill/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.6,
+        "location": 0.7,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Winter Springs fish kill Jan 2021",
+        "fingerprint": "fp_2021-01_winter_springs_fish_kill"
+      }
+    },
+    {
+      "event_id": "evt_20210120_us_paris_agreement_notification_un",
+      "title": "United States notifies UN of acceptance to rejoin the Paris Agreement",
+      "description": "On Jan. 20, 2021, the United States notified the UN Secretary-General that it accepted the Paris Agreement. The UN noted that U.S. participation would take effect on Feb. 19, 2021, in line with the agreement’s provisions.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "2021-01-20T00:00:00.000Z",
+        "event_end": "2021-01-20T23:59:59.000Z",
+        "reported_at": "2021-01-20T00:00:00.000Z",
+        "time_confidence": 0.75,
+        "event_date_utc": "2021-01-20T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.75
+      },
+      "sources": [
+        {
+          "url": "https://www.un.org/sg/en/content/sg/note-correspondents/2021-01-20/note-correspondents-the-united-states-return-the-paris-agreement",
+          "source_name": "United Nations Secretary-General",
+          "published_at": "2021-01-20T00:00:00.000Z",
+          "headline": "Note to Correspondents: The United States Return to the Paris Agreement",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "United Nations",
+          "UN Secretary-General",
+          "United States"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "The United States today notified the Secretary-General [...] of its acceptance of the Paris Agreement.",
+            "source_url": "https://www.un.org/sg/en/content/sg/note-correspondents/2021-01-20/note-correspondents-the-united-states-return-the-paris-agreement"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.74,
+        "category": 0.85,
+        "location": 0.7,
+        "summary_grounding": 0.7
+      },
+      "quality_flags": [
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "US Paris Agreement return notification (Jan 2021)",
+        "fingerprint": "fp_us_paris_agreement_notification_2021-01-20_us"
+      }
+    },
+    {
+      "event_id": "evt_20210127_us_eo14008_issued",
+      "title": "Executive Order 14008 issued: Tackling the Climate Crisis at Home and Abroad",
+      "description": "On Jan. 27, 2021, U.S. President Joe Biden issued Executive Order 14008, directing a government-wide approach to addressing the climate crisis. The order included steps such as establishing coordinating structures across the federal government.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "2021-01-27T00:00:00.000Z",
+        "event_end": "2021-01-27T23:59:59.000Z",
+        "reported_at": "2021-01-27T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2021-01-27T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/DCPD-202100095/html/DCPD-202100095.htm",
+          "source_name": "GovInfo (U.S. Government Publishing Office)",
+          "published_at": "2021-01-27T00:00:00.000Z",
+          "headline": "Executive Order 14008—Tackling the Climate Crisis at Home and Abroad",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "United States Government",
+          "White House"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": [
+          "Joe Biden"
+        ]
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Executive Order 14008—Tackling the Climate Crisis at Home and Abroad",
+            "source_url": "https://www.govinfo.gov/content/pkg/DCPD-202100095/html/DCPD-202100095.htm"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.7,
+        "category": 0.85,
+        "location": 0.7,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "EO 14008 issuance (Jan 2021)",
+        "fingerprint": "fp_us_eo14008_2021-01-27_us"
+      }
+    }
+  ]
+}

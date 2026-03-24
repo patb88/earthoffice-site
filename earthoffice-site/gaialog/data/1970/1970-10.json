@@ -1,0 +1,519 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_1970-10_normalize_2026-01-19T034936560Z",
+    "generated_utc": "2026-01-19T03:49:36.560Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "1970-10",
+    "window": {
+      "start_utc": "1970-10-01T00:00:00.000Z",
+      "end_utc": "1970-10-31T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "evt_19701023_pacific_glory_allegro_isle_of_wight_oil_spill",
+      "title": "Pacific Glory–Allegro tanker collision and oil spill off the Isle of Wight (English Channel)",
+      "description": "On October 23, 1970, the tanker Pacific Glory collided with the tanker Allegro about six miles off the Isle of Wight in the English Channel. Reports describe fire and explosions on Pacific Glory and an oil release from a tank carrying Nigerian crude, with limited shoreline impact noted.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1970-10-23T12:00:00Z",
+        "event_end": "1970-10-23T12:00:00Z",
+        "reported_at": "1970-10-23T12:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1970-10-23T12:00:00Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Off the Isle of Wight, England (English Channel)",
+        "jurisdiction_level": "site",
+        "admin1": "England",
+        "country": "GB",
+        "capital_used": null,
+        "lat": 50.633,
+        "lon": -1.3,
+        "precision": "proxy",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.45
+      },
+      "sources": [
+        {
+          "url": "https://incidentnews.noaa.gov/incident/6210",
+          "source_name": "NOAA IncidentNews",
+          "published_at": "1970-10-23T12:00:00Z",
+          "headline": "Incident 6210",
+          "byline": null,
+          "accessed_utc": "2026-01-19T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA"
+        ],
+        "substances": [
+          "crude oil (Nigerian crude)"
+        ],
+        "ecosystems": [
+          "English Channel"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "the tanker Pacific Glory collided with the tanker Allegro",
+            "source_url": "https://incidentnews.noaa.gov/incident/6210"
+          },
+          {
+            "quote": "an oil release from a tank containing Nigerian crude",
+            "source_url": "https://incidentnews.noaa.gov/incident/6210"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.8,
+        "location": 0.45,
+        "summary_grounding": 0.65
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "Pacific Glory Allegro collision oil spill Isle of Wight 1970-10-23",
+        "fingerprint": "fp_1970-10-23_pacific-glory-allegro_isle-of-wight_pollution"
+      }
+    },
+    {
+      "event_id": "evt_19701005_pr_usvi_floods_td19a",
+      "title": "Oct 1970 flooding and landslides in Puerto Rico and U.S. Virgin Islands from slow-moving tropical system",
+      "description": "A slow-moving tropical system brought multi-day heavy rainfall to Puerto Rico and the U.S. Virgin Islands in early October 1970, triggering river flooding, landslides, and infrastructure damage such as bridge washouts. NOAA/NWS and WPC materials describe extreme rainfall totals associated with the event and significant human and property impacts.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1970-10-05T12:00:00Z",
+        "event_end": "1970-10-10T12:00:00Z",
+        "reported_at": "1970-10-10T12:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1970-10-07T12:00:00Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Puerto Rico and U.S. Virgin Islands",
+        "jurisdiction_level": "supranational",
+        "admin1": null,
+        "country": null,
+        "capital_used": null,
+        "lat": 18.2208,
+        "lon": -66.5901,
+        "precision": "proxy",
+        "location_basis": "manual_override",
+        "location_confidence": 0.35
+      },
+      "sources": [
+        {
+          "url": "https://www.weather.gov/safety/flood-states-pr",
+          "source_name": "NOAA National Weather Service",
+          "published_at": "1970-10-10T12:00:00Z",
+          "headline": "Flood Safety (Puerto Rico)",
+          "byline": null,
+          "accessed_utc": "2026-01-19T03:47:01.983Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.wpc.ncep.noaa.gov/tropical/rain/td19aof1970.html",
+          "source_name": "NOAA Weather Prediction Center",
+          "published_at": "1970-10-10T12:00:00Z",
+          "headline": "Tropical Cyclone Rainfall: TD 19 (1970)",
+          "byline": null,
+          "accessed_utc": "2026-01-19T03:47:01.983Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://pubs.usgs.gov/publication/ofr81346",
+          "source_name": "U.S. Geological Survey",
+          "published_at": "1970-10-10T12:00:00Z",
+          "headline": "USGS Open-File Report (OFR 81-346)",
+          "byline": null,
+          "accessed_utc": "2026-01-19T03:47:01.983Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA National Weather Service",
+          "NOAA Weather Prediction Center",
+          "U.S. Geological Survey"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Tropical Cyclone Rainfall: TD 19 (1970)",
+            "source_url": "https://www.wpc.ncep.noaa.gov/tropical/rain/td19aof1970.html"
+          },
+          {
+            "quote": "Flood Safety (Puerto Rico)",
+            "source_url": "https://www.weather.gov/safety/flood-states-pr"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.48,
+        "category": 0.7,
+        "location": 0.35,
+        "summary_grounding": 0.35
+      },
+      "quality_flags": [
+        "needs_dedupe_check",
+        "location_ambiguous",
+        "date_ambiguous",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "Puerto Rico/USVI Oct 1970 flooding - TD19 rainfall",
+        "fingerprint": "fp_1970-10_pr_usvi_floods_td19a"
+      }
+    },
+    {
+      "event_id": "evt_197010_laguna_fire_contained_19701003_sandiego",
+      "title": "Laguna Fire in San Diego County contained Oct 3, 1970 after burning into early October",
+      "description": "The 1970 Laguna Fire in San Diego County, California continued burning into early October after igniting in late September. It was reported as contained on October 3, 1970 after burning about 175,425 acres and causing extensive damage and loss of life.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1970-10-01T00:00:00.000Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "1970-10-03T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "San Diego County, California, USA (Laguna Mountains/East County)",
+        "jurisdiction_level": "state",
+        "admin1": "California",
+        "country": "US",
+        "capital_used": "Sacramento",
+        "lat": 38.5816,
+        "lon": -121.4944,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://wildfiretoday.com/laguna-fire-september-26-1970/",
+          "source_name": "Wildfire Today",
+          "published_at": "1970-10-01T00:00:00.000Z",
+          "headline": "Laguna Fire September 26, 1970",
+          "byline": null,
+          "accessed_utc": "2026-01-19T03:47:51.517Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.75,
+        "location": 0.6,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Laguna Fire (1970) contained Oct 3 1970",
+        "fingerprint": "fp_1970-10_laguna_fire_sacramento_1970-10-03"
+      }
+    },
+    {
+      "event_id": "evt-19701016-us-fws-endangered-species-additions-22-taxa",
+      "title": "U.S. Interior Department adds 22 native animal taxa to endangered species list",
+      "description": "A U.S. Department of the Interior (Bureau of Sport Fisheries and Wildlife) release announced the addition of 22 native animal taxa to the U.S. endangered species list, including the brown pelican, multiple Hawaiian forest birds, and desert fishes from the Death Valley region. The announcement cited factors including habitat loss, with particular mention of accelerating habitat loss in the Hawaiian Islands and threats to endemic desert fishes from habitat changes.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1970-10-16T12:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1970-10-16T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.8
+      },
+      "sources": [
+        {
+          "url": "https://www.fws.gov/press-release/1970-10/interior-department-adds-its-endangered-species-list-october-16-1970",
+          "source_name": "U.S. Fish & Wildlife Service",
+          "published_at": "1970-10-16T12:00:00Z",
+          "headline": "Interior Department adds 22 native animal taxa to endangered species list (October 16, 1970)",
+          "byline": null,
+          "accessed_utc": "2026-01-19T03:48:08.989Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.fws.gov/sites/default/files/documents/historic-news-releases/1970/19701016A.PDF",
+          "source_name": "U.S. Fish & Wildlife Service (historic news release PDF)",
+          "published_at": "1970-10-16T12:00:00Z",
+          "headline": "Historic news release: Interior Department adds 22 native animal taxa to endangered species list (Oct. 16, 1970)",
+          "byline": null,
+          "accessed_utc": "2026-01-19T03:48:08.989Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Department of the Interior",
+          "Bureau of Sport Fisheries and Wildlife",
+          "U.S. Fish & Wildlife Service"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "Hawaiian Islands habitats",
+          "Death Valley region desert aquatic habitats"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "adds 22 native animal taxa to the Department of the Interior's endangered species list",
+            "source_url": "https://www.fws.gov/press-release/1970-10/interior-department-adds-its-endangered-species-list-october-16-1970"
+          },
+          {
+            "quote": "rapidly accelerating habitat loss in the Hawaiian Islands",
+            "source_url": "https://www.fws.gov/press-release/1970-10/interior-department-adds-its-endangered-species-list-october-16-1970"
+          },
+          {
+            "quote": "brown pelican",
+            "source_url": "https://www.fws.gov/press-release/1970-10/interior-department-adds-its-endangered-species-list-october-16-1970"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.72,
+        "category": 0.7,
+        "location": 0.85,
+        "summary_grounding": 0.65
+      },
+      "quality_flags": [
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "us-endangered-species-list-additions-1970-10-16",
+        "fingerprint": "fp-evt-19701016-us-fws-endangered-species-additions-22-taxa"
+      }
+    },
+    {
+      "event_id": "evt_19701006_reorg_plan_3_1970_epa_publication",
+      "title": "Reorganization Plan No. 3 of 1970 published (plan establishing the U.S. EPA)",
+      "description": "Reorganization Plan No. 3 of 1970 was published describing a federal reorganization that established the U.S. Environmental Protection Agency (EPA). The plan’s effective date is noted as December 2, 1970.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1970-10-06T12:00:00Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "1970-10-06T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States (Federal)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.8
+      },
+      "sources": [
+        {
+          "url": "https://law.justia.com/codes/us/2021/title-5/appendix/reorganization-plans/content-1552/",
+          "source_name": "Justia",
+          "published_at": "1970-10-06T12:00:00Z",
+          "headline": "Reorganization Plan No. 3 of 1970",
+          "byline": null,
+          "accessed_utc": "2026-01-19T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://uscode.house.gov/view.xhtml?edition=prelim&num=0&req=granuleid%3AUSC-prelim-title5a-node35-leaf129",
+          "source_name": "Office of the Law Revision Counsel (U.S. House)",
+          "published_at": "1970-10-06T12:00:00Z",
+          "headline": "Reorganization Plan No. 3 of 1970 (5 U.S.C. App.)",
+          "byline": null,
+          "accessed_utc": "2026-01-19T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Environmental Protection Agency (EPA)"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Reorganization Plan No. 3 of 1970",
+            "source_url": "https://law.justia.com/codes/us/2021/title-5/appendix/reorganization-plans/content-1552/"
+          },
+          {
+            "quote": "Reorganization Plan No. 3 of 1970",
+            "source_url": "https://uscode.house.gov/view.xhtml?edition=prelim&num=0&req=granuleid%3AUSC-prelim-title5a-node35-leaf129"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.75,
+        "location": 0.8,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "secondary_sources_only",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Reorganization Plan No. 3 of 1970 (EPA establishment)",
+        "fingerprint": "fp_1970-10-06_us_reorg_plan_3_epa"
+      }
+    },
+    {
+      "event_id": "evt_19701026_resource_recovery_act_1970",
+      "title": "Resource Recovery Act of 1970 approved (amending Solid Waste Disposal Act)",
+      "description": "The Resource Recovery Act of 1970 (Public Law 91-512) was approved, amending federal solid waste law. The changes expanded federal involvement in waste management and resource recovery.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1970-10-26T12:00:00Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "1970-10-26T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States (Federal)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.8
+      },
+      "sources": [
+        {
+          "url": "https://lawcat.berkeley.edu/record/80493",
+          "source_name": "UC Berkeley Law Library (LawCat)",
+          "published_at": "1970-10-26T12:00:00Z",
+          "headline": "Resource Recovery Act of 1970",
+          "byline": null,
+          "accessed_utc": "2026-01-19T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.law.cornell.edu/uscode/text/42/3255",
+          "source_name": "Cornell Law School (LII)",
+          "published_at": "1970-10-26T12:00:00Z",
+          "headline": "42 U.S. Code § 3255",
+          "byline": null,
+          "accessed_utc": "2026-01-19T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Resource Recovery Act of 1970",
+            "source_url": "https://lawcat.berkeley.edu/record/80493"
+          },
+          {
+            "quote": "42 U.S. Code § 3255",
+            "source_url": "https://www.law.cornell.edu/uscode/text/42/3255"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.75,
+        "location": 0.8,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "secondary_sources_only",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Resource Recovery Act of 1970 (PL 91-512) approval",
+        "fingerprint": "fp_1970-10-26_us_resource_recovery_act_1970"
+      }
+    }
+  ]
+}

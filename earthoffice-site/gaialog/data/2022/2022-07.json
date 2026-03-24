@@ -1,0 +1,730 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_2022-07_normalize_2026-01-16T132127096Z",
+    "generated_utc": "2026-01-16T13:21:27.096Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "2022-07",
+    "window": {
+      "start_utc": "2022-07-01T00:00:00.000Z",
+      "end_utc": "2022-07-31T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "2022-07-us-la-lower-mississippi-almedia-bunker-oil-discharge",
+      "title": "Bunker oil discharge into the Lower Mississippi River near Almedia, Louisiana",
+      "description": "A tanker reportedly discharged bunker oil into the Lower Mississippi River near Almedia, Louisiana. The initial estimate was approximately 10–20 barrels, and response actions included deploying containment boom and sorbents along with planning for barge cleaning and shoreline assessment.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2022-07-28T00:00:00.000Z",
+        "event_end": "2022-07-28T23:59:59.000Z",
+        "reported_at": "2022-07-31T23:59:59.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2022-07-28T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Lower Mississippi River near Almedia, Louisiana, USA",
+        "jurisdiction_level": "site",
+        "admin1": "Louisiana",
+        "country": "US",
+        "capital_used": null,
+        "lat": 29.95465,
+        "lon": -90.07507,
+        "precision": "proxy",
+        "location_basis": "manual_override",
+        "location_confidence": 0.35
+      },
+      "sources": [
+        {
+          "url": "https://blog.response.restoration.noaa.gov/incident-responses-july-2022",
+          "source_name": "NOAA OR&R Blog",
+          "published_at": "2022-07-31T23:59:59.000Z",
+          "headline": "Incident Responses: July 2022",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA"
+        ],
+        "substances": [
+          "bunker oil"
+        ],
+        "ecosystems": [
+          "Lower Mississippi River"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "A tanker reportedly discharged bunker oil into the Lower Mississippi River... initial estimate of ~10–20 barrels.",
+            "source_url": "https://blog.response.restoration.noaa.gov/incident-responses-july-2022"
+          },
+          {
+            "quote": "Response actions included containment boom and sorbent placement... shoreline assessment planning.",
+            "source_url": "https://blog.response.restoration.noaa.gov/incident-responses-july-2022"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.8,
+        "location": 0.35,
+        "summary_grounding": 0.7
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "noaa-orr-incident-responses-july-2022",
+        "fingerprint": "fp_2022-07_us_la_lower-mississippi_almedia_bunker-oil_2022-07-28"
+      }
+    },
+    {
+      "event_id": "2022-07-us-or-astoria-mv-tourist-diesel-sheen",
+      "title": "Former car ferry M/V Tourist partially sank in Astoria, Oregon, causing a diesel sheen",
+      "description": "The former car ferry M/V Tourist partially sank in Astoria, Oregon, creating a reported 300x400 ft sheen and an initial estimated diesel release of roughly 500–600 gallons. Cleanup and recovery operations reportedly continued into early August with recovered oil reported by responders.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2022-07-28T00:00:00.000Z",
+        "event_end": "2022-07-28T23:59:59.000Z",
+        "reported_at": "2022-07-31T23:59:59.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2022-07-28T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Astoria, Oregon, USA",
+        "jurisdiction_level": "city",
+        "admin1": "Oregon",
+        "country": "US",
+        "capital_used": null,
+        "lat": 46.18788,
+        "lon": -123.83125,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.75
+      },
+      "sources": [
+        {
+          "url": "https://blog.response.restoration.noaa.gov/incident-responses-july-2022",
+          "source_name": "NOAA OR&R Blog",
+          "published_at": "2022-07-31T23:59:59.000Z",
+          "headline": "Incident Responses: July 2022",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA"
+        ],
+        "substances": [
+          "diesel"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Former car ferry partially sank in Astoria, Oregon, creating a diesel sheen (M/V Tourist).",
+            "source_url": "https://blog.response.restoration.noaa.gov/incident-responses-july-2022"
+          },
+          {
+            "quote": "Reported 300x400 ft sheen... potential diesel spill volume of ~500–600 gallons initially.",
+            "source_url": "https://blog.response.restoration.noaa.gov/incident-responses-july-2022"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.65,
+        "category": 0.8,
+        "location": 0.75,
+        "summary_grounding": 0.7
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "noaa-orr-incident-responses-july-2022",
+        "fingerprint": "fp_2022-07_us_or_astoria_mv-tourist_diesel_2022-07-28"
+      }
+    },
+    {
+      "event_id": "20220726_us_stlouis_flash_flooding",
+      "title": "Historic flash flooding in the St. Louis metropolitan area",
+      "description": "Training thunderstorms produced extreme rainfall over the St. Louis metropolitan area on July 26, 2022, leading to widespread flash flooding. The NWS event summary reports record precipitation at St. Louis-Lambert International Airport and significant impacts including rescues and fatalities.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2022-07-26T00:00:00.000Z",
+        "event_end": "2022-07-26T23:59:59.000Z",
+        "reported_at": "2022-07-26T00:00:00.000Z",
+        "time_confidence": 0.75,
+        "event_date_utc": "2022-07-26T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "St. Louis metropolitan area (Missouri and Illinois), USA",
+        "jurisdiction_level": "city",
+        "admin1": "Missouri",
+        "country": "US",
+        "capital_used": null,
+        "lat": 38.627,
+        "lon": -90.1994,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.weather.gov/lsx/July262022Flooding",
+          "source_name": "NWS St. Louis (weather.gov)",
+          "published_at": "2022-07-26T00:00:00.000Z",
+          "headline": "July 26, 2022 Flooding",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://noaa-mirror.org/www.weather.gov/lsx/July262022Flooding",
+          "source_name": "NOAA mirror (noaa-mirror.org)",
+          "published_at": "2022-07-26T00:00:00.000Z",
+          "headline": "July 26, 2022 Flooding",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "National Weather Service (NWS)"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "July 26, 2022 flooding",
+            "source_url": "https://www.weather.gov/lsx/July262022Flooding"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.8,
+        "location": 0.6,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "needs_dedupe_check",
+        "date_ambiguous",
+        "location_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "st_louis_flash_flooding_2022_07_26",
+        "fingerprint": "st_louis_flash_flooding|st_louis_metro|2022-07-26"
+      }
+    },
+    {
+      "event_id": "20220728_us_eastern_kentucky_flooding",
+      "title": "Historic flooding in eastern Kentucky",
+      "description": "Heavy rainfall led to major flash flooding across multiple counties in eastern Kentucky in late July 2022. Reports describe widespread damage and rescue operations, with fatalities reported as the event unfolded.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2022-07-28T00:00:00.000Z",
+        "event_end": "2022-07-31T23:59:59.000Z",
+        "reported_at": "2022-07-28T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2022-07-28T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Eastern Kentucky, USA",
+        "jurisdiction_level": "state",
+        "admin1": "Kentucky",
+        "country": "US",
+        "capital_used": "Frankfort",
+        "lat": 38.2009,
+        "lon": -84.8733,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.weather.gov/jkl/July2022Flooding",
+          "source_name": "NWS Jackson, KY (weather.gov)",
+          "published_at": "2022-07-28T00:00:00.000Z",
+          "headline": "July 2022 Flooding",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.axios.com/2022/07/28/flooding-kentucky-deaths",
+          "source_name": "Axios",
+          "published_at": "2022-07-28T00:00:00.000Z",
+          "headline": "Flooding in Kentucky leaves multiple dead",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.axios.com/2022/07/31/kentucky-flooding-andy-beshear-deaths",
+          "source_name": "Axios",
+          "published_at": "2022-07-31T00:00:00.000Z",
+          "headline": "Kentucky flooding death toll rises as search continues",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "National Weather Service (NWS)",
+          "Kentucky state government"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": [
+          "Andy Beshear"
+        ]
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "July 2022 Flooding",
+            "source_url": "https://www.weather.gov/jkl/July2022Flooding"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.63,
+        "category": 0.8,
+        "location": 0.55,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "needs_dedupe_check",
+        "date_ambiguous",
+        "low_confidence_location"
+      ],
+      "dedupe": {
+        "cluster_hint": "eastern_kentucky_flooding_late_july_2022",
+        "fingerprint": "eastern_kentucky_flooding|kentucky|2022-07-28_2022-07-31"
+      }
+    },
+    {
+      "event_id": "202207_us_noaa_ncei_contiguous_us_climate_summary",
+      "title": "NOAA climate summary: July 2022 third-warmest July in the contiguous U.S.",
+      "description": "NOAA climate reporting summarized July 2022 conditions for the contiguous United States as exceptionally warm, ranking as the third-warmest July in the historical record cited. The same reporting also notes notable flooding and drought conditions during the month.",
+      "category_primary": "weather_climate",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "2022-07-01T00:00:00.000Z",
+        "event_end": "2022-07-31T23:59:59.000Z",
+        "reported_at": "2022-08-01T00:00:00.000Z",
+        "time_confidence": 0.55,
+        "event_date_utc": null,
+        "event_date_precision": "month"
+      },
+      "location": {
+        "name": "Contiguous United States",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.5
+      },
+      "sources": [
+        {
+          "url": "https://www.ncei.noaa.gov/index.php/news/national-climate-202207",
+          "source_name": "NOAA NCEI",
+          "published_at": "2022-08-01T00:00:00.000Z",
+          "headline": "National Climate Report - July 2022",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://content-drupal.climate.gov/news-features/understanding-climate/us-climate-summary-july-2022",
+          "source_name": "NOAA Climate.gov",
+          "published_at": "2022-08-01T00:00:00.000Z",
+          "headline": "U.S. Climate Summary: July 2022",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA",
+          "NOAA National Centers for Environmental Information (NCEI)"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "National Climate Report - July 2022",
+            "source_url": "https://www.ncei.noaa.gov/index.php/news/national-climate-202207"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.58,
+        "category": 0.75,
+        "location": 0.5,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "secondary_sources_only",
+        "date_ambiguous",
+        "low_confidence_location"
+      ],
+      "dedupe": {
+        "cluster_hint": "noaa_ncei_july_2022_contiguous_us_third_warmest",
+        "fingerprint": "noaa_ncei_climate_summary|conus|2022-07"
+      }
+    },
+    {
+      "event_id": "20220708_us_tx_drought_disaster_declaration",
+      "title": "Texas issues and renews a drought disaster declaration",
+      "description": "The Governor of Texas issued a drought disaster declaration on July 8, 2022 and renewed/amended it on July 15, 2022, citing drought conditions affecting many counties. The declarations describe drought impacts as an imminent disaster risk for the state.",
+      "category_primary": "policy_regulation",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "2022-07-08T00:00:00.000Z",
+        "event_end": "2022-07-15T23:59:59.000Z",
+        "reported_at": "2022-07-08T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2022-07-08T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Texas, USA",
+        "jurisdiction_level": "state",
+        "admin1": "Texas",
+        "country": "US",
+        "capital_used": "Austin",
+        "lat": 30.2672,
+        "lon": -97.7431,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.8
+      },
+      "sources": [
+        {
+          "url": "https://gov.texas.gov/news/post/governor-abbott-issues-drought-disaster-declaration",
+          "source_name": "Office of the Texas Governor",
+          "published_at": "2022-07-08T00:00:00.000Z",
+          "headline": "Governor Abbott Issues Drought Disaster Declaration",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://gov.texas.gov/news/post/governor-abbott-renews-drought-disaster-declaration-in-july-2022",
+          "source_name": "Office of the Texas Governor",
+          "published_at": "2022-07-15T00:00:00.000Z",
+          "headline": "Governor Abbott Renews Drought Disaster Declaration in July 2022",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Office of the Texas Governor"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": [
+          "Greg Abbott"
+        ]
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "issues a drought disaster declaration",
+            "source_url": "https://gov.texas.gov/news/post/governor-abbott-issues-drought-disaster-declaration"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.64,
+        "category": 0.65,
+        "location": 0.8,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "needs_dedupe_check",
+        "date_ambiguous",
+        "low_confidence_category"
+      ],
+      "dedupe": {
+        "cluster_hint": "texas_drought_disaster_declaration_july_2022",
+        "fingerprint": "texas_drought_disaster_declaration|austin_tx|2022-07-08_2022-07-15"
+      }
+    },
+    {
+      "event_id": "evt_202207_sfbay_hab_heterosigma",
+      "title": "Harmful algal bloom evidence reported for San Francisco Bay (late July 2022)",
+      "description": "Sources describe a harmful algal bloom in San Francisco Bay, later linked to low dissolved oxygen and fish/aquatic mortality. One source notes the first evidence appearing in late July 2022 near Alameda, with impacts reported in subsequent weeks.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2022-09-01T00:00:00Z",
+        "time_confidence": 0.55,
+        "event_date_utc": null,
+        "event_date_precision": "month"
+      },
+      "location": {
+        "name": "San Francisco Bay, California, USA",
+        "jurisdiction_level": "site",
+        "admin1": "California",
+        "country": "US",
+        "capital_used": null,
+        "lat": 37.7749,
+        "lon": -122.4194,
+        "precision": "city",
+        "location_basis": "manual_override",
+        "location_confidence": 0.5
+      },
+      "sources": [
+        {
+          "url": "https://opc.ca.gov/2022/09/harmful-algal-bloom/",
+          "source_name": "California Ocean Protection Council (OPC)",
+          "published_at": "2022-09-01T00:00:00Z",
+          "headline": "Harmful algal bloom (San Francisco Bay)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.axios.com/local/san-francisco/2022/08/30/dead-fish-san-francisco-bay-algae-bloom",
+          "source_name": "Axios (San Francisco)",
+          "published_at": "2022-08-30T00:00:00Z",
+          "headline": "Dead fish in San Francisco Bay amid algae bloom",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "California Ocean Protection Council"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "San Francisco Bay"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "first evidence appeared in late July 2022 near Alameda",
+            "source_url": "https://opc.ca.gov/2022/09/harmful-algal-bloom/"
+          },
+          {
+            "quote": "dead fish ... in San Francisco Bay amid algae bloom",
+            "source_url": "https://www.axios.com/local/san-francisco/2022/08/30/dead-fish-san-francisco-bay-algae-bloom"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.7,
+        "location": 0.5,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "San Francisco Bay harmful algal bloom / fish kill (late Jul 2022)",
+        "fingerprint": "sfbay_hab_late_jul_2022"
+      }
+    },
+    {
+      "event_id": "20220708_tx_drought_disaster_declaration",
+      "title": "Texas issues drought disaster declaration covering numerous counties",
+      "description": "Texas Governor Greg Abbott issued a drought disaster declaration for numerous counties due to exceptional drought conditions and the threat of imminent disaster.",
+      "category_primary": "policy_regulation",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "2022-07-08T00:00:00.000Z",
+        "event_end": "2022-07-08T23:59:59.000Z",
+        "reported_at": "2022-07-08T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2022-07-08T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Texas, USA",
+        "jurisdiction_level": "state",
+        "admin1": "Texas",
+        "country": "US",
+        "capital_used": "Austin",
+        "lat": 30.2672,
+        "lon": -97.7431,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.85
+      },
+      "sources": [
+        {
+          "url": "https://gov.texas.gov/news/post/governor-abbott-issues-drought-disaster-declaration",
+          "source_name": "Office of the Texas Governor",
+          "published_at": "2022-07-08T00:00:00.000Z",
+          "headline": "Governor Abbott Issues Drought Disaster Declaration",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Office of the Texas Governor"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": [
+          "Greg Abbott"
+        ]
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.72,
+        "category": 0.8,
+        "location": 0.85,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "TX drought disaster declaration (Abbott) July 2022",
+        "fingerprint": "tx_drought_disaster_declaration_texas_us_2022-07-08"
+      }
+    },
+    {
+      "event_id": "20220715_tx_drought_disaster_declaration_renewal",
+      "title": "Texas renews/amends drought disaster declaration amid ongoing drought",
+      "description": "Texas Governor Greg Abbott renewed and amended the state’s drought disaster declaration in July 2022, continuing the emergency posture for a broad set of counties due to ongoing exceptional drought.",
+      "category_primary": "policy_regulation",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "2022-07-15T00:00:00.000Z",
+        "event_end": "2022-07-15T23:59:59.000Z",
+        "reported_at": "2022-07-15T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2022-07-15T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Texas, USA",
+        "jurisdiction_level": "state",
+        "admin1": "Texas",
+        "country": "US",
+        "capital_used": "Austin",
+        "lat": 30.2672,
+        "lon": -97.7431,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.85
+      },
+      "sources": [
+        {
+          "url": "https://gov.texas.gov/news/post/governor-abbott-renews-drought-disaster-declaration-in-july-2022",
+          "source_name": "Office of the Texas Governor",
+          "published_at": "2022-07-15T00:00:00.000Z",
+          "headline": "Governor Abbott Renews Drought Disaster Declaration in July 2022",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Office of the Texas Governor"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": [
+          "Greg Abbott"
+        ]
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.7,
+        "category": 0.8,
+        "location": 0.85,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "TX drought disaster declaration (Abbott) July 2022",
+        "fingerprint": "tx_drought_disaster_declaration_texas_us_2022-07-15"
+      }
+    }
+  ]
+}

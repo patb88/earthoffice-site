@@ -1,0 +1,540 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_1981-09_normalize_2026-01-18T092842589Z",
+    "generated_utc": "2026-01-18T09:28:42.589Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "1981-09",
+    "window": {
+      "start_utc": "1981-09-01T00:00:00.000Z",
+      "end_utc": "1981-09-30T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "evt_19810906_chemstar_stalybridge_hexane_fire",
+      "title": "Explosion and fire at Chemstar solvent recovery plant in Stalybridge",
+      "description": "An explosion and subsequent fire occurred at Chemstar Limited’s solvent recovery plant involving a hexane distillation still. The incident followed an interruption to condenser cooling water, leading to release of hexane vapors and ignition, prompting an emergency response.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1981-09-06T12:00:00Z",
+        "time_confidence": 0.4,
+        "event_date_utc": "1981-09-06T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Stalybridge, England, United Kingdom",
+        "jurisdiction_level": "city",
+        "admin1": "England",
+        "country": "GB",
+        "capital_used": null,
+        "lat": 53.4841,
+        "lon": -2.059,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.5
+      },
+      "sources": [
+        {
+          "url": "https://www.hse.gov.uk/comah/sragtech/casechemstar81.htm",
+          "source_name": "UK Health and Safety Executive (HSE)",
+          "published_at": "1981-09-06T12:00:00Z",
+          "headline": "Case study: Chemstar Limited (1981)",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Chemstar Limited",
+          "UK Health and Safety Executive (HSE)"
+        ],
+        "substances": [
+          "hexane"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "cooling-water supply was interrupted",
+            "source_url": "https://www.hse.gov.uk/comah/sragtech/casechemstar81.htm"
+          },
+          {
+            "quote": "hexane vapours",
+            "source_url": "https://www.hse.gov.uk/comah/sragtech/casechemstar81.htm"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.58,
+        "category": 0.75,
+        "location": 0.5,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "chemstar-hexane-stalybridge-1981",
+        "fingerprint": "chemstar_solvent_recovery_stalybridge_1981-09"
+      }
+    },
+    {
+      "event_id": "evt_19810908_tropical_storm_gert_puerto_rico",
+      "title": "Tropical Storm Gert brings heavy rain and localized flooding in Puerto Rico",
+      "description": "Tropical Storm Gert moved across Puerto Rico on September 8, 1981, producing heavy rainfall concentrated southwest of the storm center. Reported impacts included localized flooding.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1981-09-08T12:00:00Z",
+        "event_end": "1981-09-08T12:00:00Z",
+        "reported_at": "1981-09-08T12:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1981-09-08T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Puerto Rico",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "PR",
+        "capital_used": "San Juan",
+        "lat": 18.4655,
+        "lon": -66.1057,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.85
+      },
+      "sources": [
+        {
+          "url": "https://www.wpc.ncep.noaa.gov/tropical/rain/gert1981.html",
+          "source_name": "NOAA Weather Prediction Center",
+          "published_at": "1981-09-08T12:00:00Z",
+          "headline": "Tropical Storm Gert (1981) rainfall",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA Weather Prediction Center"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Tropical Storm Gert moved across Puerto Rico... rainfall ... sufficient to cause localized flooding.",
+            "source_url": "https://www.wpc.ncep.noaa.gov/tropical/rain/gert1981.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.72,
+        "category": 0.9,
+        "location": 0.85,
+        "summary_grounding": 0.8
+      },
+      "quality_flags": [
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "1981 Tropical Storm Gert Puerto Rico flooding",
+        "fingerprint": "fp_1981-09-08_gert_puerto_rico_weather_climate"
+      }
+    },
+    {
+      "event_id": "evt_19810919_typhoon_clara_luzon_hk",
+      "title": "Typhoon Clara (Rubing) triggers flooding impacts in northern Luzon and near Hong Kong",
+      "description": "Typhoon Clara (Rubing) peaked around September 19, 1981 and later made landfall in northern Luzon in the Philippines. The storm subsequently affected the South China coast near Hong Kong, with flooding impacts reported in affected areas.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1981-09-19T12:00:00Z",
+        "event_end": "1981-09-21T12:00:00Z",
+        "reported_at": "1981-09-19T12:00:00Z",
+        "time_confidence": 0.55,
+        "event_date_utc": null,
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Hong Kong",
+        "jurisdiction_level": "city",
+        "admin1": null,
+        "country": "HK",
+        "capital_used": null,
+        "lat": 22.3193,
+        "lon": 114.1694,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.45
+      },
+      "sources": [
+        {
+          "url": "https://agora.ex.nii.ac.jp/digital-typhoon/summary/wnp/s/198120.html.en",
+          "source_name": "Digital Typhoon (NII, Japan)",
+          "published_at": "1981-09-19T12:00:00Z",
+          "headline": "Typhoon 198120 (Clara) summary",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "National Institute of Informatics (Japan)"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Typhoon 198120 (Clara) ... peaked ... and made landfall ... northern tip of Luzon ... near the South China coast.",
+            "source_url": "https://agora.ex.nii.ac.jp/digital-typhoon/summary/wnp/s/198120.html.en"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.5,
+        "category": 0.85,
+        "location": 0.45,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "1981 Typhoon Clara Rubing Luzon Hong Kong South China flooding",
+        "fingerprint": "fp_1981-09-19_clara_hong_kong_weather_climate"
+      }
+    },
+    {
+      "event_id": "evt_19810901_samoa_islands_region_eq_usgs_special_report",
+      "title": "Samoa Islands region earthquake documented in USGS special report",
+      "description": "A major earthquake occurred in the Samoa Islands region on September 1, 1981. The U.S. Geological Survey published a special earthquake report describing the event and related tectonic/seismic context.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1981-09-01T12:00:00Z",
+        "event_end": "1981-09-01T12:00:00Z",
+        "reported_at": "1982-01-01T00:00:00Z",
+        "time_confidence": 0.5,
+        "event_date_utc": "1981-09-01T12:00:00Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Samoa Islands region (South Pacific)",
+        "jurisdiction_level": "supranational",
+        "admin1": null,
+        "country": null,
+        "capital_used": "Apia",
+        "lat": -13.8333,
+        "lon": -171.7667,
+        "precision": "proxy",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.usgs.gov/publications/special-earthquake-report-september-1-1981-samoa-islands-region-earthquake",
+          "source_name": "USGS",
+          "published_at": "1982-01-01T00:00:00Z",
+          "headline": "Special Earthquake Report: September 1, 1981 Samoa Islands Region Earthquake",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://pubs.usgs.gov/of/1982/0781/report.pdf",
+          "source_name": "USGS Publications",
+          "published_at": "1982-01-01T00:00:00Z",
+          "headline": "Special Earthquake Report: September 1, 1981 Samoa Islands Region Earthquake (PDF)",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Geological Survey (USGS)"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.9,
+        "location": 0.55,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "1981-09-01 Samoa Islands region earthquake",
+        "fingerprint": "geological|samoa_islands_region|1981-09-01"
+      }
+    },
+    {
+      "event_id": "evt_19810903_shikotan_island_eq_yochiren",
+      "title": "Earthquake off Shikotan Island (Southern Kuriles) reported in Japanese monitoring bulletins",
+      "description": "An earthquake occurred off Shikotan Island in the southern Kurile Islands on September 3, 1981. Japanese earthquake-monitoring bulletin documents include event information such as location and depth estimates.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1981-09-03T12:00:00Z",
+        "event_end": "1981-09-03T12:00:00Z",
+        "reported_at": "1981-09-01T00:00:00Z",
+        "time_confidence": 0.35,
+        "event_date_utc": "1981-09-03T12:00:00Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Off Shikotan Island, Southern Kurile Islands",
+        "jurisdiction_level": "supranational",
+        "admin1": null,
+        "country": null,
+        "capital_used": "Tokyo",
+        "lat": 35.6895,
+        "lon": 139.6917,
+        "precision": "proxy",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.35
+      },
+      "sources": [
+        {
+          "url": "https://cais.gsi.go.jp/YOCHIREN/report/kaihou27/01_03.pdf",
+          "source_name": "GSI / YOCHIREN",
+          "published_at": "1981-09-01T00:00:00Z",
+          "headline": "YOCHIREN Report (Kaihou 27) PDF (section 01_03)",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://cais.gsi.go.jp/YOCHIREN/report/kaihou27/01_04.pdf",
+          "source_name": "GSI / YOCHIREN",
+          "published_at": "1981-09-01T00:00:00Z",
+          "headline": "YOCHIREN Report (Kaihou 27) PDF (section 01_04)",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Geospatial Information Authority of Japan (GSI)",
+          "YOCHIREN"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.4,
+        "category": 0.75,
+        "location": 0.35,
+        "summary_grounding": 0.4
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "low_confidence_location"
+      ],
+      "dedupe": {
+        "cluster_hint": "1981-09-03 Off Shikotan Island earthquake",
+        "fingerprint": "geological|shikotan_island|1981-09-03"
+      }
+    },
+    {
+      "event_id": "evt_19810912_kashmir_eq_usgs_monthly_summary",
+      "title": "Kashmir region earthquake reported in USGS September–October 1981 summary",
+      "description": "A September 12, 1981 earthquake in the Kashmir region was reported in a USGS September–October 1981 earthquakes summary, which notes impacts including fatalities. The publication serves as a compiled reporting source for the event.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1981-09-12T12:00:00Z",
+        "event_end": "1981-09-12T12:00:00Z",
+        "reported_at": "1981-10-31T00:00:00Z",
+        "time_confidence": 0.45,
+        "event_date_utc": "1981-09-12T12:00:00Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Northwestern Kashmir",
+        "jurisdiction_level": "supranational",
+        "admin1": null,
+        "country": null,
+        "capital_used": "Islamabad",
+        "lat": 33.6844,
+        "lon": 73.0479,
+        "precision": "proxy",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.4
+      },
+      "sources": [
+        {
+          "url": "https://www.usgs.gov/publications/earthquakes-september-october-1981",
+          "source_name": "USGS",
+          "published_at": "1981-10-31T00:00:00Z",
+          "headline": "Earthquakes, September–October 1981",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://pubs.usgs.gov/publication/70169160",
+          "source_name": "USGS Publications",
+          "published_at": "1981-10-31T00:00:00Z",
+          "headline": "Earthquakes, September–October 1981 (publication record)",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Geological Survey (USGS)"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.5,
+        "category": 0.85,
+        "location": 0.4,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "low_confidence_location"
+      ],
+      "dedupe": {
+        "cluster_hint": "1981-09-12 Kashmir earthquake",
+        "fingerprint": "geological|kashmir|1981-09-12"
+      }
+    },
+    {
+      "event_id": "us-dot-phmsa-nprm-hazmat-enforcement-1981-09-24",
+      "title": "U.S. DOT proposed revisions to hazardous materials enforcement procedures (NPRM)",
+      "description": "The U.S. Department of Transportation issued a Notice of Proposed Rulemaking proposing revisions to hazardous materials enforcement procedures and related regulatory provisions under 49 CFR Parts 107, 171, and 173. The proposal included procedural updates affecting enforcement related to exemptions/approvals and associated requirements.",
+      "category_primary": "policy_regulation",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1981-09-24T12:00:00Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "1981-09-24T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.75
+      },
+      "sources": [
+        {
+          "url": "https://www.phmsa.dot.gov/sites/phmsa.dot.gov/files/docs/standards-rulemaking/rulemakings/archived-rulemakings/63896/46-fr-47091-nprm.pdf",
+          "source_name": "PHMSA (U.S. DOT)",
+          "published_at": "1981-09-24T12:00:00Z",
+          "headline": "46 FR 47091 — Notice of Proposed Rulemaking (archived PDF)",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Department of Transportation",
+          "Materials Transportation Bureau"
+        ],
+        "substances": [
+          "hazardous materials"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "notice of proposed rulemaking",
+            "source_url": "https://www.phmsa.dot.gov/sites/phmsa.dot.gov/files/docs/standards-rulemaking/rulemakings/archived-rulemakings/63896/46-fr-47091-nprm.pdf"
+          },
+          {
+            "quote": "49 CFR Parts 107, 171, and 173",
+            "source_url": "https://www.phmsa.dot.gov/sites/phmsa.dot.gov/files/docs/standards-rulemaking/rulemakings/archived-rulemakings/63896/46-fr-47091-nprm.pdf"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.8,
+        "location": 0.75,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "paywalled_or_partial",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "DOT hazmat enforcement NPRM 46 FR 47091",
+        "fingerprint": "us-dot-hazmat-nprm-1981-09-24-washington-dc"
+      }
+    }
+  ]
+}

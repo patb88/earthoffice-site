@@ -1,0 +1,639 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_2015-02_normalize_2026-01-16T052858991Z",
+    "generated_utc": "2026-01-16T05:28:58.991Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "2015-02",
+    "window": {
+      "start_utc": "2015-02-01T00:00:00.000Z",
+      "end_utc": "2015-02-28T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "evt_20150216_csx_mount_carbon_crude_spill",
+      "title": "CSX crude-oil train derailment spills Bakken crude into Armstrong Creek near Mount Carbon, West Virginia",
+      "description": "A CSX train carrying Bakken crude oil derailed near Mount Carbon, West Virginia, releasing oil into Armstrong Creek, which drains to the Kanawha River. The incident prompted evacuations and precautionary actions related to nearby water infrastructure.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2015-02-16T18:15:00.000Z",
+        "event_end": "2015-02-16T23:59:59.000Z",
+        "reported_at": "2015-02-16T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2015-02-16T18:15:00.000Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Mount Carbon, West Virginia, USA",
+        "jurisdiction_level": "city",
+        "admin1": "West Virginia",
+        "country": "US",
+        "capital_used": null,
+        "lat": 38.1507,
+        "lon": -81.3273,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://incidentnews.noaa.gov/incident/8881",
+          "source_name": "NOAA IncidentNews",
+          "published_at": "2015-02-16T00:00:00.000Z",
+          "headline": "Incident 8881",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.epa.gov/enforcement/csx-transportation-inc-settlement-information-sheet",
+          "source_name": "US EPA",
+          "published_at": "2015-02-16T00:00:00.000Z",
+          "headline": "CSX Transportation, Inc. Settlement Information Sheet",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.theguardian.com/us-news/2015/feb/16/train-crude-oil-derails-in-west-virginia",
+          "source_name": "The Guardian",
+          "published_at": "2015-02-16T00:00:00.000Z",
+          "headline": "Train carrying crude oil derails in West Virginia, exploding into flames",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "CSX"
+        ],
+        "substances": [
+          "Bakken crude oil"
+        ],
+        "ecosystems": [
+          "Armstrong Creek",
+          "Kanawha River"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "train carrying Bakken crude oil derailed",
+            "source_url": "https://www.theguardian.com/us-news/2015/feb/16/train-crude-oil-derails-in-west-virginia"
+          },
+          {
+            "quote": "oil into Armstrong Creek",
+            "source_url": "https://incidentnews.noaa.gov/incident/8881"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.75,
+        "location": 0.6,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "needs_dedupe_check",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "csx-mount-carbon-derailment-2015-02-16",
+        "fingerprint": "fp_csx_mount_carbon_2015-02-16"
+      }
+    },
+    {
+      "event_id": "evt_20150222_fukushima_drainage_radioactive_leak_reported",
+      "title": "TEPCO reports detection of fresh radioactive-water discharge pathway to sea at Fukushima Daiichi",
+      "description": "TEPCO reported that sensors detected a fresh pathway for contaminated water to reach the sea via a drainage gutter at the Fukushima Daiichi plant. The operator reported elevated readings, shut the gutter, and conducted inspections.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2015-02-22T00:00:00.000Z",
+        "event_end": "2015-02-22T23:59:59.000Z",
+        "reported_at": "2015-02-22T00:00:00.000Z",
+        "time_confidence": 0.5,
+        "event_date_utc": "2015-02-22T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Fukushima Daiichi Nuclear Power Station, Fukushima Prefecture, Japan",
+        "jurisdiction_level": "site",
+        "admin1": "Fukushima",
+        "country": "JP",
+        "capital_used": null,
+        "lat": 37.421,
+        "lon": 141.0329,
+        "precision": "exact",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://phys.org/news/2015-02-fresh-nuclear-leak-fukushima.html",
+          "source_name": "Phys.org",
+          "published_at": "2015-02-22T00:00:00.000Z",
+          "headline": "Fresh nuclear leak detected at Fukushima: report",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "TEPCO"
+        ],
+        "substances": [
+          "radioactive water"
+        ],
+        "ecosystems": [
+          "Pacific Ocean"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "fresh leak of highly radioactive water",
+            "source_url": "https://phys.org/news/2015-02-fresh-nuclear-leak-fukushima.html"
+          },
+          {
+            "quote": "via a plant drainage gutter",
+            "source_url": "https://phys.org/news/2015-02-fresh-nuclear-leak-fukushima.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.5,
+        "category": 0.6,
+        "location": 0.55,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "secondary_sources_only",
+        "date_ambiguous",
+        "low_confidence_location"
+      ],
+      "dedupe": {
+        "cluster_hint": "fukushima-drainage-gutter-radioactive-water-2015-02",
+        "fingerprint": "fp_fukushima_drainage_2015-02-22"
+      }
+    },
+    {
+      "event_id": "evt_201502_marcia_qld_landfall",
+      "title": "Severe Tropical Cyclone Marcia makes landfall in central Queensland",
+      "description": "Severe Tropical Cyclone Marcia crossed the coast in central Queensland, bringing destructive winds and causing significant damage. Affected areas reported include the Yeppoon and Rockhampton region as the system weakened inland.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2015-02-20T00:00:00.000Z",
+        "event_end": "2015-02-21T23:59:59.000Z",
+        "reported_at": "2015-02-20T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2015-02-20T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Queensland, Australia",
+        "jurisdiction_level": "state",
+        "admin1": "Queensland",
+        "country": "AU",
+        "capital_used": "Brisbane",
+        "lat": -27.4698,
+        "lon": 153.0251,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://www.bom.gov.au/cyclone/history/marcia.shtml",
+          "source_name": "Australian Bureau of Meteorology",
+          "published_at": "2015-02-20T00:00:00.000Z",
+          "headline": "Tropical Cyclone Marcia",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.abc.net.au/news/2015-02-20/tropical-cyclone-marcia-category-two-off-queensland-coast/6153166",
+          "source_name": "ABC News (Australia)",
+          "published_at": "2015-02-20T00:00:00.000Z",
+          "headline": "Tropical Cyclone Marcia category two off Queensland coast",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://science.nasa.gov/earth/earth-observatory/cyclones-lam-and-marcia-85335/",
+          "source_name": "NASA Earth Observatory",
+          "published_at": "2015-02-20T00:00:00.000Z",
+          "headline": "Cyclones Lam and Marcia",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Australian Bureau of Meteorology",
+          "ABC News",
+          "NASA Earth Observatory"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Cyclone Marcia crossed the coast in central Queensland.",
+            "source_url": "https://www.bom.gov.au/cyclone/history/marcia.shtml"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.65,
+        "category": 0.8,
+        "location": 0.7,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "needs_dedupe_check",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "Cyclone Marcia landfall central Queensland Feb 2015",
+        "fingerprint": "fp_201502_marcia_qld_admin1_2015-02-20"
+      }
+    },
+    {
+      "event_id": "2015-02-fires-au-wa-northcliffe-windy-harbour-bushfires",
+      "title": "Bushfires threaten Northcliffe and Windy Harbour area in southwestern Western Australia",
+      "description": "Lightning-sparked bushfires in Western Australia's South West expanded in early February 2015, producing heavy smoke and prompting warnings as fires threatened communities near Northcliffe and Windy Harbour. News and satellite reporting described active fire fronts and smoke plumes during the first week of February.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2015-02-01T00:00:00.000Z",
+        "event_end": "2015-02-08T23:59:59.000Z",
+        "reported_at": "2015-02-02T00:00:00Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2015-02-02T00:00:00Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Northcliffe and Windy Harbour area, Western Australia, Australia",
+        "jurisdiction_level": "site",
+        "admin1": "Western Australia",
+        "country": "AU",
+        "capital_used": null,
+        "lat": -34.6308,
+        "lon": 116.1247,
+        "precision": "admin1",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.35
+      },
+      "sources": [
+        {
+          "url": "https://www.abc.net.au/news/2015-02-02/northcliffe-bushfire-threatening-homes/6061650",
+          "source_name": "ABC News (Australia)",
+          "published_at": "2015-02-02T00:00:00Z",
+          "headline": "Northcliffe bushfire threatening homes",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://science.nasa.gov/earth/earth-observatory/bushfires-menace-towns-in-western-australia-85225/",
+          "source_name": "NASA Earth Observatory",
+          "published_at": "2015-02-05T00:00:00Z",
+          "headline": "Bushfires Menace Towns in Western Australia",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.theguardian.com/australia-news/2015/feb/08/firefighters-battle-three-bushfires-as-temperatures-soar-in-western-australia",
+          "source_name": "The Guardian",
+          "published_at": "2015-02-08T00:00:00Z",
+          "headline": "Firefighters battle three bushfires as temperatures soar in Western Australia",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "ABC News (Australia)",
+          "NASA Earth Observatory",
+          "The Guardian"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Northcliffe bushfire threatening homes",
+            "source_url": "https://www.abc.net.au/news/2015-02-02/northcliffe-bushfire-threatening-homes/6061650"
+          },
+          {
+            "quote": "Bushfires Menace Towns in Western Australia",
+            "source_url": "https://science.nasa.gov/earth/earth-observatory/bushfires-menace-towns-in-western-australia-85225/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.85,
+        "location": 0.35,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "2015-02 WA South West bushfires Northcliffe/Windy Harbour",
+        "fingerprint": "f17f0c3b3b9e0f6d1a7fd0f0f8d836e6"
+      }
+    },
+    {
+      "event_id": "evt_20150218_noaa_coral_bleaching_outlook_global",
+      "title": "NOAA Coral Reef Watch outlook highlights elevated coral bleaching risk through May 2015",
+      "description": "NOAA Coral Reef Watch reported that unusually warm ocean temperatures and forecasts of continued thermal stress suggested an elevated risk of coral bleaching through May 2015 in parts of the western Pacific and Indian Oceans. The outlook indicated that sustained heat stress can cause bleaching and potentially coral mortality.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2015-02-18T00:00:00.000Z",
+        "event_end": "2015-02-18T23:59:59.000Z",
+        "reported_at": "2015-02-18T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2015-02-18T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Western Pacific and Indian Oceans",
+        "jurisdiction_level": "global_proxy",
+        "admin1": null,
+        "country": null,
+        "capital_used": null,
+        "lat": 0,
+        "lon": 0,
+        "precision": "proxy",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.4
+      },
+      "sources": [
+        {
+          "url": "https://coralreef.noaa.gov/aboutcrcp/news/featuredstories/feb15/coralbleaching.html",
+          "source_name": "NOAA Coral Reef Conservation Program",
+          "published_at": "2015-02-18T00:00:00.000Z",
+          "headline": "Coral bleaching outlook for 2015",
+          "byline": null,
+          "accessed_utc": "2015-02-28T23:59:59.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.climate.gov/news-features/featured-images/warm-oceans-pose-risk-global-coral-bleaching-event-2015",
+          "source_name": "NOAA Climate.gov",
+          "published_at": "2015-02-18T00:00:00.000Z",
+          "headline": "Warm oceans pose risk for global coral bleaching event in 2015",
+          "byline": null,
+          "accessed_utc": "2015-02-28T23:59:59.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://phys.org/news/2015-02-ocean-temperatures-major-coral.html",
+          "source_name": "Phys.org",
+          "published_at": "2015-02-18T00:00:00.000Z",
+          "headline": "Ocean temperatures could trigger major coral bleaching in 2015",
+          "byline": null,
+          "accessed_utc": "2015-02-28T23:59:59.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA",
+          "NOAA Coral Reef Watch"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "coral reefs"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Warm ocean temperatures pose a risk for a global coral bleaching event in 2015.",
+            "source_url": "https://www.climate.gov/news-features/featured-images/warm-oceans-pose-risk-global-coral-bleaching-event-2015"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.75,
+        "location": 0.4,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "noaa_coral_bleaching_outlook_2015",
+        "fingerprint": "fp_noaa_coral_bleaching_outlook_global_2015-02-18"
+      }
+    },
+    {
+      "event_id": "20150224_us_keystone_xl_veto",
+      "title": "U.S. President vetoes Keystone XL Pipeline Approval Act (S.1)",
+      "description": "U.S. President Barack Obama vetoed the Keystone XL Pipeline Approval Act (S.1), which would have approved the cross-border Keystone XL pipeline. The veto message said Congress was bypassing established executive-branch review processes, including consideration of environmental and safety issues.",
+      "category_primary": "policy_regulation",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "2015-02-24T00:00:00.000Z",
+        "event_end": "2015-02-24T23:59:59.000Z",
+        "reported_at": "2015-02-24T00:00:00.000Z",
+        "time_confidence": 0.85,
+        "event_date_utc": "2015-02-24T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States (federal action)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://obamawhitehouse.archives.gov/the-press-office/2015/02/24/veto-message-senate-s-1-keystone-xl-pipeline-approval-act",
+          "source_name": "Obama White House Archives",
+          "published_at": "2015-02-24T00:00:00.000Z",
+          "headline": "Veto Message to the Senate for S. 1, the \"Keystone XL Pipeline Approval Act\"",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.theguardian.com/environment/2015/feb/24/obama-vetoes-keystone-xl-pipeline-bill",
+          "source_name": "The Guardian",
+          "published_at": "2015-02-24T00:00:00.000Z",
+          "headline": "Obama vetoes Keystone XL pipeline bill",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "The White House",
+          "United States Congress"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": [
+          "Barack Obama"
+        ]
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "I am returning without my approval S. 1, the \"Keystone XL Pipeline Approval Act.\"",
+            "source_url": "https://obamawhitehouse.archives.gov/the-press-office/2015/02/24/veto-message-senate-s-1-keystone-xl-pipeline-approval-act"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.7,
+        "category": 0.85,
+        "location": 0.7,
+        "summary_grounding": 0.65
+      },
+      "quality_flags": [
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "keystone_xl_veto_2015_02_24_us",
+        "fingerprint": "keystone-xl-veto|US|2015-02-24"
+      }
+    },
+    {
+      "event_id": "20150223_un_sg_paris_agreement_push",
+      "title": "UN Secretary-General calls 2015 pivotal for universal climate agreement ahead of Paris COP21",
+      "description": "At a UN briefing, Secretary-General Ban Ki-moon urged Member States to accelerate efforts to finalize a meaningful universal climate agreement to be adopted in Paris in December 2015. The briefing emphasized timely national contributions and climate finance as part of the lead-up to COP21.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "2015-02-23T00:00:00.000Z",
+        "event_end": "2015-02-23T23:59:59.000Z",
+        "reported_at": "2015-02-23T00:00:00.000Z",
+        "time_confidence": 0.75,
+        "event_date_utc": "2015-02-23T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United Nations Headquarters, New York, USA",
+        "jurisdiction_level": "site",
+        "admin1": "NY",
+        "country": "US",
+        "capital_used": null,
+        "lat": 40.7489,
+        "lon": -73.968,
+        "precision": "neighborhood",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.65
+      },
+      "sources": [
+        {
+          "url": "https://www.un.org/sustainabledevelopment/blog/2015/02/2015-pivotal-for-finalizing-universal-climate-change-agreement-ban-tells-member-states/",
+          "source_name": "United Nations Sustainable Development",
+          "published_at": "2015-02-01T00:00:00.000Z",
+          "headline": "2015 pivotal for finalizing universal climate change agreement, Ban tells Member States",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://unfccc.int/news/2015-pivotal-for-finalizing-universal-climate-change-agreement-ban-tells-member-states",
+          "source_name": "UNFCCC",
+          "published_at": "2015-02-01T00:00:00.000Z",
+          "headline": "2015 pivotal for finalizing universal climate change agreement, Ban tells Member States",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "United Nations",
+          "UNFCCC"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": [
+          "Ban Ki-moon"
+        ]
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "2015 is a pivotal year for finalizing a universal climate change agreement.",
+            "source_url": "https://www.un.org/sustainabledevelopment/blog/2015/02/2015-pivotal-for-finalizing-universal-climate-change-agreement-ban-tells-member-states/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.75,
+        "location": 0.65,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "ban_ki_moon_pivotal_2015_climate_agreement_briefing",
+        "fingerprint": "un-sg-briefing-paris-agreement|UNHQ-NYC|2015-02-23"
+      }
+    }
+  ]
+}

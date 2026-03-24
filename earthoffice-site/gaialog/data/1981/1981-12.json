@@ -1,0 +1,651 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_1981-12_normalize_2026-01-18T093220258Z",
+    "generated_utc": "2026-01-18T09:32:20.258Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "1981-12",
+    "window": {
+      "start_utc": "1981-12-01T00:00:00.000Z",
+      "end_utc": "1981-12-31T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "1981-12-weather-ice-storm-northeast-us-upi-19811202",
+      "title": "Freezing rain ice storm disrupts travel across the U.S. Northeast",
+      "description": "Freezing rain and sleet affected parts of the U.S. Northeast on December 2, 1981, creating hazardous travel conditions. Reports described numerous traffic accidents, closures, and fatalities across multiple states.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1981-12-02T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1981-12-02T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Northeastern United States",
+        "jurisdiction_level": "supranational",
+        "admin1": null,
+        "country": "US",
+        "capital_used": null,
+        "lat": 40,
+        "lon": -75,
+        "precision": "proxy",
+        "location_basis": "manual_override",
+        "location_confidence": 0.3
+      },
+      "sources": [
+        {
+          "url": "https://www.upi.com/Archives/1981/12/02/Eastern-ice-storm-creating-havoc/3657376117200/",
+          "source_name": "UPI",
+          "published_at": "1981-12-02T00:00:00Z",
+          "headline": "Eastern ice storm creating havoc",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [
+          "freezing rain",
+          "sleet"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "ice storm creating havoc",
+            "source_url": "https://www.upi.com/Archives/1981/12/02/Eastern-ice-storm-creating-havoc/3657376117200/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.48,
+        "category": 0.8,
+        "location": 0.3,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "1981-12-02 US Northeast ice storm",
+        "fingerprint": "1981-12-02|freezing-rain-ice-storm-disrupts-travel-across-the-us-northeast|us-northeast"
+      }
+    },
+    {
+      "event_id": "1981-12-weather-winter-storm-sd-mn-nws-abr",
+      "title": "Winter storm brings blizzard conditions to eastern South Dakota and west-central Minnesota",
+      "description": "A winter storm spanning late November into December 1, 1981 brought freezing rain changing to snow, with strong winds producing blizzard conditions in parts of eastern South Dakota and west-central Minnesota. Reports described road closures and stranded motorists.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1981-11-30T00:00:00Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "1981-12-01T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Eastern South Dakota and west-central Minnesota, USA",
+        "jurisdiction_level": "state",
+        "admin1": "South Dakota",
+        "country": "US",
+        "capital_used": "Pierre",
+        "lat": 44.3683,
+        "lon": -100.3509,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.weather.gov/abr/This_Day_in_Weather_History_Nov_30",
+          "source_name": "NWS Aberdeen",
+          "published_at": "1981-11-30T00:00:00Z",
+          "headline": "This Day in Weather History: Nov 30",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "National Weather Service"
+        ],
+        "substances": [
+          "snow",
+          "freezing rain"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "freezing rain changing to snow",
+            "source_url": "https://www.weather.gov/abr/This_Day_in_Weather_History_Nov_30"
+          },
+          {
+            "quote": "blizzard conditions",
+            "source_url": "https://www.weather.gov/abr/This_Day_in_Weather_History_Nov_30"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.58,
+        "category": 0.85,
+        "location": 0.55,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "1981-12-01 SD/MN blizzard conditions",
+        "fingerprint": "1981-12-01|winter-storm-brings-blizzard-conditions-to-eastern-south-dakota-and-west-central-minnesota|pierre-sd"
+      }
+    },
+    {
+      "event_id": "1981-12-weather-typhoon-lee-central-philippines-upi-19811226",
+      "title": "Typhoon Lee (Dinang) causes damage and flooding in the central Philippines",
+      "description": "Typhoon Lee impacted parts of the Philippines around December 25–26, 1981, with reports of damaging winds, flooding, and people evacuating. Accounts described homes damaged or destroyed in affected areas.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1981-12-26T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1981-12-26T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Philippines (central regions)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "PH",
+        "capital_used": "Manila",
+        "lat": 14.5995,
+        "lon": 120.9842,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.5
+      },
+      "sources": [
+        {
+          "url": "https://www.upi.com/Archives/1981/12/26/Typhoon-Lee-hits-Philippines/2325378190800/",
+          "source_name": "UPI",
+          "published_at": "1981-12-26T00:00:00Z",
+          "headline": "Typhoon Lee hits Philippines",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Typhoon Lee hits Philippines",
+            "source_url": "https://www.upi.com/Archives/1981/12/26/Typhoon-Lee-hits-Philippines/2325378190800/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.9,
+        "location": 0.5,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "1981-12-26 Typhoon Lee Philippines",
+        "fingerprint": "1981-12-26|typhoon-lee-dinang-causes-damage-and-flooding-in-the-central-philippines|manila"
+      }
+    },
+    {
+      "event_id": "1981-12-weather-unnamed-cyclone-nt-bom-19811220",
+      "title": "Tropical cyclone makes landfall near Gove and later affects areas near Darwin, Northern Territory",
+      "description": "An unnamed tropical cyclone developed in the Gulf of Carpentaria and made landfall near Gove in Northern Territory in December 1981. The system later affected areas nearer Darwin before weakening and dissipating by late December.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1981-12-20T12:00:00Z",
+        "event_end": "1981-12-27T12:00:00Z",
+        "reported_at": "1981-12-20T00:00:00Z",
+        "time_confidence": 0.7,
+        "event_date_utc": null,
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Northern Territory, Australia",
+        "jurisdiction_level": "state",
+        "admin1": "Northern Territory",
+        "country": "AU",
+        "capital_used": "Darwin",
+        "lat": -12.4634,
+        "lon": 130.8456,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.65
+      },
+      "sources": [
+        {
+          "url": "https://www.bom.gov.au/cyclone/history/unnamed81.shtml",
+          "source_name": "Australian Bureau of Meteorology",
+          "published_at": "1981-12-20T00:00:00Z",
+          "headline": "Unnamed tropical cyclone (1981)",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Australian Bureau of Meteorology"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "making landfall near Gove",
+            "source_url": "https://www.bom.gov.au/cyclone/history/unnamed81.shtml"
+          },
+          {
+            "quote": "weakening and dissipating",
+            "source_url": "https://www.bom.gov.au/cyclone/history/unnamed81.shtml"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.67,
+        "category": 0.9,
+        "location": 0.65,
+        "summary_grounding": 0.7
+      },
+      "quality_flags": [
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Dec 1981 NT unnamed cyclone landfall near Gove",
+        "fingerprint": "1981-12-20..1981-12-27|tropical-cyclone-makes-landfall-near-gove-and-later-affects-areas-near-darwin-northern-territory|darwin"
+      }
+    },
+    {
+      "event_id": "evt-19811212-pk-balochistan-earthquake-fatalities",
+      "title": "Earthquake fatalities reported in Balochistan, Pakistan",
+      "description": "A damaging earthquake in Pakistan's Balochistan region was reported to have caused fatalities. The event is cited as occurring on December 12, 1981, in a USGS November–December 1981 earthquakes publication.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1981-12-12T12:00:00Z",
+        "event_end": "1981-12-12T12:00:00Z",
+        "reported_at": "1981-12-31T23:59:59.000Z",
+        "time_confidence": 0.4,
+        "event_date_utc": "1981-12-12T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Balochistan, Pakistan",
+        "jurisdiction_level": "state",
+        "admin1": "Balochistan",
+        "country": "PK",
+        "capital_used": "Quetta",
+        "lat": 30.1798,
+        "lon": 66.975,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://www.usgs.gov/publications/earthquakes-november-december-1981",
+          "source_name": "USGS",
+          "published_at": "1981-12-31T23:59:59.000Z",
+          "headline": "Earthquakes November–December 1981",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "USGS"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.85,
+        "location": 0.7,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "usgs-1981-11-12-pk-balochistan-earthquake",
+        "fingerprint": "fp-19811212-pk-balochistan-earthquake-fatalities"
+      }
+    },
+    {
+      "event_id": "evt-19811219-gr-aegean-sea-major-earthquake",
+      "title": "Major earthquake reported in the Aegean Sea (Greece)",
+      "description": "A major earthquake reported as magnitude 7.0–7.9 occurred in the Aegean Sea on December 19, 1981. The report is referenced from a USGS November–December 1981 earthquakes publication.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1981-12-19T12:00:00Z",
+        "event_end": "1981-12-19T12:00:00Z",
+        "reported_at": "1981-12-31T23:59:59.000Z",
+        "time_confidence": 0.4,
+        "event_date_utc": "1981-12-19T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Aegean Sea (Greece)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "GR",
+        "capital_used": "Athens",
+        "lat": 37.9838,
+        "lon": 23.7275,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.usgs.gov/publications/earthquakes-november-december-1981",
+          "source_name": "USGS",
+          "published_at": "1981-12-31T23:59:59.000Z",
+          "headline": "Earthquakes November–December 1981",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "USGS"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.5,
+        "category": 0.85,
+        "location": 0.55,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "usgs-1981-12-19-aegean-sea-earthquake",
+        "fingerprint": "fp-19811219-gr-aegean-sea-major-earthquake"
+      }
+    },
+    {
+      "event_id": "evt-19811224-nz-kermadec-major-earthquake",
+      "title": "Major earthquake reported in the Kermadec Islands region",
+      "description": "A major earthquake reported as magnitude 7.0–7.9 occurred in the Kermadec Islands region on December 24, 1981. The report is referenced from a USGS November–December 1981 earthquakes publication.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1981-12-24T12:00:00Z",
+        "event_end": "1981-12-24T12:00:00Z",
+        "reported_at": "1981-12-31T23:59:59.000Z",
+        "time_confidence": 0.4,
+        "event_date_utc": "1981-12-24T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Kermadec Islands region (South Pacific)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "NZ",
+        "capital_used": "Wellington",
+        "lat": -41.2866,
+        "lon": 174.7756,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.35
+      },
+      "sources": [
+        {
+          "url": "https://www.usgs.gov/publications/earthquakes-november-december-1981",
+          "source_name": "USGS",
+          "published_at": "1981-12-31T23:59:59.000Z",
+          "headline": "Earthquakes November–December 1981",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "USGS"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.45,
+        "category": 0.85,
+        "location": 0.35,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "secondary_sources_only",
+        "low_confidence_location"
+      ],
+      "dedupe": {
+        "cluster_hint": "usgs-1981-12-24-kermadec-earthquake",
+        "fingerprint": "fp-19811224-nz-kermadec-major-earthquake"
+      }
+    },
+    {
+      "event_id": "evt-19811226-nz-kermadec-major-earthquake",
+      "title": "Major earthquake reported in the Kermadec Islands region",
+      "description": "A major earthquake reported as magnitude 7.0–7.9 occurred in the Kermadec Islands region on December 26, 1981. The report is referenced from a USGS November–December 1981 earthquakes publication.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1981-12-26T12:00:00Z",
+        "event_end": "1981-12-26T12:00:00Z",
+        "reported_at": "1981-12-31T23:59:59.000Z",
+        "time_confidence": 0.4,
+        "event_date_utc": "1981-12-26T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Kermadec Islands region (South Pacific)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "NZ",
+        "capital_used": "Wellington",
+        "lat": -41.2866,
+        "lon": 174.7756,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.35
+      },
+      "sources": [
+        {
+          "url": "https://www.usgs.gov/publications/earthquakes-november-december-1981",
+          "source_name": "USGS",
+          "published_at": "1981-12-31T23:59:59.000Z",
+          "headline": "Earthquakes November–December 1981",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "USGS"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.45,
+        "category": 0.85,
+        "location": 0.35,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "secondary_sources_only",
+        "low_confidence_location"
+      ],
+      "dedupe": {
+        "cluster_hint": "usgs-1981-12-26-kermadec-earthquake",
+        "fingerprint": "fp-19811226-nz-kermadec-major-earthquake"
+      }
+    },
+    {
+      "event_id": "evt_19811222_us_agriculture_food_act_1981_pl97_98",
+      "title": "U.S. Agriculture and Food Act of 1981 (Public Law 97-98) enacted",
+      "description": "U.S. federal legislation associated with the Agriculture and Food Act of 1981 became law on December 22, 1981. The measure is a major agriculture statute and is commonly linked with federal farmland protection policy provisions.",
+      "category_primary": "policy_regulation",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "1981-12-22T12:00:00Z",
+        "event_end": "1981-12-22T12:00:00Z",
+        "reported_at": "1981-12-22T12:00:00Z",
+        "time_confidence": 0.65,
+        "event_date_utc": "1981-12-22T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.9
+      },
+      "sources": [
+        {
+          "url": "https://www.congress.gov/bill/97th-congress/senate-bill/884",
+          "source_name": "Congress.gov",
+          "published_at": "1981-12-22T12:00:00Z",
+          "headline": "S.884 - A bill to provide for an improved and more comprehensive agricultural and food policy for the United States, and for other purposes.",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.congress.gov/bill/97th-congress/senate-bill/884/text",
+          "source_name": "Congress.gov",
+          "published_at": "1981-12-22T12:00:00Z",
+          "headline": "S.884 - Text",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Congress"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.55,
+        "location": 0.9,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only",
+        "possible_opinion_or_advocacy"
+      ],
+      "dedupe": {
+        "cluster_hint": "us_agriculture_food_act_1981_pl97_98",
+        "fingerprint": "fp_evt_19811222_us_agriculture_food_act_1981_pl97_98"
+      }
+    }
+  ]
+}

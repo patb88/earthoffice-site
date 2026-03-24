@@ -1,0 +1,652 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_1982-04_normalize_2026-01-18T093723020Z",
+    "generated_utc": "2026-01-18T09:37:23.020Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "1982-04",
+    "window": {
+      "start_utc": "1982-04-01T00:00:00.000Z",
+      "end_utc": "1982-04-30T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "evt_19820427_goodyear_acrylonitrile_akron_little_cuyahoga_01",
+      "title": "Goodyear pipe break leaks acrylonitrile into Little Cuyahoga River in Akron, Ohio",
+      "description": "A pipe break at a Goodyear Tire & Rubber plant in Akron, Ohio leaked thousands of gallons of acrylonitrile, with the chemical draining into ditches and reaching the Little Cuyahoga River. The incident prompted emergency response actions including evacuations, and reports of injuries/exposure in connection with the leak.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1982-04-27T00:00:00Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "1982-04-27T00:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Akron, Ohio, USA (Little Cuyahoga River)",
+        "jurisdiction_level": "city",
+        "admin1": "Ohio",
+        "country": "US",
+        "capital_used": null,
+        "lat": 41.081444,
+        "lon": -81.519005,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.75
+      },
+      "sources": [
+        {
+          "url": "https://www.csmonitor.com/1982/0427/042717.html",
+          "source_name": "The Christian Science Monitor",
+          "published_at": "1982-04-27T00:00:00Z",
+          "headline": "042717",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Goodyear Tire & Rubber"
+        ],
+        "substances": [
+          "acrylonitrile"
+        ],
+        "ecosystems": [
+          "Little Cuyahoga River"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "leaked an estimated 8,000 to 12,000 gallons of acrylonitrile",
+            "source_url": "https://www.csmonitor.com/1982/0427/042717.html"
+          },
+          {
+            "quote": "drained into ditches and then into the Little Cuyahoga River",
+            "source_url": "https://www.csmonitor.com/1982/0427/042717.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.8,
+        "location": 0.75,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "paywalled_or_partial"
+      ],
+      "dedupe": {
+        "cluster_hint": "goodyear-acrylonitrile-little-cuyahoga-akron-1982-04-27",
+        "fingerprint": "fp_goodyear_acrylonitrile_akron_19820427"
+      }
+    },
+    {
+      "event_id": "evt_19820402_us_tornado_outbreak_midwest_plains_southeast",
+      "title": "Tornado outbreak across parts of the United States (Midwest/Plains/Southeast)",
+      "description": "A multi-day severe weather outbreak produced numerous tornadoes and widespread impacts across multiple U.S. states during April 2–4, 1982. NOAA NCEI’s Billion-Dollar Disasters state summaries provide supporting context for April 1982 tornado impacts.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1982-04-02T12:00:00Z",
+        "event_end": "1982-04-04T12:00:00Z",
+        "reported_at": "1982-04-01T00:00:00Z",
+        "time_confidence": 0.4,
+        "event_date_utc": null,
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "United States (multi-state outbreak affecting parts of the Midwest, Plains, and Southeast)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "proxy",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.5
+      },
+      "sources": [
+        {
+          "url": "https://www.ncei.noaa.gov/access/billions/state-summary/AL",
+          "source_name": "NOAA NCEI (Billion-Dollar Disasters)",
+          "published_at": "1982-04-01T00:00:00Z",
+          "headline": "State Summary: Alabama",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.ncei.noaa.gov/access/billions/state-summary/AR",
+          "source_name": "NOAA NCEI (Billion-Dollar Disasters)",
+          "published_at": "1982-04-01T00:00:00Z",
+          "headline": "State Summary: Arkansas",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.ncei.noaa.gov/access/billions/state-summary/IN",
+          "source_name": "NOAA NCEI (Billion-Dollar Disasters)",
+          "published_at": "1982-04-01T00:00:00Z",
+          "headline": "State Summary: Indiana",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA NCEI"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Billion-Dollar Disasters state summary (Alabama) includes entries for April 1982 tornado impacts.",
+            "source_url": "https://www.ncei.noaa.gov/access/billions/state-summary/AL"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.46,
+        "category": 0.75,
+        "location": 0.5,
+        "summary_grounding": 0.4
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "1982-04 US multi-state tornado outbreak",
+        "fingerprint": "fp_19820402_us_tornado_outbreak_midwest_plains_southeast"
+      }
+    },
+    {
+      "event_id": "evt_19820405_au_cyclone_dominic_cape_york",
+      "title": "Severe Tropical Cyclone Dominic crosses Cape York Peninsula (Queensland, Australia)",
+      "description": "Severe Tropical Cyclone Dominic developed from a tropical low on April 5, 1982 and intensified rapidly. It crossed the west coast of Cape York Peninsula around April 7 near Cape Keer-Weer, with very strong winds and reported damage including to buildings and power lines.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1982-04-05T12:00:00Z",
+        "event_end": "1982-04-07T12:00:00Z",
+        "reported_at": "1982-04-01T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": null,
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Cape York Peninsula (Queensland), Australia (near Cape Keer-Weer/Keerweer)",
+        "jurisdiction_level": "state",
+        "admin1": "Queensland",
+        "country": "AU",
+        "capital_used": "Brisbane",
+        "lat": -27.4698,
+        "lon": 153.0251,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.bom.gov.au/cyclone/history/dominic82.shtml",
+          "source_name": "Australian Bureau of Meteorology",
+          "published_at": "1982-04-01T00:00:00Z",
+          "headline": "Severe Tropical Cyclone Dominic (1982)",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Australian Bureau of Meteorology"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Crossed the west coast of Cape York Peninsula near Cape Keer-Weer about 7 April 1982.",
+            "source_url": "https://www.bom.gov.au/cyclone/history/dominic82.shtml"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.85,
+        "location": 0.6,
+        "summary_grounding": 0.65
+      },
+      "quality_flags": [
+        "location_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "1982-04 Cyclone Dominic Cape York",
+        "fingerprint": "fp_19820405_au_cyclone_dominic_cape_york"
+      }
+    },
+    {
+      "event_id": "evt_19820430_io_cyclone_karla_enters_aus_western_region",
+      "title": "Severe Tropical Cyclone Karla enters the Australian Western Region (South Indian Ocean)",
+      "description": "Severe Tropical Cyclone Karla moved into the Australian Bureau of Meteorology Western Region around 0600 UTC on April 30, 1982. The Bureau of Meteorology reports an estimated central pressure near 954 hPa and strong winds near the center at that time.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1982-04-30T12:00:00Z",
+        "event_end": "1982-04-30T12:00:00Z",
+        "reported_at": "1982-04-01T00:00:00Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "1982-04-30T00:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "South Indian Ocean (entered Australian Western Region)",
+        "jurisdiction_level": "supranational",
+        "admin1": null,
+        "country": null,
+        "capital_used": "Canberra",
+        "lat": -35.2809,
+        "lon": 149.13,
+        "precision": "proxy",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.3
+      },
+      "sources": [
+        {
+          "url": "https://www.bom.gov.au/cyclone/history/karla.shtml",
+          "source_name": "Australian Bureau of Meteorology",
+          "published_at": "1982-04-01T00:00:00Z",
+          "headline": "Severe Tropical Cyclone Karla",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Australian Bureau of Meteorology"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Moved into the Australian Region at 0600 UTC 30 April 1982 (estimated 954 hPa).",
+            "source_url": "https://www.bom.gov.au/cyclone/history/karla.shtml"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.5,
+        "category": 0.85,
+        "location": 0.3,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "low_confidence_location"
+      ],
+      "dedupe": {
+        "cluster_hint": "1982-04 Cyclone Karla enters Australian Western Region",
+        "fingerprint": "fp_19820430_io_cyclone_karla_enters_aus_western_region"
+      }
+    },
+    {
+      "event_id": "evt_19820404_wolftrap_filene_center_fire",
+      "title": "Wind-fed fire destroys Filene Center at Wolf Trap National Park (Virginia)",
+      "description": "A wind-fed, three-alarm fire destroyed the Filene Center amphitheater at Wolf Trap National Park for the Performing Arts. Reports described a multi-alarm response and total loss of the structure.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1982-04-04T12:00:00Z",
+        "event_end": "1982-04-04T12:00:00Z",
+        "reported_at": "1982-04-05T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1982-04-04T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Vienna, Virginia, United States",
+        "jurisdiction_level": "city",
+        "admin1": "Virginia",
+        "country": "US",
+        "capital_used": null,
+        "lat": 38.9012,
+        "lon": -77.2653,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.65
+      },
+      "sources": [
+        {
+          "url": "https://www.upi.com/Archives/1982/04/05/A-three-alarm-fire-fed-by-strong-winds-destroyed-the/1447386830800/",
+          "source_name": "UPI",
+          "published_at": "1982-04-05T00:00:00Z",
+          "headline": "A three-alarm fire fed by strong winds destroyed the ...",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://opera.wolftrap.org/april-4-1982/",
+          "source_name": "Wolf Trap Opera",
+          "published_at": "1982-04-04T00:00:00Z",
+          "headline": "April 4, 1982",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Wolf Trap National Park for the Performing Arts",
+          "Wolf Trap Opera",
+          "UPI"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "A three-alarm fire fed by strong winds destroyed the",
+            "source_url": "https://www.upi.com/Archives/1982/04/05/A-three-alarm-fire-fed-by-strong-winds-destroyed-the/1447386830800/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.9,
+        "location": 0.65,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "wolftrap-filene-center-fire-1982-04-04",
+        "fingerprint": "fp_wolftrap_filene_center_vienna_va_1982-04-04"
+      }
+    },
+    {
+      "event_id": "evt_19820405_nc_va_brush_fires",
+      "title": "Brush fires across North Carolina and Virginia burn homes amid dry, windy conditions",
+      "description": "Dry conditions and strong winds fueled widespread brush fires reported across North Carolina and Virginia. Reports said multiple homes burned and that fire activity was elevated across the region.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1982-04-04T12:00:00Z",
+        "event_end": "1982-04-04T12:00:00Z",
+        "reported_at": "1982-04-05T00:00:00Z",
+        "time_confidence": 0.4,
+        "event_date_utc": "1982-04-04T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States (North Carolina and Virginia)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, D.C.",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "proxy",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.35
+      },
+      "sources": [
+        {
+          "url": "https://www.upi.com/Archives/1982/04/05/Eastern-brush-fires-avalanche-danger-in-West/2571386830800/",
+          "source_name": "UPI",
+          "published_at": "1982-04-05T00:00:00Z",
+          "headline": "Eastern brush fires, avalanche danger in West",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "UPI"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Eastern brush fires",
+            "source_url": "https://www.upi.com/Archives/1982/04/05/Eastern-brush-fires-avalanche-danger-in-West/2571386830800/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.45,
+        "category": 0.85,
+        "location": 0.35,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "nc-va-brush-fires-1982-04-early",
+        "fingerprint": "fp_nc_va_brushfires_us_proxy_1982-04-04"
+      }
+    },
+    {
+      "event_id": "evt_19820421_anaheim_wind_driven_firestorm",
+      "title": "Wind-driven firestorm in Anaheim destroys apartment buildings and displaces residents",
+      "description": "A pre-dawn, wind-driven fire in Anaheim spread rapidly through dense apartment buildings after a power-line-related ignition was reported. Accounts said dozens of buildings were destroyed and large numbers of residents were displaced.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1982-04-21T12:00:00Z",
+        "event_end": "1982-04-21T12:00:00Z",
+        "reported_at": "1982-04-21T00:00:00Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "1982-04-21T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Anaheim, California, United States",
+        "jurisdiction_level": "city",
+        "admin1": "California",
+        "country": "US",
+        "capital_used": null,
+        "lat": 33.8366,
+        "lon": -117.9143,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://www.upi.com/Archives/1982/04/22/Sparks-from-a-wind-whipped-power-line-ignited-a-palm/4970388299600/",
+          "source_name": "UPI",
+          "published_at": "1982-04-22T00:00:00Z",
+          "headline": "Sparks from a wind-whipped power line ignited a palm ...",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.upi.com/Archives/1982/04/21/A-massive-early-morning-fire-pushed-by-gusting-desert/5446388213200/",
+          "source_name": "UPI",
+          "published_at": "1982-04-21T00:00:00Z",
+          "headline": "A massive early morning fire pushed by gusting desert ...",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.washingtonpost.com/archive/politics/1982/04/22/wind-fueled-fires-torch-s-california/c2d799dd-1123-463e-90d1-9da8672ad416/",
+          "source_name": "The Washington Post",
+          "published_at": "1982-04-22T00:00:00Z",
+          "headline": "Wind-Fueled Fires Torch S. California",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "UPI",
+          "The Washington Post"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Sparks from a wind-whipped power line ignited",
+            "source_url": "https://www.upi.com/Archives/1982/04/22/Sparks-from-a-wind-whipped-power-line-ignited-a-palm/4970388299600/"
+          },
+          {
+            "quote": "A massive early morning fire pushed by gusting desert",
+            "source_url": "https://www.upi.com/Archives/1982/04/21/A-massive-early-morning-fire-pushed-by-gusting-desert/5446388213200/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.9,
+        "location": 0.7,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "anaheim-wind-driven-apartment-fire-1982-04-21",
+        "fingerprint": "fp_anaheim_ca_firestorm_1982-04-21"
+      }
+    },
+    {
+      "event_id": "ev_1982-04-07_ccamlr_entered_into_force",
+      "title": "CCAMLR Convention entered into force, establishing Antarctic marine living resource management regime",
+      "description": "On 7 April 1982, the Convention on the Conservation of Antarctic Marine Living Resources (CCAMLR/CAMLR Convention) entered into force. The convention established an international framework for conservation and management of Antarctic marine living resources using an ecosystem-based approach, including fisheries such as krill.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "1982-04-07T12:00:00Z",
+        "event_end": "1982-04-07T12:00:00Z",
+        "reported_at": "2026-01-18T00:00:00Z",
+        "time_confidence": 0.75,
+        "event_date_utc": "1982-04-07T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Antarctic / Southern Ocean (international)",
+        "jurisdiction_level": "supranational",
+        "admin1": null,
+        "country": null,
+        "capital_used": "Brussels",
+        "lat": 50.8503,
+        "lon": 4.3517,
+        "precision": "proxy",
+        "location_basis": "institution_proxy",
+        "location_confidence": 0.35
+      },
+      "sources": [
+        {
+          "url": "https://www.ccamlr.org/en/organisation/history-convention",
+          "source_name": "CCAMLR",
+          "published_at": "2026-01-18T00:00:00Z",
+          "headline": "History of the Convention",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.bas.ac.uk/about/antarctica/the-antarctic-treaty/the-convention-on-the-conservation-of-antarctic-marine-living-resources/",
+          "source_name": "British Antarctic Survey",
+          "published_at": "2026-01-18T00:00:00Z",
+          "headline": "The Convention on the Conservation of Antarctic Marine Living Resources",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "CCAMLR"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "Southern Ocean"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "The Convention entered into force on 7 April 1982.",
+            "source_url": "https://www.ccamlr.org/en/organisation/history-convention"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.68,
+        "category": 0.85,
+        "location": 0.35,
+        "summary_grounding": 0.75
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "ccamlr_entered_into_force_1982-04-07",
+        "fingerprint": "ccamlr_entered_into_force|supranational|1982-04-07"
+      }
+    }
+  ]
+}

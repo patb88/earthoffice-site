@@ -1,0 +1,845 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_2020-10_normalize_2026-01-16T072224798Z",
+    "generated_utc": "2026-01-16T07:22:24.798Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "2020-10",
+    "window": {
+      "start_utc": "2020-10-01T00:00:00.000Z",
+      "end_utc": "2020-10-31T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "evt_202010_broadkill_tarballs_noaa",
+      "title": "Tarballs and oiled debris wash ashore at Broadkill Beach and along Delaware/Maryland coastlines",
+      "description": "Heavy oil/tarballs and oiled debris washed ashore beginning Oct 19, 2020 along Delaware beaches and were later also reported in Maryland. NOAA’s Office of Response and Restoration supported U.S. Coast Guard response and spill trajectory analysis while cleanup and source investigation continued through late October.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2020-10-19T00:00:00.000Z",
+        "event_end": "2020-10-31T23:59:59.000Z",
+        "reported_at": "2020-10-31T23:59:59.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2020-10-19T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Broadkill Beach, Delaware, USA",
+        "jurisdiction_level": "site",
+        "admin1": "Delaware",
+        "country": "US",
+        "capital_used": null,
+        "lat": 38.809,
+        "lon": -75.213,
+        "precision": "neighborhood",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://blog.response.restoration.noaa.gov/incident-responses-october-2020",
+          "source_name": "NOAA Office of Response and Restoration (blog)",
+          "published_at": "2020-10-31T23:59:59.000Z",
+          "headline": "Incident Responses \u0000 October 2020",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA Office of Response and Restoration",
+          "U.S. Coast Guard"
+        ],
+        "substances": [
+          "oil",
+          "tarballs"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "heavy oil/tarballs from an unknown source washed ashore along Delaware beaches",
+            "source_url": "https://blog.response.restoration.noaa.gov/incident-responses-october-2020"
+          },
+          {
+            "quote": "NOAA\u0019s Office of Response and Restoration supported U.S. Coast Guard response",
+            "source_url": "https://blog.response.restoration.noaa.gov/incident-responses-october-2020"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.8,
+        "location": 0.55,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "noaa_orr_incident_responses_2020_10_broadkill",
+        "fingerprint": "fp_broadkill_beach_tarballs_2020-10-19"
+      }
+    },
+    {
+      "event_id": "evt_202010_zeta_oil_release_noaa",
+      "title": "Hurricane Zeta damages facility near New Orleans, releasing an estimated ~500 barrels of crude oil",
+      "description": "After Hurricane Zeta impacted on Oct 28, 2020, an industrial site near New Orleans reported an estimated ~500 barrels of crude oil released from a damaged tank system. Response actions focused on containment and recovery, and no shoreline impacts were observed at the time of reporting.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2020-10-28T00:00:00.000Z",
+        "event_end": "2020-10-31T23:59:59.000Z",
+        "reported_at": "2020-10-31T23:59:59.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2020-10-28T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Near New Orleans, Louisiana, USA",
+        "jurisdiction_level": "city",
+        "admin1": "Louisiana",
+        "country": "US",
+        "capital_used": null,
+        "lat": 29.951065,
+        "lon": -90.071533,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.5
+      },
+      "sources": [
+        {
+          "url": "https://blog.response.restoration.noaa.gov/incident-responses-october-2020",
+          "source_name": "NOAA Office of Response and Restoration (blog)",
+          "published_at": "2020-10-31T23:59:59.000Z",
+          "headline": "Incident Responses \u0000 October 2020",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA Office of Response and Restoration"
+        ],
+        "substances": [
+          "crude oil"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "reported an estimated ~500 barrels of crude oil released from a damaged tank system",
+            "source_url": "https://blog.response.restoration.noaa.gov/incident-responses-october-2020"
+          },
+          {
+            "quote": "no shoreline impacts observed at the time of reporting",
+            "source_url": "https://blog.response.restoration.noaa.gov/incident-responses-october-2020"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.5,
+        "category": 0.75,
+        "location": 0.5,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "noaa_orr_incident_responses_2020_10_zeta_facility_release",
+        "fingerprint": "fp_new_orleans_zeta_oil_2020-10-28"
+      }
+    },
+    {
+      "event_id": "evt_202010_duluth_tug_sinks_noaa",
+      "title": "Tug sinks near Duluth with diesel and lube oil onboard (pollution threat)",
+      "description": "On Oct 18, 2020 a tug reportedly broke free and sank near Duluth with a maximum potential of about 400 gallons of diesel and about 10 gallons of lube oil onboard. Responders reported no observed sheening or oil impacts at the time.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2020-10-18T00:00:00.000Z",
+        "event_end": "2020-10-18T23:59:59.000Z",
+        "reported_at": "2020-10-31T23:59:59.000Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "2020-10-18T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Duluth, Wisconsin area (Lake Superior), USA",
+        "jurisdiction_level": "city",
+        "admin1": "Wisconsin",
+        "country": "US",
+        "capital_used": null,
+        "lat": 46.786672,
+        "lon": -92.100487,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.35
+      },
+      "sources": [
+        {
+          "url": "https://blog.response.restoration.noaa.gov/incident-responses-october-2020",
+          "source_name": "NOAA Office of Response and Restoration (blog)",
+          "published_at": "2020-10-31T23:59:59.000Z",
+          "headline": "Incident Responses \u0000 October 2020",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA Office of Response and Restoration"
+        ],
+        "substances": [
+          "diesel",
+          "lube oil"
+        ],
+        "ecosystems": [
+          "Lake Superior"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "tug reportedly broke free and sank near Duluth",
+            "source_url": "https://blog.response.restoration.noaa.gov/incident-responses-october-2020"
+          },
+          {
+            "quote": "maximum potential of ~400 gallons of diesel and ~10 gallons of lube oil onboard",
+            "source_url": "https://blog.response.restoration.noaa.gov/incident-responses-october-2020"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.35,
+        "category": 0.7,
+        "location": 0.35,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "needs_dedupe_check",
+        "low_confidence_location"
+      ],
+      "dedupe": {
+        "cluster_hint": "noaa_orr_incident_responses_2020_10_duluth_tug_sinks",
+        "fingerprint": "fp_duluth_tug_sinks_2020-10-18"
+      }
+    },
+    {
+      "event_id": "2020-10_fr_alpes-maritimes_storm-alex_flooding",
+      "title": "Storm Alex triggers extreme rainfall and flash flooding in the Roya and Vésubie catchments (Alpes-Maritimes, France)",
+      "description": "Storm Alex brought extreme rainfall to southeast France on 2–3 Oct 2020, causing destructive flash flooding in the Roya and Vésubie catchments. The cited research describes major impacts including significant river channel changes in these basins.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2020-10-02T00:00:00.000Z",
+        "event_end": "2020-10-03T23:59:59.000Z",
+        "reported_at": "2023-10-27T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2020-10-02T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Alpes-Maritimes (Roya and Vésubie catchments), France",
+        "jurisdiction_level": "state",
+        "admin1": "Provence-Alpes-Côte d’Azur",
+        "country": "FR",
+        "capital_used": "Marseille",
+        "lat": 43.2965,
+        "lon": 5.3698,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2310.17983",
+          "source_name": "arXiv",
+          "published_at": "2023-10-27T00:00:00Z",
+          "headline": "arXiv:2310.17983",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [
+          "river catchments"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "...destructive flash floods and major river channel changes in the Roya and Vésubie catchments.",
+            "source_url": "https://arxiv.org/abs/2310.17983"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.58,
+        "category": 0.75,
+        "location": 0.55,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "secondary_sources_only",
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Storm Alex France 2020-10-02 flooding",
+        "fingerprint": "f90cb4a2b3d0f9c24db6a55d7f2baf0a"
+      }
+    },
+    {
+      "event_id": "2020-10_us_georgia_delta-remnants_flooding-tornadoes",
+      "title": "Remnants of Hurricane Delta bring heavy rain, flooding, and tornadoes to north and central Georgia",
+      "description": "On 10–11 Oct 2020, the remnants of Hurricane Delta produced heavy rainfall across north and central Georgia. The event included flooding impacts and reports of multiple tornadoes in the region.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2020-10-10T00:00:00.000Z",
+        "event_end": "2020-10-11T23:59:59.000Z",
+        "reported_at": "2020-10-15T00:00:00Z",
+        "time_confidence": 0.8,
+        "event_date_utc": "2020-10-10T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Georgia, United States",
+        "jurisdiction_level": "state",
+        "admin1": "Georgia",
+        "country": "US",
+        "capital_used": "Atlanta",
+        "lat": 33.749,
+        "lon": -84.388,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://www.weather.gov/ffc/DeltaRemnants",
+          "source_name": "NWS Weather Forecast Office Peachtree City, GA",
+          "published_at": "2020-10-15T00:00:00Z",
+          "headline": "Delta Remnants",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "National Weather Service"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "...heavy rainfall... flooding... and multiple weak tornadoes.",
+            "source_url": "https://www.weather.gov/ffc/DeltaRemnants"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.74,
+        "category": 0.85,
+        "location": 0.7,
+        "summary_grounding": 0.65
+      },
+      "quality_flags": [
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Hurricane Delta remnants Georgia Oct 2020",
+        "fingerprint": "55dfc3350f4c5f2a3ae1d340d2ff7b24"
+      }
+    },
+    {
+      "event_id": "2020-10_us_louisiana_hurricane-zeta_landfall",
+      "title": "Hurricane Zeta makes landfall in Louisiana and moves inland across the southeastern United States",
+      "description": "Hurricane Zeta made landfall in southeast Louisiana on 28 Oct 2020 and then tracked inland across the southeastern United States. The storm produced damaging winds, storm surge, and heavy rain per the cited weather reporting and NWS event page.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2020-10-28T21:00:00.000Z",
+        "event_end": "2020-10-30T23:59:59.000Z",
+        "reported_at": "2020-10-29T00:00:00Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2020-10-28T21:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Louisiana, United States",
+        "jurisdiction_level": "state",
+        "admin1": "Louisiana",
+        "country": "US",
+        "capital_used": "Baton Rouge",
+        "lat": 30.4515,
+        "lon": -91.1871,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.65
+      },
+      "sources": [
+        {
+          "url": "https://www.weather.gov/lch/2020Zeta",
+          "source_name": "NWS Lake Charles, LA",
+          "published_at": "2020-10-29T00:00:00Z",
+          "headline": "2020 Hurricane Zeta",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.weather.com/storms/hurricane/news/2020-10-29-hurricane-zeta-tropical-storm-forecast-south-east",
+          "source_name": "The Weather Channel",
+          "published_at": "2020-10-29T00:00:00Z",
+          "headline": "Hurricane Zeta Makes Landfall, Damaging Winds, Surge and Power Outages Spread Inland",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "National Weather Service"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "coastal"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Hurricane Zeta made landfall near Cocodrie, Louisiana at 21:00 UTC on October 28, 2020.",
+            "source_url": "https://www.weather.gov/lch/2020Zeta"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.72,
+        "category": 0.85,
+        "location": 0.65,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Hurricane Zeta landfall Louisiana Oct 2020",
+        "fingerprint": "c8a4f3d7d6d9f0a9f0c6b97c08a8f0fd"
+      }
+    },
+    {
+      "event_id": "evt_20201030_aegean_eq_tsunami_samos_izmir",
+      "title": "Aegean Sea Mw 7.0 earthquake triggers tsunami impacting Samos (Greece) and Izmir region (Turkey)",
+      "description": "A magnitude 7.0 earthquake struck the eastern Aegean Sea on 30 October 2020 and generated a tsunami that affected coastal areas of Greece and Turkey, including Samos and the Izmir region.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2020-10-30T11:51:26.000Z",
+        "event_end": "2020-10-30T23:59:59.000Z",
+        "reported_at": "2020-10-30T00:00:00Z",
+        "time_confidence": 0.8,
+        "event_date_utc": "2020-10-30T11:51:26.000Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Samos, Greece",
+        "jurisdiction_level": "site",
+        "admin1": null,
+        "country": "GR",
+        "capital_used": null,
+        "lat": 37.754,
+        "lon": 26.9779,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.unesco.org/en/articles/serious-tsunami-hits-greece-and-turkey-after-70-earthquake",
+          "source_name": "UNESCO",
+          "published_at": "2020-10-30T00:00:00Z",
+          "headline": "Serious tsunami hits Greece and Turkey after 7.0 earthquake",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.mdpi.com/2077-1312/9/1/68",
+          "source_name": "MDPI (Journal of Marine Science and Engineering)",
+          "published_at": "2021-01-01T00:00:00Z",
+          "headline": "2077-1312/9/1/68",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "UNESCO"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Serious tsunami hits Greece and Turkey after 7.0 earthquake",
+            "source_url": "https://www.unesco.org/en/articles/serious-tsunami-hits-greece-and-turkey-after-70-earthquake"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.8,
+        "location": 0.55,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "2020-10-30 Aegean Sea earthquake tsunami Samos Izmir",
+        "fingerprint": "fp_20201030_aegean_eq_tsunami_samos"
+      }
+    },
+    {
+      "event_id": "evt_20201026_silverado_fire_orange_ca",
+      "title": "Silverado Fire ignites in Orange County, California, prompting evacuations",
+      "description": "The Silverado Fire ignited in Orange County, California on October 26, 2020 and spread amid strong winds, prompting evacuations. News coverage reported severe fire conditions and related impacts across parts of Southern California.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2020-10-26T13:47:00.000Z",
+        "event_end": "2020-10-31T23:59:59.000Z",
+        "reported_at": "2020-10-26T00:00:00Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2020-10-26T13:47:00.000Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Orange County (near Irvine), California, USA",
+        "jurisdiction_level": "site",
+        "admin1": "California",
+        "country": "US",
+        "capital_used": null,
+        "lat": 33.6846,
+        "lon": -117.8265,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://abc7.com/irvine-fire-silverado-orange-county-santiago-canyon/7370151/",
+          "source_name": "ABC7 (KABC)",
+          "published_at": "2020-10-26T00:00:00Z",
+          "headline": "Irvine fire: Silverado Fire grows to 2,000 acres, threatening homes in Orange County",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.theguardian.com/us-news/2020/oct/26/california-power-outages-high-winds-latest",
+          "source_name": "The Guardian",
+          "published_at": "2020-10-26T00:00:00Z",
+          "headline": "California braces for high winds as wildfires threaten and power shutoffs begin",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Silverado Fire ... in Orange County ... prompting evacuations",
+            "source_url": "https://abc7.com/irvine-fire-silverado-orange-county-santiago-canyon/7370151/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.75,
+        "location": 0.7,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "needs_dedupe_check",
+        "date_ambiguous",
+        "paywalled_or_partial"
+      ],
+      "dedupe": {
+        "cluster_hint": "Silverado Fire Orange County CA 2020-10",
+        "fingerprint": "silverado_fire_orange_county_ca_2020-10-26"
+      }
+    },
+    {
+      "event_id": "2020-10-us-wa-asian-giant-hornet-nest-discovered",
+      "title": "Asian giant hornet nest discovered in Washington state (first confirmed in U.S.)",
+      "description": "Officials and researchers reported finding a nest of Asian giant hornets in Washington state in October 2020. The discovery raised concerns about impacts to honeybees and related ecosystem services such as pollination.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2020-10-24T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2020-10-24T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Washington State, USA",
+        "jurisdiction_level": "state",
+        "admin1": "Washington",
+        "country": "US",
+        "capital_used": "Olympia",
+        "lat": 47.0379,
+        "lon": -122.9007,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.85
+      },
+      "sources": [
+        {
+          "url": "https://www.axios.com/2020/10/24/murder-hornets-washington-state-nest",
+          "source_name": "Axios",
+          "published_at": "2020-10-24T00:00:00.000Z",
+          "headline": "Murder hornets: First nest found in the U.S.",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [
+          "pollination"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "first Asian giant hornet nest discovered in the U.S., according to officials in Washington state",
+            "source_url": "https://www.axios.com/2020/10/24/murder-hornets-washington-state-nest"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.7,
+        "category": 0.75,
+        "location": 0.85,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "needs_dedupe_check",
+        "date_ambiguous",
+        "paywalled_or_partial"
+      ],
+      "dedupe": {
+        "cluster_hint": "asian-giant-hornet-nest-washington-2020-10",
+        "fingerprint": "fp_2020-10_asian-giant-hornet-nest_washington-us_2020-10-24"
+      }
+    },
+    {
+      "event_id": "evt_20201023_eu_climate_law_partial_general_approach",
+      "title": "EU Council agrees on large parts of proposed European Climate Law (climate-neutral EU by 2050)",
+      "description": "The Council of the European Union announced it reached agreement on large parts of the proposed European Climate Law. The proposal aims to enshrine a climate-neutral EU by 2050 and relates to EU target-setting and governance for emissions reductions.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "2020-10-23T17:00:00.000Z",
+        "event_end": "2020-10-23T23:59:59.000Z",
+        "reported_at": "2020-10-23T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2020-10-23T17:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "European Union",
+        "jurisdiction_level": "supranational",
+        "admin1": null,
+        "country": null,
+        "capital_used": "Brussels",
+        "lat": 50.8503,
+        "lon": 4.3517,
+        "precision": "supranational",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.8
+      },
+      "sources": [
+        {
+          "url": "https://www.consilium.europa.eu/en/press/press-releases/2020/10/23/european-climate-law-council-reaches-agreement-on-large-parts-of-the-proposal/",
+          "source_name": "Council of the European Union",
+          "published_at": "2020-10-23T00:00:00.000Z",
+          "headline": "European climate law: Council reaches agreement on large parts of the proposal",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Council of the European Union"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Council reaches agreement on large parts of the proposal",
+            "source_url": "https://www.consilium.europa.eu/en/press/press-releases/2020/10/23/european-climate-law-council-reaches-agreement-on-large-parts-of-the-proposal/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.74,
+        "category": 0.8,
+        "location": 0.8,
+        "summary_grounding": 0.7
+      },
+      "quality_flags": [
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "EU Climate Law partial general approach (Oct 2020)",
+        "fingerprint": "fp_evt_20201023_eu_climate_law_partial_general_approach"
+      }
+    },
+    {
+      "event_id": "evt_20201023_eu_biodiversity_strategy_2030_conclusions",
+      "title": "EU Council adopts conclusions endorsing EU Biodiversity Strategy for 2030",
+      "description": "The Council of the European Union adopted conclusions endorsing the EU Biodiversity Strategy for 2030. The conclusions back objectives and targets intended to put biodiversity on a path to recovery.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "2020-10-23T15:50:00.000Z",
+        "event_end": "2020-10-23T23:59:59.000Z",
+        "reported_at": "2020-10-23T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2020-10-23T15:50:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "European Union",
+        "jurisdiction_level": "supranational",
+        "admin1": null,
+        "country": null,
+        "capital_used": "Brussels",
+        "lat": 50.8503,
+        "lon": 4.3517,
+        "precision": "supranational",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.8
+      },
+      "sources": [
+        {
+          "url": "https://www.consilium.europa.eu/en/press/press-releases/2020/10/23/council-adopts-conclusions-on-the-eu-biodiversity-strategy-for-2030/",
+          "source_name": "Council of the European Union",
+          "published_at": "2020-10-23T00:00:00.000Z",
+          "headline": "Council adopts conclusions on the EU biodiversity strategy for 2030",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Council of the European Union"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "biodiversity"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Council adopts conclusions on the EU biodiversity strategy for 2030",
+            "source_url": "https://www.consilium.europa.eu/en/press/press-releases/2020/10/23/council-adopts-conclusions-on-the-eu-biodiversity-strategy-for-2030/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.74,
+        "category": 0.8,
+        "location": 0.8,
+        "summary_grounding": 0.7
+      },
+      "quality_flags": [
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "EU Council conclusions endorsing Biodiversity Strategy 2030 (Oct 2020)",
+        "fingerprint": "fp_evt_20201023_eu_biodiversity_strategy_2030_conclusions"
+      }
+    }
+  ]
+}

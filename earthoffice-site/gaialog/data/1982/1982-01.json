@@ -1,0 +1,1204 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_1982-01_normalize_2026-01-18T093406352Z",
+    "generated_utc": "2026-01-18T09:34:06.352Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "1982-01",
+    "window": {
+      "start_utc": "1982-01-01T00:00:00.000Z",
+      "end_utc": "1982-01-31T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "evt_19820108_tmi2_small_release_unusual_event",
+      "title": "Small radioactive release at Three Mile Island Unit 2 prompts brief 'unusual event'",
+      "description": "Officials reported a small release of radioactivity from Three Mile Island Unit 2. A low-level emergency classification ('unusual event') was declared and then canceled the same morning; officials said off-site monitors showed only background levels and posed no public health threat.",
+      "category_primary": "pollution_contamination",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "1982-01-08T12:00:00Z",
+        "event_end": "1982-01-08T12:00:00Z",
+        "reported_at": "1982-01-08T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1982-01-08T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Three Mile Island Nuclear Generating Station, Middletown, Pennsylvania, USA",
+        "jurisdiction_level": "site",
+        "admin1": "Pennsylvania",
+        "country": "US",
+        "capital_used": null,
+        "lat": 40.1534,
+        "lon": -76.7247,
+        "precision": "exact",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://www.upi.com/Archives/1982/01/08/Radiation-leaks-from-Three-Mile-Island-plant/1572379314000/",
+          "source_name": "UPI",
+          "published_at": "1982-01-08T00:00:00Z",
+          "headline": "Radiation leaks from Three Mile Island plant",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Three Mile Island Nuclear Generating Station"
+        ],
+        "substances": [
+          "radioactivity"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Officials reported a small release of radioactivity",
+            "source_url": "https://www.upi.com/Archives/1982/01/08/Radiation-leaks-from-Three-Mile-Island-plant/1572379314000/"
+          },
+          {
+            "quote": "A low-level emergency ('unusual event') was declared and later canceled",
+            "source_url": "https://www.upi.com/Archives/1982/01/08/Radiation-leaks-from-Three-Mile-Island-plant/1572379314000/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.75,
+        "location": 0.7,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "three-mile-island-unit-2-release-1982-01-08",
+        "fingerprint": "tmi_unit2_release_middletown_pa_1982-01-08"
+      }
+    },
+    {
+      "event_id": "19820103_sfbay_storm_flooding",
+      "title": "Jan 3–5, 1982 Pacific storm triggers flooding and slope failures in the San Francisco Bay Area",
+      "description": "A major Pacific winter storm brought very heavy rainfall to parts of the San Francisco Bay Area in early January 1982. The event led to extensive flooding and widespread slope failures and debris flows across the region.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1982-01-03T12:00:00Z",
+        "event_end": "1982-01-05T12:00:00Z",
+        "reported_at": "1982-01-01T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1982-01-03T12:00:00Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "San Francisco Bay Area, California, USA",
+        "jurisdiction_level": "state",
+        "admin1": "California",
+        "country": "US",
+        "capital_used": "Sacramento",
+        "lat": 38.5816,
+        "lon": -121.4944,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://pubs.usgs.gov/publication/wri884236",
+          "source_name": "USGS Publications Warehouse",
+          "published_at": "1982-01-01T00:00:00Z",
+          "headline": "wri884236 (USGS report/publication record)",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "USGS"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "major Pacific winter storm... very heavy rain... extensive flooding and widespread slope failures/debris flows",
+            "source_url": "https://pubs.usgs.gov/publication/wri884236"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.58,
+        "category": 0.7,
+        "location": 0.6,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "paywalled_or_partial",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "1982-01_sfbay_flooding_storm",
+        "fingerprint": "19820103_sfbay_storm_flooding|CA|1982-01-03"
+      }
+    },
+    {
+      "event_id": "19820110_conus_arctic_outbreak_1",
+      "title": "Arctic outbreak brings record cold to the eastern contiguous United States (Jan 10, 1982)",
+      "description": "An Arctic outbreak affected the eastern half of the contiguous United States in January 1982. The episode produced exceptional cold, including record minimum and record low maximum temperatures in many locations.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1982-01-10T12:00:00Z",
+        "event_end": "1982-01-10T12:00:00Z",
+        "reported_at": "1982-01-01T00:00:00Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "1982-01-10T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Eastern United States (CONUS)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.45
+      },
+      "sources": [
+        {
+          "url": "https://www.wpc.ncep.noaa.gov/training/jan1982.html",
+          "source_name": "NOAA Weather Prediction Center",
+          "published_at": "1982-01-01T00:00:00Z",
+          "headline": "January 1982 Weather (WPC training page)",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA",
+          "Weather Prediction Center (WPC)"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Arctic outbreak... brought exceptional cold... record minimum and record low maximum temperatures",
+            "source_url": "https://www.wpc.ncep.noaa.gov/training/jan1982.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.75,
+        "location": 0.45,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "1982-01_conus_arctic_outbreak",
+        "fingerprint": "19820110_conus_arctic_outbreak_1|US|1982-01-10"
+      }
+    },
+    {
+      "event_id": "19820117_conus_arctic_outbreak_2",
+      "title": "Second January 1982 Arctic outbreak affects the northeastern United States (Jan 17, 1982)",
+      "description": "A second Arctic outbreak in January 1982 brought extreme cold into the northeastern United States. Analyses noted unusually cold air aloft extending far south, associated with extreme surface temperature anomalies.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1982-01-17T12:00:00Z",
+        "event_end": "1982-01-17T12:00:00Z",
+        "reported_at": "1982-01-01T00:00:00Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "1982-01-17T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Northeastern United States (CONUS)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.4
+      },
+      "sources": [
+        {
+          "url": "https://www.wpc.ncep.noaa.gov/training/jan1982.html",
+          "source_name": "NOAA Weather Prediction Center",
+          "published_at": "1982-01-01T00:00:00Z",
+          "headline": "January 1982 Weather (WPC training page)",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA",
+          "Weather Prediction Center (WPC)"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "second Arctic outbreak... brunt of extreme cold into the Northeast... very cold 850 hPa temperatures extending unusually far south",
+            "source_url": "https://www.wpc.ncep.noaa.gov/training/jan1982.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.53,
+        "category": 0.75,
+        "location": 0.4,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "1982-01_conus_arctic_outbreak",
+        "fingerprint": "19820117_conus_arctic_outbreak_2|US|1982-01-17"
+      }
+    },
+    {
+      "event_id": "19820130_stlouis_blizzard",
+      "title": "Heavy snow and blizzard-like conditions impact the St. Louis region (Jan 30–31, 1982)",
+      "description": "A high-impact snow event brought blizzard-like conditions to the St. Louis metro area and surrounding parts of Missouri and Illinois in late January 1982. The storm caused heavy drifting snow, stranded motorists, and disrupted transportation and services.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1982-01-30T12:00:00Z",
+        "event_end": "1982-01-31T12:00:00Z",
+        "reported_at": "1982-01-01T00:00:00Z",
+        "time_confidence": 0.65,
+        "event_date_utc": "1982-01-30T12:00:00Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "St. Louis metro area (Missouri/Illinois, USA)",
+        "jurisdiction_level": "state",
+        "admin1": "Missouri",
+        "country": "US",
+        "capital_used": "Jefferson City",
+        "lat": 38.5767,
+        "lon": -92.1735,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.5
+      },
+      "sources": [
+        {
+          "url": "https://www.weather.gov/lsx/01_31_82",
+          "source_name": "US National Weather Service (NWS)",
+          "published_at": "1982-01-01T00:00:00Z",
+          "headline": "01/31/82 Snowstorm / Blizzard (NWS St. Louis page)",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "National Weather Service (NWS)"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "blizzard-like conditions... heavy drifting snow... stranded motorists... shutting down transport and services",
+            "source_url": "https://www.weather.gov/lsx/01_31_82"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.56,
+        "category": 0.75,
+        "location": 0.5,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "1982-01_stlouis_snow_blizzard",
+        "fingerprint": "19820130_stlouis_blizzard|MO|1982-01-30"
+      }
+    },
+    {
+      "event_id": "19820107_tc_chris_damia",
+      "title": "Severe Tropical Cyclone Chris moves west across the Indian Ocean; later renamed Damia (Jan 7–11, 1982)",
+      "description": "Severe Tropical Cyclone Chris formed in early January 1982 in the Australian region and tracked west across the Indian Ocean. After entering the Mauritius region late on January 11 it was renamed Damia; sources describe very severe intensity during its peak.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1982-01-07T12:00:00Z",
+        "event_end": "1982-01-11T12:00:00Z",
+        "reported_at": "1982-01-01T00:00:00Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "1982-01-07T12:00:00Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Indian Ocean (Australian region toward the Mauritius region)",
+        "jurisdiction_level": "supranational",
+        "admin1": null,
+        "country": null,
+        "capital_used": "Port Louis",
+        "lat": -20.1609,
+        "lon": 57.5012,
+        "precision": "supranational",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.35
+      },
+      "sources": [
+        {
+          "url": "https://www.bom.gov.au/cyclone/history/chris82.shtml",
+          "source_name": "Australian Bureau of Meteorology",
+          "published_at": "1982-01-01T00:00:00Z",
+          "headline": "Tropical Cyclone Chris (1982) (BoM history page)",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Australian Bureau of Meteorology"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "Indian Ocean"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "renamed Damia after moving into the Mauritius region late on Jan 11",
+            "source_url": "https://www.bom.gov.au/cyclone/history/chris82.shtml"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.5,
+        "category": 0.75,
+        "location": 0.35,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "1982-01_tc_chris_damia",
+        "fingerprint": "19820107_tc_chris_damia|port_louis_proxy|1982-01-07"
+      }
+    },
+    {
+      "event_id": "evt_19820109_miramichi_nb_ca_eqseq",
+      "title": "Miramichi region, New Brunswick earthquake sequence (mainshock and aftershock)",
+      "description": "A moderate earthquake struck the Miramichi region of north-central New Brunswick, Canada on January 9, 1982, followed hours later by a significant aftershock. Reports indicate the sequence generated additional aftershocks through the month and was among the strongest to affect the Canadian Maritimes in decades.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1982-01-09T12:00:00Z",
+        "event_end": "1982-01-09T12:00:00Z",
+        "reported_at": "1982-01-09T12:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1982-01-09T12:00:00Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Miramichi region, New Brunswick, Canada",
+        "jurisdiction_level": "state",
+        "admin1": "New Brunswick",
+        "country": "CA",
+        "capital_used": "Fredericton",
+        "lat": 45.9636,
+        "lon": -66.6431,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.75
+      },
+      "sources": [
+        {
+          "url": "https://www.earthquakescanada.nrcan.gc.ca/historic-historique/events/19820109-en.php",
+          "source_name": "Earthquakes Canada (NRCan)",
+          "published_at": "1982-01-09T00:00:00Z",
+          "headline": "Historic earthquake event (1982-01-09)",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.usgs.gov/publications/a-teleseismic-analysis-new-brunswick-earthquake-january-9-1982",
+          "source_name": "USGS",
+          "published_at": "1982-01-01T00:00:00Z",
+          "headline": "A teleseismic analysis of the New Brunswick earthquake, January 9, 1982",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Earthquakes Canada (NRCan)",
+          "USGS"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Historic earthquake event ... January 9, 1982",
+            "source_url": "https://www.earthquakescanada.nrcan.gc.ca/historic-historique/events/19820109-en.php"
+          },
+          {
+            "quote": "... New Brunswick earthquake, January 9, 1982",
+            "source_url": "https://www.usgs.gov/publications/a-teleseismic-analysis-new-brunswick-earthquake-january-9-1982"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.74,
+        "category": 0.9,
+        "location": 0.75,
+        "summary_grounding": 0.65
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "1982-01-09 Miramichi NB earthquake sequence",
+        "fingerprint": "fp_miramichi_nb_ca_1982-01-09"
+      }
+    },
+    {
+      "event_id": "evt_19820111_catanduanes_ph_eq",
+      "title": "Catanduanes Island (Philippines) strong earthquake",
+      "description": "A strong earthquake struck near Catanduanes Island in the Philippines on January 11, 1982. News reports said it was widely felt, including in Manila, and described damage in/near Virac and some injuries from broken glass.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1982-01-11T06:10:06Z",
+        "event_end": "1982-01-11T06:10:06Z",
+        "reported_at": "1982-01-11T06:10:06Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "1982-01-11T06:10:06Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Catanduanes Island, Philippines",
+        "jurisdiction_level": "state",
+        "admin1": "Catanduanes",
+        "country": "PH",
+        "capital_used": "Virac",
+        "lat": 13.5848,
+        "lon": 124.2374,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://www.upi.com/Archives/1982/01/11/Strong-quake-rocks-Philippines/1728379573200/",
+          "source_name": "UPI",
+          "published_at": "1982-01-11T00:00:00Z",
+          "headline": "Strong quake rocks Philippines",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.usgs.gov/publications/earthquakes-january-february-1982",
+          "source_name": "USGS",
+          "published_at": "1982-02-01T00:00:00Z",
+          "headline": "Earthquakes, January-February 1982",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "UPI",
+          "USGS"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Strong quake rocks Philippines",
+            "source_url": "https://www.upi.com/Archives/1982/01/11/Strong-quake-rocks-Philippines/1728379573200/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.7,
+        "category": 0.9,
+        "location": 0.7,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "1982-01-11 Catanduanes Philippines earthquake",
+        "fingerprint": "fp_catanduanes_ph_1982-01-11"
+      }
+    },
+    {
+      "event_id": "evt_19820118_lemnos_gr_eq",
+      "title": "Aegean Sea near Lemnos (Greece) earthquake felt widely",
+      "description": "A strong earthquake occurred near the Aegean island of Lemnos on January 18, 1982, and was reported felt across much of Greece, including Athens. Reports described public alarm and evacuations, with no confirmed injuries at the time of reporting.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1982-01-18T12:00:00Z",
+        "event_end": "1982-01-18T12:00:00Z",
+        "reported_at": "1982-01-18T12:00:00Z",
+        "time_confidence": 0.5,
+        "event_date_utc": "1982-01-18T12:00:00Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Greece (felt widely; epicenter near Lemnos)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "GR",
+        "capital_used": "Athens",
+        "lat": 37.9838,
+        "lon": 23.7275,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.upi.com/Archives/1982/01/18/A-strong-earthquake-shook-Athens-and-most-parts-of/1660380178000/",
+          "source_name": "UPI",
+          "published_at": "1982-01-18T00:00:00Z",
+          "headline": "A strong earthquake shook Athens and most parts of ...",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.usgs.gov/publications/earthquakes-january-february-1982",
+          "source_name": "USGS",
+          "published_at": "1982-02-01T00:00:00Z",
+          "headline": "Earthquakes, January-February 1982",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "UPI",
+          "USGS"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "A strong earthquake shook Athens and most parts of",
+            "source_url": "https://www.upi.com/Archives/1982/01/18/A-strong-earthquake-shook-Athens-and-most-parts-of/1660380178000/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.63,
+        "category": 0.9,
+        "location": 0.6,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "1982-01-18 Lemnos/Aegean Greece earthquake",
+        "fingerprint": "fp_greece_1982-01-18"
+      }
+    },
+    {
+      "event_id": "evt_19820112_enola_ar_us_swarm",
+      "title": "Enola, Arkansas (USA) earthquake swarm begins",
+      "description": "An earthquake swarm began near Enola in Faulkner County, Arkansas on January 12, 1982. The swarm produced many small earthquakes and remained a notable seismic episode in the state, with larger events occurring later in January according to referenced summaries.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1982-01-12T12:00:00Z",
+        "event_end": "1982-01-12T12:00:00Z",
+        "reported_at": "1982-01-12T12:00:00Z",
+        "time_confidence": 0.4,
+        "event_date_utc": "1982-01-12T12:00:00Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Arkansas, United States (swarm near Enola, Faulkner County)",
+        "jurisdiction_level": "state",
+        "admin1": "Arkansas",
+        "country": "US",
+        "capital_used": "Little Rock",
+        "lat": 34.7465,
+        "lon": -92.2896,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.65
+      },
+      "sources": [
+        {
+          "url": "https://www.geology.arkansas.gov/geohazards/earthquakes-in-arkansas.html",
+          "source_name": "Arkansas Geological Survey",
+          "published_at": "1982-01-01T00:00:00Z",
+          "headline": "Earthquakes in Arkansas",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.usgs.gov/publications/earthquakes-january-february-1982",
+          "source_name": "USGS",
+          "published_at": "1982-02-01T00:00:00Z",
+          "headline": "Earthquakes, January-February 1982",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Arkansas Geological Survey",
+          "USGS"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Earthquakes in Arkansas",
+            "source_url": "https://www.geology.arkansas.gov/geohazards/earthquakes-in-arkansas.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.9,
+        "location": 0.65,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "1982-01 Enola Arkansas earthquake swarm onset",
+        "fingerprint": "fp_arkansas_us_1982-01-12"
+      }
+    },
+    {
+      "event_id": "evt_19820123_xizang_cn_eq_dropped",
+      "title": "Western Xizang (Tibet), China earthquake (dropped: unverifiable source)",
+      "description": "Dropped from ingestion because the only provided URL is a third-party event listing (earthquaketrack.com) without an authoritative primary/archival source link in the draft.",
+      "category_primary": "geological",
+      "polarity": "unclear",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1982-01-23T17:37:30Z",
+        "time_confidence": 0.1,
+        "event_date_utc": null,
+        "event_date_precision": "unknown"
+      },
+      "location": {
+        "name": "China",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "CN",
+        "capital_used": "Beijing",
+        "lat": 39.9042,
+        "lon": 116.4074,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.2
+      },
+      "sources": [
+        {
+          "url": "https://earthquaketrack.com/quakes/1982-01-23-17-37-30-utc-6-5-33",
+          "source_name": "earthquaketrack.com",
+          "published_at": "1982-01-23T00:00:00Z",
+          "headline": "Quake listing (1982-01-23 17:37:30 UTC)",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.15,
+        "category": 0.4,
+        "location": 0.2,
+        "summary_grounding": 0.1
+      },
+      "quality_flags": [
+        "secondary_sources_only",
+        "low_confidence_category",
+        "low_confidence_location",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": null,
+        "fingerprint": null
+      }
+    },
+    {
+      "event_id": "evt_19820126_ocean-beach_strahan_sperm-whales_14_dead",
+      "title": "Mass stranding: 14 sperm whales found dead at Ocean Beach near Strahan, Tasmania",
+      "description": "A record describes 14 sperm whales stranded at Ocean Beach near Strahan, Tasmania. The record indicates all 14 whales died and the carcasses were already decomposing at the time they were recorded.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1982-01-26T12:00:00Z",
+        "event_end": "1982-01-26T12:00:00Z",
+        "reported_at": "1982-01-26T12:00:00Z",
+        "time_confidence": 0.4,
+        "event_date_utc": "1982-01-26T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Ocean Beach near Strahan, Tasmania, Australia",
+        "jurisdiction_level": "site",
+        "admin1": "Tasmania",
+        "country": "AU",
+        "capital_used": null,
+        "lat": -42.15,
+        "lon": 145.3167,
+        "precision": "neighborhood",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.35
+      },
+      "sources": [
+        {
+          "url": "https://eurekamag.com/research/037/607/037607505.php",
+          "source_name": "EurekaMag",
+          "published_at": "1982-01-26T12:00:00Z",
+          "headline": "Mass stranding: 14 sperm whales found dead (already decomposing) at Ocean Beach near Strahan, Tasmania, Australia",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [
+          "Southern Ocean / Tasmanian coastal waters"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "14 sperm whales ... stranded at Ocean Beach near Strahan, Tasmania, Australia; all dead; carcasses already decomposing.",
+            "source_url": "https://eurekamag.com/research/037/607/037607505.php"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.42,
+        "category": 0.75,
+        "location": 0.35,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "secondary_sources_only",
+        "paywalled_or_partial"
+      ],
+      "dedupe": {
+        "cluster_hint": "AU_TAS_strahan_whale_stranding_1982-01-26",
+        "fingerprint": "fp_19820126_ocean_beach_strahan_sperm_whale_14"
+      }
+    },
+    {
+      "event_id": "1982-01-08_us_epa_47fr953_hw_tsdf_part264_correction",
+      "title": "EPA publishes correction affecting hazardous-waste TSDF standards (40 CFR Part 264)",
+      "description": "The U.S. Environmental Protection Agency posted a Federal Register notice (47 FR 953, dated Jan. 8, 1982) described as an interim rule/correction affecting standards for hazardous-waste treatment, storage, and disposal facilities under 40 CFR Part 264.",
+      "category_primary": "policy_regulation",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "1982-01-08T12:00:00Z",
+        "event_end": "1982-01-08T12:00:00Z",
+        "reported_at": "1982-01-08T12:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1982-01-08T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States (federal)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.75
+      },
+      "sources": [
+        {
+          "url": "https://www.epa.gov/hwpermitting/list-federal-register-notices-pertaining-hazardous-waste",
+          "source_name": "U.S. Environmental Protection Agency",
+          "published_at": "1982-01-08T12:00:00Z",
+          "headline": "List of Federal Register Notices Pertaining to Hazardous Waste",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Environmental Protection Agency (EPA)"
+        ],
+        "substances": [
+          "hazardous waste"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Federal Register citation 47 FR 953, dated Jan. 8, 1982.",
+            "source_url": "https://www.epa.gov/hwpermitting/list-federal-register-notices-pertaining-hazardous-waste"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.8,
+        "location": 0.75,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "secondary_sources_only",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "epa_hw_tsdf_federal_register_1982_01",
+        "fingerprint": "epa_p264_correction_47fr953_us_1982-01-08"
+      }
+    },
+    {
+      "event_id": "1982-01-11_us_epa_47fr1254_hw_tsdf_part265_interim_status_amendments",
+      "title": "EPA publishes interim rule amending interim-status hazardous-waste TSDF standards (40 CFR Part 265)",
+      "description": "The U.S. Environmental Protection Agency posted a Federal Register notice (47 FR 1254, dated Jan. 11, 1982) described as an interim rule with interim final amendments to the interim-status standards for hazardous-waste TSDFs under 40 CFR Part 265.",
+      "category_primary": "policy_regulation",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "1982-01-11T12:00:00Z",
+        "event_end": "1982-01-11T12:00:00Z",
+        "reported_at": "1982-01-11T12:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1982-01-11T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States (federal)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.75
+      },
+      "sources": [
+        {
+          "url": "https://www.epa.gov/hwpermitting/list-federal-register-notices-pertaining-hazardous-waste",
+          "source_name": "U.S. Environmental Protection Agency",
+          "published_at": "1982-01-11T12:00:00Z",
+          "headline": "List of Federal Register Notices Pertaining to Hazardous Waste",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Environmental Protection Agency (EPA)"
+        ],
+        "substances": [
+          "hazardous waste"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Federal Register citation 47 FR 1254, dated Jan. 11, 1982.",
+            "source_url": "https://www.epa.gov/hwpermitting/list-federal-register-notices-pertaining-hazardous-waste"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.8,
+        "location": 0.75,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "secondary_sources_only",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "epa_hw_tsdf_federal_register_1982_01",
+        "fingerprint": "epa_p265_interim_47fr1254_us_1982-01-11"
+      }
+    },
+    {
+      "event_id": "1982-01-27_us_eo12342_environmental_safeguards_animal_damage_control",
+      "title": "Executive Order 12342 signed on environmental safeguards for animal damage control on federal lands",
+      "description": "President Ronald Reagan signed Executive Order 12342, titled “Environmental Safeguards for Animal Damage Control on Federal Lands,” which revoked Executive Order 11643 (as amended) and addressed predator (animal damage) control on federal lands with stated environmental safeguards.",
+      "category_primary": "policy_regulation",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "1982-01-27T12:00:00Z",
+        "event_end": "1982-01-27T12:00:00Z",
+        "reported_at": "1982-01-27T12:00:00Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "1982-01-27T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States (federal)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.75
+      },
+      "sources": [
+        {
+          "url": "https://www.reaganlibrary.gov/archives/speech/executive-order-12342-environmental-safeguards-animal-damage-control-federal-lands",
+          "source_name": "Ronald Reagan Presidential Library & Museum",
+          "published_at": "1982-01-27T12:00:00Z",
+          "headline": "Executive Order 12342—Environmental Safeguards for Animal Damage Control on Federal Lands",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "The White House",
+          "Ronald Reagan Presidential Administration"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": [
+          "Ronald Reagan"
+        ]
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Executive Order 12342—Environmental Safeguards for Animal Damage Control on Federal Lands.",
+            "source_url": "https://www.reaganlibrary.gov/archives/speech/executive-order-12342-environmental-safeguards-animal-damage-control-federal-lands"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.74,
+        "category": 0.75,
+        "location": 0.75,
+        "summary_grounding": 0.65
+      },
+      "quality_flags": [
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "eo12342_predator_control_us_1982_01",
+        "fingerprint": "eo12342_us_1982-01-27"
+      }
+    },
+    {
+      "event_id": "1982-01-29_us_fws_press_release_predator_control_eo",
+      "title": "U.S. Fish & Wildlife Service announces new executive order on predator control safeguards",
+      "description": "The U.S. Fish & Wildlife Service published a press release (dated Jan. 29, 1982) stating that a new executive order was issued to permit predator control under statutory environmental safeguards.",
+      "category_primary": "policy_regulation",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "1982-01-29T12:00:00Z",
+        "event_end": "1982-01-29T12:00:00Z",
+        "reported_at": "1982-01-29T12:00:00Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "1982-01-29T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.75
+      },
+      "sources": [
+        {
+          "url": "https://www.fws.gov/press-release/1982-01/new-executive-order-issued-permit-effective-predator-control-under-statutory",
+          "source_name": "U.S. Fish & Wildlife Service",
+          "published_at": "1982-01-29T12:00:00Z",
+          "headline": "New executive order issued to permit effective predator control under statutory environmental safeguards",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.fws.gov/media/new-executive-order-issued-permit-effective-predator-control-under-statutory-environmental",
+          "source_name": "U.S. Fish & Wildlife Service",
+          "published_at": "1982-01-29T12:00:00Z",
+          "headline": "New executive order issued to permit effective predator control under statutory environmental safeguards",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Fish & Wildlife Service"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "New executive order issued to permit effective predator control under statutory environmental safeguards.",
+            "source_url": "https://www.fws.gov/press-release/1982-01/new-executive-order-issued-permit-effective-predator-control-under-statutory"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.72,
+        "category": 0.75,
+        "location": 0.75,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "eo12342_predator_control_us_1982_01",
+        "fingerprint": "fws_press_predator_control_us_1982-01-29"
+      }
+    }
+  ]
+}

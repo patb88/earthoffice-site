@@ -1,0 +1,747 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_2011-12_normalize_2026-01-16T043105724Z",
+    "generated_utc": "2026-01-16T04:31:05.724Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "2011-12",
+    "window": {
+      "start_utc": "2011-12-01T00:00:00.000Z",
+      "end_utc": "2011-12-31T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "2011-12_pollution_contamination_suncor_sand_creek_commerce_city",
+      "title": "Suncor refinery release contaminated Sand Creek near Commerce City, Colorado",
+      "description": "Reports in early December 2011 described a petroleum product from Suncor’s Commerce City refinery seeping into Sand Creek near its confluence with the South Platte River. Response actions included containment and cleanup efforts, alongside public reporting about potential pollutants in affected waters.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2011-12-01T00:00:00.000Z",
+        "event_end": "2011-12-07T23:59:59.000Z",
+        "reported_at": "2011-12-07T00:00:00.000Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "2011-12-07T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Commerce City, Colorado, USA (Sand Creek near confluence with South Platte River)",
+        "jurisdiction_level": "city",
+        "admin1": "Colorado",
+        "country": "US",
+        "capital_used": null,
+        "lat": 39.8083,
+        "lon": -104.9339,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.summitdaily.com/news/underground-pipe-eyed-in-seepage-into-denvers-sand-creek/",
+          "source_name": "Summit Daily",
+          "published_at": "2011-12-01T00:00:00.000Z",
+          "headline": "Underground pipe eyed in seepage into Denver’s Sand Creek",
+          "byline": null,
+          "accessed_utc": "2011-12-01T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://coloradocommunitymedia.com/2011/12/07/suncor-energy-contains-sand-creek-spill/",
+          "source_name": "Colorado Community Media",
+          "published_at": "2011-12-07T00:00:00.000Z",
+          "headline": "Suncor Energy contains Sand Creek spill",
+          "byline": null,
+          "accessed_utc": "2011-12-07T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.nrdc.org/bio/anthony-swift/suncor-spill-south-platte-river-contamination-reminder-weaknesses-spill-detection",
+          "source_name": "NRDC",
+          "published_at": "2011-12-01T00:00:00.000Z",
+          "headline": "Suncor Spill and South Platte River Contamination: Reminder of Weaknesses in Spill Detection",
+          "byline": "Anthony Swift",
+          "accessed_utc": "2011-12-01T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Suncor"
+        ],
+        "substances": [
+          "petroleum product",
+          "benzene"
+        ],
+        "ecosystems": [
+          "Sand Creek",
+          "South Platte River"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "seeping into Sand Creek near its confluence with the South Platte River",
+            "source_url": "https://www.summitdaily.com/news/underground-pipe-eyed-in-seepage-into-denvers-sand-creek/"
+          },
+          {
+            "quote": "contains Sand Creek spill",
+            "source_url": "https://coloradocommunitymedia.com/2011/12/07/suncor-energy-contains-sand-creek-spill/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.75,
+        "location": 0.6,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "needs_dedupe_check",
+        "date_ambiguous",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "Suncor Sand Creek seepage Commerce City 2011-12",
+        "fingerprint": "fp_2011-12_suncor_sandcreek_commercecity"
+      }
+    },
+    {
+      "event_id": "2011-12_pollution_contamination_noaa_dwh_atmospheric_plume",
+      "title": "NOAA reported study findings on Deepwater Horizon atmospheric pollution plume",
+      "description": "A NOAA news release dated December 19, 2011 reported results from a NOAA-led study on air pollution from the Deepwater Horizon oil spill. The release stated the spill generated an atmospheric plume with pollutants compared to those from a large urban area, with potential implications for ozone and particulate matter depending on conditions.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2011-12-19T00:00:00.000Z",
+        "event_end": "2011-12-19T23:59:59.000Z",
+        "reported_at": "2011-12-19T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2011-12-19T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Gulf of Mexico / U.S. Gulf Coast (study report)",
+        "jurisdiction_level": "supranational",
+        "admin1": null,
+        "country": null,
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "proxy",
+        "location_basis": "institution_proxy",
+        "location_confidence": 0.35
+      },
+      "sources": [
+        {
+          "url": "https://csl.noaa.gov/news/2011/109_1219.html",
+          "source_name": "NOAA Chemical Sciences Laboratory",
+          "published_at": "2011-12-19T00:00:00.000Z",
+          "headline": "Study finds Gulf oil spill created air pollution plume comparable to a large city",
+          "byline": null,
+          "accessed_utc": "2011-12-19T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "Gulf of Mexico"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "created an air pollution plume comparable to a large city",
+            "source_url": "https://csl.noaa.gov/news/2011/109_1219.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.7,
+        "location": 0.35,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "low_confidence_location"
+      ],
+      "dedupe": {
+        "cluster_hint": "NOAA Deepwater Horizon atmospheric plume study release 2011-12-19",
+        "fingerprint": "fp_2011-12_noaa_dwh_atmospheric_plume"
+      }
+    },
+    {
+      "event_id": "evt_201112_washi_mindanao_floods",
+      "title": "Tropical Storm Washi (Sendong) causes catastrophic flooding and landslides in Mindanao, Philippines",
+      "description": "Heavy rains from Tropical Storm Washi on December 16–17, 2011 triggered deadly flash floods and landslides in Mindanao, with major impacts in and around Cagayan de Oro and Iligan and widespread destruction and displacement.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2011-12-16T00:00:00.000Z",
+        "event_end": "2011-12-17T23:59:59.000Z",
+        "reported_at": "2011-12-01T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2011-12-16T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Mindanao (Cagayan de Oro and Iligan area), Philippines",
+        "jurisdiction_level": "site",
+        "admin1": null,
+        "country": "PH",
+        "capital_used": null,
+        "lat": 8.4542,
+        "lon": 124.6319,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://science.nasa.gov/earth/earth-observatory/floods-from-tropical-storm-washi-76710/",
+          "source_name": "NASA Earth Observatory",
+          "published_at": "2011-12-01T00:00:00Z",
+          "headline": "Floods from Tropical Storm Washi",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://gpm.nasa.gov/mission-updates/trmm-news/philippines-devastated-tropical-storm-washi",
+          "source_name": "NASA Global Precipitation Measurement (GPM) / TRMM News",
+          "published_at": "2011-12-01T00:00:00Z",
+          "headline": "Philippines devastated by Tropical Storm Washi",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://science.nasa.gov/earth/earth-observatory/flooding-from-tropical-storm-washi-76780/",
+          "source_name": "NASA Earth Observatory",
+          "published_at": "2011-12-01T00:00:00Z",
+          "headline": "Flooding from Tropical Storm Washi",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NASA Earth Observatory",
+          "NASA GPM"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Heavy rains ... triggered flash floods and landslides in Mindanao.",
+            "source_url": "https://science.nasa.gov/earth/earth-observatory/floods-from-tropical-storm-washi-76710/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.85,
+        "location": 0.55,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Tropical Storm Washi flooding Mindanao Dec 2011",
+        "fingerprint": "washi_mindanao_2011-12-16"
+      }
+    },
+    {
+      "event_id": "evt_201112_thane_landfall_india",
+      "title": "Cyclone Thane makes landfall in southeastern India",
+      "description": "Tropical Cyclone Thane formed on December 25, 2011 and later made landfall in southeastern India, causing fatalities and damaging homes, crops, and infrastructure while disrupting power and water supplies.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2011-12-25T00:00:00.000Z",
+        "event_end": "2011-12-30T23:59:59.000Z",
+        "reported_at": "2011-12-01T00:00:00Z",
+        "time_confidence": 0.5,
+        "event_date_utc": "2011-12-25T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Puducherry–Tamil Nadu region, India",
+        "jurisdiction_level": "site",
+        "admin1": "Tamil Nadu",
+        "country": "IN",
+        "capital_used": null,
+        "lat": 11.9416,
+        "lon": 79.8083,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.5
+      },
+      "sources": [
+        {
+          "url": "https://earthobservatory.nasa.gov/images/76859/tropical-cyclone-thane",
+          "source_name": "NASA Earth Observatory",
+          "published_at": "2011-12-01T00:00:00Z",
+          "headline": "Tropical Cyclone Thane",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NASA Earth Observatory"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Tropical Cyclone Thane ... made landfall in southeastern India.",
+            "source_url": "https://earthobservatory.nasa.gov/images/76859/tropical-cyclone-thane"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.58,
+        "category": 0.85,
+        "location": 0.5,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "Cyclone Thane landfall Dec 2011 India",
+        "fingerprint": "thane_southeast_india_2011-12-25"
+      }
+    },
+    {
+      "event_id": "evt_201112_australia_bom_climate_summary",
+      "title": "Australia climate summary for December 2011 reports above-normal rainfall and severe weather",
+      "description": "Australia’s Bureau of Meteorology reported that national rainfall in December 2011 was above normal, with very wet conditions in parts of Western Australia and notable severe weather including heavy rain and thunderstorms in multiple regions.",
+      "category_primary": "weather_climate",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "2011-12-01T00:00:00.000Z",
+        "event_end": "2011-12-31T23:59:59.000Z",
+        "reported_at": "2011-12-01T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": null,
+        "event_date_precision": "month"
+      },
+      "location": {
+        "name": "Australia",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "AU",
+        "capital_used": "Canberra",
+        "lat": -35.2809,
+        "lon": 149.13,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.9
+      },
+      "sources": [
+        {
+          "url": "https://www.bom.gov.au/climate/current/month/aus/archive/201112.summary.shtml",
+          "source_name": "Australian Bureau of Meteorology",
+          "published_at": "2011-12-01T00:00:00Z",
+          "headline": "Monthly climate summary for Australia: December 2011",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Australian Bureau of Meteorology"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Monthly climate summary for Australia: December 2011.",
+            "source_url": "https://www.bom.gov.au/climate/current/month/aus/archive/201112.summary.shtml"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.85,
+        "location": 0.9,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "secondary_sources_only",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "BoM Australia monthly climate summary Dec 2011",
+        "fingerprint": "australia_bom_2011-12"
+      }
+    },
+    {
+      "event_id": "evt_201112_el-hierro_submarine-eruption_quieting",
+      "title": "El Hierro submarine eruption activity reported as subsiding",
+      "description": "NASA Earth Observatory reported ongoing submarine eruption activity off El Hierro near La Restinga, including discolored water and continued tremors. The report noted that by mid-December 2011 the eruption and seismicity appeared to be quieting.",
+      "category_primary": "geological",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "2011-12-16T00:00:00.000Z",
+        "event_end": "2011-12-16T23:59:59.000Z",
+        "reported_at": "2011-12-16T00:00:00.000Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "2011-12-16T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Off La Restinga, El Hierro, Canary Islands, Spain",
+        "jurisdiction_level": "site",
+        "admin1": null,
+        "country": "ES",
+        "capital_used": null,
+        "lat": 27.641,
+        "lon": -18.008,
+        "precision": "exact",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://earthobservatory.nasa.gov/images/76717amp/tremors-eruption-at-el-hierro-subsiding",
+          "source_name": "NASA Earth Observatory",
+          "published_at": "2011-12-16T00:00:00.000Z",
+          "headline": "Tremors & Eruption at El Hierro Subsiding",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://science.nasa.gov/earth/earth-observatory/tremors-eruption-at-el-hierro-subsiding-76717/",
+          "source_name": "NASA Science (Earth Observatory)",
+          "published_at": "2011-12-16T00:00:00.000Z",
+          "headline": "Tremors & Eruption at El Hierro Subsiding",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NASA Earth Observatory"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "continued discolored water and tremors... signs the eruption and seismicity appeared to be quieting",
+            "source_url": "https://earthobservatory.nasa.gov/images/76717amp/tremors-eruption-at-el-hierro-subsiding"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.8,
+        "location": 0.55,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "El Hierro submarine eruption subsiding (mid-Dec 2011)",
+        "fingerprint": "fp_20111216_el-hierro_submarine-eruption_subsiding"
+      }
+    },
+    {
+      "event_id": "evt_201112_durban_platform_cop17",
+      "title": "COP17 concludes with adoption of the Durban Platform package of decisions",
+      "description": "UN climate negotiations in Durban concluded with adoption of decisions referred to as the Durban Platform. The outcome included launching work toward a future legal instrument applicable to all parties and advancing a second Kyoto Protocol commitment period, alongside steps related to mechanisms such as the Green Climate Fund.",
+      "category_primary": "policy_regulation",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "2011-12-10T00:00:00.000Z",
+        "event_end": "2011-12-11T23:59:59.000Z",
+        "reported_at": "2011-12-10T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2011-12-10T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Durban, South Africa",
+        "jurisdiction_level": "city",
+        "admin1": "KwaZulu-Natal",
+        "country": "ZA",
+        "capital_used": null,
+        "lat": -29.8587,
+        "lon": 31.0218,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.8
+      },
+      "sources": [
+        {
+          "url": "https://www.un.org/sg/en/content/sg/statement/2011-12-10/statement-attributable-the-spokesperson-of-the-un-secretary-general-the-outcome-of-the-durban-climate-change-conference",
+          "source_name": "United Nations (Secretary-General)",
+          "published_at": "2011-12-10T00:00:00.000Z",
+          "headline": "Statement attributable to the Spokesperson of the UN Secretary-General on the outcome of the Durban Climate Change Conference",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://climate.ec.europa.eu/news-other-reads/news/durban-conference-delivers-breakthrough-climate-2011-12-11_en",
+          "source_name": "European Commission (Climate Action)",
+          "published_at": "2011-12-11T00:00:00.000Z",
+          "headline": "Durban conference delivers breakthrough on climate",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://sdg.iisd.org/news/cop-17-concludes-with-adoption-of-the-durban-platform/",
+          "source_name": "IISD (SDG Knowledge Hub)",
+          "published_at": "2011-12-11T00:00:00.000Z",
+          "headline": "COP 17 Concludes with Adoption of the Durban Platform",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "UNFCCC",
+          "United Nations"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "the outcome of the Durban climate change conference",
+            "source_url": "https://www.un.org/sg/en/content/sg/statement/2011-12-10/statement-attributable-the-spokesperson-of-the-un-secretary-general-the-outcome-of-the-durban-climate-change-conference"
+          },
+          {
+            "quote": "COP 17 concludes with adoption of the Durban Platform",
+            "source_url": "https://sdg.iisd.org/news/cop-17-concludes-with-adoption-of-the-durban-platform/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.72,
+        "category": 0.9,
+        "location": 0.8,
+        "summary_grounding": 0.65
+      },
+      "quality_flags": [
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "UNFCCC COP17 Durban Platform outcome",
+        "fingerprint": "fp_cop17_durban_platform_2011-12-10_durban_za"
+      }
+    },
+    {
+      "event_id": "evt_201112_csapr_supplemental_ozone_season_nox",
+      "title": "EPA finalizes CSAPR supplemental action adding five states to ozone-season NOx program",
+      "description": "The U.S. Environmental Protection Agency finalized a supplemental action under the Cross-State Air Pollution Rule in December 2011. The action added Iowa, Michigan, Missouri, Oklahoma, and Wisconsin to the ozone-season NOx program and included a determination regarding Kansas related to interstate transport of ozone pollution.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "2011-12-15T00:00:00.000Z",
+        "event_end": "2011-12-15T23:59:59.000Z",
+        "reported_at": "2011-12-15T00:00:00.000Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "2011-12-15T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.epa.gov/Cross-State-Air-Pollution/cross-state-air-pollution-rule-supplemental-rules",
+          "source_name": "U.S. Environmental Protection Agency (EPA)",
+          "published_at": "2011-12-15T00:00:00.000Z",
+          "headline": "Cross-State Air Pollution Rule (CSAPR) Supplemental Rules",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Environmental Protection Agency (EPA)"
+        ],
+        "substances": [
+          "NOx",
+          "ozone"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Cross-State Air Pollution Rule (CSAPR) Supplemental Rules",
+            "source_url": "https://www.epa.gov/Cross-State-Air-Pollution/cross-state-air-pollution-rule-supplemental-rules"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.85,
+        "location": 0.6,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "paywalled_or_partial"
+      ],
+      "dedupe": {
+        "cluster_hint": "EPA CSAPR supplemental ozone-season NOx program (Dec 2011)",
+        "fingerprint": "fp_epa_csapr_supplemental_2011-12-15_us"
+      }
+    },
+    {
+      "event_id": "evt_201112_mats_final_rule_power_plants",
+      "title": "EPA finalizes Mercury and Air Toxics Standards (MATS) for power plants",
+      "description": "The U.S. Environmental Protection Agency finalized the Mercury and Air Toxics Standards (MATS) for coal- and oil-fired electric generating units in December 2011. The standards set national limits for hazardous air pollutants including mercury and other toxic emissions from power plants.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "2011-12-16T00:00:00.000Z",
+        "event_end": "2011-12-16T23:59:59.000Z",
+        "reported_at": "2011-12-16T00:00:00.000Z",
+        "time_confidence": 0.45,
+        "event_date_utc": "2011-12-16T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.epa.gov/enforcement/enforcement-response-policy-mercury-and-air-toxics-standard-mats",
+          "source_name": "U.S. Environmental Protection Agency (EPA)",
+          "published_at": "2011-12-16T00:00:00.000Z",
+          "headline": "Enforcement Response Policy: Mercury and Air Toxics Standard (MATS)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.epa.gov/mercury/epa-news-about-mercury-2008-present",
+          "source_name": "U.S. Environmental Protection Agency (EPA)",
+          "published_at": "2011-12-16T00:00:00.000Z",
+          "headline": "EPA news about mercury (2008-present)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Environmental Protection Agency (EPA)"
+        ],
+        "substances": [
+          "mercury"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Mercury and Air Toxics Standard (MATS)",
+            "source_url": "https://www.epa.gov/enforcement/enforcement-response-policy-mercury-and-air-toxics-standard-mats"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.5,
+        "category": 0.85,
+        "location": 0.6,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "paywalled_or_partial"
+      ],
+      "dedupe": {
+        "cluster_hint": "EPA finalizes MATS (Dec 2011)",
+        "fingerprint": "fp_epa_mats_2011-12-16_us"
+      }
+    }
+  ]
+}

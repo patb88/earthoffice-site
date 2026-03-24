@@ -1,0 +1,585 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_2016-03_normalize_2026-01-16T054920490Z",
+    "generated_utc": "2026-01-16T05:49:20.490Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "2016-03",
+    "window": {
+      "start_utc": "2016-03-01T00:00:00.000Z",
+      "end_utc": "2016-03-31T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "pollution_contamination_201603_pine_creek_mine_discharge",
+      "title": "Mine discharge overflow turns Pine Creek red near Mayking, Kentucky",
+      "description": "A retention pond overflow at a mine site released iron-laced mine discharge into Pine Creek near Mayking in Letcher County, Kentucky, discoloring the water red. State officials cited the coal company and monitored compliance; reports also mentioned dead fish and turtles, though officials said the spill was not believed to be the cause.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2016-03-18T00:00:00.000Z",
+        "event_end": "2016-03-18T23:59:59.000Z",
+        "reported_at": "2016-03-22T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2016-03-18T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Pine Creek near Mayking, Letcher County, Kentucky, USA",
+        "jurisdiction_level": "site",
+        "admin1": "Kentucky",
+        "country": "US",
+        "capital_used": null,
+        "lat": 37.1417,
+        "lon": -82.7357,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.wbbjtv.com/2016/03/22/coal-company-cited-after-weekend-spill-affected-creek/",
+          "source_name": "WBBJTV",
+          "published_at": "2016-03-22T00:00:00.000Z",
+          "headline": "Coal company cited after weekend spill affected creek",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [
+          "iron"
+        ],
+        "ecosystems": [
+          "creek"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "released iron-laced mine discharge into Pine Creek, turning the water red",
+            "source_url": "https://www.wbbjtv.com/2016/03/22/coal-company-cited-after-weekend-spill-affected-creek/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.56,
+        "category": 0.75,
+        "location": 0.55,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Pine Creek Mayking KY mine discharge March 2016",
+        "fingerprint": "pollution_contamination|pine_creek_mayking_ky|2016-03-18"
+      }
+    },
+    {
+      "event_id": "pollution_contamination_201603_flint_lead_resampling",
+      "title": "Flint resident water lead sampling (March 2016) reports 90th percentile still above action level",
+      "description": "A March 2016 resident-led sampling effort in Flint, Michigan reported results indicating the 90th percentile lead level in drinking water samples remained above the U.S. EPA 15 ppb action level. The post summarizes preliminary findings from samples collected by residents after the city switched back to Detroit water and added corrosion control measures.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2016-03-01T00:00:00.000Z",
+        "event_end": "2016-03-31T23:59:59.000Z",
+        "reported_at": "2016-04-01T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": null,
+        "event_date_precision": "month"
+      },
+      "location": {
+        "name": "Flint, Michigan, USA",
+        "jurisdiction_level": "city",
+        "admin1": "Michigan",
+        "country": "US",
+        "capital_used": null,
+        "lat": 43.0125,
+        "lon": -83.6875,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.9
+      },
+      "sources": [
+        {
+          "url": "https://flintwaterstudy.org/2016/04/results-of-flint-resident-water-lead-sampling-march-2016/",
+          "source_name": "Flint Water Study",
+          "published_at": "2016-04-01T00:00:00.000Z",
+          "headline": "Results of Flint Resident Water Lead Sampling: March 2016",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Flint Water Study"
+        ],
+        "substances": [
+          "lead"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "the 90th percentile lead level remained above the 15 ppb action level",
+            "source_url": "https://flintwaterstudy.org/2016/04/results-of-flint-resident-water-lead-sampling-march-2016/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.74,
+        "category": 0.85,
+        "location": 0.9,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Flint water lead sampling March 2016 90th percentile",
+        "fingerprint": "pollution_contamination|flint_mi|2016-03"
+      }
+    },
+    {
+      "event_id": "evt_201603_flood_gulfstates_01",
+      "title": "March 2016 heavy rainfall and flooding across parts of Louisiana, Texas, Arkansas, and Mississippi",
+      "description": "A multi-day heavy rainfall event in early March 2016 caused major flooding across parts of Louisiana, Texas, Arkansas, and Mississippi. USGS reported notable river flooding and high streamflows at monitoring gages during this event.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2016-03-07T00:00:00.000Z",
+        "event_end": "2016-03-12T23:59:59.000Z",
+        "reported_at": "2016-03-01T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2016-03-07T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Gulf Coastal States and Mississippi River Valley, United States",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.5
+      },
+      "sources": [
+        {
+          "url": "https://www.usgs.gov/data/flood-march-2016-louisiana-texas-mississippi-and-arkansas",
+          "source_name": "USGS",
+          "published_at": "2016-03-01T00:00:00.000Z",
+          "headline": "Flood March 2016 Louisiana, Texas, Mississippi and Arkansas",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://weather.com/storms/severe/news/historic-south-flooding-march-2016",
+          "source_name": "The Weather Channel",
+          "published_at": "2016-03-01T00:00:00.000Z",
+          "headline": "Historic South Flooding (March 2016)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "USGS"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Flood March 2016 Louisiana, Texas, Mississippi and Arkansas",
+            "source_url": "https://www.usgs.gov/data/flood-march-2016-louisiana-texas-mississippi-and-arkansas"
+          },
+          {
+            "quote": "historic south flooding march 2016",
+            "source_url": "https://weather.com/storms/severe/news/historic-south-flooding-march-2016"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.5,
+        "category": 0.7,
+        "location": 0.5,
+        "summary_grounding": 0.4
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "2016-03 gulf states flooding",
+        "fingerprint": "fp_201603_gulfstates_flooding"
+      }
+    },
+    {
+      "event_id": "evt_20160302_sumatra_eq_usgs_us10004u1y",
+      "title": "M7.8 offshore earthquake southwest of Sumatra prompts tsunami warnings that are later lifted",
+      "description": "A magnitude 7.8 earthquake occurred offshore southwest of Sumatra, Indonesia. Tsunami warnings were issued for parts of the region and later withdrawn.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2016-03-02T12:49:46.000Z",
+        "event_end": "2016-03-02T23:59:59.000Z",
+        "reported_at": "2016-03-02T12:49:46.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2016-03-02T12:49:46.000Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Indian Ocean, southwest of Sumatra (Indonesia)",
+        "jurisdiction_level": "site",
+        "admin1": null,
+        "country": "ID",
+        "capital_used": null,
+        "lat": -4.952,
+        "lon": 94.329,
+        "precision": "exact",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.85
+      },
+      "sources": [
+        {
+          "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us10004u1y/executive",
+          "source_name": "USGS Earthquake Hazards Program",
+          "published_at": "2016-03-02T12:49:46.000Z",
+          "headline": "M 7.8 - 202 km SW of Banda Aceh, Indonesia",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.gdacs.org/report.aspx?eventid=1000407&episodeid=1&eventtype=EQ&alertlevel=Orange",
+          "source_name": "GDACS",
+          "published_at": "2016-03-02T12:49:46.000Z",
+          "headline": "Earthquake - Indonesia (GDACS Event 1000407)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "USGS",
+          "GDACS"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "M 7.8 - 202 km SW of Banda Aceh, Indonesia",
+            "source_url": "https://earthquake.usgs.gov/earthquakes/eventpage/us10004u1y/executive"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.72,
+        "category": 0.9,
+        "location": 0.75,
+        "summary_grounding": 0.7
+      },
+      "quality_flags": [
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "2016-03-02 offshore southwest of Sumatra M7.8 earthquake",
+        "fingerprint": "fp_20160302_sumatra_m78_indian_ocean"
+      }
+    },
+    {
+      "event_id": "fires_us_ok_20160322_anderson-creek-fire",
+      "title": "Anderson Creek Fire spreads from Oklahoma into Kansas",
+      "description": "The Anderson Creek grass fire ignited in northern Oklahoma and spread into Kansas in late March 2016. NASA Earth Observatory and Oklahoma emergency management reporting described extensive smoke and significant impacts including burned rangeland and damage to property and fencing.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2016-03-22T00:00:00.000Z",
+        "event_end": "2016-03-27T23:59:59.000Z",
+        "reported_at": "2016-03-23T00:00:00.000Z",
+        "time_confidence": 0.65,
+        "event_date_utc": "2016-03-22T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Woods County, Oklahoma into Kansas, USA",
+        "jurisdiction_level": "state",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Oklahoma City",
+        "lat": 35.4676,
+        "lon": -97.5164,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://earthobservatory.nasa.gov/images/87790/grass-fires-char-kansas-oklahoma",
+          "source_name": "NASA Earth Observatory",
+          "published_at": "2016-03-23T00:00:00.000Z",
+          "headline": "Grass Fires Char Kansas and Oklahoma",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://oklahoma.gov/oem/emergencies-and-disasters/2016/20160323-wildfire-event/20160323-situation-update-2.html",
+          "source_name": "Oklahoma Department of Emergency Management",
+          "published_at": "2016-03-23T00:00:00.000Z",
+          "headline": "20160323 Situation Update #2 (Wildfire Event)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NASA Earth Observatory",
+          "Oklahoma Department of Emergency Management"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "prairie/grassland"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Grass Fires Char Kansas and Oklahoma",
+            "source_url": "https://earthobservatory.nasa.gov/images/87790/grass-fires-char-kansas-oklahoma"
+          },
+          {
+            "quote": "Wildfire Event — Situation Update #2",
+            "source_url": "https://oklahoma.gov/oem/emergencies-and-disasters/2016/20160323-wildfire-event/20160323-situation-update-2.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.85,
+        "location": 0.55,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Anderson Creek Fire March 2016 OK/KS",
+        "fingerprint": "fires|anderson creek fire spreads from oklahoma into kansas|oklahoma city|2016-03-22"
+      }
+    },
+    {
+      "event_id": "20160328_gbr_northern_mass_coral_bleaching",
+      "title": "Aerial survey reports severe mass coral bleaching across northern Great Barrier Reef",
+      "description": "Reporting in late March 2016 described results from an aerial survey indicating widespread severe coral bleaching across reefs in the northern Great Barrier Reef. A James Cook University Coral Bleaching Taskforce release also characterized the bleaching as the most severe on record at the time.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2016-03-28T00:00:00.000Z",
+        "event_end": "2016-03-28T23:59:59.000Z",
+        "reported_at": "2016-03-28T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2016-03-28T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Northern Great Barrier Reef, Queensland, Australia",
+        "jurisdiction_level": "site",
+        "admin1": "Queensland",
+        "country": "AU",
+        "capital_used": null,
+        "lat": -14.668,
+        "lon": 145.463,
+        "precision": "proxy",
+        "location_basis": "manual_override",
+        "location_confidence": 0.45
+      },
+      "sources": [
+        {
+          "url": "https://www.abc.net.au/news/2016-03-28/great-barrier-reef-coral-bleaching-95-per-cent-north-section/7279338",
+          "source_name": "ABC News (Australia)",
+          "published_at": "2016-03-28T00:00:00.000Z",
+          "headline": "Great Barrier Reef coral bleaching: 95 per cent of north section affected, scientists say",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.jcu.edu.au/news/releases/2016/march/coral-bleaching-taskforce-documents-most-severe-bleaching-on-record",
+          "source_name": "James Cook University",
+          "published_at": "2016-03-28T00:00:00.000Z",
+          "headline": "Coral Bleaching Taskforce documents most severe bleaching on record",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "James Cook University",
+          "Coral Bleaching Taskforce"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "Great Barrier Reef"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Scientists say about 95 per cent of reefs surveyed in the northern section were severely bleached.",
+            "source_url": "https://www.abc.net.au/news/2016-03-28/great-barrier-reef-coral-bleaching-95-per-cent-north-section/7279338"
+          },
+          {
+            "quote": "The Coral Bleaching Taskforce has documented the most severe bleaching on record on the Great Barrier Reef.",
+            "source_url": "https://www.jcu.edu.au/news/releases/2016/march/coral-bleaching-taskforce-documents-most-severe-bleaching-on-record"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.63,
+        "category": 0.85,
+        "location": 0.45,
+        "summary_grounding": 0.7
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "2016 Great Barrier Reef mass coral bleaching (northern sector)",
+        "fingerprint": "20160328|aerial survey reports severe mass coral bleaching across northern great barrier reef|northern great barrier reef, queensland, australia"
+      }
+    },
+    {
+      "event_id": "20160316_US_FWS_ESA_90day_findings_29_petitions",
+      "title": "U.S. Fish & Wildlife Service publishes 90-day ESA petition findings and initiates 16 status reviews",
+      "description": "The U.S. Fish & Wildlife Service published 90-day findings on 29 Endangered Species Act petitions. The agency found that 16 petitions presented substantial information warranting status reviews, while the remaining petitions did not meet the threshold for further review.",
+      "category_primary": "policy_regulation",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "2016-03-16T00:00:00.000Z",
+        "event_end": "2016-03-16T23:59:59.000Z",
+        "reported_at": "2016-03-16T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2016-03-16T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States (Federal Register publication)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://downloads.regulations.gov/FWS-R2-ES-2016-0020-0001/content.htm",
+          "source_name": "Regulations.gov",
+          "published_at": "2016-03-16T00:00:00.000Z",
+          "headline": "FWS-R2-ES-2016-0020-0001 (content)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.fws.gov/story/2016-03/service-announces-initial-findings-29-endangered-species-act-petitions-0",
+          "source_name": "U.S. Fish & Wildlife Service",
+          "published_at": "2016-03-16T00:00:00.000Z",
+          "headline": "Service Announces Initial Findings on 29 Endangered Species Act Petitions",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Fish & Wildlife Service"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Service Announces Initial Findings on 29 Endangered Species Act Petitions",
+            "source_url": "https://www.fws.gov/story/2016-03/service-announces-initial-findings-29-endangered-species-act-petitions-0"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.72,
+        "category": 0.85,
+        "location": 0.75,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "needs_dedupe_check",
+        "date_ambiguous",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "USFWS ESA 90-day findings 29 petitions (Mar 2016)",
+        "fingerprint": "usfws_esa_90day_findings_29_petitions_2016-03-16_US"
+      }
+    }
+  ]
+}

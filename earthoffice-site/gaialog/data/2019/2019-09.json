@@ -1,0 +1,716 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_2019-09_normalize_2026-01-16T065605569Z",
+    "generated_utc": "2026-01-16T06:56:05.569Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "2019-09",
+    "window": {
+      "start_utc": "2019-09-01T00:00:00.000Z",
+      "end_utc": "2019-09-30T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "2019-09_pollution_contamination_mmsd_cso_milwaukee_20190913",
+      "title": "MMSD combined sewer overflow after Sept. 13–14 storms (estimated 282M gallons)",
+      "description": "Following heavy rainfall on September 13–14, 2019, the Milwaukee Metropolitan Sewerage District reported initiating a combined sewer overflow to reduce basement backup risk. MMSD estimated the combined sewer overflow volume at about 282 million gallons, and separately reported an additional sewer overflow estimated at about 41,000 gallons.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2019-09-13T00:00:00.000Z",
+        "event_end": "2019-09-14T23:59:59.000Z",
+        "reported_at": "2019-09-13T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2019-09-13T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Milwaukee, Wisconsin, United States",
+        "jurisdiction_level": "city",
+        "admin1": "Wisconsin",
+        "country": "US",
+        "capital_used": null,
+        "lat": 43.0389,
+        "lon": -87.9065,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.mmsd.com/about-us/news/storm-update-for-september-13-2019",
+          "source_name": "Milwaukee Metropolitan Sewerage District (MMSD)",
+          "published_at": "2019-09-13T00:00:00.000Z",
+          "headline": "Storm Update for September 13, 2019",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Milwaukee Metropolitan Sewerage District (MMSD)"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "MMSD initiated a combined sewer overflow (CSO) to reduce basement backup risk",
+            "source_url": "https://www.mmsd.com/about-us/news/storm-update-for-september-13-2019"
+          },
+          {
+            "quote": "CSO volume from September 13–14, 2019 was estimated at 282 million gallons",
+            "source_url": "https://www.mmsd.com/about-us/news/storm-update-for-september-13-2019"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.75,
+        "location": 0.6,
+        "summary_grounding": 0.7
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "MMSD CSO Sept 13-14 2019 Milwaukee",
+        "fingerprint": "fp_mmsd_cso_milwaukee_2019-09-13"
+      }
+    },
+    {
+      "event_id": "2019-09_pollution_contamination_lubrizol_fire_rouen_20190926",
+      "title": "Lubrizol chemical plant fire in Rouen produces large smoke plume",
+      "description": "A major fire at the Lubrizol chemical products factory in Rouen, France produced a large black smoke plume and prompted response actions and monitoring. Media reports described the visible plume and ensuing public health and environmental attention by local authorities.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2019-09-26T00:00:00.000Z",
+        "event_end": "2019-09-27T23:59:59.000Z",
+        "reported_at": "2019-09-26T00:00:00.000Z",
+        "time_confidence": 0.75,
+        "event_date_utc": "2019-09-26T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Rouen, Normandy, France",
+        "jurisdiction_level": "city",
+        "admin1": "Normandy",
+        "country": "FR",
+        "capital_used": null,
+        "lat": 49.4432,
+        "lon": 1.0993,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.8
+      },
+      "sources": [
+        {
+          "url": "https://www.euronews.com/2019/09/26/large-fire-breaks-out-at-french-chemicals-factory-in-rouen",
+          "source_name": "Euronews",
+          "published_at": "2019-09-26T00:00:00.000Z",
+          "headline": "Large fire breaks out at French chemicals factory in Rouen",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.reutersconnect.com/item/dark-smoke-from-a-large-fire-that-broke-out-at-the-factory-of-lubrizol-spreads-over-the-town-in-rouen/dGFnOnJldXRlcnMuY29tLDIwMTk6bmV3c21sX1JDMTREOTE1RDNFMA",
+          "source_name": "Reuters Connect",
+          "published_at": "2019-09-26T00:00:00.000Z",
+          "headline": "Dark smoke from a large fire that broke out at the factory of Lubrizol spreads over the town in Rouen",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Lubrizol"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "large fire breaks out at French chemicals factory in Rouen",
+            "source_url": "https://www.euronews.com/2019/09/26/large-fire-breaks-out-at-french-chemicals-factory-in-rouen"
+          },
+          {
+            "quote": "Dark smoke ... spreads over the town in Rouen",
+            "source_url": "https://www.reutersconnect.com/item/dark-smoke-from-a-large-fire-that-broke-out-at-the-factory-of-lubrizol-spreads-over-the-town-in-rouen/dGFnOnJldXRlcnMuY29tLDIwMTk6bmV3c21sX1JDMTREOTE1RDNFMA"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.7,
+        "category": 0.75,
+        "location": 0.85,
+        "summary_grounding": 0.65
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "paywalled_or_partial"
+      ],
+      "dedupe": {
+        "cluster_hint": "Lubrizol fire Rouen Sept 2019",
+        "fingerprint": "fp_lubrizol_fire_rouen_2019-09-26"
+      }
+    },
+    {
+      "event_id": "2019-09-01_hurricane-dorian_bahamas",
+      "title": "Hurricane Dorian causes catastrophic damage in the Bahamas (early September 2019)",
+      "description": "Hurricane Dorian stalled over parts of the Bahamas in early September 2019, bringing extreme winds, storm surge, and flooding. Reporting described catastrophic damage and loss of life.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2019-09-01T00:00:00.000Z",
+        "event_end": "2019-09-03T23:59:59.000Z",
+        "reported_at": "2019-09-02T00:00:00Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2019-09-02T00:00:00Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Abaco Islands and Grand Bahama, The Bahamas",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "BS",
+        "capital_used": "Nassau",
+        "lat": 25.0443,
+        "lon": -77.3504,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.theguardian.com/world/live/2019/sep/02/hurricane-dorian-category-5-storm-bahamas-florida-south-north-carolina-updates",
+          "source_name": "The Guardian",
+          "published_at": "2019-09-02T00:00:00Z",
+          "headline": "Hurricane Dorian Category 5 storm – Bahamas, Florida, South and North Carolina updates",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Hurricane Dorian ... Category 5 ... Bahamas",
+            "source_url": "https://www.theguardian.com/world/live/2019/sep/02/hurricane-dorian-category-5-storm-bahamas-florida-south-north-carolina-updates"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.75,
+        "location": 0.6,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "paywalled_or_partial",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "hurricane_dorian_bahamas_2019-09",
+        "fingerprint": "hurricane_dorian_bahamas_2019-09-01_to_2019-09-03_country_BS"
+      }
+    },
+    {
+      "event_id": "2019-09-17_tropical-storm-imelda_southeast-texas",
+      "title": "Tropical Storm Imelda brings extreme rainfall and flooding in Southeast Texas (mid-September 2019)",
+      "description": "Analyses and reporting described exceptional rainfall from Tropical Storm Imelda in mid-September 2019, with severe flooding in Southeast Texas including the Houston area and Beaumont. Impacts included widespread flooding and major rescue operations.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2019-09-17T00:00:00.000Z",
+        "event_end": "2019-09-21T23:59:59.000Z",
+        "reported_at": "2019-09-20T00:00:00Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2019-09-19T00:00:00Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Southeast Texas (including Houston area and Beaumont), United States",
+        "jurisdiction_level": "country",
+        "admin1": "Texas",
+        "country": "US",
+        "capital_used": "Washington, D.C.",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.45
+      },
+      "sources": [
+        {
+          "url": "https://www.worldweatherattribution.org/rapid-attribution-of-the-extreme-rainfall-in-texas-from-tropical-storm-imelda/",
+          "source_name": "World Weather Attribution",
+          "published_at": "2019-09-20T00:00:00Z",
+          "headline": "Rapid attribution of the extreme rainfall in Texas from Tropical Storm Imelda",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://time.com/5681123/imelda-texas-flooding/",
+          "source_name": "Time",
+          "published_at": "2019-09-20T00:00:00Z",
+          "headline": "Tropical Storm Imelda Brings Catastrophic Flooding to Texas",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "World Weather Attribution",
+          "Time"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "extreme rainfall in Texas from Tropical Storm Imelda",
+            "source_url": "https://www.worldweatherattribution.org/rapid-attribution-of-the-extreme-rainfall-in-texas-from-tropical-storm-imelda/"
+          },
+          {
+            "quote": "catastrophic flooding to Texas",
+            "source_url": "https://time.com/5681123/imelda-texas-flooding/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.66,
+        "category": 0.8,
+        "location": 0.45,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "tropical_storm_imelda_texas_2019-09",
+        "fingerprint": "tropical_storm_imelda_2019-09-17_to_2019-09-21_country_US"
+      }
+    },
+    {
+      "event_id": "us70005lfd-2019-09-25-maluku-id",
+      "title": "M6.5 earthquake near Seram Island, Maluku, Indonesia (USGS event us70005lfd)",
+      "description": "A magnitude 6.5 earthquake occurred near Seram Island in Maluku, Indonesia on September 25, 2019 (UTC), per the USGS event record. The source provides the event’s location and timing; impacts such as damage or landslides are not verified in the provided draft source.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2019-09-25T23:46:44.000Z",
+        "event_end": "2019-09-25T23:46:44.000Z",
+        "reported_at": "2019-09-25T23:46:44.000Z",
+        "time_confidence": 0.9,
+        "event_date_utc": "2019-09-25T23:46:44.000Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Near Seram Island, Maluku, Indonesia",
+        "jurisdiction_level": "site",
+        "admin1": "Maluku",
+        "country": "ID",
+        "capital_used": null,
+        "lat": -3.4,
+        "lon": 128.9,
+        "precision": "exact",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us70005lfd/executive",
+          "source_name": "USGS Earthquake Hazards Program",
+          "published_at": "2019-09-25T23:46:44.000Z",
+          "headline": "M 6.5 - near Seram Island, Indonesia",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "USGS Earthquake Hazards Program"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "M 6.5 - near Seram Island, Indonesia",
+            "source_url": "https://earthquake.usgs.gov/earthquakes/eventpage/us70005lfd/executive"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.72,
+        "category": 0.9,
+        "location": 0.7,
+        "summary_grounding": 0.65
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "usgs_us70005lfd",
+        "fingerprint": "us70005lfd|near-seram-island-maluku-id|2019-09-25T23:46:44Z"
+      }
+    },
+    {
+      "event_id": "evt_201909_hawaii_coral_bleaching_surveys_noaa",
+      "title": "NOAA-led surveys assess 2019 Hawaiʻi coral bleaching event",
+      "description": "NOAA and partners launched coordinated dive-based and 3D-model survey efforts to assess and document coral bleaching occurring across the Main Hawaiian Islands during the 2019 heat-stress event. The reporting referenced bleaching expected to intensify from September into November 2019.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2019-09-01T00:00:00Z",
+        "time_confidence": 0.4,
+        "event_date_utc": null,
+        "event_date_precision": "month"
+      },
+      "location": {
+        "name": "Main Hawaiian Islands, United States",
+        "jurisdiction_level": "state",
+        "admin1": "Hawaii",
+        "country": "US",
+        "capital_used": "Honolulu",
+        "lat": 21.3069,
+        "lon": -157.8583,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://www.fisheries.noaa.gov/index.php/feature-story/surveys-assess-2019-hawaii-coral-bleaching-event",
+          "source_name": "NOAA Fisheries",
+          "published_at": "2019-09-01T00:00:00Z",
+          "headline": "Surveys Assess 2019 Hawaii Coral Bleaching Event",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://coralreefwatch.noaa.gov/satellite/analyses_guidance/pacific_cbts_ag_20190903.php",
+          "source_name": "NOAA Coral Reef Watch",
+          "published_at": "2019-09-03T00:00:00Z",
+          "headline": "Pacific Coral Bleaching Threat/Stress (CBTS) analysis guidance (2019-09-03)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA",
+          "NOAA Fisheries",
+          "NOAA Coral Reef Watch"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "Coral reefs"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Surveys assess 2019 Hawaii coral bleaching event.",
+            "source_url": "https://www.fisheries.noaa.gov/index.php/feature-story/surveys-assess-2019-hawaii-coral-bleaching-event"
+          },
+          {
+            "quote": "Bleaching threat/stress analysis guidance (2019-09-03).",
+            "source_url": "https://coralreefwatch.noaa.gov/satellite/analyses_guidance/pacific_cbts_ag_20190903.php"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.8,
+        "location": 0.7,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "2019_hawaii_coral_bleaching",
+        "fingerprint": "fp_201909_hawaii_coral_bleaching_surveys_noaa"
+      }
+    },
+    {
+      "event_id": "2019-09-23_un_climate_action_summit_nyc",
+      "title": "UN Climate Action Summit held in New York City",
+      "description": "The UN Climate Action Summit on September 23, 2019 convened governments and other actors in New York City to present and accelerate climate ambition and actions aligned with the Paris Agreement ahead of 2020 milestones.",
+      "category_primary": "policy_regulation",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "2019-09-23T00:00:00.000Z",
+        "event_end": "2019-09-23T23:59:59.000Z",
+        "reported_at": "2019-09-23T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2019-09-23T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "New York City, United States",
+        "jurisdiction_level": "city",
+        "admin1": "New York",
+        "country": "US",
+        "capital_used": null,
+        "lat": 40.7128,
+        "lon": -74.006,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.85
+      },
+      "sources": [
+        {
+          "url": "https://www.un.org/en/climatechange/2019-climate-action-summit",
+          "source_name": "United Nations",
+          "published_at": "2019-09-23T00:00:00.000Z",
+          "headline": "2019 Climate Action Summit",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "United Nations"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": [
+          "UN Secretary-General"
+        ]
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "The UN Climate Action Summit on September 23, 2019 convened governments and other actors",
+            "source_url": "https://www.un.org/en/climatechange/2019-climate-action-summit"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.75,
+        "location": 0.85,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "UN Climate Action Summit 2019 NYC",
+        "fingerprint": "2019-09-23|un-climate-action-summit-held-in-new-york-city|new-york-city-us"
+      }
+    },
+    {
+      "event_id": "2019-09-20_germany_climate_action_programme_2030_cornerstones",
+      "title": "Germany’s Climate Cabinet agrees cornerstones of Climate Action Programme 2030",
+      "description": "Germany’s federal Climate Cabinet agreed on the cornerstones of the Climate Action Programme 2030 on September 20, 2019, outlining measures intended to drive emissions reductions and implement climate policy.",
+      "category_primary": "policy_regulation",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "2019-09-20T00:00:00.000Z",
+        "event_end": "2019-09-20T23:59:59.000Z",
+        "reported_at": "2019-09-20T00:00:00.000Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "2019-09-20T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Germany (federal government)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "DE",
+        "capital_used": "Berlin",
+        "lat": 52.52,
+        "lon": 13.405,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.75
+      },
+      "sources": [
+        {
+          "url": "https://www.bundesregierung.de/breg-en/issues/climate-action/government-climate-policy-1779414",
+          "source_name": "Federal Government of Germany (bundesregierung.de)",
+          "published_at": "2019-09-20T00:00:00.000Z",
+          "headline": "Government climate policy",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Federal Government of Germany",
+          "Climate Cabinet"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "agreed the cornerstones of the Climate Action Programme 2030",
+            "source_url": "https://www.bundesregierung.de/breg-en/issues/climate-action/government-climate-policy-1779414"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.58,
+        "category": 0.75,
+        "location": 0.75,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Germany Climate Action Programme 2030 cornerstones",
+        "fingerprint": "2019-09-20|germanys-climate-cabinet-agrees-cornerstones-of-climate-action-programme-2030|germany-de"
+      }
+    },
+    {
+      "event_id": "2019-09-06_us_ace_rule_effective_cpp_repeal",
+      "title": "U.S. Affordable Clean Energy rule and Clean Power Plan repeal take effect",
+      "description": "The U.S. Environmental Protection Agency’s Affordable Clean Energy rule and the repeal of the Clean Power Plan had an effective date of September 6, 2019, changing federal regulation of greenhouse gas emissions from existing power plants.",
+      "category_primary": "policy_regulation",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2019-09-06T00:00:00.000Z",
+        "event_end": "2019-09-06T23:59:59.000Z",
+        "reported_at": "2019-09-06T00:00:00.000Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "2019-09-06T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States (federal air/climate regulation for power plants)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.75
+      },
+      "sources": [
+        {
+          "url": "https://www.everycrsreport.com/reports/LSB10325.html",
+          "source_name": "EveryCRSReport.com (CRS report mirror)",
+          "published_at": "2019-09-06T00:00:00.000Z",
+          "headline": "LSB10325 (CRS)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.epa.gov/stationary-sources-air-pollution/affordable-clean-energy-rule",
+          "source_name": "U.S. Environmental Protection Agency",
+          "published_at": "2019-09-06T00:00:00.000Z",
+          "headline": "Affordable Clean Energy Rule",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Environmental Protection Agency (EPA)"
+        ],
+        "substances": [
+          "Greenhouse gases"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Affordable Clean Energy Rule",
+            "source_url": "https://www.epa.gov/stationary-sources-air-pollution/affordable-clean-energy-rule"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.57,
+        "category": 0.8,
+        "location": 0.75,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "ACE rule effective date Sept 6 2019",
+        "fingerprint": "2019-09-06|us-affordable-clean-energy-rule-and-clean-power-plan-repeal-take-effect|united-states-us"
+      }
+    }
+  ]
+}

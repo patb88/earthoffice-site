@@ -1,0 +1,951 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_1995-06_normalize_2026-01-17T182216654Z",
+    "generated_utc": "2026-01-17T18:22:16.654Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "1995-06",
+    "window": {
+      "start_utc": "1995-06-01T00:00:00.000Z",
+      "end_utc": "1995-06-30T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "evt_199506_west_oakland_amco_contamination_trenching",
+      "title": "Chemical contamination discovered during trenching near former AMCO Chemical property in West Oakland",
+      "description": "A construction crew trenching in West Oakland encountered strong chemical odors, prompting investigation. Reporting described contamination associated with/near a former AMCO Chemical distribution facility, including chlorinated solvents and soil gas concerns, leading to EPA involvement and cleanup actions.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1995-06-01T00:00:00.000Z",
+        "time_confidence": 0.35,
+        "event_date_utc": "1995-06-15T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "West Oakland, Oakland, California, USA",
+        "jurisdiction_level": "city",
+        "admin1": "California",
+        "country": "US",
+        "capital_used": null,
+        "lat": 37.8044,
+        "lon": -122.2711,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.sfgate.com/bayarea/article/WEST-OAKLAND-EPA-starts-backyard-cleanup-near-2579313.php",
+          "source_name": "SFGATE",
+          "published_at": "1995-06-01T00:00:00.000Z",
+          "headline": "WEST OAKLAND -- EPA starts backyard cleanup near ...",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.epa.gov/archive/epapages/newsroom_archive/newsreleases/b7ce9ba747c85a51852570d8005e1536.html",
+          "source_name": "U.S. Environmental Protection Agency (archive)",
+          "published_at": "1995-06-01T00:00:00.000Z",
+          "headline": "EPA News Release (archive)",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Caltrans",
+          "U.S. Environmental Protection Agency (EPA)",
+          "AMCO Chemical"
+        ],
+        "substances": [
+          "chlorinated solvents",
+          "vinyl chloride"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.52,
+        "category": 0.7,
+        "location": 0.6,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "paywalled_or_partial",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "west_oakland_amco_chemical_contamination",
+        "fingerprint": "fp_199506_west_oakland_amco_contamination_trenching"
+      }
+    },
+    {
+      "event_id": "1995-06-weather-01-hurricane-allison-florida-panhandle",
+      "title": "Hurricane Allison (1995) makes landfall in Florida Panhandle and tracks across U.S. Southeast",
+      "description": "Tropical cyclone Allison strengthened to hurricane intensity before making landfall in north Florida and then tracking across the U.S. Southeast before emerging into the Atlantic. The referenced rainfall analysis summarizes storm-total precipitation along its track.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1995-06-30T23:59:59.000Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "1995-06-05T00:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Tallahassee, Florida, United States (proxy for Florida Panhandle landfall area)",
+        "jurisdiction_level": "state",
+        "admin1": "Florida",
+        "country": "US",
+        "capital_used": "Tallahassee",
+        "lat": 30.4382559,
+        "lon": -84.2807329,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.wpc.ncep.noaa.gov/tropical/rain/allison1995.html",
+          "source_name": "NOAA Weather Prediction Center (WPC)",
+          "published_at": "1995-06-30T23:59:59.000Z",
+          "headline": "Tropical Cyclone Rainfall for Allison (1995)",
+          "byline": null,
+          "accessed_utc": "2026-01-17T02:04:21.468Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA Weather Prediction Center (WPC)"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Tropical Cyclone Rainfall for Allison (1995)",
+            "source_url": "https://www.wpc.ncep.noaa.gov/tropical/rain/allison1995.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.8,
+        "location": 0.6,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "Hurricane Allison (1995)",
+        "fingerprint": null
+      }
+    },
+    {
+      "event_id": "1995-06-weather-02-midwest-flooding-usgs-june-conditions",
+      "title": "Major flooding persists across U.S. Midwest river systems during June 1995",
+      "description": "A USGS National Water Conditions summary reports that major flooding continued across parts of the U.S. Midwest through June 1995, with major rivers generally remaining above flood stage until late in the month. The report notes tributary flooding details during the month in states including Illinois and Missouri.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1995-06-30T23:59:59.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": null,
+        "event_date_precision": "month"
+      },
+      "location": {
+        "name": "Washington, DC, United States (proxy for USGS report scope: U.S. Midwest)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.8950368,
+        "lon": -77.0365427,
+        "precision": "country",
+        "location_basis": "institution_proxy",
+        "location_confidence": 0.4
+      },
+      "sources": [
+        {
+          "url": "https://water.usgs.gov/nwc/back_issues/june95_cov.html",
+          "source_name": "USGS National Water Conditions",
+          "published_at": "1995-06-30T23:59:59.000Z",
+          "headline": "National Water Conditions: June 1995 (Back Issues)",
+          "byline": null,
+          "accessed_utc": "2026-01-17T02:04:21.468Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Geological Survey (USGS)"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "National Water Conditions: June 1995",
+            "source_url": "https://water.usgs.gov/nwc/back_issues/june95_cov.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.75,
+        "location": 0.4,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "June 1995 Midwest flooding (USGS NWC)",
+        "fingerprint": null
+      }
+    },
+    {
+      "event_id": "1995-06-weather-03-virginia-flash-flooding-shenandoah",
+      "title": "Severe flash flooding and record/near-record river flooding in Virginia (late June 1995)",
+      "description": "A National Weather Service assessment describes severe flash flooding and, in some locations, record river flooding during the week of June 25, 1995 in west-central Virginia, including the Shenandoah Valley and central Virginia Piedmont, extending into the Potomac Highlands. The assessment characterizes some impacts as extremely rare flooding.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1995-06-30T23:59:59.000Z",
+        "time_confidence": 0.65,
+        "event_date_utc": "1995-06-25T00:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Richmond, Virginia, United States (proxy for Virginia)",
+        "jurisdiction_level": "state",
+        "admin1": "Virginia",
+        "country": "US",
+        "capital_used": "Richmond",
+        "lat": 37.5385087,
+        "lon": -77.43428,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.65
+      },
+      "sources": [
+        {
+          "url": "https://repository.library.noaa.gov/view/noaa/56795",
+          "source_name": "NOAA Central Library Repository",
+          "published_at": "1995-06-30T23:59:59.000Z",
+          "headline": "NWS assessment report (NOAA repository record)",
+          "byline": null,
+          "accessed_utc": "2026-01-17T02:04:21.468Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://repository.library.noaa.gov/view/noaa/56795/noaa_56795_DS1.pdf",
+          "source_name": "NOAA Central Library Repository",
+          "published_at": "1995-06-30T23:59:59.000Z",
+          "headline": "NWS assessment report (PDF)",
+          "byline": null,
+          "accessed_utc": "2026-01-17T02:04:21.468Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "National Weather Service (NWS)",
+          "NOAA"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "repository.library.noaa.gov/view/noaa/56795",
+            "source_url": "https://repository.library.noaa.gov/view/noaa/56795"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.65,
+        "category": 0.85,
+        "location": 0.65,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "Late June 1995 Virginia floods (NWS assessment)",
+        "fingerprint": null
+      }
+    },
+    {
+      "event_id": "1995-06-weather-04-florida-flooding-miami-tampa-usgs",
+      "title": "Heavy rain causes flooding and evacuations in central and southeastern Florida (June 23–26, 1995)",
+      "description": "A USGS National Water Conditions summary reports heavy rainfall in central and southeastern Florida during June 23–26, 1995, leading to flooding that closed highways, disrupted water supplies, and prompted evacuations in areas including Miami and Tampa.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1995-06-30T23:59:59.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1995-06-23T00:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Tallahassee, Florida, United States (proxy for Florida)",
+        "jurisdiction_level": "state",
+        "admin1": "Florida",
+        "country": "US",
+        "capital_used": "Tallahassee",
+        "lat": 30.4382559,
+        "lon": -84.2807329,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://water.usgs.gov/nwc/back_issues/june95_cov.html",
+          "source_name": "USGS National Water Conditions",
+          "published_at": "1995-06-30T23:59:59.000Z",
+          "headline": "National Water Conditions: June 1995 (Back Issues)",
+          "byline": null,
+          "accessed_utc": "2026-01-17T02:04:21.468Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Geological Survey (USGS)"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "National Water Conditions: June 1995",
+            "source_url": "https://water.usgs.gov/nwc/back_issues/june95_cov.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.75,
+        "location": 0.55,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "June 23–26 1995 Florida flooding (USGS NWC)",
+        "fingerprint": null
+      }
+    },
+    {
+      "event_id": "1995-06-weather-05-montana-north-fork-flathead-flooding",
+      "title": "Heavy rain and rapid snowmelt drive major flooding on Montana’s North Fork Flathead River (June 7, 1995)",
+      "description": "A USGS National Water Conditions summary reports that heavy rain falling on an existing snowpack caused major flooding on the North Fork Flathead River near Columbia Falls, Montana on June 7, 1995. The report also notes additional peak flows on other Montana streams during this period.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1995-06-30T23:59:59.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1995-06-07T00:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Helena, Montana, United States (proxy for Montana)",
+        "jurisdiction_level": "state",
+        "admin1": "Montana",
+        "country": "US",
+        "capital_used": "Helena",
+        "lat": 46.5927126,
+        "lon": -112.036109,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.5
+      },
+      "sources": [
+        {
+          "url": "https://water.usgs.gov/nwc/back_issues/june95_cov.html",
+          "source_name": "USGS National Water Conditions",
+          "published_at": "1995-06-30T23:59:59.000Z",
+          "headline": "National Water Conditions: June 1995 (Back Issues)",
+          "byline": null,
+          "accessed_utc": "2026-01-17T02:04:21.468Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Geological Survey (USGS)"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "National Water Conditions: June 1995",
+            "source_url": "https://water.usgs.gov/nwc/back_issues/june95_cov.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.5,
+        "category": 0.75,
+        "location": 0.5,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "June 7 1995 Montana flooding (USGS NWC)",
+        "fingerprint": null
+      }
+    },
+    {
+      "event_id": "1995-06-geological-madison-county-va-debris-flows-1995-06-27",
+      "title": "Madison County, Virginia extreme-rainfall debris flows and landslides",
+      "description": "An intense localized storm on June 27, 1995 triggered numerous debris flows and other landslides in Madison County, Virginia. The event caused downstream flooding and damaged homes, roads, utilities, and agricultural areas.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1995-06-27T12:00:00Z",
+        "event_end": "1995-06-27T12:00:00Z",
+        "reported_at": "1997-01-01T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1995-06-27T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Madison County, Virginia, United States",
+        "jurisdiction_level": "state",
+        "admin1": "Virginia",
+        "country": "US",
+        "capital_used": "Richmond",
+        "lat": 37.5407246,
+        "lon": -77.4360481,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.85
+      },
+      "sources": [
+        {
+          "url": "https://pubs.usgs.gov/of/1997/438/97-438.html",
+          "source_name": "USGS",
+          "published_at": "1997-01-01T00:00:00Z",
+          "headline": "Open-File Report 97-438 (Madison County, Virginia debris flows and flooding)",
+          "byline": null,
+          "accessed_utc": "2026-01-17T02:05:05.197Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "USGS"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "storm of June 27, 1995 ... widespread mass wasting ... numerous debris flows",
+            "source_url": "https://pubs.usgs.gov/of/1997/438/97-438.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.72,
+        "category": 0.9,
+        "location": 0.85,
+        "summary_grounding": 0.75
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Madison County VA debris flows 1995-06-27",
+        "fingerprint": "madison-county-virginia-debris-flows|richmond-va|1995-06-27"
+      }
+    },
+    {
+      "event_id": "1995-06-geological-genting-highlands-malaysia-landslide-1995-06-30",
+      "title": "Landslide near Genting Highlands road in Malaysia",
+      "description": "Heavy rain triggered a landslide on a road leading to Genting Highlands in Malaysia, burying multiple vehicles. The report said the landslide caused fatalities and injuries.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1995-06-30T12:00:00Z",
+        "event_end": "1995-06-30T12:00:00Z",
+        "reported_at": "1995-06-30T00:00:00Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "1995-06-30T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Malaysia",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "MY",
+        "capital_used": "Kuala Lumpur",
+        "lat": 3.139003,
+        "lon": 101.686855,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.upi.com/Archives/1995/06/30/Landslide-kills-17-in-Malaysia/8494804484800/",
+          "source_name": "UPI",
+          "published_at": "1995-06-30T00:00:00Z",
+          "headline": "Landslide kills 17 in Malaysia",
+          "byline": null,
+          "accessed_utc": "2026-01-17T02:05:05.197Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "UPI"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Landslide kills 17 in Malaysia",
+            "source_url": "https://www.upi.com/Archives/1995/06/30/Landslide-kills-17-in-Malaysia/8494804484800/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.85,
+        "location": 0.6,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Genting Highlands road landslide Malaysia 1995-06-30",
+        "fingerprint": "landslide-genting-highlands-road|kuala-lumpur|1995-06-30"
+      }
+    },
+    {
+      "event_id": "evt_19950606_mexican_spotted_owl_critical_habitat_us",
+      "title": "USFWS designates critical habitat for the Mexican spotted owl",
+      "description": "The U.S. Fish and Wildlife Service issued a final rule designating critical habitat for the threatened Mexican spotted owl. The rule designated habitat across multiple units in Arizona, Colorado, New Mexico, and Utah, affecting federal consultation requirements for actions that may impact that habitat.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "1995-06-06T12:00:00Z",
+        "event_end": "1995-06-06T12:00:00Z",
+        "reported_at": "1995-06-06T00:00:00Z",
+        "time_confidence": 0.8,
+        "event_date_utc": "1995-06-06T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States (multi-state: Arizona, Colorado, New Mexico, Utah)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.75
+      },
+      "sources": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/FR-1995-06-06/html/95-13606.htm",
+          "source_name": "Federal Register (via GovInfo)",
+          "published_at": "1995-06-06T00:00:00Z",
+          "headline": "95-13606",
+          "byline": null,
+          "accessed_utc": "2026-01-17T02:05:52.846Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Fish and Wildlife Service"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "final rule designating critical habitat for the Mexican spotted owl",
+            "source_url": "https://www.govinfo.gov/content/pkg/FR-1995-06-06/html/95-13606.htm"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.74,
+        "category": 0.75,
+        "location": 0.75,
+        "summary_grounding": 0.7
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "USFWS Mexican spotted owl critical habitat final rule (1995-06-06)",
+        "fingerprint": "fp_19950606_us_mexican_spotted_owl_critical_habitat"
+      }
+    },
+    {
+      "event_id": "evt_19950616_swift_fox_12_month_finding_us",
+      "title": "USFWS issues 12-month finding on petition to list the swift fox",
+      "description": "The U.S. Fish and Wildlife Service published a 12-month finding on a petition to list the swift fox under the Endangered Species Act. The notice reflects an official federal step in evaluating the species' conservation status.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "1995-06-16T12:00:00Z",
+        "event_end": "1995-06-16T12:00:00Z",
+        "reported_at": "1995-06-16T00:00:00Z",
+        "time_confidence": 0.8,
+        "event_date_utc": "1995-06-16T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States (Great Plains range referenced)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/FR-1995-06-16/html/95-14730.htm",
+          "source_name": "Federal Register (via GovInfo)",
+          "published_at": "1995-06-16T00:00:00Z",
+          "headline": "95-14730",
+          "byline": null,
+          "accessed_utc": "2026-01-17T02:05:52.846Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Fish and Wildlife Service"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "12-month finding on a petition to list the swift fox",
+            "source_url": "https://www.govinfo.gov/content/pkg/FR-1995-06-16/html/95-14730.htm"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.7,
+        "category": 0.75,
+        "location": 0.7,
+        "summary_grounding": 0.65
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "USFWS swift fox 12-month petition finding (1995-06-16)",
+        "fingerprint": "fp_19950616_us_swift_fox_12_month_finding"
+      }
+    },
+    {
+      "event_id": "1995-06-19_epa_tsca_cfr_obsolete_technical_amendments_us",
+      "title": "EPA final rule effective: removes obsolete TSCA CFR provisions and makes technical amendments",
+      "description": "The U.S. EPA issued a final rule removing TSCA-related CFR provisions that had no current legal effect and making technical amendments. The rule was effective June 19, 1995.",
+      "category_primary": "policy_regulation",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1995-06-19T00:00:00Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "1995-06-19T00:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States (federal)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.85
+      },
+      "sources": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/FR-1995-06-19/html/95-14910.htm",
+          "source_name": "Federal Register (GovInfo)",
+          "published_at": "1995-06-19T00:00:00Z",
+          "headline": "Technical amendments and deletions of obsolete Toxic Substances Control Act (TSCA) CFR provisions",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Environmental Protection Agency (EPA)"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "removing ... CFR provisions that have no current legal effect ... and making technical amendments",
+            "source_url": "https://www.govinfo.gov/content/pkg/FR-1995-06-19/html/95-14910.htm"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.73,
+        "category": 0.8,
+        "location": 0.85,
+        "summary_grounding": 0.7
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "epa_tsca_cfr_obsolete_1995_06",
+        "fingerprint": "e6f99cf3c4f05be5"
+      }
+    },
+    {
+      "event_id": "1995-06-23_epa_baaqmd_titlev_fesop_interim_and_sip_final",
+      "title": "EPA publishes interim approval of Bay Area Title V permits program and final approval of SIP revision (FESOP)",
+      "description": "The U.S. EPA promulgated interim approval of the Bay Area Air Quality Management District Title V operating permits program and final approval of a SIP revision related to federally enforceable state operating permits. The notice described an effective date of July 24, 1995.",
+      "category_primary": "policy_regulation",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1995-06-23T00:00:00Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "1995-06-23T00:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "San Francisco Bay Area, California, USA",
+        "jurisdiction_level": "state",
+        "admin1": "California",
+        "country": "US",
+        "capital_used": "Sacramento",
+        "lat": 38.5816,
+        "lon": -121.4944,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/FR-1995-06-23/html/95-15038.htm",
+          "source_name": "Federal Register (GovInfo)",
+          "published_at": "1995-06-23T00:00:00Z",
+          "headline": "Final interim approval of Title V operating permits program and final approval of SIP revision (FESOP) for Bay Area Air Quality Management District",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Environmental Protection Agency (EPA)",
+          "Bay Area Air Quality Management District (BAAQMD)"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "interim approval of the ... Title V operating permits program and final approval of a SIP revision",
+            "source_url": "https://www.govinfo.gov/content/pkg/FR-1995-06-23/html/95-15038.htm"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.68,
+        "category": 0.8,
+        "location": 0.55,
+        "summary_grounding": 0.7
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "epa_baaqmd_titlev_fesop_1995_06_23",
+        "fingerprint": "22a13944bf2d5f2a"
+      }
+    },
+    {
+      "event_id": "1995-06-23_epa_baaqmd_titlev_synthetic_minor_direct_final",
+      "title": "EPA publishes direct final approval of Bay Area revisions to Title V and synthetic minor permit programs",
+      "description": "The U.S. EPA published a direct final rule approving revisions adopted by the Bay Area Air Quality Management District to its Title V operating permits program and synthetic minor operating permit program as part of a SIP revision. The action was described as effective August 22, 1995 unless adverse comments were received by July 24, 1995.",
+      "category_primary": "policy_regulation",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1995-06-23T00:00:00Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "1995-06-23T00:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "San Francisco Bay Area, California, USA",
+        "jurisdiction_level": "state",
+        "admin1": "California",
+        "country": "US",
+        "capital_used": "Sacramento",
+        "lat": 38.5816,
+        "lon": -121.4944,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/FR-1995-06-23/html/95-15037.htm",
+          "source_name": "Federal Register (GovInfo)",
+          "published_at": "1995-06-23T00:00:00Z",
+          "headline": "Direct final approval of revisions to Bay Area Title V program and synthetic minor operating permit program (SIP revision)",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Environmental Protection Agency (EPA)",
+          "Bay Area Air Quality Management District (BAAQMD)"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "direct final rule approving revisions ... to its Title V ... and synthetic minor operating permit program",
+            "source_url": "https://www.govinfo.gov/content/pkg/FR-1995-06-23/html/95-15037.htm"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.68,
+        "category": 0.8,
+        "location": 0.55,
+        "summary_grounding": 0.7
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "epa_baaqmd_direct_final_1995_06_23",
+        "fingerprint": "e1b0b117a95e2b5c"
+      }
+    }
+  ]
+}

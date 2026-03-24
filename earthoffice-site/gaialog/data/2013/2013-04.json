@@ -1,0 +1,911 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_2013-04_normalize_2026-01-16T045822950Z",
+    "generated_utc": "2026-01-16T04:58:22.950Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "2013-04",
+    "window": {
+      "start_utc": "2013-04-01T00:00:00.000Z",
+      "end_utc": "2013-04-30T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "2013-04_pollution_contamination_west_tx_fertilizer_explosion",
+      "title": "West Fertilizer Company fire and ammonium nitrate explosion",
+      "description": "A fire at the West Fertilizer Company in West, Texas led to a large explosion involving ammonium nitrate. The incident prompted investigations and raised concerns about chemical storage and emergency response related to hazardous materials.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2013-04-18T00:50:38.000Z",
+        "event_end": "2013-04-18T02:00:00.000Z",
+        "reported_at": "2013-04-19T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2013-04-18T00:50:38.000Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "West, Texas, United States",
+        "jurisdiction_level": "city",
+        "admin1": "Texas",
+        "country": "US",
+        "capital_used": null,
+        "lat": 31.8035,
+        "lon": -97.0917,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.75
+      },
+      "sources": [
+        {
+          "url": "https://www.theguardian.com/world/2013/apr/19/texas-fertilizer-plant-explosion-12-bodies",
+          "source_name": "The Guardian",
+          "published_at": "2013-04-19T00:00:00Z",
+          "headline": "Texas fertilizer plant explosion: 12 bodies recovered and 160 missing",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "West Fertilizer Company"
+        ],
+        "substances": [
+          "ammonium nitrate"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "A huge explosion at a fertiliser plant in Texas left at least 15 people dead.",
+            "source_url": "https://www.theguardian.com/world/2013/apr/19/texas-fertilizer-plant-explosion-12-bodies"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.72,
+        "category": 0.7,
+        "location": 0.75,
+        "summary_grounding": 0.65
+      },
+      "quality_flags": [
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "West Fertilizer Company explosion April 2013",
+        "fingerprint": "west_fertilizer_company_fire_and_ammonium_nitrate_explosion|west_tx_us|2013-04-18"
+      }
+    },
+    {
+      "event_id": "2013-04_pollution_contamination_grand_rapids_wastewater_overflow_claim",
+      "title": "Midwest floods (April–May 2013) linked to reported wastewater overflow into the Grand River near Grand Rapids",
+      "description": "USGS and NASA summaries describe widespread Midwest flooding in April–May 2013 affecting Michigan and surrounding states. The provided sources do not explicitly verify a specific, large partially treated wastewater overflow into the Grand River in Grand Rapids, so this event is retained only as a flood-related context record with contamination details marked as unverified.",
+      "category_primary": "pollution_contamination",
+      "polarity": "unclear",
+      "severity": null,
+      "time": {
+        "event_start": "2013-04-12T00:00:00.000Z",
+        "event_end": "2013-04-25T23:59:59.000Z",
+        "reported_at": "2013-05-01T00:00:00Z",
+        "time_confidence": 0.4,
+        "event_date_utc": null,
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Grand Rapids, Michigan, United States",
+        "jurisdiction_level": "city",
+        "admin1": "Michigan",
+        "country": "US",
+        "capital_used": null,
+        "lat": 42.9634,
+        "lon": -85.6681,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.usgs.gov/science/mission-areas/water-resources/science/april-may-2013-midwest-floods",
+          "source_name": "USGS",
+          "published_at": "2013-05-01T00:00:00Z",
+          "headline": "April-May 2013 Midwest Floods",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://earthobservatory.nasa.gov/images/81058/flooding-in-the-us-midwest",
+          "source_name": "NASA Earth Observatory",
+          "published_at": "2013-04-24T00:00:00Z",
+          "headline": "Flooding in the U.S. Midwest",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "USGS",
+          "NASA"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "Grand River"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Heavy rain combined with snowmelt caused flooding in parts of the Midwest in April and May 2013.",
+            "source_url": "https://www.usgs.gov/science/mission-areas/water-resources/science/april-may-2013-midwest-floods"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.42,
+        "category": 0.35,
+        "location": 0.55,
+        "summary_grounding": 0.4
+      },
+      "quality_flags": [
+        "low_confidence_category",
+        "secondary_sources_only",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "April–May 2013 Midwest floods near Grand Rapids",
+        "fingerprint": "midwest_floods_linked_to_reported_wastewater_overflow_into_the_grand_river_near_grand_rapids|grand_rapids_mi_us|2013-04"
+      }
+    },
+    {
+      "event_id": "2013-04-weather_climate-midwest-floods-01",
+      "title": "Mid-April 2013 Midwest heavy rain and flooding",
+      "description": "A slow-moving storm system brought heavy rainfall to parts of the U.S. Midwest in mid-April 2013, contributing to flash and river flooding. Government sources summarize impacts across multiple states, including Illinois.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2013-04-15T00:00:00.000Z",
+        "event_end": "2013-04-19T23:59:59.000Z",
+        "reported_at": "2013-04-01T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": null,
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Midwestern United States (multi-state)",
+        "jurisdiction_level": "supranational",
+        "admin1": null,
+        "country": null,
+        "capital_used": null,
+        "lat": 39.8283,
+        "lon": -98.5795,
+        "precision": "proxy",
+        "location_basis": "manual_override",
+        "location_confidence": 0.35
+      },
+      "sources": [
+        {
+          "url": "https://www.weather.gov/ilx/apr2013flooding",
+          "source_name": "National Weather Service (ILX)",
+          "published_at": "2013-04-01T00:00:00.000Z",
+          "headline": "Apr 2013 Flooding (Central Illinois)",
+          "byline": null,
+          "accessed_utc": "2013-04-30T23:59:59.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.usgs.gov/science/mission-areas/water-resources/science/april-may-2013-midwest-floods",
+          "source_name": "USGS",
+          "published_at": "2013-04-01T00:00:00.000Z",
+          "headline": "April–May 2013 Midwest Floods",
+          "byline": null,
+          "accessed_utc": "2013-04-30T23:59:59.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "National Weather Service",
+          "USGS"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Heavy rain ... resulted in flooding across portions of central and southeast Illinois.",
+            "source_url": "https://www.weather.gov/ilx/apr2013flooding"
+          },
+          {
+            "quote": "April–May 2013 Midwest Floods",
+            "source_url": "https://www.usgs.gov/science/mission-areas/water-resources/science/april-may-2013-midwest-floods"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.52,
+        "category": 0.8,
+        "location": 0.35,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "needs_dedupe_check",
+        "location_ambiguous",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "2013-04 US Midwest flooding",
+        "fingerprint": "2013-04-us-midwest-flooding-midapr-2013"
+      }
+    },
+    {
+      "event_id": "2013-04-weather_climate-grand-river-record-02",
+      "title": "Grand River reaches record flood levels in West Michigan (Grand Rapids / Comstock Park)",
+      "description": "Flooding affected West Michigan in April 2013, with the Grand River reaching record levels near the Grand Rapids area. NASA and USGS summaries describe widespread Midwest flooding conditions during this period, including impacts in Michigan.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2013-04-12T00:00:00.000Z",
+        "event_end": "2013-04-25T23:59:59.000Z",
+        "reported_at": "2013-04-01T00:00:00.000Z",
+        "time_confidence": 0.55,
+        "event_date_utc": null,
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Grand Rapids / Comstock Park, Michigan, United States",
+        "jurisdiction_level": "city",
+        "admin1": "MI",
+        "country": "US",
+        "capital_used": null,
+        "lat": 42.9634,
+        "lon": -85.6681,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://earthobservatory.nasa.gov/images/81058/flooding-in-the-us-midwest",
+          "source_name": "NASA Earth Observatory",
+          "published_at": "2013-04-01T00:00:00.000Z",
+          "headline": "Flooding in the U.S. Midwest",
+          "byline": null,
+          "accessed_utc": "2013-04-30T23:59:59.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.usgs.gov/science/mission-areas/water-resources/science/april-may-2013-midwest-floods",
+          "source_name": "USGS",
+          "published_at": "2013-04-01T00:00:00.000Z",
+          "headline": "April–May 2013 Midwest Floods",
+          "byline": null,
+          "accessed_utc": "2013-04-30T23:59:59.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NASA",
+          "USGS"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Flooding in the U.S. Midwest",
+            "source_url": "https://earthobservatory.nasa.gov/images/81058/flooding-in-the-us-midwest"
+          },
+          {
+            "quote": "April–May 2013 Midwest Floods",
+            "source_url": "https://www.usgs.gov/science/mission-areas/water-resources/science/april-may-2013-midwest-floods"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.5,
+        "category": 0.8,
+        "location": 0.6,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "needs_dedupe_check",
+        "date_ambiguous",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "2013-04 US Midwest flooding (Michigan impacts)",
+        "fingerprint": "2013-04-grand-rapids-mi-grand-river-flooding"
+      }
+    },
+    {
+      "event_id": "2013-04-weather_climate-ok-ar-severe-storms-03",
+      "title": "Severe thunderstorms, brief tornadoes, and flooding in northeast Oklahoma and northwest Arkansas",
+      "description": "On April 17–18, 2013, severe thunderstorms affected northeast Oklahoma and northwest Arkansas, producing flooding and at least brief tornado activity. A National Weather Service event summary describes heavy rainfall and resulting flood impacts in the area.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2013-04-17T00:00:00.000Z",
+        "event_end": "2013-04-18T23:59:59.000Z",
+        "reported_at": "2013-04-01T00:00:00.000Z",
+        "time_confidence": 0.75,
+        "event_date_utc": null,
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Northeast Oklahoma and northwest Arkansas, United States",
+        "jurisdiction_level": "state",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Oklahoma City",
+        "lat": 35.4676,
+        "lon": -97.5164,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.4
+      },
+      "sources": [
+        {
+          "url": "https://www.weather.gov/tsa/weather-event_2013april17",
+          "source_name": "National Weather Service (TSA)",
+          "published_at": "2013-04-01T00:00:00.000Z",
+          "headline": "April 17, 2013 Severe Weather and Flooding Event",
+          "byline": null,
+          "accessed_utc": "2013-04-30T23:59:59.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "National Weather Service"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "April 17, 2013 Severe Weather and Flooding Event",
+            "source_url": "https://www.weather.gov/tsa/weather-event_2013april17"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.85,
+        "location": 0.4,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "location_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "2013-04-17 OK/AR severe storms flooding",
+        "fingerprint": "2013-04-17-northeast-oklahoma-northwest-arkansas-flooding"
+      }
+    },
+    {
+      "event_id": "ev_20130416_saravan_iran_earthquake",
+      "title": "Saravan earthquake in southeastern Iran",
+      "description": "A large earthquake struck southeastern Iran near the Saravan/Khash area on April 16, 2013, with effects felt across the Iran–Pakistan border region. The event is described as a major seismic incident with regional impacts.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2013-04-16T10:44:20.000Z",
+        "event_end": "2013-04-16T12:30:00.000Z",
+        "reported_at": "2013-04-16T00:00:00.000Z",
+        "time_confidence": 0.75,
+        "event_date_utc": "2013-04-16T10:44:20.000Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Saravan, Sistan and Baluchestan Province, Iran",
+        "jurisdiction_level": "city",
+        "admin1": "Sistan and Baluchestan",
+        "country": "IR",
+        "capital_used": null,
+        "lat": 27.3717,
+        "lon": 62.3404,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.earthobservatory.nasa.gov/images/80921/earthquake-in-southeastern-iran",
+          "source_name": "NASA Earth Observatory",
+          "published_at": "2013-04-16T00:00:00.000Z",
+          "headline": "Earthquake in Southeastern Iran",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NASA Earth Observatory"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Earthquake in Southeastern Iran",
+            "source_url": "https://www.earthobservatory.nasa.gov/images/80921/earthquake-in-southeastern-iran"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.85,
+        "location": 0.55,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "2013-04-16 Iran Saravan earthquake",
+        "fingerprint": "fp_20130416_saravan_iran_earthquake"
+      }
+    },
+    {
+      "event_id": "ev_20130420_lushan_sichuan_earthquake",
+      "title": "Lushan (Ya'an) earthquake in Sichuan, China",
+      "description": "A major earthquake struck Lushan County in Sichuan Province, China on April 20, 2013, causing widespread damage and prompting concern about landslides and aftershocks. The event was significant enough to trigger an International Charter activation for disaster response imagery.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2013-04-20T00:02:47.000Z",
+        "event_end": "2013-04-20T02:30:00.000Z",
+        "reported_at": "2013-04-20T00:00:00.000Z",
+        "time_confidence": 0.75,
+        "event_date_utc": "2013-04-20T00:02:47.000Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Lushan County, Sichuan, China",
+        "jurisdiction_level": "site",
+        "admin1": "Sichuan",
+        "country": "CN",
+        "capital_used": null,
+        "lat": 30.1516,
+        "lon": 102.9246,
+        "precision": "exact",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://disasterscharter.org/activations/earthquake-in-ch-15",
+          "source_name": "International Charter: Space and Major Disasters",
+          "published_at": "2013-04-20T00:00:00.000Z",
+          "headline": "Earthquake in CH-15",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "International Charter: Space and Major Disasters"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Earthquake in CH-15",
+            "source_url": "https://disasterscharter.org/activations/earthquake-in-ch-15"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.68,
+        "category": 0.85,
+        "location": 0.7,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "2013-04-20 China Sichuan Lushan earthquake",
+        "fingerprint": "fp_20130420_lushan_sichuan_earthquake"
+      }
+    },
+    {
+      "event_id": "evt-201304-bengkalis-riau-peat-fire-001",
+      "title": "Peatland and forest wildfire in Bengkalis, Riau, Indonesia",
+      "description": "A wildfire in Bengkalis, Riau Province burned peatland and forest area and produced haze affecting nearby residents. The report noted challenges in extinguishing fires on peat and linked the blaze to land clearing.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2013-04-10T00:00:00Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "2013-04-10T00:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Bengkalis, Riau Province, Indonesia",
+        "jurisdiction_level": "state",
+        "admin1": "Riau",
+        "country": "ID",
+        "capital_used": "Pekanbaru",
+        "lat": 0.5071,
+        "lon": 101.4478,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://www.thejakartapost.com/news/2013/04/10/wildfire-destroys-60-ha-peatland-and-forests.html",
+          "source_name": "The Jakarta Post",
+          "published_at": "2013-04-10T00:00:00Z",
+          "headline": "Wildfire destroys 60 ha of peatland and forests",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [
+          "peatland",
+          "forest"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Wildfire destroys 60 ha of peatland and forests",
+            "source_url": "https://www.thejakartapost.com/news/2013/04/10/wildfire-destroys-60-ha-peatland-and-forests.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.8,
+        "location": 0.7,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "paywalled_or_partial"
+      ],
+      "dedupe": {
+        "cluster_hint": "2013-04 Riau peatland fire Bengkalis",
+        "fingerprint": "fp-2013-04-bengkalis-riau-peat-fire"
+      }
+    },
+    {
+      "event_id": "evt_20130405_can_alhb_eradicated",
+      "title": "Canada declares Asian long-horned beetle eradicated and lifts regulated area restrictions",
+      "description": "Canadian authorities announced the Asian long-horned beetle was eradicated from the previously regulated area after years of surveys and removal of susceptible trees. Movement restrictions associated with the regulated area were repealed.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "2013-04-05T00:00:00.000Z",
+        "event_end": "2013-04-05T23:59:59.000Z",
+        "reported_at": "2013-04-05T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2013-04-05T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Vaughan and Toronto, Ontario, Canada",
+        "jurisdiction_level": "state",
+        "admin1": "Ontario",
+        "country": "CA",
+        "capital_used": "Toronto",
+        "lat": 43.6532,
+        "lon": -79.3832,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.65
+      },
+      "sources": [
+        {
+          "url": "https://www.canada.ca/en/news/archive/2013/04/asian-long-horned-beetle-eradicated-from-canada.html",
+          "source_name": "Government of Canada",
+          "published_at": "2013-04-05T00:00:00.000Z",
+          "headline": "Asian long-horned beetle eradicated from Canada",
+          "byline": null,
+          "accessed_utc": "2013-04-05T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Asian long-horned beetle eradicated from Canada",
+            "source_url": "https://www.canada.ca/en/news/archive/2013/04/asian-long-horned-beetle-eradicated-from-canada.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.75,
+        "location": 0.65,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "asian-long-horned-beetle-eradicated-canada-ontario-2013-04-05",
+        "fingerprint": "fp_asian_long_horned_beetle_eradicated_ontario_2013-04-05"
+      }
+    },
+    {
+      "event_id": "evt_20130429_china_h7n9_mmwr",
+      "title": "H7N9 human infections reported in China through April 29, 2013, with links to bird exposure",
+      "description": "A CDC MMWR report summarized human infections with avian influenza A(H7N9) virus in China through April 29, 2013. The report highlighted investigations into exposures (including live animal or bird contact) and the need for ongoing surveillance and control measures.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2013-04-01T00:00:00.000Z",
+        "event_end": "2013-04-29T23:59:59.000Z",
+        "reported_at": "2013-05-10T00:00:00.000Z",
+        "time_confidence": 0.75,
+        "event_date_utc": null,
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "China (report covering multiple eastern provinces/municipalities)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "CN",
+        "capital_used": "Beijing",
+        "lat": 39.9042,
+        "lon": 116.4074,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.cdc.gov/mmwr/preview/mmwrhtml/mm6218a6.htm",
+          "source_name": "CDC MMWR",
+          "published_at": "2013-05-10T00:00:00.000Z",
+          "headline": "Human Infections with Novel Avian-Origin Influenza A(H7N9) Virus — China, February–April 2013",
+          "byline": null,
+          "accessed_utc": "2013-05-10T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "CDC"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Through April 29, 2013, ... infections ... with influenza A(H7N9) virus",
+            "source_url": "https://www.cdc.gov/mmwr/preview/mmwrhtml/mm6218a6.htm"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.58,
+        "category": 0.55,
+        "location": 0.55,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "low_confidence_category",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "h7n9-human-infections-china-through-2013-04-29",
+        "fingerprint": "fp_h7n9_china_through_2013-04-29"
+      }
+    },
+    {
+      "event_id": "2013-04-01_us_epa_doj_dominion_settlement_air_pollution",
+      "title": "EPA/DOJ settlement with Dominion Energy to reduce power-plant air pollution in IL, IN and MA",
+      "description": "On April 1, 2013, the U.S. EPA announced a Clean Air Act settlement with Dominion Energy to address air pollution from coal-fired power plants in Illinois, Indiana, and Massachusetts. The settlement included required actions and payments intended to reduce emissions including sulfur dioxide, nitrogen oxides, and particulate matter.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "2013-04-01T00:00:00.000Z",
+        "event_end": "2013-04-01T23:59:59.000Z",
+        "reported_at": "2013-04-01T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2013-04-01T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.65
+      },
+      "sources": [
+        {
+          "url": "https://www.epa.gov/archive/epapages/newsroom_archive/newsreleases/d76280334189706e85257b4000665a15.html",
+          "source_name": "U.S. Environmental Protection Agency (EPA)",
+          "published_at": "2013-04-01T00:00:00.000Z",
+          "headline": "U.S. EPA/DOJ settlement with Dominion Energy to reduce power-plant air pollution across three states",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Environmental Protection Agency (EPA)",
+          "U.S. Department of Justice (DOJ)",
+          "Dominion Energy"
+        ],
+        "substances": [
+          "sulfur dioxide (SO2)",
+          "nitrogen oxides (NOx)",
+          "particulate matter"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "settlement with Dominion Energy to address air pollution from coal-fired power plants in Illinois, Indiana, and Massachusetts",
+            "source_url": "https://www.epa.gov/archive/epapages/newsroom_archive/newsreleases/d76280334189706e85257b4000665a15.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.72,
+        "category": 0.75,
+        "location": 0.65,
+        "summary_grounding": 0.65
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "EPA-DOJ Dominion settlement April 2013",
+        "fingerprint": "2013-04-01_us_epa_doj_dominion_settlement_air_pollution|US|2013-04-01"
+      }
+    },
+    {
+      "event_id": "2013-04-29_epa_snap_c7_fluoroketone_halon_substitute",
+      "title": "EPA final SNAP rule lists C7 fluoroketone as acceptable halon substitute for certain fire suppression uses",
+      "description": "On April 29, 2013, EPA published a final rule under the Significant New Alternatives Policy (SNAP) program listing C7 fluoroketone as an acceptable substitute for certain ozone-depleting substances used as streaming agents in specific fire suppression and explosion protection end uses. The rule included conditions and narrowed use limits for the substitute.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "2013-04-29T00:00:00.000Z",
+        "event_end": "2013-04-29T23:59:59.000Z",
+        "reported_at": "2013-04-29T00:00:00.000Z",
+        "time_confidence": 0.85,
+        "event_date_utc": "2013-04-29T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.8
+      },
+      "sources": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/FR-2013-04-29/html/2013-10046.htm",
+          "source_name": "Federal Register (govinfo.gov)",
+          "published_at": "2013-04-29T00:00:00.000Z",
+          "headline": "Protection of Stratospheric Ozone: Listing of Substitutes for Ozone-Depleting Substances—C7 Fluoroketone",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Environmental Protection Agency (EPA)"
+        ],
+        "substances": [
+          "C7 fluoroketone",
+          "halon",
+          "ozone-depleting substances"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "final rule ... listing C7 fluoroketone as an acceptable substitute ... for ozone-depleting substances",
+            "source_url": "https://www.govinfo.gov/content/pkg/FR-2013-04-29/html/2013-10046.htm"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.78,
+        "category": 0.8,
+        "location": 0.8,
+        "summary_grounding": 0.7
+      },
+      "quality_flags": [
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "EPA SNAP C7 fluoroketone final rule April 2013",
+        "fingerprint": "2013-04-29_epa_snap_c7_fluoroketone_halon_substitute|US|2013-04-29"
+      }
+    }
+  ]
+}

@@ -1,0 +1,470 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_2013-06_normalize_2026-01-16T050046468Z",
+    "generated_utc": "2026-01-16T05:00:46.468Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "2013-06",
+    "window": {
+      "start_utc": "2013-06-01T00:00:00.000Z",
+      "end_utc": "2013-06-30T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "evt_20130613_williams_olefins_geismar",
+      "title": "Williams Olefins plant explosion and fire with reported hydrocarbon/VOC release (Geismar, Louisiana)",
+      "description": "An explosion and fire occurred at the Williams Olefins plant in Geismar, Louisiana. CSB materials describe reported releases to regulators involving hydrocarbons/volatile organic compounds and related emergency response actions in the area.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2013-06-13T13:33:00.000Z",
+        "event_end": "2013-06-13T17:30:00.000Z",
+        "reported_at": "2013-06-13T13:33:00.000Z",
+        "time_confidence": 0.4,
+        "event_date_utc": "2013-06-13T13:33:00.000Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Geismar, Louisiana, United States",
+        "jurisdiction_level": "site",
+        "admin1": "Louisiana",
+        "country": "US",
+        "capital_used": null,
+        "lat": 30.2133,
+        "lon": -91.0415,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.csb.gov/williams-olefins-plant-explosion-and-fire-/",
+          "source_name": "U.S. Chemical Safety and Hazard Investigation Board (CSB)",
+          "published_at": "2013-06-13T00:00:00Z",
+          "headline": "Williams Olefins Plant Explosion and Fire",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.csb.gov/csb-releases-final-case-study-into-2013-explosion-and-fire-at-williams-olefins-plant-in-geismar-louisiana/",
+          "source_name": "U.S. Chemical Safety and Hazard Investigation Board (CSB)",
+          "published_at": "2016-04-20T00:00:00Z",
+          "headline": "CSB Releases Final Case Study into 2013 Explosion and Fire at Williams Olefins Plant in Geismar, Louisiana",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Williams Olefins",
+          "U.S. Chemical Safety and Hazard Investigation Board (CSB)"
+        ],
+        "substances": [
+          "hydrocarbons",
+          "volatile organic compounds (VOCs)",
+          "propylene"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Williams Olefins Plant Explosion and Fire",
+            "source_url": "https://www.csb.gov/williams-olefins-plant-explosion-and-fire-/"
+          },
+          {
+            "quote": "2013 explosion and fire at Williams Olefins plant in Geismar, Louisiana",
+            "source_url": "https://www.csb.gov/csb-releases-final-case-study-into-2013-explosion-and-fire-at-williams-olefins-plant-in-geismar-louisiana/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.6,
+        "location": 0.6,
+        "summary_grounding": 0.4
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "Williams Olefins Geismar explosion fire 2013-06-13",
+        "fingerprint": "fp_williams_olefins_geismar_2013-06-13"
+      }
+    },
+    {
+      "event_id": "evt_201306_wi_heavy_rain_flooding_0613",
+      "title": "Heavy rain and flooding in southern Wisconsin (June 2013)",
+      "description": "A prolonged heavy-rain period in southern Wisconsin led to river flooding and related impacts including mudslides, infrastructure damage, and road closures. The National Weather Service described the rainfall totals as historically significant in parts of the region.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2013-06-21T00:00:00.000Z",
+        "event_end": "2013-06-28T23:59:59.000Z",
+        "reported_at": "2013-06-28T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": null,
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Southern Wisconsin, United States",
+        "jurisdiction_level": "state",
+        "admin1": "Wisconsin",
+        "country": "US",
+        "capital_used": "Madison",
+        "lat": 43.074761,
+        "lon": -89.38484,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.75
+      },
+      "sources": [
+        {
+          "url": "https://www.weather.gov/mkx/0613_Heavy_Rain_and_Flooding",
+          "source_name": "National Weather Service (NWS) Milwaukee/Sullivan",
+          "published_at": "2013-06-28T00:00:00.000Z",
+          "headline": "0613 Heavy Rain and Flooding",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "National Weather Service (NWS)"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Heavy Rain and Flooding",
+            "source_url": "https://www.weather.gov/mkx/0613_Heavy_Rain_and_Flooding"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.64,
+        "category": 0.8,
+        "location": 0.75,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "NWS MKX June 2013 heavy rain and flooding southern Wisconsin",
+        "fingerprint": "fp_201306_southern-wisconsin_wi_heavy-rain-flooding_2013-06-21_2013-06-28"
+      }
+    },
+    {
+      "event_id": "2013-06-us-co-black-forest-fire-guardian-1",
+      "title": "Black Forest Fire near Colorado Springs destroys hundreds of homes",
+      "description": "A wildfire burning in the Black Forest area near Colorado Springs, Colorado prompted evacuations and destroyed hundreds of homes in mid-June 2013. The incident caused major property losses and hazardous smoke conditions for nearby communities.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2013-06-12T00:00:00Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "2013-06-12T00:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Black Forest, Colorado, United States",
+        "jurisdiction_level": "site",
+        "admin1": "Colorado",
+        "country": "US",
+        "capital_used": null,
+        "lat": 39.0133,
+        "lon": -104.7136,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.theguardian.com/world/2013/jun/12/colorado-springs-wildfires-evacuation-inmates",
+          "source_name": "The Guardian",
+          "published_at": "2013-06-12T00:00:00Z",
+          "headline": "Colorado Springs wildfires: evacuations and inmates moved",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [
+          "smoke"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "wildfires near Colorado Springs ... destroyed hundreds of homes",
+            "source_url": "https://www.theguardian.com/world/2013/jun/12/colorado-springs-wildfires-evacuation-inmates"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.8,
+        "location": 0.6,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Black Forest Fire (Colorado) June 2013",
+        "fingerprint": "black-forest-fire-near-colorado-springs|black-forest-colorado-us|2013-06"
+      }
+    },
+    {
+      "event_id": "evt_20130627_mauinui_esa_40_species_effective",
+      "title": "ESA protections take effect for 40 Maui Nui species",
+      "description": "A U.S. Fish and Wildlife Service final rule listing 40 species from the Maui Nui island group as endangered under the Endangered Species Act took effect on June 27, 2013. The rule cites threats including habitat loss, invasive species, and climate-related impacts.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2013-06-27T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2013-06-27T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Maui Nui (Moloka‘i, Lāna‘i, Maui, Kaho‘olawe), Hawaii, United States",
+        "jurisdiction_level": "state",
+        "admin1": "Hawaii",
+        "country": "US",
+        "capital_used": "Honolulu",
+        "lat": 21.3099,
+        "lon": -157.8581,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.75
+      },
+      "sources": [
+        {
+          "url": "https://www.fws.gov/policy/library/2013/2013-12105.html",
+          "source_name": "U.S. Fish and Wildlife Service",
+          "published_at": "2013-06-27T00:00:00.000Z",
+          "headline": "2013-12105",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Fish and Wildlife Service"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "...listing 40 species from the islands of Molokai, Lanai, Maui, and Kahoolawe as endangered...",
+            "source_url": "https://www.fws.gov/policy/library/2013/2013-12105.html"
+          },
+          {
+            "quote": "This final rule is effective June 27, 2013.",
+            "source_url": "https://www.fws.gov/policy/library/2013/2013-12105.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.72,
+        "category": 0.8,
+        "location": 0.75,
+        "summary_grounding": 0.7
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "maui-nui-esa-40-species-effective-2013-06-27",
+        "fingerprint": "fp_20130627_mauinui_hawaii_esa_40"
+      }
+    },
+    {
+      "event_id": "2013-06-unfccc-bonn-sessions",
+      "title": "UNFCCC Bonn Climate Change Conference (June 2013) sessions in Bonn",
+      "description": "UNFCCC subsidiary bodies met in Bonn in early-to-mid June 2013 as part of ongoing international climate negotiations. The conference is presented by UNFCCC as the Bonn Climate Change Conference (June 2013).",
+      "category_primary": "policy_regulation",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "2013-06-03T00:00:00.000Z",
+        "event_end": "2013-06-14T23:59:59.000Z",
+        "reported_at": "2013-06-03T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2013-06-03T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Bonn, Germany",
+        "jurisdiction_level": "city",
+        "admin1": "North Rhine-Westphalia",
+        "country": "DE",
+        "capital_used": null,
+        "lat": 50.7374,
+        "lon": 7.0982,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://unfccc.int/conference/bonn-climate-change-conference-june-2013",
+          "source_name": "UNFCCC",
+          "published_at": "2013-06-03T00:00:00.000Z",
+          "headline": "Bonn Climate Change Conference (June 2013)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "UNFCCC"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Bonn Climate Change Conference (June 2013)",
+            "source_url": "https://unfccc.int/conference/bonn-climate-change-conference-june-2013"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.68,
+        "category": 0.75,
+        "location": 0.7,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "UNFCCC Bonn Climate Change Conference June 2013",
+        "fingerprint": "unfccc_bonn_climate_change_conference_june_2013|bonn_de|2013-06-03"
+      }
+    },
+    {
+      "event_id": "2013-06-eu-neonicotinoid-485-2013",
+      "title": "EU Implementing Regulation 485/2013 restricting certain neonicotinoids applies during June 2013",
+      "description": "Commission Implementing Regulation (EU) No 485/2013 amended approvals and conditions of use for certain neonicotinoid active substances. The regulation text on EUR-Lex documents the legal act and its restrictions, which were in effect during June 2013.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "2013-06-01T00:00:00.000Z",
+        "event_end": "2013-06-30T23:59:59.000Z",
+        "reported_at": "2013-05-24T00:00:00.000Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "2013-06-01T00:00:00.000Z",
+        "event_date_precision": "month"
+      },
+      "location": {
+        "name": "European Union (Brussels, Belgium)",
+        "jurisdiction_level": "supranational",
+        "admin1": null,
+        "country": null,
+        "capital_used": "Brussels",
+        "lat": 50.8503,
+        "lon": 4.3517,
+        "precision": "supranational",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.65
+      },
+      "sources": [
+        {
+          "url": "https://eur-lex.europa.eu/eli/reg_impl/2013/485/oj/eng",
+          "source_name": "EUR-Lex",
+          "published_at": "2013-05-24T00:00:00.000Z",
+          "headline": "Commission Implementing Regulation (EU) No 485/2013",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": "https://eur-lex.europa.eu/eli/reg_impl/2013/485/oj/eng"
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "European Commission",
+          "European Union"
+        ],
+        "substances": [
+          "clothianidin",
+          "thiamethoxam",
+          "imidacloprid"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Commission Implementing Regulation (EU) No 485/2013",
+            "source_url": "https://eur-lex.europa.eu/eli/reg_impl/2013/485/oj/eng"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.8,
+        "location": 0.65,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "EU Regulation 485/2013 neonicotinoids restrictions",
+        "fingerprint": "eu_implementing_regulation_485_2013_neonicotinoids|eu_brussels|2013-06"
+      }
+    }
+  ]
+}

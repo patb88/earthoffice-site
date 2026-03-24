@@ -1,0 +1,917 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_2025-08_normalize_2026-01-16T142809731Z",
+    "generated_utc": "2026-01-16T14:28:09.731Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "2025-08",
+    "window": {
+      "start_utc": "2025-08-01T00:00:00.000Z",
+      "end_utc": "2025-08-31T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "ev-20250806-zm-embassy-contamination-copperbelt",
+      "title": "U.S. Embassy advises personnel to leave Zambia Copperbelt area over ongoing contamination concerns after February tailings spill",
+      "description": "The U.S. Embassy in Zambia ordered U.S. government personnel to leave the Chambishi/Kitwe area following information that hazardous substances remained present after a February 2025 tailings spill. Advisories included precautions related to contaminated water and food and potential exposure risks.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2025-08-06T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2025-08-06T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Chambishi and Kitwe area, Copperbelt Province; Kafue River system, Zambia",
+        "jurisdiction_level": "state",
+        "admin1": "Copperbelt Province",
+        "country": "ZM",
+        "capital_used": "Lusaka",
+        "lat": -15.3875,
+        "lon": 28.3228,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.5
+      },
+      "sources": [
+        {
+          "url": "https://apnews.com/article/4d825f6d00ecc13581c1b3db73dff2ca",
+          "source_name": "AP News",
+          "published_at": "2025-08-06T00:00:00.000Z",
+          "headline": "6 months after a toxic mine spill in northern Zambia, contamination concerns linger",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://abcnews.go.com/Business/wireStory/6-months-after-toxic-mine-spill-northern-zambia-124406416",
+          "source_name": "ABC News",
+          "published_at": "2025-08-06T00:00:00.000Z",
+          "headline": "6 months after a toxic mine spill in northern Zambia, contamination concerns linger",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Embassy in Zambia"
+        ],
+        "substances": [
+          "arsenic",
+          "cyanide",
+          "uranium",
+          "heavy metals"
+        ],
+        "ecosystems": [
+          "Kafue River system"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "ordered U.S. government personnel to leave the affected area",
+            "source_url": "https://apnews.com/article/4d825f6d00ecc13581c1b3db73dff2ca"
+          },
+          {
+            "quote": "hazardous and carcinogenic substances ... remained present",
+            "source_url": "https://abcnews.go.com/Business/wireStory/6-months-after-toxic-mine-spill-northern-zambia-124406416"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.75,
+        "location": 0.5,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "zambia-copperbelt-tailings-spill-embassy-advisory-2025-08-06",
+        "fingerprint": "fp-zambia-copperbelt-2025-08-06-embassy-advisory"
+      }
+    },
+    {
+      "event_id": "ev-20250829-ru-cpc-terminal-oil-spill",
+      "title": "Oil spill during tanker loading at CPC Marine Terminal near Novorossiysk reported contained; cleanup and monitoring ongoing",
+      "description": "CPC reported an oil spill during tanker loading at its marine terminal near Novorossiysk on 29 August 2025. The operator stated the spill was contained with response equipment and that recovery and environmental monitoring and sampling were continuing.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2025-08-29T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2025-08-29T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "CPC Marine Terminal (Single Point Moorings), near Novorossiysk, Black Sea, Russia",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "RU",
+        "capital_used": "Moscow",
+        "lat": 55.7558,
+        "lon": 37.6173,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.45
+      },
+      "sources": [
+        {
+          "url": "https://www.cpc.ru/EN/press/releases/2025/Pages/20250829-2.aspx",
+          "source_name": "CPC",
+          "published_at": "2025-08-29T00:00:00.000Z",
+          "headline": "Press release (oil spill during tanker loading; response and monitoring)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Caspian Pipeline Consortium (CPC)"
+        ],
+        "substances": [
+          "oil"
+        ],
+        "ecosystems": [
+          "Black Sea"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "An oil spill occurred during tanker loading",
+            "source_url": "https://www.cpc.ru/EN/press/releases/2025/Pages/20250829-2.aspx"
+          },
+          {
+            "quote": "the spill was contained ... environmental monitoring and sampling",
+            "source_url": "https://www.cpc.ru/EN/press/releases/2025/Pages/20250829-2.aspx"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.8,
+        "location": 0.45,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "low_confidence_location",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "cpc-novorossiysk-terminal-oil-spill-2025-08-29",
+        "fingerprint": "fp-ru-2025-08-29-cpc-terminal-oil-spill"
+      }
+    },
+    {
+      "event_id": "ev-20250831-us-beaches-fecal-advisories",
+      "title": "Fecal contamination advisories reported for multiple U.S. beaches ahead of Labor Day weekend",
+      "description": "A report described multiple U.S. beaches posting advisories due to elevated fecal-bacteria levels ahead of Labor Day weekend. The coverage attributed risks to factors such as runoff and sewer overflows and warned against swimming at affected locations.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2025-08-31T00:00:00.000Z",
+        "time_confidence": 0.4,
+        "event_date_utc": "2025-08-31T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States (multiple coastal beaches)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, D.C.",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.35
+      },
+      "sources": [
+        {
+          "url": "https://www.theguardian.com/us-news/2025/aug/31/us-beaches-fecal-contamination-warnings-labor-day-weekend",
+          "source_name": "The Guardian",
+          "published_at": "2025-08-31T00:00:00.000Z",
+          "headline": "US beaches issue fecal contamination warnings before Labor Day weekend",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [
+          "fecal bacteria"
+        ],
+        "ecosystems": [
+          "coastal beaches"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "multiple beaches across the United States posted advisories",
+            "source_url": "https://www.theguardian.com/us-news/2025/aug/31/us-beaches-fecal-contamination-warnings-labor-day-weekend"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.48,
+        "category": 0.7,
+        "location": 0.35,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "possible_opinion_or_advocacy",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "us-multiple-beaches-fecal-advisories-labor-day-2025",
+        "fingerprint": "fp-us-2025-08-31-beaches-fecal-advisories"
+      }
+    },
+    {
+      "event_id": "ev-20250811-us-md-salisbury-pfas-lawsuits",
+      "title": "PFAS contamination lawsuits reported involving wastewater linked to industrial soybean operation in Salisbury, Maryland",
+      "description": "Reporting described lawsuits alleging wastewater linked to an industrial soybean operation contaminated local water with PFAS in Salisbury, Maryland. The coverage referenced elevated levels identified through state testing and sought remediation and protective measures.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2025-08-11T00:00:00.000Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "2025-08-11T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Salisbury, Maryland, USA",
+        "jurisdiction_level": "city",
+        "admin1": "Maryland",
+        "country": "US",
+        "capital_used": null,
+        "lat": 38.3607,
+        "lon": -75.5994,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://www.theguardian.com/environment/2025/aug/11/wastewater-perdue-pfas-lawsuits",
+          "source_name": "The Guardian",
+          "published_at": "2025-08-11T00:00:00.000Z",
+          "headline": "Wastewater and Perdue PFAS lawsuits reported in Salisbury, Maryland",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.wboc.com/news/federal-judge-denies-perdue-s-request-to-stay-salisbury-pfas-lawsuit-dismisses-two-counts/article_ad5ad3cb-8812-4b58-93f1-f47fda120ff7.html",
+          "source_name": "WBOC",
+          "published_at": "2025-08-11T00:00:00.000Z",
+          "headline": "Federal judge denies Perdue’s request to stay Salisbury PFAS lawsuit, dismisses two counts",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Perdue Farms"
+        ],
+        "substances": [
+          "PFAS"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "lawsuits alleged ... contaminated local water with PFAS",
+            "source_url": "https://www.theguardian.com/environment/2025/aug/11/wastewater-perdue-pfas-lawsuits"
+          },
+          {
+            "quote": "Federal judge denies Perdue’s request to stay ... PFAS lawsuit",
+            "source_url": "https://www.wboc.com/news/federal-judge-denies-perdue-s-request-to-stay-salisbury-pfas-lawsuit-dismisses-two-counts/article_ad5ad3cb-8812-4b58-93f1-f47fda120ff7.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.63,
+        "category": 0.75,
+        "location": 0.7,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "salisbury-md-pfas-lawsuits-perdue-2025-08-11",
+        "fingerprint": "fp-us-md-salisbury-2025-08-11-pfas-lawsuits"
+      }
+    },
+    {
+      "event_id": "ev-20250824-ru-ust-luga-fire-novatek",
+      "title": "Fire at Novatek Ust-Luga complex reported after drone debris incident; operations disrupted",
+      "description": "Reuters reported a fire at Novatek’s Ust-Luga facility after debris from a downed drone sparked a blaze, disrupting operations and fuel loading at the site. The incident affected a major condensate-processing and fuel-export complex, with subsequent reporting on repair timelines.",
+      "category_primary": "pollution_contamination",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2025-08-28T00:00:00.000Z",
+        "time_confidence": 0.4,
+        "event_date_utc": "2025-08-24T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Ust-Luga port, Leningrad region, Russia",
+        "jurisdiction_level": "country",
+        "admin1": "Leningrad region",
+        "country": "RU",
+        "capital_used": "Moscow",
+        "lat": 55.7558,
+        "lon": 37.6173,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.4
+      },
+      "sources": [
+        {
+          "url": "https://www.reuters.com/business/energy/tanker-loads-naphtha-novateks-ust-luga-terminal-data-shows-2025-08-28/",
+          "source_name": "Reuters",
+          "published_at": "2025-08-28T00:00:00.000Z",
+          "headline": "Tanker loads naphtha at Novatek's Ust-Luga terminal, data shows",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.reuters.com/business/energy/novateks-ust-luga-repairs-could-take-months-sources-say-2025-08-28/",
+          "source_name": "Reuters",
+          "published_at": "2025-08-28T00:00:00.000Z",
+          "headline": "Novatek's Ust-Luga repairs could take months, sources say",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Novatek"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "Baltic Sea"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "fire ... after debris from a downed drone sparked a blaze",
+            "source_url": "https://www.reuters.com/business/energy/novateks-ust-luga-repairs-could-take-months-sources-say-2025-08-28/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.5,
+        "category": 0.5,
+        "location": 0.4,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "low_confidence_category",
+        "low_confidence_location",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "ust-luga-novatek-fire-drone-debris-2025-08",
+        "fingerprint": "fp-ru-2025-08-ust-luga-novatek-fire"
+      }
+    },
+    {
+      "event_id": "evt_2025-08_spain_heatwave_aemet",
+      "title": "AEMET says Spain’s 8–18 Aug 2025 heatwave was the most intense on record",
+      "description": "Spain’s meteorological agency AEMET described an August 2025 heatwave as the most intense on record. Reporting described prolonged extreme heat and associated impacts including heightened wildfire risk.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2025-08-08T00:00:00.000Z",
+        "event_end": "2025-08-18T23:59:59.000Z",
+        "reported_at": "2025-08-24T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2025-08-08T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Spain",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "ES",
+        "capital_used": "Madrid",
+        "lat": 40.4168,
+        "lon": -3.7038,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.95
+      },
+      "sources": [
+        {
+          "url": "https://www.aljazeera.com/news/2025/8/24/spains-august-heatwave-was-most-intense-on-record-weather-agency-says",
+          "source_name": "Al Jazeera",
+          "published_at": "2025-08-24T00:00:00Z",
+          "headline": "Spain's August heatwave was most intense on record, weather agency says",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.euronews.com/green/2025/08/26/summer-2025-ranks-among-spains-hottest-ever-after-historic-august-heatwave",
+          "source_name": "Euronews Green",
+          "published_at": "2025-08-26T00:00:00Z",
+          "headline": "Summer 2025 ranks among Spain’s hottest ever after historic August heatwave",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "AEMET"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "AEMET described the August heatwave as the most intense on record.",
+            "source_url": "https://www.aljazeera.com/news/2025/8/24/spains-august-heatwave-was-most-intense-on-record-weather-agency-says"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.85,
+        "location": 0.95,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "needs_dedupe_check",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "spain-aug-2025-heatwave-aemet",
+        "fingerprint": "fp_spain_aug2025_heatwave_aemet"
+      }
+    },
+    {
+      "event_id": "evt_2025-08_c3s_august_third_warmest_global",
+      "title": "Copernicus: August 2025 was the third-warmest August globally (ERA5)",
+      "description": "The Copernicus Climate Change Service (C3S) reported that August 2025 was the third-warmest August globally in the ERA5 record. Copernicus materials also highlighted a European heatwave period from 8–18 August 2025.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2025-08-01T00:00:00.000Z",
+        "event_end": "2025-08-31T23:59:59.000Z",
+        "reported_at": "2025-08-01T00:00:00Z",
+        "time_confidence": 0.4,
+        "event_date_utc": null,
+        "event_date_precision": "month"
+      },
+      "location": {
+        "name": "Global (proxy: New York City, US)",
+        "jurisdiction_level": "global_proxy",
+        "admin1": "NY",
+        "country": "US",
+        "capital_used": null,
+        "lat": 40.7128,
+        "lon": -74.006,
+        "precision": "proxy",
+        "location_basis": "manual_override",
+        "location_confidence": 0.3
+      },
+      "sources": [
+        {
+          "url": "https://www.copernicus.eu/en/media/image-day-gallery/august-2025-third-warmest-august-record-globally",
+          "source_name": "Copernicus",
+          "published_at": "2025-08-01T00:00:00Z",
+          "headline": "August 2025 third-warmest August on record globally",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.euronews.com/green/2025/09/09/southwestern-europe-scorched-by-extreme-heat-during-worlds-third-warmest-august-on-record",
+          "source_name": "Euronews Green",
+          "published_at": "2025-09-09T00:00:00Z",
+          "headline": "Southwestern Europe scorched by extreme heat during world’s third-warmest August on record",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Copernicus Climate Change Service (C3S)"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Copernicus reported August 2025 as the third-warmest August globally (ERA5).",
+            "source_url": "https://www.copernicus.eu/en/media/image-day-gallery/august-2025-third-warmest-august-record-globally"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.5,
+        "category": 0.85,
+        "location": 0.3,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "needs_dedupe_check",
+        "location_ambiguous",
+        "date_ambiguous",
+        "low_confidence_location"
+      ],
+      "dedupe": {
+        "cluster_hint": "c3s-august-2025-third-warmest-august-global",
+        "fingerprint": "fp_c3s_aug2025_third_warmest_august_global"
+      }
+    },
+    {
+      "event_id": "2025-08-geological-krasheninnikov-kamchatka-eruption",
+      "title": "Krasheninnikov volcano eruption on Kamchatka Peninsula",
+      "description": "Reports said Krasheninnikov volcano on Russia’s Kamchatka Peninsula erupted on Aug. 3, 2025, sending an ash plume high into the air. Coverage noted aviation alerts and ongoing monitoring, and discussed possible links to a recent major offshore earthquake.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2025-08-03T00:00:00.000Z",
+        "event_end": "2025-08-03T23:59:59.000Z",
+        "reported_at": "2025-08-03T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2025-08-03T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Kamchatka Peninsula, Russia",
+        "jurisdiction_level": "state",
+        "admin1": "Kamchatka Krai",
+        "country": "RU",
+        "capital_used": "Petropavlovsk-Kamchatsky",
+        "lat": 53.037021,
+        "lon": 158.655914,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://apnews.com/article/bba043724cb8ca46860c651d803c6a6b",
+          "source_name": "Associated Press",
+          "published_at": "2025-08-03T00:00:00Z",
+          "headline": "Krasheninnikov volcano erupts on Kamchatka Peninsula for first time in centuries",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://time.com/7307189/kamchatka-peninsula-russia-earthquake-krasheninnikov-volcano-eruption-seismic-activity-related/",
+          "source_name": "Time",
+          "published_at": "2025-08-03T00:00:00Z",
+          "headline": "Kamchatka Peninsula volcano eruption and seismic activity coverage",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.livescience.com/planet-earth/volcanos/dormant-volcano-erupts-in-russia-for-first-time-in-around-500-years-days-after-magnitude-8-8-megaquake",
+          "source_name": "Live Science",
+          "published_at": "2025-08-03T00:00:00Z",
+          "headline": "Dormant volcano erupts in Russia for first time in around 500 years days after magnitude 8.8 megaquake",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Associated Press",
+          "Time",
+          "Live Science"
+        ],
+        "substances": [
+          "volcanic ash"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Krasheninnikov volcano erupted on Russia’s Kamchatka Peninsula on Aug. 3, 2025.",
+            "source_url": "https://apnews.com/article/bba043724cb8ca46860c651d803c6a6b"
+          },
+          {
+            "quote": "Ash plume rose kilometers high, prompting aviation advisories and monitoring.",
+            "source_url": "https://time.com/7307189/kamchatka-peninsula-russia-earthquake-krasheninnikov-volcano-eruption-seismic-activity-related/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.85,
+        "location": 0.55,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Krasheninnikov volcano eruption (Kamchatka) Aug 2025",
+        "fingerprint": "fp_krasheninnikov_kamchatka_2025-08-03"
+      }
+    },
+    {
+      "event_id": "evt-202508-noaa-crw-satellite-bleaching-alerts-global-proxy",
+      "title": "NOAA Coral Reef Watch satellite bleaching alert level changes reported in August 2025",
+      "description": "NOAA Coral Reef Watch issued Satellite Bleaching Alert updates in August 2025 indicating changes in heat-stress and bleaching-risk alert levels at monitored locations. The alerts reflect accumulated thermal stress conditions associated with elevated risk of coral bleaching.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2025-08-04T00:00:00.000Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "2025-08-04T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Multiple NOAA Coral Reef Watch monitored reef regions (global)",
+        "jurisdiction_level": "global_proxy",
+        "admin1": null,
+        "country": null,
+        "capital_used": null,
+        "lat": 0,
+        "lon": 0,
+        "precision": "proxy",
+        "location_basis": "institution_proxy",
+        "location_confidence": 0.4
+      },
+      "sources": [
+        {
+          "url": "https://www.ospo.noaa.gov/data/ocean/crw/alerts/2025/SBA_alerts_20250804.html",
+          "source_name": "NOAA OSPO / Coral Reef Watch",
+          "published_at": "2025-08-04T00:00:00.000Z",
+          "headline": "Satellite Bleaching Alert (SBA)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.ospo.noaa.gov/data/ocean/crw/alerts/2025/SBA_alerts_20250810.html",
+          "source_name": "NOAA OSPO / Coral Reef Watch",
+          "published_at": "2025-08-10T00:00:00.000Z",
+          "headline": "Satellite Bleaching Alert (SBA)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.ospo.noaa.gov/data/ocean/crw/alerts/2025/SBA_alerts_20250825.html",
+          "source_name": "NOAA OSPO / Coral Reef Watch",
+          "published_at": "2025-08-25T00:00:00.000Z",
+          "headline": "Satellite Bleaching Alert (SBA)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA Coral Reef Watch",
+          "NOAA OSPO"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "coral reefs"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.75,
+        "location": 0.4,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "noaa-crw-satellite-bleaching-alerts-2025-08",
+        "fingerprint": "fp-noaa-crw-satellite-bleaching-alerts-global-2025-08"
+      }
+    },
+    {
+      "event_id": "evt_20250801_us_epa_hfc_rule_upheld",
+      "title": "US appeals court upholds EPA HFC phase-down rule under the AIM Act",
+      "description": "A U.S. federal appeals court upheld an EPA regulation to phase down hydrofluorocarbons (HFCs), affirming the agency’s authority to reduce production and use of high global-warming-potential refrigerants under the AIM Act framework.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2025-08-01T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2025-08-01T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Washington, DC, United States (federal courts)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.reuters.com/legal/government/court-upholds-biden-era-epa-rule-phasing-out-climate-damaging-refrigerant-2025-08-01/",
+          "source_name": "Reuters",
+          "published_at": "2025-08-01T00:00:00.000Z",
+          "headline": "Court upholds Biden-era EPA rule phasing out climate-damaging refrigerant",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Environmental Protection Agency (EPA)"
+        ],
+        "substances": [
+          "Hydrofluorocarbons (HFCs)"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "court upheld ... EPA rule ... phasing out climate-damaging refrigerant",
+            "source_url": "https://www.reuters.com/legal/government/court-upholds-biden-era-epa-rule-phasing-out-climate-damaging-refrigerant-2025-08-01/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.75,
+        "location": 0.6,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "US EPA HFC phase-down rule upheld (AIM Act)",
+        "fingerprint": "us_epa_hfc_phase_down_upheld_2025-08-01_us"
+      }
+    },
+    {
+      "event_id": "evt_20250812_us_epa_livestock_emissions_exemption_upheld",
+      "title": "Federal judge upholds EPA exemption for livestock facilities from certain air-emissions reporting",
+      "description": "A federal judge upheld an EPA exemption that limits livestock facilities’ obligations to report certain air emissions as hazardous substances under emergency reporting statutes, rejecting a challenge brought by environmental and community groups.",
+      "category_primary": "policy_regulation",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2025-08-12T00:00:00.000Z",
+        "time_confidence": 0.65,
+        "event_date_utc": "2025-08-12T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Washington, DC, United States (federal district court)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.45
+      },
+      "sources": [
+        {
+          "url": "https://capitalpress.com/2025/08/12/judge-exempting-livestock-from-air-emissions-reporting-is-lawful/",
+          "source_name": "Capital Press",
+          "published_at": "2025-08-12T00:00:00.000Z",
+          "headline": "Judge: Exempting livestock from air emissions reporting is lawful",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Environmental Protection Agency (EPA)"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Judge: Exempting livestock from air emissions reporting is lawful",
+            "source_url": "https://capitalpress.com/2025/08/12/judge-exempting-livestock-from-air-emissions-reporting-is-lawful/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.5,
+        "category": 0.7,
+        "location": 0.45,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "EPA livestock air-emissions reporting exemption upheld",
+        "fingerprint": "epa_livestock_emissions_reporting_exemption_upheld_2025-08-12_us"
+      }
+    }
+  ]
+}

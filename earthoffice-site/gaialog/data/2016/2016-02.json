@@ -1,0 +1,438 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_2016-02_normalize_2026-01-16T054804593Z",
+    "generated_utc": "2026-01-16T05:48:04.593Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "2016-02",
+    "window": {
+      "start_utc": "2016-02-01T00:00:00.000Z",
+      "end_utc": "2016-02-29T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "evt_201602_baltimore_jones_falls_wastewater_overflow",
+      "title": "Baltimore discloses millions of gallons of wastewater released into Jones Falls and Inner Harbor during late-February storm",
+      "description": "Baltimore City disclosed revised estimates for storm-related wastewater/sewage overflows in late February 2016, reporting releases into the Jones Falls and onward to the Inner Harbor. The report cited millions of gallons released during the storm period.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2016-02-26T00:00:00Z",
+        "time_confidence": 0.65,
+        "event_date_utc": "2016-02-26T00:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Baltimore, Maryland, USA",
+        "jurisdiction_level": "city",
+        "admin1": "Maryland",
+        "country": "US",
+        "capital_used": null,
+        "lat": 39.2903848,
+        "lon": -76.6121893,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.8
+      },
+      "sources": [
+        {
+          "url": "https://www.baltimorebrew.com/2016/02/26/breaking-city-discloses-that-5-6-million-gallons-not-200000-gallons-of-sewage-were-released/",
+          "source_name": "Baltimore Brew",
+          "published_at": "2016-02-26T00:00:00Z",
+          "headline": "Breaking: City discloses that 5.6 million gallons (not 200,000 gallons) of sewage were released",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "City of Baltimore"
+        ],
+        "substances": [
+          "wastewater",
+          "sewage"
+        ],
+        "ecosystems": [
+          "Jones Falls",
+          "Baltimore Inner Harbor"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "City discloses that 5.6 million gallons (not 200,000 gallons) of sewage were released",
+            "source_url": "https://www.baltimorebrew.com/2016/02/26/breaking-city-discloses-that-5-6-million-gallons-not-200000-gallons-of-sewage-were-released/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.75,
+        "location": 0.8,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "baltimore-jones-falls-inner-harbor-overflow-feb-2016",
+        "fingerprint": "baltimore_jones_falls_inner_harbor_overflow_2016-02-26"
+      }
+    },
+    {
+      "event_id": "evt_201602_freedom_industries_sentencing_elk_river",
+      "title": "Freedom Industries and former plant manager sentenced in case tied to 2014 Elk River chemical spill",
+      "description": "An EPA enforcement page lists Freedom Industries, Inc. and a former plant manager as sentenced on February 4, 2016 for environmental crimes connected to the 2014 Elk River chemical spill. The February 2016 sentencing is an enforcement action stemming from the earlier drinking-water contamination incident.",
+      "category_primary": "pollution_contamination",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2016-02-04T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2016-02-04T00:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Charleston, West Virginia, USA",
+        "jurisdiction_level": "city",
+        "admin1": "West Virginia",
+        "country": "US",
+        "capital_used": null,
+        "lat": 38.3498195,
+        "lon": -81.6326234,
+        "precision": "city",
+        "location_basis": "institution_proxy",
+        "location_confidence": 0.45
+      },
+      "sources": [
+        {
+          "url": "https://19january2017snapshot.epa.gov/enforcement/2016-major-criminal-cases_.html",
+          "source_name": "U.S. Environmental Protection Agency (archive snapshot)",
+          "published_at": "2016-01-01T00:00:00Z",
+          "headline": "2016 Major Criminal Cases",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Environmental Protection Agency (EPA)",
+          "Freedom Industries, Inc."
+        ],
+        "substances": [],
+        "ecosystems": [
+          "Elk River"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "2016 Major Criminal Cases",
+            "source_url": "https://19january2017snapshot.epa.gov/enforcement/2016-major-criminal-cases_.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.42,
+        "category": 0.65,
+        "location": 0.45,
+        "summary_grounding": 0.35
+      },
+      "quality_flags": [
+        "secondary_sources_only",
+        "date_ambiguous",
+        "low_confidence_location",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "freedom-industries-sentencing-elk-river-2016-02-04",
+        "fingerprint": "freedom_industries_sentencing_elk_river_2016-02-04"
+      }
+    },
+    {
+      "event_id": "evt_201602_winston_fiji_001",
+      "title": "Severe Tropical Cyclone Winston strikes Fiji (Feb 2016)",
+      "description": "Severe Tropical Cyclone Winston struck Fiji around Feb 20–21, 2016, causing widespread damage and major disruption to services including water, energy, transport, and health.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2016-02-20T00:00:00.000Z",
+        "event_end": "2016-02-22T23:59:59.000Z",
+        "reported_at": "2016-02-20T00:00:00.000Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "2016-02-20T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Fiji",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "FJ",
+        "capital_used": "Suva",
+        "lat": -18.1416,
+        "lon": 178.4419,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.9
+      },
+      "sources": [
+        {
+          "url": "https://www.who.int/westernpacific/emergencies/cyclone-winston-2016",
+          "source_name": "World Health Organization (WHO)",
+          "published_at": "2016-02-20T00:00:00.000Z",
+          "headline": "Cyclone Winston, Fiji, 2016",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.climate.gov/news-features/event-tracker/tropical-cyclone-winston-causes-devastation-fiji-tropical-paradise",
+          "source_name": "NOAA Climate.gov",
+          "published_at": "2016-02-20T00:00:00.000Z",
+          "headline": "Tropical Cyclone Winston causes devastation in Fiji tropical paradise",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "World Health Organization (WHO)",
+          "NOAA"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "struck Fiji on Feb 20–21, 2016, causing widespread damage and major disruption",
+            "source_url": "https://www.who.int/westernpacific/emergencies/cyclone-winston-2016"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.85,
+        "location": 0.9,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "cyclone_winston_fiji_2016_02",
+        "fingerprint": "fp_cyclone_winston_fiji_2016-02-20"
+      }
+    },
+    {
+      "event_id": "2016-02_gbr_bleaching_heat_stress_001",
+      "title": "Great Barrier Reef experienced severe heat stress and coral bleaching conditions emerging in February 2016",
+      "description": "Agency and science summaries describe exceptionally warm summer conditions that produced severe heat stress and widespread coral bleaching on the Great Barrier Reef during the 2016 mass bleaching event. The onset of extreme heat stress is described as present since February 2016, preceding peak impacts later in the season.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2016-03-21T00:00:00.000Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "2016-02-01T00:00:00.000Z",
+        "event_date_precision": "month"
+      },
+      "location": {
+        "name": "Great Barrier Reef, Queensland, Australia",
+        "jurisdiction_level": "site",
+        "admin1": "Queensland",
+        "country": "AU",
+        "capital_used": null,
+        "lat": -18.2871,
+        "lon": 147.6992,
+        "precision": "proxy",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.climate.gov/news-features/event-tracker/great-barrier-reef-suffers-through-record-breaking-bleaching-event",
+          "source_name": "NOAA Climate.gov",
+          "published_at": "2016-04-08T00:00:00.000Z",
+          "headline": "Great Barrier Reef suffers through record-breaking bleaching event",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.theguardian.com/environment/2016/mar/21/great-barrier-reef-coral-bleaching-threat-raised-to-highest-level",
+          "source_name": "The Guardian",
+          "published_at": "2016-03-21T00:00:00.000Z",
+          "headline": "Great Barrier Reef coral bleaching threat raised to highest level",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.coralcoe.org.au/legacy/index.html@p=32288.html",
+          "source_name": "ARC Centre of Excellence for Coral Reef Studies (legacy site)",
+          "published_at": "2016-01-01T00:00:00.000Z",
+          "headline": "Legacy page reference re: 2016 bleaching/heat stress (exact title unknown from draft)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA",
+          "ARC Centre of Excellence for Coral Reef Studies"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "Coral reefs",
+          "Great Barrier Reef"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.56,
+        "category": 0.75,
+        "location": 0.55,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "secondary_sources_only",
+        "paywalled_or_partial",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Great Barrier Reef 2016 mass bleaching onset Feb 2016",
+        "fingerprint": "gbr_bleaching_onset_2016-02_great_barrier_reef"
+      }
+    },
+    {
+      "event_id": "us-supreme-court-stay-clean-power-plan-2016-02-09",
+      "title": "U.S. Supreme Court stays EPA Clean Power Plan pending litigation",
+      "description": "On February 9, 2016, the U.S. Supreme Court issued a stay that halted enforcement of the U.S. EPA Clean Power Plan while legal challenges proceeded. The stay paused implementation of the rule aimed at reducing carbon pollution from power plants.",
+      "category_primary": "policy_regulation",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2016-02-09T00:00:00.000Z",
+        "event_end": "2016-02-09T23:59:59.000Z",
+        "reported_at": "2016-02-09T00:00:00.000Z",
+        "time_confidence": 0.75,
+        "event_date_utc": "2016-02-09T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Washington, D.C., United States (U.S. Supreme Court)",
+        "jurisdiction_level": "city",
+        "admin1": null,
+        "country": "US",
+        "capital_used": null,
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://www.scotusblog.com/2016/02/carbon-pollution-controls-put-on-hold/",
+          "source_name": "SCOTUSblog",
+          "published_at": "2016-02-09T00:00:00.000Z",
+          "headline": "Carbon pollution controls put on hold",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.brookings.edu/articles/the-supreme-courts-clean-power-plan-missteps-2/",
+          "source_name": "Brookings",
+          "published_at": "2016-02-09T00:00:00.000Z",
+          "headline": "The Supreme Court’s Clean Power Plan missteps",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://earthjustice.org/press/2016/earthjustice-statement-on-supreme-court-s-temporary-stay-of-the-clean-power-plan",
+          "source_name": "Earthjustice",
+          "published_at": "2016-02-09T00:00:00.000Z",
+          "headline": "Earthjustice statement on Supreme Court’s temporary stay of the Clean Power Plan",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Supreme Court",
+          "U.S. Environmental Protection Agency (EPA)"
+        ],
+        "substances": [
+          "carbon pollution",
+          "carbon emissions"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "the Supreme Court... granted a stay of the Clean Power Plan",
+            "source_url": "https://www.scotusblog.com/2016/02/carbon-pollution-controls-put-on-hold/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.7,
+        "category": 0.8,
+        "location": 0.7,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "possible_opinion_or_advocacy",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "epa-clean-power-plan-supreme-court-stay",
+        "fingerprint": "epa_clean_power_plan_stay|washington_dc_us|2016-02-09"
+      }
+    }
+  ]
+}

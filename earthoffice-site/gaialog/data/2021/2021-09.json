@@ -1,0 +1,952 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_2021-09_normalize_2026-01-16T130555610Z",
+    "generated_utc": "2026-01-16T13:05:55.610Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "2021-09",
+    "window": {
+      "start_utc": "2021-09-01T00:00:00.000Z",
+      "end_utc": "2021-09-30T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "evt-20210916-bodega-harbor-diesel-spill",
+      "title": "Diesel spill during vessel fuel transfer in Bodega Harbor, California",
+      "description": "A diesel spill estimated at roughly 200–300 gallons was reported during a tank-to-tank transfer associated with the fishing vessel Barbara Maria in/near Bodega Harbor. The U.S. Coast Guard observed sheen and NOAA provided trajectory/fate and transport support.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2021-09-16T00:00:00.000Z",
+        "event_end": "2021-09-16T23:59:59.000Z",
+        "reported_at": "2021-09-01T00:00:00.000Z",
+        "time_confidence": 0.4,
+        "event_date_utc": "2021-09-16T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Bodega Harbor, California, USA",
+        "jurisdiction_level": "site",
+        "admin1": "California",
+        "country": "US",
+        "capital_used": null,
+        "lat": 38.3186,
+        "lon": -123.0489,
+        "precision": "exact",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://blog.response.restoration.noaa.gov/incident-responses-september-2021",
+          "source_name": "NOAA Response & Restoration Blog",
+          "published_at": "2021-09-01T00:00:00.000Z",
+          "headline": "Incident responses September 2021",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA",
+          "U.S. Coast Guard"
+        ],
+        "substances": [
+          "diesel"
+        ],
+        "ecosystems": [
+          "Greater Farallones National Marine Sanctuary"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "reported diesel spill (estimated ~200–300 gallons) occurred during a tank-to-tank transfer",
+            "source_url": "https://blog.response.restoration.noaa.gov/incident-responses-september-2021"
+          },
+          {
+            "quote": "U.S. Coast Guard observed sheen and NOAA provided trajectory/fate and transport support",
+            "source_url": "https://blog.response.restoration.noaa.gov/incident-responses-september-2021"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.8,
+        "location": 0.55,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "noaa-incident-responses-sep-2021",
+        "fingerprint": "bodega-harbor-diesel-spill-2021-09-16"
+      }
+    },
+    {
+      "event_id": "evt-20210916-ilwaco-marina-sinking-vessel",
+      "title": "Sinking vessel posed diesel pollution risk at Ilwaco Marina, Washington",
+      "description": "A 50-foot commercial vessel reportedly began sinking at Ilwaco Marina with an estimated ~600 gallons of red-dye diesel aboard. Responders deployed containment boom, plugged vents, and refloated the vessel while spill volume was under investigation.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2021-09-16T00:00:00.000Z",
+        "event_end": "2021-09-16T23:59:59.000Z",
+        "reported_at": "2021-09-01T00:00:00.000Z",
+        "time_confidence": 0.4,
+        "event_date_utc": "2021-09-16T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Ilwaco Marina, Ilwaco, Washington, USA",
+        "jurisdiction_level": "site",
+        "admin1": "Washington",
+        "country": "US",
+        "capital_used": null,
+        "lat": 46.3073,
+        "lon": -124.0342,
+        "precision": "exact",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://blog.response.restoration.noaa.gov/incident-responses-september-2021",
+          "source_name": "NOAA Response & Restoration Blog",
+          "published_at": "2021-09-01T00:00:00.000Z",
+          "headline": "Incident responses September 2021",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA"
+        ],
+        "substances": [
+          "diesel"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "began sinking with ~600 gallons of red-dye diesel on board",
+            "source_url": "https://blog.response.restoration.noaa.gov/incident-responses-september-2021"
+          },
+          {
+            "quote": "Responders deployed containment boom... and refloated the vessel; spill volume was under investigation",
+            "source_url": "https://blog.response.restoration.noaa.gov/incident-responses-september-2021"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.8,
+        "location": 0.6,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "noaa-incident-responses-sep-2021",
+        "fingerprint": "ilwaco-marina-sinking-vessel-2021-09-16"
+      }
+    },
+    {
+      "event_id": "evt-20210927-portage-in-orange-sludge-discharge",
+      "title": "Orange sludge-like discharge reported near U.S. Steel Midwest Plant in Portage, Indiana",
+      "description": "An orange sludge-like substance was reported discharging intermittently overnight and into the morning near the U.S. Steel Midwest Plant in Portage, Indiana. EPA, the U.S. Coast Guard, and state responders collected samples and secured the suspected source while NOAA provided remote cleanup recommendations.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2021-09-27T00:00:00.000Z",
+        "event_end": "2021-09-27T23:59:59.000Z",
+        "reported_at": "2021-09-01T00:00:00.000Z",
+        "time_confidence": 0.4,
+        "event_date_utc": "2021-09-27T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Portage, Indiana, USA",
+        "jurisdiction_level": "city",
+        "admin1": "Indiana",
+        "country": "US",
+        "capital_used": null,
+        "lat": 41.5759,
+        "lon": -87.1761,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.65
+      },
+      "sources": [
+        {
+          "url": "https://blog.response.restoration.noaa.gov/incident-responses-september-2021",
+          "source_name": "NOAA Response & Restoration Blog",
+          "published_at": "2021-09-01T00:00:00.000Z",
+          "headline": "Incident responses September 2021",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA",
+          "U.S. EPA",
+          "U.S. Coast Guard",
+          "U.S. Steel"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "orange sludge-like substance was reported releasing intermittently overnight and the morning of Sept. 27",
+            "source_url": "https://blog.response.restoration.noaa.gov/incident-responses-september-2021"
+          },
+          {
+            "quote": "responders collected samples and secured the suspected source; NOAA provided cleanup recommendations remotely",
+            "source_url": "https://blog.response.restoration.noaa.gov/incident-responses-september-2021"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.8,
+        "location": 0.65,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "noaa-incident-responses-sep-2021",
+        "fingerprint": "portage-in-orange-sludge-2021-09-27"
+      }
+    },
+    {
+      "event_id": "2021-09_us-northeast_post-tropical-cyclone-ida_flooding_tornadoes",
+      "title": "Post‑Tropical Cyclone Ida causes flash flooding and tornadoes in the U.S. Northeast",
+      "description": "Remnants of Ida produced extreme rainfall and flash flooding across parts of the U.S. Northeast on Sept. 1–2, 2021. Reports also described multiple tornadoes during the same period.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2021-09-01T00:00:00.000Z",
+        "event_end": "2021-09-02T23:59:59.000Z",
+        "reported_at": "2021-09-02T00:00:00Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2021-09-01T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Northeastern United States",
+        "jurisdiction_level": "supranational",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "proxy",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.5
+      },
+      "sources": [
+        {
+          "url": "https://www.nssl.noaa.gov/projects/wof/casestudies/hurricane-ida-sep2021/",
+          "source_name": "NOAA National Severe Storms Laboratory",
+          "published_at": "2021-09-02T00:00:00Z",
+          "headline": "Hurricane Ida (Sep 2021) case study",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.ncei.noaa.gov/access/billions/state-summary/DE",
+          "source_name": "NOAA NCEI",
+          "published_at": "2021-09-02T00:00:00Z",
+          "headline": "U.S. Billion-Dollar Weather and Climate Disasters: State Summary (DE)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.axios.com/2021/09/02/northeast-tornado-outbreak-flooding-threat",
+          "source_name": "Axios",
+          "published_at": "2021-09-02T00:00:00Z",
+          "headline": "Northeast tornado outbreak, flooding threat",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA National Severe Storms Laboratory",
+          "NOAA NCEI"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Hurricane Ida (Sep 2021) case study",
+            "source_url": "https://www.nssl.noaa.gov/projects/wof/casestudies/hurricane-ida-sep2021/"
+          },
+          {
+            "quote": "Northeast tornado outbreak, flooding threat",
+            "source_url": "https://www.axios.com/2021/09/02/northeast-tornado-outbreak-flooding-threat"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.8,
+        "location": 0.5,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "needs_dedupe_check",
+        "secondary_sources_only",
+        "location_ambiguous",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "Ida remnants flooding/tornadoes U.S. Northeast 2021-09-01 to 2021-09-02",
+        "fingerprint": "ida_remnants_us_northeast_2021-09-01_2021-09-02"
+      }
+    },
+    {
+      "event_id": "2021-09_spain_catalonia_alcanar_flooding",
+      "title": "Heavy rainfall causes flooding in Catalonia (Alcanar) and other parts of Spain",
+      "description": "Intense rainfall on Sept. 1–2, 2021 contributed to destructive flooding in parts of Spain, including Alcanar in Catalonia. The draft reports 233.5 mm of rain in 24 hours on Sept. 1 in Alcanar and widespread disruption.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2021-09-01T00:00:00.000Z",
+        "event_end": "2021-09-02T23:59:59.000Z",
+        "reported_at": "2021-09-02T00:00:00Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "2021-09-01T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Catalonia, Spain (Alcanar)",
+        "jurisdiction_level": "state",
+        "admin1": "Catalonia",
+        "country": "ES",
+        "capital_used": "Barcelona",
+        "lat": 41.3851,
+        "lon": 2.1734,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.met.reading.ac.uk/~brugge/world2021.html",
+          "source_name": "University of Reading (MET) - Weather of the World 2021",
+          "published_at": "2021-09-02T00:00:00Z",
+          "headline": "Weather of the World 2021 (events list)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Weather of the World 2021 (events list)",
+            "source_url": "https://www.met.reading.ac.uk/~brugge/world2021.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.4,
+        "category": 0.7,
+        "location": 0.6,
+        "summary_grounding": 0.25
+      },
+      "quality_flags": [
+        "secondary_sources_only",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Flooding in Alcanar/Catalonia Spain early Sept 2021",
+        "fingerprint": "spain_catalonia_flooding_2021-09-01_2021-09-02"
+      }
+    },
+    {
+      "event_id": "geological-20210919-cumbre-vieja-la-palma",
+      "title": "Cumbre Vieja eruption begins on La Palma (Canary Islands, Spain)",
+      "description": "An eruption began at Cumbre Vieja on La Palma on Sept. 19, 2021, producing lava outflows and gas emissions. Satellite observations detected a sulfur dioxide cloud soon after the onset.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2021-09-19T14:12:00.000Z",
+        "event_end": "2021-09-19T23:59:59.000Z",
+        "reported_at": "2021-09-19T00:00:00.000Z",
+        "time_confidence": 0.8,
+        "event_date_utc": "2021-09-19T14:12:00.000Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "La Palma, Canary Islands, Spain",
+        "jurisdiction_level": "site",
+        "admin1": "Canary Islands",
+        "country": "ES",
+        "capital_used": null,
+        "lat": 28.6833,
+        "lon": -17.7667,
+        "precision": "admin1",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.dlr.de/en/eoc/latest/news/2021/volcanic-eruption-of-cumbre-vieja-on-la-palma",
+          "source_name": "DLR (German Aerospace Center)",
+          "published_at": "2021-09-19T00:00:00.000Z",
+          "headline": "Volcanic eruption of Cumbre Vieja on La Palma",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.theguardian.com/world/2021/sep/19/spanish-canary-island-volcano-erupts-after-weeks-of-earthquakes",
+          "source_name": "The Guardian",
+          "published_at": "2021-09-19T00:00:00.000Z",
+          "headline": "Spanish Canary Island volcano erupts after weeks of earthquakes",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "DLR (German Aerospace Center)"
+        ],
+        "substances": [
+          "sulfur dioxide"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "An eruption began at Cumbre Vieja on La Palma on Sept. 19, 2021",
+            "source_url": "https://www.dlr.de/en/eoc/latest/news/2021/volcanic-eruption-of-cumbre-vieja-on-la-palma"
+          },
+          {
+            "quote": "volcano erupts after weeks of earthquakes",
+            "source_url": "https://www.theguardian.com/world/2021/sep/19/spanish-canary-island-volcano-erupts-after-weeks-of-earthquakes"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.85,
+        "location": 0.55,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "cumbre-vieja-la-palma-2021-09-19",
+        "fingerprint": "geological|cumbre vieja eruption begins on la palma (canary islands, spain)|la palma, canary islands, spain|2021-09-19"
+      }
+    },
+    {
+      "event_id": "geological-20210917-mt-otake-suwanose-japan",
+      "title": "Mt. Otake erupts on Suwanose Island; alert level raised",
+      "description": "Mt. Otake erupted on Suwanose Island on Sept. 17, 2021, with ejecta reported to reach close to 1 km from the crater. Japan's Meteorological Agency raised the volcanic alert level to 3, restricting access near the volcano.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2021-09-17T00:00:00.000Z",
+        "event_end": "2021-09-17T23:59:59.000Z",
+        "reported_at": "2021-09-17T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2021-09-17T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Suwanose Island (Kagoshima Prefecture), Japan",
+        "jurisdiction_level": "site",
+        "admin1": "Kagoshima Prefecture",
+        "country": "JP",
+        "capital_used": null,
+        "lat": 29.6383,
+        "lon": 129.7167,
+        "precision": "exact",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://english.kyodonews.net/news/2021/09/7af987b381d1-southwestern-japan-volcano-erupts-alert-level-raised.html",
+          "source_name": "Kyodo News (English)",
+          "published_at": "2021-09-17T00:00:00.000Z",
+          "headline": "Southwestern Japan volcano erupts; alert level raised",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Japan Meteorological Agency",
+          "Kyodo News"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "alert level raised",
+            "source_url": "https://english.kyodonews.net/news/2021/09/7af987b381d1-southwestern-japan-volcano-erupts-alert-level-raised.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.58,
+        "category": 0.85,
+        "location": 0.6,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "mt-otake-suwanose-2021-09-17",
+        "fingerprint": "geological|mt. otake erupts on suwanose island; alert level raised|suwanose island (kagoshima prefecture), japan|2021-09-17"
+      }
+    },
+    {
+      "event_id": "evt_202109_sierra_bermeja_wildfire_malaga",
+      "title": "Sierra Bermeja wildfire (Málaga province) prompts evacuations and confinement measures",
+      "description": "A fast-moving wildfire in the Sierra Bermeja area (near Jubrique) in Málaga province prompted preventive evacuations and a large firefighting response. Reports on Sept. 9–10, 2021 said thousands of hectares had burned and that protective measures such as confinements were implemented in nearby municipalities due to smoke/ash impacts.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2021-09-09T00:00:00.000Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "2021-09-09T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Sierra Bermeja (Jubrique area), Málaga, Andalusia, Spain",
+        "jurisdiction_level": "site",
+        "admin1": "Andalusia",
+        "country": "ES",
+        "capital_used": null,
+        "lat": 36.565,
+        "lon": -5.36,
+        "precision": "neighborhood",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.45
+      },
+      "sources": [
+        {
+          "url": "https://as.com/diarioas/2021/09/09/actualidad/1631172475_938499.html",
+          "source_name": "Diario AS",
+          "published_at": "2021-09-09T00:00:00.000Z",
+          "headline": "Sierra Bermeja wildfire in Málaga province prompts evacuations",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://as.com/diarioas/2021/09/10/actualidad/1631299158_775601.html",
+          "source_name": "Diario AS",
+          "published_at": "2021-09-10T00:00:00.000Z",
+          "headline": "Sierra Bermeja wildfire in Málaga province prompts evacuations",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [
+          "ash",
+          "particulate matter"
+        ],
+        "ecosystems": [
+          "Mediterranean forest"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.52,
+        "category": 0.8,
+        "location": 0.45,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "sierra-bermeja-wildfire-2021-09",
+        "fingerprint": "fp_sierra_bermeja_malaga_2021-09-09"
+      }
+    },
+    {
+      "event_id": "2021-09-la-palma-so2-sentinel5p",
+      "title": "Sentinel‑5P detects SO₂ cloud from Cumbre Vieja eruption on La Palma",
+      "description": "After the Cumbre Vieja eruption began on 19 September 2021 on La Palma, satellite observations tracked a sulfur dioxide (SO₂) plume from volcanic emissions. The plume represents an air-quality stressor with potential downstream ecological impacts.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2021-09-19T14:12:00.000Z",
+        "event_end": "2021-09-19T23:59:59.000Z",
+        "reported_at": "2021-09-19T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2021-09-19T14:12:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "La Palma, Canary Islands, Spain",
+        "jurisdiction_level": "site",
+        "admin1": "Canary Islands",
+        "country": "ES",
+        "capital_used": null,
+        "lat": 28.68,
+        "lon": -17.86,
+        "precision": "admin1",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.dlr.de/en/eoc/latest/news/2021/volcanic-eruption-of-cumbre-vieja-on-la-palma",
+          "source_name": "DLR (German Aerospace Center)",
+          "published_at": "2021-09-19T00:00:00.000Z",
+          "headline": "Volcanic eruption of Cumbre Vieja on La Palma",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "DLR",
+          "Sentinel‑5P"
+        ],
+        "substances": [
+          "sulfur dioxide",
+          "SO₂"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "The Sentinel‑5P satellite measures atmospheric trace gases such as sulfur dioxide (SO₂).",
+            "source_url": "https://www.dlr.de/en/eoc/latest/news/2021/volcanic-eruption-of-cumbre-vieja-on-la-palma"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.7,
+        "location": 0.6,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Cumbre Vieja eruption SO2 plume (La Palma, Sept 2021)",
+        "fingerprint": "la-palma-cumbre-vieja-so2-2021-09-19"
+      }
+    },
+    {
+      "event_id": "2021-09-sierra-bermeja-wildfire-pinsapar",
+      "title": "Sierra Bermeja wildfire threatens ecologically valuable Spanish fir (pinsapar) areas",
+      "description": "Reporting on the Sierra Bermeja wildfire in Málaga province on 9–10 September 2021 described impacts and threats to nearby pinsapar (Spanish fir forest) areas noted for high ecological value. The fire contributed to habitat loss risk and ecosystem damage in the affected mountain area.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2021-09-09T00:00:00.000Z",
+        "event_end": "2021-09-10T23:59:59.000Z",
+        "reported_at": "2021-09-09T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2021-09-09T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Sierra Bermeja, Málaga, Andalusia, Spain",
+        "jurisdiction_level": "site",
+        "admin1": "Andalusia",
+        "country": "ES",
+        "capital_used": null,
+        "lat": 36.55,
+        "lon": -5.2,
+        "precision": "admin1",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://as.com/diarioas/2021/09/09/actualidad/1631172475_938499.html",
+          "source_name": "Diario AS",
+          "published_at": "2021-09-09T00:00:00.000Z",
+          "headline": "Sierra Bermeja wildfire coverage (9 Sep 2021)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://as.com/diarioas/2021/09/10/actualidad/1631299158_775601.html",
+          "source_name": "Diario AS",
+          "published_at": "2021-09-10T00:00:00.000Z",
+          "headline": "Sierra Bermeja wildfire coverage (10 Sep 2021)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [
+          "pinsapar (Spanish fir forest)"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "The fire threatened a nearby pinsapar area described as having high ecological value.",
+            "source_url": "https://as.com/diarioas/2021/09/09/actualidad/1631172475_938499.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.58,
+        "category": 0.75,
+        "location": 0.55,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "paywalled_or_partial",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Sierra Bermeja wildfire (Málaga) Sept 2021",
+        "fingerprint": "sierra-bermeja-wildfire-2021-09-09"
+      }
+    },
+    {
+      "event_id": "evt_20210916_epa_maui_guidance_rescinded",
+      "title": "EPA rescinds prior guidance on Clean Water Act NPDES permit requirements related to County of Maui decision",
+      "description": "The U.S. Environmental Protection Agency announced it rescinded a previous administration guidance document concerning Clean Water Act NPDES permit requirements related to the Supreme Court’s County of Maui decision.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "2021-09-16T00:00:00.000Z",
+        "event_end": "2021-09-16T23:59:59.000Z",
+        "reported_at": "2021-09-16T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2021-09-16T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States (federal policy)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.85
+      },
+      "sources": [
+        {
+          "url": "https://www.epa.gov/newsreleases/epa-rescinds-previous-administrations-guidance-clean-water-act-permit-requirements",
+          "source_name": "U.S. Environmental Protection Agency",
+          "published_at": "2021-09-16T00:00:00.000Z",
+          "headline": "EPA rescinds previous administration's guidance on Clean Water Act permit requirements",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Environmental Protection Agency (EPA)"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "EPA today announced it has rescinded a previous administration guidance document...",
+            "source_url": "https://www.epa.gov/newsreleases/epa-rescinds-previous-administrations-guidance-clean-water-act-permit-requirements"
+          },
+          {
+            "quote": "...related to the Supreme Court’s County of Maui decision...",
+            "source_url": "https://www.epa.gov/newsreleases/epa-rescinds-previous-administrations-guidance-clean-water-act-permit-requirements"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.72,
+        "category": 0.8,
+        "location": 0.85,
+        "summary_grounding": 0.7
+      },
+      "quality_flags": [
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "epa_rescinds_maui_guidance_2021-09-16_us",
+        "fingerprint": "fp_epa_rescinds_maui_guidance_us_2021-09-16"
+      }
+    },
+    {
+      "event_id": "evt_20210908_iucn_mar_sea_mining_moratorium_motion",
+      "title": "IUCN World Conservation Congress in Marseille adopts motions including a deep-sea mining moratorium call",
+      "description": "At the IUCN World Conservation Congress in Marseille, members adopted multiple motions during the Members’ Assembly, including a motion calling for a moratorium on deep-sea mining to protect deep-ocean ecosystems and biodiversity.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "2021-09-08T00:00:00.000Z",
+        "event_end": "2021-09-10T23:59:59.000Z",
+        "reported_at": "2021-09-10T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2021-09-08T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Marseille, France",
+        "jurisdiction_level": "city",
+        "admin1": null,
+        "country": "FR",
+        "capital_used": null,
+        "lat": 43.2965,
+        "lon": 5.3698,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.75
+      },
+      "sources": [
+        {
+          "url": "https://enb.iisd.org/biodiversity/IUCN-Congress-2020/summary",
+          "source_name": "IISD Earth Negotiations Bulletin",
+          "published_at": "2021-09-10T00:00:00.000Z",
+          "headline": "IUCN World Conservation Congress (Marseille) summary",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "International Union for Conservation of Nature (IUCN)"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "deep-ocean ecosystems"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "...Members’ Assembly... adopted a number of motions...",
+            "source_url": "https://enb.iisd.org/biodiversity/IUCN-Congress-2020/summary"
+          },
+          {
+            "quote": "...including calls related to deep-sea mining...",
+            "source_url": "https://enb.iisd.org/biodiversity/IUCN-Congress-2020/summary"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.7,
+        "location": 0.75,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "needs_dedupe_check",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "iucn_wcc_marseille_deep_sea_mining_motion_2021-09",
+        "fingerprint": "fp_iucn_wcc_marseille_deep_sea_mining_2021-09"
+      }
+    }
+  ]
+}

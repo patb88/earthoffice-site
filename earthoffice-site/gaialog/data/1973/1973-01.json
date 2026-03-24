@@ -1,0 +1,419 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_1973-01_normalize_2026-01-19T052702832Z",
+    "generated_utc": "2026-01-19T05:27:02.832Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "1973-01",
+    "window": {
+      "start_utc": "1973-01-01T00:00:00.000Z",
+      "end_utc": "1973-01-31T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "evt_19730102_conklin_ny_flood",
+      "title": "Minor flooding at Conklin on the North Branch Susquehanna River (NY)",
+      "description": "Minor flooding occurred at the MARFC forecast point at Conklin on the North Branch Susquehanna River. The event was associated with significant rain from a stalled warm front and antecedent wet conditions.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1973-01-02T12:00:00Z",
+        "event_end": "1973-01-02T12:00:00Z",
+        "reported_at": "1973-01-02T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1973-01-02T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Conklin, New York, USA",
+        "jurisdiction_level": "city",
+        "admin1": "New York",
+        "country": "US",
+        "capital_used": null,
+        "lat": 42.0667,
+        "lon": -75.806,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.weather.gov/media/marfc/Flood_Events_2016/1973/Jan2%2C1973.pdf",
+          "source_name": "NOAA/NWS (weather.gov)",
+          "published_at": "1973-01-02T00:00:00Z",
+          "headline": "Jan 2, 1973 Flood Event (MARFC)",
+          "byline": null,
+          "accessed_utc": "2026-01-19T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA",
+          "National Weather Service",
+          "Middle Atlantic River Forecast Center (MARFC)"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "river basin"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Minor flooding occurred at the MARFC forecast point at Conklin",
+            "source_url": "https://www.weather.gov/media/marfc/Flood_Events_2016/1973/Jan2%2C1973.pdf"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.75,
+        "location": 0.6,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "marfc_flood_event_conklin_1973_01_02",
+        "fingerprint": "fp_marfc_conklin_19730102"
+      }
+    },
+    {
+      "event_id": "evt_19730129_raritan_neshaminy_flood",
+      "title": "Late-January minor flooding in the Raritan and Neshaminy basins (NJ/PA)",
+      "description": "Minor flooding was recorded at MARFC forecast points in the Raritan basin, including the Millstone River at Blackwells Mills, New Jersey. Minor flooding was also recorded on Neshaminy Creek at Langhorne, Pennsylvania.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1973-01-29T12:00:00Z",
+        "event_end": "1973-01-30T12:00:00Z",
+        "reported_at": "1973-01-29T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": null,
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Blackwells Mills, New Jersey, USA (primary point referenced)",
+        "jurisdiction_level": "city",
+        "admin1": "New Jersey",
+        "country": "US",
+        "capital_used": null,
+        "lat": 40.4669,
+        "lon": -74.6257,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.45
+      },
+      "sources": [
+        {
+          "url": "https://www.weather.gov/media/marfc/Flood_Events_2016/1973/Jan29-30%2C1973.pdf",
+          "source_name": "NOAA/NWS (weather.gov)",
+          "published_at": "1973-01-29T00:00:00Z",
+          "headline": "Jan 29-30, 1973 Flood Event (MARFC)",
+          "byline": null,
+          "accessed_utc": "2026-01-19T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA",
+          "National Weather Service",
+          "Middle Atlantic River Forecast Center (MARFC)"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "river basin"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Minor flooding was recorded at MARFC forecast points... Millstone River at Blackwells Mills, NJ",
+            "source_url": "https://www.weather.gov/media/marfc/Flood_Events_2016/1973/Jan29-30%2C1973.pdf"
+          },
+          {
+            "quote": "...Neshaminy Creek at Langhorne, PA",
+            "source_url": "https://www.weather.gov/media/marfc/Flood_Events_2016/1973/Jan29-30%2C1973.pdf"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.75,
+        "location": 0.45,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "marfc_flood_event_nj_pa_1973_01_29_30",
+        "fingerprint": "fp_marfc_blackwellsmills_19730129_19730130"
+      }
+    },
+    {
+      "event_id": "evt_19730123_eldfell_heimaey_iceland",
+      "title": "Eldfell eruption begins on Heimaey (Vestmannaeyjar), Iceland",
+      "description": "A fissure eruption began on Heimaey in the Vestmannaeyjar (Westman Islands) and became known as the Eldfell eruption. The eruption affected the nearby town and harbor area with lava and ash, and prompted evacuation efforts.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1973-01-23T12:00:00Z",
+        "event_end": "1973-01-23T12:00:00Z",
+        "reported_at": "1973-01-23T12:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1973-01-23T12:00:00Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Heimaey, Vestmannaeyjar (Westman Islands), Iceland",
+        "jurisdiction_level": "site",
+        "admin1": null,
+        "country": "IS",
+        "capital_used": null,
+        "lat": 63.4427,
+        "lon": -20.2734,
+        "precision": "exact",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://pubs.usgs.gov/gip/heimaey/",
+          "source_name": "USGS",
+          "published_at": "1973-01-23T12:00:00Z",
+          "headline": "Heimaey, Iceland",
+          "byline": null,
+          "accessed_utc": "2026-01-19T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.usgs.gov/publications/man-against-volcano-eruption-heimaey-vestmann-islands-iceland",
+          "source_name": "USGS",
+          "published_at": "1973-01-23T12:00:00Z",
+          "headline": "Man Against Volcano: The Eruption on Heimaey, Vestmann Islands, Iceland",
+          "byline": null,
+          "accessed_utc": "2026-01-19T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://pubs.usgs.gov/publication/ofr97724",
+          "source_name": "USGS",
+          "published_at": "1973-01-23T12:00:00Z",
+          "headline": "USGS publication (OFR 97-724)",
+          "byline": null,
+          "accessed_utc": "2026-01-19T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "USGS"
+        ],
+        "substances": [
+          "lava",
+          "volcanic ash"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.85,
+        "location": 0.7,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only",
+        "location_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "Eldfell eruption start (Heimaey, 1973-01-23)",
+        "fingerprint": "eldfell_eruption_begin_heimaey_is_1973-01-23"
+      }
+    },
+    {
+      "event_id": "evt_197301_lake_andes_duck_plague",
+      "title": "Duck plague die-off at Lake Andes National Wildlife Refuge (South Dakota)",
+      "description": "USGS notes a major duck plague event at Lake Andes National Wildlife Refuge in South Dakota, described as the largest recorded die-off due to duck plague, with more than 40% of an estimated 100,000 wintering mallards dying. The event is cited in the context of USGS/NWHC history.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2026-01-19T00:00:00Z",
+        "time_confidence": 0.35,
+        "event_date_utc": "1973-01-15T00:00:00Z",
+        "event_date_precision": "month"
+      },
+      "location": {
+        "name": "Lake Andes National Wildlife Refuge, South Dakota, United States",
+        "jurisdiction_level": "site",
+        "admin1": "South Dakota",
+        "country": "US",
+        "capital_used": null,
+        "lat": 43.156,
+        "lon": -98.556,
+        "precision": "exact",
+        "location_basis": "manual_override",
+        "location_confidence": 0.45
+      },
+      "sources": [
+        {
+          "url": "https://www.usgs.gov/centers/nwhc/science/nwhc-historical-timeline",
+          "source_name": "USGS",
+          "published_at": "2026-01-19T00:00:00Z",
+          "headline": "NWHC historical timeline",
+          "byline": null,
+          "accessed_utc": "2026-01-19T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "USGS",
+          "National Wildlife Health Center"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "largest recorded die-off due to duck plague",
+            "source_url": "https://www.usgs.gov/centers/nwhc/science/nwhc-historical-timeline"
+          },
+          {
+            "quote": "more than 40% of an estimated 100,000 wintering mallards died",
+            "source_url": "https://www.usgs.gov/centers/nwhc/science/nwhc-historical-timeline"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.48,
+        "category": 0.75,
+        "location": 0.45,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "lake-andes-duck-plague-1973-01",
+        "fingerprint": "fp_lake_andes_duck_plague_1973_01"
+      }
+    },
+    {
+      "event_id": "evt_19730118_us_safe_drinking_water_act_s433_introduced",
+      "title": "Safe Drinking Water Act bill (S.433) introduced in the U.S. Senate",
+      "description": "U.S. Senator Warren G. Magnuson introduced Senate bill S.433, commonly referred to as the Safe Drinking Water Act. The introduction initiated congressional consideration of federal drinking-water protections.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "1973-01-18T12:00:00Z",
+        "event_end": "1973-01-18T12:00:00Z",
+        "reported_at": "1973-01-18T12:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1973-01-18T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States (U.S. Senate)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://www.congress.gov/bill/93rd-congress/senate-bill/433",
+          "source_name": "Congress.gov",
+          "published_at": "1973-01-18T00:00:00Z",
+          "headline": "S.433 - A bill to provide for the protection of public health by improving the quality of drinking water.",
+          "byline": null,
+          "accessed_utc": "2026-01-19T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.congress.gov/bill/93rd-congress/senate-bill/433/actions",
+          "source_name": "Congress.gov",
+          "published_at": "1973-01-18T00:00:00Z",
+          "headline": "Actions - S.433",
+          "byline": null,
+          "accessed_utc": "2026-01-19T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Senate"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": [
+          "Warren G. Magnuson"
+        ]
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Introduced in Senate (01/18/1973)",
+            "source_url": "https://www.congress.gov/bill/93rd-congress/senate-bill/433/actions"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.72,
+        "category": 0.85,
+        "location": 0.7,
+        "summary_grounding": 0.75
+      },
+      "quality_flags": [
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "congress_s433_safe_drinking_water_act_introduction",
+        "fingerprint": "fp_19730118_us_s433_safe_drinking_water_act_intro"
+      }
+    }
+  ]
+}

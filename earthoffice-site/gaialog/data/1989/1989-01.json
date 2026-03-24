@@ -1,0 +1,876 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_1989-01_normalize_2026-01-18T115237809Z",
+    "generated_utc": "2026-01-18T11:52:37.809Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "1989-01",
+    "window": {
+      "start_utc": "1989-01-01T00:00:00.000Z",
+      "end_utc": "1989-01-31T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "pollution_contamination_us_mississippi_river_1989-01-01_shell_pipeline_cleanup",
+      "title": "Cleanup response for Shell pipeline oil spill affecting the Mississippi River",
+      "description": "A news report described cleanup efforts as oil from a ruptured Shell pipeline that entered Missouri’s Gasconade River moved into the Mississippi River. The article reported on response actions and ongoing concerns as of January 1, 1989.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1989-01-01T00:00:00.000Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "1989-01-01T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Mississippi River, downstream from Vienna, Missouri, USA",
+        "jurisdiction_level": "site",
+        "admin1": "Missouri",
+        "country": "US",
+        "capital_used": null,
+        "lat": 38.0625,
+        "lon": -91.4039,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.45
+      },
+      "sources": [
+        {
+          "url": "https://www.deseret.com/1989/1/1/18789820/mississippi-cleanup/",
+          "source_name": "Deseret News",
+          "published_at": "1989-01-01T00:00:00.000Z",
+          "headline": "Mississippi cleanup",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Shell"
+        ],
+        "substances": [
+          "crude oil"
+        ],
+        "ecosystems": [
+          "Gasconade River",
+          "Mississippi River"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Cleanup crews worked to limit impacts as oil ... moved into the Mississippi River",
+            "source_url": "https://www.deseret.com/1989/1/1/18789820/mississippi-cleanup/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.48,
+        "category": 0.8,
+        "location": 0.45,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "Shell pipeline spill Gasconade River to Mississippi River response",
+        "fingerprint": "pollution_contamination|cleanup response for shell pipeline oil spill affecting the mississippi river|mississippi river, downstream from vienna, missouri, usa|1989-01-01"
+      }
+    },
+    {
+      "event_id": "pollution_contamination_us_winkler_county_tx_1989-01-24_texaco_pipeline_rupture",
+      "title": "Texaco crude oil pipeline rupture reported to spill oil in Winkler County, Texas",
+      "description": "A later news report described a Texaco crude oil pipeline rupture that it said occurred on January 24, 1989 in Winkler County, Texas. The report stated the spill covered several acres and contaminated groundwater.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1991-04-18T00:00:00.000Z",
+        "time_confidence": 0.4,
+        "event_date_utc": "1989-01-24T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Winkler County, Texas, USA",
+        "jurisdiction_level": "state",
+        "admin1": "Texas",
+        "country": "US",
+        "capital_used": "Austin",
+        "lat": 30.2672,
+        "lon": -97.7431,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.csmonitor.com/1991/0418/18061.html",
+          "source_name": "The Christian Science Monitor",
+          "published_at": "1991-04-18T00:00:00.000Z",
+          "headline": "18061",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Texaco"
+        ],
+        "substances": [
+          "crude oil"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "A Texaco crude oil pipeline rupture ... spilled over 23,000 barrels of oil",
+            "source_url": "https://www.csmonitor.com/1991/0418/18061.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.46,
+        "category": 0.8,
+        "location": 0.6,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "secondary_sources_only",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "Texaco pipeline rupture Winkler County Texas Jan 1989",
+        "fingerprint": "pollution_contamination|texaco crude oil pipeline rupture reported to spill oil in winkler county, texas|winkler county, texas, usa|1989-01-24"
+      }
+    },
+    {
+      "event_id": "evt_198901_quail_creek_dike_failure_virgin_river_flooding",
+      "title": "Quail Creek Reservoir dike failure triggers Virgin River flooding (Utah/Arizona/Nevada, USA)",
+      "description": "A dike at Quail Creek Reservoir failed on January 1, 1989, releasing a large volume of water into the Virgin River. The release caused major flooding along the Virgin River flood plain in southwestern Utah with impacts extending into Arizona and Nevada.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1989-01-01T12:00:00Z",
+        "event_end": "1989-01-01T12:00:00Z",
+        "reported_at": "1989-01-01T12:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1989-01-01T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Hurricane, Utah, USA (Virgin River flood plain)",
+        "jurisdiction_level": "city",
+        "admin1": "Utah",
+        "country": "US",
+        "capital_used": null,
+        "lat": 37.1753,
+        "lon": -113.2899,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://pubs.usgs.gov/publication/wri944159",
+          "source_name": "USGS Publications",
+          "published_at": "1989-01-01T00:00:00Z",
+          "headline": "WRI 94-4159 (USGS publication record)",
+          "byline": null,
+          "accessed_utc": "2026-01-18T06:56:17.828Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.usgs.gov/publications/flood-virgin-river-january-1989-utah-arizona-and-nevada",
+          "source_name": "USGS",
+          "published_at": "1989-01-01T00:00:00Z",
+          "headline": "Flood on the Virgin River in January 1989 in Utah, Arizona, and Nevada",
+          "byline": null,
+          "accessed_utc": "2026-01-18T06:56:17.828Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "USGS"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "Virgin River"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Flood on the Virgin River in January 1989 in Utah, Arizona, and Nevada",
+            "source_url": "https://www.usgs.gov/publications/flood-virgin-river-january-1989-utah-arizona-and-nevada"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.7,
+        "location": 0.6,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Virgin River flood January 1989",
+        "fingerprint": "fp_19890101_hurricane_ut_virgin_river_flood"
+      }
+    },
+    {
+      "event_id": "evt_198901_alaska_cold_spell",
+      "title": "Severe Alaska cold spell (statewide cold wave with record lows)",
+      "description": "An intense cold spell affected Alaska during January 1989, beginning in northern Alaska around January 9 and spreading to other parts of the state. The episode produced numerous record low temperatures at multiple stations and exceptionally low readings late in the month.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1989-01-09T12:00:00Z",
+        "event_end": "1989-01-31T12:00:00Z",
+        "reported_at": "1989-01-09T12:00:00Z",
+        "time_confidence": 0.55,
+        "event_date_utc": null,
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Juneau, Alaska, USA (proxy for statewide event)",
+        "jurisdiction_level": "state",
+        "admin1": "Alaska",
+        "country": "US",
+        "capital_used": "Juneau",
+        "lat": 58.3019,
+        "lon": -134.4197,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://www.gi.alaska.edu/alaska-science-forum/alaskas-cold-spell-january-1989",
+          "source_name": "Geophysical Institute, University of Alaska Fairbanks",
+          "published_at": "1989-01-01T00:00:00Z",
+          "headline": "Alaska's Cold Spell, January 1989",
+          "byline": null,
+          "accessed_utc": "2026-01-18T06:56:17.828Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://uaf-accap.org/projects/extreme_events_library/1989-cold-snap/",
+          "source_name": "Alaska Center for Climate Assessment and Policy (ACCAP), UAF",
+          "published_at": "1989-01-01T00:00:00Z",
+          "headline": "1989 cold snap (Extreme Events Library)",
+          "byline": null,
+          "accessed_utc": "2026-01-18T06:56:17.828Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "University of Alaska Fairbanks",
+          "ACCAP"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Alaska's Cold Spell, January 1989",
+            "source_url": "https://www.gi.alaska.edu/alaska-science-forum/alaskas-cold-spell-january-1989"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.75,
+        "location": 0.7,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Alaska cold spell January 1989",
+        "fingerprint": "fp_198901_alaska_statewide_cold_spell"
+      }
+    },
+    {
+      "event_id": "evt_198901_cyclone_calasanjy_madagascar",
+      "title": "Tropical Cyclone Calasanjy impacts western Madagascar (landfall near Morondava)",
+      "description": "Tropical Cyclone Calasanjy developed in early January 1989 and later made landfall in western Madagascar near Morondava. The storm brought damaging winds and heavy rainfall that contributed to flooding in affected areas.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1989-01-06T12:00:00Z",
+        "event_end": "1989-01-17T12:00:00Z",
+        "reported_at": "1989-01-06T12:00:00Z",
+        "time_confidence": 0.4,
+        "event_date_utc": null,
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Morondava, Madagascar",
+        "jurisdiction_level": "city",
+        "admin1": null,
+        "country": "MG",
+        "capital_used": null,
+        "lat": -20.2833,
+        "lon": 44.2833,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.45
+      },
+      "sources": [
+        {
+          "url": "https://www.ncei.noaa.gov/products/international-best-track-archive",
+          "source_name": "NOAA NCEI (IBTrACS)",
+          "published_at": "1989-01-01T00:00:00Z",
+          "headline": "International Best Track Archive for Climate Stewardship (IBTrACS)",
+          "byline": null,
+          "accessed_utc": "2026-01-18T06:56:17.828Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA NCEI"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "Mozambique Channel"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "International Best Track Archive for Climate Stewardship (IBTrACS)",
+            "source_url": "https://www.ncei.noaa.gov/products/international-best-track-archive"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.35,
+        "category": 0.7,
+        "location": 0.45,
+        "summary_grounding": 0.25
+      },
+      "quality_flags": [
+        "secondary_sources_only",
+        "date_ambiguous",
+        "low_confidence_location",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Cyclone Calasanjy 1989 Madagascar",
+        "fingerprint": "fp_198901_morondava_mg_calasanjy"
+      }
+    },
+    {
+      "event_id": "evt_198901_cyclone_firinga_mauritius_reunion",
+      "title": "Cyclone Firinga impacts Mauritius and Réunion (late January 1989)",
+      "description": "Cyclone Firinga developed in late January 1989 and affected Mauritius and Réunion in the southwest Indian Ocean. Reports describe destructive winds and very heavy rainfall leading to flooding and landslides on Réunion.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1989-01-24T12:00:00Z",
+        "event_end": "1989-01-31T12:00:00Z",
+        "reported_at": "1989-01-24T12:00:00Z",
+        "time_confidence": 0.35,
+        "event_date_utc": null,
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Saint-Denis, Réunion, France (proxy for Réunion impacts)",
+        "jurisdiction_level": "city",
+        "admin1": null,
+        "country": "FR",
+        "capital_used": null,
+        "lat": -20.8789,
+        "lon": 55.4481,
+        "precision": "city",
+        "location_basis": "manual_override",
+        "location_confidence": 0.35
+      },
+      "sources": [
+        {
+          "url": "https://www.ncei.noaa.gov/products/international-best-track-archive",
+          "source_name": "NOAA NCEI (IBTrACS)",
+          "published_at": "1989-01-01T00:00:00Z",
+          "headline": "International Best Track Archive for Climate Stewardship (IBTrACS)",
+          "byline": null,
+          "accessed_utc": "2026-01-18T06:56:17.828Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA NCEI"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "International Best Track Archive for Climate Stewardship (IBTrACS)",
+            "source_url": "https://www.ncei.noaa.gov/products/international-best-track-archive"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.3,
+        "category": 0.7,
+        "location": 0.35,
+        "summary_grounding": 0.2
+      },
+      "quality_flags": [
+        "secondary_sources_only",
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Cyclone Firinga 1989 Mauritius Reunion",
+        "fingerprint": "fp_198901_reunion_firinga"
+      }
+    },
+    {
+      "event_id": "evt_19890123_tajikistan_quake_landslides_sharora_gissar",
+      "title": "Earthquake-triggered landslides bury villages near Sharora (Gissar area), Tajikistan SSR",
+      "description": "Reports said a strong earthquake struck Soviet Tajikistan and triggered major landslides that buried parts of multiple villages near Sharora in the Gissar area. Accounts described many deaths and extensive destruction of small earth/clay structures.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1989-01-23T12:00:00Z",
+        "event_end": "1989-01-23T12:00:00Z",
+        "reported_at": "1989-01-23T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1989-01-23T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Gissar area near Dushanbe, Tajikistan (then USSR)",
+        "jurisdiction_level": "city",
+        "admin1": null,
+        "country": "TJ",
+        "capital_used": null,
+        "lat": 38.56,
+        "lon": 68.78,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.5
+      },
+      "sources": [
+        {
+          "url": "https://www.upi.com/Archives/1989/01/23/A-strong-earthquake-struck-the-Soviet-Central-Asian-republic/9323601534800/",
+          "source_name": "UPI",
+          "published_at": "1989-01-23T00:00:00Z",
+          "headline": "A strong earthquake struck the Soviet Central Asian republic",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.csmonitor.com/1989/0124/oquake.html",
+          "source_name": "The Christian Science Monitor",
+          "published_at": "1989-01-24T00:00:00Z",
+          "headline": "oquake",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.deseret.com/1989/1/23/18792450/hundreds-die-as-earthquake-devastates-soviet-villages",
+          "source_name": "Deseret News",
+          "published_at": "1989-01-23T00:00:00Z",
+          "headline": "Hundreds die as earthquake devastates Soviet villages",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "A strong earthquake struck the Soviet Central Asian republic",
+            "source_url": "https://www.upi.com/Archives/1989/01/23/A-strong-earthquake-struck-the-Soviet-Central-Asian-republic/9323601534800/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.85,
+        "location": 0.5,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "1989-01-23 Tajikistan/Gissar earthquake landslides",
+        "fingerprint": "geological|gissar-area-near-dushanbe|1989-01-23"
+      }
+    },
+    {
+      "event_id": "evt_19890119_malibu_santa_monica_bay_quake",
+      "title": "Offshore Malibu earthquake causes minor damage and injuries in Los Angeles area",
+      "description": "A moderate earthquake centered offshore near Malibu was widely felt across the Los Angeles region. Reports described minor damage such as broken windows and items knocked from shelves, several minor injuries, and numerous aftershocks.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1989-01-19T12:00:00Z",
+        "event_end": "1989-01-19T12:00:00Z",
+        "reported_at": "1989-01-19T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1989-01-19T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Malibu / Santa Monica Bay, California, United States",
+        "jurisdiction_level": "city",
+        "admin1": "CA",
+        "country": "US",
+        "capital_used": null,
+        "lat": 34.0259,
+        "lon": -118.7798,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://www.upi.com/Archives/1989/01/19/More-than-100-aftershocks-of-an-earthquake-that-struck/4761601189200/",
+          "source_name": "UPI",
+          "published_at": "1989-01-19T00:00:00Z",
+          "headline": "More than 100 aftershocks of an earthquake that struck",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://scedc.caltech.edu/earthquake/malibu1979.html",
+          "source_name": "Southern California Earthquake Data Center (Caltech)",
+          "published_at": "1989-01-01T00:00:00Z",
+          "headline": "Malibu earthquake page",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.usgs.gov/publications/strong-motion-data-malibu-california-earthquake-january-19-1989",
+          "source_name": "USGS",
+          "published_at": "1989-01-01T00:00:00Z",
+          "headline": "Strong-motion data: Malibu, California earthquake, January 19, 1989",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "USGS",
+          "Caltech"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "More than 100 aftershocks of an earthquake that struck",
+            "source_url": "https://www.upi.com/Archives/1989/01/19/More-than-100-aftershocks-of-an-earthquake-that-struck/4761601189200/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.7,
+        "category": 0.85,
+        "location": 0.75,
+        "summary_grounding": 0.65
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "1989-01-19 Malibu/Santa Monica Bay earthquake",
+        "fingerprint": "geological|malibu-santa-monica-bay-ca-us|1989-01-19"
+      }
+    },
+    {
+      "event_id": "evt_19890124_southern_hokkaido_quake",
+      "title": "Earthquake jolts southern Hokkaido, Japan, causing disruption but no reported casualties",
+      "description": "A strong earthquake shook northern Japan, with reports of toppled objects, cracked roads, and temporary power cuts affecting thousands of households. Initial accounts said no casualties were reported and aftershocks followed.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1989-01-24T12:00:00Z",
+        "event_end": "1989-01-24T12:00:00Z",
+        "reported_at": "1989-01-24T00:00:00Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "1989-01-24T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Southern Hokkaido, Japan",
+        "jurisdiction_level": "state",
+        "admin1": "Hokkaido",
+        "country": "JP",
+        "capital_used": "Sapporo",
+        "lat": 43.0621,
+        "lon": 141.3544,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.upi.com/Archives/1989/01/24/Earthquake-jolts-northern-Japan/3687601621200/",
+          "source_name": "UPI",
+          "published_at": "1989-01-24T00:00:00Z",
+          "headline": "Earthquake jolts northern Japan",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Earthquake jolts northern Japan",
+            "source_url": "https://www.upi.com/Archives/1989/01/24/Earthquake-jolts-northern-Japan/3687601621200/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.85,
+        "location": 0.55,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "1989-01-24 southern Hokkaido earthquake (UPI)",
+        "fingerprint": "geological|hokkaido-jp|1989-01-24"
+      }
+    },
+    {
+      "event_id": "evt-1989-01-02-san-diego-mcc-rubbish-fire",
+      "title": "Rubbish fire in ventilation duct smokes San Diego Metropolitan Correctional Center",
+      "description": "A rubbish/debris fire reportedly set inside a ventilation duct sent heavy smoke through multiple floors of the Metropolitan Correctional Center, a high-rise federal jail in downtown San Diego. Officials described the fire as relatively small and easy to contain.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1989-01-01T12:00:00Z",
+        "event_end": "1989-01-01T12:00:00Z",
+        "reported_at": "1989-01-02T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1989-01-01T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Metropolitan Correctional Center, San Diego (downtown), California, United States",
+        "jurisdiction_level": "site",
+        "admin1": "California",
+        "country": "US",
+        "capital_used": null,
+        "lat": 32.7174,
+        "lon": -117.1628,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.latimes.com/archives/la-xpm-1989-01-02-me-146-story.html",
+          "source_name": "Los Angeles Times",
+          "published_at": "1989-01-02T00:00:00Z",
+          "headline": "Rubbish fire in ventilation duct fills San Diego federal jail with smoke",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Metropolitan Correctional Center (San Diego)"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "burning rubbish ... inside a ventilation duct caused heavy smoke to spread",
+            "source_url": "https://www.latimes.com/archives/la-xpm-1989-01-02-me-146-story.html"
+          },
+          {
+            "quote": "officials described the fire as relatively small and easy to contain",
+            "source_url": "https://www.latimes.com/archives/la-xpm-1989-01-02-me-146-story.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.58,
+        "category": 0.75,
+        "location": 0.55,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "paywalled_or_partial",
+        "date_ambiguous",
+        "location_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "san-diego-mcc-smoke-fire-1989-01",
+        "fingerprint": "fp:san-diego-mcc-rubbish-fire|san-diego-ca|1989-01-01"
+      }
+    },
+    {
+      "event_id": "evt_19890101_montreal_protocol_entry_into_force",
+      "title": "Montreal Protocol entered into force",
+      "description": "The Montreal Protocol, a global agreement to protect the ozone layer by controlling ozone-depleting substances, entered into force on January 1, 1989.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "1989-01-01T00:00:00Z",
+        "event_end": "1989-01-01T00:00:00Z",
+        "reported_at": "2026-01-18T06:57:49.136Z",
+        "time_confidence": 0.85,
+        "event_date_utc": "1989-01-01T00:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "International (UN treaty)",
+        "jurisdiction_level": "global_proxy",
+        "admin1": null,
+        "country": null,
+        "capital_used": null,
+        "lat": 0,
+        "lon": 0,
+        "precision": "proxy",
+        "location_basis": "institution_proxy",
+        "location_confidence": 0.4
+      },
+      "sources": [
+        {
+          "url": "https://treaties.un.org/Pages/showDetails.aspx?clang=_en&objid=080000028003f7f7",
+          "source_name": "United Nations Treaty Collection",
+          "published_at": "1989-01-01T00:00:00Z",
+          "headline": "Montreal Protocol on Substances that Deplete the Ozone Layer",
+          "byline": null,
+          "accessed_utc": "2026-01-18T06:57:49.136Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://legal.un.org/avl/ha/vcpol/vcpol.html",
+          "source_name": "United Nations Audiovisual Library of International Law",
+          "published_at": "1989-01-01T00:00:00Z",
+          "headline": "Vienna Convention for the Protection of the Ozone Layer and Montreal Protocol on Substances that Deplete the Ozone Layer",
+          "byline": null,
+          "accessed_utc": "2026-01-18T06:57:49.136Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "United Nations"
+        ],
+        "substances": [
+          "ozone-depleting substances"
+        ],
+        "ecosystems": [
+          "ozone layer"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "entered into force on 1 January 1989",
+            "source_url": "https://treaties.un.org/Pages/showDetails.aspx?clang=_en&objid=080000028003f7f7"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.7,
+        "category": 0.8,
+        "location": 0.4,
+        "summary_grounding": 0.7
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "montreal_protocol_entry_into_force_1989-01-01_global",
+        "fingerprint": "fp_19890101_montreal_protocol_global"
+      }
+    }
+  ]
+}

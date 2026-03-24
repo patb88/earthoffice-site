@@ -1,0 +1,1015 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_1978-05_normalize_2026-01-19T093601497Z",
+    "generated_utc": "2026-01-19T09:36:01.497Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "1978-05",
+    "window": {
+      "start_utc": "1978-05-01T00:00:00.000Z",
+      "end_utc": "1978-05-31T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "ev-197805-eleni-v-collision-east-anglia",
+      "title": "Eleni V tanker collision causes heavy fuel oil spill off East Anglia (UK)",
+      "description": "The Greek tanker Eleni V collided with the French vessel Roseline in fog off the East Anglian coast, resulting in a release of heavy fuel oil. Oil subsequently came ashore along parts of the Norfolk and Suffolk coastline.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1978-05-08T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1978-05-06T12:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Off Happisburgh / East Anglian coast (Norfolk & Suffolk), England, United Kingdom",
+        "jurisdiction_level": "site",
+        "admin1": "England",
+        "country": "GB",
+        "capital_used": null,
+        "lat": 52.823,
+        "lon": 1.542,
+        "precision": "exact",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://incidentnews.noaa.gov/incident/6242",
+          "source_name": "NOAA IncidentNews",
+          "published_at": "1978-05-06T00:00:00.000Z",
+          "headline": "Incident 6242 (Eleni V / Roseline)",
+          "byline": null,
+          "accessed_utc": "2026-01-19T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://api.parliament.uk/historic-hansard/commons/1978/may/08/oil-pollution-east-anglian-coast",
+          "source_name": "UK Parliament (Historic Hansard API)",
+          "published_at": "1978-05-08T00:00:00.000Z",
+          "headline": "Oil Pollution (East Anglian Coast)",
+          "byline": null,
+          "accessed_utc": "2026-01-19T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CZIC-td427-p4-o4-1992/html/CZIC-td427-p4-o4-1992.htm",
+          "source_name": "GovInfo",
+          "published_at": "1992-01-01T00:00:00.000Z",
+          "headline": "td427-p4-o4-1992 (HTML)",
+          "byline": null,
+          "accessed_utc": "2026-01-19T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Eleni V",
+          "Roseline"
+        ],
+        "substances": [
+          "heavy fuel oil"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "collided ... in fog off the East Anglian coast",
+            "source_url": "https://api.parliament.uk/historic-hansard/commons/1978/may/08/oil-pollution-east-anglian-coast"
+          },
+          {
+            "quote": "oil came ashore along parts of the Norfolk–Suffolk coastline",
+            "source_url": "https://api.parliament.uk/historic-hansard/commons/1978/may/08/oil-pollution-east-anglian-coast"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.85,
+        "location": 0.55,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "eleni-v-east-anglia-1978-05",
+        "fingerprint": "fp-eleni-v-east-anglia-1978-05-06"
+      }
+    },
+    {
+      "event_id": "ev-197805-eleni-v-grounding-corton-sand",
+      "title": "Eleni V forward section grounds on sandbank near Lowestoft (UK)",
+      "description": "After the collision and breakup, the Eleni V’s forward section drifted and grounded on a sandbank near Lowestoft. Reports described an ongoing pollution threat during salvage operations due to remaining heavy fuel oil on board.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1978-05-08T00:00:00.000Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "1978-05-08T12:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Corton Sand / near Lowestoft, East Anglia, England, United Kingdom",
+        "jurisdiction_level": "site",
+        "admin1": "England",
+        "country": "GB",
+        "capital_used": null,
+        "lat": 52.475,
+        "lon": 1.751,
+        "precision": "exact",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.45
+      },
+      "sources": [
+        {
+          "url": "https://incidentnews.noaa.gov/incident/6242",
+          "source_name": "NOAA IncidentNews",
+          "published_at": "1978-05-06T00:00:00.000Z",
+          "headline": "Incident 6242 (Eleni V / Roseline)",
+          "byline": null,
+          "accessed_utc": "2026-01-19T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CZIC-td427-p4-o4-1992/html/CZIC-td427-p4-o4-1992.htm",
+          "source_name": "GovInfo",
+          "published_at": "1992-01-01T00:00:00.000Z",
+          "headline": "td427-p4-o4-1992 (HTML)",
+          "byline": null,
+          "accessed_utc": "2026-01-19T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://hansard.parliament.uk/Commons/1978-05-08/debates/1c491353-8f1c-4f1d-8aad-37f7157359e4/OilPollution%28EastAnglianCoast%29",
+          "source_name": "UK Parliament (Hansard)",
+          "published_at": "1978-05-08T00:00:00.000Z",
+          "headline": "Oil Pollution (East Anglian Coast)",
+          "byline": null,
+          "accessed_utc": "2026-01-19T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Eleni V"
+        ],
+        "substances": [
+          "heavy fuel oil"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "forward section ... grounded on a sandbank near Lowestoft",
+            "source_url": "https://hansard.parliament.uk/Commons/1978-05-08/debates/1c491353-8f1c-4f1d-8aad-37f7157359e4/OilPollution%28EastAnglianCoast%29"
+          },
+          {
+            "quote": "substantial quantity of ... fuel oil ... still aboard",
+            "source_url": "https://hansard.parliament.uk/Commons/1978-05-08/debates/1c491353-8f1c-4f1d-8aad-37f7157359e4/OilPollution%28EastAnglianCoast%29"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.58,
+        "category": 0.85,
+        "location": 0.45,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "eleni-v-east-anglia-1978-05",
+        "fingerprint": "fp-eleni-v-lowestoft-1978-05-08"
+      }
+    },
+    {
+      "event_id": "ev-197805-eleni-v-destruction-burn-off",
+      "title": "Eleni V bow section towed offshore and destroyed; remaining oil burned (UK)",
+      "description": "Following salvage difficulties, the Eleni V’s bow section was reportedly towed offshore and destroyed with explosives. Accounts indicate that a large portion of remaining oil subsequently burned as part of the response effort.",
+      "category_primary": "pollution_contamination",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1992-01-01T00:00:00.000Z",
+        "time_confidence": 0.45,
+        "event_date_utc": "1978-05-30T12:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Off the East Anglian coast (near Lowestoft), England, United Kingdom",
+        "jurisdiction_level": "site",
+        "admin1": "England",
+        "country": "GB",
+        "capital_used": null,
+        "lat": 52.475,
+        "lon": 1.751,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.35
+      },
+      "sources": [
+        {
+          "url": "https://incidentnews.noaa.gov/incident/6242",
+          "source_name": "NOAA IncidentNews",
+          "published_at": "1978-05-06T00:00:00.000Z",
+          "headline": "Incident 6242 (Eleni V / Roseline)",
+          "byline": null,
+          "accessed_utc": "2026-01-19T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CZIC-td427-p4-o4-1992/html/CZIC-td427-p4-o4-1992.htm",
+          "source_name": "GovInfo",
+          "published_at": "1992-01-01T00:00:00.000Z",
+          "headline": "td427-p4-o4-1992 (HTML)",
+          "byline": null,
+          "accessed_utc": "2026-01-19T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Eleni V"
+        ],
+        "substances": [
+          "oil",
+          "heavy fuel oil"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "towed offshore and demolished with explosives",
+            "source_url": "https://incidentnews.noaa.gov/incident/6242"
+          },
+          {
+            "quote": "remaining oil burned",
+            "source_url": "https://incidentnews.noaa.gov/incident/6242"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.48,
+        "category": 0.8,
+        "location": 0.35,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "eleni-v-east-anglia-1978-05",
+        "fingerprint": "fp-eleni-v-offshore-destruction-1978-05-30"
+      }
+    },
+    {
+      "event_id": "evt_197805_midmay_floods_mt_wy",
+      "title": "Mid-May 1978 floods in southeastern Montana and northeastern Wyoming",
+      "description": "Heavy rain and snowmelt on already saturated ground caused major flooding across river basins in southeastern Montana and northeastern Wyoming. USGS documentation reports widespread record peaks at gaged sites and extensive regional impacts, including disaster declarations in multiple counties.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1978-05-16T12:00:00Z",
+        "event_end": "1978-05-19T12:00:00Z",
+        "reported_at": "1978-05-01T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1978-05-16T12:00:00Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Southeastern Montana and northeastern Wyoming, USA (Yellowstone River basin and tributaries)",
+        "jurisdiction_level": "state",
+        "admin1": "Montana/Wyoming",
+        "country": "US",
+        "capital_used": "Helena, MT",
+        "lat": 46.589145,
+        "lon": -112.039105,
+        "precision": "proxy",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.45
+      },
+      "sources": [
+        {
+          "url": "https://pubs.usgs.gov/publication/pp1244",
+          "source_name": "U.S. Geological Survey (USGS) Publications Warehouse",
+          "published_at": "1978-05-01T00:00:00.000Z",
+          "headline": "pp1244",
+          "byline": null,
+          "accessed_utc": "2026-01-19T09:32:59.006Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.usgs.gov/publications/data-floods-may-1978-northeastern-wyoming-and-southeastern-montana",
+          "source_name": "U.S. Geological Survey (USGS)",
+          "published_at": "1978-05-01T00:00:00.000Z",
+          "headline": "Data for floods in May 1978 in northeastern Wyoming and southeastern Montana",
+          "byline": null,
+          "accessed_utc": "2026-01-19T09:32:59.006Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Geological Survey (USGS)"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Data for floods in May 1978 in northeastern Wyoming and southeastern Montana",
+            "source_url": "https://www.usgs.gov/publications/data-floods-may-1978-northeastern-wyoming-and-southeastern-montana"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.75,
+        "location": 0.45,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "needs_dedupe_check",
+        "date_ambiguous",
+        "location_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "May 1978 floods MT/WY",
+        "fingerprint": "fp_midmay1978_floods_mtwy_19780516"
+      }
+    },
+    {
+      "event_id": "evt_19780520_powder_river_sediment_arvada",
+      "title": "High suspended-sediment discharge recorded on the Powder River near Arvada, Wyoming after May 1978 flooding",
+      "description": "USGS flood documentation for May 1978 includes observations of extremely high sediment transport following the flood event. It reports a peak in suspended-sediment discharge for the Powder River near Arvada, Wyoming as part of the recorded flood impacts.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1978-05-20T12:00:00Z",
+        "event_end": "1978-05-20T12:00:00Z",
+        "reported_at": "1978-05-01T00:00:00.000Z",
+        "time_confidence": 0.4,
+        "event_date_utc": "1978-05-20T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Arvada, Wyoming, USA (Powder River near Arvada)",
+        "jurisdiction_level": "city",
+        "admin1": "Wyoming",
+        "country": "US",
+        "capital_used": null,
+        "lat": 44.6897,
+        "lon": -106.1322,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://pubs.usgs.gov/publication/pp1244",
+          "source_name": "U.S. Geological Survey (USGS) Publications Warehouse",
+          "published_at": "1978-05-01T00:00:00.000Z",
+          "headline": "pp1244",
+          "byline": null,
+          "accessed_utc": "2026-01-19T09:32:59.006Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Geological Survey (USGS)"
+        ],
+        "substances": [
+          "suspended sediment"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "May 1978 flood impacts",
+            "source_url": "https://pubs.usgs.gov/publication/pp1244"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.45,
+        "category": 0.7,
+        "location": 0.55,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "needs_dedupe_check",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "May 1978 floods MT/WY sediment",
+        "fingerprint": "fp_powder_river_arvada_sediment_19780520"
+      }
+    },
+    {
+      "event_id": "evt_19780513_tornado_butler_warren_ky",
+      "title": "Tornado impacts Butler and Warren counties, Kentucky",
+      "description": "A tornado documented by the US National Weather Service (Louisville) affected Butler and Warren counties in Kentucky. The NWS record describes property damage along an approximately 15-mile path, with the listed time given in local time on May 12.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1978-05-13T01:45:00Z",
+        "event_end": "1978-05-13T01:45:00Z",
+        "reported_at": "1978-05-01T00:00:00.000Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "1978-05-13T01:45:00Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Butler and Warren counties, Kentucky, USA",
+        "jurisdiction_level": "state",
+        "admin1": "Kentucky",
+        "country": "US",
+        "capital_used": "Frankfort, KY",
+        "lat": 38.200905,
+        "lon": -84.873284,
+        "precision": "proxy",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.5
+      },
+      "sources": [
+        {
+          "url": "https://www.weather.gov/lmk/tornado_climatology_may121978",
+          "source_name": "US National Weather Service (NWS) Louisville",
+          "published_at": "1978-05-01T00:00:00.000Z",
+          "headline": "Tornado climatology (May 12, 1978)",
+          "byline": null,
+          "accessed_utc": "2026-01-19T09:32:59.006Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "US National Weather Service (NWS)"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "tornado climatology may 12 1978",
+            "source_url": "https://www.weather.gov/lmk/tornado_climatology_may121978"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.5,
+        "category": 0.75,
+        "location": 0.5,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "needs_dedupe_check",
+        "date_ambiguous",
+        "location_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "May 1978 KY tornado Butler/Warren",
+        "fingerprint": "fp_tornado_butler_warren_ky_19780513T0145Z"
+      }
+    },
+    {
+      "event_id": "evt_197805_ulawun_eruption_vei3",
+      "title": "Ulawun volcano eruption episode (VEI 3)",
+      "description": "The Smithsonian Global Volcanism Program lists an eruptive episode at Ulawun volcano in early May 1978. The draft describes activity spanning May 7–14, 1978, characterized as explosive/effusive with hazardous phenomena such as pyroclastic flows.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1978-05-07T12:00:00Z",
+        "event_end": "1978-05-14T12:00:00Z",
+        "reported_at": "1978-05-01T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1978-05-07T12:00:00Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Ulawun volcano, New Britain, Papua New Guinea",
+        "jurisdiction_level": "site",
+        "admin1": null,
+        "country": "PG",
+        "capital_used": null,
+        "lat": -5.05,
+        "lon": 151.33,
+        "precision": "exact",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://volcano.si.edu/volcano.cfm?vn=252120",
+          "source_name": "Smithsonian Global Volcanism Program",
+          "published_at": "1978-05-01T00:00:00.000Z",
+          "headline": "Ulawun",
+          "byline": null,
+          "accessed_utc": "2026-01-19T09:33:29.196Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Smithsonian Global Volcanism Program"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "volcano.si.edu (GVP) entry used in draft to support May 1978 eruptive episode.",
+            "source_url": "https://volcano.si.edu/volcano.cfm?vn=252120"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.8,
+        "location": 0.55,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "GVP_252120_1978-05",
+        "fingerprint": "fp_ulawun_pg_1978-05-07"
+      }
+    },
+    {
+      "event_id": "evt_197805_tarumae_eruption_vei1",
+      "title": "Tarumae (Shikotsu area) eruption episode (VEI 1)",
+      "description": "The Smithsonian Global Volcanism Program lists an eruptive episode at Tarumae volcano in Hokkaido, Japan in mid-May 1978. The draft places the episode from May 14–17, 1978 and characterizes it as a small (VEI 1) explosive/effusive eruption.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1978-05-14T12:00:00Z",
+        "event_end": "1978-05-17T12:00:00Z",
+        "reported_at": "1978-05-01T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1978-05-14T12:00:00Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Tarumae volcano (Shikotsu volcanic area), Hokkaido, Japan",
+        "jurisdiction_level": "site",
+        "admin1": null,
+        "country": "JP",
+        "capital_used": null,
+        "lat": 42.69,
+        "lon": 141.38,
+        "precision": "exact",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://volcano.si.edu/volcano.cfm?vn=285040",
+          "source_name": "Smithsonian Global Volcanism Program",
+          "published_at": "1978-05-01T00:00:00.000Z",
+          "headline": "Tarumae",
+          "byline": null,
+          "accessed_utc": "2026-01-19T09:33:29.196Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Smithsonian Global Volcanism Program"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "volcano.si.edu (GVP) entry used in draft to support May 1978 eruptive episode.",
+            "source_url": "https://volcano.si.edu/volcano.cfm?vn=285040"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.8,
+        "location": 0.55,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "GVP_285040_1978-05",
+        "fingerprint": "fp_tarumae_jp_1978-05-14"
+      }
+    },
+    {
+      "event_id": "evt_197805_thessaloniki_foreshock",
+      "title": "Foreshock in the 1978 Thessaloniki-area earthquake sequence (near Thessaloniki, Greece)",
+      "description": "A USGS Open-File Report on the 1978 Thessaloniki earthquake sequence describes a foreshock occurring on May 23, 1978 before the June 20 mainshock. The draft summarizes it as approximately magnitude 5.8 and located between Lakes Langadha and Volvi near Thessaloniki.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1978-05-23T12:00:00Z",
+        "event_end": "1978-05-23T12:00:00Z",
+        "reported_at": "1980-01-01T00:00:00.000Z",
+        "time_confidence": 0.65,
+        "event_date_utc": "1978-05-23T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Between Lakes Langadha and Volvi, near Thessaloniki, Greece",
+        "jurisdiction_level": "site",
+        "admin1": null,
+        "country": "GR",
+        "capital_used": null,
+        "lat": 40.69,
+        "lon": 23.29,
+        "precision": "neighborhood",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.45
+      },
+      "sources": [
+        {
+          "url": "https://pubs.usgs.gov/of/1980/0937/report.pdf",
+          "source_name": "USGS Publications Warehouse",
+          "published_at": "1980-01-01T00:00:00.000Z",
+          "headline": "USGS Open-File Report (1980) on the May–July 1978 Thessaloniki earthquake sequence",
+          "byline": null,
+          "accessed_utc": "2026-01-19T09:33:29.196Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Geological Survey (USGS)"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "USGS Open-File Report describes a foreshock on May 23, 1978 preceding the June 20 mainshock.",
+            "source_url": "https://pubs.usgs.gov/of/1980/0937/report.pdf"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.75,
+        "location": 0.4,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "location_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "USGS_OFR_1980_0937_foreshock_1978-05-23",
+        "fingerprint": "fp_thessaloniki_gr_1978-05-23"
+      }
+    },
+    {
+      "event_id": "19780503_us_fws_foreign_animals_proposed_endangered_list",
+      "title": "USFWS proposes 25 foreign animal species for U.S. endangered list; reviews 65 for possible delisting",
+      "description": "The U.S. Fish & Wildlife Service announced a proposal to add 25 foreign animal species to the U.S. endangered list. The agency also said 65 other species were being reviewed for possible removal from protected status.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1978-05-03T12:00:00Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "1978-05-03T12:00:00Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "United States (federal action)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.75
+      },
+      "sources": [
+        {
+          "url": "https://www.fws.gov/press-release/1978-05/twenty-five-foreign-animals-proposed-endangered-list-sixty-five-others-being",
+          "source_name": "U.S. Fish & Wildlife Service",
+          "published_at": "1978-05-03T12:00:00Z",
+          "headline": "Twenty-five foreign animals proposed for U.S. endangered list; 65 others being reviewed for possible “de-listing”",
+          "byline": null,
+          "accessed_utc": "2026-01-19T09:34:05.484Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.fws.gov/media/twenty-five-foreign-animals-proposed-endangered-list-sixty-five-others-being-reviewed",
+          "source_name": "U.S. Fish & Wildlife Service",
+          "published_at": "1978-05-03T12:00:00Z",
+          "headline": "Twenty-five foreign animals proposed for U.S. endangered list; sixty-five others being reviewed",
+          "byline": null,
+          "accessed_utc": "2026-01-19T09:34:05.484Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Fish & Wildlife Service"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.64,
+        "category": 0.7,
+        "location": 0.75,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "usfws_endangered_species_listing_actions_may_1978",
+        "fingerprint": "19780503_us_fws_foreign_animals_proposed_endangered_list|US|1978-05-03"
+      }
+    },
+    {
+      "event_id": "19780504_us_fws_thirteen_plants_listed_endangered_threatened",
+      "title": "USFWS lists 13 scientifically valuable plants as endangered or threatened",
+      "description": "The U.S. Fish & Wildlife Service announced listing actions that added 13 plant taxa as endangered or threatened. The action expanded federal legal protections for the listed plants.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1978-05-04T12:00:00Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "1978-05-04T12:00:00Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "United States (federal action)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.75
+      },
+      "sources": [
+        {
+          "url": "https://www.fws.gov/press-release/1978-05/thirteen-scientifically-valuable-plants-listed-endngered-or-threatened-may-4",
+          "source_name": "U.S. Fish & Wildlife Service",
+          "published_at": "1978-05-04T12:00:00Z",
+          "headline": "Thirteen scientifically valuable plants listed as endangered or threatened (May 4, 1978)",
+          "byline": null,
+          "accessed_utc": "2026-01-19T09:34:05.484Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.fws.gov/media/thirteen-scientifically-valuable-plants-listed-endngered-or-threatened-may-4-1978",
+          "source_name": "U.S. Fish & Wildlife Service",
+          "published_at": "1978-05-04T12:00:00Z",
+          "headline": "Thirteen scientifically valuable plants listed endangered or threatened May 4, 1978",
+          "byline": null,
+          "accessed_utc": "2026-01-19T09:34:05.484Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Fish & Wildlife Service"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.64,
+        "category": 0.7,
+        "location": 0.75,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "usfws_endangered_species_listing_actions_may_1978",
+        "fingerprint": "19780504_us_fws_thirteen_plants_listed_endangered_threatened|US|1978-05-04"
+      }
+    },
+    {
+      "event_id": "19780510_us_fws_african_elephant_listed_threatened",
+      "title": "USFWS lists African elephant as threatened",
+      "description": "The U.S. Fish & Wildlife Service announced the African elephant was listed as threatened under U.S. protections. The listing was presented as a species-conservation action relevant to trade and conservation measures.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1978-05-10T12:00:00Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "1978-05-10T12:00:00Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "United States (federal action)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.75
+      },
+      "sources": [
+        {
+          "url": "https://www.fws.gov/press-release/1978-05/african-elephant-listed-threatened-may-10-1978",
+          "source_name": "U.S. Fish & Wildlife Service",
+          "published_at": "1978-05-10T12:00:00Z",
+          "headline": "African elephant listed as threatened (May 10, 1978)",
+          "byline": null,
+          "accessed_utc": "2026-01-19T09:34:05.484Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Fish & Wildlife Service"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.7,
+        "location": 0.75,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "usfws_endangered_species_listing_actions_may_1978",
+        "fingerprint": "19780510_us_fws_african_elephant_listed_threatened|US|1978-05-10"
+      }
+    },
+    {
+      "event_id": "19780512_us_fws_endangered_species_treaty_reclassification",
+      "title": "USFWS says species protected by Endangered Species Treaty may be reclassified",
+      "description": "The U.S. Fish & Wildlife Service announced that wildlife species protected under the Endangered Species Treaty may be reclassified. The announcement indicated potential changes to protection status and related conservation management.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1978-05-12T12:00:00Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "1978-05-12T12:00:00Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "United States (federal action)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.75
+      },
+      "sources": [
+        {
+          "url": "https://www.fws.gov/press-release/1978-05/wildlife-species-protected-endangered-species-treaty-may-be-reclassified-may",
+          "source_name": "U.S. Fish & Wildlife Service",
+          "published_at": "1978-05-12T12:00:00Z",
+          "headline": "Wildlife species protected by the Endangered Species Treaty may be reclassified (May 12, 1978)",
+          "byline": null,
+          "accessed_utc": "2026-01-19T09:34:05.484Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.fws.gov/media/wildlife-species-protected-endangered-species-treaty-may-be-reclassified-may-12-1978",
+          "source_name": "U.S. Fish & Wildlife Service",
+          "published_at": "1978-05-12T12:00:00Z",
+          "headline": "Wildlife species protected by the Endangered Species Treaty may be reclassified May 12, 1978",
+          "byline": null,
+          "accessed_utc": "2026-01-19T09:34:05.484Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Fish & Wildlife Service"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.68,
+        "location": 0.75,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only",
+        "possible_opinion_or_advocacy"
+      ],
+      "dedupe": {
+        "cluster_hint": "usfws_endangered_species_listing_actions_may_1978",
+        "fingerprint": "19780512_us_fws_endangered_species_treaty_reclassification|US|1978-05-12"
+      }
+    }
+  ]
+}

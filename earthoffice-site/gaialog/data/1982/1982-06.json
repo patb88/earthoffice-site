@@ -1,0 +1,536 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_1982-06_normalize_2026-01-18T093849470Z",
+    "generated_utc": "2026-01-18T09:38:49.470Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "1982-06",
+    "window": {
+      "start_utc": "1982-06-01T00:00:00.000Z",
+      "end_utc": "1982-06-30T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "evt_198206_alberto_1982_rain_flooding",
+      "title": "Hurricane Alberto (1982) heavy rainfall and flooding impacts",
+      "description": "In early June 1982, Hurricane Alberto produced heavy rainfall totals documented in official precipitation analyses. Impacts included flooding concerns noted for parts of Cuba and Florida.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1982-06-02T12:00:00Z",
+        "event_end": "1982-06-06T12:00:00Z",
+        "reported_at": "1982-06-01T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": null,
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Southeastern Gulf of Mexico (impacts in Cuba and Florida, USA)",
+        "jurisdiction_level": "supranational",
+        "admin1": null,
+        "country": null,
+        "capital_used": "Havana",
+        "lat": 23.113592,
+        "lon": -82.366596,
+        "precision": "proxy",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.4
+      },
+      "sources": [
+        {
+          "url": "https://www.wpc.ncep.noaa.gov/tropical/rain/alberto1982.html",
+          "source_name": "NOAA Weather Prediction Center (WPC)",
+          "published_at": "1982-06-01T00:00:00Z",
+          "headline": "Hurricane Alberto (1982) rainfall",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:01:46.351Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA Weather Prediction Center (WPC)"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Storm total rainfall for Alberto (1982)",
+            "source_url": "https://www.wpc.ncep.noaa.gov/tropical/rain/alberto1982.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.58,
+        "category": 0.8,
+        "location": 0.4,
+        "summary_grounding": 0.65
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "alberto_1982_rainfall",
+        "fingerprint": "fp_alberto_1982_supranational_19820602_19820606"
+      }
+    },
+    {
+      "event_id": "evt_198206_southern_new_england_flooding",
+      "title": "Southern New England (Connecticut) historic flooding from prolonged heavy rain",
+      "description": "A slow-moving low pressure system produced prolonged heavy rainfall over parts of Southern New England in early June 1982. The event caused widespread flooding and flash flooding and set record floods on multiple smaller rivers and streams in Connecticut.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1982-06-04T12:00:00Z",
+        "event_end": "1982-06-07T12:00:00Z",
+        "reported_at": "1982-06-01T00:00:00Z",
+        "time_confidence": 0.7,
+        "event_date_utc": null,
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Connecticut, USA",
+        "jurisdiction_level": "state",
+        "admin1": "Connecticut",
+        "country": "US",
+        "capital_used": "Hartford",
+        "lat": 41.765804,
+        "lon": -72.673372,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://www.weather.gov/nerfc/hf_june_1982",
+          "source_name": "NOAA/NWS Northeast River Forecast Center (NERFC)",
+          "published_at": "1982-06-01T00:00:00Z",
+          "headline": "Historic Floods - June 1982",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:01:46.351Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA National Weather Service (NWS)",
+          "Northeast River Forecast Center (NERFC)"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Historic Floods - June 1982",
+            "source_url": "https://www.weather.gov/nerfc/hf_june_1982"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.7,
+        "category": 0.85,
+        "location": 0.75,
+        "summary_grounding": 0.7
+      },
+      "quality_flags": [
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "ct_southern_new_england_floods_june_1982",
+        "fingerprint": "fp_ct_floods_19820604_19820607"
+      }
+    },
+    {
+      "event_id": "evt_198206_subtropical_storm_one_1982",
+      "title": "Subtropical Storm One (1982) heavy rainfall and severe weather in Florida",
+      "description": "In mid-June 1982, Subtropical Storm One produced notable rainfall totals documented in official precipitation analyses. The system affected Florida as it moved from the eastern Gulf of Mexico and then offshore toward the Carolinas.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1982-06-17T12:00:00Z",
+        "event_end": "1982-06-19T12:00:00Z",
+        "reported_at": "1982-06-01T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": null,
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Florida, USA",
+        "jurisdiction_level": "state",
+        "admin1": "Florida",
+        "country": "US",
+        "capital_used": "Tallahassee",
+        "lat": 30.438256,
+        "lon": -84.280733,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.wpc.ncep.noaa.gov/tropical/rain/stone1982.html",
+          "source_name": "NOAA Weather Prediction Center (WPC)",
+          "published_at": "1982-06-01T00:00:00Z",
+          "headline": "Subtropical Storm One (1982) rainfall",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:01:46.351Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA Weather Prediction Center (WPC)"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Storm total rainfall for Subtropical Storm One (1982)",
+            "source_url": "https://www.wpc.ncep.noaa.gov/tropical/rain/stone1982.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.85,
+        "location": 0.55,
+        "summary_grounding": 0.65
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "subtropical_storm_one_1982_rainfall",
+        "fingerprint": "fp_stone_1982_fl_19820617_19820619"
+      }
+    },
+    {
+      "event_id": "evt_198206_iowa_floods_usgs_1982",
+      "title": "Iowa record flood-peak discharges during June 1982 flooding",
+      "description": "A USGS report documents record flood-peak discharges occurring in parts of Iowa during June 1982, with flooding driven by heavy rainfall falling on soils saturated by persistent rains beginning in May. The report places the June peaks in the broader context of June–July 1982 flooding.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1982-06-01T12:00:00Z",
+        "event_end": "1982-06-30T12:00:00Z",
+        "reported_at": "1982-06-01T00:00:00Z",
+        "time_confidence": 0.55,
+        "event_date_utc": null,
+        "event_date_precision": "month"
+      },
+      "location": {
+        "name": "Iowa, USA",
+        "jurisdiction_level": "state",
+        "admin1": "Iowa",
+        "country": "US",
+        "capital_used": "Des Moines",
+        "lat": 41.586835,
+        "lon": -93.624959,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://pubs.usgs.gov/publication/ofr85151",
+          "source_name": "U.S. Geological Survey (USGS)",
+          "published_at": "1985-01-01T00:00:00Z",
+          "headline": "Open-File Report (OFR) 85-151",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:01:46.351Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Geological Survey (USGS)"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "record flood-peak discharges occurred during June and July 1982",
+            "source_url": "https://pubs.usgs.gov/publication/ofr85151"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.85,
+        "location": 0.6,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "iowa_floods_june_1982_usgs",
+        "fingerprint": "fp_iowa_floods_198206_month"
+      }
+    },
+    {
+      "event_id": "1982-06-fires-bc-alaska-highway-wildfire-reported-start",
+      "title": "Large wildfire reported near Alaska Highway in northern British Columbia (reported start: June 20, 1982)",
+      "description": "A news report described a giant forest fire burning near the Alaska Highway in northern British Columbia and cited an earlier reported start date of June 20, 1982. The report indicated the fire was affecting travel and nearby areas along the highway corridor.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1982-06-20T12:00:00Z",
+        "event_end": null,
+        "reported_at": "1982-08-02T00:00:00Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "1982-06-20T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Victoria, British Columbia, Canada (proxy for northern British Columbia; Alaska Highway area)",
+        "jurisdiction_level": "state",
+        "admin1": "British Columbia",
+        "country": "CA",
+        "capital_used": "Victoria",
+        "lat": 48.4284,
+        "lon": -123.3656,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.5
+      },
+      "sources": [
+        {
+          "url": "https://www.upi.com/Archives/1982/08/02/Giant-forrest-fire-rages-near-Alaska-Highway/1805397108800/",
+          "source_name": "UPI",
+          "published_at": "1982-08-02T00:00:00Z",
+          "headline": "Giant forrest fire rages near Alaska Highway",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:02:27.476Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www2.gov.bc.ca/gov/content/safety/wildfire-status/about-bcws/wildfire-history/major-historical-wildfires",
+          "source_name": "Government of British Columbia (BC Wildfire Service)",
+          "published_at": "1982-06-01T00:00:00Z",
+          "headline": "Major historical wildfires (BCWS wildfire history)",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:02:27.476Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "UPI",
+          "BC Wildfire Service"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "boreal/forest"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Giant forrest fire rages near Alaska Highway",
+            "source_url": "https://www.upi.com/Archives/1982/08/02/Giant-forrest-fire-rages-near-Alaska-Highway/1805397108800/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.8,
+        "location": 0.5,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "wildfire_alaska_highway_northern_bc_1982",
+        "fingerprint": "wildfire_reported_near_alaska_highway_northern_british_columbia_1982-06"
+      }
+    },
+    {
+      "event_id": "evt_198206_sandy_hook_bay_fish_kill",
+      "title": "Fish kill reported in Sandy Hook Bay (Hudson–Raritan Estuary) in early summer 1982",
+      "description": "A document hosted in the NOAA Institutional Repository reports a fish-kill event in Sandy Hook Bay during early summer 1982. The report attributes the incident to decomposing organic matter in the water.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1982-06-15T12:00:00Z",
+        "time_confidence": 0.3,
+        "event_date_utc": null,
+        "event_date_precision": "month"
+      },
+      "location": {
+        "name": "Sandy Hook Bay, New Jersey, USA",
+        "jurisdiction_level": "site",
+        "admin1": "New Jersey",
+        "country": "US",
+        "capital_used": null,
+        "lat": 40.4667,
+        "lon": -74.0167,
+        "precision": "exact",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://repository.library.noaa.gov/view/noaa/3288/noaa_3288_DS1.pdf",
+          "source_name": "NOAA Institutional Repository",
+          "published_at": "1982-06-15T12:00:00Z",
+          "headline": "noaa_3288_DS1.pdf",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:03:00.350Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "Hudson–Raritan Estuary"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.42,
+        "category": 0.7,
+        "location": 0.55,
+        "summary_grounding": 0.4
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Sandy Hook Bay fish kill early summer 1982",
+        "fingerprint": "fp_198206_sandy_hook_bay_fish_kill"
+      }
+    },
+    {
+      "event_id": "evt_19820622_fppa_effective_us",
+      "title": "Farmland Protection Policy Act (FPPA) effective date triggers federal farmland-conversion review",
+      "description": "The Farmland Protection Policy Act provisions in U.S. law require federal agencies to consider and minimize the unnecessary and irreversible conversion of important farmland to nonagricultural uses when undertaking federally assisted projects. The cited U.S. Code section reflects the statute and its effective-date provisions as codified.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1982-06-22T12:00:00Z",
+        "time_confidence": 0.4,
+        "event_date_utc": "1982-06-22T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.9
+      },
+      "sources": [
+        {
+          "url": "https://www.law.cornell.edu/uscode/text/7/4201",
+          "source_name": "Cornell Law School (Legal Information Institute)",
+          "published_at": "1982-06-22T12:00:00Z",
+          "headline": "7 U.S. Code § 4201 - Findings and purpose",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:03:46.833Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.govinfo.gov/app/details/STATUTE-95/STATUTE-95-Pg1213",
+          "source_name": "GovInfo",
+          "published_at": "1977-01-01T00:00:00Z",
+          "headline": "STATUTE-95 (page 1213)",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:03:46.833Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "United States federal government"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "farmland"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "minimize the extent to which Federal programs contribute to the unnecessary and irreversible conversion of farmland",
+            "source_url": "https://www.law.cornell.edu/uscode/text/7/4201"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.75,
+        "location": 0.9,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "FPPA effective date / 7 USC 4201",
+        "fingerprint": "fppa_effective_us_1982-06-22"
+      }
+    }
+  ]
+}

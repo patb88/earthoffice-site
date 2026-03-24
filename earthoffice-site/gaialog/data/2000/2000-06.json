@@ -1,0 +1,112 @@
+{
+  "batch_meta": {
+    "batch_id": "2000-06_gaialog_20260111_001",
+    "generated_utc": "2026-01-11T00:00:00Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "2000-06",
+    "window": {
+      "start_utc": "2000-06-01T00:00:00.000Z",
+      "end_utc": "2000-06-30T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-event-ingest",
+      "version": "1.0",
+      "model": "gpt-4.1",
+      "retrieval_method": "curated"
+    }
+  },
+  "events": [
+    {
+      "event_id": "evt_20000616_nasa_earthobservatory_forest_fires_russia_china",
+      "title": "Satellite observes forest-fire smoke along Russia–China border region",
+      "description": "NASA Earth Observatory published satellite imagery showing smoke plumes from forest fires scattered along the Russia–China border region. The imagery indicates active fires and smoke affecting the surrounding area.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2000-06-16T00:00:00.000Z",
+        "event_end": "2000-06-16T23:59:59.000Z",
+        "reported_at": "2000-06-16T00:00:00.000Z",
+        "time_confidence": 0.5,
+        "event_date_utc": "2000-06-16T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Russia–China border region (Russian Far East / Northern China)",
+        "jurisdiction_level": "supranational",
+        "admin1": null,
+        "country": null,
+        "capital_used": null,
+        "lat": 55.7558,
+        "lon": 37.6173,
+        "precision": "proxy",
+        "location_basis": "institution_proxy",
+        "location_confidence": 0.3
+      },
+      "sources": [
+        {
+          "url": "https://earthobservatory.nasa.gov/images/660/forest-fires-in-russia-and-northern-china",
+          "source_name": "NASA Earth Observatory",
+          "published_at": "2000-06-16T00:00:00.000Z",
+          "headline": "Forest Fires in Russia and Northern China",
+          "byline": null,
+          "accessed_utc": "2026-01-11T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://science.nasa.gov/earth/earth-observatory/forest-fires-in-russia-and-northern-china-660/",
+          "source_name": "NASA Science (Earth Observatory mirror)",
+          "published_at": "2000-06-16T00:00:00.000Z",
+          "headline": "Forest Fires in Russia and Northern China (Image 660)",
+          "byline": null,
+          "accessed_utc": "2026-01-11T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NASA"
+        ],
+        "substances": [
+          "smoke"
+        ],
+        "ecosystems": [
+          "forest"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Forest fires scattered along the border between Russia and China are producing huge plumes of smoke.",
+            "source_url": "https://earthobservatory.nasa.gov/images/660/forest-fires-in-russia-and-northern-china"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.85,
+        "location": 0.3,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "low_confidence_location"
+      ],
+      "dedupe": {
+        "cluster_hint": "nasa_eo_forest_fires_russia_northern_china_2000-06",
+        "fingerprint": "fp_nasa_eo_forest_fires_russia_china_20000616"
+      }
+    }
+  ]
+}

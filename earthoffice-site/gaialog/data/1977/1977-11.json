@@ -1,0 +1,884 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_1977-11_normalize_2026-01-19T091234683Z",
+    "generated_utc": "2026-01-19T09:12:34.683Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "1977-11",
+    "window": {
+      "start_utc": "1977-11-01T00:00:00.000Z",
+      "end_utc": "1977-11-30T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "evt_197711_td09_southeast_us_flooding",
+      "title": "Tropical Depression Nine causes heavy rain and deadly flooding in the southeastern United States",
+      "description": "Tropical Depression Nine formed on November 3, 1977 and was associated with extreme rainfall and widespread flooding in parts of the southeastern United States. The NOAA/WPC event summary reports major damage and fatalities, with the system later moving northward before being absorbed offshore of Maine by November 11.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1977-11-03T12:00:00Z",
+        "event_end": "1977-11-11T12:00:00Z",
+        "reported_at": "1977-11-30T23:59:59.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "1977-11-03T12:00:00Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Southeastern United States",
+        "jurisdiction_level": "supranational",
+        "admin1": null,
+        "country": null,
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "proxy",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.wpc.ncep.noaa.gov/tropical/rain/td09aof1977.html",
+          "source_name": "NOAA Weather Prediction Center (WPC)",
+          "published_at": "1977-11-30T23:59:59.000Z",
+          "headline": "Tropical Depression Nine (1977) rainfall summary",
+          "byline": null,
+          "accessed_utc": "2026-01-19T09:09:03.859Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA Weather Prediction Center (WPC)"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Tropical Depression Nine (1977)",
+            "source_url": "https://www.wpc.ncep.noaa.gov/tropical/rain/td09aof1977.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.8,
+        "location": 0.55,
+        "summary_grounding": 0.65
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "1977 TD09 flooding Southeast US",
+        "fingerprint": "fp_td09_1977-11_southeastern-united-states_1977-11-03"
+      }
+    },
+    {
+      "event_id": "evt_197711_andhra_pradesh_cyclone_chirala",
+      "title": "1977 Andhra Pradesh cyclone makes landfall near Chirala, causing storm surge and severe impacts",
+      "description": "A severe tropical cyclone in the Bay of Bengal struck the Andhra Pradesh coast near Chirala around November 19, 1977. The cited IMD Mausam journal article describes destructive winds, storm surge, and flooding with very large loss of life and extensive damage across coastal districts.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1977-11-14T12:00:00Z",
+        "event_end": "1977-11-21T12:00:00Z",
+        "reported_at": "1977-11-30T23:59:59.000Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "1977-11-19T00:00:00Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Andhra Pradesh, India",
+        "jurisdiction_level": "state",
+        "admin1": "Andhra Pradesh",
+        "country": "IN",
+        "capital_used": "Hyderabad",
+        "lat": 17.385,
+        "lon": 78.4867,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://mausamjournal.imd.gov.in/index.php/MAUSAM/article/view/3857",
+          "source_name": "MAUSAM (India Meteorological Department journal)",
+          "published_at": "1977-11-30T23:59:59.000Z",
+          "headline": "MAUSAM article on the 1977 Andhra Pradesh cyclone",
+          "byline": null,
+          "accessed_utc": "2026-01-19T09:09:03.859Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "India Meteorological Department (IMD)"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "Krishna River delta"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "article/view/3857",
+            "source_url": "https://mausamjournal.imd.gov.in/index.php/MAUSAM/article/view/3857"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.8,
+        "location": 0.7,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "paywalled_or_partial",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "1977 Andhra Pradesh cyclone (Chirala landfall)",
+        "fingerprint": "fp_andhra_cyclone_1977-11_andhra-pradesh_1977-11-19"
+      }
+    },
+    {
+      "event_id": "evt_19771123_san_juan_arg_eq",
+      "title": "Earthquake in San Juan Province, Argentina (reported ~M7.0)",
+      "description": "A major earthquake struck San Juan Province, Argentina on November 23, 1977. USGS Earthquake Information Bulletin coverage for November–December 1977 summarizes the event and reports impacts including fatalities and damage.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1977-11-23T12:00:00Z",
+        "event_end": "1977-11-23T12:00:00Z",
+        "reported_at": "1977-11-30T23:59:59.000Z",
+        "time_confidence": 0.5,
+        "event_date_utc": "1977-11-23T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "San Juan Province, Argentina",
+        "jurisdiction_level": "state",
+        "admin1": "San Juan Province",
+        "country": "AR",
+        "capital_used": "San Juan",
+        "lat": -31.5375,
+        "lon": -68.5364,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://www.usgs.gov/publications/earthquakes-november-december-1977",
+          "source_name": "USGS",
+          "published_at": "1977-11-30T23:59:59.000Z",
+          "headline": "Earthquakes November-December 1977",
+          "byline": null,
+          "accessed_utc": "2026-01-19T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://pubs.usgs.gov/publication/70169187",
+          "source_name": "USGS Publications Warehouse",
+          "published_at": "1977-11-30T23:59:59.000Z",
+          "headline": "Earthquakes November-December 1977",
+          "byline": null,
+          "accessed_utc": "2026-01-19T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "USGS"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.85,
+        "location": 0.7,
+        "summary_grounding": 0.4
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "usgs_eib_1977_11_12",
+        "fingerprint": null
+      }
+    },
+    {
+      "event_id": "evt_19771104_andreanof_ak_eq",
+      "title": "Andreanof Islands (Aleutian Islands, Alaska) earthquake (reported ~M6.6)",
+      "description": "An earthquake reported around magnitude 6.6 occurred in the Andreanof Islands area of Alaska on November 4, 1977. USGS Earthquake Information Bulletin coverage for November–December 1977 summarizes the event and notes minor damage.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1977-11-04T12:00:00Z",
+        "event_end": "1977-11-04T12:00:00Z",
+        "reported_at": "1977-11-30T23:59:59.000Z",
+        "time_confidence": 0.5,
+        "event_date_utc": "1977-11-04T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Andreanof Islands, Aleutian Islands, Alaska, United States",
+        "jurisdiction_level": "state",
+        "admin1": "Alaska",
+        "country": "US",
+        "capital_used": "Juneau",
+        "lat": 58.3019,
+        "lon": -134.4197,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.45
+      },
+      "sources": [
+        {
+          "url": "https://www.usgs.gov/publications/earthquakes-november-december-1977",
+          "source_name": "USGS",
+          "published_at": "1977-11-30T23:59:59.000Z",
+          "headline": "Earthquakes November-December 1977",
+          "byline": null,
+          "accessed_utc": "2026-01-19T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://pubs.usgs.gov/publication/70169187",
+          "source_name": "USGS Publications Warehouse",
+          "published_at": "1977-11-30T23:59:59.000Z",
+          "headline": "Earthquakes November-December 1977",
+          "byline": null,
+          "accessed_utc": "2026-01-19T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "USGS"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.45,
+        "category": 0.85,
+        "location": 0.45,
+        "summary_grounding": 0.35
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "usgs_eib_1977_11_12",
+        "fingerprint": null
+      }
+    },
+    {
+      "event_id": "evt_19771122_willits_ca_eq",
+      "title": "Willits area, California earthquake (M4.8)",
+      "description": "A magnitude 4.8 earthquake struck the Willits area in Mendocino County, California on November 22, 1977. A USGS Open-File Report documents the event and describes associated damage.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1977-11-22T12:00:00Z",
+        "event_end": "1977-11-22T12:00:00Z",
+        "reported_at": "1977-11-30T23:59:59.000Z",
+        "time_confidence": 0.5,
+        "event_date_utc": "1977-11-22T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Willits area, Mendocino County, California, United States",
+        "jurisdiction_level": "city",
+        "admin1": "California",
+        "country": "US",
+        "capital_used": null,
+        "lat": 39.4096,
+        "lon": -123.3556,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.usgs.gov/publications/willits-california-magnitude-48-earthquake-november-22-1977",
+          "source_name": "USGS",
+          "published_at": "1977-11-30T23:59:59.000Z",
+          "headline": "Willits, California, Magnitude 4.8 Earthquake November 22, 1977",
+          "byline": null,
+          "accessed_utc": "2026-01-19T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://pubs.usgs.gov/publication/ofr781075",
+          "source_name": "USGS Publications Warehouse",
+          "published_at": "1977-11-30T23:59:59.000Z",
+          "headline": "Willits, California, Magnitude 4.8 Earthquake November 22, 1977 (Open-File Report 78-1075)",
+          "byline": null,
+          "accessed_utc": "2026-01-19T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "USGS"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.85,
+        "location": 0.6,
+        "summary_grounding": 0.4
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "usgs_willits_1977_11_22",
+        "fingerprint": null
+      }
+    },
+    {
+      "event_id": "evt_197711_bonin_jp_eq",
+      "title": "Bonin Islands region, Japan earthquake (reported ~M7.0)",
+      "description": "A major earthquake occurred in the Bonin Islands region of Japan during November 1977. USGS Earthquake Information Bulletin coverage for November–December 1977 summarizes the event and describes it as occurring in an unpopulated area; the specific day is not provided in the draft source summary.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1977-11-30T23:59:59.000Z",
+        "time_confidence": 0.3,
+        "event_date_utc": null,
+        "event_date_precision": "month"
+      },
+      "location": {
+        "name": "Bonin Islands (Ogasawara), Japan",
+        "jurisdiction_level": "city",
+        "admin1": "Tokyo",
+        "country": "JP",
+        "capital_used": null,
+        "lat": 27.094,
+        "lon": 142.191,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.35
+      },
+      "sources": [
+        {
+          "url": "https://www.usgs.gov/publications/earthquakes-november-december-1977",
+          "source_name": "USGS",
+          "published_at": "1977-11-30T23:59:59.000Z",
+          "headline": "Earthquakes November-December 1977",
+          "byline": null,
+          "accessed_utc": "2026-01-19T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://pubs.usgs.gov/publication/70169187",
+          "source_name": "USGS Publications Warehouse",
+          "published_at": "1977-11-30T23:59:59.000Z",
+          "headline": "Earthquakes November-December 1977",
+          "byline": null,
+          "accessed_utc": "2026-01-19T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "USGS"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.35,
+        "category": 0.8,
+        "location": 0.35,
+        "summary_grounding": 0.35
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "usgs_eib_1977_11_12",
+        "fingerprint": null
+      }
+    },
+    {
+      "event_id": "evt_19771129_fws_four_southeastern_fish_endangered_proposal",
+      "title": "USFWS proposes listing four Southeastern fish species as endangered",
+      "description": "The U.S. Fish & Wildlife Service announced a proposal to list four fish species as endangered and to designate critical habitat for them: the Cahaba shiner, spring pygmy sunfish, pygmy sculpin, and goldline darter. The proposal cited threats including degraded water quality and habitat impacts associated with sewage treatment plant discharges, coal strip mining, siltation/pollution, insecticide runoff, aquatic vegetation control, water pumping, and toxic chemicals.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1977-11-29T12:00:00Z",
+        "event_end": "1977-11-29T12:00:00Z",
+        "reported_at": "1977-11-29T12:00:00Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "1977-11-29T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States (Alabama and Georgia)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, D.C.",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.fws.gov/press-release/1977-11/four-southeastern-fish-species-proposed-endangered-november-29-1977",
+          "source_name": "U.S. Fish & Wildlife Service",
+          "published_at": "1977-11-29T00:00:00Z",
+          "headline": "Four Southeastern Fish Species Proposed Endangered (November 29, 1977)",
+          "byline": null,
+          "accessed_utc": "2026-01-19T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.fws.gov/sites/default/files/documents/historic-news-releases/1977/19771129C.PDF",
+          "source_name": "U.S. Fish & Wildlife Service",
+          "published_at": "1977-11-29T00:00:00Z",
+          "headline": "Historic news release PDF (1977-11-29)",
+          "byline": null,
+          "accessed_utc": "2026-01-19T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Fish & Wildlife Service"
+        ],
+        "substances": [
+          "insecticides",
+          "toxic chemicals"
+        ],
+        "ecosystems": [
+          "Cahaba River",
+          "Coosawattee River",
+          "Mobile River Basin"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "proposes to list the Cahaba shiner, spring pygmy sunfish, pygmy sculpin, and goldline darter as endangered",
+            "source_url": "https://www.fws.gov/press-release/1977-11/four-southeastern-fish-species-proposed-endangered-november-29-1977"
+          },
+          {
+            "quote": "threats include degraded water quality ... sewage treatment plants ... coal strip mining ... siltation ... insecticide runoff",
+            "source_url": "https://www.fws.gov/press-release/1977-11/four-southeastern-fish-species-proposed-endangered-november-29-1977"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.74,
+        "category": 0.8,
+        "location": 0.55,
+        "summary_grounding": 0.65
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "USFWS 1977-11-29 four southeastern fish species proposed endangered",
+        "fingerprint": "fp_19771129_us_fws_four_southeastern_fish_species_proposed_endangered_us"
+      }
+    },
+    {
+      "event_id": "1977-11-04_pl95-152_tinicum-boundary",
+      "title": "Public Law 95-152 revised boundaries for Tinicum National Environmental Center (PA)",
+      "description": "H.R. 2817 became Public Law 95-152 on November 4, 1977, revising the boundaries of the Tinicum National Environmental Center in Pennsylvania. The action also addressed authorization related to land acquisition and development for the site.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "1977-11-04T12:00:00Z",
+        "event_end": "1977-11-04T12:00:00Z",
+        "reported_at": "1977-11-04T12:00:00Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "1977-11-04T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Tinicum Township area near Philadelphia, Pennsylvania, USA",
+        "jurisdiction_level": "city",
+        "admin1": "Pennsylvania",
+        "country": "US",
+        "capital_used": null,
+        "lat": 39.9526,
+        "lon": -75.1652,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.congress.gov/bill/95th-congress/house-bill/2817",
+          "source_name": "Congress.gov",
+          "published_at": "1977-11-04T12:00:00Z",
+          "headline": "H.R.2817 — A bill to revise the boundaries of the Tinicum National Environmental Center, and for other purposes.",
+          "byline": null,
+          "accessed_utc": "2026-01-19T09:10:47.833Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.presidency.ucsb.edu/documents/remarks-signing-bills-concerning-the-environment-into-law",
+          "source_name": "The American Presidency Project (UCSB)",
+          "published_at": "1977-11-04T12:00:00Z",
+          "headline": "Remarks on Signing Bills Concerning the Environment Into Law",
+          "byline": null,
+          "accessed_utc": "2026-01-19T09:10:47.833Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Congress"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "wetlands"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "H.R. 2817 became Public Law 95-152 on November 4, 1977, revising the boundaries of the Tinicum National Environmental Center",
+            "source_url": "https://www.congress.gov/bill/95th-congress/house-bill/2817"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.8,
+        "location": 0.6,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "pl95-152_tinicum",
+        "fingerprint": "pl95-152|tinicum|1977-11-04"
+      }
+    },
+    {
+      "event_id": "1977-11-04_pl95-153_mprsa-amendments",
+      "title": "Public Law 95-153 amended Marine Protection, Research, and Sanctuaries Act (appropriations authorization)",
+      "description": "H.R. 4297 became Public Law 95-153 on November 4, 1977, amending the Marine Protection, Research, and Sanctuaries Act of 1972. The amendments authorized appropriations to carry out the Act, supporting administration of the federal ocean dumping and marine protection framework.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "1977-11-04T12:00:00Z",
+        "event_end": "1977-11-04T12:00:00Z",
+        "reported_at": "1977-11-04T12:00:00Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "1977-11-04T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States (national marine protection program)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.85
+      },
+      "sources": [
+        {
+          "url": "https://www.congress.gov/bill/95th-congress/house-bill/4297",
+          "source_name": "Congress.gov",
+          "published_at": "1977-11-04T12:00:00Z",
+          "headline": "H.R.4297 — A bill to amend the Marine Protection, Research, and Sanctuaries Act of 1972 to authorize appropriations.",
+          "byline": null,
+          "accessed_utc": "2026-01-19T09:10:47.833Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.presidency.ucsb.edu/documents/remarks-signing-bills-concerning-the-environment-into-law",
+          "source_name": "The American Presidency Project (UCSB)",
+          "published_at": "1977-11-04T12:00:00Z",
+          "headline": "Remarks on Signing Bills Concerning the Environment Into Law",
+          "byline": null,
+          "accessed_utc": "2026-01-19T09:10:47.833Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Congress"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "marine waters"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "H.R. 4297 became Public Law 95-153 on November 4, 1977, amending the Marine Protection, Research, and Sanctuaries Act of 1972",
+            "source_url": "https://www.congress.gov/bill/95th-congress/house-bill/4297"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.72,
+        "category": 0.85,
+        "location": 0.85,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "pl95-153_mprsa",
+        "fingerprint": "pl95-153|us|1977-11-04"
+      }
+    },
+    {
+      "event_id": "1977-11-09_pl95-164_mine-safety-health-act",
+      "title": "Public Law 95-164 strengthened federal mine safety and health regulation",
+      "description": "The Federal Mine Safety and Health Act of 1977 (Public Law 95-164) was signed on November 9, 1977. It strengthened the federal framework for mine safety and health, expanding inspection and enforcement authorities across mining operations.",
+      "category_primary": "policy_regulation",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "1977-11-09T12:00:00Z",
+        "event_end": "1977-11-09T12:00:00Z",
+        "reported_at": "1977-11-09T12:00:00Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "1977-11-09T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States (nationwide mines)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.85
+      },
+      "sources": [
+        {
+          "url": "https://www.congress.gov/bill/95th-congress/senate-bill/717/all-actions",
+          "source_name": "Congress.gov",
+          "published_at": "1977-11-09T12:00:00Z",
+          "headline": "S.717 — Federal Mine Safety and Health Act of 1977 (all actions)",
+          "byline": null,
+          "accessed_utc": "2026-01-19T09:10:47.833Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.msha.gov/federal-mine-safety-health-act-1977-public-law-91-173-amended-public-law-95-164",
+          "source_name": "MSHA (U.S. Department of Labor)",
+          "published_at": "1977-11-09T12:00:00Z",
+          "headline": "Federal Mine Safety and Health Act of 1977 (Public Law 95-164)",
+          "byline": null,
+          "accessed_utc": "2026-01-19T09:10:47.833Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Congress",
+          "Mine Safety and Health Administration (MSHA)",
+          "U.S. Department of Labor"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "The Federal Mine Safety and Health Act of 1977 (Public Law 95-164) was signed on November 9, 1977",
+            "source_url": "https://www.msha.gov/federal-mine-safety-health-act-1977-public-law-91-173-amended-public-law-95-164"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.75,
+        "category": 0.8,
+        "location": 0.85,
+        "summary_grounding": 0.65
+      },
+      "quality_flags": [
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "pl95-164_msha",
+        "fingerprint": "pl95-164|us|1977-11-09"
+      }
+    },
+    {
+      "event_id": "1977-11-16_pl95-190_safe-drinking-water-amendments",
+      "title": "Public Law 95-190 enacted Safe Drinking Water Amendments of 1977",
+      "description": "Public Law 95-190 (Safe Drinking Water Amendments of 1977) was signed on November 16, 1977. The law expanded authorizations and program authorities related to public water systems and protection of underground sources of drinking water.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "1977-11-16T12:00:00Z",
+        "event_end": "1977-11-16T12:00:00Z",
+        "reported_at": "1977-11-16T12:00:00Z",
+        "time_confidence": 0.65,
+        "event_date_utc": "1977-11-16T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States (public water systems nationwide)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.85
+      },
+      "sources": [
+        {
+          "url": "https://www.congress.gov/bill/95th-congress/senate-bill/1528",
+          "source_name": "Congress.gov",
+          "published_at": "1977-11-16T12:00:00Z",
+          "headline": "S.1528 — Safe Drinking Water Amendments of 1977",
+          "byline": null,
+          "accessed_utc": "2026-01-19T09:10:47.833Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.congress.gov/bill/95th-congress/senate-bill/1528/actions",
+          "source_name": "Congress.gov",
+          "published_at": "1977-11-16T12:00:00Z",
+          "headline": "S.1528 — Actions",
+          "byline": null,
+          "accessed_utc": "2026-01-19T09:10:47.833Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://usc-cdn.house.gov/view.xhtml?edition=prelim&path=%2Fprelim%40title42%2Fchapter6A%2Fsubchapter1",
+          "source_name": "U.S. Code (House Office of the Law Revision Counsel)",
+          "published_at": "1977-11-16T12:00:00Z",
+          "headline": "42 U.S. Code, Chapter 6A, Subchapter I (as hosted by US Code site)",
+          "byline": null,
+          "accessed_utc": "2026-01-19T09:10:47.833Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Congress"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "groundwater"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "The Safe Drinking Water Amendments of 1977 (Public Law 95-190) were signed on November 16, 1977",
+            "source_url": "https://www.congress.gov/bill/95th-congress/senate-bill/1528"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.72,
+        "category": 0.85,
+        "location": 0.85,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "pl95-190_sdwa",
+        "fingerprint": "pl95-190|us|1977-11-16"
+      }
+    }
+  ]
+}

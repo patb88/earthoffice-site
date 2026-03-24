@@ -1,0 +1,1407 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_1997-06_normalize_2026-01-17T191121347Z",
+    "generated_utc": "2026-01-17T19:11:21.347Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "1997-06",
+    "window": {
+      "start_utc": "1997-06-01T00:00:00.000Z",
+      "end_utc": "1997-06-30T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "1997-06_weather_climate_us_atlantic_southeast_flash_flooding_19970601",
+      "title": "Heavy rainfall causes flash flooding in the U.S. Atlantic Southeast (June 1–3, 1997)",
+      "description": "Heavy rainfall from June 1–3, 1997 affected parts of Florida, Georgia, Virginia, and West Virginia and produced flash flooding. A USGS National Water Conditions summary for June 1997 describes very high rainfall rates and notes flood-related deaths in West Virginia.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1997-06-01T12:00:00Z",
+        "event_end": "1997-06-03T12:00:00Z",
+        "reported_at": "1997-06-01T00:00:00Z",
+        "time_confidence": 0.4,
+        "event_date_utc": null,
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "United States (Florida, Georgia, Virginia, West Virginia)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "proxy",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://water.usgs.gov/nwc/back_issues/june97_cov.html",
+          "source_name": "USGS National Water Conditions",
+          "published_at": "1997-06-01T00:00:00Z",
+          "headline": "National Water Conditions (June 1997)",
+          "byline": null,
+          "accessed_utc": "2026-01-17T03:07:42.001Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "USGS"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Heavy rainfall... produced flash flooding...",
+            "source_url": "https://water.usgs.gov/nwc/back_issues/june97_cov.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.56,
+        "category": 0.75,
+        "location": 0.55,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "USGS_NWC_June_1997_multiple_US_flood_events",
+        "fingerprint": "fp_1997-06_us_atlantic_southeast_flash_flooding_19970601"
+      }
+    },
+    {
+      "event_id": "1997-06_weather_climate_charleston_sc_flash_flood_19970606",
+      "title": "Charleston, South Carolina flash flood from extreme rainfall (June 6, 1997)",
+      "description": "On June 6, 1997, extreme rainfall in the Charleston area caused a major flash-flood event. A USGS National Water Conditions summary for June 1997 reports 7.37 inches of rain in downtown Charleston and notes many road closures.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1997-06-06T12:00:00Z",
+        "event_end": "1997-06-06T12:00:00Z",
+        "reported_at": "1997-06-01T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1997-06-06T00:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Charleston area, South Carolina, USA",
+        "jurisdiction_level": "city",
+        "admin1": "South Carolina",
+        "country": "US",
+        "capital_used": null,
+        "lat": 32.7765,
+        "lon": -79.9311,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://water.usgs.gov/nwc/back_issues/june97_cov.html",
+          "source_name": "USGS National Water Conditions",
+          "published_at": "1997-06-01T00:00:00Z",
+          "headline": "National Water Conditions (June 1997)",
+          "byline": null,
+          "accessed_utc": "2026-01-17T03:07:42.001Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "USGS"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "...7.37 inches of rain in downtown Charleston...",
+            "source_url": "https://water.usgs.gov/nwc/back_issues/june97_cov.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.75,
+        "location": 0.6,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "USGS_NWC_June_1997_multiple_US_flood_events",
+        "fingerprint": "fp_1997-06_charleston_sc_flash_flood_19970606"
+      }
+    },
+    {
+      "event_id": "1997-06_weather_climate_indiana_ohio_flooding_19970601",
+      "title": "Flooding across Indiana and Ohio from heavy thunderstorms (June 1–3, 1997)",
+      "description": "Heavy thunderstorms during June 1–3, 1997 caused flooding across parts of Indiana and Ohio. A USGS National Water Conditions summary for June 1997 describes impacts on multiple rivers and continued flooding effects in Indiana later in the month.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1997-06-01T12:00:00Z",
+        "event_end": "1997-06-03T12:00:00Z",
+        "reported_at": "1997-06-01T00:00:00Z",
+        "time_confidence": 0.45,
+        "event_date_utc": null,
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "United States (Indiana, Ohio)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "proxy",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.5
+      },
+      "sources": [
+        {
+          "url": "https://water.usgs.gov/nwc/back_issues/june97_cov.html",
+          "source_name": "USGS National Water Conditions",
+          "published_at": "1997-06-01T00:00:00Z",
+          "headline": "National Water Conditions (June 1997)",
+          "byline": null,
+          "accessed_utc": "2026-01-17T03:07:42.001Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "USGS"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Heavy thunderstorms... caused flooding in Indiana and Ohio...",
+            "source_url": "https://water.usgs.gov/nwc/back_issues/june97_cov.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.54,
+        "category": 0.75,
+        "location": 0.5,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "USGS_NWC_June_1997_multiple_US_flood_events",
+        "fingerprint": "fp_1997-06_indiana_ohio_flooding_19970601"
+      }
+    },
+    {
+      "event_id": "1997-06_weather_climate_south_central_texas_floods_19970621",
+      "title": "South-central Texas floods from heavy rainfall (June 21–22, 1997)",
+      "description": "Heavy rainfall on June 21–22, 1997 caused severe flooding across parts of south-central Texas. A USGS fact sheet describes damaging flooding on rivers and creeks and notes federal disaster declarations for multiple counties.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1997-06-21T12:00:00Z",
+        "event_end": "1997-06-22T12:00:00Z",
+        "reported_at": "1998-01-01T00:00:00Z",
+        "time_confidence": 0.7,
+        "event_date_utc": null,
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "South-central Texas, USA",
+        "jurisdiction_level": "state",
+        "admin1": "Texas",
+        "country": "US",
+        "capital_used": "Austin, TX",
+        "lat": 30.2672,
+        "lon": -97.7431,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://pubs.usgs.gov/publication/fs05398",
+          "source_name": "USGS Publications Warehouse",
+          "published_at": "1998-01-01T00:00:00Z",
+          "headline": "Floods in South-Central Texas, June 1997 (Fact Sheet 053-98)",
+          "byline": null,
+          "accessed_utc": "2026-01-17T03:07:42.001Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.usgs.gov/publications/floods-south-central-texas-june-1997",
+          "source_name": "USGS",
+          "published_at": "1998-01-01T00:00:00Z",
+          "headline": "Floods in South-Central Texas, June 1997",
+          "byline": null,
+          "accessed_utc": "2026-01-17T03:07:42.001Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "USGS"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "...Floods in South-Central Texas, June 1997...",
+            "source_url": "https://pubs.usgs.gov/publication/fs05398"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.7,
+        "category": 0.8,
+        "location": 0.7,
+        "summary_grounding": 0.65
+      },
+      "quality_flags": [
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "TX_floods_June_1997_USGS_fact_sheet",
+        "fingerprint": "fp_1997-06_south_central_texas_floods_19970621"
+      }
+    },
+    {
+      "event_id": "1997-06_weather_climate_tropical_storm_andres_1997_central_america_19970601",
+      "title": "Tropical Storm Andres (Eastern Pacific) and rainfall impacts near Central America (June 1–7, 1997)",
+      "description": "Tropical Storm Andres occurred in the Eastern Pacific during June 1–7, 1997. NOAA rainfall documentation and tropical cyclone reporting pages track the storm and related rainfall near its path toward Central America.",
+      "category_primary": "weather_climate",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "1997-06-01T12:00:00Z",
+        "event_end": "1997-06-07T12:00:00Z",
+        "reported_at": "1997-12-31T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": null,
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Eastern Pacific / Central America (near Mexico to El Salvador)",
+        "jurisdiction_level": "supranational",
+        "admin1": null,
+        "country": null,
+        "capital_used": "Mexico City",
+        "lat": 19.4326,
+        "lon": -99.1332,
+        "precision": "proxy",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.35
+      },
+      "sources": [
+        {
+          "url": "https://www.wpc.ncep.noaa.gov/tropical/rain/andres1997.html",
+          "source_name": "NOAA NWS Weather Prediction Center",
+          "published_at": "1997-12-31T00:00:00Z",
+          "headline": "Tropical Cyclone Rainfall: Andres (1997)",
+          "byline": null,
+          "accessed_utc": "2026-01-17T03:07:42.001Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.nhc.noaa.gov/data/tcr/index.php?basin=epac&season=1997",
+          "source_name": "NOAA National Hurricane Center",
+          "published_at": "1997-12-31T00:00:00Z",
+          "headline": "Tropical Cyclone Reports (Eastern North Pacific, 1997)",
+          "byline": null,
+          "accessed_utc": "2026-01-17T03:07:42.001Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA National Hurricane Center",
+          "NOAA NWS Weather Prediction Center"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Tropical Cyclone Rainfall: Andres (1997)",
+            "source_url": "https://www.wpc.ncep.noaa.gov/tropical/rain/andres1997.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.5,
+        "category": 0.75,
+        "location": 0.35,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "TS_Andres_1997_EPAC",
+        "fingerprint": "fp_1997-06_tropical_storm_andres_1997_central_america_19970601"
+      }
+    },
+    {
+      "event_id": "1997-06-geological-soufriere-hills-pyroclastic-flows-19970625",
+      "title": "Soufrière Hills dome collapse triggers major pyroclastic flows (Montserrat)",
+      "description": "A lava-dome collapse at Soufrière Hills Volcano generated large pyroclastic flows that traveled down multiple valleys on Montserrat, causing fatalities and widespread damage. The reports describe significant inundation and destructive impacts associated with the collapse and flows.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1997-06-25T12:55:00Z",
+        "event_end": "1997-06-25T13:20:00Z",
+        "reported_at": "1997-06-25T00:00:00Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "1997-06-25T12:55:00Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Soufrière Hills Volcano, Montserrat",
+        "jurisdiction_level": "site",
+        "admin1": null,
+        "country": "MS",
+        "capital_used": null,
+        "lat": 16.7167,
+        "lon": -62.1833,
+        "precision": "exact",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.5
+      },
+      "sources": [
+        {
+          "url": "https://geo.mtu.edu/volcanoes/west.indies/soufriere/govt/specrep/specrep03.html",
+          "source_name": "Michigan Technological University (geo.mtu.edu)",
+          "published_at": "1997-06-25T00:00:00Z",
+          "headline": "specrep03",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.geo.mtu.edu/volcanoes/west.indies/soufriere/govt/scireps/mvo_report0068.html",
+          "source_name": "Michigan Technological University (geo.mtu.edu)",
+          "published_at": "1997-06-25T00:00:00Z",
+          "headline": "mvo_report0068",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.mvo.ms/overview-of-the-1995-date-eruption/",
+          "source_name": "Montserrat Volcano Observatory (mvo.ms)",
+          "published_at": "1997-06-01T00:00:00Z",
+          "headline": "Overview of the 1995-date eruption",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Montserrat Volcano Observatory"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "major lava-dome collapse generated... pyroclastic flows",
+            "source_url": "https://geo.mtu.edu/volcanoes/west.indies/soufriere/govt/specrep/specrep03.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.52,
+        "category": 0.9,
+        "location": 0.5,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "low_confidence_location",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Soufriere Hills 1997-06-25 dome collapse pyroclastic flows",
+        "fingerprint": "soufriere-hills-dome-collapse_pyroclastic-flows_montserrat_1997-06-25"
+      }
+    },
+    {
+      "event_id": "1997-06-geological-wrangell-steam-plume-19970603",
+      "title": "Pilot reports steam at Wrangell Volcano summit (Alaska)",
+      "description": "A pilot reported steam rising from the summit area of Wrangell Volcano in Alaska. The Alaska Volcano Observatory assessed the observation as fumarolic steam and noted it can be mistaken for eruptive activity.",
+      "category_primary": "geological",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "1997-06-03T12:00:00Z",
+        "event_end": "1997-06-03T12:00:00Z",
+        "reported_at": "1997-06-03T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1997-06-03T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Wrangell Volcano, Alaska, USA",
+        "jurisdiction_level": "site",
+        "admin1": "Alaska",
+        "country": "US",
+        "capital_used": null,
+        "lat": 62.005,
+        "lon": -144.017,
+        "precision": "exact",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://avo.alaska.edu/eruption/wrangell-1997-6",
+          "source_name": "Alaska Volcano Observatory (avo.alaska.edu)",
+          "published_at": "1997-06-03T00:00:00Z",
+          "headline": "Wrangell 1997/06",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Alaska Volcano Observatory"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "pilot report described steam rising from the summit",
+            "source_url": "https://avo.alaska.edu/eruption/wrangell-1997-6"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.72,
+        "category": 0.95,
+        "location": 0.7,
+        "summary_grounding": 0.7
+      },
+      "quality_flags": [
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Wrangell steam report 1997-06-03",
+        "fingerprint": "wrangell_steam-report_alaska_1997-06-03"
+      }
+    },
+    {
+      "event_id": "1997-06-geological-kukak-snowy-steaming-discoloration-19970603",
+      "title": "Steaming and greenish snow discoloration reported near Kukak/Snowy Mountain (Katmai region, Alaska)",
+      "description": "A U.S. Coast Guard helicopter crew reported steaming from vents and greenish discoloration of snow on a peak in the Katmai region of Alaska. The Alaska Volcano Observatory characterized the observation as hydrothermal or fumarolic activity rather than an eruption.",
+      "category_primary": "geological",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "1997-06-03T12:00:00Z",
+        "event_end": "1997-06-03T12:00:00Z",
+        "reported_at": "1997-06-03T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1997-06-03T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Kukak Volcano / Snowy Mountain area (Katmai region), Alaska, USA",
+        "jurisdiction_level": "site",
+        "admin1": "Alaska",
+        "country": "US",
+        "capital_used": null,
+        "lat": 58.454,
+        "lon": -154.357,
+        "precision": "exact",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://avo.alaska.edu/eruption/kukak-1997-6",
+          "source_name": "Alaska Volcano Observatory (avo.alaska.edu)",
+          "published_at": "1997-06-03T00:00:00Z",
+          "headline": "Kukak 1997/06",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Alaska Volcano Observatory",
+          "U.S. Coast Guard"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "reported greenish snow discoloration and steaming from vents",
+            "source_url": "https://avo.alaska.edu/eruption/kukak-1997-6"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.66,
+        "category": 0.95,
+        "location": 0.55,
+        "summary_grounding": 0.65
+      },
+      "quality_flags": [
+        "needs_dedupe_check",
+        "location_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "Kukak/Snowy Mountain hydrothermal report 1997-06-03",
+        "fingerprint": "kukak-snowy_steaming-discoloration_katmai-alaska_1997-06-03"
+      }
+    },
+    {
+      "event_id": "1997-06-geological-kilauea-episode55-update-19970613",
+      "title": "Kīlauea east rift zone eruption continues (USGS update, June 13, 1997)",
+      "description": "USGS reported continued activity in Kīlauea's long-running east rift zone eruption (Episode 55), including vent and lava-flow activity around the Puʻu ʻŌʻō area. The update describes ongoing lava emplacement affecting areas near the eruptive vents.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1997-06-13T12:00:00Z",
+        "event_end": "1997-06-13T12:00:00Z",
+        "reported_at": "1997-06-13T00:00:00Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "1997-06-13T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Kīlauea Volcano, Hawaiʻi Island, USA",
+        "jurisdiction_level": "site",
+        "admin1": "Hawaii",
+        "country": "US",
+        "capital_used": null,
+        "lat": 19.421,
+        "lon": -155.287,
+        "precision": "exact",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://www.usgs.gov/news/volcano-watch-kilauea-eruption-update-june-13-1997",
+          "source_name": "U.S. Geological Survey (usgs.gov)",
+          "published_at": "1997-06-13T00:00:00Z",
+          "headline": "Volcano Watch — Kilauea Eruption Update June 13, 1997",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Geological Survey",
+          "Hawaiian Volcano Observatory"
+        ],
+        "substances": [
+          "lava"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "continuing activity in... east rift zone eruption (Episode 55)",
+            "source_url": "https://www.usgs.gov/news/volcano-watch-kilauea-eruption-update-june-13-1997"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.7,
+        "category": 0.9,
+        "location": 0.7,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Kilauea Episode 55 update 1997-06-13",
+        "fingerprint": "kilauea_episode-55_update_hawaii_1997-06-13"
+      }
+    },
+    {
+      "event_id": "1997-06-geological-western-japan-earthquake-19970625",
+      "title": "Earthquake strikes western Japan with reported disruptions (Yamaguchi/Shimane area)",
+      "description": "A news report described a strong earthquake striking parts of western Japan, with strong shaking felt in areas including Shimane and nearby prefectures. The report referenced disruptions including a train incident after striking a rock and mentions consistent with rockfall or slope impacts.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1997-06-25T12:00:00Z",
+        "event_end": "1997-06-25T12:00:00Z",
+        "reported_at": "1997-06-25T00:00:00Z",
+        "time_confidence": 0.5,
+        "event_date_utc": "1997-06-25T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Northern Yamaguchi Prefecture / Shimane area (Masuda), Japan",
+        "jurisdiction_level": "city",
+        "admin1": "Shimane",
+        "country": "JP",
+        "capital_used": null,
+        "lat": 34.67,
+        "lon": 131.84,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.45
+      },
+      "sources": [
+        {
+          "url": "https://www.japantimes.co.jp/news/1997/06/25/national/strong-earthquake-strikes-areas-in-western-japan/",
+          "source_name": "The Japan Times (japantimes.co.jp)",
+          "published_at": "1997-06-25T00:00:00Z",
+          "headline": "Strong earthquake strikes areas in western Japan",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Strong earthquake strikes areas in western Japan",
+            "source_url": "https://www.japantimes.co.jp/news/1997/06/25/national/strong-earthquake-strikes-areas-in-western-japan/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.46,
+        "category": 0.7,
+        "location": 0.45,
+        "summary_grounding": 0.35
+      },
+      "quality_flags": [
+        "paywalled_or_partial",
+        "location_ambiguous",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Western Japan earthquake 1997-06-25",
+        "fingerprint": "western-japan_earthquake_yamaguchi-shimane_1997-06-25"
+      }
+    },
+    {
+      "event_id": "evt_19970610_northern_ontario_fires_upi",
+      "title": "Around 50 forest fires reported in Northern Ontario; reinforcements and water bombers deployed",
+      "description": "A news report described roughly 50 active forest fires in Northern Ontario, with reinforcements and water bombers deployed as hot, dry winds contributed to fire activity.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1997-06-10T12:00:00Z",
+        "event_end": "1997-06-10T12:00:00Z",
+        "reported_at": "1997-06-10T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1997-06-10T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Northern Ontario, Canada",
+        "jurisdiction_level": "state",
+        "admin1": "Ontario",
+        "country": "CA",
+        "capital_used": "Toronto",
+        "lat": 43.6532,
+        "lon": -79.3832,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://www.upi.com/Archives/1997/06/10/UPI-Focus-Some-50-forest-fires-ablaze-in-Ontario/4134865915200/",
+          "source_name": "UPI",
+          "published_at": "1997-06-10T00:00:00Z",
+          "headline": "UPI Focus: Some 50 forest fires ablaze in Ontario",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [
+          "boreal forest"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Some 50 forest fires ablaze in Ontario",
+            "source_url": "https://www.upi.com/Archives/1997/06/10/UPI-Focus-Some-50-forest-fires-ablaze-in-Ontario/4134865915200/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.68,
+        "category": 0.85,
+        "location": 0.7,
+        "summary_grounding": 0.7
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "1997-06-10 Ontario wildfire outbreak",
+        "fingerprint": "fp_1997-06-10_ontario_fires_upi"
+      }
+    },
+    {
+      "event_id": "evt_19970610_ontario_quebec_smoke_goes",
+      "title": "GOES satellite analysis documented smoke plumes from lightning-initiated fires in Ontario and Quebec",
+      "description": "A satellite analysis page documented multiple smoke plumes and fire hot spots linked to lightning-induced wildfires in Ontario and Quebec, with transported smoke visible over parts of the Great Lakes and New England.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1997-06-10T12:00:00Z",
+        "event_end": "1997-06-10T12:00:00Z",
+        "reported_at": "1997-06-10T00:00:00Z",
+        "time_confidence": 0.5,
+        "event_date_utc": "1997-06-10T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Ontario and Quebec, Canada",
+        "jurisdiction_level": "supranational",
+        "admin1": null,
+        "country": null,
+        "capital_used": "Ottawa",
+        "lat": 45.4215,
+        "lon": -75.6972,
+        "precision": "supranational",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://cimss.ssec.wisc.edu/goes/misc/970610.html",
+          "source_name": "CIMSS/SSEC (University of Wisconsin–Madison)",
+          "published_at": "1997-06-10T00:00:00Z",
+          "headline": "GOES satellite imagery (1997-06-10) showing smoke plumes/fire hot spots",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "CIMSS",
+          "SSEC"
+        ],
+        "substances": [
+          "smoke"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "smoke plumes and fire hot spots",
+            "source_url": "https://cimss.ssec.wisc.edu/goes/misc/970610.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.8,
+        "location": 0.55,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "1997-06-early Ontario/Quebec wildfires smoke plumes",
+        "fingerprint": "fp_1997-06-10_on_qc_smoke_goes"
+      }
+    },
+    {
+      "event_id": "1997-06-11_usfws_guajon_threatened_pr",
+      "title": "USFWS final rule lists guajón frog (Eleutherodactylus cooki) as threatened",
+      "description": "A U.S. Fish and Wildlife Service final rule listed the guajón frog (Eleutherodactylus cooki) as a threatened species under the Endangered Species Act. The rule cites threats including development and associated infrastructure impacts within the species’ restricted range in Puerto Rico.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1997-06-11T00:00:00Z",
+        "time_confidence": 0.75,
+        "event_date_utc": "1997-06-11T00:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Puerto Rico",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "PR",
+        "capital_used": "San Juan",
+        "lat": 18.4655,
+        "lon": -66.1057,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/FR-1997-06-11/html/97-15300.htm",
+          "source_name": "GovInfo (Federal Register)",
+          "published_at": "1997-06-11T00:00:00Z",
+          "headline": "Endangered and Threatened Wildlife and Plants; Determination of Threatened Status for the Guajon (Eleutherodactylus cooki)",
+          "byline": null,
+          "accessed_utc": "2026-01-17T03:10:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Fish and Wildlife Service",
+          "U.S. Department of the Interior"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "determination of threatened status for the guajon (Eleutherodactylus cooki)",
+            "source_url": "https://www.govinfo.gov/content/pkg/FR-1997-06-11/html/97-15300.htm"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.74,
+        "category": 0.8,
+        "location": 0.6,
+        "summary_grounding": 0.75
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "USFWS ESA listing final rule (Federal Register)",
+        "fingerprint": "1997-06-11_usfws_final_rule_guajon_puerto_rico"
+      }
+    },
+    {
+      "event_id": "1997-06-19_usfws_lessingia_endangered_ca",
+      "title": "USFWS final rule lists Lessingia germanorum (San Francisco lessingia) as endangered",
+      "description": "A U.S. Fish and Wildlife Service final rule listed Lessingia germanorum (San Francisco lessingia) as an endangered species under the Endangered Species Act. The rule notes threats including habitat loss and fragmentation and other disturbances affecting its limited habitat on the San Francisco Peninsula in California.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1997-06-19T00:00:00Z",
+        "time_confidence": 0.75,
+        "event_date_utc": "1997-06-19T00:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/FR-1997-06-19/html/97-15925.htm",
+          "source_name": "GovInfo (Federal Register)",
+          "published_at": "1997-06-19T00:00:00Z",
+          "headline": "Endangered and Threatened Wildlife and Plants; Determination of Endangered Status for Lessingia germanorum (San Francisco Lessingia)",
+          "byline": null,
+          "accessed_utc": "2026-01-17T03:10:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Fish and Wildlife Service",
+          "U.S. Department of the Interior"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "determination of endangered status for Lessingia germanorum (San Francisco lessingia)",
+            "source_url": "https://www.govinfo.gov/content/pkg/FR-1997-06-19/html/97-15925.htm"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.71,
+        "category": 0.8,
+        "location": 0.55,
+        "summary_grounding": 0.72
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "USFWS ESA listing final rule (Federal Register)",
+        "fingerprint": "1997-06-19_usfws_final_rule_lessingia_germanorum_united_states"
+      }
+    },
+    {
+      "event_id": "1997-06-18_usfws_vernal_pool_plants_endangered_ca",
+      "title": "USFWS final rule lists four northern California vernal pool plants as endangered",
+      "description": "A U.S. Fish and Wildlife Service final rule listed four vernal pool-associated plant taxa as endangered under the Endangered Species Act. The rule cites habitat loss and degradation affecting vernal pools and seasonally wet areas in northern California as key threats.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1997-06-18T00:00:00Z",
+        "time_confidence": 0.75,
+        "event_date_utc": "1997-06-18T00:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/FR-1997-06-18/html/97-15924.htm",
+          "source_name": "GovInfo (Federal Register)",
+          "published_at": "1997-06-18T00:00:00Z",
+          "headline": "Endangered and Threatened Wildlife and Plants; Determination of Endangered Status for Four Plants From Northern California Vernal Pools and Mesic Areas",
+          "byline": null,
+          "accessed_utc": "2026-01-17T03:10:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Fish and Wildlife Service",
+          "U.S. Department of the Interior"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "vernal pools"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "determination of endangered status for four plants from northern California vernal pools",
+            "source_url": "https://www.govinfo.gov/content/pkg/FR-1997-06-18/html/97-15924.htm"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.71,
+        "category": 0.8,
+        "location": 0.55,
+        "summary_grounding": 0.72
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "USFWS ESA listing final rule (Federal Register)",
+        "fingerprint": "1997-06-18_usfws_final_rule_vernal_pool_plants_united_states"
+      }
+    },
+    {
+      "event_id": "1997-06-06_us_epa_nlev_final_rule",
+      "title": "EPA final rule establishes framework for National Low Emission Vehicle (NLEV) Program",
+      "description": "A GAO product summarizes that EPA published a final rule establishing the main regulatory framework for the National Low Emission Vehicle (NLEV) program, allowing auto manufacturers to voluntarily meet stricter tailpipe emission standards for certain light-duty vehicles and trucks.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "1997-06-06T12:00:00Z",
+        "event_end": "1997-06-06T12:00:00Z",
+        "reported_at": "1997-06-06T12:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1997-06-06T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.95
+      },
+      "sources": [
+        {
+          "url": "https://www.gao.gov/products/ogc-97-45",
+          "source_name": "U.S. Government Accountability Office (GAO)",
+          "published_at": "1997-06-06T12:00:00Z",
+          "headline": "OGC-97-45",
+          "byline": null,
+          "accessed_utc": "2026-01-17T03:09:35.720Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Environmental Protection Agency (EPA)",
+          "U.S. Government Accountability Office (GAO)"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "final rule providing the main regulatory framework for the National Low Emission Vehicle (NLEV) program",
+            "source_url": "https://www.gao.gov/products/ogc-97-45"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.85,
+        "location": 0.95,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "secondary_sources_only",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "EPA NLEV final rule June 1997",
+        "fingerprint": "1997-06-06_us_epa_nlev_final_rule|US|1997-06-06"
+      }
+    },
+    {
+      "event_id": "1997-06-13_us_epa_sw846_update_iii_final_rule",
+      "title": "EPA final rule updates hazardous waste testing/monitoring methods (SW-846 Update III)",
+      "description": "EPA issued a final rule amending hazardous waste regulations for testing and monitoring by adding new and revised analytical methods (Update III to SW-846) and removing obsolete methods referenced in SW-846 and related RCRA regulations.",
+      "category_primary": "policy_regulation",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "1997-06-13T12:00:00Z",
+        "event_end": "1997-06-13T12:00:00Z",
+        "reported_at": "1997-06-13T00:00:00Z",
+        "time_confidence": 0.8,
+        "event_date_utc": "1997-06-13T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.95
+      },
+      "sources": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/FR-1997-06-13/html/97-15410.htm",
+          "source_name": "Federal Register (GovInfo)",
+          "published_at": "1997-06-13T00:00:00Z",
+          "headline": "97-15410",
+          "byline": null,
+          "accessed_utc": "2026-01-17T03:09:35.720Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.epa.gov/hwpermitting/list-federal-register-notices-pertaining-hazardous-waste",
+          "source_name": "U.S. Environmental Protection Agency (EPA)",
+          "published_at": "1997-06-13T00:00:00Z",
+          "headline": "List of Federal Register notices pertaining to hazardous waste",
+          "byline": null,
+          "accessed_utc": "2026-01-17T03:09:35.720Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Environmental Protection Agency (EPA)"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "amending hazardous waste regulations for testing and monitoring activities by adding new and revised analytical methods (Update III to SW-846)",
+            "source_url": "https://www.govinfo.gov/content/pkg/FR-1997-06-13/html/97-15410.htm"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.8,
+        "category": 0.9,
+        "location": 0.95,
+        "summary_grounding": 0.75
+      },
+      "quality_flags": [
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "SW-846 Update III final rule June 1997",
+        "fingerprint": "1997-06-13_us_epa_sw846_update_iii_final_rule|US|1997-06-13"
+      }
+    },
+    {
+      "event_id": "1997-06-17_us_epa_carbamate_listings_vacated_final_rule_dropped",
+      "title": "DROPPED: EPA final rule vacates certain carbamate hazardous waste listings",
+      "description": "Dropped because the provided sources do not include a citable Federal Register or equivalent primary document confirming the June 17, 1997 final rule as summarized.",
+      "category_primary": "policy_regulation",
+      "polarity": "unclear",
+      "severity": null,
+      "time": {
+        "event_start": "1997-06-17T12:00:00Z",
+        "event_end": "1997-06-17T12:00:00Z",
+        "reported_at": "1997-06-17T12:00:00Z",
+        "time_confidence": 0.1,
+        "event_date_utc": "1997-06-17T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.95
+      },
+      "sources": [
+        {
+          "url": "https://archive.epa.gov/epawaste/hazard/web/html/rules97.html",
+          "source_name": "U.S. Environmental Protection Agency (EPA) (Archive)",
+          "published_at": "1997-06-17T12:00:00Z",
+          "headline": "rules97.html",
+          "byline": null,
+          "accessed_utc": "2026-01-17T03:09:35.720Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://lawfilesext.leg.wa.gov/law/wsr/1997/16/97-16-074.htm",
+          "source_name": "Washington State Legislature (Lawfiles)",
+          "published_at": "1997-06-17T12:00:00Z",
+          "headline": "97-16-074",
+          "byline": null,
+          "accessed_utc": "2026-01-17T03:09:35.720Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Environmental Protection Agency (EPA)"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.15,
+        "category": 0.5,
+        "location": 0.95,
+        "summary_grounding": 0.1
+      },
+      "quality_flags": [
+        "secondary_sources_only",
+        "date_ambiguous",
+        "low_confidence_category",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": null,
+        "fingerprint": null
+      }
+    },
+    {
+      "event_id": "1997-06-24_us_epa_maine_rcra_program_authorization",
+      "title": "EPA grants immediate final authorization of revisions to Maine’s hazardous waste program under RCRA",
+      "description": "EPA issued an immediate final rule approving revisions to Maine’s authorized hazardous waste management program under RCRA, granting final authorization for specified program revisions, with an effective date contingent on receipt of adverse comments.",
+      "category_primary": "policy_regulation",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "1997-06-24T12:00:00Z",
+        "event_end": "1997-06-24T12:00:00Z",
+        "reported_at": "1997-06-24T00:00:00Z",
+        "time_confidence": 0.8,
+        "event_date_utc": "1997-06-24T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Maine, United States",
+        "jurisdiction_level": "state",
+        "admin1": "Maine",
+        "country": "US",
+        "capital_used": "Augusta, ME",
+        "lat": 44.3106,
+        "lon": -69.7795,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.95
+      },
+      "sources": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/FR-1997-06-24/html/97-16212.htm",
+          "source_name": "Federal Register (GovInfo)",
+          "published_at": "1997-06-24T00:00:00Z",
+          "headline": "97-16212",
+          "byline": null,
+          "accessed_utc": "2026-01-17T03:09:35.720Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Environmental Protection Agency (EPA)",
+          "State of Maine"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "immediate final rule approving revisions to Maine’s authorized hazardous waste program under RCRA",
+            "source_url": "https://www.govinfo.gov/content/pkg/FR-1997-06-24/html/97-16212.htm"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.8,
+        "category": 0.9,
+        "location": 0.95,
+        "summary_grounding": 0.75
+      },
+      "quality_flags": [
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Maine RCRA program authorization June 1997",
+        "fingerprint": "1997-06-24_us_epa_maine_rcra_program_authorization|US-ME|1997-06-24"
+      }
+    }
+  ]
+}

@@ -1,0 +1,463 @@
+{
+  "batch_meta": {
+    "batch_id": "2001-10-gaialog-0001",
+    "generated_utc": "2026-01-11T00:00:00Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "2001-10",
+    "window": {
+      "start_utc": "2001-10-01T00:00:00.000Z",
+      "end_utc": "2001-10-31T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-json-normalizer",
+      "version": "1.0",
+      "model": "api",
+      "retrieval_method": "curated"
+    }
+  },
+  "events": [
+    {
+      "event_id": "evt_20011015_epa_chlorine_upper_blackstone_millbury_ma",
+      "title": "EPA files complaint over unreported chlorine release at Upper Blackstone Water Pollution Abatement District",
+      "description": "The U.S. EPA announced it filed an administrative complaint against the Upper Blackstone Water Pollution Abatement District for failing to immediately report a chlorine release from its wastewater treatment plant. The EPA proposed a penalty related to the delayed notification to the National Response Center.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2001-10-15T00:00:00.000Z",
+        "event_end": "2001-10-15T23:59:59.000Z",
+        "reported_at": "2001-10-15T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2001-10-15T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Millbury, Massachusetts, United States",
+        "jurisdiction_level": "city",
+        "admin1": "Massachusetts",
+        "country": "US",
+        "capital_used": null,
+        "lat": 42.193984,
+        "lon": -71.760068,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://www.epa.gov/archive/epapages/newsroom_archive/newsreleases/e01980dbc1419f768525744f004e1f4e.html",
+          "source_name": "U.S. Environmental Protection Agency (archive)",
+          "published_at": "2001-10-15T00:00:00.000Z",
+          "headline": "EPA Files Administrative Complaint Against Upper Blackstone Water Pollution Abatement District",
+          "byline": null,
+          "accessed_utc": "2026-01-11T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Environmental Protection Agency",
+          "Upper Blackstone Water Pollution Abatement District"
+        ],
+        "substances": [
+          "chlorine"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "EPA filed an administrative complaint ... for failing to immediately report a release of chlorine ... and proposed a penalty.",
+            "source_url": "https://www.epa.gov/archive/epapages/newsroom_archive/newsreleases/e01980dbc1419f768525744f004e1f4e.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.68,
+        "category": 0.85,
+        "location": 0.7,
+        "summary_grounding": 0.7
+      },
+      "quality_flags": [
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "epa-complaint-upper-blackstone-chlorine",
+        "fingerprint": "fp_epa_upper_blackstone_millbury_2001-10-15"
+      }
+    },
+    {
+      "event_id": "evt_20011031_anza_m51_earthquake_ca",
+      "title": "M5.1 earthquake near Anza in the San Jacinto fault zone",
+      "description": "A magnitude 5.1 earthquake occurred near Anza, California, within the San Jacinto fault zone. A preliminary TriNet/Caltech-USGS report described the event mechanism as mixed strike-slip and thrust motion.",
+      "category_primary": "geological",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "2001-10-31T06:56:00.000Z",
+        "event_end": "2001-10-31T06:56:00.000Z",
+        "reported_at": "2001-10-31T00:00:00.000Z",
+        "time_confidence": 0.75,
+        "event_date_utc": "2001-10-31T06:56:00.000Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Near Anza, California, United States",
+        "jurisdiction_level": "city",
+        "admin1": "California",
+        "country": "US",
+        "capital_used": null,
+        "lat": 33.555028,
+        "lon": -116.673631,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://joffre.gps.caltech.edu/ftp/ca.earthquakes/specialrpt/2001/31October01-153144.html",
+          "source_name": "TriNet/Caltech-USGS (special report)",
+          "published_at": "2001-10-31T00:00:00.000Z",
+          "headline": "TriNet/Caltech-USGS report on the 31 October 2001 earthquake",
+          "byline": null,
+          "accessed_utc": "2026-01-11T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Caltech",
+          "USGS",
+          "TriNet"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Magnitude 5.1 ... near Anza ... San Jacinto fault zone ... mixed strike-slip and thrust motion.",
+            "source_url": "https://joffre.gps.caltech.edu/ftp/ca.earthquakes/specialrpt/2001/31October01-153144.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.85,
+        "location": 0.6,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "2001-10-31-anza-m51",
+        "fingerprint": "fp_anza_ca_m51_2001-10-31T06:56Z"
+      }
+    },
+    {
+      "event_id": "evt_20011015_trinidad_co_earthquake_swarm_portable_network",
+      "title": "USGS documents portable network recording during earthquake swarm near Trinidad, Colorado",
+      "description": "USGS materials describe an earthquake swarm west of Trinidad, Colorado and note a portable seismograph network recorded data through October 15, 2001 to improve event locations and characterization. The recording period covered early September through mid-October 2001.",
+      "category_primary": "geological",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "2001-10-01T00:00:00.000Z",
+        "event_end": "2001-10-15T23:59:59.000Z",
+        "reported_at": "2001-10-01T00:00:00.000Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "2001-10-01T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Near Trinidad, Colorado, United States",
+        "jurisdiction_level": "city",
+        "admin1": "Colorado",
+        "country": "US",
+        "capital_used": null,
+        "lat": 37.169463,
+        "lon": -104.500541,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.usgs.gov/index.php/publications/investigation-earthquake-swarm-near-trinidad-colorado-august-october-2001",
+          "source_name": "USGS",
+          "published_at": "2002-01-01T00:00:00.000Z",
+          "headline": "Investigation of earthquake swarm near Trinidad, Colorado, August-October 2001",
+          "byline": null,
+          "accessed_utc": "2026-01-11T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://pubs.usgs.gov/publication/ofr0273",
+          "source_name": "USGS Publications Warehouse",
+          "published_at": "2002-01-01T00:00:00.000Z",
+          "headline": "Open-File Report (OFR) 02-273",
+          "byline": null,
+          "accessed_utc": "2026-01-11T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "USGS"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Portable seismographs recorded ... from September 7 through October 15, 2001.",
+            "source_url": "https://www.usgs.gov/index.php/publications/investigation-earthquake-swarm-near-trinidad-colorado-august-october-2001"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.56,
+        "category": 0.8,
+        "location": 0.55,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "trinidad-co-earthquake-swarm-2001",
+        "fingerprint": "fp_trinidad_co_swarm_2001-10-01_to_2001-10-15"
+      }
+    },
+    {
+      "event_id": "evt_20011031_ucb_sudden_oak_death_detected",
+      "title": "Sudden Oak Death pathogen detected on UC Berkeley campus; containment actions announced",
+      "description": "UC Berkeley reported that the pathogen responsible for Sudden Oak Death had been detected on campus in multiple host species. The university announced containment steps and staff training intended to identify infection and reduce the risk of spread.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2001-10-31T00:00:00.000Z",
+        "event_end": "2001-10-31T23:59:59.000Z",
+        "reported_at": "2001-10-31T00:00:00.000Z",
+        "time_confidence": 0.75,
+        "event_date_utc": "2001-10-31T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Berkeley, California, United States (UC Berkeley campus)",
+        "jurisdiction_level": "city",
+        "admin1": "California",
+        "country": "US",
+        "capital_used": null,
+        "lat": 37.871593,
+        "lon": -122.272743,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://newsarchive.berkeley.edu/news/media/releases/2001/10/31_death.html",
+          "source_name": "UC Berkeley News (archive)",
+          "published_at": "2001-10-31T00:00:00.000Z",
+          "headline": "Sudden oak death pathogen found on campus, UC Berkeley takes aggressive action to halt spread",
+          "byline": null,
+          "accessed_utc": "2026-01-11T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "University of California, Berkeley"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "oak woodland"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Pathogen responsible for Sudden Oak Death ... found on campus ... UC Berkeley takes aggressive action to halt spread.",
+            "source_url": "https://newsarchive.berkeley.edu/news/media/releases/2001/10/31_death.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.7,
+        "category": 0.8,
+        "location": 0.72,
+        "summary_grounding": 0.7
+      },
+      "quality_flags": [],
+      "dedupe": {
+        "cluster_hint": "uc-berkeley-sudden-oak-death-2001-10-31",
+        "fingerprint": "fp_ucb_sudden_oak_death_2001-10-31"
+      }
+    },
+    {
+      "event_id": "evt_20011016_montreal_protocol_mop13_colombo",
+      "title": "Montreal Protocol parties meet in Colombo for MOP-13 and adopt decisions",
+      "description": "The 13th Meeting of the Parties to the Montreal Protocol convened in Colombo, Sri Lanka from October 16–19, 2001. The meeting adopted multiple decisions covering topics including compliance, illegal trade prevention, and Multilateral Fund replenishment-related matters.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "2001-10-16T00:00:00.000Z",
+        "event_end": "2001-10-19T23:59:59.000Z",
+        "reported_at": "2001-10-19T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2001-10-16T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Colombo, Sri Lanka",
+        "jurisdiction_level": "city",
+        "admin1": null,
+        "country": "LK",
+        "capital_used": null,
+        "lat": 6.927079,
+        "lon": 79.861244,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.75
+      },
+      "sources": [
+        {
+          "url": "https://enb.iisd.org/events/montreal-protocol-mop-13/summary-report-16-19-october-2001",
+          "source_name": "IISD Earth Negotiations Bulletin",
+          "published_at": "2001-10-19T00:00:00.000Z",
+          "headline": "Summary Report of the 13th Meeting of the Parties to the Montreal Protocol: 16-19 October 2001",
+          "byline": null,
+          "accessed_utc": "2026-01-11T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Montreal Protocol",
+          "IISD Earth Negotiations Bulletin"
+        ],
+        "substances": [
+          "ozone-depleting substances"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "13th Meeting of the Parties ... 16-19 October 2001 ... adopted decisions on compliance, illegal trade and the Multilateral Fund.",
+            "source_url": "https://enb.iisd.org/events/montreal-protocol-mop-13/summary-report-16-19-october-2001"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.72,
+        "category": 0.8,
+        "location": 0.8,
+        "summary_grounding": 0.7
+      },
+      "quality_flags": [
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "montreal-protocol-mop13-2001",
+        "fingerprint": "fp_mop13_colombo_2001-10-16_to_2001-10-19"
+      }
+    },
+    {
+      "event_id": "evt_20011030_usfws_candidate_notice_review_esa",
+      "title": "U.S. Fish and Wildlife Service publishes revised Candidate Notice of Review for ESA listing candidates",
+      "description": "The U.S. Fish and Wildlife Service published an updated Candidate Notice of Review for species that may warrant protection under the Endangered Species Act. The update solicited new information regarding threats and species status.",
+      "category_primary": "policy_regulation",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "2001-10-30T00:00:00.000Z",
+        "event_end": "2001-10-30T23:59:59.000Z",
+        "reported_at": "2001-10-30T00:00:00.000Z",
+        "time_confidence": 0.8,
+        "event_date_utc": "2001-10-30T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States (nationwide)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.907192,
+        "lon": -77.036871,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.75
+      },
+      "sources": [
+        {
+          "url": "https://www.fws.gov/story/2001-10/updated-list-candidates-endangered-species-act-listing",
+          "source_name": "U.S. Fish and Wildlife Service",
+          "published_at": "2001-10-30T00:00:00.000Z",
+          "headline": "Updated List of Candidates for Endangered Species Act Listing",
+          "byline": null,
+          "accessed_utc": "2026-01-11T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.govinfo.gov/content/pkg/FR-2001-10-30/html/01-26982.htm",
+          "source_name": "Federal Register (via GovInfo)",
+          "published_at": "2001-10-30T00:00:00.000Z",
+          "headline": "Endangered and Threatened Wildlife and Plants; Review of Plant and Animal Taxa That are Candidates or Proposed for Listing as Endangered or Threatened; Annual Notice of Findings on Recycled Petitions; Annual Description of Progress on Listing Actions",
+          "byline": null,
+          "accessed_utc": "2026-01-11T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Fish and Wildlife Service",
+          "Federal Register"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Published an updated Candidate Notice of Review ... soliciting information on threats and status.",
+            "source_url": "https://www.govinfo.gov/content/pkg/FR-2001-10-30/html/01-26982.htm"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.78,
+        "category": 0.8,
+        "location": 0.85,
+        "summary_grounding": 0.75
+      },
+      "quality_flags": [],
+      "dedupe": {
+        "cluster_hint": "usfws-candidate-notice-of-review-2001-10-30",
+        "fingerprint": "fp_us_esa_candidate_notice_2001-10-30"
+      }
+    }
+  ]
+}

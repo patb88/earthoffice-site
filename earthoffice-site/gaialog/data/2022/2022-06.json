@@ -1,0 +1,832 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_2022-06_normalize_2026-01-16T132018557Z",
+    "generated_utc": "2026-01-16T13:20:18.557Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "2022-06",
+    "window": {
+      "start_utc": "2022-06-01T00:00:00.000Z",
+      "end_utc": "2022-06-30T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "evt_202206_flint_river_oil_discharge_lockhart_chemical_ap",
+      "title": "Oil and chemical discharge reported into the Flint River near Flint, Michigan",
+      "description": "An Associated Press report described an oil/chemical discharge into the Flint River near Flint, Michigan, with a visible oily sheen and a state response. The report cited an estimate of about 15,000 gallons released and noted response actions were initiated.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2022-06-01T00:00:00.000Z",
+        "time_confidence": 0.4,
+        "event_date_utc": null,
+        "event_date_precision": "month"
+      },
+      "location": {
+        "name": "Flint River, Flint, Michigan, USA",
+        "jurisdiction_level": "city",
+        "admin1": "Michigan",
+        "country": "US",
+        "capital_used": null,
+        "lat": 43.0125,
+        "lon": -83.6875,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://apnews.com/article/fc3693d323f1fb62460cf5bc1e64da42",
+          "source_name": "Associated Press",
+          "published_at": "2022-06-01T00:00:00.000Z",
+          "headline": "Oil-chemical discharge into Michigan’s Flint River (Lockhart Chemical), reported as a June 2022 spill (~15,000 gallons)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Lockhart Chemical"
+        ],
+        "substances": [
+          "oil"
+        ],
+        "ecosystems": [
+          "Flint River"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "...about 15,000 gallons... into the Flint River... creating a visible oily sheen...",
+            "source_url": "https://apnews.com/article/fc3693d323f1fb62460cf5bc1e64da42"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.75,
+        "location": 0.7,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "flint_river_oil_discharge_lockhart_chemical_2022-06",
+        "fingerprint": "fp_flint_river_flint_mi_pollution_2022-06"
+      }
+    },
+    {
+      "event_id": "evt-202206-us-yellowstone-floods",
+      "title": "June 2022 floods in and around Yellowstone National Park",
+      "description": "Extraordinary flooding affected the Upper Yellowstone River Basin in mid-June 2022, producing record streamflows at multiple USGS streamgages. Floodwaters damaged infrastructure in and near Yellowstone National Park and led to significant impacts in surrounding communities.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2022-06-10T00:00:00.000Z",
+        "event_end": "2022-06-15T23:59:59.000Z",
+        "reported_at": "2022-06-15T00:00:00Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2022-06-12T00:00:00Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Yellowstone National Park area (Wyoming & Montana), USA",
+        "jurisdiction_level": "site",
+        "admin1": null,
+        "country": "US",
+        "capital_used": null,
+        "lat": 44.428,
+        "lon": -110.5885,
+        "precision": "proxy",
+        "location_basis": "manual_override",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.usgs.gov/publications/june-2022-floods-upper-yellowstone-river-basin",
+          "source_name": "USGS",
+          "published_at": "2022-06-15T00:00:00Z",
+          "headline": "June 2022 Floods in the Upper Yellowstone River Basin",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.nps.gov/articles/000/yell-flooding.htm",
+          "source_name": "National Park Service (NPS)",
+          "published_at": "2022-06-15T00:00:00Z",
+          "headline": "YELL Flooding (NPS article)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.earthobservatory.nasa.gov/images/150010/catastrophic-flooding-in-yellowstone",
+          "source_name": "NASA Earth Observatory",
+          "published_at": "2022-06-16T00:00:00Z",
+          "headline": "Catastrophic Flooding in Yellowstone",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "USGS",
+          "National Park Service",
+          "NASA Earth Observatory"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Extraordinary floods surged down the Yellowstone River and tributaries in mid-June 2022.",
+            "source_url": "https://www.usgs.gov/publications/june-2022-floods-upper-yellowstone-river-basin"
+          },
+          {
+            "quote": "Severely damaging infrastructure in and near Yellowstone National Park.",
+            "source_url": "https://www.usgs.gov/publications/june-2022-floods-upper-yellowstone-river-basin"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.8,
+        "location": 0.55,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Yellowstone June 2022 flooding",
+        "fingerprint": "fp-us-yellowstone-floods-2022-06-10_2022-06-15"
+      }
+    },
+    {
+      "event_id": "evt-202206-bd-sylhet-flash-floods",
+      "title": "Severe flash floods in northeastern Bangladesh (Sylhet region)",
+      "description": "Heavy monsoon rainfall and upstream inflows inundated large areas of northeastern Bangladesh in June 2022, affecting communities in and around Sylhet. UN situation updates documented escalating impacts and humanitarian needs over June 19–22, 2022.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2022-06-19T00:00:00.000Z",
+        "event_end": "2022-06-22T23:59:59.000Z",
+        "reported_at": "2022-06-19T00:00:00Z",
+        "time_confidence": 0.75,
+        "event_date_utc": "2022-06-20T00:00:00Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Sylhet Division, Bangladesh",
+        "jurisdiction_level": "state",
+        "admin1": "Sylhet Division",
+        "country": "BD",
+        "capital_used": "Sylhet",
+        "lat": 24.89493,
+        "lon": 91.86871,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.85
+      },
+      "sources": [
+        {
+          "url": "https://bangladesh.un.org/en/186873-severe-flash-floods-situation-update-1-19-june-2022",
+          "source_name": "United Nations in Bangladesh",
+          "published_at": "2022-06-19T00:00:00Z",
+          "headline": "Severe Flash Floods - Situation Update 1 - 19 June 2022",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://bangladesh.un.org/en/187390-severe-flash-floods-situation-update-2-22-june-2022",
+          "source_name": "United Nations in Bangladesh",
+          "published_at": "2022-06-22T00:00:00Z",
+          "headline": "Severe Flash Floods - Situation Update 2 - 22 June 2022",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.ifrc.org/press-release/millions-bangladesh-impacted-one-worst-floodings-ever-seen",
+          "source_name": "IFRC",
+          "published_at": "2022-06-23T00:00:00Z",
+          "headline": "Millions in Bangladesh impacted in one of the worst floodings ever seen",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "United Nations in Bangladesh",
+          "IFRC"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Severe Flash Floods - Situation Update 1 - 19 June 2022.",
+            "source_url": "https://bangladesh.un.org/en/186873-severe-flash-floods-situation-update-1-19-june-2022"
+          },
+          {
+            "quote": "Severe Flash Floods - Situation Update 2 - 22 June 2022.",
+            "source_url": "https://bangladesh.un.org/en/187390-severe-flash-floods-situation-update-2-22-june-2022"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.78,
+        "category": 0.85,
+        "location": 0.85,
+        "summary_grounding": 0.7
+      },
+      "quality_flags": [
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Bangladesh Sylhet flash floods June 2022",
+        "fingerprint": "fp-bd-sylhet-floods-2022-06-19_2022-06-22"
+      }
+    },
+    {
+      "event_id": "evt-202206-europe-heatwave",
+      "title": "Mid-June 2022 heatwave across parts of Western and Central Europe",
+      "description": "An unusually early heat episode affected parts of Western and Central Europe in mid-to-late June 2022, prompting heat alerts and reports of record or near-record temperatures in multiple countries. Meteorological agencies and major news coverage described widespread high temperatures during the period.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2022-06-12T00:00:00.000Z",
+        "event_end": "2022-06-21T23:59:59.000Z",
+        "reported_at": "2022-06-20T00:00:00Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "2022-06-17T00:00:00Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Europe (multi-country)",
+        "jurisdiction_level": "supranational",
+        "admin1": null,
+        "country": null,
+        "capital_used": "Brussels",
+        "lat": 50.8503,
+        "lon": 4.3517,
+        "precision": "supranational",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.65
+      },
+      "sources": [
+        {
+          "url": "https://www.met.ie/heatwave-in-parts-of-europe-june-2022",
+          "source_name": "Met Éireann",
+          "published_at": "2022-06-20T00:00:00Z",
+          "headline": "Heatwave in parts of Europe (June 2022)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.washingtonpost.com/climate-environment/2022/06/20/france-germany-spain-europe-heatwave/",
+          "source_name": "The Washington Post",
+          "published_at": "2022-06-20T00:00:00Z",
+          "headline": "Europe heatwave coverage (June 2022)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Met Éireann",
+          "The Washington Post"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Heatwave in parts of Europe (June 2022).",
+            "source_url": "https://www.met.ie/heatwave-in-parts-of-europe-june-2022"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.58,
+        "category": 0.75,
+        "location": 0.65,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "paywalled_or_partial",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Europe June 2022 heatwave",
+        "fingerprint": "fp-europe-heatwave-2022-06-12_2022-06-21"
+      }
+    },
+    {
+      "event_id": "evt-202206-us-paducah-heatwave",
+      "title": "Early-season heat wave in the NWS Paducah (PAH) forecast area",
+      "description": "A June 12–16, 2022 early-season heat wave affected the National Weather Service Paducah forecast area in the Lower Ohio Valley/Mid-South. The NWS event summary reported multiple record highs and record warm-low temperatures at stations in the service area.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2022-06-12T00:00:00.000Z",
+        "event_end": "2022-06-16T23:59:59.000Z",
+        "reported_at": "2022-06-16T00:00:00Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2022-06-14T00:00:00Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "NWS Paducah forecast area (Lower Ohio Valley / Mid-South), USA",
+        "jurisdiction_level": "city",
+        "admin1": "KY",
+        "country": "US",
+        "capital_used": null,
+        "lat": 37.0834,
+        "lon": -88.6,
+        "precision": "city",
+        "location_basis": "institution_proxy",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.weather.gov/pah/HeatWaveJune2022",
+          "source_name": "National Weather Service (Paducah, KY)",
+          "published_at": "2022-06-16T00:00:00Z",
+          "headline": "Record Breaking Early Season Heat Wave (June 12–16, 2022)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "National Weather Service"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "A June 12–16, 2022 early-season heat wave set numerous record highs.",
+            "source_url": "https://www.weather.gov/pah/HeatWaveJune2022"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.7,
+        "category": 0.85,
+        "location": 0.6,
+        "summary_grounding": 0.65
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "NWS Paducah June 2022 heat wave",
+        "fingerprint": "fp-us-pah-heatwave-2022-06-12_2022-06-16"
+      }
+    },
+    {
+      "event_id": "evt-20220621-afg-pak-quake-us7000hj3u",
+      "title": "Magnitude 6.2 earthquake strikes Afghanistan near the Pakistan border (June 21, 2022)",
+      "description": "A magnitude 6.2 earthquake occurred on June 21, 2022, affecting southeastern Afghanistan near the Pakistan border. The event was reported by the U.S. Geological Survey (USGS).",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2022-06-21T20:54:36.000Z",
+        "event_end": "2022-06-21T20:54:36.000Z",
+        "reported_at": "2022-06-21T20:54:36.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2022-06-21T20:54:36.000Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Southeastern Afghanistan (near Pakistan border)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "AF",
+        "capital_used": "Kabul",
+        "lat": 34.5553,
+        "lon": 69.2075,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000hj3u",
+          "source_name": "USGS Earthquake Hazards Program",
+          "published_at": "2022-06-21T20:54:36.000Z",
+          "headline": "M 6.2 - 44 km WSW of Khost, Afghanistan",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "USGS"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "M 6.2 - 44 km WSW of Khost, Afghanistan",
+            "source_url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000hj3u"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.66,
+        "category": 0.9,
+        "location": 0.6,
+        "summary_grounding": 0.7
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "us7000hj3u",
+        "fingerprint": "fp-20220621-us7000hj3u-af-country"
+      }
+    },
+    {
+      "event_id": "202206-nm-hermits-peak-calf-canyon-updates",
+      "title": "Hermits Peak and Calf Canyon Fire continued burning with ongoing smoke and response updates (New Mexico)",
+      "description": "Official incident and agency updates in June 2022 reported the Hermits Peak/Calf Canyon Fire remained active in northern New Mexico. Updates described continued firefighting operations alongside ongoing impacts such as smoke and changing evacuation or road-status conditions.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2022-06-04T00:00:00.000Z",
+        "time_confidence": 0.55,
+        "event_date_utc": null,
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Santa Fe National Forest area, northern New Mexico, USA",
+        "jurisdiction_level": "state",
+        "admin1": "New Mexico",
+        "country": "US",
+        "capital_used": "Santa Fe",
+        "lat": 35.687,
+        "lon": -105.9378,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://inciweb.wildfire.gov/incident-publication/nmsnf-calf-canyon/hermits-peak-calf-canyon-fire-daily-update-june-4-2022",
+          "source_name": "InciWeb",
+          "published_at": "2022-06-04T00:00:00.000Z",
+          "headline": "Hermits Peak/Calf Canyon Fire Daily Update June 4, 2022",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.fs.usda.gov/r03/santafe/newsroom/releases/hermits-peak-and-calf-canyon-fires-june-5-2022-daily-update",
+          "source_name": "USDA Forest Service",
+          "published_at": "2022-06-05T00:00:00.000Z",
+          "headline": "Hermits Peak and Calf Canyon Fires June 5, 2022 Daily Update",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.fs.usda.gov/r03/santafe/newsroom/releases/hermits-peak-and-calf-canyon-fires-june-18-2022-daily-update",
+          "source_name": "USDA Forest Service",
+          "published_at": "2022-06-18T00:00:00.000Z",
+          "headline": "Hermits Peak and Calf Canyon Fires June 18, 2022 Daily Update",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "InciWeb",
+          "USDA Forest Service",
+          "Santa Fe National Forest"
+        ],
+        "substances": [
+          "wildfire smoke"
+        ],
+        "ecosystems": [
+          "forest"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Hermits Peak/Calf Canyon Fire Daily Update June 4, 2022",
+            "source_url": "https://inciweb.wildfire.gov/incident-publication/nmsnf-calf-canyon/hermits-peak-calf-canyon-fire-daily-update-june-4-2022"
+          },
+          {
+            "quote": "Hermits Peak and Calf Canyon Fires June 18, 2022 Daily Update",
+            "source_url": "https://www.fs.usda.gov/r03/santafe/newsroom/releases/hermits-peak-and-calf-canyon-fires-june-18-2022-daily-update"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.85,
+        "location": 0.6,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Hermits Peak/Calf Canyon Fire June 2022 updates",
+        "fingerprint": "fires|hermits_peak_calf_canyon|US-NM|2022-06"
+      }
+    },
+    {
+      "event_id": "202206-es-zamora-sierra-de-la-culebra-wildfire",
+      "title": "Sierra de la Culebra wildfire prompted Copernicus rapid mapping (Zamora, Spain)",
+      "description": "Copernicus published an item describing a devastating wildfire in Spain’s Sierra de la Culebra and noted rapid mapping was activated in response. The post characterized the fire as significant and associated with substantial burned area impacts.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2022-06-15T00:00:00.000Z",
+        "time_confidence": 0.4,
+        "event_date_utc": null,
+        "event_date_precision": "month"
+      },
+      "location": {
+        "name": "Zamora Province, Castilla y León, Spain",
+        "jurisdiction_level": "state",
+        "admin1": "Castilla y León",
+        "country": "ES",
+        "capital_used": "Valladolid",
+        "lat": 41.6523,
+        "lon": -4.7245,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.45
+      },
+      "sources": [
+        {
+          "url": "https://www.copernicus.eu/en/media/image-day-gallery/devastating-wildfire-sierra-de-la-culebra-spain",
+          "source_name": "Copernicus",
+          "published_at": "2022-06-15T00:00:00.000Z",
+          "headline": "Devastating wildfire in Sierra de la Culebra (Spain)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Copernicus"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "forest"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Devastating wildfire in Sierra de la Culebra (Spain)",
+            "source_url": "https://www.copernicus.eu/en/media/image-day-gallery/devastating-wildfire-sierra-de-la-culebra-spain"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.45,
+        "category": 0.8,
+        "location": 0.45,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "paywalled_or_partial",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Sierra de la Culebra wildfire June 2022",
+        "fingerprint": "fires|sierra_de_la_culebra|ES-CL|2022-06"
+      }
+    },
+    {
+      "event_id": "202206-us-ak-early-season-wildfires-smoke-axios",
+      "title": "Alaska experienced severe early-season wildfires with smoke and air-quality impacts",
+      "description": "A June 24, 2022 Axios report described Alaska’s wildfire season as historically severe for that point in the year, with large areas burned and many active fires. The report linked the fires to widespread smoke and air-quality concerns affecting multiple regions.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2022-06-24T00:00:00.000Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "2022-06-24T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Alaska, USA",
+        "jurisdiction_level": "state",
+        "admin1": "Alaska",
+        "country": "US",
+        "capital_used": "Juneau",
+        "lat": 58.3019,
+        "lon": -134.4197,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.axios.com/2022/06/24/alaska-historic-wildfires-rage",
+          "source_name": "Axios",
+          "published_at": "2022-06-24T00:00:00.000Z",
+          "headline": "Historic wildfires rage in Alaska",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Axios"
+        ],
+        "substances": [
+          "wildfire smoke"
+        ],
+        "ecosystems": [
+          "boreal forest"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Historic wildfires rage in Alaska",
+            "source_url": "https://www.axios.com/2022/06/24/alaska-historic-wildfires-rage"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.5,
+        "category": 0.75,
+        "location": 0.6,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "secondary_sources_only",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Alaska early-season wildfires June 2022",
+        "fingerprint": "fires|alaska_wildfires_smoke|US-AK|2022-06"
+      }
+    },
+    {
+      "event_id": "evt_20220630_us_scotus_wv_v_epa_limits_eaa",
+      "title": "U.S. Supreme Court limits EPA authority to regulate power-plant CO2 under Clean Air Act (West Virginia v. EPA)",
+      "description": "On June 30, 2022, the U.S. Supreme Court issued its decision in West Virginia v. EPA. The ruling limited the Environmental Protection Agency’s authority to use certain system-wide approaches to reduce greenhouse-gas emissions from power plants without clear congressional authorization.",
+      "category_primary": "policy_regulation",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2022-06-30T00:00:00.000Z",
+        "time_confidence": 0.75,
+        "event_date_utc": "2022-06-30T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.8
+      },
+      "sources": [
+        {
+          "url": "https://supreme.justia.com/cases/federal/us/597/20-1530/",
+          "source_name": "Justia (U.S. Supreme Court case page)",
+          "published_at": "2022-06-30T00:00:00.000Z",
+          "headline": "West Virginia v. Environmental Protection Agency",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.mayerbrown.com/en/insights/publications/2022/06/decision-alert-west-virginia-v-environmental-protection-agency-no-20-1530",
+          "source_name": "Mayer Brown",
+          "published_at": "2022-06-30T00:00:00.000Z",
+          "headline": "Decision Alert: West Virginia v. Environmental Protection Agency (No. 20-1530)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Supreme Court",
+          "U.S. Environmental Protection Agency (EPA)"
+        ],
+        "substances": [
+          "carbon dioxide (CO2)"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "West Virginia v. Environmental Protection Agency",
+            "source_url": "https://supreme.justia.com/cases/federal/us/597/20-1530/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.7,
+        "category": 0.8,
+        "location": 0.85,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "secondary_sources_only",
+        "paywalled_or_partial",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "West Virginia v. EPA decision (June 2022)",
+        "fingerprint": "fp_20220630_wv_v_epa_us"
+      }
+    }
+  ]
+}

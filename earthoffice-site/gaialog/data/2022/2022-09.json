@@ -1,0 +1,928 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_2022-09_normalize_2026-01-16T132521956Z",
+    "generated_utc": "2026-01-16T13:25:21.956Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "2022-09",
+    "window": {
+      "start_utc": "2022-09-01T00:00:00.000Z",
+      "end_utc": "2022-09-30T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "evt-202209-indo-haze-ap-39452562021ccf5d000d18d77514fbfa",
+      "title": "Transboundary haze in Malaysia linked to Indonesian forest and peat fires",
+      "description": "Malaysia reported unhealthy to hazardous haze conditions and attributed the smoke to forest and peat fires in Indonesia. Indonesian authorities denied responsibility while hotspot detections and local emergency measures were reported.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2022-09-06T00:00:00.000Z",
+        "event_end": "2022-09-06T23:59:59.000Z",
+        "reported_at": "2022-09-06T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2022-09-06T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Malaysia (transboundary haze; attributed to fires in Indonesia)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "MY",
+        "capital_used": "Kuala Lumpur",
+        "lat": 3.139,
+        "lon": 101.6869,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://apnews.com/article/39452562021ccf5d000d18d77514fbfa",
+          "source_name": "Associated Press",
+          "published_at": "2022-09-06T00:00:00.000Z",
+          "headline": "Indonesia forest and peat fires blamed for transboundary haze affecting Malaysia",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Malaysian authorities",
+          "Indonesian authorities"
+        ],
+        "substances": [
+          "haze",
+          "smoke"
+        ],
+        "ecosystems": [
+          "peatlands",
+          "forests"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Malaysia reported hazardous haze conditions... attributed them to forest and peat fires in Indonesia.",
+            "source_url": "https://apnews.com/article/39452562021ccf5d000d18d77514fbfa"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.7,
+        "location": 0.55,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "2022-09 Malaysia haze attributed to Indonesian fires",
+        "fingerprint": "fp-202209-malaysia-haze-20220906"
+      }
+    },
+    {
+      "event_id": "evt-202209-epa-bcp-eto-verona",
+      "title": "EPA compliance order over alleged Clean Air Act violations after ethylene oxide release in Verona, Missouri",
+      "description": "The U.S. EPA announced a settlement/compliance order involving BCP Ingredients Inc. in Verona, Missouri, regarding alleged Clean Air Act Risk Management Program violations. The action was tied to an April 2022 ethylene oxide release and alleged deficiencies in safety procedures, per EPA.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2022-09-01T00:00:00.000Z",
+        "time_confidence": 0.4,
+        "event_date_utc": null,
+        "event_date_precision": "month"
+      },
+      "location": {
+        "name": "Verona, Missouri, United States",
+        "jurisdiction_level": "city",
+        "admin1": "Missouri",
+        "country": "US",
+        "capital_used": null,
+        "lat": 36.9626,
+        "lon": -93.7955,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.65
+      },
+      "sources": [
+        {
+          "url": "https://www.epa.gov/newsreleases/epa-settles-alleged-clean-air-act-violations-bcp-ingredients-inc-verona-missouri",
+          "source_name": "U.S. Environmental Protection Agency",
+          "published_at": "2022-09-01T00:00:00.000Z",
+          "headline": "EPA settles alleged Clean Air Act violations with BCP Ingredients Inc. in Verona, Missouri",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Environmental Protection Agency",
+          "BCP Ingredients Inc."
+        ],
+        "substances": [
+          "ethylene oxide",
+          "EtO"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "EPA settles alleged Clean Air Act violations with BCP Ingredients Inc. in Verona, Missouri.",
+            "source_url": "https://www.epa.gov/newsreleases/epa-settles-alleged-clean-air-act-violations-bcp-ingredients-inc-verona-missouri"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.75,
+        "location": 0.65,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "2022-09 EPA compliance order BCP Ingredients Verona MO ethylene oxide",
+        "fingerprint": "fp-202209-verona-mo-eto-epa"
+      }
+    },
+    {
+      "event_id": "evt_202209_fiona_puerto_rico_usvi",
+      "title": "Hurricane Fiona triggers flooding and landslides in Puerto Rico and the U.S. Virgin Islands",
+      "description": "Hurricane Fiona brought extreme rainfall that caused widespread flooding and mudslides in Puerto Rico, with impacts also reported in the U.S. Virgin Islands during mid-September 2022. Official weather-service reporting describes significant hydrologic impacts including river levels exceeding flood stage in Puerto Rico.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2022-09-17T00:00:00.000Z",
+        "event_end": "2022-09-20T23:59:59.000Z",
+        "reported_at": "2022-09-18T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2022-09-18T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Puerto Rico and U.S. Virgin Islands",
+        "jurisdiction_level": "supranational",
+        "admin1": null,
+        "country": null,
+        "capital_used": "San Juan",
+        "lat": 18.4655,
+        "lon": -66.1057,
+        "precision": "proxy",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.weather.gov/sju/fiona2022",
+          "source_name": "National Weather Service (San Juan)",
+          "published_at": "2022-09-18T00:00:00.000Z",
+          "headline": "Hurricane Fiona (2022)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.theguardian.com/world/2022/sep/18/hurricane-fiona-puerto-rico",
+          "source_name": "The Guardian",
+          "published_at": "2022-09-18T00:00:00.000Z",
+          "headline": "Hurricane Fiona batters Puerto Rico",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "National Weather Service"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "extreme rainfall leading to widespread flooding and mudslides",
+            "source_url": "https://www.weather.gov/sju/fiona2022"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.75,
+        "location": 0.55,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Hurricane Fiona impacts Puerto Rico USVI Sep 2022",
+        "fingerprint": "fiona_puerto_rico_usvi_2022-09-17_2022-09-20"
+      }
+    },
+    {
+      "event_id": "evt_202209_pakistan_monsoon_floods",
+      "title": "Pakistan monsoon flooding persists through September 2022 with large-scale displacement",
+      "description": "Severe monsoon flooding in Pakistan continued through September 2022, with widespread impacts and ongoing humanitarian needs. UNICEF situation reporting for September describes continued emergency conditions and response activities affecting flood-impacted populations.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2022-09-01T00:00:00.000Z",
+        "event_end": "2022-09-30T23:59:59.000Z",
+        "reported_at": "2022-09-15T00:00:00.000Z",
+        "time_confidence": 0.65,
+        "event_date_utc": "2022-09-15T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Pakistan (notably Sindh and Balochistan)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "PK",
+        "capital_used": "Islamabad",
+        "lat": 33.6844,
+        "lon": 73.0479,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.unicef.org/documents/pakistan-humanitarian-situation-report-no2-floods-september-2022",
+          "source_name": "UNICEF",
+          "published_at": "2022-09-01T00:00:00.000Z",
+          "headline": "Pakistan Humanitarian Situation Report No. 2 (Floods) - September 2022",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.axios.com/2022/09/03/pakistan-floods-humanitarian-aid",
+          "source_name": "Axios",
+          "published_at": "2022-09-03T00:00:00.000Z",
+          "headline": "Pakistan floods: humanitarian aid",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "UNICEF"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "humanitarian situation report ... Floods ... September 2022",
+            "source_url": "https://www.unicef.org/documents/pakistan-humanitarian-situation-report-no2-floods-september-2022"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.66,
+        "category": 0.8,
+        "location": 0.6,
+        "summary_grounding": 0.62
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Pakistan monsoon floods Sep 2022",
+        "fingerprint": "pakistan_floods_2022-09_month"
+      }
+    },
+    {
+      "event_id": "evt_202209_typhoon_noru_philippines_seasia",
+      "title": "Typhoon Noru (Karding) makes landfall in the Philippines and impacts parts of Southeast Asia",
+      "description": "Typhoon Noru (Karding) rapidly intensified and made landfall in the Philippines on September 25, 2022. Reporting describes damaging winds, heavy rainfall, evacuations, and flooding risk, with subsequent impacts noted in parts of Southeast Asia later in the month.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2022-09-25T00:00:00.000Z",
+        "event_end": "2022-09-30T23:59:59.000Z",
+        "reported_at": "2022-09-30T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2022-09-25T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Philippines; Vietnam; Thailand",
+        "jurisdiction_level": "supranational",
+        "admin1": null,
+        "country": null,
+        "capital_used": "Manila",
+        "lat": 14.5995,
+        "lon": 120.9842,
+        "precision": "proxy",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.45
+      },
+      "sources": [
+        {
+          "url": "https://earthobservatory.nasa.gov/images/150399/noru-strikes-the-philippines",
+          "source_name": "NASA Earth Observatory",
+          "published_at": "2022-09-27T00:00:00.000Z",
+          "headline": "Noru Strikes the Philippines",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.theguardian.com/world/2022/sep/30/weather-tracker-typhoon-noru-wreaks-havoc-across-south-east-asia",
+          "source_name": "The Guardian",
+          "published_at": "2022-09-30T00:00:00.000Z",
+          "headline": "Weather tracker: Typhoon Noru wreaks havoc across south-east Asia",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NASA"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "made landfall in the Philippines on September 25, 2022",
+            "source_url": "https://earthobservatory.nasa.gov/images/150399/noru-strikes-the-philippines"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.58,
+        "category": 0.75,
+        "location": 0.45,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Typhoon Noru (Karding) Sep 2022 Philippines Vietnam Thailand",
+        "fingerprint": "typhoon_noru_2022-09-25_2022-09-30"
+      }
+    },
+    {
+      "event_id": "2022-09-10_png_morobe_eq_m77",
+      "title": "M7.6–7.7 earthquake in Morobe Province, Papua New Guinea triggers landslides",
+      "description": "A large earthquake struck near Morobe Province, Papua New Guinea late on 2022-09-10 UTC (2022-09-11 local time). Reports described severe shaking and landslides, with casualties and injuries reported in the aftermath.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2022-09-10T23:46:55.000Z",
+        "event_end": "2022-09-11T23:46:55.000Z",
+        "reported_at": "2022-09-10T23:46:55.000Z",
+        "time_confidence": 0.8,
+        "event_date_utc": "2022-09-10T23:46:55.000Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Morobe Province, Papua New Guinea",
+        "jurisdiction_level": "state",
+        "admin1": "Morobe Province",
+        "country": "PG",
+        "capital_used": "Port Moresby",
+        "lat": -9.4438,
+        "lon": 147.1803,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://www.emsc-csem.org/Earthquake/earthquake.php?id=1160583",
+          "source_name": "EMSC-CSEM",
+          "published_at": "2022-09-10T23:46:55.000Z",
+          "headline": "Earthquake",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "EMSC-CSEM"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Earthquake",
+            "source_url": "https://www.emsc-csem.org/Earthquake/earthquake.php?id=1160583"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.85,
+        "location": 0.7,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "needs_dedupe_check",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "2022-09-10 Papua New Guinea Morobe earthquake",
+        "fingerprint": "2022-09-10_png_morobe_eq_m77"
+      }
+    },
+    {
+      "event_id": "2022-09-18_taiwan_se_eq_m69",
+      "title": "M6.8–6.9 earthquake strikes southeastern Taiwan causing damage and landslides",
+      "description": "A strong, shallow earthquake struck southeastern Taiwan on 2022-09-18. News reports described collapsed buildings, a train derailment, landslides, and a briefly issued tsunami warning that was later lifted.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2022-09-18T06:44:14.000Z",
+        "event_end": "2022-09-18T23:59:59.000Z",
+        "reported_at": "2022-09-18T06:44:14.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2022-09-18T06:44:14.000Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Taiwan (reported impacts in Taitung and Hualien counties)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "TW",
+        "capital_used": "Taipei",
+        "lat": 25.033,
+        "lon": 121.5654,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.75
+      },
+      "sources": [
+        {
+          "url": "https://www.theguardian.com/world/2022/sep/18/taiwan-earthquake-damage-hualien",
+          "source_name": "The Guardian",
+          "published_at": "2022-09-18T00:00:00Z",
+          "headline": "Taiwan earthquake damage (Hualien)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.axios.com/2022/09/18/taiwan-yuli-hualien-taitung-earthquake",
+          "source_name": "Axios",
+          "published_at": "2022-09-18T00:00:00Z",
+          "headline": "Taiwan earthquake (Yuli/Hualien/Taitung)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "The Guardian",
+          "Axios"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "earthquake ... damage ... Hualien",
+            "source_url": "https://www.theguardian.com/world/2022/sep/18/taiwan-earthquake-damage-hualien"
+          },
+          {
+            "quote": "earthquake ... Hualien ... Taitung",
+            "source_url": "https://www.axios.com/2022/09/18/taiwan-yuli-hualien-taitung-earthquake"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.85,
+        "location": 0.75,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "needs_dedupe_check",
+        "date_ambiguous",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "2022-09-18 Taiwan Hualien/Taitung earthquake",
+        "fingerprint": "2022-09-18_taiwan_se_eq_m69"
+      }
+    },
+    {
+      "event_id": "2022-09-fires-mosquito-fire-ca",
+      "title": "Mosquito Fire grows into California’s largest wildfire of 2022 (September 2022)",
+      "description": "The Mosquito Fire ignited on September 6, 2022 near Foresthill in Placer and El Dorado counties, California. CAL FIRE incident updates and news reporting describe its growth during September and associated evacuations and operational response.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2022-09-06T00:00:00.000Z",
+        "event_end": "2022-09-30T23:59:59.000Z",
+        "reported_at": "2022-09-06T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2022-09-06T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Placer and El Dorado counties, California, United States",
+        "jurisdiction_level": "state",
+        "admin1": "California",
+        "country": "US",
+        "capital_used": "Sacramento",
+        "lat": 38.5767,
+        "lon": -121.4944,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://www.fire.ca.gov/incidents/2022/9/6/mosquito-fire/updates/a9b7f510-10c1-4111-81f9-87e62a14e029",
+          "source_name": "CAL FIRE",
+          "published_at": "2022-09-06T00:00:00.000Z",
+          "headline": "Mosquito Fire (Incident updates)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.latimes.com/california/story/2022-09-14/mosquito-fire-northern-california-mckinney-fire",
+          "source_name": "Los Angeles Times",
+          "published_at": "2022-09-14T00:00:00.000Z",
+          "headline": "Mosquito Fire Northern California (reporting)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "CAL FIRE"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Mosquito Fire",
+            "source_url": "https://www.fire.ca.gov/incidents/2022/9/6/mosquito-fire/updates/a9b7f510-10c1-4111-81f9-87e62a14e029"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.9,
+        "location": 0.7,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "needs_dedupe_check",
+        "paywalled_or_partial",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "Mosquito Fire (California, Sep 2022)",
+        "fingerprint": "mosquito-fire|california|2022-09-06"
+      }
+    },
+    {
+      "event_id": "2022-09-fires-mill-fire-siskiyou-ca",
+      "title": "Mill Fire rapidly spreads near Weed, California (Sep 2–3, 2022)",
+      "description": "The Mill Fire broke out on September 2, 2022 in Siskiyou County, California and spread rapidly under hot, windy conditions. Reporting described evacuations and damage to buildings and impacts on local communities near Weed.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2022-09-02T00:00:00.000Z",
+        "event_end": "2022-09-03T23:59:59.000Z",
+        "reported_at": "2022-09-03T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2022-09-02T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Siskiyou County, California, United States",
+        "jurisdiction_level": "state",
+        "admin1": "California",
+        "country": "US",
+        "capital_used": "Sacramento",
+        "lat": 38.5767,
+        "lon": -121.4944,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.theguardian.com/us-news/2022/sep/03/california-wildfire-mill-fire",
+          "source_name": "The Guardian",
+          "published_at": "2022-09-03T00:00:00.000Z",
+          "headline": "California wildfire: Mill fire forces evacuations as it destroys homes in northern state",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Mill fire",
+            "source_url": "https://www.theguardian.com/us-news/2022/sep/03/california-wildfire-mill-fire"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.58,
+        "category": 0.85,
+        "location": 0.55,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "needs_dedupe_check",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "Mill Fire (Siskiyou County, Sep 2022)",
+        "fingerprint": "mill-fire|california|2022-09-02"
+      }
+    },
+    {
+      "event_id": "2022-09-fires-west-smoke-episode",
+      "title": "Wildfire smoke degrades air quality across parts of the western U.S. (Sep 12, 2022)",
+      "description": "Smoke from large wildfires affected parts of the western United States, degrading air quality and prompting public health advisories. Reporting referenced impacts across multiple states including California, Oregon, and Washington.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2022-09-12T00:00:00.000Z",
+        "event_end": "2022-09-12T23:59:59.000Z",
+        "reported_at": "2022-09-12T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2022-09-12T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States (western states)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.45
+      },
+      "sources": [
+        {
+          "url": "https://www.theguardian.com/us-news/2022/sep/12/california-wildfires-oregon-washington",
+          "source_name": "The Guardian",
+          "published_at": "2022-09-12T00:00:00.000Z",
+          "headline": "Wildfires in California, Oregon and Washington cause hazardous air quality",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [
+          "wildfire smoke"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "hazardous air quality",
+            "source_url": "https://www.theguardian.com/us-news/2022/sep/12/california-wildfires-oregon-washington"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.5,
+        "category": 0.8,
+        "location": 0.45,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "low_confidence_location",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Western US wildfire smoke episode (Sep 2022)",
+        "fingerprint": "wildfire-smoke|us|2022-09-12"
+      }
+    },
+    {
+      "event_id": "2022-09_fl_bleachwatch_high_florida_reef_tract",
+      "title": "Florida BleachWatch lists bleaching conditions as “High” (Sep 10, 2022)",
+      "description": "Florida’s BleachWatch program listed conditions as “High” on September 10, 2022, indicating elevated coral bleaching stress during the 2022 season for the Florida Reef Tract.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2022-09-10T00:00:00.000Z",
+        "event_end": "2022-09-10T23:59:59.000Z",
+        "reported_at": "2022-09-10T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2022-09-10T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Southeast Florida / Florida Reef Tract, United States",
+        "jurisdiction_level": "site",
+        "admin1": "Florida",
+        "country": "US",
+        "capital_used": null,
+        "lat": 25.7617,
+        "lon": -80.1918,
+        "precision": "proxy",
+        "location_basis": "manual_override",
+        "location_confidence": 0.35
+      },
+      "sources": [
+        {
+          "url": "https://floridadep.gov/rcp/coral/content/bleachwatch",
+          "source_name": "Florida Department of Environmental Protection",
+          "published_at": "2022-09-10T00:00:00.000Z",
+          "headline": "BleachWatch",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Florida Department of Environmental Protection (FDEP)",
+          "Florida BleachWatch"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "coral reefs",
+          "Florida Reef Tract"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "BleachWatch program listed conditions as “High” on September 10, 2022.",
+            "source_url": "https://floridadep.gov/rcp/coral/content/bleachwatch"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.48,
+        "category": 0.8,
+        "location": 0.35,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "Florida BleachWatch High Sep 2022",
+        "fingerprint": "2022-09_fl_bleachwatch_high_florida_reef_tract"
+      }
+    },
+    {
+      "event_id": "2022-09_noaa_feature_bleaching_hawaii",
+      "title": "NOAA Fisheries story discusses increasing coral bleaching in Hawaiʻi (published Sep 9, 2022)",
+      "description": "NOAA Fisheries published a feature story on September 9, 2022 describing increasing frequency and severity of coral bleaching in Hawaiʻi, referencing the 2019 bleaching event as an example amid warming ocean temperatures.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "2022-09-09T00:00:00.000Z",
+        "event_end": "2022-09-09T23:59:59.000Z",
+        "reported_at": "2022-09-09T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2022-09-09T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Hawaiian Islands, United States",
+        "jurisdiction_level": "state",
+        "admin1": "Hawaii",
+        "country": "US",
+        "capital_used": "Honolulu",
+        "lat": 21.3069,
+        "lon": -157.8583,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.85
+      },
+      "sources": [
+        {
+          "url": "https://www.fisheries.noaa.gov/feature-story/cautionary-tale-2019-coral-bleaching-event-hawaii",
+          "source_name": "NOAA Fisheries",
+          "published_at": "2022-09-09T00:00:00.000Z",
+          "headline": "A cautionary tale: the 2019 coral bleaching event in Hawai‘i",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA Fisheries"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "coral reefs"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "NOAA Fisheries published a feature story on September 9, 2022 ... coral bleaching event in Hawaiʻi.",
+            "source_url": "https://www.fisheries.noaa.gov/feature-story/cautionary-tale-2019-coral-bleaching-event-hawaii"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.75,
+        "location": 0.85,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "possible_opinion_or_advocacy",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "NOAA Fisheries feature coral bleaching Hawaii Sep 2022",
+        "fingerprint": "2022-09_noaa_feature_bleaching_hawaii"
+      }
+    }
+  ]
+}

@@ -1,0 +1,521 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_1975-10_normalize_2026-01-19T073912150Z",
+    "generated_utc": "2026-01-19T07:39:12.150Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "1975-10",
+    "window": {
+      "start_utc": "1975-10-01T00:00:00.000Z",
+      "end_utc": "1975-10-31T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "evt_19751014_atlantic_tropical_depression_flooding_la_us",
+      "title": "Tropical depression brings heavy rain and flooding from Louisiana into the eastern U.S.",
+      "description": "A tropical depression formed in the southern Gulf of Mexico and made landfall near Cocodrie, Louisiana. The system produced heavy rainfall and flooding across multiple states, with a flooding-related fatality reported in Mississippi.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1975-10-14T12:00:00Z",
+        "event_end": "1975-10-17T12:00:00Z",
+        "reported_at": "1975-10-31T23:59:59.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1975-10-15T00:00:00Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "United States",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.89511,
+        "lon": -77.03637,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.45
+      },
+      "sources": [
+        {
+          "url": "https://www.wpc.ncep.noaa.gov/tropical/rain/1975.html",
+          "source_name": "NOAA Weather Prediction Center (WPC)",
+          "published_at": "1975-10-31T23:59:59.000Z",
+          "headline": "1975 Tropical Cyclone Rainfall",
+          "byline": null,
+          "accessed_utc": "2026-01-19T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA Weather Prediction Center"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.8,
+        "location": 0.45,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "1975-10 WPC tropical rainfall (Atlantic depression landfall Louisiana)",
+        "fingerprint": "fp_19751014_us_country_weather_climate_depression_flooding"
+      }
+    },
+    {
+      "event_id": "evt_19751023_hallie_cloudiness_rain_bahamas_watlantic",
+      "title": "Tropical Storm Hallie brings rain and cloudiness over the Bahamas and western Atlantic",
+      "description": "A subtropical depression formed near the Bahamas and offshore Florida, later becoming Tropical Storm Hallie east of South Carolina before accelerating northeast and becoming extratropical. The precursor produced several days of cloudiness and rain in the Bahamas, with rainfall also reported along the U.S. East Coast.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1975-10-23T12:00:00Z",
+        "event_end": "1975-10-27T12:00:00Z",
+        "reported_at": "1975-10-31T23:59:59.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1975-10-25T00:00:00Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "The Bahamas",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "BS",
+        "capital_used": "Nassau",
+        "lat": 25.06667,
+        "lon": -77.33333,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.wpc.ncep.noaa.gov/tropical/rain/hallie1975.html",
+          "source_name": "NOAA Weather Prediction Center (WPC)",
+          "published_at": "1975-10-31T23:59:59.000Z",
+          "headline": "Tropical Storm Hallie (1975) Rainfall Summary",
+          "byline": null,
+          "accessed_utc": "2026-01-19T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.wpc.ncep.noaa.gov/tropical/rain/tcmaxima.html",
+          "source_name": "NOAA Weather Prediction Center (WPC)",
+          "published_at": "1975-10-31T23:59:59.000Z",
+          "headline": "Tropical Cyclone Rainfall Maxima",
+          "byline": null,
+          "accessed_utc": "2026-01-19T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA Weather Prediction Center"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.65,
+        "category": 0.85,
+        "location": 0.6,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "1975-10 Hallie WPC rainfall (Bahamas / western Atlantic)",
+        "fingerprint": "fp_19751023_bahamas_country_weather_climate_hallie"
+      }
+    },
+    {
+      "event_id": "evt_19751022_olivia_landfall_mazatlan_mexico",
+      "title": "Hurricane Olivia makes landfall near Mazatlán, Sinaloa",
+      "description": "Hurricane Olivia intensified to a major hurricane and made landfall near Mazatlán in Sinaloa, Mexico. Reports linked the storm to severe damage and fatalities, including deaths associated with offshore shrimp boats.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1975-10-22T12:00:00Z",
+        "event_end": "1975-10-25T12:00:00Z",
+        "reported_at": "1975-10-31T23:59:59.000Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "1975-10-24T00:00:00Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Mexico",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "MX",
+        "capital_used": "Mexico City",
+        "lat": 19.43261,
+        "lon": -99.13321,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.45
+      },
+      "sources": [
+        {
+          "url": "https://www.wpc.ncep.noaa.gov/tropical/rain/1975.html",
+          "source_name": "NOAA Weather Prediction Center (WPC)",
+          "published_at": "1975-10-31T23:59:59.000Z",
+          "headline": "1975 Tropical Cyclone Rainfall",
+          "byline": null,
+          "accessed_utc": "2026-01-19T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA Weather Prediction Center"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.45,
+        "category": 0.75,
+        "location": 0.45,
+        "summary_grounding": 0.35
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "1975-10 Hurricane Olivia (Mazatlán) referenced via WPC 1975 page",
+        "fingerprint": "fp_19751022_mexico_country_weather_climate_olivia"
+      }
+    },
+    {
+      "event_id": "evt_19751017_porbandar_cyclone_gujarat_india",
+      "title": "Severe cyclonic storm makes landfall near Porbandar, Gujarat",
+      "description": "A severe cyclonic storm affected Gujarat in mid-to-late October 1975, making landfall near Porbandar. Reports associated the storm with large swells, widespread damage across districts, and substantial casualties.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1975-10-17T12:00:00Z",
+        "event_end": "1975-10-24T12:00:00Z",
+        "reported_at": "1975-10-31T23:59:59.000Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "1975-10-21T00:00:00Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Gujarat, India",
+        "jurisdiction_level": "state",
+        "admin1": "Gujarat",
+        "country": "IN",
+        "capital_used": "Gandhinagar",
+        "lat": 23.21564,
+        "lon": 72.63694,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://web.archive.org/web/20160707135410/http://atms.unca.edu/ibtracs/ibtracs_v03r04/browse-ibtracs/index.php?name=v03r04-1975292N16073",
+          "source_name": "IBTrACS (archived)",
+          "published_at": "1975-10-31T23:59:59.000Z",
+          "headline": "IBTrACS track page: v03r04-1975292N16073",
+          "byline": null,
+          "accessed_utc": "2026-01-19T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "IBTrACS"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.5,
+        "category": 0.8,
+        "location": 0.6,
+        "summary_grounding": 0.4
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "paywalled_or_partial"
+      ],
+      "dedupe": {
+        "cluster_hint": "1975-10 Porbandar cyclone (IBTrACS ID 1975292N16073)",
+        "fingerprint": "fp_19751017_gujarat_india_state_weather_climate_porbandar"
+      }
+    },
+    {
+      "event_id": "1975-10_fires_red-dirt-fire_white-river-national-forest",
+      "title": "Red Dirt Fire reported contained after burning 4,438 acres in White River National Forest",
+      "description": "A forest fire known as the Red Dirt Fire in the White River National Forest was reported as contained on October 17, 1975 after burning 4,438 acres. Forest Service officials suspected the fire was human-caused and investigated hunter camps near the origin area.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1975-10-17T12:00:00Z",
+        "event_end": "1975-10-17T12:00:00Z",
+        "reported_at": "2025-10-17T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1975-10-17T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "White River National Forest, Colorado, United States",
+        "jurisdiction_level": "site",
+        "admin1": "Colorado",
+        "country": "US",
+        "capital_used": null,
+        "lat": 39.4667,
+        "lon": -106.8167,
+        "precision": "admin1",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.45
+      },
+      "sources": [
+        {
+          "url": "https://www.vaildaily.com/news/time-machine-50-years-ago-states-largest-firefighting-effort-underway-in-white-river-national-forest/",
+          "source_name": "Vail Daily",
+          "published_at": "2025-10-17T00:00:00Z",
+          "headline": "Time Machine: 50 years ago, state’s largest firefighting effort underway in White River National Forest",
+          "byline": null,
+          "accessed_utc": "2026-01-19T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Forest Service"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "White River National Forest"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "reported as contained ... after burning 4,438 acres",
+            "source_url": "https://www.vaildaily.com/news/time-machine-50-years-ago-states-largest-firefighting-effort-underway-in-white-river-national-forest/"
+          },
+          {
+            "quote": "Forest Service officials suspected a human cause",
+            "source_url": "https://www.vaildaily.com/news/time-machine-50-years-ago-states-largest-firefighting-effort-underway-in-white-river-national-forest/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.56,
+        "category": 0.85,
+        "location": 0.45,
+        "summary_grounding": 0.65
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Red Dirt Fire (White River National Forest) contained, 4,438 acres",
+        "fingerprint": "fires|red dirt fire|white river national forest|1975-10-17"
+      }
+    },
+    {
+      "event_id": "1975-10-09_snail-darter_endangered-listing_usa",
+      "title": "USFWS publishes final rule listing the snail darter as endangered (40 FR 47505)",
+      "description": "The U.S. Fish and Wildlife Service published a final rule in the Federal Register listing the snail darter as an endangered species. The listing action formally recognized conservation concerns tied to the species and its river habitat.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "1975-10-09T12:00:00Z",
+        "event_end": "1975-10-09T12:00:00Z",
+        "reported_at": "1975-10-09T12:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1975-10-09T12:00:00Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "United States (federal listing action; species associated with Little Tennessee River, Tennessee)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://www.fws.gov/species-publication-action/amendment-listing-snail-darter-endangered-species-40-fr-47505-47506",
+          "source_name": "U.S. Fish and Wildlife Service",
+          "published_at": "1975-10-09T12:00:00Z",
+          "headline": "Amendment Listing Snail Darter as an Endangered Species (40 FR 47505-47506)",
+          "byline": null,
+          "accessed_utc": "2026-01-19T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Fish and Wildlife Service"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "Little Tennessee River"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Amendment Listing Snail Darter as an Endangered Species (40 FR 47505-47506)",
+            "source_url": "https://www.fws.gov/species-publication-action/amendment-listing-snail-darter-endangered-species-40-fr-47505-47506"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.63,
+        "category": 0.75,
+        "location": 0.7,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "snail_darter_endangered_listing_oct_1975",
+        "fingerprint": "snail-darter|endangered-listing|US|1975-10-09"
+      }
+    },
+    {
+      "event_id": "1975-10-15_snail-darter_endangered-press-release_usa",
+      "title": "Interior Department announces snail darter placed on endangered list",
+      "description": "A U.S. Fish and Wildlife Service press release announced the Interior Department action placing the snail darter on the endangered species list. The announcement emphasized federal recognition of risks to the species and its habitat.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "1975-10-15T12:00:00Z",
+        "event_end": "1975-10-15T12:00:00Z",
+        "reported_at": "1975-10-15T12:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1975-10-15T12:00:00Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "United States (federal announcement; species associated with Little Tennessee River, Tennessee)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://www.fws.gov/press-release/1975-10/interior-places-snail-darter-endangered-list-october-15-1975",
+          "source_name": "U.S. Fish and Wildlife Service",
+          "published_at": "1975-10-15T12:00:00Z",
+          "headline": "Interior Places Snail Darter on Endangered List (October 15, 1975)",
+          "byline": null,
+          "accessed_utc": "2026-01-19T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.fws.gov/media/interior-places-snail-darter-endangered-list-october-15-1975",
+          "source_name": "U.S. Fish and Wildlife Service",
+          "published_at": "1975-10-15T12:00:00Z",
+          "headline": "Interior Places Snail Darter on Endangered List (October 15, 1975)",
+          "byline": null,
+          "accessed_utc": "2026-01-19T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Fish and Wildlife Service",
+          "U.S. Department of the Interior"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "Little Tennessee River"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Interior Places Snail Darter on Endangered List (October 15, 1975)",
+            "source_url": "https://www.fws.gov/press-release/1975-10/interior-places-snail-darter-endangered-list-october-15-1975"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.75,
+        "location": 0.7,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "snail_darter_endangered_listing_oct_1975",
+        "fingerprint": "snail-darter|endangered-press-release|US|1975-10-15"
+      }
+    }
+  ]
+}

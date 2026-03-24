@@ -1,0 +1,571 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_2012-01_normalize_2026-01-16T043222552Z",
+    "generated_utc": "2026-01-16T04:32:22.552Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "2012-01",
+    "window": {
+      "start_utc": "2012-01-01T00:00:00.000Z",
+      "end_utc": "2012-01-31T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "201201_cn_guangxi_longjiang_cadmium_bbc",
+      "title": "Cadmium pollution reported in China’s Longjiang River, Guangxi, threatening downstream water supplies",
+      "description": "A cadmium contamination incident in the Longjiang River in Guangxi, China was reported in early January 2012, raising concerns about downstream drinking-water supplies and impacts such as fish deaths. Authorities reportedly took measures to protect municipal water supplies and detained executives linked to the suspected polluting company.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2012-02-02T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2012-01-01T00:00:00Z",
+        "event_date_precision": "month"
+      },
+      "location": {
+        "name": "Hechi and downstream areas along the Longjiang River, Guangxi, China",
+        "jurisdiction_level": "state",
+        "admin1": "Guangxi",
+        "country": "CN",
+        "capital_used": "Nanning",
+        "lat": 22.817,
+        "lon": 108.366,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.bbc.co.uk/news/world-asia-china-16821596",
+          "source_name": "BBC News",
+          "published_at": "2012-02-02T00:00:00Z",
+          "headline": "China detains officials over river pollution",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [
+          "cadmium"
+        ],
+        "ecosystems": [
+          "river"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Toxic levels of cadmium have been found in a river in southern China.",
+            "source_url": "https://www.bbc.co.uk/news/world-asia-china-16821596"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.66,
+        "category": 0.8,
+        "location": 0.6,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Longjiang River cadmium contamination (Guangxi, China)",
+        "fingerprint": "pollution_contamination|longjiang-river-cadmium|guangxi|2012-01"
+      }
+    },
+    {
+      "event_id": "evt_201201_pnw_winter_storm",
+      "title": "Mid-January 2012 winter storm impacts in the U.S. Pacific Northwest",
+      "description": "A winter storm in mid-January 2012 brought heavy snow and ice along with strong winds in parts of the U.S. Pacific Northwest. Reports described widespread power outages and major transportation disruptions during the event window.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2012-01-16T00:00:00.000Z",
+        "event_end": "2012-01-20T23:59:59.000Z",
+        "reported_at": "2012-01-01T00:00:00.000Z",
+        "time_confidence": 0.65,
+        "event_date_utc": "2012-01-16T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Olympia, Washington, United States (proxy for Pacific Northwest)",
+        "jurisdiction_level": "state",
+        "admin1": "Washington",
+        "country": "US",
+        "capital_used": "Olympia",
+        "lat": 47.0379,
+        "lon": -122.9007,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.ncei.noaa.gov/access/billions/events/US/2012-01",
+          "source_name": "NOAA NCEI",
+          "published_at": "2012-01-01T00:00:00.000Z",
+          "headline": "NOAA NCEI Billion-Dollar Weather and Climate Disasters (US) — 2012-01",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.noaa.gov/media-release/winter-storm-slams-pacific-northwest-mid-january-2012",
+          "source_name": "NOAA",
+          "published_at": "2012-01-01T00:00:00.000Z",
+          "headline": "Winter storm slams Pacific Northwest mid-January 2012",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA",
+          "NOAA NCEI"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Winter storm slams Pacific Northwest mid-January 2012",
+            "source_url": "https://www.noaa.gov/media-release/winter-storm-slams-pacific-northwest-mid-january-2012"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.75,
+        "location": 0.55,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "2012-01 Pacific Northwest winter storm",
+        "fingerprint": "fp_201201_pnw_winter_storm"
+      }
+    },
+    {
+      "event_id": "evt_201201_brazil_rains_flood_rj",
+      "title": "Early January 2012 heavy rains and flood risk in Rio de Janeiro state, Brazil",
+      "description": "Heavy rains in early January 2012 were reported to cause flooding and increase mudslide risk in parts of southeastern Brazil, including Rio de Janeiro state. Reports highlighted ongoing impacts and heightened risk due to continued rainfall.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2012-01-04T00:00:00.000Z",
+        "event_end": "2012-01-06T23:59:59.000Z",
+        "reported_at": "2012-01-04T00:00:00.000Z",
+        "time_confidence": 0.75,
+        "event_date_utc": "2012-01-04T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Rio de Janeiro, Brazil",
+        "jurisdiction_level": "state",
+        "admin1": "Rio de Janeiro",
+        "country": "BR",
+        "capital_used": "Rio de Janeiro",
+        "lat": -22.9068,
+        "lon": -43.1729,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.65
+      },
+      "sources": [
+        {
+          "url": "https://www.aljazeera.com/news/2012/1/4/brazil-is-flooded-once-more",
+          "source_name": "Al Jazeera",
+          "published_at": "2012-01-04T00:00:00.000Z",
+          "headline": "Brazil is flooded once more",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Al Jazeera"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Brazil is flooded once more",
+            "source_url": "https://www.aljazeera.com/news/2012/1/4/brazil-is-flooded-once-more"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.75,
+        "location": 0.65,
+        "summary_grounding": 0.65
+      },
+      "quality_flags": [
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "2012-01 Brazil heavy rains flooding Rio de Janeiro state",
+        "fingerprint": "fp_201201_brazil_rains_flood_rj"
+      }
+    },
+    {
+      "event_id": "evt_20120103_nyamuragira_satellite_activity",
+      "title": "Satellite imagery shows active lava flows at Nyamuragira volcano",
+      "description": "NASA Earth Observatory imagery from early January 2012 documented active lava flows near Nyamuragira volcano in the Democratic Republic of the Congo. The report describes ongoing eruptive activity and associated volcanic emissions observed by satellite.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2012-01-03T00:00:00.000Z",
+        "event_end": "2012-01-04T23:59:59.000Z",
+        "reported_at": "2012-01-03T00:00:00.000Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "2012-01-03T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Nyamuragira Volcano, Democratic Republic of the Congo",
+        "jurisdiction_level": "site",
+        "admin1": null,
+        "country": "CD",
+        "capital_used": null,
+        "lat": -1.408,
+        "lon": 29.2,
+        "precision": "exact",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://science.nasa.gov/earth/earth-observatory/lava-flow-near-nyamuragira-volcano-76862/",
+          "source_name": "NASA Science (Earth Observatory)",
+          "published_at": "2012-01-03T00:00:00.000Z",
+          "headline": "Lava Flow Near Nyamuragira Volcano",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": "https://earthobservatory.nasa.gov/images/76862/lava-flow-near-nyamuragira-volcano"
+        },
+        {
+          "url": "https://earthobservatory.nasa.gov/images/76862/lava-flow-near-nyamuragira-volcano",
+          "source_name": "NASA Earth Observatory",
+          "published_at": "2012-01-03T00:00:00.000Z",
+          "headline": "Lava Flow Near Nyamuragira Volcano",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": "https://earthobservatory.nasa.gov/images/76862/lava-flow-near-nyamuragira-volcano"
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NASA Earth Observatory"
+        ],
+        "substances": [
+          "sulfur dioxide"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Lava flows near Nyamuragira volcano were visible in satellite imagery.",
+            "source_url": "https://earthobservatory.nasa.gov/images/76862/lava-flow-near-nyamuragira-volcano"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.8,
+        "location": 0.6,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "nyamuragira_eruption_early_jan_2012",
+        "fingerprint": "fp_nyamuragira_volcano_cd_2012-01-03"
+      }
+    },
+    {
+      "event_id": "evt_201201_washoe_drive_fire_reno_nv",
+      "title": "Washoe Drive Fire prompts evacuations south of Reno, Nevada",
+      "description": "A fast-moving brush fire south of Reno in the Washoe Valley/Pleasant Valley area burned thousands of acres during January 19–21, 2012. The fire led to evacuations and damaged or destroyed homes, with smoke impacts reported in western Nevada.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2012-01-19T00:00:00.000Z",
+        "event_end": "2012-01-21T23:59:59.000Z",
+        "reported_at": "2012-01-20T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2012-01-20T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Washoe Valley / Pleasant Valley area, Washoe County, Nevada, USA",
+        "jurisdiction_level": "site",
+        "admin1": "Nevada",
+        "country": "US",
+        "capital_used": null,
+        "lat": 39.2666,
+        "lon": -119.965,
+        "precision": "neighborhood",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://wildfiretoday.com/thousands-evacuate-from-washoe-fire-south-of-reno/",
+          "source_name": "Wildfire Today",
+          "published_at": "2012-01-20T00:00:00.000Z",
+          "headline": "Thousands Evacuate from Washoe Fire South of Reno",
+          "byline": null,
+          "accessed_utc": "2012-01-31T23:59:59.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.latimes.com/archives/blogs/nation-now/story/2012-01-20/fire-near-reno-20-homes-burned-1-dead-blaze-at-50-containment",
+          "source_name": "Los Angeles Times",
+          "published_at": "2012-01-20T00:00:00.000Z",
+          "headline": "Fire near Reno: 20 homes burned, 1 dead, blaze at 50% containment",
+          "byline": null,
+          "accessed_utc": "2012-01-31T23:59:59.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [
+          "brush",
+          "wildland-urban interface"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Thousands evacuate from Washoe Fire south of Reno.",
+            "source_url": "https://wildfiretoday.com/thousands-evacuate-from-washoe-fire-south-of-reno/"
+          },
+          {
+            "quote": "Fire near Reno: 20 homes burned ... blaze at 50% containment.",
+            "source_url": "https://www.latimes.com/archives/blogs/nation-now/story/2012-01-20/fire-near-reno-20-homes-burned-1-dead-blaze-at-50-containment"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.58,
+        "category": 0.8,
+        "location": 0.55,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "needs_dedupe_check",
+        "date_ambiguous",
+        "location_ambiguous",
+        "paywalled_or_partial"
+      ],
+      "dedupe": {
+        "cluster_hint": "Washoe Drive Fire (Washoe Fire) south of Reno NV Jan 2012",
+        "fingerprint": "washoe_drive_fire|washoe_valley_nv|2012-01-19_2012-01-21"
+      }
+    },
+    {
+      "event_id": "20120118_us_keystone_xl_permit_denied",
+      "title": "U.S. State Department denies Keystone XL cross-border permit application",
+      "description": "On January 18, 2012, the U.S. administration denied the Keystone XL pipeline cross-border permit application. The statement cited insufficient time for a full review under a congressionally imposed deadline and said a new application could be submitted with a different route.",
+      "category_primary": "policy_regulation",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "2012-01-18T00:00:00.000Z",
+        "event_end": "2012-01-18T23:59:59.000Z",
+        "reported_at": "2012-01-18T00:00:00.000Z",
+        "time_confidence": 0.75,
+        "event_date_utc": "2012-01-18T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, D.C.",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.8
+      },
+      "sources": [
+        {
+          "url": "https://obamawhitehouse.archives.gov/the-press-office/2012/01/18/statement-president-keystone-xl-pipeline",
+          "source_name": "The White House (Obama Archives)",
+          "published_at": "2012-01-18T00:00:00.000Z",
+          "headline": "Statement by the President on the Keystone XL Pipeline",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.ogj.com/general-interest/government/article/17273316/obama-administration-rejects-keystone-xl-permit-application",
+          "source_name": "Oil & Gas Journal",
+          "published_at": "2012-01-18T00:00:00.000Z",
+          "headline": "Obama administration rejects Keystone XL permit application",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Department of State",
+          "The White House"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": [
+          "Barack Obama"
+        ]
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "the Secretary of State has recommended that I deny TransCanada’s application",
+            "source_url": "https://obamawhitehouse.archives.gov/the-press-office/2012/01/18/statement-president-keystone-xl-pipeline"
+          },
+          {
+            "quote": "because the review of the pipeline application was rushed and insufficient",
+            "source_url": "https://obamawhitehouse.archives.gov/the-press-office/2012/01/18/statement-president-keystone-xl-pipeline"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.72,
+        "category": 0.85,
+        "location": 0.85,
+        "summary_grounding": 0.65
+      },
+      "quality_flags": [
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Keystone XL permit denial Jan 2012",
+        "fingerprint": "fp_20120118_us_keystone_xl_permit_denied"
+      }
+    },
+    {
+      "event_id": "20120109_us_scotus_sackett_v_epa_oral_arguments",
+      "title": "U.S. Supreme Court hears oral arguments in Sackett v. EPA on Clean Water Act compliance orders",
+      "description": "On January 9, 2012, the U.S. Supreme Court heard oral arguments in Sackett v. EPA. The case concerned whether recipients of EPA Clean Water Act compliance orders can seek pre-enforcement judicial review under the Administrative Procedure Act.",
+      "category_primary": "policy_regulation",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "2012-01-09T00:00:00.000Z",
+        "event_end": "2012-01-09T23:59:59.000Z",
+        "reported_at": "2012-01-09T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2012-01-09T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Washington, D.C., USA",
+        "jurisdiction_level": "city",
+        "admin1": "DC",
+        "country": "US",
+        "capital_used": null,
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.8
+      },
+      "sources": [
+        {
+          "url": "https://supreme.justia.com/cases/federal/us/566/120/",
+          "source_name": "Justia (U.S. Supreme Court case summary)",
+          "published_at": "2012-01-09T00:00:00.000Z",
+          "headline": "Sackett v. Environmental Protection Agency, 566 U.S. 120 (2012)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Supreme Court",
+          "U.S. Environmental Protection Agency"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": [
+          "Michael Sackett",
+          "Chantell Sackett"
+        ]
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Argued January 9, 2012",
+            "source_url": "https://supreme.justia.com/cases/federal/us/566/120/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.75,
+        "location": 0.9,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Sackett v. EPA oral arguments Jan 2012",
+        "fingerprint": "fp_20120109_us_scotus_sackett_v_epa_oral_arguments"
+      }
+    }
+  ]
+}

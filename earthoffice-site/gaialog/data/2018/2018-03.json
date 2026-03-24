@@ -1,0 +1,794 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_2018-03_normalize_2026-01-16T062358201Z",
+    "generated_utc": "2026-01-16T06:23:58.201Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "2018-03",
+    "window": {
+      "start_utc": "2018-03-01T00:00:00.000Z",
+      "end_utc": "2018-03-31T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "evt_20180329_exxonmobil_baytown_emissions",
+      "title": "Equipment malfunction triggers hours-long emissions at ExxonMobil Baytown Refinery",
+      "description": "An equipment malfunction led to several hours of carbon monoxide and other gas emissions at ExxonMobil’s Baytown Refinery. The incident drew environmental concern and was later referenced in legal scrutiny.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2018-03-29T00:00:00.000Z",
+        "event_end": "2018-03-29T23:59:59.000Z",
+        "reported_at": "2019-06-04T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2018-03-29T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Baytown, Texas, United States",
+        "jurisdiction_level": "city",
+        "admin1": "Texas",
+        "country": "US",
+        "capital_used": null,
+        "lat": 29.7355,
+        "lon": -94.9774,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.85
+      },
+      "sources": [
+        {
+          "url": "https://earthjustice.org/feature/toxic-catastrophes-texas-national-chemical-disaster-rule",
+          "source_name": "Earthjustice",
+          "published_at": "2019-06-04T00:00:00Z",
+          "headline": "Toxic Catastrophes in Texas and the National Chemical Disaster Rule",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.houstonchronicle.com/news/houston-texas/houston/article/Harris-County-sues-Exxon-Mobil-over-illegal-13961152.php",
+          "source_name": "Houston Chronicle",
+          "published_at": "2019-06-04T00:00:00Z",
+          "headline": "Harris County sues Exxon Mobil over illegal emissions at Baytown refinery",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "ExxonMobil"
+        ],
+        "substances": [
+          "carbon monoxide"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "equipment malfunction led to hours of carbon monoxide and other gases",
+            "source_url": "https://earthjustice.org/feature/toxic-catastrophes-texas-national-chemical-disaster-rule"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.7,
+        "location": 0.85,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "secondary_sources_only",
+        "possible_opinion_or_advocacy",
+        "date_ambiguous",
+        "paywalled_or_partial",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "ExxonMobil Baytown illegal emissions March 2018",
+        "fingerprint": "fp_exxonmobil_baytown_20180329"
+      }
+    },
+    {
+      "event_id": "evt_20180329_tpc_group_houston_tank_fire",
+      "title": "Portable storage tank fire at TPC Group’s Houston operations",
+      "description": "A portable storage tank containing water and hydrocarbons caught fire at TPC Group’s Houston operations in east Houston. The industrial incident had potential air-emissions implications.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2018-03-29T00:00:00.000Z",
+        "event_end": "2018-03-29T23:59:59.000Z",
+        "reported_at": "2018-03-29T00:00:00Z",
+        "time_confidence": 0.65,
+        "event_date_utc": "2018-03-29T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Houston, Texas, United States",
+        "jurisdiction_level": "city",
+        "admin1": "Texas",
+        "country": "US",
+        "capital_used": null,
+        "lat": 29.7604,
+        "lon": -95.3698,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.9
+      },
+      "sources": [
+        {
+          "url": "https://earthjustice.org/feature/toxic-catastrophes-texas-national-chemical-disaster-rule",
+          "source_name": "Earthjustice",
+          "published_at": "2019-06-04T00:00:00Z",
+          "headline": "Toxic Catastrophes in Texas and the National Chemical Disaster Rule",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.chron.com/news/houston-texas/houston/article/Chemical-plant-fire-reported-in-east-Houston-12813457.php",
+          "source_name": "Chron",
+          "published_at": "2018-03-29T00:00:00Z",
+          "headline": "Chemical plant fire reported in east Houston",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "TPC Group"
+        ],
+        "substances": [
+          "hydrocarbons"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "portable storage tank containing water and hydrocarbons caught fire",
+            "source_url": "https://www.chron.com/news/houston-texas/houston/article/Chemical-plant-fire-reported-in-east-Houston-12813457.php"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.75,
+        "location": 0.9,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "secondary_sources_only",
+        "possible_opinion_or_advocacy",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "TPC Group Houston portable storage tank fire March 2018",
+        "fingerprint": "fp_tpc_houston_20180329"
+      }
+    },
+    {
+      "event_id": "evt_20180331_balikpapan_bay_oil_spill_fire",
+      "title": "Oil spill and fire in Balikpapan Bay linked to burst pipeline",
+      "description": "An underwater pipeline linked to a refinery leaked oil into Balikpapan Bay, Indonesia, and parts of the slick caught fire. Reports said the incident killed five people and raised concerns about health and wildlife impacts as the spill began on March 31, 2018.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2018-03-31T00:00:00.000Z",
+        "event_end": "2018-03-31T23:59:59.000Z",
+        "reported_at": "2018-04-01T00:00:00Z",
+        "time_confidence": 0.8,
+        "event_date_utc": "2018-03-31T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Balikpapan Bay, East Kalimantan, Indonesia",
+        "jurisdiction_level": "site",
+        "admin1": "East Kalimantan",
+        "country": "ID",
+        "capital_used": null,
+        "lat": -1.1489,
+        "lon": 116.9031,
+        "precision": "exact",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.75
+      },
+      "sources": [
+        {
+          "url": "https://www.reuters.com/article/us-indonesia-oilspill-balipapan/indonesia-says-oil-spill-fire-in-balikpapan-bay-kills-five-idUSKBN1H00M3",
+          "source_name": "Reuters",
+          "published_at": "2018-04-01T00:00:00Z",
+          "headline": "Indonesia says oil spill, fire in Balikpapan Bay kills five",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.bbc.com/indonesia/indonesia-43630396",
+          "source_name": "BBC Indonesia",
+          "published_at": "2018-04-04T00:00:00Z",
+          "headline": "(BBC Indonesia) Oil spill Balikpapan Bay incident report",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [
+          "oil"
+        ],
+        "ecosystems": [
+          "Balikpapan Bay"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "oil spill and fire in Balikpapan Bay kills five",
+            "source_url": "https://www.reuters.com/article/us-indonesia-oilspill-balipapan/indonesia-says-oil-spill-fire-in-balikpapan-bay-kills-five-idUSKBN1H00M3"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.7,
+        "category": 0.85,
+        "location": 0.75,
+        "summary_grounding": 0.65
+      },
+      "quality_flags": [
+        "needs_dedupe_check",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "Balikpapan Bay oil spill and fire March 2018",
+        "fingerprint": "fp_balikpapan_bay_20180331"
+      }
+    },
+    {
+      "event_id": "201803_riley_us_east_coast_1",
+      "title": "Winter Storm Riley brings damaging winds and coastal flooding to the U.S. East Coast",
+      "description": "In early March 2018, Winter Storm Riley rapidly intensified offshore and impacted the U.S. East Coast with damaging winds and coastal flooding, causing widespread disruptions. Effects were especially notable in parts of New England and the Mid-Atlantic.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2018-03-01T00:00:00.000Z",
+        "event_end": "2018-03-05T23:59:59.000Z",
+        "reported_at": "2018-03-01T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2018-03-01T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "U.S. East Coast (especially New England and Mid-Atlantic), United States",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://weather.com/storms/winter/news/2018-03-01-winter-storm-riley-noreaster-high-winds-coastal-flooding-heavy-snow",
+          "source_name": "The Weather Channel",
+          "published_at": "2018-03-01T00:00:00Z",
+          "headline": "2018-03-01-winter-storm-riley-noreaster-high-winds-coastal-flooding-heavy-snow",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Winter Storm Riley... high winds, coastal flooding and heavy snow",
+            "source_url": "https://weather.com/storms/winter/news/2018-03-01-winter-storm-riley-noreaster-high-winds-coastal-flooding-heavy-snow"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.75,
+        "location": 0.55,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "winter-storm-riley-2018-us-east-coast",
+        "fingerprint": "fp_20180301_winter_storm_riley_us_country"
+      }
+    },
+    {
+      "event_id": "geol_png_state_of_emergency_2018-03-01",
+      "title": "Papua New Guinea declares state of emergency after earthquake and landslides",
+      "description": "Following the 26 February 2018 earthquake in Papua New Guinea and ensuing impacts including landslides and infrastructure damage, authorities declared a state of emergency for several affected provinces on 1 March 2018.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2018-03-01T00:00:00.000Z",
+        "time_confidence": 0.5,
+        "event_date_utc": "2018-03-01T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Papua New Guinea (Port Moresby proxy for multi-province emergency)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "PG",
+        "capital_used": "Port Moresby",
+        "lat": -9.4438,
+        "lon": 147.1803,
+        "precision": "proxy",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.65
+      },
+      "sources": [
+        {
+          "url": "https://www.who.int/westernpacific/emergencies/papua-new-guinea-earthquake",
+          "source_name": "World Health Organization (Western Pacific)",
+          "published_at": "2018-03-01T00:00:00.000Z",
+          "headline": "Papua New Guinea earthquake",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "World Health Organization"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "A state of emergency has been declared for the provinces of Hela, Southern Highlands, Western and Enga.",
+            "source_url": "https://www.who.int/westernpacific/emergencies/papua-new-guinea-earthquake"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.85,
+        "location": 0.65,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "2018 Papua New Guinea Highlands earthquake emergency response",
+        "fingerprint": "geological|papua new guinea declares state of emergency after earthquake and landslides|PG|2018-03-01"
+      }
+    },
+    {
+      "event_id": "geol_png_aftershock_landslide_2018-03-05",
+      "title": "Aftershock triggers landslide during Papua New Guinea Highlands quake response",
+      "description": "During the continuing response to the late-February 2018 Papua New Guinea earthquake, a strong aftershock was reported in early March and was linked in reporting to a landslide in the Highlands area with fatalities reported.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2018-03-05T00:00:00.000Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "2018-03-05T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Papua New Guinea (Port Moresby proxy for Highlands reports)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "PG",
+        "capital_used": "Port Moresby",
+        "lat": -9.4438,
+        "lon": 147.1803,
+        "precision": "proxy",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.abc.net.au/news/2018-03-05/aftershocks-rattles-quake-hit-papua-new-guinea/9508534",
+          "source_name": "ABC News (Australia)",
+          "published_at": "2018-03-05T00:00:00.000Z",
+          "headline": "Aftershocks rattle quake-hit Papua New Guinea",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.theguardian.com/world/2018/mar/04/papua-new-guinea-hit-by-aftershocks-of-fatal-earthquake",
+          "source_name": "The Guardian",
+          "published_at": "2018-03-04T00:00:00.000Z",
+          "headline": "Papua New Guinea hit by aftershocks of fatal earthquake",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "ABC News",
+          "The Guardian"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.5,
+        "category": 0.8,
+        "location": 0.55,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "2018 Papua New Guinea Highlands earthquake emergency response",
+        "fingerprint": "geological|aftershock triggers landslide during papua new guinea highlands quake response|PG|2018-03-05"
+      }
+    },
+    {
+      "event_id": "20180313_hollyfrontier_refinery_fire_oily_residue_west_bountiful_ut",
+      "title": "HollyFrontier refinery fire leaves oily film on nearby homes and school grounds",
+      "description": "After an overnight refinery fire, residents reported a thin film of oil on cars and homes and on an elementary-school playground in the nearby community. The reports suggest fallout from the incident affected surrounding areas.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2018-03-13T00:00:00.000Z",
+        "event_end": "2018-03-13T23:59:59.000Z",
+        "reported_at": "2018-03-13T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2018-03-13T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "West Bountiful / Bountiful area, Utah, United States",
+        "jurisdiction_level": "city",
+        "admin1": "Utah",
+        "country": "US",
+        "capital_used": null,
+        "lat": 40.8894,
+        "lon": -111.8808,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.ksl.com/article/46279894/refinery-fire-leaves-film-of-oil-on-school-homes",
+          "source_name": "KSL.com",
+          "published_at": "2018-03-13T00:00:00.000Z",
+          "headline": "Refinery fire leaves film of oil on school, homes",
+          "byline": null,
+          "accessed_utc": "2018-03-13T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://earthjustice.org/feature/toxic-catastrophes-texas-national-chemical-disaster-rule",
+          "source_name": "Earthjustice",
+          "published_at": "2018-03-01T00:00:00.000Z",
+          "headline": "Toxic catastrophes & the national chemical disaster rule (feature)",
+          "byline": null,
+          "accessed_utc": "2018-03-13T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "HollyFrontier"
+        ],
+        "substances": [
+          "oil"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "a thin film of oil deposited on cars, homes, and an elementary-school playground",
+            "source_url": "https://www.ksl.com/article/46279894/refinery-fire-leaves-film-of-oil-on-school-homes"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.8,
+        "location": 0.6,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "HollyFrontier refinery fire oily film West Bountiful UT 2018-03-13",
+        "fingerprint": "fires|hollyfrontier refinery fire leaves oily film on nearby homes and school grounds|west bountiful / bountiful area, utah, united states|2018-03-13"
+      }
+    },
+    {
+      "event_id": "20180311_chalmette_refinery_unplanned_flaring_fireball_chalmette_la",
+      "title": "Chalmette Refinery unplanned flaring creates large visible fireball during turnaround",
+      "description": "An unplanned flaring event at the Chalmette Refinery during a maintenance turnaround produced a large visible fireball. The incident raised community concern about industrial emissions and potential air-quality impacts.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2018-03-11T00:00:00.000Z",
+        "event_end": "2018-03-11T23:59:59.000Z",
+        "reported_at": "2018-03-11T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2018-03-11T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Chalmette, Louisiana, United States",
+        "jurisdiction_level": "city",
+        "admin1": "Louisiana",
+        "country": "US",
+        "capital_used": null,
+        "lat": 29.9422,
+        "lon": -89.9634,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://www.fox8live.com/story/37698583/officials-heavy-flaring-at-chalmette-refinery-was-accident-not-routine/",
+          "source_name": "WVUE Fox 8 (NOLA)",
+          "published_at": "2018-03-11T00:00:00.000Z",
+          "headline": "Officials: Heavy flaring at Chalmette Refinery was accident, not routine",
+          "byline": null,
+          "accessed_utc": "2018-03-11T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://earthjustice.org/feature/toxic-catastrophes-texas-national-chemical-disaster-rule",
+          "source_name": "Earthjustice",
+          "published_at": "2018-03-01T00:00:00.000Z",
+          "headline": "Toxic catastrophes & the national chemical disaster rule (feature)",
+          "byline": null,
+          "accessed_utc": "2018-03-11T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Chalmette Refinery"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "an unplanned flaring event generated a large fireball",
+            "source_url": "https://www.fox8live.com/story/37698583/officials-heavy-flaring-at-chalmette-refinery-was-accident-not-routine/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.8,
+        "location": 0.7,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Chalmette refinery heavy flaring fireball 2018-03-11",
+        "fingerprint": "fires|chalmette refinery unplanned flaring creates large visible fireball during turnaround|chalmette, louisiana, united states|2018-03-11"
+      }
+    },
+    {
+      "event_id": "evt_20180320_cobourg_coral_bleaching",
+      "title": "Coral bleaching reported near Cobourg Peninsula reefs (Northern Territory, Australia)",
+      "description": "A report described coral bleaching observed on reefs near the Cobourg Peninsula in Australia’s Northern Territory, citing elevated heat-stress conditions and risk of coral mortality. The account referenced NOAA heat-stress alerts as indicating high bleaching risk in the area.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2018-03-20T00:00:00.000Z",
+        "event_end": "2018-03-20T23:59:59.000Z",
+        "reported_at": "2018-03-01T00:00:00Z",
+        "time_confidence": 0.5,
+        "event_date_utc": "2018-03-20T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Cobourg Peninsula / Garig Gunak Barlu National Park area, Northern Territory, Australia",
+        "jurisdiction_level": "site",
+        "admin1": "Northern Territory",
+        "country": "AU",
+        "capital_used": null,
+        "lat": -11.335,
+        "lon": 132.196,
+        "precision": "neighborhood",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.45
+      },
+      "sources": [
+        {
+          "url": "https://phys.org/news/2018-03-coral-outbreak-northern-territory-oceans.html",
+          "source_name": "Phys.org",
+          "published_at": "2018-03-01T00:00:00Z",
+          "headline": "Coral bleaching outbreak reported at Cobourg Peninsula reefs in Northern Territory",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "coral reefs"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "coral bleaching outbreak ... on reefs near Darwin’s Cobourg Peninsula",
+            "source_url": "https://phys.org/news/2018-03-coral-outbreak-northern-territory-oceans.html"
+          },
+          {
+            "quote": "NOAA heat-stress alerts ... high risk of bleaching and coral mortality",
+            "source_url": "https://phys.org/news/2018-03-coral-outbreak-northern-territory-oceans.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.46,
+        "category": 0.7,
+        "location": 0.45,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "coral_bleaching_cobourg_peninsula_2018_03",
+        "fingerprint": "fp_coral_bleaching_cobourg_peninsula_2018-03-20"
+      }
+    },
+    {
+      "event_id": "20180312_us_epa_ozone_designations_court_order",
+      "title": "Federal court orders EPA to proceed with implementing 2015 ozone standard designations",
+      "description": "A U.S. district court ordered the U.S. Environmental Protection Agency (EPA) to move forward with required designations under the 2015 ozone (smog) standard after the agency missed a legal deadline. The decision concerns implementation of federal air quality protections tied to the 2015 ozone standard.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2018-03-12T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2018-03-12T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States (federal court action)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.65
+      },
+      "sources": [
+        {
+          "url": "https://earthjustice.org/press/2018/court-orders-epa-to-move-forward-with-implementing-strengthened-smog-standard",
+          "source_name": "Earthjustice",
+          "published_at": "2018-03-12T00:00:00.000Z",
+          "headline": "Court Orders EPA to Move Forward with Implementing Strengthened Smog Standard",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Environmental Protection Agency (EPA)"
+        ],
+        "substances": [
+          "ozone"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Court ordered EPA to move forward with implementing strengthened smog standard.",
+            "source_url": "https://earthjustice.org/press/2018/court-orders-epa-to-move-forward-with-implementing-strengthened-smog-standard"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.67,
+        "category": 0.8,
+        "location": 0.65,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "possible_opinion_or_advocacy",
+        "date_ambiguous",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "EPA ozone designations court order 2018-03-12 US",
+        "fingerprint": "fp_20180312_us_epa_ozone_designations_court_order"
+      }
+    }
+  ]
+}

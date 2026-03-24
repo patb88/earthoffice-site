@@ -1,0 +1,947 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_1983-03_normalize_2026-01-18T095025398Z",
+    "generated_utc": "2026-01-18T09:50:25.398Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "1983-03",
+    "window": {
+      "start_utc": "1983-03-01T00:00:00.000Z",
+      "end_utc": "1983-03-31T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "evt_19830302_nowruz_oilspill_platform_attack",
+      "title": "Nowruz offshore platform attack sparks major oil spill and fires in the Persian Gulf",
+      "description": "During the Iran–Iraq war, an attack on Iran's Nowruz offshore oil facilities led to a major crude oil spill and ongoing burning slick in the Persian Gulf. Reporting described efforts to stop the spill being hampered by the conflict, with risks to nearby coastlines and regional desalination facilities.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1983-03-31T00:00:00Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "1983-03-02T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Nowruz Oil Field, Persian Gulf (Iranian waters)",
+        "jurisdiction_level": "site",
+        "admin1": null,
+        "country": "IR",
+        "capital_used": null,
+        "lat": 0,
+        "lon": 0,
+        "precision": "proxy",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.2
+      },
+      "sources": [
+        {
+          "url": "https://incidentnews.noaa.gov/incident/6262/512440",
+          "source_name": "NOAA IncidentNews",
+          "published_at": "1983-03-31T00:00:00Z",
+          "headline": "Incident record: Nowruz Oil Field (Incident 6262 / 512440)",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.washingtonpost.com/archive/politics/1983/03/31/gulf-war-blocks-effort-to-stop-large-oil-spill/3a8f38a8-d8d2-4967-abb7-27d4344a58b1/",
+          "source_name": "The Washington Post",
+          "published_at": "1983-03-31T00:00:00Z",
+          "headline": "Gulf War Blocks Effort to Stop Large Oil Spill",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA"
+        ],
+        "substances": [
+          "crude oil"
+        ],
+        "ecosystems": [
+          "Persian Gulf"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Gulf War Blocks Effort to Stop Large Oil Spill",
+            "source_url": "https://www.washingtonpost.com/archive/politics/1983/03/31/gulf-war-blocks-effort-to-stop-large-oil-spill/3a8f38a8-d8d2-4967-abb7-27d4344a58b1/"
+          },
+          {
+            "quote": "Incident record: Nowruz Oil Field",
+            "source_url": "https://incidentnews.noaa.gov/incident/6262/512440"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.42,
+        "category": 0.75,
+        "location": 0.2,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "paywalled_or_partial",
+        "low_confidence_location"
+      ],
+      "dedupe": {
+        "cluster_hint": "Nowruz Oil Field spill (1983)",
+        "fingerprint": "fp_nowruz_oilspill_persiangulf_1983-03"
+      }
+    },
+    {
+      "event_id": "ev_19830301_cyclone_oscar_fiji",
+      "title": "Severe Tropical Cyclone Oscar impacts Fiji with destructive winds and flooding",
+      "description": "Cyclone Oscar affected Fiji in early March 1983, bringing strong winds and heavy rainfall that led to flooding and damage. Reports said hundreds fled their homes as the cyclone struck.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1983-03-01T12:00:00Z",
+        "event_end": "1983-03-06T12:00:00Z",
+        "reported_at": "1983-03-01T00:00:00Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "1983-03-01T12:00:00Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Fiji",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "FJ",
+        "capital_used": "Suva",
+        "lat": -18.1416,
+        "lon": 178.4419,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.8
+      },
+      "sources": [
+        {
+          "url": "https://www.upi.com/Archives/1983/03/01/Hundreds-flee-homes-as-cyclone-Oscar-strikes/",
+          "source_name": "UPI",
+          "published_at": "1983-03-01T00:00:00Z",
+          "headline": "Hundreds flee homes as cyclone Oscar strikes",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://trove.nla.gov.au/newspaper/article/116460622",
+          "source_name": "Trove (National Library of Australia)",
+          "published_at": "1983-03-01T00:00:00Z",
+          "headline": "Newspaper article (Trove ID 116460622)",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Fijian government"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Hundreds flee homes as cyclone Oscar strikes",
+            "source_url": "https://www.upi.com/Archives/1983/03/01/Hundreds-flee-homes-as-cyclone-Oscar-strikes/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.75,
+        "location": 0.8,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "secondary_sources_only",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "1983-03 Cyclone Oscar Fiji",
+        "fingerprint": "fp_1983-03_cyclone-oscar_fiji_1983-03-01"
+      }
+    },
+    {
+      "event_id": "ev_19830301_ca_winter_storm_coyote_creek",
+      "title": "Major winter storm causes flooding, mudslides and evacuations in California",
+      "description": "A powerful storm system brought heavy rain, rough seas, flooding and mudslides across California in early March 1983. Reports said tornadoes occurred in the Los Angeles area and a levee failure on Coyote Creek forced evacuations near the San Francisco Bay area.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1983-03-01T12:00:00Z",
+        "event_end": "1983-03-01T12:00:00Z",
+        "reported_at": "1983-03-01T00:00:00Z",
+        "time_confidence": 0.5,
+        "event_date_utc": "1983-03-01T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "California, USA",
+        "jurisdiction_level": "state",
+        "admin1": "California",
+        "country": "US",
+        "capital_used": "Sacramento",
+        "lat": 38.5816,
+        "lon": -121.4944,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://www.upi.com/Archives/1983/03/01/The-worst-storm-of-a-winter-already-three-times/1084415342800/",
+          "source_name": "UPI",
+          "published_at": "1983-03-01T00:00:00Z",
+          "headline": "The worst storm of a winter already three times ...",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "The worst storm of a winter already three times ...",
+            "source_url": "https://www.upi.com/Archives/1983/03/01/The-worst-storm-of-a-winter-already-three-times/1084415342800/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.8,
+        "location": 0.7,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "1983-03-01 California storm UPI",
+        "fingerprint": "fp_1983-03_california_storm_sacramento_1983-03-01"
+      }
+    },
+    {
+      "event_id": "ev_19830301_us_storm_dakotas_colorado",
+      "title": "Storm brings blizzard conditions to the Dakotas and avalanche danger in Colorado",
+      "description": "A strong storm produced heavy snow and high winds across the Dakotas, reducing visibility, while heavy snowfall increased avalanche danger in Colorado’s mountains. The impacts were reported on March 7, 1983.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1983-03-07T12:00:00Z",
+        "event_end": "1983-03-07T12:00:00Z",
+        "reported_at": "1983-03-07T00:00:00Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "1983-03-07T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, D.C.",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.45
+      },
+      "sources": [
+        {
+          "url": "https://www.upi.com/Archives/1983/03/07/Heavy-snow-driven-by-bone-chilling-high-winds-cut-visibility/2457415861200/",
+          "source_name": "UPI",
+          "published_at": "1983-03-07T00:00:00Z",
+          "headline": "Heavy snow driven by bone-chilling high winds cut visibility ...",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Heavy snow driven by bone-chilling high winds cut visibility",
+            "source_url": "https://www.upi.com/Archives/1983/03/07/Heavy-snow-driven-by-bone-chilling-high-winds-cut-visibility/2457415861200/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.8,
+        "location": 0.45,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "location_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "1983-03-07 US storm Dakotas Colorado UPI",
+        "fingerprint": "fp_1983-03_us_storm_dc_1983-03-07"
+      }
+    },
+    {
+      "event_id": "ev_19830326_pacific_storm_plains_nebraska",
+      "title": "Pacific storm brings heavy snow and blizzard warnings across parts of the Plains",
+      "description": "A Pacific storm intensified as it crossed the Plains in late March 1983, producing heavy snow and strong winds. Reports noted blizzard warnings for parts of Nebraska and South Dakota as the system moved toward the Great Lakes and Northeast.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1983-03-26T12:00:00Z",
+        "event_end": "1983-03-26T12:00:00Z",
+        "reported_at": "1983-03-26T00:00:00Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "1983-03-26T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, D.C.",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.4
+      },
+      "sources": [
+        {
+          "url": "https://www.upi.com/Archives/1983/03/26/A-Pacific-storm-grew-to-near-blizzard-force-on-the/7366417502800/",
+          "source_name": "UPI",
+          "published_at": "1983-03-26T00:00:00Z",
+          "headline": "A Pacific storm grew to near blizzard force on the ...",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "A Pacific storm grew to near blizzard force",
+            "source_url": "https://www.upi.com/Archives/1983/03/26/A-Pacific-storm-grew-to-near-blizzard-force-on-the/7366417502800/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.8,
+        "location": 0.4,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "location_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "1983-03-26 Pacific storm Plains UPI",
+        "fingerprint": "fp_1983-03_pacific_storm_dc_1983-03-26"
+      }
+    },
+    {
+      "event_id": "1983-03-31_popayan-earthquake_popayan-colombia",
+      "title": "Popayán earthquake damages city during Holy Week",
+      "description": "A damaging earthquake struck near Popayán, Colombia on March 31, 1983, toppling buildings including churches and causing significant casualties and destruction reported at the time. A USGS retrospective publication later noted March–April 1983 as an unusually deadly and damaging earthquake period, with the most devastating event occurring in Colombia.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1983-03-31T13:12:53Z",
+        "event_end": "1983-03-31T13:12:53Z",
+        "reported_at": "1983-03-31T00:00:00Z",
+        "time_confidence": 0.8,
+        "event_date_utc": "1983-03-31T13:12:53Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Popayán, Cauca Department, Colombia",
+        "jurisdiction_level": "city",
+        "admin1": "Cauca Department",
+        "country": "CO",
+        "capital_used": null,
+        "lat": 2.4448,
+        "lon": -76.6147,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://www.upi.com/Archives/1983/03/31/An-earthquake-devastated-the-mountain-city-of-Popayan-Thursday/2938809147014/",
+          "source_name": "UPI",
+          "published_at": "1983-03-31T00:00:00Z",
+          "headline": "An earthquake devastated the mountain city of Popayan Thursday",
+          "byline": null,
+          "accessed_utc": "2026-01-18T03:40:02.866Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.upi.com/Archives/1983/03/31/An-earthquake-toppled-two-churches-packed-with-Holy-Week/9903417934800/",
+          "source_name": "UPI",
+          "published_at": "1983-03-31T00:00:00Z",
+          "headline": "An earthquake toppled two churches packed with Holy Week",
+          "byline": null,
+          "accessed_utc": "2026-01-18T03:40:02.866Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.usgs.gov/publications/earthquakes-march-april-1983",
+          "source_name": "USGS",
+          "published_at": "1983-04-01T00:00:00Z",
+          "headline": "Earthquakes, March–April 1983",
+          "byline": null,
+          "accessed_utc": "2026-01-18T03:40:02.866Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "UPI",
+          "USGS"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "An earthquake devastated the mountain city of Popayan Thursday",
+            "source_url": "https://www.upi.com/Archives/1983/03/31/An-earthquake-devastated-the-mountain-city-of-Popayan-Thursday/2938809147014/"
+          },
+          {
+            "quote": "An earthquake toppled two churches packed with Holy Week",
+            "source_url": "https://www.upi.com/Archives/1983/03/31/An-earthquake-toppled-two-churches-packed-with-Holy-Week/9903417934800/"
+          },
+          {
+            "quote": "Earthquakes, March–April 1983",
+            "source_url": "https://www.usgs.gov/publications/earthquakes-march-april-1983"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.74,
+        "category": 0.9,
+        "location": 0.7,
+        "summary_grounding": 0.7
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "1983 Popayan earthquake",
+        "fingerprint": "1983-03-31_popayan-colombia_geological"
+      }
+    },
+    {
+      "event_id": "fires_1983-03_cann-river-fire-16_east-gippsland_vic_au",
+      "title": "Cann River campaign fire #16 spread toward Genoa and Mallacoota Inlets, blocking Princes Highway (Victoria, Australia)",
+      "description": "A breakaway fire from an earlier Cann River campaign fire reportedly began around 4 March 1983 in East Gippsland, Victoria. It spread toward the Genoa, Tamboon and Mallacoota Inlets area and was reported to have blocked the Princes Highway, burning until about 20 March 1983.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1983-03-04T12:00:00Z",
+        "event_end": "1983-03-20T12:00:00Z",
+        "reported_at": "2022-08-14T00:00:00Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "1983-03-04T12:00:00Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "East Gippsland (Cann River/Genoa/Tamboon/Mallacoota Inlets area), Victoria, Australia",
+        "jurisdiction_level": "state",
+        "admin1": "Victoria",
+        "country": "AU",
+        "capital_used": "Melbourne",
+        "lat": -37.8136,
+        "lon": 144.9631,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://victoriasforestsbushfireheritage.com/2022/08/14/cann-river-campaign-fires-1983/",
+          "source_name": "Victoria's Forests & Bushfire Heritage",
+          "published_at": "2022-08-14T00:00:00Z",
+          "headline": "Cann River campaign fires 1983",
+          "byline": null,
+          "accessed_utc": "2026-01-18T03:40:24.881Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.victoriasforestryheritage.org.au/activities1/fire/27-the-1982-83-fire-season.html",
+          "source_name": "Victoria's Forestry Heritage",
+          "published_at": "0001-01-01T00:00:00Z",
+          "headline": "The 1982-83 fire season",
+          "byline": null,
+          "accessed_utc": "2026-01-18T03:40:24.881Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Cann River campaign fires 1983",
+            "source_url": "https://victoriasforestsbushfireheritage.com/2022/08/14/cann-river-campaign-fires-1983/"
+          },
+          {
+            "quote": "The 1982-83 fire season",
+            "source_url": "https://www.victoriasforestryheritage.org.au/activities1/fire/27-the-1982-83-fire-season.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.52,
+        "category": 0.8,
+        "location": 0.6,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "secondary_sources_only",
+        "date_ambiguous",
+        "paywalled_or_partial",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Cann River campaign fires 1983 (East Gippsland, Victoria)",
+        "fingerprint": "fires|cann_river_fire_16|victoria|1983-03-04_1983-03-20"
+      }
+    },
+    {
+      "event_id": "fires_1983-03_loch-sport-heathland-fire_loch-sport-peninsula_vic_au",
+      "title": "Loch Sport heathland fire burned near Seacombe and Loch Sport (Victoria, Australia)",
+      "description": "A fire reportedly broke out near Loch Sport (Gippsland, Victoria) on the evening of 10 March 1983, burning intensely in coastal heathland on the southern shores of Lake Victoria. It was reported to have burned about 1,900 hectares and to have been controlled by late morning on 11 March 1983.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1983-03-10T12:00:00Z",
+        "event_end": "1983-03-11T12:00:00Z",
+        "reported_at": "2023-03-10T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1983-03-10T12:00:00Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Near Loch Sport / Seacombe, Loch Sport Peninsula (Gippsland), Victoria, Australia",
+        "jurisdiction_level": "state",
+        "admin1": "Victoria",
+        "country": "AU",
+        "capital_used": "Melbourne",
+        "lat": -37.8136,
+        "lon": 144.9631,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://victoriasforestsbushfireheritage.com/2023/03/10/loch-sport-1983/",
+          "source_name": "Victoria's Forests & Bushfire Heritage",
+          "published_at": "2023-03-10T00:00:00Z",
+          "headline": "Loch Sport 1983",
+          "byline": null,
+          "accessed_utc": "2026-01-18T03:40:24.881Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://victoriasforestsbushfireheritage.com/2022/06/22/major-bushfires-for-the-forests-commission-in-1982-83/",
+          "source_name": "Victoria's Forests & Bushfire Heritage",
+          "published_at": "2022-06-22T00:00:00Z",
+          "headline": "Major bushfires for the Forests Commission in 1982-83",
+          "byline": null,
+          "accessed_utc": "2026-01-18T03:40:24.881Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Country Fire Authority (CFA)"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "coastal heathland"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Loch Sport 1983",
+            "source_url": "https://victoriasforestsbushfireheritage.com/2023/03/10/loch-sport-1983/"
+          },
+          {
+            "quote": "Major bushfires for the Forests Commission in 1982-83",
+            "source_url": "https://victoriasforestsbushfireheritage.com/2022/06/22/major-bushfires-for-the-forests-commission-in-1982-83/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.85,
+        "location": 0.6,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "secondary_sources_only",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Loch Sport 1983 (Gippsland, Victoria)",
+        "fingerprint": "fires|loch_sport|victoria|1983-03-10_1983-03-11"
+      }
+    },
+    {
+      "event_id": "evt_19830322_fws_wetland_losses_critical_us",
+      "title": "U.S. Fish & Wildlife Service warns wetland losses are critical, urges congressional action",
+      "description": "A U.S. Fish & Wildlife Service press release dated March 22, 1983 warns that wetland losses are critical and calls for congressional action. The statement frames wetland habitat loss as a major national conservation concern.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1983-03-22T12:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1983-03-22T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States (national)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.85
+      },
+      "sources": [
+        {
+          "url": "https://www.fws.gov/press-release/1983-03/wetland-losses-critical-secretary-watt-asks-congress-action-march-22-1983",
+          "source_name": "U.S. Fish & Wildlife Service",
+          "published_at": "1983-03-22T12:00:00Z",
+          "headline": "Wetland losses critical; Secretary Watt asks Congress for action March 22, 1983",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.fws.gov/media/wetland-losses-critical-secretary-watt-asks-congress-action-march-22-1983",
+          "source_name": "U.S. Fish & Wildlife Service",
+          "published_at": "1983-03-22T12:00:00Z",
+          "headline": "Wetland losses critical; Secretary Watt asks Congress for action March 22, 1983",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Fish & Wildlife Service"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "wetlands"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.7,
+        "location": 0.85,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "fws_wetland_losses_critical_1983_03",
+        "fingerprint": "fws_wetland_losses_critical|US|1983-03-22"
+      }
+    },
+    {
+      "event_id": "evt_19830304_san_bruno_mountain_hcp_itp",
+      "title": "Incidental take permit issued for San Bruno Mountain Habitat Conservation Plan",
+      "description": "An incidental take permit tied to the San Bruno Mountain Habitat Conservation Plan is described as having been originally issued on March 4, 1983. The permit is associated with a conservation framework intended to manage development impacts while conserving habitat for rare species.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1983-03-04T12:00:00Z",
+        "time_confidence": 0.35,
+        "event_date_utc": "1983-03-04T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "San Bruno Mountain, San Mateo County, California, USA",
+        "jurisdiction_level": "site",
+        "admin1": "California",
+        "country": "US",
+        "capital_used": null,
+        "lat": 37.687,
+        "lon": -122.433,
+        "precision": "exact",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.fws.gov/species-publication-action/preparation-environmental-impact-statement-amendment-incidental-take-0",
+          "source_name": "U.S. Fish & Wildlife Service",
+          "published_at": "1999-02-16T00:00:00Z",
+          "headline": "Preparation of an Environmental Impact Statement; Amendment of an Incidental Take Permit (San Bruno Mountain)",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.govinfo.gov/content/pkg/FR-1999-02-16/html/99-3616.htm",
+          "source_name": "Federal Register (GovInfo)",
+          "published_at": "1999-02-16T00:00:00Z",
+          "headline": "Preparation of an Environmental Impact Statement; Amendment of an Incidental Take Permit",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Fish & Wildlife Service"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.42,
+        "category": 0.6,
+        "location": 0.55,
+        "summary_grounding": 0.4
+      },
+      "quality_flags": [
+        "secondary_sources_only",
+        "date_ambiguous",
+        "location_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "san_bruno_mountain_hcp_itp",
+        "fingerprint": "san_bruno_mountain_hcp_itp|San Bruno Mountain|1983-03-04"
+      }
+    },
+    {
+      "event_id": "policy_regulation_us_third_circuit_nrdc_v_epa_eaja_1983-03-23",
+      "title": "Third Circuit rules on NRDC v. EPA attorneys’ fees under EAJA tied to prior Clean Water Act dispute",
+      "description": "On March 23, 1983, the U.S. Court of Appeals for the Third Circuit issued a decision in Natural Resources Defense Council, Inc. v. U.S. Environmental Protection Agency concerning an attorneys’ fees petition under the Equal Access to Justice Act. The fee request was connected to prior litigation over EPA actions affecting Clean Water Act pretreatment regulations and administrative procedure requirements.",
+      "category_primary": "policy_regulation",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1983-03-23T12:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1983-03-23T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States (U.S. Court of Appeals for the Third Circuit)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://law.justia.com/cases/federal/appellate-courts/F2/703/700/12071/",
+          "source_name": "Justia Law",
+          "published_at": "1983-03-23T12:00:00Z",
+          "headline": "Natural Resources Defense Council, Inc. v. U.S. Environmental Protection Agency",
+          "byline": null,
+          "accessed_utc": "2026-01-18T03:41:22.615Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Natural Resources Defense Council, Inc. (NRDC)",
+          "U.S. Environmental Protection Agency (EPA)",
+          "U.S. Court of Appeals for the Third Circuit"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Natural Resources Defense Council, Inc. v. U.S. Environmental Protection Agency",
+            "source_url": "https://law.justia.com/cases/federal/appellate-courts/F2/703/700/12071/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.75,
+        "location": 0.55,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "NRDC v. EPA EAJA fee award Third Circuit (Clean Water Act pretreatment regs)",
+        "fingerprint": "policy_regulation|nrdc v epa eaja attorneys fees|US|1983-03-23"
+      }
+    },
+    {
+      "event_id": "policy_regulation_us_hr2362_environmental_protection_act_1983_1983-03-24",
+      "title": "H.R. 2362 introduced: “Environmental Protection Act of 1983”",
+      "description": "On March 24, 1983, a bill designated H.R. 2362, titled the “Environmental Protection Act of 1983,” was introduced in the U.S. House of Representatives. The introduction represents a federal legislative action relevant to environmental governance.",
+      "category_primary": "policy_regulation",
+      "polarity": "unclear",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1983-03-24T12:00:00Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "1983-03-24T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States (U.S. House of Representatives)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://www.congress.gov/bill/98th-congress/house-bill/2362",
+          "source_name": "Congress.gov",
+          "published_at": "1983-03-24T12:00:00Z",
+          "headline": "H.R.2362 — Environmental Protection Act of 1983",
+          "byline": null,
+          "accessed_utc": "2026-01-18T03:41:22.615Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. House of Representatives",
+          "U.S. Congress"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": [
+          "James H. Scheuer"
+        ]
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "H.R. 2362: Environmental Protection Act of 1983",
+            "source_url": "https://www.congress.gov/bill/98th-congress/house-bill/2362"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.72,
+        "category": 0.8,
+        "location": 0.7,
+        "summary_grounding": 0.7
+      },
+      "quality_flags": [
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "H.R. 2362 Environmental Protection Act of 1983 introduction",
+        "fingerprint": "policy_regulation|hr 2362 environmental protection act of 1983|US|1983-03-24"
+      }
+    }
+  ]
+}

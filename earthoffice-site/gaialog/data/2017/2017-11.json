@@ -1,0 +1,1013 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_2017-11_normalize_2026-01-16T061906942Z",
+    "generated_utc": "2026-01-16T06:19:06.942Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "2017-11",
+    "window": {
+      "start_utc": "2017-11-01T00:00:00.000Z",
+      "end_utc": "2017-11-30T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "evt-20171116-keystone-marshallcounty-sd",
+      "title": "Keystone Pipeline oil spill shuts line near Marshall County, South Dakota",
+      "description": "A leak on TransCanada’s Keystone Pipeline released about 210,000 gallons (about 5,000 barrels) of oil near Marshall County, South Dakota. The affected portion of the pipeline was shut down and spill response actions began.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2017-11-16T00:00:00.000Z",
+        "event_end": "2017-11-16T23:59:59.000Z",
+        "reported_at": "2017-11-16T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2017-11-16T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Marshall County, South Dakota, USA",
+        "jurisdiction_level": "site",
+        "admin1": "South Dakota",
+        "country": "US",
+        "capital_used": null,
+        "lat": 45.7069,
+        "lon": -97.1473,
+        "precision": "admin1",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.45
+      },
+      "sources": [
+        {
+          "url": "https://time.com/5028664/keystone-pipeline-leak-210000-gallons-shut-down/",
+          "source_name": "Time",
+          "published_at": "2017-11-16T00:00:00.000Z",
+          "headline": "Keystone Pipeline Leak Spills 210,000 Gallons of Oil in South Dakota, Shutting Down Line",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "TransCanada",
+          "Keystone Pipeline"
+        ],
+        "substances": [
+          "oil"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "spilled about 210,000 gallons (5,000 barrels) of oil",
+            "source_url": "https://time.com/5028664/keystone-pipeline-leak-210000-gallons-shut-down/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.85,
+        "location": 0.45,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "keystone-pipeline-spill-south-dakota-2017-11-16",
+        "fingerprint": "keystone-pipeline-oil-spill|marshall-county-sd|2017-11-16"
+      }
+    },
+    {
+      "event_id": "evt-20171107-delhi-smog-emergency",
+      "title": "Delhi declares public health emergency during severe smog episode",
+      "description": "Severe air pollution and smog in Delhi led authorities to declare an emergency and implement restrictions. Reports described school-related disruptions and curbs on activities such as construction and truck traffic as air quality reached hazardous levels.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2017-11-07T00:00:00.000Z",
+        "event_end": "2017-11-09T23:59:59.000Z",
+        "reported_at": "2017-11-07T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2017-11-07T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Delhi (National Capital Region), India",
+        "jurisdiction_level": "city",
+        "admin1": "Delhi",
+        "country": "IN",
+        "capital_used": null,
+        "lat": 28.6139,
+        "lon": 77.209,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.8
+      },
+      "sources": [
+        {
+          "url": "https://www.theguardian.com/world/2017/nov/07/delhi-india-declares-pollution-emergency-as-smog-chokes-city",
+          "source_name": "The Guardian",
+          "published_at": "2017-11-07T00:00:00.000Z",
+          "headline": "Delhi declares pollution emergency as smog chokes city",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.cnbc.com/2017/11/09/new-delhi-declares-emergency-as-toxic-smog-thickens-by-the-hour.html",
+          "source_name": "CNBC",
+          "published_at": "2017-11-09T00:00:00.000Z",
+          "headline": "New Delhi declares emergency as toxic smog thickens by the hour",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.upi.com/Top_News/World-News/2017/11/07/Health-emergency-declared-in-New-Delhi-amid-heavy-air-pollution/7221510072985/",
+          "source_name": "UPI",
+          "published_at": "2017-11-07T00:00:00.000Z",
+          "headline": "Health emergency declared in New Delhi amid heavy air pollution",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [
+          "air pollution",
+          "smog"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "declares pollution emergency as smog chokes city",
+            "source_url": "https://www.theguardian.com/world/2017/nov/07/delhi-india-declares-pollution-emergency-as-smog-chokes-city"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.7,
+        "category": 0.8,
+        "location": 0.85,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "needs_dedupe_check",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "delhi-smog-emergency-2017-11",
+        "fingerprint": "delhi-smog-emergency|delhi-in|2017-11-07"
+      }
+    },
+    {
+      "event_id": "evt-20171113-north-liberty-ia-boil-water",
+      "title": "Boil-water advisory issued after water main break in North Liberty, Iowa",
+      "description": "A water main break in North Liberty, Iowa prompted a boil-water advisory due to potential bacterial contamination risk. After sampling results, the advisory was lifted.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2017-11-13T00:00:00.000Z",
+        "event_end": "2017-11-16T23:59:59.000Z",
+        "reported_at": "2017-11-13T00:00:00.000Z",
+        "time_confidence": 0.75,
+        "event_date_utc": "2017-11-13T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "North Liberty, Iowa, USA",
+        "jurisdiction_level": "city",
+        "admin1": "Iowa",
+        "country": "US",
+        "capital_used": null,
+        "lat": 41.7492,
+        "lon": -91.5979,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.85
+      },
+      "sources": [
+        {
+          "url": "https://northlibertyiowa.org/2017/11/13/drinking-water-advisory-issued-on-monday-nov-13-2017/",
+          "source_name": "City of North Liberty, Iowa",
+          "published_at": "2017-11-13T00:00:00.000Z",
+          "headline": "Drinking Water Advisory issued on Monday, Nov. 13, 2017",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "City of North Liberty"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "A drinking water advisory has been issued",
+            "source_url": "https://northlibertyiowa.org/2017/11/13/drinking-water-advisory-issued-on-monday-nov-13-2017/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.66,
+        "category": 0.75,
+        "location": 0.85,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "needs_dedupe_check",
+        "paywalled_or_partial"
+      ],
+      "dedupe": {
+        "cluster_hint": "north-liberty-ia-boil-water-2017-11",
+        "fingerprint": "boil-water-advisory|north-liberty-ia|2017-11-13"
+      }
+    },
+    {
+      "event_id": "evt-20171101-walls-ms-lost-radioactive-device-nrc",
+      "title": "NRC event notification posts report of lost or stolen device with radioactive source (Cd-109)",
+      "description": "An NRC Operations Center event notification page includes an Agreement State report about a device that may contain a licensed radioactive source (Cd-109) being lost or stolen, with efforts underway to confirm details.",
+      "category_primary": "pollution_contamination",
+      "polarity": "unclear",
+      "severity": null,
+      "time": {
+        "event_start": "2017-11-01T00:00:00.000Z",
+        "event_end": "2017-11-01T23:59:59.000Z",
+        "reported_at": "2017-11-01T00:00:00.000Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "2017-11-01T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Walls, Mississippi, USA",
+        "jurisdiction_level": "city",
+        "admin1": "Mississippi",
+        "country": "US",
+        "capital_used": null,
+        "lat": 34.9587,
+        "lon": -90.1526,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.nrc.gov/reading-rm/doc-collections/event-status/event/2017/20171101en.html",
+          "source_name": "U.S. Nuclear Regulatory Commission (NRC)",
+          "published_at": "2017-11-01T00:00:00.000Z",
+          "headline": "Event Notification Report for November 1, 2017",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Nuclear Regulatory Commission (NRC)"
+        ],
+        "substances": [
+          "Cd-109"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Agreement State report ... lost or stolen ... licensed radioactive source",
+            "source_url": "https://www.nrc.gov/reading-rm/doc-collections/event-status/event/2017/20171101en.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.52,
+        "category": 0.65,
+        "location": 0.55,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "needs_dedupe_check",
+        "location_ambiguous",
+        "date_ambiguous",
+        "low_confidence_location"
+      ],
+      "dedupe": {
+        "cluster_hint": "nrc-event-notification-lost-device-cd109-2017-11-01",
+        "fingerprint": "lost-or-stolen-radioactive-device|walls-ms|2017-11-01"
+      }
+    },
+    {
+      "event_id": "evt_20171112_iran_iraq_eq_usgs_us2000bmcg",
+      "title": "Magnitude 7.3 earthquake near the Iran–Iraq border",
+      "description": "A magnitude 7.3 earthquake occurred near the Iran–Iraq border region on November 12, 2017. The event caused severe ground shaking and impacts across the region as documented by USGS.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2017-11-12T18:18:17.000Z",
+        "event_end": "2017-11-12T23:59:59.000Z",
+        "reported_at": "2017-11-12T18:18:17.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2017-11-12T18:18:17.000Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Near the Iran–Iraq border (Kermanshah province, Iran)",
+        "jurisdiction_level": "state",
+        "admin1": "Kermanshah Province",
+        "country": "IR",
+        "capital_used": "Kermanshah",
+        "lat": 34.314167,
+        "lon": 47.065,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.usgs.gov/news/featured-story/magnitude-73-earthquake-iran-iraq-border-region",
+          "source_name": "USGS",
+          "published_at": "2017-11-12T00:00:00Z",
+          "headline": "Magnitude 7.3 earthquake in Iran-Iraq border region",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us2000bmcg/executive",
+          "source_name": "USGS Earthquake Hazards Program",
+          "published_at": "2017-11-12T00:00:00Z",
+          "headline": "M 7.3 - 31km SSE of Halabjah, Iraq (Executive Summary)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "USGS"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Magnitude 7.3 earthquake in Iran-Iraq border region",
+            "source_url": "https://www.usgs.gov/news/featured-story/magnitude-73-earthquake-iran-iraq-border-region"
+          },
+          {
+            "quote": "M 7.3 - 31km SSE of Halabjah, Iraq",
+            "source_url": "https://earthquake.usgs.gov/earthquakes/eventpage/us2000bmcg/executive"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.8,
+        "location": 0.55,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "usgs_us2000bmcg_iran_iraq_border_eq_2017-11-12",
+        "fingerprint": "fp_us2000bmcg_2017-11-12_kermanshah"
+      }
+    },
+    {
+      "event_id": "evt_20171115_pohang_eq_usgs_us2000bnrs",
+      "title": "Earthquake near Pohang, South Korea (November 2017)",
+      "description": "An earthquake occurred near Pohang, South Korea on November 15, 2017. USGS reported the event and published an executive summary for the quake.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2017-11-15T05:29:31.000Z",
+        "event_end": "2017-11-15T23:59:59.000Z",
+        "reported_at": "2017-11-15T05:29:31.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2017-11-15T05:29:31.000Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Pohang, North Gyeongsang, South Korea",
+        "jurisdiction_level": "city",
+        "admin1": "North Gyeongsang",
+        "country": "KR",
+        "capital_used": null,
+        "lat": 36.019,
+        "lon": 129.3435,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us2000bnrs/executive",
+          "source_name": "USGS Earthquake Hazards Program",
+          "published_at": "2017-11-15T00:00:00Z",
+          "headline": "Earthquake near Pohang, South Korea (Executive Summary)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "USGS"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Earthquake near Pohang, South Korea",
+            "source_url": "https://earthquake.usgs.gov/earthquakes/eventpage/us2000bnrs/executive"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.66,
+        "category": 0.85,
+        "location": 0.6,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "usgs_us2000bnrs_pohang_eq_2017-11-15",
+        "fingerprint": "fp_us2000bnrs_2017-11-15_pohang"
+      }
+    },
+    {
+      "event_id": "evt_20171121_mount_agung_eruption_smithsonian",
+      "title": "Mount Agung eruption activity begins in Bali, Indonesia",
+      "description": "Mount Agung in Bali entered an eruptive phase starting around November 21, 2017, producing ash emissions. Reported impacts included disruptions to aviation and evacuations as activity escalated later in the month.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2017-11-21T00:00:00.000Z",
+        "event_end": "2017-11-30T23:59:59.000Z",
+        "reported_at": "2017-11-21T00:00:00Z",
+        "time_confidence": 0.4,
+        "event_date_utc": "2017-11-21T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Mount Agung, Bali, Indonesia",
+        "jurisdiction_level": "site",
+        "admin1": "Bali",
+        "country": "ID",
+        "capital_used": null,
+        "lat": -8.342,
+        "lon": 115.508,
+        "precision": "exact",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.smithsonianmag.com/smart-news/mount-agung-erupts-bali-180967353/",
+          "source_name": "Smithsonian Magazine",
+          "published_at": "2017-11-21T00:00:00Z",
+          "headline": "Mount Agung Erupts in Bali",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Smithsonian Magazine"
+        ],
+        "substances": [
+          "volcanic ash"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Mount Agung erupts in Bali",
+            "source_url": "https://www.smithsonianmag.com/smart-news/mount-agung-erupts-bali-180967353/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.5,
+        "category": 0.7,
+        "location": 0.5,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "mount_agung_bali_eruption_2017-11",
+        "fingerprint": "fp_mount_agung_2017-11_bali"
+      }
+    },
+    {
+      "event_id": "fires-2017-11-jolly-mountain-containment",
+      "title": "Jolly Mountain Fire reported 100% contained (Washington)",
+      "description": "The Jolly Mountain Fire incident page reports the fire was at 100% containment on November 2, 2017 after burning for months in Washington state.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2017-11-02T00:00:00.000Z",
+        "event_end": "2017-11-02T23:59:59.000Z",
+        "reported_at": "2017-11-02T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2017-11-02T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Wenatchee National Forest, Kittitas County, Washington, USA",
+        "jurisdiction_level": "site",
+        "admin1": "Washington",
+        "country": "US",
+        "capital_used": null,
+        "lat": 47.36,
+        "lon": -120.74,
+        "precision": "neighborhood",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.4
+      },
+      "sources": [
+        {
+          "url": "https://inciweb.nwcg.gov/incident/5397/",
+          "source_name": "InciWeb",
+          "published_at": "2017-11-02T00:00:00.000Z",
+          "headline": "Incident Information System",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "InciWeb",
+          "National Wildfire Coordinating Group (NWCG)"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "national forest"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "...100% contained...",
+            "source_url": "https://inciweb.nwcg.gov/incident/5397/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.53,
+        "category": 0.85,
+        "location": 0.4,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Jolly Mountain Fire containment update (InciWeb)",
+        "fingerprint": "fires|jolly mountain fire reported 100% contained (washington)|wenatchee national forest, kittitas county, washington, usa|2017-11-02"
+      }
+    },
+    {
+      "event_id": "fires-2017-11-landsborough-bushfire",
+      "title": "Bushfire near Landsborough (Queensland) threatens area near Australia Zoo and is brought under control",
+      "description": "A Sunshine Coast Daily report described firefighting efforts on a bushfire near Landsborough in Queensland, noting threats to nearby areas and reporting the fire was controlled after burning around 180 hectares.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2017-11-06T00:00:00.000Z",
+        "event_end": "2017-11-06T23:59:59.000Z",
+        "reported_at": "2017-11-06T00:00:00.000Z",
+        "time_confidence": 0.5,
+        "event_date_utc": "2017-11-06T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Near Landsborough / Sunshine Coast region, Queensland, Australia",
+        "jurisdiction_level": "city",
+        "admin1": "Queensland",
+        "country": "AU",
+        "capital_used": null,
+        "lat": -26.81,
+        "lon": 153.05,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.45
+      },
+      "sources": [
+        {
+          "url": "https://www.sunshinecoastdaily.com.au/news/crews-scramble-fight-multiple-fire-fronts/3266509/",
+          "source_name": "Sunshine Coast Daily",
+          "published_at": "2017-11-06T00:00:00.000Z",
+          "headline": "Crews scramble to fight multiple fire fronts",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Queensland Fire and Emergency Services (QFES)"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "forest"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "...burning about 180 hectares...",
+            "source_url": "https://www.sunshinecoastdaily.com.au/news/crews-scramble-fight-multiple-fire-fronts/3266509/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.5,
+        "category": 0.85,
+        "location": 0.45,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "paywalled_or_partial",
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Landsborough/Sunshine Coast bushfire controlled (~180 ha)",
+        "fingerprint": "fires|bushfire near landsborough (queensland) threatens area near australia zoo and is brought under control|near landsborough / sunshine coast region, queensland, australia|2017-11-06"
+      }
+    },
+    {
+      "event_id": "20171104_kimberley_coral_bleaching_study_guardian",
+      "title": "Study reports severe coral bleaching impacts on Kimberley inshore reefs",
+      "description": "A report on scientific findings said inshore reefs in Australia’s Kimberley region were severely affected during the 2015–2016 marine heatwave-driven bleaching event, with high levels of bleaching observed in surveyed reefs. The story highlighted ecosystem stress and potential vulnerability of these reef systems.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2017-11-04T00:00:00.000Z",
+        "event_end": "2017-11-04T23:59:59.000Z",
+        "reported_at": "2017-11-04T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2017-11-04T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Kimberley region, Western Australia, Australia",
+        "jurisdiction_level": "state",
+        "admin1": "Western Australia",
+        "country": "AU",
+        "capital_used": "Perth",
+        "lat": -31.9523,
+        "lon": 115.8613,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.theguardian.com/environment/2017/nov/04/coral-bleaching-badly-affected-reefs-of-kimberley-study-finds",
+          "source_name": "The Guardian",
+          "published_at": "2017-11-04T00:00:00.000Z",
+          "headline": "Coral bleaching badly affected reefs of Kimberley, study finds",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "The Guardian"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "coral reefs"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Coral bleaching badly affected reefs of Kimberley, study finds",
+            "source_url": "https://www.theguardian.com/environment/2017/nov/04/coral-bleaching-badly-affected-reefs-of-kimberley-study-finds"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.7,
+        "location": 0.55,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "kimberley-coral-bleaching-study-2017-11",
+        "fingerprint": "kimberley_coral_bleaching_study_perth_2017-11-04"
+      }
+    },
+    {
+      "event_id": "20171109_noaa_crw_pacific_bleaching_guidance",
+      "title": "NOAA Coral Reef Watch updates Pacific coral bleaching heat-stress guidance",
+      "description": "NOAA Coral Reef Watch published an update describing elevated sea-surface temperature conditions and coral bleaching heat stress in parts of the Pacific, alongside an outlook extending into early 2018. The guidance was intended to inform awareness of reef bleaching risk across multiple Pacific locations.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "2017-11-09T00:00:00.000Z",
+        "event_end": "2017-11-09T23:59:59.000Z",
+        "reported_at": "2017-11-09T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2017-11-09T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Pacific Ocean region",
+        "jurisdiction_level": "supranational",
+        "admin1": null,
+        "country": null,
+        "capital_used": "Suva",
+        "lat": -18.1416,
+        "lon": 178.4419,
+        "precision": "supranational",
+        "location_basis": "institution_proxy",
+        "location_confidence": 0.35
+      },
+      "sources": [
+        {
+          "url": "https://coralreefwatch.noaa.gov/satellite/analyses_guidance/pacific_cbts_ag_20171109.php",
+          "source_name": "NOAA Coral Reef Watch",
+          "published_at": "2017-11-09T00:00:00.000Z",
+          "headline": "Pacific Coral Bleaching Thermal Stress Analysis and Guidance (2017-11-09)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA Coral Reef Watch",
+          "NOAA"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "coral reefs"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Pacific Coral Bleaching Thermal Stress Analysis and Guidance (2017-11-09)",
+            "source_url": "https://coralreefwatch.noaa.gov/satellite/analyses_guidance/pacific_cbts_ag_20171109.php"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.4,
+        "category": 0.65,
+        "location": 0.3,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "needs_dedupe_check",
+        "low_confidence_location"
+      ],
+      "dedupe": {
+        "cluster_hint": "noaa-crw-pacific-bleaching-guidance-2017-11-09",
+        "fingerprint": "noaa_crw_pacific_guidance_suva_2017-11-09"
+      }
+    },
+    {
+      "event_id": "201711_policy_cop23_bonn",
+      "title": "UN Climate Change Conference (COP23) convenes in Bonn",
+      "description": "COP23 (the UN climate conference) took place in Bonn, Germany from November 6–17, 2017. Parties and stakeholders met under the UNFCCC process to advance climate action and implementation discussions related to the Paris Agreement.",
+      "category_primary": "policy_regulation",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "2017-11-06T00:00:00.000Z",
+        "event_end": "2017-11-17T23:59:59.000Z",
+        "reported_at": "2017-11-06T00:00:00.000Z",
+        "time_confidence": 0.8,
+        "event_date_utc": "2017-11-06T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Bonn, Germany",
+        "jurisdiction_level": "city",
+        "admin1": null,
+        "country": "DE",
+        "capital_used": null,
+        "lat": 50.7374,
+        "lon": 7.0982,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.8
+      },
+      "sources": [
+        {
+          "url": "https://unfccc.int/conference/un-climate-change-conference-november-2017",
+          "source_name": "UNFCCC",
+          "published_at": "2017-11-06T00:00:00.000Z",
+          "headline": "UN Climate Change Conference November 2017",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.un.org/sustainabledevelopment/cop23/",
+          "source_name": "United Nations",
+          "published_at": "2017-11-06T00:00:00.000Z",
+          "headline": "COP23",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "UNFCCC",
+          "United Nations"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "UN Climate Change Conference November 2017",
+            "source_url": "https://unfccc.int/conference/un-climate-change-conference-november-2017"
+          },
+          {
+            "quote": "COP23",
+            "source_url": "https://www.un.org/sustainabledevelopment/cop23/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.72,
+        "category": 0.75,
+        "location": 0.8,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "COP23 Bonn 2017-11",
+        "fingerprint": "cop23|bonn|2017-11-06_2017-11-17"
+      }
+    },
+    {
+      "event_id": "201711_policy_epa_cpp_repeal_hearing_charleston_wv",
+      "title": "EPA holds public hearing on proposed repeal of the U.S. Clean Power Plan",
+      "description": "The U.S. Environmental Protection Agency announced and held a public hearing in Charleston, West Virginia on November 28–29, 2017 regarding the proposed repeal of the Clean Power Plan. The hearing related to an Obama-era rule regulating carbon pollution from existing power plants.",
+      "category_primary": "policy_regulation",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2017-11-28T14:00:00.000Z",
+        "event_end": "2017-11-29T22:00:00.000Z",
+        "reported_at": "2017-11-28T14:00:00.000Z",
+        "time_confidence": 0.8,
+        "event_date_utc": "2017-11-28T14:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Charleston, West Virginia, USA",
+        "jurisdiction_level": "city",
+        "admin1": "West Virginia",
+        "country": "US",
+        "capital_used": null,
+        "lat": 38.3498,
+        "lon": -81.6326,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.8
+      },
+      "sources": [
+        {
+          "url": "https://www.epa.gov/archive/epa/newsreleases/epa-announces-public-hearing-proposed-repeal-clean-power-plan.html",
+          "source_name": "U.S. Environmental Protection Agency",
+          "published_at": "2017-11-28T00:00:00.000Z",
+          "headline": "EPA Announces Public Hearing on Proposed Repeal of Clean Power Plan",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.epa.gov/stationary-sources-air-pollution/electric-utility-generating-units-repealing-clean-power-plan-0",
+          "source_name": "U.S. Environmental Protection Agency",
+          "published_at": "2017-11-28T00:00:00.000Z",
+          "headline": "Electric Utility Generating Units: Repealing the Clean Power Plan",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Environmental Protection Agency (EPA)"
+        ],
+        "substances": [
+          "carbon pollution"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "public hearing on proposed repeal of Clean Power Plan",
+            "source_url": "https://www.epa.gov/archive/epa/newsreleases/epa-announces-public-hearing-proposed-repeal-clean-power-plan.html"
+          },
+          {
+            "quote": "Repealing the Clean Power Plan",
+            "source_url": "https://www.epa.gov/stationary-sources-air-pollution/electric-utility-generating-units-repealing-clean-power-plan-0"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.76,
+        "category": 0.8,
+        "location": 0.8,
+        "summary_grounding": 0.65
+      },
+      "quality_flags": [
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "EPA Clean Power Plan repeal hearing Charleston WV 2017-11",
+        "fingerprint": "epa_cpp_repeal_hearing|charleston_wv|2017-11-28_2017-11-29"
+      }
+    }
+  ]
+}

@@ -1,0 +1,1131 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_2017-03_normalize_2026-01-16T060853684Z",
+    "generated_utc": "2026-01-16T06:08:53.684Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "2017-03",
+    "window": {
+      "start_utc": "2017-03-01T00:00:00.000Z",
+      "end_utc": "2017-03-31T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "evt_20170303_dapl_feeder_watford_city_nd",
+      "title": "Dakota Access Pipeline feeder line leak spills ~84 gallons at terminal near Watford City, North Dakota",
+      "description": "A leak at a Dakota Access Pipeline-related terminal near Watford City spilled about 84 gallons (two barrels) of oil. The flow was shut off and the spill was contained on-site, with contaminated snow and soil removed according to reporting.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2017-03-03T00:00:00.000Z",
+        "event_end": "2017-03-03T23:59:59.000Z",
+        "reported_at": "2017-05-22T00:00:00Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2017-03-03T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Watford City, North Dakota, USA",
+        "jurisdiction_level": "city",
+        "admin1": "North Dakota",
+        "country": "US",
+        "capital_used": null,
+        "lat": 47.8022,
+        "lon": -103.2832,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.theguardian.com/us-news/2017/may/22/dakota-access-pipeline-oil-leak-energy-transfer-partners",
+          "source_name": "The Guardian",
+          "published_at": "2017-05-22T00:00:00Z",
+          "headline": "Dakota Access pipeline leaks: company says no environmental damage",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Energy Transfer Partners",
+          "Dakota Access Pipeline"
+        ],
+        "substances": [
+          "crude oil"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "spilled 84 gallons, or two barrels, at a pipeline terminal near Watford City",
+            "source_url": "https://www.theguardian.com/us-news/2017/may/22/dakota-access-pipeline-oil-leak-energy-transfer-partners"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.75,
+        "location": 0.6,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Dakota Access Pipeline leaks North Dakota March 2017",
+        "fingerprint": "fp_dapl_watford_city_2017-03-03"
+      }
+    },
+    {
+      "event_id": "evt_20170305_dapl_valve_mercer_county_nd",
+      "title": "Dakota Access Pipeline system leak spills ~20 gallons in Mercer County, North Dakota",
+      "description": "A separate leak in the Dakota Access pipeline system released about 20 gallons of oil and was attributed in reporting to an above-ground valve malfunction. Contaminated soil was removed, with no impacts to waterways or wildlife reported in the cited accounts.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2017-03-05T00:00:00.000Z",
+        "event_end": "2017-03-05T23:59:59.000Z",
+        "reported_at": "2017-05-22T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2017-03-05T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Mercer County, North Dakota, USA",
+        "jurisdiction_level": "state",
+        "admin1": "North Dakota",
+        "country": "US",
+        "capital_used": "Bismarck",
+        "lat": 46.8083,
+        "lon": -100.7837,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.theguardian.com/us-news/2017/may/22/dakota-access-pipeline-oil-leak-energy-transfer-partners",
+          "source_name": "The Guardian",
+          "published_at": "2017-05-22T00:00:00Z",
+          "headline": "Dakota Access pipeline leaks: company says no environmental damage",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://finance-commerce.com/2017/05/two-more-leaks-found-along-dakota-access-pipeline/",
+          "source_name": "Finance & Commerce",
+          "published_at": "2017-05-01T00:00:00Z",
+          "headline": "Two more leaks found along Dakota Access pipeline",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Energy Transfer Partners",
+          "Dakota Access Pipeline"
+        ],
+        "substances": [
+          "crude oil"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "a valve malfunction caused a leak of about 20 gallons of oil in North Dakota’s Mercer County",
+            "source_url": "https://www.theguardian.com/us-news/2017/may/22/dakota-access-pipeline-oil-leak-energy-transfer-partners"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.56,
+        "category": 0.75,
+        "location": 0.55,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Dakota Access Pipeline leaks North Dakota March 2017",
+        "fingerprint": "fp_dapl_mercer_county_2017-03-05"
+      }
+    },
+    {
+      "event_id": "evt_20170329_providence_gas_pipeline_rupture_pcbs",
+      "title": "High-pressure natural gas pipeline rupture in Providence, Rhode Island reported to involve PCB-contaminated condensate",
+      "description": "Reporting described a rupture of a high-pressure natural gas pipeline in Providence that released methane. The same report cited Rhode Island DEM statements that contaminated condensate associated with the release included about two gallons of PCBs.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2017-03-29T00:00:00.000Z",
+        "event_end": "2017-03-29T23:59:59.000Z",
+        "reported_at": "2017-05-04T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2017-03-29T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Providence, Rhode Island, USA (Allens Avenue area)",
+        "jurisdiction_level": "city",
+        "admin1": "Rhode Island",
+        "country": "US",
+        "capital_used": null,
+        "lat": 41.823989,
+        "lon": -71.412834,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://ecori.org/2017-5-4-gas-leak-emissions-revealed/",
+          "source_name": "ecoRI News",
+          "published_at": "2017-05-04T00:00:00Z",
+          "headline": "Gas Leak Emissions Revealed",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Rhode Island Department of Environmental Management"
+        ],
+        "substances": [
+          "methane",
+          "PCBs"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Rhode Island DEM ... about two gallons of PCBs in contaminated condensate",
+            "source_url": "https://ecori.org/2017-5-4-gas-leak-emissions-revealed/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.52,
+        "category": 0.7,
+        "location": 0.55,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": null,
+        "fingerprint": "fp_providence_gas_pcbs_2017-03-29"
+      }
+    },
+    {
+      "event_id": "evt_20170301_20170331_cook_inlet_middle_ground_shoal_gas_leak",
+      "title": "Cook Inlet undersea natural gas pipeline leak continued through March 2017 near Middle Ground Shoal, Alaska",
+      "description": "An undersea natural gas pipeline leak in Cook Inlet, discovered in February 2017, continued into March according to Alaska news reporting. Reports described monitoring demands and operational changes while repairs were delayed by conditions such as ice.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2017-03-01T00:00:00.000Z",
+        "event_end": "2017-03-31T23:59:59.000Z",
+        "reported_at": "2017-03-01T00:00:00Z",
+        "time_confidence": 0.65,
+        "event_date_utc": "2017-03-01T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Cook Inlet (Middle Ground Shoal area), Alaska, USA",
+        "jurisdiction_level": "state",
+        "admin1": "Alaska",
+        "country": "US",
+        "capital_used": "Juneau",
+        "lat": 58.3019,
+        "lon": -134.4197,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://alaskapublic.org/news/2017-03-01/state-demands-hilcorp-monitor-environmental-impact-of-cook-inlet-gas-leak",
+          "source_name": "Alaska Public Media",
+          "published_at": "2017-03-01T00:00:00Z",
+          "headline": "State demands Hilcorp monitor environmental impact of Cook Inlet gas leak",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.adn.com/business-economy/energy/2017/03/25/following-talks-with-governor-about-cook-inlet-gas-leak-hilcorp-agrees-to-temporarily-shut-down-oil-production/",
+          "source_name": "Anchorage Daily News",
+          "published_at": "2017-03-25T00:00:00Z",
+          "headline": "Following talks with governor about Cook Inlet gas leak, Hilcorp agrees to temporarily shut down oil production",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Hilcorp"
+        ],
+        "substances": [
+          "natural gas",
+          "methane"
+        ],
+        "ecosystems": [
+          "Cook Inlet"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "State demands Hilcorp monitor environmental impact of Cook Inlet gas leak",
+            "source_url": "https://alaskapublic.org/news/2017-03-01/state-demands-hilcorp-monitor-environmental-impact-of-cook-inlet-gas-leak"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.75,
+        "location": 0.55,
+        "summary_grounding": 0.58
+      },
+      "quality_flags": [
+        "location_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "Cook Inlet gas leak Feb–Mar 2017",
+        "fingerprint": "fp_cook_inlet_gas_leak_2017-03"
+      }
+    },
+    {
+      "event_id": "evt_201703_tc_debbie_queensland",
+      "title": "Severe Tropical Cyclone Debbie makes landfall in Queensland and causes flooding",
+      "description": "Severe Tropical Cyclone Debbie made landfall near Airlie Beach on March 28, 2017 as a Category 4 system. It caused destructive winds in coastal Queensland and major flooding as the system weakened and moved inland and south.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2017-03-28T00:00:00.000Z",
+        "event_end": "2017-03-31T23:59:59.000Z",
+        "reported_at": "2017-03-28T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2017-03-28T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Queensland, Australia",
+        "jurisdiction_level": "state",
+        "admin1": "Queensland",
+        "country": "AU",
+        "capital_used": "Brisbane",
+        "lat": -27.4698,
+        "lon": 153.0251,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.8
+      },
+      "sources": [
+        {
+          "url": "https://www.bom.gov.au/cyclone/history/debbie17.shtml",
+          "source_name": "Australian Bureau of Meteorology",
+          "published_at": "2017-03-28T00:00:00.000Z",
+          "headline": "Tropical Cyclone Debbie (2017)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://weather.com/storms/hurricane/news/tropical-cyclone-debbie-queensland-australia-late-march-2017",
+          "source_name": "The Weather Channel",
+          "published_at": "2017-03-28T00:00:00.000Z",
+          "headline": "Tropical Cyclone Debbie Strikes Queensland, Australia",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Australian Bureau of Meteorology"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Tropical Cyclone Debbie made landfall near Airlie Beach on 28 March 2017.",
+            "source_url": "https://www.bom.gov.au/cyclone/history/debbie17.shtml"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.8,
+        "location": 0.8,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "paywalled_or_partial",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Cyclone Debbie landfall Queensland March 2017",
+        "fingerprint": "fp_tcdebbie_queensland_2017-03-28"
+      }
+    },
+    {
+      "event_id": "evt_201703_central_us_severe_weather_0607",
+      "title": "Severe weather and tornado outbreak across the central United States (March 6–7, 2017)",
+      "description": "A widespread severe weather event produced numerous tornadoes and damaging winds across parts of the central United States during March 6–7, 2017. The event is referenced within NOAA’s March 2017 national climate reporting.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2017-03-06T00:00:00.000Z",
+        "event_end": "2017-03-07T23:59:59.000Z",
+        "reported_at": "2017-04-01T00:00:00.000Z",
+        "time_confidence": 0.5,
+        "event_date_utc": "2017-03-06T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "United States",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, D.C.",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.4
+      },
+      "sources": [
+        {
+          "url": "https://www.ncei.noaa.gov/index.php/news/national-climate-201703",
+          "source_name": "NOAA NCEI",
+          "published_at": "2017-04-01T00:00:00.000Z",
+          "headline": "National Climate Report - March 2017",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA NCEI"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.45,
+        "category": 0.7,
+        "location": 0.4,
+        "summary_grounding": 0.35
+      },
+      "quality_flags": [
+        "secondary_sources_only",
+        "location_ambiguous",
+        "date_ambiguous",
+        "needs_dedupe_check",
+        "low_confidence_location"
+      ],
+      "dedupe": {
+        "cluster_hint": "Central US severe weather March 6-7 2017",
+        "fingerprint": "fp_centralus_severe_2017-03-06"
+      }
+    },
+    {
+      "event_id": "evt_201703_noaa_march_climate_anomalies_conus",
+      "title": "NOAA reports notable warmth and climate anomalies across the contiguous U.S. in March 2017",
+      "description": "NOAA’s March 2017 national climate reporting summarized notable temperature and precipitation anomalies across the contiguous United States during the month. The report highlighted widespread warmth in portions of the West and Great Plains and regional precipitation departures from average.",
+      "category_primary": "weather_climate",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "2017-03-01T00:00:00.000Z",
+        "event_end": "2017-03-31T23:59:59.000Z",
+        "reported_at": "2017-04-01T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": null,
+        "event_date_precision": "month"
+      },
+      "location": {
+        "name": "United States",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, D.C.",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.ncei.noaa.gov/index.php/news/national-climate-201703",
+          "source_name": "NOAA NCEI",
+          "published_at": "2017-04-01T00:00:00.000Z",
+          "headline": "National Climate Report - March 2017",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA NCEI"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.75,
+        "location": 0.6,
+        "summary_grounding": 0.4
+      },
+      "quality_flags": [
+        "secondary_sources_only",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "NOAA March 2017 US climate anomalies",
+        "fingerprint": "fp_noaa_climate_2017-03"
+      }
+    },
+    {
+      "event_id": "20170305_surigaodelnorte_m59_aftershock_philstar",
+      "title": "M5.9 aftershock earthquake in Surigao del Norte, Philippines",
+      "description": "A magnitude 5.9 aftershock struck Surigao del Norte in the Philippines on March 5, 2017, as part of the Surigao earthquake sequence. Reports cited injuries and concerns about damage in affected areas.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2017-03-05T00:00:00.000Z",
+        "event_end": "2017-03-05T23:59:59.000Z",
+        "reported_at": "2017-03-05T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2017-03-05T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Surigao del Norte, Philippines",
+        "jurisdiction_level": "state",
+        "admin1": "Surigao del Norte",
+        "country": "PH",
+        "capital_used": "Surigao City",
+        "lat": 9.7842,
+        "lon": 125.4883,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://www.philstar.com/nation/2017/03/05/1676916/nation",
+          "source_name": "Philstar.com",
+          "published_at": "2017-03-05T00:00:00.000Z",
+          "headline": "nation",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.philstar.com/headlines/2017/03/06/1676947/1-killed-scores-hurt-surigao-aftershock",
+          "source_name": "Philstar.com",
+          "published_at": "2017-03-06T00:00:00.000Z",
+          "headline": "1 killed, scores hurt in Surigao aftershock",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Philstar.com"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.85,
+        "location": 0.7,
+        "summary_grounding": 0.4
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "paywalled_or_partial",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Surigao earthquake sequence aftershocks (March 2017)",
+        "fingerprint": "geological|m5.9 aftershock earthquake in surigao del norte, philippines|surigao city|2017-03-05"
+      }
+    },
+    {
+      "event_id": "evt-201703-plains-wildfires-001",
+      "title": "Wind-driven Plains wildfires cause deaths and evacuations in early March 2017",
+      "description": "Wind-driven wildfires across parts of the U.S. Plains expanded rapidly in early March 2017. The fires prompted evacuations and were reported to have caused fatalities and large burned areas.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2017-03-06T00:00:00.000Z",
+        "event_end": "2017-03-08T23:59:59.000Z",
+        "reported_at": "2017-03-06T00:00:00.000Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "2017-03-06T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "United States (Kansas/Oklahoma/Colorado referenced)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.4
+      },
+      "sources": [
+        {
+          "url": "https://weather.com/news/weather/news/wildfires-plains-deadly-evacuations-early-march-2017",
+          "source_name": "The Weather Channel",
+          "published_at": "2017-03-06T00:00:00.000Z",
+          "headline": "Deadly Plains wildfires expand rapidly amid high winds (Central U.S., early March 2017)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.48,
+        "category": 0.75,
+        "location": 0.4,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "plains-wildfires-early-march-2017",
+        "fingerprint": "fp_plains_wildfires_us_20170306_20170308"
+      }
+    },
+    {
+      "event_id": "evt-201703-noaa-acres-burned-001",
+      "title": "NOAA summary reports over 2 million acres burned in the U.S. during March 2017",
+      "description": "A NOAA/NCEI national climate summary for March 2017 reported warm and windy conditions that contributed to elevated wildfire potential. The summary stated that more than 2 million acres burned in the United States during March 2017.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2017-03-01T00:00:00.000Z",
+        "event_end": "2017-03-31T23:59:59.000Z",
+        "reported_at": "2017-03-01T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": null,
+        "event_date_precision": "month"
+      },
+      "location": {
+        "name": "United States (nationwide)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.8
+      },
+      "sources": [
+        {
+          "url": "https://www.ncei.noaa.gov/index.php/news/national-climate-201703",
+          "source_name": "NOAA NCEI",
+          "published_at": "2017-03-01T00:00:00.000Z",
+          "headline": "March 2017 sets new U.S. record for acres burned in wildfire conditions (NOAA monthly climate summary)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA",
+          "NOAA National Centers for Environmental Information (NCEI)"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.85,
+        "location": 0.8,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "noaa-national-climate-201703-wildfire-acres",
+        "fingerprint": "fp_noaa_national_climate_us_201703"
+      }
+    },
+    {
+      "event_id": "2017-03-gbr-coral-bleaching-confirmed-abc-8342174",
+      "title": "Mass coral bleaching confirmed on the Great Barrier Reef",
+      "description": "Australian authorities and scientists confirmed a mass coral bleaching event on the Great Barrier Reef in early March 2017 after aerial surveys and early-warning indicators. The bleaching was linked in reporting to unusually warm ocean temperatures.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2017-03-09T00:00:00.000Z",
+        "event_end": "2017-03-09T23:59:59.000Z",
+        "reported_at": "2017-03-10T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2017-03-09T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Great Barrier Reef, Queensland, Australia",
+        "jurisdiction_level": "site",
+        "admin1": "Queensland",
+        "country": "AU",
+        "capital_used": null,
+        "lat": -18.2871,
+        "lon": 147.6992,
+        "precision": "proxy",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.5
+      },
+      "sources": [
+        {
+          "url": "https://www.abc.net.au/news/2017-03-10/great-barrier-reef-mass-bleaching-event-2017-confirmed/8342174",
+          "source_name": "ABC News (Australia)",
+          "published_at": "2017-03-10T00:00:00.000Z",
+          "headline": "Great Barrier Reef mass bleaching event 2017 confirmed",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Great Barrier Reef Marine Park Authority"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "coral reef"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Mass coral bleaching has been confirmed on the Great Barrier Reef.",
+            "source_url": "https://www.abc.net.au/news/2017-03-10/great-barrier-reef-mass-bleaching-event-2017-confirmed/8342174"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.52,
+        "category": 0.75,
+        "location": 0.5,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Great Barrier Reef bleaching March 2017",
+        "fingerprint": "gbr_bleaching_2017-03_qld_2017-03"
+      }
+    },
+    {
+      "event_id": "2017-03-gbr-bleaching-underway-climate-gov-event-tracker",
+      "title": "Second year of widespread Great Barrier Reef bleaching reported underway (late March 2017)",
+      "description": "NOAA Climate.gov reported that heat stress continued to build through late March 2017 on the Great Barrier Reef and summarized statements that the Great Barrier Reef Marine Park Authority had been receiving bleaching reports since January and conducting surveys. The report described bleaching as most severe in the central region as of late March.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2017-03-24T00:00:00.000Z",
+        "event_end": "2017-03-24T23:59:59.000Z",
+        "reported_at": "2017-03-30T00:00:00.000Z",
+        "time_confidence": 0.4,
+        "event_date_utc": "2017-03-24T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Great Barrier Reef Marine Park, Australia",
+        "jurisdiction_level": "site",
+        "admin1": null,
+        "country": "AU",
+        "capital_used": null,
+        "lat": -18.2871,
+        "lon": 147.6992,
+        "precision": "proxy",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.4
+      },
+      "sources": [
+        {
+          "url": "https://www.climate.gov/news-features/event-tracker/second-year-widespread-bleaching-underway-great-barrier-reef",
+          "source_name": "NOAA Climate.gov",
+          "published_at": "2017-03-30T00:00:00.000Z",
+          "headline": "Second year of widespread bleaching underway on Great Barrier Reef",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA",
+          "Great Barrier Reef Marine Park Authority"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "coral reef"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Second year of widespread bleaching underway on Great Barrier Reef.",
+            "source_url": "https://www.climate.gov/news-features/event-tracker/second-year-widespread-bleaching-underway-great-barrier-reef"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.42,
+        "category": 0.7,
+        "location": 0.4,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "secondary_sources_only",
+        "location_ambiguous",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Great Barrier Reef bleaching March 2017",
+        "fingerprint": "gbr_bleaching_2017-03_gbrmp_2017-03"
+      }
+    },
+    {
+      "event_id": "20170328_us_eo13783_energy_independence",
+      "title": "U.S. Executive Order 13783 directs review of climate and energy regulations",
+      "description": "On March 28, 2017, President Donald Trump signed Executive Order 13783, directing federal agencies to review, suspend, revise, or rescind various climate and energy-related regulations and guidance. The order included direction related to reviewing the Clean Power Plan.",
+      "category_primary": "policy_regulation",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2017-03-28T00:00:00.000Z",
+        "event_end": "2017-03-28T23:59:59.000Z",
+        "reported_at": "2017-03-28T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2017-03-28T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States (federal)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.85
+      },
+      "sources": [
+        {
+          "url": "https://time.com/4713731/donald-trump-climate-change-executive-order-president-obama-epa/",
+          "source_name": "Time",
+          "published_at": "2017-03-28T00:00:00.000Z",
+          "headline": "Donald Trump Signs Executive Order to Roll Back Obama-Era Climate Policies",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://archive.epa.gov/epa/energy-independence.html",
+          "source_name": "U.S. Environmental Protection Agency (archive)",
+          "published_at": "2017-03-28T00:00:00.000Z",
+          "headline": "Energy Independence",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Environmental Protection Agency (EPA)",
+          "Executive Office of the President"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": [
+          "Donald Trump"
+        ]
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Trump signed an executive order Tuesday that aims to roll back a host of Obama-era climate policies.",
+            "source_url": "https://time.com/4713731/donald-trump-climate-change-executive-order-president-obama-epa/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.72,
+        "category": 0.9,
+        "location": 0.85,
+        "summary_grounding": 0.65
+      },
+      "quality_flags": [
+        "needs_dedupe_check",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "EO 13783 energy independence order",
+        "fingerprint": "eo13783_us_2017-03-28"
+      }
+    },
+    {
+      "event_id": "20170329_us_doi_so3348_coal_leasing_moratorium",
+      "title": "U.S. Interior Secretarial Order 3348 ends federal coal leasing moratorium",
+      "description": "On March 29, 2017, U.S. Interior Secretary Ryan Zinke signed Secretarial Order 3348, revoking the federal coal leasing moratorium. The order also terminated the related programmatic environmental review effort associated with the moratorium.",
+      "category_primary": "policy_regulation",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2017-03-29T00:00:00.000Z",
+        "event_end": "2017-03-29T23:59:59.000Z",
+        "reported_at": "2017-03-29T00:00:00.000Z",
+        "time_confidence": 0.75,
+        "event_date_utc": "2017-03-29T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States (Department of the Interior)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.85
+      },
+      "sources": [
+        {
+          "url": "https://www.doi.gov/document-library/secretary-order/so-3348-concerning-federal-coal-moratorium",
+          "source_name": "U.S. Department of the Interior",
+          "published_at": "2017-03-29T00:00:00.000Z",
+          "headline": "SO 3348 - Concerning the Federal Coal Moratorium",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://climate.law.columbia.edu/content/doi-issues-orders-terminate-coal-leasing-moratorium-and-environmental-review-reconsider",
+          "source_name": "Columbia Law School - Sabin Center for Climate Change Law",
+          "published_at": "2017-03-29T00:00:00.000Z",
+          "headline": "DOI Issues Orders to Terminate Coal Leasing Moratorium and Environmental Review; Reconsider Royalty Rates",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Department of the Interior"
+        ],
+        "substances": [
+          "coal"
+        ],
+        "ecosystems": [],
+        "people": [
+          "Ryan Zinke"
+        ]
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Secretarial Order 3348... revokes the Secretarial Order establishing the Federal Coal Moratorium.",
+            "source_url": "https://www.doi.gov/document-library/secretary-order/so-3348-concerning-federal-coal-moratorium"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.78,
+        "category": 0.9,
+        "location": 0.85,
+        "summary_grounding": 0.7
+      },
+      "quality_flags": [
+        "needs_dedupe_check",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "DOI SO 3348 federal coal moratorium revoked",
+        "fingerprint": "so3348_us_2017-03-29"
+      }
+    },
+    {
+      "event_id": "20170306_us_wotus_review_notice",
+      "title": "Federal Register notice published to review and possibly rescind or revise the Clean Water Rule (WOTUS)",
+      "description": "A Federal Register notice published on March 6, 2017 initiated review and possible rescission or revision of the 2015 Clean Water Rule (Waters of the United States). The notice reflected EPA and the U.S. Army Corps of Engineers beginning an administrative process to reconsider the rule.",
+      "category_primary": "policy_regulation",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2017-03-06T00:00:00.000Z",
+        "event_end": "2017-03-06T23:59:59.000Z",
+        "reported_at": "2017-03-06T00:00:00.000Z",
+        "time_confidence": 0.65,
+        "event_date_utc": "2017-03-06T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States (EPA / U.S. Army Corps of Engineers)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.85
+      },
+      "sources": [
+        {
+          "url": "https://archive.epa.gov/epa/cleanwaterrule/notice-intention-review-and-rescind-or-revise-clean-water-rule.html",
+          "source_name": "U.S. Environmental Protection Agency (archive)",
+          "published_at": "2017-03-06T00:00:00.000Z",
+          "headline": "Notice of intention to review and rescind or revise the Clean Water Rule",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Environmental Protection Agency (EPA)",
+          "U.S. Army Corps of Engineers"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "watersheds",
+          "wetlands"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Notice of intention to review and rescind or revise the Clean Water Rule",
+            "source_url": "https://archive.epa.gov/epa/cleanwaterrule/notice-intention-review-and-rescind-or-revise-clean-water-rule.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.7,
+        "category": 0.9,
+        "location": 0.85,
+        "summary_grounding": 0.65
+      },
+      "quality_flags": [
+        "needs_dedupe_check",
+        "date_ambiguous",
+        "paywalled_or_partial"
+      ],
+      "dedupe": {
+        "cluster_hint": "WOTUS Clean Water Rule review notice",
+        "fingerprint": "wotus_us_2017-03-06"
+      }
+    }
+  ]
+}

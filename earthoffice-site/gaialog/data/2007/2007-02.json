@@ -1,0 +1,392 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_2007-02_normalize_2026-01-16T033335277Z",
+    "generated_utc": "2026-01-16T03:33:35.277Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "2007-02",
+    "window": {
+      "start_utc": "2007-02-01T00:00:00.000Z",
+      "end_utc": "2007-02-28T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "evt_200702_enbridge_spill_exeland_wi",
+      "title": "Enbridge crude oil spill near Exeland, Wisconsin during pipeline construction",
+      "description": "Reports say construction crews ruptured an Enbridge crude oil pipeline near Exeland in Rusk County, Wisconsin, spilling about 126,000 gallons of crude oil. Follow-up reporting indicated officials were investigating potential impacts including possible contamination of groundwater or the local water table.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2007-02-02T00:00:00.000Z",
+        "event_end": "2007-02-02T23:59:59.000Z",
+        "reported_at": "2007-02-07T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2007-02-02T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Near Exeland, Rusk County, Wisconsin, USA",
+        "jurisdiction_level": "site",
+        "admin1": "Wisconsin",
+        "country": "US",
+        "capital_used": null,
+        "lat": 45.6708,
+        "lon": -91.2482,
+        "precision": "neighborhood",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.45
+      },
+      "sources": [
+        {
+          "url": "https://dailyreporter.com/2007/02/07/enbridge-126000-gallons-of-oil-spilled/",
+          "source_name": "Daily Reporter",
+          "published_at": "2007-02-07T00:00:00.000Z",
+          "headline": "Enbridge: 126,000 gallons of oil spilled",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://dailyreporter.com/2007/02/19/officials-oil-spill-may-have-contaminated-water/",
+          "source_name": "Daily Reporter",
+          "published_at": "2007-02-19T00:00:00.000Z",
+          "headline": "Officials: Oil spill may have contaminated water",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Enbridge"
+        ],
+        "substances": [
+          "crude oil"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "126,000 gallons of oil spilled",
+            "source_url": "https://dailyreporter.com/2007/02/07/enbridge-126000-gallons-of-oil-spilled/"
+          },
+          {
+            "quote": "Oil spill may have contaminated water",
+            "source_url": "https://dailyreporter.com/2007/02/19/officials-oil-spill-may-have-contaminated-water/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.8,
+        "location": 0.45,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "paywalled_or_partial",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "enbridge_exeland_wi_oil_spill_2007_02",
+        "fingerprint": "fp_enbridge_exeland_wi_20070202"
+      }
+    },
+    {
+      "event_id": "evt_200702_001_valentines_blizzard_central_il",
+      "title": "Valentine’s Day blizzard impacts central Illinois and parts of the U.S. Midwest",
+      "description": "A major winter storm brought heavy snowfall, strong winds and blizzard conditions across parts of the U.S. Midwest, with central Illinois reporting substantial snow and severe drifting. The storm caused major travel disruption and road closures in affected areas.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2007-02-12T00:00:00.000Z",
+        "event_end": "2007-02-13T23:59:59.000Z",
+        "reported_at": "2007-02-13T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2007-02-13T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Central Illinois, United States",
+        "jurisdiction_level": "state",
+        "admin1": "Illinois",
+        "country": "US",
+        "capital_used": "Springfield",
+        "lat": 39.8017,
+        "lon": -89.6436,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.weather.gov/ilx/13feb07",
+          "source_name": "US National Weather Service (ILX)",
+          "published_at": "2007-02-13T00:00:00.000Z",
+          "headline": "https://www.weather.gov/ilx/13feb07",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "US National Weather Service"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "A significant snowstorm struck central Illinois... strong winds producing blizzard conditions and major drifting",
+            "source_url": "https://www.weather.gov/ilx/13feb07"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.85,
+        "location": 0.6,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "valentines_day_blizzard_2007_midwest",
+        "fingerprint": "valentines_day_blizzard_2007|illinois|2007-02-12_2007-02-13"
+      }
+    },
+    {
+      "event_id": "evt_200702_002_wa_hot_dry_feb2007",
+      "title": "Western Australia experiences exceptionally hot and dry February 2007",
+      "description": "Western Australia recorded an exceptionally hot February 2007, with state-averaged temperatures reported as record-setting for the period of comparison in the source. The month was also very dry across the state, contributing to heightened heat and dryness conditions.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2007-02-01T00:00:00.000Z",
+        "event_end": "2007-02-28T23:59:59.000Z",
+        "reported_at": "2007-02-28T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": null,
+        "event_date_precision": "month"
+      },
+      "location": {
+        "name": "Western Australia, Australia",
+        "jurisdiction_level": "state",
+        "admin1": "Western Australia",
+        "country": "AU",
+        "capital_used": "Perth",
+        "lat": -31.9523,
+        "lon": 115.8613,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.75
+      },
+      "sources": [
+        {
+          "url": "https://www.bom.gov.au/climate/current/month/wa/archive/200702.summary.shtml",
+          "source_name": "Australian Bureau of Meteorology",
+          "published_at": "2007-02-28T00:00:00.000Z",
+          "headline": "2007-02 Western Australia climate summary",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Australian Bureau of Meteorology"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Western Australia experienced an exceptionally hot February 2007... alongside very dry conditions",
+            "source_url": "https://www.bom.gov.au/climate/current/month/wa/archive/200702.summary.shtml"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.72,
+        "category": 0.9,
+        "location": 0.75,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "wa_feb2007_heat_dryness",
+        "fingerprint": "wa_feb2007_heat_dry|western_australia|2007-02"
+      }
+    },
+    {
+      "event_id": "2007-02-02_ipcc_ar4_wgi_spm_paris",
+      "title": "IPCC AR4 Working Group I Summary for Policymakers approved and released in Paris",
+      "description": "The IPCC released information about its Fourth Assessment Report activities in 2007, including Working Group I outputs associated with the Physical Science Basis and Summary for Policymakers process in Paris. This marked a significant step in the science-policy interface for climate change discussions in 2007.",
+      "category_primary": "policy_regulation",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2007-02-02T00:00:00.000Z",
+        "time_confidence": 0.35,
+        "event_date_utc": null,
+        "event_date_precision": "unknown"
+      },
+      "location": {
+        "name": "Paris, France",
+        "jurisdiction_level": "city",
+        "admin1": null,
+        "country": "FR",
+        "capital_used": null,
+        "lat": 48.8566,
+        "lon": 2.3522,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.ipcc.ch/2007/",
+          "source_name": "IPCC",
+          "published_at": "2007-01-01T00:00:00.000Z",
+          "headline": "2007 (IPCC site page)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://georgewbush-whitehouse.archives.gov/news/releases/2007/02/text/20070202.html",
+          "source_name": "George W. Bush White House Archives",
+          "published_at": "2007-02-02T00:00:00.000Z",
+          "headline": "News release (archived) referencing IPCC report release",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "IPCC"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.35,
+        "category": 0.6,
+        "location": 0.6,
+        "summary_grounding": 0.25
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "low_confidence_location",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "IPCC AR4 WG1 SPM Paris Feb 2007",
+        "fingerprint": "ipcc_ar4_wg1_spm_paris_2007-02"
+      }
+    },
+    {
+      "event_id": "2007-02-14_european_parliament_climate_change_resolution",
+      "title": "European Parliament adopts climate change resolution (TA-6-2007-0038)",
+      "description": "On 14 February 2007, the European Parliament adopted a resolution on climate change. The text addresses the urgency of climate action and the EU’s role in international climate policy discussions, referencing contemporary scientific assessments.",
+      "category_primary": "policy_regulation",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "2007-02-14T00:00:00.000Z",
+        "event_end": "2007-02-14T23:59:59.000Z",
+        "reported_at": "2007-02-14T00:00:00.000Z",
+        "time_confidence": 0.8,
+        "event_date_utc": "2007-02-14T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Strasbourg, France (European Parliament)",
+        "jurisdiction_level": "city",
+        "admin1": null,
+        "country": "FR",
+        "capital_used": null,
+        "lat": 48.5734,
+        "lon": 7.7521,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.75
+      },
+      "sources": [
+        {
+          "url": "https://www.europarl.europa.eu/doceo/document/TA-6-2007-0038_EN.html",
+          "source_name": "European Parliament",
+          "published_at": "2007-02-14T00:00:00.000Z",
+          "headline": "European Parliament resolution of 14 February 2007 on climate change",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "European Parliament"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.7,
+        "category": 0.8,
+        "location": 0.75,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "EP climate change resolution TA-6-2007-0038",
+        "fingerprint": "ep_ta-6-2007-0038_strasbourg_2007-02-14"
+      }
+    }
+  ]
+}

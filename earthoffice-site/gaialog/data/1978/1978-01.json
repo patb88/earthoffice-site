@@ -1,0 +1,632 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_1978-01_normalize_2026-01-19T092016994Z",
+    "generated_utc": "2026-01-19T09:20:16.994Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "1978-01",
+    "window": {
+      "start_utc": "1978-01-01T00:00:00.000Z",
+      "end_utc": "1978-01-31T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "evt-19780109-brazilian-marina-sao-sebastiao-spill",
+      "title": "Brazilian Marina tanker grounds and spills crude oil in the São Sebastião Channel (São Paulo, Brazil)",
+      "description": "On January 9, 1978, the tanker Brazilian Marina grounded in the São Sebastião Channel in São Paulo state, Brazil. The grounding ruptured tanks and released crude oil, with oil reported to have impacted shoreline areas.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1978-01-09T12:00:00Z",
+        "event_end": "1978-01-09T12:00:00Z",
+        "reported_at": "1992-01-01T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1978-01-09T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "São Sebastião Channel, São Paulo, Brazil",
+        "jurisdiction_level": "site",
+        "admin1": "São Paulo",
+        "country": "BR",
+        "capital_used": null,
+        "lat": -23.76,
+        "lon": -45.41,
+        "precision": "neighborhood",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CZIC-td427-p4-o4-1992/html/CZIC-td427-p4-o4-1992.htm",
+          "source_name": "govinfo.gov",
+          "published_at": "1992-01-01T00:00:00Z",
+          "headline": "CZIC-td427-p4-o4-1992 (HTML)",
+          "byline": null,
+          "accessed_utc": "2026-01-19T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://incidentnews.noaa.gov/browse/date?page=191",
+          "source_name": "NOAA IncidentNews",
+          "published_at": "1978-01-31T00:00:00Z",
+          "headline": "Browse by date (page 191)",
+          "byline": null,
+          "accessed_utc": "2026-01-19T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Brazilian Marina"
+        ],
+        "substances": [
+          "crude oil"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.7,
+        "location": 0.6,
+        "summary_grounding": 0.4
+      },
+      "quality_flags": [
+        "secondary_sources_only",
+        "date_ambiguous",
+        "paywalled_or_partial",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Brazilian Marina São Sebastião Channel oil spill 1978-01-09",
+        "fingerprint": "fp-19780109-brazilian-marina-sao-sebastiao-channel"
+      }
+    },
+    {
+      "event_id": "ev_19780111_north_sea_storm_surge_england_east_coast",
+      "title": "North Sea storm surge causes coastal flooding along England’s east coast",
+      "description": "A North Sea storm surge on 11–12 January 1978 caused coastal flooding and damage along parts of England’s east coast. The draft describes impacts along a broad stretch of coastline from the Humber/Humberside area to Kent.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1978-01-11T12:00:00Z",
+        "event_end": "1978-01-12T12:00:00Z",
+        "reported_at": "2026-01-19T09:17:23.611Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1978-01-11T12:00:00Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "England (east coast)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "GB",
+        "capital_used": "London",
+        "lat": 51.507351,
+        "lon": -0.127758,
+        "precision": "proxy",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.4
+      },
+      "sources": [
+        {
+          "url": "https://www.metlink.org/resource/case-study-floods/",
+          "source_name": "MetLink",
+          "published_at": "2026-01-19T09:17:23.611Z",
+          "headline": "Case Study: Floods",
+          "byline": null,
+          "accessed_utc": "2026-01-19T09:17:23.611Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.45,
+        "category": 0.75,
+        "location": 0.4,
+        "summary_grounding": 0.35
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "1978-01 North Sea storm surge England east coast",
+        "fingerprint": "fp_19780111_north_sea_storm_surge_england_east_coast"
+      }
+    },
+    {
+      "event_id": "ev_19780119_west_virginia_snowstorm",
+      "title": "Winter storm brings heavy snow and disruption across West Virginia",
+      "description": "A winter storm beginning around 19 January 1978 brought widespread heavy snow to West Virginia and caused major disruption across communities and transportation. The draft notes this followed earlier January snow and cold conditions.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1978-01-19T12:00:00Z",
+        "event_end": "1978-01-20T12:00:00Z",
+        "reported_at": "2026-01-19T09:17:23.611Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "1978-01-19T12:00:00Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "West Virginia, United States",
+        "jurisdiction_level": "state",
+        "admin1": "West Virginia",
+        "country": "US",
+        "capital_used": "Charleston",
+        "lat": 38.34982,
+        "lon": -81.63262,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.75
+      },
+      "sources": [
+        {
+          "url": "https://www.wvencyclopedia.org/articles/2441",
+          "source_name": "West Virginia Encyclopedia",
+          "published_at": "2026-01-19T09:17:23.611Z",
+          "headline": "Article 2441",
+          "byline": null,
+          "accessed_utc": "2026-01-19T09:17:23.611Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.8,
+        "location": 0.8,
+        "summary_grounding": 0.4
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "1978-01 West Virginia snowstorm",
+        "fingerprint": "fp_19780119_west_virginia_snowstorm"
+      }
+    },
+    {
+      "event_id": "ev_19780125_blizzard_1978_ohio_valley_great_lakes",
+      "title": "Great Blizzard of 1978 impacts Ohio Valley/Great Lakes region",
+      "description": "The Great Blizzard of 1978 affected the Ohio Valley and Great Lakes region during 25–27 January 1978, producing heavy snow and strong winds with severe blowing and drifting. The draft notes NWS documentation highlighting record-low pressure in Columbus on 26 January.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1978-01-25T12:00:00Z",
+        "event_end": "1978-01-27T12:00:00Z",
+        "reported_at": "2026-01-19T09:17:23.611Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "1978-01-25T12:00:00Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Ohio, United States (central Ohio referenced)",
+        "jurisdiction_level": "state",
+        "admin1": "Ohio",
+        "country": "US",
+        "capital_used": "Columbus",
+        "lat": 39.961176,
+        "lon": -82.998794,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://www.weather.gov/iln/19780126_cmh",
+          "source_name": "NWS Wilmington, OH",
+          "published_at": "2026-01-19T09:17:23.611Z",
+          "headline": "19780126_cmh",
+          "byline": null,
+          "accessed_utc": "2026-01-19T09:17:23.611Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "National Weather Service (NWS)"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.65,
+        "category": 0.85,
+        "location": 0.7,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Great Blizzard of 1978 (Ohio/CMH)",
+        "fingerprint": "fp_19780125_blizzard_1978_ohio_valley_great_lakes"
+      }
+    },
+    {
+      "event_id": "ev_19780126_blizzard_1978_northern_indiana",
+      "title": "Great Blizzard of 1978 brings extreme conditions to northern Indiana",
+      "description": "During 26–27 January 1978, the Great Blizzard of 1978 brought heavy snow and very strong winds to northern Indiana and surrounding areas, with rapid storm intensification described in NWS materials. The draft notes record low pressures along the storm’s path and significant impacts from blowing snow.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1978-01-26T12:00:00Z",
+        "event_end": "1978-01-27T12:00:00Z",
+        "reported_at": "2026-01-19T09:17:23.611Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "1978-01-26T12:00:00Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Indiana, United States (northern Indiana impacts)",
+        "jurisdiction_level": "state",
+        "admin1": "Indiana",
+        "country": "US",
+        "capital_used": "Indianapolis",
+        "lat": 39.768403,
+        "lon": -86.158068,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.weather.gov/iwx/1978_blizzard",
+          "source_name": "NWS Northern Indiana",
+          "published_at": "2026-01-19T09:17:23.611Z",
+          "headline": "1978_blizzard",
+          "byline": null,
+          "accessed_utc": "2026-01-19T09:17:23.611Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "National Weather Service (NWS)"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.85,
+        "location": 0.6,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Great Blizzard of 1978 (Indiana)",
+        "fingerprint": "fp_19780126_blizzard_1978_northern_indiana"
+      }
+    },
+    {
+      "event_id": "ev_19780110_cyclone_trudy_eastern_indian_ocean",
+      "title": "Tropical Cyclone Trudy persists over the eastern Indian Ocean",
+      "description": "Tropical Cyclone Trudy persisted from about 10–20 January 1978 over tropical waters of the eastern Indian Ocean, per Australia’s Bureau of Meteorology cyclone history page. The draft describes it as an intense cyclone with an estimated central pressure near 955 hPa around 16 January and notes no reported shipping damage in the summary referenced.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1978-01-10T12:00:00Z",
+        "event_end": "1978-01-20T12:00:00Z",
+        "reported_at": "2026-01-19T09:17:23.611Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1978-01-10T12:00:00Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Australia (cyclone report proxy for eastern Indian Ocean waters)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "AU",
+        "capital_used": "Canberra",
+        "lat": -35.280937,
+        "lon": 149.130009,
+        "precision": "proxy",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.35
+      },
+      "sources": [
+        {
+          "url": "https://www.bom.gov.au/cyclone/history/trudy.shtml",
+          "source_name": "Australian Bureau of Meteorology",
+          "published_at": "2026-01-19T09:17:23.611Z",
+          "headline": "Tropical Cyclone Trudy",
+          "byline": null,
+          "accessed_utc": "2026-01-19T09:17:23.611Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Australian Bureau of Meteorology"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "eastern Indian Ocean"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.8,
+        "location": 0.35,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Cyclone Trudy Jan 1978",
+        "fingerprint": "fp_19780110_cyclone_trudy_eastern_indian_ocean"
+      }
+    },
+    {
+      "event_id": "evt_19780114_izu_oshima_eq",
+      "title": "Offshore earthquake near Izu-Oshima / Izu Peninsula, Japan (Jan 14, 1978)",
+      "description": "Sources report a magnitude ~7 offshore earthquake near the Izu Peninsula/Izu-Oshima area on January 14, 1978, with damaging impacts. Later reporting also notes tsunami observations associated with the event.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1978-01-14T12:00:00Z",
+        "event_end": "1978-01-14T12:00:00Z",
+        "reported_at": "1978-01-31T23:59:59Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "1978-01-14T12:00:00Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Off the Izu Peninsula / near Izu-Oshima, Japan",
+        "jurisdiction_level": "site",
+        "admin1": null,
+        "country": "JP",
+        "capital_used": null,
+        "lat": 34.75,
+        "lon": 139.38,
+        "precision": "admin1",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.45
+      },
+      "sources": [
+        {
+          "url": "https://www.usgs.gov/publications/earthquakes-january-february-1978",
+          "source_name": "USGS",
+          "published_at": "1978-01-31T23:59:59Z",
+          "headline": "Earthquakes January-February 1978",
+          "byline": null,
+          "accessed_utc": "2026-01-19T09:17:41.949Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.jishin.go.jp/main/chousa/14aug/p27h-e.htm",
+          "source_name": "Headquarters for Earthquake Research Promotion (Japan)",
+          "published_at": "1978-01-31T23:59:59Z",
+          "headline": "Izu-Oshima / Izu Peninsula earthquake reference page",
+          "byline": null,
+          "accessed_utc": "2026-01-19T09:17:41.949Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "USGS",
+          "Headquarters for Earthquake Research Promotion (Japan)"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.46,
+        "category": 0.8,
+        "location": 0.45,
+        "summary_grounding": 0.4
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "1978-01-14_izu-oshima_eq",
+        "fingerprint": "fp_19780114_izu_oshima_jp_geological"
+      }
+    },
+    {
+      "event_id": "1978-01-policyreg-esa-s7-50cfr402-us-19780104",
+      "title": "U.S. Fish and Wildlife Service promulgates ESA Section 7 interagency cooperation regulations (50 CFR part 402)",
+      "description": "A Federal Register action promulgated regulations for interagency cooperation under Section 7 of the Endangered Species Act, codified at 50 CFR part 402. The rules set procedures for federal agency consultation to avoid jeopardizing listed species and adverse modification of critical habitat.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "1978-01-04T12:00:00Z",
+        "event_end": "1978-01-04T12:00:00Z",
+        "reported_at": "1978-01-04T12:00:00Z",
+        "time_confidence": 0.4,
+        "event_date_utc": "1978-01-04T12:00:00Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "United States (federal)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://thefederalregister.org/83-FR/Issue-143",
+          "source_name": "The Federal Register (unverified link in draft)",
+          "published_at": "1978-01-04T12:00:00Z",
+          "headline": "U.S. Fish and Wildlife Service promulgates ESA Section 7 interagency cooperation regulations (50 CFR part 402)",
+          "byline": null,
+          "accessed_utc": "2026-01-19T09:19:01.261Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Fish and Wildlife Service"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.35,
+        "category": 0.7,
+        "location": 0.7,
+        "summary_grounding": 0.2
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only",
+        "low_confidence_location"
+      ],
+      "dedupe": {
+        "cluster_hint": "ESA Section 7 regulations 50 CFR 402",
+        "fingerprint": "1978-01-policyreg-esa-s7-50cfr402-us-19780104"
+      }
+    },
+    {
+      "event_id": "1978-01-policyreg-epa-tsca-8d-proposed-study-reporting-us-19780131",
+      "title": "EPA publishes proposed TSCA rule for Health and Safety Study Reporting (TSCA section 8(d))",
+      "description": "EPA issued a proposed rule under TSCA section 8(d) to require submission/reporting of specified health and safety studies. The proposal initiated rulemaking affecting manufacturers and processors required to report studies to EPA.",
+      "category_primary": "policy_regulation",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "1978-01-31T12:00:00Z",
+        "event_end": "1978-01-31T12:00:00Z",
+        "reported_at": "1978-01-31T12:00:00Z",
+        "time_confidence": 0.4,
+        "event_date_utc": "1978-01-31T12:00:00Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "United States (federal)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://nepis.epa.gov/Exe/ZyPURL.cgi?Dockey=20015VMQ.txt",
+          "source_name": "EPA NEPIS",
+          "published_at": "1978-01-31T12:00:00Z",
+          "headline": "EPA publishes proposed TSCA rule for Health and Safety Study Reporting (TSCA section 8(d))",
+          "byline": null,
+          "accessed_utc": "2026-01-19T09:19:01.261Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Environmental Protection Agency"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.4,
+        "category": 0.8,
+        "location": 0.7,
+        "summary_grounding": 0.25
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "paywalled_or_partial"
+      ],
+      "dedupe": {
+        "cluster_hint": "TSCA 8(d) Health and Safety Study Reporting proposed rule",
+        "fingerprint": "1978-01-policyreg-epa-tsca-8d-proposed-study-reporting-us-19780131"
+      }
+    }
+  ]
+}

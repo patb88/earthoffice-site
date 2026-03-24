@@ -1,0 +1,886 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_2016-10_normalize_2026-01-16T060239587Z",
+    "generated_utc": "2026-01-16T06:02:39.587Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "2016-10",
+    "window": {
+      "start_utc": "2016-10-01T00:00:00.000Z",
+      "end_utc": "2016-10-31T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "evt_20161010_waterford3_hydraulic_oil_spill",
+      "title": "Hydraulic oil spill (~60 gallons) reported at Waterford 3 Nuclear Generating Station",
+      "description": "A hydraulic system failure on a truck reportedly caused an approximately 60-gallon hydraulic oil spill on company property at Waterford 3. The incident triggered a notification to the Louisiana Department of Environmental Quality; the report indicates the spill was contained and did not reach surface water.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2016-10-10T15:32:00.000Z",
+        "event_end": "2016-10-10T15:32:00.000Z",
+        "reported_at": "2016-10-11T00:00:00.000Z",
+        "time_confidence": 0.8,
+        "event_date_utc": "2016-10-10T15:32:00.000Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Waterford 3 Nuclear Generating Station, Louisiana, USA",
+        "jurisdiction_level": "site",
+        "admin1": "Louisiana",
+        "country": "US",
+        "capital_used": null,
+        "lat": 29.994,
+        "lon": -90.471,
+        "precision": "exact",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.nrc.gov/reading-rm/doc-collections/event-status/event/2016/20161011en",
+          "source_name": "U.S. Nuclear Regulatory Commission (NRC) Event Notification",
+          "published_at": "2016-10-11T00:00:00.000Z",
+          "headline": "Event Notification (20161011)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Louisiana Department of Environmental Quality",
+          "U.S. Nuclear Regulatory Commission"
+        ],
+        "substances": [
+          "hydraulic oil"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "approximately 60-gallon hydraulic oil spill",
+            "source_url": "https://www.nrc.gov/reading-rm/doc-collections/event-status/event/2016/20161011en"
+          },
+          {
+            "quote": "contained and did not reach surface water",
+            "source_url": "https://www.nrc.gov/reading-rm/doc-collections/event-status/event/2016/20161011en"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.75,
+        "location": 0.55,
+        "summary_grounding": 0.65
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "waterford-3-hydraulic-oil-spill-2016-10",
+        "fingerprint": "fp_waterford3_2016-10-10_hydraulic_oil_spill"
+      }
+    },
+    {
+      "event_id": "evt_20161013_nathan_e_stewart_grounding_spill",
+      "title": "Tug Nathan E. Stewart grounding spills diesel and oils in Seaforth Channel (Heiltsuk waters)",
+      "description": "The tug Nathan E. Stewart ran aground on Edge Reef near Athlone Island in Seaforth Channel, releasing diesel and other industrial oils into coastal waters in Heiltsuk Nation territory near Bella Bella. The spill contaminated the surrounding marine area and prompted cleanup efforts.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2016-10-13T08:00:00.000Z",
+        "event_end": "2016-10-13T08:00:00.000Z",
+        "reported_at": "2016-11-16T00:00:00.000Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "2016-10-13T08:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Seaforth Channel / Edge Reef (near Bella Bella), British Columbia, Canada",
+        "jurisdiction_level": "site",
+        "admin1": "British Columbia",
+        "country": "CA",
+        "capital_used": null,
+        "lat": 52.156,
+        "lon": -128.116,
+        "precision": "neighborhood",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.45
+      },
+      "sources": [
+        {
+          "url": "https://www.aljazeera.com/features/2016/11/16/canadian-first-nation-cleans-up-latest-fuel-spill-mess",
+          "source_name": "Al Jazeera",
+          "published_at": "2016-11-16T00:00:00.000Z",
+          "headline": "Canadian First Nation cleans up latest fuel spill mess",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Heiltsuk Nation"
+        ],
+        "substances": [
+          "diesel",
+          "industrial oil"
+        ],
+        "ecosystems": [
+          "coastal waters"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "ran aground on Edge Reef",
+            "source_url": "https://www.aljazeera.com/features/2016/11/16/canadian-first-nation-cleans-up-latest-fuel-spill-mess"
+          },
+          {
+            "quote": "releasing diesel and other industrial oils",
+            "source_url": "https://www.aljazeera.com/features/2016/11/16/canadian-first-nation-cleans-up-latest-fuel-spill-mess"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.58,
+        "category": 0.75,
+        "location": 0.45,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "nathan-e-stewart-grounding-spill-2016-10",
+        "fingerprint": "fp_nathan_e_stewart_2016-10-13_spill"
+      }
+    },
+    {
+      "event_id": "evt_20161020_mishraq_sulphur_fire_so2_plume",
+      "title": "Al-Mishraq sulphur plant fire emits large toxic SO₂/H₂S plume near Mosul",
+      "description": "A fire at the Al‑Mishraq sulphur production site near Mosul produced a large plume of toxic gases including sulfur dioxide and hydrogen sulfide that was observed in satellite analyses. The source describes substantial SO₂ emissions over roughly a week following the ignition.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2016-10-20T00:00:00.000Z",
+        "event_end": "2016-10-27T23:59:59.000Z",
+        "reported_at": "2016-11-11T00:00:00.000Z",
+        "time_confidence": 0.5,
+        "event_date_utc": null,
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Al-Mishraq sulphur production site (near Mosul), Iraq",
+        "jurisdiction_level": "site",
+        "admin1": null,
+        "country": "IQ",
+        "capital_used": null,
+        "lat": 35.92,
+        "lon": 43.34,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.4
+      },
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/1611.03837",
+          "source_name": "arXiv",
+          "published_at": "2016-11-11T00:00:00.000Z",
+          "headline": "arXiv:1611.03837",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [
+          "sulfur dioxide (SO₂)",
+          "hydrogen sulfide (H₂S)"
+        ],
+        "ecosystems": [
+          "atmosphere"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "plume of toxic sulphur dioxide",
+            "source_url": "https://arxiv.org/abs/1611.03837"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.5,
+        "category": 0.7,
+        "location": 0.4,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "al-mishraq-sulphur-plant-fire-2016-10",
+        "fingerprint": "fp_almishraq_2016-10_fire_so2"
+      }
+    },
+    {
+      "event_id": "evt_201610_matthew_carolinas_flooding",
+      "title": "Hurricane Matthew causes major flooding in North Carolina and South Carolina",
+      "description": "Hurricane Matthew brought heavy rainfall and widespread flooding in North Carolina and South Carolina in early October 2016. USGS documented peak stages and streamflow at numerous gages following the storm’s passage during Oct 7–9.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2016-10-07T00:00:00.000Z",
+        "event_end": "2016-10-09T23:59:59.000Z",
+        "reported_at": "2016-10-09T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2016-10-07T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "North Carolina and South Carolina, USA",
+        "jurisdiction_level": "state",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Raleigh, NC",
+        "lat": 35.7796,
+        "lon": -78.6382,
+        "precision": "proxy",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.usgs.gov/news/usgs-publishes-peak-stages-and-streamflow-following-hurricane-matthew",
+          "source_name": "USGS",
+          "published_at": "2016-10-07T00:00:00.000Z",
+          "headline": "USGS publishes peak stages and streamflow following Hurricane Matthew",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.theguardian.com/world/2016/oct/09/hurricane-matthew-weakening-flooding-south-east-us-atlantic",
+          "source_name": "The Guardian",
+          "published_at": "2016-10-09T00:00:00.000Z",
+          "headline": "Hurricane Matthew weakening as it causes flooding in south-east US",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "USGS"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "peak stages and streamflow following Hurricane Matthew",
+            "source_url": "https://www.usgs.gov/news/usgs-publishes-peak-stages-and-streamflow-following-hurricane-matthew"
+          },
+          {
+            "quote": "causes flooding in south-east US",
+            "source_url": "https://www.theguardian.com/world/2016/oct/09/hurricane-matthew-weakening-flooding-south-east-us-atlantic"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.75,
+        "location": 0.55,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "needs_dedupe_check",
+        "location_ambiguous",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "Hurricane Matthew flooding Carolinas Oct 2016",
+        "fingerprint": "fp_matthew_carolinas_2016-10-07"
+      }
+    },
+    {
+      "event_id": "evt_201610_haima_luzon_china_rainfall",
+      "title": "Super Typhoon Haima (Lawin) brings extreme rainfall to northern Philippines and moves toward China",
+      "description": "Typhoon Haima (Lawin) affected northern Philippines (Luzon) in October 2016 and then moved west toward the South China Sea and China. NASA’s GPM program reported extreme rainfall rates and multi-day heavy totals over parts of Luzon associated with the event.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2016-10-19T00:00:00.000Z",
+        "event_end": "2016-10-24T23:59:59.000Z",
+        "reported_at": "2016-10-20T00:00:00.000Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "2016-10-19T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Northern Philippines (Luzon); South China Sea; South China coast",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "PH",
+        "capital_used": "Manila",
+        "lat": 14.5995,
+        "lon": 120.9842,
+        "precision": "proxy",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.4
+      },
+      "sources": [
+        {
+          "url": "https://gpm.nasa.gov/extreme-weather/gpm-measures-extreme-rainfall-typhoons-sarika-and-haima",
+          "source_name": "NASA GPM",
+          "published_at": "2016-10-20T00:00:00.000Z",
+          "headline": "GPM Measures Extreme Rainfall from Typhoons Sarika and Haima",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://time.com/4537979/haima-typhoon-philippines-weather/",
+          "source_name": "Time",
+          "published_at": "2016-10-20T00:00:00.000Z",
+          "headline": "Typhoon Haima Heads Toward the Philippines",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NASA GPM"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "GPM Measures Extreme Rainfall from Typhoons Sarika and Haima",
+            "source_url": "https://gpm.nasa.gov/extreme-weather/gpm-measures-extreme-rainfall-typhoons-sarika-and-haima"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.5,
+        "category": 0.75,
+        "location": 0.4,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "needs_dedupe_check",
+        "location_ambiguous",
+        "date_ambiguous",
+        "low_confidence_location"
+      ],
+      "dedupe": {
+        "cluster_hint": "Typhoon Haima/Lawin rainfall impacts Oct 2016",
+        "fingerprint": "fp_haima_ph_2016-10-19"
+      }
+    },
+    {
+      "event_id": "evt_201610_noaa_october_warmth_lower48",
+      "title": "NOAA reports October 2016 as among warmest Octobers for the contiguous United States",
+      "description": "A NOAA/NCEI assessment reported that October 2016 ranked as the third warmest October on record for the contiguous United States (Lower 48). The report contextualized the month within near-record warmth for January–October 2016.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2016-10-01T00:00:00.000Z",
+        "event_end": "2016-10-31T23:59:59.000Z",
+        "reported_at": "2016-11-01T00:00:00.000Z",
+        "time_confidence": 0.45,
+        "event_date_utc": null,
+        "event_date_precision": "month"
+      },
+      "location": {
+        "name": "Contiguous United States",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "proxy",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://weather.com/news/climate/news/noaa-report-october-2016-record-warm-dry-wet",
+          "source_name": "The Weather Channel",
+          "published_at": "2016-11-01T00:00:00.000Z",
+          "headline": "NOAA Report: October 2016 Was Record Warm, Dry in Some Areas, Wet in Others",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA",
+          "NCEI"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "October 2016 was the third warmest October on record for the Lower 48",
+            "source_url": "https://weather.com/news/climate/news/noaa-report-october-2016-record-warm-dry-wet"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.5,
+        "category": 0.7,
+        "location": 0.7,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "needs_dedupe_check",
+        "secondary_sources_only",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "NOAA October 2016 warmth Lower 48",
+        "fingerprint": "fp_noaa_lower48_oct2016"
+      }
+    },
+    {
+      "event_id": "geol-it-20161030-norcia-m66",
+      "title": "Magnitude 6.6 earthquake near Norcia in central Italy",
+      "description": "A magnitude 6.6 earthquake struck central Italy near Norcia on Oct 30, 2016, as part of the 2016 central Italy seismic sequence. The event was reported with an expectation of continued aftershocks.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2016-10-30T06:40:19.000Z",
+        "event_end": "2016-10-30T06:40:19.000Z",
+        "reported_at": "2016-10-30T00:00:00Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2016-10-30T06:40:19.000Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Norcia, Italy",
+        "jurisdiction_level": "city",
+        "admin1": "Umbria",
+        "country": "IT",
+        "capital_used": null,
+        "lat": 42.7927,
+        "lon": 13.0943,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.usgs.gov/news/featured-story/magnitude-66-earthquake-italy",
+          "source_name": "USGS",
+          "published_at": "2016-10-30T00:00:00Z",
+          "headline": "Magnitude 6.6 Earthquake in Italy",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "USGS"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "A magnitude 6.6 earthquake struck central Italy on Oct 30, 2016 (06:40:19 UTC).",
+            "source_url": "https://www.usgs.gov/news/featured-story/magnitude-66-earthquake-italy"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.58,
+        "category": 0.85,
+        "location": 0.6,
+        "summary_grounding": 0.7
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "2016 Central Italy seismic sequence (Oct 2016)",
+        "fingerprint": "geological|magnitude-6.6-earthquake-near-norcia-in-central-italy|norcia-it|2016-10-30"
+      }
+    },
+    {
+      "event_id": "geol-it-20161026-marche-umbria-ml54",
+      "title": "Magnitude 5.4 earthquake on the Marche–Umbria border in Italy",
+      "description": "Italy’s INGV reported an ML 5.4 earthquake on Oct 26, 2016 (19:10 local time / 17:10 UTC) affecting the Marche–Umbria border area. The earthquake was described as part of the seismic sequence that followed the Aug 24, 2016 event.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2016-10-26T17:10:00.000Z",
+        "event_end": "2016-10-26T17:10:00.000Z",
+        "reported_at": "2016-10-26T00:00:00Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2016-10-26T17:10:00.000Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Marche–Umbria border area, Italy",
+        "jurisdiction_level": "state",
+        "admin1": "Marche",
+        "country": "IT",
+        "capital_used": "Ancona",
+        "lat": 43.6158,
+        "lon": 13.5189,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.4
+      },
+      "sources": [
+        {
+          "url": "https://www.ingv.it/en/urp-press/Press-office/News/seismic-sequence-in-central-Italy-new-event-of-magnitude-5-4-26-October-2016-19-pm",
+          "source_name": "INGV",
+          "published_at": "2016-10-26T00:00:00Z",
+          "headline": "Seismic sequence in central Italy: new event of magnitude 5.4, 26 October 2016, 19 pm",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "INGV"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "new event of magnitude 5.4, 26 October 2016, 19 pm",
+            "source_url": "https://www.ingv.it/en/urp-press/Press-office/News/seismic-sequence-in-central-Italy-new-event-of-magnitude-5-4-26-October-2016-19-pm"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.52,
+        "category": 0.85,
+        "location": 0.4,
+        "summary_grounding": 0.65
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "needs_dedupe_check",
+        "low_confidence_location"
+      ],
+      "dedupe": {
+        "cluster_hint": "2016 Central Italy seismic sequence (Oct 2016)",
+        "fingerprint": "geological|magnitude-5.4-earthquake-on-the-marche-umbria-border-in-italy|ancona-it|2016-10-26"
+      }
+    },
+    {
+      "event_id": "201610-flower-garden-banks-coral-bleaching",
+      "title": "Coral bleaching reported at Flower Garden Banks National Marine Sanctuary (East Flower Garden Bank)",
+      "description": "NOAA reported widespread coral bleaching and paling at the East Flower Garden Bank within Flower Garden Banks National Marine Sanctuary in early October 2016. The report linked the bleaching to sustained elevated sea surface temperatures, describing it as among the worst bleaching observed at the sanctuary.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2016-10-05T00:00:00.000Z",
+        "event_end": "2016-10-12T23:59:59.000Z",
+        "reported_at": "2016-10-05T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2016-10-05T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "East Flower Garden Bank, Flower Garden Banks National Marine Sanctuary (Gulf of Mexico, USA)",
+        "jurisdiction_level": "site",
+        "admin1": "Texas",
+        "country": "US",
+        "capital_used": null,
+        "lat": 27.906,
+        "lon": -93.596,
+        "precision": "exact",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://flowergarden.noaa.gov/newsevents/2016bleachingarticle.html",
+          "source_name": "Flower Garden Banks National Marine Sanctuary (NOAA)",
+          "published_at": "2016-10-05T00:00:00.000Z",
+          "headline": "2016 Coral Bleaching at Flower Garden Banks",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://coralreefwatch.noaa.gov/satellite/analyses_guidance/global_coral_bleaching_2014-17_status.php",
+          "source_name": "NOAA Coral Reef Watch",
+          "published_at": "2017-01-01T00:00:00.000Z",
+          "headline": "Global Coral Bleaching 2014–17 Status and Guidance",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA",
+          "Flower Garden Banks National Marine Sanctuary",
+          "NOAA Coral Reef Watch"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "coral reef"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "nearly half of the coral colonies at the study site were bleached or paling",
+            "source_url": "https://flowergarden.noaa.gov/newsevents/2016bleachingarticle.html"
+          },
+          {
+            "quote": "sustained elevated sea surface temperatures",
+            "source_url": "https://flowergarden.noaa.gov/newsevents/2016bleachingarticle.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.56,
+        "category": 0.8,
+        "location": 0.55,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "needs_dedupe_check",
+        "date_ambiguous",
+        "low_confidence_location"
+      ],
+      "dedupe": {
+        "cluster_hint": "Flower Garden Banks coral bleaching Oct 2016",
+        "fingerprint": "a4b31d9d0d8a2f2d5b8d11a5c7b410d5"
+      }
+    },
+    {
+      "event_id": "2016-10-15_kigali_amendment_hfcs_kigali_rw",
+      "title": "Kigali Amendment adopted to phase down hydrofluorocarbons under the Montreal Protocol",
+      "description": "Governments meeting in Kigali adopted an amendment to the Montreal Protocol to phase down production and use of hydrofluorocarbons (HFCs). The goal is to reduce warming from these potent greenhouse gases.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "2016-10-15T00:00:00.000Z",
+        "event_end": "2016-10-15T23:59:59.000Z",
+        "reported_at": "2016-10-15T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2016-10-15T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Kigali, Rwanda",
+        "jurisdiction_level": "city",
+        "admin1": null,
+        "country": "RW",
+        "capital_used": null,
+        "lat": -1.9441,
+        "lon": 30.0619,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://press.un.org/en/2016/sgsm18212.doc.htm",
+          "source_name": "UN Press",
+          "published_at": "2016-10-15T00:00:00.000Z",
+          "headline": "Secretary-General Welcomes Kigali Amendment to Montreal Protocol",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://csl.noaa.gov/news/2016/196_1016.html",
+          "source_name": "NOAA CSL",
+          "published_at": "2016-10-16T00:00:00.000Z",
+          "headline": "Kigali Amendment to the Montreal Protocol: HFC phase-down agreement reached",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Montreal Protocol",
+          "United Nations"
+        ],
+        "substances": [
+          "hydrofluorocarbons (HFCs)"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "welcomed the adoption of the Kigali Amendment to the Montreal Protocol",
+            "source_url": "https://press.un.org/en/2016/sgsm18212.doc.htm"
+          },
+          {
+            "quote": "agreement to phase down hydrofluorocarbons (HFCs) was reached in Kigali",
+            "source_url": "https://csl.noaa.gov/news/2016/196_1016.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.72,
+        "category": 0.85,
+        "location": 0.7,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Kigali Amendment HFC phase-down adopted (2016-10)",
+        "fingerprint": "kigali-amendment-hfcs|kigali-rwanda|2016-10-15"
+      }
+    },
+    {
+      "event_id": "2016-10-04_eu_council_paris_ratification_brussels_be",
+      "title": "EU Council adopts decision enabling EU ratification of the Paris Agreement",
+      "description": "The Council of the European Union adopted the decision enabling EU ratification of the Paris Agreement. This enabled the EU to deposit its instrument of ratification and helped bring the Agreement closer to entry into force.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "2016-10-04T21:45:00.000Z",
+        "event_end": "2016-10-04T21:45:00.000Z",
+        "reported_at": "2016-10-04T21:45:00.000Z",
+        "time_confidence": 0.8,
+        "event_date_utc": "2016-10-04T21:45:00.000Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "European Union",
+        "jurisdiction_level": "supranational",
+        "admin1": null,
+        "country": null,
+        "capital_used": "Brussels",
+        "lat": 50.8503,
+        "lon": 4.3517,
+        "precision": "proxy",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.65
+      },
+      "sources": [
+        {
+          "url": "https://www.consilium.europa.eu/en/press/press-releases/2016/10/04/adoption-paris-agreement/",
+          "source_name": "Council of the EU (Consilium)",
+          "published_at": "2016-10-04T21:45:00.000Z",
+          "headline": "Adoption of the Paris Agreement",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://climate.ec.europa.eu/news-other-reads/news/eu-triggers-entry-force-global-climate-agreement-2016-10-06_en",
+          "source_name": "European Commission (Climate Action)",
+          "published_at": "2016-10-06T00:00:00.000Z",
+          "headline": "EU triggers entry into force of global climate agreement",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Council of the European Union",
+          "European Union"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "The Council today adopted the decision on the conclusion, on behalf of the EU, of the Paris Agreement",
+            "source_url": "https://www.consilium.europa.eu/en/press/press-releases/2016/10/04/adoption-paris-agreement/"
+          },
+          {
+            "quote": "The EU has deposited its instrument of ratification of the Paris Agreement",
+            "source_url": "https://climate.ec.europa.eu/news-other-reads/news/eu-triggers-entry-force-global-climate-agreement-2016-10-06_en"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.74,
+        "category": 0.85,
+        "location": 0.65,
+        "summary_grounding": 0.65
+      },
+      "quality_flags": [
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "EU Council decision enabling Paris Agreement ratification (2016-10-04)",
+        "fingerprint": "eu-council-paris-ratification|european-union|2016-10-04"
+      }
+    }
+  ]
+}

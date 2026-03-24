@@ -1,0 +1,805 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_2009-03_normalize_2026-01-16T035926073Z",
+    "generated_utc": "2026-01-16T03:59:26.073Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "2009-03",
+    "window": {
+      "start_utc": "2009-03-01T00:00:00.000Z",
+      "end_utc": "2009-03-31T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "2009-03-11__pacific-adventurer-oil-spill__cape-moreton-qld-au",
+      "title": "Pacific Adventurer oil spill and chemical containers lost off southeast Queensland during Cyclone Hamish",
+      "description": "The cargo ship Pacific Adventurer was damaged off southeast Queensland, resulting in a heavy fuel oil spill and the loss of containers including ammonium nitrate. Oil affected parts of the Moreton Bay area coastline, prompting cleanup operations.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2009-03-11T00:00:00.000Z",
+        "event_end": "2009-03-11T23:59:59.000Z",
+        "reported_at": "2009-03-11T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2009-03-11T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Off Cape Moreton / Moreton Bay region, Queensland, Australia",
+        "jurisdiction_level": "site",
+        "admin1": "Queensland",
+        "country": "AU",
+        "capital_used": null,
+        "lat": -27.031,
+        "lon": 153.467,
+        "precision": "neighborhood",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.amsa.gov.au/marine-environment/incidents-and-exercises/pacific-adventurer-11-march-2009",
+          "source_name": "Australian Maritime Safety Authority (AMSA)",
+          "published_at": "2009-03-11T00:00:00.000Z",
+          "headline": "Pacific Adventurer – 11 March 2009",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.abc.net.au/news/2009-04-14/oil-slick-ship-ignored-rough-sea-warnings/1650164",
+          "source_name": "ABC News (Australia)",
+          "published_at": "2009-04-14T00:00:00.000Z",
+          "headline": "Oil slick ship ignored rough sea warnings",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Pacific Adventurer",
+          "Australian Maritime Safety Authority (AMSA)"
+        ],
+        "substances": [
+          "heavy fuel oil",
+          "ammonium nitrate"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Pacific Adventurer – 11 March 2009",
+            "source_url": "https://www.amsa.gov.au/marine-environment/incidents-and-exercises/pacific-adventurer-11-march-2009"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.85,
+        "location": 0.6,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Pacific Adventurer oil spill (Mar 2009)",
+        "fingerprint": "pacific-adventurer-oil-spill__off-cape-moreton-moreton-bay-qld-au__2009-03-11"
+      }
+    },
+    {
+      "event_id": "evt_20090328_red_river_fargo_flooding",
+      "title": "Red River Valley spring flooding crests at Fargo, North Dakota",
+      "description": "Spring flooding on the Red River of the North culminated in a record crest at Fargo around March 28, 2009 after mid-March flooding driven by snowmelt combined with additional precipitation and frozen/saturated ground.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2009-03-28T00:00:00.000Z",
+        "event_end": "2009-03-28T23:59:59.000Z",
+        "reported_at": "2009-03-15T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2009-03-28T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Fargo, North Dakota, United States",
+        "jurisdiction_level": "city",
+        "admin1": "North Dakota",
+        "country": "US",
+        "capital_used": null,
+        "lat": 46.8772,
+        "lon": -96.7898,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.mrcc.purdue.edu/climatesummaries/752",
+          "source_name": "Midwestern Regional Climate Center (MRCC)",
+          "published_at": "2009-03-15T00:00:00Z",
+          "headline": "Climate Summaries (Station 752)",
+          "byline": null,
+          "accessed_utc": "2009-03-31T23:59:59.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.usgs.gov/media/audio/hazard-roundup-march-2009",
+          "source_name": "U.S. Geological Survey (USGS)",
+          "published_at": "2009-03-01T00:00:00Z",
+          "headline": "Hazard Roundup: March 2009",
+          "byline": null,
+          "accessed_utc": "2009-03-31T23:59:59.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Midwestern Regional Climate Center",
+          "U.S. Geological Survey"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "river"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "record crest near 40.8 feet at Fargo on March 28",
+            "source_url": "https://www.usgs.gov/media/audio/hazard-roundup-march-2009"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.52,
+        "category": 0.75,
+        "location": 0.55,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "2009-03 Red River Fargo crest flooding",
+        "fingerprint": "fp_20090328_red_river_fargo"
+      }
+    },
+    {
+      "event_id": "evt_20090326_panhandles_blizzard",
+      "title": "Late-season blizzard impacts Texas and Oklahoma Panhandles",
+      "description": "A major late-season blizzard brought heavy snow and blizzard conditions across the Texas and Oklahoma Panhandles from March 26 to March 28, 2009, described by the National Weather Service as a historic late-season event for the region.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2009-03-26T00:00:00.000Z",
+        "event_end": "2009-03-28T23:59:59.000Z",
+        "reported_at": "2009-03-26T00:00:00Z",
+        "time_confidence": 0.7,
+        "event_date_utc": null,
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Amarillo, Texas, United States (proxy for Texas Panhandle)",
+        "jurisdiction_level": "city",
+        "admin1": "Texas",
+        "country": "US",
+        "capital_used": null,
+        "lat": 35.221997,
+        "lon": -101.831297,
+        "precision": "city",
+        "location_basis": "institution_proxy",
+        "location_confidence": 0.5
+      },
+      "sources": [
+        {
+          "url": "https://www.weather.gov/ama/march2009_blizzard",
+          "source_name": "National Weather Service (NWS) Amarillo",
+          "published_at": "2009-03-26T00:00:00Z",
+          "headline": "March 2009 Blizzard",
+          "byline": null,
+          "accessed_utc": "2009-03-31T23:59:59.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://weather.com/news/weather/news/2025-03-26-on-todays-date-plains-blizzard-2009-kansas-oklahoma-texas",
+          "source_name": "The Weather Channel",
+          "published_at": "2025-03-26T00:00:00Z",
+          "headline": "On This Date: Plains blizzard (2009)",
+          "byline": null,
+          "accessed_utc": "2009-03-31T23:59:59.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "National Weather Service"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "historic late-season event for the region",
+            "source_url": "https://www.weather.gov/ama/march2009_blizzard"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.8,
+        "location": 0.5,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "2009-03 Panhandles blizzard",
+        "fingerprint": "fp_20090326_panhandles_blizzard"
+      }
+    },
+    {
+      "event_id": "evt_20090323_mn_north_shore_ice_storm",
+      "title": "Ice storm causes widespread icing and outages on Minnesota’s North Shore",
+      "description": "A strong low-pressure system brought prolonged freezing rain to Minnesota’s Lake Superior North Shore from late March 23 into March 24, 2009, leading to significant ice accretion, tree damage, and power outages around communities including Two Harbors and Grand Marais.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2009-03-23T00:00:00.000Z",
+        "event_end": "2009-03-24T23:59:59.000Z",
+        "reported_at": "2009-03-23T00:00:00Z",
+        "time_confidence": 0.75,
+        "event_date_utc": null,
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Two Harbors, Minnesota, United States (proxy for North Shore/Arrowhead region)",
+        "jurisdiction_level": "city",
+        "admin1": "Minnesota",
+        "country": "US",
+        "capital_used": null,
+        "lat": 47.0227,
+        "lon": -91.6707,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.65
+      },
+      "sources": [
+        {
+          "url": "https://www.dnr.state.mn.us/climate/journal/09032324_northshore_icestorm.html",
+          "source_name": "Minnesota Department of Natural Resources (DNR)",
+          "published_at": "2009-03-23T00:00:00Z",
+          "headline": "North Shore Ice Storm (March 23–24, 2009)",
+          "byline": null,
+          "accessed_utc": "2009-03-31T23:59:59.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Minnesota Department of Natural Resources"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "Lake Superior shoreline",
+          "boreal/temperate forest"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "prolonged freezing rain along Lake Superior’s North Shore",
+            "source_url": "https://www.dnr.state.mn.us/climate/journal/09032324_northshore_icestorm.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.7,
+        "category": 0.85,
+        "location": 0.65,
+        "summary_grounding": 0.7
+      },
+      "quality_flags": [
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "2009-03 Minnesota North Shore ice storm",
+        "fingerprint": "fp_20090323_mn_north_shore_ice_storm"
+      }
+    },
+    {
+      "event_id": "evt_20090322_redoubt_magmatic_explosions",
+      "title": "Redoubt Volcano begins magmatic explosive phase",
+      "description": "USGS reports that Redoubt Volcano’s first magmatic explosion occurred on March 22, 2009, marking the start of an explosive eruptive phase with significant ash production and related hazards.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2009-03-22T00:00:00.000Z",
+        "event_end": "2009-03-22T23:59:59.000Z",
+        "reported_at": "2009-03-22T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2009-03-22T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Redoubt Volcano, Alaska, USA",
+        "jurisdiction_level": "site",
+        "admin1": "Alaska",
+        "country": "US",
+        "capital_used": null,
+        "lat": 60.485,
+        "lon": -152.742,
+        "precision": "exact",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://www.usgs.gov/publications/2009-eruption-redoubt-volcano-alaska",
+          "source_name": "USGS",
+          "published_at": "2009-03-22T00:00:00.000Z",
+          "headline": "2009 Eruption of Redoubt Volcano, Alaska",
+          "byline": null,
+          "accessed_utc": "2009-03-31T23:59:59.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.usgs.gov/media/audio/hazard-roundup-march-2009",
+          "source_name": "USGS",
+          "published_at": "2009-03-01T00:00:00.000Z",
+          "headline": "Hazard Roundup: March 2009 (audio)",
+          "byline": null,
+          "accessed_utc": "2009-03-31T23:59:59.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "USGS"
+        ],
+        "substances": [
+          "volcanic ash"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "first magmatic explosion occurred March 22",
+            "source_url": "https://www.usgs.gov/publications/2009-eruption-redoubt-volcano-alaska"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.85,
+        "location": 0.7,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Redoubt Volcano eruption March 2009",
+        "fingerprint": "redoubt-volcano-begins-magmatic-explosive-phase|redoubt-volcano-alaska-usa|2009-03-22"
+      }
+    },
+    {
+      "event_id": "evt_20090323_redoubt_lahars_drift_river",
+      "title": "Redoubt eruptions generate lahars and flooding risk near Drift River Terminal",
+      "description": "Explosive activity at Redoubt Volcano around March 22–23, 2009 generated lahars and flooding/mudflows in the Drift River area, prompting assessment of potential threats to infrastructure near the Drift River Terminal.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2009-03-23T00:00:00.000Z",
+        "event_end": "2009-03-23T23:59:59.000Z",
+        "reported_at": "2009-03-23T00:00:00.000Z",
+        "time_confidence": 0.5,
+        "event_date_utc": "2009-03-23T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Drift River Terminal area, Alaska, USA",
+        "jurisdiction_level": "site",
+        "admin1": "Alaska",
+        "country": "US",
+        "capital_used": null,
+        "lat": 60.636,
+        "lon": -152.742,
+        "precision": "neighborhood",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.4
+      },
+      "sources": [
+        {
+          "url": "https://incidentnews.noaa.gov/incident/8000/523774",
+          "source_name": "NOAA IncidentNews",
+          "published_at": "2009-03-23T00:00:00.000Z",
+          "headline": "Incident: Redoubt Volcano / Drift River impacts (record)",
+          "byline": null,
+          "accessed_utc": "2009-03-31T23:59:59.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.usgs.gov/publications/preliminary-observations-voluminous-ice-rich-and-water-rich-lahars-generated-during",
+          "source_name": "USGS",
+          "published_at": "2009-03-01T00:00:00.000Z",
+          "headline": "Preliminary observations of voluminous ice-rich and water-rich lahars generated during the 2009 eruption of Redoubt Volcano",
+          "byline": null,
+          "accessed_utc": "2009-03-31T23:59:59.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "USGS",
+          "NOAA"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "lahars generated during the 2009 eruption of Redoubt Volcano",
+            "source_url": "https://www.usgs.gov/publications/preliminary-observations-voluminous-ice-rich-and-water-rich-lahars-generated-during"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.5,
+        "category": 0.8,
+        "location": 0.4,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Redoubt Volcano lahars / Drift River March 2009",
+        "fingerprint": "redoubt-eruptions-generate-lahars-and-flooding-risk-near-drift-river-terminal|drift-river-terminal-area-alaska-usa|2009-03-23"
+      }
+    },
+    {
+      "event_id": "evt-200903-taloga-deweycounty-wildfire-evacuation",
+      "title": "Taloga-area wildfire in Dewey County, Oklahoma prompts evacuation",
+      "description": "A fast-moving wildfire near the Taloga area in Dewey County, Oklahoma spread under extreme fire weather conditions, prompting evacuations. Federal assistance was authorized to help fight the fire, which was reported as contained/extinguished by March 6, 2009, with continued monitoring for hotspots.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2009-03-05T00:00:00.000Z",
+        "event_end": "2009-03-06T23:59:59.000Z",
+        "reported_at": "2009-03-06T00:00:00.000Z",
+        "time_confidence": 0.65,
+        "event_date_utc": "2009-03-05T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Dewey County / Taloga area, Oklahoma, USA",
+        "jurisdiction_level": "site",
+        "admin1": "Oklahoma",
+        "country": "US",
+        "capital_used": null,
+        "lat": 36.0384,
+        "lon": -98.9638,
+        "precision": "neighborhood",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.45
+      },
+      "sources": [
+        {
+          "url": "https://oklahoma.gov/oem/emergencies-and-disasters/2009/03-05-fire-event.html",
+          "source_name": "Oklahoma Department of Emergency Management",
+          "published_at": "2009-03-05T00:00:00.000Z",
+          "headline": "03-05 Fire Event",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.fema.gov/news-release/2009/03/06/fema-authorizes-funds-fight-taloga-fire",
+          "source_name": "FEMA",
+          "published_at": "2009-03-06T00:00:00.000Z",
+          "headline": "FEMA Authorizes Funds to Fight Taloga Fire",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Oklahoma Department of Emergency Management",
+          "FEMA"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "FEMA authorizes funds to fight Taloga Fire.",
+            "source_url": "https://www.fema.gov/news-release/2009/03/06/fema-authorizes-funds-fight-taloga-fire"
+          },
+          {
+            "quote": "03-05 Fire Event.",
+            "source_url": "https://oklahoma.gov/oem/emergencies-and-disasters/2009/03-05-fire-event.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.52,
+        "category": 0.75,
+        "location": 0.45,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Taloga Fire (Dewey County, Oklahoma) March 2009",
+        "fingerprint": "taloga-fire-dewey-county-oklahoma-2009-03-05"
+      }
+    },
+    {
+      "event_id": "2009-03-big-eau-pleine-reservoir-fish-kill",
+      "title": "Fish kill reported at Big Eau Pleine Reservoir amid low water and low oxygen concerns",
+      "description": "Fisheries officials reported a large fish kill at Big Eau Pleine Reservoir as ice receded in late winter/early spring 2009. The report discussed unusually low water levels and oxygen depletion as contributing factors.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2009-03-01T00:00:00.000Z",
+        "time_confidence": 0.4,
+        "event_date_utc": null,
+        "event_date_precision": "month"
+      },
+      "location": {
+        "name": "Big Eau Pleine Reservoir near Wausau, Wisconsin, USA",
+        "jurisdiction_level": "site",
+        "admin1": "Wisconsin",
+        "country": "US",
+        "capital_used": null,
+        "lat": 44.9083,
+        "lon": -89.6301,
+        "precision": "neighborhood",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.5
+      },
+      "sources": [
+        {
+          "url": "https://archive.jsonline.com/blogs/sports/42307892.html",
+          "source_name": "jsonline.com (archive)",
+          "published_at": "2009-03-01T00:00:00.000Z",
+          "headline": "Major winter fish kill reported at Big Eau Pleine Reservoir (linked to low water levels and low oxygen)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [
+          "reservoir"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.45,
+        "category": 0.7,
+        "location": 0.5,
+        "summary_grounding": 0.4
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Big Eau Pleine Reservoir fish kill (winter 2009)",
+        "fingerprint": "big-eau-pleine-reservoir-fish-kill_2009-03_us-wi"
+      }
+    },
+    {
+      "event_id": "evt_20090310_epa_mandatory_ghg_reporting_proposed_rule_us",
+      "title": "EPA Administrator signs proposed Mandatory Greenhouse Gas Reporting Rule",
+      "description": "The U.S. Environmental Protection Agency announced that its Administrator signed a proposed rule to establish mandatory reporting of greenhouse gas emissions from large sources and suppliers. The proposal aimed to create a national reporting program to collect comprehensive emissions data for regulatory and policy use.",
+      "category_primary": "policy_regulation",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "2009-03-10T00:00:00.000Z",
+        "event_end": "2009-03-10T23:59:59.000Z",
+        "reported_at": "2009-03-10T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2009-03-10T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States (federal)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.8
+      },
+      "sources": [
+        {
+          "url": "https://www.epa.gov/ghgreporting/additional-information-2009-proposed-rule",
+          "source_name": "U.S. Environmental Protection Agency",
+          "published_at": "2009-03-10T00:00:00.000Z",
+          "headline": "Additional Information on the 2009 Proposed Rule",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.epa.gov/archive/epapages/newsroom_archive/newsreleases/4bd0e6c514ec1075852575750053e7c0.html",
+          "source_name": "U.S. Environmental Protection Agency (News Releases Archive)",
+          "published_at": "2009-03-10T00:00:00.000Z",
+          "headline": "News release (archive)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Environmental Protection Agency (EPA)"
+        ],
+        "substances": [
+          "greenhouse gases"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "signed a proposed rule to establish mandatory reporting of greenhouse gas emissions",
+            "source_url": "https://www.epa.gov/archive/epapages/newsroom_archive/newsreleases/4bd0e6c514ec1075852575750053e7c0.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.72,
+        "category": 0.85,
+        "location": 0.8,
+        "summary_grounding": 0.65
+      },
+      "quality_flags": [
+        "needs_dedupe_check",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "epa_ghg_reporting_rule_proposed_2009_03_us_federal",
+        "fingerprint": "fp_20090310_epa_ghg_reporting_us"
+      }
+    },
+    {
+      "event_id": "evt_20090330_omnibus_public_land_mgmt_act_us",
+      "title": "Omnibus Public Land Management Act of 2009 signed into law",
+      "description": "President Barack Obama signed the Omnibus Public Land Management Act of 2009 into law. The legislation included a large set of public-lands measures, including conservation and protection designations across multiple U.S. areas.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "2009-03-30T00:00:00.000Z",
+        "event_end": "2009-03-30T23:59:59.000Z",
+        "reported_at": "2009-03-30T00:00:00.000Z",
+        "time_confidence": 0.75,
+        "event_date_utc": "2009-03-30T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States (federal)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.8
+      },
+      "sources": [
+        {
+          "url": "https://obamawhitehouse.archives.gov/the-press-office/remarks-president-signing-omnibus-public-lands-management-act-2009-33009",
+          "source_name": "Obama White House Archives",
+          "published_at": "2009-03-30T00:00:00.000Z",
+          "headline": "Remarks by the President at Signing of Omnibus Public Lands Management Act of 2009",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "The White House"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": [
+          "Barack Obama"
+        ]
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Remarks by the President at Signing of Omnibus Public Lands Management Act of 2009",
+            "source_url": "https://obamawhitehouse.archives.gov/the-press-office/remarks-president-signing-omnibus-public-lands-management-act-2009-33009"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.7,
+        "category": 0.8,
+        "location": 0.8,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "needs_dedupe_check",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "omnibus_public_lands_management_act_2009_signing_us_federal",
+        "fingerprint": "fp_20090330_omnibus_public_lands_us"
+      }
+    }
+  ]
+}

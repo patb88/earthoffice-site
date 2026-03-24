@@ -1,0 +1,1161 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_2024-03_normalize_2026-01-16T135450006Z",
+    "generated_utc": "2026-01-16T13:54:50.006Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "2024-03",
+    "window": {
+      "start_utc": "2024-03-01T00:00:00.000Z",
+      "end_utc": "2024-03-31T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "evt_202403_montgomery_ia_fertilizer_spill",
+      "title": "Liquid nitrogen fertilizer spill reaches East Nishnabotna River near Red Oak, Iowa",
+      "description": "Iowa DNR reported that 32% liquid nitrogen fertilizer was released from an aboveground tank after a valve was left open, discharging into a drainage ditch and reaching the East Nishnabotna River. The incident prompted investigation and sampling due to downstream water quality concerns.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2024-03-11T00:00:00.000Z",
+        "event_end": "2024-03-11T23:59:59.000Z",
+        "reported_at": "2024-03-12T00:00:00.000Z",
+        "time_confidence": 0.8,
+        "event_date_utc": "2024-03-11T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Montgomery County (near Red Oak), Iowa, USA",
+        "jurisdiction_level": "state",
+        "admin1": "Iowa",
+        "country": "US",
+        "capital_used": "Des Moines",
+        "lat": 41.5868,
+        "lon": -93.625,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.iowadnr.gov/advisories/2024-03-12/fertilizer-spill-montgomery-county-reaches-east-nishnabotna-river",
+          "source_name": "Iowa Department of Natural Resources",
+          "published_at": "2024-03-12T00:00:00.000Z",
+          "headline": "Fertilizer spill in Montgomery County reaches East Nishnabotna River",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.iowadnr.gov/advisories/2024-03-14/update-investigation-montgomery-county-fertilizer-spill-continues",
+          "source_name": "Iowa Department of Natural Resources",
+          "published_at": "2024-03-14T00:00:00.000Z",
+          "headline": "Update: Investigation into Montgomery County fertilizer spill continues",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.fws.gov/project/nishnabotna-fertilizer-spill",
+          "source_name": "U.S. Fish & Wildlife Service",
+          "published_at": "2024-03-01T00:00:00.000Z",
+          "headline": "Nishnabotna Fertilizer Spill",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Iowa Department of Natural Resources",
+          "U.S. Fish & Wildlife Service"
+        ],
+        "substances": [
+          "32% liquid nitrogen fertilizer"
+        ],
+        "ecosystems": [
+          "East Nishnabotna River"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "32% liquid nitrogen fertilizer was discharged... into a drainage ditch and the East Nishnabotna River.",
+            "source_url": "https://www.iowadnr.gov/advisories/2024-03-12/fertilizer-spill-montgomery-county-reaches-east-nishnabotna-river"
+          },
+          {
+            "quote": "Investigation... continues and sampling is being conducted.",
+            "source_url": "https://www.iowadnr.gov/advisories/2024-03-14/update-investigation-montgomery-county-fertilizer-spill-continues"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.8,
+        "location": 0.6,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "low_confidence_location"
+      ],
+      "dedupe": {
+        "cluster_hint": "IA_nishnabotna_fertilizer_spill_2024-03",
+        "fingerprint": "fp_ia_nishnabotna_fertilizer_2024-03-11"
+      }
+    },
+    {
+      "event_id": "evt_202403_houma_la_oil_spill_burn",
+      "title": "Crude oil released into marsh near Houma, Louisiana; in-situ burn used in response",
+      "description": "NOAA IncidentNews reported a crude oil release into marsh and nearby waters in the Houma, Louisiana area associated with a Whitney Oil & Gas well/test line. The response included an in-situ burn described as successful and aimed at removing most of the oil.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2024-03-06T00:00:00.000Z",
+        "event_end": "2024-03-11T23:59:59.000Z",
+        "reported_at": "2024-03-01T00:00:00.000Z",
+        "time_confidence": 0.5,
+        "event_date_utc": null,
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Houma, Louisiana, USA (Lake Hatch area)",
+        "jurisdiction_level": "state",
+        "admin1": "Louisiana",
+        "country": "US",
+        "capital_used": "Baton Rouge",
+        "lat": 30.4515,
+        "lon": -91.1871,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.5
+      },
+      "sources": [
+        {
+          "url": "https://incidentnews.noaa.gov/incident/10752",
+          "source_name": "NOAA IncidentNews",
+          "published_at": "2024-03-01T00:00:00.000Z",
+          "headline": "Incident 10752",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://blog.response.restoration.noaa.gov/incident-responses-march-2024",
+          "source_name": "NOAA Response & Restoration Blog",
+          "published_at": "2024-03-01T00:00:00.000Z",
+          "headline": "Incident responses: March 2024",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA",
+          "Whitney Oil & Gas"
+        ],
+        "substances": [
+          "crude oil"
+        ],
+        "ecosystems": [
+          "marsh"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Crude oil release... response included an in situ burn.",
+            "source_url": "https://incidentnews.noaa.gov/incident/10752"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.48,
+        "category": 0.75,
+        "location": 0.5,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "low_confidence_location",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "LA_houma_whitney_oil_in_situ_burn_2024-03",
+        "fingerprint": "fp_la_houma_oil_burn_2024-03"
+      }
+    },
+    {
+      "event_id": "evt_202403_huntington_beach_sheen_tarballs",
+      "title": "Offshore sheen and tar balls near Huntington Beach, California; wildlife affected and cleanup conducted",
+      "description": "Reports described an offshore sheen near Huntington Beach and tar-like material that led to response operations and shoreline cleanup. Wildlife responders reported oiled birds being captured and treated while the source of the material was under investigation.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2024-03-08T00:00:00.000Z",
+        "event_end": "2024-03-15T23:59:59.000Z",
+        "reported_at": "2024-03-01T00:00:00.000Z",
+        "time_confidence": 0.5,
+        "event_date_utc": null,
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "California, USA (off Huntington Beach, Orange County)",
+        "jurisdiction_level": "state",
+        "admin1": "California",
+        "country": "US",
+        "capital_used": "Sacramento",
+        "lat": 38.5816,
+        "lon": -121.4944,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://blog.response.restoration.noaa.gov/incident-responses-march-2024",
+          "source_name": "NOAA Response & Restoration Blog",
+          "published_at": "2024-03-01T00:00:00.000Z",
+          "headline": "Incident responses: March 2024",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://apnews.com/article/7a5374612fa70ede58a8061d265abb29",
+          "source_name": "Associated Press",
+          "published_at": "2024-03-01T00:00:00.000Z",
+          "headline": "Article 7a5374612fa70ede58a8061d265abb29",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA",
+          "Associated Press"
+        ],
+        "substances": [
+          "tar-like material"
+        ],
+        "ecosystems": [
+          "Pacific Ocean"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Offshore sheen... tar balls... cleanup and wildlife response underway.",
+            "source_url": "https://blog.response.restoration.noaa.gov/incident-responses-march-2024"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.5,
+        "category": 0.75,
+        "location": 0.55,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "low_confidence_location",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "CA_huntington_beach_sheen_tarballs_2024-03",
+        "fingerprint": "fp_ca_huntington_beach_sheen_2024-03"
+      }
+    },
+    {
+      "event_id": "evt_2024-03_us_midwest_severe_weather_0312_0315",
+      "title": "Severe weather outbreak with tornadoes and large hail in the U.S. Midwest (Mar 12–15, 2024)",
+      "description": "NOAA’s March 2024 U.S. climate summary described a major severe-weather outbreak in mid-March that produced large hail and more than 20 tornadoes across the U.S. Midwest, with significant damage and loss of life. The report characterized it as the most intense severe-weather outbreak of the year through March 31.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2024-03-12T00:00:00.000Z",
+        "event_end": "2024-03-15T23:59:59.000Z",
+        "reported_at": "2024-04-01T00:00:00.000Z",
+        "time_confidence": 0.65,
+        "event_date_utc": null,
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Midwest, United States",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "proxy",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.ncei.noaa.gov/news/national-climate-202403",
+          "source_name": "NOAA NCEI",
+          "published_at": "2024-04-01T00:00:00.000Z",
+          "headline": "National Climate Report - March 2024",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA",
+          "NOAA NCEI"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "A major severe weather outbreak ... produced large hail and more than 20 tornadoes",
+            "source_url": "https://www.ncei.noaa.gov/news/national-climate-202403"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.85,
+        "location": 0.55,
+        "summary_grounding": 0.65
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "2024-03 US Midwest severe weather outbreak",
+        "fingerprint": "fp_us_midwest_severe_weather_2024-03-12_2024-03-15"
+      }
+    },
+    {
+      "event_id": "evt_2024-03_ca_sierra_nevada_blizzard_0301_0303",
+      "title": "Sierra Nevada blizzard disrupts travel with heavy mountain snow and extreme winds (California, Mar 1–3, 2024)",
+      "description": "Reports described a powerful blizzard impacting California’s Sierra Nevada and Lake Tahoe area in early March, bringing very heavy snowfall at higher elevations and extreme winds that led to major travel disruptions and hazardous conditions. NOAA’s March 2024 U.S. climate summary also referenced major winter weather impacts during the month.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2024-03-01T00:00:00.000Z",
+        "event_end": "2024-03-03T23:59:59.000Z",
+        "reported_at": "2024-03-02T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": null,
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "California, United States (Sierra Nevada / Lake Tahoe area)",
+        "jurisdiction_level": "state",
+        "admin1": "CA",
+        "country": "US",
+        "capital_used": "Sacramento",
+        "lat": 38.5816,
+        "lon": -121.4944,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.ncei.noaa.gov/news/national-climate-202403",
+          "source_name": "NOAA NCEI",
+          "published_at": "2024-04-01T00:00:00.000Z",
+          "headline": "National Climate Report - March 2024",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.theguardian.com/us-news/2024/mar/02/california-sierra-nevada-blizzard",
+          "source_name": "The Guardian",
+          "published_at": "2024-03-02T00:00:00.000Z",
+          "headline": "California’s Sierra Nevada hit by blizzard conditions as huge snowfall expected",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA NCEI"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "Sierra Nevada"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "blizzard conditions ... huge snowfall expected",
+            "source_url": "https://www.theguardian.com/us-news/2024/mar/02/california-sierra-nevada-blizzard"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.63,
+        "category": 0.8,
+        "location": 0.6,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "location_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "2024-03 Sierra Nevada blizzard",
+        "fingerprint": "fp_ca_sierra_nevada_blizzard_2024-03-01_2024-03-03"
+      }
+    },
+    {
+      "event_id": "evt_2024-03_mz_cyclone_filipo_landfall_0312",
+      "title": "Tropical Cyclone Filipo makes landfall in Mozambique (Mar 12, 2024)",
+      "description": "NASA Earth Observatory reported that Tropical Cyclone Filipo strengthened in the Mozambique Channel and made landfall in Mozambique on March 12, 2024 near Inhassoro. Disaster Charter activation materials noted storm impacts and risk of flooding and damage to infrastructure and crops in affected provinces.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2024-03-12T00:00:00.000Z",
+        "event_end": "2024-03-12T23:59:59.000Z",
+        "reported_at": "2024-03-13T00:00:00.000Z",
+        "time_confidence": 0.75,
+        "event_date_utc": "2024-03-12T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Mozambique (landfall near Inhassoro)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "MZ",
+        "capital_used": "Maputo",
+        "lat": -25.9653,
+        "lon": 32.5892,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.65
+      },
+      "sources": [
+        {
+          "url": "https://earthobservatory.nasa.gov/images/152554/tropical-cyclone-filipo",
+          "source_name": "NASA Earth Observatory",
+          "published_at": "2024-03-13T00:00:00.000Z",
+          "headline": "Tropical Cyclone Filipo",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://disasterscharter.org/activations/storm-hurricane-in-mozambique-activation-868-",
+          "source_name": "International Charter: Space and Major Disasters",
+          "published_at": "2024-03-12T00:00:00.000Z",
+          "headline": "Storm/Hurricane in Mozambique – Activation 868",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NASA Earth Observatory",
+          "International Charter: Space and Major Disasters"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "made landfall ... near Inhassoro on March 12, 2024",
+            "source_url": "https://earthobservatory.nasa.gov/images/152554/tropical-cyclone-filipo"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.7,
+        "category": 0.85,
+        "location": 0.65,
+        "summary_grounding": 0.7
+      },
+      "quality_flags": [
+        "location_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "2024-03 Cyclone Filipo Mozambique landfall",
+        "fingerprint": "fp_mz_filipo_2024-03-12"
+      }
+    },
+    {
+      "event_id": "evt_2024-03_mg_cyclone_gamane_flooding_0327_0329",
+      "title": "Cyclone Gamane brings flooding and displacement in northeastern Madagascar (Mar 27–29, 2024)",
+      "description": "Reuters and AP reported that Cyclone Gamane struck northeastern Madagascar in late March, triggering flooding that killed people, displaced tens of thousands, and damaged infrastructure including roads and bridges. Government and emergency reporting cited widespread impacts in affected districts.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2024-03-27T00:00:00.000Z",
+        "event_end": "2024-03-29T23:59:59.000Z",
+        "reported_at": "2024-03-29T00:00:00.000Z",
+        "time_confidence": 0.75,
+        "event_date_utc": null,
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Madagascar (northeastern regions)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "MG",
+        "capital_used": "Antananarivo",
+        "lat": -18.8792,
+        "lon": 47.5079,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.reuters.com/world/africa/madagascar-cyclone-gamane-kills-least-11-displaces-thousands-government-says-2024-03-29/",
+          "source_name": "Reuters",
+          "published_at": "2024-03-29T00:00:00.000Z",
+          "headline": "Madagascar cyclone Gamane kills at least 11, displaces thousands, government says",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://apnews.com/article/e4bdaaa02f9870e659fab1d00cf9ca2d",
+          "source_name": "AP News",
+          "published_at": "2024-03-29T00:00:00.000Z",
+          "headline": "Cyclone Gamane brings flooding to Madagascar, killing people and displacing thousands, officials say",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Government of Madagascar"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "kills at least 11, displaces thousands, government says",
+            "source_url": "https://www.reuters.com/world/africa/madagascar-cyclone-gamane-kills-least-11-displaces-thousands-government-says-2024-03-29/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.7,
+        "category": 0.85,
+        "location": 0.6,
+        "summary_grounding": 0.7
+      },
+      "quality_flags": [
+        "location_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "2024-03 Cyclone Gamane Madagascar flooding",
+        "fingerprint": "fp_mg_gamane_2024-03-27_2024-03-29"
+      }
+    },
+    {
+      "event_id": "evt_2024-03_global_march_temp_record_noaa",
+      "title": "NOAA reports March 2024 as warmest March globally with cryosphere anomalies",
+      "description": "NOAA’s global climate report stated that March 2024 was the warmest March in its record for global surface temperature. The report also noted below-average Northern Hemisphere snow cover extent and low Antarctic sea ice extent during the month.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2024-03-01T00:00:00.000Z",
+        "event_end": "2024-03-31T23:59:59.000Z",
+        "reported_at": "2024-04-01T00:00:00.000Z",
+        "time_confidence": 0.8,
+        "event_date_utc": null,
+        "event_date_precision": "month"
+      },
+      "location": {
+        "name": "Global",
+        "jurisdiction_level": "global_proxy",
+        "admin1": null,
+        "country": null,
+        "capital_used": null,
+        "lat": 0,
+        "lon": 0,
+        "precision": "proxy",
+        "location_basis": "manual_override",
+        "location_confidence": 0.8
+      },
+      "sources": [
+        {
+          "url": "https://www.ncei.noaa.gov/news/global-climate-202403",
+          "source_name": "NOAA NCEI",
+          "published_at": "2024-04-01T00:00:00.000Z",
+          "headline": "Global Climate Report - March 2024",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA",
+          "NOAA NCEI"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "March 2024 was the warmest March on record",
+            "source_url": "https://www.ncei.noaa.gov/news/global-climate-202403"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.78,
+        "category": 0.9,
+        "location": 0.8,
+        "summary_grounding": 0.8
+      },
+      "quality_flags": [],
+      "dedupe": {
+        "cluster_hint": "NOAA global climate March 2024 record warmth",
+        "fingerprint": "fp_global_noaa_march_2024_warmest_march"
+      }
+    },
+    {
+      "event_id": "evt_20240316_reykjanes_fissure_eruption_grindavik",
+      "title": "Reykjanes Peninsula fissure eruption near Grindavík, Iceland (March 16, 2024)",
+      "description": "A fissure eruption began on March 16, 2024 on Iceland’s Reykjanes Peninsula near Grindavík, producing lava flows and prompting renewed disruptions such as evacuations/closures in the area. Reporting noted it was part of a series of recent eruptions in the region.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2024-03-16T00:00:00.000Z",
+        "event_end": "2024-03-16T23:59:59.000Z",
+        "reported_at": "2024-03-18T00:00:00.000Z",
+        "time_confidence": 0.85,
+        "event_date_utc": "2024-03-16T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Reykjanes Peninsula (near Grindavík), Iceland",
+        "jurisdiction_level": "site",
+        "admin1": null,
+        "country": "IS",
+        "capital_used": null,
+        "lat": 63.842,
+        "lon": -22.433,
+        "precision": "neighborhood",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://www.ferdamalastofa.is/en/moya/news/volcanic-eruption-16th-of-march-in-reykjanes",
+          "source_name": "Icelandic Tourist Board (Ferðamálastofa)",
+          "published_at": "2024-03-16T00:00:00.000Z",
+          "headline": "Volcanic eruption 16th of March in Reykjanes",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.reuters.com/business/environment/iceland-sees-string-volcanic-eruptions-last-three-years-2024-03-18/",
+          "source_name": "Reuters",
+          "published_at": "2024-03-18T00:00:00.000Z",
+          "headline": "Iceland sees string of volcanic eruptions in last three years",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://science.nasa.gov/photojournal/march-2024-iceland-eruption/",
+          "source_name": "NASA Science",
+          "published_at": "2024-03-01T00:00:00.000Z",
+          "headline": "March 2024 Iceland Eruption (Photojournal)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Icelandic Tourist Board",
+          "Reuters",
+          "NASA"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Volcanic eruption started on March 16th on the Reykjanes peninsula.",
+            "source_url": "https://www.ferdamalastofa.is/en/moya/news/volcanic-eruption-16th-of-march-in-reykjanes"
+          },
+          {
+            "quote": "Iceland has seen a string of volcanic eruptions in the last three years.",
+            "source_url": "https://www.reuters.com/business/environment/iceland-sees-string-volcanic-eruptions-last-three-years-2024-03-18/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.72,
+        "category": 0.9,
+        "location": 0.7,
+        "summary_grounding": 0.7
+      },
+      "quality_flags": [
+        "needs_dedupe_check",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "reykjanes_peninsula_fissure_eruption_mar_2024",
+        "fingerprint": "reykjanes peninsula fissure eruption near grindavik iceland|63.842|-22.433|2024-03-16"
+      }
+    },
+    {
+      "event_id": "fires_smokehouse-creek_2024-03",
+      "title": "Smokehouse Creek Fire burned across the Texas Panhandle into March 2024",
+      "description": "The Smokehouse Creek Fire, which started in late February 2024, continued burning into March across the Texas Panhandle with impacts extending toward western Oklahoma. Reporting in early March described it as exceeding one million acres burned and causing major damage, and Xcel Energy said its facilities were involved in the fire.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2024-03-07T00:00:00Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "2024-03-07T00:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Texas Panhandle and western Oklahoma, USA",
+        "jurisdiction_level": "state",
+        "admin1": "Texas",
+        "country": "US",
+        "capital_used": "Austin",
+        "lat": 30.2672,
+        "lon": -97.7431,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.5
+      },
+      "sources": [
+        {
+          "url": "https://inciweb.wildfire.gov/incident-publication/txtxs-smokehouse-creek-fire/smokehouse-creek-fire-update-03-02-2024",
+          "source_name": "InciWeb",
+          "published_at": "2024-03-02T00:00:00Z",
+          "headline": "Smokehouse Creek Fire Update 03/02/2024",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.reuters.com/world/us/xcel-energy-says-its-facilities-were-involved-smokehouse-creek-fire-texas-2024-03-07/",
+          "source_name": "Reuters",
+          "published_at": "2024-03-07T00:00:00Z",
+          "headline": "Xcel Energy says its facilities were involved in Smokehouse Creek fire in Texas",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.theguardian.com/us-news/2024/mar/03/texas-wildfire-strong-winds-thwart-firefighters",
+          "source_name": "The Guardian",
+          "published_at": "2024-03-03T00:00:00Z",
+          "headline": "Texas wildfire: strong winds thwart firefighters",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Xcel Energy"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Xcel Energy says its facilities were involved in Smokehouse Creek fire in Texas.",
+            "source_url": "https://www.reuters.com/world/us/xcel-energy-says-its-facilities-were-involved-smokehouse-creek-fire-texas-2024-03-07/"
+          },
+          {
+            "quote": "Smokehouse Creek Fire Update 03/02/2024",
+            "source_url": "https://inciweb.wildfire.gov/incident-publication/txtxs-smokehouse-creek-fire/smokehouse-creek-fire-update-03-02-2024"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.8,
+        "location": 0.5,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Smokehouse Creek Fire (Texas Panhandle) March 2024",
+        "fingerprint": "fires|smokehouse_creek_fire|austin_tx|2024-03"
+      }
+    },
+    {
+      "event_id": "evt_20240308_gbr_coral_bleaching",
+      "title": "Heat stress and widespread coral bleaching confirmed on the Great Barrier Reef",
+      "description": "Reports described heat stress and widespread coral bleaching on Australia’s Great Barrier Reef after sustained elevated ocean temperatures. Monitoring and reporting indicated bleaching across surveyed areas, signaling significant ecosystem stress.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2024-03-08T00:00:00.000Z",
+        "event_end": "2024-03-08T23:59:59.000Z",
+        "reported_at": "2024-03-08T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2024-03-08T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Great Barrier Reef, Australia",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "AU",
+        "capital_used": "Canberra",
+        "lat": -35.2809,
+        "lon": 149.13,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://science.nasa.gov/earth/earth-observatory/heat-stress-on-the-great-barrier-reef-152561/",
+          "source_name": "NASA Earth Observatory",
+          "published_at": "2024-03-08T00:00:00Z",
+          "headline": "Heat Stress on the Great Barrier Reef",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NASA Earth Observatory"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "Great Barrier Reef"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Heat stress has been building on Australia’s Great Barrier Reef.",
+            "source_url": "https://science.nasa.gov/earth/earth-observatory/heat-stress-on-the-great-barrier-reef-152561/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.7,
+        "location": 0.6,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "great-barrier-reef-bleaching-2024-03",
+        "fingerprint": "fp_gbr_bleaching_20240308_AU"
+      }
+    },
+    {
+      "event_id": "evt_20240309_nishnabotna_fish_kill",
+      "title": "Nishnabotna fertilizer spill triggers large-scale fish kill and aquatic ecosystem damage",
+      "description": "Iowa officials reported that a fertilizer spill into the Nishnabotna River system led to a large fish kill downstream. Agency reporting and follow-up coverage described extensive aquatic impacts across many miles of river.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2024-03-09T00:00:00.000Z",
+        "event_end": "2024-03-28T23:59:59.000Z",
+        "reported_at": "2024-03-28T00:00:00Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2024-03-09T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Iowa, USA (Nishnabotna River system)",
+        "jurisdiction_level": "state",
+        "admin1": "Iowa",
+        "country": "US",
+        "capital_used": "Des Moines",
+        "lat": 41.5868,
+        "lon": -93.625,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://www.iowadnr.gov/fishkill/2024-03-28/montgomery-county-fertilizer-spill-killed-more-749000-fish",
+          "source_name": "Iowa Department of Natural Resources",
+          "published_at": "2024-03-28T00:00:00Z",
+          "headline": "Montgomery County fertilizer spill killed more than 749,000 fish",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.fws.gov/project/nishnabotna-fertilizer-spill",
+          "source_name": "U.S. Fish & Wildlife Service",
+          "published_at": "2024-03-01T00:00:00Z",
+          "headline": "Nishnabotna Fertilizer Spill",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://iowacapitaldispatch.com/2024/03/27/fertilizer-killed-more-than-750000-fish-in-nishnabotna/",
+          "source_name": "Iowa Capital Dispatch",
+          "published_at": "2024-03-27T00:00:00Z",
+          "headline": "Fertilizer killed more than 750,000 fish in Nishnabotna",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Iowa Department of Natural Resources",
+          "U.S. Fish & Wildlife Service"
+        ],
+        "substances": [
+          "fertilizer"
+        ],
+        "ecosystems": [
+          "Nishnabotna River"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "fertilizer spill killed more than 749,000 fish",
+            "source_url": "https://www.iowadnr.gov/fishkill/2024-03-28/montgomery-county-fertilizer-spill-killed-more-749000-fish"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.72,
+        "category": 0.75,
+        "location": 0.7,
+        "summary_grounding": 0.65
+      },
+      "quality_flags": [
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "nishnabotna-fertilizer-spill-fish-kill-2024-03",
+        "fingerprint": "fp_nishnabotna_fishkill_20240309_IA"
+      }
+    },
+    {
+      "event_id": "evt_20240308_huntington_beach_oiled_wildlife",
+      "title": "Oiled wildlife response associated with Huntington Beach offshore sheen",
+      "description": "An offshore sheen near Huntington Beach prompted response actions that included wildlife capture and care for oil exposure. Reporting indicated impacts to seabirds, reflecting direct biodiversity harm linked to marine pollution.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2024-03-08T00:00:00.000Z",
+        "event_end": "2024-03-15T23:59:59.000Z",
+        "reported_at": "2024-03-01T00:00:00Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "2024-03-08T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "California, USA (Huntington Beach / Bolsa Chica area)",
+        "jurisdiction_level": "state",
+        "admin1": "California",
+        "country": "US",
+        "capital_used": "Sacramento",
+        "lat": 38.5816,
+        "lon": -121.4944,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://blog.response.restoration.noaa.gov/incident-responses-march-2024",
+          "source_name": "NOAA OR&R (Incident News)",
+          "published_at": "2024-03-01T00:00:00Z",
+          "headline": "Incident Responses: March 2024",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://apnews.com/article/2eec4bf80ff0232546e611a52e944efa",
+          "source_name": "AP News",
+          "published_at": "2024-03-08T00:00:00Z",
+          "headline": "Oil sheen off Huntington Beach prompts cleanup; birds rescued",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA",
+          "AP News"
+        ],
+        "substances": [
+          "oil"
+        ],
+        "ecosystems": [
+          "Bolsa Chica wetlands"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "birds were rescued and taken to a wildlife care center",
+            "source_url": "https://apnews.com/article/2eec4bf80ff0232546e611a52e944efa"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.7,
+        "location": 0.55,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "huntington-beach-oil-sheen-oiled-wildlife-2024-03",
+        "fingerprint": "fp_hb_oiled_wildlife_20240308_CA"
+      }
+    },
+    {
+      "event_id": "2024-03-us-epa-multipollutant-ldmdv-final-rule",
+      "title": "US EPA finalizes multi-pollutant emissions standards for MY2027+ light- and medium-duty vehicles",
+      "description": "The US Environmental Protection Agency published information on a final rule establishing multi-pollutant emissions standards for model year 2027 and later light-duty and medium-duty vehicles. The rule targets harmful air pollutants and is intended to reduce climate pollution from vehicles.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2024-03-20T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2024-03-20T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States (federal regulation)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.85
+      },
+      "sources": [
+        {
+          "url": "https://www.epa.gov/regulations-emissions-vehicles-and-engines/final-rule-multi-pollutant-emissions-standards-model",
+          "source_name": "U.S. Environmental Protection Agency",
+          "published_at": "2024-03-20T00:00:00.000Z",
+          "headline": "Final Rule: Multi-Pollutant Emissions Standards (Model Year 2027 and Later Light- and Medium-Duty Vehicles)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Environmental Protection Agency (EPA)"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Final Rule: Multi-Pollutant Emissions Standards (Model Year 2027 and Later Light- and Medium-Duty Vehicles)",
+            "source_url": "https://www.epa.gov/regulations-emissions-vehicles-and-engines/final-rule-multi-pollutant-emissions-standards-model"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.8,
+        "location": 0.85,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "US EPA MY2027+ multi-pollutant emissions standards final rule",
+        "fingerprint": "fp-2024-03-us-epa-multipollutant-ldmdv-final-rule"
+      }
+    }
+  ]
+}

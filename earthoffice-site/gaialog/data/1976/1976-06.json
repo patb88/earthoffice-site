@@ -1,0 +1,992 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_1976-06_normalize_2026-01-19T080814366Z",
+    "generated_utc": "2026-01-19T08:08:14.366Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "1976-06",
+    "window": {
+      "start_utc": "1976-06-01T00:00:00.000Z",
+      "end_utc": "1976-06-30T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "1976-06-23_nepco-140_oil-spill_st-lawrence",
+      "title": "NEPCO 140 barge grounding causes heavy fuel oil spill in the Saint Lawrence River",
+      "description": "Tank barge NEPCO 140 grounded in the Saint Lawrence River in the Thousand Islands area, releasing a large quantity of No. 6 fuel oil. The spill contaminated river shoreline and led to cleanup operations.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1976-06-23T12:00:00Z",
+        "event_end": "1976-06-23T12:00:00Z",
+        "reported_at": "2015-03-11T00:00:00Z",
+        "time_confidence": 0.5,
+        "event_date_utc": "1976-06-23T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Saint Lawrence River near Wellesley Island (Thousand Islands), New York, USA",
+        "jurisdiction_level": "site",
+        "admin1": "New York",
+        "country": "US",
+        "capital_used": null,
+        "lat": 44.3006,
+        "lon": 75.9756,
+        "precision": "neighborhood",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.45
+      },
+      "sources": [
+        {
+          "url": "https://trid.trb.org/View/73564",
+          "source_name": "TRID (Transportation Research International Documentation)",
+          "published_at": "1976-06-30T23:59:59.000Z",
+          "headline": "TRID record related to NEPCO 140 spill/cleanup (bibliographic entry)",
+          "byline": null,
+          "accessed_utc": "2026-01-19T08:04:45.071Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.sightline.org/2015/03/11/the-oil-spill-that-could-happen-here-part-1/",
+          "source_name": "Sightline Institute",
+          "published_at": "2015-03-11T00:00:00Z",
+          "headline": "The oil spill that could happen here, part 1",
+          "byline": null,
+          "accessed_utc": "2026-01-19T08:04:45.071Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NEPCO"
+        ],
+        "substances": [
+          "No. 6 fuel oil"
+        ],
+        "ecosystems": [
+          "Saint Lawrence River"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "released about 300,000 gallons of No. 6 oil into the Saint Lawrence River",
+            "source_url": "https://www.sightline.org/2015/03/11/the-oil-spill-that-could-happen-here-part-1/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.46,
+        "category": 0.75,
+        "location": 0.45,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "secondary_sources_only",
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "NEPCO 140 Saint Lawrence River oil spill 1976-06-23",
+        "fingerprint": "nepco-140|saint-lawrence-river-wellesley-island|1976-06-23"
+      }
+    },
+    {
+      "event_id": "1976-06-24_iol-bulk-plant_fuel-oil-overflow_hay-river",
+      "title": "Fuel-oil overflow spill recorded at IOL Bulk Plant in Hay River, Northwest Territories",
+      "description": "A Government of the Northwest Territories spills database entry records a fuel-oil overflow incident at the IOL Bulk Plant in Hay River on June 24, 1976. The recorded quantity is 90 liters.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1976-06-24T12:00:00Z",
+        "event_end": "1976-06-24T12:00:00Z",
+        "reported_at": "1976-06-24T12:00:00Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "1976-06-24T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Hay River, Northwest Territories, Canada",
+        "jurisdiction_level": "city",
+        "admin1": "Northwest Territories",
+        "country": "CA",
+        "capital_used": null,
+        "lat": 60.8156,
+        "lon": 115.7999,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.gov.nt.ca/ecc/en/spills-advanced?order=field_spill_region&page=1642&sort=asc",
+          "source_name": "Government of the Northwest Territories (ECC) Spills Database",
+          "published_at": "1976-06-24T12:00:00Z",
+          "headline": "Spills database entry (Hay River, IOL Bulk Plant)",
+          "byline": null,
+          "accessed_utc": "2026-01-19T08:04:45.071Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Government of the Northwest Territories",
+          "IOL Bulk Plant"
+        ],
+        "substances": [
+          "fuel oil"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "fuel-oil overflow ... (90 liters) ... Hay River ... June 24, 1976",
+            "source_url": "https://www.gov.nt.ca/ecc/en/spills-advanced?order=field_spill_region&page=1642&sort=asc"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.85,
+        "location": 0.75,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Hay River IOL Bulk Plant fuel-oil overflow 1976-06-24",
+        "fingerprint": "iol-bulk-plant|hay-river|1976-06-24"
+      }
+    },
+    {
+      "event_id": "1976-06-weather_climate-teton-dam-failure-flooding-se-idaho",
+      "title": "Teton Dam failure triggers severe flooding in southeastern Idaho",
+      "description": "The failure of the Teton Dam in early June 1976 caused extreme flooding in southeastern Idaho along the Teton River system and portions of the Snake River system. USGS hydrologic atlas publications document inundation mapping and high-water marks for affected quadrangles.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1976-06-05T12:00:00Z",
+        "event_end": "1976-06-08T12:00:00Z",
+        "reported_at": "1976-06-01T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1976-06-05T12:00:00Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Idaho, USA",
+        "jurisdiction_level": "state",
+        "admin1": "Idaho",
+        "country": "US",
+        "capital_used": "Boise",
+        "lat": 43.615,
+        "lon": -116.2023,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://www.usgs.gov/publications/teton-dam-flood-june-1976-menan-buttes-quadrangle-idaho",
+          "source_name": "USGS",
+          "published_at": "1976-06-01T00:00:00Z",
+          "headline": "Teton Dam flood, June 1976, Menan Buttes quadrangle, Idaho",
+          "byline": null,
+          "accessed_utc": "2026-01-19T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.usgs.gov/publications/teton-dam-flood-june-1976-parker-quadrangle-idaho",
+          "source_name": "USGS",
+          "published_at": "1976-06-01T00:00:00Z",
+          "headline": "Teton Dam flood, June 1976, Parker quadrangle, Idaho",
+          "byline": null,
+          "accessed_utc": "2026-01-19T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "USGS"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Teton Dam flood, June 1976",
+            "source_url": "https://www.usgs.gov/publications/teton-dam-flood-june-1976-menan-buttes-quadrangle-idaho"
+          },
+          {
+            "quote": "Teton Dam flood, June 1976",
+            "source_url": "https://www.usgs.gov/publications/teton-dam-flood-june-1976-parker-quadrangle-idaho"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.58,
+        "category": 0.55,
+        "location": 0.7,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "teton_dam_flood_june_1976_idaho",
+        "fingerprint": "teton dam failure triggers severe flooding in southeastern idaho|idaho, usa|1976-06-05"
+      }
+    },
+    {
+      "event_id": "1976-06-weather_climate-culbertson-montana-floods",
+      "title": "Rainfall-runoff flooding impacts Culbertson, Montana",
+      "description": "Runoff from rainfall produced damaging floods in Culbertson, Montana on June 4 and again on June 12, 1976, affecting business and residential structures. A USGS publication describes contributing drainages, peak flows, and notes that a small-dam failure increased flood volume.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1976-06-04T12:00:00Z",
+        "event_end": "1976-06-12T12:00:00Z",
+        "reported_at": "1976-06-01T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1976-06-04T12:00:00Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Culbertson, Montana, USA",
+        "jurisdiction_level": "city",
+        "admin1": "Montana",
+        "country": "US",
+        "capital_used": null,
+        "lat": 48.1467,
+        "lon": -104.5186,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.usgs.gov/publications/floods-june-4-and-12-1976-culbertson-montana",
+          "source_name": "USGS",
+          "published_at": "1976-06-01T00:00:00Z",
+          "headline": "Floods June 4 and 12, 1976, at Culbertson, Montana",
+          "byline": null,
+          "accessed_utc": "2026-01-19T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "USGS"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Floods June 4 and 12, 1976, at Culbertson, Montana",
+            "source_url": "https://www.usgs.gov/publications/floods-june-4-and-12-1976-culbertson-montana"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.56,
+        "category": 0.55,
+        "location": 0.55,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "culbertson_mt_floods_june_1976",
+        "fingerprint": "rainfall-runoff flooding impacts culbertson, montana|culbertson, montana, usa|1976-06-04"
+      }
+    },
+    {
+      "event_id": "1976-06-weather_climate-uk-heatwave-late-june",
+      "title": "Late-June 1976 heatwave episode begins in the United Kingdom",
+      "description": "A major heatwave episode began in late June 1976 across parts of the United Kingdom, with especially prolonged hot spells documented for some English locations starting on June 23 and continuing into early July. A Met Office article describing longest UK heatwave events references the late-June start of the 1976 spell at Heathrow and other sites.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1976-06-23T12:00:00Z",
+        "event_end": "1976-06-30T12:00:00Z",
+        "reported_at": "2025-06-01T00:00:00Z",
+        "time_confidence": 0.5,
+        "event_date_utc": "1976-06-23T12:00:00Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "United Kingdom",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "GB",
+        "capital_used": "London",
+        "lat": 51.5074,
+        "lon": -0.1278,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.75
+      },
+      "sources": [
+        {
+          "url": "https://www.metoffice.gov.uk/syndication/syndicated-articles/2025/june/the-longest-heatwave-events-in-the-uk",
+          "source_name": "Met Office",
+          "published_at": "2025-06-01T00:00:00Z",
+          "headline": "The longest heatwave events in the UK",
+          "byline": null,
+          "accessed_utc": "2026-01-19T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Met Office"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "the longest heatwave events in the UK",
+            "source_url": "https://www.metoffice.gov.uk/syndication/syndicated-articles/2025/june/the-longest-heatwave-events-in-the-uk"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.52,
+        "category": 0.6,
+        "location": 0.75,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "secondary_sources_only",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "uk_heatwave_1976_late_june",
+        "fingerprint": "late-june 1976 heatwave episode begins in the united kingdom|united kingdom|1976-06-23"
+      }
+    },
+    {
+      "event_id": "evt_19760625_papua_indonesia_eq_ms71",
+      "title": "Ms 7.1 earthquake in Papua (then Irian Jaya/West Irian), Indonesia",
+      "description": "A magnitude ~7.1 earthquake struck the Papua (then Irian Jaya/West Irian) region of Indonesia on June 25, 1976. Reports referenced in the provided sources describe severe impacts including extensive destruction and significant casualties, with landslides contributing to losses.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1976-06-25T19:18:56Z",
+        "event_end": "1976-06-25T19:18:56Z",
+        "reported_at": "1976-06-25T19:18:56Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1976-06-25T19:18:56Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Papua (then Irian Jaya/West Irian), Indonesia (New Guinea)",
+        "jurisdiction_level": "state",
+        "admin1": "Papua",
+        "country": "ID",
+        "capital_used": "Jayapura",
+        "lat": -2.533333,
+        "lon": 140.716667,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.quakes.uq.edu.au/quakeinfo-world.html",
+          "source_name": "University of Queensland (quakes.uq.edu.au)",
+          "published_at": "1976-06-25T19:18:56Z",
+          "headline": "Quake information (world)",
+          "byline": null,
+          "accessed_utc": "2026-01-19T08:05:27.496Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.usgs.gov/publications/earthquakes-june-july-1976",
+          "source_name": "USGS",
+          "published_at": "1976-07-01T00:00:00Z",
+          "headline": "Earthquakes June–July 1976",
+          "byline": null,
+          "accessed_utc": "2026-01-19T08:05:27.496Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "USGS",
+          "University of Queensland"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "earthquakes june-july 1976",
+            "source_url": "https://www.usgs.gov/publications/earthquakes-june-july-1976"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.85,
+        "location": 0.6,
+        "summary_grounding": 0.35
+      },
+      "quality_flags": [
+        "paywalled_or_partial",
+        "date_ambiguous",
+        "location_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "1976-06-25_papua_indonesia_earthquake",
+        "fingerprint": "fp_19760625_papua_indonesia_eq"
+      }
+    },
+    {
+      "event_id": "197606-sorich-park-fire-san-rafael-ca",
+      "title": "Sorich Park Fire reported in San Rafael, California",
+      "description": "A local fire-history account describes a wildfire incident referred to as the “Sorich Park Fire” in/near Sorich Park in San Rafael, California. The account associates the incident with June 14, 1976.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1976-06-14T12:00:00Z",
+        "event_end": "1976-06-14T12:00:00Z",
+        "reported_at": "1976-06-14T12:00:00Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "1976-06-14T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "San Rafael, California, United States",
+        "jurisdiction_level": "city",
+        "admin1": "California",
+        "country": "US",
+        "capital_used": null,
+        "lat": 37.9735,
+        "lon": -122.5311,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.65
+      },
+      "sources": [
+        {
+          "url": "https://www.marinfirehistory.org/1976-sorich-park-wildfire-san-rafael.html",
+          "source_name": "Marin Fire History",
+          "published_at": "1976-06-14T12:00:00Z",
+          "headline": "1976 Sorich Park Wildfire (San Rafael)",
+          "byline": null,
+          "accessed_utc": "2026-01-19T08:05:45.173Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "San Rafael Fire Department"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Wildfire incident reported as the “Sorich Park Fire” with an explicit date of June 14, 1976.",
+            "source_url": "https://www.marinfirehistory.org/1976-sorich-park-wildfire-san-rafael.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.7,
+        "location": 0.65,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "secondary_sources_only",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "sorich-park-fire-san-rafael-1976-06-14",
+        "fingerprint": "sorich-park-fire|san-rafael-ca-us|1976-06-14"
+      }
+    },
+    {
+      "event_id": "19760623-us-ny-stlawrence-nepco140-oilspill-wildlife",
+      "title": "NEPCO 140 oil spill impacts wildlife and marsh habitats along the St. Lawrence River (Thousand Islands)",
+      "description": "A tank barge (NEPCO 140) ran aground on the St. Lawrence River in the Thousand Islands region, releasing oil that contaminated shoreline areas and marsh habitats. Accounts of the incident describe wildlife harm and broader ecological impacts in the river corridor.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1976-06-23T12:00:00Z",
+        "event_end": "1976-06-23T12:00:00Z",
+        "reported_at": "2026-01-19T08:05:59.785Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1976-06-23T12:00:00Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "St. Lawrence River near Wellesley Island / Thousand Islands region (near Clayton & Alexandria Bay), New York, USA",
+        "jurisdiction_level": "site",
+        "admin1": "New York",
+        "country": "US",
+        "capital_used": null,
+        "lat": 44.3326,
+        "lon": -75.9619,
+        "precision": "neighborhood",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://trid.trb.org/View/73564",
+          "source_name": "TRID (Transportation Research International Documentation)",
+          "published_at": "1976-06-01T00:00:00Z",
+          "headline": "TRID record for NEPCO 140 oil spill-related document",
+          "byline": null,
+          "accessed_utc": "2026-01-19T08:05:59.785Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.savetheriver.org/what-we-do/advocacy__trashed/spills-shipping-accidents/",
+          "source_name": "Save The River",
+          "published_at": "1976-06-01T00:00:00Z",
+          "headline": "Spills & shipping accidents (includes NEPCO 140 / 1976 spill context)",
+          "byline": null,
+          "accessed_utc": "2026-01-19T08:05:59.785Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.northcountrypublicradio.org/news/series/top/21/remembering-the-slick-of-76",
+          "source_name": "North Country Public Radio",
+          "published_at": "1976-06-01T00:00:00Z",
+          "headline": "Remembering the Slick of '76",
+          "byline": null,
+          "accessed_utc": "2026-01-19T08:05:59.785Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NEPCO"
+        ],
+        "substances": [
+          "oil"
+        ],
+        "ecosystems": [
+          "St. Lawrence River",
+          "marsh habitats",
+          "shoreline habitats"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.52,
+        "category": 0.6,
+        "location": 0.55,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "needs_dedupe_check",
+        "date_ambiguous",
+        "secondary_sources_only",
+        "location_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "NEPCO 140 oil spill St. Lawrence River 1976",
+        "fingerprint": "nepco140-oilspill-stlawrence-us-ny-1976-06-23"
+      }
+    },
+    {
+      "event_id": "1976-06-07_epa-v-california_426-us-200_us",
+      "title": "U.S. Supreme Court decision in EPA v. California (426 U.S. 200)",
+      "description": "The U.S. Supreme Court issued its decision in EPA v. California (426 U.S. 200). The case addressed whether federal facilities discharging water pollutants are subject to state permit requirements under §313 of the Federal Water Pollution Control Act Amendments of 1972.",
+      "category_primary": "policy_regulation",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1976-06-07T12:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1976-06-07T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States (U.S. Supreme Court)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://supreme.justia.com/cases/federal/us/426/200/",
+          "source_name": "Justia Supreme Court Center",
+          "published_at": "1976-06-07T12:00:00Z",
+          "headline": "EPA v. California, 426 U.S. 200 (1976)",
+          "byline": null,
+          "accessed_utc": "2026-01-19T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Supreme Court",
+          "U.S. Environmental Protection Agency (EPA)",
+          "State of California"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "EPA v. California, 426 U.S. 200 (1976)",
+            "source_url": "https://supreme.justia.com/cases/federal/us/426/200/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.75,
+        "location": 0.7,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "EPA v. California (426 U.S. 200)",
+        "fingerprint": "1976-06-07|epa v. california|us"
+      }
+    },
+    {
+      "event_id": "1976-06-25_union-electric-v-epa_427-us-246_us",
+      "title": "U.S. Supreme Court decision in Union Electric Co. v. EPA (427 U.S. 246)",
+      "description": "The U.S. Supreme Court issued its decision in Union Electric Co. v. EPA (427 U.S. 246). The case concerned EPA approval of state implementation plans under the Clean Air Act for attaining national ambient air quality standards.",
+      "category_primary": "policy_regulation",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1976-06-25T12:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1976-06-25T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States (U.S. Supreme Court)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://supreme.justia.com/cases/federal/us/427/246/",
+          "source_name": "Justia Supreme Court Center",
+          "published_at": "1976-06-25T12:00:00Z",
+          "headline": "Union Electric Co. v. EPA, 427 U.S. 246 (1976)",
+          "byline": null,
+          "accessed_utc": "2026-01-19T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Supreme Court",
+          "U.S. Environmental Protection Agency (EPA)",
+          "Union Electric Company"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Union Electric Co. v. EPA, 427 U.S. 246 (1976)",
+            "source_url": "https://supreme.justia.com/cases/federal/us/427/246/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.75,
+        "location": 0.7,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Union Electric Co. v. EPA (427 U.S. 246)",
+        "fingerprint": "1976-06-25|union electric co. v. epa|us"
+      }
+    },
+    {
+      "event_id": "1976-06-30_public-law-94-325_esa-appropriations-extension_us",
+      "title": "Public Law 94-325 enacted extending Endangered Species Act appropriations authorization",
+      "description": "Public Law 94-325 was enacted to extend authorization for appropriations to carry out the Endangered Species Act of 1973. The law continued funding authorization connected to implementation of the ESA.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1976-06-30T12:00:00Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "1976-06-30T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States (Federal law)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.65
+      },
+      "sources": [
+        {
+          "url": "https://www.congress.gov/bill/94th-congress/senate-bill/3122",
+          "source_name": "Congress.gov",
+          "published_at": "1976-06-30T12:00:00Z",
+          "headline": "S.3122 — A bill to extend the authorization for appropriations to carry out the Endangered Species Act of 1973.",
+          "byline": null,
+          "accessed_utc": "2026-01-19T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Congress"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "extend the authorization for appropriations to carry out the Endangered Species Act of 1973",
+            "source_url": "https://www.congress.gov/bill/94th-congress/senate-bill/3122"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.58,
+        "category": 0.75,
+        "location": 0.65,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Public Law 94-325 / S.3122 ESA appropriations extension",
+        "fingerprint": "1976-06-30|public law 94-325|us"
+      }
+    },
+    {
+      "event_id": "1976-06-09_fws_proposed-rules_regulating-endangered-plants_us",
+      "title": "U.S. Fish & Wildlife Service proposed rules regulating endangered plants",
+      "description": "The U.S. Fish & Wildlife Service announced proposed rules regulating endangered plants under the Endangered Species Act framework. The proposal was communicated via a U.S. Fish & Wildlife Service press release.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1976-06-09T12:00:00Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "1976-06-09T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.fws.gov/press-release/1976-06/rules-regulating-endangered-plants-proposed-june-9-1976",
+          "source_name": "U.S. Fish & Wildlife Service",
+          "published_at": "1976-06-09T12:00:00Z",
+          "headline": "Rules Regulating Endangered Plants Proposed June 9, 1976",
+          "byline": null,
+          "accessed_utc": "2026-01-19T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Fish & Wildlife Service"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Rules Regulating Endangered Plants Proposed June 9, 1976",
+            "source_url": "https://www.fws.gov/press-release/1976-06/rules-regulating-endangered-plants-proposed-june-9-1976"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.56,
+        "category": 0.7,
+        "location": 0.6,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "FWS proposed rules regulating endangered plants (press release)",
+        "fingerprint": "1976-06-09|fws proposed rules regulating endangered plants|us"
+      }
+    },
+    {
+      "event_id": "1976-06-14_fws_159-more-animals-listed-endangered_us",
+      "title": "U.S. Fish & Wildlife Service listed 159 more animals as endangered",
+      "description": "The U.S. Fish & Wildlife Service announced that 159 additional animals were listed as endangered, expanding federal protections under the Endangered Species Act. The action was reported via a U.S. Fish & Wildlife Service press release.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1976-06-14T12:00:00Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "1976-06-14T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.fws.gov/press-release/1976-06/159-more-animals-listed-endangered-june-14-1976",
+          "source_name": "U.S. Fish & Wildlife Service",
+          "published_at": "1976-06-14T12:00:00Z",
+          "headline": "159 More Animals Listed Endangered June 14, 1976",
+          "byline": null,
+          "accessed_utc": "2026-01-19T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Fish & Wildlife Service"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "159 More Animals Listed Endangered June 14, 1976",
+            "source_url": "https://www.fws.gov/press-release/1976-06/159-more-animals-listed-endangered-june-14-1976"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.56,
+        "category": 0.7,
+        "location": 0.6,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "FWS 159 more animals listed endangered (press release)",
+        "fingerprint": "1976-06-14|159 more animals listed endangered|us"
+      }
+    }
+  ]
+}

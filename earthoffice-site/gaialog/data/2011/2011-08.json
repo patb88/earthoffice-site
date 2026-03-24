@@ -1,0 +1,749 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_2011-08_normalize_2026-01-16T042428748Z",
+    "generated_utc": "2026-01-16T04:24:28.748Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "2011-08",
+    "window": {
+      "start_utc": "2011-08-01T00:00:00.000Z",
+      "end_utc": "2011-08-31T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "20110812_us_mt_yellowstone_exxon_silvertip_epa_update",
+      "title": "EPA oversight update on ExxonMobil Silvertip Pipeline oil spill response (Yellowstone River, Montana)",
+      "description": "The U.S. Environmental Protection Agency issued a newsroom update describing its oversight of response actions for the ExxonMobil Silvertip Pipeline oil spill affecting the Yellowstone River near Billings, Montana.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2011-08-12T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2011-08-12T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Yellowstone River near Billings, Montana, USA",
+        "jurisdiction_level": "site",
+        "admin1": "Montana",
+        "country": "US",
+        "capital_used": null,
+        "lat": 45.7833,
+        "lon": -108.5007,
+        "precision": "city",
+        "location_basis": "manual_override",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.epa.gov/archive/epapages/newsroom_archive/newsreleases/f78d07ecb582e192852578ea0075201d.html",
+          "source_name": "U.S. Environmental Protection Agency (archive)",
+          "published_at": "2011-08-12T00:00:00.000Z",
+          "headline": "News release (EPA archive)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Environmental Protection Agency",
+          "ExxonMobil"
+        ],
+        "substances": [
+          "oil"
+        ],
+        "ecosystems": [
+          "Yellowstone River"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "oversight of response actions ... ExxonMobil Silvertip Pipeline spill ... Yellowstone River",
+            "source_url": "https://www.epa.gov/archive/epapages/newsroom_archive/newsreleases/f78d07ecb582e192852578ea0075201d.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.85,
+        "location": 0.6,
+        "summary_grounding": 0.7
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "ExxonMobil Silvertip Pipeline spill Yellowstone River 2011",
+        "fingerprint": "exxonmobil-silvertip-yellowstone-river-billings-2011-08-12"
+      }
+    },
+    {
+      "event_id": "evt_201108_us_nj_irene_flooding_usgs",
+      "title": "Hurricane Irene flooding in New Jersey (USGS summary)",
+      "description": "USGS reported widespread flooding in New Jersey during Aug 27–30, 2011 as Hurricane Irene produced heavy rainfall and record streamflows at multiple USGS gaging stations.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2011-08-27T00:00:00.000Z",
+        "event_end": "2011-08-30T23:59:59.000Z",
+        "reported_at": "2011-08-30T00:00:00Z",
+        "time_confidence": 0.75,
+        "event_date_utc": null,
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "New Jersey, USA",
+        "jurisdiction_level": "state",
+        "admin1": "New Jersey",
+        "country": "US",
+        "capital_used": "Trenton",
+        "lat": 40.22039,
+        "lon": -74.76432,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.85
+      },
+      "sources": [
+        {
+          "url": "https://www.usgs.gov/news/summary-flooding-new-jersey-caused-hurricane-irene-august-27-30-2011",
+          "source_name": "USGS",
+          "published_at": "2011-08-30T00:00:00Z",
+          "headline": "Summary of Flooding in New Jersey Caused by Hurricane Irene, August 27–30, 2011",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "USGS"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Summary of Flooding in New Jersey Caused by Hurricane Irene, August 27–30, 2011",
+            "source_url": "https://www.usgs.gov/news/summary-flooding-new-jersey-caused-hurricane-irene-august-27-30-2011"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.72,
+        "category": 0.85,
+        "location": 0.85,
+        "summary_grounding": 0.65
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Hurricane Irene flooding impacts (US Northeast, Aug 2011)",
+        "fingerprint": "fp_201108_us_nj_irene_flooding_usgs"
+      }
+    },
+    {
+      "event_id": "evt_201108_us_nc_coastal_irene_rainfall_nwsilm",
+      "title": "Heavy rainfall in coastal North Carolina during Hurricane Irene (NWS Wilmington)",
+      "description": "NWS Wilmington documented widespread heavy rainfall totals in the coastal North Carolina/Cape Fear region during Aug 27–28, 2011 as Hurricane Irene affected the area, contributing to localized impacts.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2011-08-27T00:00:00.000Z",
+        "event_end": "2011-08-28T23:59:59.000Z",
+        "reported_at": "2011-08-28T00:00:00Z",
+        "time_confidence": 0.7,
+        "event_date_utc": null,
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "North Carolina, USA (coastal/Cape Fear region)",
+        "jurisdiction_level": "state",
+        "admin1": "North Carolina",
+        "country": "US",
+        "capital_used": "Raleigh",
+        "lat": 35.77959,
+        "lon": -78.63818,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.weather.gov/ilm/HurricaneIreneAug272011",
+          "source_name": "NWS Wilmington (weather.gov)",
+          "published_at": "2011-08-28T00:00:00Z",
+          "headline": "Hurricane Irene - Aug 27, 2011",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NWS Wilmington"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Hurricane Irene - Aug 27, 2011",
+            "source_url": "https://www.weather.gov/ilm/HurricaneIreneAug272011"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.85,
+        "location": 0.6,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Hurricane Irene rainfall/flooding impacts (US East Coast, Aug 2011)",
+        "fingerprint": "fp_201108_us_nc_coastal_irene_rainfall_nwsilm"
+      }
+    },
+    {
+      "event_id": "evt_201108_us_ny_newengland_irene_flooding_nws_gyx",
+      "title": "Flooding in New York and New England associated with Hurricane Irene rainfall (NWS)",
+      "description": "A National Weather Service retrospective describes major flooding impacts in parts of New York and New England associated with Hurricane Irene’s heavy rainfall over saturated basins during Aug 28–29, 2011.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2011-08-28T00:00:00.000Z",
+        "event_end": "2011-08-29T23:59:59.000Z",
+        "reported_at": "2011-08-29T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": null,
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "New England, USA (NWS Gray coverage area)",
+        "jurisdiction_level": "supranational",
+        "admin1": null,
+        "country": null,
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "proxy",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.35
+      },
+      "sources": [
+        {
+          "url": "https://www.weather.gov/gyx/Irene_Anniversary",
+          "source_name": "NWS Gray (weather.gov)",
+          "published_at": "2011-08-29T00:00:00Z",
+          "headline": "Irene Anniversary",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NWS Gray"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Irene Anniversary",
+            "source_url": "https://www.weather.gov/gyx/Irene_Anniversary"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.48,
+        "category": 0.75,
+        "location": 0.35,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "needs_dedupe_check",
+        "low_confidence_location"
+      ],
+      "dedupe": {
+        "cluster_hint": "Hurricane Irene flooding impacts (US Northeast, Aug 2011)",
+        "fingerprint": "fp_201108_us_newengland_irene_flooding_nws_gyx"
+      }
+    },
+    {
+      "event_id": "evt-20110823-mineral-va-m58",
+      "title": "M5.8 earthquake near Mineral, Virginia felt widely across U.S. East Coast",
+      "description": "A magnitude 5.8 earthquake struck near Mineral, Virginia and was widely felt across much of the eastern United States. Reports noted damage in the affected area and an aftershock sequence.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2011-08-23T17:51:04.000Z",
+        "event_end": "2011-08-23T23:59:59.000Z",
+        "reported_at": "2011-08-24T00:00:00Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2011-08-23T17:51:04.000Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Near Mineral, Virginia, USA",
+        "jurisdiction_level": "site",
+        "admin1": "Virginia",
+        "country": "US",
+        "capital_used": null,
+        "lat": 37.911,
+        "lon": -77.954,
+        "precision": "neighborhood",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.usgs.gov/programs/earthquake-hazards/science/m58-august-23-2011-mineral-virginia",
+          "source_name": "USGS",
+          "published_at": "2011-08-24T00:00:00Z",
+          "headline": "M5.8 \u000eAugust 23, 2011 Mineral, Virginia",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.sciencedaily.com/releases/2011/08/110824101127.htm",
+          "source_name": "ScienceDaily",
+          "published_at": "2011-08-24T00:00:00Z",
+          "headline": "Earthquake: The Aug. 23, 2011 Virginia Event",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "USGS"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "A magnitude 5.8 earthquake occurred on August 23, 2011 near Mineral, Virginia.",
+            "source_url": "https://www.usgs.gov/programs/earthquake-hazards/science/m58-august-23-2011-mineral-virginia"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.85,
+        "location": 0.6,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "2011-08-23 Mineral VA M5.8 earthquake",
+        "fingerprint": "fp-20110823-mineral-va-m58"
+      }
+    },
+    {
+      "event_id": "evt-20110823-trinidad-co-m53",
+      "title": "M5.3 earthquake near Trinidad, Colorado",
+      "description": "A magnitude 5.3 earthquake occurred near Trinidad, Colorado, producing strong shaking. Reports described minor damage in the area.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2011-08-23T05:46:00.000Z",
+        "event_end": "2011-08-23T23:59:59.000Z",
+        "reported_at": "2011-08-24T00:00:00Z",
+        "time_confidence": 0.5,
+        "event_date_utc": "2011-08-23T05:46:00.000Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Near Trinidad, Colorado, USA",
+        "jurisdiction_level": "site",
+        "admin1": "Colorado",
+        "country": "US",
+        "capital_used": null,
+        "lat": 37.169,
+        "lon": -104.5,
+        "precision": "neighborhood",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.4
+      },
+      "sources": [
+        {
+          "url": "https://www.sciencedaily.com/releases/2011/08/110824101632.htm",
+          "source_name": "ScienceDaily",
+          "published_at": "2011-08-24T00:00:00Z",
+          "headline": "Earthquake Near Trinidad, Colorado",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.42,
+        "category": 0.7,
+        "location": 0.4,
+        "summary_grounding": 0.4
+      },
+      "quality_flags": [
+        "secondary_sources_only",
+        "date_ambiguous",
+        "low_confidence_location",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "2011-08-23 Trinidad CO M5.3 earthquake",
+        "fingerprint": "fp-20110823-trinidad-co-m53"
+      }
+    },
+    {
+      "event_id": "20110809-russian-forest-fires-flare-again-russia",
+      "title": "Russian forest fires reported flaring again across multiple regions",
+      "description": "A report described Russian forest fires burning again in early August 2011, with outbreaks across multiple regions. The article framed the situation as widespread rather than confined to a single locality.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2011-08-09T00:00:00.000Z",
+        "event_end": "2011-08-09T23:59:59.000Z",
+        "reported_at": "2011-08-09T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2011-08-09T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Russia",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "RU",
+        "capital_used": "Moscow",
+        "lat": 55.7558,
+        "lon": 37.6173,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.theguardian.com/world/2011/aug/09/russia-forest-fires-burn-again",
+          "source_name": "The Guardian",
+          "published_at": "2011-08-09T00:00:00.000Z",
+          "headline": "Russia forest fires burn again",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Russia forest fires burn again",
+            "source_url": "https://www.theguardian.com/world/2011/aug/09/russia-forest-fires-burn-again"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.63,
+        "category": 0.8,
+        "location": 0.65,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "russia-forest-fires-2011-08",
+        "fingerprint": "russia|fires|2011-08-09|russian forest fires reported flaring again across multiple regions"
+      }
+    },
+    {
+      "event_id": "20110818-pagami-creek-fire-ignites-boundary-waters-minnesota",
+      "title": "Pagami Creek Fire ignites in Minnesota’s Boundary Waters region",
+      "description": "The Pagami Creek Fire was reported to have ignited on August 18, 2011 after a lightning-caused start in northern Minnesota’s Boundary Waters area. It was later described as growing into a major wildfire after rapid expansion in September.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2011-08-18T00:00:00.000Z",
+        "event_end": "2011-08-18T23:59:59.000Z",
+        "reported_at": "2011-08-18T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2011-08-18T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Minnesota, USA",
+        "jurisdiction_level": "state",
+        "admin1": "Minnesota",
+        "country": "US",
+        "capital_used": "Saint Paul",
+        "lat": 44.9537,
+        "lon": -93.09,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.fs.usda.gov/Internet/FSE_DOCUMENTS/stelprdb5409923.pdf",
+          "source_name": "USDA Forest Service",
+          "published_at": "2011-08-18T00:00:00.000Z",
+          "headline": "Pagami Creek Fire (USDA Forest Service document)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://inciweb.nwcg.gov/incident/2600/",
+          "source_name": "InciWeb",
+          "published_at": "2011-08-18T00:00:00.000Z",
+          "headline": "InciWeb Incident 2600 (Pagami Creek Fire)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "USDA Forest Service",
+          "InciWeb"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "Boundary Waters Canoe Area Wilderness"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Lightning ignited the Pagami Creek Fire on Aug. 18, 2011",
+            "source_url": "https://www.fs.usda.gov/Internet/FSE_DOCUMENTS/stelprdb5409923.pdf"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.68,
+        "category": 0.85,
+        "location": 0.6,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "pagami-creek-fire-2011",
+        "fingerprint": "minnesota|fires|2011-08-18|pagami creek fire ignites in minnesota’s boundary waters region"
+      }
+    },
+    {
+      "event_id": "2011-08-22_us-fl_jellyfish_influx_fish_kill_nrc",
+      "title": "Fish kill observed in nuclear plant intake canal attributed to jellyfish influx (NRC event notification)",
+      "description": "An abnormal fish kill was observed in a power plant intake canal and attributed to an unusually large influx of jellyfish. The state wildlife agency was notified in accordance with permit requirements.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2011-08-22T00:00:00.000Z",
+        "event_end": "2011-08-22T23:59:59.000Z",
+        "reported_at": "2011-08-23T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2011-08-22T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Florida, USA",
+        "jurisdiction_level": "state",
+        "admin1": "Florida",
+        "country": "US",
+        "capital_used": "Tallahassee",
+        "lat": 30.4382559,
+        "lon": -84.2807329,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.nrc.gov/reading-rm/doc-collections/event-status/event/2011/20110823en",
+          "source_name": "U.S. Nuclear Regulatory Commission (NRC) Event Notifications",
+          "published_at": "2011-08-23T00:00:00.000Z",
+          "headline": "NRC Event Notifications (2011-08-23)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Nuclear Regulatory Commission (NRC)"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "An abnormal fish kill was observed... attributed to an unusually large influx of jellyfish.",
+            "source_url": "https://www.nrc.gov/reading-rm/doc-collections/event-status/event/2011/20110823en"
+          },
+          {
+            "quote": "[The] state wildlife agency was notified per permit requirements.",
+            "source_url": "https://www.nrc.gov/reading-rm/doc-collections/event-status/event/2011/20110823en"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.58,
+        "category": 0.7,
+        "location": 0.55,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "NRC event notification fish kill jellyfish Florida intake canal 2011-08-22",
+        "fingerprint": "fp_2011-08-22_us-fl_jellyfish_influx_fish_kill_nrc"
+      }
+    },
+    {
+      "event_id": "evt_20110824_kettleman_city_epa_settlement",
+      "title": "EPA settlement requires improvements at Kettleman City hazardous waste landfill",
+      "description": "The U.S. EPA announced a settlement with Chemical Waste Management related to alleged failures in properly managing waste at a hazardous waste landfill near Kettleman City. The settlement required a civil penalty and specified improvements at the facility, including lab-related improvements.",
+      "category_primary": "policy_regulation",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "2011-08-24T00:00:00.000Z",
+        "event_end": "2011-08-24T23:59:59.000Z",
+        "reported_at": "2011-08-24T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2011-08-24T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Kettleman City, California, USA",
+        "jurisdiction_level": "city",
+        "admin1": "California",
+        "country": "US",
+        "capital_used": null,
+        "lat": 36.0084,
+        "lon": -119.9601,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.65
+      },
+      "sources": [
+        {
+          "url": "https://www.epa.gov/archive/epapages/newsroom_archive/newsreleases/0fc8783ab2608d7d852578f600659f2a.html",
+          "source_name": "U.S. Environmental Protection Agency (EPA)",
+          "published_at": "2011-08-24T00:00:00.000Z",
+          "headline": "EPA enforcement settlement requiring improvements at Kettleman City hazardous waste landfill (California, USA)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Environmental Protection Agency (EPA)",
+          "Chemical Waste Management"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "EPA announced a settlement with Chemical Waste Management requiring a civil penalty and facility/lab improvements.",
+            "source_url": "https://www.epa.gov/archive/epapages/newsroom_archive/newsreleases/0fc8783ab2608d7d852578f600659f2a.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.75,
+        "location": 0.65,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "needs_dedupe_check",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "epa_settlement_kettleman_city_2011_08",
+        "fingerprint": "fp_20110824_kettleman_city_epa_settlement"
+      }
+    }
+  ]
+}

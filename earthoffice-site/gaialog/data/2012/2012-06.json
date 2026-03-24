@@ -1,0 +1,716 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_2012-06_normalize_2026-01-16T044004434Z",
+    "generated_utc": "2026-01-16T04:40:04.434Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "2012-06",
+    "window": {
+      "start_utc": "2012-06-01T00:00:00.000Z",
+      "end_utc": "2012-06-30T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "evt_201206_us_heat_wave_eastern_us_tn_example",
+      "title": "Late-June 2012 heat wave in the eastern United States (Middle Tennessee example)",
+      "description": "An unusually intense heat wave affected parts of the eastern United States beginning in late June 2012. NOAA/NWS documentation for Middle Tennessee notes multi-day extreme heat with record highs at stations including Nashville and Crossville.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2012-06-28T00:00:00.000Z",
+        "event_end": "2012-06-30T23:59:59.000Z",
+        "reported_at": "2012-06-29T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2012-06-29T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Middle Tennessee, United States",
+        "jurisdiction_level": "state",
+        "admin1": "Tennessee",
+        "country": "US",
+        "capital_used": "Nashville",
+        "lat": 36.1626638,
+        "lon": -86.7816016,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.weather.gov/ohx/june2012heatwave",
+          "source_name": "NOAA / National Weather Service (Weather.gov)",
+          "published_at": "2012-06-29T00:00:00.000Z",
+          "headline": "June 2012 Heat Wave (Middle Tennessee)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.climate.gov/news-features/featured-images/june-2012-brings-more-record-breaking-warmth-us",
+          "source_name": "NOAA Climate.gov",
+          "published_at": "2012-06-01T00:00:00.000Z",
+          "headline": "June 2012 Brings More Record-breaking Warmth to the U.S.",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA",
+          "National Weather Service"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "June 2012 Heat Wave",
+            "source_url": "https://www.weather.gov/ohx/june2012heatwave"
+          },
+          {
+            "quote": "June 2012 brings more record-breaking warmth to the U.S.",
+            "source_url": "https://www.climate.gov/news-features/featured-images/june-2012-brings-more-record-breaking-warmth-us"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.8,
+        "location": 0.6,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "2012-06 US heat wave",
+        "fingerprint": "fp_201206_us_heat_wave_middle_tn_20120628_20120630"
+      }
+    },
+    {
+      "event_id": "evt_20120629_derecho_us_midwest_midatlantic",
+      "title": "June 29–30, 2012 derecho/severe thunderstorm event (Midwest to Mid-Atlantic, U.S.)",
+      "description": "A fast-moving severe thunderstorm complex (derecho) crossed from the U.S. Midwest into the Mid-Atlantic on June 29 into early June 30, 2012. Reports describe widespread damaging winds and major power disruptions occurring during a concurrent heat wave.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2012-06-29T00:00:00.000Z",
+        "event_end": "2012-06-30T23:59:59.000Z",
+        "reported_at": "2012-06-29T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2012-06-29T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "United States (Midwest to Mid-Atlantic)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, D.C.",
+        "lat": 38.9071923,
+        "lon": -77.0368707,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.4
+      },
+      "sources": [
+        {
+          "url": "https://www.climatecentral.org/news/rare-june-heat-wave-stifles-central-plains-east-coast",
+          "source_name": "Climate Central",
+          "published_at": "2012-06-29T00:00:00.000Z",
+          "headline": "Rare June heat wave stifles Central Plains, East Coast",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.weather.gov/ohx/june2012heatwave",
+          "source_name": "NOAA / National Weather Service (Weather.gov)",
+          "published_at": "2012-06-29T00:00:00.000Z",
+          "headline": "June 2012 Heat Wave (Middle Tennessee)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Rare June heat wave stifles Central Plains, East Coast",
+            "source_url": "https://www.climatecentral.org/news/rare-june-heat-wave-stifles-central-plains-east-coast"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.45,
+        "category": 0.7,
+        "location": 0.4,
+        "summary_grounding": 0.35
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "2012-06-29 derecho US",
+        "fingerprint": "fp_20120629_derecho_us_20120629_20120630"
+      }
+    },
+    {
+      "event_id": "evt_201206_us_record_warmth_anomaly_conus",
+      "title": "Widespread record-breaking warmth in the contiguous U.S. during June 2012 (second half of month)",
+      "description": "NOAA Climate.gov reported that June 2012 brought record-breaking warmth across parts of the United States, with numerous station records and unusually warm conditions noted during the month. The draft frames this as especially prominent in the second half of June.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2012-06-15T00:00:00.000Z",
+        "event_end": "2012-06-30T23:59:59.000Z",
+        "reported_at": "2012-06-01T00:00:00.000Z",
+        "time_confidence": 0.5,
+        "event_date_utc": "2012-06-15T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "United States (contiguous U.S.)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, D.C.",
+        "lat": 38.9071923,
+        "lon": -77.0368707,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.45
+      },
+      "sources": [
+        {
+          "url": "https://www.climate.gov/news-features/featured-images/june-2012-brings-more-record-breaking-warmth-us",
+          "source_name": "NOAA Climate.gov",
+          "published_at": "2012-06-01T00:00:00.000Z",
+          "headline": "June 2012 Brings More Record-breaking Warmth to the U.S.",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.climatecentral.org/news/historic-heat-wave-marches-on-as-drought-expands",
+          "source_name": "Climate Central",
+          "published_at": "2012-06-26T00:00:00.000Z",
+          "headline": "Historic heat wave marches on as drought expands",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "June 2012 brings more record-breaking warmth to the U.S.",
+            "source_url": "https://www.climate.gov/news-features/featured-images/june-2012-brings-more-record-breaking-warmth-us"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.5,
+        "category": 0.8,
+        "location": 0.45,
+        "summary_grounding": 0.4
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "2012-06 US record warmth",
+        "fingerprint": "fp_201206_us_record_warmth_conus_20120615_20120630"
+      }
+    },
+    {
+      "event_id": "evt_20120601_eastern_indonesia_quake_papuabarat",
+      "title": "Strong earthquake in Papua Barat, Indonesia",
+      "description": "A strong earthquake struck Papua Barat (Papua island), Indonesia on June 1, 2012. Early reports cited differing magnitude estimates and said there were no immediate reports of damage or casualties.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2012-06-01T06:56:00.000Z",
+        "event_end": "2012-06-01T06:56:00.000Z",
+        "reported_at": "2012-06-01T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2012-06-01T06:56:00.000Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Papua Barat, Indonesia",
+        "jurisdiction_level": "state",
+        "admin1": "Papua Barat",
+        "country": "ID",
+        "capital_used": "Manokwari",
+        "lat": -0.8615,
+        "lon": 134.0788,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.65
+      },
+      "sources": [
+        {
+          "url": "https://phys.org/news/2012-06-strong-magnitude-quake-eastern-indonesia.html",
+          "source_name": "Phys.org",
+          "published_at": "2012-06-01T00:00:00Z",
+          "headline": "Strong magnitude quake strikes eastern Indonesia",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "USGS"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "A strong earthquake struck eastern Indonesia early Friday... no immediate reports of damage or casualties.",
+            "source_url": "https://phys.org/news/2012-06-strong-magnitude-quake-eastern-indonesia.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.9,
+        "location": 0.65,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "2012-06 indonesia earthquake physorg",
+        "fingerprint": "fp_20120601_papuabarat_id"
+      }
+    },
+    {
+      "event_id": "evt_20120604_off_sukabumi_quake_felt_jakarta",
+      "title": "Offshore earthquake off Sukabumi felt in Jakarta, Indonesia",
+      "description": "An offshore earthquake off Sukabumi, West Java was felt in Jakarta on June 4, 2012, swaying buildings. Early reports indicated no tsunami warning and no immediate reports of damage.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2012-06-04T11:18:00.000Z",
+        "event_end": "2012-06-04T11:18:00.000Z",
+        "reported_at": "2012-06-04T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2012-06-04T11:18:00.000Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Jakarta, Indonesia (earthquake felt; offshore epicenter off Sukabumi, West Java)",
+        "jurisdiction_level": "city",
+        "admin1": null,
+        "country": "ID",
+        "capital_used": null,
+        "lat": -6.2088,
+        "lon": 106.8456,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://phys.org/news/2012-06-quake-sways-tall-indonesia-capital.html",
+          "source_name": "Phys.org",
+          "published_at": "2012-06-04T00:00:00Z",
+          "headline": "Quake sways tall buildings in Indonesia capital",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "USGS"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "A strong earthquake swayed tall buildings in the Indonesian capital Jakarta... no tsunami warning was issued.",
+            "source_url": "https://phys.org/news/2012-06-quake-sways-tall-indonesia-capital.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.9,
+        "location": 0.55,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "2012-06 indonesia earthquake jakarta felt physorg",
+        "fingerprint": "fp_20120604_jakarta_id"
+      }
+    },
+    {
+      "event_id": "evt_20120622_aceh_simeulue_quake",
+      "title": "Magnitude 5.6 earthquake near Simeulue, Aceh, Indonesia",
+      "description": "An earthquake reported as magnitude 5.6 struck near Simeulue in Aceh province early on June 22, 2012. The report said it had no tsunami potential and there were no immediate reports of casualties or major damage.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2012-06-22T00:14:00.000Z",
+        "event_end": "2012-06-22T00:14:00.000Z",
+        "reported_at": "2012-06-22T00:00:00Z",
+        "time_confidence": 0.65,
+        "event_date_utc": "2012-06-22T00:14:00.000Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Aceh, Indonesia (near Simeulue)",
+        "jurisdiction_level": "state",
+        "admin1": "Aceh",
+        "country": "ID",
+        "capital_used": "Banda Aceh",
+        "lat": 5.5483,
+        "lon": 95.3238,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://en.antaranews.com/news/83014/magnitude-56-quake-jolts-aceh",
+          "source_name": "ANTARA News",
+          "published_at": "2012-06-22T00:00:00Z",
+          "headline": "Magnitude 5.6 quake jolts Aceh",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "An earthquake measuring 5.6... jolted Aceh... It has no tsunami potential.",
+            "source_url": "https://en.antaranews.com/news/83014/magnitude-56-quake-jolts-aceh"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.63,
+        "category": 0.9,
+        "location": 0.6,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "2012-06 aceh simeulue earthquake antara",
+        "fingerprint": "fp_20120622_aceh_id"
+      }
+    },
+    {
+      "event_id": "2012-06_fires_waldo-canyon-fire_colorado-springs_1",
+      "title": "Waldo Canyon Fire discovered near Colorado Springs, Colorado",
+      "description": "NASA Earth Observatory reported that the Waldo Canyon Fire was discovered on June 23, 2012 near Colorado Springs, Colorado. The fire produced significant smoke and led to evacuations as it expanded during late June.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2012-06-23T00:00:00.000Z",
+        "event_end": "2012-06-30T23:59:59.000Z",
+        "reported_at": "2012-06-27T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2012-06-23T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Near Colorado Springs, Colorado (Pike National Forest area), USA",
+        "jurisdiction_level": "city",
+        "admin1": "Colorado",
+        "country": "US",
+        "capital_used": null,
+        "lat": 38.8339,
+        "lon": -104.8214,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://science.nasa.gov/earth/earth-observatory/waldo-canyon-fire-78387/",
+          "source_name": "NASA Earth Observatory",
+          "published_at": "2012-06-27T00:00:00.000Z",
+          "headline": "Waldo Canyon Fire",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.climatecentral.org/news/historic-heat-wave-marches-on-as-drought-expands",
+          "source_name": "Climate Central",
+          "published_at": "2012-06-28T00:00:00.000Z",
+          "headline": "Historic heat wave marches on as drought expands",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NASA Earth Observatory",
+          "Climate Central"
+        ],
+        "substances": [
+          "smoke"
+        ],
+        "ecosystems": [
+          "Pike National Forest"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "The Waldo Canyon Fire was discovered on June 23, 2012, near Colorado Springs, Colorado.",
+            "source_url": "https://science.nasa.gov/earth/earth-observatory/waldo-canyon-fire-78387/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.65,
+        "category": 0.9,
+        "location": 0.7,
+        "summary_grounding": 0.65
+      },
+      "quality_flags": [
+        "needs_dedupe_check",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "Waldo Canyon Fire June 2012 Colorado Springs",
+        "fingerprint": "waldo-canyon-fire|colorado-springs-co|2012-06-23"
+      }
+    },
+    {
+      "event_id": "201206-noaa-gom-hypoxia-forecast",
+      "title": "NOAA issues 2012 Gulf of Mexico hypoxia (“dead zone”) forecast",
+      "description": "NOAA published a 2012 forecast for the expected size of the Gulf of Mexico hypoxic zone associated with seasonal low-oxygen conditions. The forecast highlights ongoing ecosystem stress linked to nutrient runoff and oxygen depletion in the northern Gulf.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2012-06-01T00:00:00.000Z",
+        "time_confidence": 0.4,
+        "event_date_utc": null,
+        "event_date_precision": "month"
+      },
+      "location": {
+        "name": "Northern Gulf of Mexico, USA",
+        "jurisdiction_level": "supranational",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, D.C.",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "proxy",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.4
+      },
+      "sources": [
+        {
+          "url": "https://coastalscience.noaa.gov/news/2012-gulf-of-mexico-hypoxia-forecast-2/",
+          "source_name": "NOAA Coastal Science",
+          "published_at": "2012-06-01T00:00:00.000Z",
+          "headline": "2012 Gulf of Mexico Hypoxia Forecast",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "Gulf of Mexico"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "NOAA published a 2012 forecast for the Gulf of Mexico hypoxic zone.",
+            "source_url": "https://coastalscience.noaa.gov/news/2012-gulf-of-mexico-hypoxia-forecast-2/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.7,
+        "location": 0.4,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "low_confidence_location"
+      ],
+      "dedupe": {
+        "cluster_hint": "gulf-of-mexico-hypoxia-forecast-2012",
+        "fingerprint": "gulf_of_mexico_hypoxia_forecast|northern_gulf_of_mexico_usa|2012-06"
+      }
+    },
+    {
+      "event_id": "evt_20120626_dc_circuit_upholds_epa_ghg_endangerment",
+      "title": "D.C. Circuit upholds EPA greenhouse-gas endangerment finding and related Clean Air Act rules",
+      "description": "On June 26, 2012, the U.S. Court of Appeals for the D.C. Circuit upheld the EPA’s greenhouse-gas Endangerment Finding and related Clean Air Act rules aimed at reducing greenhouse-gas emissions. The decision supported EPA regulations covering vehicles and permitting for stationary sources.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "2012-06-26T00:00:00.000Z",
+        "event_end": "2012-06-26T23:59:59.000Z",
+        "reported_at": "2012-06-26T00:00:00.000Z",
+        "time_confidence": 0.75,
+        "event_date_utc": "2012-06-26T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Washington, DC, United States (D.C. Circuit Court of Appeals)",
+        "jurisdiction_level": "city",
+        "admin1": "DC",
+        "country": "US",
+        "capital_used": null,
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.65
+      },
+      "sources": [
+        {
+          "url": "https://www.epa.gov/ghgemissions/us-court-appeals-dc-circuit-upholds-epas-action-reduce-greenhouse-gases-under-clean",
+          "source_name": "U.S. Environmental Protection Agency",
+          "published_at": "2012-06-26T00:00:00.000Z",
+          "headline": "U.S. Court of Appeals (D.C. Circuit) upholds EPA’s action to reduce greenhouse gases under the Clean Air Act",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://obamawhitehouse.archives.gov/blog/2012/06/29/landmark-court-decision-upholds-epas-actions-protect-families",
+          "source_name": "Obama White House Archives",
+          "published_at": "2012-06-29T00:00:00.000Z",
+          "headline": "Landmark Court Decision Upholds EPA’s Actions to Protect Families",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Environmental Protection Agency (EPA)",
+          "U.S. Court of Appeals for the D.C. Circuit"
+        ],
+        "substances": [
+          "greenhouse gases"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "U.S. Court of Appeals (D.C. Circuit) upholds EPA’s action to reduce greenhouse gases under the Clean Air Act",
+            "source_url": "https://www.epa.gov/ghgemissions/us-court-appeals-dc-circuit-upholds-epas-action-reduce-greenhouse-gases-under-clean"
+          },
+          {
+            "quote": "Landmark Court Decision Upholds EPA’s Actions to Protect Families",
+            "source_url": "https://obamawhitehouse.archives.gov/blog/2012/06/29/landmark-court-decision-upholds-epas-actions-protect-families"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.72,
+        "category": 0.9,
+        "location": 0.65,
+        "summary_grounding": 0.7
+      },
+      "quality_flags": [
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "dc_circuit_epa_endangerment_2012_06",
+        "fingerprint": "dc_circuit_upholds_epa_endangerment_washington_dc_2012-06-26"
+      }
+    }
+  ]
+}

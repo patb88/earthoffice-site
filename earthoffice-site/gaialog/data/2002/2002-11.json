@@ -1,0 +1,585 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_2002-11_normalize_2026-01-16T023930135Z",
+    "generated_utc": "2026-01-16T02:39:30.135Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "2002-11",
+    "window": {
+      "start_utc": "2002-11-01T00:00:00.000Z",
+      "end_utc": "2002-11-30T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "evt_200211_prestige_spill_galicia",
+      "title": "Prestige oil tanker spill begins off Galicia, Spain",
+      "description": "The oil tanker Prestige suffered damage in a storm off the coast of Galicia and began leaking fuel oil. The incident led to oil pollution affecting coastline and wildlife, with impacts continuing through November 2002.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2002-11-13T00:00:00.000Z",
+        "event_end": "2002-11-30T23:59:59.000Z",
+        "reported_at": "2003-03-07T00:00:00.000Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "2002-11-13T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Off the coast of Galicia (Costa da Morte), Spain",
+        "jurisdiction_level": "site",
+        "admin1": null,
+        "country": "ES",
+        "capital_used": null,
+        "lat": 43.2,
+        "lon": -9.15,
+        "precision": "proxy",
+        "location_basis": "manual_override",
+        "location_confidence": 0.35
+      },
+      "sources": [
+        {
+          "url": "https://www.theguardian.com/environment/2003/mar/07/uknews.pollution",
+          "source_name": "The Guardian",
+          "published_at": "2003-03-07T00:00:00.000Z",
+          "headline": "uknews.pollution",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.ucdavis.edu/news/uc-davis-experts-say-oil-spill-worlds-worst-birds-2002",
+          "source_name": "UC Davis",
+          "published_at": "2002-01-01T00:00:00.000Z",
+          "headline": "UC Davis experts say oil spill world's worst for birds in 2002",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Prestige"
+        ],
+        "substances": [
+          "heavy fuel oil"
+        ],
+        "ecosystems": [
+          "Atlantic Ocean"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "The single-hulled tanker Prestige...began leaking heavy fuel oil",
+            "source_url": "https://www.theguardian.com/environment/2003/mar/07/uknews.pollution"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.45,
+        "category": 0.7,
+        "location": 0.35,
+        "summary_grounding": 0.4
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "secondary_sources_only",
+        "low_confidence_location",
+        "paywalled_or_partial",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Prestige oil spill Galicia Nov 2002",
+        "fingerprint": "fp_prestige_galicia_2002-11"
+      }
+    },
+    {
+      "event_id": "2002-11-weather-001",
+      "title": "Veterans Day weekend tornado outbreak across the eastern United States",
+      "description": "A severe-weather outbreak during Nov 9–11, 2002 produced numerous tornadoes and severe storms across a broad swath of the eastern United States. NOAA/NWS documentation includes assessment material and storm-event records for the outbreak.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2002-11-09T00:00:00.000Z",
+        "event_end": "2002-11-11T23:59:59.000Z",
+        "reported_at": "2002-11-30T23:59:59.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": null,
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "United States (multi-state outbreak area)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://repository.library.noaa.gov/view/noaa/6446",
+          "source_name": "NOAA Institutional Repository",
+          "published_at": "2002-11-30T23:59:59.000Z",
+          "headline": "NOAA/NWS document related to the November 2002 tornado outbreak (repository record)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.ncdc.noaa.gov/stormevents/",
+          "source_name": "NOAA NCEI Storm Events Database",
+          "published_at": "2002-11-30T23:59:59.000Z",
+          "headline": "Storm Events Database (used for November 2002 severe-weather events)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.eol.ucar.edu/content/comet-case-study-044-november-10th-tornadoes-2002",
+          "source_name": "UCAR/COMET (EOL/UCAR)",
+          "published_at": "2002-11-30T23:59:59.000Z",
+          "headline": "Case study: November 10th tornadoes (2002)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "National Weather Service (NWS)",
+          "NOAA"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.58,
+        "category": 0.7,
+        "location": 0.55,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "2002-11-09_to_2002-11-11_us_tornado_outbreak",
+        "fingerprint": "fp_2002-11-weather-001_us_2002-11-09_2002-11-11"
+      }
+    },
+    {
+      "event_id": "2002-11-weather-002",
+      "title": "ENSO update: evolution toward basin-wide mature El Niño conditions",
+      "description": "NOAA’s Climate Prediction Center reported in early November 2002 that El Niño conditions were strengthening, with positive sea-surface temperature anomalies across much of the equatorial Pacific and supportive atmospheric indicators. The update described ongoing development toward mature, basin-wide El Niño conditions with broader climate influence.",
+      "category_primary": "weather_climate",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "2002-11-07T00:00:00.000Z",
+        "event_end": "2002-11-07T23:59:59.000Z",
+        "reported_at": "2002-11-07T00:00:00.000Z",
+        "time_confidence": 0.85,
+        "event_date_utc": "2002-11-07T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Equatorial Pacific (ENSO monitoring region)",
+        "jurisdiction_level": "global_proxy",
+        "admin1": null,
+        "country": null,
+        "capital_used": null,
+        "lat": 0,
+        "lon": 0,
+        "precision": "proxy",
+        "location_basis": "manual_override",
+        "location_confidence": 0.5
+      },
+      "sources": [
+        {
+          "url": "https://www.cpc.ncep.noaa.gov/products/analysis_monitoring/enso_disc_nov2002/",
+          "source_name": "NOAA Climate Prediction Center (CPC)",
+          "published_at": "2002-11-07T00:00:00.000Z",
+          "headline": "ENSO Diagnostic Discussion (November 2002)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA Climate Prediction Center (CPC)",
+          "NOAA"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "Equatorial Pacific Ocean"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.67,
+        "category": 0.75,
+        "location": 0.5,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "2002-11-07_cpc_enso_discussion_el_nino_strengthening",
+        "fingerprint": "fp_2002-11-weather-002_enso_2002-11-07"
+      }
+    },
+    {
+      "event_id": "evt-20021103-denali-fault-earthquake",
+      "title": "Denali Fault M7.9 earthquake triggers widespread landslides in Alaska",
+      "description": "A magnitude 7.9 earthquake ruptured the Denali Fault system on Nov 3, 2002, triggering numerous landslides in south-central Alaska. Reports note the Trans-Alaska Pipeline withstood strong ground deformation, helping avert a major oil spill.",
+      "category_primary": "geological",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "2002-11-03T22:12:41.000Z",
+        "event_end": "2002-11-03T22:12:41.000Z",
+        "reported_at": "2003-01-01T00:00:00.000Z",
+        "time_confidence": 0.8,
+        "event_date_utc": "2002-11-03T22:12:41.000Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Alaska Range, south-central Alaska, United States",
+        "jurisdiction_level": "state",
+        "admin1": "Alaska",
+        "country": "US",
+        "capital_used": "Juneau",
+        "lat": 58.301944,
+        "lon": -134.419722,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://pubs.usgs.gov/fs/old.2003/fs014-03/",
+          "source_name": "USGS Publications Warehouse",
+          "published_at": "2003-01-01T00:00:00.000Z",
+          "headline": "Fact Sheet 014-03 (Denali Fault earthquake)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Geological Survey (USGS)",
+          "Trans-Alaska Pipeline System"
+        ],
+        "substances": [
+          "oil"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "The M 7.9 Denali Fault earthquake ... triggered thousands of landslides.",
+            "source_url": "https://pubs.usgs.gov/fs/old.2003/fs014-03/"
+          },
+          {
+            "quote": "The Trans-Alaska Pipeline ... withstood the strong ground shaking and deformation.",
+            "source_url": "https://pubs.usgs.gov/fs/old.2003/fs014-03/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.78,
+        "category": 0.9,
+        "location": 0.7,
+        "summary_grounding": 0.75
+      },
+      "quality_flags": [
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Denali Fault earthquake Nov 2002",
+        "fingerprint": "denali-fault-m79|alaska|2002-11-03"
+      }
+    },
+    {
+      "event_id": "evt-20021102-simeulue-offshore-earthquake",
+      "title": "Offshore northern Sumatra earthquake near Simeulue Island",
+      "description": "A strong offshore earthquake struck near Simeulue Island off northern Sumatra on Nov 2, 2002. Source pages describe the event and its seismic parameters, and note impacts including casualties in the region.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2002-11-02T01:26:10.000Z",
+        "event_end": "2002-11-02T01:26:10.000Z",
+        "reported_at": "2002-11-02T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2002-11-02T01:26:10.000Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Near Simeulue Island, off northern Sumatra, Indonesia",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "ID",
+        "capital_used": "Jakarta",
+        "lat": -6.208889,
+        "lon": 106.845556,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://earthquake.usgs.gov/earthquakes/eventpage/usp000bfuz/executive",
+          "source_name": "USGS Earthquake Hazards Program",
+          "published_at": "2002-11-02T00:00:00.000Z",
+          "headline": "USGS event page: usp000bfuz (executive summary)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.emsc-csem.org/Earthquake/earthquake.php?id=24441",
+          "source_name": "EMSC-CSEM",
+          "published_at": "2002-11-02T00:00:00.000Z",
+          "headline": "EMSC earthquake event page (ID 24441)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Geological Survey (USGS)",
+          "EMSC-CSEM"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Event page (executive) provides origin time and location near Simeulue Island.",
+            "source_url": "https://earthquake.usgs.gov/earthquakes/eventpage/usp000bfuz/executive"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.85,
+        "location": 0.55,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "needs_dedupe_check",
+        "secondary_sources_only",
+        "date_ambiguous",
+        "location_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "Simeulue / northern Sumatra offshore earthquake Nov 2002",
+        "fingerprint": "simeulue-offshore-earthquake|indonesia|2002-11-02"
+      }
+    },
+    {
+      "event_id": "evt_20021101_aus_bushfires_wa_nt_nasaeo",
+      "title": "Satellite imagery shows large bushfires in central/northern Australia",
+      "description": "NASA Earth Observatory reported satellite observations of numerous large bushfires burning across parts of central/northern Australia, including areas associated with Western Australia and the Northern Territory, on Nov 1, 2002. The report described widespread fire activity consistent with dry-season conditions in arid and savanna regions.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2002-11-01T00:00:00.000Z",
+        "event_end": "2002-11-01T23:59:59.000Z",
+        "reported_at": "2002-11-01T00:00:00Z",
+        "time_confidence": 0.5,
+        "event_date_utc": "2002-11-01T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Central/northern Australia (Western Australia and Northern Territory)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "AU",
+        "capital_used": "Canberra",
+        "lat": -35.2809,
+        "lon": 149.13,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://science.nasa.gov/earth/earth-observatory/large-bushfires-in-central-australia-10313/",
+          "source_name": "NASA Earth Observatory",
+          "published_at": "2002-11-01T00:00:00Z",
+          "headline": "Large Bushfires in Central Australia",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NASA Earth Observatory"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "arid regions",
+          "savanna"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "large bushfires in central Australia",
+            "source_url": "https://science.nasa.gov/earth/earth-observatory/large-bushfires-in-central-australia-10313/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.8,
+        "location": 0.6,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "AU|bushfires|2002-11-01|NASA_EO",
+        "fingerprint": "fp_au_bushfires_2002_11_01_central_northern_nasaeo"
+      }
+    },
+    {
+      "event_id": "2002-11_prestige_oil_spill_ecosystem_biodiversity_galicia",
+      "title": "Prestige oil spill harms seabirds and coastal ecosystems in Galicia and nearby Atlantic coasts",
+      "description": "After the tanker Prestige spilled oil off Spain in mid-November 2002, oil contaminated coastal and marine habitats and was reported to cause large seabird mortality and wider ecological impacts along affected coasts.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2002-11-13T00:00:00.000Z",
+        "event_end": "2002-11-30T23:59:59.000Z",
+        "reported_at": "2003-03-07T00:00:00Z",
+        "time_confidence": 0.65,
+        "event_date_utc": "2002-11-13T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Galicia, Spain",
+        "jurisdiction_level": "state",
+        "admin1": "Galicia",
+        "country": "ES",
+        "capital_used": "Santiago de Compostela",
+        "lat": 42.8782,
+        "lon": -8.5448,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.theguardian.com/environment/2003/mar/07/uknews.pollution",
+          "source_name": "The Guardian",
+          "published_at": "2003-03-07T00:00:00Z",
+          "headline": "(headline unavailable in draft)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.ucdavis.edu/news/uc-davis-experts-say-oil-spill-worlds-worst-birds-2002",
+          "source_name": "UC Davis",
+          "published_at": "2002-11-01T00:00:00Z",
+          "headline": "(headline unavailable in draft)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Prestige (tanker)",
+          "UC Davis"
+        ],
+        "substances": [
+          "oil"
+        ],
+        "ecosystems": [
+          "North-East Atlantic coastal ecosystems",
+          "shoreline habitats",
+          "marine habitats"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "(quote unavailable in draft text)",
+            "source_url": "https://www.theguardian.com/environment/2003/mar/07/uknews.pollution"
+          },
+          {
+            "quote": "(quote unavailable in draft text)",
+            "source_url": "https://www.ucdavis.edu/news/uc-davis-experts-say-oil-spill-worlds-worst-birds-2002"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.7,
+        "location": 0.6,
+        "summary_grounding": 0.4
+      },
+      "quality_flags": [
+        "secondary_sources_only",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Prestige oil spill seabird mortality Galicia 2002-11",
+        "fingerprint": "prestige_oil_spill|galicia_es|2002-11"
+      }
+    }
+  ]
+}

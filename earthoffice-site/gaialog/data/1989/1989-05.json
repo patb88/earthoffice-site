@@ -1,0 +1,992 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_1989-05_normalize_2026-01-18T115952261Z",
+    "generated_utc": "2026-01-18T11:59:52.261Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "1989-05",
+    "window": {
+      "start_utc": "1989-05-01T00:00:00.000Z",
+      "end_utc": "1989-05-31T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "1989-05-pc-maggie-creek-sulfuric-acid-spill",
+      "title": "Truck rollover spills sulfuric acid into Maggie Creek near Carlin, Nevada",
+      "description": "A tanker truck carrying sulfuric acid rolled over near Carlin, Nevada, releasing an estimated portion of its contents into Maggie Creek, which drains toward the Humboldt River. Response actions included removing the tanker and conducting monitoring and sampling, with limited observed wildlife impact reported.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1989-05-15T12:00:00Z",
+        "time_confidence": 0.4,
+        "event_date_utc": "1989-05-15T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Maggie Creek near Carlin, Nevada, USA",
+        "jurisdiction_level": "site",
+        "admin1": "Nevada",
+        "country": "US",
+        "capital_used": null,
+        "lat": 40.7138,
+        "lon": -116.1039,
+        "precision": "neighborhood",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://response.epa.gov/site/site_profile.aspx?site_id=14307",
+          "source_name": "U.S. EPA Response (response.epa.gov)",
+          "published_at": "1989-05-15T12:00:00Z",
+          "headline": "Site Profile",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Environmental Protection Agency (EPA)"
+        ],
+        "substances": [
+          "sulfuric acid"
+        ],
+        "ecosystems": [
+          "Maggie Creek",
+          "Humboldt River"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "...tanker truck... rolled over... into Maggie Creek...",
+            "source_url": "https://response.epa.gov/site/site_profile.aspx?site_id=14307"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.5,
+        "category": 0.75,
+        "location": 0.55,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "maggie-creek-sulfuric-acid-1989-05",
+        "fingerprint": "pc|maggie creek near carlin, nevada, usa|1989-05-15"
+      }
+    },
+    {
+      "event_id": "evt_19890505_western_carolinas_tornado_outbreak",
+      "title": "Western Carolinas tornado outbreak with multiple violent tornadoes",
+      "description": "Severe thunderstorms affected the western Carolinas on May 5, 1989, producing multiple tornadoes including tornadoes rated F4 and causing deaths, injuries, and significant damage in the region.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1989-05-05T12:00:00Z",
+        "event_end": "1989-05-05T12:00:00Z",
+        "reported_at": "1989-05-05T12:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1989-05-05T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Upstate South Carolina and western North Carolina, USA",
+        "jurisdiction_level": "state",
+        "admin1": "South Carolina / North Carolina",
+        "country": "US",
+        "capital_used": "Columbia, SC",
+        "lat": 34.0007,
+        "lon": -81.0348,
+        "precision": "proxy",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.35
+      },
+      "sources": [
+        {
+          "url": "https://www.weather.gov/gsp/5May1989Review",
+          "source_name": "NWS Greenville-Spartanburg (weather.gov)",
+          "published_at": "1989-05-05T12:00:00Z",
+          "headline": "5 May 1989 Review",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "National Weather Service"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "A major severe-weather outbreak affected the western Carolinas on May 5, 1989.",
+            "source_url": "https://www.weather.gov/gsp/5May1989Review"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.56,
+        "category": 0.75,
+        "location": 0.35,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "1989-05-05 western carolinas tornado outbreak",
+        "fingerprint": "fp_19890505_western_carolinas_tornado_outbreak"
+      }
+    },
+    {
+      "event_id": "evt_19890505_19890513_maine_severe_storms_flooding_dr830",
+      "title": "Severe storms and flooding in Maine (FEMA DR-830)",
+      "description": "Severe storms caused flooding impacts in Maine during an incident period documented by FEMA as disaster declaration DR-830-ME (May 5\u0011\u0013, 1989).",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1989-05-05T12:00:00Z",
+        "event_end": "1989-05-13T12:00:00Z",
+        "reported_at": "1989-05-05T12:00:00Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "1989-05-05T12:00:00Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Maine, USA",
+        "jurisdiction_level": "state",
+        "admin1": "Maine",
+        "country": "US",
+        "capital_used": "Augusta, ME",
+        "lat": 44.3106,
+        "lon": -69.7795,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.9
+      },
+      "sources": [
+        {
+          "url": "https://www.fema.gov/disaster/830",
+          "source_name": "FEMA",
+          "published_at": "1989-05-05T12:00:00Z",
+          "headline": "Disaster Declaration DR-830",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "FEMA"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "the incident period is documented under FEMA disaster declaration DR-830-ME.",
+            "source_url": "https://www.fema.gov/disaster/830"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.72,
+        "category": 0.75,
+        "location": 0.9,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "FEMA DR-830 Maine severe storms flooding 1989-05",
+        "fingerprint": "fp_19890505_19890513_maine_dr830"
+      }
+    },
+    {
+      "event_id": "evt_19890512_maine_flooding_rains_upi",
+      "title": "Heavy rain triggers flooding and warnings in Maine",
+      "description": "A slow-moving low-pressure system brought heavy rain to Maine on May 12, 1989, leading to river flooding and flood warnings in parts of the state, including areas around Portland.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1989-05-12T12:00:00Z",
+        "event_end": "1989-05-12T12:00:00Z",
+        "reported_at": "1989-05-12T00:00:00Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "1989-05-12T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Maine, USA",
+        "jurisdiction_level": "state",
+        "admin1": "Maine",
+        "country": "US",
+        "capital_used": "Augusta, ME",
+        "lat": 44.3106,
+        "lon": -69.7795,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.9
+      },
+      "sources": [
+        {
+          "url": "https://www.upi.com/Archives/1989/05/12/Flooding-rains-soak-Maine/9796610948800/",
+          "source_name": "UPI",
+          "published_at": "1989-05-12T00:00:00Z",
+          "headline": "Flooding rains soak Maine",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "UPI"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Flooding rains soak Maine",
+            "source_url": "https://www.upi.com/Archives/1989/05/12/Flooding-rains-soak-Maine/9796610948800/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.7,
+        "category": 0.7,
+        "location": 0.9,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [],
+      "dedupe": {
+        "cluster_hint": "1989-05-12 Maine flooding rains UPI",
+        "fingerprint": "fp_19890512_maine_flooding_rains_upi"
+      }
+    },
+    {
+      "event_id": "evt_19890516_19890520_typhoon_brenda_bining_impacts",
+      "title": "Typhoon Brenda (Bining) causes flooding impacts in the Philippines and later affects southern China/Hong Kong",
+      "description": "In mid-May 1989, Tropical Storm/Typhoon Brenda (Bining) caused fatalities and flooding impacts in the Philippines before later affecting parts of southern China and Hong Kong with heavy rain.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1989-05-16T12:00:00Z",
+        "event_end": "1989-05-20T12:00:00Z",
+        "reported_at": "1989-05-18T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1989-05-18T00:00:00Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Philippines; southern China and Hong Kong",
+        "jurisdiction_level": "supranational",
+        "admin1": null,
+        "country": null,
+        "capital_used": "Manila",
+        "lat": 14.5995,
+        "lon": 120.9842,
+        "precision": "proxy",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.25
+      },
+      "sources": [
+        {
+          "url": "https://www.upi.com/Archives/1989/05/18/Tropical-storm-Brenda-leaves-19-dead/5230611467200/",
+          "source_name": "UPI",
+          "published_at": "1989-05-18T00:00:00Z",
+          "headline": "Tropical storm Brenda leaves 19 dead",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "UPI"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Tropical storm Brenda leaves 19 dead",
+            "source_url": "https://www.upi.com/Archives/1989/05/18/Tropical-storm-Brenda-leaves-19-dead/5230611467200/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.5,
+        "category": 0.7,
+        "location": 0.25,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "location_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "1989 Typhoon Brenda Bining impacts Philippines China Hong Kong",
+        "fingerprint": "fp_19890516_19890520_typhoon_brenda_bining"
+      }
+    },
+    {
+      "event_id": "evt_19890504_mammoth_mountain_swarm_onset",
+      "title": "Earthquake swarm begins beneath Mammoth Mountain (Long Valley), California",
+      "description": "A swarm of small earthquakes began beneath Mammoth Mountain on 4 May 1989. The activity marked the start of a months-long sequence associated with volcanic/magmatic unrest in the Long Valley area, as documented by USGS publications.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1989-05-04T12:00:00Z",
+        "event_end": "1989-05-04T12:00:00Z",
+        "reported_at": "1989-05-04T12:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1989-05-04T12:00:00Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Mammoth Mountain (Long Valley), eastern California, USA",
+        "jurisdiction_level": "site",
+        "admin1": "California",
+        "country": "US",
+        "capital_used": null,
+        "lat": 37.6308,
+        "lon": -119.0329,
+        "precision": "exact",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://www.usgs.gov/publications/1989-earthquake-swarm-beneath-mammoth-mountain-california-initial-look-4-may-through",
+          "source_name": "USGS",
+          "published_at": "1989-05-04T12:00:00Z",
+          "headline": "The 1989 Earthquake Swarm Beneath Mammoth Mountain, California: An Initial Look (4 May Through ...)",
+          "byline": null,
+          "accessed_utc": "2026-01-18T07:09:08.731Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://pubs.usgs.gov/publication/70015810",
+          "source_name": "USGS Publications Warehouse",
+          "published_at": "1989-05-04T12:00:00Z",
+          "headline": "The 1989 Earthquake Swarm Beneath Mammoth Mountain, California: An Initial Look (4 May Through ...)",
+          "byline": null,
+          "accessed_utc": "2026-01-18T07:09:08.731Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "USGS"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "The 1989 earthquake swarm beneath Mammoth Mountain, California: An initial look (4 May through ...)",
+            "source_url": "https://pubs.usgs.gov/publication/70015810"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.64,
+        "category": 0.85,
+        "location": 0.7,
+        "summary_grounding": 0.65
+      },
+      "quality_flags": [
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "long_valley_mammoth_mountain_swarm_1989_05",
+        "fingerprint": "fp_19890504_mammoth_mountain_long_valley_geological"
+      }
+    },
+    {
+      "event_id": "evt_19890523_macquarie_ridge_great_eq",
+      "title": "Great earthquake on/near the Macquarie Ridge (Macquarie Island region)",
+      "description": "A great strike-slip earthquake occurred on 23 May 1989 in the Macquarie Ridge/Macquarie Island region of the Southern Ocean. Scientific literature commonly characterizes it as approximately Mw 8.1–8.2 and among the largest instrumentally recorded strike-slip earthquakes.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1989-05-23T10:54:46Z",
+        "event_end": "1989-05-23T10:54:46Z",
+        "reported_at": "1989-05-23T10:54:46Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "1989-05-23T10:54:46Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Macquarie Ridge / Macquarie Island region (Southern Ocean)",
+        "jurisdiction_level": "site",
+        "admin1": null,
+        "country": null,
+        "capital_used": null,
+        "lat": -54.62,
+        "lon": 158.85,
+        "precision": "proxy",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.45
+      },
+      "sources": [
+        {
+          "url": "https://academic.oup.com/gji/article/115/3/778/609623",
+          "source_name": "Geophysical Journal International (OUP)",
+          "published_at": "1989-05-23T10:54:46Z",
+          "headline": "GJI article record (Macquarie Ridge great earthquake)",
+          "byline": null,
+          "accessed_utc": "2026-01-18T07:09:08.731Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://authors.library.caltech.edu/records/vae2g-n0710",
+          "source_name": "CaltechAUTHORS",
+          "published_at": "1989-05-23T10:54:46Z",
+          "headline": "CaltechAUTHORS record (Macquarie Ridge great earthquake)",
+          "byline": null,
+          "accessed_utc": "2026-01-18T07:09:08.731Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Geophysical Journal International",
+          "OUP",
+          "CaltechAUTHORS"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "article/115/3/778",
+            "source_url": "https://academic.oup.com/gji/article/115/3/778/609623"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.52,
+        "category": 0.8,
+        "location": 0.45,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "macquarie_ridge_great_earthquake_1989_05_23",
+        "fingerprint": "fp_19890523_macquarie_ridge_geological"
+      }
+    },
+    {
+      "event_id": "1989-05-osceola-national-forest-wildfire-13000ac-thunderstorm",
+      "title": "Osceola National Forest wildfire reported at ~13,000 acres; thunderstorm aided suppression",
+      "description": "A wildfire in Osceola National Forest in Florida was reported at roughly 13,000 acres. Coverage noted that a drenching thunderstorm helped firefighting efforts.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1989-05-01T12:00:00Z",
+        "event_end": "1989-05-01T12:00:00Z",
+        "reported_at": "1989-05-01T12:00:00Z",
+        "time_confidence": 0.4,
+        "event_date_utc": "1989-05-01T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Osceola National Forest, Florida, United States",
+        "jurisdiction_level": "site",
+        "admin1": "Florida",
+        "country": "US",
+        "capital_used": null,
+        "lat": 30.307,
+        "lon": -82.431,
+        "precision": "exact",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://sun-index.aclib.us/node/155651",
+          "source_name": "Sun Index (aclib.us)",
+          "published_at": "1989-05-01T12:00:00Z",
+          "headline": "Osceola National Forest wildfire (Florida) — ~13,000 acres; thunderstorms aid suppression",
+          "byline": null,
+          "accessed_utc": "2026-01-18T07:10:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.46,
+        "category": 0.9,
+        "location": 0.55,
+        "summary_grounding": 0.35
+      },
+      "quality_flags": [
+        "secondary_sources_only",
+        "date_ambiguous",
+        "location_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "osceola-national-forest-wildfire-1989-05",
+        "fingerprint": "fires|osceola national forest florida us|1989-05-01"
+      }
+    },
+    {
+      "event_id": "1989-05-osceola-national-forest-wildfire-residual-hotspots",
+      "title": "Residual hotspots reported still burning in Osceola National Forest after earlier wildfire",
+      "description": "Follow-up reporting said several small hotspots were still burning in Osceola National Forest in Florida after earlier wildfire activity. The report characterized the remaining fire activity as localized hotspots.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1989-05-10T12:00:00Z",
+        "event_end": "1989-05-10T12:00:00Z",
+        "reported_at": "1989-05-10T12:00:00Z",
+        "time_confidence": 0.4,
+        "event_date_utc": "1989-05-10T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Osceola National Forest, Florida, United States",
+        "jurisdiction_level": "site",
+        "admin1": "Florida",
+        "country": "US",
+        "capital_used": null,
+        "lat": 30.307,
+        "lon": -82.431,
+        "precision": "exact",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://sun-index.aclib.us/node/151646",
+          "source_name": "Sun Index (aclib.us)",
+          "published_at": "1989-05-10T12:00:00Z",
+          "headline": "Osceola National Forest wildfire (Florida) — residual hotspots continue burning",
+          "byline": null,
+          "accessed_utc": "2026-01-18T07:10:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.44,
+        "category": 0.9,
+        "location": 0.55,
+        "summary_grounding": 0.33
+      },
+      "quality_flags": [
+        "secondary_sources_only",
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "osceola-national-forest-wildfire-1989-05",
+        "fingerprint": "fires|osceola national forest florida us|1989-05-10"
+      }
+    },
+    {
+      "event_id": "1989-05-punta-gorda-area-brush-fire-injures-firefighters-destroys-truck",
+      "title": "Brush fire near Punta Gorda injured two firefighters and destroyed a fire truck",
+      "description": "A brush fire in the Punta Gorda area of Florida injured two firefighters and destroyed a fire truck. The incident was reported in local coverage indexed for the date provided in the draft.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1989-05-16T12:00:00Z",
+        "event_end": "1989-05-16T12:00:00Z",
+        "reported_at": "1989-05-16T12:00:00Z",
+        "time_confidence": 0.4,
+        "event_date_utc": "1989-05-16T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Punta Gorda area, Florida, United States",
+        "jurisdiction_level": "city",
+        "admin1": "Florida",
+        "country": "US",
+        "capital_used": null,
+        "lat": 26.9298,
+        "lon": -82.0454,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.5
+      },
+      "sources": [
+        {
+          "url": "https://sun-index.aclib.us/node/154647",
+          "source_name": "Sun Index (aclib.us)",
+          "published_at": "1989-05-16T12:00:00Z",
+          "headline": "Brush fire injures firefighters and destroys a fire truck (Punta Gorda area, Florida)",
+          "byline": null,
+          "accessed_utc": "2026-01-18T07:10:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.43,
+        "category": 0.9,
+        "location": 0.5,
+        "summary_grounding": 0.33
+      },
+      "quality_flags": [
+        "secondary_sources_only",
+        "date_ambiguous",
+        "location_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": null,
+        "fingerprint": "fires|punta gorda area florida us|1989-05-16"
+      }
+    },
+    {
+      "event_id": "1989-05-everglades-national-park-wildfire-active-suppression",
+      "title": "Wildfire in Everglades National Park reported under active suppression",
+      "description": "Firefighters battled a wildfire in Everglades National Park in Florida. The report described active suppression efforts during late May.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1989-05-25T12:00:00Z",
+        "event_end": "1989-05-25T12:00:00Z",
+        "reported_at": "1989-05-25T12:00:00Z",
+        "time_confidence": 0.4,
+        "event_date_utc": "1989-05-25T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Everglades National Park, Florida, United States",
+        "jurisdiction_level": "site",
+        "admin1": "Florida",
+        "country": "US",
+        "capital_used": null,
+        "lat": 25.2866,
+        "lon": -80.8987,
+        "precision": "exact",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://sun-index.aclib.us/node/155050",
+          "source_name": "Sun Index (aclib.us)",
+          "published_at": "1989-05-25T12:00:00Z",
+          "headline": "Everglades National Park wildfire under active suppression (Florida)",
+          "byline": null,
+          "accessed_utc": "2026-01-18T07:10:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.45,
+        "category": 0.9,
+        "location": 0.55,
+        "summary_grounding": 0.33
+      },
+      "quality_flags": [
+        "secondary_sources_only",
+        "date_ambiguous",
+        "location_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": null,
+        "fingerprint": "fires|everglades national park florida us|1989-05-25"
+      }
+    },
+    {
+      "event_id": "1989-05-gilchrist-county-trenton-area-brush-fire-250ac-contained",
+      "title": "Brush fire northeast of Trenton in Gilchrist County burned ~250 acres and was contained",
+      "description": "A brush fire northeast of Trenton in Gilchrist County, Florida, was reported contained after burning about 250 acres. The report framed the incident as a contained local wildfire/brush fire.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1989-05-29T12:00:00Z",
+        "event_end": "1989-05-29T12:00:00Z",
+        "reported_at": "1989-05-29T12:00:00Z",
+        "time_confidence": 0.4,
+        "event_date_utc": "1989-05-29T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Gilchrist County (northeast of Trenton), Florida, United States",
+        "jurisdiction_level": "state",
+        "admin1": "Florida",
+        "country": "US",
+        "capital_used": "Tallahassee",
+        "lat": 30.4383,
+        "lon": -84.2807,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.35
+      },
+      "sources": [
+        {
+          "url": "https://sun-index.aclib.us/node/157503",
+          "source_name": "Sun Index (aclib.us)",
+          "published_at": "1989-05-29T12:00:00Z",
+          "headline": "Brush fire northeast of Trenton (Gilchrist County, Florida) — ~250 acres, contained",
+          "byline": null,
+          "accessed_utc": "2026-01-18T07:10:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.4,
+        "category": 0.9,
+        "location": 0.35,
+        "summary_grounding": 0.32
+      },
+      "quality_flags": [
+        "secondary_sources_only",
+        "date_ambiguous",
+        "location_ambiguous",
+        "low_confidence_location"
+      ],
+      "dedupe": {
+        "cluster_hint": null,
+        "fingerprint": "fires|gilchrist county northeast of trenton florida us|1989-05-29"
+      }
+    },
+    {
+      "event_id": "evt_19890502_us_epa_ldr_first_third_final_rule",
+      "title": "U.S. EPA final rule amends RCRA Land Disposal Restrictions for certain “First Third” wastes",
+      "description": "EPA issued a final rule amending application of RCRA land disposal restrictions for certain “First Third” scheduled hazardous wastes. The summary indicates some nonwastewater forms of certain First Third wastes were excluded from a “no land disposal” standard, as described in the referenced rule material.",
+      "category_primary": "policy_regulation",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1989-05-02T12:00:00Z",
+        "time_confidence": 0.4,
+        "event_date_utc": "1989-05-02T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Washington, DC, United States (EPA / Federal rulemaking)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://archive.epa.gov/epawaste/hazard/web/html/rulesp92.html",
+          "source_name": "U.S. Environmental Protection Agency (archive.epa.gov)",
+          "published_at": "1989-05-02T12:00:00Z",
+          "headline": "rulesp92.html (RCRA hazardous waste rules page)",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://downloads.regulations.gov/EPA-R04-RCRA-2018-0527-0001/content.htm",
+          "source_name": "Regulations.gov (downloads)",
+          "published_at": "1989-05-02T12:00:00Z",
+          "headline": "EPA-R04-RCRA-2018-0527-0001 (content)",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Environmental Protection Agency (EPA)"
+        ],
+        "substances": [
+          "hazardous waste"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.52,
+        "category": 0.7,
+        "location": 0.7,
+        "summary_grounding": 0.35
+      },
+      "quality_flags": [
+        "secondary_sources_only",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "EPA RCRA LDR First Third final rule May 1989",
+        "fingerprint": "fp_evt_19890502_us_epa_ldr_first_third_final_rule"
+      }
+    },
+    {
+      "event_id": "evt_19890506_montreal_protocol_open_for_accession",
+      "title": "Montreal Protocol opens for accession (treaty action effective 6 May 1989)",
+      "description": "The Montreal Protocol’s treaty status changed to allow accession beginning 6 May 1989, enabling additional parties to join the ozone-protection agreement through accession. This record reflects the accession-opening milestone as presented in the provided treaty-text source.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1989-05-06T12:00:00Z",
+        "time_confidence": 0.5,
+        "event_date_utc": "1989-05-06T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Ottawa, Canada (UN treaty depositary proxy)",
+        "jurisdiction_level": "global_proxy",
+        "admin1": null,
+        "country": "CA",
+        "capital_used": null,
+        "lat": 45.4215,
+        "lon": -75.6972,
+        "precision": "proxy",
+        "location_basis": "institution_proxy",
+        "location_confidence": 0.3
+      },
+      "sources": [
+        {
+          "url": "https://www.iea.ulaval.ca/en/treaty-text/3036",
+          "source_name": "International Environmental Agreements (IEA) Database Project, Université Laval",
+          "published_at": "1989-05-06T12:00:00Z",
+          "headline": "Treaty text: Montreal Protocol on Substances that Deplete the Ozone Layer",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Montreal Protocol"
+        ],
+        "substances": [
+          "ozone-depleting substances"
+        ],
+        "ecosystems": [
+          "stratospheric ozone layer"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.48,
+        "category": 0.75,
+        "location": 0.3,
+        "summary_grounding": 0.35
+      },
+      "quality_flags": [
+        "secondary_sources_only",
+        "location_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "Montreal Protocol opens for accession 6 May 1989",
+        "fingerprint": "fp_evt_19890506_montreal_protocol_open_for_accession"
+      }
+    }
+  ]
+}

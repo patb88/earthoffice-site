@@ -1,0 +1,717 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_1997-12_normalize_2026-01-17T192233779Z",
+    "generated_utc": "2026-01-17T19:22:33.779Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "1997-12",
+    "window": {
+      "start_utc": "1997-12-01T00:00:00.000Z",
+      "end_utc": "1997-12-31T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "pollution_contamination_us-oh-cygnet_1997-12-12_mid-valley-pipeline-crude-oil-leak",
+      "title": "Mid-Valley Pipeline crude oil leak at pump station (Cygnet, Ohio)",
+      "description": "A crude oil release occurred at a Mid-Valley Pipeline pump station near Cygnet, Ohio. The incident is referenced in a U.S. Department of Justice announcement about a settlement that includes spill prevention steps.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1997-12-12T12:00:00Z",
+        "event_end": "1997-12-12T12:00:00Z",
+        "reported_at": "2006-03-23T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1997-12-12T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Cygnet, Ohio, USA",
+        "jurisdiction_level": "city",
+        "admin1": "Ohio",
+        "country": "US",
+        "capital_used": null,
+        "lat": 41.23755,
+        "lon": -83.64327,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.justice.gov/opa/pr/sunoco-pipeline-lp-pay-more-54-million-and-take-oil-spill-prevention-steps-settle-claims",
+          "source_name": "U.S. Department of Justice (OPA)",
+          "published_at": "2006-03-23T00:00:00Z",
+          "headline": "Sunoco Pipeline L.P. to Pay More Than $5.4 Million and Take Oil Spill Prevention Steps to Settle Claims",
+          "byline": null,
+          "accessed_utc": "2026-01-17T03:24:51.537Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Mid-Valley Pipeline",
+          "Sunoco Pipeline L.P.",
+          "U.S. Department of Justice"
+        ],
+        "substances": [
+          "crude oil"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Sunoco Pipeline L.P. ... take oil spill prevention steps to settle claims.",
+            "source_url": "https://www.justice.gov/opa/pr/sunoco-pipeline-lp-pay-more-54-million-and-take-oil-spill-prevention-steps-settle-claims"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.45,
+        "category": 0.7,
+        "location": 0.55,
+        "summary_grounding": 0.35
+      },
+      "quality_flags": [
+        "secondary_sources_only",
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "sunoco-mid-valley-pipeline-cygnet-oh-1997-12",
+        "fingerprint": "pollution_contamination|Mid-Valley Pipeline crude oil leak at pump station (Cygnet, Ohio)|Cygnet, Ohio, US|1997-12-12"
+      }
+    },
+    {
+      "event_id": "pollution_contamination_us-ca-san-bernardino-county_1997-12-13_plains-all-american-pipeline-rupture",
+      "title": "Plains All American Pipeline crude oil rupture (rural San Bernardino County, California)",
+      "description": "A crude oil spill in rural San Bernardino County, California is described as involving a Plains All American Pipeline rupture attributed to external corrosion. The incident is referenced via a PHMSA flagged incident data file, but key details (date, volume, and exact location) are not fully verifiable from the draft alone.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1997-12-13T12:00:00Z",
+        "event_end": "1997-12-13T12:00:00Z",
+        "reported_at": "1997-12-13T12:00:00Z",
+        "time_confidence": 0.25,
+        "event_date_utc": "1997-12-13T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "San Bernardino County, California, USA (rural area)",
+        "jurisdiction_level": "state",
+        "admin1": "California",
+        "country": "US",
+        "capital_used": "Sacramento",
+        "lat": 38.576667,
+        "lon": -121.493333,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.25
+      },
+      "sources": [
+        {
+          "url": "https://www.phmsa.dot.gov/data-and-statistics/pipeline/pipeline-incident-flagged-files",
+          "source_name": "PHMSA (U.S. DOT)",
+          "published_at": "1997-12-13T12:00:00Z",
+          "headline": "Pipeline incident flagged files (dataset landing page)",
+          "byline": null,
+          "accessed_utc": "2026-01-17T03:24:51.537Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Plains All American Pipeline",
+          "PHMSA"
+        ],
+        "substances": [
+          "crude oil"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Pipeline incident flagged files.",
+            "source_url": "https://www.phmsa.dot.gov/data-and-statistics/pipeline/pipeline-incident-flagged-files"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.2,
+        "category": 0.6,
+        "location": 0.25,
+        "summary_grounding": 0.15
+      },
+      "quality_flags": [
+        "secondary_sources_only",
+        "paywalled_or_partial",
+        "date_ambiguous",
+        "location_ambiguous",
+        "low_confidence_location",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "plains-all-american-san-bernardino-ca-1997-12",
+        "fingerprint": "pollution_contamination|Plains All American Pipeline crude oil rupture (rural San Bernardino County, California)|California, US|1997-12-13"
+      }
+    },
+    {
+      "event_id": "1997-12-typhoon-paka-guam-fema-dr1193",
+      "title": "Super Typhoon Paka impacts Guam (FEMA DR-1193-GU incident period)",
+      "description": "Super Typhoon Paka affected Guam during the FEMA disaster DR-1193-GU incident period in mid-December 1997. The event led to severe tropical cyclone impacts and a federal disaster declaration for the territory.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1997-12-16T12:00:00Z",
+        "event_end": "1997-12-17T12:00:00Z",
+        "reported_at": "1997-12-17T12:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1997-12-17T00:00:00Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Guam (U.S. territory)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "GU",
+        "capital_used": "Hagåtña",
+        "lat": 13.4757,
+        "lon": 144.7489,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.8
+      },
+      "sources": [
+        {
+          "url": "https://www.fema.gov/disaster/1193",
+          "source_name": "FEMA",
+          "published_at": "1997-12-17T12:00:00Z",
+          "headline": "Disaster Declaration DR-1193",
+          "byline": null,
+          "accessed_utc": "2026-01-17T03:25:11.981Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://repository.library.noaa.gov/view/noaa/26766",
+          "source_name": "NOAA Institutional Repository",
+          "published_at": "1998-01-01T00:00:00Z",
+          "headline": "NWS Pacific Region assessment / report related to Super Typhoon Paka (Dec 1997)",
+          "byline": null,
+          "accessed_utc": "2026-01-17T03:25:11.981Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "FEMA",
+          "NOAA",
+          "NWS"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Disaster Declaration DR-1193",
+            "source_url": "https://www.fema.gov/disaster/1193"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.75,
+        "location": 0.8,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "super-typhoon-paka-1997-12-mariana-micronesia",
+        "fingerprint": "super_typhoon_paka_impacts_guam|GU|1997-12-16_1997-12-17"
+      }
+    },
+    {
+      "event_id": "1997-12-typhoon-paka-micronesia-marianas-nws",
+      "title": "Super Typhoon Paka passage through Micronesia and the Marianas (NWS assessment window)",
+      "description": "A NOAA/NWS Pacific Region report documents Super Typhoon Paka’s impacts and warning/forecast operations across Micronesia and the Mariana Islands in December 1997. The assessment window spans early to late December during the storm’s regional passage.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1997-12-02T12:00:00Z",
+        "event_end": "1997-12-21T12:00:00Z",
+        "reported_at": "1998-01-01T00:00:00Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "1997-12-12T00:00:00Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Federated States of Micronesia (regional proxy for Micronesia and the Marianas)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "FM",
+        "capital_used": "Palikir",
+        "lat": 6.9147,
+        "lon": 158.161,
+        "precision": "proxy",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.35
+      },
+      "sources": [
+        {
+          "url": "https://repository.library.noaa.gov/view/noaa/26766",
+          "source_name": "NOAA Institutional Repository",
+          "published_at": "1998-01-01T00:00:00Z",
+          "headline": "NWS Pacific Region assessment / report related to Super Typhoon Paka (Dec 1997)",
+          "byline": null,
+          "accessed_utc": "2026-01-17T03:25:11.981Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.aoml.noaa.gov/hrd/project98/sh_proj1.html",
+          "source_name": "NOAA AOML (HRD)",
+          "published_at": "1998-01-01T00:00:00Z",
+          "headline": "HRD Project (Super Typhoon Paka / 1997)",
+          "byline": null,
+          "accessed_utc": "2026-01-17T03:25:11.981Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA",
+          "NWS",
+          "AOML"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Super Typhoon Paka",
+            "source_url": "https://repository.library.noaa.gov/view/noaa/26766"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.52,
+        "category": 0.7,
+        "location": 0.35,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "super-typhoon-paka-1997-12-mariana-micronesia",
+        "fingerprint": "super_typhoon_paka_passage_through_micronesia_and_the_marianas|FM|1997-12-02_1997-12-21"
+      }
+    },
+    {
+      "event_id": "1997-12-fires-aus-nsw-bushfires-businessinsurance-001",
+      "title": "New South Wales bushfires reported in mid-December 1997 (losses and area burned)",
+      "description": "A Business Insurance report in mid-December 1997 described ongoing bushfires in New South Wales, Australia, stating the fires began in late November and had burned about 700,000 acres by that point, with losses including homes destroyed or damaged.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1997-12-14T12:00:00Z",
+        "time_confidence": 0.45,
+        "event_date_utc": "1997-12-14T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "New South Wales, Australia",
+        "jurisdiction_level": "state",
+        "admin1": "New South Wales",
+        "country": "AU",
+        "capital_used": "Sydney",
+        "lat": -33.8688,
+        "lon": 151.2093,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://www.businessinsurance.com/bushfire-losses-may-rise-2/",
+          "source_name": "Business Insurance",
+          "published_at": "1997-12-14T12:00:00Z",
+          "headline": "Bushfire losses may rise",
+          "byline": null,
+          "accessed_utc": "2026-01-17T03:25:57.581Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "ongoing New South Wales bushfires that began in late November and had burned roughly 700,000 acres",
+            "source_url": "https://www.businessinsurance.com/bushfire-losses-may-rise-2/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.56,
+        "category": 0.85,
+        "location": 0.7,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "paywalled_or_partial",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "1997 NSW bushfires (Dec 1997)",
+        "fingerprint": "nsw-bushfires-1997-12-businessinsurance"
+      }
+    },
+    {
+      "event_id": "1997-12-18-us-tx-aquatic-invertebrates-endangered-fr-97-33041",
+      "title": "USFWS lists three Texas spring-dependent aquatic invertebrates as endangered",
+      "description": "A Federal Register final rule listed three spring-dependent aquatic invertebrates in Texas as endangered. The rule cited their extremely limited habitat and threats such as reduced spring flows and habitat changes, establishing federal protections aimed at preventing extinction.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "1997-12-18T12:00:00Z",
+        "event_end": "1997-12-18T12:00:00Z",
+        "reported_at": "1997-12-18T12:00:00Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "1997-12-18T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Comal County and Hays County, Texas, United States (Comal and San Marcos Springs systems)",
+        "jurisdiction_level": "site",
+        "admin1": "Texas",
+        "country": "US",
+        "capital_used": null,
+        "lat": 29.703,
+        "lon": -98.124,
+        "precision": "neighborhood",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.45
+      },
+      "sources": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/FR-1997-12-18/html/97-33041.htm",
+          "source_name": "Federal Register (via GovInfo)",
+          "published_at": "1997-12-18T00:00:00Z",
+          "headline": "97-33041",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Fish and Wildlife Service"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "spring ecosystems"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "final rule listed three ... aquatic invertebrates as endangered",
+            "source_url": "https://www.govinfo.gov/content/pkg/FR-1997-12-18/html/97-33041.htm"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.75,
+        "location": 0.45,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "FR-1997-12-18-97-33041-Texas-invertebrates-ESA-listing",
+        "fingerprint": "fr-97-33041|comal-hays-tx|1997-12-18"
+      }
+    },
+    {
+      "event_id": "1997-12-18-us-me-atlantic-salmon-dps-withdrawn-fr-97-33042",
+      "title": "Agencies withdraw proposed ESA listing for Atlantic salmon DPS in seven Maine rivers",
+      "description": "A Federal Register action withdrew a previously proposed Endangered Species Act listing for a distinct population segment of Atlantic salmon in seven Maine rivers. The decision was described as based on review of scientific data and consideration of conservation actions, changing the regulatory trajectory for this population.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "1997-12-18T12:00:00Z",
+        "event_end": "1997-12-18T12:00:00Z",
+        "reported_at": "1997-12-18T12:00:00Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "1997-12-18T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Seven rivers in Maine, United States",
+        "jurisdiction_level": "state",
+        "admin1": "Maine",
+        "country": "US",
+        "capital_used": "Augusta",
+        "lat": 44.3106,
+        "lon": -69.7795,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/FR-1997-12-18/html/97-33042.htm",
+          "source_name": "Federal Register (via GovInfo)",
+          "published_at": "1997-12-18T00:00:00Z",
+          "headline": "97-33042",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA Fisheries",
+          "U.S. Fish and Wildlife Service"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "river ecosystems"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "withdrew the previously proposed ESA listing",
+            "source_url": "https://www.govinfo.gov/content/pkg/FR-1997-12-18/html/97-33042.htm"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.68,
+        "category": 0.8,
+        "location": 0.7,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "FR-1997-12-18-97-33042-Maine-Atlantic-salmon-withdrawal",
+        "fingerprint": "fr-97-33042|maine|1997-12-18"
+      }
+    },
+    {
+      "event_id": "1997-12-19-us-pr-green-hawksbill-critical-habitat-proposed-fr-97-33217",
+      "title": "Proposed critical habitat designation for green and hawksbill sea turtles in Puerto Rico waters",
+      "description": "A Federal Register proposed rule sought to designate marine critical habitat for threatened green turtles and endangered hawksbill turtles in specified waters around Puerto Rico, including areas near Culebra and Mona/Monito Islands. The proposal highlighted seagrass and reef-associated habitats as important for conservation.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "1997-12-19T12:00:00Z",
+        "event_end": "1997-12-19T12:00:00Z",
+        "reported_at": "1997-12-19T12:00:00Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "1997-12-19T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Puerto Rico, United States (Culebra; Mona & Monito Islands waters)",
+        "jurisdiction_level": "state",
+        "admin1": "Puerto Rico",
+        "country": "US",
+        "capital_used": "San Juan",
+        "lat": 18.4655,
+        "lon": -66.1057,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/FR-1997-12-19/html/97-33217.htm",
+          "source_name": "Federal Register (via GovInfo)",
+          "published_at": "1997-12-19T00:00:00Z",
+          "headline": "97-33217",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA Fisheries"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "seagrass habitats",
+          "coral reef habitats"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "proposed rule sought to designate marine critical habitat",
+            "source_url": "https://www.govinfo.gov/content/pkg/FR-1997-12-19/html/97-33217.htm"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.7,
+        "category": 0.8,
+        "location": 0.65,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "FR-1997-12-19-97-33217-Puerto-Rico-sea-turtle-critical-habitat-proposal",
+        "fingerprint": "fr-97-33217|puerto-rico|1997-12-19"
+      }
+    },
+    {
+      "event_id": "1997-12-kyoto-protocol-adopted-kyoto-jp",
+      "title": "Kyoto Protocol adopted at UNFCCC COP 3 in Kyoto",
+      "description": "At the third Conference of the Parties (COP 3) to the UNFCCC, Parties adopted the Kyoto Protocol. The protocol set legally binding greenhouse-gas emissions reduction targets for industrialized countries and established mechanisms including emissions trading and the Clean Development Mechanism.",
+      "category_primary": "policy_regulation",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1997-12-11T00:00:00Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "1997-12-11T00:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Kyoto, Japan",
+        "jurisdiction_level": "city",
+        "admin1": null,
+        "country": "JP",
+        "capital_used": null,
+        "lat": 35.0116,
+        "lon": 135.7681,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.85
+      },
+      "sources": [
+        {
+          "url": "https://unfccc.int/resource/docs/cop3/07.htm",
+          "source_name": "UNFCCC",
+          "published_at": "1997-12-11T00:00:00Z",
+          "headline": "Kyoto Protocol to the United Nations Framework Convention on Climate Change",
+          "byline": null,
+          "accessed_utc": "2026-01-17T03:26:40.498Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://press.un.org/en/1997/19971211.endev456.html",
+          "source_name": "United Nations Press",
+          "published_at": "1997-12-11T00:00:00Z",
+          "headline": "Climate Change Convention Meeting Adopts Kyoto Protocol",
+          "byline": null,
+          "accessed_utc": "2026-01-17T03:26:40.498Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://enb.iisd.org/events/unfccc-cop-3/summary-report-1-11-december-1997",
+          "source_name": "IISD Earth Negotiations Bulletin",
+          "published_at": "1997-12-11T00:00:00Z",
+          "headline": "Summary of the Third Conference of the Parties to the UN Framework Convention on Climate Change: 1-11 December 1997",
+          "byline": null,
+          "accessed_utc": "2026-01-17T03:26:40.498Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "UNFCCC",
+          "Conference of the Parties (COP)"
+        ],
+        "substances": [
+          "greenhouse gases"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "The Conference of the Parties... has adopted the Kyoto Protocol",
+            "source_url": "https://unfccc.int/resource/docs/cop3/07.htm"
+          },
+          {
+            "quote": "Meeting... adopts Kyoto Protocol, commits industrialized nations to reduce greenhouse gas emissions",
+            "source_url": "https://press.un.org/en/1997/19971211.endev456.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.82,
+        "category": 0.9,
+        "location": 0.85,
+        "summary_grounding": 0.8
+      },
+      "quality_flags": [
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "kyoto_protocol_adoption_cop3_1997-12",
+        "fingerprint": "kyoto-protocol-adopted|kyoto-japan|1997-12-11"
+      }
+    }
+  ]
+}

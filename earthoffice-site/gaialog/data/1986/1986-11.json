@@ -1,0 +1,1231 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_1986-11_normalize_2026-01-18T105726604Z",
+    "generated_utc": "2026-01-18T10:57:26.604Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "1986-11",
+    "window": {
+      "start_utc": "1986-11-01T00:00:00.000Z",
+      "end_utc": "1986-11-30T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "evt_19861101_schweizerhalle_sandoz_rhine",
+      "title": "Sandoz Schweizerhalle warehouse fire contaminates the Rhine near Basel",
+      "description": "A warehouse fire at Sandoz’s Schweizerhalle site led to contaminated firefighting water carrying chemicals into the Rhine River near Basel. The incident caused major downstream ecological harm including fish kills and prompted cross-border water-supply alerts.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1986-11-13T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1986-11-01T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Schweizerhalle industrial area near Basel, Switzerland (Rhine River)",
+        "jurisdiction_level": "site",
+        "admin1": null,
+        "country": "CH",
+        "capital_used": null,
+        "lat": 47.561,
+        "lon": 7.593,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.iksr.org/en/icpr/about-us/history/the-turning-point-the-sandoz-accident/",
+          "source_name": "ICPR (International Commission for the Protection of the Rhine)",
+          "published_at": "1986-11-01T00:00:00Z",
+          "headline": "The turning point: The Sandoz accident",
+          "byline": null,
+          "accessed_utc": "2026-01-18T05:41:26.281Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.bafu.admin.ch/en/schweizerhalle-en",
+          "source_name": "Swiss Federal Office for the Environment (BAFU/FOEN)",
+          "published_at": "1986-11-01T00:00:00Z",
+          "headline": "Schweizerhalle",
+          "byline": null,
+          "accessed_utc": "2026-01-18T05:41:26.281Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.latimes.com/archives/la-xpm-1986-11-13-mn-25293-story.html",
+          "source_name": "Los Angeles Times",
+          "published_at": "1986-11-13T00:00:00Z",
+          "headline": "Sandoz Fire Polluted Rhine With Insecticides",
+          "byline": null,
+          "accessed_utc": "2026-01-18T05:41:26.281Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Sandoz",
+          "International Commission for the Protection of the Rhine",
+          "Swiss Federal Office for the Environment"
+        ],
+        "substances": [
+          "pesticides",
+          "chemicals"
+        ],
+        "ecosystems": [
+          "Rhine River"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "contaminated firefighting water ... flowed into the Rhine",
+            "source_url": "https://www.iksr.org/en/icpr/about-us/history/the-turning-point-the-sandoz-accident/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.7,
+        "category": 0.85,
+        "location": 0.55,
+        "summary_grounding": 0.7
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "1986 Schweizerhalle/Sandoz Rhine contamination",
+        "fingerprint": "1986-11-01_sandoz_schweizerhalle_rhine_basel_ch"
+      }
+    },
+    {
+      "event_id": "evt_19861121_basf_herbicide_rhine_ludwigshafen",
+      "title": "BASF spill releases herbicide into the Rhine at Ludwigshafen",
+      "description": "A reported breakdown at BASF led to a release of about 2,420 pounds of herbicide into the Rhine River at Ludwigshafen. The spill triggered the Rhine pollution alarm system to notify downstream drinking-water authorities.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1986-11-21T00:00:00Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "1986-11-21T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Ludwigshafen, Rhineland-Palatinate, West Germany (Rhine River)",
+        "jurisdiction_level": "city",
+        "admin1": "Rhineland-Palatinate",
+        "country": "DE",
+        "capital_used": null,
+        "lat": 49.4811,
+        "lon": 8.4464,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://www.upi.com/Archives/1986/11/21/Another-chemical-spill-in-the-Rhine-River/4146532933200/",
+          "source_name": "UPI",
+          "published_at": "1986-11-21T00:00:00Z",
+          "headline": "Another chemical spill in the Rhine River",
+          "byline": null,
+          "accessed_utc": "2026-01-18T05:41:26.281Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "BASF"
+        ],
+        "substances": [
+          "2,4-D",
+          "herbicide"
+        ],
+        "ecosystems": [
+          "Rhine River"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "about 2,420 pounds of herbicide ... flowed into the Rhine",
+            "source_url": "https://www.upi.com/Archives/1986/11/21/Another-chemical-spill-in-the-Rhine-River/4146532933200/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.68,
+        "category": 0.85,
+        "location": 0.7,
+        "summary_grounding": 0.65
+      },
+      "quality_flags": [
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "1986 Rhine spills post-Schweizerhalle",
+        "fingerprint": "1986-11-21_basf_herbicide_rhine_ludwigshafen_de"
+      }
+    },
+    {
+      "event_id": "evt_19861120_ciba_geigy_phenol_cloud_basel",
+      "title": "Ciba-Geigy gas cloud over Basel causes irritation complaints",
+      "description": "A gas leak reported as phenol from a Ciba-Geigy laboratory created a cloud over Basel. Authorities received complaints of eye and throat irritation and advised residents to keep windows and doors closed until it dissipated.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1986-11-20T00:00:00Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "1986-11-20T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Basel, Switzerland",
+        "jurisdiction_level": "city",
+        "admin1": null,
+        "country": "CH",
+        "capital_used": null,
+        "lat": 47.5596,
+        "lon": 7.5886,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.8
+      },
+      "sources": [
+        {
+          "url": "https://www.upi.com/Archives/1986/11/20/Non-toxic-gas-cloud-covers-Basel/4157532846800/",
+          "source_name": "UPI",
+          "published_at": "1986-11-20T00:00:00Z",
+          "headline": "Non-toxic gas cloud covers Basel",
+          "byline": null,
+          "accessed_utc": "2026-01-18T05:41:26.281Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Ciba-Geigy"
+        ],
+        "substances": [
+          "phenol"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "gas cloud covers Basel ... residents were advised to close windows",
+            "source_url": "https://www.upi.com/Archives/1986/11/20/Non-toxic-gas-cloud-covers-Basel/4157532846800/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.66,
+        "category": 0.8,
+        "location": 0.8,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "1986 Basel industrial chemical incidents",
+        "fingerprint": "1986-11-20_ciba_geigy_gas_cloud_basel_ch"
+      }
+    },
+    {
+      "event_id": "evt_19861115_ciba_geigy_atrazine_rhine_acknowledged",
+      "title": "Ciba-Geigy acknowledges atrazine spill into the Rhine amid Schweizerhalle fallout",
+      "description": "Reporting during the aftermath of the Schweizerhalle disaster stated that Ciba-Geigy acknowledged an accidental atrazine herbicide spill into the Rhine. The disclosure was discussed alongside ongoing investigations and monitoring related to the broader Rhine contamination episode.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1986-11-15T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1986-11-15T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Basel, Switzerland (Rhine River)",
+        "jurisdiction_level": "city",
+        "admin1": null,
+        "country": "CH",
+        "capital_used": null,
+        "lat": 47.5596,
+        "lon": 7.5886,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://www.upi.com/Archives/1986/11/15/Chemical-pollution-alerts-lifted-along-Rhine/1457532414800/",
+          "source_name": "UPI",
+          "published_at": "1986-11-15T00:00:00Z",
+          "headline": "Chemical pollution alerts lifted along Rhine",
+          "byline": null,
+          "accessed_utc": "2026-01-18T05:41:26.281Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.csmonitor.com/1986/1113/orhin.html",
+          "source_name": "The Christian Science Monitor",
+          "published_at": "1986-11-13T00:00:00Z",
+          "headline": "After Rhine fire: new pressures for safer chemical storage",
+          "byline": null,
+          "accessed_utc": "2026-01-18T05:41:26.281Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Ciba-Geigy"
+        ],
+        "substances": [
+          "atrazine"
+        ],
+        "ecosystems": [
+          "Rhine River"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Ciba-Geigy acknowledged an accidental atrazine spill into the Rhine",
+            "source_url": "https://www.upi.com/Archives/1986/11/15/Chemical-pollution-alerts-lifted-along-Rhine/1457532414800/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.8,
+        "location": 0.7,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "1986 Schweizerhalle-related disclosures/spills",
+        "fingerprint": "1986-11-15_ciba_geigy_atrazine_rhine_basel_ch"
+      }
+    },
+    {
+      "event_id": "evt_19861109_bd_cyclonic_storm_02b_landfall",
+      "title": "Cyclonic Storm 02B makes landfall in Bangladesh (Bay of Bengal)",
+      "description": "A tropical disturbance formed in the Bay of Bengal on November 6, 1986, strengthened into a cyclonic storm, and made landfall in Bangladesh around November 9 before dissipating by November 10. Reports noted casualties and damage.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1986-11-06T12:00:00Z",
+        "event_end": "1986-11-10T12:00:00Z",
+        "reported_at": "2026-01-18T05:41:59.890Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1986-11-09T00:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Bangladesh (Bay of Bengal coast)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "BD",
+        "capital_used": "Dhaka",
+        "lat": 23.8103,
+        "lon": 90.4125,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://www.wpc.ncep.noaa.gov/tropical/rain/td141987.html",
+          "source_name": "NOAA WPC",
+          "published_at": "2026-01-18T05:41:59.890Z",
+          "headline": "td141987.html",
+          "byline": null,
+          "accessed_utc": "2026-01-18T05:41:59.890Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "A tropical disturbance formed in the Bay of Bengal on November 6, 1986... made landfall in Bangladesh around November 9... dissipating by November 10.",
+            "source_url": "https://www.wpc.ncep.noaa.gov/tropical/rain/td141987.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.8,
+        "location": 0.7,
+        "summary_grounding": 0.4
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "paywalled_or_partial",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Cyclonic Storm 02B Bangladesh Nov 1986",
+        "fingerprint": "fp_19861109_bd_cyclonic_storm_02b"
+      }
+    },
+    {
+      "event_id": "evt_19861120_central_atlantic_hurricane_frances",
+      "title": "Hurricane Frances peaks then weakens over the open Atlantic",
+      "description": "Tropical Storm Frances formed in mid-November 1986, strengthened into a Category 1 hurricane, then weakened and transitioned/merged with an extratropical system by November 22. The storm remained over open waters with no landfall reported in the draft.",
+      "category_primary": "weather_climate",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "1986-11-18T12:00:00Z",
+        "event_end": "1986-11-22T12:00:00Z",
+        "reported_at": "1986-11-20T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1986-11-20T00:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Central Atlantic Ocean (southeast of Bermuda; no landfall)",
+        "jurisdiction_level": "global_proxy",
+        "admin1": null,
+        "country": null,
+        "capital_used": null,
+        "lat": 32.3078,
+        "lon": -64.7505,
+        "precision": "proxy",
+        "location_basis": "manual_override",
+        "location_confidence": 0.35
+      },
+      "sources": [
+        {
+          "url": "https://www.upi.com/Archives/1986/11/20/Hurricane-Frances-a-small-and-intense-storm-that-almost/5272532846800/",
+          "source_name": "UPI",
+          "published_at": "1986-11-20T00:00:00Z",
+          "headline": "Hurricane Frances, a small and intense storm that almost ...",
+          "byline": null,
+          "accessed_utc": "2026-01-18T05:41:59.890Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "UPI"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Hurricane Frances...",
+            "source_url": "https://www.upi.com/Archives/1986/11/20/Hurricane-Frances-a-small-and-intense-storm-that-almost/5272532846800/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.4,
+        "category": 0.7,
+        "location": 0.35,
+        "summary_grounding": 0.3
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Hurricane Frances Atlantic Nov 1986",
+        "fingerprint": "fp_19861120_atlantic_frances"
+      }
+    },
+    {
+      "event_id": "evt_19861123_tx_galveston_harris_flooding",
+      "title": "Heavy rains cause minor flooding in Galveston and Harris counties, Texas",
+      "description": "A heavy rain event on November 23–24, 1986 produced mostly minor flooding in parts of northern Galveston County and southern Harris County in southeast Texas. The summary page notes multi-inch rainfall totals with some homes and roads flooded.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1986-11-23T12:00:00Z",
+        "event_end": "1986-11-24T12:00:00Z",
+        "reported_at": "2026-01-18T05:41:59.890Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "1986-11-23T00:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Southeast Texas, USA (Galveston County and Harris County)",
+        "jurisdiction_level": "state",
+        "admin1": "Texas",
+        "country": "US",
+        "capital_used": "Austin",
+        "lat": 30.2672,
+        "lon": -97.7431,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.weather.gov/hgx/severe_events_november",
+          "source_name": "NWS Houston/Galveston",
+          "published_at": "2026-01-18T05:41:59.890Z",
+          "headline": "Severe Events in November (NWS HGX)",
+          "byline": null,
+          "accessed_utc": "2026-01-18T05:41:59.890Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NWS"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "A two-day heavy rain event on November 23–24, 1986 produced mostly minor flooding... in northern Galveston and southern Harris counties.",
+            "source_url": "https://www.weather.gov/hgx/severe_events_november"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.5,
+        "category": 0.8,
+        "location": 0.6,
+        "summary_grounding": 0.35
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Nov 23-24 1986 flooding Galveston Harris TX",
+        "fingerprint": "fp_19861123_tx_galveston_harris"
+      }
+    },
+    {
+      "event_id": "evt_19861127_us_marfc_flood_event",
+      "title": "NWS MARFC lists a Middle Atlantic U.S. flood event dated Nov 27, 1986",
+      "description": "The NWS Middle Atlantic River Forecast Center flood event summary page lists a flood event occurring on November 27, 1986. The draft source does not provide additional location granularity beyond the MARFC area on the summary page.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1986-11-27T12:00:00Z",
+        "event_end": "1986-11-27T12:00:00Z",
+        "reported_at": "2026-01-18T05:41:59.890Z",
+        "time_confidence": 0.5,
+        "event_date_utc": "1986-11-27T00:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Middle Atlantic region, USA (NWS Middle Atlantic River Forecast Center area)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, D.C.",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.25
+      },
+      "sources": [
+        {
+          "url": "https://www.weather.gov/marfc/FloodEventSummary1986",
+          "source_name": "NWS MARFC",
+          "published_at": "2026-01-18T05:41:59.890Z",
+          "headline": "Flood Event Summary 1986 (MARFC)",
+          "byline": null,
+          "accessed_utc": "2026-01-18T05:41:59.890Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NWS"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "...lists a flood event occurring on November 27, 1986...",
+            "source_url": "https://www.weather.gov/marfc/FloodEventSummary1986"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.35,
+        "category": 0.7,
+        "location": 0.25,
+        "summary_grounding": 0.25
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check",
+        "low_confidence_location"
+      ],
+      "dedupe": {
+        "cluster_hint": "MARFC flood event Nov 27 1986",
+        "fingerprint": "fp_19861127_us_marfc"
+      }
+    },
+    {
+      "event_id": "geol-19861130-joao-camara-rn-br-upi",
+      "title": "Earthquake damages buildings near João Câmara, Rio Grande do Norte, Brazil",
+      "description": "An earthquake struck near João Câmara in Brazil's Rio Grande do Norte state, damaging buildings and prompting authorities to send emergency aid. Reports described ongoing tremors/aftershocks and shelter support for affected residents.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1986-11-30T05:19:48Z",
+        "event_end": "1986-11-30T05:19:48Z",
+        "reported_at": "1986-12-01T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1986-11-30T05:19:48Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "João Câmara, Rio Grande do Norte, Brazil",
+        "jurisdiction_level": "city",
+        "admin1": "Rio Grande do Norte",
+        "country": "BR",
+        "capital_used": null,
+        "lat": -5.5375,
+        "lon": -35.8208,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.upi.com/Archives/1986/12/01/Government-sends-emergency-aid-to-town-struck-by-tremors/8832533797200/",
+          "source_name": "UPI",
+          "published_at": "1986-12-01T00:00:00Z",
+          "headline": "Government sends emergency aid to town struck by tremors",
+          "byline": null,
+          "accessed_utc": "2026-01-18T05:42:24.639Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Government of Brazil"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Government sends emergency aid to town struck by tremors",
+            "source_url": "https://www.upi.com/Archives/1986/12/01/Government-sends-emergency-aid-to-town-struck-by-tremors/8832533797200/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.8,
+        "location": 0.55,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "joao-camara-earthquake-1986",
+        "fingerprint": "geological|earthquake damages buildings near joão câmara, rio grande do norte, brazil|joão câmara, rio grande do norte, brazil|1986-11"
+      }
+    },
+    {
+      "event_id": "1986-11-fires-santa-lucia-wildfires-24539",
+      "title": "Santa Lucia Mountains wildfires near Carmel and Soledad, California; ~5,800 acres reported burned",
+      "description": "Two wildfires on opposite sides of California’s Santa Lucia Mountains were reported burning around 1,100 acres southeast of Carmel and around 4,700 acres northwest of Soledad. High humidity and drizzle were reported to be aiding firefighting efforts, with partial containment reported for both fires.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1986-11-09T12:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1986-11-09T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Santa Lucia Mountains area (near Carmel and Soledad), California, United States",
+        "jurisdiction_level": "state",
+        "admin1": "California",
+        "country": "US",
+        "capital_used": "Sacramento",
+        "lat": 38.5767,
+        "lon": -121.4944,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.8
+      },
+      "sources": [
+        {
+          "url": "https://www.latimes.com/archives/la-xpm-1986-11-09-mn-24539-story.html",
+          "source_name": "Los Angeles Times",
+          "published_at": "1986-11-09T12:00:00Z",
+          "headline": "Santa Lucia Mountains wildfires (near Carmel and northwest of Soledad), California — ~5,800 acres burned; partial containment reported",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [
+          "Santa Lucia Mountains"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "High humidity and drizzle aided firefighting efforts on two wildfires on opposite sides of the Santa Lucia Mountains.",
+            "source_url": "https://www.latimes.com/archives/la-xpm-1986-11-09-mn-24539-story.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.9,
+        "location": 0.8,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "paywalled_or_partial",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "1986-11 Santa Lucia Mountains / Soledad / Big Sur fires",
+        "fingerprint": "fires|US-CA|1986-11-09|santa lucia mountains wildfires near carmel and soledad"
+      }
+    },
+    {
+      "event_id": "1986-11-fires-soledad-big-sur-28756",
+      "title": "Brush fire west of Soledad contained; Big Sur-area wildfire reported out of control, California",
+      "description": "A brush fire reported at 5,325 acres about 10 miles west of Soledad was reported contained after a wind shift. A separate wildfire in the Big Sur area was reported still out of control after burning more than 1,800 acres, with hundreds of firefighters and aircraft involved.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1986-11-10T12:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1986-11-10T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Central California (near Soledad and Big Sur), California, United States",
+        "jurisdiction_level": "state",
+        "admin1": "California",
+        "country": "US",
+        "capital_used": "Sacramento",
+        "lat": 38.5767,
+        "lon": -121.4944,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.8
+      },
+      "sources": [
+        {
+          "url": "https://www.latimes.com/archives/la-xpm-1986-11-10-mn-28756-story.html",
+          "source_name": "Los Angeles Times",
+          "published_at": "1986-11-10T12:00:00Z",
+          "headline": "Brush fire west of Soledad contained; Big Sur-area wildfire continues out of control, California",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [
+          "Big Sur"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "A 5,325-acre brush fire about 10 miles west of Soledad was reported contained after a wind shift.",
+            "source_url": "https://www.latimes.com/archives/la-xpm-1986-11-10-mn-28756-story.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.9,
+        "location": 0.8,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "paywalled_or_partial",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "1986-11 Santa Lucia Mountains / Soledad / Big Sur fires",
+        "fingerprint": "fires|US-CA|1986-11-10|brush fire west of soledad contained big sur wildfire out of control"
+      }
+    },
+    {
+      "event_id": "1986-11-01-rhine-schweizerhalle-fishkill",
+      "title": "Rhine River mass fish and benthic-organism kill after Schweizerhalle (Sandoz) chemical fire runoff",
+      "description": "Following a fire at the Sandoz Schweizerhalle site near Basel, contaminated firefighting water entered the Rhine River. The resulting pollution wave caused significant impacts on aquatic life downstream and prompted water-use warnings and closures in downstream areas as contamination moved along the river.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1986-11-01T12:00:00Z",
+        "event_end": "1986-11-01T12:00:00Z",
+        "reported_at": "1986-11-15T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1986-11-01T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Rhine River (downstream of Basel/Schweizerhalle)",
+        "jurisdiction_level": "city",
+        "admin1": "Basel-Stadt",
+        "country": "CH",
+        "capital_used": null,
+        "lat": 47.5596,
+        "lon": 7.5886,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.iksr.org/en/icpr/about-us/history/the-turning-point-the-sandoz-accident/",
+          "source_name": "International Commission for the Protection of the Rhine (ICPR/IKSR)",
+          "published_at": "1986-11-01T00:00:00Z",
+          "headline": "The turning point: the Sandoz accident",
+          "byline": null,
+          "accessed_utc": "2026-01-18T05:43:14.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://pubmed.ncbi.nlm.nih.gov/19479296/",
+          "source_name": "PubMed",
+          "published_at": "2009-01-01T00:00:00Z",
+          "headline": "PubMed record (Rhine/Sandoz-related article)",
+          "byline": null,
+          "accessed_utc": "2026-01-18T05:43:14.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.upi.com/Archives/1986/11/15/Chemical-pollution-alerts-lifted-along-Rhine/1457532414800/",
+          "source_name": "UPI",
+          "published_at": "1986-11-15T00:00:00Z",
+          "headline": "Chemical pollution alerts lifted along Rhine",
+          "byline": null,
+          "accessed_utc": "2026-01-18T05:43:14.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Sandoz",
+          "International Commission for the Protection of the Rhine (ICPR/IKSR)"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "Rhine River"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Chemical pollution alerts lifted along Rhine",
+            "source_url": "https://www.upi.com/Archives/1986/11/15/Chemical-pollution-alerts-lifted-along-Rhine/1457532414800/"
+          },
+          {
+            "quote": "the Sandoz accident",
+            "source_url": "https://www.iksr.org/en/icpr/about-us/history/the-turning-point-the-sandoz-accident/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.8,
+        "location": 0.55,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "Schweizerhalle/Sandoz Rhine chemical fire and downstream ecological impacts (Nov 1986)",
+        "fingerprint": "rhine-river-mass-fish-and-benthic-organism-kill-after-schweizerhalle-sandoz-chemical-fire-runoff|basel|1986-11"
+      }
+    },
+    {
+      "event_id": "policyreg_19861110_us_emergency_wetlands_resources_act_pl99_645",
+      "title": "U.S. Emergency Wetlands Resources Act of 1986 enacted (Public Law 99-645)",
+      "description": "U.S. federal wetlands conservation legislation (Emergency Wetlands Resources Act of 1986) was enacted and recorded as becoming Public Law 99-645 on November 10, 1986, per Congress.gov.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1986-11-10T12:00:00Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "1986-11-10T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.95
+      },
+      "sources": [
+        {
+          "url": "https://www.congress.gov/bill/99th-congress/senate-bill/740",
+          "source_name": "Congress.gov",
+          "published_at": "1986-11-10T12:00:00Z",
+          "headline": "S.740 — A bill to promote the preservation of wetlands, and for other purposes.",
+          "byline": null,
+          "accessed_utc": "2026-01-18T05:43:36.664Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Congress"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "wetlands"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Became Public Law No: 99-645.",
+            "source_url": "https://www.congress.gov/bill/99th-congress/senate-bill/740"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.74,
+        "category": 0.85,
+        "location": 0.95,
+        "summary_grounding": 0.7
+      },
+      "quality_flags": [
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "US Public Law 99-645 Emergency Wetlands Resources Act 1986-11-10",
+        "fingerprint": "us_emergency_wetlands_resources_act_1986-11-10_washingtondc"
+      }
+    },
+    {
+      "event_id": "policyreg_19861119_in_environment_protection_act_in_force",
+      "title": "India’s Environment (Protection) Act, 1986 came into force",
+      "description": "India’s Environment (Protection) Act, 1986 is recorded as coming into force on November 19, 1986, establishing an umbrella legal framework for environmental regulation.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1986-11-19T12:00:00Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "1986-11-19T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "India",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "IN",
+        "capital_used": "New Delhi",
+        "lat": 28.6139,
+        "lon": 77.209,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.95
+      },
+      "sources": [
+        {
+          "url": "https://www.indiacode.nic.in/handle/123456789/4306?sam_handle=123456789/1362",
+          "source_name": "India Code (Legislative Department, Govt. of India)",
+          "published_at": "1986-11-19T12:00:00Z",
+          "headline": "The Environment (Protection) Act, 1986",
+          "byline": null,
+          "accessed_utc": "2026-01-18T05:43:36.664Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Government of India"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Enforced: 19-11-1986",
+            "source_url": "https://www.indiacode.nic.in/handle/123456789/4306?sam_handle=123456789/1362"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.74,
+        "category": 0.85,
+        "location": 0.95,
+        "summary_grounding": 0.7
+      },
+      "quality_flags": [
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "India Environment (Protection) Act 1986 in force 1986-11-19",
+        "fingerprint": "in_environment_protection_act_1986-11-19_newdelhi"
+      }
+    },
+    {
+      "event_id": "policyreg_19861117_us_wrda_1986_pl99_662",
+      "title": "U.S. Water Resources Development Act of 1986 enacted (Public Law 99-662)",
+      "description": "The Water Resources Development Act of 1986 (H.R. 6) was enacted and recorded by Congress.gov as becoming Public Law 99-662 on November 17, 1986.",
+      "category_primary": "policy_regulation",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1986-11-17T12:00:00Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "1986-11-17T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.95
+      },
+      "sources": [
+        {
+          "url": "https://www.congress.gov/bill/99th-congress/house-bill/6",
+          "source_name": "Congress.gov",
+          "published_at": "1986-11-17T12:00:00Z",
+          "headline": "H.R.6 — Water Resources Development Act of 1986",
+          "byline": null,
+          "accessed_utc": "2026-01-18T05:43:36.664Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.congress.gov/index.php/bill/99th-congress/house-bill/6/all-info",
+          "source_name": "Congress.gov",
+          "published_at": "1986-11-17T12:00:00Z",
+          "headline": "H.R.6 — Water Resources Development Act of 1986 (All Info)",
+          "byline": null,
+          "accessed_utc": "2026-01-18T05:43:36.664Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Congress"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Became Public Law No: 99-662.",
+            "source_url": "https://www.congress.gov/bill/99th-congress/house-bill/6"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.72,
+        "category": 0.85,
+        "location": 0.95,
+        "summary_grounding": 0.65
+      },
+      "quality_flags": [
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "US Public Law 99-662 WRDA 1986-11-17",
+        "fingerprint": "us_wrda_1986-11-17_washingtondc"
+      }
+    },
+    {
+      "event_id": "policyreg_19861107_us_epa_land_disposal_restrictions_final_rule_51fr40572",
+      "title": "U.S. EPA final Land Disposal Restrictions rule published (51 FR 40572)",
+      "description": "The U.S. EPA published a final rule on Land Disposal Restrictions in the Federal Register (51 FR 40572), implementing the first phase of land-disposal prohibitions for certain hazardous wastes and associated treatment standards/testing procedures.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1986-11-07T12:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1986-11-07T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.9
+      },
+      "sources": [
+        {
+          "url": "https://19january2021snapshot.epa.gov/hwpermitting/federal-register-notice-final-rule-land-disposal-restrictions_.html",
+          "source_name": "U.S. Environmental Protection Agency (snapshot)",
+          "published_at": "1986-11-07T12:00:00Z",
+          "headline": "Federal Register Notice: Final Rule - Land Disposal Restrictions",
+          "byline": null,
+          "accessed_utc": "2026-01-18T05:43:36.664Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.epa.gov/hwpermitting/list-federal-register-notices-pertaining-hazardous-waste",
+          "source_name": "U.S. Environmental Protection Agency",
+          "published_at": "1986-11-07T12:00:00Z",
+          "headline": "List of Federal Register notices pertaining to hazardous waste",
+          "byline": null,
+          "accessed_utc": "2026-01-18T05:43:36.664Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Environmental Protection Agency (EPA)"
+        ],
+        "substances": [
+          "hazardous waste"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Final Rule - Land Disposal Restrictions",
+            "source_url": "https://19january2021snapshot.epa.gov/hwpermitting/federal-register-notice-final-rule-land-disposal-restrictions_.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.66,
+        "category": 0.85,
+        "location": 0.9,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "US EPA Land Disposal Restrictions final rule 51 FR 40572 1986-11-07",
+        "fingerprint": "us_epa_ldr_final_rule_1986-11-07_washingtondc"
+      }
+    }
+  ]
+}

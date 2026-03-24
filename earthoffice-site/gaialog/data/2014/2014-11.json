@@ -1,0 +1,853 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_2014-11_normalize_2026-01-16T052519315Z",
+    "generated_utc": "2026-01-16T05:25:19.315Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "2014-11",
+    "window": {
+      "start_utc": "2014-11-01T00:00:00.000Z",
+      "end_utc": "2014-11-30T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "evt_20141118_santa_paula_hazmat_spill_fire",
+      "title": "Vacuum truck explosion causes hazmat spill and fire near Santa Paula, California",
+      "description": "A vacuum truck explosion at a wastewater facility near Santa Paula, California, triggered a hazardous materials incident involving a chemical spill and a fire. Authorities issued evacuation and/or shelter-in-place instructions while responding to the incident.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2014-11-18T00:00:00.000Z",
+        "time_confidence": 0.5,
+        "event_date_utc": "2014-11-18T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Santa Paula, California, United States (near wastewater facility)",
+        "jurisdiction_level": "city",
+        "admin1": "California",
+        "country": "US",
+        "capital_used": null,
+        "lat": 34.3542,
+        "lon": -119.0593,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://abc7.com/santa-paula-explosion-hazmat/400487/",
+          "source_name": "ABC7",
+          "published_at": "2014-11-18T00:00:00.000Z",
+          "headline": "Santa Paula explosion hazmat",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.oig.dot.gov/library-item/32650",
+          "source_name": "U.S. Department of Transportation Office of Inspector General",
+          "published_at": "2014-11-18T00:00:00.000Z",
+          "headline": "Library item 32650",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "ABC7",
+          "U.S. Department of Transportation Office of Inspector General"
+        ],
+        "substances": [
+          "chemicals"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Santa Paula explosion hazmat",
+            "source_url": "https://abc7.com/santa-paula-explosion-hazmat/400487/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.7,
+        "location": 0.6,
+        "summary_grounding": 0.4
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "paywalled_or_partial",
+        "secondary_sources_only",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "santa_paula_vacuum_truck_explosion_hazmat_2014-11-18",
+        "fingerprint": "fp_santa_paula_ca_us_hazmat_explosion_2014-11-18"
+      }
+    },
+    {
+      "event_id": "2014-11_weather_climate_nuri_bering_superstorm",
+      "title": "Post-Tropical Cyclone Nuri / Bering Sea “superstorm” brings hurricane-force winds and very low pressure",
+      "description": "Remnants of Typhoon Nuri intensified into a powerful extratropical cyclone over the Bering Sea in early-to-mid November 2014. Reporting described hurricane-force winds and very large seas impacting the Bering Sea/Aleutians region.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2014-11-07T00:00:00.000Z",
+        "event_end": "2014-11-13T23:59:59.000Z",
+        "reported_at": "2014-11-07T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2014-11-07T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Bering Sea and Aleutian Islands region (Alaska, USA)",
+        "jurisdiction_level": "state",
+        "admin1": "Alaska",
+        "country": "US",
+        "capital_used": "Juneau",
+        "lat": 58.3019,
+        "lon": -134.4197,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://weather.com/storms/hurricane/news/bering-sea-superstorm-alaska-aleutians-20141105",
+          "source_name": "The Weather Channel",
+          "published_at": "2014-11-05T00:00:00.000Z",
+          "headline": "Bering Sea Superstorm Alaska Aleutians (URL slug)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.washingtonpost.com/news/capital-weather-gang/wp/2014/11/07/hurricane-force-wind-warning-issued-for-bering-sea-aleutians-ahead-of-bomb-cyclone/",
+          "source_name": "The Washington Post",
+          "published_at": "2014-11-07T00:00:00.000Z",
+          "headline": "Hurricane-force wind warning issued for Bering Sea, Aleutians ahead of bomb cyclone (URL slug)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "Bering Sea"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.8,
+        "location": 0.7,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "paywalled_or_partial",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Nuri_Bering_Sea_superstorm_2014-11",
+        "fingerprint": "nuri_bering_sea_2014-11-07_alaska"
+      }
+    },
+    {
+      "event_id": "2014-11_weather_climate_medicane_qendresa_malta_sicily",
+      "title": "Medicane Qendresa impacts Malta and Sicily with damaging weather",
+      "description": "Cyclone Qendresa, described as a tropical-like Mediterranean system, affected Malta and Sicily in early November 2014. Reports noted strong winds and disruptive conditions, including impacts on infrastructure and services in Malta.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2014-11-05T00:00:00.000Z",
+        "event_end": "2014-11-11T23:59:59.000Z",
+        "reported_at": "2014-11-05T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2014-11-05T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Malta",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "MT",
+        "capital_used": "Valletta",
+        "lat": 35.8989,
+        "lon": 14.5146,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.eumetsat.int/medicane-qendresa-hits-malta-and-sicily",
+          "source_name": "EUMETSAT",
+          "published_at": "2014-11-07T00:00:00.000Z",
+          "headline": "Medicane Qendresa hits Malta and Sicily",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://timesofmalta.com/articles/view/update-3-airport-operations-resume-several-areas-without-power-cars-d.543790",
+          "source_name": "Times of Malta",
+          "published_at": "2014-11-07T00:00:00.000Z",
+          "headline": "Update 3: Airport operations resume, several areas without power ... (URL slug)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "EUMETSAT"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "Mediterranean Sea"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.8,
+        "location": 0.6,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Qendresa_medicane_2014-11",
+        "fingerprint": "qendresa_2014-11-05_malta"
+      }
+    },
+    {
+      "event_id": "2014-11_weather_climate_australia_record_warm_november",
+      "title": "Australia reports exceptionally warm conditions for November 2014 (national climate summary)",
+      "description": "Australia’s Bureau of Meteorology climate summary for November 2014 reported unusually warm conditions at the national scale. The summary described elevated temperatures compared with long-term averages across large parts of the country.",
+      "category_primary": "weather_climate",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "2014-11-01T00:00:00.000Z",
+        "event_end": "2014-11-30T23:59:59.000Z",
+        "reported_at": "2014-12-01T00:00:00.000Z",
+        "time_confidence": 0.5,
+        "event_date_utc": null,
+        "event_date_precision": "month"
+      },
+      "location": {
+        "name": "Australia",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "AU",
+        "capital_used": "Canberra",
+        "lat": -35.2809,
+        "lon": 149.13,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.75
+      },
+      "sources": [
+        {
+          "url": "https://www.bom.gov.au/climate/current/month/aus/archive/201411.summary.shtml",
+          "source_name": "Australian Bureau of Meteorology",
+          "published_at": "2014-12-01T00:00:00.000Z",
+          "headline": "Australia monthly climate summary: November 2014 (archive)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Australian Bureau of Meteorology"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.66,
+        "category": 0.85,
+        "location": 0.75,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "BOM_Australia_Nov2014_warm",
+        "fingerprint": "bom_australia_nov2014_canberra"
+      }
+    },
+    {
+      "event_id": "2014-11-geological-fogo-eruption-20141123",
+      "title": "Fogo volcano eruption begins on Fogo Island, Cape Verde",
+      "description": "Pico do Fogo on Fogo Island began erupting on November 23, 2014, producing lava flows and volcanic gas emissions. The eruption affected communities around Chã das Caldeiras and was monitored using satellite observations.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2014-11-23T10:00:00.000Z",
+        "event_end": "2014-11-30T23:59:59.000Z",
+        "reported_at": "2014-11-24T00:00:00Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2014-11-23T10:00:00.000Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Pico do Fogo, Fogo Island, Cape Verde",
+        "jurisdiction_level": "site",
+        "admin1": null,
+        "country": "CV",
+        "capital_used": null,
+        "lat": 14.95,
+        "lon": -24.35,
+        "precision": "exact",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://earthobservatory.nasa.gov/images/84819/eruption-at-fogo",
+          "source_name": "NASA Earth Observatory",
+          "published_at": "2014-11-24T00:00:00Z",
+          "headline": "Eruption at Fogo",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://so2.gsfc.nasa.gov/pix/special/2014/fogo/FogoVolcano_eruptionreport.htm",
+          "source_name": "NASA Goddard (SO2/OMI)",
+          "published_at": "2014-11-01T00:00:00Z",
+          "headline": "Fogo Volcano eruption report (SO2/OMI)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NASA Earth Observatory",
+          "NASA Goddard Space Flight Center"
+        ],
+        "substances": [
+          "sulfur dioxide",
+          "volcanic gas"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Pico do Fogo began erupting on November 23, 2014",
+            "source_url": "https://earthobservatory.nasa.gov/images/84819/eruption-at-fogo"
+          },
+          {
+            "quote": "The eruption produced lava flows",
+            "source_url": "https://earthobservatory.nasa.gov/images/84819/eruption-at-fogo"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.7,
+        "category": 0.85,
+        "location": 0.7,
+        "summary_grounding": 0.65
+      },
+      "quality_flags": [
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Fogo volcano eruption Nov 2014",
+        "fingerprint": "fogo-volcano-eruption-begins-on-fogo-island-cape-verde|pico-do-fogo-fogo-island-cape-verde|2014-11"
+      }
+    },
+    {
+      "event_id": "2014-11-geological-tonga-quake-20141102",
+      "title": "Magnitude 6.9 earthquake near Tonga in the South Pacific",
+      "description": "A magnitude 6.9 earthquake struck near Tonga on November 2, 2014. Early reporting indicated there was no immediate tsunami warning and there were no immediate damage reports.",
+      "category_primary": "geological",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2014-11-02T00:00:00Z",
+        "time_confidence": 0.5,
+        "event_date_utc": "2014-11-02T00:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Near Tonga (South Pacific)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "TO",
+        "capital_used": "Nukuʻalofa",
+        "lat": -21.1394,
+        "lon": -175.2048,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.abc.net.au/news/2014-11-02/magnitude-6.9-earthquake-hits-near-tonga-in-south-pacific/5860416",
+          "source_name": "ABC News (Australia)",
+          "published_at": "2014-11-02T00:00:00Z",
+          "headline": "Magnitude 6.9 earthquake hits near Tonga in South Pacific",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "ABC News (Australia)"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "A magnitude 6.9 earthquake has struck near Tonga in the South Pacific",
+            "source_url": "https://www.abc.net.au/news/2014-11-02/magnitude-6.9-earthquake-hits-near-tonga-in-south-pacific/5860416"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.8,
+        "location": 0.6,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Tonga M6.9 earthquake 2014-11-02",
+        "fingerprint": "magnitude-6-9-earthquake-near-tonga-in-the-south-pacific|near-tonga-south-pacific|2014-11"
+      }
+    },
+    {
+      "event_id": "evt_20141118_santa_paula_hazmat_fire",
+      "title": "Hazmat fire after vacuum truck explosion near Santa Paula, California",
+      "description": "A vacuum truck explosion near Santa Paula led to repeated ignition of unstable chemical materials, prompting hazardous materials response actions. Authorities issued evacuations and shelter-in-place orders due to smoke and potential risk from the incident, with responders attempting to prevent contaminated runoff from reaching the Santa Clara River.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2014-11-18T00:00:00.000Z",
+        "event_end": "2014-11-18T23:59:59.000Z",
+        "reported_at": "2014-11-18T00:00:00.000Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "2014-11-18T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Santa Paula, California, United States",
+        "jurisdiction_level": "city",
+        "admin1": "California",
+        "country": "US",
+        "capital_used": null,
+        "lat": 34.3542,
+        "lon": -119.0593,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://abc7.com/santa-paula-explosion-hazmat/400487/",
+          "source_name": "ABC7",
+          "published_at": "2014-11-18T00:00:00.000Z",
+          "headline": "Santa Paula explosion hazmat (ABC7 report)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Hazardous materials responders"
+        ],
+        "substances": [
+          "unstable chemical material"
+        ],
+        "ecosystems": [
+          "Santa Clara River"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "responders managed the incident as a hazardous materials fire",
+            "source_url": "https://abc7.com/santa-paula-explosion-hazmat/400487/"
+          },
+          {
+            "quote": "trying to avoid contaminated runoff to the Santa Clara River",
+            "source_url": "https://abc7.com/santa-paula-explosion-hazmat/400487/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.7,
+        "location": 0.6,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "low_confidence_location",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Santa Paula vacuum truck explosion hazmat fire 2014-11-18",
+        "fingerprint": "fp_santa_paula_hazmat_fire_2014_11_18"
+      }
+    },
+    {
+      "event_id": "evt_20141103_noaa_crw_pacific_bleaching_guidance",
+      "title": "NOAA Coral Reef Watch issues Pacific coral bleaching thermal stress analysis and guidance",
+      "description": "NOAA Coral Reef Watch published an updated Pacific coral bleaching thermal stress analysis and outlook. The analysis discussed sea surface temperature anomalies and provided bleaching risk guidance for Pacific island regions into late 2014/early 2015.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2014-11-03T00:00:00.000Z",
+        "event_end": "2014-11-03T23:59:59.000Z",
+        "reported_at": "2014-11-03T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2014-11-03T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Pacific Ocean (regional coral bleaching guidance)",
+        "jurisdiction_level": "supranational",
+        "admin1": null,
+        "country": null,
+        "capital_used": null,
+        "lat": 0,
+        "lon": 0,
+        "precision": "proxy",
+        "location_basis": "manual_override",
+        "location_confidence": 0.4
+      },
+      "sources": [
+        {
+          "url": "https://coralreefwatch.noaa.gov/satellite/analyses_guidance/pacific_cbts_ag_20141103.php",
+          "source_name": "NOAA Coral Reef Watch",
+          "published_at": "2014-11-03T00:00:00.000Z",
+          "headline": "Pacific Coral Bleaching Thermal Stress Analysis and Guidance (2014-11-03)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA Coral Reef Watch",
+          "NOAA"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "coral reefs",
+          "Pacific Ocean"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Pacific Coral Bleaching Thermal Stress Analysis and Guidance",
+            "source_url": "https://coralreefwatch.noaa.gov/satellite/analyses_guidance/pacific_cbts_ag_20141103.php"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.8,
+        "location": 0.35,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "low_confidence_location"
+      ],
+      "dedupe": {
+        "cluster_hint": "noaa_crw_pacific_bleaching_guidance_2014_11",
+        "fingerprint": "fp_noaa_crw_pacific_bleaching_guidance_2014-11-03_pacific_proxy"
+      }
+    },
+    {
+      "event_id": "evt_20141121_marshall_islands_bleaching_report",
+      "title": "Marshall Islands coral bleaching conditions persist into late November 2014 (report)",
+      "description": "A report in NOAA’s repository documented a severe coral bleaching event in the Republic of the Marshall Islands that began earlier in 2014 and continued into late November. The document noted that thermal stress was beginning to decrease around the third week of November 2014.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2014-11-21T00:00:00.000Z",
+        "event_end": "2014-11-30T23:59:59.000Z",
+        "reported_at": "2014-11-21T00:00:00.000Z",
+        "time_confidence": 0.5,
+        "event_date_utc": null,
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Republic of the Marshall Islands",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "MH",
+        "capital_used": "Majuro",
+        "lat": 7.1164,
+        "lon": 171.185,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.85
+      },
+      "sources": [
+        {
+          "url": "https://repository.library.noaa.gov/view/noaa/39957",
+          "source_name": "NOAA Institutional Repository",
+          "published_at": "2014-11-21T00:00:00.000Z",
+          "headline": "Marshall Islands coral bleaching report (2014)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "coral reefs"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "coral bleaching",
+            "source_url": "https://repository.library.noaa.gov/view/noaa/39957"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.65,
+        "category": 0.85,
+        "location": 0.9,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "paywalled_or_partial"
+      ],
+      "dedupe": {
+        "cluster_hint": "marshall_islands_bleaching_2014",
+        "fingerprint": "fp_marshall_islands_bleaching_2014-11_MH_Majuro"
+      }
+    },
+    {
+      "event_id": "evt_20141112_us_china_joint_climate_announcement_beijing",
+      "title": "U.S.–China joint climate announcement sets post-2020 targets",
+      "description": "The United States and China announced post-2020 climate targets, including a U.S. 2025 emissions reduction target and China’s intention to peak CO2 emissions around 2030 and increase the non-fossil energy share. The announcement was positioned as a significant bilateral milestone with broader implications for global climate negotiations.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "2014-11-12T00:00:00.000Z",
+        "event_end": "2014-11-12T23:59:59.000Z",
+        "reported_at": "2014-11-11T00:00:00.000Z",
+        "time_confidence": 0.65,
+        "event_date_utc": "2014-11-12T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Beijing, China",
+        "jurisdiction_level": "city",
+        "admin1": null,
+        "country": "CN",
+        "capital_used": null,
+        "lat": 39.9042,
+        "lon": 116.4074,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.85
+      },
+      "sources": [
+        {
+          "url": "https://obamawhitehouse.archives.gov/the-press-office/2014/11/11/us-china-joint-announcement-climate-change",
+          "source_name": "White House (Obama Archives)",
+          "published_at": "2014-11-11T00:00:00.000Z",
+          "headline": "U.S.-China Joint Announcement on Climate Change",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.worldbank.org/en/news/press-release/2014/11/12/statement-world-bank-group-president-us-china-climate-announcement",
+          "source_name": "World Bank",
+          "published_at": "2014-11-12T00:00:00.000Z",
+          "headline": "Statement by World Bank Group President on U.S.-China climate announcement",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "The White House",
+          "Government of the United States",
+          "Government of China",
+          "World Bank"
+        ],
+        "substances": [
+          "CO2"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "U.S.-China Joint Announcement on Climate Change",
+            "source_url": "https://obamawhitehouse.archives.gov/the-press-office/2014/11/11/us-china-joint-announcement-climate-change"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.85,
+        "location": 0.85,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "us-china-joint-announcement-climate-change-2014-11",
+        "fingerprint": "fp_us_china_joint_20141112_beijing"
+      }
+    },
+    {
+      "event_id": "evt_20141128_unfccc_lima_cop20_preparations_bonn",
+      "title": "UNFCCC highlights preparations for Lima COP20 and Paris 2015 pathway",
+      "description": "UNFCCC issued a press release emphasizing the upcoming Lima climate conference (COP20) and its role in laying foundations for the 2015 Paris agreement. The release aimed to frame near-term priorities and encourage climate ambition ahead of the negotiations.",
+      "category_primary": "policy_regulation",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "2014-11-28T00:00:00.000Z",
+        "event_end": "2014-11-28T23:59:59.000Z",
+        "reported_at": "2014-11-28T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2014-11-28T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Bonn, Germany",
+        "jurisdiction_level": "city",
+        "admin1": null,
+        "country": "DE",
+        "capital_used": null,
+        "lat": 50.7374,
+        "lon": 7.0982,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.8
+      },
+      "sources": [
+        {
+          "url": "https://unfccc.int/news/lima-cop-to-lay-foundation-for-paris-2015-agreement",
+          "source_name": "UNFCCC",
+          "published_at": "2014-11-28T00:00:00.000Z",
+          "headline": "Lima COP to lay foundation for Paris 2015 agreement",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "UNFCCC"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Lima COP to lay foundation for Paris 2015 agreement",
+            "source_url": "https://unfccc.int/news/lima-cop-to-lay-foundation-for-paris-2015-agreement"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.63,
+        "category": 0.85,
+        "location": 0.8,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [],
+      "dedupe": {
+        "cluster_hint": "unfccc-lima-cop20-prep-2014-11",
+        "fingerprint": "fp_unfccc_lima_prep_20141128_bonn"
+      }
+    }
+  ]
+}

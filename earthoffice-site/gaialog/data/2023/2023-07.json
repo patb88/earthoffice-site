@@ -1,0 +1,557 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_2023-07_normalize_2026-01-16T133950704Z",
+    "generated_utc": "2026-01-16T13:39:50.704Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "2023-07",
+    "window": {
+      "start_utc": "2023-07-01T00:00:00.000Z",
+      "end_utc": "2023-07-31T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "evt-20230707-us-pfas-tap-water-usgs",
+      "title": "USGS study estimates PFAS may be present in ~45% of U.S. tap water",
+      "description": "A U.S. Geological Survey study reported in early July 2023 estimated that PFAS contamination may be present in roughly 45% of U.S. tap water, including public supplies and private wells. The findings highlight the widespread potential presence of persistent synthetic chemicals in drinking water.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2023-07-07T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2023-07-07T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.8
+      },
+      "sources": [
+        {
+          "url": "https://www.axios.com/2023/07/07/forever-chemicals-tap-water-pfas-study",
+          "source_name": "Axios",
+          "published_at": "2023-07-07T00:00:00.000Z",
+          "headline": "Forever chemicals likely present in 45% of U.S. tap water, study says",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Geological Survey (USGS)"
+        ],
+        "substances": [
+          "PFAS"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "PFAS contamination may be present in roughly 45% of U.S. tap water",
+            "source_url": "https://www.axios.com/2023/07/07/forever-chemicals-tap-water-pfas-study"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.8,
+        "location": 0.85,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "USGS PFAS tap water 45% United States July 2023",
+        "fingerprint": "fp-usgs-pfas-tap-water-45-us-2023-07-07"
+      }
+    },
+    {
+      "event_id": "evt_202307_global_temp_records_wmo_euronews",
+      "title": "First week of July 2023 reported as hottest on record (WMO-cited coverage)",
+      "description": "A news report cited the UN World Meteorological Organization (WMO) saying the first week of July 2023 was the hottest on record in preliminary datasets, with record-setting global average temperatures reported from early July.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2023-07-10T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": null,
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Global",
+        "jurisdiction_level": "global_proxy",
+        "admin1": null,
+        "country": null,
+        "capital_used": null,
+        "lat": 0,
+        "lon": 0,
+        "precision": "proxy",
+        "location_basis": "manual_override",
+        "location_confidence": 0.4
+      },
+      "sources": [
+        {
+          "url": "https://www.euronews.com/green/2023/07/10/first-week-of-july-was-the-hottest-on-record-says-un-weather-agency",
+          "source_name": "Euronews Green",
+          "published_at": "2023-07-10T00:00:00Z",
+          "headline": "First week of July was the hottest on record, says UN weather agency",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "World Meteorological Organization (WMO)"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "first week of July was the hottest on record, says UN weather agency",
+            "source_url": "https://www.euronews.com/green/2023/07/10/first-week-of-july-was-the-hottest-on-record-says-un-weather-agency"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.8,
+        "location": 0.5,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "2023-07 global temperature record reports (WMO/ERA5/NOAA coverage)",
+        "fingerprint": "fp_202307_global_temp_records_global_range"
+      }
+    },
+    {
+      "event_id": "2023-07-geological-raigad-landslide-01",
+      "title": "Deadly landslide in Raigad district, Maharashtra, triggered by heavy rain",
+      "description": "Heavy rainfall triggered a landslide in Raigad district in the Indian state of Maharashtra in July 2023, burying homes and prompting rescue operations. Media reports described fatalities and ongoing efforts to locate trapped residents.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2023-07-20T00:00:00Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "2023-07-20T00:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Raigad district, Maharashtra, India",
+        "jurisdiction_level": "state",
+        "admin1": "Maharashtra",
+        "country": "IN",
+        "capital_used": "Mumbai",
+        "lat": 19.076,
+        "lon": 72.8777,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.75
+      },
+      "sources": [
+        {
+          "url": "https://www.bbc.com/news/world-asia-india-66265854",
+          "source_name": "BBC News",
+          "published_at": "2023-07-20T00:00:00Z",
+          "headline": "BBC News report on landslide in Raigad district, India",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "BBC News"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "A landslide hit a village in Raigad district... after heavy rainfall, trapping people under debris.",
+            "source_url": "https://www.bbc.com/news/world-asia-india-66265854"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.7,
+        "location": 0.75,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Raigad district landslide July 2023",
+        "fingerprint": "fp_2023-07_geological_raigad_maharashtra_2023-07-20"
+      }
+    },
+    {
+      "event_id": "2023-07-geological-dempo-eruption-01",
+      "title": "Mount Dempo eruptions in Sumatra produced ash plumes",
+      "description": "Mount Dempo in Sumatra, Indonesia, erupted in late July 2023, producing ash columns and prompting public safety guidance around the crater zone. Reports also noted aviation-related alert context for the area.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2023-07-25T00:00:00.000Z",
+        "event_end": "2023-07-26T23:59:59.000Z",
+        "reported_at": "2023-07-26T00:00:00Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2023-07-25T00:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Mount Dempo, Sumatra, Indonesia",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "ID",
+        "capital_used": "Jakarta",
+        "lat": -6.2088,
+        "lon": 106.8456,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://watchers.news/2023/07/26/eruptions-at-dempo-volcano-sumatra-indonesia/",
+          "source_name": "The Watchers",
+          "published_at": "2023-07-26T00:00:00Z",
+          "headline": "Eruptions at Dempo volcano, Sumatra, Indonesia",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "The Watchers"
+        ],
+        "substances": [
+          "volcanic ash"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Dempo volcano in South Sumatra erupted, producing an ash plume rising above the crater.",
+            "source_url": "https://watchers.news/2023/07/26/eruptions-at-dempo-volcano-sumatra-indonesia/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.7,
+        "location": 0.6,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "secondary_sources_only",
+        "needs_dedupe_check",
+        "low_confidence_location"
+      ],
+      "dedupe": {
+        "cluster_hint": "Mount Dempo eruption July 2023",
+        "fingerprint": "fp_2023-07_geological_dempo_indonesia_2023-07-25"
+      }
+    },
+    {
+      "event_id": "evt_202307_rhodes_wildfire_evac_01",
+      "title": "Rhodes, Greece wildfire triggers mass evacuations during peak tourism season",
+      "description": "A major wildfire on Rhodes island in late July 2023 prompted large-scale evacuations of residents and tourists. Authorities used shelters and, in some cases, sea evacuations from beaches/coastal areas as the fire spread.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2023-07-22T00:00:00.000Z",
+        "event_end": "2023-07-23T23:59:59.000Z",
+        "reported_at": "2023-07-23T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2023-07-22T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Rhodes Island, Greece",
+        "jurisdiction_level": "site",
+        "admin1": null,
+        "country": "GR",
+        "capital_used": null,
+        "lat": 36.43496,
+        "lon": 28.21764,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.cnbc.com/2023/07/23/tourists-flee-greek-island-rhodes-wildfire-thousands-evacuated.html",
+          "source_name": "CNBC",
+          "published_at": "2023-07-23T00:00:00.000Z",
+          "headline": "Tourists flee Greek island Rhodes wildfire, thousands evacuated",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.kpbs.org/news/news/international/2023/07/23/19-000-people-have-been-evacuated-as-a-wildfire-rages-on-the-greek-island-of-rhodes",
+          "source_name": "KPBS",
+          "published_at": "2023-07-23T00:00:00.000Z",
+          "headline": "19,000 people have been evacuated as a wildfire rages on the Greek island of Rhodes",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "thousands of residents and tourists were evacuated from Rhodes",
+            "source_url": "https://www.cnbc.com/2023/07/23/tourists-flee-greek-island-rhodes-wildfire-thousands-evacuated.html"
+          },
+          {
+            "quote": "have been evacuated as a wildfire rages on the Greek island of Rhodes",
+            "source_url": "https://www.kpbs.org/news/news/international/2023/07/23/19-000-people-have-been-evacuated-as-a-wildfire-rages-on-the-greek-island-of-rhodes"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.58,
+        "category": 0.85,
+        "location": 0.55,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "rhodes_greece_wildfire_2023_07_evac",
+        "fingerprint": "fp_rhodes_gr_wildfire_20230722"
+      }
+    },
+    {
+      "event_id": "evt_202307_florida_keys_coral_bleaching",
+      "title": "Coral bleaching impacts Florida Keys amid extreme marine heat",
+      "description": "In July 2023, unusually warm ocean temperatures contributed to coral bleaching risk and impacts on Florida’s Coral Reef, including areas around the Florida Keys. NOAA and partners reported emergency efforts to protect and rescue remaining corals amid historic ocean heat.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2023-07-10T00:00:00.000Z",
+        "event_end": "2023-07-31T23:59:59.000Z",
+        "reported_at": "2023-07-01T00:00:00.000Z",
+        "time_confidence": 0.45,
+        "event_date_utc": null,
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Florida Keys / Florida’s Coral Reef, Florida, USA",
+        "jurisdiction_level": "state",
+        "admin1": "Florida",
+        "country": "US",
+        "capital_used": "Tallahassee",
+        "lat": 30.4383,
+        "lon": -84.2807,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.climate.gov/news-features/event-tracker/noaa-and-partners-race-rescue-remaining-florida-corals-historic-ocean",
+          "source_name": "Climate.gov (NOAA)",
+          "published_at": "2023-07-01T00:00:00.000Z",
+          "headline": "NOAA and partners race to rescue remaining Florida corals in historic ocean heat",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://myfwc.com/research/habitat/coral/news/bleaching/",
+          "source_name": "Florida Fish and Wildlife Conservation Commission (FWC)",
+          "published_at": "2023-07-01T00:00:00.000Z",
+          "headline": "Bleaching",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.nesdis.noaa.gov/news/noaa-satellites-assist-scientists-studying-mass-bleaching-event-of-florida-corals",
+          "source_name": "NOAA NESDIS",
+          "published_at": "2023-07-01T00:00:00.000Z",
+          "headline": "NOAA satellites assist scientists studying mass bleaching event of Florida corals",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA",
+          "Florida Fish and Wildlife Conservation Commission (FWC)"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "Florida’s Coral Reef",
+          "coral reefs"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.52,
+        "category": 0.8,
+        "location": 0.6,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "florida_keys_coral_bleaching_july_2023",
+        "fingerprint": "fp_florida_keys_coral_bleaching_fl_2023-07"
+      }
+    },
+    {
+      "event_id": "evt_20230712_eu_nature_restoration_law_ep_position",
+      "title": "European Parliament adopts negotiating position on the EU Nature Restoration Law",
+      "description": "On July 12, 2023, the European Parliament approved its position on the proposed EU Nature Restoration Law, enabling negotiations with the Council. The proposal aims to set legally binding nature restoration targets intended to support biodiversity and climate action.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "2023-07-12T00:00:00.000Z",
+        "event_end": "2023-07-12T23:59:59.000Z",
+        "reported_at": "2023-07-12T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2023-07-12T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Strasbourg, France (European Parliament plenary; EU-wide policy)",
+        "jurisdiction_level": "city",
+        "admin1": "Grand Est",
+        "country": "FR",
+        "capital_used": null,
+        "lat": 48.5734053,
+        "lon": 7.7521113,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://cinea.ec.europa.eu/news-events/news/new-nature-restoration-law-boosts-biodiversity-and-climate-action-across-europe-2023-07-12_en",
+          "source_name": "CINEA (European Climate, Infrastructure and Environment Executive Agency)",
+          "published_at": "2023-07-12T00:00:00.000Z",
+          "headline": "New Nature Restoration Law boosts biodiversity and climate action across Europe",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "European Parliament",
+          "European Union",
+          "Council of the European Union",
+          "CINEA"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "degraded ecosystems"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "European Parliament approved its position on the proposed Nature Restoration Law",
+            "source_url": "https://cinea.ec.europa.eu/news-events/news/new-nature-restoration-law-boosts-biodiversity-and-climate-action-across-europe-2023-07-12_en"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.75,
+        "location": 0.6,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "EU Nature Restoration Law EP negotiating position July 2023",
+        "fingerprint": "fp_evt_20230712_eu_nature_restoration_law_ep_position"
+      }
+    }
+  ]
+}

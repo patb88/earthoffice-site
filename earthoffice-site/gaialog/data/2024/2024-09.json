@@ -1,0 +1,998 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_2024-09_normalize_2026-01-16T140827562Z",
+    "generated_utc": "2026-01-16T14:08:27.562Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "2024-09",
+    "window": {
+      "start_utc": "2024-09-01T00:00:00.000Z",
+      "end_utc": "2024-09-30T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "evt_20240917_mcloud_run_chlorinated_discharge",
+      "title": "Chlorinated water discharge into McLoud Run after Cedar Rapids water main break",
+      "description": "An Iowa DNR advisory reported a water main break that released chlorinated drinking water which ultimately entered McLoud Run in Cedar Rapids. Responders used dechlorination tablets and officials observed stressed fish with expected fish mortality.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2024-09-16T00:00:00.000Z",
+        "event_end": "2024-09-17T23:59:59.000Z",
+        "reported_at": "2024-09-17T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2024-09-16T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "McLoud Run, Cedar Rapids, Iowa, USA",
+        "jurisdiction_level": "site",
+        "admin1": "Iowa",
+        "country": "US",
+        "capital_used": null,
+        "lat": 41.9779,
+        "lon": -91.6656,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.iowadnr.gov/advisories/2024-09-17/dnr-investigating-chlorinated-water-discharge-mcloud-run",
+          "source_name": "Iowa Department of Natural Resources",
+          "published_at": "2024-09-17T00:00:00.000Z",
+          "headline": "DNR investigating chlorinated water discharge into McLoud Run",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Iowa Department of Natural Resources"
+        ],
+        "substances": [
+          "chlorinated drinking water"
+        ],
+        "ecosystems": [
+          "trout stream"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "DNR is investigating a chlorinated water discharge that ultimately entered McLoud Run.",
+            "source_url": "https://www.iowadnr.gov/advisories/2024-09-17/dnr-investigating-chlorinated-water-discharge-mcloud-run"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.58,
+        "category": 0.75,
+        "location": 0.55,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "mcloud_run_chlorinated_discharge_2024-09",
+        "fingerprint": "fp_mcloud_run_cedar_rapids_2024-09-16"
+      }
+    },
+    {
+      "event_id": "evt_20240904_baltimore_harbor_fish_kill",
+      "title": "Baltimore Harbor fish kill associated with algal bloom and low oxygen conditions",
+      "description": "A Chesapeake Bay Foundation post reported a large fish kill in Baltimore Harbor, describing roughly 24,000 dead fish (mostly menhaden). The post attributes the die-off to conditions linked with polluted water, algal blooms, and low-oxygen “dead zone” conditions.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2024-09-04T00:00:00.000Z",
+        "event_end": "2024-09-05T23:59:59.000Z",
+        "reported_at": "2024-09-04T00:00:00.000Z",
+        "time_confidence": 0.45,
+        "event_date_utc": "2024-09-04T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Baltimore Harbor, Maryland, USA",
+        "jurisdiction_level": "city",
+        "admin1": "Maryland",
+        "country": "US",
+        "capital_used": null,
+        "lat": 39.2904,
+        "lon": -76.6122,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.cbf.org/news-media/newsroom/2024/maryland/massive-baltimore-harbor-fish-kill-highlights-need-for-further-pollution-reduction.html",
+          "source_name": "Chesapeake Bay Foundation",
+          "published_at": "2024-09-04T00:00:00.000Z",
+          "headline": "Massive Baltimore Harbor fish kill highlights need for further pollution reduction",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Chesapeake Bay Foundation"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "harbor/estuary"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "roughly 24,000 dead fish (mostly menhaden) in Baltimore Harbor",
+            "source_url": "https://www.cbf.org/news-media/newsroom/2024/maryland/massive-baltimore-harbor-fish-kill-highlights-need-for-further-pollution-reduction.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.53,
+        "category": 0.65,
+        "location": 0.6,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "secondary_sources_only",
+        "date_ambiguous",
+        "possible_opinion_or_advocacy"
+      ],
+      "dedupe": {
+        "cluster_hint": "baltimore_harbor_fish_kill_2024-09",
+        "fingerprint": "fp_baltimore_harbor_2024-09-04"
+      }
+    },
+    {
+      "event_id": "evt_202409_incident_responses_noaa_orr",
+      "title": "NOAA OR&R September 2024 incident response summary reports support for multiple pollution incidents",
+      "description": "A NOAA OR&R blog post summarized incident response work during September 2024, stating it provided scientific support for 19 incidents. The summary includes multiple actual or potential oil spills and several chemical spill incidents (including mixed oil/chemical events).",
+      "category_primary": "science_monitoring",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "2024-09-01T00:00:00.000Z",
+        "event_end": "2024-09-30T23:59:59.000Z",
+        "reported_at": "2024-09-01T00:00:00.000Z",
+        "time_confidence": 0.55,
+        "event_date_utc": null,
+        "event_date_precision": "month"
+      },
+      "location": {
+        "name": "United States (NOAA incident response summary)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://blog.response.restoration.noaa.gov/incident-responses-september-2024",
+          "source_name": "NOAA Office of Response and Restoration",
+          "published_at": "2024-09-01T00:00:00.000Z",
+          "headline": "Incident Responses: September 2024",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA Office of Response and Restoration"
+        ],
+        "substances": [
+          "oil",
+          "chemicals"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "During September, we provided scientific support for 19 incidents.",
+            "source_url": "https://blog.response.restoration.noaa.gov/incident-responses-september-2024"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.56,
+        "category": 0.4,
+        "location": 0.7,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "low_confidence_category",
+        "location_ambiguous",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "noaa_orr_incident_responses_2024-09",
+        "fingerprint": "fp_noaa_orr_us_2024-09"
+      }
+    },
+    {
+      "event_id": "2024-09-weather_climate-heatwave-socal-southwest-early-sep",
+      "title": "Early September 2024 heat wave in Southern California and the U.S. Southwest",
+      "description": "A heat wave built inland starting around September 4, bringing daytime temperatures well above normal and setting or tying temperature records in multiple locations across parts of Southern California and the U.S. Southwest, including Phoenix.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2024-09-04T00:00:00.000Z",
+        "event_end": "2024-09-07T23:59:59.000Z",
+        "reported_at": "2024-09-06T00:00:00.000Z",
+        "time_confidence": 0.75,
+        "event_date_utc": "2024-09-04T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "United States (multiple states incl. Southern California, Nevada, Arizona)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.climate.gov/news-features/event-tracker/heat-wave-southern-california-and-southwest-early-september-2024",
+          "source_name": "NOAA Climate.gov",
+          "published_at": "2024-09-06T00:00:00.000Z",
+          "headline": "Heat Wave in Southern California and the Southwest (Early September 2024)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.theguardian.com/us-news/article/2024/sep/06/heatwave-us-west-breaks-records",
+          "source_name": "The Guardian",
+          "published_at": "2024-09-06T00:00:00.000Z",
+          "headline": "Heatwave in US west breaks records",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Heat wave in Southern California and the Southwest (Early September 2024)",
+            "source_url": "https://www.climate.gov/news-features/event-tracker/heat-wave-southern-california-and-southwest-early-september-2024"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.63,
+        "category": 0.8,
+        "location": 0.55,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "US Southwest heat wave early Sep 2024",
+        "fingerprint": "2024-09-weather_climate-heatwave-us-2024-09-04"
+      }
+    },
+    {
+      "event_id": "2024-09-weather_climate-hurricane-helene-florida-big-bend",
+      "title": "Hurricane Helene landfall and impacts in Florida’s Big Bend and the U.S. Southeast",
+      "description": "A monthly NOAA climate assessment referenced Hurricane Helene and described major impacts across the Southeast, including characterization of the storm’s significance for Florida’s Big Bend region.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2024-09-26T00:00:00.000Z",
+        "event_end": "2024-09-30T23:59:59.000Z",
+        "reported_at": "2024-10-01T00:00:00.000Z",
+        "time_confidence": 0.5,
+        "event_date_utc": "2024-09-26T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "United States (Florida Big Bend region and inland Southeast)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.45
+      },
+      "sources": [
+        {
+          "url": "https://www.ncei.noaa.gov/news/assessing-us-and-global-climate-september-2024",
+          "source_name": "NOAA NCEI",
+          "published_at": "2024-10-01T00:00:00.000Z",
+          "headline": "Assessing the U.S. & Global Climate: September 2024",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA",
+          "NOAA NCEI"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Assessing the U.S. & Global Climate: September 2024",
+            "source_url": "https://www.ncei.noaa.gov/news/assessing-us-and-global-climate-september-2024"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.45,
+        "category": 0.75,
+        "location": 0.45,
+        "summary_grounding": 0.35
+      },
+      "quality_flags": [
+        "secondary_sources_only",
+        "location_ambiguous",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Hurricane Helene late Sep 2024 US Southeast",
+        "fingerprint": "2024-09-weather_climate-helene-us-2024-09-26"
+      }
+    },
+    {
+      "event_id": "2024-09-weather_climate-us-high-plains-record-warmth-drought",
+      "title": "September 2024 record warmth and drought intensification in the U.S. High Plains",
+      "description": "A High Plains Regional Climate Center summary reported widespread warmth during September 2024 and described heat-driven drought expansion or intensification across parts of the U.S. High Plains.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2024-09-01T00:00:00.000Z",
+        "event_end": "2024-09-30T23:59:59.000Z",
+        "reported_at": "2024-10-14T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2024-09-01T00:00:00.000Z",
+        "event_date_precision": "month"
+      },
+      "location": {
+        "name": "United States (U.S. High Plains region)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.4
+      },
+      "sources": [
+        {
+          "url": "https://hprcc.unl.edu/blog/2024/10/14/september-2024-climate-summary/",
+          "source_name": "High Plains Regional Climate Center (HPRCC)",
+          "published_at": "2024-10-14T00:00:00.000Z",
+          "headline": "September 2024 Climate Summary",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "High Plains Regional Climate Center"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "High Plains"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "September 2024 Climate Summary",
+            "source_url": "https://hprcc.unl.edu/blog/2024/10/14/september-2024-climate-summary/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.52,
+        "category": 0.75,
+        "location": 0.4,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "US High Plains Sep 2024 warmth drought",
+        "fingerprint": "2024-09-weather_climate-high-plains-us-2024-09"
+      }
+    },
+    {
+      "event_id": "2024-09-weather_climate-noaa-september-2024-second-warmest",
+      "title": "NOAA assessment: September 2024 was the second-warmest September globally and for the contiguous U.S.",
+      "description": "NOAA’s monthly climate assessment reported September 2024 as the second-warmest September globally and the second-warmest September on record for the contiguous United States, with notable regional temperature extremes.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2024-09-01T00:00:00.000Z",
+        "event_end": "2024-09-30T23:59:59.000Z",
+        "reported_at": "2024-10-01T00:00:00.000Z",
+        "time_confidence": 0.8,
+        "event_date_utc": "2024-09-01T00:00:00.000Z",
+        "event_date_precision": "month"
+      },
+      "location": {
+        "name": "Global",
+        "jurisdiction_level": "global_proxy",
+        "admin1": null,
+        "country": null,
+        "capital_used": null,
+        "lat": 0,
+        "lon": 0,
+        "precision": "proxy",
+        "location_basis": "manual_override",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.ncei.noaa.gov/news/assessing-us-and-global-climate-september-2024",
+          "source_name": "NOAA NCEI",
+          "published_at": "2024-10-01T00:00:00.000Z",
+          "headline": "Assessing the U.S. & Global Climate: September 2024",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://yaleclimateconnections.org/2024/10/september-2024-earths-2nd-warmest-september-on-record/",
+          "source_name": "Yale Climate Connections",
+          "published_at": "2024-10-01T00:00:00.000Z",
+          "headline": "September 2024: Earth’s 2nd-warmest September on record",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA",
+          "NOAA NCEI"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Assessing the U.S. & Global Climate: September 2024",
+            "source_url": "https://www.ncei.noaa.gov/news/assessing-us-and-global-climate-september-2024"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.8,
+        "location": 0.6,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "NOAA Sep 2024 global/US second-warmest",
+        "fingerprint": "2024-09-weather_climate-noaa-global-2024-09"
+      }
+    },
+    {
+      "event_id": "geological-2024-09-21-andreanof-islands-ak-m5-4-aec-monthly",
+      "title": "M5.4 earthquake south of Mt. Gareloi listed as largest Alaska event in Alaska Earthquake Center September 2024 report",
+      "description": "The Alaska Earthquake Center's September 2024 monthly report lists a magnitude 5.4 earthquake south of Mt. Gareloi as the month's largest Alaska earthquake among many recorded events.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2024-09-21T00:00:00.000Z",
+        "event_end": "2024-09-21T23:59:59.000Z",
+        "reported_at": "2024-09-30T23:59:59.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2024-09-21T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Andreanof Islands, Alaska, USA (45 miles S of Mt. Gareloi)",
+        "jurisdiction_level": "site",
+        "admin1": "Alaska",
+        "country": "US",
+        "capital_used": null,
+        "lat": 51.789,
+        "lon": -176.618,
+        "precision": "admin1",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.35
+      },
+      "sources": [
+        {
+          "url": "https://earthquake.alaska.edu/index.php/earthquakes/reports/monthly/september-2024",
+          "source_name": "Alaska Earthquake Center",
+          "published_at": "2024-09-30T23:59:59.000Z",
+          "headline": "September 2024 Monthly Earthquake Report",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Alaska Earthquake Center"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "...monthly report lists a M5.4 event south of Mt. Gareloi as the month’s largest Alaska earthquake...",
+            "source_url": "https://earthquake.alaska.edu/index.php/earthquakes/reports/monthly/september-2024"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.45,
+        "category": 0.8,
+        "location": 0.35,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "aec_sept_2024_m5_4_gareloi",
+        "fingerprint": "geological|m5.4 earthquake south of mt gareloi|andreanof islands alaska us|2024-09-21"
+      }
+    },
+    {
+      "event_id": "evt_2024-09_biolab_conyers_ga_fire",
+      "title": "BioLab facility fire and toxic smoke plume in Conyers, Georgia",
+      "description": "A chemical reaction and fire at the Bio-Lab facility in Conyers, Georgia produced a large smoke plume reported to contain or involve chlorine and other hazardous substances. Reporting described evacuations and shelter-in-place actions affecting residents in and around the Atlanta metropolitan area.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2024-09-29T00:00:00.000Z",
+        "event_end": "2024-09-30T23:59:59.000Z",
+        "reported_at": "2024-09-30T00:00:00Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2024-09-29T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Conyers, Georgia, USA",
+        "jurisdiction_level": "city",
+        "admin1": "Georgia",
+        "country": "US",
+        "capital_used": null,
+        "lat": 33.6676,
+        "lon": -84.0177,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://www.cnbc.com/2024/09/30/over-90000-georgia-residents-sheltering-a-day-after-chemical-plant-fire-sends-chlorine-into-the-air.html",
+          "source_name": "CNBC",
+          "published_at": "2024-09-30T00:00:00Z",
+          "headline": "Over 90,000 Georgia residents sheltering a day after chemical plant fire sends chlorine into the air",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.csb.gov/us-chemical-safety-board-releases-investigation-update-into-september-2024-massive-fire-and-toxic-plume-at-bio-lab-facility-in-georgia/",
+          "source_name": "U.S. Chemical Safety Board",
+          "published_at": "2024-09-01T00:00:00Z",
+          "headline": "U.S. Chemical Safety Board releases investigation update into September 2024 massive fire and toxic plume at Bio-Lab facility in Georgia",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Bio-Lab",
+          "U.S. Chemical Safety Board"
+        ],
+        "substances": [
+          "chlorine"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "chemical plant fire sends chlorine into the air",
+            "source_url": "https://www.cnbc.com/2024/09/30/over-90000-georgia-residents-sheltering-a-day-after-chemical-plant-fire-sends-chlorine-into-the-air.html"
+          },
+          {
+            "quote": "massive fire and toxic plume at Bio-Lab facility in Georgia",
+            "source_url": "https://www.csb.gov/us-chemical-safety-board-releases-investigation-update-into-september-2024-massive-fire-and-toxic-plume-at-bio-lab-facility-in-georgia/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.8,
+        "location": 0.7,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Bio-Lab Conyers Georgia fire toxic plume Sep 2024",
+        "fingerprint": "fp_biolab_conyers_ga_2024-09-29_2024-09"
+      }
+    },
+    {
+      "event_id": "evt_2024-09_line_fire_san_bernardino_ca",
+      "title": "Line Fire wildfire prompts evacuations near San Bernardino, California",
+      "description": "The Line Fire in Southern California spread quickly in early September, with reporting noting extreme heat and winds that worsened fire behavior. Evacuation orders and warnings were issued as the fire threatened nearby communities and structures in the San Bernardino area.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2024-09-05T00:00:00.000Z",
+        "event_end": "2024-09-10T23:59:59.000Z",
+        "reported_at": "2024-09-09T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2024-09-05T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "San Bernardino area, California, USA",
+        "jurisdiction_level": "city",
+        "admin1": "California",
+        "country": "US",
+        "capital_used": null,
+        "lat": 34.1083,
+        "lon": -117.2898,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.theguardian.com/us-news/article/2024/sep/09/wildfire-line-fire-evacuation-san-bernardino-la",
+          "source_name": "The Guardian",
+          "published_at": "2024-09-09T00:00:00Z",
+          "headline": "Wildfire Line Fire evacuation San Bernardino ...",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://apnews.com/article/c11f29227efcbab2b6a8100ba41dac91",
+          "source_name": "AP News",
+          "published_at": "2024-09-01T00:00:00Z",
+          "headline": "Article c11f29227efcbab2b6a8100ba41dac91",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [
+          "San Bernardino National Forest"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Line Fire",
+            "source_url": "https://apnews.com/article/c11f29227efcbab2b6a8100ba41dac91"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.52,
+        "category": 0.85,
+        "location": 0.55,
+        "summary_grounding": 0.4
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Line Fire San Bernardino Sep 2024",
+        "fingerprint": "fp_line_fire_san_bernardino_2024-09-05_2024-09"
+      }
+    },
+    {
+      "event_id": "evt_2024-09_roha_maharashtra_chemical_plant_fire",
+      "title": "Fire at Sadhana Nitro Chem Specialty plant in Roha, Maharashtra",
+      "description": "Reuters reported a fire at Sadhana Nitro Chem Specialty's plant in Roha, Maharashtra, India, killing three people and injuring others. The incident was described as a significant industrial fire at a chemical facility.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2024-09-12T00:00:00.000Z",
+        "event_end": "2024-09-12T23:59:59.000Z",
+        "reported_at": "2024-09-12T00:00:00Z",
+        "time_confidence": 0.65,
+        "event_date_utc": "2024-09-12T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Roha, Maharashtra, India",
+        "jurisdiction_level": "city",
+        "admin1": "Maharashtra",
+        "country": "IN",
+        "capital_used": null,
+        "lat": 18.4367,
+        "lon": 73.1193,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.reuters.com/world/india/three-people-killed-fire-indias-sadhana-nitro-chem-specialtys-plant-2024-09-12/",
+          "source_name": "Reuters",
+          "published_at": "2024-09-12T00:00:00Z",
+          "headline": "Three people killed in fire at India's Sadhana Nitro Chem Specialty's plant",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Sadhana Nitro Chem Specialty",
+          "Reuters"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Three people killed in fire at India's Sadhana Nitro Chem Specialty's plant",
+            "source_url": "https://www.reuters.com/world/india/three-people-killed-fire-indias-sadhana-nitro-chem-specialtys-plant-2024-09-12/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.66,
+        "category": 0.85,
+        "location": 0.6,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Sadhana Nitro Chem Specialty Roha fire Sep 2024",
+        "fingerprint": "fp_sadhana_roha_2024-09-12_2024-09"
+      }
+    },
+    {
+      "event_id": "evt_202409_baltimore_harbor_fish_kill_menhaden",
+      "title": "Baltimore Harbor menhaden fish kill linked to degraded water quality",
+      "description": "Reporting described a large menhaden fish kill in Baltimore Harbor. The account linked the incident to degraded water quality conditions, including low oxygen associated with algal blooms and warm temperatures.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2024-09-04T00:00:00.000Z",
+        "time_confidence": 0.4,
+        "event_date_utc": null,
+        "event_date_precision": "unknown"
+      },
+      "location": {
+        "name": "Baltimore Harbor, Maryland, USA",
+        "jurisdiction_level": "site",
+        "admin1": "Maryland",
+        "country": "US",
+        "capital_used": null,
+        "lat": 39.2645,
+        "lon": -76.5827,
+        "precision": "neighborhood",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://www.cbf.org/news-media/newsroom/2024/maryland/massive-baltimore-harbor-fish-kill-highlights-need-for-further-pollution-reduction.html",
+          "source_name": "Chesapeake Bay Foundation",
+          "published_at": "2024-09-04T00:00:00.000Z",
+          "headline": "Massive Baltimore Harbor Fish Kill Highlights Need for Further Pollution Reduction",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Chesapeake Bay Foundation"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "Baltimore Harbor"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Massive Baltimore Harbor Fish Kill Highlights Need for Further Pollution Reduction",
+            "source_url": "https://www.cbf.org/news-media/newsroom/2024/maryland/massive-baltimore-harbor-fish-kill-highlights-need-for-further-pollution-reduction.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.56,
+        "category": 0.75,
+        "location": 0.7,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "possible_opinion_or_advocacy",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "baltimore-harbor-fish-kill-2024-09",
+        "fingerprint": "fp_baltimore_harbor_fish_kill_2024_09"
+      }
+    },
+    {
+      "event_id": "2024-09-03_us_dc_circuit_epa_boiler_rule_partial_vacatur",
+      "title": "U.S. appeals court blocks retroactive EPA emissions standards for some industrial boilers",
+      "description": "The U.S. Court of Appeals for the D.C. Circuit struck down part of an EPA rule that would have applied stricter “new source” emissions standards retroactively to certain industrial boilers built before August 2020. The court said the EPA exceeded its authority under the Clean Air Act for that classification.",
+      "category_primary": "policy_regulation",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "2024-09-03T00:00:00.000Z",
+        "event_end": "2024-09-03T23:59:59.000Z",
+        "reported_at": "2024-09-03T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2024-09-03T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States (D.C. Circuit)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "proxy",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.65
+      },
+      "sources": [
+        {
+          "url": "https://www.reuters.com/legal/government/us-court-nixes-epa-retroactive-emissions-standards-boilers-2024-09-03/",
+          "source_name": "Reuters",
+          "published_at": "2024-09-03T00:00:00.000Z",
+          "headline": "US court nixes EPA retroactive emissions standards for boilers",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Environmental Protection Agency (EPA)",
+          "U.S. Court of Appeals for the D.C. Circuit"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "A federal appeals court invalidated a portion of an EPA rule",
+            "source_url": "https://www.reuters.com/legal/government/us-court-nixes-epa-retroactive-emissions-standards-boilers-2024-09-03/"
+          },
+          {
+            "quote": "would have applied stricter ‘new source’ emissions standards retroactively",
+            "source_url": "https://www.reuters.com/legal/government/us-court-nixes-epa-retroactive-emissions-standards-boilers-2024-09-03/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.72,
+        "category": 0.85,
+        "location": 0.65,
+        "summary_grounding": 0.7
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "paywalled_or_partial"
+      ],
+      "dedupe": {
+        "cluster_hint": "dc_circuit_epa_boiler_rule_retroactive_new_source_standards",
+        "fingerprint": "dc_circuit_epa_boiler_rule_retroactive_new_source_standards|US|2024-09-03"
+      }
+    }
+  ]
+}

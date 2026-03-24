@@ -1,0 +1,397 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_2021-11_normalize_2026-01-16T130840361Z",
+    "generated_utc": "2026-01-16T13:08:40.361Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "2021-11",
+    "window": {
+      "start_utc": "2021-11-01T00:00:00.000Z",
+      "end_utc": "2021-11-30T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "evt_202111_algoalbay_mvsolin_oilspill",
+      "title": "Fuel oil spill during bunkering in Algoa Bay (MV Solin)",
+      "description": "A fuel oil spill occurred during a bunkering operation in Algoa Bay near Gqeberha (Port Elizabeth) in mid-November 2021. Reports described shoreline contamination including tar balls and oil residue, with oiled seabirds and cleanup activity continuing later in the month.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2021-11-01T00:00:00.000Z",
+        "time_confidence": 0.35,
+        "event_date_utc": null,
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Algoa Bay / Gqeberha (Port Elizabeth) area, Eastern Cape, South Africa",
+        "jurisdiction_level": "site",
+        "admin1": "Eastern Cape",
+        "country": "ZA",
+        "capital_used": null,
+        "lat": -33.9608,
+        "lon": 25.6022,
+        "precision": "neighborhood",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://safety4sea.com/samsa-releases-detained-croatian-flagged-vessel-after-oil-spill/",
+          "source_name": "Safety4Sea",
+          "published_at": "2021-11-01T00:00:00.000Z",
+          "headline": "SAMSA releases detained Croatian-flagged vessel after oil spill",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://blog.samsa.org.za/2021/11/",
+          "source_name": "SAMSA Blog",
+          "published_at": "2021-11-01T00:00:00.000Z",
+          "headline": "SAMSA Blog (November 2021 archive)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "SAMSA"
+        ],
+        "substances": [
+          "fuel oil"
+        ],
+        "ecosystems": [
+          "coastline",
+          "seabirds"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.42,
+        "category": 0.7,
+        "location": 0.55,
+        "summary_grounding": 0.35
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Algoa Bay bunkering oil spill MV Solin Nov 2021",
+        "fingerprint": "fp_202111_algoalbay_mvsolin_oilspill"
+      }
+    },
+    {
+      "event_id": "evt_202111_bc_pnw_atmospheric_river_flooding",
+      "title": "Atmospheric river systems bring extreme rainfall and flooding to southwestern British Columbia and the U.S. Pacific Northwest",
+      "description": "A sequence of atmospheric river storms in November 2021 brought heavy rain and flooding impacts to southwestern British Columbia and parts of the U.S. Pacific Northwest. The reporting described flood threats and impacts in the region during mid-to-late November.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2021-11-12T00:00:00.000Z",
+        "event_end": "2021-11-30T23:59:59.000Z",
+        "reported_at": "2021-11-11T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2021-11-12T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Southwestern British Columbia, Canada (proxy via Victoria)",
+        "jurisdiction_level": "state",
+        "admin1": "British Columbia",
+        "country": "CA",
+        "capital_used": "Victoria",
+        "lat": 48.4284,
+        "lon": -123.3656,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.washingtonpost.com/weather/2021/11/11/atmospheric-river-november-witch-blizzard/",
+          "source_name": "The Washington Post",
+          "published_at": "2021-11-11T00:00:00.000Z",
+          "headline": "Atmospheric river storm triggers major flooding in British Columbia and the Pacific Northwest",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Atmospheric river storm triggers major flooding in British Columbia and the Pacific Northwest",
+            "source_url": "https://www.washingtonpost.com/weather/2021/11/11/atmospheric-river-november-witch-blizzard/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.5,
+        "category": 0.7,
+        "location": 0.55,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "paywalled_or_partial",
+        "location_ambiguous",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "2021-11 atmospheric river flooding BC / Pacific Northwest",
+        "fingerprint": "fp_202111_atmospheric_river_flooding_bc_pnw"
+      }
+    },
+    {
+      "event_id": "evt-20211128-peru-earthquake-m75-amazonas-loreto",
+      "title": "M7.5 earthquake in northern Peru impacts Amazonas/Loreto regions",
+      "description": "A strong earthquake (reported as magnitude 7.5) struck northern Peru on 28 November 2021. Regional authorities and emergency management reported impacts including housing damage and infrastructure effects in the affected areas.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2021-11-28T10:52:13.000Z",
+        "event_end": "2021-11-29T23:59:59.000Z",
+        "reported_at": "2021-11-29T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2021-11-28T10:52:13.000Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Northern Peru (east of Santa María de Nieva district, Condorcanqui province)",
+        "jurisdiction_level": "site",
+        "admin1": null,
+        "country": "PE",
+        "capital_used": null,
+        "lat": -4.45,
+        "lon": -77.83,
+        "precision": "admin1",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.45
+      },
+      "sources": [
+        {
+          "url": "https://www.paho.org/en/natural-hazards-monitoring/natural-hazards-monitoring-29-november-2021",
+          "source_name": "PAHO",
+          "published_at": "2021-11-29T00:00:00.000Z",
+          "headline": "Natural Hazards Monitoring - 29 November 2021",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "PAHO"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "A strong earthquake struck northern Peru on 28 November 2021 (reported as M7.5)",
+            "source_url": "https://www.paho.org/en/natural-hazards-monitoring/natural-hazards-monitoring-29-november-2021"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.52,
+        "category": 0.85,
+        "location": 0.45,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Peru M7.5 earthquake 2021-11-28 northern Peru",
+        "fingerprint": "fp-20211128-peru-earthquake-m75-northern-peru"
+      }
+    },
+    {
+      "event_id": "evt_202111_uk_ne_coast_shellfish_dieoff_investigation_ap_8c71924d",
+      "title": "UK northeast coast shellfish die-off investigation reported to rule out several suspected causes",
+      "description": "An investigation into a mass die-off of crustaceans along England’s northeast coast was reported in November 2021 to have ruled out several proposed causes, including sewage, seismic activity, and underwater cables. The incident continued to affect fisheries and coastal ecosystems in the area.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2021-11-01T00:00:00.000Z",
+        "time_confidence": 0.35,
+        "event_date_utc": null,
+        "event_date_precision": "month"
+      },
+      "location": {
+        "name": "Tees estuary and northeast England coastline, United Kingdom",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "GB",
+        "capital_used": "London",
+        "lat": 51.5074,
+        "lon": -0.1278,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://apnews.com/article/8c71924d70367ef386b2529b062416e8",
+          "source_name": "Associated Press",
+          "published_at": "2021-11-01T00:00:00.000Z",
+          "headline": "UK northeast coast shellfish die-off investigation updates: sewage, seismic activity, and underwater cables ruled out as causes",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [
+          "Tees estuary",
+          "northeast England coastline"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "investigations reported in November 2021 ruled out several proposed causes",
+            "source_url": "https://apnews.com/article/8c71924d70367ef386b2529b062416e8"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.7,
+        "location": 0.6,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "UK northeast England crustacean die-off / Tees estuary 2021-11",
+        "fingerprint": "fp_202111_uk_ne_coast_shellfish_dieoff_teesside_month"
+      }
+    },
+    {
+      "event_id": "2021-11-glasgow-climate-pact-cop26",
+      "title": "Glasgow Climate Pact adopted at COP26",
+      "description": "Countries participating in COP26 adopted the Glasgow Climate Pact in November 2021. The decisions aimed to strengthen global climate action, including elements related to emissions reductions and climate finance.",
+      "category_primary": "policy_regulation",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "2021-11-13T00:00:00.000Z",
+        "event_end": "2021-11-13T23:59:59.000Z",
+        "reported_at": "2021-11-13T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2021-11-13T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Glasgow, Scotland, United Kingdom",
+        "jurisdiction_level": "city",
+        "admin1": "Scotland",
+        "country": "GB",
+        "capital_used": null,
+        "lat": 55.8642,
+        "lon": -4.2518,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.8
+      },
+      "sources": [
+        {
+          "url": "https://unfccc.int/zh/node/307746",
+          "source_name": "UNFCCC",
+          "published_at": "2021-11-13T00:00:00.000Z",
+          "headline": "https://unfccc.int/zh/node/307746",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.europarl.europa.eu/news/en/agenda/briefing/2021-11-22/1/cop26-meps-to-debate-the-glasgow-climate-pact",
+          "source_name": "European Parliament",
+          "published_at": "2021-11-22T00:00:00.000Z",
+          "headline": "COP26: MEPs to debate the Glasgow Climate Pact",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "UNFCCC",
+          "COP26"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "nations adopted the Glasgow Climate Pact in November 2021",
+            "source_url": "https://unfccc.int/zh/node/307746"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.8,
+        "location": 0.8,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "COP26 Glasgow Climate Pact adoption",
+        "fingerprint": "fp_2021-11-glasgow-climate-pact-cop26_glasgow_2021-11-13"
+      }
+    }
+  ]
+}

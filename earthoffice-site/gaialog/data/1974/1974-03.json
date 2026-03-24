@@ -1,0 +1,976 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_1974-03_normalize_2026-01-19T062226417Z",
+    "generated_utc": "2026-01-19T06:22:26.417Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "1974-03",
+    "window": {
+      "start_utc": "1974-03-01T00:00:00.000Z",
+      "end_utc": "1974-03-31T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "evt_19740302_monroe_la_pipeline_fire",
+      "title": "Natural gas transmission pipeline rupture and fire near Monroe, Louisiana burned about 10 acres",
+      "description": "A 30-inch natural gas transmission pipeline reportedly failed inside a casing pipe near Monroe, Louisiana. Escaping gas ignited, burning about 10 acres of forest and damaging soil along the pipeline corridor; no injuries or deaths were reported in the cited summary.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1974-03-02T12:00:00Z",
+        "event_end": "1974-03-02T12:00:00Z",
+        "reported_at": "1974-03-01T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1974-03-02T12:00:00Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Near Monroe, Louisiana, United States",
+        "jurisdiction_level": "site",
+        "admin1": "Louisiana",
+        "country": "US",
+        "capital_used": null,
+        "lat": 32.50931,
+        "lon": -92.1193,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://nepis.epa.gov/Exe/ZyPURL.cgi?Dockey=9101DWB7.TXT",
+          "source_name": "US EPA NEPIS",
+          "published_at": "1974-03-01T00:00:00Z",
+          "headline": "Natural gas transmission pipeline failure and fire near Monroe, Louisiana (summary record)",
+          "byline": null,
+          "accessed_utc": "2026-01-19T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "US Environmental Protection Agency"
+        ],
+        "substances": [
+          "natural gas"
+        ],
+        "ecosystems": [
+          "forest"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "A 30-inch gas transmission pipeline failed inside a casing pipe; released gas ignited, burning about 10 acres of forest.",
+            "source_url": "https://nepis.epa.gov/Exe/ZyPURL.cgi?Dockey=9101DWB7.TXT"
+          },
+          {
+            "quote": "No injuries or deaths were reported.",
+            "source_url": "https://nepis.epa.gov/Exe/ZyPURL.cgi?Dockey=9101DWB7.TXT"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.8,
+        "location": 0.55,
+        "summary_grounding": 0.65
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "natural_gas_pipeline_fire_monroe_la_1974_03_02",
+        "fingerprint": "fp_natural_gas_pipeline_fire_monroe_la_1974-03-02"
+      }
+    },
+    {
+      "event_id": "evt_19740315_farmington_nm_pipeline_ignition",
+      "title": "Natural gas transmission pipeline rupture and ignition near Farmington, New Mexico",
+      "description": "An index page of NTSB pipeline accident reports (hosted by Texas A&M’s National Chemical Safety Program) lists a March 15, 1974 natural gas transmission pipeline failure near Farmington, New Mexico, with ignition reported in the draft. Additional primary report details are not available in the provided source link.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1974-03-15T12:00:00Z",
+        "event_end": "1974-03-15T12:00:00Z",
+        "reported_at": "1975-01-01T00:00:00Z",
+        "time_confidence": 0.3,
+        "event_date_utc": "1974-03-15T12:00:00Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Near Farmington, New Mexico, United States",
+        "jurisdiction_level": "city",
+        "admin1": "New Mexico",
+        "country": "US",
+        "capital_used": null,
+        "lat": 36.7281,
+        "lon": -108.2187,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://ncsp.tamu.edu/reports/NTSB/ntsbPipeReport.htm",
+          "source_name": "Texas A&M National Chemical Safety Program (index)",
+          "published_at": "1975-01-01T00:00:00Z",
+          "headline": "NTSB pipeline accident reports index",
+          "byline": null,
+          "accessed_utc": "2026-01-19T06:17:46.711Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NTSB",
+          "Southern Union Gas Co."
+        ],
+        "substances": [
+          "natural gas"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "listed as a March 15, 1974 pipeline failure investigated by the NTSB",
+            "source_url": "https://ncsp.tamu.edu/reports/NTSB/ntsbPipeReport.htm"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.35,
+        "category": 0.65,
+        "location": 0.55,
+        "summary_grounding": 0.25
+      },
+      "quality_flags": [
+        "secondary_sources_only",
+        "paywalled_or_partial",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "1974 natural gas pipeline failure Farmington New Mexico NTSB index",
+        "fingerprint": "fp_19740315_farmington_nm_pipeline_ignition"
+      }
+    },
+    {
+      "event_id": "evt_197403_au_tc_zoe_flooding_erosion",
+      "title": "Tropical Cyclone Zoe causes flooding and coastal erosion in southeast Queensland and northern New South Wales",
+      "description": "Bureau of Meteorology documentation reports Tropical Cyclone Zoe crossed the coast near Coolangatta and produced extensive flooding in southeast Queensland and northern New South Wales. Impacts described include evacuations in northern NSW towns, landslides affecting rail lines, and severe beach erosion along the Gold Coast.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1974-03-06T12:00:00Z",
+        "event_end": "1974-03-13T12:00:00Z",
+        "reported_at": "1974-03-01T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1974-03-06T12:00:00Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Southeast Queensland and northern New South Wales, Australia",
+        "jurisdiction_level": "state",
+        "admin1": "Queensland / New South Wales",
+        "country": "AU",
+        "capital_used": "Canberra",
+        "lat": -35.2809,
+        "lon": 149.13,
+        "precision": "proxy",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.bom.gov.au/cyclone/history/zoe.shtml",
+          "source_name": "Australian Bureau of Meteorology (BoM)",
+          "published_at": "1974-03-01T00:00:00Z",
+          "headline": "Tropical Cyclone Zoe (1974)",
+          "byline": null,
+          "accessed_utc": "2026-01-19T06:18:14.662Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Australian Bureau of Meteorology"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "coastal beaches"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "crossed the coast at Coolangatta",
+            "source_url": "https://www.bom.gov.au/cyclone/history/zoe.shtml"
+          },
+          {
+            "quote": "severe beach erosion along the Gold Coast",
+            "source_url": "https://www.bom.gov.au/cyclone/history/zoe.shtml"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.75,
+        "location": 0.55,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "BoM cyclone history pages (Australia, March 1974)",
+        "fingerprint": "fp_197403_zoe_au_canberra_range"
+      }
+    },
+    {
+      "event_id": "evt_197403_au_tc_isobel_offshore",
+      "title": "Tropical Cyclone Isobel tracked over the southeast Indian Ocean (off Western Australia)",
+      "description": "Bureau of Meteorology documentation describes Tropical Cyclone Isobel as a compact cyclone over the southeast Indian Ocean. The record indicates it did not cross land and reached an estimated peak intensity around 12–13 March.",
+      "category_primary": "weather_climate",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "1974-03-09T12:00:00Z",
+        "event_end": "1974-03-17T12:00:00Z",
+        "reported_at": "1974-03-01T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1974-03-12T12:00:00Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Western Australia (offshore, southeast Indian Ocean)",
+        "jurisdiction_level": "state",
+        "admin1": "Western Australia",
+        "country": "AU",
+        "capital_used": "Canberra",
+        "lat": -35.2809,
+        "lon": 149.13,
+        "precision": "proxy",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.45
+      },
+      "sources": [
+        {
+          "url": "https://www.bom.gov.au/cyclone/history/isobel74.shtml",
+          "source_name": "Australian Bureau of Meteorology (BoM)",
+          "published_at": "1974-03-01T00:00:00Z",
+          "headline": "Tropical Cyclone Isobel (1974)",
+          "byline": null,
+          "accessed_utc": "2026-01-19T06:18:14.662Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Australian Bureau of Meteorology"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "open ocean"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "did not cross land",
+            "source_url": "https://www.bom.gov.au/cyclone/history/isobel74.shtml"
+          },
+          {
+            "quote": "maximum winds around 125 km/h",
+            "source_url": "https://www.bom.gov.au/cyclone/history/isobel74.shtml"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.75,
+        "location": 0.45,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "BoM cyclone history pages (Australia region, March 1974)",
+        "fingerprint": "fp_197403_isobel_au_canberra_range"
+      }
+    },
+    {
+      "event_id": "evt_197403_au_qld_coast_flooding_week1",
+      "title": "Heavy rains in early March cause flooding and traffic disruption on Queensland’s Central and North Tropical Coast",
+      "description": "Queensland flood-history documentation notes that heavy rains during the first week of March 1974 affected the Central and North Tropical Coast. Reported impacts include flooding and traffic disruption.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1974-03-01T12:00:00Z",
+        "event_end": "1974-03-07T12:00:00Z",
+        "reported_at": "1974-03-01T00:00:00Z",
+        "time_confidence": 0.5,
+        "event_date_utc": "1974-03-01T12:00:00Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Queensland, Australia (Central and North Tropical Coast)",
+        "jurisdiction_level": "state",
+        "admin1": "Queensland",
+        "country": "AU",
+        "capital_used": "Canberra",
+        "lat": -35.2809,
+        "lon": 149.13,
+        "precision": "proxy",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.5
+      },
+      "sources": [
+        {
+          "url": "https://www.bom.gov.au/qld/flood/fld_history/floodsum_1970.shtml",
+          "source_name": "Australian Bureau of Meteorology (BoM)",
+          "published_at": "1974-03-01T00:00:00Z",
+          "headline": "Queensland Flood History (1970s summary)",
+          "byline": null,
+          "accessed_utc": "2026-01-19T06:18:14.662Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Australian Bureau of Meteorology"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "first week of March 1974",
+            "source_url": "https://www.bom.gov.au/qld/flood/fld_history/floodsum_1970.shtml"
+          },
+          {
+            "quote": "flooding and traffic disabilities",
+            "source_url": "https://www.bom.gov.au/qld/flood/fld_history/floodsum_1970.shtml"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.54,
+        "category": 0.7,
+        "location": 0.5,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "BoM Queensland flood history (March 1974)",
+        "fingerprint": "fp_197403_qld_coast_flooding_au_canberra_range"
+      }
+    },
+    {
+      "event_id": "evt_197403_au_tc_jessie_offshore",
+      "title": "Tropical Cyclone Jessie tracked offshore in the Northwestern Australian Region",
+      "description": "Bureau of Meteorology documentation reports Tropical Cyclone Jessie developed and remained over water in the Northwestern Australian Region. The record indicates it had no direct effect on Australia and stayed offshore throughout its lifetime.",
+      "category_primary": "weather_climate",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "1974-03-16T12:00:00Z",
+        "event_end": "1974-03-25T12:00:00Z",
+        "reported_at": "1974-03-01T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1974-03-16T12:00:00Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Australia (Northwestern Australian Region, offshore)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "AU",
+        "capital_used": "Canberra",
+        "lat": -35.2809,
+        "lon": 149.13,
+        "precision": "proxy",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.5
+      },
+      "sources": [
+        {
+          "url": "https://www.bom.gov.au/cyclone/history/jessie.shtml",
+          "source_name": "Australian Bureau of Meteorology (BoM)",
+          "published_at": "1974-03-01T00:00:00Z",
+          "headline": "Tropical Cyclone Jessie",
+          "byline": null,
+          "accessed_utc": "2026-01-19T06:18:14.662Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Australian Bureau of Meteorology"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "open ocean"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "had no direct effect on Australia",
+            "source_url": "https://www.bom.gov.au/cyclone/history/jessie.shtml"
+          },
+          {
+            "quote": "remained offshore throughout",
+            "source_url": "https://www.bom.gov.au/cyclone/history/jessie.shtml"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.56,
+        "category": 0.75,
+        "location": 0.5,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "BoM cyclone history pages (NW Australian Region, March 1974)",
+        "fingerprint": "fp_197403_jessie_au_canberra_range"
+      }
+    },
+    {
+      "event_id": "evt_197403_au_tc_jenny_limited_impacts",
+      "title": "Tropical Cyclone Jenny redeveloped in the Northwestern Australian Region (no damage reported)",
+      "description": "Bureau of Meteorology documentation notes Tropical Cyclone Jenny redeveloped and maintained tropical cyclone characteristics for several days in late March 1974. The record indicates few nearby reports and no damage reported.",
+      "category_primary": "weather_climate",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "1974-03-23T12:00:00Z",
+        "event_end": "1974-03-31T12:00:00Z",
+        "reported_at": "1974-03-01T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1974-03-25T12:00:00Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Australia (Northwestern Australian Region)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "AU",
+        "capital_used": "Canberra",
+        "lat": -35.2809,
+        "lon": 149.13,
+        "precision": "proxy",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.5
+      },
+      "sources": [
+        {
+          "url": "https://www.bom.gov.au/cyclone/history/jenny.shtml",
+          "source_name": "Australian Bureau of Meteorology (BoM)",
+          "published_at": "1974-03-01T00:00:00Z",
+          "headline": "Tropical Cyclone Jenny",
+          "byline": null,
+          "accessed_utc": "2026-01-19T06:18:14.662Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Australian Bureau of Meteorology"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "open ocean"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "few nearby reports",
+            "source_url": "https://www.bom.gov.au/cyclone/history/jenny.shtml"
+          },
+          {
+            "quote": "no damage reported",
+            "source_url": "https://www.bom.gov.au/cyclone/history/jenny.shtml"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.56,
+        "category": 0.75,
+        "location": 0.5,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "BoM cyclone history pages (NW Australian Region, March 1974)",
+        "fingerprint": "fp_197403_jenny_au_canberra_range"
+      }
+    },
+    {
+      "event_id": "geol-us-ca-alpine-19740302",
+      "title": "Earthquake near Alpine, California (max intensity IV reported)",
+      "description": "USGS Circular 723-A (Earthquakes in the United States, January–March 1974) lists a March 2, 1974 earthquake near Alpine, California. The circular reports a maximum intensity of IV (felt).",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1974-03-02T12:00:00Z",
+        "event_end": "1974-03-02T12:00:00Z",
+        "reported_at": "1976-01-01T00:00:00Z",
+        "time_confidence": 0.4,
+        "event_date_utc": "1974-03-02T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Near Alpine, California, United States",
+        "jurisdiction_level": "site",
+        "admin1": "California",
+        "country": "US",
+        "capital_used": null,
+        "lat": 32.835,
+        "lon": -116.766,
+        "precision": "neighborhood",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.35
+      },
+      "sources": [
+        {
+          "url": "https://pubs.usgs.gov/circ/1976/0723a/report.pdf",
+          "source_name": "USGS",
+          "published_at": "1976-01-01T00:00:00Z",
+          "headline": "Earthquakes in the United States, January–March 1974 (USGS Circular 723-A)",
+          "byline": null,
+          "accessed_utc": "2026-01-19T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Geological Survey (USGS)"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Earthquakes in the United States, January–March 1974 (Circular 723-A).",
+            "source_url": "https://pubs.usgs.gov/circ/1976/0723a/report.pdf"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.85,
+        "location": 0.35,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "paywalled_or_partial"
+      ],
+      "dedupe": {
+        "cluster_hint": "USGS Circular 723-A March 1974 US earthquakes",
+        "fingerprint": "geological|near-alpine-california-us|1974-03-02"
+      }
+    },
+    {
+      "event_id": "geol-us-ca-los-angeles-19740309",
+      "title": "Earthquake sequence in the Los Angeles area (max intensity V reported)",
+      "description": "USGS Circular 723-A summarizes multiple events on March 9, 1974 in the Los Angeles area. It describes a larger shock (listed at 00:54 UTC) with maximum reported intensity V and additional nearby shocks the same day consistent with a sequence.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1974-03-09T12:00:00Z",
+        "event_end": "1974-03-09T12:00:00Z",
+        "reported_at": "1976-01-01T00:00:00Z",
+        "time_confidence": 0.35,
+        "event_date_utc": "1974-03-09T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Los Angeles area, California, United States",
+        "jurisdiction_level": "city",
+        "admin1": "California",
+        "country": "US",
+        "capital_used": null,
+        "lat": 34.0522,
+        "lon": -118.2437,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.4
+      },
+      "sources": [
+        {
+          "url": "https://pubs.usgs.gov/circ/1976/0723a/report.pdf",
+          "source_name": "USGS",
+          "published_at": "1976-01-01T00:00:00Z",
+          "headline": "Earthquakes in the United States, January–March 1974 (USGS Circular 723-A)",
+          "byline": null,
+          "accessed_utc": "2026-01-19T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Geological Survey (USGS)"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Earthquakes in the United States, January–March 1974 (Circular 723-A).",
+            "source_url": "https://pubs.usgs.gov/circ/1976/0723a/report.pdf"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.85,
+        "location": 0.4,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "paywalled_or_partial"
+      ],
+      "dedupe": {
+        "cluster_hint": "USGS Circular 723-A March 1974 US earthquakes",
+        "fingerprint": "geological|los-angeles-area-california-us|1974-03-09"
+      }
+    },
+    {
+      "event_id": "geol-us-mo-st-louis-19740327",
+      "title": "Earthquake near St. Louis, Missouri (felt event listed)",
+      "description": "USGS Circular 723-A includes a March 27, 1974 earthquake located near the St. Louis area in Missouri. The event is presented among the felt earthquakes summarized for January–March 1974.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1974-03-27T12:00:00Z",
+        "event_end": "1974-03-27T12:00:00Z",
+        "reported_at": "1976-01-01T00:00:00Z",
+        "time_confidence": 0.35,
+        "event_date_utc": "1974-03-27T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "St. Louis area, Missouri, United States",
+        "jurisdiction_level": "city",
+        "admin1": "Missouri",
+        "country": "US",
+        "capital_used": null,
+        "lat": 38.627,
+        "lon": -90.1994,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.35
+      },
+      "sources": [
+        {
+          "url": "https://pubs.usgs.gov/circ/1976/0723a/report.pdf",
+          "source_name": "USGS",
+          "published_at": "1976-01-01T00:00:00Z",
+          "headline": "Earthquakes in the United States, January–March 1974 (USGS Circular 723-A)",
+          "byline": null,
+          "accessed_utc": "2026-01-19T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Geological Survey (USGS)"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Earthquakes in the United States, January–March 1974 (Circular 723-A).",
+            "source_url": "https://pubs.usgs.gov/circ/1976/0723a/report.pdf"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.5,
+        "category": 0.85,
+        "location": 0.35,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "paywalled_or_partial"
+      ],
+      "dedupe": {
+        "cluster_hint": "USGS Circular 723-A March 1974 US earthquakes",
+        "fingerprint": "geological|st-louis-area-missouri-us|1974-03-27"
+      }
+    },
+    {
+      "event_id": "geol-us-yellowstone-norris-19740324",
+      "title": "Earthquake in the Yellowstone region near Norris Junction (listed)",
+      "description": "USGS Circular 723-A lists a March 24, 1974 earthquake in the Yellowstone region, referenced near the Norris Junction area. The listing appears in the January–March 1974 U.S. earthquake summary table.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1974-03-24T12:00:00Z",
+        "event_end": "1974-03-24T12:00:00Z",
+        "reported_at": "1976-01-01T00:00:00Z",
+        "time_confidence": 0.35,
+        "event_date_utc": "1974-03-24T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Yellowstone region (near Norris Junction), United States",
+        "jurisdiction_level": "site",
+        "admin1": null,
+        "country": "US",
+        "capital_used": null,
+        "lat": 44.7272,
+        "lon": -110.7044,
+        "precision": "neighborhood",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.35
+      },
+      "sources": [
+        {
+          "url": "https://pubs.usgs.gov/circ/1976/0723a/report.pdf",
+          "source_name": "USGS",
+          "published_at": "1976-01-01T00:00:00Z",
+          "headline": "Earthquakes in the United States, January–March 1974 (USGS Circular 723-A)",
+          "byline": null,
+          "accessed_utc": "2026-01-19T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Geological Survey (USGS)"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Earthquakes in the United States, January–March 1974 (Circular 723-A).",
+            "source_url": "https://pubs.usgs.gov/circ/1976/0723a/report.pdf"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.5,
+        "category": 0.85,
+        "location": 0.35,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "paywalled_or_partial"
+      ],
+      "dedupe": {
+        "cluster_hint": "USGS Circular 723-A March 1974 US earthquakes",
+        "fingerprint": "geological|yellowstone-region-us|1974-03-24"
+      }
+    },
+    {
+      "event_id": "geol-us-nv-eureka-19740318",
+      "title": "Earthquake sequence in central Nevada near Eureka (two events listed)",
+      "description": "USGS Circular 723-A lists two earthquakes on March 18, 1974 in central Nevada near the Eureka area, with closely matching coordinates. The proximity and same-day occurrence are consistent with a local sequence in the circular’s summary table.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1974-03-18T12:00:00Z",
+        "event_end": "1974-03-18T12:00:00Z",
+        "reported_at": "1976-01-01T00:00:00Z",
+        "time_confidence": 0.35,
+        "event_date_utc": "1974-03-18T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Central Nevada (near Eureka), United States",
+        "jurisdiction_level": "site",
+        "admin1": "Nevada",
+        "country": "US",
+        "capital_used": null,
+        "lat": 40,
+        "lon": -116.775,
+        "precision": "neighborhood",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.3
+      },
+      "sources": [
+        {
+          "url": "https://pubs.usgs.gov/circ/1976/0723a/report.pdf",
+          "source_name": "USGS",
+          "published_at": "1976-01-01T00:00:00Z",
+          "headline": "Earthquakes in the United States, January–March 1974 (USGS Circular 723-A)",
+          "byline": null,
+          "accessed_utc": "2026-01-19T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Geological Survey (USGS)"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Earthquakes in the United States, January–March 1974 (Circular 723-A).",
+            "source_url": "https://pubs.usgs.gov/circ/1976/0723a/report.pdf"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.5,
+        "category": 0.85,
+        "location": 0.3,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "paywalled_or_partial"
+      ],
+      "dedupe": {
+        "cluster_hint": "USGS Circular 723-A March 1974 US earthquakes",
+        "fingerprint": "geological|central-nevada-near-eureka-us|1974-03-18"
+      }
+    },
+    {
+      "event_id": "ev_19740304_us_epa_steam_electric_effluent_guidelines_proposed",
+      "title": "U.S. EPA proposes effluent limits for steam electric power generating category (40 CFR Part 423)",
+      "description": "The U.S. Environmental Protection Agency published a proposed rule in the Federal Register to establish effluent limitations guidelines for existing sources and standards for new sources for the steam electric power generating point source category under the Federal Water Pollution Control Act Amendments of 1972.",
+      "category_primary": "policy_regulation",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "1974-03-04T12:00:00Z",
+        "event_end": "1974-03-04T12:00:00Z",
+        "reported_at": "1974-03-04T12:00:00Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "1974-03-04T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://19january2021snapshot.epa.gov/sites/static/files/2015-07/documents/steam-electric_prop-rule_39-fr-8294_030474.pdf",
+          "source_name": "U.S. Environmental Protection Agency (EPA)",
+          "published_at": "1974-03-04T12:00:00Z",
+          "headline": "Steam Electric Power Generating Point Source Category; Proposed Effluent Limitations Guidelines and Standards (39 FR 8294)",
+          "byline": null,
+          "accessed_utc": "2026-01-19T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Environmental Protection Agency (EPA)"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "proposing effluent limitations guidelines for existing sources and standards of performance...for the steam electric power generating point source category",
+            "source_url": "https://19january2021snapshot.epa.gov/sites/static/files/2015-07/documents/steam-electric_prop-rule_39-fr-8294_030474.pdf"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.72,
+        "category": 0.8,
+        "location": 0.75,
+        "summary_grounding": 0.65
+      },
+      "quality_flags": [
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "EPA steam electric ELG proposed rule 39 FR 8294",
+        "fingerprint": "fp_19740304_us_washingtondc_epa_steam_electric_elg_proposed"
+      }
+    }
+  ]
+}

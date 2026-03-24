@@ -1,0 +1,627 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_2019-05_normalize_2026-01-16T064750227Z",
+    "generated_utc": "2026-01-16T06:47:50.227Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "2019-05",
+    "window": {
+      "start_utc": "2019-05-01T00:00:00.000Z",
+      "end_utc": "2019-05-31T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "2019-05-05_us_plains_south_storms_flooding",
+      "title": "Severe storms and flash flooding across U.S. Plains and South (May 5–12, 2019)",
+      "description": "A slow-moving frontal system brought severe thunderstorms and flash flooding across parts of the U.S. Plains and South. The report described very heavy rainfall totals in some areas and multiple flood impacts during May 5–12, 2019.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2019-05-05T00:00:00.000Z",
+        "event_end": "2019-05-12T23:59:59.000Z",
+        "reported_at": "2019-05-05T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": null,
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "United States (Plains and South)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.5
+      },
+      "sources": [
+        {
+          "url": "https://weather.com/storms/severe/news/2019-05-05-severe-thunderstorms-flooding-rainfall-central-states-early-may",
+          "source_name": "The Weather Channel",
+          "published_at": "2019-05-05T00:00:00.000Z",
+          "headline": "2019-05-05 Severe Thunderstorms, Flooding, Rainfall Central States Early May",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "National Weather Service",
+          "The Weather Channel"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "slow-moving frontal system triggered widespread severe storms and flash flooding",
+            "source_url": "https://weather.com/storms/severe/news/2019-05-05-severe-thunderstorms-flooding-rainfall-central-states-early-may"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.58,
+        "category": 0.75,
+        "location": 0.5,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "US Plains/South storms and flooding May 2019",
+        "fingerprint": "us_plains_south_storms_flooding_2019-05-05_2019-05-12"
+      }
+    },
+    {
+      "event_id": "2019-05-11_southeast_louisiana_flash_flood_warnings",
+      "title": "Life-threatening flash flood warnings after heavy rain in southeastern Louisiana (May 11–12, 2019)",
+      "description": "Heavy rainfall over May 11–12 prompted the National Weather Service office in New Orleans to warn of life-threatening flash flooding in southeastern Louisiana. The report also noted regional impacts such as road closures and power outages.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2019-05-11T00:00:00.000Z",
+        "event_end": "2019-05-12T23:59:59.000Z",
+        "reported_at": "2019-05-12T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": null,
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Louisiana, United States",
+        "jurisdiction_level": "state",
+        "admin1": "Louisiana",
+        "country": "US",
+        "capital_used": "Baton Rouge",
+        "lat": 30.4515,
+        "lon": -91.1871,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.axios.com/2019/05/12/louisiana-heavy-rain-life-threatening-flood-risk",
+          "source_name": "Axios",
+          "published_at": "2019-05-12T00:00:00.000Z",
+          "headline": "louisiana heavy rain life-threatening flood risk",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "National Weather Service"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "warn of life-threatening flash flooding",
+            "source_url": "https://www.axios.com/2019/05/12/louisiana-heavy-rain-life-threatening-flood-risk"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.75,
+        "location": 0.6,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Southeast Louisiana flash flooding warnings May 2019",
+        "fingerprint": "louisiana_flash_flood_warnings_2019-05-11_2019-05-12"
+      }
+    },
+    {
+      "event_id": "evt_20190526_peru_eq_us60003sc0",
+      "title": "Strong earthquake reported in Peru (May 26, 2019)",
+      "description": "Sources reported a strong earthquake occurring in Peru on May 26, 2019. Reports indicated it was widely felt and prompted news coverage about impacts, though specific consequences vary by report.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2019-05-26T07:41:14.000Z",
+        "event_end": null,
+        "reported_at": "2019-05-26T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2019-05-26T07:41:14.000Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Peru",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "PE",
+        "capital_used": "Lima",
+        "lat": -12.0464,
+        "lon": -77.0428,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us60003sc0",
+          "source_name": "USGS Earthquake Hazards Program",
+          "published_at": "2019-05-26T00:00:00Z",
+          "headline": "USGS event page: us60003sc0",
+          "byline": null,
+          "accessed_utc": "2019-05-31T23:59:59.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.bbc.com/news/world-latin-america-48419771",
+          "source_name": "BBC News",
+          "published_at": "2019-05-26T00:00:00Z",
+          "headline": "BBC report on Peru earthquake",
+          "byline": null,
+          "accessed_utc": "2019-05-31T23:59:59.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "USGS",
+          "BBC"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Event page us60003sc0 (earthquake details).",
+            "source_url": "https://earthquake.usgs.gov/earthquakes/eventpage/us60003sc0"
+          },
+          {
+            "quote": "BBC report covering the earthquake in Peru.",
+            "source_url": "https://www.bbc.com/news/world-latin-america-48419771"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.85,
+        "location": 0.6,
+        "summary_grounding": 0.35
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Peru earthquake May 2019",
+        "fingerprint": "peru-earthquake-2019-05-26-pe"
+      }
+    },
+    {
+      "event_id": "evt_20190524_mount_agung_bali_eruption",
+      "title": "Mount Agung eruption disrupts flights near Bali (May 24–25, 2019)",
+      "description": "BBC reported that Mount Agung in Bali erupted in late May 2019, sending ash into the air. The ash cloud led to temporary disruption of some flights, with operations later resuming.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2019-05-24T00:00:00.000Z",
+        "event_end": "2019-05-25T23:59:59.000Z",
+        "reported_at": "2019-05-24T00:00:00Z",
+        "time_confidence": 0.5,
+        "event_date_utc": null,
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Bali, Indonesia (Mount Agung)",
+        "jurisdiction_level": "site",
+        "admin1": "Bali",
+        "country": "ID",
+        "capital_used": null,
+        "lat": -8.342,
+        "lon": 115.508,
+        "precision": "exact",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.bbc.com/news/world-asia-48397523",
+          "source_name": "BBC News",
+          "published_at": "2019-05-24T00:00:00Z",
+          "headline": "BBC report on Mount Agung eruption and flight disruption",
+          "byline": null,
+          "accessed_utc": "2019-05-31T23:59:59.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "BBC"
+        ],
+        "substances": [
+          "volcanic ash"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "BBC reported Mount Agung erupted, producing ash and affecting flights.",
+            "source_url": "https://www.bbc.com/news/world-asia-48397523"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.85,
+        "location": 0.6,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Mount Agung eruption May 2019",
+        "fingerprint": "mount-agung-eruption-2019-05-24-bali-id"
+      }
+    },
+    {
+      "event_id": "2019-05-CA-AB-high-level-chuckegg-creek-wildfire-20190519",
+      "title": "Chuckegg Creek wildfire threatened High Level, Alberta; evacuations ordered (May 19–20, 2019)",
+      "description": "The Chuckegg Creek wildfire in northern Alberta expanded and threatened the town of High Level, leading to evacuation orders and emergency actions around May 19–20, 2019. The event reflects rapid fire growth and risk to a populated area.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2019-05-19T00:00:00.000Z",
+        "event_end": "2019-05-20T23:59:59.000Z",
+        "reported_at": "2019-05-21T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2019-05-19T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "High Level, Alberta, Canada",
+        "jurisdiction_level": "city",
+        "admin1": "Alberta",
+        "country": "CA",
+        "capital_used": null,
+        "lat": 58.5167,
+        "lon": -117.1361,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://earthobservatory.nasa.gov/images/145086/wildfires-threaten-northern-alberta",
+          "source_name": "NASA Earth Observatory",
+          "published_at": "2019-05-21T00:00:00Z",
+          "headline": "Wildfires Threaten Northern Alberta",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NASA Earth Observatory"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "The Chuckegg Creek Fire has approached within a few kilometers of the town of High Level.",
+            "source_url": "https://earthobservatory.nasa.gov/images/145086/wildfires-threaten-northern-alberta"
+          },
+          {
+            "quote": "Authorities have issued evacuation orders and emergency declarations as the fire grew.",
+            "source_url": "https://earthobservatory.nasa.gov/images/145086/wildfires-threaten-northern-alberta"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.56,
+        "category": 0.8,
+        "location": 0.55,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Chuckegg Creek / High Level wildfire May 2019",
+        "fingerprint": "fires|chuckegg creek wildfire threatened high level alberta evacuations ordered may 19 20 2019|high level alberta ca|2019-05"
+      }
+    },
+    {
+      "event_id": "2019-05-CA-AB-yellowhead-edson-marlboro-wildfire-alert-20190519",
+      "title": "Wildfire west of Edson, Alberta prompted evacuations and Highway 16 disruption (May 19–21, 2019)",
+      "description": "An Alberta Emergency Alert reported a wildfire about 22 km west of Edson near Marlboro/Highway 16, prompting evacuations and transportation disruption. The alert was later cancelled on May 21, 2019.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2019-05-19T19:00:46.000Z",
+        "event_end": "2019-05-21T09:42:00.000Z",
+        "reported_at": "2019-05-19T19:00:46.000Z",
+        "time_confidence": 0.85,
+        "event_date_utc": "2019-05-19T19:00:46.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Yellowhead County (west of Edson near Marlboro), Alberta, Canada",
+        "jurisdiction_level": "state",
+        "admin1": "Alberta",
+        "country": "CA",
+        "capital_used": "Edmonton",
+        "lat": 53.5461,
+        "lon": -113.4938,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.65
+      },
+      "sources": [
+        {
+          "url": "https://www.alberta.ca/aea/cap/2019/05/19/2019-05-19T19_00_46-06_00%3DRMUN-482%40www.emergencyalert.alberta.ca%3DCA-AB-AEA1-5733.htm",
+          "source_name": "Alberta Emergency Alert (Government of Alberta)",
+          "published_at": "2019-05-19T19:00:46.000Z",
+          "headline": "Alberta Emergency Alert: wildfire west of Edson near Marlboro (Highway 16)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Government of Alberta",
+          "Alberta Emergency Alert"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "There is a wildfire approximately 22 km west of Edson... evacuate immediately.",
+            "source_url": "https://www.alberta.ca/aea/cap/2019/05/19/2019-05-19T19_00_46-06_00%3DRMUN-482%40www.emergencyalert.alberta.ca%3DCA-AB-AEA1-5733.htm"
+          },
+          {
+            "quote": "Highway 16 is impacted... the alert was cancelled.",
+            "source_url": "https://www.alberta.ca/aea/cap/2019/05/19/2019-05-19T19_00_46-06_00%3DRMUN-482%40www.emergencyalert.alberta.ca%3DCA-AB-AEA1-5733.htm"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.72,
+        "category": 0.85,
+        "location": 0.65,
+        "summary_grounding": 0.7
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Alberta Emergency Alert wildfire west of Edson May 2019",
+        "fingerprint": "fires|wildfire west of edson alberta prompted evacuations and highway 16 disruption may 19 21 2019|yellowhead county west of edson near marlboro alberta ca|2019-05"
+      }
+    },
+    {
+      "event_id": "20190506-ipbes-global-assessment-paris",
+      "title": "IPBES global assessment warns up to 1 million species threatened with extinction",
+      "description": "In early May 2019, the UN-backed Intergovernmental Science-Policy Platform on Biodiversity and Ecosystem Services (IPBES) released its Global Assessment and Summary for Policymakers. The report warned that up to one million species are at risk of extinction and called for transformational change to address key drivers including land-use change, overexploitation, climate change, pollution, and invasive species.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2019-05-06T00:00:00.000Z",
+        "event_end": "2019-05-06T23:59:59.000Z",
+        "reported_at": "2019-05-06T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2019-05-06T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Paris, France (assessment release location)",
+        "jurisdiction_level": "city",
+        "admin1": null,
+        "country": "FR",
+        "capital_used": null,
+        "lat": 48.8566,
+        "lon": 2.3522,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.65
+      },
+      "sources": [
+        {
+          "url": "https://www.nationalgeographic.com/environment/2019/05/ipbes-un-biodiversity-report-warns-one-million-species-at-risk/",
+          "source_name": "National Geographic",
+          "published_at": "2019-05-06T00:00:00.000Z",
+          "headline": "IPBES UN biodiversity report warns one million species at risk",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.axios.com/2019/05/06/earth-faces-accelerating-extinction-crisis-global-report",
+          "source_name": "Axios",
+          "published_at": "2019-05-06T00:00:00.000Z",
+          "headline": "Earth faces “accelerating extinction crisis,” global report warns",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://time.com/5584017/species-extinction-one-million/",
+          "source_name": "Time",
+          "published_at": "2019-05-06T00:00:00.000Z",
+          "headline": "Up to One Million Species Face Extinction, U.N.-Backed Report Warns",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "IPBES"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.8,
+        "location": 0.65,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "paywalled_or_partial",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "IPBES Global Assessment May 2019",
+        "fingerprint": "ipbes_global_assessment|paris_fr|2019-05-06"
+      }
+    },
+    {
+      "event_id": "evt_20190501_maine_styrofoam_ban",
+      "title": "Maine enacts ban on polystyrene (Styrofoam) food containers",
+      "description": "Maine enacted legislation to ban polystyrene (Styrofoam) food containers, aiming to reduce persistent plastic pollution. Reporting described it as the first statewide Styrofoam food-container ban in the United States.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2019-05-01T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2019-05-01T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Maine, United States",
+        "jurisdiction_level": "state",
+        "admin1": "Maine",
+        "country": "US",
+        "capital_used": "Augusta",
+        "lat": 44.3106,
+        "lon": -69.7795,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.85
+      },
+      "sources": [
+        {
+          "url": "https://www.axios.com/2019/05/01/maine-first-state-ban-styrofoam",
+          "source_name": "Axios",
+          "published_at": "2019-05-01T00:00:00Z",
+          "headline": "Maine becomes first state to ban Styrofoam food containers",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [
+          "polystyrene",
+          "Styrofoam"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Maine becomes first state to ban Styrofoam food containers",
+            "source_url": "https://www.axios.com/2019/05/01/maine-first-state-ban-styrofoam"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.68,
+        "category": 0.8,
+        "location": 0.85,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "paywalled_or_partial"
+      ],
+      "dedupe": {
+        "cluster_hint": "Maine Styrofoam food container ban May 2019",
+        "fingerprint": "fp_evt_20190501_maine_styrofoam_ban_maine_us_2019-05-01"
+      }
+    }
+  ]
+}

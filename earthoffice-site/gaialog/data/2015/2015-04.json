@@ -1,0 +1,842 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_2015-04_normalize_2026-01-16T053214308Z",
+    "generated_utc": "2026-01-16T05:32:14.308Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "2015-04",
+    "window": {
+      "start_utc": "2015-04-01T00:00:00.000Z",
+      "end_utc": "2015-04-30T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "evt_20150406_gulei_tenglong_px_fire",
+      "title": "Oil leak at Tenglong Aromatic Hydrocarbon PX plant triggers explosions and tank fires on Gulei Peninsula",
+      "description": "An oil leak at Tenglong Aromatic Hydrocarbon’s paraxylene/xylene facility on the Gulei Peninsula in Zhangzhou, Fujian, led to explosions and fires involving multiple storage tanks. Authorities reported emergency response actions including containment efforts and environmental monitoring of surrounding air and water, and evacuations/relocation in nearby areas.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2015-04-06T10:56:00.000Z",
+        "event_end": "2015-04-08T23:59:59.000Z",
+        "reported_at": "2015-04-07T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2015-04-06T10:56:00.000Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Gulei Peninsula, Zhangzhou, Fujian, China",
+        "jurisdiction_level": "site",
+        "admin1": "Fujian",
+        "country": "CN",
+        "capital_used": null,
+        "lat": 24.29,
+        "lon": 117.71,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.45
+      },
+      "sources": [
+        {
+          "url": "https://www.chinadaily.com.cn/china/2015-04/07/content_20016089.htm",
+          "source_name": "China Daily",
+          "published_at": "2015-04-07T00:00:00.000Z",
+          "headline": "content_20016089",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.chinadaily.com.cn/china/2015-04/08/content_20025617.htm",
+          "source_name": "China Daily",
+          "published_at": "2015-04-08T00:00:00.000Z",
+          "headline": "content_20025617",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.dw.com/en/fire-at-china-chemical-factory-under-control/a-18365916",
+          "source_name": "DW",
+          "published_at": "2015-04-07T00:00:00.000Z",
+          "headline": "Fire at China chemical factory under control",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Tenglong Aromatic Hydrocarbon"
+        ],
+        "substances": [
+          "paraxylene",
+          "xylene"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "An oil leak triggered an explosion and fire at a paraxylene plant",
+            "source_url": "https://www.chinadaily.com.cn/china/2015-04/07/content_20016089.htm"
+          },
+          {
+            "quote": "fire involved storage tanks and prompted evacuations",
+            "source_url": "https://www.dw.com/en/fire-at-china-chemical-factory-under-control/a-18365916"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.56,
+        "category": 0.7,
+        "location": 0.45,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "needs_dedupe_check",
+        "location_ambiguous",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "2015-04 Gulei Peninsula Tenglong PX plant explosions/fires",
+        "fingerprint": "fp_201504_gulei_tenglong_px_fire_01"
+      }
+    },
+    {
+      "event_id": "evt_20150408_gulei_tenglong_reignite",
+      "title": "Additional storage tank fire and reported explosion during ongoing response at Gulei chemical plant site",
+      "description": "Reports said that during the ongoing response after the April 6 incident at the Gulei Peninsula industrial site, a storage tank caught fire and an explosion was reported. Coverage described continued emergency operations and environmental monitoring around the facility.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2015-04-08T06:09:00.000Z",
+        "event_end": "2015-04-08T23:59:59.000Z",
+        "reported_at": "2015-04-08T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2015-04-08T06:09:00.000Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Gulei Peninsula, Zhangzhou, Fujian, China",
+        "jurisdiction_level": "site",
+        "admin1": "Fujian",
+        "country": "CN",
+        "capital_used": null,
+        "lat": 24.29,
+        "lon": 117.71,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.4
+      },
+      "sources": [
+        {
+          "url": "https://en.people.cn/n/2015/0408/c90882-8875382.html",
+          "source_name": "People.cn",
+          "published_at": "2015-04-08T00:00:00.000Z",
+          "headline": "c90882-8875382",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://en.people.cn/n/2015/0408/c90882-8875432-9.html",
+          "source_name": "People.cn",
+          "published_at": "2015-04-08T00:00:00.000Z",
+          "headline": "c90882-8875432-9",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.ecns.cn/2015/04-13/161461.shtml",
+          "source_name": "ECNS",
+          "published_at": "2015-04-13T00:00:00.000Z",
+          "headline": "161461",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Tenglong Aromatic Hydrocarbon"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "a storage tank caught fire and exploded",
+            "source_url": "https://en.people.cn/n/2015/0408/c90882-8875382.html"
+          },
+          {
+            "quote": "environmental monitoring continued around the site",
+            "source_url": "https://www.ecns.cn/2015/04-13/161461.shtml"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.5,
+        "category": 0.65,
+        "location": 0.4,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "needs_dedupe_check",
+        "location_ambiguous",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "2015-04 Gulei Peninsula Tenglong PX plant explosions/fires",
+        "fingerprint": "fp_201504_gulei_tenglong_px_fire_02"
+      }
+    },
+    {
+      "event_id": "evt_201504_typhoon_maysak_micronesia_phl",
+      "title": "Super Typhoon Maysak impacts Micronesia and later crosses Luzon (Philippines)",
+      "description": "Super Typhoon Maysak affected the Federated States of Micronesia in early April 2015 and later crossed Luzon in the Philippines around April 5 before weakening over the South China Sea.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2015-04-01T00:00:00.000Z",
+        "event_end": "2015-04-06T23:59:59.000Z",
+        "reported_at": "2015-04-01T00:00:00.000Z",
+        "time_confidence": 0.55,
+        "event_date_utc": null,
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Manila, Philippines (proxy for Luzon crossing referenced)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "PH",
+        "capital_used": "Manila",
+        "lat": 14.5995,
+        "lon": 120.9842,
+        "precision": "proxy",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.5
+      },
+      "sources": [
+        {
+          "url": "https://www.hko.gov.hk/en/informtc/tc2015/tc1504.htm",
+          "source_name": "Hong Kong Observatory",
+          "published_at": "2015-04-01T00:00:00.000Z",
+          "headline": "Information on Tropical Cyclones in 2015 (April)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Hong Kong Observatory"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Information on Tropical Cyclones in 2015 (April)",
+            "source_url": "https://www.hko.gov.hk/en/informtc/tc2015/tc1504.htm"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.85,
+        "location": 0.5,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "typhoon_maysak_2015",
+        "fingerprint": "typhoon_maysak|PH(manila_proxy)|2015-04-01_2015-04-06"
+      }
+    },
+    {
+      "event_id": "evt_201504_global_warm_april_reported",
+      "title": "April 2015 described as among the warmest Aprils in post-month reporting",
+      "description": "A post-month news report described April 2015 as exceptionally warm in global temperature records and highlighted notable regional heat anomalies.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2015-04-01T00:00:00.000Z",
+        "event_end": "2015-04-30T23:59:59.000Z",
+        "reported_at": "2015-04-01T00:00:00.000Z",
+        "time_confidence": 0.35,
+        "event_date_utc": null,
+        "event_date_precision": "month"
+      },
+      "location": {
+        "name": "Global",
+        "jurisdiction_level": "global_proxy",
+        "admin1": null,
+        "country": null,
+        "capital_used": null,
+        "lat": 0,
+        "lon": 0,
+        "precision": "proxy",
+        "location_basis": "institution_proxy",
+        "location_confidence": 0.4
+      },
+      "sources": [
+        {
+          "url": "https://weather.com/news/climate/news/earth-warmest-january-april-2015",
+          "source_name": "The Weather Channel",
+          "published_at": "2015-04-01T00:00:00.000Z",
+          "headline": "earth-warmest-january-april-2015",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "The Weather Channel"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "earth-warmest-january-april-2015",
+            "source_url": "https://weather.com/news/climate/news/earth-warmest-january-april-2015"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.4,
+        "category": 0.8,
+        "location": 0.4,
+        "summary_grounding": 0.4
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only",
+        "possible_opinion_or_advocacy",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "global_april_2015_temperature_ranking",
+        "fingerprint": "april_2015_warm_ranking|GLOBAL|2015-04"
+      }
+    },
+    {
+      "event_id": "2015-04-geological-nepal-gorkha-earthquake",
+      "title": "Nepal: Magnitude 7.8 Gorkha earthquake triggers widespread damage and Everest Base Camp avalanche",
+      "description": "A magnitude 7.8 earthquake struck Nepal on April 25, 2015, causing severe ground shaking, widespread damage, and aftershocks. The earthquake also triggered avalanches and landslides, including an avalanche at Everest Base Camp.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2015-04-25T06:11:26.000Z",
+        "event_end": "2015-04-25T23:59:59.000Z",
+        "reported_at": "2015-04-25T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2015-04-25T06:11:26.000Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Nepal",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "NP",
+        "capital_used": "Kathmandu",
+        "lat": 27.7172,
+        "lon": 85.324,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.75
+      },
+      "sources": [
+        {
+          "url": "https://www.usgs.gov/news/featured-story/magnitude-78-earthquake-nepal-aftershocks",
+          "source_name": "USGS",
+          "published_at": "2015-04-25T00:00:00.000Z",
+          "headline": "Magnitude 7.8 Earthquake in Nepal and Aftershocks",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.britannica.com/topic/Nepal-earthquake-of-2015",
+          "source_name": "Encyclopaedia Britannica",
+          "published_at": "2015-04-25T00:00:00.000Z",
+          "headline": "Nepal earthquake of 2015",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "USGS"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "A magnitude 7.8 earthquake struck central Nepal...",
+            "source_url": "https://www.usgs.gov/news/featured-story/magnitude-78-earthquake-nepal-aftershocks"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.72,
+        "category": 0.9,
+        "location": 0.75,
+        "summary_grounding": 0.75
+      },
+      "quality_flags": [
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "2015 Nepal (Gorkha) earthquake",
+        "fingerprint": "fp_2015-04-25_nepal_gorkha_eq"
+      }
+    },
+    {
+      "event_id": "2015-04-geological-chile-calbuco-eruption",
+      "title": "Chile: Calbuco volcano erupts, producing ash plume and prompting evacuations",
+      "description": "Calbuco volcano in Chile erupted beginning on April 22, 2015, sending a large ash column into the atmosphere. Authorities ordered evacuations within a defined area, and additional eruptive activity continued into April 23.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2015-04-22T21:04:00.000Z",
+        "event_end": "2015-04-23T23:59:59.000Z",
+        "reported_at": "2015-04-22T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2015-04-22T21:04:00.000Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Calbuco volcano area, Los Lagos Region, Chile",
+        "jurisdiction_level": "site",
+        "admin1": "Los Lagos Region",
+        "country": "CL",
+        "capital_used": null,
+        "lat": -41.33,
+        "lon": -72.618,
+        "precision": "exact",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.65
+      },
+      "sources": [
+        {
+          "url": "https://www.earthobservatory.nasa.gov/images/85767/calbuco-volcano-erupts",
+          "source_name": "NASA Earth Observatory",
+          "published_at": "2015-04-23T00:00:00.000Z",
+          "headline": "Calbuco Volcano Erupts",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NASA Earth Observatory"
+        ],
+        "substances": [
+          "volcanic ash"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Calbuco erupted on April 22, 2015...",
+            "source_url": "https://www.earthobservatory.nasa.gov/images/85767/calbuco-volcano-erupts"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.68,
+        "category": 0.9,
+        "location": 0.65,
+        "summary_grounding": 0.7
+      },
+      "quality_flags": [
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "2015 Calbuco eruption",
+        "fingerprint": "fp_2015-04-22_calbuco_eruption"
+      }
+    },
+    {
+      "event_id": "2015-04-ru-siberia-khakassia-zabaykalsky-wildfires",
+      "title": "Large wildfires in southern Siberia affect Khakassia and Zabaykalsky Krai",
+      "description": "Large wildfires swept parts of southern Siberia, including the Republic of Khakassia and Zabaykalsky Krai, amid warm and windy conditions. Reports described fatalities, injuries, and damage to homes, and satellite imagery documented smoke and burn scars.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2015-04-12T00:00:00.000Z",
+        "event_end": "2015-04-16T23:59:59.000Z",
+        "reported_at": "2015-04-13T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2015-04-13T00:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Republic of Khakassia and Zabaykalsky Krai, Russia",
+        "jurisdiction_level": "state",
+        "admin1": null,
+        "country": "RU",
+        "capital_used": "Moscow",
+        "lat": 55.7558,
+        "lon": 37.6173,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.4
+      },
+      "sources": [
+        {
+          "url": "https://www.theguardian.com/world/2015/apr/13/siberian-wildfires-people-killed-and-hundreds-injured",
+          "source_name": "The Guardian",
+          "published_at": "2015-04-13T00:00:00Z",
+          "headline": "Siberian wildfires: people killed and hundreds injured",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.nasa.gov/image-article/wildfires-southern-siberia/",
+          "source_name": "NASA",
+          "published_at": "2015-04-13T00:00:00Z",
+          "headline": "Wildfires in Southern Siberia",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.abc.net.au/news/2015-04-13/17-dead-as-wildfires-sweep-through-siberia/6390260",
+          "source_name": "ABC News (Australia)",
+          "published_at": "2015-04-13T00:00:00Z",
+          "headline": "17 dead as wildfires sweep through Siberia",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NASA"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "steppe",
+          "forest"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Siberian wildfires have killed people and injured hundreds as flames spread rapidly in strong winds.",
+            "source_url": "https://www.theguardian.com/world/2015/apr/13/siberian-wildfires-people-killed-and-hundreds-injured"
+          },
+          {
+            "quote": "Wildfires burned in southern Siberia; satellite imagery showed smoke and burn scars.",
+            "source_url": "https://www.nasa.gov/image-article/wildfires-southern-siberia/"
+          },
+          {
+            "quote": "At least 17 people have died as wildfires swept through Siberia, destroying homes.",
+            "source_url": "https://www.abc.net.au/news/2015-04-13/17-dead-as-wildfires-sweep-through-siberia/6390260"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.58,
+        "category": 0.8,
+        "location": 0.4,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "2015-04 southern Siberia wildfires Khakassia Zabaykalsky",
+        "fingerprint": "fp_2015-04_ru_siberia_wildfires_khakassia_zabaykalsky_2015-04-13"
+      }
+    },
+    {
+      "event_id": "2015-04-02-northern-long-eared-bat-threatened-esa-us",
+      "title": "U.S. lists northern long-eared bat as threatened under Endangered Species Act",
+      "description": "The U.S. Fish and Wildlife Service issued a final rule listing the northern long-eared bat as a threatened species under the Endangered Species Act, citing steep population declines driven primarily by white-nose syndrome. The rule added federal protections and included an interim 4(d) rule framework for the species.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2015-04-02T00:00:00.000Z",
+        "event_end": "2015-04-02T23:59:59.000Z",
+        "reported_at": "2015-04-02T00:00:00.000Z",
+        "time_confidence": 0.75,
+        "event_date_utc": "2015-04-02T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, D.C.",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/FR-2015-04-02/html/2015-07069.htm",
+          "source_name": "GovInfo / Federal Register",
+          "published_at": "2015-04-02T00:00:00.000Z",
+          "headline": "Endangered and Threatened Wildlife and Plants; Threatened Species Status for the Northern Long-Eared Bat With 4(d) Rule",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.fws.gov/press-release/2015-04/northern-long-eared-bat-protected-threatened",
+          "source_name": "U.S. Fish & Wildlife Service",
+          "published_at": "2015-04-02T00:00:00.000Z",
+          "headline": "Northern long-eared bat protected as threatened under Endangered Species Act",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.fws.gov/species-publication-action/threatened-species-status-northern-long-eared-bat-4d-rule",
+          "source_name": "U.S. Fish & Wildlife Service",
+          "published_at": "2015-04-02T00:00:00.000Z",
+          "headline": "Threatened species status for the northern long-eared bat with 4(d) rule",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Fish and Wildlife Service"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "We, the U.S. Fish and Wildlife Service, determine threatened species status for the northern long-eared bat.",
+            "source_url": "https://www.govinfo.gov/content/pkg/FR-2015-04-02/html/2015-07069.htm"
+          },
+          {
+            "quote": "The disease has killed millions of bats in 25 states and five Canadian provinces.",
+            "source_url": "https://www.fws.gov/press-release/2015-04/northern-long-eared-bat-protected-threatened"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.72,
+        "category": 0.75,
+        "location": 0.6,
+        "summary_grounding": 0.7
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Northern long-eared bat threatened listing (ESA)",
+        "fingerprint": "2015-04-02|us|northern long-eared bat threatened esa"
+      }
+    },
+    {
+      "event_id": "2015-04-17_us_epa_indian_country_minor_nsr_general_permits",
+      "title": "EPA finalizes general permits/permits-by-rule to streamline minor-source Clean Air Act permitting in Indian country",
+      "description": "The U.S. Environmental Protection Agency finalized permitting options intended to streamline Clean Air Act minor-source permitting in Indian country for five common source categories. The action is described as supporting implementation of the Federal Indian Country Minor NSR program while protecting air quality.",
+      "category_primary": "policy_regulation",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "2015-04-17T00:00:00.000Z",
+        "event_end": "2015-04-17T23:59:59.000Z",
+        "reported_at": "2015-04-17T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2015-04-17T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://19january2021snapshot.epa.gov/tribal-air/general-permits-and-permits-rule-final-action-5-source-categories-april-17-2015_.html",
+          "source_name": "U.S. Environmental Protection Agency (EPA) snapshot site",
+          "published_at": "2015-04-17T00:00:00.000Z",
+          "headline": "General permits and permits-by-rule final action for 5 source categories (April 17, 2015)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Environmental Protection Agency (EPA)"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "final action for 5 source categories",
+            "source_url": "https://19january2021snapshot.epa.gov/tribal-air/general-permits-and-permits-rule-final-action-5-source-categories-april-17-2015_.html"
+          },
+          {
+            "quote": "general permits and permits-by-rule",
+            "source_url": "https://19january2021snapshot.epa.gov/tribal-air/general-permits-and-permits-rule-final-action-5-source-categories-april-17-2015_.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.8,
+        "location": 0.75,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "paywalled_or_partial",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "EPA Indian country minor NSR general permits permits-by-rule final action (Apr 17 2015)",
+        "fingerprint": "fp_2015-04-17_us_epa_indian_country_minor_nsr_general_permits"
+      }
+    },
+    {
+      "event_id": "2015-04-23_us_fws_withdraws_bi_state_sage_grouse_threatened_proposed_rule",
+      "title": "U.S. Fish and Wildlife Service withdraws proposed listing for Bi-State greater sage-grouse DPS",
+      "description": "The U.S. Fish and Wildlife Service withdrew a proposed rule to list the Bi-State distinct population segment of greater sage-grouse as threatened and to designate critical habitat. The withdrawal is described as reflecting reduced threats in light of conservation efforts and was effective April 23, 2015.",
+      "category_primary": "policy_regulation",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "2015-04-23T00:00:00.000Z",
+        "event_end": "2015-04-23T23:59:59.000Z",
+        "reported_at": "2015-04-23T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2015-04-23T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States (California and Nevada)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.fws.gov/policy/library/2015/2015-09417.html",
+          "source_name": "U.S. Fish and Wildlife Service (FWS)",
+          "published_at": "2015-04-23T00:00:00.000Z",
+          "headline": "2015-09417",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Fish and Wildlife Service (FWS)"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Withdrawal of proposed rule",
+            "source_url": "https://www.fws.gov/policy/library/2015/2015-09417.html"
+          },
+          {
+            "quote": "Bi-State distinct population segment of greater sage-grouse",
+            "source_url": "https://www.fws.gov/policy/library/2015/2015-09417.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.8,
+        "location": 0.7,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "FWS withdrawal of proposed listing for Bi-State greater sage-grouse DPS (Apr 23 2015)",
+        "fingerprint": "fp_2015-04-23_us_fws_withdraws_bi_state_sage_grouse_threatened_proposed_rule"
+      }
+    }
+  ]
+}

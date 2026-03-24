@@ -1,0 +1,640 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_2021-05_normalize_2026-01-16T125812273Z",
+    "generated_utc": "2026-01-16T12:58:12.273Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "2021-05",
+    "window": {
+      "start_utc": "2021-05-01T00:00:00.000Z",
+      "end_utc": "2021-05-31T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "202105_xpress-pearl_nurdles_sri-lanka_west-coast",
+      "title": "X-Press Pearl fire and cargo loss causes plastic pellet (nurdle) pollution on Sri Lanka’s west coast",
+      "description": "A fire aboard the container ship X-Press Pearl off Colombo led to cargo loss, including plastic resin pellets (nurdles), that washed ashore in late May 2021. The incident caused widespread coastal contamination along Sri Lanka’s western shoreline and prompted response measures such as beach cleanups and fishing restrictions.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2021-06-03T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2021-05-20T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Off Colombo and Sri Lanka west coast (marine/coastal)",
+        "jurisdiction_level": "site",
+        "admin1": null,
+        "country": "LK",
+        "capital_used": null,
+        "lat": 6.9271,
+        "lon": 79.8612,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.5
+      },
+      "sources": [
+        {
+          "url": "https://www.theguardian.com/world/2021/jun/03/sri-lanka-officials-brace-oil-spill-sinking-cargo-ship",
+          "source_name": "The Guardian",
+          "published_at": "2021-06-03T00:00:00.000Z",
+          "headline": "Sri Lanka officials brace for oil spill as sinking cargo ship burns off coast",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://pubmed.ncbi.nlm.nih.gov/37101587/",
+          "source_name": "PubMed",
+          "published_at": "2023-04-01T00:00:00.000Z",
+          "headline": "PubMed record related to the X-Press Pearl incident",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "X-Press Pearl"
+        ],
+        "substances": [
+          "plastic resin pellets (nurdles)"
+        ],
+        "ecosystems": [
+          "coastal beaches",
+          "marine environment"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "burning cargo ship ... off the coast of Sri Lanka",
+            "source_url": "https://www.theguardian.com/world/2021/jun/03/sri-lanka-officials-brace-oil-spill-sinking-cargo-ship"
+          },
+          {
+            "quote": "plastic pellets ... washing up on beaches",
+            "source_url": "https://www.theguardian.com/world/2021/jun/03/sri-lanka-officials-brace-oil-spill-sinking-cargo-ship"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.75,
+        "location": 0.5,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "x-press pearl sri lanka nurdles may-2021",
+        "fingerprint": "xpress-pearl_nurdles_lk_2021-05"
+      }
+    },
+    {
+      "event_id": "2021-05_weather_climate_tx-la-flooding_001",
+      "title": "Heavy rainfall and flash flooding across Texas and Louisiana",
+      "description": "A multi-day sequence of storm systems produced torrential rainfall and widespread flash flooding across parts of Texas and Louisiana beginning around May 16, 2021. Reports described major disruptions and impacts across the region.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2021-05-16T00:00:00.000Z",
+        "event_end": "2021-05-31T23:59:59.000Z",
+        "reported_at": "2021-05-19T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2021-05-16T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Texas and Louisiana, United States",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, D.C.",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "proxy",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.45
+      },
+      "sources": [
+        {
+          "url": "https://www.washingtonpost.com/weather/2021/05/19/texas-louisiana-flooding/",
+          "source_name": "The Washington Post",
+          "published_at": "2021-05-19T00:00:00.000Z",
+          "headline": "Texas and Louisiana flooding (weather report)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "torrential rainfall and widespread flash flooding across parts of Texas and Louisiana",
+            "source_url": "https://www.washingtonpost.com/weather/2021/05/19/texas-louisiana-flooding/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.7,
+        "location": 0.45,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "paywalled_or_partial",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "2021-05 Texas Louisiana flooding",
+        "fingerprint": "fp_2021-05_txla_flooding_us_2021-05-16"
+      }
+    },
+    {
+      "event_id": "2021-05_weather_climate_cyclone-yaas_001",
+      "title": "Cyclone Yaas landfall impacts eastern India and nearby regions",
+      "description": "Very Severe Cyclonic Storm Yaas made landfall on May 26, 2021, affecting coastal areas with strong winds, heavy rain, and coastal inundation. Coverage described impacts in India’s Odisha and West Bengal and also reported effects in Bangladesh.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2021-05-26T00:00:00.000Z",
+        "event_end": "2021-05-27T23:59:59.000Z",
+        "reported_at": "2021-05-26T00:00:00.000Z",
+        "time_confidence": 0.65,
+        "event_date_utc": "2021-05-26T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "India (Odisha and West Bengal; Bay of Bengal region)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "IN",
+        "capital_used": "New Delhi",
+        "lat": 28.6139,
+        "lon": 77.209,
+        "precision": "proxy",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.5
+      },
+      "sources": [
+        {
+          "url": "https://indianexpress.com/article/india/cyclone-yaas-west-bengal-odisha-jharkhand-weather-7331444/",
+          "source_name": "The Indian Express",
+          "published_at": "2021-05-26T00:00:00.000Z",
+          "headline": "Cyclone Yaas coverage",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.tbsnews.net/bangladesh/cyclone-yaas-one-killed-bhola-stormy-weather-southern-districts-250942",
+          "source_name": "TBS News",
+          "published_at": "2021-05-26T00:00:00.000Z",
+          "headline": "Cyclone Yaas impacts in Bangladesh",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "made landfall on May 26, 2021",
+            "source_url": "https://indianexpress.com/article/india/cyclone-yaas-west-bengal-odisha-jharkhand-weather-7331444/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.75,
+        "location": 0.5,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "2021-05 Cyclone Yaas",
+        "fingerprint": "fp_2021-05_cyclone_yaas_in_2021-05-26"
+      }
+    },
+    {
+      "event_id": "2021-05_policy_regulation_ca-drought-emergency_001",
+      "title": "California expands drought emergency declaration",
+      "description": "California’s governor expanded a drought emergency declaration on May 10, 2021, citing worsening drought conditions. The move enabled additional drought-response actions across more counties.",
+      "category_primary": "policy_regulation",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "2021-05-10T00:00:00.000Z",
+        "event_end": "2021-05-10T23:59:59.000Z",
+        "reported_at": "2021-05-11T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2021-05-10T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "California, United States",
+        "jurisdiction_level": "state",
+        "admin1": "California",
+        "country": "US",
+        "capital_used": "Sacramento",
+        "lat": 38.5816,
+        "lon": -121.4944,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://www.axios.com/2021/05/11/california-declares-drought-emergency-most-counties",
+          "source_name": "Axios",
+          "published_at": "2021-05-11T00:00:00.000Z",
+          "headline": "California declares drought emergency in most counties",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "expanded a drought emergency declaration",
+            "source_url": "https://www.axios.com/2021/05/11/california-declares-drought-emergency-most-counties"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.6,
+        "location": 0.7,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "needs_dedupe_check",
+        "low_confidence_category"
+      ],
+      "dedupe": {
+        "cluster_hint": "2021-05 California drought emergency expansion",
+        "fingerprint": "fp_2021-05_ca_drought_emergency_us-ca_2021-05-10"
+      }
+    },
+    {
+      "event_id": "evt_20210521_maduo_qinghai_eq_us7000e54r",
+      "title": "M7.3 earthquake strikes Maduo (Madoi) County, Qinghai, China",
+      "description": "A strong earthquake struck near Maduo (Madoi) County in Qinghai, China on May 21, 2021. USGS reporting describes significant shaking and impacts including damage to infrastructure in the region.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2021-05-21T18:04:13.000Z",
+        "event_end": "2021-05-21T18:04:13.000Z",
+        "reported_at": "2021-05-21T18:04:13.000Z",
+        "time_confidence": 0.85,
+        "event_date_utc": "2021-05-21T18:04:13.000Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Maduo (Madoi) County, Qinghai, China",
+        "jurisdiction_level": "site",
+        "admin1": "Qinghai",
+        "country": "CN",
+        "capital_used": null,
+        "lat": 34.597,
+        "lon": 98.868,
+        "precision": "admin1",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.usgs.gov/news/featured-story/magnitude-61-and-73-earthquakes-china",
+          "source_name": "USGS",
+          "published_at": "2021-05-21T00:00:00Z",
+          "headline": "Magnitude 6.1 and 7.3 Earthquakes in China",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000e54r/executive",
+          "source_name": "USGS Earthquake Hazards Program",
+          "published_at": "2021-05-21T00:00:00Z",
+          "headline": "Executive Summary (us7000e54r)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "USGS"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Magnitude 6.1 and 7.3 Earthquakes in China",
+            "source_url": "https://www.usgs.gov/news/featured-story/magnitude-61-and-73-earthquakes-china"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.64,
+        "category": 0.85,
+        "location": 0.6,
+        "summary_grounding": 0.65
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "2021-05-21 Qinghai Maduo M7.3 USGS",
+        "fingerprint": "fp_20210521_maduo_qinghai_m7_3"
+      }
+    },
+    {
+      "event_id": "evt_20210521_yangbi_yunnan_eq_us7000e532",
+      "title": "M6.1 earthquake strikes near Yangbi (Dali area), Yunnan, China",
+      "description": "An earthquake of about magnitude 6.1 struck near Yangbi County in Yunnan Province, China on May 21, 2021. USGS reporting indicates strong shaking and associated impacts in the region.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2021-05-21T13:48:37.000Z",
+        "event_end": "2021-05-21T13:48:37.000Z",
+        "reported_at": "2021-05-21T13:48:37.000Z",
+        "time_confidence": 0.85,
+        "event_date_utc": "2021-05-21T13:48:37.000Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Yangbi County (near Dali), Yunnan, China",
+        "jurisdiction_level": "site",
+        "admin1": "Yunnan",
+        "country": "CN",
+        "capital_used": null,
+        "lat": 25.68,
+        "lon": 99.9,
+        "precision": "admin1",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.usgs.gov/news/featured-story/magnitude-61-and-73-earthquakes-china",
+          "source_name": "USGS",
+          "published_at": "2021-05-21T00:00:00Z",
+          "headline": "Magnitude 6.1 and 7.3 Earthquakes in China",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000e532/executive",
+          "source_name": "USGS Earthquake Hazards Program",
+          "published_at": "2021-05-21T00:00:00Z",
+          "headline": "Executive Summary (us7000e532)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "USGS"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Magnitude 6.1 and 7.3 Earthquakes in China",
+            "source_url": "https://www.usgs.gov/news/featured-story/magnitude-61-and-73-earthquakes-china"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.85,
+        "location": 0.55,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "2021-05-21 Yunnan Yangbi M6.1 USGS",
+        "fingerprint": "fp_20210521_yangbi_yunnan_m6_1"
+      }
+    },
+    {
+      "event_id": "evt_20210522_nyiragongo_goma_eruption",
+      "title": "Mount Nyiragongo eruption triggers evacuations near Goma, DR Congo",
+      "description": "Mount Nyiragongo erupted in eastern Democratic Republic of the Congo in late May 2021, sending lava flows toward populated areas near Goma. Reporting described evacuations and emergency response actions as authorities assessed the threat.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2021-05-22T00:00:00.000Z",
+        "event_end": "2021-05-25T23:59:59.000Z",
+        "reported_at": "2021-05-22T00:00:00Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "2021-05-22T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Goma area, North Kivu, Democratic Republic of the Congo",
+        "jurisdiction_level": "city",
+        "admin1": "North Kivu",
+        "country": "CD",
+        "capital_used": null,
+        "lat": -1.679,
+        "lon": 29.221,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.75
+      },
+      "sources": [
+        {
+          "url": "https://www.theguardian.com/world/2021/may/22/nyiragongo-volcano-erupts-in-eastern-congo",
+          "source_name": "The Guardian",
+          "published_at": "2021-05-22T00:00:00Z",
+          "headline": "Nyiragongo volcano erupts in eastern Congo",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.reuters.com/world/africa/congos-nyiragongo-volcano-erupts-near-city-goma-2021-05-22/",
+          "source_name": "Reuters",
+          "published_at": "2021-05-22T00:00:00Z",
+          "headline": "Congo's Nyiragongo volcano erupts near city of Goma",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [
+          "lava"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Nyiragongo volcano erupts in eastern Congo",
+            "source_url": "https://www.theguardian.com/world/2021/may/22/nyiragongo-volcano-erupts-in-eastern-congo"
+          },
+          {
+            "quote": "Nyiragongo volcano erupts near city of Goma",
+            "source_url": "https://www.reuters.com/world/africa/congos-nyiragongo-volcano-erupts-near-city-goma-2021-05-22/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.72,
+        "category": 0.8,
+        "location": 0.75,
+        "summary_grounding": 0.7
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "2021-05 Nyiragongo eruption Goma",
+        "fingerprint": "fp_20210522_nyiragongo_goma"
+      }
+    },
+    {
+      "event_id": "evt_20210526_epa_vacatur_transparency_rule_us",
+      "title": "EPA implements court decision vacating Trump-era science transparency rule",
+      "description": "On May 26, 2021, the U.S. Environmental Protection Agency announced it finalized an action implementing a court decision that vacated the prior administration’s “Strengthening Transparency in Pivotal Science” rule. EPA said the action reaffirms its ability to rely on scientific studies and data consistent with its scientific integrity policies.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "2021-05-26T00:00:00.000Z",
+        "event_end": "2021-05-26T23:59:59.000Z",
+        "reported_at": "2021-05-26T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2021-05-26T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States (federal)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.85
+      },
+      "sources": [
+        {
+          "url": "https://www.epa.gov/newsreleases/epa-implements-court-decision-overturning-restrictive-trump-era-rule-reaffirms",
+          "source_name": "U.S. Environmental Protection Agency",
+          "published_at": "2021-05-26T00:00:00.000Z",
+          "headline": "EPA Implements Court Decision Overturning Restrictive Trump-era Rule, Reaffirms Commitment to Science and Transparency",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Environmental Protection Agency (EPA)"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "EPA Implements Court Decision Overturning Restrictive Trump-era Rule",
+            "source_url": "https://www.epa.gov/newsreleases/epa-implements-court-decision-overturning-restrictive-trump-era-rule-reaffirms"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.68,
+        "category": 0.85,
+        "location": 0.85,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "epa-transparency-in-pivotal-science-vacatur-2021-05-26",
+        "fingerprint": "fp_20210526_epa_vacatur_transparency_rule_us"
+      }
+    }
+  ]
+}

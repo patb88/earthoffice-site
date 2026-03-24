@@ -1,0 +1,395 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_2014-01_normalize_2026-01-16T051111295Z",
+    "generated_utc": "2026-01-16T05:11:11.295Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "2014-01",
+    "window": {
+      "start_utc": "2014-01-01T00:00:00.000Z",
+      "end_utc": "2014-01-31T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "2014-01-pollution_contamination-elk-river-mchm-01",
+      "title": "Elk River chemical spill contaminates drinking water (MCHM) near Charleston, West Virginia",
+      "description": "A leak from a Freedom Industries storage facility released crude 4-methylcyclohexanemethanol (MCHM) into the Elk River upstream of a drinking-water intake. The incident led to a large “do not use” water advisory affecting the Charleston, West Virginia region.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2014-01-09T00:00:00.000Z",
+        "event_end": "2014-01-09T23:59:59.000Z",
+        "reported_at": "2014-01-17T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2014-01-09T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Charleston, West Virginia, United States",
+        "jurisdiction_level": "city",
+        "admin1": "West Virginia",
+        "country": "US",
+        "capital_used": null,
+        "lat": 38.3498,
+        "lon": -81.6326,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://www.cnbc.com/2014/01/17/company-tied-to-w-va-chemical-spill-seeks-bankruptcy.html",
+          "source_name": "CNBC",
+          "published_at": "2014-01-17T00:00:00.000Z",
+          "headline": "Company tied to W. Va. chemical spill seeks bankruptcy",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Freedom Industries"
+        ],
+        "substances": [
+          "4-methylcyclohexanemethanol (MCHM)"
+        ],
+        "ecosystems": [
+          "Elk River"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "company tied to W. Va. chemical spill seeks bankruptcy",
+            "source_url": "https://www.cnbc.com/2014/01/17/company-tied-to-w-va-chemical-spill-seeks-bankruptcy.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.75,
+        "location": 0.7,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "elk_river_mchm_charleston_2014-01-09",
+        "fingerprint": "elk-river-mchm-charleston-us-2014-01-09"
+      }
+    },
+    {
+      "event_id": "evt_201401_polar_vortex_us_cold_wave_initial",
+      "title": "Polar vortex-driven U.S. cold wave (early January 2014)",
+      "description": "An outbreak of Arctic air associated with the polar vortex brought extreme cold and disruptive winter conditions across large areas of the United States in early January 2014.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2014-01-03T00:00:00.000Z",
+        "event_end": "2014-01-08T23:59:59.000Z",
+        "reported_at": "2014-01-05T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2014-01-05T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "United States (regional cold wave affecting central/eastern areas)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.theguardian.com/world/2014/jan/05/polar-vortex-record-low-temperatures-us",
+          "source_name": "The Guardian",
+          "published_at": "2014-01-05T00:00:00.000Z",
+          "headline": "polar vortex record low temperatures us",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "polar vortex... record low temperatures... across the US",
+            "source_url": "https://www.theguardian.com/world/2014/jan/05/polar-vortex-record-low-temperatures-us"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.75,
+        "location": 0.55,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "2014-01 US polar vortex cold wave",
+        "fingerprint": "fp_201401_us_polar_vortex_cold_wave"
+      }
+    },
+    {
+      "event_id": "evt_201401_uk_severe_coastal_flood_warnings",
+      "title": "Severe coastal flood warnings issued for parts of England (west and south coasts)",
+      "description": "UK authorities issued severe flood warnings for west and south coastal areas of England due to the risk of coastal flooding from strong winds, high tides, and large waves.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2014-01-03T00:00:00.000Z",
+        "event_end": "2014-01-03T23:59:59.000Z",
+        "reported_at": "2014-01-03T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2014-01-03T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United Kingdom (government flood warnings for coastal England)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "GB",
+        "capital_used": "London",
+        "lat": 51.5074,
+        "lon": -0.1278,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.65
+      },
+      "sources": [
+        {
+          "url": "https://www.gov.uk/government/news/severe-flood-warnings-in-place-across-west-and-south-coastal-areas-of-england",
+          "source_name": "GOV.UK",
+          "published_at": "2014-01-03T00:00:00.000Z",
+          "headline": "Severe flood warnings in place across west and south coastal areas of England",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "UK government"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "coastal"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Severe flood warnings... across west and south coastal areas of England",
+            "source_url": "https://www.gov.uk/government/news/severe-flood-warnings-in-place-across-west-and-south-coastal-areas-of-england"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.65,
+        "category": 0.75,
+        "location": 0.65,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "2014-01 UK severe coastal flood warnings",
+        "fingerprint": "fp_201401_uk_severe_coastal_flood_warnings"
+      }
+    },
+    {
+      "event_id": "evt_201401_northern_gulf_mexico_cetacean_ume",
+      "title": "Elevated cetacean strandings continue under Northern Gulf of Mexico Unusual Mortality Event (Jan 2014)",
+      "description": "NOAA documented a cetacean Unusual Mortality Event in the Northern Gulf of Mexico spanning 2010–2014. The NOAA event page indicates the UME covered elevated strandings within the Northern Gulf of Mexico during this period, including January 2014 within the multi-year window.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2014-01-01T00:00:00.000Z",
+        "event_end": "2014-01-31T23:59:59.000Z",
+        "reported_at": "2014-01-01T00:00:00.000Z",
+        "time_confidence": 0.4,
+        "event_date_utc": null,
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Northern Gulf of Mexico (Texas/Louisiana border through Florida, USA)",
+        "jurisdiction_level": "supranational",
+        "admin1": null,
+        "country": null,
+        "capital_used": null,
+        "lat": 0,
+        "lon": 0,
+        "precision": "proxy",
+        "location_basis": "manual_override",
+        "location_confidence": 0.2
+      },
+      "sources": [
+        {
+          "url": "https://www.fisheries.noaa.gov/national/marine-life-distress/2010-2014-cetacean-unusual-mortality-event-northern-gulf-mexico",
+          "source_name": "NOAA Fisheries",
+          "published_at": "2014-01-01T00:00:00.000Z",
+          "headline": "2010–2014 Cetacean Unusual Mortality Event in the Northern Gulf of Mexico",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA Fisheries"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "Northern Gulf of Mexico"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "2010–2014 Cetacean Unusual Mortality Event in the Northern Gulf of Mexico",
+            "source_url": "https://www.fisheries.noaa.gov/national/marine-life-distress/2010-2014-cetacean-unusual-mortality-event-northern-gulf-mexico"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.45,
+        "category": 0.75,
+        "location": 0.2,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "low_confidence_location",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "NOAA 2010-2014 Northern Gulf of Mexico cetacean UME",
+        "fingerprint": "fp_201401_northern_gulf_mexico_cetacean_ume"
+      }
+    },
+    {
+      "event_id": "policy_regulation_us_epa_nsps_federal_register_2014-01-08",
+      "title": "EPA carbon pollution standards proposal for new power plants published in Federal Register",
+      "description": "Sources report that the U.S. Environmental Protection Agency’s proposed New Source Performance Standards for greenhouse gas emissions from new power plants were published in the Federal Register on January 8, 2014, starting the formal public comment period.",
+      "category_primary": "policy_regulation",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2014-01-09T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2014-01-08T00:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States (federal rulemaking)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.85
+      },
+      "sources": [
+        {
+          "url": "https://archive.epa.gov/epa/cleanpowerplan/fact-sheet-clean-power-plan-carbon-pollution-standards-key-dates.html",
+          "source_name": "U.S. Environmental Protection Agency (archive.epa.gov)",
+          "published_at": "2014-01-08T00:00:00Z",
+          "headline": "Fact Sheet: Clean Power Plan Carbon Pollution Standards Key Dates",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://energy.law.wvu.edu/energy-forward-blog/2014/01/09/epa-publishes-new-source-performance-standards-for-greenhouse-gas-emissions-from-new-power-plants-in-federal-register",
+          "source_name": "West Virginia University College of Law – Energy Forward Blog",
+          "published_at": "2014-01-09T00:00:00Z",
+          "headline": "EPA Publishes New Source Performance Standards for Greenhouse Gas Emissions from New Power Plants in Federal Register",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Environmental Protection Agency (EPA)"
+        ],
+        "substances": [
+          "greenhouse gases"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "published in the Federal Register on January 8, 2014",
+            "source_url": "https://energy.law.wvu.edu/energy-forward-blog/2014/01/09/epa-publishes-new-source-performance-standards-for-greenhouse-gas-emissions-from-new-power-plants-in-federal-register"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.75,
+        "location": 0.85,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "secondary_sources_only",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "EPA NSPS GHG new power plants Federal Register publication (Jan 2014)",
+        "fingerprint": "policy_regulation|us|epa carbon pollution standards proposal for new power plants published in federal register|2014-01-08"
+      }
+    }
+  ]
+}

@@ -1,0 +1,930 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_1993-07_normalize_2026-01-17T174805550Z",
+    "generated_utc": "2026-01-17T17:48:05.550Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "1993-07",
+    "window": {
+      "start_utc": "1993-07-01T00:00:00.000Z",
+      "end_utc": "1993-07-31T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "1993-07_us_ca_richmond_sulfuric-trioxide_001",
+      "title": "Sulfuric trioxide release forms toxic cloud in Richmond, California",
+      "description": "A rail tanker car released sulfuric trioxide after a seal rupture, producing a toxic cloud over parts of the East Bay. Officials issued a shelter-in-place warning that was later lifted the same day, and many people sought medical evaluation.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1993-07-26T12:00:00Z",
+        "event_end": "1993-07-26T12:00:00Z",
+        "reported_at": "1993-07-26T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1993-07-26T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Richmond, California, USA",
+        "jurisdiction_level": "city",
+        "admin1": "California",
+        "country": "US",
+        "capital_used": null,
+        "lat": 37.9358,
+        "lon": -122.3477,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://www.upi.com/Archives/1993/07/26/Toxic-cloud-sickens-2000-people/6500743659200/",
+          "source_name": "UPI",
+          "published_at": "1993-07-26T00:00:00Z",
+          "headline": "Toxic cloud sickens 2,000 people",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.upi.com/Archives/1993/07/26/Toxic-cloud-sends-1000-people-to-hospitals/2193743659200/",
+          "source_name": "UPI",
+          "published_at": "1993-07-26T00:00:00Z",
+          "headline": "Toxic cloud sends 1,000 people to hospitals",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "General Chemical"
+        ],
+        "substances": [
+          "sulfuric trioxide"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "released sulfuric trioxide... producing a large toxic cloud",
+            "source_url": "https://www.upi.com/Archives/1993/07/26/Toxic-cloud-sickens-2000-people/6500743659200/"
+          },
+          {
+            "quote": "officials issued a shelter-in-place warning before lifting it later",
+            "source_url": "https://www.upi.com/Archives/1993/07/26/Toxic-cloud-sends-1000-people-to-hospitals/2193743659200/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.8,
+        "location": 0.7,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Richmond CA sulfuric trioxide rail tanker release 1993-07-26",
+        "fingerprint": "fp_1993-07_richmond_ca_sulfuric_trioxide_1993-07-26"
+      }
+    },
+    {
+      "event_id": "1993-07_us_wa_anacortes_shannon-point_ammonia_001",
+      "title": "Fire at Shannon Point Seafood facility leads to ammonia release concern in Anacortes, Washington",
+      "description": "A fire at the Shannon Point Seafood Company raised concerns about releases of anhydrous ammonia and freon from the facility’s refrigeration system. NOAA IncidentNews reported that after a collapse into the water, a small ammonia plume was released and evacuations were ordered and later lifted.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1993-07-26T12:00:00Z",
+        "event_end": "1993-07-27T12:00:00Z",
+        "reported_at": "1993-07-01T00:00:00Z",
+        "time_confidence": 0.4,
+        "event_date_utc": null,
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Shannon Point, Anacortes, Washington, USA",
+        "jurisdiction_level": "city",
+        "admin1": "Washington",
+        "country": "US",
+        "capital_used": null,
+        "lat": 48.5126,
+        "lon": -122.6127,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://incidentnews.noaa.gov/incident/6954",
+          "source_name": "NOAA IncidentNews",
+          "published_at": "1993-07-01T00:00:00Z",
+          "headline": "Incident 6954",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Shannon Point Seafood Company",
+          "NOAA"
+        ],
+        "substances": [
+          "anhydrous ammonia",
+          "freon"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "concern for release of anhydrous ammonia and freon",
+            "source_url": "https://incidentnews.noaa.gov/incident/6954"
+          },
+          {
+            "quote": "a small ammonia plume was released",
+            "source_url": "https://incidentnews.noaa.gov/incident/6954"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.5,
+        "category": 0.75,
+        "location": 0.6,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "Anacortes WA Shannon Point Seafood fire ammonia plume 1993-07",
+        "fingerprint": "fp_1993-07_anacortes_wa_shannon_point_ammonia_fire"
+      }
+    },
+    {
+      "event_id": "evt_19930712_stlouis_mississippi_crest",
+      "title": "Great Flood of 1993: major Mississippi River crest at St. Louis",
+      "description": "During the Great Flood of 1993, the Mississippi River reached a major crest at St. Louis in mid-July 1993, reflecting severe basin-wide flooding driven by persistent rainfall. The source describes the St. Louis crest as being around 43 feet on July 12, 1993.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1993-07-12T12:00:00Z",
+        "event_end": "1993-07-12T12:00:00Z",
+        "reported_at": "1993-07-12T12:00:00Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "1993-07-12T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "St. Louis, Missouri, USA",
+        "jurisdiction_level": "city",
+        "admin1": "Missouri",
+        "country": "US",
+        "capital_used": null,
+        "lat": 38.627,
+        "lon": -90.1994,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://www.nwrfc.noaa.gov/floods/papers/oh_2/great.htm",
+          "source_name": "NOAA NWRFC",
+          "published_at": "1993-07-12T12:00:00Z",
+          "headline": "The Great Flood of 1993 (paper/archive)",
+          "byline": null,
+          "accessed_utc": "2026-01-17T01:02:15.212Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "Mississippi River"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Mississippi River at St. Louis ... (about 43 feet) on July 12, 1993",
+            "source_url": "https://www.nwrfc.noaa.gov/floods/papers/oh_2/great.htm"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.7,
+        "location": 0.7,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Great Flood of 1993 - Mississippi River - St. Louis",
+        "fingerprint": "fp_19930712_greatflood1993_stlouis_mo"
+      }
+    },
+    {
+      "event_id": "evt_19930720_stlouis_mississippi_record_crest",
+      "title": "Great Flood of 1993: record Mississippi River crest at St. Louis",
+      "description": "As the Great Flood of 1993 continued, the Mississippi River at St. Louis rose to a record crest in late July 1993. The source describes the crest as around 47 feet on July 20, 1993.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1993-07-20T12:00:00Z",
+        "event_end": "1993-07-20T12:00:00Z",
+        "reported_at": "1993-07-20T12:00:00Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "1993-07-20T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "St. Louis, Missouri, USA",
+        "jurisdiction_level": "city",
+        "admin1": "Missouri",
+        "country": "US",
+        "capital_used": null,
+        "lat": 38.627,
+        "lon": -90.1994,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://www.nwrfc.noaa.gov/floods/papers/oh_2/great.htm",
+          "source_name": "NOAA NWRFC",
+          "published_at": "1993-07-20T12:00:00Z",
+          "headline": "The Great Flood of 1993 (paper/archive)",
+          "byline": null,
+          "accessed_utc": "2026-01-17T01:02:15.212Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "Mississippi River"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Mississippi River at St. Louis ... new record crest (about 47 feet) on July 20, 1993",
+            "source_url": "https://www.nwrfc.noaa.gov/floods/papers/oh_2/great.htm"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.7,
+        "location": 0.7,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Great Flood of 1993 - Mississippi River - St. Louis",
+        "fingerprint": "fp_19930720_greatflood1993_stlouis_mo"
+      }
+    },
+    {
+      "event_id": "evt_19930710_0727_kansascity_flooding",
+      "title": "Kansas City area flooding during the Great Flood of 1993 (July 10 and 27, 1993)",
+      "description": "Flooding affected parts of the Kansas City region during the 1993 Midwest floods, with mapped/documented flooding associated with events dated July 10 and July 27, 1993. The USGS publication documents the delineation of flooding within the Upper Mississippi River Basin for those dates.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1993-07-10T12:00:00Z",
+        "event_end": "1993-07-27T12:00:00Z",
+        "reported_at": "1993-07-10T12:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": null,
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Kansas City, Missouri, USA / Kansas City, Kansas, USA",
+        "jurisdiction_level": "city",
+        "admin1": "Missouri",
+        "country": "US",
+        "capital_used": null,
+        "lat": 39.0997,
+        "lon": -94.5786,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.usgs.gov/publications/delineation-flooding-within-upper-mississippi-river-basin-flood-july-10-and-27-1993",
+          "source_name": "USGS",
+          "published_at": "1993-07-10T12:00:00Z",
+          "headline": "Delineation of flooding within the upper Mississippi River Basin: flood of July 10 and 27, 1993",
+          "byline": null,
+          "accessed_utc": "2026-01-17T01:02:15.212Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "USGS"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "Upper Mississippi River Basin"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "... flood of July 10 and 27, 1993",
+            "source_url": "https://www.usgs.gov/publications/delineation-flooding-within-upper-mississippi-river-basin-flood-july-10-and-27-1993"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.65,
+        "location": 0.55,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Great Flood of 1993 - Kansas City region",
+        "fingerprint": "fp_19930710_19930727_greatflood1993_kansascity"
+      }
+    },
+    {
+      "event_id": "evt_19930701_0723_southeast_us_heat_drought",
+      "title": "Southeastern United States heat wave and drought (July 1–23, 1993)",
+      "description": "A prolonged period of extreme heat affected the southeastern United States in early-to-mid July 1993, associated with persistent high pressure and reduced rainfall. The referenced NOAA page summarizes the episode as spanning roughly July 1 to July 23, 1993, with notable temperature anomalies and suppressed precipitation in parts of the region.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1993-07-01T12:00:00Z",
+        "event_end": "1993-07-23T12:00:00Z",
+        "reported_at": "1993-07-01T12:00:00Z",
+        "time_confidence": 0.4,
+        "event_date_utc": null,
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Southeastern United States (regional)",
+        "jurisdiction_level": "supranational",
+        "admin1": null,
+        "country": null,
+        "capital_used": "Washington, D.C.",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "proxy",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.35
+      },
+      "sources": [
+        {
+          "url": "https://noaa-mirror.org/www.weather.gov/ilm/heatwaves",
+          "source_name": "NOAA (mirror) / NWS Wilmington, NC",
+          "published_at": "1993-07-01T12:00:00Z",
+          "headline": "Heatwaves (regional climatology page)",
+          "byline": null,
+          "accessed_utc": "2026-01-17T01:02:15.212Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA",
+          "NWS"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "... across the Southeast from July 1 to July 23, 1993 ...",
+            "source_url": "https://noaa-mirror.org/www.weather.gov/ilm/heatwaves"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.4,
+        "category": 0.6,
+        "location": 0.35,
+        "summary_grounding": 0.35
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "secondary_sources_only",
+        "low_confidence_location"
+      ],
+      "dedupe": {
+        "cluster_hint": "Southeast US heat wave July 1993",
+        "fingerprint": "fp_19930701_19930723_heatwave_southeast_us"
+      }
+    },
+    {
+      "event_id": "evt_19930721_south_asia_monsoon_floods_landslides_upi",
+      "title": "South Asia monsoon floods and landslides reported across India, Nepal, and Bangladesh",
+      "description": "Wire reporting dated July 21, 1993 described torrential monsoon rains causing widespread flooding and landslides across India, Nepal, and Bangladesh. The report stated that hundreds of people were killed and that infrastructure and agriculture were heavily affected in multiple areas.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1993-07-21T12:00:00Z",
+        "event_end": "1993-07-21T12:00:00Z",
+        "reported_at": "1993-07-21T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1993-07-21T00:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "India, Nepal, and Bangladesh (regional)",
+        "jurisdiction_level": "supranational",
+        "admin1": null,
+        "country": null,
+        "capital_used": "New Delhi",
+        "lat": 28.6139,
+        "lon": 77.209,
+        "precision": "proxy",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.35
+      },
+      "sources": [
+        {
+          "url": "https://www.upi.com/Archives/1993/07/21/Storms-kill-582-in-India-Nepal-Bangladesh/3448743227200/",
+          "source_name": "UPI",
+          "published_at": "1993-07-21T00:00:00Z",
+          "headline": "Storms kill 582 in India, Nepal, Bangladesh",
+          "byline": null,
+          "accessed_utc": "2026-01-17T01:02:15.212Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "UPI"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Storms kill 582 in India, Nepal, Bangladesh",
+            "source_url": "https://www.upi.com/Archives/1993/07/21/Storms-kill-582-in-India-Nepal-Bangladesh/3448743227200/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.7,
+        "location": 0.35,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "low_confidence_location",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "South Asia monsoon floods July 1993 (UPI)",
+        "fingerprint": "fp_19930721_southasia_monsoon_floods_upi"
+      }
+    },
+    {
+      "event_id": "19930712_jpn_okushiri_eq_tsunami",
+      "title": "1993 Hokkaido Nansei-Oki (Okushiri) earthquake and tsunami impacts Japan",
+      "description": "A major offshore earthquake occurred in the Sea of Japan off southwest Hokkaido near Okushiri Island, Japan. The earthquake generated a destructive tsunami that caused severe coastal impacts.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1993-07-12T00:00:00.000Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "1993-07-12T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Okushiri Island area, Japan (Sea of Japan off southwest Hokkaido)",
+        "jurisdiction_level": "site",
+        "admin1": "Hokkaido",
+        "country": "JP",
+        "capital_used": null,
+        "lat": 42.171,
+        "lon": 139.515,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.65
+      },
+      "sources": [
+        {
+          "url": "https://nctr.pmel.noaa.gov/okushiri19930712/index.html",
+          "source_name": "NOAA PMEL NCTR",
+          "published_at": "1993-07-12T00:00:00.000Z",
+          "headline": "Okushiri 1993/07/12",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://bulletin.nzsee.org.nz/index.php/bnzsee/article/view/667",
+          "source_name": "Bulletin of the New Zealand Society for Earthquake Engineering",
+          "published_at": "1993-07-01T00:00:00.000Z",
+          "headline": "Article view (BNZSEE)",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.mlit.go.jp/english/white-paper/unyu-whitepaper/1993/1993000012.html",
+          "source_name": "Ministry of Land, Infrastructure, Transport and Tourism (Japan)",
+          "published_at": "1993-01-01T00:00:00.000Z",
+          "headline": "Transport White Paper 1993 (English) - section page",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA PMEL",
+          "Ministry of Land, Infrastructure, Transport and Tourism (Japan)"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Okushiri 1993/07/12",
+            "source_url": "https://nctr.pmel.noaa.gov/okushiri19930712/index.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.85,
+        "location": 0.65,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "1993 Hokkaido Nansei-Oki (Okushiri) earthquake and tsunami",
+        "fingerprint": "fp_19930712_okushiri_jp_geological"
+      }
+    },
+    {
+      "event_id": "ev_19930731_greece_islands_fires_reuters_1023697",
+      "title": "Forest fires reported on Greek islands including Ikaria, Samos and Crete (Reuters)",
+      "description": "A Reuters report described forest fires affecting multiple Greek islands, including Ikaria (around Agios Kirykos) as well as Samos and Crete. The report noted smoke impacting areas on Ikaria.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1993-07-31T12:00:00Z",
+        "time_confidence": 0.5,
+        "event_date_utc": "1993-07-31T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Agios Kirykos, Ikaria, Greece",
+        "jurisdiction_level": "city",
+        "admin1": null,
+        "country": "GR",
+        "capital_used": null,
+        "lat": 37.614,
+        "lon": 26.294,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.4
+      },
+      "sources": [
+        {
+          "url": "https://reuters.screenocean.com/record/1023697",
+          "source_name": "Reuters Screenocean",
+          "published_at": "1993-07-31T12:00:00Z",
+          "headline": "Ikaria, Greece forest fire (multiple islands affected: Ikaria/Samos/Crete) reported by Reuters",
+          "byline": null,
+          "accessed_utc": "2026-01-17T01:02:47.882Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Reuters"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "forest"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "forest fires sweeping Greek islands including Ikaria, Samos and Crete",
+            "source_url": "https://reuters.screenocean.com/record/1023697"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.45,
+        "category": 0.7,
+        "location": 0.4,
+        "summary_grounding": 0.4
+      },
+      "quality_flags": [
+        "secondary_sources_only",
+        "location_ambiguous",
+        "date_ambiguous",
+        "paywalled_or_partial"
+      ],
+      "dedupe": {
+        "cluster_hint": "reuters_1023697_greece_islands_fires_1993-07-31",
+        "fingerprint": "fp_reuters_1023697_greece_agios_kirykos_1993-07-31"
+      }
+    },
+    {
+      "event_id": "1993-07_us-ca-dana-point-headlands_pacific-pocket-mouse-rediscovered",
+      "title": "Pacific pocket mouse rediscovered at Dana Point Headlands",
+      "description": "Federal Register notices reported trapping surveys beginning in July 1993 at the Dana Point Headlands (Orange County, California) that detected the Pacific pocket mouse, a subspecies not observed for decades. The findings indicated a very small remaining population and were used in subsequent federal conservation actions.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1994-02-03T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1993-07-15T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Dana Point Headlands, Orange County, California, USA",
+        "jurisdiction_level": "site",
+        "admin1": "California",
+        "country": "US",
+        "capital_used": null,
+        "lat": 33.4636,
+        "lon": -117.7131,
+        "precision": "neighborhood",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/FR-1994-02-03/html/94-2463.htm",
+          "source_name": "Federal Register (govinfo.gov)",
+          "published_at": "1994-02-03T00:00:00Z",
+          "headline": "[Federal Register notice: Pacific pocket mouse / related ESA action]",
+          "byline": null,
+          "accessed_utc": "2026-01-17T01:03:22.647Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.govinfo.gov/content/pkg/FR-1994-09-29/html/94-24065.htm",
+          "source_name": "Federal Register (govinfo.gov)",
+          "published_at": "1994-09-29T00:00:00Z",
+          "headline": "[Federal Register notice: Pacific pocket mouse / related ESA action]",
+          "byline": null,
+          "accessed_utc": "2026-01-17T01:03:22.647Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Fish and Wildlife Service"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "[Trapping] surveys conducted in July 1993 ... resulted in the capture of Pacific pocket mice.",
+            "source_url": "https://www.govinfo.gov/content/pkg/FR-1994-02-03/html/94-2463.htm"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.75,
+        "location": 0.6,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "pacific_pocket_mouse_rediscovery_dana_point_1993-07",
+        "fingerprint": "pacific pocket mouse rediscovered|dana point headlands|1993-07"
+      }
+    },
+    {
+      "event_id": "1993-07_us-ca-lone-pine_lower-owens-river-fish-kill",
+      "title": "Fish kill reported in the Lower Owens River near Lone Pine",
+      "description": "A Los Angeles Times report described a large fish kill in the Lower Owens River near Lone Pine, California, in late July 1993. The article attributed the die-off to low dissolved oxygen conditions associated with high-flow releases that stirred up sediment and organic material.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1993-07-31T00:00:00Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "1993-07-31T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Lower Owens River near Lone Pine, Inyo County, California, USA",
+        "jurisdiction_level": "site",
+        "admin1": "California",
+        "country": "US",
+        "capital_used": null,
+        "lat": 36.6063,
+        "lon": -118.0629,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.latimes.com/archives/la-xpm-1993-07-31-sp-18775-story.html",
+          "source_name": "Los Angeles Times",
+          "published_at": "1993-07-31T00:00:00Z",
+          "headline": "[Lower Owens River fish kill linked to oxygen depletion during high flows]",
+          "byline": null,
+          "accessed_utc": "2026-01-17T01:03:22.647Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [
+          "dissolved oxygen"
+        ],
+        "ecosystems": [
+          "river"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Thousands of fish ... died ... officials said low oxygen levels were to blame.",
+            "source_url": "https://www.latimes.com/archives/la-xpm-1993-07-31-sp-18775-story.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.7,
+        "location": 0.55,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "paywalled_or_partial",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "lower_owens_river_fish_kill_1993-07-31",
+        "fingerprint": "fish kill lower owens river|near lone pine|1993-07-31"
+      }
+    },
+    {
+      "event_id": "1993-07-20_epa_sip_air_quality_models_supplement_b",
+      "title": "EPA final rule updates SIP air quality modeling requirements (Guideline on Air Quality Models, Supplement B)",
+      "description": "The U.S. EPA issued a final rule related to State Implementation Plan (SIP) requirements, updating air quality modeling provisions tied to the Guideline on Air Quality Models (Revised). The rule incorporates Supplement B as codified text and gives regulatory status to modeling policy used in other regulatory programs.",
+      "category_primary": "policy_regulation",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "1993-07-20T12:00:00Z",
+        "event_end": "1993-07-20T12:00:00Z",
+        "reported_at": "1993-07-20T12:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1993-07-20T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States (federal rule)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.9
+      },
+      "sources": [
+        {
+          "url": "https://19january2021snapshot.epa.gov/hwpermitting/federal-register-notice-final-rule-requirements-preparation-adoption-and-submittal_.html",
+          "source_name": "U.S. Environmental Protection Agency (snapshot site)",
+          "published_at": "1993-07-20T12:00:00Z",
+          "headline": "Federal Register Notice: Final Rule: Requirements for Preparation, Adoption, and Submittal of State Implementation Plans (air quality models; Supplement B; regulatory status for modeling policy)",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Environmental Protection Agency (EPA)"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Final Rule: Requirements for Preparation, Adoption, and Submittal of State Implementation Plans (air quality models; Supplement B; regulatory status for modeling policy)",
+            "source_url": "https://19january2021snapshot.epa.gov/hwpermitting/federal-register-notice-final-rule-requirements-preparation-adoption-and-submittal_.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.8,
+        "location": 0.9,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "secondary_sources_only",
+        "date_ambiguous",
+        "paywalled_or_partial"
+      ],
+      "dedupe": {
+        "cluster_hint": "EPA SIP air quality models Supplement B final rule",
+        "fingerprint": "fp_1993-07-20_epa_sip_air_quality_models_us"
+      }
+    }
+  ]
+}

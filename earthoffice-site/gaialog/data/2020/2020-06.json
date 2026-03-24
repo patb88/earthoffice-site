@@ -1,0 +1,881 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_2020-06_normalize_2026-01-16T071456205Z",
+    "generated_utc": "2026-01-16T07:14:56.205Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "2020-06",
+    "window": {
+      "start_utc": "2020-06-01T00:00:00.000Z",
+      "end_utc": "2020-06-30T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "20200623-delta-duck-nwr-crude-discharge",
+      "title": "Crude oil discharged in Delta Duck National Wildlife Refuge after ruptured gas line",
+      "description": "A ruptured 2-inch gas line reportedly discharged about 20 barrels (approximately 840 gallons) of crude oil within Delta Duck National Wildlife Refuge in Louisiana. Responders deployed containment boom and sorbent materials and removed oiled vegetation (including water hyacinth).",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2020-06-23T00:00:00.000Z",
+        "event_end": "2020-06-23T23:59:59.000Z",
+        "reported_at": "2020-06-01T00:00:00.000Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "2020-06-23T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Delta Duck National Wildlife Refuge near Plaquemines Parish, Louisiana, USA",
+        "jurisdiction_level": "site",
+        "admin1": "Louisiana",
+        "country": "US",
+        "capital_used": null,
+        "lat": 29.345,
+        "lon": -89.345,
+        "precision": "proxy",
+        "location_basis": "manual_override",
+        "location_confidence": 0.35
+      },
+      "sources": [
+        {
+          "url": "https://blog.response.restoration.noaa.gov/incident-responses-june-2020",
+          "source_name": "NOAA OR&R Blog",
+          "published_at": "2020-06-01T00:00:00.000Z",
+          "headline": "Incident Responses - June 2020",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA"
+        ],
+        "substances": [
+          "crude oil"
+        ],
+        "ecosystems": [
+          "wetlands"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "discharged about 20 barrels (840 gallons) of crude oil",
+            "source_url": "https://blog.response.restoration.noaa.gov/incident-responses-june-2020"
+          },
+          {
+            "quote": "deployed containment boom and sorbent",
+            "source_url": "https://blog.response.restoration.noaa.gov/incident-responses-june-2020"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.52,
+        "category": 0.85,
+        "location": 0.35,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "needs_dedupe_check",
+        "low_confidence_location"
+      ],
+      "dedupe": {
+        "cluster_hint": "NOAA OR&R June 2020 incident responses - Louisiana oil discharge",
+        "fingerprint": "pollution_contamination|delta duck national wildlife refuge|2020-06-23"
+      }
+    },
+    {
+      "event_id": "20200627-charenton-la-wellhead-leak",
+      "title": "Wellhead leak reportedly discharges sweet crude into waterway near Charenton, Louisiana",
+      "description": "A wellhead leak near Charenton, Louisiana reportedly discharged approximately 10–15 barrels of sweet crude oil into an unnamed waterway. Containment and removal of oiled vegetation were authorized as part of the response.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2020-06-27T00:00:00.000Z",
+        "event_end": "2020-06-27T23:59:59.000Z",
+        "reported_at": "2020-06-01T00:00:00.000Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "2020-06-27T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Near Charenton, Louisiana, USA",
+        "jurisdiction_level": "city",
+        "admin1": "Louisiana",
+        "country": "US",
+        "capital_used": null,
+        "lat": 29.8816,
+        "lon": -91.5254,
+        "precision": "city",
+        "location_basis": "manual_override",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://blog.response.restoration.noaa.gov/incident-responses-june-2020",
+          "source_name": "NOAA OR&R Blog",
+          "published_at": "2020-06-01T00:00:00.000Z",
+          "headline": "Incident Responses - June 2020",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA"
+        ],
+        "substances": [
+          "sweet crude oil"
+        ],
+        "ecosystems": [
+          "waterway"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "discharged approximately 10–15 barrels ... of sweet crude oil",
+            "source_url": "https://blog.response.restoration.noaa.gov/incident-responses-june-2020"
+          },
+          {
+            "quote": "into an unnamed waterway",
+            "source_url": "https://blog.response.restoration.noaa.gov/incident-responses-june-2020"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.85,
+        "location": 0.7,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "NOAA OR&R June 2020 incident responses - Charenton wellhead leak",
+        "fingerprint": "pollution_contamination|charenton louisiana|2020-06-27"
+      }
+    },
+    {
+      "event_id": "20200624-new-bedford-harbor-diesel-spill",
+      "title": "Diesel spill reported in New Bedford Harbor contained with booms",
+      "description": "A diesel spill was reported in New Bedford Harbor in Massachusetts, and crews installed booms to contain it near Blue Harvest Fisheries. Massachusetts DEP and the U.S. Coast Guard responded to the incident.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2020-06-24T00:00:00.000Z",
+        "event_end": "2020-06-24T23:59:59.000Z",
+        "reported_at": "2020-06-24T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2020-06-24T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "New Bedford Harbor, Massachusetts, USA",
+        "jurisdiction_level": "site",
+        "admin1": "Massachusetts",
+        "country": "US",
+        "capital_used": null,
+        "lat": 41.6362,
+        "lon": -70.9342,
+        "precision": "city",
+        "location_basis": "manual_override",
+        "location_confidence": 0.75
+      },
+      "sources": [
+        {
+          "url": "https://wbsm.com/crews-respond-to-diesel-spill-in-new-bedford-harbor/",
+          "source_name": "WBSM",
+          "published_at": "2020-06-24T00:00:00.000Z",
+          "headline": "Crews Respond to Diesel Spill in New Bedford Harbor",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Massachusetts Department of Environmental Protection",
+          "U.S. Coast Guard",
+          "Blue Harvest Fisheries"
+        ],
+        "substances": [
+          "diesel"
+        ],
+        "ecosystems": [
+          "harbor"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Crews responded to a diesel spill in New Bedford Harbor",
+            "source_url": "https://wbsm.com/crews-respond-to-diesel-spill-in-new-bedford-harbor/"
+          },
+          {
+            "quote": "installed booms to contain the spill",
+            "source_url": "https://wbsm.com/crews-respond-to-diesel-spill-in-new-bedford-harbor/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.85,
+        "location": 0.75,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "New Bedford Harbor diesel spill June 2020",
+        "fingerprint": "pollution_contamination|new bedford harbor|2020-06-24"
+      }
+    },
+    {
+      "event_id": "evt_20200620_verkhoyansk_heat_38c",
+      "title": "Verkhoyansk station reports 38°C during Siberian heatwave",
+      "description": "Reports stated that an observing station at Verkhoyansk recorded 38°C (100.4°F) on June 20, 2020 amid a prolonged Siberian heatwave. The WMO described June 2020 as exceptionally warm in Arctic Siberia in connection with this event.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2020-06-20T00:00:00.000Z",
+        "event_end": "2020-06-20T23:59:59.000Z",
+        "reported_at": "2020-06-23T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2020-06-20T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Verkhoyansk, Sakha Republic (Yakutia), Russia",
+        "jurisdiction_level": "city",
+        "admin1": "Sakha Republic",
+        "country": "RU",
+        "capital_used": null,
+        "lat": 67.55,
+        "lon": 133.39,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://wmo.int/media/news/june-sees-more-global-heat-especially-arctic-siberia",
+          "source_name": "World Meteorological Organization",
+          "published_at": "2020-06-23T00:00:00Z",
+          "headline": "June sees more global heat - especially in Arctic Siberia",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://weather.com/news/climate/news/2020-07-02-russia-100-degree-heat-record-confirmed",
+          "source_name": "The Weather Channel",
+          "published_at": "2020-07-02T00:00:00Z",
+          "headline": "Russia's 100-Degree Heat Record Was Confirmed, Adding to Alarm Over Arctic Warming",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "World Meteorological Organization"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "Arctic"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "June sees more global heat - especially in Arctic Siberia",
+            "source_url": "https://wmo.int/media/news/june-sees-more-global-heat-especially-arctic-siberia"
+          },
+          {
+            "quote": "recorded 38°C (100.4°F) on June 20",
+            "source_url": "https://weather.com/news/climate/news/2020-07-02-russia-100-degree-heat-record-confirmed"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.65,
+        "category": 0.8,
+        "location": 0.7,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Verkhoyansk 38C June 2020 heat record",
+        "fingerprint": "fp_evt_20200620_verkhoyansk_heat_38c"
+      }
+    },
+    {
+      "event_id": "geological_mexico_oaxaca_eq_2020-06-23",
+      "title": "M7.4–7.5 earthquake off Oaxaca prompts tsunami warning",
+      "description": "A strong earthquake struck near the coast of Oaxaca, Mexico on June 23, 2020. The event prompted tsunami warnings and was widely felt across parts of southern and central Mexico.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2020-06-23T15:29:05.000Z",
+        "event_end": "2020-06-23T23:59:59.000Z",
+        "reported_at": "2020-06-23T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2020-06-23T15:29:05.000Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Oaxaca coast, Mexico",
+        "jurisdiction_level": "state",
+        "admin1": "Oaxaca",
+        "country": "MX",
+        "capital_used": "Oaxaca de Juárez",
+        "lat": 17.0732,
+        "lon": -96.7266,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://www.paho.org/en/natural-disasters-monitoring/natural-disasters-monitoring-june-23-2020",
+          "source_name": "PAHO",
+          "published_at": "2020-06-23T00:00:00.000Z",
+          "headline": "Natural Disasters Monitoring, June 23, 2020",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://earthquake.phivolcs.dost.gov.ph/tsunamiLatest_yearly/2020/tsunami_latest.html",
+          "source_name": "PHIVOLCS",
+          "published_at": "2020-01-01T00:00:00.000Z",
+          "headline": "Tsunami Latest (2020)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "PAHO",
+          "WHO",
+          "PHIVOLCS"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Natural Disasters Monitoring, June 23, 2020",
+            "source_url": "https://www.paho.org/en/natural-disasters-monitoring/natural-disasters-monitoring-june-23-2020"
+          },
+          {
+            "quote": "tsunami_latest.html",
+            "source_url": "https://earthquake.phivolcs.dost.gov.ph/tsunamiLatest_yearly/2020/tsunami_latest.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.85,
+        "location": 0.7,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "secondary_sources_only",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Mexico Oaxaca earthquake 2020-06-23",
+        "fingerprint": "geological|mx|oaxaca|2020-06-23|earthquake-off-oaxaca"
+      }
+    },
+    {
+      "event_id": "geological_indonesia_merapi_eruption_2020-06-21",
+      "title": "Mount Merapi eruption sends ash plume reported around 6 km high",
+      "description": "Mount Merapi in Indonesia erupted on June 21, 2020, producing an ash plume reported at about 6,000 meters. Reports said authorities warned residents to stay outside an exclusion zone around the volcano.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2020-06-21T00:00:00.000Z",
+        "event_end": "2020-06-21T23:59:59.000Z",
+        "reported_at": "2020-06-21T00:00:00.000Z",
+        "time_confidence": 0.5,
+        "event_date_utc": "2020-06-21T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Mount Merapi (Sleman/central Java region), Indonesia",
+        "jurisdiction_level": "site",
+        "admin1": null,
+        "country": "ID",
+        "capital_used": null,
+        "lat": -7.5407,
+        "lon": 110.4461,
+        "precision": "exact",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.75
+      },
+      "sources": [
+        {
+          "url": "https://phys.org/news/2020-06-indonesia-mt-merapi-erupts-spewing.html",
+          "source_name": "Phys.org",
+          "published_at": "2020-06-21T00:00:00.000Z",
+          "headline": "Indonesia: Mt Merapi erupts, spewing ash",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [
+          "volcanic ash"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "indonesia-mt-merapi-erupts-spewing.html",
+            "source_url": "https://phys.org/news/2020-06-indonesia-mt-merapi-erupts-spewing.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.85,
+        "location": 0.75,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Mount Merapi eruption 2020-06-21",
+        "fingerprint": "geological|id|mount-merapi|2020-06-21|eruption-ash-plume"
+      }
+    },
+    {
+      "event_id": "evt_202006_russia_siberia_wildfires_noaa_nesdis",
+      "title": "Siberian wildfires during exceptional June 2020 heat (Russia, Arctic regions)",
+      "description": "NOAA/NESDIS reported extensive wildfire activity across parts of Russia (including Siberia) during June 2020 amid extraordinary heat. The report cited a Russian forestry agency summary for June 15–21 and provided active-fire counts as of June 22.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2020-06-23T00:00:00Z",
+        "time_confidence": 0.45,
+        "event_date_utc": "2020-06-22T00:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Russia (multi-region Siberia/Arctic areas)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "RU",
+        "capital_used": "Moscow",
+        "lat": 55.7558,
+        "lon": 37.6173,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.nesdis.noaa.gov/news/extraordinary-heat-and-massive-fires-are-scorching-siberia",
+          "source_name": "NOAA NESDIS",
+          "published_at": "2020-06-23T00:00:00Z",
+          "headline": "Extraordinary Heat and Massive Fires are Scorching Siberia",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA/NESDIS"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "...extraordinary heat and massive fires are scorching Siberia...",
+            "source_url": "https://www.nesdis.noaa.gov/news/extraordinary-heat-and-massive-fires-are-scorching-siberia"
+          },
+          {
+            "quote": "...Russian forestry agency summary for June 15–21...",
+            "source_url": "https://www.nesdis.noaa.gov/news/extraordinary-heat-and-massive-fires-are-scorching-siberia"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.8,
+        "location": 0.6,
+        "summary_grounding": 0.65
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Russia Siberia Arctic wildfires June 2020 NOAA NESDIS",
+        "fingerprint": "fp_202006_russia_siberia_arctic_wildfires_noaa_nesdis"
+      }
+    },
+    {
+      "event_id": "202006_india_locust_infestation",
+      "title": "Major desert locust swarms impact multiple Indian states",
+      "description": "Desert locust swarms affected parts of India during June 2020, threatening crops and prompting mitigation efforts. Reporting linked the movement of swarms to weather and regional conditions.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2020-06-01T00:00:00.000Z",
+        "time_confidence": 0.5,
+        "event_date_utc": null,
+        "event_date_precision": "month"
+      },
+      "location": {
+        "name": "India",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "IN",
+        "capital_used": "New Delhi",
+        "lat": 28.6139,
+        "lon": 77.209,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.85
+      },
+      "sources": [
+        {
+          "url": "https://time.com/5846539/india-locust-pandemic/",
+          "source_name": "Time",
+          "published_at": "2020-06-01T00:00:00.000Z",
+          "headline": "India: major desert locust infestation impacts multiple states",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "desert locust infestation",
+            "source_url": "https://time.com/5846539/india-locust-pandemic/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.7,
+        "location": 0.85,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "paywalled_or_partial",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "2020-06 desert locust impacts India",
+        "fingerprint": "fp_202006_india_desert_locust_country_month"
+      }
+    },
+    {
+      "event_id": "202006_east_africa_yemen_locust_upsurge",
+      "title": "Desert locust upsurge threatens food security in East Africa and Yemen",
+      "description": "A June 2020 update described continued risks from desert locust swarms in parts of East Africa and Yemen, with potential impacts on crops and livelihoods. The reporting noted operational constraints and compounding hazards such as floods and COVID-19 impacts on response capacity.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2020-06-12T00:00:00.000Z",
+        "event_end": "2020-06-12T23:59:59.000Z",
+        "reported_at": "2020-06-12T00:00:00.000Z",
+        "time_confidence": 0.75,
+        "event_date_utc": "2020-06-12T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "East Africa and Yemen",
+        "jurisdiction_level": "supranational",
+        "admin1": null,
+        "country": null,
+        "capital_used": null,
+        "lat": 0,
+        "lon": 0,
+        "precision": "proxy",
+        "location_basis": "institution_proxy",
+        "location_confidence": 0.25
+      },
+      "sources": [
+        {
+          "url": "https://harnnet.org/index.php/articles-corner/english-articles/item/6567-wfp-east-africa-update-on-the-desert-locust-outbreak-12-june-2020",
+          "source_name": "HARNNET",
+          "published_at": "2020-06-12T00:00:00.000Z",
+          "headline": "WFP East Africa update on the desert locust outbreak: 12 June 2020",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.fao.org/newsroom/detail/FAO-continues-to-fight-Desert-Locust-upsurge-in-East-Africa-and-Yemen-despite-COVID-19-constraints/en",
+          "source_name": "FAO",
+          "published_at": "2020-06-12T00:00:00.000Z",
+          "headline": "FAO continues to fight Desert Locust upsurge in East Africa and Yemen despite COVID-19 constraints",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "World Food Programme (WFP)",
+          "Food and Agriculture Organization of the United Nations (FAO)"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "update on the desert locust outbreak",
+            "source_url": "https://harnnet.org/index.php/articles-corner/english-articles/item/6567-wfp-east-africa-update-on-the-desert-locust-outbreak-12-june-2020"
+          },
+          {
+            "quote": "fight Desert Locust upsurge in East Africa and Yemen",
+            "source_url": "https://www.fao.org/newsroom/detail/FAO-continues-to-fight-Desert-Locust-upsurge-in-East-Africa-and-Yemen-despite-COVID-19-constraints/en"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.45,
+        "category": 0.65,
+        "location": 0.25,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "low_confidence_location"
+      ],
+      "dedupe": {
+        "cluster_hint": "2020-06 desert locust upsurge East Africa & Yemen",
+        "fingerprint": "fp_202006_eafrica_yemen_desert_locust_day"
+      }
+    },
+    {
+      "event_id": "20200622_us_wotus_nwpr_effective",
+      "title": "Navigable Waters Protection Rule (WOTUS) takes effect in most of the United States; stayed in Colorado",
+      "description": "The U.S. EPA and the Department of the Army’s Navigable Waters Protection Rule, revising the definition of waters regulated under the Clean Water Act, became effective on June 22, 2020. At the time, the rule was subject to a preliminary injunction in Colorado.",
+      "category_primary": "policy_regulation",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "2020-06-22T00:00:00.000Z",
+        "event_end": "2020-06-22T23:59:59.000Z",
+        "reported_at": "2020-06-22T00:00:00.000Z",
+        "time_confidence": 0.85,
+        "event_date_utc": "2020-06-22T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.8
+      },
+      "sources": [
+        {
+          "url": "https://19january2021snapshot.epa.gov/nwpr/navigable-waters-protection-rule-overview_.html",
+          "source_name": "U.S. Environmental Protection Agency (archive snapshot)",
+          "published_at": "2020-06-22T00:00:00.000Z",
+          "headline": "Navigable Waters Protection Rule Overview",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.usace.army.mil/Media/Announcements/Article/2876124/22-jun-2020-navigable-waters-protection-rule-becomes-effective/",
+          "source_name": "U.S. Army Corps of Engineers",
+          "published_at": "2020-06-22T00:00:00.000Z",
+          "headline": "22 Jun 2020 - Navigable Waters Protection Rule Becomes Effective",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Environmental Protection Agency (EPA)",
+          "Department of the Army",
+          "U.S. Army Corps of Engineers"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "federally regulated waters (Clean Water Act)"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "The Navigable Waters Protection Rule became effective June 22, 2020.",
+            "source_url": "https://www.usace.army.mil/Media/Announcements/Article/2876124/22-jun-2020-navigable-waters-protection-rule-becomes-effective/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.78,
+        "category": 0.85,
+        "location": 0.8,
+        "summary_grounding": 0.7
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "US NWPR WOTUS effective 2020-06-22",
+        "fingerprint": "us_nwpr_wotus_2020-06-22_washington-dc"
+      }
+    },
+    {
+      "event_id": "20200604_us_eo_infrastructure_fasttrack",
+      "title": "U.S. executive order directs agencies to accelerate infrastructure approvals during COVID-19 emergency",
+      "description": "A U.S. executive order issued June 4, 2020 directed federal agencies to use emergency authorities and other tools to speed up approvals for infrastructure projects. The action prompted concerns that environmental review and public participation processes could be reduced or expedited.",
+      "category_primary": "policy_regulation",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "2020-06-04T00:00:00.000Z",
+        "event_end": "2020-06-04T23:59:59.000Z",
+        "reported_at": "2020-06-04T00:00:00.000Z",
+        "time_confidence": 0.65,
+        "event_date_utc": "2020-06-04T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://www.axios.com/2020/06/04/trump-environment-protections-executive-order",
+          "source_name": "Axios",
+          "published_at": "2020-06-04T00:00:00.000Z",
+          "headline": "Trump issues executive order to suspend environmental rules amid COVID-19 emergency",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Executive Office of the President of the United States",
+          "U.S. federal agencies"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Trump signed an executive order Wednesday directing federal agencies to expedite infrastructure projects.",
+            "source_url": "https://www.axios.com/2020/06/04/trump-environment-protections-executive-order"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.75,
+        "location": 0.7,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "secondary_sources_only",
+        "possible_opinion_or_advocacy",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "US EO expedite infrastructure approvals 2020-06-04",
+        "fingerprint": "us_eo_expedite_infrastructure_2020-06-04_washington-dc"
+      }
+    }
+  ]
+}

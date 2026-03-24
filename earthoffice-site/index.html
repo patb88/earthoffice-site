@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Earth Office</title>
+  <meta name="description" content="Earth Office is a collection of small, focused projects that help people notice patterns—in conversation, perception, images, and the living world." />
+  <link rel="stylesheet" href="./styles.css" />
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8962755045759425"
+     crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap">
+      <div class="brand">
+        <span class="mark" aria-hidden="true">◎</span>
+        <span class="name">Earth Office</span>
+      </div>
+
+      <nav class="nav" aria-label="Primary">
+        <a href="#projects">Projects</a>
+        <a href="#purpose">Purpose</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="wrap">
+    <section class="hero">
+      <h1>Earth Office</h1>
+      <p class="tagline"><em>EarthOffice is an experimental workspace for exploring how humans, systems, and intelligence interact.</em></p>
+
+	  <p class="lede">
+
+		This site hosts a collection of ongoing projects, prototypes, and thinking tools focused on conversational systems, applied AI, perception, and sense-making. Some work is active, some exploratory, and much of it intentionally unfinished. The emphasis is on understanding how ideas evolve into usable systems—not on polished products or rapid iteration.
+	  </p>
+	  <p class="lede">
+        EarthOffice is built slowly and in public, as a place to test concepts, document learning, and explore how complex systems behave over time.
+      </p>
+    </section>
+
+    <hr class="rule" />
+
+    <section id="projects" class="section">
+      <h2>Projects</h2>
+
+      <div class="cards">
+        <article class="card">
+          <h3>Chat Explorer</h3>
+          <p>
+            An interface for navigating, tagging, and reflecting on long-form AI conversations as personal knowledge.
+          </p>
+          <dl class="meta">
+            <div>
+              <dt>Status</dt>
+              <dd><span class="pill">Active</span></dd>
+            </div>
+            <div>
+              <dt>Link</dt>
+              <dd><a class="link" href="/exportbrowser/">Enter Chat Explorer</a></dd>
+            </div>
+          </dl>
+        </article>
+
+        <article class="card">
+          <h3>PIEBox</h3>
+          <p>
+            Real-time perception experiments that explore how interference, context, and motion shape what we see.
+          </p>
+          <dl class="meta">
+            <div>
+              <dt>Status</dt>
+              <dd><span class="pill">Active</span></dd>
+            </div>
+            <div>
+              <dt>Link</dt>
+              <dd><a class="link" href="/piebox/blender.html">Enter PIEBox</a></dd>
+            </div>
+          </dl>
+        </article>
+
+        <article class="card">
+          <h3>Daily Diversions</h3>
+          <p>
+            A shared daily image—drawn from many categories—meant to pause the day and invite light social reflection.
+          </p>
+          <dl class="meta">
+            <div>
+              <dt>Status</dt>
+              <dd><span class="pill muted">In development</span></dd>
+            </div>
+            <div>
+              <dt>Link</dt>
+              <dd><a class="link" href="/dailydiversions/">coming soon</a></dd>
+            </div>
+          </dl>
+        </article>
+
+        <article class="card">
+          <h3>Gaia Log</h3>
+          <p>
+            A living, geolocated timeline of environmental events—mapped, filterable, and contextualized across time.
+          </p>
+          <dl class="meta">
+            <div>
+              <dt>Status</dt>
+              <dd><span class="pill muted">In development</span></dd>
+            </div>
+            <div>
+              <dt>Link</dt>
+              <dd><a class="link" href="/gaialog/">Concept overview</a></dd>
+            </div>
+          </dl>
+        </article>
+      </div>
+    </section>
+
+    <hr class="rule" />
+
+
+<section id="articles" class="section">
+  <h2>Articles</h2>
+
+  <div class="articles-shell">
+    <ul id="articles-list" class="articles-list">
+      <li class="hint">Loading articles…</li>
+    </ul>
+  </div>
+</section>
+
+
+
+    <section id="purpose" class="section">
+      <h2>A Note on Purpose</h2>
+
+      <p>
+        Earth Office is a long-term project.
+		It exists to slow observation—to notice what changes when attention, tools, and context shift. Some work looks inward, some outward. Some is playful, some archival.
+      </p>
+      <p>
+		Nothing here is finished. That is intentional.
+      </p>
+	  <p><i>
+	  Built by one human, with help.  - <a href="mailto:patb@earthoffice.net" style="text-decoration: none;">Pat Brenner</a>
+	  </i></p>
+    </section>
+
+  </main>
+  <footer class="site-footer">
+    <div class="wrap">
+      <p class="small">
+        <a href="/about.html" class="link">About</a>
+        &nbsp;·&nbsp;
+        <a href="/contact.html" class="link">Contact</a>
+        &nbsp;·&nbsp;
+        <a href="/privacy.html" class="link">Privacy</a>
+        &nbsp;·&nbsp;
+        <a href="/" class="link">Earth Office</a>
+      </p>
+    </div>
+  </footer>  
+</body>
+
+<script>
+(async () => {
+  const list = document.getElementById("articles-list");
+  if (!list) return;
+
+  try {
+    const res = await fetch("/articles/articles.json");
+    const articles = await res.json();
+
+    articles
+      .sort((a, b) => b.date.localeCompare(a.date))
+      .forEach(article => {
+        const li = document.createElement("li");
+        li.className = "article-item";
+
+        li.innerHTML = `
+          <a class="article-link" href="/articles/${article.id}.pdf">
+            ${article.title}
+          </a>
+          <span class="article-date">${article.date}</span>
+        `;
+
+        list.appendChild(li);
+      });
+
+    list.querySelector(".hint")?.remove();
+  } catch (err) {
+    list.innerHTML = "<li class='hint'>Articles unavailable</li>";
+  }
+})();
+</script>
+
+</html>

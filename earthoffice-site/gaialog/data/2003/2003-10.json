@@ -1,0 +1,548 @@
+{
+  "batch_meta": {
+    "batch_id": "2003-10-11-gaialog-0001",
+    "generated_utc": "2026-01-11T00:00:00Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "2003-10",
+    "window": {
+      "start_utc": "2003-10-01T00:00:00.000Z",
+      "end_utc": "2003-10-31T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-discovery",
+      "version": "1.0",
+      "model": "api-assistant",
+      "retrieval_method": "curated"
+    }
+  },
+  "events": [
+    {
+      "event_id": "evt_20031002_ballou_hs_mercury_dc",
+      "title": "Elemental mercury spill at Ballou High School prompts hazmat response and cleanup",
+      "description": "A mercury spill at Ballou High School in Washington, D.C. prompted a hazardous materials response and cleanup actions described in an EPA school mercury cleanup case study collection.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2003-10-02T00:00:00.000Z",
+        "event_end": null,
+        "reported_at": "2003-10-01T00:00:00.000Z",
+        "time_confidence": 0.5,
+        "event_date_utc": "2003-10-02T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Washington, D.C., United States",
+        "jurisdiction_level": "city",
+        "admin1": "DC",
+        "country": "US",
+        "capital_used": null,
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://www.epa.gov/schools/case-studies-about-mercury-cleanups-schools",
+          "source_name": "U.S. EPA",
+          "published_at": "2003-10-01T00:00:00.000Z",
+          "headline": "Case Studies About Mercury Cleanups in Schools",
+          "byline": null,
+          "accessed_utc": "2026-01-11T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Environmental Protection Agency (EPA)",
+          "Ballou High School"
+        ],
+        "substances": [
+          "elemental mercury"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Case Studies About Mercury Cleanups in Schools",
+            "source_url": "https://www.epa.gov/schools/case-studies-about-mercury-cleanups-schools"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.7,
+        "location": 0.7,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "paywalled_or_partial"
+      ],
+      "dedupe": {
+        "cluster_hint": "ballou-high-school-mercury-spill-2003",
+        "fingerprint": "fp_ballou_hs_mercury_dc_2003_10"
+      }
+    },
+    {
+      "event_id": "evt_20031001_tropical_storm_larry_mexico",
+      "title": "Tropical Depression/Storm Larry brings heavy rain and flooding risk in southern Mexico",
+      "description": "NASA Earth Observatory coverage described Tropical Depression Larry in early October 2003 and emphasized heavy rainfall and flooding risk due to the system’s slow movement near southern Mexico.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2003-10-01T00:00:00.000Z",
+        "event_end": "2003-10-06T23:59:59.000Z",
+        "reported_at": "2003-10-01T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2003-10-01T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Southern Mexico (Tabasco/Veracruz region), Mexico",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "MX",
+        "capital_used": "Mexico City",
+        "lat": 19.4326,
+        "lon": -99.1332,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.5
+      },
+      "sources": [
+        {
+          "url": "https://earthobservatory.nasa.gov/images/12266/tropical-depression-larry",
+          "source_name": "NASA Earth Observatory",
+          "published_at": "2003-10-01T00:00:00.000Z",
+          "headline": "Tropical Depression Larry",
+          "byline": null,
+          "accessed_utc": "2026-01-11T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://science.nasa.gov/earth/earth-observatory/tropical-storm-larry-3841/",
+          "source_name": "NASA Science (Earth Observatory)",
+          "published_at": "2003-10-01T00:00:00.000Z",
+          "headline": "Tropical Storm Larry",
+          "byline": null,
+          "accessed_utc": "2026-01-11T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NASA"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Tropical Depression Larry",
+            "source_url": "https://earthobservatory.nasa.gov/images/12266/tropical-depression-larry"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.58,
+        "category": 0.7,
+        "location": 0.45,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "tropical-storm-larry-2003-mexico",
+        "fingerprint": "fp_tropical_storm_larry_mx_2003_10"
+      }
+    },
+    {
+      "event_id": "evt_20031003_hurricane_olaf_mexico",
+      "title": "Hurricane Olaf brings heavy rain to western Mexico",
+      "description": "NOAA/NHC tropical weather summaries and NOAA/WPC rainfall analysis pages document Hurricane Olaf in October 2003, including its impacts and associated heavy rainfall over parts of Mexico.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2003-10-03T00:00:00.000Z",
+        "event_end": "2003-10-08T23:59:59.000Z",
+        "reported_at": "2003-10-03T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2003-10-07T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Mexico (western coast near Manzanillo), Mexico",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "MX",
+        "capital_used": "Mexico City",
+        "lat": 19.4326,
+        "lon": -99.1332,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.5
+      },
+      "sources": [
+        {
+          "url": "https://www.nhc.noaa.gov/archive/2003/tws/MIATWSEP_oct.shtml",
+          "source_name": "NOAA NHC",
+          "published_at": "2003-10-01T00:00:00.000Z",
+          "headline": "Tropical Weather Summary for October 2003 (Eastern Pacific)",
+          "byline": null,
+          "accessed_utc": "2026-01-11T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.wpc.ncep.noaa.gov/tropical/rain/noraolaf2003.html",
+          "source_name": "NOAA WPC",
+          "published_at": "2003-10-01T00:00:00.000Z",
+          "headline": "Tropical Rainfall Summary: Nora/Olaf (2003)",
+          "byline": null,
+          "accessed_utc": "2026-01-11T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA National Hurricane Center",
+          "NOAA Weather Prediction Center"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Tropical Weather Summary for October 2003 (Eastern Pacific)",
+            "source_url": "https://www.nhc.noaa.gov/archive/2003/tws/MIATWSEP_oct.shtml"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.7,
+        "location": 0.45,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "hurricane-olaf-2003-mexico",
+        "fingerprint": "fp_hurricane_olaf_mx_2003_10"
+      }
+    },
+    {
+      "event_id": "evt_20031031_offshore_fukushima_quake_tsunami",
+      "title": "Offshore Fukushima earthquake generates small tsunami observed in Miyagi",
+      "description": "Japan’s Earthquake Research Committee monthly reporting for November 2003 describes an offshore Fukushima earthquake on October 31, 2003 and notes a small tsunami observation in Oshika, Miyagi Prefecture.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2003-10-31T00:00:00.000Z",
+        "event_end": "2003-10-31T23:59:59.000Z",
+        "reported_at": "2003-11-01T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2003-10-31T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Japan (offshore Fukushima; tsunami observed in Oshika, Miyagi)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "JP",
+        "capital_used": "Tokyo",
+        "lat": 35.6895,
+        "lon": 139.6917,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.5
+      },
+      "sources": [
+        {
+          "url": "https://www.jishin.go.jp/main/chousa/03nov/index-e.htm",
+          "source_name": "Earthquake Research Committee, Japan",
+          "published_at": "2003-11-01T00:00:00.000Z",
+          "headline": "November 2003 Seismicity (Monthly Report)",
+          "byline": null,
+          "accessed_utc": "2026-01-11T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Earthquake Research Committee (Japan)"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "03nov index-e (monthly report page)",
+            "source_url": "https://www.jishin.go.jp/main/chousa/03nov/index-e.htm"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.5,
+        "category": 0.7,
+        "location": 0.45,
+        "summary_grounding": 0.4
+      },
+      "quality_flags": [
+        "paywalled_or_partial",
+        "date_ambiguous",
+        "location_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "2003-10-31-offshore-fukushima-tsunami",
+        "fingerprint": "fp_fukushima_offshore_tsunami_2003_10_31"
+      }
+    },
+    {
+      "event_id": "evt_20031025_socal_firestorm_satellite_smoke",
+      "title": "Satellite imagery documents widespread smoke from Southern California wildfires",
+      "description": "NASA’s Scientific Visualization Studio published satellite visualizations showing multiple large wildfires and extensive smoke plumes across Southern California during October 25–26, 2003.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2003-10-25T00:00:00.000Z",
+        "event_end": "2003-10-26T23:59:59.000Z",
+        "reported_at": "2003-10-25T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2003-10-25T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Sacramento, California, United States (proxy for Southern California)",
+        "jurisdiction_level": "state",
+        "admin1": "CA",
+        "country": "US",
+        "capital_used": "Sacramento",
+        "lat": 38.5816,
+        "lon": -121.4944,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://svs.gsfc.nasa.gov/2842",
+          "source_name": "NASA SVS",
+          "published_at": "2003-10-25T00:00:00.000Z",
+          "headline": "Southern California Fires (Visualization)",
+          "byline": null,
+          "accessed_utc": "2026-01-11T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://svs.gsfc.nasa.gov/2843",
+          "source_name": "NASA SVS",
+          "published_at": "2003-10-26T00:00:00.000Z",
+          "headline": "Southern California Fires (Visualization)",
+          "byline": null,
+          "accessed_utc": "2026-01-11T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NASA Scientific Visualization Studio"
+        ],
+        "substances": [
+          "wildfire smoke"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "svs.gsfc.nasa.gov/2842",
+            "source_url": "https://svs.gsfc.nasa.gov/2842"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.75,
+        "location": 0.55,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "2003-southern-california-firestorm-oct-25-26",
+        "fingerprint": "fp_socal_firestorm_2003_10_25"
+      }
+    },
+    {
+      "event_id": "evt_20031001_cartagena_protocol_in_effect",
+      "title": "Cartagena Protocol on Biosafety is in force for CBD parties during October 2003",
+      "description": "The Convention on Biological Diversity lists the Cartagena Protocol on Biosafety and its entry into force in 2003, indicating the agreement was in effect during October 2003 for participating parties.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2003-09-11T00:00:00.000Z",
+        "time_confidence": 0.55,
+        "event_date_utc": null,
+        "event_date_precision": "month"
+      },
+      "location": {
+        "name": "Global (CBD parties)",
+        "jurisdiction_level": "global_proxy",
+        "admin1": null,
+        "country": null,
+        "capital_used": null,
+        "lat": 0,
+        "lon": 0,
+        "precision": "proxy",
+        "location_basis": "institution_proxy",
+        "location_confidence": 0.4
+      },
+      "sources": [
+        {
+          "url": "https://www.cbd.int/biosafety/protocol.shtml",
+          "source_name": "Convention on Biological Diversity",
+          "published_at": "2003-09-11T00:00:00.000Z",
+          "headline": "Cartagena Protocol on Biosafety",
+          "byline": null,
+          "accessed_utc": "2026-01-11T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Convention on Biological Diversity"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Cartagena Protocol on Biosafety",
+            "source_url": "https://www.cbd.int/biosafety/protocol.shtml"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.5,
+        "category": 0.6,
+        "location": 0.4,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "cartagena-protocol-in-force-2003",
+        "fingerprint": "fp_cartagena_protocol_2003_10"
+      }
+    },
+    {
+      "event_id": "evt_20031029_5th_circuit_houston_ozone_sip",
+      "title": "U.S. Fifth Circuit upholds EPA approval of the Houston ozone SIP, per EPA release",
+      "description": "An EPA news release states that on October 29, 2003, the Fifth Circuit Court of Appeals unanimously upheld EPA’s approval of the Houston ozone State Implementation Plan, supporting continued implementation of ozone control measures.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "2003-10-29T00:00:00.000Z",
+        "event_end": "2003-10-29T23:59:59.000Z",
+        "reported_at": "2003-10-29T00:00:00.000Z",
+        "time_confidence": 0.75,
+        "event_date_utc": "2003-10-29T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States (Houston ozone plan)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, D.C.",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.epa.gov/archive/epapages/newsroom_archive/newsreleases/80cec2292171dbda852570d6005e7e63.html",
+          "source_name": "U.S. EPA (Newsroom Archive)",
+          "published_at": "2003-10-29T00:00:00.000Z",
+          "headline": "Fifth Circuit Unanimously Upholds EPA Approval of Houston Ozone Plan",
+          "byline": null,
+          "accessed_utc": "2026-01-11T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Environmental Protection Agency (EPA)",
+          "U.S. Court of Appeals for the Fifth Circuit"
+        ],
+        "substances": [
+          "ozone"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Fifth Circuit Unanimously Upholds EPA Approval of Houston Ozone Plan",
+            "source_url": "https://www.epa.gov/archive/epapages/newsroom_archive/newsreleases/80cec2292171dbda852570d6005e7e63.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.67,
+        "category": 0.75,
+        "location": 0.55,
+        "summary_grounding": 0.65
+      },
+      "quality_flags": [
+        "location_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "2003-10-29-fifth-circuit-houston-ozone-sip",
+        "fingerprint": "fp_epa_fifth_circuit_houston_ozone_2003_10_29"
+      }
+    }
+  ]
+}

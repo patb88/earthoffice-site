@@ -1,0 +1,753 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_2020-11_normalize_2026-01-16T072405805Z",
+    "generated_utc": "2026-01-16T07:24:05.805Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "2020-11",
+    "window": {
+      "start_utc": "2020-11-01T00:00:00.000Z",
+      "end_utc": "2020-11-30T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "ev_202011_phillips66_carson_wastewater_discharge",
+      "title": "Phillips 66 Carson facility alleged illegal industrial wastewater discharge to LA County sewer system",
+      "description": "Reuters reported that U.S. prosecutors alleged Phillips 66’s Carson, California facility discharged industrial wastewater into the Los Angeles County sewer system on Nov. 24, 2020. Prosecutors said the discharge exceeded permit limits for oil and grease, alleging Clean Water Act violations.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2020-11-24T00:00:00.000Z",
+        "event_end": "2020-11-24T23:59:59.000Z",
+        "reported_at": "2024-11-21T00:00:00Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2020-11-24T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Carson, California, United States",
+        "jurisdiction_level": "city",
+        "admin1": "California",
+        "country": "US",
+        "capital_used": null,
+        "lat": 33.8314,
+        "lon": -118.2817,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.75
+      },
+      "sources": [
+        {
+          "url": "https://www.reuters.com/sustainability/climate-energy/phillips-66-indicted-violating-clean-water-act-us-attorney-says-2024-11-21/",
+          "source_name": "Reuters",
+          "published_at": "2024-11-21T00:00:00Z",
+          "headline": "Phillips 66 indicted for violating Clean Water Act, US attorney says",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Phillips 66",
+          "Los Angeles County"
+        ],
+        "substances": [
+          "industrial wastewater",
+          "oil and grease"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "discharged industrial wastewater ... into the Los Angeles County sewer system on Nov. 24, 2020",
+            "source_url": "https://www.reuters.com/sustainability/climate-energy/phillips-66-indicted-violating-clean-water-act-us-attorney-says-2024-11-21/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.75,
+        "location": 0.75,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "secondary_sources_only",
+        "date_ambiguous",
+        "paywalled_or_partial",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Phillips 66 Carson wastewater discharge Nov 2020",
+        "fingerprint": "phillips-66-carson-wastewater-2020-11-24"
+      }
+    },
+    {
+      "event_id": "ev_202011_greensboro_nc_sewage_spill_north_buffalo_creek",
+      "title": "Greensboro sewage spill released millions of gallons of untreated wastewater to North Buffalo Creek",
+      "description": "Wastewater Digest reported that Greensboro, North Carolina experienced a major sewer overflow on Nov. 12, 2020 after flooding and power outages. The city said failure of both primary and backup power contributed to the spill, with millions of gallons released and a large portion entering North Buffalo Creek.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2020-11-12T00:00:00.000Z",
+        "event_end": "2020-11-12T23:59:59.000Z",
+        "reported_at": "2020-11-13T00:00:00Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "2020-11-12T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Greensboro, North Carolina, United States",
+        "jurisdiction_level": "city",
+        "admin1": "North Carolina",
+        "country": "US",
+        "capital_used": null,
+        "lat": 36.0726,
+        "lon": -79.792,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://www.wwdmag.com/wastewater-treatment/news/10939310/93-million-gallons-of-untreated-wastewater-spill-in-north-carolina",
+          "source_name": "Wastewater Digest / Water & Wastes Digest (WWD)",
+          "published_at": "2020-11-13T00:00:00Z",
+          "headline": "9.3 Million Gallons of Untreated Wastewater Spill in North Carolina",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "City of Greensboro"
+        ],
+        "substances": [
+          "untreated wastewater",
+          "sewage"
+        ],
+        "ecosystems": [
+          "North Buffalo Creek"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "9.3 million gallons of untreated wastewater spilled ... about 3.8 million gallons ... entered North Buffalo Creek",
+            "source_url": "https://www.wwdmag.com/wastewater-treatment/news/10939310/93-million-gallons-of-untreated-wastewater-spill-in-north-carolina"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.64,
+        "category": 0.75,
+        "location": 0.7,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "secondary_sources_only",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Greensboro North Buffalo Creek sewage spill Nov 2020",
+        "fingerprint": "greensboro-nc-sewage-spill-2020-11-12"
+      }
+    },
+    {
+      "event_id": "evt-2020-11-typhoon-goni-phl-20201101",
+      "title": "Super Typhoon Goni (Rolly) makes destructive landfall in the Philippines",
+      "description": "Super Typhoon Goni (Rolly) made landfall in the Philippines on November 1, 2020. Reporting cited extreme winds and heavy rainfall that caused widespread damage.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2020-11-01T00:00:00.000Z",
+        "event_end": "2020-11-01T23:59:59.000Z",
+        "reported_at": "2021-01-01T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2020-11-01T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Philippines (landfall near Bicol Region)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "PH",
+        "capital_used": "Manila",
+        "lat": 14.5995,
+        "lon": 120.9842,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://yaleclimateconnections.org/2021/01/world-hammered-by-record-50-billion-dollar-weather-disasters-in-2020/",
+          "source_name": "Yale Climate Connections",
+          "published_at": "2021-01-01T00:00:00.000Z",
+          "headline": "World hammered by record $50 billion-dollar weather disasters in 2020",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.75,
+        "location": 0.6,
+        "summary_grounding": 0.4
+      },
+      "quality_flags": [
+        "secondary_sources_only",
+        "paywalled_or_partial",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "2020-11-01 Typhoon Goni Philippines",
+        "fingerprint": "fp-evt-2020-11-typhoon-goni-phl-20201101"
+      }
+    },
+    {
+      "event_id": "evt-2020-11-hurricane-eta-nicaragua-20201103",
+      "title": "Hurricane Eta landfall and flooding impacts in Central America",
+      "description": "Hurricane Eta made landfall in Nicaragua on November 3, 2020 and produced heavy rainfall and flooding across parts of Central America. Reports described catastrophic flooding and severe humanitarian impacts.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2020-11-03T00:00:00.000Z",
+        "event_end": "2020-11-03T23:59:59.000Z",
+        "reported_at": "2021-01-01T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2020-11-03T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Nicaragua / Central America (reported landfall in Nicaragua)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "NI",
+        "capital_used": "Managua",
+        "lat": 12.114993,
+        "lon": -86.236174,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://yaleclimateconnections.org/2021/01/world-hammered-by-record-50-billion-dollar-weather-disasters-in-2020/",
+          "source_name": "Yale Climate Connections",
+          "published_at": "2021-01-01T00:00:00.000Z",
+          "headline": "World hammered by record $50 billion-dollar weather disasters in 2020",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.54,
+        "category": 0.75,
+        "location": 0.55,
+        "summary_grounding": 0.4
+      },
+      "quality_flags": [
+        "secondary_sources_only",
+        "paywalled_or_partial",
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "2020-11-03 Hurricane Eta Nicaragua",
+        "fingerprint": "fp-evt-2020-11-hurricane-eta-nicaragua-20201103"
+      }
+    },
+    {
+      "event_id": "evt-2020-11-midatlantic-heavyrain-akq-20201111",
+      "title": "Heavy rainfall and flooding in Virginia and North Carolina region (Nov 11–12, 2020)",
+      "description": "A two-day heavy rainfall event on November 11–12, 2020 produced flooding, road closures, and rivers reaching moderate flood stage in parts of Virginia and North Carolina. NOAA/NWS documentation noted very high local rainfall totals in the region.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2020-11-11T00:00:00.000Z",
+        "event_end": "2020-11-12T23:59:59.000Z",
+        "reported_at": "2020-11-12T00:00:00.000Z",
+        "time_confidence": 0.8,
+        "event_date_utc": "2020-11-11T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Richmond, Virginia, United States (NWS Wakefield coverage area)",
+        "jurisdiction_level": "city",
+        "admin1": "Virginia",
+        "country": "US",
+        "capital_used": null,
+        "lat": 37.5407,
+        "lon": -77.436,
+        "precision": "city",
+        "location_basis": "institution_proxy",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.weather.gov/akq/Nov_11-12_2020_heavyrain",
+          "source_name": "NOAA National Weather Service (Wakefield, VA)",
+          "published_at": "2020-11-12T00:00:00.000Z",
+          "headline": "Nov 11-12, 2020 Heavy Rain Event",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA National Weather Service"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.64,
+        "category": 0.8,
+        "location": 0.55,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "2020-11-11 to 2020-11-12 Mid-Atlantic heavy rain NWS AKQ",
+        "fingerprint": "fp-evt-2020-11-midatlantic-heavyrain-akq-20201111"
+      }
+    },
+    {
+      "event_id": "evt_20201129_lewotolok_eruption_lembata_id",
+      "title": "Eruption of Ili Lewotolok (Lewotolo) volcano on Lembata Island",
+      "description": "Ili Lewotolok (Lewotolo) on Lembata Island, East Nusa Tenggara, erupted on 29 Nov 2020, producing an ash-and-gas plume observed by satellite imagery. Regional authorities issued aviation-related warnings and reported local impacts/disruptions as activity continued after renewed unrest in late November.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2020-11-29T02:00:00.000Z",
+        "event_end": "2020-11-29T23:59:59.000Z",
+        "reported_at": "2020-11-29T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2020-11-29T02:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Lembata Island, East Nusa Tenggara, Indonesia",
+        "jurisdiction_level": "site",
+        "admin1": "East Nusa Tenggara",
+        "country": "ID",
+        "capital_used": null,
+        "lat": -8.274,
+        "lon": 123.508,
+        "precision": "exact",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://science.nasa.gov/earth/earth-observatory/eruption-at-lewotolo-volcano-147605/",
+          "source_name": "NASA Earth Observatory",
+          "published_at": "2020-11-29T00:00:00Z",
+          "headline": "Eruption at Lewotolo Volcano",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://ahacentre.org/flash-update/flash-update-no-01-ili-lewotolok-volcano-eruption-indonesia-29-nov-2020/",
+          "source_name": "AHA Centre",
+          "published_at": "2020-11-29T00:00:00Z",
+          "headline": "Flash Update No. 01 - Ili Lewotolok Volcano Eruption, Indonesia (29 Nov 2020)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NASA Earth Observatory",
+          "AHA Centre"
+        ],
+        "substances": [
+          "volcanic ash",
+          "volcanic gas"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Lewotolo volcano erupted on November 29, 2020, sending a plume of ash and gas into the air.",
+            "source_url": "https://science.nasa.gov/earth/earth-observatory/eruption-at-lewotolo-volcano-147605/"
+          },
+          {
+            "quote": "Ili Lewotolok Volcano erupted in Lembata Regency, East Nusa Tenggara Province.",
+            "source_url": "https://ahacentre.org/flash-update/flash-update-no-01-ili-lewotolok-volcano-eruption-indonesia-29-nov-2020/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.85,
+        "location": 0.55,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "Ili Lewotolok/Lewotolo eruption 2020-11-29 Lembata",
+        "fingerprint": "fp_20201129_ili_lewotolok_lembata_geological"
+      }
+    },
+    {
+      "event_id": "2020-11-fires-pinehaven-fire-reno",
+      "title": "Pinehaven Fire near Reno, Nevada (wind-driven wildfire)",
+      "description": "A wind-driven wildfire near southwest Reno ignited during high winds and was attributed to arcing power lines. The fire burned hundreds of acres, produced smoke, and damaged or destroyed structures, prompting evacuations.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2020-12-18T00:00:00Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "2020-11-17T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Southwest Reno, Washoe County, Nevada, United States",
+        "jurisdiction_level": "site",
+        "admin1": "Nevada",
+        "country": "US",
+        "capital_used": null,
+        "lat": 39.5296,
+        "lon": -119.8138,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.kolotv.com/2020/12/18/arcing-power-lines-to-blame-for-destructive-pinehaven-fire-in-caughlin-ranch/",
+          "source_name": "KOLO-TV",
+          "published_at": "2020-12-18T00:00:00Z",
+          "headline": "Arcing power lines to blame for destructive Pinehaven Fire in Caughlin Ranch",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Arcing power lines to blame for destructive Pinehaven Fire",
+            "source_url": "https://www.kolotv.com/2020/12/18/arcing-power-lines-to-blame-for-destructive-pinehaven-fire-in-caughlin-ranch/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.58,
+        "category": 0.8,
+        "location": 0.6,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Pinehaven Fire Reno NV 2020-11",
+        "fingerprint": "pinehaven-fire-near-reno-nevada-wind-driven-wildfire|southwest-reno-washoe-county-nevada-united-states|2020-11"
+      }
+    },
+    {
+      "event_id": "2020-11-fires-mountain-view-fire-walker-ca",
+      "title": "Mountain View Fire near Walker, California (CA/NV border wildfire)",
+      "description": "The Mountain View Fire started near Walker, California on November 17, 2020 and spread across the California–Nevada border. The incident produced smoke impacts and damaged structures as it burned in Mono County, California and Douglas County, Nevada.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2020-11-17T00:00:00Z",
+        "time_confidence": 0.65,
+        "event_date_utc": "2020-11-17T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Mono County, California and Douglas County, Nevada, United States",
+        "jurisdiction_level": "state",
+        "admin1": "California/Nevada",
+        "country": "US",
+        "capital_used": "Sacramento, CA / Carson City, NV",
+        "lat": 38.5816,
+        "lon": -121.4944,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://inciweb.nwcg.gov/incident/7176/",
+          "source_name": "InciWeb (National Wildfire Coordinating Group)",
+          "published_at": "2020-11-17T00:00:00Z",
+          "headline": "Mountain View Fire",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "National Wildfire Coordinating Group"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Incident: Mountain View Fire",
+            "source_url": "https://inciweb.nwcg.gov/incident/7176/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.85,
+        "location": 0.45,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Mountain View Fire Walker CA NV 2020-11",
+        "fingerprint": "mountain-view-fire-near-walker-california-ca-nv-border-wildfire|mono-county-california-and-douglas-county-nevada-united-states|2020-11"
+      }
+    },
+    {
+      "event_id": "evt_202011_noaa_crw_pacific_bleaching_watch_hawaii",
+      "title": "NOAA Coral Reef Watch noted reduced heat stress and limited coral bleaching reports in Hawaii (Sep–Nov 2020)",
+      "description": "NOAA Coral Reef Watch’s Pacific analysis guidance reported that satellite-derived Coral Bleaching HotSpots decreased through November 2020. It also referenced limited reports of coral bleaching in Hawaii during September–November 2020, with heat stress diminishing to “Bleaching Watch” in November.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2020-12-01T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": null,
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Hawaii, United States",
+        "jurisdiction_level": "state",
+        "admin1": "Hawaii",
+        "country": "US",
+        "capital_used": "Honolulu",
+        "lat": 21.3069,
+        "lon": -157.8583,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://coralreefwatch.noaa.gov/satellite/analyses_guidance/pacific_cbts_ag_20201201.php",
+          "source_name": "NOAA Coral Reef Watch",
+          "published_at": "2020-12-01T00:00:00Z",
+          "headline": "Pacific Coral Bleaching Thermal Stress Analysis Guidance (dated 2020-12-01)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA Coral Reef Watch"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "coral reefs"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Coral Bleaching HotSpots decreased throughout November...",
+            "source_url": "https://coralreefwatch.noaa.gov/satellite/analyses_guidance/pacific_cbts_ag_20201201.php"
+          },
+          {
+            "quote": "...limited reports of bleaching in Hawaii during September–November 2020...",
+            "source_url": "https://coralreefwatch.noaa.gov/satellite/analyses_guidance/pacific_cbts_ag_20201201.php"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.8,
+        "location": 0.55,
+        "summary_grounding": 0.65
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "NOAA CRW Pacific bleaching watch Hawaii Sep-Nov 2020",
+        "fingerprint": "noaa_crw_pacific_bleaching_watch_hawaii_2020-11"
+      }
+    },
+    {
+      "event_id": "20201104_us_paris_agreement_withdrawal_effective",
+      "title": "U.S. withdrawal from the Paris Agreement takes effect",
+      "description": "The United States' withdrawal from the Paris Agreement became effective on November 4, 2020, following the Trump administration's earlier notice to exit under the treaty’s provisions. The move affected U.S. participation in international climate diplomacy under the agreement.",
+      "category_primary": "policy_regulation",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2020-11-04T00:00:00.000Z",
+        "event_end": "2020-11-04T23:59:59.000Z",
+        "reported_at": "2020-11-04T04:14:50Z",
+        "time_confidence": 0.95,
+        "event_date_utc": "2020-11-04T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.9
+      },
+      "sources": [
+        {
+          "url": "https://news.trust.org/item/20201104041450-7c2rh",
+          "source_name": "Thomson Reuters Foundation News",
+          "published_at": "2020-11-04T04:14:50Z",
+          "headline": "U.S. formally exits Paris Agreement, leaving global climate fight",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://time.com/5907210/us-leaves-paris-agreement-2020-election/",
+          "source_name": "Time",
+          "published_at": "2020-11-04T00:00:00Z",
+          "headline": "The U.S. Has Officially Left the Paris Climate Agreement",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "United States government",
+          "Paris Agreement"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "the United States formally left the Paris Agreement on Wednesday",
+            "source_url": "https://news.trust.org/item/20201104041450-7c2rh"
+          },
+          {
+            "quote": "the U.S. has officially left the Paris climate agreement",
+            "source_url": "https://time.com/5907210/us-leaves-paris-agreement-2020-election/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.86,
+        "category": 0.9,
+        "location": 0.9,
+        "summary_grounding": 0.8
+      },
+      "quality_flags": [
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "US Paris Agreement withdrawal effective 2020-11-04",
+        "fingerprint": "fp_20201104_us_paris_withdrawal_effective_us_2020-11-04"
+      }
+    }
+  ]
+}

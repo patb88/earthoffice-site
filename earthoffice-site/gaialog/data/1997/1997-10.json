@@ -1,0 +1,977 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_1997-10_normalize_2026-01-17T191915167Z",
+    "generated_utc": "2026-01-17T19:19:15.167Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "1997-10",
+    "window": {
+      "start_utc": "1997-10-01T00:00:00.000Z",
+      "end_utc": "1997-10-31T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "1997-10-honey-creek-fuel-oil-spill-milwaukee",
+      "title": "Honey Creek fuel oil spill from overturned tank truck (Milwaukee, Wisconsin, USA)",
+      "description": "A tank truck carrying No. 2 fuel oil overturned and caught fire near Honey Creek in Milwaukee. The NOAA response report estimates about 3,000 gallons spilled into the creek, contaminating sediments and organic material along roughly a half-mile reach.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1997-10-01T12:00:00Z",
+        "event_end": "1997-10-01T12:00:00Z",
+        "reported_at": "1997-10-01T12:00:00Z",
+        "time_confidence": 0.5,
+        "event_date_utc": "1997-10-01T12:00:00Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Honey Creek, Milwaukee, Wisconsin, USA",
+        "jurisdiction_level": "site",
+        "admin1": "Wisconsin",
+        "country": "US",
+        "capital_used": null,
+        "lat": 43.0389,
+        "lon": -87.9065,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.45
+      },
+      "sources": [
+        {
+          "url": "https://response.restoration.noaa.gov/sites/default/files/ResponseReports_98.pdf",
+          "source_name": "NOAA OR&R (Response Reports PDF)",
+          "published_at": "1998-01-01T00:00:00Z",
+          "headline": "Response Reports 98 (PDF)",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA"
+        ],
+        "substances": [
+          "No. 2 fuel oil"
+        ],
+        "ecosystems": [
+          "Honey Creek"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "an estimated ~3,000 gallons spilled into Honey Creek",
+            "source_url": "https://response.restoration.noaa.gov/sites/default/files/ResponseReports_98.pdf"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.8,
+        "location": 0.45,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "NOAA_ResponseReports_98_Honey_Creek_fuel_oil_spill",
+        "fingerprint": "1997-10-honey-creek-fuel-oil-spill-milwaukee|US-WI|1997-10-01"
+      }
+    },
+    {
+      "event_id": "1997-10-epa-higgins-disposal-remedy-franklin-nj",
+      "title": "EPA selects long-term groundwater cleanup for Higgins Disposal Superfund Site (Franklin Township, New Jersey, USA)",
+      "description": "EPA announced it selected a long-term cleanup remedy for contaminated groundwater at the Higgins Disposal Superfund Site in Franklin Township, New Jersey. The plan involved extraction wells and conveyance to a treatment plant at a nearby Superfund site to address chemical contamination including VOCs and other pollutants referenced by EPA.",
+      "category_primary": "cleanup_restoration",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "1997-10-09T12:00:00Z",
+        "event_end": "1997-10-09T12:00:00Z",
+        "reported_at": "1997-10-09T12:00:00Z",
+        "time_confidence": 0.75,
+        "event_date_utc": "1997-10-09T12:00:00Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Higgins Disposal Superfund Site, Franklin Township, New Jersey, USA",
+        "jurisdiction_level": "site",
+        "admin1": "New Jersey",
+        "country": "US",
+        "capital_used": null,
+        "lat": 40.5292,
+        "lon": -74.4115,
+        "precision": "admin1",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.4
+      },
+      "sources": [
+        {
+          "url": "https://www.epa.gov/archive/epapages/newsroom_archive/newsreleases/8ab0ab9f075b75048525726d0068668f.html",
+          "source_name": "U.S. Environmental Protection Agency (EPA)",
+          "published_at": "1997-10-09T00:00:00Z",
+          "headline": "EPA selects long-term groundwater cleanup for Higgins Disposal Superfund Site",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "EPA"
+        ],
+        "substances": [
+          "groundwater contamination",
+          "VOCs"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "EPA announced selection of a long-term remedy for chemically contaminated groundwater",
+            "source_url": "https://www.epa.gov/archive/epapages/newsroom_archive/newsreleases/8ab0ab9f075b75048525726d0068668f.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.35,
+        "location": 0.4,
+        "summary_grounding": 0.65
+      },
+      "quality_flags": [
+        "low_confidence_category",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "EPA_Higgins_Disposal_Record_of_Decision_announcement_1997-10-09",
+        "fingerprint": "1997-10-epa-higgins-disposal-remedy-franklin-nj|US-NJ|1997-10-09"
+      }
+    },
+    {
+      "event_id": "1997-10-bolivar-peninsula-barge-urea-misid",
+      "title": "Barge cargo initially reported as ammonium nitrate later identified as urea fertilizer (Bolivar Peninsula, Texas, USA)",
+      "description": "A NOAA response report describes a potential hazardous materials concern involving a barge cargo initially thought to be ammonium nitrate but later identified as urea fertilizer. The report indicates no release occurred (amount: none).",
+      "category_primary": "pollution_contamination",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "1997-10-18T12:00:00Z",
+        "event_end": "1997-10-18T12:00:00Z",
+        "reported_at": "1997-10-18T12:00:00Z",
+        "time_confidence": 0.5,
+        "event_date_utc": "1997-10-18T12:00:00Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Bolivar Peninsula, Texas, USA",
+        "jurisdiction_level": "site",
+        "admin1": "Texas",
+        "country": "US",
+        "capital_used": null,
+        "lat": 29.4783,
+        "lon": -94.5796,
+        "precision": "admin1",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.35
+      },
+      "sources": [
+        {
+          "url": "https://response.restoration.noaa.gov/sites/default/files/ResponseReports_98.pdf",
+          "source_name": "NOAA OR&R (Response Reports PDF)",
+          "published_at": "1998-01-01T00:00:00Z",
+          "headline": "Response Reports 98 (PDF)",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA"
+        ],
+        "substances": [
+          "ammonium nitrate",
+          "urea fertilizer"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "later identified as urea fertilizer; ... no material released (“Amount: none”).",
+            "source_url": "https://response.restoration.noaa.gov/sites/default/files/ResponseReports_98.pdf"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.5,
+        "category": 0.7,
+        "location": 0.35,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "NOAA_ResponseReports_98_Bolivar_Peninsula_urea_cargo_no_release",
+        "fingerprint": "1997-10-bolivar-peninsula-barge-urea-misid|US-TX|1997-10-18"
+      }
+    },
+    {
+      "event_id": "1997-10-colonial-pipeline-sugarland-run-settlement",
+      "title": "Colonial Pipeline settlement related to 1993 diesel spill affecting Sugarland Run and the Potomac River (Virginia-area, USA)",
+      "description": "The U.S. Department of Justice announced a proposed settlement with Colonial Pipeline related to a 1993 diesel fuel release that contaminated Sugarland Run, the Potomac River, and nearby wetlands. The settlement required a civil penalty and funding for environmental restoration and related costs.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "1997-10-21T12:00:00Z",
+        "event_end": "1997-10-21T12:00:00Z",
+        "reported_at": "1997-10-21T00:00:00Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "1997-10-21T12:00:00Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Sugarland Run and the Potomac River (Reston, Virginia-area), USA",
+        "jurisdiction_level": "state",
+        "admin1": "Virginia",
+        "country": "US",
+        "capital_used": "Richmond",
+        "lat": 37.5407,
+        "lon": -77.436,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.justice.gov/archive/opa/pr/1997/October97/437enr.html",
+          "source_name": "U.S. Department of Justice",
+          "published_at": "1997-10-21T00:00:00Z",
+          "headline": "Colonial Pipeline agrees to settlement for diesel fuel spill contamination of Sugarland Run and the Potomac River",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Department of Justice",
+          "Colonial Pipeline"
+        ],
+        "substances": [
+          "diesel fuel"
+        ],
+        "ecosystems": [
+          "Sugarland Run",
+          "Potomac River"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "announced a proposed settlement ... related to a massive 1993 diesel fuel release",
+            "source_url": "https://www.justice.gov/archive/opa/pr/1997/October97/437enr.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.7,
+        "category": 0.75,
+        "location": 0.6,
+        "summary_grounding": 0.7
+      },
+      "quality_flags": [
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "DOJ_Colonial_Pipeline_settlement_1997-10-21",
+        "fingerprint": "1997-10-colonial-pipeline-sugarland-run-settlement|US-VA|1997-10-21"
+      }
+    },
+    {
+      "event_id": "1997-10-monterey-bird-incident-mystery-substance",
+      "title": "Unknown substance washes ashore with bird impacts in Monterey Bay area (Santa Cruz County, California, USA)",
+      "description": "NOAA incident reporting describes an unknown substance washing ashore around Sunset Beach/Soquel Cove in the Monterey Bay area, with reports of bird impacts and a beach evacuation while hazmat personnel investigated. The substance was described as non-toxic and not petroleum-based, and a definitive identification was not reported in the draft sources.",
+      "category_primary": "pollution_contamination",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "1997-10-24T12:00:00Z",
+        "event_end": "1997-10-24T12:00:00Z",
+        "reported_at": "1997-10-24T12:00:00Z",
+        "time_confidence": 0.5,
+        "event_date_utc": "1997-10-24T12:00:00Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Sunset Beach / Soquel Cove, Monterey Bay (Santa Cruz area), California, USA",
+        "jurisdiction_level": "site",
+        "admin1": "California",
+        "country": "US",
+        "capital_used": null,
+        "lat": 36.9741,
+        "lon": -122.0308,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.4
+      },
+      "sources": [
+        {
+          "url": "https://incidentnews.noaa.gov/incident/7235",
+          "source_name": "NOAA IncidentNews",
+          "published_at": "1997-10-24T00:00:00Z",
+          "headline": "Incident 7235",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://response.restoration.noaa.gov/sites/default/files/ResponseReports_98.pdf",
+          "source_name": "NOAA OR&R (Response Reports PDF)",
+          "published_at": "1998-01-01T00:00:00Z",
+          "headline": "Response Reports 98 (PDF)",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA",
+          "USCG"
+        ],
+        "substances": [
+          "unknown substance",
+          "non-petroleum oil"
+        ],
+        "ecosystems": [
+          "Monterey Bay"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "unknown substance washing ashore and bird impacts; beach was evacuated",
+            "source_url": "https://incidentnews.noaa.gov/incident/7235"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.75,
+        "location": 0.4,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "NOAA_IncidentNews_7235_Monterey_Bird_Incident",
+        "fingerprint": "1997-10-monterey-bird-incident-mystery-substance|US-CA|1997-10-24"
+      }
+    },
+    {
+      "event_id": "evt_199710_pauline_mexico",
+      "title": "Hurricane Pauline brings extreme rainfall and impacts to Oaxaca and Guerrero, Mexico",
+      "description": "Eastern Pacific Hurricane Pauline struck Mexico’s southwest coast in early October 1997. The storm produced very heavy rainfall and significant impacts in Oaxaca and Guerrero, particularly around Oct 8–10.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1997-10-01T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1997-10-09T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Oaxaca, Mexico",
+        "jurisdiction_level": "state",
+        "admin1": "Oaxaca",
+        "country": "MX",
+        "capital_used": "Oaxaca de Juárez",
+        "lat": 17.073184,
+        "lon": -96.726588,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://www.wpc.ncep.noaa.gov/tropical/rain/pauline1997.html",
+          "source_name": "NOAA Weather Prediction Center",
+          "published_at": "1997-10-01T00:00:00.000Z",
+          "headline": "Hurricane Pauline (1997) Rainfall Summary",
+          "byline": null,
+          "accessed_utc": "2026-01-17T03:19:22.968Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA Weather Prediction Center"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Hurricane Pauline",
+            "source_url": "https://www.wpc.ncep.noaa.gov/tropical/rain/pauline1997.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.72,
+        "category": 0.8,
+        "location": 0.7,
+        "summary_grounding": 0.7
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Hurricane Pauline Mexico Oct 1997",
+        "fingerprint": "fp_199710_pauline_oaxaca_range"
+      }
+    },
+    {
+      "event_id": "evt_19971015_010333_punitaqui_monte_patria_chile",
+      "title": "Mw 7.1 Punitaqui / Monte Patria earthquake in Coquimbo Region, Chile",
+      "description": "A Mw 7.1 earthquake struck central Chile near Punitaqui / southwest of Monte Patria on 15 Oct 1997 (UTC). The event has been analyzed in the scientific literature as a Nazca-slab (intraplate) earthquake and is associated with damaging ground shaking.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1997-10-15T01:03:33Z",
+        "event_end": "1997-10-15T01:03:33Z",
+        "reported_at": "2001-01-01T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1997-10-15T01:03:33Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Near Punitaqui / Monte Patria, Coquimbo Region, Chile",
+        "jurisdiction_level": "state",
+        "admin1": "Coquimbo Region",
+        "country": "CL",
+        "capital_used": "La Serena",
+        "lat": -29.9027,
+        "lon": -71.2519,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.sciencedirect.com/science/article/pii/S004019510100213X",
+          "source_name": "ScienceDirect",
+          "published_at": "2001-01-01T00:00:00Z",
+          "headline": "ScienceDirect article (S004019510100213X)",
+          "byline": null,
+          "accessed_utc": "2026-01-17T03:19:59.463Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "ScienceDirect article (S004019510100213X)",
+            "source_url": "https://www.sciencedirect.com/science/article/pii/S004019510100213X"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.8,
+        "location": 0.6,
+        "summary_grounding": 0.4
+      },
+      "quality_flags": [
+        "paywalled_or_partial",
+        "secondary_sources_only",
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "1997-10-15 Coquimbo Chile M7.1",
+        "fingerprint": "fp_1997-10-15_coquimbo_cl_mw71_punitaqui"
+      }
+    },
+    {
+      "event_id": "1997-10_fires_se_asia_haze_indonesia",
+      "title": "Southeast Asian haze continued in October 1997 from Indonesian forest and peat fires",
+      "description": "Forest and peatland fires in Indonesia continued during October 1997, producing heavy smoke haze that affected parts of Southeast Asia. Contemporary reporting described ongoing hazardous smog conditions and discussed delayed seasonal rains/monsoon patterns as a factor in persistence.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1997-10-20T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1997-10-20T00:00:00.000Z",
+        "event_date_precision": "month"
+      },
+      "location": {
+        "name": "Indonesia",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "ID",
+        "capital_used": "Jakarta",
+        "lat": -6.2088,
+        "lon": 106.8456,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.8
+      },
+      "sources": [
+        {
+          "url": "https://www.csmonitor.com/1997/1020/102097.opin.opin.1.html",
+          "source_name": "The Christian Science Monitor",
+          "published_at": "1997-10-20T00:00:00.000Z",
+          "headline": "https://www.csmonitor.com/1997/1020/102097.opin.opin.1.html",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.csmonitor.com/1997/1028/102897.intl.intl.3.html",
+          "source_name": "The Christian Science Monitor",
+          "published_at": "1997-10-28T00:00:00.000Z",
+          "headline": "https://www.csmonitor.com/1997/1028/102897.intl.intl.3.html",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [
+          "peatlands",
+          "tropical forests"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.8,
+        "location": 0.8,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only",
+        "paywalled_or_partial",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "1997 Southeast Asian haze (Indonesia fires)",
+        "fingerprint": "1997-10_fires_se_asia_haze_indonesia"
+      }
+    },
+    {
+      "event_id": "1997-10_ecosystem_biodiversity_cactus-ferruginous-pygmy-owl-arizona-esa",
+      "title": "Cactus ferruginous pygmy-owl listed as endangered in Arizona (ESA final rule)",
+      "description": "A U.S. Fish and Wildlife Service final rule listed the cactus ferruginous pygmy-owl as endangered in Arizona under the U.S. Endangered Species Act. The rule established federal legal protections intended to reduce threats to the species and its habitat.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1997-03-10T00:00:00Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "1997-10-01T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Arizona, United States",
+        "jurisdiction_level": "state",
+        "admin1": "Arizona",
+        "country": "US",
+        "capital_used": "Phoenix",
+        "lat": 33.448376,
+        "lon": -112.074036,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.85
+      },
+      "sources": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/FR-1997-03-10/html/97-5788.htm",
+          "source_name": "GovInfo (Federal Register)",
+          "published_at": "1997-03-10T00:00:00Z",
+          "headline": "Endangered and Threatened Wildlife and Plants; Determination of Endangered Status for the Cactus Ferruginous Pygmy-Owl in Arizona",
+          "byline": null,
+          "accessed_utc": "2026-01-17T03:20:39.235Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Fish and Wildlife Service"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "determination of endangered status for the cactus ferruginous pygmy-owl in Arizona",
+            "source_url": "https://www.govinfo.gov/content/pkg/FR-1997-03-10/html/97-5788.htm"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.75,
+        "location": 0.85,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "cactus ferruginous pygmy-owl endangered Arizona ESA final rule Oct 1997",
+        "fingerprint": "1997-10_ecosystem_biodiversity_cactus-ferruginous-pygmy-owl-arizona-1997-10"
+      }
+    },
+    {
+      "event_id": "1997-10-02_treaty-of-amsterdam_amsterdam_nl",
+      "title": "Treaty of Amsterdam signed, reinforcing EU environmental integration",
+      "description": "EU member states signed the Treaty of Amsterdam on 2 October 1997. The treaty amended the EU framework and strengthened the integration of environmental protection and sustainable development objectives into EU policies.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "1997-10-02T12:00:00Z",
+        "event_end": "1997-10-02T12:00:00Z",
+        "reported_at": "1997-10-02T12:00:00Z",
+        "time_confidence": 0.5,
+        "event_date_utc": "1997-10-02T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Amsterdam, Netherlands",
+        "jurisdiction_level": "city",
+        "admin1": null,
+        "country": "NL",
+        "capital_used": null,
+        "lat": 52.3676,
+        "lon": 4.9041,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.europarl.europa.eu/about-parliament/en/in-the-past/the-parliament-and-the-treaties/treaty-of-amsterdam",
+          "source_name": "European Parliament",
+          "published_at": "1997-10-02T12:00:00Z",
+          "headline": "Treaty of Amsterdam",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "European Union",
+          "European Parliament"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Treaty of Amsterdam",
+            "source_url": "https://www.europarl.europa.eu/about-parliament/en/in-the-past/the-parliament-and-the-treaties/treaty-of-amsterdam"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.7,
+        "location": 0.6,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "secondary_sources_only",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Treaty of Amsterdam signing",
+        "fingerprint": "fp_1997-10-02_treaty-of-amsterdam_amsterdam_nl"
+      }
+    },
+    {
+      "event_id": "1997-10-07_epa-diesel-standards_us",
+      "title": "U.S. EPA announces diesel engine emissions standards program",
+      "description": "On 7 October 1997, the U.S. EPA announced regulatory actions targeting diesel-engine pollution. The announcement covered a final rule for highway diesel trucks and buses and a proposal addressing nonroad diesel engines.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "1997-10-07T12:00:00Z",
+        "event_end": "1997-10-07T12:00:00Z",
+        "reported_at": "1997-10-07T12:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1997-10-07T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States (federal)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.8
+      },
+      "sources": [
+        {
+          "url": "https://www.epa.gov/archive/epapages/newsroom_archive/newsreleases/55a62ce9a72c1b13852565290054c0ec.html",
+          "source_name": "U.S. Environmental Protection Agency",
+          "published_at": "1997-10-07T12:00:00Z",
+          "headline": "News Release (archived): diesel engine emissions standards program",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Environmental Protection Agency (EPA)"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "newsreleases/55a62ce9a72c1b13852565290054c0ec.html",
+            "source_url": "https://www.epa.gov/archive/epapages/newsroom_archive/newsreleases/55a62ce9a72c1b13852565290054c0ec.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.65,
+        "category": 0.75,
+        "location": 0.85,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "EPA diesel standards announcement (1997)",
+        "fingerprint": "fp_1997-10-07_epa-diesel-standards_us"
+      }
+    },
+    {
+      "event_id": "1997-10-22_unfccc-agbm8_bonn_de",
+      "title": "UNFCCC AGBM opens eighth session in Bonn during Kyoto negotiations",
+      "description": "From 22 to 31 October 1997, the UNFCCC Ad Hoc Group on the Berlin Mandate (AGBM) held part of its eighth session in Bonn. The meeting advanced negotiation work leading up to COP 3, where the Kyoto Protocol was later adopted.",
+      "category_primary": "policy_regulation",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "1997-10-22T12:00:00Z",
+        "event_end": "1997-10-31T12:00:00Z",
+        "reported_at": "1997-10-22T12:00:00Z",
+        "time_confidence": 0.5,
+        "event_date_utc": "1997-10-22T12:00:00Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Bonn, Germany",
+        "jurisdiction_level": "city",
+        "admin1": null,
+        "country": "DE",
+        "capital_used": null,
+        "lat": 50.7374,
+        "lon": 7.0982,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://legal.un.org/avl/ha/kpccc/kpccc.html",
+          "source_name": "United Nations Audiovisual Library of International Law",
+          "published_at": "1997-10-22T12:00:00Z",
+          "headline": "Kyoto Protocol to the United Nations Framework Convention on Climate Change",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "UNFCCC",
+          "United Nations"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Kyoto Protocol to the United Nations Framework Convention on Climate Change",
+            "source_url": "https://legal.un.org/avl/ha/kpccc/kpccc.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.45,
+        "category": 0.6,
+        "location": 0.6,
+        "summary_grounding": 0.35
+      },
+      "quality_flags": [
+        "secondary_sources_only",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "UNFCCC AGBM 8th session (Bonn, Oct 1997)",
+        "fingerprint": "fp_1997-10-22_unfccc-agbm8_bonn_de"
+      }
+    },
+    {
+      "event_id": "1997-10-31_epa-doj_newport-bay_orange-county_ca_us",
+      "title": "EPA/DOJ file settlement agreement on Newport Bay watershed pollution obligations",
+      "description": "On 31 October 1997, the U.S. EPA, Department of Justice, and the U.S. Attorney filed an agreement in federal district court to settle litigation concerning pollution in the Newport Bay watershed. The agreement committed EPA to ensure pollutant-reduction targets (TMDLs) would be established under specified deadlines.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "1997-10-31T12:00:00Z",
+        "event_end": "1997-10-31T12:00:00Z",
+        "reported_at": "1997-10-31T12:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1997-10-31T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Orange County, California, United States",
+        "jurisdiction_level": "state",
+        "admin1": "California",
+        "country": "US",
+        "capital_used": "Sacramento",
+        "lat": 38.5816,
+        "lon": -121.4944,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.75
+      },
+      "sources": [
+        {
+          "url": "https://www.epa.gov/archive/epapages/newsroom_archive/newsreleases/878612e8913266f0852570d8005e1273.html",
+          "source_name": "U.S. Environmental Protection Agency",
+          "published_at": "1997-10-31T12:00:00Z",
+          "headline": "News Release (archived): settlement agreement on Newport Bay watershed pollution (TMDLs)",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Environmental Protection Agency (EPA)",
+          "U.S. Department of Justice (DOJ)"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "Newport Bay watershed"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "newsreleases/878612e8913266f0852570d8005e1273.html",
+            "source_url": "https://www.epa.gov/archive/epapages/newsroom_archive/newsreleases/878612e8913266f0852570d8005e1273.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.65,
+        "category": 0.75,
+        "location": 0.8,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Newport Bay watershed TMDL settlement filing (1997)",
+        "fingerprint": "fp_1997-10-31_epa-doj_newport-bay_orange-county_ca_us"
+      }
+    }
+  ]
+}

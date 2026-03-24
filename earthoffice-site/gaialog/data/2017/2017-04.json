@@ -1,0 +1,785 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_2017-04_normalize_2026-01-16T061000371Z",
+    "generated_utc": "2026-01-16T06:10:00.371Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "2017-04",
+    "window": {
+      "start_utc": "2017-04-01T00:00:00.000Z",
+      "end_utc": "2017-04-30T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "evt_20170401_cook_inlet_hilcorp_spill",
+      "title": "Crude oil spill discovered from Hilcorp offshore pipeline in Cook Inlet, Alaska",
+      "description": "A crude oil spill was discovered on April 1, 2017 from a Hilcorp-owned offshore pipeline in Alaska’s Cook Inlet. The incident raised concerns about impacts to nearby sensitive habitat, including areas associated with Cook Inlet beluga whale critical habitat.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2017-04-01T00:00:00.000Z",
+        "event_end": "2017-04-01T23:59:59.000Z",
+        "reported_at": "2017-04-06T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2017-04-01T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Cook Inlet, Alaska, United States",
+        "jurisdiction_level": "site",
+        "admin1": "Alaska",
+        "country": "US",
+        "capital_used": null,
+        "lat": 60.2,
+        "lon": -151,
+        "precision": "proxy",
+        "location_basis": "manual_override",
+        "location_confidence": 0.4
+      },
+      "sources": [
+        {
+          "url": "https://www.biologicaldiversity.org/news/press_releases/2017/offshore-drilling-04-06-2017.php",
+          "source_name": "Center for Biological Diversity",
+          "published_at": "2017-04-06T00:00:00.000Z",
+          "headline": "Offshore Drilling press release (Cook Inlet spill referenced)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Hilcorp",
+          "Center for Biological Diversity"
+        ],
+        "substances": [
+          "crude oil"
+        ],
+        "ecosystems": [
+          "Cook Inlet",
+          "Cook Inlet beluga whale critical habitat"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "crude oil spill discovered April 1 from a Hilcorp-owned offshore pipeline in Cook Inlet",
+            "source_url": "https://www.biologicaldiversity.org/news/press_releases/2017/offshore-drilling-04-06-2017.php"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.45,
+        "category": 0.75,
+        "location": 0.4,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "possible_opinion_or_advocacy",
+        "location_ambiguous",
+        "low_confidence_location",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "hilcorp_cook_inlet_spill_2017-04-01",
+        "fingerprint": "hilcorp_cook_inlet_spill_us-ak_2017-04-01"
+      }
+    },
+    {
+      "event_id": "evt_20170406_douglas_coffee_ga_ww_spill",
+      "title": "Sanitary sewer overflow flows to tributary of Seventeen Mile River in Douglas/Coffee County, Georgia",
+      "description": "A sanitary sewer overflow began on the evening of April 6, 2017 and continued into April 7, discharging wastewater into an unnamed tributary of the Seventeen Mile River. Follow-up monitoring and response actions were reported as part of the incident handling.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2017-04-06T21:00:00.000Z",
+        "event_end": "2017-04-08T00:30:00.000Z",
+        "reported_at": "2017-05-03T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2017-04-06T21:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Douglas/Coffee County, Georgia, United States",
+        "jurisdiction_level": "state",
+        "admin1": "Georgia",
+        "country": "US",
+        "capital_used": "Atlanta",
+        "lat": 33.749,
+        "lon": -84.388,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://douglasnow.com/2017/05/03/wastewater-spill-occurs-at-water-treatment-plant-flows-into-seventeen-mile-river/",
+          "source_name": "DouglasNow",
+          "published_at": "2017-05-03T00:00:00.000Z",
+          "headline": "Wastewater spill occurs at water treatment plant; flows into Seventeen Mile River",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "DouglasNow"
+        ],
+        "substances": [
+          "wastewater"
+        ],
+        "ecosystems": [
+          "Seventeen Mile River"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "began on the evening of April 6, 2017 ... flowed into an unnamed tributary of the Seventeen Mile River",
+            "source_url": "https://douglasnow.com/2017/05/03/wastewater-spill-occurs-at-water-treatment-plant-flows-into-seventeen-mile-river/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.75,
+        "location": 0.55,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "seventeen_mile_river_ww_spill_2017-04-06",
+        "fingerprint": "seventeen_mile_river_wastewater_us-ga_2017-04-06"
+      }
+    },
+    {
+      "event_id": "evt_20170404_dapl_tulare_sd_spill",
+      "title": "Dakota Access Pipeline pump-station oil spill near Tulare, South Dakota",
+      "description": "An oil leak of about 84 gallons was reported on April 4, 2017 at a Dakota Access Pipeline pump station in South Dakota. Reports indicated the spill was contained on site and not expected to threaten public health or drinking water systems.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2017-04-04T00:00:00.000Z",
+        "event_end": "2017-04-04T23:59:59.000Z",
+        "reported_at": "2017-04-27T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2017-04-04T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "South Dakota, United States",
+        "jurisdiction_level": "state",
+        "admin1": "South Dakota",
+        "country": "US",
+        "capital_used": "Pierre",
+        "lat": 44.3683,
+        "lon": -100.3509,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.5
+      },
+      "sources": [
+        {
+          "url": "https://theweek.com/speedreads/698207/dakota-access-pipeline-leaked-84-gallons-oil-april",
+          "source_name": "The Week",
+          "published_at": "2017-04-27T00:00:00.000Z",
+          "headline": "Dakota Access Pipeline leaked 84 gallons of oil in April",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.teenvogue.com/story/dakota-access-pipeline-spill-concerns-sioux-tribe",
+          "source_name": "Teen Vogue",
+          "published_at": "2017-04-27T00:00:00.000Z",
+          "headline": "Dakota Access Pipeline spill raises concerns for the Sioux Tribe",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Dakota Access Pipeline"
+        ],
+        "substances": [
+          "oil"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "leaked 84 gallons of oil on April 4 at a pump station in South Dakota",
+            "source_url": "https://theweek.com/speedreads/698207/dakota-access-pipeline-leaked-84-gallons-oil-april"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.75,
+        "location": 0.5,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "dapl_pump_station_spill_2017-04-04",
+        "fingerprint": "dapl_pumpstation_oil_us-sd_2017-04-04"
+      }
+    },
+    {
+      "event_id": "evt_20170414_prudhoe_bay_release",
+      "title": "Oil and gas release at Prudhoe Bay oil field, Alaska",
+      "description": "An oil and gas release occurred on April 14, 2017 at the Prudhoe Bay oil field on Alaska’s North Slope. Subsequent reporting linked the incident to mechanical failure and noted broader concerns about infrastructure issues associated with ground subsidence/permafrost.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2017-04-14T00:00:00.000Z",
+        "event_end": "2017-04-14T23:59:59.000Z",
+        "reported_at": "2017-07-17T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2017-04-14T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Prudhoe Bay oil field, Alaska, United States",
+        "jurisdiction_level": "site",
+        "admin1": "Alaska",
+        "country": "US",
+        "capital_used": null,
+        "lat": 70.255,
+        "lon": -148.337,
+        "precision": "proxy",
+        "location_basis": "manual_override",
+        "location_confidence": 0.45
+      },
+      "sources": [
+        {
+          "url": "https://www.adn.com/business-economy/energy/2017/07/17/prudhoe-bay-spill-in-april-leads-to-wider-review-suspension-of-14-wells/",
+          "source_name": "Anchorage Daily News",
+          "published_at": "2017-07-17T00:00:00.000Z",
+          "headline": "Prudhoe Bay spill in April leads to wider review, suspension of 14 wells",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Anchorage Daily News"
+        ],
+        "substances": [
+          "oil",
+          "gas"
+        ],
+        "ecosystems": [
+          "North Slope"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Prudhoe Bay spill in April ... suspension of 14 wells",
+            "source_url": "https://www.adn.com/business-economy/energy/2017/07/17/prudhoe-bay-spill-in-april-leads-to-wider-review-suspension-of-14-wells/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.7,
+        "location": 0.45,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "paywalled_or_partial",
+        "location_ambiguous",
+        "low_confidence_location",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "prudhoe_bay_release_2017-04-14",
+        "fingerprint": "prudhoe_bay_oil_gas_release_us-ak_2017-04-14"
+      }
+    },
+    {
+      "event_id": "evt_201704_southern_midwest_flooding_20170428",
+      "title": "Excessive rainfall triggers flooding across the southern Midwestern United States (late April 2017)",
+      "description": "Excessive rainfall from April 28–30, 2017 contributed to extensive river flooding across parts of the southern Midwestern United States. A USGS report describes flooding impacts and notes numerous peak-of-record streamflows at USGS streamgages during the late April to May 2017 event period.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2017-04-28T00:00:00.000Z",
+        "event_end": "2017-04-30T23:59:59.000Z",
+        "reported_at": "2017-04-30T23:59:59.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2017-04-28T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Southern Midwestern United States (eastern Oklahoma to southern Indiana, including parts of Missouri, Arkansas, Illinois)",
+        "jurisdiction_level": "supranational",
+        "admin1": null,
+        "country": null,
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "proxy",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.4
+      },
+      "sources": [
+        {
+          "url": "https://www.usgs.gov/publications/flooding-southern-midwestern-united-states-april-may-2017",
+          "source_name": "USGS",
+          "published_at": "2017-04-30T23:59:59.000Z",
+          "headline": "Flooding in the southern Midwestern United States, April–May 2017",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://weather.com/storms/severe/news/flood-threat-forecast-south-mississippi-valley-april2017",
+          "source_name": "The Weather Channel",
+          "published_at": "2017-04-30T23:59:59.000Z",
+          "headline": "Flood Threat Forecast for the South and Mississippi Valley (April 2017)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "USGS"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Flooding in the southern Midwestern United States, April–May 2017",
+            "source_url": "https://www.usgs.gov/publications/flooding-southern-midwestern-united-states-april-may-2017"
+          },
+          {
+            "quote": "numerous peak-of-record streamflows at USGS streamgages",
+            "source_url": "https://www.usgs.gov/publications/flooding-southern-midwestern-united-states-april-may-2017"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.75,
+        "location": 0.4,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "2017-04 southern midwest flooding",
+        "fingerprint": "fp_20170428_southern_midwest_flooding_washingtondc"
+      }
+    },
+    {
+      "event_id": "evt_20170410_gbr_bleaching_second_year",
+      "title": "Great Barrier Reef reported hit by bleaching for second consecutive year",
+      "description": "An April 2017 report described aerial survey findings indicating severe coral bleaching affecting parts of Australia’s Great Barrier Reef for a second year in a row. The report characterized the back-to-back bleaching as unusual.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2017-04-10T00:00:00.000Z",
+        "event_end": "2017-04-10T23:59:59.000Z",
+        "reported_at": "2017-04-10T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2017-04-10T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Great Barrier Reef, Queensland, Australia",
+        "jurisdiction_level": "site",
+        "admin1": "Queensland",
+        "country": "AU",
+        "capital_used": null,
+        "lat": -18.2871,
+        "lon": 147.6992,
+        "precision": "proxy",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.kuer.org/2017-04-10/great-barrier-reef-hit-by-bleaching-for-the-second-year-in-a-row",
+          "source_name": "KUER",
+          "published_at": "2017-04-10T00:00:00.000Z",
+          "headline": "Great Barrier Reef Hit By Bleaching For The Second Year In A Row",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [
+          "coral reef"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Great Barrier Reef hit by bleaching for the second year in a row",
+            "source_url": "https://www.kuer.org/2017-04-10/great-barrier-reef-hit-by-bleaching-for-the-second-year-in-a-row"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.8,
+        "location": 0.6,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "gbr_bleaching_2017",
+        "fingerprint": "fp_gbr_bleaching_2017_04_10_queensland"
+      }
+    },
+    {
+      "event_id": "evt_20170427_aims_whitsunday_bleaching",
+      "title": "AIMS monitoring update reports widespread coral bleaching in Whitsunday sector of Great Barrier Reef",
+      "description": "An Australian Institute of Marine Science (AIMS) monitoring update dated April 27, 2017 reported widespread coral bleaching in the Whitsunday sector of the Great Barrier Reef. The update described bleaching as low to moderate overall, with higher impacts in shallow and sheltered inshore habitats.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2017-04-27T00:00:00.000Z",
+        "event_end": "2017-04-27T23:59:59.000Z",
+        "reported_at": "2017-04-27T00:00:00.000Z",
+        "time_confidence": 0.8,
+        "event_date_utc": "2017-04-27T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Whitsunday sector, Great Barrier Reef, Australia",
+        "jurisdiction_level": "site",
+        "admin1": null,
+        "country": "AU",
+        "capital_used": null,
+        "lat": -20.067,
+        "lon": 148.822,
+        "precision": "proxy",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.aims.gov.au/reef-monitoring/whitsunday-sector-2017",
+          "source_name": "Australian Institute of Marine Science (AIMS)",
+          "published_at": "2017-04-27T00:00:00.000Z",
+          "headline": "Whitsunday sector 2017",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Australian Institute of Marine Science (AIMS)"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "coral reef"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Whitsunday sector 2017",
+            "source_url": "https://www.aims.gov.au/reef-monitoring/whitsunday-sector-2017"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.85,
+        "location": 0.55,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "gbr_whitsunday_bleaching_2017",
+        "fingerprint": "fp_whitsunday_bleaching_2017_04_27"
+      }
+    },
+    {
+      "event_id": "2017-04-04_epa_clean_power_plan_review_us",
+      "title": "EPA announces review of the Clean Power Plan",
+      "description": "The U.S. Environmental Protection Agency published a Federal Register notice announcing it was reviewing the Clean Power Plan. The notice stated the agency would consider whether to initiate proceedings to suspend, revise, or rescind the rule.",
+      "category_primary": "policy_regulation",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2017-04-04T00:00:00.000Z",
+        "event_end": "2017-04-04T23:59:59.000Z",
+        "reported_at": "2017-04-04T00:00:00.000Z",
+        "time_confidence": 0.85,
+        "event_date_utc": "2017-04-04T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States (federal)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.8
+      },
+      "sources": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/FR-2017-04-04/html/2017-06522.htm",
+          "source_name": "GovInfo / Federal Register",
+          "published_at": "2017-04-04T00:00:00.000Z",
+          "headline": "Federal Register notice (Clean Power Plan review)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://climate.law.columbia.edu/content/epa-withdraws-proposed-rules-accompanied-clean-power-plan",
+          "source_name": "Columbia Law School - Sabin Center for Climate Change Law",
+          "published_at": "2017-04-04T00:00:00.000Z",
+          "headline": "EPA withdraws proposed rules accompanied Clean Power Plan",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Environmental Protection Agency (EPA)"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "EPA is reviewing the Clean Power Plan and, if appropriate, will initiate proceedings to suspend, revise, or rescind it.",
+            "source_url": "https://www.govinfo.gov/content/pkg/FR-2017-04-04/html/2017-06522.htm"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.78,
+        "category": 0.85,
+        "location": 0.8,
+        "summary_grounding": 0.7
+      },
+      "quality_flags": [
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "epa_clean_power_plan_review_2017-04_us_federal",
+        "fingerprint": "epa_clean_power_plan_review|US|2017-04-04"
+      }
+    },
+    {
+      "event_id": "2017-04-03_epa_rmp_amendments_delay_proposal_us",
+      "title": "EPA proposes further delay of the Risk Management Program (RMP) amendments effective date",
+      "description": "The U.S. Environmental Protection Agency proposed delaying the effective date of amendments to its Risk Management Program rules. The proposal described a further delay while the agency considered petitions for reconsideration and potential additional regulatory actions.",
+      "category_primary": "policy_regulation",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2017-04-03T00:00:00.000Z",
+        "event_end": "2017-04-03T23:59:59.000Z",
+        "reported_at": "2017-04-03T00:00:00.000Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "2017-04-03T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States (federal)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.75
+      },
+      "sources": [
+        {
+          "url": "https://www.epa.gov/rmp/final-amendments-risk-management-program-rmp-rule",
+          "source_name": "U.S. Environmental Protection Agency (EPA)",
+          "published_at": "2017-04-03T00:00:00.000Z",
+          "headline": "Final Amendments to the Risk Management Program (RMP) Rule",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Environmental Protection Agency (EPA)"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "EPA ... proposed to further delay the effective date ... to consider petitions for reconsideration and potential further regulatory action.",
+            "source_url": "https://www.epa.gov/rmp/final-amendments-risk-management-program-rmp-rule"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.85,
+        "location": 0.8,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "epa_rmp_delay_2017-04_us_federal",
+        "fingerprint": "epa_rmp_delay|US|2017-04-03"
+      }
+    },
+    {
+      "event_id": "2017-04-26_eo_13792_national_monuments_review_us",
+      "title": "Executive Order 13792 issued to review certain national monument designations under the Antiquities Act",
+      "description": "President Donald Trump issued Executive Order 13792 directing the U.S. Department of the Interior to review certain national monuments designated or expanded since 1996 under the Antiquities Act. The order set criteria for review, including monument size and potential effects on land use and federal policy.",
+      "category_primary": "policy_regulation",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2017-04-26T00:00:00.000Z",
+        "event_end": "2017-04-26T23:59:59.000Z",
+        "reported_at": "2017-04-26T00:00:00.000Z",
+        "time_confidence": 0.85,
+        "event_date_utc": "2017-04-26T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States (federal public lands)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.8
+      },
+      "sources": [
+        {
+          "url": "https://trumpwhitehouse.archives.gov/presidential-actions/presidential-executive-order-review-designations-antiquities-act/",
+          "source_name": "Trump White House Archives",
+          "published_at": "2017-04-26T00:00:00.000Z",
+          "headline": "Presidential Executive Order on Review of Designations Under the Antiquities Act",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.doi.gov/ocl/national-monuments-review",
+          "source_name": "U.S. Department of the Interior",
+          "published_at": "2017-04-26T00:00:00.000Z",
+          "headline": "National Monuments Review",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "The White House",
+          "U.S. Department of the Interior"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": [
+          "Donald Trump"
+        ]
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "directing the Secretary of the Interior to review certain designations and expansions of national monuments under the Antiquities Act",
+            "source_url": "https://trumpwhitehouse.archives.gov/presidential-actions/presidential-executive-order-review-designations-antiquities-act/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.8,
+        "category": 0.85,
+        "location": 0.8,
+        "summary_grounding": 0.65
+      },
+      "quality_flags": [
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "eo_13792_national_monuments_review_2017-04_us",
+        "fingerprint": "eo_13792_national_monuments_review|US|2017-04-26"
+      }
+    }
+  ]
+}

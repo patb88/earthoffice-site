@@ -1,0 +1,676 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Gaia Log — POC</title>
+  <style>
+    :root{
+      --bg: #000;
+      --purple: #8a2be2;
+
+      --land-stroke: 1.25;
+      --grid-stroke: 0.75;
+      --grid-opacity: 0.18;
+
+      --dot-radius: 3.5;
+      --dot-stroke: 1.25;
+
+      --safe-top: 24px;
+      --safe-right: 24px;
+      --safe-bottom: 24px;
+      --safe-left: 24px;
+    }
+
+    html, body {
+      margin: 0;
+      height: 100%;
+      width: 100%;
+      background: var(--bg);
+      overflow: hidden;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    }
+
+    #map {
+      position: fixed;
+      inset: 0;
+      width: 100vw;
+      height: 100vh;
+      display: block;
+      background: var(--bg);
+    }
+
+    #tooltip {
+      position: fixed;
+      z-index: 10;
+      max-width: 420px;
+      background: rgba(0,0,0,0.88);
+      border: 1px solid rgba(138, 43, 226, 0.85);
+      border-radius: 10px;
+      padding: 10px 12px;
+      color: #fff;
+      font-size: 13px;
+      line-height: 1.35;
+      pointer-events: none;
+      opacity: 0;
+      transform: translateY(6px);
+      transition: opacity 120ms ease, transform 120ms ease;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.45);
+    }
+
+    #tooltip .t-title { font-size: 13.5px; font-weight: 650; margin-bottom: 6px; }
+    #tooltip .t-meta { font-size: 12px; opacity: 0.85; margin-bottom: 8px; }
+    #tooltip .t-desc { font-size: 12.5px; opacity: 0.95; }
+
+	#legend{
+	  position: fixed;
+	  right: 16px;
+	  bottom: 14px;
+	  z-index: 9;
+	  max-width: 260px;
+
+	  background: rgba(0,0,0,0.35);
+	  border: 1px solid rgba(255,255,255,0.12);
+	  border-radius: 14px;
+	  padding: 10px 12px;
+
+	  color: rgba(255,255,255,0.85);
+	  font-size: 12px;
+	  line-height: 1.2;
+	  user-select: none;
+	}
+
+	#legend .legend-title{
+	  font-size: 12px;
+	  font-weight: 650;
+	  margin-bottom: 8px;
+	  color: rgba(255,255,255,0.9);
+	}
+
+	#legend .legend-grid{
+	  display: grid;
+	  grid-template-columns: 12px 1fr;
+	  gap: 8px 10px;
+	  align-items: center;
+	}
+
+	#legend .swatch{
+	  width: 10px;
+	  height: 10px;
+	  border-radius: 50%;
+	  border: 1px solid rgba(0,0,0,0.65);
+	}
+
+	#legend .legend-item{
+	  white-space: nowrap;
+	  overflow: hidden;
+	  text-overflow: ellipsis;
+	  opacity: 0.9;
+	}
+
+	#legend .legend-row{
+	  display: contents; /* lets grid layout work with row click */
+	}
+
+	#legend .legend-cell{
+	  cursor: pointer;
+	}
+
+	#legend .legend-item.inactive{
+	  opacity: 0.35;
+	}
+
+	#legend .swatch.inactive{
+	  opacity: 0.25;
+	  filter: grayscale(40%);
+	}
+
+	#legend .legend-footer{
+	  margin-top: 10px;
+	  padding-top: 8px;
+	  border-top: 1px solid rgba(255,255,255,0.10);
+	  display: flex;
+	  gap: 10px;
+	  justify-content: space-between;
+	  align-items: center;
+	}
+
+	#legend button{
+	  background: rgba(0,0,0,0.25);
+	  border: 1px solid rgba(255,255,255,0.12);
+	  color: rgba(255,255,255,0.85);
+	  border-radius: 999px;
+	  padding: 6px 10px;
+	  font-size: 12px;
+	  cursor: pointer;
+	}
+
+	#legend button:hover{
+	  border-color: rgba(138,43,226,0.55);
+	}
+
+    #status {
+      position: fixed;
+      left: 16px;
+      bottom: 14px;
+      font-size: 12px;
+      color: rgba(255,255,255,0.7);
+      background: rgba(0,0,0,0.35);
+      border: 1px solid rgba(255,255,255,0.12);
+      padding: 6px 10px;
+      border-radius: 999px;
+      user-select: none;
+    }
+
+	#monthFilter{
+	  position: fixed;
+	  left: 50%;
+	  bottom: 14px;
+	  transform: translateX(-50%);
+	  z-index: 9;
+
+	  width: min(520px, calc(100vw - 360px)); /* leaves room for legend on right */
+	  max-width: 520px;
+
+	  background: rgba(0,0,0,0.35);
+	  border: 1px solid rgba(255,255,255,0.12);
+	  border-radius: 14px;
+	  padding: 10px 12px;
+
+	  display: grid;
+	  gap: 8px;
+	}
+
+	#monthLabel{
+	  text-align: center;
+	  font-size: 12px;
+	  font-weight: 650;
+	  color: rgba(255,255,255,0.9);
+	  user-select: none;
+	}
+
+	/* Range styling (works well enough across modern browsers) */
+	#monthSlider{
+	  width: 100%;
+	  accent-color: var(--purple);
+	}
+	
+	
+  </style>
+</head>
+<body>
+  <svg id="map" aria-label="World map with events"></svg>
+  <div id="tooltip" role="tooltip" aria-hidden="true"></div>
+<div id="monthFilter" aria-label="Month filter">
+  <input id="monthSlider" type="range" min="0" max="0" step="1" value="0" />
+  <div id="monthLabel"></div>
+</div>
+  <div id="legend" aria-label="Legend"></div>
+  <div id="status">Loading…</div>
+
+  <!-- Local dependencies (no CDN) -->
+  <script src="./d3.v7.min.js"></script>
+  <script src="./topojson-client.min.js"></script>
+
+  <script>
+    const LAND_URL = "./land-110m.json";
+    const EVENTS_URL = "./events.json";
+
+    const css = getComputedStyle(document.documentElement);
+    const THEME = {
+      purple: (css.getPropertyValue("--purple").trim() || "#8a2be2"),
+      landStroke: parseFloat(css.getPropertyValue("--land-stroke")) || 1.25,
+      gridStroke: parseFloat(css.getPropertyValue("--grid-stroke")) || 0.75,
+      gridOpacity: parseFloat(css.getPropertyValue("--grid-opacity")) || 0.18,
+      dotRadius: parseFloat(css.getPropertyValue("--dot-radius")) || 3.5,
+      dotStroke: parseFloat(css.getPropertyValue("--dot-stroke")) || 1.25,
+      safe: {
+        top: parseFloat(css.getPropertyValue("--safe-top")) || 0,
+        right: parseFloat(css.getPropertyValue("--safe-right")) || 0,
+        bottom: parseFloat(css.getPropertyValue("--safe-bottom")) || 0,
+        left: parseFloat(css.getPropertyValue("--safe-left")) || 0
+      }
+    };
+
+	const legendEl = document.getElementById("legend");
+
+	const CATEGORY_LABELS = {
+	  pollution_contamination: "Pollution & Contamination",
+	  weather_climate: "Weather & Climate",
+	  geological: "Geological",
+	  fires: "Fires",
+	  ecosystem_biodiversity: "Ecosystem & Biodiversity",
+	  resource_extraction_industry: "Resource Extraction & Industry",
+	  infrastructure_development: "Infrastructure & Development",
+	  conflict_militarization: "Conflict & Militarization",
+	  policy_regulation: "Policy & Regulation",
+	  cleanup_restoration: "Cleanup & Restoration",
+	  science_monitoring: "Science & Monitoring",
+	  energy_transition: "Energy Transition",
+	  corporate_institutional: "Corporate & Institutional",
+	  community_indigenous: "Community & Indigenous",
+	  positive_outcomes: "Positive Outcomes"
+	};
+
+	function labelForCategory(categoryId) {
+	  return CATEGORY_LABELS[categoryId] || categoryId;
+	}
+
+	// Filter state: categories currently enabled
+	let enabledCategories = new Set();
+
+	// Initialize enabledCategories from events (called after loadEvents)
+	function initCategoryFilter(eventsList) {
+	  enabledCategories = new Set(
+		(eventsList || [])
+		  .map(e => e?.category_primary)
+		  .filter(Boolean)
+	  );
+	}
+
+	// Toggle a category; keep at least one enabled (or auto-reset to all)
+	function toggleCategory(cat) {
+	  if (enabledCategories.has(cat)) enabledCategories.delete(cat);
+	  else enabledCategories.add(cat);
+
+	  // Prevent "everything off" dead-end: reset to all present categories
+	  if (enabledCategories.size === 0) {
+		initCategoryFilter(events);
+	  }
+	}
+
+	function buildLegend(eventsList) {
+	  const present = new Set(
+		(eventsList || []).map(e => e?.category_primary).filter(Boolean)
+	  );
+
+	  const cats = Array.from(present).sort((a, b) =>
+		labelForCategory(a).localeCompare(labelForCategory(b))
+	  );
+
+	  if (!cats.length) {
+		legendEl.style.display = "none";
+		return;
+	  }
+
+	  const rows = cats.map(cat => {
+		const isOn = enabledCategories.has(cat);
+		const swatchClass = isOn ? "swatch legend-cell" : "swatch legend-cell inactive";
+		const itemClass = isOn ? "legend-item legend-cell" : "legend-item legend-cell inactive";
+
+		return `
+		  <div class="legend-row" data-cat="${escapeHtml(cat)}">
+			<div class="${swatchClass}" style="background:${colorForCategory(cat)}" title="Toggle"></div>
+			<div class="${itemClass}" title="${escapeHtml(labelForCategory(cat))}">
+			  ${escapeHtml(labelForCategory(cat))}
+			</div>
+		  </div>
+		`;
+	  }).join("");
+
+	  legendEl.innerHTML = `
+		<div class="legend-title">Categories</div>
+		<div class="legend-grid" id="legendGrid">${rows}</div>
+		<div class="legend-footer">
+		  <div style="opacity:0.75;">Showing ${enabledCategories.size} / ${cats.length}</div>
+		  <button id="legendReset" type="button">Reset</button>
+		</div>
+	  `;
+
+	  // Click handler (event delegation)
+	  const grid = legendEl.querySelector("#legendGrid");
+	  grid.addEventListener("click", (e) => {
+		const row = e.target.closest(".legend-row");
+		if (!row) return;
+		const cat = row.getAttribute("data-cat");
+		if (!cat) return;
+
+		toggleCategory(cat);
+		buildLegend(events); // re-render legend state
+		render();            // re-render dots
+	  });
+
+	  // Reset handler
+	  legendEl.querySelector("#legendReset").addEventListener("click", () => {
+		initCategoryFilter(events);
+		buildLegend(events);
+		render();
+	  });
+
+	  legendEl.style.display = "block";
+	}
+
+
+	// Category colors (tune freely)
+	const CATEGORY_COLORS = {
+	  pollution_contamination: "#ff3b30",      // red
+	  weather_climate: "#00c7ff",              // cyan
+	  geological: "#ffd60a",                   // yellow
+	  fires: "#ff6a00",                        // orange
+	  ecosystem_biodiversity: "#34c759",       // green
+	  resource_extraction_industry: "#b07cff", // lavender
+	  infrastructure_development: "#8e8e93",   // gray
+	  conflict_militarization: "#ff2d55",      // hot pink/red
+	  policy_regulation: "#5e5ce6",            // indigo
+	  cleanup_restoration: "#64d2ff",          // light blue
+	  science_monitoring: "#0a84ff",           // blue
+	  energy_transition: "#30d158",            // vivid green
+	  corporate_institutional: "#bf5af2",      // purple
+	  community_indigenous: "#ff9f0a",         // amber
+	  positive_outcomes: "#00e5a8"             // teal
+	};
+
+	function colorForCategory(categoryId) {
+	  return CATEGORY_COLORS[categoryId] || THEME.purple; // fallback
+	}
+
+    const svg = d3.select("#map");
+    const tooltip = document.getElementById("tooltip");
+    const statusEl = document.getElementById("status");
+
+    const g = svg.append("g");
+
+    const graticule = d3.geoGraticule10();
+    const gridPath = g.append("path")
+      .attr("fill", "none")
+      .attr("stroke", THEME.purple)
+      .attr("stroke-opacity", THEME.gridOpacity)
+      .attr("stroke-width", THEME.gridStroke)
+      .attr("vector-effect", "non-scaling-stroke");
+
+    const landPath = g.append("path")
+      .attr("fill", "none")
+      .attr("stroke", THEME.purple)
+      .attr("stroke-width", THEME.landStroke)
+      .attr("stroke-linejoin", "round")
+      .attr("stroke-linecap", "round")
+      .attr("vector-effect", "non-scaling-stroke");
+
+    const dotsLayer = g.append("g").attr("id", "dots");
+
+    let landFeature = null;
+    let events = [];
+    let projection = null;
+
+    function fmtDate(isoOrDateLike) {
+      if (!isoOrDateLike) return "Unknown date";
+      const d = new Date(isoOrDateLike);
+      if (Number.isNaN(d.getTime())) return String(isoOrDateLike);
+      return d.toLocaleDateString(undefined, { year: "numeric", month: "short", day: "2-digit" });
+    }
+
+    function getEventDate(ev) {
+      return ev?.time?.event_start || ev?.time?.reported_at || null;
+    }
+
+    function safeText(s, fallback="") {
+      return (typeof s === "string" && s.trim()) ? s.trim() : fallback;
+    }
+
+    function setStatus(msg) {
+      statusEl.textContent = msg;
+    }
+
+    function escapeHtml(str) {
+      return String(str)
+        .replaceAll("&", "&amp;")
+        .replaceAll("<", "&lt;")
+        .replaceAll(">", "&gt;")
+        .replaceAll('"', "&quot;")
+        .replaceAll("'", "&#039;");
+    }
+
+// new: month indexing and state
+let availableMonths = [];     // array of "YYYY-MM"
+let selectedMonthIndex = 0;   // slider value
+let selectedMonthKey = null;  // "YYYY-MM"
+
+const monthSlider = document.getElementById("monthSlider");
+const monthLabel  = document.getElementById("monthLabel");
+
+function monthKeyFromEvent(ev){
+  const dt = ev?.time?.event_start || ev?.time?.reported_at;
+  if (!dt) return null;
+  const d = new Date(dt);
+  if (Number.isNaN(d.getTime())) return null;
+  const y = d.getUTCFullYear();
+  const m = String(d.getUTCMonth() + 1).padStart(2, "0");
+  return `${y}-${m}`;
+}
+
+function buildAvailableMonths(eventsList){
+  const set = new Set();
+  for (const ev of (eventsList || [])){
+    const k = monthKeyFromEvent(ev);
+    if (k) set.add(k);
+  }
+  availableMonths = Array.from(set).sort(); // lexicographic works for YYYY-MM
+  return availableMonths;
+}
+
+function prettyMonthLabel(yyyyMM){
+  // yyyyMM: "2025-07"
+  const [y, m] = yyyyMM.split("-").map(x => parseInt(x, 10));
+  const d = new Date(Date.UTC(y, (m || 1) - 1, 1));
+  return d.toLocaleDateString(undefined, { month: "long", year: "numeric" });
+}
+
+function setSelectedMonthByIndex(ix){
+  selectedMonthIndex = Math.max(0, Math.min(availableMonths.length - 1, ix));
+  selectedMonthKey = availableMonths[selectedMonthIndex] || null;
+
+  monthSlider.value = String(selectedMonthIndex);
+  monthLabel.textContent = selectedMonthKey ? prettyMonthLabel(selectedMonthKey) : "No dated events";
+}
+// end month indexing and state
+
+    function showTooltip(ev, clientX, clientY) {
+      const title = safeText(ev.title, "Untitled event");
+      const desc  = safeText(ev.description, "");
+      const loc   = safeText(ev?.location?.name, "Unknown location");
+      const date  = fmtDate(getEventDate(ev));
+
+      tooltip.innerHTML = `
+	  <div class="t-title">
+		<span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:${colorForCategory(ev.category_primary)};margin-right:8px;vertical-align:middle;"></span>
+		${escapeHtml(title)}
+	  </div>
+        <div class="t-meta">${escapeHtml(loc)} • ${escapeHtml(date)}</div>
+        <div class="t-desc">${escapeHtml(desc)}</div>
+      `;
+
+      tooltip.style.opacity = "1";
+      tooltip.style.transform = "translateY(0px)";
+      tooltip.setAttribute("aria-hidden", "false");
+      positionTooltip(clientX, clientY);
+    }
+
+    function hideTooltip() {
+      tooltip.style.opacity = "0";
+      tooltip.style.transform = "translateY(6px)";
+      tooltip.setAttribute("aria-hidden", "true");
+    }
+
+    function positionTooltip(clientX, clientY) {
+      const margin = 14;
+      const rect = tooltip.getBoundingClientRect();
+      let x = clientX + 14;
+      let y = clientY + 14;
+      if (x + rect.width + margin > window.innerWidth) x = clientX - rect.width - 14;
+      if (y + rect.height + margin > window.innerHeight) y = clientY - rect.height - 14;
+      x = Math.max(margin, Math.min(window.innerWidth - rect.width - margin, x));
+      y = Math.max(margin, Math.min(window.innerHeight - rect.height - margin, y));
+      tooltip.style.left = `${x}px`;
+      tooltip.style.top  = `${y}px`;
+    }
+
+    function validateLatLon(ev) {
+      const lat = ev?.location?.lat;
+      const lon = ev?.location?.lon;
+      return (
+        typeof lat === "number" && typeof lon === "number" &&
+        lat >= -90 && lat <= 90 && lon >= -180 && lon <= 180
+      );
+    }
+
+function throttle(fn, waitMs){
+  let last = 0;
+  let timeout = null;
+  let pendingArgs = null;
+
+  return function(...args){
+    const now = performance.now();
+    const remaining = waitMs - (now - last);
+    pendingArgs = args;
+
+    if (remaining <= 0){
+      if (timeout) { clearTimeout(timeout); timeout = null; }
+      last = now;
+      fn.apply(this, pendingArgs);
+      pendingArgs = null;
+    } else if (!timeout){
+      timeout = setTimeout(() => {
+        last = performance.now();
+        fn.apply(this, pendingArgs);
+        pendingArgs = null;
+        timeout = null;
+      }, remaining);
+    }
+  };
+}
+
+const applyMonthFromSlider = throttle(() => {
+  const ix = parseInt(monthSlider.value, 10) || 0;
+  setSelectedMonthByIndex(ix);
+  render();
+}, 50);
+
+monthSlider.addEventListener("input", applyMonthFromSlider);
+monthSlider.addEventListener("change", () => {
+  // finalize, no throttle
+  const ix = parseInt(monthSlider.value, 10) || 0;
+  setSelectedMonthByIndex(ix);
+  render();
+});
+
+
+    function render() {
+      const W = window.innerWidth;
+      const H = window.innerHeight;
+
+      svg.attr("width", W).attr("height", H);
+      if (!landFeature) return;
+
+      const insetW = Math.max(1, W - THEME.safe.left - THEME.safe.right);
+      const insetH = Math.max(1, H - THEME.safe.top - THEME.safe.bottom);
+
+      projection = d3.geoEquirectangular().fitSize([insetW, insetH], landFeature);
+      const t = projection.translate();
+      projection.translate([t[0] + THEME.safe.left, t[1] + THEME.safe.top]);
+
+      const path = d3.geoPath(projection);
+
+      gridPath.attr("d", path(graticule));
+      landPath.attr("d", path(landFeature));
+
+const validEvents = events
+  .filter(e => enabledCategories.has(e.category_primary))
+  .filter(e => !selectedMonthKey || monthKeyFromEvent(e) === selectedMonthKey)
+  .filter(validateLatLon);
+
+const monthText = selectedMonthKey ? prettyMonthLabel(selectedMonthKey) : "All months";
+setStatus(`Events: ${validEvents.length} • ${monthText}`);
+
+
+      const dots = dotsLayer.selectAll("circle")
+        .data(validEvents, d => d.event_id || (d.title + "|" + d.location.lat + "," + d.location.lon));
+
+		dots.enter()
+		  .append("circle")
+			.attr("r", THEME.dotRadius)
+			.attr("fill", d => colorForCategory(d.category_primary))
+			.attr("fill-opacity", 0.95)
+			.attr("stroke", "rgba(0,0,0,0.65)")     // subtle dark stroke helps contrast
+			.attr("stroke-width", THEME.dotStroke)
+			.attr("vector-effect", "non-scaling-stroke")
+			.attr("cursor", "default")
+			.on("mouseenter", (event, d) => showTooltip(d, event.clientX, event.clientY))
+			.on("mousemove", (event) => positionTooltip(event.clientX, event.clientY))
+			.on("mouseleave", hideTooltip)
+		  .merge(dots)
+			.attr("cx", d => projection([d.location.lon, d.location.lat])[0])
+			.attr("cy", d => projection([d.location.lon, d.location.lat])[1])
+			.attr("fill", d => colorForCategory(d.category_primary)); // ensures updates repaint
+
+      dots.exit().remove();
+	// Ensure no native SVG tooltips are present (prevents "title twice" behavior)
+	dotsLayer.selectAll("title").remove();
+
+setStatus(`Events: ${validEvents.length} (filtered)`);
+
+    }
+
+    async function loadLand() {
+      const topo = await fetch(LAND_URL, { cache: "no-store" }).then(r => {
+        if (!r.ok) throw new Error(`Failed to load land data: ${r.status}`);
+        return r.json();
+      });
+      landFeature = topojson.feature(topo, topo.objects.land);
+    }
+
+    async function loadEvents() {
+      const payload = await fetch(EVENTS_URL, { cache: "no-store" }).then(r => {
+        if (!r.ok) throw new Error(`Failed to load events.json: ${r.status}`);
+        return r.json();
+      });
+
+      if (payload && Array.isArray(payload.events)) {
+        events = payload.events;
+        return;
+      }
+      if (Array.isArray(payload)) {
+        events = payload;
+        return;
+      }
+      throw new Error("events.json must be either { events: [...] } or an array of event objects.");
+    }
+
+    async function init() {
+      setStatus("Loading map…");
+      await loadLand();
+
+      setStatus("Loading events…");
+      await loadEvents();
+initCategoryFilter(events);
+buildLegend(events);
+
+buildAvailableMonths(events);
+monthSlider.min = "0";
+monthSlider.max = String(Math.max(0, availableMonths.length - 1));
+monthSlider.step = "1";
+setSelectedMonthByIndex(availableMonths.length - 1); // default to most recent month
+
+render();
+
+    }
+
+    let timer = null;
+    window.addEventListener("resize", () => {
+      clearTimeout(timer);
+      timer = setTimeout(render, 50);
+    });
+
+    init().catch(err => {
+      console.error(err);
+      setStatus("Load error (see console).");
+      const msg = document.createElement("div");
+      msg.style.cssText =
+        "position:fixed;inset:auto 16px 48px 16px;color:#8a2be2;font:12px system-ui;" +
+        "background:rgba(0,0,0,0.55);border:1px solid rgba(138,43,226,0.4);" +
+        "padding:10px 12px;border-radius:10px;max-width:720px;";
+      msg.textContent = String(err.message || err);
+      document.body.appendChild(msg);
+    });
+  </script>
+</body>
+</html>

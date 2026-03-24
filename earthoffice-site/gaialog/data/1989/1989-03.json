@@ -1,0 +1,988 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_1989-03_normalize_2026-01-18T115555435Z",
+    "generated_utc": "2026-01-18T11:55:55.435Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "1989-03",
+    "window": {
+      "start_utc": "1989-03-01T00:00:00.000Z",
+      "end_utc": "1989-03-31T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "evt_198903_exxon_valdez_bligh_reef",
+      "title": "Exxon Valdez oil spill after tanker grounding on Bligh Reef",
+      "description": "The oil tanker Exxon Valdez ran aground on Bligh Reef in Prince William Sound, Alaska, resulting in a major crude oil spill that contaminated marine and coastal environments. The incident triggered a large emergency response and cleanup effort.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1989-03-01T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1989-03-24T12:00:00Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Prince William Sound (near Bligh Reef), Alaska, USA",
+        "jurisdiction_level": "site",
+        "admin1": "Alaska",
+        "country": "US",
+        "capital_used": null,
+        "lat": 60.84,
+        "lon": -146.87,
+        "precision": "exact",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.epa.gov/emergency-response/emergency-response-timeline-printable-version",
+          "source_name": "U.S. Environmental Protection Agency (EPA)",
+          "published_at": "1989-03-01T00:00:00.000Z",
+          "headline": "Emergency Response Timeline (Printable Version)",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://apnews.com/article/41fcda6bfe58e8d221ad61f176d4872a",
+          "source_name": "Associated Press (AP News)",
+          "published_at": "1989-03-01T00:00:00.000Z",
+          "headline": "AP News article (ID: 41fcda6bfe58e8d221ad61f176d4872a)",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Exxon"
+        ],
+        "substances": [
+          "crude oil"
+        ],
+        "ecosystems": [
+          "Prince William Sound"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.75,
+        "location": 0.55,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "exxon_valdez_oil_spill_1989",
+        "fingerprint": "fp_exxon_valdez_bligh_reef_prince_william_sound_1989-03-24"
+      }
+    },
+    {
+      "event_id": "evt_198903_tc_ned_wa_bom",
+      "title": "Tropical Cyclone Ned intensifies and brings strong winds and power disruptions to southwestern Western Australia",
+      "description": "Tropical Cyclone Ned reached cyclone intensity on 26 March 1989 and intensified further before weakening while moving south. Its remnants were accelerated toward southwestern Western Australia, with reports of strong winds, power disruptions, and isolated roof damage; the system crossed near Perth in early April (outside the March window).",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1989-03-26T12:00:00Z",
+        "event_end": "1989-03-31T12:00:00Z",
+        "reported_at": "1989-03-31T12:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1989-03-29T00:00:00Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Perth, Western Australia, Australia (capital proxy for SW Western Australia impacts)",
+        "jurisdiction_level": "state",
+        "admin1": "Western Australia",
+        "country": "AU",
+        "capital_used": "Perth",
+        "lat": -31.9523,
+        "lon": 115.8613,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.bom.gov.au/cyclone/history/ned.shtml",
+          "source_name": "Australian Bureau of Meteorology",
+          "published_at": "1989-03-31T12:00:00Z",
+          "headline": "Tropical Cyclone Ned",
+          "byline": null,
+          "accessed_utc": "2026-01-18T07:02:35.712Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Australian Bureau of Meteorology"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Ned reached cyclone intensity on 26 March 1989.",
+            "source_url": "https://www.bom.gov.au/cyclone/history/ned.shtml"
+          },
+          {
+            "quote": "...strong winds...power disruptions and isolated roof damage...",
+            "source_url": "https://www.bom.gov.au/cyclone/history/ned.shtml"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.8,
+        "location": 0.6,
+        "summary_grounding": 0.75
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "1989-03 Tropical Cyclone Ned Western Australia",
+        "fingerprint": "fp_198903_tropical_cyclone_ned_western_australia_1989-03"
+      }
+    },
+    {
+      "event_id": "evt_198903_tc_marcia_open_waters_aus",
+      "title": "Tropical Cyclone Marcia occurs over the southeast Indian Ocean (Australian region)",
+      "description": "Tropical Cyclone Marcia occurred in early March 1989 in the Australian region warning areas and largely remained over open waters. Track data republished by Australian Severe Weather indicates the system reached tropical cyclone strength around 3 March and persisted into 6 March 1989.",
+      "category_primary": "weather_climate",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "1989-03-02T12:00:00Z",
+        "event_end": "1989-03-06T12:00:00Z",
+        "reported_at": "1989-03-06T12:00:00Z",
+        "time_confidence": 0.5,
+        "event_date_utc": "1989-03-03T00:00:00Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Canberra, Australia (country capital proxy for Australian region cyclone warning areas)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "AU",
+        "capital_used": "Canberra",
+        "lat": -35.2809,
+        "lon": 149.13,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.3
+      },
+      "sources": [
+        {
+          "url": "https://www.australiasevereweather.com/tropical_cyclones/1988_1989/bom/tropical_cyclone_marcia.htm",
+          "source_name": "Australian Severe Weather",
+          "published_at": "1989-03-06T12:00:00Z",
+          "headline": "Tropical Cyclone Marcia (1988-1989)",
+          "byline": null,
+          "accessed_utc": "2026-01-18T07:02:35.712Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.australiasevereweather.com/tropical_cyclones/bom_1988_1989_australian_region_tropical_cyclones.htm",
+          "source_name": "Australian Severe Weather",
+          "published_at": "1989-03-06T12:00:00Z",
+          "headline": "1988-1989 Australian Region Tropical Cyclones (BoM)",
+          "byline": null,
+          "accessed_utc": "2026-01-18T07:02:35.712Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Australian Severe Weather",
+          "Australian Bureau of Meteorology"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "...track data...system reaching Category 1 strength around 3 March 1989...",
+            "source_url": "https://www.australiasevereweather.com/tropical_cyclones/1988_1989/bom/tropical_cyclone_marcia.htm"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.42,
+        "category": 0.75,
+        "location": 0.3,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "secondary_sources_only",
+        "location_ambiguous",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "1989-03 Tropical Cyclone Marcia Australian region",
+        "fingerprint": "fp_198903_tropical_cyclone_marcia_australian_region_1989-03"
+      }
+    },
+    {
+      "event_id": "evt_198903_us_winter_storm_la_times",
+      "title": "Major late-winter storm brings snow, ice, and travel disruption across parts of the United States",
+      "description": "A large winter storm produced rain, freezing rain, sleet, and snow across a broad swath of the United States from Texas through the Midwest to the Northeast. Reporting described heavy snow in parts of Missouri, significant travel disruption, flooding issues in parts of Tennessee/Kentucky/West Virginia, and gale-force winds pushing ice onto Lake Erie shoreline property.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1989-03-05T12:00:00Z",
+        "event_end": "1989-03-07T12:00:00Z",
+        "reported_at": "1989-03-07T00:00:00Z",
+        "time_confidence": 0.5,
+        "event_date_utc": "1989-03-07T00:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Washington, DC, United States (country capital proxy for multi-state impacts)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.35
+      },
+      "sources": [
+        {
+          "url": "https://www.latimes.com/archives/la-xpm-1989-03-07-mn-167-story.html",
+          "source_name": "Los Angeles Times",
+          "published_at": "1989-03-07T00:00:00Z",
+          "headline": "Major U.S. winter storm — widespread snow/ice and record cold (reported March 7, 1989)",
+          "byline": null,
+          "accessed_utc": "2026-01-18T07:02:35.712Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Los Angeles Times"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "...rain, freezing rain, sleet and snow from Texas to New York...",
+            "source_url": "https://www.latimes.com/archives/la-xpm-1989-03-07-mn-167-story.html"
+          },
+          {
+            "quote": "...ice pushed onto Lake Erie shoreline property by gale-force winds...",
+            "source_url": "https://www.latimes.com/archives/la-xpm-1989-03-07-mn-167-story.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.5,
+        "category": 0.7,
+        "location": 0.35,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "paywalled_or_partial",
+        "location_ambiguous",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "1989-03 US winter storm Texas to Northeast",
+        "fingerprint": "fp_198903_major_winter_storm_united_states_1989-03"
+      }
+    },
+    {
+      "event_id": "evt_19890303_turkey_earthquake_39276_27744",
+      "title": "Earthquake in Turkey near 39.276°N, 27.744°E (USGS report entry)",
+      "description": "A USGS National Earthquake Information Center Earthquake Data Report for March 1989 lists an earthquake in Turkey with an origin time around 12:09:00 UTC and a constrained depth of 10 km. The draft location coordinates (39.276°N, 27.744°E) indicate the event occurred in western Turkey.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1989-03-03T12:09:00Z",
+        "event_end": "1989-03-03T12:09:00Z",
+        "reported_at": "1989-03-01T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1989-03-03T12:09:00Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Near 39.276°N, 27.744°E, Turkey",
+        "jurisdiction_level": "site",
+        "admin1": null,
+        "country": "TR",
+        "capital_used": null,
+        "lat": 39.276,
+        "lon": 27.744,
+        "precision": "exact",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://pubs.usgs.gov/of/1989/0603a/report.pdf",
+          "source_name": "USGS",
+          "published_at": "1989-03-01T00:00:00Z",
+          "headline": "Earthquake Data Report, March 1989 (NEIC)",
+          "byline": null,
+          "accessed_utc": "2026-01-18T07:03:31.142Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "USGS",
+          "National Earthquake Information Center (NEIC)"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Earthquake Data Report, March 1989 ... origin time ... constrained depth 10 km.",
+            "source_url": "https://pubs.usgs.gov/of/1989/0603a/report.pdf"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.8,
+        "location": 0.7,
+        "summary_grounding": 0.4
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "USGS_NEIC_Mar1989_Turkey_1989-03-03_1209",
+        "fingerprint": "fp_evt_19890303_turkey_earthquake_39276_27744"
+      }
+    },
+    {
+      "event_id": "1989-03-us-fl-gainesville-brush-fire-40-acres-sun-index",
+      "title": "Brush fire in southwest subdivision destroyed about 40 acres of trees (Gainesville Sun index entry)",
+      "description": "An Alachua County Library District Gainesville Sun index entry reports a brush fire in a southwest subdivision that destroyed about 40 acres of trees. The index record is dated March 20, 1989.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1989-03-20T12:00:00Z",
+        "event_end": "1989-03-20T12:00:00Z",
+        "reported_at": "1989-03-20T12:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1989-03-20T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Gainesville area (Alachua County), Florida, United States",
+        "jurisdiction_level": "city",
+        "admin1": "Florida",
+        "country": "US",
+        "capital_used": null,
+        "lat": 29.651634,
+        "lon": -82.324826,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://sun-index.aclib.us/node/157505",
+          "source_name": "Alachua County Library District - Gainesville Sun Index",
+          "published_at": "1989-03-20T12:00:00Z",
+          "headline": "Brush fire in southwest subdivision destroyed about 40 acres of trees (index entry)",
+          "byline": null,
+          "accessed_utc": "2026-01-18T07:03:55.007Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Alachua County Library District",
+          "The Gainesville Sun"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "trees"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.7,
+        "location": 0.6,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "secondary_sources_only",
+        "date_ambiguous",
+        "location_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "gainesville_fl_brush_fire_march_1989",
+        "fingerprint": "fires|gainesville_fl|1989-03-20|40_acres_sun_index"
+      }
+    },
+    {
+      "event_id": "1989-03-us-fl-gainesville-brush-fire-stoneridge-sun-index",
+      "title": "Small brush fire near Stoneridge Apartments (Gainesville Sun index entry)",
+      "description": "An Alachua County Library District Gainesville Sun index entry reports firefighters battling a small brush fire near the Stoneridge Apartments in the Gainesville area. The index record is dated March 30, 1989.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1989-03-30T12:00:00Z",
+        "event_end": "1989-03-30T12:00:00Z",
+        "reported_at": "1989-03-30T12:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1989-03-30T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Gainesville area (Alachua County), Florida, United States (near Stoneridge Apartments)",
+        "jurisdiction_level": "city",
+        "admin1": "Florida",
+        "country": "US",
+        "capital_used": null,
+        "lat": 29.651634,
+        "lon": -82.324826,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.5
+      },
+      "sources": [
+        {
+          "url": "https://sun-index.aclib.us/node/155173",
+          "source_name": "Alachua County Library District - Gainesville Sun Index",
+          "published_at": "1989-03-30T12:00:00Z",
+          "headline": "Small brush fire near Stoneridge Apartments (index entry)",
+          "byline": null,
+          "accessed_utc": "2026-01-18T07:03:55.007Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Alachua County Library District",
+          "The Gainesville Sun"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.52,
+        "category": 0.7,
+        "location": 0.55,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "secondary_sources_only",
+        "date_ambiguous",
+        "location_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "gainesville_fl_brush_fire_march_1989",
+        "fingerprint": "fires|gainesville_fl|1989-03-30|stoneridge_sun_index"
+      }
+    },
+    {
+      "event_id": "evt_198903_exxonvaldez_seabirds_pws_001",
+      "title": "Exxon Valdez oil spill causes mass seabird mortality in Prince William Sound",
+      "description": "The Exxon Valdez oil spill in Prince William Sound, Alaska contaminated marine and coastal habitats used by seabirds. Subsequent response and monitoring documented large seabird mortality in oiled areas, indicating acute impacts to marine bird populations.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1989-03-24T12:00:00Z",
+        "event_end": null,
+        "reported_at": "1989-03-24T12:00:00Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "1989-03-24T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Prince William Sound, Alaska, USA",
+        "jurisdiction_level": "site",
+        "admin1": "Alaska",
+        "country": "US",
+        "capital_used": null,
+        "lat": 60.7,
+        "lon": -147.3,
+        "precision": "exact",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://pubs.usgs.gov/publication/70185105",
+          "source_name": "USGS Publications Warehouse",
+          "published_at": "1989-03-24T12:00:00Z",
+          "headline": "Exxon Valdez oil spill: mass seabird mortality and acute impacts on marine bird populations in Prince William Sound and beyond",
+          "byline": null,
+          "accessed_utc": "2026-01-18T07:04:23.086Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://pubs.usgs.gov/publication/70185832",
+          "source_name": "USGS Publications Warehouse",
+          "published_at": "1989-03-24T12:00:00Z",
+          "headline": "Exxon Valdez oil spill: mass seabird mortality and acute impacts on marine bird populations in Prince William Sound and beyond",
+          "byline": null,
+          "accessed_utc": "2026-01-18T07:04:23.086Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "USGS"
+        ],
+        "substances": [
+          "crude oil"
+        ],
+        "ecosystems": [
+          "Prince William Sound",
+          "Alaska coastline"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.75,
+        "location": 0.6,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "low_confidence_location"
+      ],
+      "dedupe": {
+        "cluster_hint": "Exxon Valdez oil spill wildlife impacts (Prince William Sound)",
+        "fingerprint": "fp_exxonvaldez_seabirds_pws_1989-03-24"
+      }
+    },
+    {
+      "event_id": "evt_198903_exxonvaldez_seaotter_capture_pws_002",
+      "title": "Sea otter capture and rehabilitation efforts begin after Exxon Valdez spill",
+      "description": "Following the March 1989 Exxon Valdez spill in Prince William Sound, responders began capturing live, oiled sea otters for rescue and rehabilitation. The start of capture operations reflects acute wildlife injury and rapid conservation intervention in oiled habitat.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "1989-03-30T12:00:00Z",
+        "event_end": null,
+        "reported_at": "1989-03-30T12:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1989-03-30T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Prince William Sound, Alaska, USA",
+        "jurisdiction_level": "site",
+        "admin1": "Alaska",
+        "country": "US",
+        "capital_used": null,
+        "lat": 60.7,
+        "lon": -147.3,
+        "precision": "exact",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.usgs.gov/publications/evaluation-sea-otter-capture-after-exxon-valdez-oil-spill-prince-william-sound-alaska",
+          "source_name": "USGS",
+          "published_at": "1989-03-30T12:00:00Z",
+          "headline": "Exxon Valdez oil spill: sea otter rescue/capture operations begin (acute spill-response period for oiled otters)",
+          "byline": null,
+          "accessed_utc": "2026-01-18T07:04:23.086Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "USGS"
+        ],
+        "substances": [
+          "crude oil"
+        ],
+        "ecosystems": [
+          "Prince William Sound"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.7,
+        "location": 0.6,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "low_confidence_location"
+      ],
+      "dedupe": {
+        "cluster_hint": "Exxon Valdez oil spill wildlife impacts (Prince William Sound)",
+        "fingerprint": "fp_exxonvaldez_seaotter_capture_pws_1989-03-30"
+      }
+    },
+    {
+      "event_id": "evt_198903_exxonvaldez_harborseals_pws_003",
+      "title": "Harbor seal injury and habitat oiling linked to Exxon Valdez spill in Prince William Sound",
+      "description": "The Exxon Valdez oil spill in March 1989 affected harbor seals in Prince William Sound by oiling areas used for haul-out and other key habitat. Post-spill documentation links oil exposure and associated mortality or injury to impacted portions of the Sound.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1989-03-24T12:00:00Z",
+        "event_end": null,
+        "reported_at": "1989-03-24T12:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1989-03-24T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Prince William Sound, Alaska, USA",
+        "jurisdiction_level": "site",
+        "admin1": "Alaska",
+        "country": "US",
+        "capital_used": null,
+        "lat": 60.7,
+        "lon": -147.3,
+        "precision": "exact",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://evostc.state.ak.us/status-of-restoration/harbor-seals/",
+          "source_name": "Exxon Valdez Oil Spill Trustee Council (EVOSTC)",
+          "published_at": "1989-03-24T12:00:00Z",
+          "headline": "Exxon Valdez oil spill: documented injury and mortality in harbor seals and oiling of haul-out/pupping habitat (May–August oiling period initiated by March spill)",
+          "byline": null,
+          "accessed_utc": "2026-01-18T07:04:23.086Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Exxon Valdez Oil Spill Trustee Council (EVOSTC)"
+        ],
+        "substances": [
+          "crude oil"
+        ],
+        "ecosystems": [
+          "Prince William Sound"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.5,
+        "category": 0.7,
+        "location": 0.55,
+        "summary_grounding": 0.4
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "low_confidence_location",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "Exxon Valdez oil spill wildlife impacts (Prince William Sound)",
+        "fingerprint": "fp_exxonvaldez_harborseals_pws_1989-03-24"
+      }
+    },
+    {
+      "event_id": "1989-03-22_basel_convention_adopted_basel_ch",
+      "title": "Basel Convention adopted to control transboundary hazardous waste movements",
+      "description": "A diplomatic conference in Basel adopted the Basel Convention, establishing an international legal framework to control transboundary movements of hazardous wastes and promote environmentally sound management and disposal.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1989-03-22T12:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1989-03-22T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Basel, Switzerland",
+        "jurisdiction_level": "city",
+        "admin1": null,
+        "country": "CH",
+        "capital_used": null,
+        "lat": 47.5596,
+        "lon": 7.5886,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://treaties.un.org/pages/viewdetails.aspx?chapter=27&clang=_en&mtdsg_no=xxvii-3&src=treaty",
+          "source_name": "United Nations Treaty Collection",
+          "published_at": "1989-03-22T12:00:00Z",
+          "headline": "Basel Convention on the Control of Transboundary Movements of Hazardous Wastes and their Disposal",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://legal.un.org/avl/ha/bcctmhwd/bcctmhwd.html",
+          "source_name": "United Nations Audiovisual Library of International Law",
+          "published_at": "1989-03-22T12:00:00Z",
+          "headline": "Basel Convention on the Control of Transboundary Movements of Hazardous Wastes and their Disposal",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Basel Convention"
+        ],
+        "substances": [
+          "hazardous wastes"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Basel Convention on the Control of Transboundary Movements of Hazardous Wastes and their Disposal",
+            "source_url": "https://treaties.un.org/pages/viewdetails.aspx?chapter=27&clang=_en&mtdsg_no=xxvii-3&src=treaty"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.75,
+        "location": 0.6,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Basel Convention adopted 1989-03-22",
+        "fingerprint": "fp_1989-03-22_basel_convention_adopted_basel_ch"
+      }
+    },
+    {
+      "event_id": "1989-03-06_osha_hazwoper_final_rule_us",
+      "title": "OSHA publishes final HAZWOPER rule (29 CFR 1910.120)",
+      "description": "OSHA published the final Hazardous Waste Operations and Emergency Response (HAZWOPER) rule in the U.S. Federal Register, setting worker safety and health requirements for hazardous waste operations and emergency response.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1989-03-06T12:00:00Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "1989-03-06T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://www.osha.gov/laws-regs/federalregister/1989-03-06",
+          "source_name": "OSHA",
+          "published_at": "1989-03-06T12:00:00Z",
+          "headline": "Federal Register - 1989-03-06",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.osha.gov/emergency-preparedness/hazardous-waste-operations/background",
+          "source_name": "OSHA",
+          "published_at": "1989-03-06T12:00:00Z",
+          "headline": "Hazardous Waste Operations and Emergency Response - Background",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "OSHA"
+        ],
+        "substances": [
+          "hazardous substances"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Federal Register - 1989-03-06",
+            "source_url": "https://www.osha.gov/laws-regs/federalregister/1989-03-06"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.58,
+        "category": 0.75,
+        "location": 0.75,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "OSHA HAZWOPER final rule published 1989-03-06",
+        "fingerprint": "fp_1989-03-06_osha_hazwoper_final_rule_us"
+      }
+    },
+    {
+      "event_id": "1989-03-07_epa_rcra_permitting_rule_us",
+      "title": "EPA finalizes RCRA permitting rule changes (interim status facilities and post-closure permitting)",
+      "description": "EPA promulgated amendments to hazardous waste regulations affecting interim status and permitted facilities and clarified aspects of hazardous waste permitting, including procedures related to post-closure permitting under RCRA.",
+      "category_primary": "policy_regulation",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1989-03-07T12:00:00Z",
+        "time_confidence": 0.45,
+        "event_date_utc": "1989-03-07T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://19january2021snapshot.epa.gov/hwpermitting/federal-register-notice-final-amendments-regulations-interim-status-facilities_.html",
+          "source_name": "US EPA (snapshot)",
+          "published_at": "1989-03-07T12:00:00Z",
+          "headline": "Federal Register Notice: Final Amendments to Regulations for Interim Status Facilities",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "EPA"
+        ],
+        "substances": [
+          "hazardous waste"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Final amendments to regulations for interim status facilities",
+            "source_url": "https://19january2021snapshot.epa.gov/hwpermitting/federal-register-notice-final-amendments-regulations-interim-status-facilities_.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.46,
+        "category": 0.7,
+        "location": 0.75,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "secondary_sources_only",
+        "date_ambiguous",
+        "needs_dedupe_check",
+        "low_confidence_category"
+      ],
+      "dedupe": {
+        "cluster_hint": "EPA RCRA permitting rule changes 1989-03-07",
+        "fingerprint": "fp_1989-03-07_epa_rcra_permitting_rule_us"
+      }
+    }
+  ]
+}

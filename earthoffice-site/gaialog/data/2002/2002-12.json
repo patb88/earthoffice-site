@@ -1,0 +1,509 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_2002-12_normalize_2026-01-16T024528998Z",
+    "generated_utc": "2026-01-16T02:45:28.998Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "2002-12",
+    "window": {
+      "start_utc": "2002-12-01T00:00:00.000Z",
+      "end_utc": "2002-12-31T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "evt-20021204-huntington-harbour-sewage-spill",
+      "title": "Sewage spill closes part of Huntington Harbour and nearby beach areas in Orange County, California",
+      "description": "Orange County health officials closed a portion of Huntington Harbour (including Christiana Bay) due to a sewage spill. A section of beach near the Santa Ana River remained closed while water-safety testing was conducted.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2002-12-04T00:00:00Z",
+        "time_confidence": 0.5,
+        "event_date_utc": "2002-12-04T00:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Orange County, California, USA",
+        "jurisdiction_level": "state",
+        "admin1": "California",
+        "country": "US",
+        "capital_used": "Sacramento",
+        "lat": 38.5767,
+        "lon": -121.4944,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.latimes.com/archives/la-xpm-2002-dec-04-me-ocbriefs4.2-story.html",
+          "source_name": "Los Angeles Times",
+          "published_at": "2002-12-04T00:00:00Z",
+          "headline": "Sewage spill closes part of Huntington Harbour and nearby beach areas (Orange County briefs)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Orange County health officials"
+        ],
+        "substances": [
+          "sewage"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "health officials closed a portion of Huntington Harbour... due to a sewage spill",
+            "source_url": "https://www.latimes.com/archives/la-xpm-2002-dec-04-me-ocbriefs4.2-story.html"
+          },
+          {
+            "quote": "a section of beach near the Santa Ana River remained closed pending water-safety testing",
+            "source_url": "https://www.latimes.com/archives/la-xpm-2002-dec-04-me-ocbriefs4.2-story.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.75,
+        "location": 0.6,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "paywalled_or_partial",
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Huntington Harbour sewage spill closures (Dec 2002)",
+        "fingerprint": "fp-evt-20021204-huntington-harbour-sewage-spill-orange-county-ca-us"
+      }
+    },
+    {
+      "event_id": "evt_200212_nc_ice_storm_central_nc",
+      "title": "Freezing-rain ice storm causes widespread outages in central North Carolina",
+      "description": "A freezing-rain (ice) storm in early December 2002 affected central North Carolina, leading to extensive ice accretion and widespread power outages. The impacts persisted for days, disrupting infrastructure and daily life.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2002-12-04T00:00:00.000Z",
+        "event_end": "2002-12-14T23:59:59.000Z",
+        "reported_at": "2002-12-08T00:00:00.000Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "2002-12-04T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "North Carolina, USA",
+        "jurisdiction_level": "state",
+        "admin1": "North Carolina",
+        "country": "US",
+        "capital_used": "Raleigh",
+        "lat": 35.7796,
+        "lon": -78.6382,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.latimes.com/archives/la-xpm-2002-dec-08-na-weather8-story.html",
+          "source_name": "Los Angeles Times",
+          "published_at": "2002-12-08T00:00:00.000Z",
+          "headline": "https://www.latimes.com/archives/la-xpm-2002-dec-08-na-weather8-story.html",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "...freezing rain...ice...power outages...",
+            "source_url": "https://www.latimes.com/archives/la-xpm-2002-dec-08-na-weather8-story.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.75,
+        "location": 0.6,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "paywalled_or_partial",
+        "location_ambiguous",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "2002-12 North Carolina ice storm outages",
+        "fingerprint": "fp_nc_ice_storm_2002-12_raleigh_2002-12-04"
+      }
+    },
+    {
+      "event_id": "2002-12-30_stromboli_landslide_tsunami",
+      "title": "Landslide-induced tsunamis at Stromboli during effusive eruption",
+      "description": "On 30 Dec 2002, landslides on Stromboli volcano’s Sciara del Fuoco flank generated tsunami waves that impacted the island’s coastline. The event occurred during an effusive eruption that began in late December 2002.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2002-12-30T12:15:00.000Z",
+        "event_end": "2002-12-30T13:00:00.000Z",
+        "reported_at": "2005-12-22T00:00:00.000Z",
+        "time_confidence": 0.8,
+        "event_date_utc": "2002-12-30T12:15:00.000Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Stromboli Island, Aeolian Islands, Italy",
+        "jurisdiction_level": "site",
+        "admin1": null,
+        "country": "IT",
+        "capital_used": null,
+        "lat": 38.789,
+        "lon": 15.213,
+        "precision": "exact",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.75
+      },
+      "sources": [
+        {
+          "url": "https://nhess.copernicus.org/articles/5/763/2005/nhess-5-763-2005.html",
+          "source_name": "Natural Hazards and Earth System Sciences (Copernicus)",
+          "published_at": "2005-12-22T00:00:00.000Z",
+          "headline": "Landslide-induced tsunamis during the 2002-2003 Stromboli effusive eruption",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "On 30 December 2002, two landslides generated tsunamis that struck Stromboli Island.",
+            "source_url": "https://nhess.copernicus.org/articles/5/763/2005/nhess-5-763-2005.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.73,
+        "category": 0.9,
+        "location": 0.75,
+        "summary_grounding": 0.7
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "stromboli_2002_tsunami_landslide",
+        "fingerprint": "fp_2002-12-30_stromboli_island_geological"
+      }
+    },
+    {
+      "event_id": "evt-2002-12-au-nsw-greater-sydney-bushfires",
+      "title": "Bushfires around Greater Sydney, New South Wales (early Dec 2002)",
+      "description": "Bushfires flared around the Greater Sydney area in early December 2002, with firefighting efforts across multiple blazes. Reporting described smoke impacts and damage including homes destroyed.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2002-12-04T00:00:00.000Z",
+        "event_end": "2002-12-10T23:59:59.000Z",
+        "reported_at": "2002-12-06T00:00:00.000Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "2002-12-06T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "New South Wales, Australia",
+        "jurisdiction_level": "state",
+        "admin1": "New South Wales",
+        "country": "AU",
+        "capital_used": "Sydney",
+        "lat": -33.8688,
+        "lon": 151.2093,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.theguardian.com/world/2002/dec/06/australia",
+          "source_name": "The Guardian",
+          "published_at": "2002-12-06T00:00:00.000Z",
+          "headline": "https://www.theguardian.com/world/2002/dec/06/australia",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.5,
+        "category": 0.75,
+        "location": 0.55,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "2002-12 NSW Greater Sydney bushfires",
+        "fingerprint": "fp-2002-12-au-nsw-greater-sydney-bushfires"
+      }
+    },
+    {
+      "event_id": "evt-2002-12-au-nsw-tuckean-nature-reserve-bushfire",
+      "title": "Bushfire in/near Tuckean Nature Reserve, New South Wales (mid Dec 2002)",
+      "description": "A bushfire was documented in and around the Tuckean Nature Reserve area on the NSW North Coast in mid-December 2002. The event was summarized via incident-style reporting and satellite imagery compilation.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2002-12-15T00:00:00.000Z",
+        "event_end": "2002-12-19T23:59:59.000Z",
+        "reported_at": "2002-12-01T00:00:00.000Z",
+        "time_confidence": 0.35,
+        "event_date_utc": null,
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "New South Wales, Australia",
+        "jurisdiction_level": "state",
+        "admin1": "New South Wales",
+        "country": "AU",
+        "capital_used": "Sydney",
+        "lat": -33.8688,
+        "lon": 151.2093,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.4
+      },
+      "sources": [
+        {
+          "url": "https://www.australiasevereweather.com/fires/200212.htm",
+          "source_name": "Australia Severe Weather",
+          "published_at": "2002-12-01T00:00:00.000Z",
+          "headline": "https://www.australiasevereweather.com/fires/200212.htm",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.4,
+        "category": 0.7,
+        "location": 0.4,
+        "summary_grounding": 0.35
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "2002-12 NSW North Coast fires (Tuckean Nature Reserve area)",
+        "fingerprint": "fp-2002-12-au-nsw-tuckean-nature-reserve-bushfire"
+      }
+    },
+    {
+      "event_id": "2002-12-policyreg-kyoto-canada-instrument-deposited",
+      "title": "Canada deposits instrument of ratification for the Kyoto Protocol",
+      "description": "Canada deposited its instrument of ratification of the Kyoto Protocol with the UN depositary in December 2002. This action marked Canada’s formal ratification step for the international climate treaty.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "2002-12-17T00:00:00.000Z",
+        "event_end": "2002-12-17T23:59:59.000Z",
+        "reported_at": "2002-12-18T00:00:00.000Z",
+        "time_confidence": 0.65,
+        "event_date_utc": "2002-12-17T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Ottawa, Canada (instrument deposited with UN depositary)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "CA",
+        "capital_used": "Ottawa",
+        "lat": 45.4215,
+        "lon": -75.6972,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.75
+      },
+      "sources": [
+        {
+          "url": "https://www.mofa.go.jp/announce/announce/2002/12/1218.html",
+          "source_name": "Ministry of Foreign Affairs of Japan",
+          "published_at": "2002-12-18T00:00:00.000Z",
+          "headline": "https://www.mofa.go.jp/announce/announce/2002/12/1218.html",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Government of Canada",
+          "United Nations"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Canada has deposited its instrument of ratification of the Kyoto Protocol",
+            "source_url": "https://www.mofa.go.jp/announce/announce/2002/12/1218.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.75,
+        "location": 0.7,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "Kyoto Protocol ratification deposit (Canada)",
+        "fingerprint": "kyoto_protocol_ratification_deposit_canada_2002-12-17_CA"
+      }
+    },
+    {
+      "event_id": "2002-12-policyreg-kyoto-new-zealand-ratification",
+      "title": "New Zealand ratifies the Kyoto Protocol",
+      "description": "New Zealand ratified the Kyoto Protocol in December 2002, committing to the treaty’s obligations for the first commitment period. The source describes this as part of New Zealand’s participation in the global response to climate change.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2002-12-01T00:00:00.000Z",
+        "time_confidence": 0.3,
+        "event_date_utc": null,
+        "event_date_precision": "month"
+      },
+      "location": {
+        "name": "Wellington, New Zealand",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "NZ",
+        "capital_used": "Wellington",
+        "lat": -41.2866,
+        "lon": 174.7756,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.8
+      },
+      "sources": [
+        {
+          "url": "https://environment.govt.nz/climate-change/why-climate-change-matters/global-response/new-zealand-and-united-nations-framework/",
+          "source_name": "New Zealand Ministry for the Environment",
+          "published_at": "2002-12-01T00:00:00.000Z",
+          "headline": "New Zealand and the United Nations Framework Convention on Climate Change",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Government of New Zealand"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "New Zealand ratified the Kyoto Protocol in December 2002",
+            "source_url": "https://environment.govt.nz/climate-change/why-climate-change-matters/global-response/new-zealand-and-united-nations-framework/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.5,
+        "category": 0.7,
+        "location": 0.8,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "Kyoto Protocol ratification (New Zealand)",
+        "fingerprint": "kyoto_protocol_ratification_new_zealand_2002-12_NZ"
+      }
+    }
+  ]
+}

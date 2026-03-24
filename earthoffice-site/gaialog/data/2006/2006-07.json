@@ -1,0 +1,609 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_2006-07_normalize_2026-01-16T032428815Z",
+    "generated_utc": "2026-01-16T03:24:28.815Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "2006-07",
+    "window": {
+      "start_utc": "2006-07-01T00:00:00.000Z",
+      "end_utc": "2006-07-31T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "evt_200607_jiyeh_oilspill_001",
+      "title": "Heavy fuel oil spill from Jiyeh power station contaminates Lebanon’s Mediterranean coast",
+      "description": "Damage to fuel storage at the Jiyeh power station in mid-July 2006 led to a major release of heavy fuel oil into the Mediterranean Sea. Reports described extensive oil contamination along Lebanon’s coastline and impacts to the marine environment.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2006-07-13T00:00:00.000Z",
+        "event_end": "2006-07-15T23:59:59.000Z",
+        "reported_at": "2006-07-28T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2006-07-13T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Jiyeh power station area, Lebanon",
+        "jurisdiction_level": "site",
+        "admin1": null,
+        "country": "LB",
+        "capital_used": null,
+        "lat": 33.664,
+        "lon": 35.419,
+        "precision": "neighborhood",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://incidentnews.noaa.gov/incident/6106",
+          "source_name": "NOAA IncidentNews",
+          "published_at": "2006-07-01T00:00:00Z",
+          "headline": "Incident 6106 (Jiyeh Power Plant Oil Spill)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.aljazeera.com/news/2006/7/28/lebanon-oil-spill-crisis",
+          "source_name": "Al Jazeera",
+          "published_at": "2006-07-28T00:00:00Z",
+          "headline": "Lebanon oil spill crisis",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://disasterscharter.org/activations/oil-spill-off-the-coast-of-leban-8",
+          "source_name": "International Charter Space and Major Disasters",
+          "published_at": "2006-07-01T00:00:00Z",
+          "headline": "Oil spill off the coast of Lebanon",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA",
+          "Al Jazeera",
+          "International Charter Space and Major Disasters"
+        ],
+        "substances": [
+          "heavy fuel oil"
+        ],
+        "ecosystems": [
+          "Mediterranean Sea",
+          "Lebanese coastline"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "damage to fuel storage tanks at the Jiyeh power station",
+            "source_url": "https://www.aljazeera.com/news/2006/7/28/lebanon-oil-spill-crisis"
+          },
+          {
+            "quote": "oil spill off the coast of Lebanon",
+            "source_url": "https://disasterscharter.org/activations/oil-spill-off-the-coast-of-leban-8"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.58,
+        "category": 0.8,
+        "location": 0.55,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "2006 Jiyeh power plant oil spill Lebanon",
+        "fingerprint": "fp_200607_jiyeh_power_oilspill_lebanon_2006-07-13"
+      }
+    },
+    {
+      "event_id": "evt_200607_na_heatwave_us_dc_proxy",
+      "title": "North American heat wave peaks in late July 2006 (U.S. impacts)",
+      "description": "A major heat wave affected parts of the United States in late July 2006, bringing extreme temperatures and significant heat impacts. Reports describe strain on infrastructure and widespread heat-related impacts in affected areas.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2006-07-21T00:00:00.000Z",
+        "event_end": "2006-07-23T23:59:59.000Z",
+        "reported_at": "2006-07-01T00:00:00.000Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "2006-07-22T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "United States",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.britannica.com/event/North-American-heat-wave-of-2006",
+          "source_name": "Encyclopaedia Britannica",
+          "published_at": "2006-07-01T00:00:00.000Z",
+          "headline": "North American heat wave of 2006",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.ncdc.noaa.gov/extremes/scec/reports/200607heat.pdf",
+          "source_name": "NOAA/NCDC",
+          "published_at": "2006-07-01T00:00:00.000Z",
+          "headline": "2006 July Heat (report PDF)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA",
+          "NCDC"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "North American heat wave of 2006",
+            "source_url": "https://www.britannica.com/event/North-American-heat-wave-of-2006"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.56,
+        "category": 0.75,
+        "location": 0.6,
+        "summary_grounding": 0.4
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "2006-07 US heat wave",
+        "fingerprint": "fp_200607_us_heatwave"
+      }
+    },
+    {
+      "event_id": "evt_200607_europe_heatwave_brussels_proxy",
+      "title": "European heat wave during July 2006 (record warmth in multiple countries)",
+      "description": "A prolonged heat wave affected large parts of Europe during July 2006, bringing unusually high temperatures and record July warmth in several places. Sources describe notable societal impacts during the period.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2006-07-18T00:00:00.000Z",
+        "event_end": "2006-07-31T23:59:59.000Z",
+        "reported_at": "2006-07-01T00:00:00.000Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "2006-07-24T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Europe",
+        "jurisdiction_level": "supranational",
+        "admin1": null,
+        "country": null,
+        "capital_used": "Brussels",
+        "lat": 50.8503,
+        "lon": 4.3517,
+        "precision": "supranational",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.metoffice.gov.uk/weather/learn-about/weather/case-studies/july2006",
+          "source_name": "UK Met Office",
+          "published_at": "2006-07-01T00:00:00.000Z",
+          "headline": "July 2006 heatwave (case study)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.bbc.co.uk/weather/features/57453118",
+          "source_name": "BBC Weather",
+          "published_at": "2021-07-01T00:00:00.000Z",
+          "headline": "Heatwaves in the UK: July 2006",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.wmo.int/pages/prog/wcp/wcdmp/documents/WCDMP_70.pdf",
+          "source_name": "World Meteorological Organization (WMO)",
+          "published_at": "2007-01-01T00:00:00.000Z",
+          "headline": "WCDMP-70 (WMO document PDF)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "UK Met Office",
+          "BBC",
+          "WMO"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "July 2006 heatwave",
+            "source_url": "https://www.metoffice.gov.uk/weather/learn-about/weather/case-studies/july2006"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.58,
+        "category": 0.8,
+        "location": 0.55,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "2006-07 Europe heat wave",
+        "fingerprint": "fp_200607_europe_heatwave"
+      }
+    },
+    {
+      "event_id": "evt_20060717_java_tsunami_eq_usgs",
+      "title": "Mw 7.7 tsunami earthquake south of Java triggers destructive tsunami along Java’s south coast",
+      "description": "A magnitude 7.7 earthquake occurred off the southern coast of Java on 17 July 2006. The event generated a destructive tsunami that caused extensive damage and loss of life along parts of Java’s coastline.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2006-07-17T08:19:26.000Z",
+        "event_end": "2006-07-17T23:59:59.000Z",
+        "reported_at": "2006-07-17T08:19:26.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2006-07-17T08:19:26.000Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Off southern coast of Java, Indonesia",
+        "jurisdiction_level": "site",
+        "admin1": null,
+        "country": "ID",
+        "capital_used": null,
+        "lat": -8,
+        "lon": 107,
+        "precision": "proxy",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.35
+      },
+      "sources": [
+        {
+          "url": "https://www.usgs.gov/publications/17-july-2006-tsunami-earthquake-west-java-indonesia",
+          "source_name": "USGS",
+          "published_at": "2006-07-17T00:00:00Z",
+          "headline": "17 July 2006 tsunami earthquake, West Java, Indonesia",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://pubs.usgs.gov/publication/70032838",
+          "source_name": "USGS Publications",
+          "published_at": "2006-07-17T00:00:00Z",
+          "headline": "USGS publication record (17 July 2006 tsunami earthquake, West Java, Indonesia)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://asc-india.org/lib/20060717-java.htm",
+          "source_name": "ASC-India",
+          "published_at": "2006-07-17T00:00:00Z",
+          "headline": "2006/07/17 Java earthquake (library page)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "USGS"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "A tsunami earthquake (Mw 7.7) occurred south of Java on 17 July 2006.",
+            "source_url": "https://www.usgs.gov/publications/17-july-2006-tsunami-earthquake-west-java-indonesia"
+          },
+          {
+            "quote": "...producing weak felt shaking but a destructive tsunami...",
+            "source_url": "https://www.usgs.gov/publications/17-july-2006-tsunami-earthquake-west-java-indonesia"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.8,
+        "location": 0.35,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "2006-07-17_java_tsunami_eq",
+        "fingerprint": "fp_20060717_java_offshore_-8.0_107.0"
+      }
+    },
+    {
+      "event_id": "evt_20060708_andreanof_m66_alaskaedu",
+      "title": "M6.6 earthquake in the Andreanof Islands region (Aleutian Islands, Alaska)",
+      "description": "A magnitude 6.6 earthquake struck the Andreanof Islands region of the Aleutian Islands on 8 July 2006. It was reported as part of a sequence that included earlier foreshocks and was felt in Adak.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2006-07-08T20:39:00.000Z",
+        "event_end": "2006-07-08T23:59:59.000Z",
+        "reported_at": "2006-07-08T20:39:00.000Z",
+        "time_confidence": 0.75,
+        "event_date_utc": "2006-07-08T20:39:00.000Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Andreanof Islands region, Aleutian Islands, Alaska, USA",
+        "jurisdiction_level": "site",
+        "admin1": "Alaska",
+        "country": "US",
+        "capital_used": null,
+        "lat": 51.8,
+        "lon": -177.9,
+        "precision": "proxy",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.35
+      },
+      "sources": [
+        {
+          "url": "https://earthquake.alaska.edu/event/0068owpu5g/detail",
+          "source_name": "Alaska Earthquake Center",
+          "published_at": "2006-07-08T00:00:00Z",
+          "headline": "Event detail: 0068owpu5g",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Alaska Earthquake Center"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "A magnitude 6.6 earthquake struck the Andreanof Islands region on 8 July 2006...",
+            "source_url": "https://earthquake.alaska.edu/event/0068owpu5g/detail"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.5,
+        "category": 0.75,
+        "location": 0.35,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "2006-07-08_andreanof_m66",
+        "fingerprint": "fp_20060708_andreanof_51.8_-177.9"
+      }
+    },
+    {
+      "event_id": "200607_sawtooth-complex_yucca-valley_morongo-basin",
+      "title": "Sawtooth Complex wildfire expands rapidly near Yucca Valley (Morongo Basin)",
+      "description": "A lightning-ignited wildfire in the Morongo Basin/Yucca Valley area grew quickly in mid-July 2006, generating significant smoke and prompting evacuations while threatening and damaging structures.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2006-07-09T00:00:00.000Z",
+        "event_end": "2006-07-13T23:59:59.000Z",
+        "reported_at": "2006-07-13T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2006-07-13T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Yucca Valley / Morongo Basin, San Bernardino County, California, USA",
+        "jurisdiction_level": "site",
+        "admin1": "California",
+        "country": "US",
+        "capital_used": null,
+        "lat": 34.1142,
+        "lon": -116.4322,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.latimes.com/archives/la-xpm-2006-jul-13-me-yucca13-story.html",
+          "source_name": "Los Angeles Times",
+          "published_at": "2006-07-13T00:00:00.000Z",
+          "headline": "la-xpm-2006-jul-13-me-yucca13-story.html",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [
+          "desert"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "A lightning-sparked wildfire ... grew quickly ... prompting evacuations",
+            "source_url": "https://www.latimes.com/archives/la-xpm-2006-jul-13-me-yucca13-story.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.52,
+        "category": 0.75,
+        "location": 0.55,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "paywalled_or_partial",
+        "date_ambiguous",
+        "low_confidence_location",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Sawtooth Complex wildfire (Yucca Valley/Morongo Basin) July 2006",
+        "fingerprint": "fires|sawtooth-complex-wildfire-expands-rapidly-near-yucca-valley-morongo-basin|34.1142|-116.4322|2006-07"
+      }
+    },
+    {
+      "event_id": "200607-eu-european-fisheries-fund-reg-1198-2006",
+      "title": "EU adopts Council Regulation (EC) No 1198/2006 establishing the European Fisheries Fund",
+      "description": "Council Regulation (EC) No 1198/2006 established the European Fisheries Fund, setting a framework to support measures in the fisheries sector including environmental and structural objectives. The regulation is dated 27 July 2006.",
+      "category_primary": "policy_regulation",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "2006-07-27T00:00:00.000Z",
+        "event_end": "2006-07-27T23:59:59.000Z",
+        "reported_at": "2006-07-27T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2006-07-27T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "European Union",
+        "jurisdiction_level": "supranational",
+        "admin1": null,
+        "country": null,
+        "capital_used": "Brussels",
+        "lat": 50.8503,
+        "lon": 4.3517,
+        "precision": "supranational",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.legislation.gov.uk/eur/2006/1198/body/2013-07-01",
+          "source_name": "legislation.gov.uk",
+          "published_at": "2006-07-27T00:00:00.000Z",
+          "headline": "Council Regulation (EC) No 1198/2006",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.legislation.gov.uk/eur/2006/1198/title/VIII/adopted",
+          "source_name": "legislation.gov.uk",
+          "published_at": "2006-07-27T00:00:00.000Z",
+          "headline": "Council Regulation (EC) No 1198/2006 (adopted)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "European Union"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Council Regulation (EC) No 1198/2006... of 27 July 2006... European Fisheries Fund",
+            "source_url": "https://www.legislation.gov.uk/eur/2006/1198/body/2013-07-01"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.72,
+        "category": 0.75,
+        "location": 0.6,
+        "summary_grounding": 0.7
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "EU European Fisheries Fund Regulation 1198/2006",
+        "fingerprint": "eu-1198-2006-european-union-2006-07-27"
+      }
+    }
+  ]
+}

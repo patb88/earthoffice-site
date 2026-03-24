@@ -1,0 +1,981 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_1987-02_normalize_2026-01-18T110233983Z",
+    "generated_utc": "2026-01-18T11:02:33.983Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "1987-02",
+    "window": {
+      "start_utc": "1987-02-01T00:00:00.000Z",
+      "end_utc": "1987-02-28T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "evt_19870207_piedras_blancas_oil_sighting",
+      "title": "Oil spill sighted off Piedras Blancas, California",
+      "description": "An oil spill was reported off Piedras Blancas along the central California coast. U.S. Coast Guard follow-up inspections over the next several days indicated the oil largely dissipated due to weather and the case was closed after no resource impacts were observed.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1987-02-07T12:00:00Z",
+        "event_end": "1987-02-07T12:00:00Z",
+        "reported_at": "1987-02-07T12:00:00Z",
+        "time_confidence": 0.5,
+        "event_date_utc": "1987-02-07T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Piedras Blancas, California, USA (offshore)",
+        "jurisdiction_level": "site",
+        "admin1": "California",
+        "country": "US",
+        "capital_used": null,
+        "lat": 35.668,
+        "lon": -121.283,
+        "precision": "exact",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://incidentnews.noaa.gov/incident/6444",
+          "source_name": "NOAA IncidentNews",
+          "published_at": "1987-02-07T12:00:00Z",
+          "headline": "Incident 6444",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Coast Guard",
+          "NOAA"
+        ],
+        "substances": [
+          "oil"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "oil spill was sighted off Piedras Blancas",
+            "source_url": "https://incidentnews.noaa.gov/incident/6444"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.8,
+        "location": 0.6,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "NOAA IncidentNews 6444 Piedras Blancas oil spill",
+        "fingerprint": "pollution_contamination|oil spill sighted off piedras blancas, california|35.668,-121.283|1987-02-07"
+      }
+    },
+    {
+      "event_id": "evt_19870217_peter_hearne_grounding_gasoline_hudson",
+      "title": "Tank barge Peter Hearne grounding and gasoline release on the Hudson River",
+      "description": "The tank barge Peter Hearne grounded in the Hudson River and released a large quantity of premium unleaded gasoline. NOAA documents describe provision of scientific support and evaluation of mitigation options under winter and ice conditions.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1987-02-17T12:00:00Z",
+        "event_end": "1987-02-17T12:00:00Z",
+        "reported_at": "1987-02-17T12:00:00Z",
+        "time_confidence": 0.5,
+        "event_date_utc": "1987-02-17T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Hudson River near West Point, New York, USA",
+        "jurisdiction_level": "site",
+        "admin1": "New York",
+        "country": "US",
+        "capital_used": null,
+        "lat": 41.391,
+        "lon": -73.955,
+        "precision": "exact",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.5
+      },
+      "sources": [
+        {
+          "url": "https://repository.library.noaa.gov/view/noaa/70331/noaa_70331_DS2.json",
+          "source_name": "NOAA Institutional Repository",
+          "published_at": "1987-02-17T12:00:00Z",
+          "headline": "noaa_70331_DS2.json",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://repository.library.noaa.gov/view/noaa/70331/noaa_70331_DS1.pdf",
+          "source_name": "NOAA Institutional Repository",
+          "published_at": "1987-02-17T12:00:00Z",
+          "headline": "noaa_70331_DS1.pdf",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA"
+        ],
+        "substances": [
+          "premium unleaded gasoline"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "tank barge Peter Hearne grounded",
+            "source_url": "https://repository.library.noaa.gov/view/noaa/70331/noaa_70331_DS1.pdf"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.75,
+        "location": 0.5,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Peter Hearne grounding Hudson River Feb 1987",
+        "fingerprint": "pollution_contamination|tank barge peter hearne grounding and gasoline release on the hudson river|41.391,-73.955|1987-02-17"
+      }
+    },
+    {
+      "event_id": "evt_19870218_upi_multiple_spills_ny_nj",
+      "title": "Separate oil spills reported in the Hudson and East Rivers (New York area)",
+      "description": "A wire report described separate spills: a gasoline spill in the Hudson River linked to the grounded barge Peter Hearne and a fuel-oil spill in the East River near Hell Gate. The report noted slick movement toward other nearby areas, including toward Bayonne, New Jersey.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1987-02-18T12:00:00Z",
+        "event_end": "1987-02-18T12:00:00Z",
+        "reported_at": "1987-02-18T12:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1987-02-18T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "East River near Hell Gate, New York City, USA",
+        "jurisdiction_level": "site",
+        "admin1": "New York",
+        "country": "US",
+        "capital_used": null,
+        "lat": 40.784,
+        "lon": -73.923,
+        "precision": "exact",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.upi.com/amp/Archives/1987/02/18/Separate-oil-spills-dumped-hundreds-of-thousands-of-gallons/3935540622800/",
+          "source_name": "UPI",
+          "published_at": "1987-02-18T12:00:00Z",
+          "headline": "Separate oil spills dumped hundreds of thousands of gallons",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Coast Guard"
+        ],
+        "substances": [
+          "gasoline",
+          "fuel oil"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Separate oil spills dumped hundreds of thousands of gallons",
+            "source_url": "https://www.upi.com/amp/Archives/1987/02/18/Separate-oil-spills-dumped-hundreds-of-thousands-of-gallons/3935540622800/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.7,
+        "location": 0.55,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "needs_dedupe_check",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "UPI Feb 18 1987 separate oil spills Hudson/East River",
+        "fingerprint": "pollution_contamination|separate oil spills reported in the hudson and east rivers (new york area)|40.784,-73.923|1987-02-18"
+      }
+    },
+    {
+      "event_id": "evt_19870227_fern_passet_potential_no6_stjohns",
+      "title": "M/V FERN PASSET grounding and potential No. 6 fuel oil release near St. Johns River entrance",
+      "description": "A NOAA IncidentNews record described notification associated with the grounding of the M/V FERN PASSET near the St. Johns River entrance and concerns about a potential release of No. 6 fuel oil. The record referenced trajectory concerns for oil near the jetty area while the vessel remained anchored.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1987-02-27T12:00:00Z",
+        "event_end": "1987-02-27T12:00:00Z",
+        "reported_at": "1987-02-27T12:00:00Z",
+        "time_confidence": 0.5,
+        "event_date_utc": "1987-02-27T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "St. Johns River entrance near Jacksonville, Florida, USA",
+        "jurisdiction_level": "site",
+        "admin1": "Florida",
+        "country": "US",
+        "capital_used": null,
+        "lat": 30.401,
+        "lon": -81.396,
+        "precision": "exact",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://incidentnews.noaa.gov/incident/6449",
+          "source_name": "NOAA IncidentNews",
+          "published_at": "1987-02-27T12:00:00Z",
+          "headline": "Incident 6449",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA"
+        ],
+        "substances": [
+          "No. 6 fuel oil"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "grounding and potential release of No. 6 fuel oil",
+            "source_url": "https://incidentnews.noaa.gov/incident/6449"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.75,
+        "location": 0.55,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "NOAA IncidentNews 6449 FERN PASSET St Johns River entrance",
+        "fingerprint": "pollution_contamination|m/v fern passet grounding and potential no. 6 fuel oil release near st. johns river entrance|30.401,-81.396|1987-02-27"
+      }
+    },
+    {
+      "event_id": "1987-02-weather-au-damien",
+      "title": "Tropical Cyclone Damien tracked off the Kimberley coast (Western Australia)",
+      "description": "The Bureau of Meteorology reports that Tropical Cyclone Damien reached cyclonic intensity at 21:00 UTC on 1 February 1987 and remained active into 9 February 1987. It tracked generally southwest roughly parallel to the Kimberley coast before weakening under changing synoptic conditions.",
+      "category_primary": "weather_climate",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "1987-02-01T21:00:00Z",
+        "event_end": "1987-02-09T12:00:00Z",
+        "reported_at": "1987-02-01T21:00:00Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "1987-02-01T21:00:00Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Off the Kimberley coast, Western Australia, Australia",
+        "jurisdiction_level": "state",
+        "admin1": "Western Australia",
+        "country": "AU",
+        "capital_used": "Perth",
+        "lat": -31.9523,
+        "lon": 115.8613,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.bom.gov.au/cyclone/history/damien87.shtml",
+          "source_name": "Australian Bureau of Meteorology",
+          "published_at": "1987-02-01T21:00:00Z",
+          "headline": "Tropical Cyclone Damien (1987)",
+          "byline": null,
+          "accessed_utc": "2026-01-18T05:50:22.782Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Australian Bureau of Meteorology"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "attained cyclonic intensity at 2100 UTC on 1 February 1987",
+            "source_url": "https://www.bom.gov.au/cyclone/history/damien87.shtml"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.85,
+        "location": 0.55,
+        "summary_grounding": 0.7
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "AU_TropicalCyclone_Damien_1987-02",
+        "fingerprint": "au_tropicalcyclone_damien_1987-02_off_kimberley"
+      }
+    },
+    {
+      "event_id": "1987-02-weather-au-jason",
+      "title": "Severe Tropical Cyclone Jason impacted Gulf of Carpentaria region (NT/QLD)",
+      "description": "The Bureau of Meteorology reports that Jason developed into a tropical low around 6 February 1987 and later intensified into a severe tropical cyclone. Reported impacts included destructive winds, storm surge along parts of the Gulf of Carpentaria coast, evacuations, and damage in communities including Baniyalla and Burketown-area locations.",
+      "category_primary": "weather_climate",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "1987-02-06T12:00:00Z",
+        "event_end": "1987-02-13T12:00:00Z",
+        "reported_at": "1987-02-06T12:00:00Z",
+        "time_confidence": 0.65,
+        "event_date_utc": "1987-02-06T12:00:00Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Northern Territory, Australia (impacts referenced including Gulf of Carpentaria)",
+        "jurisdiction_level": "state",
+        "admin1": "Northern Territory",
+        "country": "AU",
+        "capital_used": "Darwin",
+        "lat": -12.4634,
+        "lon": 130.8456,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.5
+      },
+      "sources": [
+        {
+          "url": "https://www.bom.gov.au/cyclone/history/jason.shtml",
+          "source_name": "Australian Bureau of Meteorology",
+          "published_at": "1987-02-06T12:00:00Z",
+          "headline": "Severe Tropical Cyclone Jason (1987)",
+          "byline": null,
+          "accessed_utc": "2026-01-18T05:50:22.782Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Australian Bureau of Meteorology"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "developed into a tropical low around 0000 UTC 6 February 1987",
+            "source_url": "https://www.bom.gov.au/cyclone/history/jason.shtml"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.85,
+        "location": 0.45,
+        "summary_grounding": 0.7
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "AU_TropicalCyclone_Jason_1987-02",
+        "fingerprint": "au_tropicalcyclone_jason_1987-02_gulf_carpentaria"
+      }
+    },
+    {
+      "event_id": "1987-02-weather-au-elsie",
+      "title": "Severe Tropical Cyclone Elsie made landfall near Mandora (Western Australia)",
+      "description": "The Bureau of Meteorology reports that Tropical Cyclone Elsie moved off the west Kimberley coast on 22 February 1987, intensified, and made landfall near Mandora Station on 25 February at Category 4 intensity. The system brought extreme winds and heavy rainfall that caused moderate flooding and damage in the affected area.",
+      "category_primary": "weather_climate",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "1987-02-22T12:00:00Z",
+        "event_end": "1987-02-27T12:00:00Z",
+        "reported_at": "1987-02-22T12:00:00Z",
+        "time_confidence": 0.65,
+        "event_date_utc": "1987-02-25T12:00:00Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Western Australia, Australia (landfall near Mandora Station)",
+        "jurisdiction_level": "state",
+        "admin1": "Western Australia",
+        "country": "AU",
+        "capital_used": "Perth",
+        "lat": -31.9523,
+        "lon": 115.8613,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.bom.gov.au/cyclone/history/elsie.shtml",
+          "source_name": "Australian Bureau of Meteorology",
+          "published_at": "1987-02-22T12:00:00Z",
+          "headline": "Severe Tropical Cyclone Elsie (1987)",
+          "byline": null,
+          "accessed_utc": "2026-01-18T05:50:22.782Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Australian Bureau of Meteorology"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "made landfall near Mandora Station on 25 February at Category 4 intensity",
+            "source_url": "https://www.bom.gov.au/cyclone/history/elsie.shtml"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.61,
+        "category": 0.85,
+        "location": 0.5,
+        "summary_grounding": 0.7
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "AU_TropicalCyclone_Elsie_1987-02",
+        "fingerprint": "au_tropicalcyclone_elsie_1987-02_mandora"
+      }
+    },
+    {
+      "event_id": "evt_19870206_cerro_prieto_eq_ml54",
+      "title": "ML 5.4 earthquake near Cerro Prieto volcano (Mexicali Valley, Mexico)",
+      "description": "A magnitude (local magnitude) 5.4 earthquake was reported near the Cerro Prieto volcanic area in northern Baja California, affecting the Mexicali Valley region. The source notes strong-motion instrumentation recordings at the Cerro Prieto station and mentions felt reports and minor damage in Mexicali.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1987-02-06T12:00:00Z",
+        "event_end": "1987-02-06T12:00:00Z",
+        "reported_at": "1987-02-01T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1987-02-06T12:00:00Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Northern Baja California (Mexicali Valley area), Mexico",
+        "jurisdiction_level": "state",
+        "admin1": "Baja California",
+        "country": "MX",
+        "capital_used": "Mexicali",
+        "lat": 32.624538,
+        "lon": -115.452262,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://www.conservation.ca.gov/cgs/pages/program-smi/reports/procdata/osms87-04.aspx",
+          "source_name": "California Geological Survey (conservation.ca.gov)",
+          "published_at": "1987-02-01T00:00:00Z",
+          "headline": "OSMS 87-04 (strong-motion/proceedings data page)",
+          "byline": null,
+          "accessed_utc": "2026-01-18T05:50:49.621Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "California Geological Survey"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Earthquake (ML 5.4) ... near Cerro Prieto volcano",
+            "source_url": "https://www.conservation.ca.gov/cgs/pages/program-smi/reports/procdata/osms87-04.aspx"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.8,
+        "location": 0.7,
+        "summary_grounding": 0.4
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "paywalled_or_partial",
+        "location_ambiguous",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "cerro_prieto_eq_1987_02_06",
+        "fingerprint": "cerro_prieto_eq_ml54|mexicali_baja_california_mx|1987-02-06"
+      }
+    },
+    {
+      "event_id": "evt_19870214_stillwater_ecocatastrophe",
+      "title": "Report describes mass fish and bird deaths at Stillwater/Carson Sink wetlands in Nevada",
+      "description": "A report from the Stillwater National Wildlife Management Area near Fallon, Nevada described millions of fish and roughly 1,500 migratory birds found dead in the Stillwater/Carson Sink area. The report characterized the situation as unprecedented and raised concerns for additional migratory birds arriving in the area.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1987-02-14T12:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1987-02-14T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Stillwater National Wildlife Management Area near Fallon, Nevada, USA",
+        "jurisdiction_level": "site",
+        "admin1": "Nevada",
+        "country": "US",
+        "capital_used": null,
+        "lat": 39.5686,
+        "lon": -118.5103,
+        "precision": "exact",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.latimes.com/archives/la-xpm-1987-02-14-mn-3157-story.html",
+          "source_name": "Los Angeles Times",
+          "published_at": "1987-02-14T12:00:00Z",
+          "headline": "Fish and bird deaths characterized as an ‘eco-catastrophe’ at Stillwater National Wildlife Management Area; impacts across multiple species",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [
+          "wetlands"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "millions of fish and about 1,500 migratory birds dead",
+            "source_url": "https://www.latimes.com/archives/la-xpm-1987-02-14-mn-3157-story.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.75,
+        "location": 0.55,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "paywalled_or_partial",
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "stillwater-carson-sink-1987-dieoffs",
+        "fingerprint": "stillwater-carson-sink-1987-02-dieoffs-1"
+      }
+    },
+    {
+      "event_id": "evt_19870220_carson_sink_tui_chub_dieoff",
+      "title": "Tui chub fish die-off reported at Stillwater/Carson Sink, linked to high salinity",
+      "description": "Nevada wildlife officials and biologists reported large numbers of tui chub found dead along the Carson Sink shoreline at Stillwater. The deaths were tentatively attributed to extremely high salinity as waters evaporated and salts became concentrated, and the area was described as threatened without additional fresh-water inflows.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1987-02-20T12:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1987-02-20T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Stillwater Wildlife Management Area / Carson Sink (Lahontan Valley near Fallon, Nevada, USA)",
+        "jurisdiction_level": "site",
+        "admin1": "Nevada",
+        "country": "US",
+        "capital_used": null,
+        "lat": 39.5686,
+        "lon": -118.5103,
+        "precision": "exact",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.latimes.com/archives/la-xpm-1987-02-20-mn-3068-story.html",
+          "source_name": "Los Angeles Times",
+          "published_at": "1987-02-20T12:00:00Z",
+          "headline": "Mass fish die-off at Stillwater Wildlife Management Area / Carson Sink (tui chub) attributed to extreme salinity",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [
+          "salts",
+          "salinity"
+        ],
+        "ecosystems": [
+          "wetlands"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "attributed the die-off to very high salinity",
+            "source_url": "https://www.latimes.com/archives/la-xpm-1987-02-20-mn-3068-story.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.75,
+        "location": 0.55,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "paywalled_or_partial",
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "stillwater-carson-sink-1987-dieoffs",
+        "fingerprint": "stillwater-carson-sink-1987-02-dieoffs-2"
+      }
+    },
+    {
+      "event_id": "evt_19870221_stillwater_bird_dieoff_avian_cholera",
+      "title": "Bird die-off reported at Stillwater wetlands; avian cholera suspected",
+      "description": "Reporting described thousands of dead birds at the Stillwater Wildlife Management Area near Fallon, Nevada over preceding weeks. Lab testing was reported to indicate avian cholera as at least a partial cause, and the report also linked the die-off risk to shrinking habitat and degraded water conditions in the wetland system.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1987-02-21T12:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1987-02-21T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Stillwater Wildlife Management Area (Lahontan Valley near Fallon, Nevada, USA)",
+        "jurisdiction_level": "site",
+        "admin1": "Nevada",
+        "country": "US",
+        "capital_used": null,
+        "lat": 39.5686,
+        "lon": -118.5103,
+        "precision": "exact",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.upi.com/Archives/1987/02/21/Death-at-Stillwater-an-ecological-disaster/4007540882000/",
+          "source_name": "UPI",
+          "published_at": "1987-02-21T12:00:00Z",
+          "headline": "Large-scale migratory bird die-off at Stillwater Wildlife Management Area; avian cholera suspected amid habitat/water-quality stress",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Nevada wildlife officials"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "wetlands"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "lab tests indicating avian cholera",
+            "source_url": "https://www.upi.com/Archives/1987/02/21/Death-at-Stillwater-an-ecological-disaster/4007540882000/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.8,
+        "location": 0.6,
+        "summary_grounding": 0.65
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "stillwater-carson-sink-1987-dieoffs",
+        "fingerprint": "stillwater-carson-sink-1987-02-dieoffs-3"
+      }
+    },
+    {
+      "event_id": "19870208_cppnm_entered_into_force_global",
+      "title": "Convention on the Physical Protection of Nuclear Material entered into force",
+      "description": "The Convention on the Physical Protection of Nuclear Material (CPPNM) entered into force on 8 February 1987. The treaty establishes legally binding commitments related to the physical protection of nuclear material.",
+      "category_primary": "policy_regulation",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "1987-02-08T12:00:00Z",
+        "event_end": "1987-02-08T12:00:00Z",
+        "reported_at": "1987-02-08T12:00:00Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "1987-02-08T12:00:00Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Global (IAEA treaty)",
+        "jurisdiction_level": "global_proxy",
+        "admin1": null,
+        "country": null,
+        "capital_used": null,
+        "lat": 0,
+        "lon": 0,
+        "precision": "proxy",
+        "location_basis": "institution_proxy",
+        "location_confidence": 0.4
+      },
+      "sources": [
+        {
+          "url": "https://www.iaea.org/publications/documents/conventions/convention-physical-protection-nuclear-material-and-its-amendment/faqs",
+          "source_name": "IAEA",
+          "published_at": "1987-02-08T12:00:00Z",
+          "headline": "Convention on the Physical Protection of Nuclear Material and its Amendment (FAQs)",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www-pub.iaea.org/MTCD/Meetings/cppnm.html",
+          "source_name": "IAEA (MTCD Meetings)",
+          "published_at": "1987-02-08T12:00:00Z",
+          "headline": "Convention on the Physical Protection of Nuclear Material (CPPNM)",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "International Atomic Energy Agency (IAEA)"
+        ],
+        "substances": [
+          "nuclear material"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "The Convention on the Physical Protection of Nuclear Material ... entered into force on 8 February 1987.",
+            "source_url": "https://www.iaea.org/publications/documents/conventions/convention-physical-protection-nuclear-material-and-its-amendment/faqs"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.7,
+        "location": 0.4,
+        "summary_grounding": 0.65
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "CPPNM entry into force",
+        "fingerprint": "cpnpm-entry-into-force|global|1987-02-08"
+      }
+    },
+    {
+      "event_id": "19870205_epa_rcra_air_emissions_proposed_rule_us",
+      "title": "EPA proposed RCRA air emission standards for volatile organics at hazardous waste facilities",
+      "description": "The U.S. Environmental Protection Agency issued a proposed rule and related notice to limit emissions of volatile organic compounds from hazardous waste treatment, storage, and disposal facilities under RCRA. The proposal was published in the Federal Register (52 FR 3748).",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "1987-02-05T12:00:00Z",
+        "event_end": "1987-02-05T12:00:00Z",
+        "reported_at": "1987-02-05T12:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1987-02-05T12:00:00Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "United States",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.85
+      },
+      "sources": [
+        {
+          "url": "https://19january2021snapshot.epa.gov/hwpermitting/federal-register-notice-proposed-rule-air-emission-standards-volatile-organics-control_.html",
+          "source_name": "US EPA (archive snapshot)",
+          "published_at": "1987-02-05T12:00:00Z",
+          "headline": "Federal Register Notice: Proposed Rule: Air Emission Standards for Volatile Organics Control",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://19january2021snapshot.epa.gov/sites/static/files/2016-03/documents/52fr3748.pdf",
+          "source_name": "Federal Register (via US EPA archive)",
+          "published_at": "1987-02-05T12:00:00Z",
+          "headline": "52 FR 3748 (Air Emission Standards for Volatile Organics)",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Environmental Protection Agency (EPA)"
+        ],
+        "substances": [
+          "volatile organic compounds (VOCs)"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "52 FR 3748",
+            "source_url": "https://19january2021snapshot.epa.gov/sites/static/files/2016-03/documents/52fr3748.pdf"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.72,
+        "category": 0.8,
+        "location": 0.9,
+        "summary_grounding": 0.7
+      },
+      "quality_flags": [
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "EPA proposed VOC air emission standards (RCRA)",
+        "fingerprint": "epa-rcra-voc-proposed-rule|us|1987-02-05"
+      }
+    }
+  ]
+}

@@ -1,0 +1,979 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_2012-09_normalize_2026-01-16T044659511Z",
+    "generated_utc": "2026-01-16T04:46:59.511Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "2012-09",
+    "window": {
+      "start_utc": "2012-09-01T00:00:00.000Z",
+      "end_utc": "2012-09-30T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "evt_20120927_wicomico_sewage_sso_salisbury_md",
+      "title": "Sanitary sewer overflow discharges 100,000+ gallons into the Wicomico River near Salisbury, Maryland",
+      "description": "City officials reported a sanitary sewer overflow at the Southside Pumping Station that discharged more than 100,000 gallons of raw sewage into the Wicomico River. Crews responded to address the discharge and mitigate impacts.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2012-09-25T18:00:00.000Z",
+        "event_end": "2012-09-25T23:45:00.000Z",
+        "reported_at": "2012-09-27T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2012-09-25T18:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Salisbury, Maryland, USA (Wicomico River)",
+        "jurisdiction_level": "city",
+        "admin1": "Maryland",
+        "country": "US",
+        "capital_used": null,
+        "lat": 38.3607,
+        "lon": -75.5994,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://mdcoastdispatch.com/2012/09/27/raw-sewage-leaks-into-wicomico-river/",
+          "source_name": "MD Coast Dispatch",
+          "published_at": "2012-09-27T00:00:00.000Z",
+          "headline": "Raw sewage leaks into Wicomico River",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [
+          "raw sewage"
+        ],
+        "ecosystems": [
+          "Wicomico River"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "discharged over 100,000 gallons of sewage into the Wicomico River",
+            "source_url": "https://mdcoastdispatch.com/2012/09/27/raw-sewage-leaks-into-wicomico-river/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.66,
+        "category": 0.8,
+        "location": 0.7,
+        "summary_grounding": 0.65
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "wicomico river sewage overflow salisbury md 2012-09-25",
+        "fingerprint": "fp_wicomico_sso_salisbury_2012-09-25"
+      }
+    },
+    {
+      "event_id": "evt_20120910_stolthaven_evacuation_braithwaite_la",
+      "title": "Mandatory evacuation near Stolthaven Chemical facility in Braithwaite area, Louisiana due to hazardous rail cars",
+      "description": "Authorities ordered a mandatory evacuation around the Stolthaven Chemical facility in the Braithwaite area of Plaquemines Parish. Hazmat concerns focused on rail cars from the facility that could contain explosive materials following storm impacts.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2012-09-10T00:00:00.000Z",
+        "event_end": "2012-09-11T00:00:00.000Z",
+        "reported_at": "2012-09-10T00:00:00.000Z",
+        "time_confidence": 0.5,
+        "event_date_utc": "2012-09-10T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Braithwaite area (Plaquemines Parish), Louisiana, USA",
+        "jurisdiction_level": "state",
+        "admin1": "Louisiana",
+        "country": "US",
+        "capital_used": "Baton Rouge",
+        "lat": 30.4515,
+        "lon": -91.1871,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.wdsu.com/article/mandatory-evacuation-in-place-around-stolthaven-chemical-plant/3358811",
+          "source_name": "WDSU",
+          "published_at": "2012-09-10T00:00:00.000Z",
+          "headline": "Mandatory evacuation in place around Stolthaven chemical plant",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Stolthaven Chemical"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "mandatory evacuation in place around Stolthaven chemical plant",
+            "source_url": "https://www.wdsu.com/article/mandatory-evacuation-in-place-around-stolthaven-chemical-plant/3358811"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.65,
+        "location": 0.6,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "low_confidence_category",
+        "location_ambiguous",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "stolthaven evacuation plaquemines parish la 2012-09-10",
+        "fingerprint": "fp_stolthaven_evac_braithwaite_2012-09-10"
+      }
+    },
+    {
+      "event_id": "2012-09_weather_climate_global_warmest-september-noaa",
+      "title": "September 2012 tied warmest September on record globally (NOAA analysis)",
+      "description": "A NOAA monthly global climate analysis reported that September 2012 tied with September 2005 as the warmest September in records dating back to 1880, continuing a pattern of above-average global temperatures.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2012-10-16T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": null,
+        "event_date_precision": "month"
+      },
+      "location": {
+        "name": "Global",
+        "jurisdiction_level": "global_proxy",
+        "admin1": null,
+        "country": null,
+        "capital_used": null,
+        "lat": 0,
+        "lon": 0,
+        "precision": "proxy",
+        "location_basis": "manual_override",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.climate.gov/news-features/featured-images/september-2012-global-climate-update",
+          "source_name": "Climate.gov (NOAA)",
+          "published_at": "2012-10-16T00:00:00Z",
+          "headline": "September 2012 global climate update",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.climatecentral.org/news/globe-records-warmest-september-on-record-noaa-says-15116",
+          "source_name": "Climate Central",
+          "published_at": "2012-10-17T00:00:00Z",
+          "headline": "Globe Records Warmest September on Record, NOAA Says",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "September 2012 tied with September 2005 as the warmest September on record.",
+            "source_url": "https://www.climate.gov/news-features/featured-images/september-2012-global-climate-update"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.8,
+        "location": 0.7,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "NOAA September 2012 global temperature record",
+        "fingerprint": "fp_2012-09_global_warmest_september_noaa"
+      }
+    },
+    {
+      "event_id": "2012-09_weather_climate_us_september-dryness-noaa",
+      "title": "Record and near-record dry conditions in parts of the U.S. during September 2012 (NOAA summary)",
+      "description": "A NOAA climate summary reported that September 2012 included record and near-record dry conditions across parts of the United States, including areas such as the Pacific Northwest and the Upper Midwest, with some states experiencing record-dry conditions.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2012-10-18T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": null,
+        "event_date_precision": "month"
+      },
+      "location": {
+        "name": "United States",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://www.climate.gov/news-features/featured-images/warmer-temperatures-continue-september-2012",
+          "source_name": "Climate.gov (NOAA)",
+          "published_at": "2012-10-18T00:00:00Z",
+          "headline": "Warmer temperatures continue: September 2012",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "September brought record and near-record dryness to parts of the Pacific Northwest and Upper Midwest.",
+            "source_url": "https://www.climate.gov/news-features/featured-images/warmer-temperatures-continue-september-2012"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.75,
+        "location": 0.8,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "NOAA September 2012 US dryness",
+        "fingerprint": "fp_2012-09_us_september_dryness_noaa"
+      }
+    },
+    {
+      "event_id": "evt_20120905_costa_rica_eq_nicoya",
+      "title": "M7.6 earthquake off Nicoya Peninsula triggers temporary tsunami warnings",
+      "description": "A magnitude 7.6 earthquake struck offshore of Costa Rica near the Nicoya Peninsula on September 5, 2012. Tsunami warnings were issued for parts of the Pacific region and later canceled as assessments came in.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2012-09-05T14:42:08.000Z",
+        "event_end": "2012-09-05T18:00:00.000Z",
+        "reported_at": "2012-09-05T00:00:00.000Z",
+        "time_confidence": 0.75,
+        "event_date_utc": "2012-09-05T14:42:08.000Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Offshore Nicoya Peninsula, Costa Rica",
+        "jurisdiction_level": "site",
+        "admin1": null,
+        "country": "CR",
+        "capital_used": null,
+        "lat": 9.8,
+        "lon": -85.6,
+        "precision": "admin1",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.5
+      },
+      "sources": [
+        {
+          "url": "https://www.kalw.org/2012-09-05/earthquake-triggers-pacific-tsunami-warnings-for-central-south-america",
+          "source_name": "KALW",
+          "published_at": "2012-09-05T00:00:00.000Z",
+          "headline": "Earthquake triggers Pacific tsunami warnings for Central, South America",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://weather.com/news/news/costa-rica-earthquake-tsunami-warning-20120905",
+          "source_name": "The Weather Channel",
+          "published_at": "2012-09-05T00:00:00.000Z",
+          "headline": "Costa Rica Earthquake; Tsunami Warning",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Earthquake triggers Pacific tsunami warnings for Central, South America",
+            "source_url": "https://www.kalw.org/2012-09-05/earthquake-triggers-pacific-tsunami-warnings-for-central-south-america"
+          },
+          {
+            "quote": "Costa Rica Earthquake; Tsunami Warning",
+            "source_url": "https://weather.com/news/news/costa-rica-earthquake-tsunami-warning-20120905"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.8,
+        "location": 0.5,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "2012-09-05 Costa Rica Nicoya offshore earthquake tsunami warning",
+        "fingerprint": "fp_20120905_costa_rica_nicoya_eq"
+      }
+    },
+    {
+      "event_id": "evt_20120913_guatemala_fuego_eruption",
+      "title": "Volcán de Fuego eruption leads to evacuations in Guatemala",
+      "description": "Volcán de Fuego in Guatemala erupted on September 13, 2012, with ash emissions and volcanic activity reported. Officials ordered evacuations from nearby communities according to reports.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2012-09-13T16:00:00.000Z",
+        "event_end": "2012-09-13T23:59:59.000Z",
+        "reported_at": "2012-09-01T00:00:00.000Z",
+        "time_confidence": 0.45,
+        "event_date_utc": "2012-09-13T16:00:00.000Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Volcán de Fuego region, Guatemala",
+        "jurisdiction_level": "site",
+        "admin1": null,
+        "country": "GT",
+        "capital_used": null,
+        "lat": 14.47,
+        "lon": -90.88,
+        "precision": "exact",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://phys.org/news/2012-09-guatemalan-volcano-erupting-nasa-satellite.html",
+          "source_name": "Phys.org",
+          "published_at": "2012-09-01T00:00:00.000Z",
+          "headline": "Guatemalan volcano erupting in NASA satellite image",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [
+          "volcanic ash"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Guatemalan volcano erupting in NASA satellite image",
+            "source_url": "https://phys.org/news/2012-09-guatemalan-volcano-erupting-nasa-satellite.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.5,
+        "category": 0.8,
+        "location": 0.7,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "2012-09-13 Volcán de Fuego eruption evacuations Guatemala",
+        "fingerprint": "fp_20120913_fuego_eruption"
+      }
+    },
+    {
+      "event_id": "fires-us-idaho-central-2012-09-13-nasa-eo",
+      "title": "NASA Earth Observatory imagery shows wildfires and smoke over central Idaho (Sep 13, 2012)",
+      "description": "NASA Earth Observatory reported satellite observations showing numerous active wildfires and extensive smoke across central Idaho on September 13, 2012, during an intense U.S. fire season.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2012-09-13T00:00:00.000Z",
+        "event_end": "2012-09-13T23:59:59.000Z",
+        "reported_at": "2012-09-13T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2012-09-13T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Central Idaho, United States",
+        "jurisdiction_level": "state",
+        "admin1": "Idaho",
+        "country": "US",
+        "capital_used": "Boise",
+        "lat": 43.615,
+        "lon": -116.2023,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://earthobservatory.nasa.gov/images/79182/wildfires-in-idaho",
+          "source_name": "NASA Earth Observatory",
+          "published_at": "2012-09-13T00:00:00.000Z",
+          "headline": "Wildfires in Idaho",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://science.nasa.gov/earth/earth-observatory/wildfires-in-idaho-79182/",
+          "source_name": "NASA",
+          "published_at": "2012-09-13T00:00:00.000Z",
+          "headline": "Wildfires in Idaho",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NASA",
+          "NASA Earth Observatory"
+        ],
+        "substances": [
+          "smoke"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Wildfires in Idaho",
+            "source_url": "https://earthobservatory.nasa.gov/images/79182/wildfires-in-idaho"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.75,
+        "location": 0.7,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "needs_dedupe_check",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "Wildfires in Idaho (NASA Earth Observatory) Sep 2012",
+        "fingerprint": "fires|wildfires_smoke_central_idaho|2012-09-13"
+      }
+    },
+    {
+      "event_id": "fires-us-national-2012-09-noaa-monthly",
+      "title": "NOAA summary notes above-average U.S. wildfire activity in September 2012",
+      "description": "A NOAA climate.gov September 2012 summary reported warm and dry conditions and described above-average U.S. wildfire activity during the month, citing roughly 1.1 million acres burned nationally.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2012-09-01T00:00:00.000Z",
+        "event_end": "2012-09-30T23:59:59.000Z",
+        "reported_at": "2012-09-30T00:00:00.000Z",
+        "time_confidence": 0.45,
+        "event_date_utc": null,
+        "event_date_precision": "month"
+      },
+      "location": {
+        "name": "United States",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.8
+      },
+      "sources": [
+        {
+          "url": "https://www.climate.gov/news-features/featured-images/warmer-temperatures-continue-september-2012",
+          "source_name": "NOAA Climate.gov",
+          "published_at": "2012-09-30T00:00:00.000Z",
+          "headline": "Warmer temperatures continue: September 2012",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA",
+          "NOAA Climate.gov"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Warmer temperatures continue: September 2012",
+            "source_url": "https://www.climate.gov/news-features/featured-images/warmer-temperatures-continue-september-2012"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.52,
+        "category": 0.7,
+        "location": 0.8,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "needs_dedupe_check",
+        "date_ambiguous",
+        "paywalled_or_partial"
+      ],
+      "dedupe": {
+        "cluster_hint": "NOAA Climate.gov September 2012 warmer temps / wildfire activity",
+        "fingerprint": "fires|us_wildfire_activity_monthly|2012-09"
+      }
+    },
+    {
+      "event_id": "20120904-tuscarawas-river-fish-kill-oh",
+      "title": "Large-scale fish kill investigated along the Tuscarawas River in Ohio",
+      "description": "Officials reported thousands of fish dead along an approximately 13-mile stretch of the Tuscarawas River in Tuscarawas County, Ohio. The Ohio EPA took water samples as part of an investigation into the cause.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2012-09-04T00:00:00.000Z",
+        "event_end": "2012-09-04T23:59:59.000Z",
+        "reported_at": "2012-09-04T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2012-09-04T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Tuscarawas River near New Philadelphia, Ohio, USA",
+        "jurisdiction_level": "site",
+        "admin1": "Ohio",
+        "country": "US",
+        "capital_used": null,
+        "lat": 40.4898,
+        "lon": -81.4457,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.5
+      },
+      "sources": [
+        {
+          "url": "https://woub.org/2012/09/04/epa-taking-water-samples-after-large-scale-fish-kill/",
+          "source_name": "WOUB Public Media",
+          "published_at": "2012-09-04T00:00:00.000Z",
+          "headline": "EPA taking water samples after large-scale fish kill",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Ohio EPA"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "Tuscarawas River"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.7,
+        "location": 0.5,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "tuscarawas-river-fish-kill-2012-09-04",
+        "fingerprint": "tuscarawas-river-fish-kill|new-philadelphia-oh|2012-09-04"
+      }
+    },
+    {
+      "event_id": "20120911-iucn-zsl-priceless-or-worthless-report",
+      "title": "IUCN and ZSL highlight 100 most threatened species at World Conservation Congress",
+      "description": "At the IUCN World Conservation Congress in Jeju, the IUCN Species Survival Commission and the Zoological Society of London released the report 'Priceless or Worthless?'. The report listed 100 species described as among the world’s most threatened to encourage conservation action.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "2012-09-11T00:00:00.000Z",
+        "event_end": "2012-09-11T23:59:59.000Z",
+        "reported_at": "2012-09-11T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2012-09-11T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Jeju, South Korea (IUCN World Conservation Congress)",
+        "jurisdiction_level": "city",
+        "admin1": null,
+        "country": "KR",
+        "capital_used": null,
+        "lat": 33.4996,
+        "lon": 126.5312,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.sciencedaily.com/releases/2012/09/120911091702.htm",
+          "source_name": "ScienceDaily",
+          "published_at": "2012-09-11T00:00:00.000Z",
+          "headline": "IUCN and Zoological Society of London announce list of 100 most threatened species",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://portals.iucn.org/library/node/29199",
+          "source_name": "IUCN Library",
+          "published_at": "2012-09-11T00:00:00.000Z",
+          "headline": "Priceless or Worthless? (report record)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.theguardian.com/environment/2012/sep/11/100-most-endangered-species-listed",
+          "source_name": "The Guardian",
+          "published_at": "2012-09-11T00:00:00.000Z",
+          "headline": "100 most endangered species listed, but none will be saved, experts warn",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "IUCN",
+          "IUCN Species Survival Commission",
+          "Zoological Society of London"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.65,
+        "category": 0.8,
+        "location": 0.6,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "iucn-zsl-100-most-threatened-species-2012-09-11",
+        "fingerprint": "iucn-zsl-100-most-threatened-species|jeju-kr|2012-09-11"
+      }
+    },
+    {
+      "event_id": "20120927_epa_rfs_biomass_diesel_final_rule_us",
+      "title": "EPA final rule sets 2013 biomass-based diesel renewable fuel volume under RFS",
+      "description": "The U.S. Environmental Protection Agency issued a final rule under the Renewable Fuel Standard program establishing the 2013 biomass-based diesel renewable fuel volume requirement.",
+      "category_primary": "policy_regulation",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "2012-09-27T00:00:00.000Z",
+        "event_end": "2012-09-27T23:59:59.000Z",
+        "reported_at": "2012-09-27T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2012-09-27T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States (EPA / Federal Register)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.75
+      },
+      "sources": [
+        {
+          "url": "https://19january2017snapshot.epa.gov/air-pollution-transportation/2012-federal-register-notices-epas-office-transportation-and-air_.html",
+          "source_name": "U.S. Environmental Protection Agency (snapshot)",
+          "published_at": "2012-09-27T00:00:00.000Z",
+          "headline": "2012 Federal Register Notices from EPA's Office of Transportation and Air Quality",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://19january2021snapshot.epa.gov/transportation-air-pollution-and-climate-change/2012-federal-register-notices-related-transportation_.html",
+          "source_name": "U.S. Environmental Protection Agency (snapshot)",
+          "published_at": "2012-09-27T00:00:00.000Z",
+          "headline": "2012 Federal Register Notices Related to Transportation and Air Pollution",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Environmental Protection Agency (EPA)"
+        ],
+        "substances": [
+          "biomass-based diesel"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.75,
+        "location": 0.75,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "EPA RFS 2013 biomass-based diesel volume final rule",
+        "fingerprint": "20120927|epa_final_rule_biomass_based_diesel|US"
+      }
+    },
+    {
+      "event_id": "20120929_national_public_lands_day_fee_free_us_nps",
+      "title": "National Public Lands Day fee-free entrance day across U.S. national parks",
+      "description": "For National Public Lands Day 2012, the National Park Service promoted a fee-free day across U.S. national parks to encourage public access and engagement with public lands.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "2012-09-29T00:00:00.000Z",
+        "event_end": "2012-09-29T23:59:59.000Z",
+        "reported_at": "2012-09-29T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2012-09-29T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States (National Park Service units)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.nps.gov/foun/learn/news/national-public-lands-day-september-29-2012.htm",
+          "source_name": "National Park Service",
+          "published_at": "2012-09-29T00:00:00.000Z",
+          "headline": "National Public Lands Day September 29, 2012",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "National Park Service (NPS)"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.68,
+        "category": 0.65,
+        "location": 0.6,
+        "summary_grounding": 0.65
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "National Public Lands Day 2012 fee-free day (NPS)",
+        "fingerprint": "20120929|npld_fee_free_day|US"
+      }
+    },
+    {
+      "event_id": "20120914_ec_statement_montreal_protocol_25th_anniversary_eu",
+      "title": "European Commission statement marks 25th anniversary of the Montreal Protocol ahead of International Ozone Day",
+      "description": "The European Commission published a statement highlighting progress under the Montreal Protocol as International Ozone Day approached, noting ozone and climate benefits and calling for action on HFCs.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "2012-09-14T00:00:00.000Z",
+        "event_end": "2012-09-16T23:59:59.000Z",
+        "reported_at": "2012-09-14T00:00:00.000Z",
+        "time_confidence": 0.75,
+        "event_date_utc": "2012-09-14T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "European Union",
+        "jurisdiction_level": "supranational",
+        "admin1": null,
+        "country": null,
+        "capital_used": "Brussels",
+        "lat": 50.8503,
+        "lon": 4.3517,
+        "precision": "supranational",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.75
+      },
+      "sources": [
+        {
+          "url": "https://climate.ec.europa.eu/news-your-voice/news/statement-commissioner-hedegaard-25th-anniversary-montreal-protocol-2012-09-14_en",
+          "source_name": "European Commission (DG CLIMA)",
+          "published_at": "2012-09-14T00:00:00.000Z",
+          "headline": "Statement by Commissioner Hedegaard on the 25th anniversary of the Montreal Protocol",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "European Commission"
+        ],
+        "substances": [
+          "HFCs",
+          "ozone-depleting substances"
+        ],
+        "ecosystems": [],
+        "people": [
+          "Connie Hedegaard"
+        ]
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.72,
+        "category": 0.7,
+        "location": 0.75,
+        "summary_grounding": 0.7
+      },
+      "quality_flags": [
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "EC statement on Montreal Protocol 25th anniversary / Ozone Day 2012",
+        "fingerprint": "20120914|ec_montreal_protocol_25th|EU"
+      }
+    }
+  ]
+}

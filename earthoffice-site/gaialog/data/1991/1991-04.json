@@ -1,0 +1,788 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_1991-04_normalize_2026-01-17T170725595Z",
+    "generated_utc": "2026-01-17T17:07:25.595Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "1991-04",
+    "window": {
+      "start_utc": "1991-04-01T00:00:00.000Z",
+      "end_utc": "1991-04-30T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "1991-04-08_gulf-war-oil-spill_saudi-coast_wapo",
+      "title": "Gulf War oil spill continued to foul northern Saudi coast, with ongoing leakage reported",
+      "description": "Reporting described persistent oil contamination along parts of the northern Saudi Arabian coastline linked to the Gulf War oil spill. The article reported continued leakage from sources associated with Kuwait into the Persian Gulf and ongoing coastal impacts.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1991-04-08T00:00:00.000Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "1991-04-08T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Riyadh, Saudi Arabia (capital proxy for northern Saudi coast impact area)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "SA",
+        "capital_used": "Riyadh",
+        "lat": 24.7136,
+        "lon": 46.6753,
+        "precision": "proxy",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.washingtonpost.com/archive/politics/1991/04/08/wars-oil-spill-still-sullies-gulf-shore/baf87829-69fa-48dd-a5ab-73e28fadc92a/",
+          "source_name": "The Washington Post",
+          "published_at": "1991-04-08T00:00:00.000Z",
+          "headline": "War's Oil Spill Still Sullies Gulf Shore",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [
+          "oil"
+        ],
+        "ecosystems": [
+          "Persian Gulf"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "War's Oil Spill Still Sullies Gulf Shore",
+            "source_url": "https://www.washingtonpost.com/archive/politics/1991/04/08/wars-oil-spill-still-sullies-gulf-shore/baf87829-69fa-48dd-a5ab-73e28fadc92a/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.85,
+        "location": 0.55,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "paywalled_or_partial",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "1991_gulf_war_oil_spill_saudi_kuwait",
+        "fingerprint": "1991_gulf-war-oil-spill-continued-to-foul-northern-saudi-coast-with-ongoing-leakage-reported_saudi_1991-04"
+      }
+    },
+    {
+      "event_id": "1991-04-weather-us-great-plains-tornado-outbreak-andover",
+      "title": "Great Plains tornado outbreak (Andover/Red Rock outbreak)",
+      "description": "A severe-weather outbreak affected parts of the central United States, producing numerous strong to violent tornadoes. The NOAA/NWS event page documents the April 26, 1991 outbreak, including the Andover, Kansas tornado.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1991-04-26T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1991-04-26T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States (Kansas and Oklahoma)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.8
+      },
+      "sources": [
+        {
+          "url": "https://www.weather.gov/oun/events-19910426",
+          "source_name": "NOAA / National Weather Service",
+          "published_at": "1991-04-26T00:00:00.000Z",
+          "headline": "events-19910426",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA",
+          "National Weather Service"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "events-19910426",
+            "source_url": "https://www.weather.gov/oun/events-19910426"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.8,
+        "location": 0.8,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": null,
+        "fingerprint": "1991-04-weather-us-great-plains-tornado-outbreak-andover"
+      }
+    },
+    {
+      "event_id": "1991-04-weather-au-cyclone-marian",
+      "title": "Severe Tropical Cyclone Marian",
+      "description": "The Australian Bureau of Meteorology documents Severe Tropical Cyclone Marian in April 1991 in the Australian region. The cyclone tracked in waters south of Timor and later weakened.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1991-04-10T12:00:00Z",
+        "event_end": "1991-04-16T12:00:00Z",
+        "reported_at": "1991-04-10T00:00:00.000Z",
+        "time_confidence": 0.65,
+        "event_date_utc": null,
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Australia (Bureau of Meteorology cyclone region; south of Timor)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "AU",
+        "capital_used": "Canberra",
+        "lat": -35.2809,
+        "lon": 149.13,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.bom.gov.au/cyclone/history/marian.shtml",
+          "source_name": "Australian Bureau of Meteorology",
+          "published_at": "1991-04-10T00:00:00.000Z",
+          "headline": "Severe Tropical Cyclone Marian",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Australian Bureau of Meteorology"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Severe Tropical Cyclone Marian",
+            "source_url": "https://www.bom.gov.au/cyclone/history/marian.shtml"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.64,
+        "category": 0.8,
+        "location": 0.6,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": null,
+        "fingerprint": "1991-04-weather-au-cyclone-marian"
+      }
+    },
+    {
+      "event_id": "1991-04-weather-au-cyclone-fifi",
+      "title": "Severe Tropical Cyclone Fifi",
+      "description": "The Australian Bureau of Meteorology documents Tropical Cyclone Fifi forming in mid-April 1991 and affecting the Australian region. The system moved southward and is described on the BoM cyclone history page.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1991-04-16T12:00:00Z",
+        "event_end": "1991-04-19T12:00:00Z",
+        "reported_at": "1991-04-16T00:00:00.000Z",
+        "time_confidence": 0.65,
+        "event_date_utc": null,
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Australia (Western Australia impacts noted)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "AU",
+        "capital_used": "Canberra",
+        "lat": -35.2809,
+        "lon": 149.13,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.bom.gov.au/cyclone/history/fifi.shtml",
+          "source_name": "Australian Bureau of Meteorology",
+          "published_at": "1991-04-16T00:00:00.000Z",
+          "headline": "Severe Tropical Cyclone Fifi",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Australian Bureau of Meteorology"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Severe Tropical Cyclone Fifi",
+            "source_url": "https://www.bom.gov.au/cyclone/history/fifi.shtml"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.63,
+        "category": 0.8,
+        "location": 0.6,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": null,
+        "fingerprint": "1991-04-weather-au-cyclone-fifi"
+      }
+    },
+    {
+      "event_id": "1991-04-05_peru_rioja-moyobamba_eq",
+      "title": "Northern Peru earthquake near Rioja–Moyobamba (San Martín Region)",
+      "description": "An earthquake struck northern Peru near the Rioja–Moyobamba area in early April 1991. News reports described fatalities, injuries, and widespread damage in the affected region.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1991-04-05T04:19:49Z",
+        "event_end": "1991-04-05T04:19:49Z",
+        "reported_at": "1991-04-06T00:00:00Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "1991-04-05T04:19:49Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "San Martín Region, Peru (capital used: Moyobamba)",
+        "jurisdiction_level": "state",
+        "admin1": "San Martín",
+        "country": "PE",
+        "capital_used": "Moyobamba",
+        "lat": -6.0342,
+        "lon": -76.9717,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.65
+      },
+      "sources": [
+        {
+          "url": "https://www.washingtonpost.com/archive/politics/1991/04/06/38-killed-by-earthquake-in-peru/6740d9ed-2aaa-49cb-b7e7-e6311673b601/",
+          "source_name": "The Washington Post",
+          "published_at": "1991-04-06T00:00:00Z",
+          "headline": "38 Killed By Earthquake In Peru",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.upi.com/Archives/1991/04/05/Day-of-earthquakes-in-northern-Peru-leaves-at-least-12-dead/1531670827600/",
+          "source_name": "UPI",
+          "published_at": "1991-04-05T00:00:00Z",
+          "headline": "Day of earthquakes in northern Peru leaves at least 12 dead",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.66,
+        "category": 0.9,
+        "location": 0.6,
+        "summary_grounding": 0.62
+      },
+      "quality_flags": [
+        "paywalled_or_partial",
+        "location_ambiguous",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "1991-04-05 Peru northern earthquake Rioja Moyobamba",
+        "fingerprint": "1991-04-05_peru_san-martin_eq"
+      }
+    },
+    {
+      "event_id": "1991-04-22_limon_costa-rica-panama_eq",
+      "title": "Limón earthquake affecting Costa Rica and western Panama",
+      "description": "A major earthquake struck the Caribbean side of Costa Rica in April 1991, impacting areas of Costa Rica and western Panama. USGS materials describe severe effects including coastal impacts and damage in the region.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1991-04-22T21:56:51Z",
+        "event_end": "1991-04-22T21:56:51Z",
+        "reported_at": "1991-04-01T00:00:00Z",
+        "time_confidence": 0.75,
+        "event_date_utc": "1991-04-22T21:56:51Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Limón Province, Costa Rica (capital used: Limón)",
+        "jurisdiction_level": "state",
+        "admin1": "Limón",
+        "country": "CR",
+        "capital_used": "Limón",
+        "lat": 9.9916,
+        "lon": -83.0333,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://www.usgs.gov/publications/earthquakes-march-april-1991",
+          "source_name": "USGS",
+          "published_at": "1991-04-01T00:00:00Z",
+          "headline": "Earthquakes March-April 1991",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://pubs.usgs.gov/of/2001/ofr-01-0005/ofr-01-0005.html",
+          "source_name": "USGS Publications",
+          "published_at": "2001-01-01T00:00:00Z",
+          "headline": "Open-File Report 01-0005",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "USGS"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.7,
+        "category": 0.9,
+        "location": 0.7,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "1991-04-22 Limon Costa Rica Panama earthquake",
+        "fingerprint": "1991-04-22_costa-rica_limon_eq"
+      }
+    },
+    {
+      "event_id": "1991-04-29_racha_georgia_eq_landslides",
+      "title": "Racha earthquake in Georgia triggering landslides",
+      "description": "A strong earthquake struck the Racha region of Georgia (then part of the USSR) on 29 April 1991. USGS reports note that the event triggered numerous landslides and caused extensive damage and fatalities in the affected area.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1991-04-29T09:12:48Z",
+        "event_end": "1991-04-29T09:12:48Z",
+        "reported_at": "1991-04-29T00:00:00Z",
+        "time_confidence": 0.75,
+        "event_date_utc": "1991-04-29T09:12:48Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Georgia (capital used: Tbilisi)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "GE",
+        "capital_used": "Tbilisi",
+        "lat": 41.7151,
+        "lon": 44.8271,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.usgs.gov/publications/some-observations-landslides-triggered-29-april-1991-racha-earthquake-republic-georgia",
+          "source_name": "USGS",
+          "published_at": "1991-04-29T00:00:00Z",
+          "headline": "Some observations of landslides triggered by the 29 April 1991 Racha earthquake, Republic of Georgia",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.usgs.gov/publications/seismic-source-study-racha-dzhava-georgia-earthquake-aftershocks-and-broad-band",
+          "source_name": "USGS",
+          "published_at": "1991-04-29T00:00:00Z",
+          "headline": "Seismic source study: Racha-Dzhava, Georgia earthquake aftershocks and broad-band",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "USGS"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.9,
+        "location": 0.55,
+        "summary_grounding": 0.62
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "1991-04-29 Racha Georgia earthquake landslides",
+        "fingerprint": "1991-04-29_georgia_racha_eq"
+      }
+    },
+    {
+      "event_id": "evt_19910402_us_epa_rcra_tc_compliance_extension_produced_groundwater",
+      "title": "EPA extends Toxicity Characteristic compliance date for certain produced groundwater from hydrocarbon recovery cleanups",
+      "description": "EPA published a Federal Register notice extending the compliance date for the RCRA Toxicity Characteristic as applied to produced groundwater from free-phase hydrocarbon recovery operations at certain petroleum industry sites, to avoid disrupting cleanup/remediation operations.",
+      "category_primary": "policy_regulation",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1991-04-02T12:00:00Z",
+        "time_confidence": 0.5,
+        "event_date_utc": "1991-04-02T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States (federal)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.9
+      },
+      "sources": [
+        {
+          "url": "https://www.epa.gov/rcra/hazardous-waste-management-system-identification-and-listing-hazardous-waste-toxicity-5",
+          "source_name": "US EPA",
+          "published_at": "1991-04-02T12:00:00Z",
+          "headline": "Hazardous Waste Management System: Identification and Listing of Hazardous Waste; Toxicity Characteristic...",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "US Environmental Protection Agency (EPA)"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.7,
+        "location": 0.9,
+        "summary_grounding": 0.4
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "epa_rcra_toxicity_characteristic_compliance_extension_1991-04-02_us",
+        "fingerprint": "fp_19910402_epa_rcra_tc_extension_us"
+      }
+    },
+    {
+      "event_id": "evt_19910409_us_senate_national_recycling_day_sres41",
+      "title": "U.S. Senate agrees to S.Res. 41 designating April 15, 1991 as “National Recycling Day”",
+      "description": "The U.S. Senate agreed to S.Res. 41, a resolution designating April 15, 1991 as “National Recycling Day,” reflecting a federal policy action intended to promote recycling and waste reduction awareness.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1991-04-09T12:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1991-04-09T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States (federal; U.S. Senate)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.9
+      },
+      "sources": [
+        {
+          "url": "https://www.congress.gov/bill/102nd-congress/senate-resolution/41",
+          "source_name": "Congress.gov",
+          "published_at": "1991-04-09T12:00:00Z",
+          "headline": "S.Res.41 — A resolution designating April 15, 1991, as \"National Recycling Day\".",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "United States Senate"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.65,
+        "category": 0.75,
+        "location": 0.9,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "us_senate_sres41_national_recycling_day_1991-04-09_us",
+        "fingerprint": "fp_19910409_senate_sres41_us"
+      }
+    },
+    {
+      "event_id": "evt_19910412_us_epa_proposed_ldr_k061_eaf_dust_56fr15020",
+      "title": "EPA proposes Land Disposal Restrictions treatment standards for electric arc furnace dust (K061)",
+      "description": "EPA published a proposed rule notice proposing Land Disposal Restrictions treatment standards for high-zinc electric arc furnace dust (K061), along with related issues concerning metals recovery residues and delisting proposals.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1991-04-12T12:00:00Z",
+        "time_confidence": 0.5,
+        "event_date_utc": "1991-04-12T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States (federal)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.9
+      },
+      "sources": [
+        {
+          "url": "https://archive.epa.gov/epawaste/hazard/web/html/rulesp92.html",
+          "source_name": "US EPA (archive)",
+          "published_at": "1991-04-12T12:00:00Z",
+          "headline": "Hazardous waste rules (archived index; includes LDR items)",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "US Environmental Protection Agency (EPA)"
+        ],
+        "substances": [
+          "electric arc furnace dust (K061)"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.5,
+        "category": 0.7,
+        "location": 0.9,
+        "summary_grounding": 0.35
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "epa_proposed_ldr_k061_1991-04-12_us",
+        "fingerprint": "fp_19910412_epa_ldr_k061_us"
+      }
+    },
+    {
+      "event_id": "evt_19910426_us_epa_technical_amendment_rcra_organic_air_emissions_tsdf",
+      "title": "EPA issues technical corrections to RCRA organic air emission standards for hazardous waste TSDFs",
+      "description": "EPA published a Federal Register notice making technical corrections to regulatory text for standards limiting organic air emissions at hazardous waste treatment, storage, and disposal facilities, correcting errors in the June 21, 1990 final standards.",
+      "category_primary": "policy_regulation",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1991-04-26T12:00:00Z",
+        "time_confidence": 0.5,
+        "event_date_utc": "1991-04-26T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States (federal)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.9
+      },
+      "sources": [
+        {
+          "url": "https://www.epa.gov/rcra/hazardous-waste-treatment-storage-and-disposal-facilities-organic-air-emission-standards",
+          "source_name": "US EPA",
+          "published_at": "1991-04-26T12:00:00Z",
+          "headline": "Hazardous Waste Treatment, Storage, and Disposal Facilities (TSDFs) — Organic Air Emission Standards",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "US Environmental Protection Agency (EPA)"
+        ],
+        "substances": [
+          "volatile organic compounds (VOCs)"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.7,
+        "location": 0.9,
+        "summary_grounding": 0.4
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "epa_rcra_organic_air_emissions_technical_corrections_1991-04-26_us",
+        "fingerprint": "fp_19910426_epa_tsdf_air_us"
+      }
+    }
+  ]
+}

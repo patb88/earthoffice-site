@@ -1,0 +1,856 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_2009-01_normalize_2026-01-16T035701849Z",
+    "generated_utc": "2026-01-16T03:57:01.849Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "2009-01",
+    "window": {
+      "start_utc": "2009-01-01T00:00:00.000Z",
+      "end_utc": "2009-01-31T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "2009-01-09__widows-creek-gypsum-slurry-pond-spill__stevenson-al-us",
+      "title": "Widows Creek Fossil Plant gypsum slurry pond dam break spills waste into Widows Creek",
+      "description": "Reports indicated that a gypsum slurry pond at TVA’s Widows Creek Fossil Plant experienced a dam break or leak, releasing waste into Widows Creek on or near January 9, 2009. One account described the quantity as up to about 10,000 gallons and stated the spill entered an on-property creek.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2009-01-09T00:00:00.000Z",
+        "event_end": "2009-01-09T23:59:59.000Z",
+        "reported_at": "2009-01-13T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2009-01-09T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Stevenson, Alabama, USA (Widows Creek Fossil Plant / Widows Creek)",
+        "jurisdiction_level": "city",
+        "admin1": "Alabama",
+        "country": "US",
+        "capital_used": null,
+        "lat": 34.8687,
+        "lon": -85.8386,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://grist.org/article/breaking-second-tva-coal-ash-pond-ruptures-at-widows-creek-coal-plant/",
+          "source_name": "Grist",
+          "published_at": "2009-01-09T00:00:00.000Z",
+          "headline": "Breaking: Second TVA coal ash pond ruptures at Widows Creek coal plant",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.wasteinfo.com/news/wbj20090113A.htm",
+          "source_name": "WasteInfo.com",
+          "published_at": "2009-01-13T00:00:00.000Z",
+          "headline": "wbj20090113A",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Tennessee Valley Authority (TVA)"
+        ],
+        "substances": [
+          "gypsum slurry",
+          "waste"
+        ],
+        "ecosystems": [
+          "Widows Creek"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "second TVA coal ash pond ruptures at Widows Creek coal plant",
+            "source_url": "https://grist.org/article/breaking-second-tva-coal-ash-pond-ruptures-at-widows-creek-coal-plant/"
+          },
+          {
+            "quote": "spilling up to ~10,000 gallons of waste into the plant’s on-property creek",
+            "source_url": "https://www.wasteinfo.com/news/wbj20090113A.htm"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.52,
+        "category": 0.7,
+        "location": 0.55,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "needs_dedupe_check",
+        "date_ambiguous",
+        "location_ambiguous",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "TVA Widows Creek gypsum slurry pond spill Jan 2009",
+        "fingerprint": "fp__widows-creek-fossil-plant-gypsum-slurry-pond-dam-break-spills-waste-into-widows-creek__stevenson-alabama-us__2009-01-09"
+      }
+    },
+    {
+      "event_id": "evt-2009-01-weatherclimate-ice-storm-central-eastern-us",
+      "title": "Late-January 2009 ice storm causes widespread outages in parts of the central and eastern United States",
+      "description": "A late-January 2009 ice storm brought heavy ice accretion across multiple U.S. states, causing severe damage and widespread power outages. Impacts were reported across the central and eastern U.S., including Kentucky and Arkansas.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2009-01-25T00:00:00.000Z",
+        "event_end": "2009-01-30T23:59:59.000Z",
+        "reported_at": "2013-01-02T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": null,
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "United States (multi-state; KY/AR mentioned)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://weather.com/storms/winter/news/five-extreme-january-winter-storms-20130102",
+          "source_name": "The Weather Channel",
+          "published_at": "2013-01-02T00:00:00Z",
+          "headline": "Five Extreme January Winter Storms",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.ncdc.noaa.gov/stormevents/eventdetails.jsp?id=429153",
+          "source_name": "NOAA NCEI Storm Events Database",
+          "published_at": "2009-01-01T00:00:00Z",
+          "headline": "Storm Events Database entry (ID 429153)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA NCEI",
+          "The Weather Channel"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Five Extreme January Winter Storms",
+            "source_url": "https://weather.com/storms/winter/news/five-extreme-january-winter-storms-20130102"
+          },
+          {
+            "quote": "Storm Events Database entry (ID 429153)",
+            "source_url": "https://www.ncdc.noaa.gov/stormevents/eventdetails.jsp?id=429153"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.8,
+        "location": 0.55,
+        "summary_grounding": 0.4
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "2009-01-us-ice-storm",
+        "fingerprint": "fp-2009-01-us-ice-storm-2009-01-25_2009-01-30"
+      }
+    },
+    {
+      "event_id": "evt-2009-01-weatherclimate-cyclone-klaus-fr-es",
+      "title": "Cyclone Klaus windstorm causes severe impacts in southern France and northern Spain",
+      "description": "European windstorm Klaus impacted southern France and northern Spain in late January 2009, bringing damaging winds and widespread disruption. Sources describe significant damage and impacts across affected regions.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2009-01-23T00:00:00.000Z",
+        "event_end": "2009-01-28T23:59:59.000Z",
+        "reported_at": "2010-09-24T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": null,
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "France (southern regions affected)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "FR",
+        "capital_used": "Paris",
+        "lat": 48.8566,
+        "lon": 2.3522,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.5
+      },
+      "sources": [
+        {
+          "url": "https://eumetrain.org/index.php/resources/winter-storm-klaus-23-24-january-2009",
+          "source_name": "EUMeTrain",
+          "published_at": "2009-01-24T00:00:00Z",
+          "headline": "Winter storm Klaus (23-24 January 2009)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.bbc.co.uk/news/world-europe-11399518",
+          "source_name": "BBC News",
+          "published_at": "2010-09-24T00:00:00Z",
+          "headline": "Storm Klaus batters France and Spain",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.meteofrance.fr/actualites-et-dossiers/actualites/tempete-klaus-2009",
+          "source_name": "Météo-France",
+          "published_at": "2009-01-01T00:00:00Z",
+          "headline": "Tempête Klaus (2009)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "EUMeTrain",
+          "BBC News",
+          "Météo-France"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Winter storm Klaus (23-24 January 2009)",
+            "source_url": "https://eumetrain.org/index.php/resources/winter-storm-klaus-23-24-january-2009"
+          },
+          {
+            "quote": "Storm Klaus batters France and Spain",
+            "source_url": "https://www.bbc.co.uk/news/world-europe-11399518"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.56,
+        "category": 0.8,
+        "location": 0.5,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "2009-01-klaus-fr-es",
+        "fingerprint": "fp-2009-01-klaus-france-2009-01-23_2009-01-28"
+      }
+    },
+    {
+      "event_id": "evt-2009-01-weatherclimate-flooding-qld-nt-au",
+      "title": "Early January 2009 monsoonal rains cause flooding in northern Australia",
+      "description": "In early January 2009, monsoonal rains caused extensive flooding across parts of northern Australia, including Queensland and the Northern Territory. NASA Earth Observatory reports both flooding impacts and drought relief in affected areas.",
+      "category_primary": "weather_climate",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "2009-01-01T00:00:00.000Z",
+        "event_end": "2009-01-14T23:59:59.000Z",
+        "reported_at": "2009-01-14T00:00:00Z",
+        "time_confidence": 0.7,
+        "event_date_utc": null,
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Australia (Queensland & Northern Territory)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "AU",
+        "capital_used": "Canberra",
+        "lat": -35.2809,
+        "lon": 149.13,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://science.nasa.gov/earth/earth-observatory/torrential-rains-flood-australia-36660/",
+          "source_name": "NASA Earth Observatory",
+          "published_at": "2009-01-14T00:00:00Z",
+          "headline": "Torrential Rains Flood Australia",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://earthobservatory.nasa.gov/images/event/36378/floods-in-australia-january-2009",
+          "source_name": "NASA Earth Observatory",
+          "published_at": "2009-01-01T00:00:00Z",
+          "headline": "Floods in Australia (January 2009)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NASA Earth Observatory"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Torrential Rains Flood Australia",
+            "source_url": "https://science.nasa.gov/earth/earth-observatory/torrential-rains-flood-australia-36660/"
+          },
+          {
+            "quote": "Floods in Australia (January 2009)",
+            "source_url": "https://earthobservatory.nasa.gov/images/event/36378/floods-in-australia-january-2009"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.85,
+        "location": 0.55,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "2009-01-au-monsoon-floods",
+        "fingerprint": "fp-2009-01-au-floods-2009-01-01_2009-01-14"
+      }
+    },
+    {
+      "event_id": "evt-2009-01-weatherclimate-arctic-sea-ice-below-normal",
+      "title": "January 2009 Arctic sea-ice extent remains below normal",
+      "description": "An NSIDC Sea Ice Today analysis reported that Arctic sea-ice extent in January 2009 remained below normal for the time of year, with a noted mid-month slowdown in growth attributed to wind patterns. The report characterizes the month as well below average relative to the satellite-era record.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2009-01-01T00:00:00.000Z",
+        "event_end": "2009-01-31T23:59:59.000Z",
+        "reported_at": "2009-01-31T00:00:00Z",
+        "time_confidence": 0.4,
+        "event_date_utc": null,
+        "event_date_precision": "month"
+      },
+      "location": {
+        "name": "Arctic (pan-Arctic)",
+        "jurisdiction_level": "global_proxy",
+        "admin1": null,
+        "country": null,
+        "capital_used": null,
+        "lat": 90,
+        "lon": 0,
+        "precision": "proxy",
+        "location_basis": "manual_override",
+        "location_confidence": 0.5
+      },
+      "sources": [
+        {
+          "url": "https://nsidc.org/sea-ice-today/analyses/ice-extent-continues-track-below-normal",
+          "source_name": "NSIDC Sea Ice Today",
+          "published_at": "2009-01-01T00:00:00Z",
+          "headline": "Ice extent continues to track below normal",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NSIDC"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "Arctic sea ice"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Ice extent continues to track below normal",
+            "source_url": "https://nsidc.org/sea-ice-today/analyses/ice-extent-continues-track-below-normal"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.5,
+        "category": 0.8,
+        "location": 0.5,
+        "summary_grounding": 0.35
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "2009-01-arctic-sea-ice-below-normal",
+        "fingerprint": "fp-2009-01-arctic-sea-ice-2009-01"
+      }
+    },
+    {
+      "event_id": "2009-01-geological-west-papua-earthquake-doublet",
+      "title": "West Papua offshore earthquake doublet (Mw 7.6 and Mw 7.4)",
+      "description": "Two large earthquakes struck offshore West Papua near Manokwari, Indonesia on January 3, 2009 (UTC). The sequence produced strong shaking and was reported to cause impacts including damage and casualties.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2009-01-03T19:43:55.000Z",
+        "event_end": "2009-01-03T22:33:42.000Z",
+        "reported_at": "2009-01-03T19:43:55.000Z",
+        "time_confidence": 0.85,
+        "event_date_utc": "2009-01-03T19:43:55.000Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Offshore West Papua (near Manokwari), Indonesia",
+        "jurisdiction_level": "site",
+        "admin1": "West Papua",
+        "country": "ID",
+        "capital_used": null,
+        "lat": -0.861,
+        "lon": 134.078,
+        "precision": "exact",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://earthquake.usgs.gov/earthquakes/eventpage/usp000gs2d/executive",
+          "source_name": "USGS Earthquake Hazards Program",
+          "published_at": "2009-01-03T19:43:55.000Z",
+          "headline": "M 7.6 - 50 km N of Manokwari, Indonesia",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://earthquake.usgs.gov/earthquakes/eventpage/usp000gs3t/executive",
+          "source_name": "USGS Earthquake Hazards Program",
+          "published_at": "2009-01-03T22:33:42.000Z",
+          "headline": "M 7.4 - 60 km N of Manokwari, Indonesia",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.emsc-csem.org/Earthquake/earthquake.php?id=129914",
+          "source_name": "EMSC-CSEM",
+          "published_at": "2009-01-03T19:43:55.000Z",
+          "headline": "Earthquake - Indonesia - West Papua",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "USGS",
+          "EMSC-CSEM"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "M 7.6 - 50 km N of Manokwari, Indonesia",
+            "source_url": "https://earthquake.usgs.gov/earthquakes/eventpage/usp000gs2d/executive"
+          },
+          {
+            "quote": "M 7.4 - 60 km N of Manokwari, Indonesia",
+            "source_url": "https://earthquake.usgs.gov/earthquakes/eventpage/usp000gs3t/executive"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.63,
+        "category": 0.95,
+        "location": 0.7,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "2009-01-03_manokwari_id_quake_sequence",
+        "fingerprint": "fp_2009-01-03_west-papua_offshore-quake-doublet"
+      }
+    },
+    {
+      "event_id": "2009-01-geological-cinchona-costa-rica-earthquake",
+      "title": "Cinchona earthquake near San José, Costa Rica",
+      "description": "A damaging earthquake struck near Cinchona, north of San José, Costa Rica on January 8, 2009. Reports described fatalities, injuries, and significant local damage and disruption.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2009-01-08T19:21:10.000Z",
+        "event_end": "2009-01-08T19:21:10.000Z",
+        "reported_at": "2009-01-08T19:21:10.000Z",
+        "time_confidence": 0.9,
+        "event_date_utc": "2009-01-08T19:21:10.000Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Near Cinchona (north of San José), Costa Rica",
+        "jurisdiction_level": "site",
+        "admin1": "Alajuela",
+        "country": "CR",
+        "capital_used": null,
+        "lat": 10.215,
+        "lon": -84.172,
+        "precision": "exact",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://earthquake.usgs.gov/earthquakes/eventpage/usp000gs8v/executive",
+          "source_name": "USGS Earthquake Hazards Program",
+          "published_at": "2009-01-08T19:21:10.000Z",
+          "headline": "M 6.1 - 4 km WNW of Cinchona, Costa Rica",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://reliefweb.int/disaster/eq-2009-000005-cri",
+          "source_name": "ReliefWeb",
+          "published_at": "2009-01-08T00:00:00Z",
+          "headline": "EQ-2009-000005-CRI",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.emsc-csem.org/Earthquake/earthquake.php?id=120859",
+          "source_name": "EMSC-CSEM",
+          "published_at": "2009-01-08T19:21:10.000Z",
+          "headline": "Earthquake - Costa Rica",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "USGS",
+          "ReliefWeb",
+          "EMSC-CSEM"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "M 6.1 - 4 km WNW of Cinchona, Costa Rica",
+            "source_url": "https://earthquake.usgs.gov/earthquakes/eventpage/usp000gs8v/executive"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.7,
+        "category": 0.95,
+        "location": 0.7,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [],
+      "dedupe": {
+        "cluster_hint": "2009-01-08_cinchona_cr_earthquake",
+        "fingerprint": "fp_2009-01-08_cinchona_cr_quake"
+      }
+    },
+    {
+      "event_id": "2009-01-ecosystem_biodiversity-usgs-coral-disease-usvi-20050101",
+      "title": "USGS publication reports coral cover decline and disease after 2005 bleaching in the US Virgin Islands",
+      "description": "A USGS publication dated January 1, 2009 reports monitoring results indicating substantial coral cover decline and widespread coral disease following the 2005 mass-bleaching event in the US Virgin Islands.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2009-01-01T00:00:00.000Z",
+        "time_confidence": 0.8,
+        "event_date_utc": "2009-01-01T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "US Virgin Islands",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "VI",
+        "capital_used": "Charlotte Amalie",
+        "lat": 18.3419,
+        "lon": -64.9307,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.75
+      },
+      "sources": [
+        {
+          "url": "https://www.usgs.gov/publications/coral-disease-following-massive-bleaching-2005-causes-60-decline-coral-cover-reefs-us",
+          "source_name": "U.S. Geological Survey (USGS)",
+          "published_at": "2009-01-01T00:00:00.000Z",
+          "headline": "Coral disease following massive bleaching in 2005 causes a 60% decline in coral cover on reefs in the U.S. Virgin Islands",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Geological Survey (USGS)"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "coral reefs"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "...bleaching in 2005... causes a 60% decline in coral cover on reefs in the U.S. Virgin Islands",
+            "source_url": "https://www.usgs.gov/publications/coral-disease-following-massive-bleaching-2005-causes-60-decline-coral-cover-reefs-us"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.72,
+        "category": 0.8,
+        "location": 0.75,
+        "summary_grounding": 0.65
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "usgs-publication-coral-disease-bleaching-usvi-2005",
+        "fingerprint": "usgs-publication-coral-disease-bleaching-usvi-2005|VI|2009-01-01"
+      }
+    },
+    {
+      "event_id": "2009-01-us-hr493-coal-ash-bill",
+      "title": "H.R. 493 introduced to regulate coal ash disposal and impoundments",
+      "description": "Rep. Nick J. Rahall introduced H.R. 493 (Coal Ash Reclamation, Environment, and Safety Act of 2009) in the U.S. House. The bill proposed federal standards and oversight related to coal ash and waste impoundments.",
+      "category_primary": "policy_regulation",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "2009-01-14T00:00:00.000Z",
+        "event_end": "2009-01-14T23:59:59.000Z",
+        "reported_at": "2009-01-14T00:00:00.000Z",
+        "time_confidence": 0.75,
+        "event_date_utc": "2009-01-14T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States (U.S. Congress)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.8
+      },
+      "sources": [
+        {
+          "url": "https://www.congress.gov/bill/111th-congress/house-bill/493",
+          "source_name": "Congress.gov",
+          "published_at": "2009-01-14T00:00:00.000Z",
+          "headline": "H.R.493 - Coal Ash Reclamation, Environment, and Safety Act of 2009",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.nytimes.com/2009/01/10/us/10ash.html",
+          "source_name": "The New York Times",
+          "published_at": "2009-01-10T00:00:00.000Z",
+          "headline": "Tennessee Spill Renews Debate Over Coal Ash",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. House of Representatives",
+          "U.S. Congress"
+        ],
+        "substances": [
+          "coal ash"
+        ],
+        "ecosystems": [],
+        "people": [
+          "Nick J. Rahall"
+        ]
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Introduced in House (01/14/2009)",
+            "source_url": "https://www.congress.gov/bill/111th-congress/house-bill/493"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.74,
+        "category": 0.8,
+        "location": 0.8,
+        "summary_grounding": 0.65
+      },
+      "quality_flags": [
+        "needs_dedupe_check",
+        "paywalled_or_partial"
+      ],
+      "dedupe": {
+        "cluster_hint": "H.R. 493 coal ash regulation introduced (U.S. Congress)",
+        "fingerprint": "2009-01-14|us|hr493|coal-ash|policy_regulation"
+      }
+    },
+    {
+      "event_id": "2009-01-epa-tougher-smog-rules-proposal",
+      "title": "EPA proposed tougher measures for ozone/smog nonattainment areas (court-order related)",
+      "description": "A press release reports that on January 12, 2009, the U.S. Environmental Protection Agency proposed tougher measures to reduce ozone (smog) pollution in multiple communities. The proposal was described as a response to a prior court order.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "2009-01-12T00:00:00.000Z",
+        "event_end": "2009-01-12T23:59:59.000Z",
+        "reported_at": "2009-01-12T00:00:00.000Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "2009-01-12T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States (EPA; multiple communities)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://earthjustice.org/press/2009/epa-proposes-tougher-smog-rules-responds-to-2006-court-order",
+          "source_name": "Earthjustice",
+          "published_at": "2009-01-12T00:00:00.000Z",
+          "headline": "EPA Proposes Tougher Smog Rules, Responds to 2006 Court Order",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Environmental Protection Agency",
+          "Earthjustice"
+        ],
+        "substances": [
+          "ozone"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "EPA proposed tougher measures to reduce ozone (smog) pollution",
+            "source_url": "https://earthjustice.org/press/2009/epa-proposes-tougher-smog-rules-responds-to-2006-court-order"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.52,
+        "category": 0.75,
+        "location": 0.6,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "secondary_sources_only",
+        "possible_opinion_or_advocacy",
+        "low_confidence_location"
+      ],
+      "dedupe": {
+        "cluster_hint": "EPA ozone/smog proposal Jan 2009 (court order response)",
+        "fingerprint": "2009-01-12|us|epa|ozone-smog|policy_regulation"
+      }
+    }
+  ]
+}

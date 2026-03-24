@@ -1,0 +1,610 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_1982-10_normalize_2026-01-18T094322070Z",
+    "generated_utc": "2026-01-18T09:43:22.070Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "1982-10",
+    "window": {
+      "start_utc": "1982-10-01T00:00:00.000Z",
+      "end_utc": "1982-10-31T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "evt_19821015_typhoon_nancy_luzon_upi",
+      "title": "Typhoon Nancy hits northern Luzon, killing dozens and displacing thousands",
+      "description": "Wire reports said Typhoon Nancy struck northern Luzon in the Philippines, damaging homes and infrastructure and cutting communications. The reports cited dozens of deaths and tens of thousands left homeless in affected areas.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1982-10-14T12:00:00Z",
+        "event_end": "1982-10-15T12:00:00Z",
+        "reported_at": "1982-10-15T00:00:00Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "1982-10-15T00:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Luzon (Philippines)",
+        "jurisdiction_level": "site",
+        "admin1": null,
+        "country": "PH",
+        "capital_used": null,
+        "lat": 16,
+        "lon": 121,
+        "precision": "admin1",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.upi.com/Archives/1982/10/15/Typhoon-leaves-44-dead-over-18000-homeless/7698403502400/",
+          "source_name": "UPI",
+          "published_at": "1982-10-15T00:00:00Z",
+          "headline": "Typhoon leaves 44 dead, over 18,000 homeless",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:13:39.899Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.upi.com/amp/Archives/1982/10/15/Typhoon-Nancy-strikes-Philippines/5870403502400/",
+          "source_name": "UPI",
+          "published_at": "1982-10-15T00:00:00Z",
+          "headline": "Typhoon Nancy strikes Philippines",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:13:39.899Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "UPI"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.56,
+        "category": 0.75,
+        "location": 0.55,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Typhoon Nancy (Weling) Philippines Oct 1982",
+        "fingerprint": "typhoon-nancy-hits-northern-luzon-killing-dozens-and-displacing-thousands|luzon-philippines|1982-10-15"
+      }
+    },
+    {
+      "event_id": "evt_19821027_typhoon_nancy_vietnam_csmonitor",
+      "title": "Typhoon Nancy strikes north-central Vietnam, damaging housing and rice crops",
+      "description": "A Christian Science Monitor report described Typhoon Nancy affecting north-central Vietnam after crossing the Philippines. The report cited major damage to housing and significant impacts to rice agriculture in the affected provinces.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1982-10-18T12:00:00Z",
+        "event_end": "1982-10-18T12:00:00Z",
+        "reported_at": "1982-10-27T00:00:00Z",
+        "time_confidence": 0.45,
+        "event_date_utc": "1982-10-18T00:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "North-central Vietnam (around Vinh)",
+        "jurisdiction_level": "site",
+        "admin1": null,
+        "country": "VN",
+        "capital_used": null,
+        "lat": 18.6734,
+        "lon": 105.6923,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.5
+      },
+      "sources": [
+        {
+          "url": "https://www.csmonitor.com/1982/1027/102731.html",
+          "source_name": "The Christian Science Monitor",
+          "published_at": "1982-10-27T00:00:00Z",
+          "headline": "102731.html",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:13:39.899Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "The Christian Science Monitor"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "rice agriculture"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.48,
+        "category": 0.7,
+        "location": 0.5,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "paywalled_or_partial",
+        "location_ambiguous",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "Typhoon Nancy (Weling) Vietnam impacts Oct 1982",
+        "fingerprint": "typhoon-nancy-strikes-north-central-vietnam-damaging-housing-and-rice-crops|north-central-vietnam-around-vinh|1982-10-18"
+      }
+    },
+    {
+      "event_id": "evt_19821008_autumn_storm_utah_upi",
+      "title": "Autumn storm brings very heavy mountain snow in Utah and flooding rains in parts of the South",
+      "description": "A UPI report said an autumn storm produced very heavy early-season mountain snow in Utah with hazardous travel conditions. The same report described heavy rain and flooding problems in parts of the southern United States.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1982-10-08T12:00:00Z",
+        "event_end": "1982-10-08T12:00:00Z",
+        "reported_at": "1982-10-08T00:00:00Z",
+        "time_confidence": 0.65,
+        "event_date_utc": "1982-10-08T00:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Utah (United States)",
+        "jurisdiction_level": "state",
+        "admin1": "Utah",
+        "country": "US",
+        "capital_used": "Salt Lake City",
+        "lat": 40.7608,
+        "lon": -111.891,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.8
+      },
+      "sources": [
+        {
+          "url": "https://www.upi.com/Archives/1982/10/08/An-autumn-storm-stacked-up-to-4-feet-of-snow/2168402897600/",
+          "source_name": "UPI",
+          "published_at": "1982-10-08T00:00:00Z",
+          "headline": "An autumn storm stacked up to 4 feet of snow",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:13:39.899Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "UPI"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.66,
+        "category": 0.8,
+        "location": 0.8,
+        "summary_grounding": 0.65
+      },
+      "quality_flags": [
+        "location_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "Oct 8 1982 US West storm Utah mountain snow; South flooding",
+        "fingerprint": "autumn-storm-brings-very-heavy-mountain-snow-in-utah-and-flooding-rains-in-parts-of-the-south|utah-united-states|1982-10-08"
+      }
+    },
+    {
+      "event_id": "evt_19821008_black_hills_snowstorm_nws_abr",
+      "title": "Early-season snowstorm buries the northern Black Hills of South Dakota",
+      "description": "A U.S. National Weather Service history page describes an unusually early snowstorm impacting the northern Black Hills of South Dakota on October 8\u00136, 1982. The page reports several feet of heavy snow and strong winds that caused major disruption in communities such as Lead and Deadwood.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1982-10-08T12:00:00Z",
+        "event_end": "1982-10-09T12:00:00Z",
+        "reported_at": "1982-10-08T00:00:00Z",
+        "time_confidence": 0.4,
+        "event_date_utc": "1982-10-08T00:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Northern Black Hills (South Dakota, United States)",
+        "jurisdiction_level": "site",
+        "admin1": "South Dakota",
+        "country": "US",
+        "capital_used": null,
+        "lat": 44.3522,
+        "lon": -103.7652,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.weather.gov/abr/This_Day_in_Weather_History_Oct_08",
+          "source_name": "US National Weather Service (Aberdeen, SD)",
+          "published_at": "1982-10-08T00:00:00Z",
+          "headline": "This Day in Weather History: Oct 08",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:13:39.899Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "US National Weather Service"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.47,
+        "category": 0.75,
+        "location": 0.55,
+        "summary_grounding": 0.4
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "Oct 8-9 1982 Black Hills SD early season snowstorm",
+        "fingerprint": "early-season-snowstorm-buries-the-northern-black-hills-of-south-dakota|northern-black-hills-south-dakota-united-states|1982-10-08"
+      }
+    },
+    {
+      "event_id": "geological-nz-whanganui-1982-10-14-earthquake-swarm",
+      "title": "Whanganui (Wanganui), New Zealand earthquake swarm with felt event on 14 Oct 1982",
+      "description": "An earthquake swarm affected the Whanganui (Wanganui) area in mid-October 1982. A felt event on 14 October triggered local digital accelerograph recordings, and the swarm included a largest shallow event reported around magnitude 5.3 located offshore from Whanganui.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1982-10-14T00:00:00.000Z",
+        "time_confidence": 0.4,
+        "event_date_utc": "1982-10-14T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Whanganui (Wanganui), New Zealand",
+        "jurisdiction_level": "city",
+        "admin1": "Manawatū-Whanganui",
+        "country": "NZ",
+        "capital_used": null,
+        "lat": -39.9333,
+        "lon": 175.05,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://bulletin.nzsee.org.nz/index.php/bnzsee/article/view/948/923",
+          "source_name": "Bulletin of the New Zealand Society for Earthquake Engineering (NZSEE)",
+          "published_at": "1982-10-14T00:00:00.000Z",
+          "headline": "Wanganui (New Zealand) earthquake swarm; notable felt event on October 14, 1982",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:14:07.957Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "New Zealand Society for Earthquake Engineering (NZSEE)"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "An earthquake swarm affected the Wanganui (Whanganui) area in mid-October 1982.",
+            "source_url": "https://bulletin.nzsee.org.nz/index.php/bnzsee/article/view/948/923"
+          },
+          {
+            "quote": "A felt event ... on Thursday, October 14 triggered local digital accelerographs.",
+            "source_url": "https://bulletin.nzsee.org.nz/index.php/bnzsee/article/view/948/923"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.85,
+        "location": 0.6,
+        "summary_grounding": 0.65
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "1982-10 Whanganui earthquake swarm",
+        "fingerprint": "geological|nz|whanganui|1982-10-14|earthquake-swarm"
+      }
+    },
+    {
+      "event_id": "fires_gypsum-canyon-fire_orange-county-ca_1982-10-09",
+      "title": "Gypsum Canyon brush fire burns about 16,800 acres and destroys homes in Orange County, California",
+      "description": "A wind-driven brush fire that started in Gypsum Canyon in Orange County, California spread into nearby communities and destroyed homes. Reporting stated the fire burned about 16,800 acres and firefighters worked toward containment over the following days.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1982-10-11T00:00:00Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "1982-10-09T00:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Orange County, California, USA",
+        "jurisdiction_level": "state",
+        "admin1": "CA",
+        "country": "US",
+        "capital_used": "Sacramento",
+        "lat": 38.5816,
+        "lon": -121.4944,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.65
+      },
+      "sources": [
+        {
+          "url": "https://www.upi.com/Archives/1982/10/11/Firefighters-contained-one-brush-fire-Monday-and-said-they/2608403156800/",
+          "source_name": "UPI",
+          "published_at": "1982-10-11T00:00:00Z",
+          "headline": "Firefighters contained one brush fire Monday and said they...",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:14:29.707Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.latimes.com/archives/la-xpm-1988-02-04-me-40303-story.html",
+          "source_name": "Los Angeles Times",
+          "published_at": "1988-02-04T00:00:00Z",
+          "headline": "la-xpm-1988-02-04-me-40303-story",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:14:29.707Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.latimes.com/archives/la-xpm-1996-10-22-mn-56657-story.html",
+          "source_name": "Los Angeles Times",
+          "published_at": "1996-10-22T00:00:00Z",
+          "headline": "la-xpm-1996-10-22-mn-56657-story",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:14:29.707Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [
+          "chaparral"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "...burned more than 16,800 acres and destroyed several homes...",
+            "source_url": "https://www.upi.com/Archives/1982/10/11/Firefighters-contained-one-brush-fire-Monday-and-said-they/2608403156800/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.9,
+        "location": 0.65,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "paywalled_or_partial",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Gypsum Canyon Fire (Orange County, CA) Oct 1982",
+        "fingerprint": "fires|gypsum-canyon-brush-fire-burns-about-16800-acres-and-destroys-homes-in-orange-county-california|CA|1982-10-09"
+      }
+    },
+    {
+      "event_id": "1982-10-13_esa_amendments_pub_l_97-304_us",
+      "title": "Endangered Species Act Amendments of 1982 enacted (Pub. L. 97-304)",
+      "description": "The United States enacted Public Law 97-304, amending the Endangered Species Act. The law updated aspects of ESA implementation and authorized appropriations.",
+      "category_primary": "policy_regulation",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "1982-10-13T12:00:00Z",
+        "event_end": "1982-10-13T12:00:00Z",
+        "reported_at": "1982-10-13T12:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1982-10-13T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.85
+      },
+      "sources": [
+        {
+          "url": "https://www.congress.gov/97/statute/STATUTE-96/STATUTE-96-Pg1411.pdf",
+          "source_name": "Congress.gov",
+          "published_at": "1982-10-13T12:00:00Z",
+          "headline": "STATUTE-96-Pg1411 (Public Law 97-304)",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:15:22.036Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "United States Congress"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Public Law 97-304",
+            "source_url": "https://www.congress.gov/97/statute/STATUTE-96/STATUTE-96-Pg1411.pdf"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.85,
+        "location": 0.85,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "ESA Amendments 1982 Pub L 97-304",
+        "fingerprint": "esa_amendments_1982_pub_l_97_304|US|1982-10-13"
+      }
+    },
+    {
+      "event_id": "1982-10-18_coastal_barrier_resources_act_pub_l_97-348_us",
+      "title": "Coastal Barrier Resources Act enacted (Pub. L. 97-348)",
+      "description": "The United States enacted Public Law 97-348, creating the Coastal Barrier Resources System. The law restricts most new federal spending and financial assistance that could encourage development in designated undeveloped coastal barrier areas.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "1982-10-18T12:00:00Z",
+        "event_end": "1982-10-18T12:00:00Z",
+        "reported_at": "1982-10-18T12:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1982-10-18T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States (Atlantic and Gulf coasts)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.75
+      },
+      "sources": [
+        {
+          "url": "https://www.congress.gov/97/statute/STATUTE-96/STATUTE-96-Pg1653.pdf",
+          "source_name": "Congress.gov",
+          "published_at": "1982-10-18T12:00:00Z",
+          "headline": "STATUTE-96-Pg1653 (Public Law 97-348)",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:15:22.036Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.reaganlibrary.gov/archives/speech/statement-signing-coastal-barrier-resources-act",
+          "source_name": "Ronald Reagan Presidential Library",
+          "published_at": "1982-10-18T12:00:00Z",
+          "headline": "Statement on Signing the Coastal Barrier Resources Act",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:15:22.036Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "United States Congress"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "coastal barriers"
+        ],
+        "people": [
+          "Ronald Reagan"
+        ]
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Coastal Barrier Resources Act",
+            "source_url": "https://www.reaganlibrary.gov/archives/speech/statement-signing-coastal-barrier-resources-act"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.68,
+        "category": 0.9,
+        "location": 0.75,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "Coastal Barrier Resources Act 1982 Pub L 97-348",
+        "fingerprint": "coastal_barrier_resources_act_1982_pub_l_97_348|US|1982-10-18"
+      }
+    }
+  ]
+}

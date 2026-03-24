@@ -1,0 +1,603 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_2018-07_normalize_2026-01-16T062949570Z",
+    "generated_utc": "2026-01-16T06:29:49.570Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "2018-07",
+    "window": {
+      "start_utc": "2018-07-01T00:00:00.000Z",
+      "end_utc": "2018-07-31T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "20180726-portland-me-casco-bay-sewage-spill",
+      "title": "Partially treated sewage spill into Casco Bay closes East End Beach and damages Eastern Prom Trail",
+      "description": "A disinfection tank overflow at Portland’s wastewater treatment plant released about 1 million gallons of partially treated sewage into Casco Bay. The incident damaged a section of the Eastern Prom Trail and led to closures and water-quality sampling due to potential elevated bacteria levels.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2018-07-26T10:45:00.000Z",
+        "event_end": "2018-07-26T13:45:00.000Z",
+        "reported_at": "2018-07-26T00:00:00Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2018-07-26T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Portland, Maine, USA (Casco Bay; East End Beach/Eastern Prom Trail)",
+        "jurisdiction_level": "city",
+        "admin1": "Maine",
+        "country": "US",
+        "capital_used": null,
+        "lat": 43.6591,
+        "lon": -70.2568,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.75
+      },
+      "sources": [
+        {
+          "url": "https://www.bangordailynews.com/2018/07/26/news/million-gallons-of-partially-treated-sewage-spills-into-casco-bay/",
+          "source_name": "Bangor Daily News",
+          "published_at": "2018-07-26T00:00:00Z",
+          "headline": "Million gallons of partially treated sewage spills into Casco Bay",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.mainepublic.org/maine/2018-07-26/east-end-beach-and-trail-closed-after-sewage-spill",
+          "source_name": "Maine Public",
+          "published_at": "2018-07-26T00:00:00Z",
+          "headline": "East End Beach And Trail Closed After Sewage Spill",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.pressherald.com/2018/07/26/sewage-overflow-washes-out-section-of-eastern-prom-trail/",
+          "source_name": "Portland Press Herald",
+          "published_at": "2018-07-26T00:00:00Z",
+          "headline": "Sewage overflow washes out section of Eastern Prom Trail",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Portland wastewater treatment plant"
+        ],
+        "substances": [
+          "partially treated sewage"
+        ],
+        "ecosystems": [
+          "Casco Bay"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "about 1 million gallons of partially treated sewage spilled into Casco Bay",
+            "source_url": "https://www.bangordailynews.com/2018/07/26/news/million-gallons-of-partially-treated-sewage-spills-into-casco-bay/"
+          },
+          {
+            "quote": "East End Beach and a portion of the Eastern Prom Trail were closed",
+            "source_url": "https://www.mainepublic.org/maine/2018-07-26/east-end-beach-and-trail-closed-after-sewage-spill"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.72,
+        "category": 0.85,
+        "location": 0.75,
+        "summary_grounding": 0.7
+      },
+      "quality_flags": [
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "casco-bay-sewage-spill-2018-07-26",
+        "fingerprint": "casco-bay-sewage-spill|portland-me|2018-07-26"
+      }
+    },
+    {
+      "event_id": "20180716-tijuana-baja-california-sewage-complaint",
+      "title": "Environmental group prepares criminal complaint alleging sewage discharges near Tijuana affecting border waters",
+      "description": "Reports said a binational environmental group planned to file a criminal complaint against the Baja California state government alleging negligent sewage discharges linked to the San Antonio de los Buenos (Punta Bandera) wastewater treatment plant. The discharges were described as contributing to pollution in coastal waters near the U.S.–Mexico border region.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2018-07-16T00:00:00.000Z",
+        "event_end": "2018-07-16T23:59:59.000Z",
+        "reported_at": "2018-07-16T00:00:00Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "2018-07-16T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Tijuana, Baja California, Mexico (San Antonio de los Buenos / Punta Bandera area)",
+        "jurisdiction_level": "city",
+        "admin1": "Baja California",
+        "country": "MX",
+        "capital_used": null,
+        "lat": 32.5149,
+        "lon": -117.0382,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://mexiconewsdaily.com/news/criminal-complaint-over-tijuana-sewage/",
+          "source_name": "Mexico News Daily",
+          "published_at": "2018-07-16T00:00:00Z",
+          "headline": "Criminal complaint over Tijuana sewage",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.surfrider.org/news/surfrider-lawsuit-improves-ocean-water-quality-and-protects-public-health-at-us-mexico-border",
+          "source_name": "Surfrider Foundation",
+          "published_at": "2018-07-16T00:00:00Z",
+          "headline": "Surfrider lawsuit improves ocean water quality and protects public health at US-Mexico border",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Wildcoast",
+          "Baja California state government",
+          "San Antonio de los Buenos wastewater treatment plant",
+          "Surfrider Foundation"
+        ],
+        "substances": [
+          "sewage"
+        ],
+        "ecosystems": [
+          "coastal waters near the U.S.–Mexico border"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "prepared a criminal complaint ... over sewage discharges off Tijuana",
+            "source_url": "https://mexiconewsdaily.com/news/criminal-complaint-over-tijuana-sewage/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.56,
+        "category": 0.75,
+        "location": 0.55,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "secondary_sources_only",
+        "possible_opinion_or_advocacy",
+        "location_ambiguous",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "tijuana-sewage-legal-action-2018-07",
+        "fingerprint": "tijuana-sewage-complaint|tijuana-bc|2018-07-16"
+      }
+    },
+    {
+      "event_id": "20180723-japan-heatwave-kumagaya",
+      "title": "Japan sets new all-time temperature record during July 2018 heat wave",
+      "description": "Japan recorded its highest-ever temperature during a severe July 2018 heat wave, with 41.1°C reported at Kumagaya on July 23. Reports described significant health impacts including deaths and many heat-related hospitalizations.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2018-07-23T00:00:00.000Z",
+        "event_end": "2018-07-23T23:59:59.000Z",
+        "reported_at": "2018-07-23T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2018-07-23T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Kumagaya, Saitama Prefecture, Japan",
+        "jurisdiction_level": "city",
+        "admin1": "Saitama",
+        "country": "JP",
+        "capital_used": null,
+        "lat": 36.1473,
+        "lon": 139.3886,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://time.com/5345553/japan-heat-wave-record-temperatures/",
+          "source_name": "TIME",
+          "published_at": "2018-07-23T00:00:00.000Z",
+          "headline": "Japan Heat Wave Records Temperatures",
+          "byline": null,
+          "accessed_utc": "2018-07-31T23:59:59.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Japan recorded its highest-ever temperature of 41.1°C in Kumagaya",
+            "source_url": "https://time.com/5345553/japan-heat-wave-record-temperatures/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.85,
+        "location": 0.6,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "2018 Northeast Asia heat wave (Japan record temp)",
+        "fingerprint": "japan-heatwave-kumagaya-2018-07-23"
+      }
+    },
+    {
+      "event_id": "20180703-japan-floods-sw",
+      "title": "Extreme rainfall causes deadly floods and landslides in southwestern Japan",
+      "description": "Record rainfall in early July 2018 triggered widespread flooding and landslides across parts of southwestern Japan. Reporting described rising fatalities along with evacuations and major damage in affected prefectures.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2018-07-03T00:00:00.000Z",
+        "event_end": "2018-07-09T23:59:59.000Z",
+        "reported_at": "2018-07-08T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": null,
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Hiroshima, Japan (proxy for affected southwestern Japan region)",
+        "jurisdiction_level": "city",
+        "admin1": "Hiroshima",
+        "country": "JP",
+        "capital_used": null,
+        "lat": 34.3853,
+        "lon": 132.4553,
+        "precision": "city",
+        "location_basis": "institution_proxy",
+        "location_confidence": 0.35
+      },
+      "sources": [
+        {
+          "url": "https://www.theguardian.com/world/2018/jul/08/death-toll-increases-as-record-rains-devastate-parts-of-japan",
+          "source_name": "The Guardian",
+          "published_at": "2018-07-08T00:00:00.000Z",
+          "headline": "Death toll increases as record rains devastate parts of Japan",
+          "byline": null,
+          "accessed_utc": "2018-07-31T23:59:59.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "record rains...devastate parts of Japan",
+            "source_url": "https://www.theguardian.com/world/2018/jul/08/death-toll-increases-as-record-rains-devastate-parts-of-japan"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.5,
+        "category": 0.8,
+        "location": 0.35,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "location_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "July 2018 Japan floods and landslides",
+        "fingerprint": "japan-floods-sw-2018-07-03_2018-07-09"
+      }
+    },
+    {
+      "event_id": "201807_lombok_eq_m64",
+      "title": "M6.4 earthquake strikes Lombok, Indonesia, triggering landslides and damage",
+      "description": "A shallow magnitude 6.4 earthquake struck Lombok Island, Indonesia, causing fatalities and injuries and damaging buildings. Reports said landslides occurred and emergency response efforts included evacuations and rescues, including hikers in the Mount Rinjani area.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2018-07-28T22:47:37.000Z",
+        "event_end": "2018-07-29T23:59:59.000Z",
+        "reported_at": "2018-07-29T00:00:00Z",
+        "time_confidence": 0.8,
+        "event_date_utc": "2018-07-28T22:47:37.000Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Lombok Island, West Nusa Tenggara, Indonesia",
+        "jurisdiction_level": "site",
+        "admin1": "West Nusa Tenggara",
+        "country": "ID",
+        "capital_used": null,
+        "lat": -8.650000000000002,
+        "lon": 116.324,
+        "precision": "admin1",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.5
+      },
+      "sources": [
+        {
+          "url": "https://www.cnbc.com/2018/07/29/indonesia-earthquake-14-dead-on-tourist-island-lombok.html",
+          "source_name": "CNBC",
+          "published_at": "2018-07-29T00:00:00Z",
+          "headline": "Indonesia earthquake: 14 dead on tourist island Lombok",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "A 6.4 magnitude earthquake struck Lombok, killing people and injuring others, and damaging buildings.",
+            "source_url": "https://www.cnbc.com/2018/07/29/indonesia-earthquake-14-dead-on-tourist-island-lombok.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.9,
+        "location": 0.5,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "2018-07 Lombok M6.4 earthquake",
+        "fingerprint": "fp_201807_lombok_island_m64_20180728"
+      }
+    },
+    {
+      "event_id": "evt_201807_fl_red_tide_wildlife_impacts",
+      "title": "Southwest Florida red tide linked to fish kills and marine wildlife impacts; NOAA tracks elevated dolphin mortalities in 2018",
+      "description": "A harmful algal bloom (red tide) affected Southwest Florida during July 2018, with reports of fish kills and other marine wildlife impacts. NOAA documented an unusual mortality event involving bottlenose dolphins along Florida’s southwest coast beginning in 2018, contemporaneous with the broader red tide impacts described in state and media updates.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2018-07-01T00:00:00.000Z",
+        "time_confidence": 0.55,
+        "event_date_utc": null,
+        "event_date_precision": "month"
+      },
+      "location": {
+        "name": "Florida (statewide proxy for Southwest Florida), USA",
+        "jurisdiction_level": "state",
+        "admin1": "FL",
+        "country": "US",
+        "capital_used": "Tallahassee",
+        "lat": 30.4382559,
+        "lon": -84.2807329,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.fisheries.noaa.gov/marine-life-distress/unusual-mortality-event-2018-2019-southwest-bottlenose-dolphins",
+          "source_name": "NOAA Fisheries",
+          "published_at": "2018-01-01T00:00:00Z",
+          "headline": "Unusual Mortality Event (UME): 2018-2019 Southwest Bottlenose Dolphins",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://content.govdelivery.com/accounts/FLFFWCC/bulletins/201c2a4",
+          "source_name": "Florida Fish and Wildlife Conservation Commission (GovDelivery)",
+          "published_at": "2018-01-01T00:00:00Z",
+          "headline": "Red tide update (Florida FWC bulletin)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://weather.com/science/environment/news/2018-06-29-ft-myers-florida-red-tide-algal-bloom-killing-turtles-manatees",
+          "source_name": "The Weather Channel",
+          "published_at": "2018-06-29T00:00:00Z",
+          "headline": "Florida Red Tide Algal Bloom Killing Turtles, Manatees (article)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA Fisheries",
+          "Florida Fish and Wildlife Conservation Commission"
+        ],
+        "substances": [
+          "Karenia brevis"
+        ],
+        "ecosystems": [
+          "Gulf of Mexico (Southwest Florida coastal waters)"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Unusual Mortality Event (UME): 2018-2019 Southwest Bottlenose Dolphins",
+            "source_url": "https://www.fisheries.noaa.gov/marine-life-distress/unusual-mortality-event-2018-2019-southwest-bottlenose-dolphins"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.58,
+        "category": 0.75,
+        "location": 0.55,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "FL red tide / SW Florida HAB impacts 2018",
+        "fingerprint": "fp_201807_fl_red_tide_wildlife_impacts"
+      }
+    },
+    {
+      "event_id": "evt_20180717_surfrider_cwa_lawsuit_tijuana_river_valley",
+      "title": "Surfrider files Clean Water Act lawsuit over Tijuana River Valley pollution",
+      "description": "Surfrider Foundation filed a Clean Water Act lawsuit against the U.S. International Boundary and Water Commission (U.S. Section) over alleged sewage/pollution discharges affecting the Tijuana River Valley and nearby coastal waters at the U.S.–Mexico border.",
+      "category_primary": "policy_regulation",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "2018-07-17T00:00:00.000Z",
+        "event_end": "2018-07-17T23:59:59.000Z",
+        "reported_at": "2018-07-17T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2018-07-17T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "San Diego County, California, USA (Tijuana River Valley / U.S.–Mexico border)",
+        "jurisdiction_level": "site",
+        "admin1": "California",
+        "country": "US",
+        "capital_used": null,
+        "lat": 32.552,
+        "lon": -117.063,
+        "precision": "neighborhood",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.kpbs.org/news/environment/2018/07/17/surfrider-foundation-to-file-lawsuit-over-sewage",
+          "source_name": "KPBS",
+          "published_at": "2018-07-17T00:00:00.000Z",
+          "headline": "Surfrider Foundation To File Lawsuit Over Sewage",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.surfrider.org/news/surfrider-lawsuit-improves-ocean-water-quality-and-protects-public-health-at-us-mexico-border",
+          "source_name": "Surfrider Foundation",
+          "published_at": "2018-07-17T00:00:00.000Z",
+          "headline": "Surfrider lawsuit improves ocean water quality and protects public health at US-Mexico border",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://law.justia.com/cases/federal/district-courts/california/casdce/3%3A2018cv01621/582770/21/",
+          "source_name": "Justia",
+          "published_at": "2018-07-17T00:00:00.000Z",
+          "headline": "Case docket entry (Civil No. 18cv1621)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Surfrider Foundation",
+          "U.S. International Boundary and Water Commission (U.S. Section)"
+        ],
+        "substances": [
+          "sewage"
+        ],
+        "ecosystems": [
+          "Tijuana River Valley",
+          "coastal waters"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Surfrider Foundation plans to file a lawsuit over sewage flowing into the Tijuana River Valley.",
+            "source_url": "https://www.kpbs.org/news/environment/2018/07/17/surfrider-foundation-to-file-lawsuit-over-sewage"
+          },
+          {
+            "quote": "Surfrider filed a Clean Water Act lawsuit ... to protect public health at the US-Mexico border.",
+            "source_url": "https://www.surfrider.org/news/surfrider-lawsuit-improves-ocean-water-quality-and-protects-public-health-at-us-mexico-border"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.8,
+        "location": 0.55,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "possible_opinion_or_advocacy",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "surfrider-clean-water-act-lawsuit-tijuana-river-valley-2018-07-17",
+        "fingerprint": "fp_surfrider_cwa_tijuana_river_valley_2018-07-17_us"
+      }
+    }
+  ]
+}

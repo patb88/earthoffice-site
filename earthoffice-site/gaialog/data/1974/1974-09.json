@@ -1,0 +1,414 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_1974-09_normalize_2026-01-19T064840101Z",
+    "generated_utc": "2026-01-19T06:48:40.101Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "1974-09",
+    "window": {
+      "start_utc": "1974-09-01T00:00:00.000Z",
+      "end_utc": "1974-09-30T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "1974-09-cl-metula-survey-strait-of-magellan-1",
+      "title": "Ecological survey conducted after Metula oil spill in the Strait of Magellan",
+      "description": "An ecological survey was conducted in the Strait of Magellan from September 9 to October 4, 1974 following the tanker Metula grounding and subsequent oil releases. The survey documented shoreline oiling and associated environmental impacts as part of post-spill assessment.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1974-09-09T12:00:00Z",
+        "event_end": "1974-10-04T12:00:00Z",
+        "reported_at": "1976-01-01T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1974-09-09T12:00:00Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Strait of Magellan (Primera Angostura / First Narrows), Chile",
+        "jurisdiction_level": "site",
+        "admin1": null,
+        "country": "CL",
+        "capital_used": null,
+        "lat": -52.55,
+        "lon": -69.45,
+        "precision": "proxy",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.45
+      },
+      "sources": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CZIC-td195-p4-g86-1976/html/CZIC-td195-p4-g86-1976.htm",
+          "source_name": "govinfo.gov",
+          "published_at": "1976-01-01T00:00:00Z",
+          "headline": "CZIC-td195-p4-g86-1976 (Metula spill ecological survey/report)",
+          "byline": null,
+          "accessed_utc": "2026-01-19T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://iosc.kglmeridian.com/view/journals/iosc/2017/1/article-p515.xml",
+          "source_name": "IOSC Proceedings",
+          "published_at": "2017-01-01T00:00:00Z",
+          "headline": "International Oil Spill Conference proceedings article (Metula context)",
+          "byline": null,
+          "accessed_utc": "2026-01-19T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Metula (tanker)"
+        ],
+        "substances": [
+          "oil"
+        ],
+        "ecosystems": [
+          "shoreline",
+          "marine waters"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "An ecological survey was conducted from September 9 to October 4, 1974...",
+            "source_url": "https://www.govinfo.gov/content/pkg/CZIC-td195-p4-g86-1976/html/CZIC-td195-p4-g86-1976.htm"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.75,
+        "location": 0.45,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "metula_oil_spill_strait_of_magellan_1974",
+        "fingerprint": "metula_oil_spill_ecological_survey_strait_of_magellan_cl_1974-09"
+      }
+    },
+    {
+      "event_id": "1974-09-weather_climate-hurricane-carmen-mexico-yucatan-19740902",
+      "title": "Hurricane Carmen makes Category 4 landfall on Mexico’s Yucatán Peninsula",
+      "description": "Hurricane Carmen struck Mexico’s Yucatán Peninsula as a Category 4 hurricane on September 2, 1974, bringing destructive winds and heavy rainfall before moving back into the Gulf of Mexico.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1974-09-02T12:00:00Z",
+        "event_end": "1974-09-02T12:00:00Z",
+        "reported_at": "1974-09-02T12:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1974-09-02T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Yucatán Peninsula, Mexico (near Mahahual)",
+        "jurisdiction_level": "site",
+        "admin1": null,
+        "country": "MX",
+        "capital_used": null,
+        "lat": 18.7167,
+        "lon": -87.7167,
+        "precision": "neighborhood",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.45
+      },
+      "sources": [
+        {
+          "url": "https://www.weather.gov/lch/1974Carmen",
+          "source_name": "NWS Lake Charles (weather.gov)",
+          "published_at": "1974-09-02T12:00:00Z",
+          "headline": "1974 Hurricane Carmen",
+          "byline": null,
+          "accessed_utc": "2026-01-19T06:46:30.606Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.wpc.ncep.noaa.gov/tropical/rain/carmen1974.html",
+          "source_name": "NOAA WPC (wpc.ncep.noaa.gov)",
+          "published_at": "1974-09-02T12:00:00Z",
+          "headline": "Hurricane Carmen (1974) Rainfall Summary",
+          "byline": null,
+          "accessed_utc": "2026-01-19T06:46:30.606Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA",
+          "National Weather Service"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Hurricane Carmen struck the Yucatán Peninsula as a Category 4 hurricane on September 2, 1974.",
+            "source_url": "https://www.weather.gov/lch/1974Carmen"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.52,
+        "category": 0.8,
+        "location": 0.45,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Hurricane Carmen (1974)",
+        "fingerprint": "hurricane-carmen-19740902-yucatan-peninsula-mx"
+      }
+    },
+    {
+      "event_id": "1974-09-weather_climate-hurricane-carmen-louisiana-19740908",
+      "title": "Hurricane Carmen makes Category 3 landfall in Louisiana near the Atchafalaya River",
+      "description": "Hurricane Carmen made U.S. landfall in south-central Louisiana around September 8, 1974 as a Category 3 hurricane, bringing storm-surge impacts and heavy rainfall with flooding reported in low-lying areas.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1974-09-08T12:00:00Z",
+        "event_end": "1974-09-08T12:00:00Z",
+        "reported_at": "1974-09-08T12:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1974-09-08T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "South-central Louisiana, United States (near mouth of the Atchafalaya River / Morgan City area)",
+        "jurisdiction_level": "site",
+        "admin1": "Louisiana",
+        "country": "US",
+        "capital_used": null,
+        "lat": 29.6994,
+        "lon": -91.2068,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.weather.gov/lch/1974Carmen",
+          "source_name": "NWS Lake Charles (weather.gov)",
+          "published_at": "1974-09-08T12:00:00Z",
+          "headline": "1974 Hurricane Carmen",
+          "byline": null,
+          "accessed_utc": "2026-01-19T06:46:30.606Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.weather.gov/lch/1974Carmen-Surge",
+          "source_name": "NWS Lake Charles (weather.gov)",
+          "published_at": "1974-09-08T12:00:00Z",
+          "headline": "Hurricane Carmen (1974) Storm Surge",
+          "byline": null,
+          "accessed_utc": "2026-01-19T06:46:30.606Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA",
+          "National Weather Service"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Hurricane Carmen made U.S. landfall in Louisiana around September 8, 1974 as a Category 3 hurricane.",
+            "source_url": "https://www.weather.gov/lch/1974Carmen"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.58,
+        "category": 0.8,
+        "location": 0.55,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Hurricane Carmen (1974)",
+        "fingerprint": "hurricane-carmen-19740908-louisiana-us"
+      }
+    },
+    {
+      "event_id": "1974-09-weather_climate-hurricane-fifi-honduras-19740918",
+      "title": "Hurricane Fifi brings catastrophic rainfall and flooding to northern Honduras",
+      "description": "Hurricane Fifi reached peak intensity on September 18, 1974 and produced catastrophic rainfall and flooding impacts in Honduras while moving along or near the country’s northern Caribbean coast.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1974-09-18T12:00:00Z",
+        "event_end": "1974-09-18T12:00:00Z",
+        "reported_at": "1974-09-18T12:00:00Z",
+        "time_confidence": 0.5,
+        "event_date_utc": "1974-09-18T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Northern Honduras (Caribbean coast)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "HN",
+        "capital_used": "Tegucigalpa",
+        "lat": 14.0723,
+        "lon": -87.1921,
+        "precision": "proxy",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.4
+      },
+      "sources": [
+        {
+          "url": "https://www.wpc.ncep.noaa.gov/tropical/rain/fifi1974.html",
+          "source_name": "NOAA WPC (wpc.ncep.noaa.gov)",
+          "published_at": "1974-09-18T12:00:00Z",
+          "headline": "Hurricane Fifi (1974) Rainfall Summary",
+          "byline": null,
+          "accessed_utc": "2026-01-19T06:46:30.606Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA WPC"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Hurricane Fifi ... produced catastrophic rainfall and flooding impacts in Honduras.",
+            "source_url": "https://www.wpc.ncep.noaa.gov/tropical/rain/fifi1974.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.46,
+        "category": 0.75,
+        "location": 0.4,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "needs_dedupe_check",
+        "low_confidence_location"
+      ],
+      "dedupe": {
+        "cluster_hint": "Hurricane Fifi (1974)",
+        "fingerprint": "hurricane-fifi-19740918-honduras-hn"
+      }
+    },
+    {
+      "event_id": "1974-09-weather_climate-hurricane-fifi-belize-19740919",
+      "title": "Hurricane Fifi makes landfall in Belize and weakens inland",
+      "description": "After severe impacts in the western Caribbean, Hurricane Fifi made landfall in Belize on September 19, 1974 and weakened while tracking inland across southern Mexico before later regenerating in the Pacific.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1974-09-19T12:00:00Z",
+        "event_end": "1974-09-19T12:00:00Z",
+        "reported_at": "1974-09-19T12:00:00Z",
+        "time_confidence": 0.5,
+        "event_date_utc": "1974-09-19T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Belize (southern Belize landfall)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "BZ",
+        "capital_used": "Belmopan",
+        "lat": 17.251,
+        "lon": -88.759,
+        "precision": "proxy",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.35
+      },
+      "sources": [
+        {
+          "url": "https://www.wpc.ncep.noaa.gov/tropical/rain/fifi1974.html",
+          "source_name": "NOAA WPC (wpc.ncep.noaa.gov)",
+          "published_at": "1974-09-19T12:00:00Z",
+          "headline": "Hurricane Fifi (1974) Rainfall Summary",
+          "byline": null,
+          "accessed_utc": "2026-01-19T06:46:30.606Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA WPC"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Hurricane Fifi ... made landfall in Belize on September 19, 1974 and weakened while tracking across southern Mexico.",
+            "source_url": "https://www.wpc.ncep.noaa.gov/tropical/rain/fifi1974.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.42,
+        "category": 0.75,
+        "location": 0.35,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "needs_dedupe_check",
+        "low_confidence_location"
+      ],
+      "dedupe": {
+        "cluster_hint": "Hurricane Fifi (1974)",
+        "fingerprint": "hurricane-fifi-19740919-belize-bz"
+      }
+    }
+  ]
+}

@@ -1,0 +1,628 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_2008-06_normalize_2026-01-16T035014231Z",
+    "generated_utc": "2026-01-16T03:50:14.231Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "2008-06",
+    "window": {
+      "start_utc": "2008-06-01T00:00:00.000Z",
+      "end_utc": "2008-06-30T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "evt_20080617_epa_doj_magellan_settlement_dc",
+      "title": "EPA and DOJ announce Clean Water Act settlement with Magellan Midstream Partners over pipeline spills",
+      "description": "EPA and the U.S. Department of Justice announced a Clean Water Act settlement with Magellan Midstream Partners related to alleged petroleum pipeline discharges into waterways and Spill Prevention, Control, and Countermeasure (SPCC) violations at facilities. The settlement included a civil penalty and requirements intended to reduce the risk of future spills.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2008-06-17T00:00:00.000Z",
+        "event_end": "2008-06-17T23:59:59.000Z",
+        "reported_at": "2008-06-17T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2008-06-17T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Washington, D.C., United States",
+        "jurisdiction_level": "city",
+        "admin1": "DC",
+        "country": "US",
+        "capital_used": null,
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.epa.gov/archive/epapages/newsroom_archive/newsreleases/0ada2d7afdeb88fc8525746b004c95ad.html",
+          "source_name": "U.S. Environmental Protection Agency (EPA)",
+          "published_at": "2008-06-17T00:00:00.000Z",
+          "headline": "EPA/DOJ settlement with Magellan Midstream Partners (Clean Water Act case)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Environmental Protection Agency (EPA)",
+          "U.S. Department of Justice (DOJ)",
+          "Magellan Midstream Partners"
+        ],
+        "substances": [
+          "gasoline",
+          "fuel oil",
+          "petroleum"
+        ],
+        "ecosystems": [
+          "waterways"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "EPA and the Department of Justice announced a settlement with Magellan Midstream Partners",
+            "source_url": "https://www.epa.gov/archive/epapages/newsroom_archive/newsreleases/0ada2d7afdeb88fc8525746b004c95ad.html"
+          },
+          {
+            "quote": "alleged discharges of gasoline and fuel oil from pipelines into nearby waterways",
+            "source_url": "https://www.epa.gov/archive/epapages/newsroom_archive/newsreleases/0ada2d7afdeb88fc8525746b004c95ad.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.68,
+        "category": 0.85,
+        "location": 0.6,
+        "summary_grounding": 0.7
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "epa_doj_magellan_settlement_2008_06_17",
+        "fingerprint": "fp_20080617_epa_doj_magellan_settlement_washington_dc_us"
+      }
+    },
+    {
+      "event_id": "evt_200806_upper_mississippi_valley_flooding_nws_arx",
+      "title": "Torrential rains and record flooding in the Upper Mississippi River Valley (June 2008)",
+      "description": "The National Weather Service (La Crosse) documented a week of torrential rainfall, with much of it occurring June 7–8, 2008. The rains produced numerous record and near-record river crests across the Upper Mississippi River Valley with significant hydrologic impacts.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2008-06-06T00:00:00.000Z",
+        "event_end": "2008-06-13T23:59:59.000Z",
+        "reported_at": "2008-06-30T23:59:59.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2008-06-08T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Upper Mississippi River Valley (NWS La Crosse forecast area: parts of WI/MN/IA)",
+        "jurisdiction_level": "site",
+        "admin1": null,
+        "country": "US",
+        "capital_used": null,
+        "lat": 43.8014,
+        "lon": 91.2396,
+        "precision": "proxy",
+        "location_basis": "institution_proxy",
+        "location_confidence": 0.35
+      },
+      "sources": [
+        {
+          "url": "https://www.weather.gov/arx/jun08_flooding",
+          "source_name": "National Weather Service (NWS)",
+          "published_at": "2008-06-30T23:59:59.000Z",
+          "headline": "jun08_flooding",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "National Weather Service"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "river systems"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "A week of torrential rainfall—much of it on June 7–8—produced numerous record and near-record river crests",
+            "source_url": "https://www.weather.gov/arx/jun08_flooding"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.75,
+        "location": 0.35,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "low_confidence_location"
+      ],
+      "dedupe": {
+        "cluster_hint": "Upper Mississippi River Valley flooding June 2008",
+        "fingerprint": "fp_evt_200806_upper_mississippi_valley_flooding_nws_arx"
+      }
+    },
+    {
+      "event_id": "evt_200806_southern_wisconsin_flood_usgs",
+      "title": "Severe flooding in southern Wisconsin (June 2008)",
+      "description": "USGS documented that heavy rains triggered severe flooding across southern Wisconsin in June 2008. The event produced record gage heights and streamflows at numerous streamgages and led to evacuations, road closures, and extensive damages in multiple communities.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2008-06-07T00:00:00.000Z",
+        "event_end": "2008-06-21T23:59:59.000Z",
+        "reported_at": "2008-06-30T23:59:59.000Z",
+        "time_confidence": 0.65,
+        "event_date_utc": "2008-06-15T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Southern Wisconsin, United States",
+        "jurisdiction_level": "state",
+        "admin1": "Wisconsin",
+        "country": "US",
+        "capital_used": "Madison",
+        "lat": 43.0748,
+        "lon": -89.3848,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.8
+      },
+      "sources": [
+        {
+          "url": "https://www.usgs.gov/centers/upper-midwest-water-science-center/science/june-2008-floods-southern-wisconsin",
+          "source_name": "U.S. Geological Survey (USGS)",
+          "published_at": "2008-06-30T23:59:59.000Z",
+          "headline": "June 2008 floods in southern Wisconsin",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.usgs.gov/publications/flood-june-2008-southern-wisconsin",
+          "source_name": "U.S. Geological Survey (USGS)",
+          "published_at": "2008-06-30T23:59:59.000Z",
+          "headline": "Flood of June 2008 in Southern Wisconsin",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Geological Survey"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "river systems"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Heavy rains triggered severe flooding across southern Wisconsin, producing record gage heights and streamflows",
+            "source_url": "https://www.usgs.gov/centers/upper-midwest-water-science-center/science/june-2008-floods-southern-wisconsin"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.7,
+        "category": 0.8,
+        "location": 0.8,
+        "summary_grounding": 0.65
+      },
+      "quality_flags": [
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "Southern Wisconsin floods June 2008",
+        "fingerprint": "fp_evt_200806_southern_wisconsin_flood_usgs"
+      }
+    },
+    {
+      "event_id": "geol_20080606_mount_soputan_eruption",
+      "title": "Mount Soputan eruption in North Sulawesi, Indonesia (ash plume and hot clouds)",
+      "description": "Mount Soputan in North Sulawesi erupted on June 6, 2008, sending an ash plume into the air and producing hot clouds that moved down its slopes. Authorities warned residents to stay away from the volcano’s vicinity.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2008-06-06T00:00:00.000Z",
+        "event_end": "2008-06-06T23:59:59.000Z",
+        "reported_at": "2008-06-07T00:00:00Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2008-06-06T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Mount Soputan, North Sulawesi, Indonesia",
+        "jurisdiction_level": "site",
+        "admin1": "North Sulawesi",
+        "country": "ID",
+        "capital_used": null,
+        "lat": 1.108,
+        "lon": 124.725,
+        "precision": "exact",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.abc.net.au/news/2008-06-07/volcano-erupts-in-indonesia/2462796",
+          "source_name": "ABC News (Australia)",
+          "published_at": "2008-06-07T00:00:00Z",
+          "headline": "Volcano erupts in Indonesia",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [
+          "volcanic ash"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Volcano Soputan erupted ... sending a thick cloud of ash into the air",
+            "source_url": "https://www.abc.net.au/news/2008-06-07/volcano-erupts-in-indonesia/2462796"
+          },
+          {
+            "quote": "hot clouds of debris ... rolled down its slopes",
+            "source_url": "https://www.abc.net.au/news/2008-06-07/volcano-erupts-in-indonesia/2462796"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.9,
+        "location": 0.55,
+        "summary_grounding": 0.7
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "low_confidence_location"
+      ],
+      "dedupe": {
+        "cluster_hint": "Mount Soputan eruption June 2008",
+        "fingerprint": "geological|mount soputan eruption in north sulawesi indonesia|2008-06-06"
+      }
+    },
+    {
+      "event_id": "geol_20080614_iwate_miyagi_nairiku_eq",
+      "title": "Iwate–Miyagi Nairiku earthquake (M7.2) in Japan",
+      "description": "A magnitude 7.2 earthquake struck inland areas spanning Iwate and Miyagi prefectures in Japan on June 14, 2008 (Japan time). Japan’s Earthquake Research Committee documented the main shock and related aftershock activity.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2008-06-13T23:43:45.000Z",
+        "event_end": "2008-06-14T23:59:59.000Z",
+        "reported_at": "2008-06-14T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2008-06-13T23:43:45.000Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Southern inland Iwate / Miyagi prefectures area, Japan",
+        "jurisdiction_level": "state",
+        "admin1": "Iwate",
+        "country": "JP",
+        "capital_used": "Morioka",
+        "lat": 39.7019,
+        "lon": 141.1545,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.5
+      },
+      "sources": [
+        {
+          "url": "https://www.jishin.go.jp/main/chousa/08jun_iwate_miyagi2/index-e.htm",
+          "source_name": "Earthquake Research Committee (Japan)",
+          "published_at": "2008-06-14T00:00:00Z",
+          "headline": "The Iwate-Miyagi Nairiku Earthquake in 2008",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.jishin.go.jp/main/chousa/08jul/index-e.htm",
+          "source_name": "Earthquake Research Committee (Japan)",
+          "published_at": "2008-07-01T00:00:00Z",
+          "headline": "Evaluation of seismic activity (July 2008)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Earthquake Research Committee (Japan)"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "The Iwate-Miyagi Nairiku Earthquake in 2008",
+            "source_url": "https://www.jishin.go.jp/main/chousa/08jun_iwate_miyagi2/index-e.htm"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.9,
+        "location": 0.5,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "Iwate–Miyagi Nairiku Earthquake June 2008",
+        "fingerprint": "geological|iwate miyagi nairiku earthquake m7.2 in japan|2008-06-13"
+      }
+    },
+    {
+      "event_id": "2008-06_fires_california-lightning-wildfires_airspage",
+      "title": "California lightning-sparked wildfires and smoke pollution (late June 2008)",
+      "description": "A NASA AIRS feature documents carbon monoxide associated with California wildfires in 2008, reflecting substantial smoke and air-pollution impacts during that wildfire period.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2008-01-01T00:00:00Z",
+        "time_confidence": 0.2,
+        "event_date_utc": null,
+        "event_date_precision": "unknown"
+      },
+      "location": {
+        "name": "California, United States",
+        "jurisdiction_level": "state",
+        "admin1": "California",
+        "country": "US",
+        "capital_used": "Sacramento",
+        "lat": 38.581571,
+        "lon": -121.4944,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.85
+      },
+      "sources": [
+        {
+          "url": "https://airs.jpl.nasa.gov/resources/129/carbon-monoxide-from-californias-wildfires-2008/",
+          "source_name": "NASA AIRS (JPL)",
+          "published_at": "2008-01-01T00:00:00Z",
+          "headline": "Carbon monoxide from California’s wildfires, 2008",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NASA",
+          "JPL",
+          "AIRS"
+        ],
+        "substances": [
+          "carbon monoxide"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Carbon monoxide from California’s wildfires, 2008",
+            "source_url": "https://airs.jpl.nasa.gov/resources/129/carbon-monoxide-from-californias-wildfires-2008/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.46,
+        "category": 0.7,
+        "location": 0.85,
+        "summary_grounding": 0.35
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "CA wildfires June 2008 lightning outbreak",
+        "fingerprint": "fires|california-us|2008-06|ca_wildfires_smoke_airs_129"
+      }
+    },
+    {
+      "event_id": "evt_20080609_epa_npdes_water_transfers_rule_announcement",
+      "title": "EPA announces final Clean Water Act NPDES Water Transfers Rule",
+      "description": "EPA announced a final rule clarifying that Clean Water Act NPDES permits are not required for certain transfers of water between water bodies. The announcement notes limits and that states and tribes may address water transfers under their own authorities.",
+      "category_primary": "policy_regulation",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "2008-06-09T00:00:00.000Z",
+        "event_end": "2008-06-09T23:59:59.000Z",
+        "reported_at": "2008-06-09T00:00:00.000Z",
+        "time_confidence": 0.8,
+        "event_date_utc": "2008-06-09T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Washington, D.C., United States",
+        "jurisdiction_level": "city",
+        "admin1": "DC",
+        "country": "US",
+        "capital_used": null,
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.epa.gov/archive/epapages/newsroom_archive/newsreleases/66d1aca0a9c7030d852574630051e99b.html",
+          "source_name": "U.S. Environmental Protection Agency (archive)",
+          "published_at": "2008-06-09T00:00:00.000Z",
+          "headline": "EPA announces the final NPDES Water Transfers Rule",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Environmental Protection Agency (EPA)"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "EPA announced a final rule clarifying that Clean Water Act NPDES permits are not required for qualifying transfers of water between water bodies.",
+            "source_url": "https://www.epa.gov/archive/epapages/newsroom_archive/newsreleases/66d1aca0a9c7030d852574630051e99b.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.9,
+        "location": 0.6,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "low_confidence_location"
+      ],
+      "dedupe": {
+        "cluster_hint": "epa_npdes_water_transfers_rule_2008_06",
+        "fingerprint": "epa_npdes_water_transfers_rule|washington_dc|2008-06-09"
+      }
+    },
+    {
+      "event_id": "evt_20080613_fr_npdes_water_transfers_rule_publication",
+      "title": "Federal Register publishes EPA final NPDES Water Transfers Rule (FR Doc. E8-13360)",
+      "description": "The Federal Register published EPA’s final NPDES Water Transfers Rule (FR Doc. E8-13360) on June 13, 2008. The notice states that for judicial review purposes the action is considered issued as of 1 p.m. EDT on June 27, 2008.",
+      "category_primary": "policy_regulation",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "2008-06-13T00:00:00.000Z",
+        "event_end": "2008-06-13T23:59:59.000Z",
+        "reported_at": "2008-06-13T00:00:00.000Z",
+        "time_confidence": 0.85,
+        "event_date_utc": "2008-06-13T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, D.C.",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.8
+      },
+      "sources": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/FR-2008-06-13/html/E8-13360.htm",
+          "source_name": "Federal Register / GovInfo",
+          "published_at": "2008-06-13T00:00:00.000Z",
+          "headline": "E8-13360",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Environmental Protection Agency (EPA)",
+          "Federal Register"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "The final rule is published in the Federal Register on June 13, 2008.",
+            "source_url": "https://www.govinfo.gov/content/pkg/FR-2008-06-13/html/E8-13360.htm"
+          },
+          {
+            "quote": "For judicial review purposes, this action is considered issued as of 1 p.m. EDT on June 27, 2008.",
+            "source_url": "https://www.govinfo.gov/content/pkg/FR-2008-06-13/html/E8-13360.htm"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.78,
+        "category": 0.9,
+        "location": 0.85,
+        "summary_grounding": 0.75
+      },
+      "quality_flags": [
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "epa_npdes_water_transfers_rule_2008_06",
+        "fingerprint": "fr_e8-13360_npdes_water_transfers_rule|us|2008-06-13"
+      }
+    }
+  ]
+}

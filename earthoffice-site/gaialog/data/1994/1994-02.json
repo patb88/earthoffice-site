@@ -1,0 +1,977 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_1994-02_normalize_2026-01-17T175706272Z",
+    "generated_utc": "2026-01-17T17:57:06.272Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "1994-02",
+    "window": {
+      "start_utc": "1994-02-01T00:00:00.000Z",
+      "end_utc": "1994-02-28T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "evt_19940209_detroit_river_fuel_oil_leak_noaa_6988",
+      "title": "Fuel oil leak from Mistryski Power Plant line contaminates Detroit River",
+      "description": "A corroded supply line at the Mistryski Power Plant leaked No. 4 fuel oil into a storm sewer that discharged to the Detroit River. Ice cover on the river constrained response and recovery operations.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1994-02-09T12:00:00Z",
+        "event_end": "1994-02-10T12:00:00Z",
+        "reported_at": "1994-02-09T12:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1994-02-09T12:00:00Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Detroit River, Detroit, Michigan, USA",
+        "jurisdiction_level": "site",
+        "admin1": "Michigan",
+        "country": "US",
+        "capital_used": null,
+        "lat": 42.3314,
+        "lon": -83.0458,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://incidentnews.noaa.gov/incident/6988",
+          "source_name": "NOAA IncidentNews",
+          "published_at": "1994-02-09T12:00:00Z",
+          "headline": "Incident 6988",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00Z",
+          "canonical_url": "https://incidentnews.noaa.gov/incident/6988"
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Mistryski Power Plant",
+          "NOAA"
+        ],
+        "substances": [
+          "No. 4 fuel oil"
+        ],
+        "ecosystems": [
+          "Detroit River"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "A corroded 10-inch supply line ... leaked fuel oil into a storm sewer and then the Detroit River.",
+            "source_url": "https://incidentnews.noaa.gov/incident/6988"
+          },
+          {
+            "quote": "Response and recovery were constrained by ice conditions.",
+            "source_url": "https://incidentnews.noaa.gov/incident/6988"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.75,
+        "location": 0.55,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "NOAA_IncidentNews_6988_Detroit_River_fuel_oil",
+        "fingerprint": "fp_19940209_detroit_river_detroit_mi_fuel_oil"
+      }
+    },
+    {
+      "event_id": "weather_climate_19940209_ice_storm_nashville",
+      "title": "Ice storm impacts Middle Tennessee (Nashville area)",
+      "description": "A freezing-rain event on Feb 9–10, 1994 produced widespread ice accretion in Middle Tennessee, contributing to downed trees and powerlines and widespread power outages in and around Nashville.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1994-02-09T12:00:00Z",
+        "event_end": "1994-02-10T12:00:00Z",
+        "reported_at": "1994-02-01T00:00:00.000Z",
+        "time_confidence": 0.65,
+        "event_date_utc": "1994-02-09T12:00:00Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Nashville, Tennessee, United States",
+        "jurisdiction_level": "city",
+        "admin1": "Tennessee",
+        "country": "US",
+        "capital_used": null,
+        "lat": 36.1627,
+        "lon": -86.7816,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.75
+      },
+      "sources": [
+        {
+          "url": "https://www.weather.gov/ohx/19940209",
+          "source_name": "US National Weather Service (NWS)",
+          "published_at": "1994-02-01T00:00:00.000Z",
+          "headline": "Ice Storm of February 9–10, 1994",
+          "byline": null,
+          "accessed_utc": "2026-01-17T01:20:43.357Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "US National Weather Service"
+        ],
+        "substances": [
+          "freezing rain",
+          "ice"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Ice Storm of February 9–10, 1994",
+            "source_url": "https://www.weather.gov/ohx/19940209"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.85,
+        "location": 0.75,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "1994-02-09_middle_tennessee_ice_storm",
+        "fingerprint": "fp_weather_climate_19940209_nashville_ice_storm"
+      }
+    },
+    {
+      "event_id": "weather_climate_19940208_delta_ice_storm",
+      "title": "Delta ice storm affects ArkLaMiss Delta",
+      "description": "A severe winter storm brought heavy freezing rain and significant ice accumulation across parts of Arkansas, Louisiana, and Mississippi in February 1994, causing extensive infrastructure damage and major disruptions including prolonged power outages and reported timber losses.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1994-02-08T12:00:00Z",
+        "event_end": "1994-02-11T12:00:00Z",
+        "reported_at": "1994-02-01T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1994-02-08T12:00:00Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Jackson, Mississippi, United States (ArkLaMiss Delta region)",
+        "jurisdiction_level": "city",
+        "admin1": "Mississippi",
+        "country": "US",
+        "capital_used": null,
+        "lat": 32.2988,
+        "lon": -90.1848,
+        "precision": "city",
+        "location_basis": "institution_proxy",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.weather.gov/jan/1994_deltaicestorm",
+          "source_name": "US National Weather Service (NWS)",
+          "published_at": "1994-02-01T00:00:00.000Z",
+          "headline": "1994 Delta Ice Storm",
+          "byline": null,
+          "accessed_utc": "2026-01-17T01:20:43.357Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://research.fs.usda.gov/treesearch/1873",
+          "source_name": "USDA Forest Service Research",
+          "published_at": "1994-02-01T00:00:00.000Z",
+          "headline": "Treesearch record 1873",
+          "byline": null,
+          "accessed_utc": "2026-01-17T01:20:43.357Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "US National Weather Service",
+          "USDA Forest Service"
+        ],
+        "substances": [
+          "freezing rain",
+          "ice"
+        ],
+        "ecosystems": [
+          "bottomland hardwood forests"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "1994 Delta Ice Storm",
+            "source_url": "https://www.weather.gov/jan/1994_deltaicestorm"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.58,
+        "category": 0.85,
+        "location": 0.55,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "1994-02_delta_ice_storm_arklamiss",
+        "fingerprint": "fp_weather_climate_19940208_delta_ice_storm"
+      }
+    },
+    {
+      "event_id": "weather_climate_19940209_cyclone_hollanda_mauritius",
+      "title": "Tropical Cyclone Hollanda affects Mauritius",
+      "description": "A tropical cyclone identified as Hollanda affected Mauritius during Feb 9–11, 1994 according to a Mauritius Meteorological Services historical cyclone listing.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1994-02-09T12:00:00Z",
+        "event_end": "1994-02-11T12:00:00Z",
+        "reported_at": "1994-02-01T00:00:00.000Z",
+        "time_confidence": 0.45,
+        "event_date_utc": "1994-02-09T12:00:00Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Port Louis, Mauritius",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "MU",
+        "capital_used": "Port Louis",
+        "lat": -20.1609,
+        "lon": 57.5012,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://www.metservice.mu/publications/list-of-historical-cyclones.php",
+          "source_name": "Mauritius Meteorological Services",
+          "published_at": "1994-02-01T00:00:00.000Z",
+          "headline": "List of historical cyclones",
+          "byline": null,
+          "accessed_utc": "2026-01-17T01:20:43.357Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Mauritius Meteorological Services"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "List of historical cyclones",
+            "source_url": "https://www.metservice.mu/publications/list-of-historical-cyclones.php"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.48,
+        "category": 0.8,
+        "location": 0.7,
+        "summary_grounding": 0.4
+      },
+      "quality_flags": [
+        "secondary_sources_only",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "1994-02_cyclone_hollanda_mauritius",
+        "fingerprint": "fp_weather_climate_19940209_hollanda_mauritius"
+      }
+    },
+    {
+      "event_id": "weather_climate_19940217_tropical_low_kimberley_pilbara",
+      "title": "Tropical low brings heavy rain along Kimberley–Pilbara coasts (WA)",
+      "description": "A tropical low tracked from off the north Kimberley coast southwestward and then along the Pilbara coast in Feb 1994, bringing heavy rain and fresh to strong winds, including a reported 24-hour rainfall total of 185 mm at Onslow (to 9am Feb 22).",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1994-02-17T12:00:00Z",
+        "event_end": "1994-02-22T12:00:00Z",
+        "reported_at": "1994-02-01T00:00:00.000Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "1994-02-17T12:00:00Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Onslow, Western Australia, Australia",
+        "jurisdiction_level": "city",
+        "admin1": "Western Australia",
+        "country": "AU",
+        "capital_used": null,
+        "lat": -21.6366,
+        "lon": 115.112,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.65
+      },
+      "sources": [
+        {
+          "url": "https://www.bom.gov.au/cyclone/history/wa/1994.shtml",
+          "source_name": "Australian Bureau of Meteorology",
+          "published_at": "1994-02-01T00:00:00.000Z",
+          "headline": "WA cyclone season history (1994)",
+          "byline": null,
+          "accessed_utc": "2026-01-17T01:20:43.357Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Australian Bureau of Meteorology"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "WA cyclone season history (1994)",
+            "source_url": "https://www.bom.gov.au/cyclone/history/wa/1994.shtml"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.85,
+        "location": 0.65,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "1994-02_wa_tropical_low_kimberley_pilbara",
+        "fingerprint": "fp_weather_climate_19940217_wa_tropical_low_onslow"
+      }
+    },
+    {
+      "event_id": "weather_climate_19940222_cyclone_theodore_south_pacific",
+      "title": "Severe Tropical Cyclone Theodore develops in the South Pacific (Feb 1994 phase)",
+      "description": "Tropical Cyclone Theodore developed from a tropical low on Feb 22, 1994 and intensified during late February in the South Pacific, as documented by the Australian Bureau of Meteorology.",
+      "category_primary": "weather_climate",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "1994-02-22T12:00:00Z",
+        "event_end": "1994-02-28T12:00:00Z",
+        "reported_at": "1994-02-01T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1994-02-22T12:00:00Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Honiara, Solomon Islands (development region proxy)",
+        "jurisdiction_level": "city",
+        "admin1": null,
+        "country": "SB",
+        "capital_used": null,
+        "lat": -9.4333,
+        "lon": 159.95,
+        "precision": "proxy",
+        "location_basis": "institution_proxy",
+        "location_confidence": 0.4
+      },
+      "sources": [
+        {
+          "url": "https://www.bom.gov.au/cyclone/history/theodore.shtml",
+          "source_name": "Australian Bureau of Meteorology",
+          "published_at": "1994-02-01T00:00:00.000Z",
+          "headline": "Tropical Cyclone Theodore",
+          "byline": null,
+          "accessed_utc": "2026-01-17T01:20:43.357Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Australian Bureau of Meteorology"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Tropical Cyclone Theodore",
+            "source_url": "https://www.bom.gov.au/cyclone/history/theodore.shtml"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.46,
+        "category": 0.8,
+        "location": 0.4,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "1994-02_cyclone_theodore_development",
+        "fingerprint": "fp_weather_climate_19940222_cyclone_theodore_proxy"
+      }
+    },
+    {
+      "event_id": "evt_19940206_fort_portal_uganda_quake_upi",
+      "title": "Fort Portal area earthquake reported in western Uganda",
+      "description": "An earthquake struck near Fort Portal in western Uganda, with reports describing deaths/injuries and damage in the region. The report situates the event within western Uganda near the East African Rift.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1994-02-06T12:00:00Z",
+        "event_end": "1994-02-06T12:00:00Z",
+        "reported_at": "1994-02-06T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1994-02-06T12:00:00Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Fort Portal area, Western Uganda",
+        "jurisdiction_level": "city",
+        "admin1": "Western Region",
+        "country": "UG",
+        "capital_used": null,
+        "lat": 0.671,
+        "lon": 30.275,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.upi.com/Archives/1994/02/06/Uganda-hit-by-earthquake/8883760510800/",
+          "source_name": "UPI",
+          "published_at": "1994-02-06T00:00:00Z",
+          "headline": "Uganda hit by earthquake",
+          "byline": null,
+          "accessed_utc": "2026-01-17T01:21:05.105Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "UPI"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Uganda hit by earthquake",
+            "source_url": "https://www.upi.com/Archives/1994/02/06/Uganda-hit-by-earthquake/8883760510800/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.58,
+        "category": 0.9,
+        "location": 0.6,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Fort Portal Uganda earthquake 1994-02-06",
+        "fingerprint": "fp_fort_portal_ug_1994-02-06"
+      }
+    },
+    {
+      "event_id": "1994-02_associated-octel-ellesmere-port_fire_release",
+      "title": "Associated Octel chemical release and pool fire at Ellesmere Port site",
+      "description": "At Associated Octel Company Ltd in Ellesmere Port, a reactor-solution release produced a moving white vapor cloud that travelled off site. Ethyl chloride vapors later ignited, causing a major pool fire at the base of a reactor vessel and additional fires involving process vessels.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1994-02-01T12:00:00Z",
+        "event_end": "1994-02-01T12:00:00Z",
+        "reported_at": "1994-02-01T12:00:00Z",
+        "time_confidence": 0.4,
+        "event_date_utc": "1994-02-01T12:00:00Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Associated Octel Company Ltd, Ellesmere Port, Cheshire, United Kingdom",
+        "jurisdiction_level": "site",
+        "admin1": "England",
+        "country": "GB",
+        "capital_used": null,
+        "lat": 53.2807,
+        "lon": -2.8982,
+        "precision": "exact",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.5
+      },
+      "sources": [
+        {
+          "url": "https://www.hse.gov.uk/comah/sragtech/caseoctel94.htm",
+          "source_name": "UK Health and Safety Executive (HSE)",
+          "published_at": "1994-02-01T12:00:00Z",
+          "headline": "Associated Octel Company Ltd (Ellesmere Port, Cheshire) 1994",
+          "byline": null,
+          "accessed_utc": "2026-01-17T01:21:28.957Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Associated Octel Company Ltd",
+          "UK Health and Safety Executive (HSE)"
+        ],
+        "substances": [
+          "ethyl chloride"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "release formed an off-site moving white vapour cloud",
+            "source_url": "https://www.hse.gov.uk/comah/sragtech/caseoctel94.htm"
+          },
+          {
+            "quote": "ethyl chloride vapours ignited producing a major fire",
+            "source_url": "https://www.hse.gov.uk/comah/sragtech/caseoctel94.htm"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.7,
+        "location": 0.5,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "HSE Octel 1994 Ellesmere Port fire release",
+        "fingerprint": "octel94-ellesmereport-1994-02-01"
+      }
+    },
+    {
+      "event_id": "1994-02-03_us_pacific-pocket-mouse_emergency-listing",
+      "title": "U.S. emergency rule listed the Pacific pocket mouse as endangered",
+      "description": "On February 3, 1994, the U.S. Fish and Wildlife Service published an emergency rule providing immediate Endangered Species Act protections to the Pacific pocket mouse. The rule was issued after the species’ rediscovery and cited severe, imminent threats to the only known population.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1994-02-03T00:00:00.000Z",
+        "time_confidence": 0.85,
+        "event_date_utc": "1994-02-03T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Dana Point Headlands, Orange County, California, USA",
+        "jurisdiction_level": "site",
+        "admin1": "California",
+        "country": "US",
+        "capital_used": null,
+        "lat": 33.4625,
+        "lon": -117.7008,
+        "precision": "exact",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/FR-1994-02-03/html/94-2463.htm",
+          "source_name": "Federal Register (via GovInfo)",
+          "published_at": "1994-02-03T00:00:00.000Z",
+          "headline": "94-2463",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Fish and Wildlife Service"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "coastal southern California"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "emergency rule ... provides immediate protection",
+            "source_url": "https://www.govinfo.gov/content/pkg/FR-1994-02-03/html/94-2463.htm"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.8,
+        "location": 0.55,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "location_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "US_FWS_ESA_emergency_rule_pacific_pocket_mouse_1994-02-03",
+        "fingerprint": "us_fws_esa_emergency_rule_pacific_pocket_mouse|dana_point_headlands_orange_county_ca|1994-02-03"
+      }
+    },
+    {
+      "event_id": "1994-02-04_us_tidewater-goby_endangered-final-rule",
+      "title": "U.S. final rule determined the tidewater goby to be endangered",
+      "description": "On February 4, 1994, the U.S. Fish and Wildlife Service published a final rule determining the tidewater goby to be endangered. The rule cited major historical loss of occurrences from coastal lagoons and ongoing threats to remaining habitat.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1994-02-04T00:00:00.000Z",
+        "time_confidence": 0.85,
+        "event_date_utc": "1994-02-04T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Sacramento, California, USA (U.S. Fish and Wildlife Service rulemaking; species occurs in coastal wetlands statewide)",
+        "jurisdiction_level": "state",
+        "admin1": "California",
+        "country": "US",
+        "capital_used": "Sacramento",
+        "lat": 38.5816,
+        "lon": -121.4944,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/FR-1994-02-04/html/94-2546.htm",
+          "source_name": "Federal Register (via GovInfo)",
+          "published_at": "1994-02-04T00:00:00.000Z",
+          "headline": "94-2546",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Fish and Wildlife Service"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "coastal wetlands",
+          "coastal lagoons"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "final rule ... determined ... endangered",
+            "source_url": "https://www.govinfo.gov/content/pkg/FR-1994-02-04/html/94-2546.htm"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.7,
+        "category": 0.85,
+        "location": 0.7,
+        "summary_grounding": 0.65
+      },
+      "quality_flags": [],
+      "dedupe": {
+        "cluster_hint": "US_FWS_ESA_final_rule_tidewater_goby_1994-02-04",
+        "fingerprint": "us_fws_esa_final_rule_tidewater_goby|california_capital_sacramento|1994-02-04"
+      }
+    },
+    {
+      "event_id": "1994-02-11_us_eo-12898_environmental-justice",
+      "title": "Clinton signs Executive Order 12898 directing federal environmental justice actions",
+      "description": "U.S. President Bill Clinton signed Executive Order 12898 directing federal agencies to identify and address disproportionately high and adverse human health or environmental effects of their programs on minority and low-income populations.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "1994-02-11T12:00:00Z",
+        "event_end": "1994-02-11T12:00:00Z",
+        "reported_at": "1994-02-16T00:00:00Z",
+        "time_confidence": 0.85,
+        "event_date_utc": "1994-02-11T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.9
+      },
+      "sources": [
+        {
+          "url": "https://www.presidency.ucsb.edu/documents/executive-order-12898-federal-actions-address-environmental-justice-minority-populations-and-low-income-populations",
+          "source_name": "The American Presidency Project (UCSB)",
+          "published_at": "1994-02-11T00:00:00Z",
+          "headline": "Executive Order 12898—Federal Actions to Address Environmental Justice in Minority Populations and Low-Income Populations",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.govinfo.gov/content/pkg/FR-1994-02-16/html/94-3685.htm",
+          "source_name": "Federal Register (via GovInfo)",
+          "published_at": "1994-02-16T00:00:00Z",
+          "headline": "Federal Actions to Address Environmental Justice in Minority Populations and Low-Income Populations",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://19january2017snapshot.epa.gov/laws-regulations/summary-executive-order-12898-federal-actions-address-environmental-justice_.html",
+          "source_name": "U.S. EPA (archived snapshot)",
+          "published_at": "2017-01-19T00:00:00Z",
+          "headline": "Summary of Executive Order 12898",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Federal Government",
+          "U.S. Environmental Protection Agency"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": [
+          "Bill Clinton"
+        ]
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "directs Federal agencies to identify and address... disproportionately high and adverse human health or environmental effects",
+            "source_url": "https://www.govinfo.gov/content/pkg/FR-1994-02-16/html/94-3685.htm"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.78,
+        "category": 0.9,
+        "location": 0.9,
+        "summary_grounding": 0.7
+      },
+      "quality_flags": [
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "EO 12898 Environmental Justice",
+        "fingerprint": "eo12898|US|1994-02-11"
+      }
+    },
+    {
+      "event_id": "1994-02-18_us_epa_rcra_treatability-studies_sample-exclusion_final-rule",
+      "title": "EPA finalizes RCRA rule revising treatability studies sample exclusion for contaminated media",
+      "description": "The U.S. Environmental Protection Agency issued a final rule under RCRA revising the treatability studies sample exclusion for contaminated media used in treatability studies, including changes to allowable quantities and certain time limits. The rule is described as effective February 18, 1994.",
+      "category_primary": "policy_regulation",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "1994-02-18T12:00:00Z",
+        "event_end": "1994-02-18T12:00:00Z",
+        "reported_at": "1994-02-18T00:00:00Z",
+        "time_confidence": 0.75,
+        "event_date_utc": "1994-02-18T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.9
+      },
+      "sources": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/FR-1994-02-18/html/94-3745.htm",
+          "source_name": "Federal Register (via GovInfo)",
+          "published_at": "1994-02-18T00:00:00Z",
+          "headline": "[Federal Register notice: RCRA treatability studies sample exclusion revisions]",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Environmental Protection Agency"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.85,
+        "location": 0.9,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "RCRA treatability studies sample exclusion final rule",
+        "fingerprint": "rcra_treatability_sample_exclusion|US|1994-02-18"
+      }
+    },
+    {
+      "event_id": "1994-02-23_us_epa_rcra_htmr-slag_conditional-exemption_proposed-rule",
+      "title": "EPA proposes restricting certain land application/placement uses of HTMR slag from hazardous wastes",
+      "description": "The U.S. Environmental Protection Agency proposed amending 40 CFR Part 266 to remove a conditional exemption for certain non-encapsulated uses of high temperature metals recovery (HTMR) slag residues derived from listed hazardous wastes when used in a manner constituting disposal. The proposal is described as a partial implementation of a 1993 settlement agreement involving NRDC and HWTC.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "1994-02-23T12:00:00Z",
+        "event_end": "1994-02-23T12:00:00Z",
+        "reported_at": "1994-02-23T00:00:00Z",
+        "time_confidence": 0.75,
+        "event_date_utc": "1994-02-23T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.9
+      },
+      "sources": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/FR-1994-02-23/html/94-4052.htm",
+          "source_name": "Federal Register (via GovInfo)",
+          "published_at": "1994-02-23T00:00:00Z",
+          "headline": "[Federal Register notice: proposed rule on HTMR slag conditional exemption]",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Environmental Protection Agency",
+          "Natural Resources Defense Council",
+          "Hazardous Waste Treatment Council"
+        ],
+        "substances": [
+          "K061",
+          "K062",
+          "F006",
+          "HTMR slag"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.64,
+        "category": 0.85,
+        "location": 0.9,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "RCRA Part 266 HTMR slag proposal",
+        "fingerprint": "rcra_htmr_slag_proposal|US|1994-02-23"
+      }
+    }
+  ]
+}

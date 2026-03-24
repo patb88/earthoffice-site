@@ -1,0 +1,863 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_1980-02_normalize_2026-01-18T090218309Z",
+    "generated_utc": "2026-01-18T09:02:18.309Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "1980-02",
+    "window": {
+      "start_utc": "1980-02-01T00:00:00.000Z",
+      "end_utc": "1980-02-29T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "1980-02-weather_climate-usgs-ofr80767-agua-fria-waddell-dam-flood",
+      "title": "Flooding along the Agua Fria River downstream of Waddell Dam after Lake Pleasant releases",
+      "description": "Heavy rains in mid-February 1980 generated major runoff into Lake Pleasant, prompting large reservoir releases from Waddell Dam. Flooding affected a long reach of the Agua Fria River channel downstream of the dam.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1980-02-01T00:00:00.000Z",
+        "time_confidence": 0.3,
+        "event_date_utc": null,
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Agua Fria River below Waddell Dam (Lake Pleasant), Maricopa County, Arizona, USA",
+        "jurisdiction_level": "site",
+        "admin1": "Arizona",
+        "country": "US",
+        "capital_used": null,
+        "lat": 33.8556,
+        "lon": -112.281,
+        "precision": "exact",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://pubs.usgs.gov/publication/ofr80767",
+          "source_name": "USGS Publications Warehouse",
+          "published_at": "1980-02-01T00:00:00.000Z",
+          "headline": "ofr80767",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Geological Survey (USGS)"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "river"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "prompting the largest reservoir release since Waddell Dam was built",
+            "source_url": "https://pubs.usgs.gov/publication/ofr80767"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.47,
+        "category": 0.7,
+        "location": 0.6,
+        "summary_grounding": 0.4
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "paywalled_or_partial",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "1980-02 US Southwest floods",
+        "fingerprint": "1980-02|agua fria river below waddell dam lake pleasant releases|us|weather_climate"
+      }
+    },
+    {
+      "event_id": "1980-02-weather_climate-usgs-ofr801005-socal-tijuana-river-floods",
+      "title": "Mid-February 1980 storms caused flooding in coastal Southern California and the Tijuana River basin",
+      "description": "A series of storms in mid-February 1980 produced prolonged high streamflows and damaging flooding across coastal Southern California. The Tijuana River experienced record flows and inundated extensive lowlands during separate flooding episodes.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1980-02-01T00:00:00.000Z",
+        "time_confidence": 0.3,
+        "event_date_utc": null,
+        "event_date_precision": "month"
+      },
+      "location": {
+        "name": "Coastal Southern California, USA and northern Baja California, Mexico (Tijuana River basin)",
+        "jurisdiction_level": "supranational",
+        "admin1": null,
+        "country": null,
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "proxy",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.35
+      },
+      "sources": [
+        {
+          "url": "https://pubs.usgs.gov/publication/ofr801005",
+          "source_name": "USGS Publications Warehouse",
+          "published_at": "1980-02-01T00:00:00.000Z",
+          "headline": "ofr801005",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Geological Survey (USGS)"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "river",
+          "coastal"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "record flooding on the Tijuana River",
+            "source_url": "https://pubs.usgs.gov/publication/ofr801005"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.38,
+        "category": 0.7,
+        "location": 0.35,
+        "summary_grounding": 0.35
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "paywalled_or_partial",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "1980-02 US Southwest floods",
+        "fingerprint": "1980-02|coastal southern california and northern baja california tijuana river basin|supranational|weather_climate"
+      }
+    },
+    {
+      "event_id": "1980-02-weather_climate-bom-enid-wa-landfall",
+      "title": "Severe Tropical Cyclone Enid made landfall on the northwest coast of Western Australia",
+      "description": "Severe Tropical Cyclone Enid intensified offshore north of Broome and crossed the northwest coast of Western Australia. The system caused severe damage at Wallal station and also damaged areas further inland, including Shay Gap.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1980-02-15T12:00:00Z",
+        "event_end": "1980-02-18T12:00:00Z",
+        "reported_at": "1980-02-01T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1980-02-16T00:00:00Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Northwest coast of Western Australia (near Wallal), Australia",
+        "jurisdiction_level": "state",
+        "admin1": "Western Australia",
+        "country": "AU",
+        "capital_used": "Perth",
+        "lat": -31.9523,
+        "lon": 115.8613,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.75
+      },
+      "sources": [
+        {
+          "url": "https://www.bom.gov.au/cyclone/history/enid.shtml",
+          "source_name": "Australian Bureau of Meteorology",
+          "published_at": "1980-02-01T00:00:00.000Z",
+          "headline": "Severe Tropical Cyclone Enid",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Australian Bureau of Meteorology"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "coastal"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "crossing the coast and causing severe damage at Wallal station",
+            "source_url": "https://www.bom.gov.au/cyclone/history/enid.shtml"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.8,
+        "location": 0.75,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "1980-02 Australian cyclones",
+        "fingerprint": "1980-02|severe tropical cyclone enid western australia|au|weather_climate"
+      }
+    },
+    {
+      "event_id": "1980-02-weather_climate-bom-simon-qld-coastal-impacts",
+      "title": "Severe Tropical Cyclone Simon affected the Queensland coast with damaging winds and erosion",
+      "description": "Tropical Cyclone Simon reached cyclone intensity in late February 1980, made landfall near Yeppoon, and then lingered offshore. It produced very strong winds and coastal impacts including shoreline erosion and minor property damage along parts of the Queensland coast.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1980-02-21T12:00:00Z",
+        "event_end": "1980-02-28T12:00:00Z",
+        "reported_at": "1980-02-01T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1980-02-24T00:00:00Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Queensland coast (Yeppoon–Bundaberg), Australia",
+        "jurisdiction_level": "state",
+        "admin1": "Queensland",
+        "country": "AU",
+        "capital_used": "Brisbane",
+        "lat": -27.4698,
+        "lon": 153.0251,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://www.bom.gov.au/cyclone/history/simon.shtml",
+          "source_name": "Australian Bureau of Meteorology",
+          "published_at": "1980-02-01T00:00:00.000Z",
+          "headline": "Severe Tropical Cyclone Simon",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Australian Bureau of Meteorology"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "coastal"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "made landfall near Yeppoon",
+            "source_url": "https://www.bom.gov.au/cyclone/history/simon.shtml"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.8,
+        "location": 0.7,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "1980-02 Australian cyclones",
+        "fingerprint": "1980-02|severe tropical cyclone simon queensland coast|au|weather_climate"
+      }
+    },
+    {
+      "event_id": "evt_19800224_kuril_islands_usgs",
+      "title": "Kuril Islands earthquake reported by USGS bulletin (Feb 1980)",
+      "description": "USGS Earthquake Information Bulletin coverage for January–February 1980 reports a major earthquake affecting the Kuril Islands region on February 24, 1980. The draft describes it as in the magnitude 7.0–7.9 range, but the specific magnitude and epicentral coordinates are not provided in the draft.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1980-02-24T12:00:00Z",
+        "time_confidence": 0.4,
+        "event_date_utc": "1980-02-24T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Kuril Islands, Russia",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "RU",
+        "capital_used": "Moscow",
+        "lat": 55.7558,
+        "lon": 37.6173,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.usgs.gov/publications/earthquakes-january-february-1980",
+          "source_name": "USGS",
+          "published_at": "1980-02-24T12:00:00Z",
+          "headline": "Earthquakes, January–February 1980",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://pubs.usgs.gov/publication/70169178",
+          "source_name": "USGS Publications Warehouse",
+          "published_at": "1980-02-24T12:00:00Z",
+          "headline": "Earthquakes, January–February 1980 (publication record)",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "USGS"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Earthquakes, January–February 1980",
+            "source_url": "https://www.usgs.gov/publications/earthquakes-january-february-1980"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.5,
+        "category": 0.8,
+        "location": 0.6,
+        "summary_grounding": 0.4
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "secondary_sources_only",
+        "paywalled_or_partial"
+      ],
+      "dedupe": {
+        "cluster_hint": "usgs_eib_jan_feb_1980_kuril",
+        "fingerprint": "kuril_islands_ru_1980-02-24_usgs"
+      }
+    },
+    {
+      "event_id": "evt_19800223_california_usgs",
+      "title": "Moderate California earthquake reported by USGS bulletin (Feb 1980)",
+      "description": "USGS Earthquake Information Bulletin coverage for January–February 1980 notes a moderate earthquake in California on February 23, 1980. The draft does not provide an epicenter, magnitude, or impacted communities beyond the state-level reference.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1980-02-23T12:00:00Z",
+        "time_confidence": 0.4,
+        "event_date_utc": "1980-02-23T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "California, United States",
+        "jurisdiction_level": "state",
+        "admin1": "California",
+        "country": "US",
+        "capital_used": "Sacramento",
+        "lat": 38.5816,
+        "lon": -121.4944,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://www.usgs.gov/publications/earthquakes-january-february-1980",
+          "source_name": "USGS",
+          "published_at": "1980-02-23T12:00:00Z",
+          "headline": "Earthquakes, January–February 1980",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://pubs.usgs.gov/publication/70169178",
+          "source_name": "USGS Publications Warehouse",
+          "published_at": "1980-02-23T12:00:00Z",
+          "headline": "Earthquakes, January–February 1980 (publication record)",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "USGS"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Earthquakes, January–February 1980",
+            "source_url": "https://www.usgs.gov/publications/earthquakes-january-february-1980"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.85,
+        "location": 0.75,
+        "summary_grounding": 0.4
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "secondary_sources_only",
+        "paywalled_or_partial"
+      ],
+      "dedupe": {
+        "cluster_hint": "usgs_eib_jan_feb_1980_california_1980-02-23",
+        "fingerprint": "california_us_1980-02-23_usgs"
+      }
+    },
+    {
+      "event_id": "evt_19800207_macquarie_island_region_usgs",
+      "title": "Macquarie Island region earthquake reported by USGS bulletin (Feb 1980)",
+      "description": "USGS Earthquake Information Bulletin coverage for January–February 1980 reports an earthquake in the Macquarie Island region during February 1980. The draft specifies magnitude 6.5 but does not include an epicenter or coordinates.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1980-02-07T12:00:00Z",
+        "time_confidence": 0.4,
+        "event_date_utc": "1980-02-07T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Macquarie Island region (Australia region)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "AU",
+        "capital_used": "Canberra",
+        "lat": -35.2809,
+        "lon": 149.13,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.4
+      },
+      "sources": [
+        {
+          "url": "https://www.usgs.gov/publications/earthquakes-january-february-1980",
+          "source_name": "USGS",
+          "published_at": "1980-02-07T12:00:00Z",
+          "headline": "Earthquakes, January–February 1980",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://pubs.usgs.gov/publication/70169178",
+          "source_name": "USGS Publications Warehouse",
+          "published_at": "1980-02-07T12:00:00Z",
+          "headline": "Earthquakes, January–February 1980 (publication record)",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "USGS"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Earthquakes, January–February 1980",
+            "source_url": "https://www.usgs.gov/publications/earthquakes-january-february-1980"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.45,
+        "category": 0.85,
+        "location": 0.35,
+        "summary_grounding": 0.35
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "secondary_sources_only",
+        "paywalled_or_partial",
+        "low_confidence_location"
+      ],
+      "dedupe": {
+        "cluster_hint": "usgs_eib_jan_feb_1980_macquarie",
+        "fingerprint": "macquarie_island_region_au_1980-02-07_usgs"
+      }
+    },
+    {
+      "event_id": "fires-au-sa-mount-lofty-ranges-1980-02-20",
+      "title": "Mount Lofty Ranges bushfire damages homes and farmland near Adelaide (Feb 1980)",
+      "description": "A bushfire in the Mount Lofty Ranges/Adelaide Hills area was fanned by hot winds and burned roughly 8,000 hectares in about a day. The fire destroyed dozens of homes and damaged farms, orchards, and market gardens, with other community buildings also impacted.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1980-02-20T12:00:00Z",
+        "event_end": "1980-02-20T12:00:00Z",
+        "reported_at": "1980-02-01T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1980-02-20T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Mount Lofty Ranges / Adelaide Hills, South Australia, Australia",
+        "jurisdiction_level": "state",
+        "admin1": "South Australia",
+        "country": "AU",
+        "capital_used": "Adelaide",
+        "lat": -34.9285,
+        "lon": 138.6007,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.65
+      },
+      "sources": [
+        {
+          "url": "https://knowledge.aidr.org.au/resources/bushfire-mount-lofty-ranges-south-australia-1980/",
+          "source_name": "Australian Disaster Resilience Knowledge Hub (AIDR)",
+          "published_at": "1980-02-01T00:00:00.000Z",
+          "headline": "Bushfire - Mount Lofty Ranges, South Australia 1980",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Australian Disaster Resilience Knowledge Hub (AIDR)"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "burning about 8,000 hectares in one day and destroying 51 homes",
+            "source_url": "https://knowledge.aidr.org.au/resources/bushfire-mount-lofty-ranges-south-australia-1980/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.85,
+        "location": 0.65,
+        "summary_grounding": 0.7
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "Mount Lofty Ranges bushfire Feb 1980",
+        "fingerprint": "fires|mount-lofty-ranges-adelaide-hills-south-australia|1980-02-20"
+      }
+    },
+    {
+      "event_id": "evt_19800221_us_fws_section6_grants",
+      "title": "USFWS announced additional FY1980 Section 6 grants for state endangered species programs",
+      "description": "The U.S. Fish & Wildlife Service announced an additional allocation of more than $2 million in federal funds for endangered species programs in 35 states (FY1980 Section 6 grants). The funding was described as supporting surveys, research, enforcement, and habitat protection actions for imperiled wildlife and plants.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "1980-02-21T12:00:00Z",
+        "event_end": "1980-02-21T12:00:00Z",
+        "reported_at": "1980-02-21T12:00:00Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "1980-02-21T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://www.fws.gov/sites/default/files/documents/historic-news-releases/1980/19800221.PDF",
+          "source_name": "U.S. Fish & Wildlife Service",
+          "published_at": "1980-02-21T12:00:00Z",
+          "headline": "Additional $2 Million to States for Endangered Species Programs Announced by U.S. Fish and Wildlife Service",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.fws.gov/press-release/1980-02/additional-2-million-states-endangered-species-programs-announced-us-fish-and-wildlife",
+          "source_name": "U.S. Fish & Wildlife Service",
+          "published_at": "1980-02-21T12:00:00Z",
+          "headline": "Additional $2 Million to States for Endangered Species Programs Announced by U.S. Fish and Wildlife",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Fish & Wildlife Service"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "additional allocation of over $2 million in federal funds for endangered species programs in 35 states",
+            "source_url": "https://www.fws.gov/sites/default/files/documents/historic-news-releases/1980/19800221.PDF"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.72,
+        "category": 0.75,
+        "location": 0.7,
+        "summary_grounding": 0.7
+      },
+      "quality_flags": [
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "USFWS Section 6 grants FY1980 announcement",
+        "fingerprint": "usfws_section6_grants_us_1980-02-21"
+      }
+    },
+    {
+      "event_id": "evt_19800227_us_esa_final_rules",
+      "title": "USFWS announced publication of final ESA rules for listing/delisting and critical habitat",
+      "description": "The U.S. Fish & Wildlife Service announced that final regulations implementing 1978 and 1979 amendments to the Endangered Species Act were published in the Federal Register. The announcement described procedures for listing, delisting, reclassification, and critical habitat determinations, including expanded opportunities for public participation.",
+      "category_primary": "policy_regulation",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "1980-02-27T12:00:00Z",
+        "event_end": "1980-02-27T12:00:00Z",
+        "reported_at": "1980-02-27T12:00:00Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "1980-02-27T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://www.fws.gov/sites/default/files/documents/historic-news-releases/1980/19800227.PDF",
+          "source_name": "U.S. Fish & Wildlife Service",
+          "published_at": "1980-02-27T12:00:00Z",
+          "headline": "Final Rules Adopted for Listing/Delisting Endangered Species",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.fws.gov/press-release/1980-02/final-rules-adopted-listing-delisting-endangered-species-february-27-1980",
+          "source_name": "U.S. Fish & Wildlife Service",
+          "published_at": "1980-02-27T12:00:00Z",
+          "headline": "Final Rules Adopted for Listing Delisting Endangered Species (February 27, 1980)",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Fish & Wildlife Service",
+          "U.S. Department of the Interior",
+          "U.S. Department of Commerce"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "final regulations implementing 1978 and 1979 amendments to the Endangered Species Act were published in the Federal Register",
+            "source_url": "https://www.fws.gov/sites/default/files/documents/historic-news-releases/1980/19800227.PDF"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.68,
+        "category": 0.6,
+        "location": 0.7,
+        "summary_grounding": 0.7
+      },
+      "quality_flags": [
+        "low_confidence_category",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "USFWS ESA final rules publication (Federal Register)",
+        "fingerprint": "usfws_esa_final_rules_us_1980-02-27"
+      }
+    },
+    {
+      "event_id": "ev_19800214_epa_alabama_wqs_45fr9910",
+      "title": "EPA promulgates federal water quality standards for Alabama navigable waters (45 FR 9910)",
+      "description": "The U.S. Environmental Protection Agency issued a Clean Water Act section 303(c)(4) final rule promulgating federal water quality standards applicable to navigable waters of the State of Alabama. The draft cites the Federal Register reference 45 FR 9910 dated February 14, 1980.",
+      "category_primary": "policy_regulation",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "1980-02-14T12:00:00Z",
+        "event_end": "1980-02-14T12:00:00Z",
+        "reported_at": "1980-02-14T12:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1980-02-14T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Alabama, United States (navigable waters)",
+        "jurisdiction_level": "state",
+        "admin1": "Alabama",
+        "country": "US",
+        "capital_used": "Montgomery",
+        "lat": 32.366805,
+        "lon": -86.299969,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://19january2021snapshot.epa.gov/wqs-tech/federally-promulgated-water-quality-standards-specific-states-territories-and-tribes-0_.html",
+          "source_name": "U.S. Environmental Protection Agency (EPA)",
+          "published_at": "1980-02-14T12:00:00Z",
+          "headline": "Federally Promulgated Water Quality Standards for Specific States, Territories, and Tribes",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.epa.gov/wqs-tech/federally-promulgated-water-quality-standards-specific-states-territories-and-tribes",
+          "source_name": "U.S. Environmental Protection Agency (EPA)",
+          "published_at": "1980-02-14T12:00:00Z",
+          "headline": "Federally Promulgated Water Quality Standards for Specific States, Territories, and Tribes",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Environmental Protection Agency (EPA)"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "navigable waters"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "EPA issued a ... final rule promulgating federal water quality standards applicable to navigable waters of the State of Alabama.",
+            "source_url": "https://www.epa.gov/wqs-tech/federally-promulgated-water-quality-standards-specific-states-territories-and-tribes"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.75,
+        "location": 0.7,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "secondary_sources_only",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "EPA federally promulgated water quality standards Alabama 45 FR 9910",
+        "fingerprint": "fp_19800214_epa_alabama_wqs_45fr9910"
+      }
+    }
+  ]
+}

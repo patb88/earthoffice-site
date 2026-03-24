@@ -1,0 +1,537 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_2012-12_normalize_2026-01-16T045113455Z",
+    "generated_utc": "2026-01-16T04:51:13.455Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "2012-12",
+    "window": {
+      "start_utc": "2012-12-01T00:00:00.000Z",
+      "end_utc": "2012-12-31T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "ev_20121231_zhuozhang_aniline_leak_china",
+      "title": "Aniline leak contaminates Zhuozhang River; downstream cities shut water supplies",
+      "description": "Reports say an aniline leak at Tianji Coal Chemical Industry Group facilities was discovered on December 31, 2012 and polluted the Zhuozhang River system. Downstream areas reportedly halted or restricted water supplies and issued public advisories in response.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2012-12-31T00:00:00.000Z",
+        "event_end": "2012-12-31T23:59:59.000Z",
+        "reported_at": "2013-01-07T00:00:00Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2012-12-31T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Zhuozhang River basin (Changzhi, Shanxi → Handan, Hebei), China",
+        "jurisdiction_level": "site",
+        "admin1": null,
+        "country": "CN",
+        "capital_used": null,
+        "lat": 36.1958,
+        "lon": 113.1165,
+        "precision": "proxy",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.45
+      },
+      "sources": [
+        {
+          "url": "https://www.chinadaily.com.cn/kindle/2013-01/07/content_16090694.htm",
+          "source_name": "China Daily",
+          "published_at": "2013-01-07T00:00:00Z",
+          "headline": "Aniline leak contaminates Zhuozhang River; downstream cities shut water supplies",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Tianji Coal Chemical Industry Group"
+        ],
+        "substances": [
+          "aniline"
+        ],
+        "ecosystems": [
+          "river"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "workers found an aniline leak on Dec 31",
+            "source_url": "https://www.chinadaily.com.cn/kindle/2013-01/07/content_16090694.htm"
+          },
+          {
+            "quote": "downstream cities cut off water supplies",
+            "source_url": "https://www.chinadaily.com.cn/kindle/2013-01/07/content_16090694.htm"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.8,
+        "location": 0.45,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Zhuozhang River aniline spill Dec 2012",
+        "fingerprint": "fp_zhuozhang_aniline_2012-12-31_cn"
+      }
+    },
+    {
+      "event_id": "ev_20121212_tewksbury_cd109_sealed_source_ma",
+      "title": "Massachusetts regulators report potential leaking/contaminated Cd-109 sealed source",
+      "description": "A U.S. NRC event status report indicates Massachusetts regulators notified NRC that a received cadmium-109 sealed source might be leaking or contaminated. The report states the source was to be returned to the vendor and that there was no indication of contamination beyond the source itself.",
+      "category_primary": "pollution_contamination",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "2012-12-12T00:00:00.000Z",
+        "event_end": "2012-12-13T23:59:59.000Z",
+        "reported_at": "2012-12-26T00:00:00Z",
+        "time_confidence": 0.65,
+        "event_date_utc": "2012-12-12T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Tewksbury, Massachusetts, USA",
+        "jurisdiction_level": "city",
+        "admin1": "MA",
+        "country": "US",
+        "capital_used": null,
+        "lat": 42.6106,
+        "lon": -71.2342,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.75
+      },
+      "sources": [
+        {
+          "url": "https://www.nrc.gov/reading-rm/doc-collections/event-status/event/2012/20121226en.html",
+          "source_name": "U.S. Nuclear Regulatory Commission (NRC)",
+          "published_at": "2012-12-26T00:00:00Z",
+          "headline": "Event Notification Report (Dec 26, 2012)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Nuclear Regulatory Commission",
+          "Massachusetts regulators"
+        ],
+        "substances": [
+          "cadmium-109 (Cd-109)"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "received sealed source might be leaking/contaminated",
+            "source_url": "https://www.nrc.gov/reading-rm/doc-collections/event-status/event/2012/20121226en.html"
+          },
+          {
+            "quote": "no evidence of contamination beyond the source itself",
+            "source_url": "https://www.nrc.gov/reading-rm/doc-collections/event-status/event/2012/20121226en.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.68,
+        "category": 0.7,
+        "location": 0.8,
+        "summary_grounding": 0.7
+      },
+      "quality_flags": [
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "NRC MA sealed source Cd-109 Dec 2012",
+        "fingerprint": "fp_tewksbury_cd109_2012-12-12_us"
+      }
+    },
+    {
+      "event_id": "2012-12_weather_climate_typhoon-bopha_pH-mindanao",
+      "title": "Typhoon Bopha (Pablo) makes catastrophic landfall in the southern Philippines",
+      "description": "Super Typhoon Bopha struck the southern Philippines in early December 2012, bringing extreme winds and heavy rainfall. The storm triggered widespread flooding and landslides with major casualties and damage.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2012-12-04T00:00:00.000Z",
+        "event_end": "2012-12-09T23:59:59.000Z",
+        "reported_at": "2012-12-04T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2012-12-04T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Mindanao and surrounding areas, Philippines",
+        "jurisdiction_level": "state",
+        "admin1": "Mindanao",
+        "country": "PH",
+        "capital_used": "Quezon City",
+        "lat": 14.6760413,
+        "lon": 121.0437003,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.5
+      },
+      "sources": [
+        {
+          "url": "https://www.history.com/this-day-in-history/december-4/typhoon-bopha-pablo-philippines",
+          "source_name": "History.com",
+          "published_at": "2012-12-04T00:00:00.000Z",
+          "headline": "Typhoon Bopha (Pablo) makes catastrophic landfall in the southern Philippines",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Super Typhoon Bopha struck the southern Philippines... producing extreme winds and heavy rainfall.",
+            "source_url": "https://www.history.com/this-day-in-history/december-4/typhoon-bopha-pablo-philippines"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.8,
+        "location": 0.45,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "Typhoon Bopha (Pablo) Philippines Dec 2012",
+        "fingerprint": "b05fcb52e7c4d0a3"
+      }
+    },
+    {
+      "event_id": "2012-12_weather_climate_wukong_ph-central",
+      "title": "Tropical Storm Wukong (Quinta) triggers flooding and landslides across central Philippines",
+      "description": "Late December 2012 Tropical Storm Wukong brought heavy rains to parts of the Philippines. Reports described flooding and landslides, displacement of residents, and local disaster declarations.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2012-12-26T00:00:00.000Z",
+        "event_end": "2012-12-29T23:59:59.000Z",
+        "reported_at": "2012-12-28T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2012-12-28T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Central Philippines (incl. Iloilo, Aklan, Capiz, Palawan), Philippines",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "PH",
+        "capital_used": "Manila",
+        "lat": 14.5995124,
+        "lon": 120.9842195,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.abc.net.au/news/2012-12-28/an-typhoon-lashes-philippines/4445490",
+          "source_name": "ABC News (Australia)",
+          "published_at": "2012-12-28T00:00:00.000Z",
+          "headline": "An typhoon lashes Philippines",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Heavy rains caused flooding and landslides... displaced tens of thousands.",
+            "source_url": "https://www.abc.net.au/news/2012-12-28/an-typhoon-lashes-philippines/4445490"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.65,
+        "category": 0.85,
+        "location": 0.6,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "location_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "Tropical Storm Wukong (Quinta) Philippines Dec 2012",
+        "fingerprint": "5b4fc3d55c91f07e"
+      }
+    },
+    {
+      "event_id": "2012-12_weather_climate_winter-storm_us-wi",
+      "title": "Major Great Lakes winter storm produces blizzard/near-blizzard conditions in Wisconsin",
+      "description": "A winter storm affected southeast Wisconsin on December 20, 2012, bringing heavy wet snow and strong winds. The National Weather Service reported hazardous travel and widespread impacts in the region.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2012-12-20T00:00:00.000Z",
+        "event_end": "2012-12-20T23:59:59.000Z",
+        "reported_at": "2012-12-20T00:00:00.000Z",
+        "time_confidence": 0.8,
+        "event_date_utc": "2012-12-20T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Wisconsin (Great Lakes region), USA",
+        "jurisdiction_level": "state",
+        "admin1": "Wisconsin",
+        "country": "US",
+        "capital_used": "Madison",
+        "lat": 43.074761,
+        "lon": -89.38484,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.85
+      },
+      "sources": [
+        {
+          "url": "https://www.weather.gov/mkx/122012-winterstorm",
+          "source_name": "National Weather Service (MKX)",
+          "published_at": "2012-12-20T00:00:00.000Z",
+          "headline": "12/20/2012 Winter Storm",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "National Weather Service"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "A major winter storm brought heavy wet snow and strong winds... hazardous travel.",
+            "source_url": "https://www.weather.gov/mkx/122012-winterstorm"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.78,
+        "category": 0.9,
+        "location": 0.85,
+        "summary_grounding": 0.7
+      },
+      "quality_flags": [
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "Wisconsin winter storm Dec 20 2012",
+        "fingerprint": "a3e6f2f6a29d2d2d"
+      }
+    },
+    {
+      "event_id": "geological-2012-12-14-baja-california-offshore-quake",
+      "title": "Offshore M6.3 earthquake near Baja California felt in Southern California",
+      "description": "An offshore earthquake reported as magnitude 6.3 struck off the Baja California coast on December 14, 2012, and was felt in parts of Southern California. Coverage described the quake as centered offshore west-southwest of the San Diego/Southern California region.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2012-12-14T10:36:01.000Z",
+        "event_end": "2012-12-14T11:36:01.000Z",
+        "reported_at": "2012-12-14T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2012-12-14T10:36:01.000Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Off Baja California (felt in Southern California), USA/Mexico",
+        "jurisdiction_level": "supranational",
+        "admin1": null,
+        "country": null,
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "supranational",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.4
+      },
+      "sources": [
+        {
+          "url": "https://www.kpbs.org/news/environment/2012/12/14/63-magnitude-earthquake-strikes-san-diego-coast",
+          "source_name": "KPBS",
+          "published_at": "2012-12-14T00:00:00Z",
+          "headline": "6.3-Magnitude Earthquake Strikes San Diego Coast",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://watchers.news/2012/12/14/strong-earthquake-m-6-4-struck-of-the-coast-of-baja-california-usa/",
+          "source_name": "The Watchers",
+          "published_at": "2012-12-14T00:00:00Z",
+          "headline": "Strong earthquake M 6.4 struck off the coast of Baja California, USA",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "63 magnitude earthquake strikes san diego coast",
+            "source_url": "https://www.kpbs.org/news/environment/2012/12/14/63-magnitude-earthquake-strikes-san-diego-coast"
+          },
+          {
+            "quote": "strong earthquake m 6 4 struck off the coast of baja california",
+            "source_url": "https://watchers.news/2012/12/14/strong-earthquake-m-6-4-struck-of-the-coast-of-baja-california-usa/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.8,
+        "location": 0.4,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "2012-12-14-baja-california-offshore-earthquake",
+        "fingerprint": "geological|2012-12-14|off-baja-california"
+      }
+    },
+    {
+      "event_id": "evt_20121220_us_dc_circuit_upholds_epa_carbon_controls",
+      "title": "D.C. Circuit upholds EPA controls on carbon pollution and other gases",
+      "description": "A press release reports that on December 20, 2012, the U.S. Court of Appeals for the D.C. Circuit rejected legal challenges and upheld EPA actions limiting carbon pollution and other harmful gases under the Clean Air Act.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2012-12-20T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2012-12-20T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Washington, D.C., USA",
+        "jurisdiction_level": "city",
+        "admin1": null,
+        "country": "US",
+        "capital_used": null,
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.85
+      },
+      "sources": [
+        {
+          "url": "https://earthjustice.org/press/2012/court-upholds-controls-on-carbon-pollution-other-harmful-gases",
+          "source_name": "Earthjustice",
+          "published_at": "2012-12-20T00:00:00.000Z",
+          "headline": "Court upholds controls on carbon pollution, other harmful gases",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Court of Appeals for the D.C. Circuit",
+          "U.S. Environmental Protection Agency (EPA)"
+        ],
+        "substances": [
+          "carbon pollution"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Court upholds controls on carbon pollution, other harmful gases",
+            "source_url": "https://earthjustice.org/press/2012/court-upholds-controls-on-carbon-pollution-other-harmful-gases"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.68,
+        "category": 0.85,
+        "location": 0.85,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "possible_opinion_or_advocacy",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "dc_circuit_epa_carbon_controls_2012-12-20",
+        "fingerprint": "fp_dc_circuit_epa_carbon_controls_2012-12-20_washington_dc"
+      }
+    }
+  ]
+}

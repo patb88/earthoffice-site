@@ -1,0 +1,690 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Overlay Jiggle Lab (Blender Edition)</title>
+  <style>
+    :root { --panel-w: 400px; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      background: #111;
+      color: #eee;
+      display: grid;
+      grid-template-columns: var(--panel-w) 1fr;
+      height: 100vh;
+    }
+    .panel {
+      padding: 16px;
+      border-right: 1px solid #2a2a2a;
+      background: #161616;
+      overflow: auto;
+      transition: transform 250ms ease;
+    }
+    .stageWrap { display: grid; place-items: center; padding: 16px; overflow: hidden; }
+
+    /* Important: no checkerboard; solid base only */
+    .stage {
+      width: min(900px, calc(100vw - var(--panel-w) - 48px));
+      height: min(700px, calc(100vh - 48px));
+      border: 1px solid #2a2a2a;
+      border-radius: 10px;
+      position: relative;
+      overflow: hidden;
+      background: #000;
+    }
+
+    .layer {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      transform-origin: center center;
+      will-change: transform;
+      user-select: none;
+      pointer-events: none;
+      max-width: none;
+      max-height: none;
+    }
+
+    .row { margin: 12px 0; }
+    label { display: block; font-size: 13px; color: #cfcfcf; margin-bottom: 6px; }
+    input[type="file"], select { width: 100%; }
+    input[type="range"] { width: 100%; }
+    .val { font-variant-numeric: tabular-nums; color: #9ad; float: right; }
+    .btnRow { display: flex; gap: 8px; margin-top: 12px; }
+    button {
+      flex: 1;
+      padding: 10px 12px;
+      border-radius: 8px;
+      border: 1px solid #2a2a2a;
+      background: #222;
+      color: #eee;
+      cursor: pointer;
+    }
+    button:hover { background: #2a2a2a; }
+    .hint { font-size: 12px; color: #aaa; line-height: 1.35; }
+    .divider { height: 1px; background: #2a2a2a; margin: 16px 0; }
+    .toggle { display: flex; align-items: center; gap: 8px; font-size: 13px; color: #cfcfcf; }
+    .twoCol { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+
+    /* --- Auto-hide control panel --- */
+    body.panelHidden .panel {
+      transform: translateX(calc(-1 * var(--panel-w)));
+    }
+
+    /* Small floating button to restore controls */
+    #showControlsBtn {
+      position: fixed;
+      left: 12px;
+      top: 12px;
+      z-index: 9999;
+      padding: 8px 10px;
+      border-radius: 10px;
+      border: 1px solid #2a2a2a;
+      background: rgba(34,34,34,0.85);
+      color: #eee;
+      cursor: pointer;
+      display: none; /* shown only when panel is hidden */
+      backdrop-filter: blur(6px);
+    }
+    body.panelHidden #showControlsBtn { display: block; }
+
+    /* --- Mobile responsive layout --- */
+    @media (max-width: 900px) {
+      body {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr;
+      }
+      .panel {
+        border-right: none;
+        border-bottom: 1px solid #2a2a2a;
+        transform: none !important; /* don't slide away by default on mobile */
+        max-height: 45vh;
+      }
+      .stageWrap { padding: 10px; }
+      .stage {
+        width: calc(100vw - 20px);
+        height: calc(55vh - 20px);
+      }
+      #showControlsBtn { top: 8px; left: 8px; }
+    }
+  </style>
+</head>
+<body>
+  <button id="showControlsBtn" type="button">Show Controls</button>
+
+  <div class="panel">
+    <h2 style="margin: 0 0 8px 0; font-size: 18px;">Overlay Jiggle Lab — Blender</h2>
+    <div class="hint">
+      Background is static. Bottom and top layers animate. Top blend mode defaults to <b>difference</b>.
+      Added: Bottom blend + opacity controls.
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="row">
+      <label>Background Image (static)</label>
+      <input id="bgFile" type="file" accept="image/*" />
+    </div>
+
+    <div class="row">
+      <label>Background Fit</label>
+      <select id="bgFit">
+        <option value="cover" selected>cover</option>
+        <option value="contain">contain</option>
+        <option value="100% 100%">stretch</option>
+        <option value="tile">tile</option>
+      </select>
+    </div>
+
+    <div class="row">
+      <label>Background Position</label>
+      <select id="bgPos">
+        <option value="center" selected>center</option>
+        <option value="top">top</option>
+        <option value="bottom">bottom</option>
+        <option value="left">left</option>
+        <option value="right">right</option>
+        <option value="top left">top left</option>
+        <option value="top right">top right</option>
+        <option value="bottom left">bottom left</option>
+        <option value="bottom right">bottom right</option>
+      </select>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="row">
+      <label>Bottom Image</label>
+      <input id="bottomFile" type="file" accept="image/*" />
+    </div>
+
+    <div class="row">
+      <label>Top Image</label>
+      <input id="topFile" type="file" accept="image/*" />
+    </div>
+
+    <div class="divider"></div>
+
+    <h3 style="margin: 0 0 6px 0; font-size: 14px;">Bottom Layer Controls</h3>
+
+    <div class="row">
+      <label>Bottom Blend Mode</label>
+      <select id="bottomBlendMode">
+        <option value="normal" selected>normal</option>
+        <option value="multiply">multiply</option>
+        <option value="screen">screen</option>
+        <option value="overlay">overlay</option>
+        <option value="darken">darken</option>
+        <option value="lighten">lighten</option>
+        <option value="soft-light">soft-light</option>
+        <option value="hard-light">hard-light</option>
+        <option value="difference">difference</option>
+        <option value="exclusion">exclusion</option>
+        <option value="color-dodge">color-dodge</option>
+        <option value="color-burn">color-burn</option>
+        <option value="hue">hue</option>
+        <option value="saturation">saturation</option>
+        <option value="color">color</option>
+        <option value="luminosity">luminosity</option>
+      </select>
+    </div>
+
+    <div class="row">
+      <label>Bottom Opacity <span class="val" id="bottomOpacityVal">1.00</span></label>
+      <input id="bottomOpacity" type="range" min="0" max="1" step="0.01" value="1" />
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="row">
+      <label>Top Blend Mode</label>
+      <select id="blendMode">
+        <option value="normal">normal</option>
+        <option value="multiply">multiply</option>
+        <option value="screen">screen</option>
+        <option value="overlay">overlay</option>
+        <option value="darken">darken</option>
+        <option value="lighten">lighten</option>
+        <option value="difference">difference</option>
+        <option value="exclusion">exclusion</option>
+        <option value="soft-light">soft-light</option>
+        <option value="hard-light">hard-light</option>
+      </select>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="row">
+      <label>Motion Mode</label>
+      <select id="motionMode">
+        <option value="random">Random (jitter)</option>
+        <option value="sine">Sine (smooth drift)</option>
+        <option value="noise">Noise-lite (organic wander)</option>
+      </select>
+    </div>
+
+    <div class="row">
+      <label>Refresh / Tick (ms) <span class="val" id="tickVal">60</span></label>
+      <input id="tickMs" type="range" min="16" max="1000" step="1" value="60" />
+    </div>
+
+    <div class="divider"></div>
+
+    <h3 style="margin: 0 0 6px 0; font-size: 14px;">Translation Amplitude (px)</h3>
+    <div class="twoCol">
+      <div class="row">
+        <label>Top X <span class="val" id="topAxVal">10</span></label>
+        <input id="topAx" type="range" min="0" max="150" step="1" value="10" />
+      </div>
+      <div class="row">
+        <label>Top Y <span class="val" id="topAyVal">6</span></label>
+        <input id="topAy" type="range" min="0" max="150" step="1" value="6" />
+      </div>
+      <div class="row">
+        <label>Bottom X <span class="val" id="botAxVal">10</span></label>
+        <input id="botAx" type="range" min="0" max="150" step="1" value="10" />
+      </div>
+      <div class="row">
+        <label>Bottom Y <span class="val" id="botAyVal">3</span></label>
+        <input id="botAy" type="range" min="0" max="150" step="1" value="3" />
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <h3 style="margin: 0 0 6px 0; font-size: 14px;">Rotation Amplitude (deg)</h3>
+    <div class="twoCol">
+      <div class="row">
+        <label>Top rot <span class="val" id="topRotVal">2</span></label>
+        <input id="topRot" type="range" min="0" max="45" step="0.1" value="2" />
+      </div>
+      <div class="row">
+        <label>Bottom rot <span class="val" id="botRotVal">0.8</span></label>
+        <input id="botRot" type="range" min="0" max="45" step="0.1" value="0.8" />
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <h3 style="margin: 0 0 6px 0; font-size: 14px;">Non-random Motion Controls</h3>
+
+    <div class="row">
+      <label>Sine speed (cycles/sec) <span class="val" id="sineHzVal">1.20</span></label>
+      <input id="sineHz" type="range" min="0.01" max="3" step="0.01" value="1.2" />
+    </div>
+
+    <div class="twoCol">
+      <div class="row">
+        <label>Noise drift speed <span class="val" id="noiseSpeedVal">1.00</span></label>
+        <input id="noiseSpeed" type="range" min="0" max="5" step="0.05" value="1.0" />
+      </div>
+      <div class="row">
+        <label>Noise smoothing <span class="val" id="noiseSmoothVal">0.85</span></label>
+        <input id="noiseSmooth" type="range" min="0" max="0.98" step="0.01" value="0.85" />
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="row toggle">
+      <input id="seeded" type="checkbox" />
+      <label style="margin:0;">Repeatable randomness (seeded)</label>
+    </div>
+
+    <div class="btnRow">
+      <button id="startBtn">Start</button>
+      <button id="stopBtn">Stop</button>
+    </div>
+
+    <div class="hint" style="margin-top: 10px;">
+      Controls auto-hide after 30 seconds. Restore via button, move cursor to left edge, or press <b>H</b>.
+    </div>
+  </div>
+
+  <div class="stageWrap">
+    <div class="stage" id="stage">
+      <img id="bottomImg" class="layer" alt="bottom layer" />
+      <img id="topImg" class="layer" alt="top layer" />
+    </div>
+  </div>
+
+<script>
+(() => {
+  const stage = document.getElementById("stage");
+  const els = {
+    bgFile: document.getElementById("bgFile"),
+    bgFit: document.getElementById("bgFit"),
+    bgPos: document.getElementById("bgPos"),
+
+    bottomFile: document.getElementById("bottomFile"),
+    topFile: document.getElementById("topFile"),
+    bottomImg: document.getElementById("bottomImg"),
+    topImg: document.getElementById("topImg"),
+
+    bottomBlendMode: document.getElementById("bottomBlendMode"),
+    bottomOpacity: document.getElementById("bottomOpacity"),
+    bottomOpacityVal: document.getElementById("bottomOpacityVal"),
+
+    blendMode: document.getElementById("blendMode"),
+    motionMode: document.getElementById("motionMode"),
+
+    tickMs: document.getElementById("tickMs"),
+    tickVal: document.getElementById("tickVal"),
+
+    topAx: document.getElementById("topAx"),
+    topAy: document.getElementById("topAy"),
+    botAx: document.getElementById("botAx"),
+    botAy: document.getElementById("botAy"),
+
+    topRot: document.getElementById("topRot"),
+    botRot: document.getElementById("botRot"),
+
+    sineHz: document.getElementById("sineHz"),
+    noiseSpeed: document.getElementById("noiseSpeed"),
+    noiseSmooth: document.getElementById("noiseSmooth"),
+
+    topAxVal: document.getElementById("topAxVal"),
+    topAyVal: document.getElementById("topAyVal"),
+    botAxVal: document.getElementById("botAxVal"),
+    botAyVal: document.getElementById("botAyVal"),
+    topRotVal: document.getElementById("topRotVal"),
+    botRotVal: document.getElementById("botRotVal"),
+    sineHzVal: document.getElementById("sineHzVal"),
+    noiseSpeedVal: document.getElementById("noiseSpeedVal"),
+    noiseSmoothVal: document.getElementById("noiseSmoothVal"),
+
+    startBtn: document.getElementById("startBtn"),
+    stopBtn: document.getElementById("stopBtn"),
+    seeded: document.getElementById("seeded"),
+  };
+
+  let timer = null;
+  let seed = 123456789;
+  let bgObjectUrl = null;
+
+  // noise-lite state
+  const noiseState = {
+    top: { x: 0, y: 0, r: 0, tx: 0, ty: 0, tr: 0 },
+    bot: { x: 0, y: 0, r: 0, tx: 0, ty: 0, tr: 0 },
+  };
+
+  // --- Background helper: resets ALL background layers in one shot ---
+  function setStageBackground(url) {
+    // Start with a base; apply fit/pos settings right after.
+    stage.style.background = `#000 url("${url}") center / cover no-repeat`;
+    applyBackgroundSettings();
+  }
+
+  function rand01() {
+    if (!els.seeded.checked) return Math.random();
+    seed = (1664525 * seed + 1013904223) >>> 0;
+    return seed / 4294967296;
+  }
+  function randInRange(min, max) { return min + (max - min) * rand01(); }
+
+  function setVals() {
+    els.tickVal.textContent = els.tickMs.value;
+
+    els.topAxVal.textContent = els.topAx.value;
+    els.topAyVal.textContent = els.topAy.value;
+    els.botAxVal.textContent = els.botAx.value;
+    els.botAyVal.textContent = els.botAy.value;
+
+    els.topRotVal.textContent = (+els.topRot.value).toFixed(1).replace(/\.0$/, "");
+    els.botRotVal.textContent = (+els.botRot.value).toFixed(1).replace(/\.0$/, "");
+
+    els.sineHzVal.textContent = (+els.sineHz.value).toFixed(2);
+    els.noiseSpeedVal.textContent = (+els.noiseSpeed.value).toFixed(2);
+    els.noiseSmoothVal.textContent = (+els.noiseSmooth.value).toFixed(2);
+
+    els.bottomOpacityVal.textContent = (+els.bottomOpacity.value).toFixed(2);
+  }
+
+  function applyTransform(imgEl, dx, dy, rotDeg) {
+    imgEl.style.transform = `translate(-50%, -50%) translate(${dx}px, ${dy}px) rotate(${rotDeg}deg)`;
+  }
+
+  function applyBlend() {
+    els.topImg.style.mixBlendMode = els.blendMode.value;
+  }
+
+  function applyBottomBlend() {
+    els.bottomImg.style.mixBlendMode = els.bottomBlendMode.value;
+  }
+
+  function applyBottomOpacity() {
+    els.bottomImg.style.opacity = els.bottomOpacity.value;
+  }
+
+  function applyBackgroundSettings() {
+    const fit = els.bgFit.value;
+    const pos = els.bgPos.value;
+
+    // Position applies regardless
+    stage.style.backgroundPosition = pos;
+
+    if (fit === "tile") {
+      stage.style.backgroundRepeat = "repeat";
+      stage.style.backgroundSize = "auto";
+    } else if (fit === "100% 100%") {
+      stage.style.backgroundRepeat = "no-repeat";
+      stage.style.backgroundSize = "100% 100%";
+    } else {
+      stage.style.backgroundRepeat = "no-repeat";
+      stage.style.backgroundSize = fit; // cover or contain
+    }
+  }
+
+  function setBackgroundFromFile(file) {
+    if (!file) return;
+    if (bgObjectUrl) URL.revokeObjectURL(bgObjectUrl);
+    bgObjectUrl = URL.createObjectURL(file);
+    setStageBackground(bgObjectUrl);
+  }
+
+  function loadFileToImg(file, imgEl) {
+    if (!file) return;
+    const url = URL.createObjectURL(file);
+    imgEl.onload = () => URL.revokeObjectURL(url);
+    imgEl.src = url;
+  }
+
+  // --- Defaults requested ---
+  function applyDefaultUIValues() {
+    els.blendMode.value = "difference";
+    els.motionMode.value = "noise";
+
+    els.tickMs.value = 60;
+
+    els.topAx.value = 10;
+    els.topAy.value = 6;
+    els.botAx.value = 10;
+    els.botAy.value = 3;
+
+    els.sineHz.value = 1.2;
+    els.noiseSpeed.value = 1.00;
+    els.noiseSmooth.value = 0.85;
+
+    // Bottom layer defaults (new)
+    els.bottomBlendMode.value = "normal";
+    els.bottomOpacity.value = 1.00;
+
+    setVals();
+    applyBlend();
+    applyBottomBlend();
+    applyBottomOpacity();
+    applyBackgroundSettings();
+  }
+
+  function loadDefaultImages() {
+    setStageBackground("back1.png");
+    els.bottomImg.src = "bottom1.png";
+    els.topImg.src = "top1.png";
+  }
+
+  // --- Auto-hide panel after 30 seconds, with restore affordances ---
+  function setupAutoHideControls() {
+    const showBtn = document.getElementById("showControlsBtn");
+    let hideTimer = null;
+
+    function hidePanel() { document.body.classList.add("panelHidden"); }
+    function showPanel() { document.body.classList.remove("panelHidden"); resetTimer(); }
+    function resetTimer() {
+      if (hideTimer) clearTimeout(hideTimer);
+      hideTimer = setTimeout(hidePanel, 30000);
+    }
+
+    showBtn.addEventListener("click", showPanel);
+
+    window.addEventListener("mousemove", (e) => {
+      if (document.body.classList.contains("panelHidden") && e.clientX <= 20) {
+        showPanel();
+      } else {
+        if (!document.body.classList.contains("panelHidden")) resetTimer();
+      }
+    });
+
+    window.addEventListener("keydown", (e) => {
+      if (e.key.toLowerCase() === "h") {
+        if (document.body.classList.contains("panelHidden")) showPanel();
+        else hidePanel();
+      } else {
+        if (!document.body.classList.contains("panelHidden")) resetTimer();
+      }
+    });
+
+    resetTimer();
+  }
+
+  // --- Motion engines ---
+  function tickRandom() {
+    const topAx = +els.topAx.value, topAy = +els.topAy.value, topR = +els.topRot.value;
+    const botAx = +els.botAx.value, botAy = +els.botAy.value, botR = +els.botRot.value;
+
+    applyTransform(els.topImg,
+      randInRange(-topAx, topAx),
+      randInRange(-topAy, topAy),
+      randInRange(-topR, topR)
+    );
+    applyTransform(els.bottomImg,
+      randInRange(-botAx, botAx),
+      randInRange(-botAy, botAy),
+      randInRange(-botR, botR)
+    );
+  }
+
+  let t0 = 0;
+  let phases = null;
+
+  function initSinePhases() {
+    phases = {
+      t1: randInRange(0, 2*Math.PI),
+      t2: randInRange(0, 2*Math.PI),
+      t3: randInRange(0, 2*Math.PI),
+      b1: randInRange(0, 2*Math.PI),
+      b2: randInRange(0, 2*Math.PI),
+      b3: randInRange(0, 2*Math.PI),
+    };
+  }
+
+  function tickSine() {
+    const now = performance.now();
+    const dt = (now - t0) / 1000;
+    const hz = +els.sineHz.value;
+    const w = 2 * Math.PI * hz;
+
+    const topAx = +els.topAx.value, topAy = +els.topAy.value, topR = +els.topRot.value;
+    const botAx = +els.botAx.value, botAy = +els.botAy.value, botR = +els.botRot.value;
+
+    applyTransform(els.topImg,
+      topAx * Math.sin(w * dt + phases.t1),
+      topAy * Math.sin(w * dt * 1.17 + phases.t2),
+      topR  * Math.sin(w * dt * 0.83 + phases.t3)
+    );
+    applyTransform(els.bottomImg,
+      botAx * Math.sin(w * dt * 0.93 + phases.b1),
+      botAy * Math.sin(w * dt * 1.31 + phases.b2),
+      botR  * Math.sin(w * dt * 0.77 + phases.b3)
+    );
+  }
+
+  function tickNoise() {
+    const topAx = +els.topAx.value, topAy = +els.topAy.value, topR = +els.topRot.value;
+    const botAx = +els.botAx.value, botAy = +els.botAy.value, botR = +els.botRot.value;
+
+    const speed = +els.noiseSpeed.value;
+    const smooth = +els.noiseSmooth.value;
+
+    function updateOne(s, ax, ay, ar) {
+      s.tx += randInRange(-speed, speed);
+      s.ty += randInRange(-speed, speed);
+      s.tr += randInRange(-speed, speed) * 0.35;
+
+      s.tx = Math.max(-ax, Math.min(ax, s.tx));
+      s.ty = Math.max(-ay, Math.min(ay, s.ty));
+      s.tr = Math.max(-ar, Math.min(ar, s.tr));
+
+      s.x = smooth * s.x + (1 - smooth) * s.tx;
+      s.y = smooth * s.y + (1 - smooth) * s.ty;
+      s.r = smooth * s.r + (1 - smooth) * s.tr;
+    }
+
+    updateOne(noiseState.top, topAx, topAy, topR);
+    updateOne(noiseState.bot, botAx, botAy, botR);
+
+    applyTransform(els.topImg, noiseState.top.x, noiseState.top.y, noiseState.top.r);
+    applyTransform(els.bottomImg, noiseState.bot.x, noiseState.bot.y, noiseState.bot.r);
+  }
+
+  function tick() {
+    // Apply visual settings continuously (cheap) so UI changes are immediate.
+    applyBlend();
+    applyBottomBlend();
+    applyBottomOpacity();
+
+    const mode = els.motionMode.value;
+    if (mode === "random") tickRandom();
+    else if (mode === "sine") tickSine();
+    else tickNoise();
+  }
+
+  function start() {
+    stop();
+    seed = 123456789;
+
+    noiseState.top = { x: 0, y: 0, r: 0, tx: 0, ty: 0, tr: 0 };
+    noiseState.bot = { x: 0, y: 0, r: 0, tx: 0, ty: 0, tr: 0 };
+
+    t0 = performance.now();
+    initSinePhases();
+
+    tick();
+    timer = setInterval(tick, +els.tickMs.value);
+  }
+
+  function stop() {
+    if (timer) clearInterval(timer);
+    timer = null;
+  }
+
+  // --- Wiring ---
+  const sliders = [
+    els.tickMs, els.topAx, els.topAy, els.botAx, els.botAy,
+    els.topRot, els.botRot, els.sineHz, els.noiseSpeed, els.noiseSmooth,
+    els.bottomOpacity
+  ];
+  sliders.forEach(r => {
+    r.addEventListener("input", () => {
+      setVals();
+      if (timer) start();
+      else tick();
+    });
+  });
+
+  els.bottomBlendMode.addEventListener("change", () => {
+    applyBottomBlend();
+    if (timer) start();
+    else tick();
+  });
+
+  els.bgFile.addEventListener("change", e => setBackgroundFromFile(e.target.files[0]));
+  els.bgFit.addEventListener("change", () => { applyBackgroundSettings(); });
+  els.bgPos.addEventListener("change", () => { applyBackgroundSettings(); });
+
+  els.bottomFile.addEventListener("change", e => loadFileToImg(e.target.files[0], els.bottomImg));
+  els.topFile.addEventListener("change", e => loadFileToImg(e.target.files[0], els.topImg));
+
+  els.blendMode.addEventListener("change", () => { applyBlend(); if (timer) start(); else tick(); });
+  els.motionMode.addEventListener("change", () => { if (timer) start(); else tick(); });
+
+  els.startBtn.addEventListener("click", start);
+  els.stopBtn.addEventListener("click", stop);
+
+  els.seeded.addEventListener("change", () => { if (timer) start(); });
+
+  // Ensure bottom always covers the stage (prevents background peeking during motion)
+  els.bottomImg.style.width = "100%";
+  els.bottomImg.style.height = "100%";
+  els.bottomImg.style.objectFit = "cover";
+
+  // Keep top reasonably bounded by stage, unless its native size is smaller
+  els.topImg.style.maxWidth = "100%";
+  els.topImg.style.maxHeight = "100%";
+els.bottomImg.style.width = "100%";
+els.bottomImg.style.height = "100%";
+els.bottomImg.style.objectFit = "cover";
+els.topImg.style.width = "100%";
+els.topImg.style.height = "100%";
+els.topImg.style.objectFit = "cover";
+  // --- Init ---
+  applyDefaultUIValues();
+  loadDefaultImages();
+  setupAutoHideControls();
+  start();
+})();
+</script>
+</body>
+</html>

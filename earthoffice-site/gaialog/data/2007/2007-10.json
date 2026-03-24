@@ -1,0 +1,264 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_2007-10_normalize_2026-01-16T034238013Z",
+    "generated_utc": "2026-01-16T03:42:38.013Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "2007-10",
+    "window": {
+      "start_utc": "2007-10-01T00:00:00.000Z",
+      "end_utc": "2007-10-31T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "evt-2007-10-socal-wildfires-001",
+      "title": "Southern California wildfires begin; widespread smoke impacts air quality",
+      "description": "An outbreak of major wildfires began in Southern California around October 20, 2007. Satellite observations documented extensive smoke that degraded air quality across the region during late October.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2007-10-20T00:00:00.000Z",
+        "event_end": "2007-10-31T23:59:59.000Z",
+        "reported_at": "2007-10-24T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2007-10-20T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Southern California, United States",
+        "jurisdiction_level": "state",
+        "admin1": "California",
+        "country": "US",
+        "capital_used": "Sacramento",
+        "lat": 38.5816,
+        "lon": -121.4944,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.75
+      },
+      "sources": [
+        {
+          "url": "https://science.nasa.gov/earth/earth-observatory/fires-in-southern-california-19240/",
+          "source_name": "NASA Earth Observatory",
+          "published_at": "2007-10-24T00:00:00Z",
+          "headline": "Fires in Southern California",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.calfire.ca.gov/incidents/2007/",
+          "source_name": "CAL FIRE",
+          "published_at": "2007-01-01T00:00:00Z",
+          "headline": "Incidents (2007)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NASA Earth Observatory",
+          "CAL FIRE"
+        ],
+        "substances": [
+          "smoke"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "An outbreak of major fires erupted in southern California on October 20, 2007.",
+            "source_url": "https://science.nasa.gov/earth/earth-observatory/fires-in-southern-california-19240/"
+          },
+          {
+            "quote": "The Moderate Resolution Imaging Spectroradiometer (MODIS) captured this image... smoke streaming off the fires.",
+            "source_url": "https://science.nasa.gov/earth/earth-observatory/fires-in-southern-california-19240/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.66,
+        "category": 0.85,
+        "location": 0.75,
+        "summary_grounding": 0.7
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "2007 Southern California firestorm",
+        "fingerprint": "fp-2007-10-socal-wildfires-california-2007-10-20"
+      }
+    },
+    {
+      "event_id": "2007-10-29_mexican-flannelbush_critical-habitat_otay-mountain",
+      "title": "Critical habitat designation effective for Mexican flannelbush and Vail Lake ceanothus",
+      "description": "A Bureau of Land Management California Instruction Bulletin discusses a U.S. Fish & Wildlife Service final rule designating critical habitat for Mexican flannelbush and Vail Lake ceanothus. The bulletin states the designation became effective on October 29, 2007, which would trigger ESA Section 7 consultation considerations for relevant federal actions.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "2007-10-29T00:00:00.000Z",
+        "event_end": "2007-10-29T23:59:59.000Z",
+        "reported_at": "2007-10-01T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2007-10-29T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Otay Mountain area, San Diego County, California, United States",
+        "jurisdiction_level": "site",
+        "admin1": "California",
+        "country": "US",
+        "capital_used": null,
+        "lat": 32.6,
+        "lon": -116.82,
+        "precision": "neighborhood",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.45
+      },
+      "sources": [
+        {
+          "url": "https://www.blm.gov/policy/ca-ib-2008-001",
+          "source_name": "U.S. Bureau of Land Management (BLM)",
+          "published_at": "2007-10-01T00:00:00.000Z",
+          "headline": "CA IB 2008-001",
+          "byline": null,
+          "accessed_utc": "2007-10-01T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Fish & Wildlife Service",
+          "Bureau of Land Management"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "...final rule designating critical habitat... became effective October 29, 2007.",
+            "source_url": "https://www.blm.gov/policy/ca-ib-2008-001"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.48,
+        "category": 0.7,
+        "location": 0.45,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "ESA critical habitat effective date (Mexican flannelbush / Vail Lake ceanothus)",
+        "fingerprint": "2007-10-29|critical-habitat-mexican-flannelbush-vail-lake-ceanothus|otay-mountain-area"
+      }
+    },
+    {
+      "event_id": "2007-10-eu-floods-directive-2007-60-ec-adopted",
+      "title": "EU Floods Directive 2007/60/EC adopted",
+      "description": "The European Parliament and the Council adopted Directive 2007/60/EC (the Floods Directive), establishing a framework for assessing and managing flood risks. The directive sets requirements for flood risk assessment, mapping, and management planning across the EU.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "2007-10-23T00:00:00.000Z",
+        "event_end": "2007-10-23T23:59:59.000Z",
+        "reported_at": "2007-10-23T00:00:00.000Z",
+        "time_confidence": 0.8,
+        "event_date_utc": "2007-10-23T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "European Union",
+        "jurisdiction_level": "supranational",
+        "admin1": null,
+        "country": null,
+        "capital_used": "Brussels",
+        "lat": 50.8503,
+        "lon": 4.3517,
+        "precision": "supranational",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.8
+      },
+      "sources": [
+        {
+          "url": "https://eur-lex.europa.eu/eli/dir/2007/60/oj/eng",
+          "source_name": "EUR-Lex",
+          "published_at": "2007-11-06T00:00:00.000Z",
+          "headline": "Directive 2007/60/EC of the European Parliament and of the Council of 23 October 2007 on the assessment and management of flood risks",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": "https://eur-lex.europa.eu/eli/dir/2007/60/oj/eng"
+        },
+        {
+          "url": "https://www.eea.europa.eu/policy-documents/directive-2007-60-ec-of",
+          "source_name": "European Environment Agency (EEA)",
+          "published_at": "2007-10-23T00:00:00.000Z",
+          "headline": "Directive 2007/60/EC of the European Parliament and of the Council on the assessment and management of flood risks",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "European Parliament",
+          "Council of the European Union"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Directive 2007/60/EC ... of 23 October 2007 ... on the assessment and management of flood risks",
+            "source_url": "https://eur-lex.europa.eu/eli/dir/2007/60/oj/eng"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.78,
+        "category": 0.85,
+        "location": 0.8,
+        "summary_grounding": 0.75
+      },
+      "quality_flags": [
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "EU Floods Directive 2007/60/EC adopted",
+        "fingerprint": "eu-floods-directive-2007-60-ec|european-union|2007-10-23"
+      }
+    }
+  ]
+}

@@ -1,0 +1,851 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_2005-09_normalize_2026-01-16T030730105Z",
+    "generated_utc": "2026-01-16T03:07:30.105Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "2005-09",
+    "window": {
+      "start_utc": "2005-09-01T00:00:00.000Z",
+      "end_utc": "2005-09-30T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "2005-09-pc-epa-ecoli-new-orleans-001",
+      "title": "EPA reports elevated E. coli in Hurricane Katrina floodwater samples around New Orleans",
+      "description": "EPA reported preliminary floodwater sampling results across the New Orleans area showing E. coli levels above EPA-recommended levels for contact, indicating acute post-flood contamination risks following Hurricane Katrina.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2005-09-07T00:00:00.000Z",
+        "time_confidence": 0.65,
+        "event_date_utc": "2005-09-07T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "New Orleans, Louisiana, USA",
+        "jurisdiction_level": "city",
+        "admin1": "Louisiana",
+        "country": "US",
+        "capital_used": null,
+        "lat": 29.951065,
+        "lon": -90.071533,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.75
+      },
+      "sources": [
+        {
+          "url": "https://www.epa.gov/archive/epapages/newsroom_archive/newsreleases/43426907350a956a8525707500675088.html",
+          "source_name": "U.S. Environmental Protection Agency (archive)",
+          "published_at": "2005-09-07T00:00:00.000Z",
+          "headline": "EPA and CDC report high E. coli contamination in preliminary Hurricane Katrina floodwater samples from New Orleans",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Environmental Protection Agency (EPA)",
+          "Centers for Disease Control and Prevention (CDC)"
+        ],
+        "substances": [
+          "E. coli"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "preliminary floodwater sampling... found E. coli levels greatly exceeding EPA recommended levels for contact",
+            "source_url": "https://www.epa.gov/archive/epapages/newsroom_archive/newsreleases/43426907350a956a8525707500675088.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.72,
+        "category": 0.85,
+        "location": 0.75,
+        "summary_grounding": 0.75
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "katrina_floodwater_contamination_new_orleans_sep2005",
+        "fingerprint": "pc|epa_ecoli_floodwater|new_orleans_la|2005-09-07"
+      }
+    },
+    {
+      "event_id": "2005-09-pc-epa-sediment-katrina-area-001",
+      "title": "EPA reports petroleum and elevated metals in some Hurricane Katrina flood-deposited sediment samples",
+      "description": "EPA reported sediment testing results from the Hurricane Katrina response area noting petroleum presence in deposited sediments and detections of metals (including arsenic and/or lead) above health guidance values in some samples, with recommendations to avoid contact with flood-deposited sediments where possible.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2005-09-26T00:00:00.000Z",
+        "time_confidence": 0.45,
+        "event_date_utc": null,
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "United States (Katrina response area)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.4
+      },
+      "sources": [
+        {
+          "url": "https://archive.epa.gov/katrina/web/html/index-7.html",
+          "source_name": "U.S. Environmental Protection Agency (archive)",
+          "published_at": "2005-09-26T00:00:00.000Z",
+          "headline": "EPA sediment testing indicates petroleum presence and elevated metals in Hurricane Katrina flood-deposited sediments",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Environmental Protection Agency (EPA)",
+          "Agency for Toxic Substances and Disease Registry (ATSDR)",
+          "Centers for Disease Control and Prevention (CDC)"
+        ],
+        "substances": [
+          "petroleum",
+          "arsenic",
+          "lead"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "sediment results... reported continued petroleum presence... and detections of arsenic and/or lead exceeding ... health guidance values in some samples",
+            "source_url": "https://archive.epa.gov/katrina/web/html/index-7.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.52,
+        "category": 0.8,
+        "location": 0.4,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "katrina_sediment_contamination_sep2005",
+        "fingerprint": "pc|epa_sediment_petroleum_metals|us_proxy|2005-09"
+      }
+    },
+    {
+      "event_id": "2005-09-pc-epa-written-statement-bass-spill-001",
+      "title": "EPA testimony references Bass Enterprises oil spill among post-Katrina industrial releases in southeast Louisiana",
+      "description": "In written testimony, EPA leadership referenced major post-Katrina industrial releases in southeast Louisiana, including an oil spill associated with Bass Enterprises facilities, as part of the broader spill and contamination issues following Hurricane Katrina.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2005-09-19T00:00:00.000Z",
+        "time_confidence": 0.35,
+        "event_date_utc": null,
+        "event_date_precision": "unknown"
+      },
+      "location": {
+        "name": "Louisiana, USA",
+        "jurisdiction_level": "state",
+        "admin1": "Louisiana",
+        "country": "US",
+        "capital_used": "Baton Rouge",
+        "lat": 30.4515,
+        "lon": -91.1871,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.4
+      },
+      "sources": [
+        {
+          "url": "https://archive.epa.gov/epa/ocir/september-2005-written-statement-deputy-administrator-peacock-front-sub-committee-environment.html",
+          "source_name": "U.S. Environmental Protection Agency (archive)",
+          "published_at": "2005-09-19T00:00:00.000Z",
+          "headline": "September 2005 written statement of Deputy Administrator Peacock (Front) to Sub-Committee on Environment",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Environmental Protection Agency (EPA)",
+          "Bass Enterprises"
+        ],
+        "substances": [
+          "oil"
+        ],
+        "ecosystems": [
+          "coastal wetlands"
+        ],
+        "people": [
+          "Stephen L. Johnson",
+          "Marcus Peacock"
+        ]
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "a large oil spill associated with Bass Enterprises facilities was documented as part of numerous coastal industrial releases in southeast Louisiana",
+            "source_url": "https://archive.epa.gov/epa/ocir/september-2005-written-statement-deputy-administrator-peacock-front-sub-committee-environment.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.45,
+        "category": 0.7,
+        "location": 0.4,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "katrina_industrial_oil_spills_louisiana_sep2005",
+        "fingerprint": "pc|bass_enterprises_oil_spill|louisiana_capital_proxy|2005-09"
+      }
+    },
+    {
+      "event_id": "2005-09-pc-nrc-uranium-dust-contamination-001",
+      "title": "NRC event notice reports airborne natural uranium ore concentrate dust contamination at a facility",
+      "description": "An NRC event notice described an unplanned radiological contamination situation involving elevated airborne radioactivity attributed to natural uranium ore concentrate dust, prompting additional radiological controls (including respirator use) for more than 24 hours while the facility secured processes and investigated leakage paths.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2005-09-12T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2005-09-12T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States (facility not specified in source excerpt)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.2
+      },
+      "sources": [
+        {
+          "url": "https://www.nrc.gov/reading-rm/doc-collections/event-status/event/2005/20050912en.html",
+          "source_name": "U.S. Nuclear Regulatory Commission (NRC)",
+          "published_at": "2005-09-12T00:00:00.000Z",
+          "headline": "Event Notification (EN) 20050912",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Nuclear Regulatory Commission (NRC)"
+        ],
+        "substances": [
+          "natural uranium ore concentrate",
+          "uranium dust"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "unplanned contamination event... elevated airborne radioactivity from natural uranium ore concentrate dust",
+            "source_url": "https://www.nrc.gov/reading-rm/doc-collections/event-status/event/2005/20050912en.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.42,
+        "category": 0.7,
+        "location": 0.2,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "low_confidence_location",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "nrc_radiological_contamination_uranium_dust_sep2005",
+        "fingerprint": "pc|nrc_uranium_dust_contamination|us_proxy|2005-09-12"
+      }
+    },
+    {
+      "event_id": "2005-09-weather-hurricane-rita-us-001",
+      "title": "Hurricane Rita forms, intensifies and makes U.S. landfall (Sep 17–26, 2005)",
+      "description": "NOAA/WPC documents Hurricane Rita’s development from formation on September 17, 2005 through landfall as a Category 3 hurricane early September 24, and dissipation by September 26. The report also notes impacts including rainfall/flooding concerns and effects around the Gulf Coast.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2005-09-17T00:00:00.000Z",
+        "event_end": "2005-09-26T23:59:59.000Z",
+        "reported_at": "2005-09-26T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": null,
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "United States (Gulf Coast affected by Hurricane Rita)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.wpc.ncep.noaa.gov/tropical/rain/rita2005.html",
+          "source_name": "NOAA/NWS Weather Prediction Center",
+          "published_at": "2005-09-26T00:00:00.000Z",
+          "headline": "Hurricane Rita (2005) - Rainfall Summary",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA",
+          "NWS Weather Prediction Center"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "formation on September 17 ... landfall ... early September 24 ... dissipation by September 26",
+            "source_url": "https://www.wpc.ncep.noaa.gov/tropical/rain/rita2005.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.75,
+        "location": 0.55,
+        "summary_grounding": 0.7
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Hurricane Rita (2005) impacts",
+        "fingerprint": "hurricane_rita_2005_us_gulfcoast_2005-09-17_2005-09-26"
+      }
+    },
+    {
+      "event_id": "2005-09-weather-typhoon-damrey-vietnam-001",
+      "title": "Typhoon Damrey strikes Vietnam with large evacuations (Sep 27, 2005)",
+      "description": "An ABC News report on September 27, 2005 said Typhoon Damrey hit Vietnam after affecting parts of China, prompting evacuations reported at about 300,000 people and causing damage including to protective dykes. A Hong Kong Observatory tropical cyclone publication includes a 2005-season report referencing Typhoon Damrey.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2005-09-27T00:00:00.000Z",
+        "event_end": "2005-09-27T23:59:59.000Z",
+        "reported_at": "2005-09-27T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2005-09-27T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Vietnam",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "VN",
+        "capital_used": "Hanoi",
+        "lat": 21.0278,
+        "lon": 105.8342,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.abc.net.au/news/2005-09-27/typhoon-blows-through-vietnam/2112432",
+          "source_name": "ABC News (Australia)",
+          "published_at": "2005-09-27T00:00:00.000Z",
+          "headline": "Typhoon blows through Vietnam",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.hko.gov.hk/en/publica/tc/tc2005/section3_3rpt.htm",
+          "source_name": "Hong Kong Observatory",
+          "published_at": "2005-01-01T00:00:00.000Z",
+          "headline": "Tropical Cyclones in 2005 (Section 3)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "ABC News (Australia)",
+          "Hong Kong Observatory"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "evacuation of about 300,000 people",
+            "source_url": "https://www.abc.net.au/news/2005-09-27/typhoon-blows-through-vietnam/2112432"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.66,
+        "category": 0.75,
+        "location": 0.6,
+        "summary_grounding": 0.65
+      },
+      "quality_flags": [
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Typhoon Damrey (2005) Vietnam landfall impacts",
+        "fingerprint": "typhoon_damrey_vietnam_2005-09-27"
+      }
+    },
+    {
+      "event_id": "evt_2005-09_portugal_forest_fires_response_period",
+      "title": "Portugal forest fires response continued into early September 2005",
+      "description": "A response effort to forest fires in Portugal continued into early September 2005, with the referenced mission page indicating activity through September 7, 2005. The source frames this as part of the 2005 forest fire situation in Portugal.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2005-09-01T00:00:00.000Z",
+        "time_confidence": 0.4,
+        "event_date_utc": null,
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Portugal",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "PT",
+        "capital_used": "Lisbon",
+        "lat": 38.7223,
+        "lon": -9.1393,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.85
+      },
+      "sources": [
+        {
+          "url": "https://english.defensie.nl/topics/historical-missions/mission-overview/2005/forest-fires-in-portugal",
+          "source_name": "Defensie.nl (Netherlands Ministry of Defence)",
+          "published_at": "2005-09-01T00:00:00.000Z",
+          "headline": "Forest fires in Portugal",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Netherlands Ministry of Defence"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "forest"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Forest fires in Portugal",
+            "source_url": "https://english.defensie.nl/topics/historical-missions/mission-overview/2005/forest-fires-in-portugal"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.52,
+        "category": 0.75,
+        "location": 0.85,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "paywalled_or_partial",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Portugal forest fires early Sep 2005 response period",
+        "fingerprint": "fp_portugal_fires_2005-09_response"
+      }
+    },
+    {
+      "event_id": "evt_200509_usvi_coral_bleaching",
+      "title": "Record-high seawater temperatures drive peak coral bleaching in the U.S. Virgin Islands during September 2005",
+      "description": "Sources describing the 2005 Caribbean bleaching event report that the U.S. Virgin Islands experienced peak bleaching conditions during September 2005, associated with unusually high seawater temperatures. The reporting characterizes late summer/early fall 2005 as a period of widespread thermal stress affecting corals in the USVI.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2009-01-01T00:00:00Z",
+        "time_confidence": 0.45,
+        "event_date_utc": null,
+        "event_date_precision": "month"
+      },
+      "location": {
+        "name": "U.S. Virgin Islands",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "VI",
+        "capital_used": "Charlotte Amalie",
+        "lat": 18.3419,
+        "lon": -64.9307,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.85
+      },
+      "sources": [
+        {
+          "url": "https://link.springer.com/article/10.1007/s00338-009-0531-7",
+          "source_name": "Coral Reefs (SpringerLink)",
+          "published_at": "2009-01-01T00:00:00Z",
+          "headline": "[SpringerLink article] 10.1007/s00338-009-0531-7",
+          "byline": null,
+          "accessed_utc": "2006-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://pubs.usgs.gov/fs/2008/3058/",
+          "source_name": "U.S. Geological Survey (USGS)",
+          "published_at": "2008-01-01T00:00:00Z",
+          "headline": "[USGS Fact Sheet] 2008-3058",
+          "byline": null,
+          "accessed_utc": "2006-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Geological Survey"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "coral reefs"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.52,
+        "category": 0.7,
+        "location": 0.9,
+        "summary_grounding": 0.35
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only",
+        "paywalled_or_partial",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "2005 Caribbean coral bleaching (USVI)",
+        "fingerprint": "fp_200509_usvi_coral_bleaching"
+      }
+    },
+    {
+      "event_id": "2005-09-16_epa_hw_combustors_mact_us",
+      "title": "EPA finalizes emissions standards for hazardous waste combustors (MACT)",
+      "description": "The U.S. Environmental Protection Agency issued final National Emission Standards for Hazardous Waste Combustors, requiring maximum achievable control technology and targeting reductions of hazardous air pollutants such as mercury and lead.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2005-09-16T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2005-09-16T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States (federal rule)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.85
+      },
+      "sources": [
+        {
+          "url": "https://www.epa.gov/archive/epapages/newsroom_archive/newsreleases/7346891ac35225e38525707e005788cc.html",
+          "source_name": "U.S. Environmental Protection Agency (EPA)",
+          "published_at": "2005-09-16T00:00:00.000Z",
+          "headline": "EPA issues final National Emission Standards for Hazardous Waste Combustors (MACT)",
+          "byline": null,
+          "accessed_utc": "2005-09-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Environmental Protection Agency (EPA)"
+        ],
+        "substances": [
+          "mercury",
+          "lead",
+          "particulate matter",
+          "arsenic"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "final National Emission Standards for Hazardous Waste Combustors",
+            "source_url": "https://www.epa.gov/archive/epapages/newsroom_archive/newsreleases/7346891ac35225e38525707e005788cc.html"
+          },
+          {
+            "quote": "reduce releases of mercury, lead... and other hazardous pollutants",
+            "source_url": "https://www.epa.gov/archive/epapages/newsroom_archive/newsreleases/7346891ac35225e38525707e005788cc.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.72,
+        "category": 0.9,
+        "location": 0.85,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "epa_hazardous_waste_combustors_mact_2005-09",
+        "fingerprint": "epa_finalizes_emissions_standards_hazardous_waste_combustors|US|2005-09-16"
+      }
+    },
+    {
+      "event_id": "2005-09-07_eu_ship_source_pollution_directive_2005_35_ec",
+      "title": "EU adopts Directive 2005/35/EC on ship-source pollution",
+      "description": "The European Parliament and the Council adopted Directive 2005/35/EC addressing pollution from ships and setting an enforcement and penalties framework for infringements.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2005-09-07T00:00:00.000Z",
+        "time_confidence": 0.8,
+        "event_date_utc": "2005-09-07T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "European Union",
+        "jurisdiction_level": "supranational",
+        "admin1": null,
+        "country": null,
+        "capital_used": "Brussels",
+        "lat": 50.8503,
+        "lon": 4.3517,
+        "precision": "supranational",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.85
+      },
+      "sources": [
+        {
+          "url": "https://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=CELEX%3A32005L0035%3Aen%3ANOT",
+          "source_name": "EUR-Lex",
+          "published_at": "2005-09-07T00:00:00.000Z",
+          "headline": "Directive 2005/35/EC on ship-source pollution and on the introduction of penalties for infringements",
+          "byline": null,
+          "accessed_utc": "2005-09-07T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "European Parliament",
+          "Council of the European Union"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Directive 2005/35/EC",
+            "source_url": "https://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=CELEX%3A32005L0035%3Aen%3ANOT"
+          },
+          {
+            "quote": "pollution from ships",
+            "source_url": "https://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=CELEX%3A32005L0035%3Aen%3ANOT"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.75,
+        "category": 0.9,
+        "location": 0.85,
+        "summary_grounding": 0.65
+      },
+      "quality_flags": [
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "eu_directive_2005_35_ec_ship_source_pollution_2005-09",
+        "fingerprint": "eu_adopts_directive_2005_35_ec_ship_source_pollution|EU|2005-09-07"
+      }
+    },
+    {
+      "event_id": "2005-09-21_epa_tri_form_a_proposal_us",
+      "title": "EPA proposes expanding eligibility for TRI shortened reporting (Form A)",
+      "description": "The U.S. Environmental Protection Agency proposed changes to Toxic Release Inventory reporting that would expand eligibility for the shortened Form A and reduce reporting burden while aiming to maintain coverage of releases and waste management activities.",
+      "category_primary": "policy_regulation",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2005-09-21T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2005-09-21T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States (federal proposal)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.85
+      },
+      "sources": [
+        {
+          "url": "https://www.epa.gov/archive/epapages/newsroom_archive/newsreleases/ed5dcfbbd6f58e7e852570830048f830.html",
+          "source_name": "U.S. Environmental Protection Agency (EPA)",
+          "published_at": "2005-09-21T00:00:00.000Z",
+          "headline": "EPA proposes rule to expand use of shortened TRI reporting (Form A)",
+          "byline": null,
+          "accessed_utc": "2005-09-21T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Environmental Protection Agency (EPA)"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "proposed changes to Toxic Release Inventory reporting",
+            "source_url": "https://www.epa.gov/archive/epapages/newsroom_archive/newsreleases/ed5dcfbbd6f58e7e852570830048f830.html"
+          },
+          {
+            "quote": "expand eligibility for a shortened reporting form",
+            "source_url": "https://www.epa.gov/archive/epapages/newsroom_archive/newsreleases/ed5dcfbbd6f58e7e852570830048f830.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.7,
+        "category": 0.9,
+        "location": 0.85,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "epa_tri_form_a_proposal_2005-09",
+        "fingerprint": "epa_proposes_expanding_tri_form_a|US|2005-09-21"
+      }
+    }
+  ]
+}

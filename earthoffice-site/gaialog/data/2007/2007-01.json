@@ -1,0 +1,797 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_2007-01_normalize_2026-01-16T033253573Z",
+    "generated_utc": "2026-01-16T03:32:53.573Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "2007-01",
+    "window": {
+      "start_utc": "2007-01-01T00:00:00.000Z",
+      "end_utc": "2007-01-31T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "evt_200701_enbridge_curtiss_wi_spill",
+      "title": "Enbridge pipeline spill contaminates soil near Curtiss, Wisconsin (~52,000 gallons)",
+      "description": "Reports in early January 2007 said an underground Enbridge Energy pipeline leaked crude oil onto a farm field near Curtiss, Wisconsin. Cleanup involved recovery operations and removal of contaminated soil; coverage estimated the spill at about 52,000 gallons.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2007-01-02T00:00:00.000Z",
+        "event_end": "2007-01-05T23:59:59.000Z",
+        "reported_at": "2007-01-05T00:00:00.000Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "2007-01-02T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Near Curtiss, Clark County, Wisconsin, USA",
+        "jurisdiction_level": "site",
+        "admin1": "Wisconsin",
+        "country": "US",
+        "capital_used": null,
+        "lat": 44.9558,
+        "lon": -90.4521,
+        "precision": "admin1",
+        "location_basis": "manual_override",
+        "location_confidence": 0.25
+      },
+      "sources": [
+        {
+          "url": "https://www.wrn.com/oil-spill-larger-than-first-thought/",
+          "source_name": "Wisconsin Radio Network",
+          "published_at": "2007-01-05T00:00:00.000Z",
+          "headline": "Oil spill larger than first thought",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://dailyreporter.com/2007/01/05/52000-gallons-of-oil-spilled/",
+          "source_name": "The Daily Reporter",
+          "published_at": "2007-01-05T00:00:00.000Z",
+          "headline": "52,000 gallons of oil spilled",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Enbridge Energy"
+        ],
+        "substances": [
+          "crude oil"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.42,
+        "category": 0.7,
+        "location": 0.25,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "paywalled_or_partial",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "enbridge pipeline spill curtiss wisconsin jan 2007",
+        "fingerprint": "fp_enbridge_curtiss_wi_2007-01-02"
+      }
+    },
+    {
+      "event_id": "evt_200701_ice_storm_na_001",
+      "title": "Multi-wave January 2007 ice/snow storm impacts (U.S./Canada)",
+      "description": "A National Weather Service Amarillo event page documents heavy snow affecting the Texas Panhandle around January 20, 2007. The draft describes a broader, multi-wave ice storm affecting central/eastern U.S. and eastern Canada, but the provided source does not verify the full multi-region scope.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2007-01-20T00:00:00.000Z",
+        "time_confidence": 0.3,
+        "event_date_utc": null,
+        "event_date_precision": "unknown"
+      },
+      "location": {
+        "name": "Amarillo, Texas, United States (Texas Panhandle)",
+        "jurisdiction_level": "city",
+        "admin1": "TX",
+        "country": "US",
+        "capital_used": null,
+        "lat": 35.222,
+        "lon": -101.8313,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.weather.gov/ama/jan20_2007_snow",
+          "source_name": "NOAA National Weather Service (weather.gov)",
+          "published_at": "2007-01-20T00:00:00.000Z",
+          "headline": "jan20_2007_snow",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA National Weather Service"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Heavy snow event page for Jan 20, 2007 (Amarillo NWS).",
+            "source_url": "https://www.weather.gov/ama/jan20_2007_snow"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.38,
+        "category": 0.7,
+        "location": 0.55,
+        "summary_grounding": 0.25
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "secondary_sources_only",
+        "low_confidence_location",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "NWS_Amarillo_Jan2007_winter_weather",
+        "fingerprint": "fp_200701_ice_storm_na_001"
+      }
+    },
+    {
+      "event_id": "evt_20070113_kuril_eq_tsunami",
+      "title": "M8.1 earthquake near the Kuril Islands generates a measurable tsunami",
+      "description": "A magnitude ~8.1 earthquake occurred near the Kuril Islands on January 13, 2007. Tsunami warning/monitoring resources report tsunami measurements on tide gauges following the quake.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2007-01-13T04:24:00.000Z",
+        "event_end": "2007-01-13T23:59:59.000Z",
+        "reported_at": "2007-01-13T00:00:00Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2007-01-13T04:24:00.000Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Kuril Islands (northwest Pacific)",
+        "jurisdiction_level": "site",
+        "admin1": null,
+        "country": null,
+        "capital_used": null,
+        "lat": 45,
+        "lon": 151,
+        "precision": "proxy",
+        "location_basis": "manual_override",
+        "location_confidence": 0.3
+      },
+      "sources": [
+        {
+          "url": "https://www.tsunami.gov/previous.events/01-13-07/01-13-07.html",
+          "source_name": "NOAA / Tsunami.gov",
+          "published_at": "2007-01-13T00:00:00Z",
+          "headline": "Previous Tsunami Event: 01/13/07",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.jishin.go.jp/main/chousa/07feb/index-e.htm",
+          "source_name": "Headquarters for Earthquake Research Promotion (Japan)",
+          "published_at": "2007-02-01T00:00:00Z",
+          "headline": "Evaluation of Earthquake Activity (Feb. 2007)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA Tsunami Warning Center",
+          "Headquarters for Earthquake Research Promotion (Japan)"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Previous Tsunami Event: 01/13/07",
+            "source_url": "https://www.tsunami.gov/previous.events/01-13-07/01-13-07.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.85,
+        "location": 0.3,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "2007-01-13 Kuril Islands earthquake tsunami",
+        "fingerprint": "kuril_islands_eq_tsunami_2007-01-13"
+      }
+    },
+    {
+      "event_id": "evt_20070103_harrogate_adelaide_hills_bushfire",
+      "title": "Adelaide Hills bushfire near Harrogate (suspected arson)",
+      "description": "A bushfire burned in the Mount Beevor area near Harrogate in the Adelaide Hills in early January 2007. Authorities reported it was believed to have been deliberately lit, and the fire threatened property before being contained.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2007-01-03T00:00:00.000Z",
+        "event_end": "2007-01-04T23:59:59.000Z",
+        "reported_at": "2007-01-05T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2007-01-03T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Harrogate (Adelaide Hills), South Australia, Australia",
+        "jurisdiction_level": "city",
+        "admin1": "South Australia",
+        "country": "AU",
+        "capital_used": null,
+        "lat": -35.115,
+        "lon": 138.986,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.abc.net.au/news/2007-01-05/authorities-suspect-adelaide-hills-bushfire/2166070",
+          "source_name": "ABC News (Australia)",
+          "published_at": "2007-01-05T00:00:00.000Z",
+          "headline": "Authorities suspect Adelaide Hills bushfire",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Authorities believe a bushfire... in the Adelaide Hills was deliberately lit.",
+            "source_url": "https://www.abc.net.au/news/2007-01-05/authorities-suspect-adelaide-hills-bushfire/2166070"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.6,
+        "category": 0.8,
+        "location": 0.55,
+        "summary_grounding": 0.7
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "abc_adelaide_hills_bushfire_harrogate_2007_01",
+        "fingerprint": "fires|harrogate-adelaide-hills-sa-au|2007-01-03"
+      }
+    },
+    {
+      "event_id": "evt_20070112_goonoo_cc_area_bushfire_dubbo",
+      "title": "Dubbo-area bushfire burns in the Goonoo Community Conservation Area (NSW)",
+      "description": "A bushfire near Dubbo in mid-January 2007 burned in bushland around the Goonoo Community Conservation Area. The fire produced heavy smoke affecting Dubbo and was reported as being out of control during the period covered.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2007-01-12T00:00:00.000Z",
+        "event_end": "2007-01-15T23:59:59.000Z",
+        "reported_at": "2007-01-15T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2007-01-12T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Dubbo area (near Goonoo Community Conservation Area), New South Wales, Australia",
+        "jurisdiction_level": "city",
+        "admin1": "New South Wales",
+        "country": "AU",
+        "capital_used": null,
+        "lat": -32.2569,
+        "lon": 148.6011,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.5
+      },
+      "sources": [
+        {
+          "url": "https://www.abc.net.au/news/2007-01-15/dubbo-bushfire-burns-out-of-control/2171996",
+          "source_name": "ABC News (Australia)",
+          "published_at": "2007-01-15T00:00:00.000Z",
+          "headline": "Dubbo bushfire burns out of control",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [
+          "bushland"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "A bushfire burning near Dubbo... is out of control.",
+            "source_url": "https://www.abc.net.au/news/2007-01-15/dubbo-bushfire-burns-out-of-control/2171996"
+          },
+          {
+            "quote": "Smoke from the blaze is blanketing the city.",
+            "source_url": "https://www.abc.net.au/news/2007-01-15/dubbo-bushfire-burns-out-of-control/2171996"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.8,
+        "location": 0.5,
+        "summary_grounding": 0.75
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "abc_dubbo_goonoo_bushfire_2007_01",
+        "fingerprint": "fires|dubbo-nsw-au|2007-01-12"
+      }
+    },
+    {
+      "event_id": "evt_20070111_victoria_great_dividing_range_smoke_plumes",
+      "title": "Victorian bushfires produce broad smoke plumes over the Great Dividing Range (satellite-observed)",
+      "description": "Satellite imagery documented smoke plumes from bushfires burning in Victoria around the Great Dividing Range in January 2007. The report highlighted ongoing fire activity and associated smoke visible from space.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2007-01-11T00:00:00.000Z",
+        "event_end": "2007-01-12T23:59:59.000Z",
+        "reported_at": "2007-01-11T00:00:00.000Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "2007-01-11T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Victoria, Australia",
+        "jurisdiction_level": "state",
+        "admin1": "Victoria",
+        "country": "AU",
+        "capital_used": "Melbourne",
+        "lat": -37.8136,
+        "lon": 144.9631,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.8
+      },
+      "sources": [
+        {
+          "url": "https://earthobservatory.nasa.gov/images/7305/victorian-bushfires-rage-into-the-new-year",
+          "source_name": "NASA Earth Observatory",
+          "published_at": "2007-01-11T00:00:00.000Z",
+          "headline": "Victorian Bushfires Rage into the New Year",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NASA Earth Observatory"
+        ],
+        "substances": [
+          "smoke"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Smoke from bushfires in Victoria, Australia...",
+            "source_url": "https://earthobservatory.nasa.gov/images/7305/victorian-bushfires-rage-into-the-new-year"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.66,
+        "category": 0.75,
+        "location": 0.85,
+        "summary_grounding": 0.65
+      },
+      "quality_flags": [
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "nasa_earthobservatory_victorian_bushfires_2007_01",
+        "fingerprint": "fires|victoria-au|2007-01-11"
+      }
+    },
+    {
+      "event_id": "evt-2007-01-16-jp-miyazaki-h5n1-outbreak",
+      "title": "H5N1 avian influenza confirmed at poultry farm in Miyazaki Prefecture, Japan",
+      "description": "Reports in mid-January 2007 said a bird flu outbreak occurred at a poultry farm in Miyazaki Prefecture after large numbers of chickens died. Subsequent reporting stated Japan confirmed the outbreak involved the H5N1 strain, prompting containment actions such as culling and movement restrictions.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2007-01-10T00:00:00.000Z",
+        "event_end": "2007-01-16T23:59:59.000Z",
+        "reported_at": "2007-01-16T00:00:00.000Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "2007-01-16T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Miyazaki Prefecture, Japan",
+        "jurisdiction_level": "state",
+        "admin1": "Miyazaki Prefecture",
+        "country": "JP",
+        "capital_used": "Miyazaki",
+        "lat": 31.9077,
+        "lon": 131.4202,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.abc.net.au/news/2007-01-13/bird-flu-breaks-out-in-japan/2171624",
+          "source_name": "ABC News (Australia)",
+          "published_at": "2007-01-13T00:00:00.000Z",
+          "headline": "Bird flu breaks out in Japan",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.abc.net.au/news/2007-01-16/japan-confirms-bird-flu-outbreak-from-h5n1/2173842",
+          "source_name": "ABC News (Australia)",
+          "published_at": "2007-01-16T00:00:00.000Z",
+          "headline": "Japan confirms bird flu outbreak from H5N1",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.cnbc.com/2007/01/16/h5n1-strain-of-bird-flu-confirmed-in-japanese-outbreak.html",
+          "source_name": "CNBC",
+          "published_at": "2007-01-16T00:00:00.000Z",
+          "headline": "H5N1 strain of bird flu confirmed in Japanese outbreak",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.55,
+        "location": 0.6,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "H5N1 Miyazaki poultry outbreak Jan 2007",
+        "fingerprint": "fp-200701-miyazaki-h5n1"
+      }
+    },
+    {
+      "event_id": "evt_20070116_eu_groundwater_directive_enters_force",
+      "title": "EU Groundwater Directive 2006/118/EC enters into force",
+      "description": "Directive 2006/118/EC on the protection of groundwater against pollution and deterioration entered into force in January 2007, setting measures to prevent and control groundwater pollution across the EU.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "2007-01-16T00:00:00.000Z",
+        "event_end": "2007-01-16T23:59:59.000Z",
+        "reported_at": "2006-12-27T00:00:00.000Z",
+        "time_confidence": 0.65,
+        "event_date_utc": "2007-01-16T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "European Union",
+        "jurisdiction_level": "supranational",
+        "admin1": null,
+        "country": null,
+        "capital_used": "Brussels",
+        "lat": 50.8503,
+        "lon": 4.3517,
+        "precision": "proxy",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.8
+      },
+      "sources": [
+        {
+          "url": "https://eur-lex.europa.eu/eli/dir/2006/118/oj/eng",
+          "source_name": "EUR-Lex",
+          "published_at": "2006-12-27T00:00:00.000Z",
+          "headline": "Directive 2006/118/EC of the European Parliament and of the Council of 12 December 2006 on the protection of groundwater against pollution and deterioration",
+          "byline": null,
+          "accessed_utc": "2007-01-31T23:59:59.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.eumonitor.eu/9353000/1/j9vvik7m1c3gyxp/vitgbgilbmzk",
+          "source_name": "EUmonitor",
+          "published_at": "2006-12-27T00:00:00.000Z",
+          "headline": "Directive 2006/118/EC on the protection of groundwater against pollution and deterioration",
+          "byline": null,
+          "accessed_utc": "2007-01-31T23:59:59.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.legislation.gov.uk/en/eudr/2006/118",
+          "source_name": "UK Legislation (legislation.gov.uk)",
+          "published_at": "2006-12-27T00:00:00.000Z",
+          "headline": "Directive 2006/118/EC of the European Parliament and of the Council of 12 December 2006",
+          "byline": null,
+          "accessed_utc": "2007-01-31T23:59:59.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "European Union",
+          "European Parliament",
+          "Council of the European Union"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "groundwater"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "on the protection of groundwater against pollution and deterioration",
+            "source_url": "https://eur-lex.europa.eu/eli/dir/2006/118/oj/eng"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.65,
+        "category": 0.85,
+        "location": 0.8,
+        "summary_grounding": 0.7
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "EU Groundwater Directive 2006/118/EC enters into force",
+        "fingerprint": "fp_eu_groundwater_20070116_brussels"
+      }
+    },
+    {
+      "event_id": "evt_20070110_ec_energy_climate_package_proposed",
+      "title": "European Commission proposes integrated energy and climate package with 2020 targets",
+      "description": "The European Commission proposed an integrated energy and climate change package aimed at cutting emissions and increasing renewables toward 2020 as part of broader EU climate and energy policy planning.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "2007-01-10T00:00:00.000Z",
+        "event_end": "2007-01-10T23:59:59.000Z",
+        "reported_at": "2007-01-10T00:00:00.000Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "2007-01-10T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "European Union (European Commission)",
+        "jurisdiction_level": "supranational",
+        "admin1": null,
+        "country": null,
+        "capital_used": "Brussels",
+        "lat": 50.8503,
+        "lon": 4.3517,
+        "precision": "proxy",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.75
+      },
+      "sources": [
+        {
+          "url": "https://www.europeansources.info/record/press-release-commission-proposes-an-integrated-energy-and-climate-change-package-to-cut-emissions-for-the-21st-century/",
+          "source_name": "European Sources",
+          "published_at": "2007-01-10T00:00:00.000Z",
+          "headline": "Press release: Commission proposes an integrated energy and climate change package to cut emissions for the 21st century",
+          "byline": null,
+          "accessed_utc": "2007-01-31T23:59:59.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.eea.europa.eu/policy-documents/european-commissions-energy-package-10",
+          "source_name": "European Environment Agency (EEA)",
+          "published_at": "2007-01-10T00:00:00.000Z",
+          "headline": "European Commission's energy package (10 January 2007)",
+          "byline": null,
+          "accessed_utc": "2007-01-31T23:59:59.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://eponline.com/articles/2007/01/01/european-commission-proposes-integrated-energy-climate-change-package.aspx",
+          "source_name": "EP Online",
+          "published_at": "2007-01-01T00:00:00.000Z",
+          "headline": "European Commission Proposes Integrated Energy & Climate Change Package",
+          "byline": null,
+          "accessed_utc": "2007-01-31T23:59:59.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "European Commission",
+          "European Union"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Commission proposes an integrated energy and climate change package",
+            "source_url": "https://www.europeansources.info/record/press-release-commission-proposes-an-integrated-energy-and-climate-change-package-to-cut-emissions-for-the-21st-century/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.58,
+        "category": 0.8,
+        "location": 0.75,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "EC integrated energy and climate package proposed (Jan 2007)",
+        "fingerprint": "fp_ec_energy_package_20070110_brussels"
+      }
+    },
+    {
+      "event_id": "evt_20070116_epa_settlements_spruce_head_maine",
+      "title": "EPA settles Clean Water Act oil-spill prevention planning violations with four Maine lobstering facilities",
+      "description": "The U.S. EPA announced settlements with four lobstering facilities in Spruce Head, Maine over alleged Oil Pollution Prevention (Clean Water Act) planning violations, with each facility paying a penalty.",
+      "category_primary": "policy_regulation",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "2007-01-16T00:00:00.000Z",
+        "event_end": "2007-01-16T23:59:59.000Z",
+        "reported_at": "2007-01-16T00:00:00.000Z",
+        "time_confidence": 0.75,
+        "event_date_utc": "2007-01-16T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Spruce Head, Maine, USA",
+        "jurisdiction_level": "city",
+        "admin1": "ME",
+        "country": "US",
+        "capital_used": null,
+        "lat": 44.1373,
+        "lon": -69.5464,
+        "precision": "city",
+        "location_basis": "manual_override",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.epa.gov/archive/epapages/newsroom_archive/newsreleases/d6afe20cfde080f58525726500682d90.html",
+          "source_name": "U.S. Environmental Protection Agency (archive)",
+          "published_at": "2007-01-16T00:00:00.000Z",
+          "headline": "EPA Settles Clean Water Act Oil Spill Prevention Planning Violations With Four Maine Lobstering Facilities",
+          "byline": null,
+          "accessed_utc": "2007-01-31T23:59:59.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Environmental Protection Agency (EPA)"
+        ],
+        "substances": [
+          "oil"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "EPA settles ... Oil Spill Prevention Planning Violations ... four Maine lobstering facilities",
+            "source_url": "https://www.epa.gov/archive/epapages/newsroom_archive/newsreleases/d6afe20cfde080f58525726500682d90.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.7,
+        "category": 0.85,
+        "location": 0.55,
+        "summary_grounding": 0.7
+      },
+      "quality_flags": [
+        "low_confidence_location"
+      ],
+      "dedupe": {
+        "cluster_hint": "EPA settlements with four Maine lobstering facilities (Spruce Head)",
+        "fingerprint": "fp_epa_spruce_head_20070116"
+      }
+    }
+  ]
+}

@@ -1,0 +1,1108 @@
+	/* ---------- Light Theme Override ---------- */
+
+:root {
+  --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --mono: "SF Mono", SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace;
+
+  --bg-main: #ffffff;
+  --bg-panel: #f7f7f9;
+  --bg-card: #ffffff;
+
+  --text-main: #1f2933;
+  --text-muted: #6b7280;
+
+  --border-subtle: #e5e7eb;
+
+  --user-bg: #eef2ff;
+  --assistant-bg: #f9fafb;
+
+  --accent: #2563eb;
+
+
+/* ---------- Bridge legacy dark vars to light theme ---------- */
+
+  --panel: var(--bg-panel);
+  --card: var(--bg-card);
+
+  --text: var(--text-main);
+  --muted: var(--text-muted);
+  --muted2: #9ca3af;
+
+  --border: var(--border-subtle);
+
+  --radius: 12px;
+  --radius2: 14px;
+
+  --shadow: 0 1px 2px rgba(0,0,0,0.04);
+}
+
+/* ---------- Light-mode hard overrides ---------- */
+
+.topbar {
+  background: #ffffff;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.paneHeader,
+.turnsHeader {
+  background: #f9fafb;
+}
+
+.convItem {
+  background: #ffffff;
+}
+
+.convItem:hover {
+  background: #f3f4f6;
+}
+
+.turnCard {
+  background: #ffffff;
+  border: 1px solid var(--border-subtle);
+}
+
+    html, body { height: 100%; }
+    body{
+      margin:0;
+      font-family: var(--sans);
+  background: var(--bg-main);
+  color: var(--text-main);
+      overflow: hidden; /* panes handle their own scrolling */
+    }
+    a { color: var(--accent); }
+    .topbar{
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      padding: 12px 16px;
+      border-bottom: 1px solid var(--border);
+      background: #ffffff;
+      border-bottom: 1px solid var(--border);
+      backdrop-filter: blur(10px);
+    }
+    .topbarRow{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap: 16px;
+  /* max-width: 1600px; */
+  /* margin: 0 auto; */
+    }
+    .brand{
+      display:flex;
+      flex-direction:column;
+      gap: 2px;
+      min-width: 260px;
+    }
+    .brand h1{
+      font-size: 16px;
+      margin:0;
+      letter-spacing: 0.2px;
+      font-weight: 650;
+    }
+    .brand .hint{
+      font-size: 12px;
+      margin:0;
+      color: var(--muted);
+    }
+    .actions{
+      display:flex;
+      gap: 10px;
+      align-items:center;
+      flex-wrap: wrap;
+      justify-content:flex-end;
+    }
+    .btn{
+      appearance:none;
+      border: 1px solid var(--border);
+      background: linear-gradient(to bottom, #ffffff, #f9fafb);
+      color: var(--text);
+      padding: 8px 10px;
+      border-radius: 10px;
+      cursor:pointer;
+      font-size: 12px;
+      line-height: 1;
+      transition: transform 80ms ease, border-color 120ms ease, background 120ms ease;
+    }
+    .btn:hover{ border-color: #d1d5db; }
+    .btn:active{ transform: translateY(1px); }
+    .btn.primary{
+      border-color: rgba(37,99,235,0.35);
+      background: linear-gradient(to bottom, rgba(37,99,235,0.10), rgba(37,99,235,0.04));
+    }
+    .fileInput{
+      font-size: 12px;
+      color: var(--muted);
+      max-width: 260px;
+    }
+    .layout{
+      height: calc(100% - 57px);
+      display:grid;
+grid-template-columns: 250px 280px minmax(0, 1fr);
+      gap: 12px;
+      padding: 12px;
+  /* max-width: 1600px; */
+  /* margin: 0 auto; */
+      box-sizing: border-box;
+    }
+    .pane{
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: var(--radius2);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+      display:flex;
+      flex-direction:column;
+      min-width: 0; /* allow overflow ellipsis */
+    }
+    .paneHeader{
+      padding: 12px 12px 10px;
+      border-bottom: 1px solid var(--border);
+      background: #f9fafb;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap: 10px;
+    }
+    .paneHeader h2{
+      margin:0;
+      font-size: 13px;
+      font-weight: 650;
+      color: var(--text-main);
+      letter-spacing: 0.2px;
+    }
+    .paneHeader .sub{
+      margin:0;
+      font-size: 12px;
+      color: var(--muted);
+    }
+    .paneBody{
+      padding: 12px;
+      overflow: auto;
+    }
+    .group{
+      margin-bottom: 12px;
+    }
+	.sidebar,
+.conversation-pane {
+  background: var(--bg-panel);
+}
+
+.turn-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+}
+    label{
+      display:block;
+      font-size: 11px;
+      color: var(--muted);
+      margin: 0 0 6px;
+    }
+    input[type="text"], input[type="number"], input[type="date"], select{
+      width: 100%;
+      box-sizing: border-box;
+      padding: 8px 10px;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      background: rgba(0,0,0,0.25);
+      color: var(--text);
+      font-size: 12px;
+      outline: none;
+    }
+    input::placeholder{ color: #9ca3af; }
+    .row{
+      display:flex;
+      gap: 8px;
+      align-items:center;
+    }
+    .row > * { flex: 1; }
+    .small{
+      font-size: 11px;
+      color: var(--muted2);
+      line-height: 1.4;
+      margin-top: 8px;
+    }
+    .list{
+      display:flex;
+      flex-direction:column;
+      gap: 8px;
+    }
+    .convItem{
+      border: 1px solid var(--border);
+      background: #ffffff;
+      border-radius: var(--radius);
+      padding: 10px 10px;
+      cursor:pointer;
+      transition: border-color 120ms ease, background 120ms ease;
+    }
+    .convItem:hover{ border-color: #d1d5db; background: #f3f4f6; }
+    .convItem.active{ border-color: rgba(37,99,235,0.45); background: rgba(37,99,235,0.06); }
+    .convTitle{
+      font-size: 13px;
+      font-weight: 650;
+      margin: 0 0 4px;
+      white-space: nowrap;
+      overflow:hidden;
+      text-overflow: ellipsis;
+    }
+    /* Conversation tile lines 2–5 */
+    .convLine2{
+      font-size: 11px;
+      color: var(--text-muted);
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+    }
+    .convLine3{
+      font-size: 11px;
+      color: var(--text-muted);
+    }
+    .convLine4{
+      font-size: 11px;
+      color: var(--text-muted);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .convLine5{
+      display: flex;
+      gap: 6px;
+      margin-top: 2px;
+    }
+    .convTileBtn{
+      font-size: 10px;
+      line-height: 1;
+      color: var(--text);
+      background: linear-gradient(to bottom, #ffffff, #f9fafb);
+      border: 1px solid var(--border-subtle);
+      border-radius: 999px;
+      padding: 3px 8px;
+      cursor: pointer;
+      transition: border-color 120ms ease;
+    }
+    .convTileBtn:hover{
+      border-color: #d1d5db;
+    }
+    .turnsHeader{
+      display:flex;
+      flex-direction:column;
+      gap: 6px;
+      padding: 12px 12px 10px;
+      border-bottom: 1px solid var(--border);
+      background: #f9fafb;
+    }
+    .turnsTopRow{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap: 10px;
+    }
+    .turnsTitle{
+      font-size: 14px;
+      font-weight: 700;
+      margin:0;
+      letter-spacing: 0.2px;
+      min-width: 0;
+      white-space: nowrap;
+      overflow:hidden;
+      text-overflow: ellipsis;
+    }
+    .turnsMeta{
+      font-size: 12px;
+      color: var(--muted);
+      margin:0;
+    }
+    .toggle{
+      display:flex;
+      align-items:center;
+      gap: 8px;
+      font-size: 12px;
+      color: var(--muted);
+      user-select:none;
+      white-space: nowrap;
+    }
+    .toggle input{ transform: translateY(1px); }
+    .turnCard{
+      border: 1px solid var(--border);
+      background: #ffffff;
+      border-radius: var(--radius2);
+      overflow:hidden;
+    }
+    .turnCard + .turnCard{ margin-top: 12px; }
+    .turnRow{
+      display:grid;
+      grid-template-columns: 84px 1fr;
+      gap: 10px;
+      padding: 12px;
+      border-top: 1px solid var(--border-subtle);
+    }
+    .turnRow:first-child{ border-top: none; }
+    .rolePill{
+      font-size: 10px;
+  color: var(--text-main);
+  background: #f3f4f6;
+  border-color: var(--border-subtle);
+  border: 1px solid var(--border-subtle);
+      border-radius: 999px;
+      padding: 4px 6px;
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      height: fit-content;
+      width: fit-content;
+    }
+    .rolePill.user{ border-color: rgba(37,99,235,0.35); background: rgba(37,99,235,0.08); }
+    .rolePill.assistant{ border-color: rgba(170, 122, 255,0.30); background: rgba(170, 122, 255,0.10); }
+    .msg{
+      min-width:0;
+    }
+    .msgText{
+      margin: 0;
+      font-size: 12.5px;
+      line-height: 1.5;
+      color: var(--text-main);
+      white-space: pre-wrap;
+      word-break: break-word;
+    }
+    .msgMetaRow{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap: 10px;
+      margin-top: 8px;
+    }
+    .time{
+      font-family: var(--mono);
+      font-size: 10.5px;
+  color: var(--text-muted);
+    }
+    .tertiary{
+      font-size: 11px;
+      color: var(--muted);
+      background: transparent;
+      border: 1px solid var(--border-subtle);
+      border-radius: 999px;
+      padding: 5px 9px;
+      cursor:pointer;
+    }
+    .tertiary:hover{ border-color: #d1d5db; }
+    .expander{
+      margin-top: 8px;
+      display:flex;
+      justify-content:flex-start;
+      gap: 8px;
+    }
+    .hidden { display:none !important; }
+
+    /* Modal */
+    .modalOverlay{
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.60);
+      display:none;
+      align-items:center;
+      justify-content:center;
+      z-index: 50;
+      padding: 18px;
+    }
+    .modalOverlay.open{ display:flex; }
+    .modal{
+      width: min(980px, 96vw);
+      max-height: 88vh;
+      background: #ffffff;
+      border: 1px solid var(--border-subtle);
+      border-radius: 16px;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.12);
+      overflow:hidden;
+      display:flex;
+      flex-direction:column;
+    }
+    .modalHeader{
+      padding: 12px 12px 10px;
+      border-bottom: 1px solid var(--border-subtle);
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap: 10px;
+    }
+    .modalHeader strong{ font-size: 13px; }
+    .modalBody{
+      padding: 12px;
+      overflow:auto;
+    }
+    pre{
+      margin:0;
+      font-family: var(--mono);
+      font-size: 11.5px;
+      line-height: 1.45;
+      color: var(--text-main);
+      white-space: pre-wrap;
+      word-break: break-word;
+    }
+    @media (max-width: 1100px){
+      body{ overflow:auto; }
+      .layout{
+        height: auto;
+        grid-template-columns: 1fr;
+      }
+    }
+
+/* ===============================
+   Light theme text fixes
+   =============================== */
+
+/* 1. Turn message text */
+.msgText {
+  color: var(--text-main) !important;
+}
+
+/* 2. Pane headers */
+.paneHeader h2 {
+  color: var(--text-main);
+}
+
+.paneHeader .sub {
+  color: var(--text-muted);
+}
+
+/* 3. Topbar */
+.topbar,
+.topbar h1,
+.topbar .hint {
+  color: var(--text-main);
+}
+
+.topbar .btn {
+  color: var(--text-main);
+  border-color: var(--border-subtle);
+}
+
+.topbar .btn:hover {
+  border-color: #d1d5db;
+}
+
+/* ---------- Messages (middle pane) ---------- */
+.promptItem{
+  border: 1px solid var(--border-subtle);
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 10px 10px 8px;
+  cursor: pointer;
+}
+.promptItem + .promptItem{ margin-top: 10px; }
+.promptItem:hover{ background: #f3f4f6; }
+.promptText{
+  font-size: 12.5px;
+  line-height: 1.35;
+  color: var(--text-main);
+  margin: 0;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+.promptMeta{
+  margin-top: 6px;
+  font-size: 11px;
+  color: var(--text-muted);
+  font-family: var(--mono);
+}
+/* FINAL OVERRIDE — pane titles must be dark in light theme */
+.paneHeader h2,
+.turnsHeader h2 {
+  color: var(--text-main) !important;
+}
+
+/* ---------- Minor touch: role pill text in light theme ---------- */
+.rolePill,
+.rolePill.user,
+.rolePill.assistant{
+  color: var(--text-main) !important;
+}
+
+
+/* --- Markdown in message bodies (Tier 2) --- */
+.msgText { color: var(--text); line-height: 1.45; }
+.msgText p { margin: 0.35rem 0; }
+.msgText p:first-child { margin-top: 0; }
+.msgText p:last-child { margin-bottom: 0; }
+.msgText em { font-style: italic; }
+.msgText strong { font-weight: 700; }
+.msgText code { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; font-size: 0.95em; padding: 0.08em 0.28em; border-radius: 6px; background: rgba(0,0,0,0.06); }
+.msgText pre { overflow: auto; padding: 0.75rem; border-radius: 10px; background: rgba(0,0,0,0.05); }
+.msgText pre code { padding: 0; background: transparent; }
+.msgText ul, .msgText ol { margin: 0.4rem 0 0.4rem 1.25rem; padding: 0; }
+.msgText li { margin: 0.15rem 0; }
+.msgText blockquote { margin: 0.5rem 0; padding: 0.4rem 0.75rem; border-left: 3px solid rgba(0,0,0,0.15); background: rgba(0,0,0,0.03); border-radius: 8px; }
+.msgText a { color: var(--accent); text-decoration: underline; text-underline-offset: 2px; }
+.msgText a:hover { opacity: 0.9; }
+
+
+/* ===============================
+   Markdown vertical rhythm (reader-tight)
+   =============================== */
+
+.msgText {
+  line-height: 1.38;
+}
+
+/* Paragraphs: single-spaced feel */
+.msgText p {
+  margin: 0 0 0.28em;
+}
+
+.msgText p:last-child {
+  margin-bottom: 0;
+}
+
+/* Headings: compact but distinct */
+.msgText h1,
+.msgText h2,
+.msgText h3 {
+  margin: 0.45em 0 0.18em;
+  line-height: 1.2;
+}
+
+.msgText h1 { font-size: 1.2em; }
+.msgText h2 { font-size: 1.12em; }
+.msgText h3 { font-size: 1.05em; }
+
+/* Horizontal rules: subtle separators, not spacers */
+.msgText hr {
+  margin: 0.25em 0;
+  border: none;
+  border-top: 1px solid var(--border-subtle);
+  opacity: 0.6;
+}
+
+/* Lists: tight, app-like */
+.msgText ul,
+.msgText ol {
+  margin: 0.18em 0 0.35em;
+  padding-left: 1.1em;
+}
+
+.msgText li {
+  margin: 0.08em 0;
+}
+
+/* Avoid paragraph inflation inside list items */
+.msgText li p {
+  margin: 0.12em 0;
+}
+
+/* Blockquotes: compact emphasis */
+.msgText blockquote {
+  margin: 0.35em 0;
+  padding: 0.25em 0.6em;
+  border-left: 3px solid var(--border-subtle);
+  color: var(--text-muted);
+}
+
+/* Code blocks: readable, not towering */
+.msgText pre {
+  margin: 0.35em 0;
+  padding: 0.55em 0.65em;
+  border: 1px solid var(--border-subtle);
+  border-radius: 10px;
+  overflow: auto;
+}
+
+.msgText pre:last-child {
+  margin-bottom: 0;
+}
+
+/* Inline code: minimal */
+.msgText code {
+  padding: 0.04em 0.3em;
+  border: 1px solid var(--border-subtle);
+  border-radius: 8px;
+}
+
+/* ===============================
+   Turns: controls under role pill
+   =============================== */
+
+.turnLeft{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 3px;
+}
+
+.turnLeft .rolePill{
+  display: block;
+}
+
+.turnLeft .tertiary{
+  width: auto;
+  font-size: 10px;
+  margin: 0;
+  line-height: 1.1;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+
+
+/* ===============================
+   Filters pane: label-left / control-right (Search → Tags only)
+   =============================== */
+
+/* Turn specific filter groups into 2-column rows */
+.pane[aria-label="Filters"] .group:has(#searchInput),
+.pane[aria-label="Filters"] .group:has(#truncateInput),
+.pane[aria-label="Filters"] .group:has(#topicSelect),
+.pane[aria-label="Filters"] .group:has(#tagInput){
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  align-items: center;
+  column-gap: 10px;
+}
+
+/* Tighten label spacing in those rows */
+.pane[aria-label="Filters"] .group:has(#searchInput) > label,
+.pane[aria-label="Filters"] .group:has(#truncateInput) > label,
+.pane[aria-label="Filters"] .group:has(#topicSelect) > label,
+.pane[aria-label="Filters"] .group:has(#tagInput) > label{
+  margin: 0;
+  white-space: nowrap;
+}
+
+/* Ensure controls fill the right column */
+.pane[aria-label="Filters"] .group:has(#searchInput) > input,
+.pane[aria-label="Filters"] .group:has(#truncateInput) > input,
+.pane[aria-label="Filters"] .group:has(#topicSelect) > select,
+.pane[aria-label="Filters"] .group:has(#tagInput) > input{
+  width: 100%;
+}
+
+/* Date range group: stack From/To, but keep label+control on the same line */
+.pane[aria-label="Filters"] .group:has(#fromDate) .row{
+  flex-direction: column;
+  align-items: stretch;
+  gap: 10px;
+}
+.pane[aria-label="Filters"] .group:has(#fromDate) .row > div{
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  align-items: center;
+  column-gap: 10px;
+}
+.pane[aria-label="Filters"] .group:has(#fromDate) .row > div > label{
+  margin: 0;
+  white-space: nowrap;
+}
+.pane[aria-label="Filters"] .group:has(#fromDate) .row > div > input[type="date"]{
+  width: 100%;
+}
+.pane[aria-label="Filters"] .group .row button {
+  flex: 1;
+}
+
+/* Help flex/grid children shrink instead of overflowing */
+.row > * { min-width: 0; }
+
+
+/* ===============================
+   Topics (Tier 2)
+   =============================== */
+
+/* Bottom row in each conversation tile:
+   left = topic list
+   right = Topics + TagAssist links stacked
+*/
+
+.topicItem{
+  border: 1px solid var(--border-subtle);
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 8px 10px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap: 10px;
+}
+
+.topicLabel{
+  display:flex;
+  align-items:center;
+  gap: 8px;
+  min-width: 0;
+}
+.topicLabel input[type="checkbox"]{
+  margin: 0;
+}
+.topicName{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.topicActions{
+  display:flex;
+  gap: 8px;
+  align-items:center;
+  flex-shrink: 0;
+}
+.topicMiniBtn{
+  font-size: 10.5px;
+  padding: 4px 8px;
+}
+
+
+
+.topicItem label{
+  margin:0;
+  font-size: 12px;
+  color: var(--text-main);
+  display:flex;
+  align-items:center;
+  gap: 8px;
+}
+
+.topicItem input[type="checkbox"]{
+  transform: translateY(1px);
+}
+
+
+/* ---------- Turn tags (right pane) ---------- */
+.turnTags{
+  font-size: 11px;
+  color: var(--text-muted);
+  margin: 0 0 6px;
+}
+.turnTags.muted{ color: var(--text-muted); }
+
+/* Topic/Tag mini button danger */
+.topicMiniBtn.danger{
+  border-color: rgba(220,38,38,0.35);
+}
+.topicMiniBtn.danger:hover{
+  border-color: rgba(220,38,38,0.6);
+}
+
+
+/* ===============================
+   Modal — light theme alignment
+   =============================== */
+
+.modal {
+  background: var(--bg-card);
+  color: var(--text-main);
+  border: 1px solid var(--border-subtle);
+}
+
+.modalHeader {
+  background: var(--bg-panel);
+  color: var(--text-main);
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.modalBody {
+  background: var(--bg-card);
+  color: var(--text-main);
+}
+
+.modal .btn,
+.modal .tertiary {
+  color: var(--text-main);
+  background: #ffffff;
+  border-color: var(--border-subtle);
+}
+
+.modal .btn.primary {
+  color: #ffffff;
+  background: var(--accent);
+  border-color: var(--accent);
+}
+
+.modal .btn:hover,
+.modal .tertiary:hover {
+  background: #f3f4f6;
+}
+
+.modal input[type="text"],
+.modal input[type="number"],
+.modal select {
+  background: #ffffff;
+  color: var(--text-main);
+  border: 1px solid var(--border-subtle);
+}
+
+.modal label,
+.modal .small {
+  color: var(--text-muted);
+}
+
+.modalOverlay {
+  background: rgba(0, 0, 0, 0.45);
+}
+
+/* ===============================
+   Filters pane: Tags group layout fix
+   =============================== */
+
+/* Keep the label in col 1 and the input in col 2 */
+.pane[aria-label="Filters"] .group:has(#tagInput) > label {
+  grid-column: 1;
+}
+
+.pane[aria-label="Filters"] .group:has(#tagInput) > #tagInput {
+  grid-column: 2;
+  width: 100%;
+}
+
+/* Put the Load/Export buttons row in col 2 as well (so it can't widen col 1) */
+.pane[aria-label="Filters"] .group:has(#tagInput) > .row {
+  grid-column: 2;
+  width: 100%;
+}
+
+/* Optional: keep the two buttons evenly spaced */
+.pane[aria-label="Filters"] .group:has(#tagInput) > .row > button {
+  flex: 1;
+}
+
+
+
+/* ===============================
+   User Guide modal
+   =============================== */
+
+.guideModal {
+  width: min(860px, 92vw);
+  max-height: 86vh;
+}
+
+.guideHeader {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.guideSubhead {
+  margin-top: 4px;
+  font-size: 11px;
+}
+
+.guideBody {
+  padding: 0;
+}
+
+.guideContent {
+  padding: 22px 28px 26px;
+  max-width: 760px;
+  margin: 0 auto;
+  line-height: 1.6;
+  color: var(--text-main);
+}
+
+.guideLoading {
+  margin: 0;
+}
+
+.guideContent h1,
+.guideContent h2,
+.guideContent h3 {
+  color: var(--text-main);
+  line-height: 1.25;
+}
+
+.guideContent h1 {
+  margin: 0 0 16px;
+  font-size: 24px;
+}
+
+.guideContent h2 {
+  margin: 28px 0 10px;
+  font-size: 18px;
+  padding-top: 4px;
+  border-top: 1px solid var(--border-subtle);
+}
+
+.guideContent h1 + h2,
+.guideContent h2:first-child {
+  border-top: 0;
+  padding-top: 0;
+  margin-top: 0;
+}
+
+.guideContent h3 {
+  margin: 20px 0 8px;
+  font-size: 15px;
+}
+
+.guideContent p {
+  margin: 0 0 12px;
+}
+
+.guideContent ul,
+.guideContent ol {
+  margin: 0 0 14px 0;
+  padding-left: 22px;
+}
+
+.guideContent li {
+  margin: 0 0 8px;
+}
+
+.guideContent code {
+  font-family: var(--mono);
+  font-size: 0.95em;
+  background: #f3f4f6;
+  border: 1px solid var(--border-subtle);
+  border-radius: 6px;
+  padding: 1px 6px;
+}
+
+@media (max-width: 700px) {
+  .guideModal {
+    width: min(96vw, 96vw);
+    max-height: 90vh;
+  }
+
+  .guideContent {
+    padding: 18px 18px 22px;
+  }
+
+  .guideContent h1 {
+    font-size: 21px;
+  }
+}
+
+
+/* ===============================
+   Mobile tab bar (hidden on desktop)
+   =============================== */
+
+.mobileTabs { display: none; }
+
+/* ===============================
+   Mobile layout  (≤ 768 px)
+   =============================== */
+
+@media (max-width: 768px) {
+
+  /* --- Full-height flex shell so topbar + tabs + pane fill viewport --- */
+  html, body {
+    height: 100%;
+    height: 100dvh;
+    overflow: hidden;
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Un-sticky topbar so body flex-height math is exact */
+  .topbar {
+    position: relative;
+    flex-shrink: 0;
+  }
+
+  /* --- Compact header --- */
+  .topbarRow {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 6px;
+  }
+
+  .brand { min-width: 0; }
+
+  /* Hide the long hint text on mobile */
+  .brand .hint { display: none; }
+
+  .actions {
+    justify-content: flex-start;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+
+  .fileInput { max-width: none; }
+
+  /* --- Tab bar --- */
+  .mobileTabs {
+    display: flex;
+    flex-shrink: 0;
+    background: var(--bg-panel);
+    border-bottom: 1px solid var(--border);
+  }
+
+  .mobileTab {
+    flex: 1;
+    padding: 11px 4px;
+    border: none;
+    background: transparent;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--text-muted);
+    cursor: pointer;
+    border-bottom: 3px solid transparent;
+    transition: color 120ms, border-color 120ms;
+    font-family: var(--sans);
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .mobileTab.active {
+    color: var(--accent);
+    border-bottom-color: var(--accent);
+    font-weight: 600;
+  }
+
+  /* --- Layout: single flex column --- */
+  .layout {
+    flex: 1;
+    min-height: 0;
+    height: auto;       /* override calc(100% - 57px) */
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    gap: 0;
+    grid-template-columns: 1fr; /* fallback if grid still applies */
+  }
+
+  /* --- Show only the active pane --- */
+  .pane {
+    display: none;
+    flex: 1;
+    min-height: 0;
+    border-radius: 0;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    border-top: none;
+  }
+
+  .pane.mobileActive {
+    display: flex;
+  }
+
+  /* PaneBody fills remaining height inside the pane */
+  .paneBody {
+    flex: 1;
+    min-height: 0;
+  }
+
+  /* Turns header must not shrink */
+  .turnsHeader { flex-shrink: 0; }
+
+  /* --- Touch targets --- */
+  .btn {
+    padding: 10px 14px;
+    font-size: 13px;
+    min-height: 40px;
+  }
+
+  .convTileBtn,
+  .tertiary {
+    padding: 7px 12px;
+    font-size: 11px;
+  }
+
+  /* --- Prevent iOS auto-zoom on inputs (font-size must be ≥ 16px) --- */
+  input[type="text"],
+  input[type="number"],
+  input[type="date"],
+  select {
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,825 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_2019-02_normalize_2026-01-16T064317401Z",
+    "generated_utc": "2026-01-16T06:43:17.401Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "2019-02",
+    "window": {
+      "start_utc": "2019-02-01T00:00:00.000Z",
+      "end_utc": "2019-02-28T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "evt_201902_keystone_stcharles_01",
+      "title": "Keystone pipeline leak and shutdown in St. Charles County, Missouri",
+      "description": "A crude oil leak on TransCanada’s Keystone pipeline was discovered in St. Charles County, Missouri, prompting a shutdown and investigation. Missouri officials initially estimated roughly 43 barrels (about 1,800 gallons) were released on private property and response/cleanup actions followed.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2019-02-06T00:00:00.000Z",
+        "event_end": "2019-02-08T23:59:59.000Z",
+        "reported_at": "2019-02-07T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2019-02-06T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "St. Charles County, Missouri, United States",
+        "jurisdiction_level": "site",
+        "admin1": "Missouri",
+        "country": "US",
+        "capital_used": null,
+        "lat": 38.7817,
+        "lon": -90.7863,
+        "precision": "admin1",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.5
+      },
+      "sources": [
+        {
+          "url": "https://www.stlpr.org/health-science-environment/2019-02-07/transcanada-to-replace-keystone-pipeline-section-that-was-source-of-leak-in-st-charles-county",
+          "source_name": "St. Louis Public Radio (STLPR)",
+          "published_at": "2019-02-07T00:00:00.000Z",
+          "headline": "TransCanada To Replace Keystone Pipeline Section That Was Source Of Leak In St. Charles County",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.kbia.org/news/2019-02-08/missouri-leak-prompts-closure-of-parts-of-two-oil-pipelines",
+          "source_name": "KBIA",
+          "published_at": "2019-02-08T00:00:00.000Z",
+          "headline": "Missouri leak prompts closure of parts of two oil pipelines",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.desmog.com/2019/02/08/keystone-pipeline-shutdown-oil-spill-missouri-county-corrosion/",
+          "source_name": "DeSmog",
+          "published_at": "2019-02-08T00:00:00.000Z",
+          "headline": "Keystone Pipeline Shutdown After Oil Spill in Missouri County Linked to Corrosion",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "TransCanada",
+          "Keystone Pipeline"
+        ],
+        "substances": [
+          "crude oil"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.75,
+        "location": 0.5,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "keystone_pipeline_leak_st_charles_mo_2019-02",
+        "fingerprint": "fp_keystone_st_charles_mo_2019-02-06"
+      }
+    },
+    {
+      "event_id": "evt_201902_mn_bomb_cyclone_blizzard",
+      "title": "Winter “bomb cyclone” blizzard brings heavy snow, high winds, and rescues in southern Minnesota",
+      "description": "A rapidly intensifying winter storm struck Minnesota from Feb. 22–24, 2019, producing blizzard conditions with heavy snow and strong winds. The storm disrupted travel and led to rescues of stranded motorists.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2019-02-22T00:00:00.000Z",
+        "event_end": "2019-02-24T23:59:59.000Z",
+        "reported_at": "2019-02-01T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2019-02-23T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Southern Minnesota, United States",
+        "jurisdiction_level": "state",
+        "admin1": "Minnesota",
+        "country": "US",
+        "capital_used": "Saint Paul",
+        "lat": 44.9537,
+        "lon": -93.09,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://www.dnr.state.mn.us/climate/journal/winter-bomb-cyclone-february-22-24-2019.html",
+          "source_name": "Minnesota Department of Natural Resources",
+          "published_at": "2019-02-01T00:00:00.000Z",
+          "headline": "Winter Bomb Cyclone February 22-24, 2019",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Minnesota Department of Natural Resources"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Winter Bomb Cyclone February 22-24, 2019",
+            "source_url": "https://www.dnr.state.mn.us/climate/journal/winter-bomb-cyclone-february-22-24-2019.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.85,
+        "location": 0.7,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "mn_bomb_cyclone_blizzard_feb_2019",
+        "fingerprint": "mn_bomb_cyclone_blizzard_feb2019_stpaul_2019-02-22_2019-02-24"
+      }
+    },
+    {
+      "event_id": "evt_201902_midwest_snowiest_february_multiple_cities",
+      "title": "Multiple Midwest/Plains cities record snowiest February amid exceptionally snowy month",
+      "description": "Reporting described exceptionally snowy conditions across parts of the U.S. Midwest and Plains during February 2019. Several locations were cited as experiencing their snowiest February on record during the month.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2019-02-01T00:00:00.000Z",
+        "event_end": "2019-02-28T23:59:59.000Z",
+        "reported_at": "2019-04-10T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": null,
+        "event_date_precision": "month"
+      },
+      "location": {
+        "name": "United States (Midwest/Plains region; multiple locations)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.5
+      },
+      "sources": [
+        {
+          "url": "https://weather.com/storms/winter/news/2019-04-10-plains-midwest-extreme-weather-snow-cold-flooding",
+          "source_name": "The Weather Channel",
+          "published_at": "2019-04-10T00:00:00.000Z",
+          "headline": "Plains, Midwest Hit With Extreme Weather: Snow, Cold and Flooding",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "The Weather Channel"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Plains, Midwest Hit With Extreme Weather: Snow, Cold and Flooding",
+            "source_url": "https://weather.com/storms/winter/news/2019-04-10-plains-midwest-extreme-weather-snow-cold-flooding"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.5,
+        "category": 0.8,
+        "location": 0.5,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "midwest_plains_snowiest_feb_2019",
+        "fingerprint": "midwest_plains_snowiest_feb2019_us_capital_month"
+      }
+    },
+    {
+      "event_id": "evt_201902_nws_aberdeen_cold_feb_review",
+      "title": "NWS Aberdeen review documents markedly below-normal February 2019 temperatures in its forecast area",
+      "description": "NWS Aberdeen’s February 2019 climate review summarizes unusually cold conditions across stations in its forecast area, along with monthly precipitation statistics. The review covers locations in northeast South Dakota and west-central Minnesota.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2019-02-01T00:00:00.000Z",
+        "event_end": "2019-02-28T23:59:59.000Z",
+        "reported_at": "2019-02-01T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": null,
+        "event_date_precision": "month"
+      },
+      "location": {
+        "name": "United States (NWS Aberdeen forecast area: NE South Dakota / west-central Minnesota)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.4
+      },
+      "sources": [
+        {
+          "url": "https://www.weather.gov/abr/February2019InReview",
+          "source_name": "US National Weather Service (Aberdeen, SD)",
+          "published_at": "2019-02-01T00:00:00.000Z",
+          "headline": "February 2019 In Review",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "US National Weather Service"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "February 2019 In Review",
+            "source_url": "https://www.weather.gov/abr/February2019InReview"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.46,
+        "category": 0.8,
+        "location": 0.4,
+        "summary_grounding": 0.4
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "needs_dedupe_check",
+        "low_confidence_location"
+      ],
+      "dedupe": {
+        "cluster_hint": "nws_aberdeen_feb2019_cold_review",
+        "fingerprint": "nws_aberdeen_feb2019_review_us_capital_month"
+      }
+    },
+    {
+      "event_id": "evt_201902_typhoon_wutip_record_feb_intensity",
+      "title": "Typhoon Wutip reaches exceptional February intensity in the western Pacific near Guam",
+      "description": "A news report described Typhoon Wutip as the strongest February typhoon on record as it passed through the western Pacific in late February 2019. The storm affected the region near Guam with powerful winds and gusts, according to the report.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2019-02-18T00:00:00.000Z",
+        "event_end": "2019-02-28T23:59:59.000Z",
+        "reported_at": "2019-02-25T00:00:00.000Z",
+        "time_confidence": 0.75,
+        "event_date_utc": "2019-02-25T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Guam (nearby western Pacific)",
+        "jurisdiction_level": "site",
+        "admin1": null,
+        "country": "GU",
+        "capital_used": null,
+        "lat": 13.4443,
+        "lon": 144.7937,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://www.washingtonpost.com/weather/2019/02/25/strongest-february-typhoon-record-packs-mph-gusts-sideswiping-guam/",
+          "source_name": "The Washington Post",
+          "published_at": "2019-02-25T00:00:00.000Z",
+          "headline": "Strongest February typhoon on record packs 180 mph gusts, sideswiping Guam",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "The Washington Post"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Strongest February typhoon on record ... sideswiping Guam",
+            "source_url": "https://www.washingtonpost.com/weather/2019/02/25/strongest-february-typhoon-record-packs-mph-gusts-sideswiping-guam/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.56,
+        "category": 0.85,
+        "location": 0.7,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "paywalled_or_partial",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "typhoon_wutip_feb2019",
+        "fingerprint": "typhoon_wutip_guam_2019-02-25"
+      }
+    },
+    {
+      "event_id": "evt_20190222_ecu_palora_eq",
+      "title": "Magnitude 7.5 earthquake near Palora, Ecuador",
+      "description": "A magnitude 7.5 earthquake was reported by the USGS near Palora, Ecuador on February 22, 2019. The source describes regional shaking impacts associated with the event.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2019-02-22T10:17:00.000Z",
+        "event_end": "2019-02-22T23:59:59.000Z",
+        "reported_at": "2019-02-22T10:17:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2019-02-22T10:17:00.000Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Near Palora, Ecuador",
+        "jurisdiction_level": "city",
+        "admin1": null,
+        "country": "EC",
+        "capital_used": null,
+        "lat": -1.7011,
+        "lon": -77.965,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.45
+      },
+      "sources": [
+        {
+          "url": "https://www.usgs.gov/news/featured-story/magnitude-75-earthquake-palora-ecuador",
+          "source_name": "USGS",
+          "published_at": "2019-02-22T10:17:00.000Z",
+          "headline": "Magnitude 7.5 earthquake near Palora, Ecuador",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "USGS"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Magnitude 7.5 earthquake near Palora, Ecuador",
+            "source_url": "https://www.usgs.gov/news/featured-story/magnitude-75-earthquake-palora-ecuador"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.5,
+        "category": 0.85,
+        "location": 0.45,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "usgs_m7p5_palora_2019-02-22",
+        "fingerprint": "fp_m75_palora_ec_2019-02-22"
+      }
+    },
+    {
+      "event_id": "evt_20190226_idn_bakan_mine_collapse",
+      "title": "Illegal gold mine collapse in Bolaang Mongondow Regency, Indonesia",
+      "description": "An illegal communal gold mine collapsed in North Sulawesi, Indonesia on February 26, 2019, according to Reuters. The report describes fatalities and efforts to search for/trap miners.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2019-02-26T00:00:00.000Z",
+        "event_end": "2019-02-26T23:59:59.000Z",
+        "reported_at": "2019-02-26T00:00:00.000Z",
+        "time_confidence": 0.4,
+        "event_date_utc": "2019-02-26T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Bakan village, Lolayan, Bolaang Mongondow Regency, North Sulawesi, Indonesia",
+        "jurisdiction_level": "site",
+        "admin1": "North Sulawesi",
+        "country": "ID",
+        "capital_used": null,
+        "lat": 0.8266,
+        "lon": 124.4587,
+        "precision": "neighborhood",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.35
+      },
+      "sources": [
+        {
+          "url": "https://www.reuters.com/article/us-indonesia-mine-collapse/at-least-19-dead-in-indonesia-illegal-mine-collapse-search-continues-idUSKCN1QF0K9",
+          "source_name": "Reuters",
+          "published_at": "2019-02-26T00:00:00.000Z",
+          "headline": "At least 19 dead in Indonesia illegal mine collapse, search continues",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Reuters"
+        ],
+        "substances": [
+          "gold"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "At least 19 dead in Indonesia illegal mine collapse, search continues",
+            "source_url": "https://www.reuters.com/article/us-indonesia-mine-collapse/at-least-19-dead-in-indonesia-illegal-mine-collapse-search-continues-idUSKCN1QF0K9"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.45,
+        "category": 0.75,
+        "location": 0.35,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "reuters_indonesia_illegal_mine_collapse_bakan_2019-02-26",
+        "fingerprint": "fp_mine_collapse_bakan_id_2019-02-26"
+      }
+    },
+    {
+      "event_id": "20190207_forrestdale_bushfire_perth_south",
+      "title": "Forrestdale bushfire near Perth prompts warnings and emergency response",
+      "description": "A bushfire in the Forrestdale area in Perth’s south burned under hot and windy conditions in early February 2019 and prompted public warnings and emergency response actions.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2019-02-07T00:00:00.000Z",
+        "event_end": "2019-02-08T23:59:59.000Z",
+        "reported_at": "2019-02-09T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2019-02-07T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Forrestdale (Perth’s south), Western Australia, Australia",
+        "jurisdiction_level": "site",
+        "admin1": "Western Australia",
+        "country": "AU",
+        "capital_used": null,
+        "lat": -32.1306,
+        "lon": 115.9167,
+        "precision": "neighborhood",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.abc.net.au/news/2019-02-09/what-triggers-a-total-fire-ban-forrestdale-bushfire/10794832",
+          "source_name": "ABC News (Australia)",
+          "published_at": "2019-02-09T00:00:00.000Z",
+          "headline": "What triggers a total fire ban? (Forrestdale bushfire context)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "...Forrestdale bushfire...",
+            "source_url": "https://www.abc.net.au/news/2019-02-09/what-triggers-a-total-fire-ban-forrestdale-bushfire/10794832"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.52,
+        "category": 0.75,
+        "location": 0.55,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "secondary_sources_only",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Forrestdale bushfire Perth south Feb 2019",
+        "fingerprint": "fires|forrestdale_perth_south|2019-02-07"
+      }
+    },
+    {
+      "event_id": "20190225_esperance_complex_bushfires_wa",
+      "title": "Esperance complex bushfires threaten lives and homes in late February 2019",
+      "description": "Out-of-control fires in Western Australia’s Goldfields–Esperance region intensified in late February 2019, threatening lives and homes near Esperance and prompting firefighting mobilization and public safety closures.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2019-02-25T00:00:00.000Z",
+        "event_end": "2019-02-28T23:59:59.000Z",
+        "reported_at": "2019-02-28T00:00:00.000Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "2019-02-25T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Boyatup/Howick area near Esperance, Western Australia, Australia",
+        "jurisdiction_level": "site",
+        "admin1": "Western Australia",
+        "country": "AU",
+        "capital_used": null,
+        "lat": -33.86,
+        "lon": 121.89,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.45
+      },
+      "sources": [
+        {
+          "url": "https://knowledge.aidr.org.au/resources/2019-bushfire-wa-esperance-complex-bushfires/",
+          "source_name": "Australian Disaster Resilience Knowledge Hub (AIDR)",
+          "published_at": "2019-02-28T00:00:00.000Z",
+          "headline": "2019 Bushfire - WA - Esperance Complex Bushfires",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "...Esperance Complex Bushfires...",
+            "source_url": "https://knowledge.aidr.org.au/resources/2019-bushfire-wa-esperance-complex-bushfires/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.5,
+        "category": 0.8,
+        "location": 0.45,
+        "summary_grounding": 0.4
+      },
+      "quality_flags": [
+        "secondary_sources_only",
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Esperance complex bushfires Goldfields-Esperance late Feb 2019",
+        "fingerprint": "fires|esperance_complex|2019-02-25"
+      }
+    },
+    {
+      "event_id": "evt-201902-indiana-dunes-national-park",
+      "title": "Indiana Dunes redesignated as a U.S. National Park",
+      "description": "A federal action redesignated Indiana Dunes from a National Lakeshore to a National Park in February 2019. The change elevated its status within the U.S. National Park System, potentially affecting conservation visibility and tourism.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": "2019-02-15T00:00:00.000Z",
+        "event_end": "2019-02-15T23:59:59.000Z",
+        "reported_at": "2019-02-15T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2019-02-15T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Indiana Dunes, Indiana, United States",
+        "jurisdiction_level": "site",
+        "admin1": "Indiana",
+        "country": "US",
+        "capital_used": null,
+        "lat": 41.6534,
+        "lon": -87.0524,
+        "precision": "exact",
+        "location_basis": "manual_override",
+        "location_confidence": 0.5
+      },
+      "sources": [
+        {
+          "url": "https://www.cntraveler.com/story/indiana-dunes-new-national-park",
+          "source_name": "Condé Nast Traveler",
+          "published_at": "2019-02-15T00:00:00.000Z",
+          "headline": "Indiana Dunes Is America’s Newest National Park",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. National Park Service"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "Great Lakes shoreline"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Indiana Dunes is officially the newest national park in the United States.",
+            "source_url": "https://www.cntraveler.com/story/indiana-dunes-new-national-park"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.7,
+        "location": 0.5,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "needs_dedupe_check",
+        "date_ambiguous",
+        "low_confidence_location"
+      ],
+      "dedupe": {
+        "cluster_hint": "Indiana Dunes redesignated as national park (Feb 2019)",
+        "fingerprint": "indiana-dunes-redesignated-us-national-park|indiana-dunes-indiana-us|2019-02-15"
+      }
+    },
+    {
+      "event_id": "us-green-new-deal-sres59-2019-02-07",
+      "title": "Green New Deal resolution (S.Res.59) introduced in the U.S. Senate",
+      "description": "A Green New Deal resolution (S.Res.59) was introduced in the U.S. Senate on February 7, 2019. The measure outlined a framework for addressing climate change alongside economic and social goals and was introduced as a non-binding resolution.",
+      "category_primary": "policy_regulation",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "2019-02-07T00:00:00.000Z",
+        "event_end": "2019-02-07T23:59:59.000Z",
+        "reported_at": "2019-02-07T00:00:00.000Z",
+        "time_confidence": 0.75,
+        "event_date_utc": "2019-02-07T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States (federal)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.9
+      },
+      "sources": [
+        {
+          "url": "https://www.congress.gov/bill/116th-congress/senate-resolution/59/text",
+          "source_name": "Congress.gov",
+          "published_at": "2019-02-07T00:00:00.000Z",
+          "headline": "Text - S.Res.59 - 116th Congress (2019-2020): Recognizing the duty of the Federal Government to create a Green New Deal",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.axios.com/2019/02/07/green-new-deal-resolution-alexandria-ocasio-cortez",
+          "source_name": "Axios",
+          "published_at": "2019-02-07T00:00:00.000Z",
+          "headline": "Green New Deal resolution introduced",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Senate"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "S.Res.59 — 116th Congress (2019-2020)",
+            "source_url": "https://www.congress.gov/bill/116th-congress/senate-resolution/59/text"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.78,
+        "category": 0.85,
+        "location": 0.9,
+        "summary_grounding": 0.7
+      },
+      "quality_flags": [
+        "needs_dedupe_check",
+        "date_ambiguous",
+        "paywalled_or_partial"
+      ],
+      "dedupe": {
+        "cluster_hint": "Green New Deal resolution introduced (S.Res.59)",
+        "fingerprint": "fp_us_green_new_deal_sres59_2019-02-07_washingtondc"
+      }
+    }
+  ]
+}

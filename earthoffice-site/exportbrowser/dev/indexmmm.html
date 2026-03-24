@@ -1,0 +1,384 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Chat Explorer</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+  <header class="topbar">
+    <div class="topbarRow">
+      <div class="brand">
+        <h1>Chat Explorer</h1>
+        <p class="hint">
+  Select one or more ChatGPT, Claude, Gemini, and/or Grok conversations export JSON files. You may mix exports from platforms. Optionally include topics.json and tags.json in the same file selection.
+  <BR>Contact: <a href="/cdn-cgi/l/email-protection#94f7fcf5e0f1ece4f8fbe6f1e6d4f1f5e6e0fcfbf2f2fdf7f1bafaf1e0" style="color: var(--accent); text-decoration: none;"><span class="__cf_email__" data-cfemail="21424940554459514d4e5344536144405355494e47474842440f4f4455">[email&#160;protected]</span></a>
+</p>
+      </div>
+
+      <div class="actions">
+        <button id="userGuideBtn" class="btn">User Guide</button>
+        <input id="fileInput" class="fileInput" type="file" multiple accept=".json,application/json" />
+    <!--    <button id="loadDefaultBtn" class="btn">Load sample</button>
+        <button id="clearBtn" class="btn primary">Clear</button>  -->
+      </div> 
+    </div>
+  </header>
+
+  <main class="layout" aria-label="Chat Explorer">
+    <!-- Left: Filters -->
+<section class="pane" aria-label="Filters">
+  <div class="paneHeader">
+    <h2>Filters</h2>
+    <p class="sub" id="status">No data loaded.</p>
+  </div>
+  <div class="paneBody">
+    <div class="group">
+      <label for="searchInput">Search</label>
+      <input id="searchInput" type="text" placeholder="Search text…" />
+    </div>
+
+    <div class="group">
+      <label for="truncateInput">Preview</label>
+      <input id="truncateInput" type="number" min="20" max="2000" step="10" value="220" />
+    </div>
+
+    <div class="group">
+      <div class="row">
+        <div>
+          <label for="fromDate">From</label>
+          <input id="fromDate" type="date" />
+        </div>
+        <div>
+          <label for="toDate">To</label>
+          <input id="toDate" type="date" />
+        </div>
+      </div>
+    </div>
+
+    <div class="group">
+      <label for="topicSelect">Topic</label>
+      <select id="topicSelect">
+        <option value="">All topics</option>
+      </select>
+    </div>
+
+    <div class="group">
+      <div class="row">
+        <input id="topicsFileInput" class="fileInput hidden" type="file" accept=".json,application/json" />
+        <button id="loadTopicsBtn" class="btn">Load topics</button>
+        <button id="exportTopicsBtn" class="btn">Export topics</button>
+      </div>
+    </div>
+
+    <div class="group">
+      <label for="tagInput">Tags</label>
+      <input id="tagInput" type="text" placeholder="tag1, tag2, …" />
+      <div class="row" style="margin-top:8px;">
+        <button id="loadTagsBtn" class="btn">Load tags</button>
+        <button id="exportTagsBtn" class="btn">Export tags</button>
+        <input id="tagsFileInput" class="hidden" type="file" accept=".json,application/json" />
+      </div>
+    </div>
+
+    <div class="group">
+      <div class="row">
+        <button id="applyFilterBtn" class="btn primary">Apply</button>
+        <button id="clearFilterBtn" class="btn">Clear</button>
+      </div>
+    </div>
+
+    <div class="group">
+      <input id="convSearch" type="text" placeholder="Filter conversation titles…" />
+    </div>
+
+    <div class="group">
+      <div style="display:flex;align-items:baseline;justify-content:space-between;gap:10px;">
+        <label style="margin:0;">Conversations</label>
+        <div class="small" id="convMeta" style="margin:0;">—</div>
+      </div>
+      <div id="convList" class="list" aria-label="Conversation list"></div>
+    </div>
+ 
+    <div class="small" id="jsonMeta"></div>
+  </div>
+</section>
+
+    <!-- Middle: Messages -->
+    <section class="pane" aria-label="User messages">
+      <div class="paneHeader">
+        <div style="display:flex;align-items:baseline;justify-content:space-between;gap:10px;">
+          <h2 style="margin:0;">User Messages</h2>
+          <p class="sub" id="promptMeta" style="margin:0;">—</p>
+        </div>
+              </div>
+      <div class="paneBody">
+        <div id="promptList" class="list" aria-label="User message list"></div>
+      </div>
+    </section>
+
+    <!-- Right: Turns -->
+    <section class="pane" aria-label="Turns">
+      <div class="turnsHeader">
+        <div class="turnsTopRow">
+          <h2 class="turnsTitle" id="turnsTitle">No conversation selected</h2>
+          <div class="actions">
+            <button id="scrollTopBtn" class="btn">Top</button>
+			<button id="toggleAllBtn" class="btn">Expand all</button>
+                      <button id="showTimesBtn" class="btn">Timestamps: Off</button>
+</div>
+        </div>
+        <p class="turnsMeta" id="turnsMeta">Load a JSON export to begin.</p>
+      </div>
+      <div class="paneBody" id="turnsPane" aria-label="Turns pane"></div>
+    </section>
+  </main>
+
+
+  <!-- Modal for Topic Assignment -->
+  <div id="topicModalOverlay" class="modalOverlay" aria-hidden="true">
+    <div class="modal" role="dialog" aria-modal="true" aria-label="Edit Topics">
+      <div class="modalHeader">
+        <strong id="topicModalTitle">Edit Topics</strong>
+        <button id="topicModalCloseBtn" class="btn">Close</button>
+      </div>
+      <div class="modalBody">
+        <div id="topicModalMeta" class="small" style="margin-top:0;margin-bottom:10px;"></div>
+        <div id="topicModalList" class="list" aria-label="Topic checklist"></div>
+        <div class="group" style="margin-top:14px;">
+          <label for="topicModalNewName">Add topic</label>
+          <div class="row">
+            <input id="topicModalNewName" type="text" placeholder="New topic name…" />
+            <button id="topicModalAddBtn" class="btn">Add</button>
+          </div>
+          <div class="small" style="margin-top:6px;">IDs are auto-generated. Use Export topics to persist changes.</div>
+        </div>
+
+        <div class="group" style="margin-top:14px;">
+          <div class="row">
+            <button id="topicModalSaveBtn" class="btn primary">Save</button>
+            <button id="topicModalClearBtn" class="btn">Clear</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+<!-- Modal for Tag Assignment (Turn-level) -->
+<div id="tagModalOverlay" class="modalOverlay" aria-hidden="true">
+  <div class="modal" role="dialog" aria-modal="true" aria-label="Edit Tags">
+    <div class="modalHeader">
+      <strong id="tagModalTitle">Edit Tags</strong>
+      <button id="tagModalCloseBtn" class="btn">Close</button>
+    </div>
+    <div class="modalBody">
+      <div id="tagModalMeta" class="small" style="margin-top:0;margin-bottom:10px;"></div>
+      <div id="tagModalList" class="list" aria-label="Tag checklist"></div>
+
+      <div class="group" style="margin-top:14px;">
+        <label for="tagModalNewName">Add tag</label>
+        <div class="row">
+          <input id="tagModalNewName" type="text" placeholder="New tag name…" />
+          <button id="tagModalAddBtn" class="btn">Add</button>
+        </div>
+        <div class="small" style="margin-top:6px;">IDs are auto-generated. Use Export tags to persist changes.</div>
+      </div>
+
+      <div class="group" style="margin-top:14px;">
+        <div class="row">
+          <button id="tagModalSaveBtn" class="btn primary">Save</button>
+          <button id="tagModalClearBtn" class="btn">Clear</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Modal for User Guide -->
+  <div id="userGuideOverlay" class="modalOverlay" aria-hidden="true">
+    <div class="modal guideModal" role="dialog" aria-modal="true" aria-label="User Guide">
+      <div class="modalHeader guideHeader">
+        <div>
+          <strong>User Guide</strong>
+          <div class="small guideSubhead">Quick help for loading, organizing, and exporting conversations.</div>
+        </div>
+        <button id="userGuideCloseBtn" class="btn">Close</button>
+      </div>
+      <div class="modalBody guideBody">
+        <div id="userGuideContent" class="guideContent">
+          <p class="guideLoading">Loading user guide…</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- Modal for raw JSON -->
+  <div id="modalOverlay" class="modalOverlay" aria-hidden="true">
+    <div class="modal" role="dialog" aria-modal="true" aria-label="Raw JSON">
+      <div class="modalHeader">
+        <strong id="modalTitle">Raw JSON</strong>
+        <button id="modalCloseBtn" class="btn">Close</button>
+      </div>
+      <div class="modalBody">
+        <pre id="modalPre"></pre>
+      </div>
+    </div>
+  </div>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="vendor/dp.min.js"></script>
+<script src="vendor/mk.min.js"></script>
+  <script src="./app.js"></script>
+
+  <script>
+    (function () {
+      const guideBtn = document.getElementById("userGuideBtn");
+      const guideOverlay = document.getElementById("userGuideOverlay");
+      const guideCloseBtn = document.getElementById("userGuideCloseBtn");
+      const guideContent = document.getElementById("userGuideContent");
+      const guidePath = "./user-guide.md";
+      let guideLoaded = false;
+
+      if (!guideBtn || !guideOverlay || !guideCloseBtn || !guideContent) return;
+
+      function escapeHtml(value) {
+        return value
+          .replace(/&/g, "&amp;")
+          .replace(/</g, "&lt;")
+          .replace(/>/g, "&gt;");
+      }
+
+      function renderInline(text) {
+        let html = escapeHtml(text);
+        html = html.replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>");
+        html = html.replace(/`([^`]+)`/g, "<code>$1</code>");
+        return html;
+      }
+
+      function markdownToHtml(md) {
+        const lines = md.replace(/\r\n/g, "\n").split("\n");
+        const out = [];
+        let inUl = false;
+        let inOl = false;
+        let paragraph = [];
+
+        function flushParagraph() {
+          if (!paragraph.length) return;
+          out.push("<p>" + renderInline(paragraph.join(" ")) + "</p>");
+          paragraph = [];
+        }
+
+        function closeLists() {
+          if (inUl) {
+            out.push("</ul>");
+            inUl = false;
+          }
+          if (inOl) {
+            out.push("</ol>");
+            inOl = false;
+          }
+        }
+
+        for (const rawLine of lines) {
+          const line = rawLine.trim();
+
+          if (!line) {
+            flushParagraph();
+            closeLists();
+            continue;
+          }
+
+          if (/^###\s+/.test(line)) {
+            flushParagraph();
+            closeLists();
+            out.push("<h3>" + renderInline(line.replace(/^###\s+/, "")) + "</h3>");
+            continue;
+          }
+
+          if (/^##\s+/.test(line)) {
+            flushParagraph();
+            closeLists();
+            out.push("<h2>" + renderInline(line.replace(/^##\s+/, "")) + "</h2>");
+            continue;
+          }
+
+          if (/^#\s+/.test(line)) {
+            flushParagraph();
+            closeLists();
+            out.push("<h1>" + renderInline(line.replace(/^#\s+/, "")) + "</h1>");
+            continue;
+          }
+
+          if (/^[-*]\s+/.test(line)) {
+            flushParagraph();
+            if (inOl) {
+              out.push("</ol>");
+              inOl = false;
+            }
+            if (!inUl) {
+              out.push("<ul>");
+              inUl = true;
+            }
+            out.push("<li>" + renderInline(line.replace(/^[-*]\s+/, "")) + "</li>");
+            continue;
+          }
+
+          if (/^\d+\.\s+/.test(line)) {
+            flushParagraph();
+            if (inUl) {
+              out.push("</ul>");
+              inUl = false;
+            }
+            if (!inOl) {
+              out.push("<ol>");
+              inOl = true;
+            }
+            out.push("<li>" + renderInline(line.replace(/^\d+\.\s+/, "")) + "</li>");
+            continue;
+          }
+
+          paragraph.push(line);
+        }
+
+        flushParagraph();
+        closeLists();
+        return out.join("\n");
+      }
+
+      async function loadGuide() {
+        if (guideLoaded) return;
+        try {
+          const response = await fetch(guidePath, { cache: "no-store" });
+          if (!response.ok) throw new Error("HTTP " + response.status);
+          const markdown = await response.text();
+          guideContent.innerHTML = markdownToHtml(markdown);
+          guideLoaded = true;
+        } catch (error) {
+          guideContent.innerHTML = [
+            "<h2>User Guide Unavailable</h2>",
+            "<p>The guide file <code>user-guide.md</code> could not be loaded.</p>",
+            "<p class=\"small\">Make sure the file is in the same folder as <code>index.html</code> and that your site is serving it correctly.</p>"
+          ].join("");
+          console.error("Failed to load user guide:", error);
+        }
+      }
+
+      async function openGuide() {
+        guideOverlay.classList.add("open");
+        guideOverlay.setAttribute("aria-hidden", "false");
+        await loadGuide();
+      }
+
+      function closeGuide() {
+        guideOverlay.classList.remove("open");
+        guideOverlay.setAttribute("aria-hidden", "true");
+      }
+
+      guideBtn.addEventListener("click", openGuide);
+      guideCloseBtn.addEventListener("click", closeGuide);
+
+      guideOverlay.addEventListener("click", (e) => {
+        if (e.target === gui

@@ -1,0 +1,884 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_1994-10_normalize_2026-01-17T181030273Z",
+    "generated_utc": "2026-01-17T18:10:30.273Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "1994-10",
+    "window": {
+      "start_utc": "1994-10-01T00:00:00.000Z",
+      "end_utc": "1994-10-31T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "1994-10-us-tx-san-jacinto-river-pipeline-ruptures-fire",
+      "title": "San Jacinto River petroleum spill and river-surface fire tied to flood-related pipeline ruptures (Harris County, Texas)",
+      "description": "Multiple pipelines were reported to have ruptured near the San Jacinto River in the Channelview/Highlands area following October 1994 flooding near Houston, releasing petroleum products into floodwaters. The release ignited, producing a river-surface fire and contamination impacts along the river corridor.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1994-11-03T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1994-10-21T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "San Jacinto River near I-10 bridge (Channelview–Highlands area), Harris County, Texas, USA",
+        "jurisdiction_level": "site",
+        "admin1": "Texas",
+        "country": "US",
+        "capital_used": null,
+        "lat": 29.769,
+        "lon": -95.113,
+        "precision": "neighborhood",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://incidentnews.noaa.gov/incident/7053",
+          "source_name": "NOAA IncidentNews",
+          "published_at": "1994-10-21T00:00:00.000Z",
+          "headline": "Incident 7053 (San Jacinto River, Texas)",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.govinfo.gov/content/pkg/FR-1994-11-03/html/94-27227.htm",
+          "source_name": "Federal Register (govinfo.gov)",
+          "published_at": "1994-11-03T00:00:00.000Z",
+          "headline": "[FR Doc. 94-27227]",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.ogj.com/home/article/17211618/texas-pipeliners-assessing-flood-damage",
+          "source_name": "Oil & Gas Journal",
+          "published_at": "1994-10-24T00:00:00.000Z",
+          "headline": "Texas pipeliners assessing flood damage",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA"
+        ],
+        "substances": [
+          "petroleum products"
+        ],
+        "ecosystems": [
+          "San Jacinto River"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Texas pipeliners assessing flood damage",
+            "source_url": "https://www.ogj.com/home/article/17211618/texas-pipeliners-assessing-flood-damage"
+          },
+          {
+            "quote": "Incident 7053",
+            "source_url": "https://incidentnews.noaa.gov/incident/7053"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.52,
+        "category": 0.75,
+        "location": 0.55,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "needs_dedupe_check",
+        "date_ambiguous",
+        "location_ambiguous",
+        "paywalled_or_partial"
+      ],
+      "dedupe": {
+        "cluster_hint": "San Jacinto River October 1994 flood-related pipeline releases/fire",
+        "fingerprint": "fp_1994-10_san-jacinto-river_pipeline_fire_harris-tx"
+      }
+    },
+    {
+      "event_id": "1994-10-us-tx-highlands-texaco-hazardous-liquid-release",
+      "title": "Hazardous-liquid pipeline release near Highlands, Texas during October 1994 floods (Texaco Pipeline)",
+      "description": "A hazardous-liquid pipeline incident near Highlands, Texas was attributed to heavy rains and flooding during the October 1994 Houston-area flood period, with a release reported near the San Jacinto River. The draft source indicates thousands of barrels were released, but details are limited in the provided material.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1994-10-21T00:00:00.000Z",
+        "time_confidence": 0.35,
+        "event_date_utc": "1994-10-21T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Highlands, Texas, USA (near the San Jacinto River)",
+        "jurisdiction_level": "city",
+        "admin1": "Texas",
+        "country": "US",
+        "capital_used": null,
+        "lat": 29.818,
+        "lon": -95.057,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.4
+      },
+      "sources": [
+        {
+          "url": "https://projects.propublica.org/pipelines/incidents/268751",
+          "source_name": "ProPublica Pipeline Incidents",
+          "published_at": "1994-10-21T00:00:00.000Z",
+          "headline": "Pipeline incident 268751",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Texaco Pipeline"
+        ],
+        "substances": [
+          "hazardous liquid"
+        ],
+        "ecosystems": [
+          "San Jacinto River"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "incidents/268751",
+            "source_url": "https://projects.propublica.org/pipelines/incidents/268751"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.38,
+        "category": 0.7,
+        "location": 0.4,
+        "summary_grounding": 0.3
+      },
+      "quality_flags": [
+        "needs_dedupe_check",
+        "date_ambiguous",
+        "location_ambiguous",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "San Jacinto River October 1994 flood-related pipeline releases/fire",
+        "fingerprint": "fp_1994-10_highlands-tx_texaco_release"
+      }
+    },
+    {
+      "event_id": "1994-10-us-tx-houston-flooding-usgs-fs07394",
+      "title": "Extreme rainfall and widespread flooding in southeast Texas (Houston region), Oct 15–19, 1994",
+      "description": "A tropical–midlatitude weather setup produced extreme rainfall across a large multi-county region of southeast Texas during Oct 15–19, 1994. The heavy rain led to severe and widespread flooding across the affected river basins and communities.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1994-10-15T12:00:00Z",
+        "event_end": "1994-10-19T12:00:00Z",
+        "reported_at": "1994-10-01T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1994-10-17T00:00:00Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Houston, Texas, United States (southeast Texas flooding region)",
+        "jurisdiction_level": "city",
+        "admin1": "Texas",
+        "country": "US",
+        "capital_used": null,
+        "lat": 29.7604,
+        "lon": -95.3698,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://pubs.usgs.gov/publication/fs07394",
+          "source_name": "USGS Publications Warehouse",
+          "published_at": "1994-10-01T00:00:00.000Z",
+          "headline": "fs07394",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://repository.library.noaa.gov/view/noaa/56791",
+          "source_name": "NOAA Institutional Repository",
+          "published_at": "1994-10-01T00:00:00.000Z",
+          "headline": "noaa/56791",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Geological Survey",
+          "NOAA"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "extreme rainfall ... October 15–19, 1994 ... causing severe and widespread flooding",
+            "source_url": "https://pubs.usgs.gov/publication/fs07394"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.85,
+        "location": 0.6,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "paywalled_or_partial",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "1994-10-se-texas-flooding",
+        "fingerprint": "fp_1994-10_se-texas-flooding_houston_1994-10-15_1994-10-19"
+      }
+    },
+    {
+      "event_id": "1994-10-ph-luzon-typhoon-teresa-upi-19941021",
+      "title": "Typhoon Teresa (Katring) affects Luzon, Philippines (reported Oct 21, 1994)",
+      "description": "News reporting described a strong typhoon impacting the Philippines around Oct 21, 1994, affecting Luzon including the Metro Manila area. Impacts reported included damaging winds and disruption such as power outages.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1994-10-21T12:00:00Z",
+        "event_end": "1994-10-21T12:00:00Z",
+        "reported_at": "1994-10-21T00:00:00Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "1994-10-21T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Manila, Philippines (Luzon)",
+        "jurisdiction_level": "city",
+        "admin1": null,
+        "country": "PH",
+        "capital_used": null,
+        "lat": 14.5995,
+        "lon": 120.9842,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.5
+      },
+      "sources": [
+        {
+          "url": "https://www.upi.com/Archives/1994/10/21/Strong-typhoon-batters-Philippines/7192782712000/",
+          "source_name": "UPI Archives",
+          "published_at": "1994-10-21T00:00:00Z",
+          "headline": "Strong typhoon batters Philippines",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "UPI"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Strong typhoon batters Philippines",
+            "source_url": "https://www.upi.com/Archives/1994/10/21/Strong-typhoon-batters-Philippines/7192782712000/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.52,
+        "category": 0.75,
+        "location": 0.5,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "paywalled_or_partial",
+        "location_ambiguous",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "1994-10-typhoon-teresa-luzon",
+        "fingerprint": "fp_1994-10_typhoon-teresa_manila_1994-10-21"
+      }
+    },
+    {
+      "event_id": "1994-10_geological_kuril-shikotan-earthquake-tsunami",
+      "title": "Shikotan (South Kuril Islands), Russia — major offshore earthquake and tsunami",
+      "description": "A major offshore earthquake near Shikotan Island in the South Kuril Islands generated a tsunami affecting the Kuril Islands and northern Japan. Reported impacts included damage in coastal areas and tsunami-related hazards.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1994-10-04T13:23:00Z",
+        "event_end": "1994-10-04T13:23:00Z",
+        "reported_at": "1994-10-04T13:23:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1994-10-04T13:23:00Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Near Shikotan Island (South Kuril Islands), Russia",
+        "jurisdiction_level": "site",
+        "admin1": null,
+        "country": "RU",
+        "capital_used": null,
+        "lat": 43.8,
+        "lon": 146.75,
+        "precision": "proxy",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.45
+      },
+      "sources": [
+        {
+          "url": "https://tsunami.ioc.unesco.org/en/tsunamis-1990-1999",
+          "source_name": "UNESCO IOC Tsunami Programme",
+          "published_at": "1994-10-01T00:00:00Z",
+          "headline": "Tsunamis 1990–1999",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://catalog.data.gov/dataset/october-1994-shikotan-kuril-islands-russia-images2",
+          "source_name": "Data.gov Catalog",
+          "published_at": "1994-10-01T00:00:00Z",
+          "headline": "October 1994 Shikotan, Kuril Islands, Russia Images",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.drgeorgepc.com/Tsunami1994RussiaKurils.html",
+          "source_name": "DrGeorgePC.com",
+          "published_at": "1994-10-01T00:00:00Z",
+          "headline": "Tsunami 1994 Russia Kurils (Shikotan)",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "UNESCO IOC Tsunami Programme"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.8,
+        "location": 0.45,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "1994-10-04_shikotan_kuril_earthquake_tsunami",
+        "fingerprint": "1994-10-04T13:23:00Z|near shikotan island south kuril islands russia|shikotan south kuril islands russia major offshore earthquake and tsunami"
+      }
+    },
+    {
+      "event_id": "ev_1994_10_id_payette_corral_blackwire_contained",
+      "title": "Corral/Blackwire Fire complex reported contained in late October 1994 (Payette National Forest, Idaho)",
+      "description": "High Country News reported that the Corral/Blackwire fire complex in Idaho, described as the nation’s largest fire of 1994, was contained by late October with the help of rain and snow after burning about 172,000 acres.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1994-10-01T00:00:00.000Z",
+        "time_confidence": 0.35,
+        "event_date_utc": null,
+        "event_date_precision": "month"
+      },
+      "location": {
+        "name": "Payette National Forest, Idaho, USA",
+        "jurisdiction_level": "state",
+        "admin1": "Idaho",
+        "country": "US",
+        "capital_used": "Boise",
+        "lat": 43.615,
+        "lon": -116.2023,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://www.hcn.org/issues/issue-23/fall-damps-fires-of-94/",
+          "source_name": "High Country News",
+          "published_at": "1994-10-01T00:00:00.000Z",
+          "headline": "Fall damps fires of ’94",
+          "byline": null,
+          "accessed_utc": "2026-01-17T01:44:11.051Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "High Country News"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "Payette National Forest"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "contained by late October with the help of rain and snow",
+            "source_url": "https://www.hcn.org/issues/issue-23/fall-damps-fires-of-94/"
+          },
+          {
+            "quote": "burning about 172,000 acres",
+            "source_url": "https://www.hcn.org/issues/issue-23/fall-damps-fires-of-94/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.8,
+        "location": 0.7,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "Corral/Blackwire Fire complex (1994)",
+        "fingerprint": "fp_1994-10_corral_blackwire_idaho_month"
+      }
+    },
+    {
+      "event_id": "1994-10-us-wv-canaan-valley-nwr-dedication",
+      "title": "Canaan Valley National Wildlife Refuge dedicated as the 500th U.S. National Wildlife Refuge",
+      "description": "A U.S. Fish & Wildlife Service historic news release reports that Canaan Valley National Wildlife Refuge in West Virginia was dedicated on October 22, 1994. The designation added protection for a high-elevation wetland ecosystem and associated wildlife habitat.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1994-10-19T00:00:00Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "1994-10-22T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Canaan Valley, Tucker County, West Virginia, USA",
+        "jurisdiction_level": "site",
+        "admin1": "West Virginia",
+        "country": "US",
+        "capital_used": null,
+        "lat": 39.0615,
+        "lon": -79.4117,
+        "precision": "exact",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.fws.gov/sites/default/files/documents/historic-news-releases/1994/19941019a.pdf",
+          "source_name": "U.S. Fish & Wildlife Service (Historic News Release PDF)",
+          "published_at": "1994-10-19T00:00:00Z",
+          "headline": "Historic news release (Canaan Valley NWR dedication)",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Fish & Wildlife Service"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "high-elevation wetland"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "the 500th unit of the National Wildlife Refuge System will be dedicated Oct. 22",
+            "source_url": "https://www.fws.gov/sites/default/files/documents/historic-news-releases/1994/19941019a.pdf"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.75,
+        "location": 0.6,
+        "summary_grounding": 0.7
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "canaan-valley-nwr-dedication-1994-10-22",
+        "fingerprint": "canaan-valley-nwr-dedication|canaan-valley-tucker-wv|1994-10-22"
+      }
+    },
+    {
+      "event_id": "1994-10-us-california-desert-protection-act-public-law-103-433",
+      "title": "California Desert Protection Act signed into law, expanding protected areas in the Mojave Desert",
+      "description": "Congress.gov records show the California Desert Protection Act of 1994 (S.21) was signed by the U.S. President and became Public Law 103-433 on October 31, 1994. The law established or expanded major protected areas and wilderness designations affecting Mojave Desert ecosystems, including changes involving Death Valley, Joshua Tree, and Mojave National Preserve.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "positive",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1994-10-31T00:00:00Z",
+        "time_confidence": 0.8,
+        "event_date_utc": "1994-10-31T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States (federal law affecting California desert protected areas)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, D.C.",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.85
+      },
+      "sources": [
+        {
+          "url": "https://www.congress.gov/bill/103rd-congress/senate-bill/21",
+          "source_name": "Congress.gov",
+          "published_at": "1994-10-31T00:00:00Z",
+          "headline": "S.21 - California Desert Protection Act of 1994",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.congress.gov/bill/103rd-congress/senate-bill/21/all-actions",
+          "source_name": "Congress.gov",
+          "published_at": "1994-10-31T00:00:00Z",
+          "headline": "S.21 - All Actions",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "United States Congress"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "Mojave Desert"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Became Public Law No: 103-433.",
+            "source_url": "https://www.congress.gov/bill/103rd-congress/senate-bill/21"
+          },
+          {
+            "quote": "Signed by President.",
+            "source_url": "https://www.congress.gov/bill/103rd-congress/senate-bill/21/all-actions"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.8,
+        "category": 0.7,
+        "location": 0.85,
+        "summary_grounding": 0.7
+      },
+      "quality_flags": [
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "california-desert-protection-act-1994-10-31",
+        "fingerprint": "california-desert-protection-act|us-washington-dc|1994-10-31"
+      }
+    },
+    {
+      "event_id": "evt_19941006_epa_ocs_air_ca_update",
+      "title": "EPA final rule updates Outer Continental Shelf air regulations consistency for California",
+      "description": "On October 6, 1994, the U.S. Environmental Protection Agency published a final rule updating the Outer Continental Shelf (OCS) air regulations consistency update for California. The rule incorporates updated onshore air pollution control requirements into the OCS program pursuant to Clean Air Act section 328(a)(1).",
+      "category_primary": "policy_regulation",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1994-10-06T12:00:00Z",
+        "time_confidence": 0.75,
+        "event_date_utc": "1994-10-06T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States (EPA Region IX / California OCS)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/FR-1994-10-06/html/94-24641.htm",
+          "source_name": "Federal Register (govinfo.gov)",
+          "published_at": "1994-10-06T12:00:00Z",
+          "headline": "Outer Continental Shelf Air Regulations Consistency Update for California",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Environmental Protection Agency (EPA)"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "final rule... Outer Continental Shelf Air Regulations Consistency Update for California",
+            "source_url": "https://www.govinfo.gov/content/pkg/FR-1994-10-06/html/94-24641.htm"
+          },
+          {
+            "quote": "pursuant to Clean Air Act section 328(a)(1)",
+            "source_url": "https://www.govinfo.gov/content/pkg/FR-1994-10-06/html/94-24641.htm"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.7,
+        "category": 0.85,
+        "location": 0.6,
+        "summary_grounding": 0.7
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "1994-10 EPA Federal Register air regulation OCS California",
+        "fingerprint": "fp_19941006_epa_ocs_air_ca_update_us"
+      }
+    },
+    {
+      "event_id": "evt_19941020_epa_az_rcra_part272_ibr",
+      "title": "EPA immediate final rule incorporates Arizona hazardous waste program by reference into 40 CFR Part 272",
+      "description": "On October 20, 1994, the U.S. Environmental Protection Agency published an immediate final rule incorporating by reference provisions of Arizona’s approved state hazardous waste program into 40 CFR Part 272. The notice states the rule would become effective on December 19, 1994 unless withdrawn.",
+      "category_primary": "policy_regulation",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1994-10-20T12:00:00Z",
+        "time_confidence": 0.75,
+        "event_date_utc": "1994-10-20T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States (Arizona; EPA Region IX)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/FR-1994-10-20/html/94-26023.htm",
+          "source_name": "Federal Register (govinfo.gov)",
+          "published_at": "1994-10-20T12:00:00Z",
+          "headline": "Incorporation by Reference of Approved State Hazardous Waste Program: Arizona",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Environmental Protection Agency (EPA)"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "immediate final rule to incorporate by reference... Arizona’s authorized hazardous waste program",
+            "source_url": "https://www.govinfo.gov/content/pkg/FR-1994-10-20/html/94-26023.htm"
+          },
+          {
+            "quote": "40 CFR part 272",
+            "source_url": "https://www.govinfo.gov/content/pkg/FR-1994-10-20/html/94-26023.htm"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.68,
+        "category": 0.85,
+        "location": 0.55,
+        "summary_grounding": 0.68
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "1994-10 EPA Federal Register RCRA Arizona 40 CFR 272",
+        "fingerprint": "fp_19941020_epa_az_rcra_part272_ibr_us"
+      }
+    },
+    {
+      "event_id": "evt_19941026_epa_rfd_nonpetroleum_oils_cwa311",
+      "title": "EPA requests data on response strategies for facilities handling certain non‑petroleum oils under CWA 311/OPA 1990",
+      "description": "On October 26, 1994, the U.S. Environmental Protection Agency published a request for data and comment regarding response strategies for facilities that handle, store, or transport certain non‑petroleum oils. The request is tied to Clean Water Act section 311 authorities as amended by the Oil Pollution Act of 1990.",
+      "category_primary": "policy_regulation",
+      "polarity": "unclear",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1994-10-26T12:00:00Z",
+        "time_confidence": 0.75,
+        "event_date_utc": "1994-10-26T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.8
+      },
+      "sources": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/FR-1994-10-26/html/94-26511.htm",
+          "source_name": "Federal Register (govinfo.gov)",
+          "published_at": "1994-10-26T12:00:00Z",
+          "headline": "Response Strategies for Certain Non-Petroleum Oils",
+          "byline": null,
+          "accessed_utc": "2026-01-17T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Environmental Protection Agency (EPA)"
+        ],
+        "substances": [
+          "non-petroleum oils"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "request for data and comment... response strategies for facilities",
+            "source_url": "https://www.govinfo.gov/content/pkg/FR-1994-10-26/html/94-26511.htm"
+          },
+          {
+            "quote": "Clean Water Act section 311... Oil Pollution Act of 1990",
+            "source_url": "https://www.govinfo.gov/content/pkg/FR-1994-10-26/html/94-26511.htm"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.7,
+        "category": 0.85,
+        "location": 0.8,
+        "summary_grounding": 0.7
+      },
+      "quality_flags": [
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "1994-10 EPA Federal Register request for data non-petroleum oils CWA 311",
+        "fingerprint": "fp_19941026_epa_rfd_nonpetroleum_oils_cwa311_us"
+      }
+    }
+  ]
+}

@@ -1,0 +1,575 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_2022-04_normalize_2026-01-16T131639005Z",
+    "generated_utc": "2026-01-16T13:16:39.005Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "2022-04",
+    "window": {
+      "start_utc": "2022-04-01T00:00:00.000Z",
+      "end_utc": "2022-04-30T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "evt_20220418_olin_chlorine_plaquemine",
+      "title": "Chlorine release after fire at Olin facility on Dow campus prompts shelter-in-place near Plaquemine, Louisiana",
+      "description": "A fire at an Olin facility located on Dow’s Plaquemine campus was reported to have involved a chlorine release, prompting emergency sirens and a shelter-in-place order for nearby residents. Officials later issued an all-clear and the shelter-in-place order was lifted.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2022-04-18T20:40:00.000Z",
+        "event_end": "2022-04-19T05:00:00.000Z",
+        "reported_at": "2022-04-19T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2022-04-18T20:40:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Plaquemine, Louisiana, USA",
+        "jurisdiction_level": "city",
+        "admin1": "Louisiana",
+        "country": "US",
+        "capital_used": null,
+        "lat": 30.2891,
+        "lon": -91.2343,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://www.wafb.com/2022/04/19/shelter-place-plaquemine-area-due-dow-chemical/",
+          "source_name": "WAFB",
+          "published_at": "2022-04-19T00:00:00.000Z",
+          "headline": "Shelter in place in Plaquemine area due to Dow Chemical",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.wbrz.com/news/fire-out-shelter-in-place-lifted-after-chlorine-leak-at-facility-on-dow-campus/",
+          "source_name": "WBRZ",
+          "published_at": "2022-04-19T00:00:00.000Z",
+          "headline": "Fire out; shelter-in-place lifted after chlorine leak at facility on Dow campus",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.prnewswire.com/news-releases/plaquemine-woman-hospitalized-due-to-chlorine-gas-leak-files-first-injury-lawsuit-301539945.html",
+          "source_name": "PR Newswire",
+          "published_at": "2022-04-18T00:00:00.000Z",
+          "headline": "Plaquemine Woman Hospitalized Due to Chlorine Gas Leak Files First Injury Lawsuit",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Olin",
+          "Dow"
+        ],
+        "substances": [
+          "chlorine"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "shelter in place in Plaquemine area due to Dow Chemical",
+            "source_url": "https://www.wafb.com/2022/04/19/shelter-place-plaquemine-area-due-dow-chemical/"
+          },
+          {
+            "quote": "shelter-in-place lifted after chlorine leak at facility on Dow campus",
+            "source_url": "https://www.wbrz.com/news/fire-out-shelter-in-place-lifted-after-chlorine-leak-at-facility-on-dow-campus/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.75,
+        "location": 0.7,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "olin_dow_plaquemine_chlorine_fire_2022-04-18",
+        "fingerprint": "fp_olin_dow_plaquemine_chlorine_fire_2022-04-18"
+      }
+    },
+    {
+      "event_id": "evt_202204_kzn_floods_landslides",
+      "title": "KwaZulu-Natal floods and landslides in April 2022",
+      "description": "Days of heavy rainfall in April 2022 caused flooding and landslides in South Africa’s KwaZulu-Natal province, affecting the Durban area and damaging infrastructure and housing. Sources report that authorities declared a state of emergency/disaster in response to the impacts.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2022-04-08T00:00:00.000Z",
+        "event_end": "2022-04-21T23:59:59.000Z",
+        "reported_at": "2022-04-13T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2022-04-08T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "KwaZulu-Natal, South Africa",
+        "jurisdiction_level": "state",
+        "admin1": "KwaZulu-Natal",
+        "country": "ZA",
+        "capital_used": "Pietermaritzburg",
+        "lat": -29.616785,
+        "lon": 30.392782,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://public.wmo.int/media/news/south-africa-declares-state-of-emergency-after-deadly-rains",
+          "source_name": "World Meteorological Organization (WMO)",
+          "published_at": "2022-04-13T00:00:00.000Z",
+          "headline": "South Africa declares state of emergency after deadly rains",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://africadisastermanagement.org/south-africa-floods-and-landslides-apr-2022/",
+          "source_name": "Africa Disaster Management",
+          "published_at": "2022-04-01T00:00:00.000Z",
+          "headline": "South Africa floods and landslides (Apr 2022)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "World Meteorological Organization (WMO)"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "South Africa has declared a national state of disaster after deadly rains caused severe flooding and landslides.",
+            "source_url": "https://public.wmo.int/media/news/south-africa-declares-state-of-emergency-after-deadly-rains"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.85,
+        "location": 0.7,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "needs_dedupe_check",
+        "date_ambiguous",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "KwaZulu-Natal April 2022 floods",
+        "fingerprint": "fp_kzn_za_20220408_20220421"
+      }
+    },
+    {
+      "event_id": "evt_202204_se_us_tornado_outbreak",
+      "title": "Early April 2022 severe weather and tornado impacts in the U.S. South/Southeast",
+      "description": "Forecast and reporting described a severe weather period in early April 2022 affecting parts of the U.S. South and Southeast, including risks of tornadoes and damaging winds. The provided source supports the outlook and timing but does not, on its own, verify the full multi-day outbreak impacts described in the draft.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2022-04-04T00:00:00.000Z",
+        "event_end": "2022-04-07T23:59:59.000Z",
+        "reported_at": "2022-04-01T00:00:00.000Z",
+        "time_confidence": 0.35,
+        "event_date_utc": null,
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "United States (multi-state South/Southeast)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.4
+      },
+      "sources": [
+        {
+          "url": "https://weather.com/storms/severe/news/2022-04-01-severe-weather-forecast-early-april",
+          "source_name": "The Weather Channel",
+          "published_at": "2022-04-01T00:00:00.000Z",
+          "headline": "Severe weather forecast for early April",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "The Weather Channel"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Severe thunderstorms could bring damaging winds, large hail and tornadoes to parts of the South and Southeast early next week.",
+            "source_url": "https://weather.com/storms/severe/news/2022-04-01-severe-weather-forecast-early-april"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.38,
+        "category": 0.75,
+        "location": 0.5,
+        "summary_grounding": 0.35
+      },
+      "quality_flags": [
+        "needs_dedupe_check",
+        "location_ambiguous",
+        "date_ambiguous",
+        "secondary_sources_only",
+        "possible_opinion_or_advocacy"
+      ],
+      "dedupe": {
+        "cluster_hint": "Early April 2022 South/Southeast US severe weather",
+        "fingerprint": "fp_us_20220404_20220407_severe_weather"
+      }
+    },
+    {
+      "event_id": "evt_20220406_hermits_peak_fire_nm_us",
+      "title": "Hermits Peak Fire starts after prescribed burn escape in northern New Mexico",
+      "description": "The Hermits Peak Fire began on April 6, 2022, after a prescribed burn escaped control on the Santa Fe National Forest. It became part of a major wildfire incident in northern New Mexico.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2022-04-06T00:00:00.000Z",
+        "event_end": "2022-04-06T23:59:59.000Z",
+        "reported_at": "2022-06-18T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2022-04-06T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "San Miguel and Mora area, New Mexico, USA",
+        "jurisdiction_level": "state",
+        "admin1": "New Mexico",
+        "country": "US",
+        "capital_used": "Santa Fe",
+        "lat": 35.6869752,
+        "lon": -105.937799,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.fs.usda.gov/r03/santafe/newsroom/releases/hermits-peak-and-calf-canyon-fires-june-18-2022-daily-update",
+          "source_name": "USDA Forest Service (Santa Fe National Forest)",
+          "published_at": "2022-06-18T00:00:00.000Z",
+          "headline": "Hermits Peak and Calf Canyon Fires - June 18, 2022 Daily Update",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://nmfwri.org/monitoring/2022-hermits-peak-calf-canyon/",
+          "source_name": "New Mexico Forest and Watershed Restoration Institute (NMFWRI)",
+          "published_at": "2022-01-01T00:00:00.000Z",
+          "headline": "2022 Hermits Peak/Calf Canyon Fire",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "USDA Forest Service",
+          "Santa Fe National Forest",
+          "New Mexico Forest and Watershed Restoration Institute"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Hermits Peak Fire started April 6, 2022, as a result of an escaped prescribed burn.",
+            "source_url": "https://nmfwri.org/monitoring/2022-hermits-peak-calf-canyon/"
+          },
+          {
+            "quote": "Hermits Peak and Calf Canyon Fires ... Daily Update",
+            "source_url": "https://www.fs.usda.gov/r03/santafe/newsroom/releases/hermits-peak-and-calf-canyon-fires-june-18-2022-daily-update"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.85,
+        "location": 0.6,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Hermits Peak / Calf Canyon Fires",
+        "fingerprint": "hermits-peak-fire_new-mexico-us_2022-04-06"
+      }
+    },
+    {
+      "event_id": "evt_20220420_tunnel_fire_flagstaff_az_us",
+      "title": "Tunnel Fire ignites near Flagstaff, Arizona and burns into Sunset Crater Volcano National Monument",
+      "description": "The Tunnel Fire ignited near Flagstaff, Arizona in April 2022, triggering evacuations. Reporting said it burned into or affected areas including Sunset Crater Volcano National Monument.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2022-04-20T00:00:00.000Z",
+        "event_end": "2022-04-30T23:59:59.000Z",
+        "reported_at": "2022-04-21T00:00:00.000Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "2022-04-21T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Arizona, USA (Tunnel Fire near Flagstaff)",
+        "jurisdiction_level": "state",
+        "admin1": "Arizona",
+        "country": "US",
+        "capital_used": "Phoenix",
+        "lat": 33.4483771,
+        "lon": -112.0740373,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.axios.com/2022/04/21/large-wildfires-trigger-evacuations-in-southwest",
+          "source_name": "Axios",
+          "published_at": "2022-04-21T00:00:00.000Z",
+          "headline": "Large wildfires trigger evacuations in Southwest",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "National Park Service"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Large wildfires trigger evacuations in Southwest",
+            "source_url": "https://www.axios.com/2022/04/21/large-wildfires-trigger-evacuations-in-southwest"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.46,
+        "category": 0.8,
+        "location": 0.55,
+        "summary_grounding": 0.4
+      },
+      "quality_flags": [
+        "paywalled_or_partial",
+        "secondary_sources_only",
+        "location_ambiguous",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Tunnel Fire (Flagstaff area)",
+        "fingerprint": "tunnel-fire_arizona-us_2022-04"
+      }
+    },
+    {
+      "event_id": "evt_202204_fiji_coral_bleaching_noaa_001",
+      "title": "Coral bleaching risk and reports in Fiji during April 2022",
+      "description": "NOAA Coral Reef Watch monitoring and guidance referenced bleaching risk in parts of the Pacific during early 2022, with partner reports indicating coral bleaching in Fiji during April 2022. The event reflects heat-stress impacts on coral reefs in the region.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2022-04-01T00:00:00.000Z",
+        "event_end": "2022-04-30T23:59:59.000Z",
+        "reported_at": "2022-05-31T00:00:00.000Z",
+        "time_confidence": 0.55,
+        "event_date_utc": null,
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Fiji",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "FJ",
+        "capital_used": "Suva",
+        "lat": -18.1416,
+        "lon": 178.4419,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://coralreefwatch.noaa.gov/satellite/analyses_guidance/pacific_cbts_ag_20220531.php",
+          "source_name": "NOAA Coral Reef Watch",
+          "published_at": "2022-05-31T00:00:00.000Z",
+          "headline": "Pacific Coral Bleaching Threat Summary (guidance)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA Coral Reef Watch"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "coral reefs"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Pacific Coral Bleaching Threat Summary... Guidance",
+            "source_url": "https://coralreefwatch.noaa.gov/satellite/analyses_guidance/pacific_cbts_ag_20220531.php"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.7,
+        "location": 0.6,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "Fiji coral bleaching April 2022",
+        "fingerprint": "fiji_coral_bleaching_2022-04"
+      }
+    },
+    {
+      "event_id": "evt_202204_prespa_hpai_pelicans_birdlife_001",
+      "title": "Avian influenza mass mortality affecting Dalmatian pelicans at Prespa Lake (reported during Feb–Apr 2022)",
+      "description": "BirdLife reported an unprecedented global epizootic of avian influenza causing mass mortality of wild birds, including impacts on Dalmatian pelicans at Prespa Lake in Greece during the 2022 breeding season. The outbreak represents a significant biodiversity impact for the colony mentioned in the report.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2022-04-01T00:00:00.000Z",
+        "time_confidence": 0.35,
+        "event_date_utc": null,
+        "event_date_precision": "month"
+      },
+      "location": {
+        "name": "Prespa Lake, Greece",
+        "jurisdiction_level": "site",
+        "admin1": null,
+        "country": "GR",
+        "capital_used": null,
+        "lat": 40.826,
+        "lon": 21.072,
+        "precision": "exact",
+        "location_basis": "manual_override",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://datazone.birdlife.org/articles/an-unprecedented-global-epizootic-of-avian-influenza-is-causing-mass-mortality-of-wild-birds",
+          "source_name": "BirdLife Data Zone",
+          "published_at": "2022-04-01T00:00:00.000Z",
+          "headline": "An unprecedented global epizootic of avian influenza is causing mass mortality of wild birds",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "BirdLife"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "freshwater lake",
+          "wetlands"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "...avian influenza... causing mass mortality of wild birds",
+            "source_url": "https://datazone.birdlife.org/articles/an-unprecedented-global-epizootic-of-avian-influenza-is-causing-mass-mortality-of-wild-birds"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.45,
+        "category": 0.7,
+        "location": 0.55,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "Prespa Lake Dalmatian pelicans HPAI 2022",
+        "fingerprint": "prespa_lake_hpai_pelicans_2022-04"
+      }
+    }
+  ]
+}

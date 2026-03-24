@@ -1,0 +1,476 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_2009-07_normalize_2026-01-16T040350663Z",
+    "generated_utc": "2026-01-16T04:03:50.663Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "2009-07",
+    "window": {
+      "start_utc": "2009-07-01T00:00:00.000Z",
+      "end_utc": "2009-07-31T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "evt_20090731_full_city_oilspill_norway",
+      "title": "MV Full City grounding causes oil spill along southern Norway coast",
+      "description": "The bulk carrier MV Full City ran aground near Såstein in southern Norway on July 31, 2009, resulting in an oil spill. The spill contaminated parts of the nearby coastline and prompted response operations by Norwegian authorities.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2009-07-31T00:23:00.000Z",
+        "event_end": "2009-07-31T23:59:59.000Z",
+        "reported_at": "2009-07-31T00:23:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2009-07-31T00:23:00.000Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Near Såstein, Telemark, Norway",
+        "jurisdiction_level": "site",
+        "admin1": "Telemark",
+        "country": "NO",
+        "capital_used": null,
+        "lat": 59.1,
+        "lon": 9.65,
+        "precision": "neighborhood",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.4
+      },
+      "sources": [
+        {
+          "url": "https://www.kystverket.no/en/preparedness-and-emergency-response-against-acute-pollution/operations/government-operations/",
+          "source_name": "Norwegian Coastal Administration (Kystverket)",
+          "published_at": "2009-07-31T00:23:00.000Z",
+          "headline": "Government operations (acute pollution response)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.kystverket.no/en/preparedness-and-emergency-response-against-acute-pollution/operations/government-operations/#Full%20City",
+          "source_name": "Norwegian Coastal Administration (Kystverket)",
+          "published_at": "2009-07-31T00:23:00.000Z",
+          "headline": "Government operations – Full City",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Norwegian Coastal Administration (Kystverket)",
+          "MV Full City"
+        ],
+        "substances": [
+          "oil"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "preparedness and emergency response against acute pollution",
+            "source_url": "https://www.kystverket.no/en/preparedness-and-emergency-response-against-acute-pollution/operations/government-operations/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.45,
+        "category": 0.7,
+        "location": 0.4,
+        "summary_grounding": 0.4
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "paywalled_or_partial",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "MV Full City oil spill Norway 2009-07-31",
+        "fingerprint": "fp_full_city_oilspill_norway_2009-07-31"
+      }
+    },
+    {
+      "event_id": "evt_200907_tx_heat_drought",
+      "title": "Record-setting heat and severe drought in Texas during July 2009",
+      "description": "July 2009 brought exceptional heat and prolonged dryness across much of Texas. Reports noted record-setting July temperatures in multiple cities and ongoing drought conditions in parts of the state.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2009-07-01T00:00:00.000Z",
+        "event_end": "2009-07-31T23:59:59.000Z",
+        "reported_at": "2009-07-31T23:59:59.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": null,
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Texas, United States",
+        "jurisdiction_level": "state",
+        "admin1": "Texas",
+        "country": "US",
+        "capital_used": "Austin",
+        "lat": 30.2672,
+        "lon": -97.7431,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.75
+      },
+      "sources": [
+        {
+          "url": "https://climatexas.tamu.edu/products/texas-climate-bulletins/monthly/2009/july-2009.html",
+          "source_name": "Texas A&M ClimateXas",
+          "published_at": "2009-07-31T23:59:59.000Z",
+          "headline": "July 2009",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://science.nasa.gov/earth/earth-observatory/drought-in-texas-39756/",
+          "source_name": "NASA Earth Observatory (science.nasa.gov)",
+          "published_at": "2009-07-31T23:59:59.000Z",
+          "headline": "Drought in Texas",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Texas A&M University",
+          "NASA"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.8,
+        "location": 0.75,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "paywalled_or_partial",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "2009-07 Texas heat drought",
+        "fingerprint": "fp_200907_texas_heat_drought"
+      }
+    },
+    {
+      "event_id": "evt_200907_wa_heatwave",
+      "title": "Western Washington heat wave (July 27–30, 2009) breaks multiple records",
+      "description": "A late-July 2009 heat wave affected western Washington, with temperatures reaching the 90s to over 100°F in some locations. The event was reported to have broken multiple daily and some all-time temperature records, including warm overnight minimums.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2009-07-27T00:00:00.000Z",
+        "event_end": "2009-07-30T23:59:59.000Z",
+        "reported_at": "2009-08-03T00:00:00.000Z",
+        "time_confidence": 0.85,
+        "event_date_utc": "2009-07-28T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Western Washington, United States",
+        "jurisdiction_level": "state",
+        "admin1": "Washington",
+        "country": "US",
+        "capital_used": "Olympia",
+        "lat": 47.0379,
+        "lon": -122.9007,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://climate.uw.edu/2009/08/03/july-2009-heat-wave/",
+          "source_name": "University of Washington Climate Impacts Group",
+          "published_at": "2009-08-03T00:00:00.000Z",
+          "headline": "July 2009 heat wave",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "University of Washington Climate Impacts Group"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.7,
+        "category": 0.85,
+        "location": 0.55,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "2009-07 Western Washington heat wave",
+        "fingerprint": "fp_200907_wa_heatwave"
+      }
+    },
+    {
+      "event_id": "evt_20090715_dusky_sound_fiordland_eq_tsunami",
+      "title": "Mw 7.8 Dusky Sound (Fiordland) earthquake and small tsunami",
+      "description": "A magnitude 7.8 earthquake struck near Dusky Sound in the Fiordland region of New Zealand’s South Island on 15 July 2009. GeoNet reported a small tsunami associated with the quake, with limited impacts due in part to the remote location.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2009-07-15T09:22:29.000Z",
+        "event_end": "2009-07-15T23:59:59.000Z",
+        "reported_at": "2009-07-15T09:22:29.000Z",
+        "time_confidence": 0.85,
+        "event_date_utc": "2009-07-15T09:22:29.000Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Dusky Sound / Fiordland region, South Island, New Zealand",
+        "jurisdiction_level": "site",
+        "admin1": null,
+        "country": "NZ",
+        "capital_used": null,
+        "lat": -45.73,
+        "lon": 166.64,
+        "precision": "admin1",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.geonet.org.nz/earthquake/story/3124785",
+          "source_name": "GeoNet",
+          "published_at": "2009-07-15T09:22:29.000Z",
+          "headline": "Earthquake story 3124785",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": "https://www.geonet.org.nz/earthquake/story/3124785"
+        },
+        {
+          "url": "https://www.geonet.org.nz/earthquake/3124785",
+          "source_name": "GeoNet",
+          "published_at": "2009-07-15T09:22:29.000Z",
+          "headline": "Earthquake 3124785",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": "https://www.geonet.org.nz/earthquake/3124785"
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "GeoNet"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Earthquake: 2009-07-15 09:22:29 (UTC), Magnitude: 7.8.",
+            "source_url": "https://www.geonet.org.nz/earthquake/3124785"
+          },
+          {
+            "quote": "A small tsunami was generated following the earthquake.",
+            "source_url": "https://www.geonet.org.nz/earthquake/story/3124785"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.64,
+        "category": 0.95,
+        "location": 0.55,
+        "summary_grounding": 0.7
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "2009-07-15_Fiordland_DuskySound_EQ_Mw7.8",
+        "fingerprint": "fp_20090715_dusky_sound_fiordland_eq_tsunami"
+      }
+    },
+    {
+      "event_id": "2009-07-fires-gustavus-glba-wildfire-20090706",
+      "title": "Wildfire near Gustavus, Alaska reported July 6, 2009 and contained July 7",
+      "description": "A wildfire near the Gustavus Country Inn area near Glacier Bay National Park and Preserve was reported on July 6, 2009 during warm, dry conditions. Agencies including NPS and other local/state/federal resources responded, and the fire was considered contained by July 7.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2009-07-06T00:00:00.000Z",
+        "event_end": "2009-07-07T23:59:59.000Z",
+        "reported_at": "2009-07-06T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2009-07-06T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Gustavus, Alaska, United States (near Glacier Bay National Park & Preserve)",
+        "jurisdiction_level": "city",
+        "admin1": "Alaska",
+        "country": "US",
+        "capital_used": null,
+        "lat": 58.4133,
+        "lon": -135.7367,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://www.nps.gov/glba/learn/news/gst_fire.htm",
+          "source_name": "National Park Service (Glacier Bay National Park & Preserve)",
+          "published_at": "2009-07-06T00:00:00.000Z",
+          "headline": "gst_fire",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "National Park Service",
+          "U.S. Forest Service"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "a 5-10 acre wildfire near the Gustavus Country Inn was reported July 6, 2009",
+            "source_url": "https://www.nps.gov/glba/learn/news/gst_fire.htm"
+          },
+          {
+            "quote": "the fire was considered contained by July 7",
+            "source_url": "https://www.nps.gov/glba/learn/news/gst_fire.htm"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.85,
+        "location": 0.7,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "Gustavus wildfire July 2009 Glacier Bay NPS",
+        "fingerprint": "fires|gustavus-ak-us|2009-07-06|wildfire-near-gustavus-contained-july-7"
+      }
+    },
+    {
+      "event_id": "evt_20090706_usfws_esa_5yr_reviews_23_species",
+      "title": "USFWS begins 5-year ESA status reviews for 23 southeastern species",
+      "description": "The U.S. Fish and Wildlife Service initiated Endangered Species Act 5-year status reviews for 23 listed species in the southeastern United States and requested submission of new scientific or commercial information to ensure current classifications remain accurate.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "2009-07-06T00:00:00.000Z",
+        "event_end": "2009-07-06T23:59:59.000Z",
+        "reported_at": "2009-07-06T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2009-07-06T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://www.fws.gov/policy/library/2009/E9-15918.html",
+          "source_name": "U.S. Fish & Wildlife Service",
+          "published_at": "2009-07-06T00:00:00.000Z",
+          "headline": "E9-15918",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "U.S. Fish and Wildlife Service"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Initiation of 5-year reviews for 23 listed southeastern species",
+            "source_url": "https://www.fws.gov/policy/library/2009/E9-15918.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.7,
+        "location": 0.7,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "secondary_sources_only",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "USFWS ESA 5-year reviews 23 southeastern species (2009-07)",
+        "fingerprint": "fp_usfws_esa_5yr_23_2009-07-06_us"
+      }
+    }
+  ]
+}

@@ -1,0 +1,808 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_1985-02_normalize_2026-01-18T101922597Z",
+    "generated_utc": "2026-01-18T10:19:22.597Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "1985-02",
+    "window": {
+      "start_utc": "1985-02-01T00:00:00.000Z",
+      "end_utc": "1985-02-28T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "evt_19850221_baltimore_curtis_bay_oleum_leak",
+      "title": "Oleum (sulfuric acid) leak creates acid cloud over Baltimore Harbor area",
+      "description": "An Essex Chemical Co. plant in the Curtis Bay area reported a leak of oleum (sulfuric acid), which was capped and neutralized. The leak produced acidic fumes that drifted over the harbor/city area and led to tunnel workers being sent to hospitals.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1985-02-21T12:00:00Z",
+        "event_end": "1985-02-21T12:00:00Z",
+        "reported_at": "1985-02-22T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1985-02-21T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Curtis Bay (Baltimore), Maryland, USA",
+        "jurisdiction_level": "city",
+        "admin1": "Maryland",
+        "country": "US",
+        "capital_used": null,
+        "lat": 39.2904,
+        "lon": -76.6122,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.washingtonpost.com/archive/local/1985/02/22/acid-fumes-hit-tunnel/9468eed5-5534-4dba-a739-ce662a987cc6/",
+          "source_name": "The Washington Post",
+          "published_at": "1985-02-22T00:00:00Z",
+          "headline": "Acid Fumes Hit Tunnel",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Essex Chemical Co."
+        ],
+        "substances": [
+          "oleum",
+          "sulfuric acid"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Acid fumes drifting from a chemical plant ... sent workers to hospitals",
+            "source_url": "https://www.washingtonpost.com/archive/local/1985/02/22/acid-fumes-hit-tunnel/9468eed5-5534-4dba-a739-ce662a987cc6/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.58,
+        "category": 0.75,
+        "location": 0.55,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "paywalled_or_partial"
+      ],
+      "dedupe": {
+        "cluster_hint": "Essex Chemical Curtis Bay oleum leak 1985-02-21",
+        "fingerprint": "pollution_contamination|oleum leak creates acid cloud over baltimore harbor area|baltimore_md_us|1985-02-21"
+      }
+    },
+    {
+      "event_id": "evt_19850212_somerville_ma_hcl_rail_release",
+      "title": "Hydrochloric acid vapor release from rail tank car at Somerville rail yard",
+      "description": "At the Boston & Maine Railroad Somerville Yard, a tank car of hydrochloric acid was discovered releasing vapors after a valve was found open. Responders used water spray to reduce vapors and secured the valve while the car was managed for offloading.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1985-02-12T12:00:00Z",
+        "event_end": "1985-02-12T12:00:00Z",
+        "reported_at": "1985-02-12T00:00:00Z",
+        "time_confidence": 0.4,
+        "event_date_utc": "1985-02-12T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Somerville, Massachusetts, USA",
+        "jurisdiction_level": "city",
+        "admin1": "Massachusetts",
+        "country": "US",
+        "capital_used": null,
+        "lat": 42.3876,
+        "lon": -71.0995,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.5
+      },
+      "sources": [
+        {
+          "url": "https://repository.library.noaa.gov/view/noaa/70329/noaa_70329_DS2.json",
+          "source_name": "NOAA Institutional Repository",
+          "published_at": "1985-02-12T00:00:00Z",
+          "headline": "noaa_70329_DS2.json",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Boston & Maine Railroad"
+        ],
+        "substances": [
+          "hydrochloric acid"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": []
+      },
+      "confidence": {
+        "overall": 0.46,
+        "category": 0.7,
+        "location": 0.5,
+        "summary_grounding": 0.35
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "Somerville Yard hydrochloric acid tank car vapor release 1985-02-12",
+        "fingerprint": "pollution_contamination|hydrochloric acid vapor release from rail tank car at somerville rail yard|somerville_ma_us|1985-02-12"
+      }
+    },
+    {
+      "event_id": "evt_19850201_us_south_cold_outbreak_upi",
+      "title": "Winter storm and cold outbreak bring snow and ice across the U.S. South",
+      "description": "A winter storm during a broader cold outbreak brought snow, sleet, and freezing rain across parts of the U.S. South. The report describes major power outages in the Houston area and deep snow drifts in Kentucky.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1985-02-01T12:00:00Z",
+        "event_end": "1985-02-01T12:00:00Z",
+        "reported_at": "1985-02-01T00:00:00Z",
+        "time_confidence": 0.5,
+        "event_date_utc": "1985-02-01T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Southern United States (incl. Texas and Kentucky)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.35
+      },
+      "sources": [
+        {
+          "url": "https://www.upi.com/Archives/1985/02/01/Winter-in-Dixie/6738476082000/",
+          "source_name": "UPI",
+          "published_at": "1985-02-01T00:00:00Z",
+          "headline": "Winter in Dixie",
+          "byline": null,
+          "accessed_utc": "2026-01-18T04:42:41.459Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "UPI"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Winter storm brought snow, sleet and freezing rain across the South",
+            "source_url": "https://www.upi.com/Archives/1985/02/01/Winter-in-Dixie/6738476082000/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.56,
+        "category": 0.7,
+        "location": 0.35,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "US winter weather early Feb 1985",
+        "fingerprint": "fp_us_winter_weather_1985-02-01_us_country"
+      }
+    },
+    {
+      "event_id": "evt_19850206_us_winter_weather_upi",
+      "title": "Snow in the Northeast and icing/rain impacts in the U.S. South with flooding concerns",
+      "description": "A winter weather system brought snow to parts of the U.S. Northeast while freezing rain and heavy rains affected parts of the South. The report also notes rivers in Georgia above flood stage and flash-flood watches in parts of the Carolinas.",
+      "category_primary": "weather_climate",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "1985-02-06T12:00:00Z",
+        "event_end": "1985-02-06T12:00:00Z",
+        "reported_at": "1985-02-06T00:00:00Z",
+        "time_confidence": 0.5,
+        "event_date_utc": "1985-02-06T12:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Northeastern and Southern United States",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.3
+      },
+      "sources": [
+        {
+          "url": "https://www.upi.com/Archives/1985/02/06/Up-to-8-inches-of-snow-blitzed-the-Northeast/4706476514000/",
+          "source_name": "UPI",
+          "published_at": "1985-02-06T00:00:00Z",
+          "headline": "Up to 8 inches of snow blitzed the Northeast",
+          "byline": null,
+          "accessed_utc": "2026-01-18T04:42:41.459Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "UPI"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Up to 8 inches of snow blitzed the Northeast",
+            "source_url": "https://www.upi.com/Archives/1985/02/06/Up-to-8-inches-of-snow-blitzed-the-Northeast/4706476514000/"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.52,
+        "category": 0.7,
+        "location": 0.3,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "US winter weather early Feb 1985",
+        "fingerprint": "fp_us_winter_weather_1985-02-06_us_country"
+      }
+    },
+    {
+      "event_id": "evt_19850211_appalachian_snowstorm_noaa_repo",
+      "title": "Heavy snowstorm impacts the central Appalachians (Feb 11–13, 1985)",
+      "description": "A National Weather Service technical attachment documents a major snowstorm affecting the central Appalachians from February 11–13, 1985. The document describes very heavy snowfall, including totals exceeding 20 inches in parts of eastern Kentucky.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1985-02-11T12:00:00Z",
+        "event_end": "1985-02-13T12:00:00Z",
+        "reported_at": "1985-02-11T00:00:00Z",
+        "time_confidence": 0.7,
+        "event_date_utc": null,
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Central Appalachians (notably Kentucky, USA)",
+        "jurisdiction_level": "state",
+        "admin1": "Kentucky",
+        "country": "US",
+        "capital_used": "Frankfort, Kentucky",
+        "lat": 38.2009,
+        "lon": -84.8733,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://repository.library.noaa.gov/view/noaa/33753",
+          "source_name": "NOAA Repository (NWS technical attachment)",
+          "published_at": "1985-02-11T00:00:00Z",
+          "headline": "National Weather Service technical attachment on the Feb 11–13, 1985 snow event",
+          "byline": null,
+          "accessed_utc": "2026-01-18T04:42:41.459Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA",
+          "National Weather Service"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "technical attachment focused on the February 11–13, 1985 event",
+            "source_url": "https://repository.library.noaa.gov/view/noaa/33753"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.75,
+        "location": 0.55,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Central Appalachians snowstorm Feb 11-13 1985",
+        "fingerprint": "fp_appalachians_snow_1985-02-11_kentucky_state"
+      }
+    },
+    {
+      "event_id": "evt_19850210_cyclone_hubert_bom",
+      "title": "Severe Tropical Cyclone Hubert intensifies in the Australian region",
+      "description": "Severe Tropical Cyclone Hubert formed from a low in the Joseph Bonaparte Gulf and tracked generally westward. Australia’s Bureau of Meteorology summary notes it rapidly intensified over open waters to severe intensity (Category 4) before later weakening.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1985-02-10T12:00:00Z",
+        "event_end": "1985-02-19T12:00:00Z",
+        "reported_at": "1985-02-10T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": null,
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Australian region (Joseph Bonaparte Gulf / north Kimberley coast and adjacent waters)",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "AU",
+        "capital_used": "Canberra",
+        "lat": -35.2809,
+        "lon": 149.13,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.35
+      },
+      "sources": [
+        {
+          "url": "https://www.bom.gov.au/cyclone/history/hubert85.shtml",
+          "source_name": "Australian Bureau of Meteorology",
+          "published_at": "1985-02-10T00:00:00Z",
+          "headline": "Severe Tropical Cyclone Hubert (1985)",
+          "byline": null,
+          "accessed_utc": "2026-01-18T04:42:41.459Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Australian Bureau of Meteorology"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "formed from a low in the Joseph Bonaparte Gulf",
+            "source_url": "https://www.bom.gov.au/cyclone/history/hubert85.shtml"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.58,
+        "category": 0.8,
+        "location": 0.35,
+        "summary_grounding": 0.65
+      },
+      "quality_flags": [
+        "location_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "Severe Tropical Cyclone Hubert 1985",
+        "fingerprint": "fp_cyclone_hubert_1985-02_au_country"
+      }
+    },
+    {
+      "event_id": "evt_19850215_cyclone_jacob_bom",
+      "title": "Severe Tropical Cyclone Jacob develops over the Timor Sea",
+      "description": "Severe Tropical Cyclone Jacob developed from a weak low near Timor and strengthened to tropical cyclone intensity on 16 February (UTC). The Bureau of Meteorology summary indicates it peaked around 20 February (UTC) before weakening later in its lifecycle.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "1985-02-15T12:00:00Z",
+        "event_end": "1985-02-28T12:00:00Z",
+        "reported_at": "1985-02-15T00:00:00Z",
+        "time_confidence": 0.6,
+        "event_date_utc": null,
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Timor Sea / northwestern Australian region",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "AU",
+        "capital_used": "Canberra",
+        "lat": -35.2809,
+        "lon": 149.13,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.35
+      },
+      "sources": [
+        {
+          "url": "https://www.bom.gov.au/cyclone/history/jacob85.shtml",
+          "source_name": "Australian Bureau of Meteorology",
+          "published_at": "1985-02-15T00:00:00Z",
+          "headline": "Severe Tropical Cyclone Jacob (1985)",
+          "byline": null,
+          "accessed_utc": "2026-01-18T04:42:41.459Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Australian Bureau of Meteorology"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "intensified to tropical cyclone strength on 16 February (UTC)",
+            "source_url": "https://www.bom.gov.au/cyclone/history/jacob85.shtml"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.58,
+        "category": 0.8,
+        "location": 0.35,
+        "summary_grounding": 0.65
+      },
+      "quality_flags": [
+        "location_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "Severe Tropical Cyclone Jacob 1985",
+        "fingerprint": "fp_cyclone_jacob_1985-02_au_country"
+      }
+    },
+    {
+      "event_id": "19850202_southern-iran_earthquake_fatality_usgs",
+      "title": "Southern Iran earthquake (fatality reported by USGS bulletin)",
+      "description": "A USGS \"Earthquakes January–February 1985\" publication notes that Iran reported an earthquake-related death on February 2, 1985, associated with an earthquake in southern Iran. The publication is used as the basis for the reported fatality and date.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1985-02-28T23:59:59.000Z",
+        "time_confidence": 0.4,
+        "event_date_utc": "1985-02-02T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Southern Iran",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "IR",
+        "capital_used": "Tehran",
+        "lat": 35.6892,
+        "lon": 51.389,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.5
+      },
+      "sources": [
+        {
+          "url": "https://www.usgs.gov/publications/earthquakes-january-february-1985",
+          "source_name": "USGS",
+          "published_at": "1985-02-28T23:59:59.000Z",
+          "headline": "Earthquakes January–February 1985",
+          "byline": null,
+          "accessed_utc": "2026-01-18T04:42:56.456Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://pubs.usgs.gov/publication/70168846",
+          "source_name": "USGS Publications Warehouse",
+          "published_at": "1985-02-28T23:59:59.000Z",
+          "headline": "Earthquakes January–February 1985",
+          "byline": null,
+          "accessed_utc": "2026-01-18T04:42:56.456Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "USGS"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Iran reported an earthquake-related death on Feb. 2.",
+            "source_url": "https://www.usgs.gov/publications/earthquakes-january-february-1985"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.55,
+        "category": 0.8,
+        "location": 0.5,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "secondary_sources_only"
+      ],
+      "dedupe": {
+        "cluster_hint": "iran_earthquake_1985-02-02_fatality",
+        "fingerprint": "geological|southern iran|1985-02-02"
+      }
+    },
+    {
+      "event_id": "1985-02-fires-us-fl-miami-everglades-brushfire-turnpike-closure-001",
+      "title": "Everglades-area brush fire near Miami burns ~700 acres; Florida Turnpike closed for hours",
+      "description": "A brush fire in the Everglades area near Miami burned about 700 acres and led to the Florida Turnpike being closed for nearly five hours. Fire crews used backfires as part of suppression efforts.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1985-02-13T00:00:00.000Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "1985-02-13T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Miami, Florida, USA (Everglades area near Miami)",
+        "jurisdiction_level": "city",
+        "admin1": "Florida",
+        "country": "US",
+        "capital_used": null,
+        "lat": 25.7617,
+        "lon": -80.1918,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.latimes.com/archives/la-xpm-1985-02-13-mn-4505-story.html",
+          "source_name": "Los Angeles Times",
+          "published_at": "1985-02-13T00:00:00.000Z",
+          "headline": "Florida Everglades-area brush fire (near Miami) burns ~700 acres; Florida Turnpike closed for nearly five hours",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Florida Turnpike"
+        ],
+        "substances": [],
+        "ecosystems": [
+          "Everglades"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "A brush fire burned about 700 acres and forced the closing of the Florida Turnpike for nearly five hours.",
+            "source_url": "https://www.latimes.com/archives/la-xpm-1985-02-13-mn-4505-story.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.58,
+        "category": 0.8,
+        "location": 0.55,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "paywalled_or_partial",
+        "date_ambiguous",
+        "location_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "1985-02-everglades-brush-fire-near-miami-700-acres",
+        "fingerprint": "fp_1985-02_everglades_brush_fire_miami_1985-02-13"
+      }
+    },
+    {
+      "event_id": "1985-02-fires-us-fl-miami-everglades-brushfire-flareup-002",
+      "title": "Everglades-area brush fire near Miami flares up again amid dry-condition fires",
+      "description": "An Everglades-area brush fire near Miami that had been thought extinguished flared up again. Reporting described it as part of a broader outbreak of fires associated with dry conditions, with the fire burning more than 700 acres.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1985-02-14T00:00:00.000Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "1985-02-14T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Miami, Florida, USA (Everglades area near Miami)",
+        "jurisdiction_level": "city",
+        "admin1": "Florida",
+        "country": "US",
+        "capital_used": null,
+        "lat": 25.7617,
+        "lon": -80.1918,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.5
+      },
+      "sources": [
+        {
+          "url": "https://www.latimes.com/archives/la-xpm-1985-02-14-mn-2452-story.html",
+          "source_name": "Los Angeles Times",
+          "published_at": "1985-02-14T00:00:00.000Z",
+          "headline": "700-acre Everglades brush fire (near Miami) flares up again amid broader outbreak of dry-condition fires",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [
+          "Everglades"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "An intense Everglades brush fire ... flared up again ... had burned more than 700 acres.",
+            "source_url": "https://www.latimes.com/archives/la-xpm-1985-02-14-mn-2452-story.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.56,
+        "category": 0.8,
+        "location": 0.5,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "paywalled_or_partial",
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "1985-02-everglades-brush-fire-near-miami-700-acres",
+        "fingerprint": "fp_1985-02_everglades_brush_fire_miami_1985-02-14"
+      }
+    },
+    {
+      "event_id": "1985-02-fires-us-ca-chatsworth-diceon-electronics-plant-fire-003",
+      "title": "Fire at Diceon Electronics plant in Chatsworth; hazardous chemicals reportedly protected",
+      "description": "A fire swept through a computer parts factory at Diceon Electronics in Chatsworth, Los Angeles, with significant flames and smoke and an estimated $2–$3 million in damage. Firefighters prevented the fire from reaching stored hazardous chemicals; reports of cyanide were described as false in the coverage.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "1985-02-19T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "1985-02-19T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Chatsworth, Los Angeles, California, USA",
+        "jurisdiction_level": "city",
+        "admin1": "California",
+        "country": "US",
+        "capital_used": null,
+        "lat": 34.2572,
+        "lon": -118.6015,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.65
+      },
+      "sources": [
+        {
+          "url": "https://www.latimes.com/archives/la-xpm-1985-02-19-me-439-story.html",
+          "source_name": "Los Angeles Times",
+          "published_at": "1985-02-19T00:00:00.000Z",
+          "headline": "Diceon Electronics plant fire in Chatsworth; firefighters prevent flames reaching hazardous chemicals",
+          "byline": null,
+          "accessed_utc": "2026-01-18T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "Diceon Electronics"
+        ],
+        "substances": [
+          "hazardous chemicals",
+          "cyanide (reported false)"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Fire swept a computer parts factory at Diceon Electronics ... damage was estimated at $2–$3 million.",
+            "source_url": "https://www.latimes.com/archives/la-xpm-1985-02-19-me-439-story.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.75,
+        "location": 0.65,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "paywalled_or_partial",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": null,
+        "fingerprint": "fp_1985-02_diceon_electronics_fire_chatsworth_1985-02-19"
+      }
+    }
+  ]
+}

@@ -1,0 +1,947 @@
+{
+  "batch_meta": {
+    "batch_id": "batch_2011-10_normalize_2026-01-16T042754336Z",
+    "generated_utc": "2026-01-16T04:27:54.336Z",
+    "mode": "historical_month",
+    "time_window_days": null,
+    "target_month": "2011-10",
+    "window": {
+      "start_utc": "2011-10-01T00:00:00.000Z",
+      "end_utc": "2011-10-31T23:59:59.000Z"
+    },
+    "categories_requested": [
+      "pollution_contamination",
+      "weather_climate",
+      "geological",
+      "fires",
+      "ecosystem_biodiversity",
+      "policy_regulation"
+    ],
+    "agent": {
+      "name": "gaialog-normalize",
+      "version": "0.1.0",
+      "model": "gpt-5.2",
+      "retrieval_method": "search"
+    }
+  },
+  "events": [
+    {
+      "event_id": "20111005_mv-rena_oil-spill_bay-of-plenty_nz",
+      "title": "MV Rena grounding causes oil spill off Bay of Plenty, New Zealand",
+      "description": "The container ship MV Rena ran aground on Astrolabe Reef in early October 2011, leading to the release of fuel oil and diesel into coastal waters. Reports described oil reaching shore and impacts on wildlife and cleanup efforts continuing through October.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2011-10-05T00:00:00.000Z",
+        "event_end": "2011-10-31T23:59:59.000Z",
+        "reported_at": "2011-10-10T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2011-10-05T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Bay of Plenty (off Tauranga), New Zealand",
+        "jurisdiction_level": "state",
+        "admin1": "Bay of Plenty",
+        "country": "NZ",
+        "capital_used": "Whakatāne",
+        "lat": -37.9533,
+        "lon": 176.9908,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.theguardian.com/environment/2011/oct/10/new-zealand-oil-spill-wildlife-tragedy",
+          "source_name": "The Guardian",
+          "published_at": "2011-10-10T00:00:00.000Z",
+          "headline": "New Zealand oil spill a wildlife tragedy",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://phys.org/news/2011-10-dead-birds-zealand-oil-slick.html",
+          "source_name": "Phys.org",
+          "published_at": "2011-10-12T00:00:00.000Z",
+          "headline": "Dead birds found in New Zealand oil slick",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.cambridge.org/core/journals/disaster-medicine-and-public-health-preparedness/article/mental-health-of-oiled-wildlife-responders-deployed-to-the-mv-rena-oil-spill-in-aotearoa-new-zealand/00B25FB52DF4507DA1B33B51AD54E6D7",
+          "source_name": "Cambridge Core",
+          "published_at": "2016-01-01T00:00:00.000Z",
+          "headline": "Mental Health of Oiled Wildlife Responders Deployed to the MV Rena Oil Spill in Aotearoa New Zealand",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "MV Rena"
+        ],
+        "substances": [
+          "heavy fuel oil",
+          "diesel"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "oil spill ... a wildlife tragedy",
+            "source_url": "https://www.theguardian.com/environment/2011/oct/10/new-zealand-oil-spill-wildlife-tragedy"
+          },
+          {
+            "quote": "Dead birds found in New Zealand oil slick",
+            "source_url": "https://phys.org/news/2011-10-dead-birds-zealand-oil-slick.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.85,
+        "location": 0.6,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "needs_dedupe_check",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "mv_rena_oil_spill_2011_nz",
+        "fingerprint": "mv_rena_oil_spill|bay_of_plenty_nz|2011-10-05"
+      }
+    },
+    {
+      "event_id": "20111007_tiskilwa_il_train-derailment_ethanol_fire",
+      "title": "Train derailment releases ethanol and burns near Tiskilwa, Illinois",
+      "description": "A freight train derailment near Tiskilwa, Illinois in October 2011 involved multiple derailed cars, including ethanol tank cars. Source materials describe an ethanol release and fire, with emergency response and subsequent cleanup activities.",
+      "category_primary": "pollution_contamination",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2011-10-07T07:14:00.000Z",
+        "event_end": "2011-10-07T23:59:59.000Z",
+        "reported_at": "2013-01-01T00:00:00.000Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "2011-10-07T07:14:00.000Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Tiskilwa, Illinois, United States",
+        "jurisdiction_level": "city",
+        "admin1": "Illinois",
+        "country": "US",
+        "capital_used": null,
+        "lat": 41.21,
+        "lon": -89.505,
+        "precision": "city",
+        "location_basis": "manual_override",
+        "location_confidence": 0.45
+      },
+      "sources": [
+        {
+          "url": "https://trid.trb.org/View/1259871",
+          "source_name": "TRID (Transportation Research International Documentation)",
+          "published_at": "2013-01-01T00:00:00.000Z",
+          "headline": "(Record) Freight train derailment near Tiskilwa, Illinois (Oct. 7, 2011)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "http://www.ntsb.gov/investigations/AccidentReports/Pages/RAB1302.aspx",
+          "source_name": "NTSB",
+          "published_at": "2013-02-01T00:00:00.000Z",
+          "headline": "Railroad Accident Brief: BNSF Railway Company Freight Train Derailment and Subsequent Hazardous Materials Release and Fire, Tiskilwa, Illinois, October 7, 2011",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "http://www.ntsb.gov/investigations/AccidentReports/Reports/RAB1302.pdf",
+          "source_name": "NTSB",
+          "published_at": "2013-02-01T00:00:00.000Z",
+          "headline": "Railroad Accident Brief RAB-13/02 (PDF)",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NTSB",
+          "BNSF Railway"
+        ],
+        "substances": [
+          "ethanol"
+        ],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "hazardous materials release and fire",
+            "source_url": "http://www.ntsb.gov/investigations/AccidentReports/Pages/RAB1302.aspx"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.58,
+        "category": 0.8,
+        "location": 0.45,
+        "summary_grounding": 0.5
+      },
+      "quality_flags": [
+        "needs_dedupe_check",
+        "location_ambiguous",
+        "date_ambiguous"
+      ],
+      "dedupe": {
+        "cluster_hint": "tiskilwa_il_derailment_ethanol_2011",
+        "fingerprint": "train_derailment_ethanol_fire|tiskilwa_il_us|2011-10-07"
+      }
+    },
+    {
+      "event_id": "2011-10-weatherclimate-jova-landfall-sw-mexico",
+      "title": "Hurricane Jova makes landfall in southwestern Mexico",
+      "description": "Hurricane Jova intensified into a major hurricane and made landfall in southwestern Mexico on 12 Oct 2011. The storm brought destructive winds and heavy rainfall, leading to flooding and mudslides in affected areas.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2011-10-12T00:00:00.000Z",
+        "event_end": "2011-10-12T23:59:59.000Z",
+        "reported_at": "2011-10-12T00:00:00.000Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2011-10-12T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Jalisco/Colima region, Mexico",
+        "jurisdiction_level": "state",
+        "admin1": "Jalisco",
+        "country": "MX",
+        "capital_used": "Guadalajara",
+        "lat": 20.659698,
+        "lon": -103.349609,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.nhc.noaa.gov/data/tcr/EP102011_Jova.pdf",
+          "source_name": "NOAA National Hurricane Center",
+          "published_at": "2011-10-12T00:00:00.000Z",
+          "headline": "Tropical Cyclone Report: Hurricane Jova (EP102011)",
+          "byline": null,
+          "accessed_utc": "2011-10-31T23:59:59.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.nhc.noaa.gov/archive/2011/ep10/ep102011.public_a.012.shtml?",
+          "source_name": "NOAA National Hurricane Center",
+          "published_at": "2011-10-12T00:00:00.000Z",
+          "headline": "Public Advisory (EP102011)",
+          "byline": null,
+          "accessed_utc": "2011-10-31T23:59:59.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA National Hurricane Center"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "made landfall in southwestern Mexico on 12 October",
+            "source_url": "https://www.nhc.noaa.gov/data/tcr/EP102011_Jova.pdf"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.66,
+        "category": 0.85,
+        "location": 0.55,
+        "summary_grounding": 0.7
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Hurricane Jova (2011) landfall Mexico",
+        "fingerprint": "jova_landfall_mexico_jalisco_2011-10-12"
+      }
+    },
+    {
+      "event_id": "2011-10-weatherclimate-td12e-heavy-rain-central-america",
+      "title": "Tropical Depression Twelve-E produces heavy rainfall from southern Mexico into Central America",
+      "description": "Tropical Depression Twelve-E formed in the eastern Pacific and moved ashore on 12 Oct 2011. Its rainfall contributed to flooding impacts across parts of Central America including Guatemala, El Salvador, Honduras, and Nicaragua.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2011-10-12T00:00:00.000Z",
+        "event_end": "2011-10-12T23:59:59.000Z",
+        "reported_at": "2011-10-12T00:00:00.000Z",
+        "time_confidence": 0.6,
+        "event_date_utc": "2011-10-12T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Central America (Guatemala–Nicaragua region)",
+        "jurisdiction_level": "supranational",
+        "admin1": null,
+        "country": null,
+        "capital_used": "Guatemala City",
+        "lat": 14.634915,
+        "lon": -90.506882,
+        "precision": "supranational",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.35
+      },
+      "sources": [
+        {
+          "url": "https://www.nhc.noaa.gov/data/tcr/EP122011_Twelve-E.pdf",
+          "source_name": "NOAA National Hurricane Center",
+          "published_at": "2011-10-12T00:00:00.000Z",
+          "headline": "Tropical Cyclone Report: Tropical Depression Twelve-E (EP122011)",
+          "byline": null,
+          "accessed_utc": "2011-10-31T23:59:59.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.nhc.noaa.gov/archive/2011/ep12/ep122011.public_a.001.shtml?",
+          "source_name": "NOAA National Hurricane Center",
+          "published_at": "2011-10-12T00:00:00.000Z",
+          "headline": "Public Advisory (EP122011)",
+          "byline": null,
+          "accessed_utc": "2011-10-31T23:59:59.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA National Hurricane Center"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "tropical depression ... moved inland over southern Mexico",
+            "source_url": "https://www.nhc.noaa.gov/data/tcr/EP122011_Twelve-E.pdf"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.52,
+        "category": 0.85,
+        "location": 0.35,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "date_ambiguous",
+        "low_confidence_location",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Tropical Depression Twelve-E (2011) rainfall Central America",
+        "fingerprint": "td12e_central_america_2011-10-12"
+      }
+    },
+    {
+      "event_id": "2011-10-weatherclimate-rina-impacts-nw-caribbean",
+      "title": "Hurricane Rina brings heavy rain and marine hazards in the northwestern Caribbean",
+      "description": "Hurricane Rina formed on 23 Oct 2011 and strengthened to a major hurricane while over the northwestern Caribbean. It generated heavy rain and hazardous marine conditions before weakening by 29 Oct 2011.",
+      "category_primary": "weather_climate",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2011-10-23T00:00:00.000Z",
+        "event_end": "2011-10-29T23:59:59.000Z",
+        "reported_at": "2011-10-23T00:00:00.000Z",
+        "time_confidence": 0.65,
+        "event_date_utc": null,
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Northwestern Caribbean Sea (near Honduras; toward Yucatán Peninsula)",
+        "jurisdiction_level": "supranational",
+        "admin1": null,
+        "country": null,
+        "capital_used": "Tegucigalpa",
+        "lat": 14.072275,
+        "lon": -87.192136,
+        "precision": "supranational",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.35
+      },
+      "sources": [
+        {
+          "url": "https://www.nhc.noaa.gov/data/tcr/AL182011_Rina.pdf",
+          "source_name": "NOAA National Hurricane Center",
+          "published_at": "2011-10-23T00:00:00.000Z",
+          "headline": "Tropical Cyclone Report: Hurricane Rina (AL182011)",
+          "byline": null,
+          "accessed_utc": "2011-10-31T23:59:59.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.nhc.noaa.gov/archive/2011/al18/al182011.public_a.001.shtml?",
+          "source_name": "NOAA National Hurricane Center",
+          "published_at": "2011-10-23T00:00:00.000Z",
+          "headline": "Public Advisory (AL182011)",
+          "byline": null,
+          "accessed_utc": "2011-10-31T23:59:59.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NOAA National Hurricane Center"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "became a major hurricane ... over the northwestern Caribbean Sea",
+            "source_url": "https://www.nhc.noaa.gov/data/tcr/AL182011_Rina.pdf"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.56,
+        "category": 0.85,
+        "location": 0.35,
+        "summary_grounding": 0.65
+      },
+      "quality_flags": [
+        "location_ambiguous",
+        "low_confidence_location",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "Hurricane Rina (2011) impacts NW Caribbean",
+        "fingerprint": "rina_nw_caribbean_2011-10-23_2011-10-29"
+      }
+    },
+    {
+      "event_id": "2011-10-geological-van-earthquake-72",
+      "title": "M7.2 earthquake strikes near Van in eastern Turkey",
+      "description": "A magnitude 7.2 earthquake struck eastern Turkey near Van on 23 Oct 2011, producing strong shaking and triggering many aftershocks. The event caused widespread impacts in the region around Lake Erçek/Van area.",
+      "category_primary": "geological",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2011-10-23T10:41:22.000Z",
+        "event_end": "2011-10-24T23:59:59.000Z",
+        "reported_at": "2011-10-23T00:00:00Z",
+        "time_confidence": 0.7,
+        "event_date_utc": "2011-10-23T10:41:22.000Z",
+        "event_date_precision": "exact"
+      },
+      "location": {
+        "name": "Van Province, Turkey",
+        "jurisdiction_level": "state",
+        "admin1": "Van Province",
+        "country": "TR",
+        "capital_used": "Van",
+        "lat": 38.5012,
+        "lon": 43.3729,
+        "precision": "admin1",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://earthobservatory.nasa.gov/images/76221/72-earthquake-in-eastern-turkey",
+          "source_name": "NASA Earth Observatory",
+          "published_at": "2011-10-26T00:00:00Z",
+          "headline": "7.2 Earthquake in Eastern Turkey",
+          "byline": null,
+          "accessed_utc": "2011-10-31T23:59:59.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.wbur.org/news/2011/10/23/turkey",
+          "source_name": "WBUR",
+          "published_at": "2011-10-23T00:00:00Z",
+          "headline": "Turkey",
+          "byline": null,
+          "accessed_utc": "2011-10-31T23:59:59.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "NASA Earth Observatory",
+          "WBUR"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "7.2 Earthquake in Eastern Turkey",
+            "source_url": "https://earthobservatory.nasa.gov/images/76221/72-earthquake-in-eastern-turkey"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.66,
+        "category": 0.85,
+        "location": 0.7,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "2011 Van earthquake",
+        "fingerprint": "2011-10-23|m7.2 earthquake|van province turkey"
+      }
+    },
+    {
+      "event_id": "fires_au_nsw_katoomba_2011-10-24_001",
+      "title": "Katoomba / Blue Mountains bushfire prompts evacuations",
+      "description": "A bushfire in the Blue Mountains area near Katoomba prompted evacuations and a multi-agency firefighting response. Authorities worked to contain the blaze as it threatened nearby residents and properties.",
+      "category_primary": "fires",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": "2011-10-24T00:00:00.000Z",
+        "event_end": "2011-10-24T23:59:59.000Z",
+        "reported_at": "2011-10-24T00:00:00Z",
+        "time_confidence": 0.75,
+        "event_date_utc": "2011-10-24T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Katoomba and Blue Mountains, New South Wales, Australia",
+        "jurisdiction_level": "site",
+        "admin1": "New South Wales",
+        "country": "AU",
+        "capital_used": null,
+        "lat": -33.7126,
+        "lon": 150.312,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.6
+      },
+      "sources": [
+        {
+          "url": "https://www.abc.net.au/news/2011-10-24/fire-forces-katoomba-residents-to-evacuate/3587852",
+          "source_name": "ABC News (Australia)",
+          "published_at": "2011-10-24T00:00:00Z",
+          "headline": "Fire forces Katoomba residents to evacuate",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Fire forces Katoomba residents to evacuate",
+            "source_url": "https://www.abc.net.au/news/2011-10-24/fire-forces-katoomba-residents-to-evacuate/3587852"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.8,
+        "location": 0.6,
+        "summary_grounding": 0.55
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "abc_katoomba_blue_mountains_fire_2011-10-24",
+        "fingerprint": "fires|katoomba-blue-mountains-nsw-au|2011-10-24"
+      }
+    },
+    {
+      "event_id": "20111005-mv-rena-oil-spill-wildlife-impacts-bay-of-plenty-nz",
+      "title": "Wildlife impacts and rescue response during the MV Rena oil spill",
+      "description": "After the MV Rena grounded near Tauranga on 5 Oct 2011, reports during October described oiled and dead seabirds and wildlife impacts from the resulting oil spill. Authorities and conservation groups undertook wildlife rescue and rehabilitation activities as the spill response continued.",
+      "category_primary": "ecosystem_biodiversity",
+      "polarity": "negative",
+      "severity": null,
+      "time": {
+        "event_start": null,
+        "event_end": null,
+        "reported_at": "2011-10-10T00:00:00Z",
+        "time_confidence": 0.55,
+        "event_date_utc": "2011-10-05T00:00:00Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "Bay of Plenty (off Tauranga), New Zealand",
+        "jurisdiction_level": "state",
+        "admin1": "Bay of Plenty",
+        "country": "NZ",
+        "capital_used": "Wellington",
+        "lat": -41.28664,
+        "lon": 174.77557,
+        "precision": "proxy",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.55
+      },
+      "sources": [
+        {
+          "url": "https://www.theguardian.com/environment/2011/oct/10/new-zealand-oil-spill-wildlife-tragedy",
+          "source_name": "The Guardian",
+          "published_at": "2011-10-10T00:00:00Z",
+          "headline": "New Zealand oil spill a wildlife tragedy",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://phys.org/news/2011-10-dead-birds-zealand-oil-slick.html",
+          "source_name": "Phys.org",
+          "published_at": "2011-10-10T00:00:00Z",
+          "headline": "Dead birds wash up after New Zealand oil slick",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.cambridge.org/core/journals/disaster-medicine-and-public-health-preparedness/article/mental-health-of-oiled-wildlife-responders-deployed-to-the-mv-rena-oil-spill-in-aotearoa-new-zealand/00B25FB52DF4507DA1B33B51AD54E6D7",
+          "source_name": "Cambridge Core",
+          "published_at": "2013-01-01T00:00:00Z",
+          "headline": "Mental Health of Oiled Wildlife Responders Deployed to the MV Rena Oil Spill in Aotearoa New Zealand",
+          "byline": null,
+          "accessed_utc": "2026-01-16T00:00:00Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [],
+        "substances": [
+          "oil"
+        ],
+        "ecosystems": [
+          "marine",
+          "seabirds"
+        ],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "oil spill a wildlife tragedy",
+            "source_url": "https://www.theguardian.com/environment/2011/oct/10/new-zealand-oil-spill-wildlife-tragedy"
+          },
+          {
+            "quote": "Dead birds wash up after New Zealand oil slick",
+            "source_url": "https://phys.org/news/2011-10-dead-birds-zealand-oil-slick.html"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.62,
+        "category": 0.7,
+        "location": 0.55,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "location_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "MV Rena oil spill wildlife impacts October 2011",
+        "fingerprint": "mv-rena-oil-spill-wildlife-impacts|bay-of-plenty-nz|2011-10"
+      }
+    },
+    {
+      "event_id": "2011-10-unfccc-panama-city-awgkp16-3-awglca14-3",
+      "title": "UNFCCC Panama City Climate Change Conference negotiating sessions (AWG-KP 16.3 / AWG-LCA 14.3)",
+      "description": "UNFCCC negotiating sessions were held in Panama City from 1–7 October 2011 under the Kyoto Protocol (AWG-KP 16.3) and long-term cooperative action (AWG-LCA 14.3) tracks. The meetings advanced negotiating work ahead of COP17 in Durban.",
+      "category_primary": "policy_regulation",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "2011-10-01T00:00:00.000Z",
+        "event_end": "2011-10-07T23:59:59.000Z",
+        "reported_at": "2011-10-01T00:00:00.000Z",
+        "time_confidence": 0.75,
+        "event_date_utc": "2011-10-01T00:00:00.000Z",
+        "event_date_precision": "range_anchor"
+      },
+      "location": {
+        "name": "Panama City, Panama",
+        "jurisdiction_level": "city",
+        "admin1": null,
+        "country": "PA",
+        "capital_used": null,
+        "lat": 8.9824,
+        "lon": -79.5199,
+        "precision": "city",
+        "location_basis": "explicit_in_article",
+        "location_confidence": 0.75
+      },
+      "sources": [
+        {
+          "url": "https://unfccc.int/conference/panama-climate-change-conference-october-2011",
+          "source_name": "UNFCCC",
+          "published_at": "2011-10-01T00:00:00.000Z",
+          "headline": "Panama Climate Change Conference (October 2011)",
+          "byline": null,
+          "accessed_utc": "2011-10-01T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://sdg.iisd.org/news/un-climate-change-conference-opens-in-panama/",
+          "source_name": "IISD SDG Knowledge Hub",
+          "published_at": "2011-10-03T00:00:00.000Z",
+          "headline": "UN CLIMATE CHANGE CONFERENCE OPENS IN PANAMA",
+          "byline": null,
+          "accessed_utc": "2011-10-03T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://enb.iisd.org/events/panama-city-climate-change-conference-october-2011/summary-report-1-7-october-2011",
+          "source_name": "IISD Earth Negotiations Bulletin",
+          "published_at": "2011-10-10T00:00:00.000Z",
+          "headline": "Summary of the Panama City Climate Change Conference: 1-7 October 2011",
+          "byline": null,
+          "accessed_utc": "2011-10-10T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "UNFCCC"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Summary of the Panama City Climate Change Conference: 1-7 October 2011",
+            "source_url": "https://enb.iisd.org/events/panama-city-climate-change-conference-october-2011/summary-report-1-7-october-2011"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.72,
+        "category": 0.8,
+        "location": 0.75,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "UNFCCC Panama City Climate Change Conference Oct 2011",
+        "fingerprint": "fp_2011-10_unfccc_panama_city_2011-10-01"
+      }
+    },
+    {
+      "event_id": "2011-10-eu-commission-recommendation-2011-696-eu-nanomaterial-definition",
+      "title": "European Commission adopts Recommendation 2011/696/EU defining “nanomaterial”",
+      "description": "On 18 October 2011, the European Commission adopted Recommendation 2011/696/EU providing a reference definition for “nanomaterial”. The recommendation aimed to support consistent use across EU regulatory and policy contexts including environmental and health protection.",
+      "category_primary": "policy_regulation",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "2011-10-18T00:00:00.000Z",
+        "event_end": "2011-10-18T23:59:59.000Z",
+        "reported_at": "2011-10-18T00:00:00.000Z",
+        "time_confidence": 0.65,
+        "event_date_utc": "2011-10-18T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "European Union",
+        "jurisdiction_level": "supranational",
+        "admin1": null,
+        "country": null,
+        "capital_used": "Brussels",
+        "lat": 50.8503,
+        "lon": 4.3517,
+        "precision": "supranational",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.7
+      },
+      "sources": [
+        {
+          "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32011H0696",
+          "source_name": "EUR-Lex",
+          "published_at": "2011-10-18T00:00:00.000Z",
+          "headline": "Commission Recommendation 2011/696/EU of 18 October 2011 on the definition of nanomaterial",
+          "byline": null,
+          "accessed_utc": "2011-10-18T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://eur-lex.europa.eu/eli/reg_del/2013/1363/oj/eng",
+          "source_name": "EUR-Lex",
+          "published_at": "2013-12-12T00:00:00.000Z",
+          "headline": "(Related EUR-Lex entry)",
+          "byline": null,
+          "accessed_utc": "2013-12-12T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.eel2.nl/en/eel-news-service-issue-2011-8-of-28-october-2011/",
+          "source_name": "EEL News Service",
+          "published_at": "2011-10-28T00:00:00.000Z",
+          "headline": "EEL News Service issue 2011-8 (28 October 2011)",
+          "byline": null,
+          "accessed_utc": "2011-10-28T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "European Commission"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Commission Recommendation 2011/696/EU of 18 October 2011 on the definition of nanomaterial",
+            "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32011H0696"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.7,
+        "category": 0.8,
+        "location": 0.8,
+        "summary_grounding": 0.6
+      },
+      "quality_flags": [
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "EC Recommendation 2011/696/EU nanomaterial definition",
+        "fingerprint": "fp_2011-10_ec_2011-696_eu_2011-10-18"
+      }
+    },
+    {
+      "event_id": "2011-10-us-epa-transportation-conformity-moves-grace-period-extension-actions",
+      "title": "US EPA issues Transportation Conformity rule actions on MOVES regional grace period extension",
+      "description": "On 13 October 2011, the US Environmental Protection Agency issued Transportation Conformity rule actions concerning extension of the grace period before MOVES must be used for regional emissions analyses in transportation conformity determinations. The actions were part of EPA’s Clean Air Act transportation conformity rulemaking process.",
+      "category_primary": "policy_regulation",
+      "polarity": "mixed",
+      "severity": null,
+      "time": {
+        "event_start": "2011-10-13T00:00:00.000Z",
+        "event_end": "2011-10-13T23:59:59.000Z",
+        "reported_at": "2011-10-13T00:00:00.000Z",
+        "time_confidence": 0.45,
+        "event_date_utc": "2011-10-13T00:00:00.000Z",
+        "event_date_precision": "day"
+      },
+      "location": {
+        "name": "United States",
+        "jurisdiction_level": "country",
+        "admin1": null,
+        "country": "US",
+        "capital_used": "Washington, DC",
+        "lat": 38.9072,
+        "lon": -77.0369,
+        "precision": "country",
+        "location_basis": "capital_rule",
+        "location_confidence": 0.65
+      },
+      "sources": [
+        {
+          "url": "https://www.epa.gov/state-and-local-transportation/transportation-conformity-chronological-list-rulemakings",
+          "source_name": "US EPA",
+          "published_at": "2011-10-13T00:00:00.000Z",
+          "headline": "Transportation Conformity: Chronological List of Rulemakings",
+          "byline": null,
+          "accessed_utc": "2011-10-13T00:00:00.000Z",
+          "canonical_url": null
+        },
+        {
+          "url": "https://www.fhwa.dot.gov/Environment/air_quality/conformity/laws_and_regs/rulemakings.cfm",
+          "source_name": "Federal Highway Administration",
+          "published_at": "2011-10-13T00:00:00.000Z",
+          "headline": "Transportation Conformity Rulemakings",
+          "byline": null,
+          "accessed_utc": "2011-10-13T00:00:00.000Z",
+          "canonical_url": null
+        }
+      ],
+      "entities": {
+        "organizations": [
+          "US Environmental Protection Agency",
+          "Federal Highway Administration"
+        ],
+        "substances": [],
+        "ecosystems": [],
+        "people": []
+      },
+      "evidence": {
+        "key_quotes": [
+          {
+            "quote": "Transportation Conformity: Chronological List of Rulemakings",
+            "source_url": "https://www.epa.gov/state-and-local-transportation/transportation-conformity-chronological-list-rulemakings"
+          }
+        ]
+      },
+      "confidence": {
+        "overall": 0.52,
+        "category": 0.75,
+        "location": 0.75,
+        "summary_grounding": 0.45
+      },
+      "quality_flags": [
+        "date_ambiguous",
+        "needs_dedupe_check"
+      ],
+      "dedupe": {
+        "cluster_hint": "EPA transportation conformity MOVES grace period extension Oct 2011",
+        "fingerprint": "fp_2011-10_epa_moves_grace_period_2011-10-13"
+      }
+    }
+  ]
+}
